@@ -1,0 +1,129 @@
+[
+  {
+    "number": "9.0",
+    "title": "Hypothesis Testing: Conceptual Overview",
+    "slug": "9-introduction",
+    "slides": [
+      {
+        "title": "A claim about a population",
+        "body": "A hypothesis test uses sample evidence to assess a claim about a population parameter.",
+        "math": "",
+        "question": "Does a claim about average processing time concern μ or the observed sample mean?"
+      },
+      {
+        "title": "The null hypothesis",
+        "body": "The null hypothesis specifies the population claim assessed as the reference model.",
+        "math": "",
+        "question": "For a claimed mean processing time of 12 minutes, how could we write H₀?"
+      },
+      {
+        "title": "The alternative hypothesis",
+        "body": "The alternative describes the population change or difference for which we seek evidence.",
+        "math": "",
+        "question": "If the question is whether the mean exceeds 12 minutes, how should Hₐ be written?"
+      },
+      {
+        "title": "Direction of the question",
+        "body": "A one-sided alternative specifies a direction; a two-sided alternative allows either direction.",
+        "math": "",
+        "question": "Which alternative matches a question about any change from μ=12?"
+      },
+      {
+        "title": "Choosing before looking",
+        "body": "The research question should determine the alternative before inspecting the outcome.",
+        "math": "",
+        "question": "What problem arises if we choose the tail only after seeing whether the sample mean is high or low?"
+      },
+      {
+        "title": "The null sampling model",
+        "body": "Under H₀, a sampling model describes the statistic's variation if the null claim holds.",
+        "math": "",
+        "question": "Why should this model concern sample means rather than individual processing times?"
+      },
+      {
+        "title": "A test statistic",
+        "body": "A test statistic summarizes how far sample evidence departs from the null model.",
+        "math": "",
+        "question": "Why should distance from the null value be judged relative to standard error?"
+      },
+      {
+        "title": "An assumption check",
+        "body": "A valid test relies on the sampling design and the assumptions of its probability model.",
+        "math": "",
+        "question": "Could a very small p-value repair a strongly biased sample?"
+      },
+      {
+        "title": "The p-value",
+        "body": "A p-value is the null-model probability of results at least as extreme as observed, in the direction of the alternative.",
+        "math": "",
+        "question": "Which assumption about H₀ is used when calculating it?"
+      },
+      {
+        "title": "One tail or two?",
+        "body": "Synthetic result: the sample mean is above the null mean. The alternative is two-sided.",
+        "math": "",
+        "question": "Would considering only equally high sample means capture all results at least as extreme?"
+      },
+      {
+        "title": "A p-value is not a hypothesis probability",
+        "body": "Synthetic result: a valid test reports p-value=0.03.",
+        "math": "",
+        "question": "Does this assign a 3% probability to H₀ being true?"
+      },
+      {
+        "title": "Significance level",
+        "body": "The significance level α sets the rejection rule and controls the Type I error rate under a valid test.",
+        "math": "",
+        "question": "Why should α be chosen before examining the p-value?"
+      },
+      {
+        "title": "A rejection decision",
+        "body": "Synthetic valid test: p-value=0.03; significance level α=0.05.",
+        "math": "",
+        "question": "What decision follows for H₀?"
+      },
+      {
+        "title": "A nonrejection decision",
+        "body": "Synthetic valid test: p-value=0.18; significance level α=0.05.",
+        "math": "",
+        "question": "Does failing to reject H₀ establish that it is true?"
+      },
+      {
+        "title": "Type I error",
+        "body": "A Type I error rejects a null hypothesis that is true.",
+        "math": "",
+        "question": "If H₀ states that mean processing time is 12 minutes, what would a Type I error conclude?"
+      },
+      {
+        "title": "Type II error",
+        "body": "A Type II error fails to reject a null hypothesis that is false.",
+        "math": "",
+        "question": "If the true mean exceeds 12 minutes, what would a Type II error miss?"
+      },
+      {
+        "title": "Power",
+        "body": "Power is the probability of rejecting H₀ for a specified alternative that is true.",
+        "math": "",
+        "question": "How might a larger sample help detect a small departure from the null value?"
+      },
+      {
+        "title": "Statistical and practical importance",
+        "body": "A small p-value measures evidence against a null model, rather than the size or importance of the difference.",
+        "math": "",
+        "question": "Could a 0.02-minute difference be statistically significant but operationally unimportant?"
+      },
+      {
+        "title": "An interval connection",
+        "body": "For matching two-sided mean procedures, a 95% confidence interval excluding μ₀ corresponds to rejecting H₀:μ=μ₀ at α=0.05.",
+        "math": "",
+        "question": "Would a matching interval from 12.2 to 12.8 reject a null mean of 12?"
+      },
+      {
+        "title": "A careful conclusion",
+        "body": "Synthetic valid test rejects H₀:μ=12 in favor of Hₐ:μ>12.",
+        "math": "",
+        "question": "How would you state the evidence without claiming proof or explaining why the mean changed?"
+      }
+    ]
+  }
+]

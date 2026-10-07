@@ -1,0 +1,909 @@
+[
+  {
+    "number": "2.1",
+    "title": "The Rectangular Coordinate Systems and Graphs",
+    "slug": "2-1-the-rectangular-coordinate-systems-and-graphs",
+    "slides": [
+      {
+        "title": "Ordered pairs",
+        "body": "An ordered pair gives horizontal and vertical coordinates.",
+        "math": "(x,y)",
+        "question": "Why does reversing the coordinates usually change the point?"
+      },
+      {
+        "title": "Plot a point",
+        "body": "",
+        "math": "(-4,3)",
+        "question": "Where is this point, and which quadrant contains it?"
+      },
+      {
+        "title": "A point on an axis",
+        "body": "",
+        "math": "(0,-5)",
+        "question": "Where should we plot this point?"
+      },
+      {
+        "title": "Coordinate scales",
+        "body": "On a graph, one horizontal grid step represents 2 units; one vertical step represents 5 units.",
+        "math": "",
+        "question": "What are the coordinates three steps right and two steps down from the origin?"
+      },
+      {
+        "title": "A graph of an equation",
+        "body": "A graph consists of all ordered pairs that satisfy its equation.",
+        "math": "",
+        "question": "How could we decide whether a proposed point belongs to a graph?"
+      },
+      {
+        "title": "Test a point",
+        "body": "",
+        "math": "y=3x-2,\\qquad (2,4)",
+        "question": "Does this point satisfy the equation?"
+      },
+      {
+        "title": "Build a linear graph",
+        "body": "",
+        "math": "y=-2x+4",
+        "question": "What graph results from plotting points for x = -1, 0, 1, and 2?"
+      },
+      {
+        "title": "Build a curved graph",
+        "body": "",
+        "math": "y=x^2-1",
+        "question": "What shape appears when we plot points for x = -2, -1, 0, 1, and 2?"
+      },
+      {
+        "title": "Two intercepts",
+        "body": "An x-intercept has y = 0. A y-intercept has x = 0.",
+        "math": "",
+        "question": "Why are these the coordinates we set equal to zero?"
+      },
+      {
+        "title": "Find intercepts",
+        "body": "",
+        "math": "2x+3y=12",
+        "question": "What are the intercepts, written as ordered pairs?"
+      },
+      {
+        "title": "More than one x-intercept",
+        "body": "",
+        "math": "y=x^2-9",
+        "question": "Where does this graph meet the x-axis?"
+      },
+      {
+        "title": "An intercept at the origin",
+        "body": "",
+        "math": "y=x^2",
+        "question": "Which intercepts does this graph have?"
+      },
+      {
+        "title": "Choose a viewing window",
+        "body": "",
+        "math": "y=2x-30",
+        "question": "What calculator window would show both intercepts clearly?"
+      },
+      {
+        "title": "A missing graph feature",
+        "body": "A calculator window shows only -10 ≤ x ≤ 10 and -10 ≤ y ≤ 10.",
+        "math": "y=x^2-36",
+        "question": "Could this view hide an important feature of the graph?"
+      },
+      {
+        "title": "Intersections",
+        "body": "An intersection point satisfies the equations of both graphs.",
+        "math": "y=2x+1,\\qquad y=7",
+        "question": "What ordered pair is their intersection?"
+      },
+      {
+        "title": "Distance between points",
+        "body": "",
+        "math": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+        "question": "How does a right triangle lead to this distance formula?"
+      },
+      {
+        "title": "Calculate a distance",
+        "body": "",
+        "math": "A=(-3,2),\\qquad B=(3,10)",
+        "question": "What is the straight-line distance from A to B?"
+      },
+      {
+        "title": "Distance and route length",
+        "body": "Travel from (0, 0) to (6, 8), moving only horizontally and vertically. Each unit is one kilometer.",
+        "math": "",
+        "question": "How does the shortest allowed route compare with the straight-line distance?"
+      },
+      {
+        "title": "Midpoint",
+        "body": "",
+        "math": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+        "question": "Why do we average the two x-coordinates and the two y-coordinates?"
+      },
+      {
+        "title": "Calculate a midpoint",
+        "body": "",
+        "math": "A=(-5,6),\\qquad B=(7,-2)",
+        "question": "What point lies halfway between A and B?"
+      },
+      {
+        "title": "Recover an endpoint",
+        "body": "A segment has endpoint A = (-2, 5) and midpoint M = (3, 1).",
+        "math": "",
+        "question": "What is its other endpoint?"
+      }
+    ]
+  },
+  {
+    "number": "2.2",
+    "title": "Linear Equations in One Variable",
+    "slug": "2-2-linear-equations-in-one-variable",
+    "slides": [
+      {
+        "title": "A linear equation",
+        "body": "A linear equation in one variable can be written with real constants a and b, where a is nonzero.",
+        "math": "ax+b=0",
+        "question": "What makes this equation linear?"
+      },
+      {
+        "title": "A solution",
+        "body": "A solution is a value that makes the original equation true.",
+        "math": "4x-7=9",
+        "question": "Is x = 4 a solution?"
+      },
+      {
+        "title": "Equivalent equations",
+        "body": "Equivalent equations have exactly the same solution set.",
+        "math": "",
+        "question": "Which operations preserve an equation’s solutions?"
+      },
+      {
+        "title": "Solving with distribution",
+        "body": "",
+        "math": "3(2x-5)=2x+9",
+        "question": "What is the solution?"
+      },
+      {
+        "title": "Solving with fractions",
+        "body": "",
+        "math": "\\frac{x-2}{3}+\\frac{x}{2}=4",
+        "question": "What is the solution?"
+      },
+      {
+        "title": "An identity",
+        "body": "An identity is true for every allowed value of the variable.",
+        "math": "2(x+3)=2x+6",
+        "question": "What is its solution set?"
+      },
+      {
+        "title": "An inconsistent equation",
+        "body": "An inconsistent equation has no solution.",
+        "math": "4x+5=4x-2",
+        "question": "What contradiction shows that the solution set is empty?"
+      },
+      {
+        "title": "Keep possible zero solutions",
+        "body": "",
+        "math": "x(x-3)=0",
+        "question": "Would dividing both sides by x preserve every solution?"
+      },
+      {
+        "title": "A rational equation",
+        "body": "",
+        "math": "\\frac{x+1}{x-2}=3",
+        "question": "Which values are excluded, and what solution remains?"
+      },
+      {
+        "title": "Combine before solving",
+        "body": "",
+        "math": "\\frac{2}{x}+\\frac{1}{x}=\\frac{3}{5}",
+        "question": "After combining the left side, what is the solution?"
+      },
+      {
+        "title": "A rejected candidate",
+        "body": "",
+        "math": "\\frac{x+2}{x-3}=\\frac{5}{x-3}",
+        "question": "Does simplifying this equation produce an allowed solution?"
+      },
+      {
+        "title": "Rearrange a formula",
+        "body": "The width w is positive.",
+        "math": "A=\\ell w",
+        "question": "How can we express the length ℓ in terms of A and w?"
+      },
+      {
+        "title": "Slope",
+        "body": "For two points with different x-coordinates, slope is the ratio of vertical change to horizontal change.",
+        "math": "m=\\frac{y_2-y_1}{x_2-x_1}",
+        "question": "What happens when the two x-coordinates are equal?"
+      },
+      {
+        "title": "Slope from two points",
+        "body": "",
+        "math": "(1,5),\\qquad (5,-3)",
+        "question": "What is the slope of the line through these points?"
+      },
+      {
+        "title": "Slope-intercept form",
+        "body": "",
+        "math": "y=mx+b",
+        "question": "What do m and b tell us about the graph?"
+      },
+      {
+        "title": "Read a line’s equation",
+        "body": "",
+        "math": "3x+2y=8",
+        "question": "What are this line’s slope and y-intercept?"
+      },
+      {
+        "title": "Point-slope form",
+        "body": "A line has slope m and passes through (x₁, y₁).",
+        "math": "y-y_1=m(x-x_1)",
+        "question": "Why does the given point satisfy this equation?"
+      },
+      {
+        "title": "A line through two points",
+        "body": "",
+        "math": "(-2,1),\\qquad (4,10)",
+        "question": "What equation describes the line through these points?"
+      },
+      {
+        "title": "Horizontal and vertical lines",
+        "body": "A line passes through (3, -4).",
+        "math": "",
+        "question": "What equation describes the horizontal line through this point?"
+      },
+      {
+        "title": "A vertical line",
+        "body": "A line passes through (3, -4).",
+        "math": "",
+        "question": "What equation describes the vertical line through this point?"
+      },
+      {
+        "title": "Parallel lines",
+        "body": "Distinct nonvertical lines are parallel when their slopes are equal.",
+        "math": "y=3x+2,\\qquad y=3x-5",
+        "question": "How can their equations show that they never intersect?"
+      },
+      {
+        "title": "A parallel line",
+        "body": "",
+        "math": "y=-2x+6",
+        "question": "What equation describes the parallel line through (4, 1)?"
+      },
+      {
+        "title": "Perpendicular lines",
+        "body": "Nonvertical perpendicular lines have slopes whose product is -1.",
+        "math": "m_1m_2=-1",
+        "question": "What kind of line is perpendicular to a horizontal line?"
+      },
+      {
+        "title": "A perpendicular line",
+        "body": "",
+        "math": "y=\\frac{2}{3}x-1",
+        "question": "What equation describes the perpendicular line through (2, 5)?"
+      }
+    ]
+  },
+  {
+    "number": "2.3",
+    "title": "Models and Applications",
+    "slug": "2-3-models-and-applications",
+    "slides": [
+      {
+        "title": "A mathematical model",
+        "body": "A mathematical model represents a situation using quantities and their relationships.",
+        "math": "",
+        "question": "What assumptions should we identify before writing an equation?"
+      },
+      {
+        "title": "Choose a variable",
+        "body": "A printing service charges $12 plus $0.08 per page.",
+        "math": "",
+        "question": "Which variable and units would describe an order’s total cost?"
+      },
+      {
+        "title": "A printing budget",
+        "body": "A printing service charges $12 plus $0.08 per page. Your budget is exactly $28.",
+        "math": "",
+        "question": "How many pages can you order?"
+      },
+      {
+        "title": "Translate a relationship",
+        "body": "One number is 7 more than twice another. Their sum is 43.",
+        "math": "",
+        "question": "What equation finds the smaller number?"
+      },
+      {
+        "title": "An average target",
+        "body": "Four equally weighted quiz scores are 76, 84, 91, and 85. One quiz remains.",
+        "math": "",
+        "question": "What fifth score would produce an average of 86?"
+      },
+      {
+        "title": "Compare two plans",
+        "body": "Plan A costs $18 plus $4 per visit. Plan B costs $30 plus $2 per visit.",
+        "math": "",
+        "question": "At how many visits do the plans cost the same?"
+      },
+      {
+        "title": "A percent change",
+        "body": "A book’s sale price is $36 after a 20% discount. Tax is excluded.",
+        "math": "",
+        "question": "What was its original price?"
+      },
+      {
+        "title": "A mixture",
+        "body": "Mix a 10% salt solution with a 30% salt solution to make 8 liters of a 25% solution. Assume volumes add.",
+        "math": "",
+        "question": "How many liters of the 10% solution are needed?"
+      },
+      {
+        "title": "Distance, rate, and time",
+        "body": "A bus travels at a constant 48 miles per hour for 2.5 hours.",
+        "math": "",
+        "question": "How far does it travel?"
+      },
+      {
+        "title": "Two travel rates",
+        "body": "A 150-mile trip takes 3 hours: part at 40 mph and part at 60 mph. Ignore stops.",
+        "math": "",
+        "question": "How long is spent traveling at 40 mph?"
+      },
+      {
+        "title": "A perimeter model",
+        "body": "A rectangle’s length is 5 meters more than its width. Its perimeter is 42 meters.",
+        "math": "",
+        "question": "What is the width?"
+      },
+      {
+        "title": "Use a geometry formula",
+        "body": "A triangle has area 54 square centimeters and base 12 centimeters.",
+        "math": "",
+        "question": "What is its height?"
+      },
+      {
+        "title": "A work-rate model",
+        "body": "One machine completes a job in 6 hours; another completes it in 3 hours. Their constant rates add.",
+        "math": "",
+        "question": "How long would they take working together?"
+      },
+      {
+        "title": "Check the model",
+        "body": "A ticket order costs $11 per ticket plus a $7 fee. The total is $52.",
+        "math": "",
+        "question": "Does the model give a feasible ticket count?"
+      },
+      {
+        "title": "Interpret a restriction",
+        "body": "A rental costs $25 plus $3 per hour, with partial hours charged proportionally. The rental lasts at most 8 hours.",
+        "math": "",
+        "question": "What input values and total costs are possible?"
+      }
+    ]
+  },
+  {
+    "number": "2.4",
+    "title": "Complex Numbers",
+    "slug": "2-4-complex-numbers",
+    "slides": [
+      {
+        "title": "Beyond real solutions",
+        "body": "",
+        "math": "x^2=-9",
+        "question": "Why does this equation have no real solution?"
+      },
+      {
+        "title": "The imaginary unit",
+        "body": "The imaginary unit is defined by its square.",
+        "math": "i^2=-1",
+        "question": "What value does (3i)² have?"
+      },
+      {
+        "title": "A complex number",
+        "body": "A complex number has the form a + bi, where a and b are real.",
+        "math": "a+bi",
+        "question": "How are real numbers included among complex numbers?"
+      },
+      {
+        "title": "Identify the parts",
+        "body": "",
+        "math": "-4+7i",
+        "question": "What are this number’s real part and imaginary part?"
+      },
+      {
+        "title": "A negative radicand",
+        "body": "Use the principal complex square root.",
+        "math": "\\sqrt{-50}",
+        "question": "How can we write this radical in standard complex form?"
+      },
+      {
+        "title": "Two square roots",
+        "body": "",
+        "math": "z^2=-25",
+        "question": "What are both complex solutions?"
+      },
+      {
+        "title": "Add complex numbers",
+        "body": "",
+        "math": "(3-2i)+(5+7i)",
+        "question": "What is the sum in standard form?"
+      },
+      {
+        "title": "Subtract complex numbers",
+        "body": "",
+        "math": "(2+6i)-(5-3i)",
+        "question": "What is the difference in standard form?"
+      },
+      {
+        "title": "Multiply complex numbers",
+        "body": "",
+        "math": "(2+i)(3-4i)",
+        "question": "What is the product in standard form?"
+      },
+      {
+        "title": "Powers of i",
+        "body": "",
+        "math": "i^7",
+        "question": "How can we simplify this power?"
+      },
+      {
+        "title": "Complex conjugates",
+        "body": "The conjugate of a + bi is a - bi.",
+        "math": "4+3i",
+        "question": "What happens when this number is multiplied by its conjugate?"
+      },
+      {
+        "title": "Divide by a complex number",
+        "body": "",
+        "math": "\\frac{5}{2-i}",
+        "question": "What is the quotient in standard form?"
+      },
+      {
+        "title": "Complex roots of a quadratic",
+        "body": "",
+        "math": "(x-2)^2=-12",
+        "question": "What are the complex solutions in exact form?"
+      },
+      {
+        "title": "A quadratic factor",
+        "body": "",
+        "math": "(x-i)(x+i)",
+        "question": "What real polynomial does this product produce?"
+      }
+    ]
+  },
+  {
+    "number": "2.5",
+    "title": "Quadratic Equations",
+    "slug": "2-5-quadratic-equations",
+    "slides": [
+      {
+        "title": "A quadratic equation",
+        "body": "The coefficients a, b, and c are real, with a nonzero.",
+        "math": "ax^2+bx+c=0",
+        "question": "Why must a be nonzero?"
+      },
+      {
+        "title": "The zero-product property",
+        "body": "A product equals zero exactly when at least one factor is zero.",
+        "math": "uv=0",
+        "question": "Why does this property require the product to equal zero?"
+      },
+      {
+        "title": "Solve a factored quadratic",
+        "body": "",
+        "math": "(x-5)(x+2)=0",
+        "question": "What are the solutions?"
+      },
+      {
+        "title": "Factor before solving",
+        "body": "",
+        "math": "x^2-3x-18=0",
+        "question": "What are the solutions?"
+      },
+      {
+        "title": "A nonunit leading coefficient",
+        "body": "",
+        "math": "3x^2-5x-2=0",
+        "question": "How can we solve this quadratic by factoring?"
+      },
+      {
+        "title": "Keep a zero solution",
+        "body": "",
+        "math": "2x^2=10x",
+        "question": "Which solutions could be lost by dividing by x?"
+      },
+      {
+        "title": "Make one side zero",
+        "body": "",
+        "math": "x(x+2)=15",
+        "question": "What are all solutions?"
+      },
+      {
+        "title": "The square root property",
+        "body": "For a positive real k, both square roots must be considered.",
+        "math": "u^2=k",
+        "question": "Why can taking only the principal square root lose a solution?"
+      },
+      {
+        "title": "Solve by square roots",
+        "body": "",
+        "math": "(x+4)^2=7",
+        "question": "What are the exact real solutions?"
+      },
+      {
+        "title": "A repeated root",
+        "body": "",
+        "math": "(x-3)^2=0",
+        "question": "How many distinct solutions are there?"
+      },
+      {
+        "title": "Complete a square",
+        "body": "",
+        "math": "x^2+10x+c",
+        "question": "What value of c makes this expression a perfect square?"
+      },
+      {
+        "title": "Complete the square to solve",
+        "body": "",
+        "math": "x^2+6x=2",
+        "question": "What exact solutions result from completing the square?"
+      },
+      {
+        "title": "Normalize the leading coefficient",
+        "body": "",
+        "math": "2x^2-8x+1=0",
+        "question": "How can completing the square solve this equation?"
+      },
+      {
+        "title": "The quadratic formula",
+        "body": "For real coefficients with a nonzero, solutions can be real or complex.",
+        "math": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+        "question": "Where do completing the square and this formula connect?"
+      },
+      {
+        "title": "Identify the coefficients",
+        "body": "",
+        "math": "5x^2=3x+4",
+        "question": "Which a, b, and c belong in the quadratic formula?"
+      },
+      {
+        "title": "An irrational pair",
+        "body": "",
+        "math": "2x^2+x-4=0",
+        "question": "What are the exact solutions?"
+      },
+      {
+        "title": "The discriminant",
+        "body": "The discriminant is the expression under the radical in the quadratic formula.",
+        "math": "D=b^2-4ac",
+        "question": "How does its sign determine the kind of roots?"
+      },
+      {
+        "title": "Predict the roots",
+        "body": "",
+        "math": "4x^2-12x+9=0",
+        "question": "How many distinct real roots are there, before we solve?"
+      },
+      {
+        "title": "A nonreal pair",
+        "body": "",
+        "math": "x^2+2x+5=0",
+        "question": "What are its complex solutions?"
+      },
+      {
+        "title": "Choose a method",
+        "body": "",
+        "math": "7(x-1)^2=28",
+        "question": "Which solution method is especially efficient here?"
+      },
+      {
+        "title": "Roots and a graph",
+        "body": "",
+        "math": "y=x^2-x-6",
+        "question": "How do its x-intercepts correspond to quadratic solutions?"
+      },
+      {
+        "title": "Intersections with a line",
+        "body": "",
+        "math": "y=x^2,\\qquad y=x+6",
+        "question": "What are the intersection points?"
+      },
+      {
+        "title": "A rectangle model",
+        "body": "A rectangle’s length is 3 meters more than its width. Its area is 40 square meters.",
+        "math": "",
+        "question": "What width is physically possible?"
+      },
+      {
+        "title": "A vertical-motion model",
+        "body": "Height h is in meters and time t in seconds. Use t ≥ 0.",
+        "math": "h(t)=-5t^2+20t+1",
+        "question": "At what time does the object reach the ground?"
+      }
+    ]
+  },
+  {
+    "number": "2.6",
+    "title": "Other Types of Equations",
+    "slug": "2-6-other-types-of-equations",
+    "slides": [
+      {
+        "title": "A rational exponent",
+        "body": "Use real values.",
+        "math": "x^{3/2}=27",
+        "question": "What solution is permitted by the exponent’s domain?"
+      },
+      {
+        "title": "An even numerator",
+        "body": "Use the real cube root convention.",
+        "math": "x^{2/3}=9",
+        "question": "Why might this equation have a negative solution as well as a positive one?"
+      },
+      {
+        "title": "A fractional-power substitution",
+        "body": "Use real values.",
+        "math": "x^{2/3}-5x^{1/3}+6=0",
+        "question": "What substitution turns this into a quadratic equation?"
+      },
+      {
+        "title": "A factored polynomial equation",
+        "body": "",
+        "math": "(x+1)(x-2)(x-4)=0",
+        "question": "What are all the real solutions?"
+      },
+      {
+        "title": "Find a common factor",
+        "body": "",
+        "math": "x^3-9x=0",
+        "question": "What are all the real solutions?"
+      },
+      {
+        "title": "Factor by grouping",
+        "body": "",
+        "math": "x^3+2x^2-9x-18=0",
+        "question": "What are all the real solutions?"
+      },
+      {
+        "title": "A radical equation",
+        "body": "A radical equation contains the variable inside a radical.",
+        "math": "",
+        "question": "What should we check after raising both sides to an even power?"
+      },
+      {
+        "title": "Solve a square-root equation",
+        "body": "",
+        "math": "\\sqrt{2x+5}=5",
+        "question": "What real solution satisfies the original equation?"
+      },
+      {
+        "title": "A radical and a variable",
+        "body": "",
+        "math": "\\sqrt{x+6}=x",
+        "question": "Which candidates survive substitution into the original equation?"
+      },
+      {
+        "title": "A radical has a nonnegative output",
+        "body": "",
+        "math": "\\sqrt{x+2}=-3",
+        "question": "Can any real number satisfy this equation?"
+      },
+      {
+        "title": "A shifted radical",
+        "body": "",
+        "math": "\\sqrt{x+4}+2=x",
+        "question": "Which real solutions satisfy this equation?"
+      },
+      {
+        "title": "An odd root",
+        "body": "",
+        "math": "\\sqrt[3]{2x-1}=-3",
+        "question": "What is the real solution?"
+      },
+      {
+        "title": "Two radical expressions",
+        "body": "",
+        "math": "\\sqrt{x+5}-\\sqrt{x}=1",
+        "question": "What real solution satisfies the equation?"
+      },
+      {
+        "title": "Absolute value as distance",
+        "body": "",
+        "math": "|x-4|=7",
+        "question": "Which points are 7 units from 4?"
+      },
+      {
+        "title": "Isolate absolute value",
+        "body": "",
+        "math": "3|2x+1|-4=11",
+        "question": "What are all the real solutions?"
+      },
+      {
+        "title": "An impossible absolute value",
+        "body": "",
+        "math": "|x+2|=-5",
+        "question": "Why is the solution set empty?"
+      },
+      {
+        "title": "Quadratic form",
+        "body": "An equation in quadratic form is quadratic in some expression.",
+        "math": "x^4-13x^2+36=0",
+        "question": "What substitution reveals the quadratic?"
+      },
+      {
+        "title": "Return to the original variable",
+        "body": "",
+        "math": "x^4-13x^2+36=0",
+        "question": "What are all the real values of x?"
+      },
+      {
+        "title": "A quadratic in a shifted expression",
+        "body": "",
+        "math": "(x+1)^2-4(x+1)-5=0",
+        "question": "What are all the real solutions?"
+      },
+      {
+        "title": "A rational equation with a quadratic",
+        "body": "",
+        "math": "\\frac{6}{x}+\\frac{x}{2}=5",
+        "question": "Which real solutions satisfy the original equation?"
+      },
+      {
+        "title": "Keep original restrictions",
+        "body": "",
+        "math": "\\frac{x^2-4}{x-2}=5",
+        "question": "What solution remains after accounting for the original denominator?"
+      },
+      {
+        "title": "Squaring and equivalence",
+        "body": "",
+        "math": "x=-2",
+        "question": "Does squaring both sides produce an equivalent equation?"
+      },
+      {
+        "title": "Graphical solution checks",
+        "body": "",
+        "math": "\\sqrt{x+6}=x",
+        "question": "How would two graphs help us check the number of real solutions?"
+      }
+    ]
+  },
+  {
+    "number": "2.7",
+    "title": "Linear Inequalities and Absolute Value Inequalities",
+    "slug": "2-7-linear-inequalities-and-absolute-value-inequalities",
+    "slides": [
+      {
+        "title": "An inequality’s solution set",
+        "body": "An inequality can be true for an entire interval of real numbers.",
+        "math": "x<3",
+        "question": "How would we show its solution set on a number line?"
+      },
+      {
+        "title": "Interval endpoints",
+        "body": "A bracket includes an endpoint; a parenthesis excludes it.",
+        "math": "[-2,5)",
+        "question": "Which endpoint belongs to this interval?"
+      },
+      {
+        "title": "An unbounded interval",
+        "body": "",
+        "math": "x\\geq 4",
+        "question": "How do we write this set in interval notation?"
+      },
+      {
+        "title": "Infinity is not an endpoint value",
+        "body": "",
+        "math": "(-\\infty,6]",
+        "question": "Why does infinity always use a parenthesis?"
+      },
+      {
+        "title": "Multiply by a negative number",
+        "body": "",
+        "math": "2<5",
+        "question": "What inequality results when both sides are multiplied by -3?"
+      },
+      {
+        "title": "Solve a linear inequality",
+        "body": "",
+        "math": "4x-7\\leq 13",
+        "question": "What is the solution set in interval notation?"
+      },
+      {
+        "title": "Reverse the inequality",
+        "body": "",
+        "math": "5-3x>14",
+        "question": "What is the solution set in interval notation?"
+      },
+      {
+        "title": "Distribution and comparison",
+        "body": "",
+        "math": "2(x+4)\\leq 5x-1",
+        "question": "What is the solution set?"
+      },
+      {
+        "title": "A compound inequality",
+        "body": "",
+        "math": "-4<2x+2\\leq 10",
+        "question": "What interval satisfies both comparisons?"
+      },
+      {
+        "title": "Intersection means both",
+        "body": "",
+        "math": "x>-1\\ \\text{and}\\ x\\leq 4",
+        "question": "What interval is the intersection?"
+      },
+      {
+        "title": "Union means either",
+        "body": "",
+        "math": "x<-2\\ \\text{or}\\ x\\geq 3",
+        "question": "What is the solution set in interval notation?"
+      },
+      {
+        "title": "All real numbers",
+        "body": "",
+        "math": "3(x+1)<3x+5",
+        "question": "Which real numbers satisfy this inequality?"
+      },
+      {
+        "title": "No real numbers",
+        "body": "",
+        "math": "2x+6\\leq 2x+1",
+        "question": "Which real numbers satisfy this inequality?"
+      },
+      {
+        "title": "Absolute value and distance",
+        "body": "",
+        "math": "|x-2|<3",
+        "question": "Which points lie less than 3 units from 2?"
+      },
+      {
+        "title": "Include the boundary",
+        "body": "",
+        "math": "|x+4|\\leq 2",
+        "question": "What interval includes all the solutions?"
+      },
+      {
+        "title": "Outside an interval",
+        "body": "",
+        "math": "|x-1|>5",
+        "question": "What two intervals make up the solution set?"
+      },
+      {
+        "title": "Isolate the absolute value",
+        "body": "",
+        "math": "2|3x-1|+4\\leq 12",
+        "question": "What is the solution set?"
+      },
+      {
+        "title": "A negative bound",
+        "body": "",
+        "math": "|x+1|<-2",
+        "question": "What is the solution set?"
+      },
+      {
+        "title": "A nonpositive bound",
+        "body": "",
+        "math": "|2x-3|\\leq 0",
+        "question": "Which values satisfy this inequality?"
+      },
+      {
+        "title": "An always-true comparison",
+        "body": "",
+        "math": "|x-7|>-1",
+        "question": "Which real numbers satisfy this inequality?"
+      },
+      {
+        "title": "A tolerance interval",
+        "body": "A rod’s length L must differ from 50 centimeters by no more than 0.2 centimeters.",
+        "math": "",
+        "question": "What absolute value inequality expresses the requirement?"
+      },
+      {
+        "title": "A radical’s allowed inputs",
+        "body": "",
+        "math": "\\sqrt{8-2x}",
+        "question": "What inequality describes all real inputs for this expression?"
+      }
+    ]
+  }
+]

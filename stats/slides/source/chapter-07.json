@@ -1,0 +1,413 @@
+[
+  {
+    "number": "7.1",
+    "title": "The Central Limit Theorem for Sample Means (Averages)",
+    "slug": "7-1-the-central-limit-theorem-for-sample-means-averages",
+    "slides": [
+      {
+        "title": "A sampling distribution",
+        "body": "A sampling distribution describes a statistic across repeated samples of the same size.",
+        "math": "",
+        "question": "What would one point represent in a distribution of sample means?"
+      },
+      {
+        "title": "Data or sample means?",
+        "body": "Imagine 1,000 independent random samples of 25 package masses, with one mean calculated per sample.",
+        "math": "",
+        "question": "Would a histogram of those means display 25,000 masses or 1,000 means?"
+      },
+      {
+        "title": "An observation and an average",
+        "body": "X represents one observation; X̄ represents the mean of n observations.",
+        "math": "",
+        "question": "Which variable describes the average mass of 25 packages?"
+      },
+      {
+        "title": "Center of the sample means",
+        "body": "For independent observations from one population, the mean of the sample mean equals the population mean.",
+        "math": "E(\\overline{X})=\\mu",
+        "question": "If the population mean is 500 g, where is the sampling distribution centered?"
+      },
+      {
+        "title": "Standard error",
+        "body": "The standard error of a statistic is the standard deviation of its sampling distribution.",
+        "math": "",
+        "question": "Does standard error describe variability among individual masses or among sample means?"
+      },
+      {
+        "title": "Standard error of the mean",
+        "body": "For n independent observations with common population SD σ, the standard error is σ divided by the square root of n.",
+        "math": "\\operatorname{SE}(\\overline{X})=\\frac{\\sigma}{\\sqrt{n}}",
+        "question": "For σ=20 g and n=25, what is the standard error?"
+      },
+      {
+        "title": "SD versus standard error",
+        "body": "Model: package masses have SD 20 g. Independent samples contain 25 packages.",
+        "math": "",
+        "question": "Which spread belongs to one mass, and which belongs to the sample mean?"
+      },
+      {
+        "title": "Changing sample size",
+        "body": "Model: population SD is 20 g. Compare independent samples of n=25 and n=100.",
+        "math": "",
+        "question": "How does the standard error change?"
+      },
+      {
+        "title": "Reducing standard error",
+        "body": "Model: independent sampling gives standard error 4 g at n=25.",
+        "math": "",
+        "question": "What sample size would reduce standard error to 2 g?"
+      },
+      {
+        "title": "The central limit theorem",
+        "body": "For independent, identically distributed observations with finite variance, sample means become approximately normal as sample size grows.",
+        "math": "",
+        "question": "Does this theorem say that the individual observations become normal?"
+      },
+      {
+        "title": "An exactly normal population",
+        "body": "The mean of independent normal observations is normal for every positive sample size.",
+        "math": "",
+        "question": "If masses are normal, do we need n≥30 to give their sample mean a normal distribution?"
+      },
+      {
+        "title": "A skewed population",
+        "body": "Model: individual download durations are strongly right skewed, with finite mean and variance.",
+        "math": "",
+        "question": "Would a sample mean from n=8 automatically have an approximately normal distribution?"
+      },
+      {
+        "title": "No universal cutoff",
+        "body": "The sample size needed for a useful normal approximation depends on the population shape and the desired accuracy.",
+        "math": "",
+        "question": "Why might n=30 be insufficient with strong skewness or extreme outliers?"
+      },
+      {
+        "title": "Independence",
+        "body": "The formula σ/√n assumes independent observations.",
+        "math": "",
+        "question": "Could 50 measurements taken moments apart from one unstable machine behave like 50 independent observations?"
+      },
+      {
+        "title": "Sampling without replacement",
+        "body": "When sampling without replacement, a sample no larger than 10% of the population is a common independence approximation.",
+        "math": "",
+        "question": "Would n=200 from a population of 500 comfortably meet that guideline?"
+      },
+      {
+        "title": "A sampling model",
+        "body": "Model: independent masses follow N(500,20), measured in grams. Samples contain 25 packages.",
+        "math": "",
+        "question": "What normal model describes the sample mean?"
+      },
+      {
+        "title": "Standardizing an average",
+        "body": "A sample mean is standardized using its standard error.",
+        "math": "z=\\frac{\\overline{x}-\\mu}{\\sigma/\\sqrt{n}}",
+        "question": "For μ=500, σ=20, and n=25, what z-score belongs to X̄=508?"
+      },
+      {
+        "title": "An upper-tail average",
+        "body": "Model: independent masses follow N(500,20). Samples contain 25 packages.",
+        "math": "",
+        "question": "What is P(X̄>508)?"
+      },
+      {
+        "title": "A lower-tail average",
+        "body": "Model: independent masses follow N(500,20). Samples contain 25 packages.",
+        "math": "",
+        "question": "What is P(X̄<496)?"
+      },
+      {
+        "title": "An average within a range",
+        "body": "Model: independent masses follow N(500,20). Samples contain 25 packages.",
+        "math": "",
+        "question": "What is P(496<X̄<504)?"
+      },
+      {
+        "title": "A percentile of sample means",
+        "body": "Model: independent masses follow N(500,20). Samples contain 25 packages.",
+        "math": "",
+        "question": "What is the 95th percentile of the sample-mean distribution?"
+      },
+      {
+        "title": "One value versus a mean",
+        "body": "Model: independent masses follow N(500,20).",
+        "math": "",
+        "question": "Which is more likely: one mass above 508 g or a mean of 25 masses above 508 g?"
+      },
+      {
+        "title": "The population remains variable",
+        "body": "Model: population SD is 20 g. Increase the sample size from 25 to 100.",
+        "math": "",
+        "question": "Does the spread of individual masses shrink?"
+      },
+      {
+        "title": "A surprising sample mean",
+        "body": "Model: independent masses follow N(500,20). A synthetic sample of 100 has mean 507 g.",
+        "math": "",
+        "question": "How unusual is that mean under the model?"
+      },
+      {
+        "title": "From probability to inference",
+        "body": "A population mean is unknown. A random sample mean is observed.",
+        "math": "",
+        "question": "How could the sampling variability of means help estimate the unknown population mean?"
+      }
+    ]
+  },
+  {
+    "number": "7.2",
+    "title": "The Central Limit Theorem for Sums",
+    "slug": "7-2-the-central-limit-theorem-for-sums",
+    "slides": [
+      {
+        "title": "A sample sum",
+        "body": "A sample sum totals the observations in a sample.",
+        "math": "S_n=X_1+\\cdots+X_n",
+        "question": "For shipment weight, would we need an individual mass, sample mean, or sample sum?"
+      },
+      {
+        "title": "Mean and sum",
+        "body": "A sample sum equals the sample size times its mean.",
+        "math": "S_n=n\\overline{X}",
+        "question": "If 40 packages have mean mass 500 g, what is their total mass?"
+      },
+      {
+        "title": "The center of sums",
+        "body": "For n observations from a population with mean μ, the expected sum is nμ.",
+        "math": "E(S_n)=n\\mu",
+        "question": "If one item has mean mass 50 g, what is the expected mass of 100 items?"
+      },
+      {
+        "title": "The spread of sums",
+        "body": "For n independent observations with common SD σ, the sum has SD σ√n.",
+        "math": "\\operatorname{SD}(S_n)=\\sigma\\sqrt{n}",
+        "question": "If σ=4 g and n=100, what is the SD of total mass?"
+      },
+      {
+        "title": "Independent variation",
+        "body": "Model: individual item masses have SD 4 g; 100 items are independent.",
+        "math": "",
+        "question": "Why would using 100×4 g as the SD of total mass overstate its spread?"
+      },
+      {
+        "title": "Increasing the total sample",
+        "body": "Model: independent items have mean mass 50 g and SD 4 g.",
+        "math": "",
+        "question": "How do the mean and SD of the sum change when n rises from 100 to 400?"
+      },
+      {
+        "title": "A sum can be normal",
+        "body": "A sum of independent normal observations is normal for every sample size.",
+        "math": "",
+        "question": "What model describes the total of 100 independent N(50,4) masses?"
+      },
+      {
+        "title": "A normal approximation for sums",
+        "body": "For independent, identically distributed observations with finite variance, large-sample sums can be approximated by a normal distribution.",
+        "math": "",
+        "question": "What information about strong skewness would you want before using that approximation?"
+      },
+      {
+        "title": "Standardizing a total",
+        "body": "The z-score of a sum uses the sum's mean and standard deviation.",
+        "math": "z=\\frac{\\sum x-n\\mu}{\\sigma\\sqrt{n}}",
+        "question": "For μ=50, σ=4, and n=100, what z-score belongs to a total of 5,080 g?"
+      },
+      {
+        "title": "A total above a limit",
+        "body": "Model: 100 independent item masses follow N(50,4), in grams.",
+        "math": "",
+        "question": "What is the probability that their total exceeds 5,080 g?"
+      },
+      {
+        "title": "A total below a limit",
+        "body": "Model: 100 independent item masses follow N(50,4), in grams.",
+        "math": "",
+        "question": "What is the probability that their total is below 4,960 g?"
+      },
+      {
+        "title": "A total within a range",
+        "body": "Model: 100 independent item masses follow N(50,4), in grams.",
+        "math": "",
+        "question": "What is the probability that their total lies between 4,940 and 5,060 g?"
+      },
+      {
+        "title": "A capacity cutoff",
+        "body": "Model: 100 independent item masses follow N(50,4), in grams.",
+        "math": "",
+        "question": "What capacity would exceed the total mass in 99% of shipments?"
+      },
+      {
+        "title": "An equivalent event",
+        "body": "A shipment contains exactly 100 items.",
+        "math": "",
+        "question": "What event involving the sample mean is equivalent to a total above 5,080 g?"
+      },
+      {
+        "title": "The same standardized distance",
+        "body": "Model: 100 independent masses follow N(50,4). A total is 5,080 g.",
+        "math": "",
+        "question": "Do the sum and its corresponding mean have different z-scores?"
+      },
+      {
+        "title": "Sums versus averages",
+        "body": "Model: individual masses have SD 4 g. Compare independent samples of 25 and 100.",
+        "math": "",
+        "question": "Does increasing n make sums or averages less variable in their original units?"
+      },
+      {
+        "title": "A skewed population total",
+        "body": "Model: independent task durations are exponential with mean and SD 6 minutes. A batch has 100 tasks.",
+        "math": "",
+        "question": "What approximate normal model describes total duration?"
+      },
+      {
+        "title": "Checking dependence",
+        "body": "A shared machine adjustment can shift every item's mass in the same shipment.",
+        "math": "",
+        "question": "Would the independent-sum SD formula still be justified?"
+      },
+      {
+        "title": "Defining the correct total",
+        "body": "Model: item masses average 50 g. Each shipment adds a fixed 200 g container.",
+        "math": "",
+        "question": "What is the expected total mass of a container holding 100 items?"
+      }
+    ]
+  },
+  {
+    "number": "7.3",
+    "title": "Using the Central Limit Theorem",
+    "slug": "7-3-using-the-central-limit-theorem",
+    "slides": [
+      {
+        "title": "Choosing the random variable",
+        "body": "A manager asks whether a batch of 80 independent jobs averages more than 7 minutes per job.",
+        "math": "",
+        "question": "Should the probability model describe one duration, a mean, or a sum?"
+      },
+      {
+        "title": "One observation",
+        "body": "Model: independent task durations are exponential with mean 6 minutes.",
+        "math": "",
+        "question": "What is the probability that one task takes longer than 8 minutes?"
+      },
+      {
+        "title": "An average of observations",
+        "body": "Model: independent task durations are exponential with mean and SD 6 minutes. A batch contains 100 tasks.",
+        "math": "",
+        "question": "What is the approximate probability that its mean exceeds 7 minutes?"
+      },
+      {
+        "title": "Comparing the two events",
+        "body": "Model: independent task durations are exponential with mean 6 minutes.",
+        "math": "",
+        "question": "Would one task longer than 7 minutes be as unusual as 100 tasks averaging longer than 7 minutes?"
+      },
+      {
+        "title": "A total duration",
+        "body": "Model: independent task durations are exponential with mean and SD 6 minutes. A batch contains 100 tasks.",
+        "math": "",
+        "question": "What is the approximate probability that its total exceeds 700 minutes?"
+      },
+      {
+        "title": "An equivalent threshold",
+        "body": "A batch contains exactly 100 tasks.",
+        "math": "",
+        "question": "Why do a mean exceeding 7 minutes and a total exceeding 700 minutes describe the same event?"
+      },
+      {
+        "title": "A mean percentile",
+        "body": "Model: independent exponential task durations have mean and SD 6 minutes. Samples contain 100 tasks.",
+        "math": "",
+        "question": "What is the approximate 90th percentile of sample mean duration?"
+      },
+      {
+        "title": "A sum percentile",
+        "body": "Model: independent exponential task durations have mean and SD 6 minutes. Samples contain 100 tasks.",
+        "math": "",
+        "question": "What is the approximate 90th percentile of total duration?"
+      },
+      {
+        "title": "A uniform population",
+        "body": "Model: independent processing times follow U(2,10), in seconds.",
+        "math": "",
+        "question": "What population mean and SD are needed to analyze a sample mean?"
+      },
+      {
+        "title": "A uniform mean",
+        "body": "Model: independent processing times follow U(2,10). Samples contain 64 jobs.",
+        "math": "",
+        "question": "What approximate model describes their mean time?"
+      },
+      {
+        "title": "A lower-tail mean",
+        "body": "Model: independent processing times follow U(2,10). Samples contain 64 jobs.",
+        "math": "",
+        "question": "What is the approximate probability that their mean is below 5.5 seconds?"
+      },
+      {
+        "title": "Checking the approximation",
+        "body": "Model: independent processing times follow U(2,10). A normal approximation is used for a mean of 64 times.",
+        "math": "",
+        "question": "Can the true sample mean ever be below 2 seconds?"
+      },
+      {
+        "title": "A population shape problem",
+        "body": "Synthetic data show strong right skew and several extreme outliers. A random sample contains 12 observations.",
+        "math": "",
+        "question": "Is a normal approximation for its mean automatically justified?"
+      },
+      {
+        "title": "A selection problem",
+        "body": "A large sample includes only files that finished downloading successfully.",
+        "math": "",
+        "question": "Can a small standard error remove bias caused by excluding failed downloads?"
+      },
+      {
+        "title": "The law of large numbers",
+        "body": "Under suitable conditions, the average of independent observations approaches the population mean as sample size grows.",
+        "math": "",
+        "question": "Does this guarantee that every larger sample mean is closer to μ than the previous one?"
+      },
+      {
+        "title": "Two different ideas",
+        "body": "The law of large numbers concerns closeness to μ; the central limit theorem concerns the distribution of standardized averages.",
+        "math": "",
+        "question": "Which idea supports approximating sample-mean tail probabilities with a normal curve?"
+      },
+      {
+        "title": "A repeated-sample experiment",
+        "body": "Use synthetic independent draws from U(0,12), in minutes. For each n, collect many sample means.",
+        "math": "",
+        "question": "What changes would you expect in histograms for n=1, n=5, and n=50?"
+      },
+      {
+        "title": "Predicting precision",
+        "body": "Model: independent observations have population SD 12.",
+        "math": "",
+        "question": "What sample size gives a standard error of 1?"
+      },
+      {
+        "title": "An observed mean",
+        "body": "Model: independent normal durations have mean 20 and SD 8 minutes. A synthetic sample of 64 has mean 22.",
+        "math": "",
+        "question": "How many standard errors above the modeled mean is this result?"
+      },
+      {
+        "title": "Unknown population mean",
+        "body": "A synthetic random sample has n=64, mean 22 minutes, and sample SD 8 minutes.",
+        "math": "",
+        "question": "Which population quantity would a confidence interval try to estimate?"
+      },
+      {
+        "title": "A claim about the mean",
+        "body": "A process is claimed to average 20 minutes. A random sample averages 22 minutes.",
+        "math": "",
+        "question": "Why should sample size and variability matter before judging that claim?"
+      }
+    ]
+  }
+]

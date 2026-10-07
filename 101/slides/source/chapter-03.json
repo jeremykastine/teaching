@@ -1,0 +1,993 @@
+[
+  {
+    "number": "3.1",
+    "title": "Functions and Function Notation",
+    "slug": "3-1-functions-and-function-notation",
+    "slides": [
+      {
+        "title": "A function",
+        "body": "A function assigns exactly one output to each input in its domain.",
+        "math": "",
+        "question": "Can two different inputs have the same output?"
+      },
+      {
+        "title": "A relation from ordered pairs",
+        "body": "",
+        "math": "\\{(-1,4),(0,4),(2,7)\\}",
+        "question": "Does this relation represent a function?"
+      },
+      {
+        "title": "A repeated input",
+        "body": "",
+        "math": "\\{(1,2),(1,5),(3,6)\\}",
+        "question": "Does this relation represent a function?"
+      },
+      {
+        "title": "Function notation",
+        "body": "The notation f(x) names the output of f at input x.",
+        "math": "f(3)=8",
+        "question": "What ordered pair belongs to the graph of f?"
+      },
+      {
+        "title": "Evaluate at a number",
+        "body": "",
+        "math": "f(x)=x^2-3x+1",
+        "question": "What is f(-2)?"
+      },
+      {
+        "title": "Evaluate at an expression",
+        "body": "",
+        "math": "f(x)=2x^2-5",
+        "question": "What is f(a + 1)?"
+      },
+      {
+        "title": "Find an input",
+        "body": "",
+        "math": "f(x)=x^2+1",
+        "question": "Which inputs make f(x) = 10?"
+      },
+      {
+        "title": "Evaluate a model",
+        "body": "C(n) is the total cost in dollars of n tickets.",
+        "math": "C(n)=12n+5",
+        "question": "What does C(4) represent?"
+      },
+      {
+        "title": "One-to-one functions",
+        "body": "A one-to-one function assigns different outputs to different inputs.",
+        "math": "",
+        "question": "Why is this stronger than being a function?"
+      },
+      {
+        "title": "Test one-to-one behavior",
+        "body": "",
+        "math": "f(x)=x^2",
+        "question": "Is this function one-to-one on all real numbers?"
+      },
+      {
+        "title": "The vertical line test",
+        "body": "A graph represents y as a function of x exactly when every vertical line meets it at most once.",
+        "math": "x^2+y^2=9",
+        "question": "Does this equation define y as a function of x?"
+      },
+      {
+        "title": "The horizontal line test",
+        "body": "A function is one-to-one exactly when every horizontal line meets its graph at most once.",
+        "math": "f(x)=2x-3",
+        "question": "Is this function one-to-one?"
+      },
+      {
+        "title": "A constant function",
+        "body": "",
+        "math": "f(x)=3",
+        "question": "What does its graph look like?"
+      },
+      {
+        "title": "The identity function",
+        "body": "",
+        "math": "f(x)=x",
+        "question": "What does its graph look like?"
+      },
+      {
+        "title": "A linear function",
+        "body": "",
+        "math": "f(x)=2x+1",
+        "question": "What features locate its graph?"
+      },
+      {
+        "title": "The quadratic function",
+        "body": "",
+        "math": "f(x)=x^2",
+        "question": "What is its basic graph shape?"
+      },
+      {
+        "title": "The cubic function",
+        "body": "",
+        "math": "f(x)=x^3",
+        "question": "How does its graph differ from the quadratic graph?"
+      },
+      {
+        "title": "The absolute value function",
+        "body": "",
+        "math": "f(x)=|x|",
+        "question": "What is its basic graph shape?"
+      },
+      {
+        "title": "The square root function",
+        "body": "Use real inputs and outputs.",
+        "math": "f(x)=\\sqrt{x}",
+        "question": "Where does its graph start?"
+      },
+      {
+        "title": "The cube root function",
+        "body": "Use real inputs and outputs.",
+        "math": "f(x)=\\sqrt[3]{x}",
+        "question": "Can its graph include negative input values?"
+      },
+      {
+        "title": "The reciprocal function",
+        "body": "",
+        "math": "f(x)=\\frac{1}{x}",
+        "question": "Where are its two branches located?"
+      },
+      {
+        "title": "The reciprocal squared function",
+        "body": "",
+        "math": "f(x)=\\frac{1}{x^2}",
+        "question": "How does its graph differ from the reciprocal graph?"
+      },
+      {
+        "title": "A difference of outputs",
+        "body": "",
+        "math": "f(x)=x^2+2x",
+        "question": "What is f(3) - f(1)?"
+      },
+      {
+        "title": "A difference quotient",
+        "body": "Use h ≠ 0 and f(x) = x².",
+        "math": "\\frac{f(x+h)-f(x)}{h}",
+        "question": "How can we simplify this quotient?"
+      }
+    ]
+  },
+  {
+    "number": "3.2",
+    "title": "Domain and Range",
+    "slug": "3-2-domain-and-range",
+    "slides": [
+      {
+        "title": "Domain",
+        "body": "A function’s domain is its set of allowed input values.",
+        "math": "",
+        "question": "What would prevent an input from being allowed?"
+      },
+      {
+        "title": "Range",
+        "body": "A function’s range is its set of actual output values.",
+        "math": "",
+        "question": "Why is the range not always all real numbers?"
+      },
+      {
+        "title": "A finite relation",
+        "body": "",
+        "math": "\\{(-2,5),(0,5),(3,-1)\\}",
+        "question": "What are the domain and range?"
+      },
+      {
+        "title": "Interval notation",
+        "body": "",
+        "math": "(-3,7]",
+        "question": "Which input values does this interval include?"
+      },
+      {
+        "title": "A polynomial’s domain",
+        "body": "",
+        "math": "f(x)=x^3-2x+4",
+        "question": "What is its real domain?"
+      },
+      {
+        "title": "A rational function’s domain",
+        "body": "",
+        "math": "f(x)=\\frac{x+1}{x^2-9}",
+        "question": "What is its domain in interval notation?"
+      },
+      {
+        "title": "Simplification and the domain",
+        "body": "",
+        "math": "f(x)=\\frac{x^2-4}{x-2}",
+        "question": "Does cancellation make x = 2 an allowed input?"
+      },
+      {
+        "title": "A square root’s domain",
+        "body": "",
+        "math": "f(x)=\\sqrt{7-2x}",
+        "question": "What is its real domain?"
+      },
+      {
+        "title": "A root in a denominator",
+        "body": "",
+        "math": "f(x)=\\frac{1}{\\sqrt{x-3}}",
+        "question": "Why is the endpoint treated differently from a square root alone?"
+      },
+      {
+        "title": "Two restrictions at once",
+        "body": "",
+        "math": "f(x)=\\frac{\\sqrt{x+2}}{x-1}",
+        "question": "What inputs satisfy both restrictions?"
+      },
+      {
+        "title": "An odd root’s domain",
+        "body": "",
+        "math": "f(x)=\\sqrt[3]{x+5}",
+        "question": "What is its real domain?"
+      },
+      {
+        "title": "A shifted square root",
+        "body": "",
+        "math": "f(x)=\\sqrt{x-4}+2",
+        "question": "What are its domain and range?"
+      },
+      {
+        "title": "A quadratic’s range",
+        "body": "",
+        "math": "f(x)=(x-3)^2-5",
+        "question": "What is its range?"
+      },
+      {
+        "title": "A reciprocal’s range",
+        "body": "",
+        "math": "f(x)=\\frac{1}{x}+2",
+        "question": "Which output is impossible?"
+      },
+      {
+        "title": "A graph with endpoints",
+        "body": "A graph is the straight segment from (-2, 3) to (4, -1), including both endpoints.",
+        "math": "",
+        "question": "What are its domain and range?"
+      },
+      {
+        "title": "An excluded endpoint",
+        "body": "A graph is the straight segment from (-2, 3) to (4, -1), with the left endpoint excluded and the right included.",
+        "math": "",
+        "question": "What are its domain and range?"
+      },
+      {
+        "title": "A contextual domain",
+        "body": "A box contains 24 pencils. Let R(n) = 24 - n be the number remaining after n pencils are removed.",
+        "math": "",
+        "question": "What domain fits this situation?"
+      },
+      {
+        "title": "Piecewise functions",
+        "body": "A piecewise function uses different rules on different parts of its domain.",
+        "math": "",
+        "question": "How do we decide which rule to use for an input?"
+      },
+      {
+        "title": "Evaluate a piecewise rule",
+        "body": "Use f(x) = x + 2 when x < 1 and f(x) = 4 - x when x ≥ 1.",
+        "math": "f(1)",
+        "question": "Which rule applies, and what output results?"
+      },
+      {
+        "title": "Sketch a piecewise function",
+        "body": "Use f(x) = x + 2 when x < 1 and f(x) = 4 - x when x ≥ 1.",
+        "math": "",
+        "question": "What graph represents these two rules and their boundary?"
+      },
+      {
+        "title": "A jump at a boundary",
+        "body": "Use g(x) = 2 when x < 0 and g(x) = x + 4 when x ≥ 0.",
+        "math": "",
+        "question": "What is the range of g?"
+      },
+      {
+        "title": "A piecewise context",
+        "body": "Parking costs $4 for up to 1 hour and $7 for more than 1 hour through 2 hours. Use 0 < t ≤ 2.",
+        "math": "",
+        "question": "What piecewise function represents the cost?"
+      }
+    ]
+  },
+  {
+    "number": "3.3",
+    "title": "Rates of Change and Behavior of Graphs",
+    "slug": "3-3-rates-of-change-and-behavior-of-graphs",
+    "slides": [
+      {
+        "title": "Average rate of change",
+        "body": "Average rate compares an output change with the corresponding input change. Use a < b.",
+        "math": "\\frac{f(b)-f(a)}{b-a}",
+        "question": "What are the units if input is time and output is distance?"
+      },
+      {
+        "title": "A rate from data",
+        "body": "A tank contains 80 liters at t = 2 minutes and 35 liters at t = 7 minutes.",
+        "math": "",
+        "question": "What is the average rate of change over this interval?"
+      },
+      {
+        "title": "A rate from a formula",
+        "body": "",
+        "math": "f(x)=x^2+1",
+        "question": "What is the average rate of change from x = 1 to x = 4?"
+      },
+      {
+        "title": "Compare two intervals",
+        "body": "",
+        "math": "f(x)=x^2",
+        "question": "Is the average rate from 0 to 2 the same as from 2 to 4?"
+      },
+      {
+        "title": "A constant rate",
+        "body": "",
+        "math": "f(x)=-3x+8",
+        "question": "What is its average rate of change over any interval?"
+      },
+      {
+        "title": "The secant line",
+        "body": "A secant line passes through two points of a graph.",
+        "math": "",
+        "question": "How is its slope related to average rate of change?"
+      },
+      {
+        "title": "A zero average rate",
+        "body": "",
+        "math": "f(x)=x^2",
+        "question": "Does the average rate from -2 to 2 show that the function is constant?"
+      },
+      {
+        "title": "A symbolic rate",
+        "body": "Use h ≠ 0 and f(x) = x² + 3x.",
+        "math": "\\frac{f(x+h)-f(x)}{h}",
+        "question": "What simplified expression gives this rate?"
+      },
+      {
+        "title": "Increasing on an interval",
+        "body": "A function increases on an interval when larger inputs give larger outputs.",
+        "math": "",
+        "question": "Is an increasing function required to have positive outputs?"
+      },
+      {
+        "title": "Decreasing on an interval",
+        "body": "A function decreases on an interval when larger inputs give smaller outputs.",
+        "math": "",
+        "question": "Could a decreasing function have positive outputs throughout an interval?"
+      },
+      {
+        "title": "Constant on an interval",
+        "body": "A function is constant on an interval when all inputs there give the same output.",
+        "math": "",
+        "question": "What does this part of its graph look like?"
+      },
+      {
+        "title": "Intervals from a parabola",
+        "body": "",
+        "math": "f(x)=(x-2)^2-4",
+        "question": "On which intervals is f decreasing or increasing?"
+      },
+      {
+        "title": "A graph with straight segments",
+        "body": "Connect (-3, 0), (-1, 4), (2, 4), and (5, -2) in order with straight segments.",
+        "math": "",
+        "question": "On which intervals is this function increasing, constant, or decreasing?"
+      },
+      {
+        "title": "A local maximum",
+        "body": "At a local maximum, the function value is at least as large as nearby function values.",
+        "math": "",
+        "question": "Does a local maximum have to be the largest value on the entire domain?"
+      },
+      {
+        "title": "A local minimum",
+        "body": "At a local minimum, the function value is no larger than nearby function values.",
+        "math": "",
+        "question": "What change in direction often appears at a local minimum?"
+      },
+      {
+        "title": "Locate local extrema",
+        "body": "Use a graphing utility.",
+        "math": "f(x)=x^3-3x",
+        "question": "Where are the local maximum and local minimum?"
+      },
+      {
+        "title": "An absolute maximum",
+        "body": "An absolute maximum is a function value at least as large as every value on its domain.",
+        "math": "",
+        "question": "Can a function have a local maximum without an absolute maximum?"
+      },
+      {
+        "title": "An absolute minimum",
+        "body": "An absolute minimum is a function value no larger than every value on its domain.",
+        "math": "f(x)=(x+1)^2+3",
+        "question": "What are the minimum value and the input where it occurs?"
+      },
+      {
+        "title": "An extremum on a restricted domain",
+        "body": "Use -1 ≤ x ≤ 3.",
+        "math": "f(x)=x^2",
+        "question": "What are the absolute minimum and maximum values?"
+      },
+      {
+        "title": "An open endpoint",
+        "body": "Use 0 < x < 2.",
+        "math": "f(x)=x",
+        "question": "Does this function attain an absolute minimum or maximum?"
+      },
+      {
+        "title": "Local versus absolute",
+        "body": "Use a graphing utility on the domain -3 ≤ x ≤ 3.",
+        "math": "f(x)=x^3-3x",
+        "question": "Is its local maximum also its absolute maximum?"
+      },
+      {
+        "title": "A viewing-window limitation",
+        "body": "A calculator graph appears to have a highest point near the edge of the window.",
+        "math": "",
+        "question": "What evidence is needed before calling it an absolute maximum?"
+      }
+    ]
+  },
+  {
+    "number": "3.4",
+    "title": "Composition of Functions",
+    "slug": "3-4-composition-of-functions",
+    "slides": [
+      {
+        "title": "Add functions",
+        "body": "Use f(x) = x² and g(x) = 2x - 1.",
+        "math": "(f+g)(x)",
+        "question": "What formula represents the sum?"
+      },
+      {
+        "title": "Subtract functions",
+        "body": "Use f(x) = x² and g(x) = 2x - 1.",
+        "math": "(f-g)(x)",
+        "question": "What formula represents the difference?"
+      },
+      {
+        "title": "Multiply functions",
+        "body": "Use f(x) = x² and g(x) = 2x - 1.",
+        "math": "(fg)(x)",
+        "question": "What formula represents the product?"
+      },
+      {
+        "title": "Divide functions",
+        "body": "Use f(x) = x² and g(x) = 2x - 1.",
+        "math": "\\left(\\frac{f}{g}\\right)(x)",
+        "question": "What formula and domain represent the quotient?"
+      },
+      {
+        "title": "Shared input restrictions",
+        "body": "Use f(x) = √x and g(x) = 1/(x - 2).",
+        "math": "(f+g)(x)",
+        "question": "What is the domain of the sum?"
+      },
+      {
+        "title": "Composition",
+        "body": "Composition uses the output of one function as the input of another.",
+        "math": "(f\\circ g)(x)=f(g(x))",
+        "question": "Which function acts first?"
+      },
+      {
+        "title": "Evaluate a composition",
+        "body": "Use f(x) = 3x + 1 and g(x) = x².",
+        "math": "f(g(-2))",
+        "question": "What is the resulting output?"
+      },
+      {
+        "title": "Reverse the order",
+        "body": "Use f(x) = 3x + 1 and g(x) = x².",
+        "math": "g(f(-2))",
+        "question": "Does reversing the order change the result?"
+      },
+      {
+        "title": "Compose formulas",
+        "body": "Use f(x) = x² and g(x) = x - 4.",
+        "math": "(f\\circ g)(x)",
+        "question": "What formula represents the composition?"
+      },
+      {
+        "title": "Compare orders",
+        "body": "Use f(x) = x² and g(x) = x - 4.",
+        "math": "(g\\circ f)(x)",
+        "question": "How does this formula compare with f(g(x))?"
+      },
+      {
+        "title": "Compose using data",
+        "body": "The known values are g(2) = 5, g(5) = 9, f(5) = 8, and f(9) = 3.",
+        "math": "f(g(2))",
+        "question": "Which values are needed to evaluate this composition?"
+      },
+      {
+        "title": "A composition with units",
+        "body": "A(q) is the area painted by q liters; C(a) is the cost to prepare a square meters.",
+        "math": "",
+        "question": "What does C(A(3)) represent?"
+      },
+      {
+        "title": "A pricing composition",
+        "body": "A $50 item receives a $10 discount and then 8% tax on the discounted price.",
+        "math": "",
+        "question": "Which composition gives the final price?"
+      },
+      {
+        "title": "Order in an application",
+        "body": "A $50 item receives 8% tax and then a $10 discount from the taxed price.",
+        "math": "",
+        "question": "How does this final price compare with discounting before tax?"
+      },
+      {
+        "title": "The domain of a composition",
+        "body": "An input must be allowed by the inner function, and its output must be allowed by the outer function.",
+        "math": "",
+        "question": "Why can checking only the final simplified formula miss a restriction?"
+      },
+      {
+        "title": "A radical composition",
+        "body": "Use f(x) = √x and g(x) = x - 5.",
+        "math": "(f\\circ g)(x)",
+        "question": "What formula and real domain result?"
+      },
+      {
+        "title": "A rational composition",
+        "body": "Use f(x) = 1/x and g(x) = x² - 4.",
+        "math": "(f\\circ g)(x)",
+        "question": "What inputs are excluded?"
+      },
+      {
+        "title": "An inner-function restriction",
+        "body": "Use f(x) = x² and g(x) = √(x - 1).",
+        "math": "(f\\circ g)(x)",
+        "question": "After simplification, what domain must still be retained?"
+      },
+      {
+        "title": "Both stages restrict inputs",
+        "body": "Use f(x) = √(x - 2) and g(x) = 1/x.",
+        "math": "(f\\circ g)(x)",
+        "question": "What real input values make both stages defined?"
+      },
+      {
+        "title": "Decompose a function",
+        "body": "",
+        "math": "h(x)=\\sqrt{3x+1}",
+        "question": "What inner and outer functions give h as a composition?"
+      },
+      {
+        "title": "Decompose a rational function",
+        "body": "",
+        "math": "h(x)=\\frac{1}{(x-2)^2}",
+        "question": "What inner and outer functions give h as a composition?"
+      },
+      {
+        "title": "Three stages",
+        "body": "A rule subtracts 2, squares the result, and then adds 7.",
+        "math": "",
+        "question": "What formula and composition represent the rule?"
+      }
+    ]
+  },
+  {
+    "number": "3.5",
+    "title": "Transformation of Functions",
+    "slug": "3-5-transformation-of-functions",
+    "slides": [
+      {
+        "title": "A vertical shift",
+        "body": "Use f(x) = x².",
+        "math": "g(x)=f(x)+3",
+        "question": "How does the graph of g relate to the graph of f?"
+      },
+      {
+        "title": "A horizontal shift",
+        "body": "Use f(x) = x².",
+        "math": "g(x)=f(x-4)",
+        "question": "Where does the vertex move?"
+      },
+      {
+        "title": "The direction of an inside shift",
+        "body": "The point (2, 5) is on the graph of f.",
+        "math": "g(x)=f(x+3)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "Shift both coordinates",
+        "body": "Use f(x) = √x.",
+        "math": "g(x)=f(x-2)-1",
+        "question": "Where does the graph begin?"
+      },
+      {
+        "title": "Shift a domain",
+        "body": "The domain of f is [-2, 5].",
+        "math": "g(x)=f(x-3)",
+        "question": "What is the domain of g?"
+      },
+      {
+        "title": "Reflect across the x-axis",
+        "body": "The point (3, -2) is on the graph of f.",
+        "math": "g(x)=-f(x)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "Reflect across the y-axis",
+        "body": "The point (3, -2) is on the graph of f.",
+        "math": "g(x)=f(-x)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "Reflect a square root",
+        "body": "Use real inputs.",
+        "math": "g(x)=\\sqrt{-x}",
+        "question": "What does its graph look like?"
+      },
+      {
+        "title": "An even function",
+        "body": "A function is even when its domain is symmetric about zero and opposite inputs give equal outputs.",
+        "math": "f(-x)=f(x)",
+        "question": "What graph symmetry expresses this property?"
+      },
+      {
+        "title": "An odd function",
+        "body": "A function is odd when its domain is symmetric about zero and opposite inputs give opposite outputs.",
+        "math": "f(-x)=-f(x)",
+        "question": "What graph symmetry expresses this property?"
+      },
+      {
+        "title": "Test for even symmetry",
+        "body": "",
+        "math": "f(x)=x^4+2x^2-3",
+        "question": "Is f even, odd, or neither?"
+      },
+      {
+        "title": "Test for odd symmetry",
+        "body": "",
+        "math": "f(x)=x^3-4x",
+        "question": "Is f even, odd, or neither?"
+      },
+      {
+        "title": "A function with neither symmetry",
+        "body": "",
+        "math": "f(x)=x^2+x",
+        "question": "Is f even, odd, or neither?"
+      },
+      {
+        "title": "A vertical stretch",
+        "body": "The point (2, 3) lies on the graph of f.",
+        "math": "g(x)=4f(x)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "A vertical compression",
+        "body": "Use f(x) = |x|.",
+        "math": "g(x)=\\frac{1}{2}f(x)",
+        "question": "How does the graph change?"
+      },
+      {
+        "title": "A horizontal compression",
+        "body": "The point (6, 2) lies on the graph of f.",
+        "math": "g(x)=f(3x)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "A horizontal stretch",
+        "body": "The point (2, 5) lies on the graph of f.",
+        "math": "g(x)=f\\left(\\frac{x}{4}\\right)",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "Compare inside and outside",
+        "body": "Use f(x) = √x.",
+        "math": "2f(x),\\qquad f(2x)",
+        "question": "Do these formulas give the same function?"
+      },
+      {
+        "title": "Combine transformations",
+        "body": "Use f(x) = x².",
+        "math": "g(x)=-2f(x-3)+1",
+        "question": "What graph results from these transformations?"
+      },
+      {
+        "title": "Transform a point",
+        "body": "The point (4, -1) lies on the graph of f.",
+        "math": "g(x)=3f(2(x-1))+5",
+        "question": "Which corresponding point lies on the graph of g?"
+      },
+      {
+        "title": "Factor the input first",
+        "body": "Use f(x) = |x|.",
+        "math": "g(x)=f(2x-6)",
+        "question": "What horizontal transformations does this formula represent?"
+      },
+      {
+        "title": "Recover a formula",
+        "body": "Start with y = √x. Shift left 2, reflect across the x-axis, and shift up 4.",
+        "math": "",
+        "question": "What equation represents the transformed graph?"
+      },
+      {
+        "title": "A transformed range",
+        "body": "The range of f is [-1, 4].",
+        "math": "g(x)=-2f(x)+3",
+        "question": "What is the range of g?"
+      },
+      {
+        "title": "Compare two shifts",
+        "body": "",
+        "math": "(x-2)^2,\\qquad x^2-2",
+        "question": "How do the two vertex locations differ?"
+      }
+    ]
+  },
+  {
+    "number": "3.6",
+    "title": "Absolute Value Functions",
+    "slug": "3-6-absolute-value-functions",
+    "slides": [
+      {
+        "title": "Distance from a point",
+        "body": "",
+        "math": "|x-3|",
+        "question": "What distance does this expression represent?"
+      },
+      {
+        "title": "The basic absolute value graph",
+        "body": "",
+        "math": "f(x)=|x|",
+        "question": "What are its vertex and two linear branches?"
+      },
+      {
+        "title": "An absolute value as two rules",
+        "body": "For x ≥ 0, |x| = x; for x < 0, |x| = -x.",
+        "math": "",
+        "question": "Why does the second rule still give a nonnegative output?"
+      },
+      {
+        "title": "A horizontal shift",
+        "body": "",
+        "math": "f(x)=|x+4|",
+        "question": "Where is the vertex?"
+      },
+      {
+        "title": "A vertical shift",
+        "body": "",
+        "math": "f(x)=|x|-3",
+        "question": "Where does this graph intersect the x-axis?"
+      },
+      {
+        "title": "A scaled and shifted graph",
+        "body": "",
+        "math": "f(x)=2|x-1|+3",
+        "question": "What graph results, including its vertex and branch slopes?"
+      },
+      {
+        "title": "A reflected graph",
+        "body": "",
+        "math": "f(x)=-|x+2|+5",
+        "question": "What are the vertex and range?"
+      },
+      {
+        "title": "An inside scale",
+        "body": "",
+        "math": "f(x)=|3x-6|",
+        "question": "How can we identify the vertex and branch slopes?"
+      },
+      {
+        "title": "Write a vertex-form equation",
+        "body": "An absolute value graph has vertex (2, -1) and passes through (4, 5).",
+        "math": "",
+        "question": "What equation represents the graph?"
+      },
+      {
+        "title": "Domain and range",
+        "body": "",
+        "math": "f(x)=3|x+1|-4",
+        "question": "What are its domain and range?"
+      },
+      {
+        "title": "Increasing and decreasing",
+        "body": "",
+        "math": "f(x)=-2|x-3|+1",
+        "question": "On which intervals is f increasing or decreasing?"
+      },
+      {
+        "title": "Solve by distance",
+        "body": "",
+        "math": "|x-5|=2",
+        "question": "What inputs give an output of 2?"
+      },
+      {
+        "title": "A horizontal-line intersection",
+        "body": "",
+        "math": "f(x)=2|x-1|+3",
+        "question": "Where does this graph intersect the horizontal line y = 9?"
+      },
+      {
+        "title": "An output below the vertex",
+        "body": "",
+        "math": "f(x)=2|x-1|+3",
+        "question": "Does this graph intersect the horizontal line y = 1?"
+      },
+      {
+        "title": "A boundary output",
+        "body": "",
+        "math": "-|x+2|+5=5",
+        "question": "How many solutions are there?"
+      },
+      {
+        "title": "Intersection with a slanted line",
+        "body": "",
+        "math": "|x-2|=x",
+        "question": "Which real inputs satisfy the equation?"
+      },
+      {
+        "title": "An absolute value inequality",
+        "body": "",
+        "math": "f(x)=2|x-1|+3",
+        "question": "For which inputs is f(x) at or below 9?"
+      },
+      {
+        "title": "A tolerance model",
+        "body": "A component’s mass m must be within 0.5 grams of a target of 12 grams. Endpoints are allowed.",
+        "math": "",
+        "question": "What absolute value inequality describes acceptable masses?"
+      },
+      {
+        "title": "Restriction for an inverse",
+        "body": "",
+        "math": "f(x)=|x-2|",
+        "question": "Which domain restriction would make this function one-to-one?"
+      }
+    ]
+  },
+  {
+    "number": "3.7",
+    "title": "Inverse Functions",
+    "slug": "3-7-inverse-functions",
+    "slides": [
+      {
+        "title": "An inverse function",
+        "body": "An inverse function reverses a one-to-one function: outputs of the original become inputs of the inverse.",
+        "math": "",
+        "question": "Why must the original function be one-to-one?"
+      },
+      {
+        "title": "Inverse notation",
+        "body": "The superscript -1 in inverse-function notation names the inverse.",
+        "math": "f^{-1}(x)",
+        "question": "How is this different from the reciprocal 1/f(x)?"
+      },
+      {
+        "title": "Reverse an input-output pair",
+        "body": "",
+        "math": "f(3)=11",
+        "question": "What value must f⁻¹(11) have if f has an inverse?"
+      },
+      {
+        "title": "A finite inverse",
+        "body": "",
+        "math": "f=\\{(1,4),(2,7),(3,9)\\}",
+        "question": "What ordered pairs represent its inverse?"
+      },
+      {
+        "title": "When the inverse relation fails",
+        "body": "",
+        "math": "f=\\{(1,5),(2,5),(3,8)\\}",
+        "question": "Why is the inverse relation not a function?"
+      },
+      {
+        "title": "Two-way verification",
+        "body": "Inverse functions undo each other on their respective domains.",
+        "math": "f(g(x))=x,\\qquad g(f(x))=x",
+        "question": "Why should both compositions and their domains be checked?"
+      },
+      {
+        "title": "Verify a linear inverse",
+        "body": "Use f(x) = 4x - 7 and g(x) = (x + 7)/4.",
+        "math": "",
+        "question": "Are f and g inverse functions?"
+      },
+      {
+        "title": "A failed inverse claim",
+        "body": "Use f(x) = 2x + 3 and g(x) = (x - 2)/3.",
+        "math": "",
+        "question": "Are f and g inverse functions?"
+      },
+      {
+        "title": "Find a linear inverse",
+        "body": "",
+        "math": "f(x)=5x+2",
+        "question": "What formula represents f⁻¹?"
+      },
+      {
+        "title": "Find an inverse with fractions",
+        "body": "",
+        "math": "f(x)=\\frac{x-4}{3}",
+        "question": "What formula represents f⁻¹?"
+      },
+      {
+        "title": "A rational inverse",
+        "body": "",
+        "math": "f(x)=\\frac{2}{x-1}",
+        "question": "What are the inverse’s formula and domain?"
+      },
+      {
+        "title": "Swap domain and range",
+        "body": "A one-to-one function has domain [2, 6] and range [-3, 5].",
+        "math": "",
+        "question": "What are the domain and range of its inverse?"
+      },
+      {
+        "title": "Reflect a graph",
+        "body": "An inverse graph swaps the coordinates of every point.",
+        "math": "(a,b)\\longleftrightarrow(b,a)",
+        "question": "Why is the line y = x the line of reflection?"
+      },
+      {
+        "title": "Plot inverse points",
+        "body": "A one-to-one function’s graph includes (-2, 1), (0, 3), and (4, 7).",
+        "math": "",
+        "question": "Which points must appear on the graph of its inverse?"
+      },
+      {
+        "title": "A quadratic is not one-to-one",
+        "body": "",
+        "math": "f(x)=x^2",
+        "question": "Why can this function not have an inverse on all real inputs?"
+      },
+      {
+        "title": "Restrict a quadratic domain",
+        "body": "Use x ≥ 0.",
+        "math": "f(x)=x^2",
+        "question": "What inverse formula and domain result?"
+      },
+      {
+        "title": "Choose the other branch",
+        "body": "Use x ≤ 0.",
+        "math": "f(x)=x^2",
+        "question": "How does the inverse differ from the nonnegative-domain case?"
+      },
+      {
+        "title": "A shifted quadratic inverse",
+        "body": "Use x ≥ 3.",
+        "math": "f(x)=(x-3)^2+2",
+        "question": "What is the inverse, including its domain?"
+      },
+      {
+        "title": "An inverse square-root function",
+        "body": "",
+        "math": "f(x)=\\sqrt{x-4}+1",
+        "question": "What inverse formula and domain reverse this function?"
+      },
+      {
+        "title": "An inverse cube",
+        "body": "",
+        "math": "f(x)=(x+2)^3-5",
+        "question": "What is its inverse function?"
+      },
+      {
+        "title": "Reverse a model",
+        "body": "The total printing cost in dollars is C(n) = 0.20n + 8, for whole numbers n ≥ 0.",
+        "math": "",
+        "question": "What does the inverse model’s input represent?"
+      },
+      {
+        "title": "Use the inverse model",
+        "body": "The total printing cost in dollars is C(n) = 0.20n + 8, for whole numbers n ≥ 0.",
+        "math": "",
+        "question": "How many pages correspond to a cost of $18?"
+      },
+      {
+        "title": "Domain-sensitive verification",
+        "body": "Use f(x) = x² on x ≥ 0 and g(x) = √x on x ≥ 0.",
+        "math": "g(f(x))=\\sqrt{x^2}",
+        "question": "Why does this composition equal x on the stated domain?"
+      },
+      {
+        "title": "Reverse an exponential",
+        "body": "Use a graphing utility.",
+        "math": "f(x)=2^x",
+        "question": "What domain and range would its inverse have?"
+      }
+    ]
+  }
+]

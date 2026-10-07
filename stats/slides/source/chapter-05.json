@@ -1,0 +1,365 @@
+[
+  {
+    "number": "5.1",
+    "title": "Continuous Probability Functions",
+    "slug": "5-1-continuous-probability-functions",
+    "slides": [
+      {
+        "title": "A continuous random variable",
+        "body": "A continuous random variable can take values throughout an interval.",
+        "math": "",
+        "question": "Would exact file-transfer duration be discrete or continuous?"
+      },
+      {
+        "title": "A probability density",
+        "body": "A probability density is nonnegative, and its total area is one.",
+        "math": "",
+        "question": "What would fail if part of a proposed density lay below the horizontal axis?"
+      },
+      {
+        "title": "The entire distribution",
+        "body": "Model: a rectangular density extends from 0 to 10 seconds.",
+        "math": "",
+        "question": "What height makes its total area equal to one?"
+      },
+      {
+        "title": "Probability as area",
+        "body": "For a continuous distribution, interval probabilities are areas under the density.",
+        "math": "",
+        "question": "For the rectangular density, what region represents durations between 3 and 7 seconds?"
+      },
+      {
+        "title": "An interval probability",
+        "body": "Model: the density is 0.1 on the interval from 0 to 10 seconds and zero elsewhere.",
+        "math": "",
+        "question": "What is the probability of a duration between 3 and 7 seconds?"
+      },
+      {
+        "title": "Height is not probability",
+        "body": "Model: a uniform density has height 2 on the interval from 0 to 0.5 seconds.",
+        "math": "",
+        "question": "Can a density exceed one without a probability exceeding one?"
+      },
+      {
+        "title": "One exact value",
+        "body": "A single value has probability zero under a continuous density.",
+        "math": "",
+        "question": "Does probability zero mean that a measured duration cannot be reported as exactly 4 seconds?"
+      },
+      {
+        "title": "Rounded measurements",
+        "body": "Model: an exact duration is uniform from 0 to 10 seconds and is rounded to the nearest second.",
+        "math": "",
+        "question": "What interval of exact durations would be reported as 4 seconds?"
+      },
+      {
+        "title": "Endpoints",
+        "body": "Model: an exact duration has a continuous density.",
+        "math": "",
+        "question": "Would including an interval endpoint change its probability?"
+      },
+      {
+        "title": "The cumulative distribution",
+        "body": "The cumulative distribution function gives the probability at or below a cutoff.",
+        "math": "F(x)=P(X\\leq x)",
+        "question": "What does F(6) describe when X measures a duration in seconds?"
+      },
+      {
+        "title": "A cumulative probability",
+        "body": "Model: X is uniform from 0 to 10 seconds.",
+        "math": "",
+        "question": "What is F(6)?"
+      },
+      {
+        "title": "Beyond a cutoff",
+        "body": "Model: a continuous duration has F(6)=0.72.",
+        "math": "",
+        "question": "What is the probability that the duration exceeds 6 seconds?"
+      },
+      {
+        "title": "Between two cutoffs",
+        "body": "Model: a continuous duration has F(3)=0.20 and F(7)=0.85.",
+        "math": "",
+        "question": "What is the probability that the duration lies between 3 and 7 seconds?"
+      },
+      {
+        "title": "Outside an interval",
+        "body": "Model: a continuous duration falls between 3 and 7 seconds with probability 0.65.",
+        "math": "",
+        "question": "What probability belongs outside that interval?"
+      },
+      {
+        "title": "A possible cumulative function",
+        "body": "A cumulative distribution function never decreases as the cutoff increases.",
+        "math": "",
+        "question": "Could F(4)=0.6 and F(8)=0.4 describe the same distribution?"
+      },
+      {
+        "title": "A percentile",
+        "body": "The 80th percentile is a cutoff with 80% of the distribution at or below it.",
+        "math": "",
+        "question": "If a continuous duration has F(9)=0.80, what percentage exceeds 9 seconds?"
+      },
+      {
+        "title": "Choosing the probability",
+        "body": "A transfer must finish within 8 seconds to meet a deadline.",
+        "math": "",
+        "question": "Which probability describes meeting the deadline: F(8), 1-F(8), or the density at 8?"
+      }
+    ]
+  },
+  {
+    "number": "5.2",
+    "title": "The Uniform Distribution",
+    "slug": "5-2-the-uniform-distribution",
+    "slides": [
+      {
+        "title": "The uniform distribution",
+        "body": "A continuous uniform distribution assigns equal probability to intervals of equal length within its range.",
+        "math": "",
+        "question": "Are the intervals from 2 to 4 and from 6 to 8 equally likely under U(0,10)?"
+      },
+      {
+        "title": "The range",
+        "body": "Model: X is uniform from 2 to 14 minutes.",
+        "math": "X\\sim U(2,14)",
+        "question": "Which values are possible, and what is the width of the range?"
+      },
+      {
+        "title": "Uniform density",
+        "body": "The density is constant throughout the uniform range and zero outside it.",
+        "math": "f(x)=\\frac{1}{b-a}\\quad(a\\leq x\\leq b)",
+        "question": "What is the density for U(2,14)?"
+      },
+      {
+        "title": "A waiting interval",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "What is the probability of waiting between 3 and 7 minutes?"
+      },
+      {
+        "title": "A short wait",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "What is the probability of waiting at most 4 minutes?"
+      },
+      {
+        "title": "A long wait",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "What is the probability of waiting longer than 9 minutes?"
+      },
+      {
+        "title": "A partially overlapping interval",
+        "body": "Model: X is uniform from 2 to 14 minutes.",
+        "math": "",
+        "question": "What is P(0<X<5)?"
+      },
+      {
+        "title": "Outside the support",
+        "body": "Model: X is uniform from 2 to 14 minutes.",
+        "math": "",
+        "question": "What is P(X>15)?"
+      },
+      {
+        "title": "The center of a uniform distribution",
+        "body": "The uniform mean is the midpoint of its range.",
+        "math": "\\mu=\\frac{a+b}{2}",
+        "question": "What is the mean for U(2,14)?"
+      },
+      {
+        "title": "Uniform spread",
+        "body": "For a uniform distribution, standard deviation depends on the width of the range.",
+        "math": "\\sigma=\\frac{b-a}{\\sqrt{12}}",
+        "question": "Which has greater standard deviation: U(0,12) or U(20,32)?"
+      },
+      {
+        "title": "Calculating uniform spread",
+        "body": "Model: a duration is uniform from 2 to 14 minutes.",
+        "math": "",
+        "question": "What is its standard deviation, in minutes?"
+      },
+      {
+        "title": "A percentile cutoff",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "What wait time is the 75th percentile?"
+      },
+      {
+        "title": "An upper-tail cutoff",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "Only 10% of waits exceed what cutoff?"
+      },
+      {
+        "title": "The middle half",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes.",
+        "math": "",
+        "question": "What interval contains the middle 50% of waits?"
+      },
+      {
+        "title": "A conditional interval",
+        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes. The wait has already exceeded 4 minutes.",
+        "math": "",
+        "question": "What is the probability that the total wait exceeds 8 minutes?"
+      },
+      {
+        "title": "Changing the range",
+        "body": "Model A is U(0,12). Model B is U(0,24), with time measured in minutes.",
+        "math": "",
+        "question": "How does doubling the range change the probability of a wait below 6 minutes?"
+      },
+      {
+        "title": "Checking the model",
+        "body": "Synthetic waits, in minutes: 0.4, 0.6, 0.7, 0.9, 1.1, 1.3, 9.8, 11.5.",
+        "math": "",
+        "question": "What feature would you investigate before accepting a uniform model on 0 to 12?"
+      },
+      {
+        "title": "From one wait to many",
+        "body": "Model: independent shuttle waits follow U(0,12).",
+        "math": "",
+        "question": "Would the average of 50 waits have the same distribution as one wait?"
+      }
+    ]
+  },
+  {
+    "number": "5.3",
+    "title": "The Exponential Distribution",
+    "slug": "5-3-the-exponential-distribution",
+    "slides": [
+      {
+        "title": "An exponential waiting model",
+        "body": "An exponential distribution models certain nonnegative waiting times using a positive rate.",
+        "math": "",
+        "question": "Why does a nonnegative waiting time alone not establish an exponential model?"
+      },
+      {
+        "title": "Rate and time",
+        "body": "Model: print requests arrive as a Poisson process at 4 requests per hour.",
+        "math": "",
+        "question": "What variable measures the waiting time until the next request?"
+      },
+      {
+        "title": "Rate notation",
+        "body": "The exponential rate m has units reciprocal to the time units.",
+        "math": "X\\sim\\operatorname{Exp}(m)",
+        "question": "If time is measured in hours, what units should m have?"
+      },
+      {
+        "title": "Mean waiting time",
+        "body": "The exponential mean is the reciprocal of the rate.",
+        "math": "\\mu=\\frac{1}{m}",
+        "question": "At a rate of 4 requests per hour, what is the mean wait in minutes?"
+      },
+      {
+        "title": "Converting a mean to a rate",
+        "body": "Model: an exponential wait has a mean of 5 minutes.",
+        "math": "",
+        "question": "What is the rate per minute?"
+      },
+      {
+        "title": "The density",
+        "body": "An exponential density decreases as the waiting time increases.",
+        "math": "f(x)=m e^{-mx}\\quad(x\\geq0)",
+        "question": "For m=0.2 per minute, which interval has more probability: 0 to 1 or 5 to 6 minutes?"
+      },
+      {
+        "title": "The upper tail",
+        "body": "The exponential survival probability gives the chance of exceeding a cutoff.",
+        "math": "P(X>x)=e^{-mx}",
+        "question": "For m=0.2 per minute, what is the probability of waiting longer than 8 minutes?"
+      },
+      {
+        "title": "A wait within a deadline",
+        "body": "Model: an exponential wait has mean 5 minutes.",
+        "math": "",
+        "question": "What is the probability that the wait is at most 8 minutes?"
+      },
+      {
+        "title": "Between two waits",
+        "body": "Model: an exponential wait has mean 5 minutes.",
+        "math": "",
+        "question": "What is the probability of waiting between 2 and 6 minutes?"
+      },
+      {
+        "title": "Choosing the tail",
+        "body": "Model: an exponential processing time has mean 10 seconds. A job is late if it exceeds 15 seconds.",
+        "math": "",
+        "question": "Which area describes a late job?"
+      },
+      {
+        "title": "Units in the exponent",
+        "body": "Model: arrivals have rate 6 per hour. A cutoff is 5 minutes.",
+        "math": "",
+        "question": "How must the rate and cutoff units agree before calculating the tail probability?"
+      },
+      {
+        "title": "An exponential percentile",
+        "body": "Model: an exponential wait has mean 5 minutes.",
+        "math": "",
+        "question": "What cutoff has 90% of waits at or below it?"
+      },
+      {
+        "title": "Mean and median",
+        "body": "Model: an exponential wait has mean 5 minutes.",
+        "math": "",
+        "question": "Is the median wait equal to 5 minutes?"
+      },
+      {
+        "title": "Exponential spread",
+        "body": "The exponential standard deviation equals its mean.",
+        "math": "\\sigma=\\mu=\\frac{1}{m}",
+        "question": "What are the mean and standard deviation when m=0.25 per minute?"
+      },
+      {
+        "title": "The memoryless property",
+        "body": "For an exponential wait, the remaining wait has the original waiting-time distribution; t and s are nonnegative.",
+        "math": "P(X>t+s\\mid X>t)=P(X>s)",
+        "question": "How does the probability statement describe a wait already longer than t?"
+      },
+      {
+        "title": "A remaining wait",
+        "body": "Model: an exponential wait has mean 5 minutes. It has already exceeded 7 minutes.",
+        "math": "",
+        "question": "What is the probability of waiting more than 3 additional minutes?"
+      },
+      {
+        "title": "Comparing waiting models",
+        "body": "Model A has exponential waits with mean 6 minutes. Model B has uniform waits from 0 to 12 minutes.",
+        "math": "",
+        "question": "After waiting 11 minutes, would the two models give the same remaining-wait distribution?"
+      },
+      {
+        "title": "Counts or waiting time?",
+        "body": "Model: requests arrive as a Poisson process at 6 per hour.",
+        "math": "",
+        "question": "Would the number of requests in 20 minutes use a Poisson or exponential model?"
+      },
+      {
+        "title": "A Poisson connection",
+        "body": "Model: requests arrive as a Poisson process at 6 per hour.",
+        "math": "",
+        "question": "What is the mean number of requests in 20 minutes?"
+      },
+      {
+        "title": "An empty interval",
+        "body": "Model: requests arrive as a Poisson process at 6 per hour.",
+        "math": "",
+        "question": "How does zero requests in 20 minutes relate to waiting longer than 20 minutes?"
+      },
+      {
+        "title": "Model assumptions",
+        "body": "A homogeneous Poisson process has a constant arrival rate and independent counts in disjoint time intervals.",
+        "math": "",
+        "question": "Would sharply higher arrival rates at lunchtime fit this model over an entire day?"
+      },
+      {
+        "title": "Preparing for averages",
+        "body": "Model: independent exponential processing times have mean 10 seconds.",
+        "math": "",
+        "question": "Would one processing time and the average of 100 processing times have the same spread?"
+      }
+    ]
+  }
+]

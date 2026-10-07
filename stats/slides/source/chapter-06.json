@@ -1,0 +1,268 @@
+[
+  {
+    "number": "6.1",
+    "title": "The Standard Normal Distribution",
+    "slug": "6-1-the-standard-normal-distribution",
+    "slides": [
+      {
+        "title": "A normal distribution",
+        "body": "A normal distribution is symmetric and bell shaped, with mean μ and standard deviation σ.",
+        "math": "",
+        "question": "What does moving μ change about the curve?"
+      },
+      {
+        "title": "Normal notation",
+        "body": "In this textbook, the second entry in N(μ,σ) is the standard deviation.",
+        "math": "X\\sim N(\\mu,\\sigma)",
+        "question": "For X~N(40,6), what are the mean and standard deviation?"
+      },
+      {
+        "title": "The standard normal",
+        "body": "The standard normal distribution has mean zero and standard deviation one.",
+        "math": "Z\\sim N(0,1)",
+        "question": "Where is the center of this distribution?"
+      },
+      {
+        "title": "A standardized value",
+        "body": "A z-score measures distance from the mean in standard deviations.",
+        "math": "z=\\frac{x-\\mu}{\\sigma}",
+        "question": "What does a z-score of -1.5 tell us?"
+      },
+      {
+        "title": "A positive z-score",
+        "body": "Model: component lengths are normal with mean 40 mm and standard deviation 6 mm.",
+        "math": "",
+        "question": "What is the z-score for a length of 49 mm?"
+      },
+      {
+        "title": "A negative z-score",
+        "body": "Model: component lengths are normal with mean 40 mm and standard deviation 6 mm.",
+        "math": "",
+        "question": "What is the z-score for a length of 28 mm?"
+      },
+      {
+        "title": "At the mean",
+        "body": "Model: X is normal with mean 40 and standard deviation 6.",
+        "math": "",
+        "question": "What z-score belongs to X=40?"
+      },
+      {
+        "title": "Returning to original units",
+        "body": "A value can be recovered from its z-score, mean, and standard deviation.",
+        "math": "x=\\mu+z\\sigma",
+        "question": "For μ=40 and σ=6, what value has z=-0.5?"
+      },
+      {
+        "title": "Comparing different scales",
+        "body": "Model A has mean 40 and SD 6. Model B has mean 100 and SD 12.",
+        "math": "",
+        "question": "Which is farther above its mean in standard deviations: A=49 or B=112?"
+      },
+      {
+        "title": "Scores are not probabilities",
+        "body": "A z-score describes standardized location.",
+        "math": "",
+        "question": "Why can z=2.5 be valid while a probability of 2.5 cannot?"
+      },
+      {
+        "title": "Standardizing an event",
+        "body": "Model: X~N(40,6).",
+        "math": "",
+        "question": "What standard-normal event corresponds to X<46?"
+      },
+      {
+        "title": "Symmetry",
+        "body": "The standard normal density is symmetric about zero.",
+        "math": "",
+        "question": "How does P(Z<-1.4) compare with P(Z>1.4)?"
+      },
+      {
+        "title": "The center divides the area",
+        "body": "Model: Z is standard normal.",
+        "math": "",
+        "question": "What is P(Z<0)?"
+      },
+      {
+        "title": "One standard deviation",
+        "body": "For a normal distribution, about 68% of values lie within one standard deviation of the mean.",
+        "math": "",
+        "question": "For μ=40 and σ=6, what interval contains that central region?"
+      },
+      {
+        "title": "Two standard deviations",
+        "body": "For a normal distribution, about 95% of values lie within two standard deviations of the mean.",
+        "math": "",
+        "question": "Approximately what proportion lies above μ+2σ?"
+      },
+      {
+        "title": "Three standard deviations",
+        "body": "For a normal distribution, about 99.7% of values lie within three standard deviations of the mean.",
+        "math": "",
+        "question": "Approximately what proportion lies outside that interval?"
+      },
+      {
+        "title": "Using a cumulative table",
+        "body": "A standard-normal table may report area to the left of z.",
+        "math": "",
+        "question": "If its entry for z=1.2 is 0.8849, what is P(Z>1.2)?"
+      },
+      {
+        "title": "A negative cumulative cutoff",
+        "body": "Given: P(Z<1.2)=0.8849 for a standard normal Z.",
+        "math": "",
+        "question": "What is P(Z<-1.2)?"
+      },
+      {
+        "title": "Normality matters",
+        "body": "Synthetic data have a long right tail and several unusually large values.",
+        "math": "",
+        "question": "Would calculating z-scores alone justify standard-normal probability calculations?"
+      },
+      {
+        "title": "Location versus shape",
+        "body": "Standardization subtracts a mean and divides by a positive standard deviation.",
+        "math": "",
+        "question": "Would standardizing a strongly skewed variable make its distribution normal?"
+      }
+    ]
+  },
+  {
+    "number": "6.2",
+    "title": "Using the Normal Distribution",
+    "slug": "6-2-using-the-normal-distribution",
+    "slides": [
+      {
+        "title": "Defining the variable",
+        "body": "Model: package masses are approximately normal with mean 500 g and standard deviation 20 g.",
+        "math": "",
+        "question": "What does X represent if we select one package?"
+      },
+      {
+        "title": "A lower-tail probability",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What is the probability that one package weighs less than 480 g?"
+      },
+      {
+        "title": "An upper-tail probability",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What is the probability that one package weighs more than 530 g?"
+      },
+      {
+        "title": "A probability between cutoffs",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What is P(490<X<520)?"
+      },
+      {
+        "title": "Outside an acceptable range",
+        "body": "Model: package masses follow N(500,20). The accepted range is 470 to 530 g.",
+        "math": "",
+        "question": "What proportion falls outside the accepted range?"
+      },
+      {
+        "title": "Strict or inclusive?",
+        "body": "Model: exact package mass has a continuous normal distribution.",
+        "math": "",
+        "question": "Does P(X<480) differ from P(X≤480)?"
+      },
+      {
+        "title": "A technology input",
+        "body": "A normal cumulative probability tool needs a mean, standard deviation, and cutoff or interval.",
+        "math": "",
+        "question": "For P(X>530) when X~N(500,20), what information should you enter?"
+      },
+      {
+        "title": "Checking the direction",
+        "body": "Model: X~N(500,20). A calculation for P(X>530) returns 0.9332.",
+        "math": "",
+        "question": "Is that result plausible for a cutoff above the mean?"
+      },
+      {
+        "title": "From probability to expected count",
+        "body": "Model: 8% of packages fall outside specification. A shipment contains 250 packages.",
+        "math": "",
+        "question": "How many out-of-specification packages should we expect?"
+      },
+      {
+        "title": "A percentile",
+        "body": "A percentile cutoff specifies area at or below that value.",
+        "math": "",
+        "question": "What probability equation defines the 90th percentile k?"
+      },
+      {
+        "title": "Finding a percentile",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What mass is the 90th percentile?"
+      },
+      {
+        "title": "An upper-tail cutoff",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "Only 5% of packages exceed what mass?"
+      },
+      {
+        "title": "A lower-tail cutoff",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What mass separates the lowest 10% from the rest?"
+      },
+      {
+        "title": "The middle 90%",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What symmetric interval around the mean contains the middle 90%?"
+      },
+      {
+        "title": "Quartiles from a model",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What masses are the first and third quartiles?"
+      },
+      {
+        "title": "An interquartile range",
+        "body": "Model: X~N(500,20), measured in grams.",
+        "math": "",
+        "question": "What is the model's interquartile range?"
+      },
+      {
+        "title": "Different spreads",
+        "body": "Model A is N(500,10). Model B is N(500,20), with mass in grams.",
+        "math": "",
+        "question": "Which model gives a greater probability of mass above 530 g?"
+      },
+      {
+        "title": "Different centers",
+        "body": "Model A is N(500,20). Model B is N(510,20), with mass in grams.",
+        "math": "",
+        "question": "Which model gives a greater probability of mass below 480 g?"
+      },
+      {
+        "title": "A probability or a cutoff?",
+        "body": "A manager asks for the mass exceeded by only 2% of packages.",
+        "math": "",
+        "question": "Does the requested answer have units of grams or units of probability?"
+      },
+      {
+        "title": "Conditional normal probability",
+        "body": "Model: X~N(500,20). A package is known to weigh more than 500 g.",
+        "math": "",
+        "question": "What is the probability that it weighs more than 520 g?"
+      },
+      {
+        "title": "A model boundary",
+        "body": "A normal model assigns some probability to every real-valued interval.",
+        "math": "",
+        "question": "When could its prediction of negative durations make it unsuitable for duration data?"
+      },
+      {
+        "title": "One package or an average?",
+        "body": "Model: independent package masses follow N(500,20).",
+        "math": "",
+        "question": "Should an average of 100 masses be analyzed using the same standard deviation as one mass?"
+      }
+    ]
+  }
+]

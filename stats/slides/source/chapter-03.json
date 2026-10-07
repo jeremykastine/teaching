@@ -1,0 +1,1086 @@
+[
+  {
+    "number": "3.1",
+    "title": "Terminology",
+    "slug": "3-1-terminology",
+    "slides": [
+      {
+        "title": "A probability experiment",
+        "body": "A probability experiment produces an outcome that is uncertain before it occurs.",
+        "question": "What are the possible outcomes when a fair six-sided die is rolled?"
+      },
+      {
+        "title": "Sample space",
+        "body": "The sample space contains all possible outcomes.",
+        "question": "What sample space describes two ordered tosses of a fair coin?"
+      },
+      {
+        "title": "An event",
+        "body": "An event is a set of outcomes from the sample space.",
+        "question": "For a die roll, what outcomes belong to “an even number”?"
+      },
+      {
+        "title": "Equally likely outcomes",
+        "body": "If all outcomes are equally likely, event probability is favorable outcomes divided by total outcomes.",
+        "question": "What is the probability of a value greater than 4 on a fair six-sided die?"
+      },
+      {
+        "title": "Unequal probabilities",
+        "body": "A spinner has a red region covering half the circle and two other regions covering one quarter each.",
+        "question": "Are its three color outcomes equally likely?"
+      },
+      {
+        "title": "Probability bounds",
+        "body": "An event probability lies between 0 and 1.",
+        "question": "What do probabilities 0 and 1 mean?"
+      },
+      {
+        "title": "Relative frequency",
+        "body": "Synthetic simulation: 124 heads in 250 independent fair-coin tosses.",
+        "question": "What is the observed relative frequency of heads?"
+      },
+      {
+        "title": "Long-run behavior",
+        "body": "A fair coin has probability 0.5 of heads on each independent toss.",
+        "question": "Must the first ten tosses include exactly five heads?"
+      },
+      {
+        "title": "A complement",
+        "body": "The complement of A contains outcomes outside A.",
+        "question": "If P(A) = 0.35, what is P(A-complement)?",
+        "math": "P(A^c)=1-P(A)"
+      },
+      {
+        "title": "Translate “not”",
+        "body": "A fair six-sided die is rolled. A is “roll a 6.”",
+        "question": "What outcomes belong to A-complement?"
+      },
+      {
+        "title": "The intersection",
+        "body": "A AND B means both events occur.",
+        "question": "For a fair die, A = even and B = greater than 3. Which outcomes belong to A AND B?"
+      },
+      {
+        "title": "The union",
+        "body": "A OR B means A occurs, B occurs, or both occur.",
+        "question": "For a fair die, A = even and B = greater than 3. Which outcomes belong to A OR B?"
+      },
+      {
+        "title": "Inclusive “or”",
+        "body": "One card is drawn from a standard 52-card deck.",
+        "question": "Does “a heart or a king” include the king of hearts?"
+      },
+      {
+        "title": "Conditional probability",
+        "body": "P(A | B) is the probability of A when the outcome is restricted to B.",
+        "question": "For a fair die, what is P(even | greater than 3)?"
+      },
+      {
+        "title": "The conditioned group",
+        "body": "Synthetic survey: 20 students use tablets; 8 of those also use laptops. Select one student uniformly from the tablet users.",
+        "question": "What is the denominator for P(laptop | tablet)?"
+      },
+      {
+        "title": "Reverse the condition",
+        "body": "Synthetic survey: 20 tablet users, 30 laptop users, and 8 use both. Select one of these surveyed students uniformly.",
+        "question": "Is P(laptop | tablet) equal to P(tablet | laptop)?"
+      },
+      {
+        "title": "Without replacement",
+        "body": "A box holds 3 red and 2 blue tokens. Draw one token, keep it, then draw another.",
+        "question": "How does the first draw affect the possible second draw?"
+      },
+      {
+        "title": "Write a probability event",
+        "body": "Let X be the number of heads in three independent fair-coin tosses.",
+        "question": "How would you write “at least two heads” using X?"
+      }
+    ]
+  },
+  {
+    "number": "3.2",
+    "title": "Independent and Mutually Exclusive Events",
+    "slug": "3-2-independent-and-mutually-exclusive-events",
+    "slides": [
+      {
+        "title": "Independent events",
+        "body": "A and B are independent when knowing B does not change the probability of A, provided P(B) > 0.",
+        "question": "Would the first toss of a fair coin change the chance of heads on a separate independent toss?"
+      },
+      {
+        "title": "Test independence",
+        "body": "P(A) = 0.4, P(B) = 0.5, and P(A AND B) = 0.2.",
+        "question": "Are A and B independent?",
+        "math": "P(A\\cap B)=P(A)P(B)"
+      },
+      {
+        "title": "Dependence",
+        "body": "P(A) = 0.4 and P(A | B) = 0.7, with P(B) > 0.",
+        "question": "What does knowing B change?"
+      },
+      {
+        "title": "Independent product",
+        "body": "Two printers operate independently. Their probabilities of completing a job without a jam are 0.9 and 0.8.",
+        "question": "What is the probability both complete without a jam?"
+      },
+      {
+        "title": "Two successes",
+        "body": "Two independent fair-coin tosses are made.",
+        "question": "What is the probability of heads on both tosses?"
+      },
+      {
+        "title": "Two outcomes in one roll",
+        "body": "A fair die is rolled. A = even; B = greater than 3.",
+        "question": "Are A and B independent?"
+      },
+      {
+        "title": "Mutually exclusive events",
+        "body": "Mutually exclusive events cannot occur together in one experiment.",
+        "question": "On one die roll, are “a 2” and “a 5” mutually exclusive?"
+      },
+      {
+        "title": "Not mutually exclusive",
+        "body": "One card is drawn from a standard deck. A = heart; B = king.",
+        "question": "Can both events happen together?"
+      },
+      {
+        "title": "Positive-probability disjoint events",
+        "body": "A and B are mutually exclusive, with P(A) = 0.3 and P(B) = 0.4.",
+        "question": "If B occurs, what is P(A | B)?"
+      },
+      {
+        "title": "Disjoint or independent?",
+        "body": "A and B are mutually exclusive and both have positive probability.",
+        "question": "Can A and B also be independent?"
+      },
+      {
+        "title": "With replacement",
+        "body": "A box contains 3 red and 2 blue tokens. Draw, replace, mix, and draw again uniformly.",
+        "question": "Are the two red-draw events independent?"
+      },
+      {
+        "title": "Without replacement",
+        "body": "A box contains 3 red and 2 blue tokens. Draw two uniformly without replacement.",
+        "question": "What is the probability of a red second draw given a red first draw?"
+      },
+      {
+        "title": "Which assumption fails?",
+        "body": "A student answers a series of questions while receiving coaching after every response.",
+        "question": "Why might a constant-probability independent-trial model be questionable?"
+      },
+      {
+        "title": "A conditional check",
+        "body": "P(A) = 0.25 and P(A | B) = 0.25, with P(B) > 0.",
+        "question": "What does this tell us about independence?"
+      },
+      {
+        "title": "Complementary events",
+        "body": "A has probability 0.6 and A-complement has probability 0.4.",
+        "question": "Are these events mutually exclusive, independent, or both?"
+      },
+      {
+        "title": "An independence model",
+        "body": "Two machines share the same power supply.",
+        "question": "What might make their failure events dependent?"
+      },
+      {
+        "title": "Empirical association",
+        "body": "Synthetic survey: 60% of all students use laptops, but 80% of tablet users do.",
+        "question": "Are laptop use and tablet use independent in these data?"
+      },
+      {
+        "title": "Coin tosses and “due” outcomes",
+        "body": "An independent fair coin has landed tails six times in a row.",
+        "question": "What is the probability of heads on the next toss?"
+      },
+      {
+        "title": "Trials versus events",
+        "body": "A single die roll has events A = even and B = odd.",
+        "question": "Why does using a fair die not make these two events independent?"
+      },
+      {
+        "title": "Prepare a repeated-trial model",
+        "body": "A binomial model requires independent trials with the same success probability.",
+        "question": "Which is closer: draws with replacement or draws without replacement from a small box?"
+      }
+    ]
+  },
+  {
+    "number": "3.3",
+    "title": "Two Basic Rules of Probability",
+    "slug": "3-3-two-basic-rules-of-probability",
+    "slides": [
+      {
+        "title": "The addition rule",
+        "body": "The general addition rule subtracts the overlap counted in both events.",
+        "question": "If P(A) = 0.4, P(B) = 0.5, and P(A AND B) = 0.2, what is P(A OR B)?",
+        "math": "P(A\\cup B)=P(A)+P(B)-P(A\\cap B)"
+      },
+      {
+        "title": "Why subtract the overlap?",
+        "body": "Synthetic survey: 40 laptop users, 25 tablet users, and 10 use both.",
+        "question": "What is wrong with adding 40 + 25 to count those using either device?"
+      },
+      {
+        "title": "A union from counts",
+        "body": "Synthetic survey of 100 students: 40 use laptops, 25 use tablets, and 10 use both. Select one uniformly.",
+        "question": "What is the probability of laptop or tablet use?"
+      },
+      {
+        "title": "A disjoint union",
+        "body": "A fair six-sided die is rolled.",
+        "question": "What is the probability of rolling 1 or 6?"
+      },
+      {
+        "title": "Complement of a union",
+        "body": "P(A OR B) = 0.65.",
+        "question": "What is the probability of neither A nor B?"
+      },
+      {
+        "title": "An intersection from a union",
+        "body": "P(A) = 0.55, P(B) = 0.40, and P(A OR B) = 0.75.",
+        "question": "What is P(A AND B)?"
+      },
+      {
+        "title": "The multiplication rule",
+        "body": "The general multiplication rule uses a conditional probability.",
+        "question": "If P(A) = 0.4 and P(B | A) = 0.3, what is P(A AND B)?",
+        "math": "P(A\\cap B)=P(A)P(B\\mid A)"
+      },
+      {
+        "title": "A dependent product",
+        "body": "A box has 3 red and 2 blue tokens. Draw two uniformly without replacement.",
+        "question": "What is the probability both are red?"
+      },
+      {
+        "title": "A different order",
+        "body": "A box has 3 red and 2 blue tokens. Draw two uniformly without replacement.",
+        "question": "What is the probability the first is red and the second blue?"
+      },
+      {
+        "title": "Either order",
+        "body": "A box has 3 red and 2 blue tokens. Draw two uniformly without replacement.",
+        "question": "What is the probability of one red and one blue in either order?"
+      },
+      {
+        "title": "An independent product",
+        "body": "Two independent fair dice are rolled.",
+        "question": "What is the probability both show 6?"
+      },
+      {
+        "title": "At least one",
+        "body": "Two independent fair dice are rolled.",
+        "question": "What is the probability at least one shows 6?"
+      },
+      {
+        "title": "Exactly one",
+        "body": "Two independent fair dice are rolled.",
+        "question": "What is the probability exactly one shows 6?"
+      },
+      {
+        "title": "A conditional ratio",
+        "body": "Conditional probability uses the intersection divided by the probability of the conditioning event.",
+        "question": "If P(A AND B) = 0.12 and P(B) = 0.30, what is P(A | B)?",
+        "math": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
+      },
+      {
+        "title": "A zero denominator",
+        "body": "P(B) = 0.",
+        "question": "Can the usual conditional-probability ratio define P(A | B)?"
+      },
+      {
+        "title": "Read the notation",
+        "body": "A = laptop use; B = tablet use.",
+        "question": "How would you describe P(A AND B) in words?"
+      },
+      {
+        "title": "Choose the rule",
+        "body": "A probability question asks whether at least one of two events occurs.",
+        "question": "Which rule naturally connects the event probabilities and their overlap?"
+      },
+      {
+        "title": "Check coherence",
+        "body": "A proposed model has P(A) = 0.2 and P(A AND B) = 0.3.",
+        "question": "Can these probabilities describe valid events?"
+      },
+      {
+        "title": "Three independent events",
+        "body": "Three independent transmissions each succeed with probability 0.9.",
+        "question": "What is the probability all three succeed?"
+      },
+      {
+        "title": "A complement shortcut",
+        "body": "Three independent transmissions each succeed with probability 0.9.",
+        "question": "What is the probability at least one fails?"
+      }
+    ]
+  },
+  {
+    "number": "3.4",
+    "title": "Contingency Tables",
+    "slug": "3-4-contingency-tables",
+    "slides": [
+      {
+        "title": "A contingency table",
+        "body": "A contingency table records counts for combinations of categorical variables.",
+        "question": "Which two variables organize this synthetic survey?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A joint count",
+        "body": "Synthetic survey of 100 students.",
+        "question": "How many students use both a tablet and a laptop?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A marginal count",
+        "body": "Synthetic survey of 100 students.",
+        "question": "How many students use a laptop, regardless of tablet use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A marginal probability",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "What is the probability of tablet use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A joint probability",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "What is the probability of tablet AND laptop use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A union probability",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "What is the probability of tablet OR laptop use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Neither category",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "What is the probability of neither tablet nor laptop use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Condition on a row",
+        "body": "Select one student uniformly from the tablet users in this synthetic survey.",
+        "question": "What is the probability of laptop use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Condition on a column",
+        "body": "Select one student uniformly from the laptop users in this synthetic survey.",
+        "question": "What is the probability of tablet use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Different denominators",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "Why do P(laptop | tablet) and P(tablet | laptop) have different denominators?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "An independence check",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "Are tablet use and laptop use independent in these data?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Mutual exclusivity check",
+        "body": "Synthetic survey of 100 students.",
+        "question": "Are tablet use and laptop use mutually exclusive?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              18,
+              12,
+              30
+            ],
+            [
+              "No tablet",
+              42,
+              28,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Complete the counts",
+        "body": "Synthetic survey table. Every student is in exactly one row and one column.",
+        "question": "What counts fill the missing cells?",
+        "table": {
+          "headers": [
+            "",
+            "Online",
+            "In person",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Morning",
+              12,
+              "?",
+              30
+            ],
+            [
+              "Afternoon",
+              8,
+              22,
+              "?"
+            ],
+            [
+              "Total",
+              "?",
+              40,
+              60
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Percent of which group?",
+        "body": "Synthetic survey: 18 of 30 tablet users also use laptops; 18 of 60 laptop users also use tablets.",
+        "question": "Which statement corresponds to 60%?"
+      },
+      {
+        "title": "A dependent table",
+        "body": "Select one student uniformly from this synthetic survey.",
+        "question": "Does tablet use change the probability of laptop use?",
+        "table": {
+          "headers": [
+            "",
+            "Laptop",
+            "No laptop",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Tablet",
+              24,
+              6,
+              30
+            ],
+            [
+              "No tablet",
+              36,
+              34,
+              70
+            ],
+            [
+              "Total",
+              60,
+              40,
+              100
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Scope of the table",
+        "body": "A convenience survey finds laptop use and tablet use independent among respondents.",
+        "question": "Does this establish independence for all students at the college?"
+      }
+    ]
+  },
+  {
+    "number": "3.5",
+    "title": "Tree and Venn Diagrams",
+    "slug": "3-5-tree-and-venn-diagrams",
+    "slides": [
+      {
+        "title": "A tree diagram",
+        "body": "A tree diagram represents a sequence of outcomes with branches.",
+        "question": "What two first branches represent one fair-coin toss?"
+      },
+      {
+        "title": "Build a two-stage tree",
+        "body": "Toss a fair coin twice independently.",
+        "question": "How would you label every branch and terminal outcome?"
+      },
+      {
+        "title": "Multiply along a path",
+        "body": "Two independent fair-coin tosses.",
+        "question": "What is the probability of the H then T path?",
+        "plot": {
+          "kind": "tree",
+          "first": [
+            {
+              "label": "H",
+              "p": "1/2"
+            },
+            {
+              "label": "T",
+              "p": "1/2"
+            }
+          ],
+          "second": [
+            [
+              {
+                "label": "HH",
+                "p": "1/2"
+              },
+              {
+                "label": "HT",
+                "p": "1/2"
+              }
+            ],
+            [
+              {
+                "label": "TH",
+                "p": "1/2"
+              },
+              {
+                "label": "TT",
+                "p": "1/2"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Add terminal paths",
+        "body": "Two independent fair-coin tosses.",
+        "question": "Which paths contribute to exactly one head?",
+        "plot": {
+          "kind": "tree",
+          "first": [
+            {
+              "label": "H",
+              "p": "1/2"
+            },
+            {
+              "label": "T",
+              "p": "1/2"
+            }
+          ],
+          "second": [
+            [
+              {
+                "label": "HH",
+                "p": "1/2"
+              },
+              {
+                "label": "HT",
+                "p": "1/2"
+              }
+            ],
+            [
+              {
+                "label": "TH",
+                "p": "1/2"
+              },
+              {
+                "label": "TT",
+                "p": "1/2"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Tree without replacement",
+        "body": "3 red, 2 blue; uniform draws, no replacement.",
+        "question": "Why is P(red second | red first) = 2/4?",
+        "plot": {
+          "kind": "tree",
+          "first": [
+            {
+              "label": "R",
+              "p": "3/5"
+            },
+            {
+              "label": "B",
+              "p": "2/5"
+            }
+          ],
+          "second": [
+            [
+              {
+                "label": "RR",
+                "p": "2/4"
+              },
+              {
+                "label": "RB",
+                "p": "2/4"
+              }
+            ],
+            [
+              {
+                "label": "BR",
+                "p": "3/4"
+              },
+              {
+                "label": "BB",
+                "p": "1/4"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A second set of branches",
+        "body": "3 red, 2 blue; uniform draws, no replacement.",
+        "question": "What is the probability of the B then R path?",
+        "plot": {
+          "kind": "tree",
+          "first": [
+            {
+              "label": "R",
+              "p": "3/5"
+            },
+            {
+              "label": "B",
+              "p": "2/5"
+            }
+          ],
+          "second": [
+            [
+              {
+                "label": "RR",
+                "p": "2/4"
+              },
+              {
+                "label": "RB",
+                "p": "2/4"
+              }
+            ],
+            [
+              {
+                "label": "BR",
+                "p": "3/4"
+              },
+              {
+                "label": "BB",
+                "p": "1/4"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Branch totals",
+        "body": "A tree node has outgoing probabilities 0.3, 0.4, and 0.4 for mutually exclusive exhaustive outcomes.",
+        "question": "What is wrong with this node?"
+      },
+      {
+        "title": "A tree with replacement",
+        "body": "A box holds 3 red and 2 blue tokens. Replace and mix after each uniform draw.",
+        "question": "How do the second-stage branch labels differ from drawing without replacement?"
+      },
+      {
+        "title": "A weighted path",
+        "body": "Synthetic model: 40% of jobs use server A, 60% use B; completion probabilities are 0.9 on A and 0.8 on B.",
+        "question": "What is the probability of choosing A and completing the job?"
+      },
+      {
+        "title": "Sum successful paths",
+        "body": "Synthetic model: 40% of jobs use server A, 60% use B; completion probabilities are 0.9 on A and 0.8 on B.",
+        "question": "What is the overall probability of completion?"
+      },
+      {
+        "title": "Reverse the conditioning",
+        "body": "Synthetic model: 40% of jobs use server A, 60% use B; completion probabilities are 0.9 on A and 0.8 on B.",
+        "question": "Given completion, what is the probability the job used A?"
+      },
+      {
+        "title": "A Venn diagram",
+        "body": "A Venn diagram places overlapping event regions inside the sample space.",
+        "question": "Where would an outcome belonging to both A and B appear?"
+      },
+      {
+        "title": "Fill the regions",
+        "body": "Synthetic survey of 100 students: 60 use laptops, 30 use tablets, and 18 use both.",
+        "question": "What counts belong in the four regions of a two-circle Venn diagram?"
+      },
+      {
+        "title": "Only one category",
+        "body": "Synthetic survey of 100 students.",
+        "question": "How many use a laptop but no tablet?",
+        "plot": {
+          "kind": "venn",
+          "labels": [
+            "Laptop",
+            "Tablet"
+          ],
+          "regions": {
+            "a": 42,
+            "both": 18,
+            "b": 12,
+            "neither": 28
+          }
+        }
+      },
+      {
+        "title": "Outside both circles",
+        "body": "Synthetic survey of 100 students.",
+        "question": "How many use neither device?",
+        "plot": {
+          "kind": "venn",
+          "labels": [
+            "Laptop",
+            "Tablet"
+          ],
+          "regions": {
+            "a": 42,
+            "both": 18,
+            "b": 12,
+            "neither": 28
+          }
+        }
+      },
+      {
+        "title": "Shade a union",
+        "body": "Synthetic survey of 100 students.",
+        "question": "Which regions form laptop OR tablet?",
+        "plot": {
+          "kind": "venn",
+          "labels": [
+            "Laptop",
+            "Tablet"
+          ],
+          "regions": {
+            "a": 42,
+            "both": 18,
+            "b": 12,
+            "neither": 28
+          }
+        }
+      },
+      {
+        "title": "Shade a complement",
+        "body": "Synthetic survey of 100 students.",
+        "question": "Which region complements laptop OR tablet?",
+        "plot": {
+          "kind": "venn",
+          "labels": [
+            "Laptop",
+            "Tablet"
+          ],
+          "regions": {
+            "a": 42,
+            "both": 18,
+            "b": 12,
+            "neither": 28
+          }
+        }
+      },
+      {
+        "title": "Disjoint circles",
+        "body": "Two positive-probability events have no overlap in a Venn diagram.",
+        "question": "What does this show, and does it establish independence?"
+      }
+    ]
+  }
+]

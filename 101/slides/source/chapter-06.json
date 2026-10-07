@@ -1,0 +1,1018 @@
+[
+  {
+    "number": "6.1",
+    "title": "Exponential Functions",
+    "slug": "6-1-exponential-functions",
+    "slides": [
+      {
+        "title": "Exponential function",
+        "body": "Here a is nonzero, b is positive, b is not 1, and x is real.",
+        "math": "f(x)=ab^x",
+        "question": "Why must the base be positive?"
+      },
+      {
+        "title": "Variable in the exponent",
+        "body": "",
+        "math": "3^x\\qquad x^3",
+        "question": "Which expression is exponential, and which is a power function?"
+      },
+      {
+        "title": "A forbidden base",
+        "body": "",
+        "math": "(-4)^x",
+        "question": "Would this expression give a real output for every real x?"
+      },
+      {
+        "title": "A base of one",
+        "body": "",
+        "math": "1^x",
+        "question": "Why does this function fail to describe exponential growth or decay?"
+      },
+      {
+        "title": "Zero and negative exponents",
+        "body": "",
+        "math": "f(x)=6\\cdot 2^x",
+        "question": "What are f(0) and f(-2)?"
+      },
+      {
+        "title": "Fractional input",
+        "body": "",
+        "math": "f(x)=4\\cdot 9^x",
+        "question": "What is the exact value of f(1/2)?"
+      },
+      {
+        "title": "Order of operations",
+        "body": "",
+        "math": "f(x)=3\\cdot 2^{x+1}",
+        "question": "What is f(2)?"
+      },
+      {
+        "title": "Equal input steps",
+        "body": "",
+        "math": "f(x)=5\\cdot 3^x",
+        "question": "By what factor does the output change when x increases by 1?"
+      },
+      {
+        "title": "Growth factor",
+        "body": "P is a population count and t is years after the initial measurement, t ≥ 0.",
+        "math": "P(t)=800(1.06)^t",
+        "question": "What annual percent change does the model represent?"
+      },
+      {
+        "title": "Decay factor",
+        "body": "V is equipment value in dollars and t is years since purchase, t ≥ 0.",
+        "math": "V(t)=12000(0.85)^t",
+        "question": "What annual percent decrease does the model represent?"
+      },
+      {
+        "title": "Addition or multiplication",
+        "body": "Both outputs are amounts in dollars; t is elapsed years, t ≥ 0.",
+        "math": "L(t)=40+8t\\qquad E(t)=40(1.2)^t",
+        "question": "Which model increases by a constant amount, and which by a constant percentage?"
+      },
+      {
+        "title": "Writing a growth model",
+        "body": "An account starts at $600 and increases by 4% each year. Assume no deposits or withdrawals and t ≥ 0.",
+        "math": "",
+        "question": "What exponential model gives the account balance after t years?"
+      },
+      {
+        "title": "Writing a decay model",
+        "body": "A sample begins with 90 grams and loses 12% of its remaining mass each hour. Assume the same fractional decrease and t ≥ 0.",
+        "math": "",
+        "question": "What exponential model gives the remaining mass after t hours?"
+      },
+      {
+        "title": "Two points with an initial value",
+        "body": "Assume a > 0 and b > 0, b ≠ 1.",
+        "math": "f(x)=ab^x",
+        "question": "What exponential function passes through (0, 5) and (2, 45)?"
+      },
+      {
+        "title": "Two points without an initial value",
+        "body": "Assume a > 0 and b > 0, b ≠ 1.",
+        "math": "f(x)=ab^x",
+        "question": "What exponential function passes through (1, 12) and (3, 48)?"
+      },
+      {
+        "title": "Compound interest",
+        "body": "P is principal, r is the annual interest rate as a decimal, n is compoundings per year, and t is elapsed years.",
+        "math": "A=P\\left(1+\\frac{r}{n}\\right)^{nt}",
+        "question": "What does n count in this formula?"
+      },
+      {
+        "title": "Monthly compounding",
+        "body": "Deposit $1,500 at 4.8% annual interest compounded monthly, with no deposits, withdrawals, or fees.",
+        "math": "",
+        "question": "What is the balance after 3 years, rounded to the nearest cent?"
+      },
+      {
+        "title": "A quarterly growth factor",
+        "body": "An account earns 6% annual interest compounded quarterly, with no deposits or withdrawals.",
+        "math": "",
+        "question": "What factor multiplies the balance each quarter?"
+      },
+      {
+        "title": "The natural base",
+        "body": "The number e is the base of the natural exponential function.",
+        "math": "e\\approx 2.71828",
+        "question": "Is e raised to a real power always positive?"
+      },
+      {
+        "title": "Evaluating a natural exponential",
+        "body": "",
+        "math": "f(x)=7e^{-0.4x}",
+        "question": "What is f(3), rounded to four decimal places?"
+      },
+      {
+        "title": "Continuous compounding",
+        "body": "P is principal, r is the annual interest rate as a decimal, and t is elapsed years.",
+        "math": "A=Pe^{rt}",
+        "question": "How does t differ from the number of compounding periods?"
+      },
+      {
+        "title": "A continuously compounded balance",
+        "body": "Deposit $2,000 at 3.5% annual interest compounded continuously, with no deposits, withdrawals, or fees.",
+        "math": "",
+        "question": "What is the balance after 5 years, rounded to the nearest cent?"
+      }
+    ]
+  },
+  {
+    "number": "6.2",
+    "title": "Graphs of Exponential Functions",
+    "slug": "6-2-graphs-of-exponential-functions",
+    "slides": [
+      {
+        "title": "Building a graph",
+        "body": "",
+        "math": "f(x)=3^x",
+        "question": "What points result for x = -2, -1, 0, 1, and 2?"
+      },
+      {
+        "title": "Growth graph",
+        "body": "",
+        "math": "f(x)=3^x",
+        "question": "What are the domain, range, intercept, and horizontal asymptote?"
+      },
+      {
+        "title": "Decay graph",
+        "body": "",
+        "math": "g(x)=\\left(\\frac{1}{3}\\right)^x",
+        "question": "How does this graph differ from the graph of 3 to the power x?"
+      },
+      {
+        "title": "Never zero",
+        "body": "",
+        "math": "f(x)=5^x",
+        "question": "Can this graph intersect the x-axis?"
+      },
+      {
+        "title": "End behavior",
+        "body": "",
+        "math": "g(x)=\\left(\\frac{1}{4}\\right)^x",
+        "question": "What happens to g(x) as x increases without bound?"
+      },
+      {
+        "title": "Reflecting the input",
+        "body": "",
+        "math": "g(x)=2^{-x}",
+        "question": "How does this graph relate to the graph of 2 to the power x?"
+      },
+      {
+        "title": "Reflecting the output",
+        "body": "",
+        "math": "g(x)=-2^x",
+        "question": "What are the range and direction of change?"
+      },
+      {
+        "title": "Vertical stretch",
+        "body": "",
+        "math": "g(x)=4\\cdot 2^x",
+        "question": "How does every point on the graph of 2 to the power x change?"
+      },
+      {
+        "title": "Horizontal shift",
+        "body": "",
+        "math": "g(x)=2^{x-3}",
+        "question": "Where does the point (0, 1) on the parent graph move?"
+      },
+      {
+        "title": "Vertical shift",
+        "body": "",
+        "math": "g(x)=2^x+3",
+        "question": "What are the new range and horizontal asymptote?"
+      },
+      {
+        "title": "Combining transformations",
+        "body": "",
+        "math": "g(x)=3\\cdot 2^{x+1}-4",
+        "question": "What transformations produce this graph from the parent graph?"
+      },
+      {
+        "title": "Range after reflection and shift",
+        "body": "",
+        "math": "g(x)=-3^x+5",
+        "question": "What is the range?"
+      },
+      {
+        "title": "A transformed decay graph",
+        "body": "",
+        "math": "g(x)=2\\left(\\frac{1}{2}\\right)^x-3",
+        "question": "What are the y-intercept and horizontal asymptote?"
+      },
+      {
+        "title": "An x-intercept",
+        "body": "",
+        "math": "g(x)=2^{x-1}-4",
+        "question": "Where does this graph cross the x-axis?"
+      },
+      {
+        "title": "Horizontal compression",
+        "body": "",
+        "math": "g(x)=2^{3x}",
+        "question": "How does the point (1, 2) on the parent graph move?"
+      },
+      {
+        "title": "Moving toward an asymptote",
+        "body": "",
+        "math": "g(x)=5-2^{-x}",
+        "question": "What value does g(x) approach as x increases without bound?"
+      },
+      {
+        "title": "Reading graph information",
+        "body": "The horizontal asymptote is y = 3, and the graph passes through (0, 7).",
+        "math": "g(x)=a\\cdot 2^x+k",
+        "question": "What values of a and k fit these graph features?"
+      },
+      {
+        "title": "Sketch from a formula",
+        "body": "",
+        "math": "g(x)=-2^{x-2}+1",
+        "question": "What sketch shows the intercepts, asymptote, and direction of change?"
+      },
+      {
+        "title": "Function domain versus model domain",
+        "body": "A is an account balance in dollars; t is years after opening the account.",
+        "math": "A(t)=300e^{0.08t}",
+        "question": "How does the real-world domain differ from the formula domain?"
+      },
+      {
+        "title": "Preparing for an inverse",
+        "body": "",
+        "math": "f(x)=2^x",
+        "question": "If the graph is reflected across y = x, where do (0, 1) and (3, 8) move?"
+      }
+    ]
+  },
+  {
+    "number": "6.3",
+    "title": "Logarithmic Functions",
+    "slug": "6-3-logarithmic-functions",
+    "slides": [
+      {
+        "title": "Logarithm",
+        "body": "Here b > 0, b ≠ 1, and x > 0.",
+        "math": "\\log_b x=y\\quad\\Longleftrightarrow\\quad b^y=x",
+        "question": "What quantity does the logarithm return?"
+      },
+      {
+        "title": "Inverse functions",
+        "body": "Assume b > 0 and b ≠ 1.",
+        "math": "f(x)=b^x\\qquad g(x)=\\log_b x",
+        "question": "What input restriction must g have?"
+      },
+      {
+        "title": "From exponential to logarithmic",
+        "body": "",
+        "math": "4^3=64",
+        "question": "What is the equivalent logarithmic statement?"
+      },
+      {
+        "title": "From logarithmic to exponential",
+        "body": "",
+        "math": "\\log_5 125=3",
+        "question": "What is the equivalent exponential statement?"
+      },
+      {
+        "title": "A negative logarithm",
+        "body": "",
+        "math": "\\log_2\\left(\\frac{1}{8}\\right)",
+        "question": "What is the exact value?"
+      },
+      {
+        "title": "A fractional logarithm",
+        "body": "",
+        "math": "\\log_9 3",
+        "question": "What is the exact value?"
+      },
+      {
+        "title": "A base below one",
+        "body": "",
+        "math": "\\log_{1/2}8",
+        "question": "What exponent gives the argument?"
+      },
+      {
+        "title": "Logarithm of one",
+        "body": "Assume b > 0 and b ≠ 1.",
+        "math": "\\log_b 1",
+        "question": "What is the value for every allowed base b?"
+      },
+      {
+        "title": "Logarithm of the base",
+        "body": "Assume b > 0 and b ≠ 1.",
+        "math": "\\log_b b",
+        "question": "What is the value for every allowed base b?"
+      },
+      {
+        "title": "Undoing an exponential",
+        "body": "",
+        "math": "\\log_3(3^u)",
+        "question": "What is the value for every real u?"
+      },
+      {
+        "title": "Undoing a logarithm",
+        "body": "",
+        "math": "5^{\\log_5 x}",
+        "question": "What is the value, and what condition must x satisfy?"
+      },
+      {
+        "title": "An undefined real logarithm",
+        "body": "",
+        "math": "\\log_4(-16)",
+        "question": "Why is this expression undefined over the real numbers?"
+      },
+      {
+        "title": "Zero as an argument",
+        "body": "",
+        "math": "\\log_7 0",
+        "question": "Could any real exponent of 7 produce the argument?"
+      },
+      {
+        "title": "Finding an argument",
+        "body": "",
+        "math": "\\log_3 x=-2",
+        "question": "What positive value of x satisfies the equation?"
+      },
+      {
+        "title": "Finding a base",
+        "body": "",
+        "math": "\\log_b 81=4",
+        "question": "What allowed base b satisfies the equation?"
+      },
+      {
+        "title": "Common logarithm",
+        "body": "A common logarithm has base 10.",
+        "math": "\\log x=\\log_{10}x",
+        "question": "What is the exact value of log(0.001)?"
+      },
+      {
+        "title": "Approximating a common logarithm",
+        "body": "",
+        "math": "\\log 35",
+        "question": "Between which consecutive integers does the value lie?"
+      },
+      {
+        "title": "Natural logarithm",
+        "body": "A natural logarithm has base e.",
+        "math": "\\ln x=\\log_e x",
+        "question": "What is the exact value of the natural logarithm of e cubed?"
+      },
+      {
+        "title": "Calculator evaluation",
+        "body": "",
+        "math": "\\ln 7",
+        "question": "What is the value rounded to four decimal places?"
+      },
+      {
+        "title": "Exact and approximate values",
+        "body": "",
+        "math": "\\ln 7\\qquad 1.9459",
+        "question": "Which expression is exact, and which is a rounded approximation?"
+      }
+    ]
+  },
+  {
+    "number": "6.4",
+    "title": "Graphs of Logarithmic Functions",
+    "slug": "6-4-graphs-of-logarithmic-functions",
+    "slides": [
+      {
+        "title": "A graph from its inverse",
+        "body": "",
+        "math": "f(x)=2^x\\qquad g(x)=\\log_2 x",
+        "question": "Which points on g correspond to (0, 1), (1, 2), and (2, 4) on f?"
+      },
+      {
+        "title": "Domain and range",
+        "body": "",
+        "math": "g(x)=\\log_2 x",
+        "question": "What are the domain and range?"
+      },
+      {
+        "title": "A logarithmic asymptote",
+        "body": "",
+        "math": "g(x)=\\log_2 x",
+        "question": "What vertical line is the asymptote?"
+      },
+      {
+        "title": "A logarithmic intercept",
+        "body": "",
+        "math": "g(x)=\\log_2 x",
+        "question": "Where does the graph cross the x-axis?"
+      },
+      {
+        "title": "Increasing or decreasing",
+        "body": "",
+        "math": "g(x)=\\log_{1/3}x",
+        "question": "How does the graph change as x increases?"
+      },
+      {
+        "title": "Approaching the domain boundary",
+        "body": "",
+        "math": "g(x)=\\ln x",
+        "question": "What happens to g(x) as positive x approaches 0?"
+      },
+      {
+        "title": "A horizontal shift",
+        "body": "",
+        "math": "g(x)=\\log_2(x-4)",
+        "question": "What are the domain and vertical asymptote?"
+      },
+      {
+        "title": "A vertical shift",
+        "body": "",
+        "math": "g(x)=\\log_2 x+3",
+        "question": "Where does the parent point (1, 0) move?"
+      },
+      {
+        "title": "A vertical reflection",
+        "body": "",
+        "math": "g(x)=-\\ln x",
+        "question": "What are the intercept and direction of change?"
+      },
+      {
+        "title": "A horizontal reflection",
+        "body": "",
+        "math": "g(x)=\\ln(-x)",
+        "question": "What are the domain and vertical asymptote?"
+      },
+      {
+        "title": "A vertical stretch",
+        "body": "",
+        "math": "g(x)=3\\log_2 x",
+        "question": "Where does the parent point (2, 1) move?"
+      },
+      {
+        "title": "A scaled input",
+        "body": "",
+        "math": "g(x)=\\ln(2x)",
+        "question": "What is the domain?"
+      },
+      {
+        "title": "A reversed input",
+        "body": "",
+        "math": "g(x)=\\log_3(5-x)",
+        "question": "What are the domain and vertical asymptote?"
+      },
+      {
+        "title": "A transformed graph",
+        "body": "",
+        "math": "g(x)=-2\\log_3(x+1)+4",
+        "question": "What transformations produce this graph from the parent graph?"
+      },
+      {
+        "title": "An x-intercept after shifting",
+        "body": "",
+        "math": "g(x)=\\log_2(x-1)-3",
+        "question": "Where does the graph cross the x-axis?"
+      },
+      {
+        "title": "Two input restrictions",
+        "body": "",
+        "math": "g(x)=\\ln(x-2)+\\ln(5-x)",
+        "question": "What is the domain of the entire expression?"
+      },
+      {
+        "title": "A logarithm of a quadratic",
+        "body": "",
+        "math": "g(x)=\\ln(x^2-9)",
+        "question": "What intervals make the argument positive?"
+      },
+      {
+        "title": "A graph from a point and asymptote",
+        "body": "The vertical asymptote is x = 3, and the graph passes through (4, 2).",
+        "math": "g(x)=\\log_2(x-h)+k",
+        "question": "What values of h and k fit these features?"
+      },
+      {
+        "title": "Sketching a shifted logarithm",
+        "body": "",
+        "math": "g(x)=\\ln(x+2)-1",
+        "question": "What sketch shows its domain, intercepts, and asymptote?"
+      },
+      {
+        "title": "An inverse with a restriction",
+        "body": "",
+        "math": "f(x)=e^{x-2}+3",
+        "question": "What are the formula and domain of the inverse function?"
+      }
+    ]
+  },
+  {
+    "number": "6.5",
+    "title": "Logarithmic Properties",
+    "slug": "6-5-logarithmic-properties",
+    "slides": [
+      {
+        "title": "Product rule",
+        "body": "Assume b > 0, b ≠ 1, M > 0, and N > 0.",
+        "math": "\\log_b(MN)=\\log_b M+\\log_b N",
+        "question": "Which argument operation becomes addition?"
+      },
+      {
+        "title": "Expanding a product",
+        "body": "Assume x > 0.",
+        "math": "\\log_2(8x)",
+        "question": "What equivalent sum uses a numerical constant?"
+      },
+      {
+        "title": "Quotient rule",
+        "body": "Assume b > 0, b ≠ 1, M > 0, and N > 0.",
+        "math": "\\log_b\\!\\left(\\frac{M}{N}\\right)=\\log_b M-\\log_b N",
+        "question": "Which argument operation becomes subtraction?"
+      },
+      {
+        "title": "Expanding a quotient",
+        "body": "Assume x > 0.",
+        "math": "\\ln\\!\\left(\\frac{x}{e^2}\\right)",
+        "question": "What equivalent difference uses a numerical constant?"
+      },
+      {
+        "title": "Power rule",
+        "body": "Assume b > 0, b ≠ 1, M > 0, and p is real.",
+        "math": "\\log_b(M^p)=p\\log_b M",
+        "question": "What happens to the exponent p?"
+      },
+      {
+        "title": "Expanding a power",
+        "body": "Assume x > 0.",
+        "math": "\\log_5(x^4)",
+        "question": "What equivalent expression uses the power rule?"
+      },
+      {
+        "title": "Expanding a radical",
+        "body": "Assume x > 0.",
+        "math": "\\ln\\sqrt{x}",
+        "question": "What equivalent expression has no radical?"
+      },
+      {
+        "title": "Expanding a negative power",
+        "body": "Assume x > 0.",
+        "math": "\\log_3(x^{-2})",
+        "question": "What equivalent expression has no exponent inside the logarithm?"
+      },
+      {
+        "title": "Several factors",
+        "body": "Assume x > 0 and y > 0.",
+        "math": "\\ln(7x^2y)",
+        "question": "What equivalent sum has no products inside logarithms?"
+      },
+      {
+        "title": "A product and a quotient",
+        "body": "Assume x > 0 and y > 0.",
+        "math": "\\log_2\\!\\left(\\frac{8x^3}{y^2}\\right)",
+        "question": "What fully expanded expression results?"
+      },
+      {
+        "title": "Factoring before expanding",
+        "body": "Assume x > 2.",
+        "math": "\\ln(x^2-4)",
+        "question": "What equivalent sum follows from factoring the argument?"
+      },
+      {
+        "title": "No rule for a sum",
+        "body": "",
+        "math": "\\ln(x+y)\\qquad \\ln x+\\ln y",
+        "question": "Are these expressions equal for every positive x and y?"
+      },
+      {
+        "title": "Condensing a sum",
+        "body": "Assume x > 0.",
+        "math": "\\log_3 x+\\log_3 9",
+        "question": "What single logarithm is equivalent?"
+      },
+      {
+        "title": "Condensing a difference",
+        "body": "Assume x > 0.",
+        "math": "\\ln x-\\ln 5",
+        "question": "What single logarithm is equivalent?"
+      },
+      {
+        "title": "Condensing with coefficients",
+        "body": "Assume x > 0 and y > 0.",
+        "math": "2\\ln x-3\\ln y",
+        "question": "What single logarithm is equivalent?"
+      },
+      {
+        "title": "A fractional coefficient",
+        "body": "Assume x > 0.",
+        "math": "\\frac{1}{2}\\log x+\\log 4",
+        "question": "What single common logarithm is equivalent?"
+      },
+      {
+        "title": "Domain during expansion",
+        "body": "",
+        "math": "\\ln(x^2)\\qquad 2\\ln x",
+        "question": "Do these expressions have the same real domain?"
+      },
+      {
+        "title": "An absolute-value correction",
+        "body": "",
+        "math": "\\ln(x^2)=2\\ln|x|",
+        "question": "For which real x is this identity defined?"
+      },
+      {
+        "title": "Domain during condensation",
+        "body": "",
+        "math": "\\ln(x-1)+\\ln(x+1)",
+        "question": "What original domain must accompany the condensed expression?"
+      },
+      {
+        "title": "Change of base",
+        "body": "Assume b > 0, b ≠ 1, and M > 0.",
+        "math": "\\log_b M=\\frac{\\ln M}{\\ln b}",
+        "question": "Why is the denominator nonzero?"
+      },
+      {
+        "title": "A calculator-ready logarithm",
+        "body": "",
+        "math": "\\log_7 20",
+        "question": "What is the value rounded to four decimal places?"
+      },
+      {
+        "title": "A reciprocal relationship",
+        "body": "",
+        "math": "\\log_2 7\\qquad \\log_7 2",
+        "question": "What is the product of these two values?"
+      }
+    ]
+  },
+  {
+    "number": "6.6",
+    "title": "Exponential and Logarithmic Equations",
+    "slug": "6-6-exponential-and-logarithmic-equations",
+    "slides": [
+      {
+        "title": "Equal powers of one base",
+        "body": "Assume b > 0 and b ≠ 1; u and v are real.",
+        "math": "b^u=b^v",
+        "question": "When may we conclude that u = v?"
+      },
+      {
+        "title": "Like bases",
+        "body": "",
+        "math": "3^{2x-1}=27",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "Rewriting a base",
+        "body": "",
+        "math": "4^{x+1}=2^{3x}",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "A reciprocal base",
+        "body": "",
+        "math": "5^{x-2}=\\frac{1}{25}",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "Exponents on both sides",
+        "body": "",
+        "math": "2^{3x-1}=\\frac{2^{x+2}}{4}",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "Isolating an exponential",
+        "body": "",
+        "math": "4\\cdot 3^x-5=31",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "An impossible real output",
+        "body": "",
+        "math": "2^x=-7",
+        "question": "Does this equation have a real solution?"
+      },
+      {
+        "title": "Using a logarithm",
+        "body": "",
+        "math": "5^x=17",
+        "question": "What is the exact solution expressed with natural logarithms?"
+      },
+      {
+        "title": "An exact value and its approximation",
+        "body": "",
+        "math": "2^{3x}=11",
+        "question": "What is the exact solution and its approximation to four decimal places?"
+      },
+      {
+        "title": "A shifted exponent",
+        "body": "",
+        "math": "7^{x-2}=20",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "Different bases",
+        "body": "",
+        "math": "3^x=5^{x-1}",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "A natural exponential",
+        "body": "",
+        "math": "6e^{0.3x}=42",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "A quadratic in an exponential",
+        "body": "",
+        "math": "4^x-5\\cdot 2^x+4=0",
+        "question": "What are all real solutions?"
+      },
+      {
+        "title": "Definition of a logarithm",
+        "body": "",
+        "math": "\\log_3(x-2)=2",
+        "question": "What solution belongs to the original domain?"
+      },
+      {
+        "title": "A natural logarithmic equation",
+        "body": "",
+        "math": "\\ln(2x+1)=3",
+        "question": "What is the exact solution?"
+      },
+      {
+        "title": "The one-to-one property",
+        "body": "Assume b > 0, b ≠ 1, M > 0, and N > 0.",
+        "math": "\\log_b M=\\log_b N",
+        "question": "When may we conclude that M = N?"
+      },
+      {
+        "title": "Equal logarithms",
+        "body": "",
+        "math": "\\ln(3x+1)=\\ln(x+7)",
+        "question": "What solution satisfies both argument restrictions?"
+      },
+      {
+        "title": "Condensing before solving",
+        "body": "",
+        "math": "\\log_2 x+\\log_2(x-2)=3",
+        "question": "What solution survives the original domain restrictions?"
+      },
+      {
+        "title": "A logarithmic difference",
+        "body": "",
+        "math": "\\ln(x+2)-\\ln x=\\ln 3",
+        "question": "What solution satisfies the original equation?"
+      },
+      {
+        "title": "A logarithm with no real solution",
+        "body": "",
+        "math": "\\ln(x-1)=\\ln(1-x)",
+        "question": "Can any real x make both sides defined?"
+      },
+      {
+        "title": "Checking candidate solutions",
+        "body": "",
+        "math": "\\ln(x^2-3x)=\\ln 4",
+        "question": "Which candidates satisfy the original argument restriction?"
+      },
+      {
+        "title": "A growth threshold",
+        "body": "P is a population count and t is elapsed years, t ≥ 0. Assume the model holds continuously.",
+        "math": "P(t)=500(1.08)^t",
+        "question": "When does the model first reach 900, to the nearest tenth of a year?"
+      },
+      {
+        "title": "A decay threshold",
+        "body": "M is mass in grams and t is elapsed hours, t ≥ 0.",
+        "math": "M(t)=80e^{-0.15t}",
+        "question": "When does the sample reach 20 grams, to the nearest tenth of an hour?"
+      },
+      {
+        "title": "Doubling under continuous interest",
+        "body": "An account with a positive initial balance earns 4% annual interest compounded continuously, with no deposits, withdrawals, or fees.",
+        "math": "",
+        "question": "How many years does doubling take, rounded to the nearest tenth?"
+      }
+    ]
+  },
+  {
+    "number": "6.7",
+    "title": "Exponential and Logarithmic Models",
+    "slug": "6-7-exponential-and-logarithmic-models",
+    "slides": [
+      {
+        "title": "Continuous growth or decay",
+        "body": "Here Q₀ > 0 is the initial amount and t ≥ 0 is elapsed time.",
+        "math": "Q(t)=Q_0e^{kt}",
+        "question": "How does the sign of k distinguish growth from decay?"
+      },
+      {
+        "title": "Changing to base e",
+        "body": "Q is an amount in dollars and t is elapsed years, t ≥ 0.",
+        "math": "Q(t)=250(1.12)^t",
+        "question": "What equivalent base-e model uses an exact exponent coefficient?"
+      },
+      {
+        "title": "Changing from base e",
+        "body": "Q is mass in grams and t is elapsed hours, t ≥ 0.",
+        "math": "Q(t)=600e^{-0.2t}",
+        "question": "What equivalent model has a constant base raised to t?"
+      },
+      {
+        "title": "Half-life",
+        "body": "Here M₀ > 0 is initial mass, t ≥ 0 is elapsed time, and h > 0 uses the same time unit.",
+        "math": "M(t)=M_0\\left(\\frac{1}{2}\\right)^{t/h}",
+        "question": "What does h measure?"
+      },
+      {
+        "title": "Mass after several half-lives",
+        "body": "A sample begins with 160 grams and has an 8-hour half-life. Assume exponential decay.",
+        "math": "",
+        "question": "How many grams remain after 24 hours?"
+      },
+      {
+        "title": "Finding a continuous decay rate",
+        "body": "A sample begins with 100 grams and has a 6-hour half-life. Assume exponential decay and t ≥ 0.",
+        "math": "",
+        "question": "What exact base-e model gives the mass after t hours?"
+      },
+      {
+        "title": "Doubling time",
+        "body": "A population begins with 300 organisms and doubles every 5 days. Assume unrestricted exponential growth and t ≥ 0.",
+        "math": "",
+        "question": "What exponential model gives the count after t days?"
+      },
+      {
+        "title": "Newton cooling model",
+        "body": "T is temperature, T₀ is initial temperature, Tₛ is constant surrounding temperature, k > 0, and t ≥ 0 is elapsed time.",
+        "math": "T(t)=T_s+(T_0-T_s)e^{-kt}",
+        "question": "Which quantity represents the surrounding temperature?"
+      },
+      {
+        "title": "Interpreting a cooling curve",
+        "body": "T is temperature in degrees Celsius and t is elapsed minutes, t ≥ 0.",
+        "math": "T(t)=20+70e^{-0.1t}",
+        "question": "What are the initial and long-term temperatures?"
+      },
+      {
+        "title": "A cooling target",
+        "body": "T is temperature in degrees Celsius and t is elapsed minutes, t ≥ 0.",
+        "math": "T(t)=20+70e^{-0.1t}",
+        "question": "When does the model reach 40 degrees Celsius, to the nearest tenth of a minute?"
+      },
+      {
+        "title": "A cooling constant",
+        "body": "An object cools from 80°C to 50°C in 10 minutes in a constant 20°C room. Use Newton’s model with time in minutes.",
+        "math": "",
+        "question": "What value of k fits the observation?"
+      },
+      {
+        "title": "Logistic growth",
+        "body": "Here L > 0, A > 0, k > 0, and t ≥ 0 is elapsed time.",
+        "math": "P(t)=\\frac{L}{1+Ae^{-kt}}",
+        "question": "Which parameter is the upper limiting population?"
+      },
+      {
+        "title": "A logistic population",
+        "body": "P is a population count and t is elapsed weeks, t ≥ 0.",
+        "math": "P(t)=\\frac{1200}{1+5e^{-0.4t}}",
+        "question": "What are the initial and limiting populations?"
+      },
+      {
+        "title": "A logistic threshold",
+        "body": "P is a population count and t is elapsed weeks, t ≥ 0.",
+        "math": "P(t)=\\frac{1200}{1+5e^{-0.4t}}",
+        "question": "When does the model reach 600, to the nearest tenth of a week?"
+      },
+      {
+        "title": "Choosing a model",
+        "body": "Consider linear, exponential, logarithmic, and logistic models for elapsed time t ≥ 0.",
+        "math": "",
+        "question": "Which model family matches a positive initial population approaching a fixed upper limit?"
+      },
+      {
+        "title": "Model limits",
+        "body": "A positive population grows in a habitat with limited space and resources.",
+        "math": "",
+        "question": "What feature makes an unrestricted exponential model questionable for long-term predictions?"
+      }
+    ]
+  },
+  {
+    "number": "6.8",
+    "title": "Fitting Exponential Models to Data",
+    "slug": "6-8-fitting-exponential-models-to-data",
+    "slides": [
+      {
+        "title": "Regression model",
+        "body": "A regression model fits a chosen function family to observed data.",
+        "math": "",
+        "question": "Must every observed point lie on the fitted curve?"
+      },
+      {
+        "title": "Equal steps and ratios",
+        "body": "At t = 0, 1, 2, 3 hours, the respective amounts are 20, 30, 45, 67.5 grams.",
+        "math": "",
+        "question": "Do the data suggest an exponential model?"
+      },
+      {
+        "title": "Exact fit versus regression",
+        "body": "At t = 0, 1, 2, 3 hours, measured amounts are 20.1, 30.3, 44.7, 68.0 grams.",
+        "math": "",
+        "question": "Why might regression be more appropriate than forcing a curve through two selected points?"
+      },
+      {
+        "title": "An exponential regression",
+        "body": "At t = 0, 1, 2, 3 hours, y = 20.1, 30.3, 44.7, 68.0 grams, respectively.",
+        "math": "y=ab^t",
+        "question": "What exponential model does your graphing tool fit to these data?"
+      },
+      {
+        "title": "Interpreting fitted parameters",
+        "body": "V is equipment value in dollars and t is elapsed years, t ≥ 0.",
+        "math": "V(t)=950(0.82)^t",
+        "question": "What initial value and annual percent decrease does the fitted model estimate?"
+      },
+      {
+        "title": "Predicting with a fitted model",
+        "body": "Q is mass in grams and t is elapsed hours. The data covered 0 through 3 hours.",
+        "math": "Q(t)=19.9(1.505)^t",
+        "question": "What amount does the model predict at 2.5 hours, to the nearest tenth of a gram?"
+      },
+      {
+        "title": "A residual",
+        "body": "The observed mass at 2 hours is 44.7 grams. Define residual as observed minus predicted.",
+        "math": "Q(t)=19.9(1.505)^t",
+        "question": "What is the residual at 2 hours, to the nearest tenth of a gram?"
+      },
+      {
+        "title": "Residual patterns",
+        "body": "Residuals are observed minus predicted; the data increase rapidly at first and then level off.",
+        "math": "",
+        "question": "What does a persistent curved residual pattern suggest about a fitted linear model?"
+      },
+      {
+        "title": "Logarithmic regression",
+        "body": "The pairs (x, y) are (1, 2.1), (2, 4.0), (4, 6.3), and (8, 8.2).",
+        "math": "y=a+b\\ln x",
+        "question": "What logarithmic model does your graphing tool fit to these data?"
+      },
+      {
+        "title": "A logarithmic model domain",
+        "body": "",
+        "math": "R(x)=2+3\\ln x",
+        "question": "Which input values are allowed?"
+      },
+      {
+        "title": "Prediction from a logarithmic fit",
+        "body": "The fitted data used inputs from 1 through 8.",
+        "math": "R(x)=2.05+2.97\\ln x",
+        "question": "What does the model predict at x = 3, rounded to two decimal places?"
+      },
+      {
+        "title": "Logistic regression",
+        "body": "At t = 0, 1, 2, 3, 4 weeks, P = 50, 85, 131, 179, 219, respectively.",
+        "math": "P(t)=\\frac{L}{1+Ae^{-kt}}",
+        "question": "What logistic model does your graphing tool fit to these data?"
+      },
+      {
+        "title": "Interpreting a logistic fit",
+        "body": "P is a population count and t is elapsed weeks, t ≥ 0.",
+        "math": "P(t)=\\frac{300}{1+5e^{-0.7t}}",
+        "question": "What upper limiting population does this fitted model estimate?"
+      },
+      {
+        "title": "Three model families",
+        "body": "Each unit increase in input multiplies the positive output by approximately the same factor. Consider exponential, logarithmic, and logistic models.",
+        "math": "",
+        "question": "Which model family best represents these features?"
+      },
+      {
+        "title": "Interpolation and extrapolation",
+        "body": "The fitted measurements covered t = 0 through 3 hours.",
+        "math": "Q(t)=19.9(1.505)^t",
+        "question": "Which prediction is interpolation: t = 2.5 hours or t = 12 hours?"
+      },
+      {
+        "title": "A prediction needs context",
+        "body": "An exponential model fits measurements collected during the first three hours of an experiment.",
+        "math": "",
+        "question": "What additional evidence would support using the fitted curve far beyond the observed interval?"
+      }
+    ]
+  }
+]

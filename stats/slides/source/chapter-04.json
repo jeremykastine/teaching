@@ -1,0 +1,825 @@
+[
+  {
+    "number": "4.1",
+    "title": "Probability Distribution Function (PDF) for a Discrete Random Variable",
+    "slug": "4-1-probability-distribution-function-pdf-for-a-discrete-random-variable",
+    "slides": [
+      {
+        "title": "A random variable",
+        "body": "A random variable assigns a numerical value to each outcome of an experiment.",
+        "question": "For two coin tosses, how could X count the heads?"
+      },
+      {
+        "title": "Variable or realization?",
+        "body": "Let X be the number of heads in two independent fair-coin tosses. The observed result is HT.",
+        "question": "What is the realized value x?"
+      },
+      {
+        "title": "The possible values",
+        "body": "X is the number of heads in three coin tosses.",
+        "question": "What values can X take?"
+      },
+      {
+        "title": "Discrete versus continuous",
+        "body": "X counts downloaded files; Y measures a download’s duration.",
+        "question": "Which variable is discrete?"
+      },
+      {
+        "title": "Outcomes versus values",
+        "body": "For two independent fair-coin tosses, X counts heads.",
+        "question": "Which sample-space outcomes produce X = 1?"
+      },
+      {
+        "title": "Build a distribution",
+        "body": "For two independent fair-coin tosses, X counts heads.",
+        "question": "What probabilities belong to X = 0, 1, and 2?"
+      },
+      {
+        "title": "Equal values, unequal chances",
+        "body": "For three independent fair-coin tosses, X counts heads.",
+        "question": "Are its four possible values equally likely?"
+      },
+      {
+        "title": "A discrete probability distribution",
+        "body": "A discrete probability distribution assigns a probability to each possible value.",
+        "question": "What does P(X = 2) mean in this synthetic model?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Probability requirements",
+        "body": "Every probability must be between 0 and 1, and all value probabilities must sum to 1.",
+        "question": "Does this synthetic model satisfy both requirements?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A missing probability",
+        "body": "Synthetic model: P(X = 0) = 0.2, P(X = 1) = 0.5; X can only be 0, 1, or 2.",
+        "question": "What must P(X = 2) be?"
+      },
+      {
+        "title": "An invalid distribution",
+        "body": "Synthetic proposed probabilities for X = 0, 1, 2 are 0.4, 0.5, and 0.3.",
+        "question": "Why is this not a probability distribution?"
+      },
+      {
+        "title": "At most two",
+        "body": "Synthetic model for files downloaded in one session.",
+        "question": "What is P(X ≤ 2)?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Fewer than two",
+        "body": "Synthetic model for files downloaded in one session.",
+        "question": "What is P(X < 2)?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "At least one",
+        "body": "Synthetic model for files downloaded in one session.",
+        "question": "What is P(X ≥ 1)?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A complement",
+        "body": "Synthetic model for files downloaded in one session.",
+        "question": "How could a complement simplify P(X > 0)?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A probability interval",
+        "body": "Synthetic model for files downloaded in one session.",
+        "question": "What is P(1 ≤ X ≤ 2)?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "From data to a model",
+        "body": "Synthetic session counts: 0 files occurs 10 times, 1 file 30 times, 2 files 40 times, 3 files 20 times.",
+        "question": "How could these relative frequencies supply an empirical probability distribution?"
+      },
+      {
+        "title": "Distribution versus one observation",
+        "body": "A model assigns P(X = 2) = 0.4. A single session downloads 3 files.",
+        "question": "Does this one observation contradict the model?"
+      }
+    ]
+  },
+  {
+    "number": "4.2",
+    "title": "Mean or Expected Value and Standard Deviation",
+    "slug": "4-2-mean-or-expected-value-and-standard-deviation",
+    "slides": [
+      {
+        "title": "Expected value",
+        "body": "Expected value is the probability-weighted mean of a random variable.",
+        "question": "What is the expected number of downloads in this synthetic model?",
+        "table": {
+          "headers": [
+            "x",
+            "P(X = x)"
+          ],
+          "rows": [
+            [
+              0,
+              0.1
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "The weighted mean formula",
+        "body": "Each possible value is weighted by its probability.",
+        "question": "Why should a value with probability 0.4 receive more weight than one with probability 0.1?",
+        "math": "\\mu=E(X)=\\sum xP(X=x)"
+      },
+      {
+        "title": "Not an unweighted average",
+        "body": "Synthetic model: X = 0, 1, 2, 3 with probabilities 0.1, 0.3, 0.4, 0.2.",
+        "question": "Why is (0 + 1 + 2 + 3)/4 not the expected value?"
+      },
+      {
+        "title": "A mean between integers",
+        "body": "Synthetic model: X = 0 with probability 0.7 and X = 1 with probability 0.3.",
+        "question": "Can the expected value be 0.3 even though X never equals 0.3?"
+      },
+      {
+        "title": "Interpret the mean",
+        "body": "A synthetic download-count model has expected value 1.7 files per session.",
+        "question": "What does 1.7 describe over many sessions?"
+      },
+      {
+        "title": "A short sequence",
+        "body": "An independent repeated experiment has expected value 1.7 downloads per session.",
+        "question": "Must ten sessions have exactly 17 downloads?"
+      },
+      {
+        "title": "Expected total",
+        "body": "A synthetic model has expected value 1.7 downloads per session.",
+        "question": "What total would be expected over 100 sessions?"
+      },
+      {
+        "title": "Variance of a distribution",
+        "body": "Variance is the probability-weighted mean squared distance from μ.",
+        "question": "What units would variance have if X measures dollars?",
+        "math": "\\sigma^2=\\sum (x-\\mu)^2P(X=x)"
+      },
+      {
+        "title": "A deviation from expectation",
+        "body": "Synthetic model: X = 0 or 2, each with probability 0.5; μ = 1.",
+        "question": "What squared deviation belongs to each possible value?"
+      },
+      {
+        "title": "Calculate a model variance",
+        "body": "Synthetic model: X = 0 or 2, each with probability 0.5; μ = 1.",
+        "question": "What is its variance?"
+      },
+      {
+        "title": "Calculate model standard deviation",
+        "body": "Synthetic model: X = 0 or 2, each with probability 0.5; μ = 1.",
+        "question": "What is its standard deviation?",
+        "math": "\\sigma=\\sqrt{\\sum (x-\\mu)^2P(X=x)}"
+      },
+      {
+        "title": "Same mean, different spread",
+        "body": "Synthetic model A: X is always 1. Model B: X = 0 or 2, each with probability 0.5.",
+        "question": "Which model has larger standard deviation?"
+      },
+      {
+        "title": "Model versus sample",
+        "body": "One statistic summarizes observed session counts; another summarizes their proposed probability distribution.",
+        "question": "Which uses s, and which uses σ?"
+      },
+      {
+        "title": "Net gain",
+        "body": "A fictional game costs $2. A win pays a $10 prize; a loss pays nothing.",
+        "question": "What are the possible net gains?"
+      },
+      {
+        "title": "Expected net gain",
+        "body": "A fictional game costs $2; a $10 prize occurs with probability 0.1 and otherwise pays nothing.",
+        "question": "What is the expected net gain per play?"
+      },
+      {
+        "title": "Fair entry fee",
+        "body": "A fictional game pays a $10 prize with probability 0.1 and otherwise pays nothing.",
+        "question": "What entry fee gives expected net gain zero?"
+      },
+      {
+        "title": "A negative expected gain",
+        "body": "A fictional game has expected net gain −$0.80 per play.",
+        "question": "Does this prevent a player from winning on one play?"
+      },
+      {
+        "title": "Changing the variable",
+        "body": "A fictional game’s gross prize is X dollars; its entry fee is $2.",
+        "question": "How does the expected net gain compare with E(X)?"
+      },
+      {
+        "title": "Shift and spread",
+        "body": "Every possible prize increases by $5.",
+        "question": "How does this shift change the standard deviation of the prize?"
+      },
+      {
+        "title": "A weighted average beyond games",
+        "body": "Synthetic server selection: A is chosen with probability 0.4 and takes 2 seconds; B with probability 0.6 takes 5 seconds.",
+        "question": "What is the expected response time?"
+      }
+    ]
+  },
+  {
+    "number": "4.3",
+    "title": "Binomial Distribution",
+    "slug": "4-3-binomial-distribution",
+    "slides": [
+      {
+        "title": "A binomial experiment",
+        "body": "A binomial experiment has a fixed number of independent trials, two outcomes per trial, and constant success probability p.",
+        "question": "Do ten independent fair-coin tosses satisfy these conditions?"
+      },
+      {
+        "title": "Define success",
+        "body": "Each independent transmission either succeeds or fails.",
+        "question": "Must “success” mean a desirable outcome in a binomial model?"
+      },
+      {
+        "title": "Define the random variable",
+        "body": "Ten independent transmissions each succeed with probability 0.8.",
+        "question": "What does X count in a binomial model?"
+      },
+      {
+        "title": "Identify n and p",
+        "body": "Twenty independent transmissions each succeed with probability 0.9.",
+        "question": "What are n and p?"
+      },
+      {
+        "title": "Possible values",
+        "body": "X counts successes in 6 independent trials.",
+        "question": "What values can X take?"
+      },
+      {
+        "title": "Binomial notation",
+        "body": "X follows a binomial distribution with parameters n and p.",
+        "question": "What experiment could be described by X ~ B(8, 0.25)?",
+        "math": "X\\sim B(n,p)"
+      },
+      {
+        "title": "Translate exactly",
+        "body": "Ten independent transmissions each succeed with probability 0.8. X counts successes.",
+        "question": "How would you write “exactly eight successes” as a probability?"
+      },
+      {
+        "title": "Translate at least",
+        "body": "Ten independent transmissions each succeed with probability 0.8. X counts successes.",
+        "question": "How would you write “at least eight successes”?"
+      },
+      {
+        "title": "Translate fewer than",
+        "body": "Ten independent transmissions each succeed with probability 0.8. X counts successes.",
+        "question": "Which values contribute to P(X < 3)?"
+      },
+      {
+        "title": "One ordered sequence",
+        "body": "Four independent trials each succeed with probability 0.3.",
+        "question": "What is the probability of the ordered sequence success, failure, success, failure?"
+      },
+      {
+        "title": "Count the arrangements",
+        "body": "Four independent trials produce exactly two successes.",
+        "question": "How many different placements of the two successes are possible?"
+      },
+      {
+        "title": "The binomial probability",
+        "body": "The binomial formula combines the number of arrangements with each arrangement’s probability.",
+        "question": "For n = 4 and p = 0.3, what is P(X = 2)?",
+        "math": "P(X=x)=\\binom{n}{x}p^x(1-p)^{n-x}"
+      },
+      {
+        "title": "No successes",
+        "body": "Five independent trials each succeed with probability 0.2.",
+        "question": "What is P(X = 0)?"
+      },
+      {
+        "title": "At least one success",
+        "body": "Five independent trials each succeed with probability 0.2.",
+        "question": "How can a complement simplify P(X ≥ 1)?"
+      },
+      {
+        "title": "A cumulative probability",
+        "body": "Five independent trials each succeed with probability 0.2.",
+        "question": "Which exact probabilities add to P(X ≤ 2)?"
+      },
+      {
+        "title": "Technology result",
+        "body": "For X ~ B(10, 0.8), software reports P(X ≤ 7) = 0.3222.",
+        "question": "What is P(X ≥ 8)?"
+      },
+      {
+        "title": "Expected successes",
+        "body": "A binomial count has mean np.",
+        "question": "For 20 independent trials with p = 0.3, what is the expected number of successes?",
+        "math": "\\mu=np"
+      },
+      {
+        "title": "Standard deviation",
+        "body": "A binomial count has standard deviation √[np(1 − p)].",
+        "question": "For n = 20 and p = 0.3, what is σ?",
+        "math": "\\sigma=\\sqrt{np(1-p)}"
+      },
+      {
+        "title": "A fixed count?",
+        "body": "A binomial model has n = 20 and p = 0.3.",
+        "question": "Does an expected count of 6 guarantee exactly 6 successes?"
+      },
+      {
+        "title": "Sampling without replacement",
+        "body": "A box has 3 red and 2 blue tokens. Draw 4 uniformly without replacement; X counts red tokens.",
+        "question": "Which binomial condition fails?"
+      },
+      {
+        "title": "Changing probabilities",
+        "body": "A machine’s success probability declines as its battery runs down.",
+        "question": "Which binomial condition needs reconsideration?"
+      },
+      {
+        "title": "Toward a continuous approximation",
+        "body": "A binomial model has n = 100 and p = 0.4.",
+        "question": "How many successes and failures are expected before considering a later normal approximation?"
+      }
+    ]
+  },
+  {
+    "number": "4.4",
+    "title": "Geometric Distribution",
+    "slug": "4-4-geometric-distribution",
+    "slides": [
+      {
+        "title": "A geometric experiment",
+        "body": "Repeat independent trials with constant success probability p until the first success.",
+        "question": "How does the stopping rule differ from a binomial experiment?"
+      },
+      {
+        "title": "Our counting convention",
+        "body": "X counts trials through the first success, including the successful trial.",
+        "question": "What is X for failure, failure, success?"
+      },
+      {
+        "title": "Possible values",
+        "body": "X counts trials through the first success.",
+        "question": "Can X equal zero?"
+      },
+      {
+        "title": "Identify p",
+        "body": "Each independent roll of a fair die continues until the first 6.",
+        "question": "What is the success probability p?"
+      },
+      {
+        "title": "Geometric notation",
+        "body": "X follows a geometric distribution when it counts trials through the first success.",
+        "question": "What experiment could X ~ G(0.2) describe?",
+        "math": "X\\sim G(p)"
+      },
+      {
+        "title": "First success on trial four",
+        "body": "Each independent trial succeeds with probability 0.2.",
+        "question": "What sequence is required for the first success on trial four?"
+      },
+      {
+        "title": "The geometric probability",
+        "body": "For a first success on trial x, the preceding x − 1 trials must fail.",
+        "question": "For p = 0.2, what is P(X = 4)?",
+        "math": "P(X=x)=(1-p)^{x-1}p"
+      },
+      {
+        "title": "Success immediately",
+        "body": "Geometric X counts trials through first success; p = 0.2.",
+        "question": "What is P(X = 1)?"
+      },
+      {
+        "title": "More than three trials",
+        "body": "Geometric X counts trials through first success; p = 0.2.",
+        "question": "What must happen in the first three trials for X > 3?"
+      },
+      {
+        "title": "A tail probability",
+        "body": "Geometric X counts trials through first success; p = 0.2.",
+        "question": "What is P(X > 3)?"
+      },
+      {
+        "title": "Success by trial three",
+        "body": "Geometric X counts trials through first success; p = 0.2.",
+        "question": "How can a complement calculate P(X ≤ 3)?"
+      },
+      {
+        "title": "At least three trials",
+        "body": "Geometric X counts trials through first success; p = 0.2.",
+        "question": "How many initial failures are required for X ≥ 3?"
+      },
+      {
+        "title": "Expected trials",
+        "body": "A geometric trial count has mean 1/p.",
+        "question": "For p = 0.2, how many trials are expected?",
+        "math": "\\mu=\\frac{1}{p}"
+      },
+      {
+        "title": "Standard deviation",
+        "body": "A geometric trial count has standard deviation √(1 − p)/p.",
+        "question": "For p = 0.2, what is σ?",
+        "math": "\\sigma=\\frac{\\sqrt{1-p}}{p}"
+      },
+      {
+        "title": "Expectation is not a deadline",
+        "body": "A geometric model has expected trial count 5.",
+        "question": "Must the first success occur by trial five?"
+      },
+      {
+        "title": "Memoryless waiting",
+        "body": "Geometric X counts trials through success; 0 < p < 1 and integer m, k ≥ 0.",
+        "question": "After four failures, does the distribution of additional trials change?",
+        "math": "P(X>m+k\\mid X>m)=P(X>k)"
+      },
+      {
+        "title": "Additional waiting",
+        "body": "Independent trials have p = 0.2. Four trials have already failed.",
+        "question": "What is the probability that the next two trials also fail?"
+      },
+      {
+        "title": "Success is not “due”",
+        "body": "Independent trials have p = 0.2. Ten trials have already failed.",
+        "question": "What is the chance the next trial succeeds?"
+      },
+      {
+        "title": "Count failures instead",
+        "body": "Let Y count failures before the first success, while X counts trials through that success.",
+        "question": "How are X and Y related?"
+      },
+      {
+        "title": "When the model changes",
+        "body": "A user learns from each attempt, increasing the chance of success.",
+        "question": "Which geometric assumption is no longer appropriate?"
+      }
+    ]
+  },
+  {
+    "number": "4.5",
+    "title": "Hypergeometric Distribution",
+    "slug": "4-5-hypergeometric-distribution",
+    "slides": [
+      {
+        "title": "A hypergeometric experiment",
+        "body": "Randomly sample a fixed number without replacement from a finite population containing two categories.",
+        "question": "How does this differ from independent binomial trials?"
+      },
+      {
+        "title": "The group of interest",
+        "body": "A synthetic box contains 7 red and 5 blue tokens. Select 4 uniformly without replacement; X counts red.",
+        "question": "Which group is the group of interest?"
+      },
+      {
+        "title": "The parameters",
+        "body": "The textbook writes X ~ H(r, b, n): r items of interest, b other items, n selected.",
+        "question": "For 7 red, 5 blue, and 4 draws, what are r, b, and n?",
+        "math": "X\\sim H(r,b,n)"
+      },
+      {
+        "title": "Define X",
+        "body": "A synthetic batch has 20 working and 5 faulty cables. Select 6 uniformly without replacement.",
+        "question": "What random variable would count faulty cables in the sample?"
+      },
+      {
+        "title": "A maximum count",
+        "body": "A synthetic batch has 20 working and 5 faulty cables. Select 6 uniformly without replacement; X counts faulty.",
+        "question": "Why can X not equal 6?"
+      },
+      {
+        "title": "A minimum count",
+        "body": "A synthetic box has 7 red and 3 blue tokens. Select 6 uniformly without replacement; X counts red.",
+        "question": "What is the smallest possible value of X?"
+      },
+      {
+        "title": "The support",
+        "body": "A synthetic box has 7 red and 3 blue tokens. Select 6 uniformly without replacement; X counts red.",
+        "question": "What values can X take?"
+      },
+      {
+        "title": "Conditional probability changes",
+        "body": "A synthetic box has 7 red and 5 blue tokens. Draw uniformly without replacement.",
+        "question": "After a red draw, what is the probability the next token is red?"
+      },
+      {
+        "title": "Count possible samples",
+        "body": "A synthetic box has 7 red and 5 blue tokens. Select 4 uniformly without replacement.",
+        "question": "How many unordered four-token samples are possible?"
+      },
+      {
+        "title": "Count favorable samples",
+        "body": "A synthetic box has 7 red and 5 blue tokens. Select 4 uniformly without replacement.",
+        "question": "How many samples contain exactly 2 red and 2 blue tokens?"
+      },
+      {
+        "title": "An exact probability",
+        "body": "A synthetic box has 7 red and 5 blue tokens. Select 4 uniformly without replacement; X counts red.",
+        "question": "What is P(X = 2)?",
+        "math": "P(X=x)=\\frac{\\binom{r}{x}\\binom{b}{n-x}}{\\binom{r+b}{n}}"
+      },
+      {
+        "title": "At most one",
+        "body": "A synthetic batch has 20 working and 5 faulty cables. Select 6 uniformly without replacement; X counts faulty.",
+        "question": "Which probabilities add to P(X ≤ 1)?"
+      },
+      {
+        "title": "An expected count",
+        "body": "The expected hypergeometric count is sample size times the population proportion of interest.",
+        "question": "For 4 draws from 7 red and 5 blue tokens, what red count is expected?",
+        "math": "\\mu=n\\frac{r}{r+b}"
+      },
+      {
+        "title": "Compare sampling designs",
+        "body": "A synthetic box has 7 red and 5 blue tokens. Plan A replaces each token; plan B keeps each token.",
+        "question": "Which plan permits an exact binomial model?"
+      },
+      {
+        "title": "A small sampling fraction",
+        "body": "A random sample without replacement uses a tiny fraction of a large population.",
+        "question": "Why might a binomial model be a useful approximation rather than an exact model?"
+      },
+      {
+        "title": "Select the distribution",
+        "body": "Select 6 cables without replacement from a known batch and count the faulty ones.",
+        "question": "Which discrete distribution matches this sampling design?"
+      }
+    ]
+  },
+  {
+    "number": "4.6",
+    "title": "Poisson Distribution",
+    "slug": "4-6-poisson-distribution",
+    "slides": [
+      {
+        "title": "A Poisson count",
+        "body": "A Poisson model counts events in a fixed interval under a constant rate and independent increments.",
+        "question": "What variable could count file requests during one minute?"
+      },
+      {
+        "title": "Define the interval",
+        "body": "A synthetic server averages 12 requests per hour under a Poisson-process model.",
+        "question": "What is the interval for a count of requests during five minutes?"
+      },
+      {
+        "title": "Scale the mean",
+        "body": "A synthetic server has Poisson-process request rate 12 per hour.",
+        "question": "What mean count applies to a five-minute interval?"
+      },
+      {
+        "title": "Time units matter",
+        "body": "A synthetic server has Poisson-process request rate 12 per hour.",
+        "question": "Would μ = 12 be correct for a five-minute count?"
+      },
+      {
+        "title": "Poisson notation",
+        "body": "X ~ P(μ) uses the mean count for the specified interval.",
+        "question": "What does X ~ P(2) mean?",
+        "math": "X\\sim P(\\mu)"
+      },
+      {
+        "title": "Possible values",
+        "body": "X counts requests in a fixed interval under a Poisson model.",
+        "question": "What nonnegative integer values can X take?"
+      },
+      {
+        "title": "Exact count probability",
+        "body": "A synthetic Poisson model has mean 2 requests per five minutes.",
+        "question": "What is the probability of exactly 3 requests?",
+        "math": "P(X=x)=\\frac{e^{-\\mu}\\mu^x}{x!}"
+      },
+      {
+        "title": "No events",
+        "body": "A synthetic Poisson model has mean 2 requests per five minutes.",
+        "question": "What is P(X = 0)?"
+      },
+      {
+        "title": "At least one event",
+        "body": "A synthetic Poisson model has mean 2 requests per five minutes.",
+        "question": "How can a complement calculate P(X ≥ 1)?"
+      },
+      {
+        "title": "Fewer than three",
+        "body": "A synthetic Poisson model has mean 2 requests per five minutes.",
+        "question": "Which exact probabilities add to P(X < 3)?"
+      },
+      {
+        "title": "More than two",
+        "body": "A synthetic Poisson model has mean 2 requests per five minutes.",
+        "question": "How can a complement calculate P(X > 2)?"
+      },
+      {
+        "title": "Mean and standard deviation",
+        "body": "A Poisson count has mean μ and standard deviation √μ.",
+        "question": "For mean count 9, what is the standard deviation?",
+        "math": "\\sigma=\\sqrt{\\mu}"
+      },
+      {
+        "title": "A spatial interval",
+        "body": "Synthetic printing errors follow a Poisson-process model at rate 0.2 errors per page.",
+        "question": "What mean applies to a 15-page document?"
+      },
+      {
+        "title": "A variable rate",
+        "body": "A server’s request rate is much higher during class than overnight.",
+        "question": "Why is one constant-rate Poisson model for both periods questionable?"
+      },
+      {
+        "title": "Clustering",
+        "body": "One server request automatically triggers several related requests.",
+        "question": "Which Poisson assumption deserves scrutiny?"
+      },
+      {
+        "title": "Binomial or Poisson?",
+        "body": "Count successful transmissions among 100 trials, or count incoming requests during one minute.",
+        "question": "Which count has a fixed number of trials?"
+      },
+      {
+        "title": "A rare-event approximation",
+        "body": "A binomial model has n = 1,000 and p = 0.002.",
+        "question": "What Poisson mean would approximate its success count?",
+        "math": "\\mu=np"
+      },
+      {
+        "title": "Count versus waiting time",
+        "body": "A Poisson-process model describes requests arriving in time.",
+        "question": "How does counting requests in five minutes differ from measuring time until the next request?"
+      }
+    ]
+  }
+]

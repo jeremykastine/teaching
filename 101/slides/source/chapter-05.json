@@ -1,0 +1,987 @@
+[
+  {
+    "number": "5.1",
+    "title": "Quadratic Functions",
+    "slug": "5-1-quadratic-functions",
+    "slides": [
+      {
+        "title": "Quadratic functions",
+        "body": "A quadratic function has a nonzero squared-term coefficient.",
+        "math": "f(x)=ax^2+bx+c,\\qquad a\\ne0",
+        "question": "What feature distinguishes its graph from a line?"
+      },
+      {
+        "title": "The vertex",
+        "body": "The vertex is a parabola's turning point.",
+        "math": "f(x)=(x-3)^2+2",
+        "question": "Where is the vertex?"
+      },
+      {
+        "title": "Opening direction",
+        "body": "",
+        "math": "f(x)=-2(x+1)^2+5",
+        "question": "Does the parabola open upward or downward?"
+      },
+      {
+        "title": "Axis of symmetry",
+        "body": "",
+        "math": "f(x)=3(x-4)^2-7",
+        "question": "What vertical line is the axis of symmetry?"
+      },
+      {
+        "title": "Comparing widths",
+        "body": "",
+        "math": "f(x)=x^2,\\qquad g(x)=4x^2",
+        "question": "Which parabola is narrower?"
+      },
+      {
+        "title": "Transforming a parabola",
+        "body": "",
+        "math": "f(x)=-\\frac{1}{2}(x-2)^2+6",
+        "question": "How is its graph positioned relative to y = x squared?"
+      },
+      {
+        "title": "Vertex from general form",
+        "body": "",
+        "math": "h=-\\frac{b}{2a},\\qquad k=f(h)",
+        "question": "What is the vertex of f(x) = 2x squared - 8x + 3?"
+      },
+      {
+        "title": "Completing the square",
+        "body": "",
+        "math": "f(x)=x^2+6x+5",
+        "question": "What equivalent vertex form describes this function?"
+      },
+      {
+        "title": "A vertical intercept",
+        "body": "",
+        "math": "f(x)=-x^2+4x+5",
+        "question": "Where does the graph intersect the vertical axis?"
+      },
+      {
+        "title": "Horizontal intercepts",
+        "body": "",
+        "math": "f(x)=x^2-5x+6",
+        "question": "Where does the graph intersect the horizontal axis?"
+      },
+      {
+        "title": "One horizontal intercept",
+        "body": "",
+        "math": "f(x)=(x+2)^2",
+        "question": "How many distinct real zeros does this function have?"
+      },
+      {
+        "title": "No real zeros",
+        "body": "",
+        "math": "f(x)=2(x-1)^2+3",
+        "question": "Why does this graph have no horizontal intercepts?"
+      },
+      {
+        "title": "The discriminant and the graph",
+        "body": "",
+        "math": "f(x)=x^2+2x+5",
+        "question": "What does the discriminant tell us about horizontal intercepts?"
+      },
+      {
+        "title": "Domain and range",
+        "body": "",
+        "math": "f(x)=-3(x-2)^2+12",
+        "question": "What are the domain and range?"
+      },
+      {
+        "title": "Increasing and decreasing",
+        "body": "",
+        "math": "f(x)=(x+4)^2-1",
+        "question": "On what intervals is the function decreasing and increasing?"
+      },
+      {
+        "title": "The minimum value",
+        "body": "",
+        "math": "f(x)=2x^2-12x+11",
+        "question": "What is the minimum value, and at what input does it occur?"
+      },
+      {
+        "title": "Building from a vertex",
+        "body": "A parabola has vertex (1, -4) and passes through (3, 4).",
+        "math": "",
+        "question": "What quadratic function has this graph?"
+      },
+      {
+        "title": "Building from zeros",
+        "body": "A quadratic has zeros -2 and 5, and its graph passes through (0, -20).",
+        "math": "",
+        "question": "What quadratic function satisfies these conditions?"
+      },
+      {
+        "title": "A maximum height",
+        "body": "A model gives height in meters t seconds after launch.",
+        "math": "h(t)=-5t^2+20t+1",
+        "question": "What maximum height does the model predict?"
+      },
+      {
+        "title": "An area model",
+        "body": "A rectangular enclosure uses 40 meters of fencing on all four sides. Let x be one side length.",
+        "math": "",
+        "question": "What quadratic function gives its area, and what is its physical domain?"
+      },
+      {
+        "title": "Maximizing area",
+        "body": "For a rectangular enclosure, x is a side length in meters.",
+        "math": "A(x)=x(20-x),\\qquad 0<x<20",
+        "question": "What dimensions maximize the area?"
+      },
+      {
+        "title": "A line and a parabola",
+        "body": "",
+        "math": "f(x)=x^2,\\qquad g(x)=x+2",
+        "question": "Where do the two graphs intersect?"
+      },
+      {
+        "title": "The sign of a quadratic",
+        "body": "",
+        "math": "f(x)=(x-1)(x-4)",
+        "question": "For which inputs is the graph below the horizontal axis?"
+      }
+    ]
+  },
+  {
+    "number": "5.2",
+    "title": "Power Functions and Polynomial Functions",
+    "slug": "5-2-power-functions-and-polynomial-functions",
+    "slides": [
+      {
+        "title": "Power functions",
+        "body": "A power function is a coefficient times a variable raised to a fixed real power.",
+        "math": "f(x)=kx^p",
+        "question": "Is f(x) = 3x squared a power function?"
+      },
+      {
+        "title": "The variable's position",
+        "body": "",
+        "math": "f(x)=x^3,\\qquad g(x)=3^x",
+        "question": "Which is a power function?"
+      },
+      {
+        "title": "A negative power",
+        "body": "",
+        "math": "f(x)=x^{-2}",
+        "question": "What is the real domain of this power function?"
+      },
+      {
+        "title": "A fractional power",
+        "body": "",
+        "math": "f(x)=x^{1/2}",
+        "question": "What is the real domain and range?"
+      },
+      {
+        "title": "Even powers",
+        "body": "",
+        "math": "f(x)=x^6",
+        "question": "What happens to the output as x becomes very large in either direction?"
+      },
+      {
+        "title": "Odd powers",
+        "body": "",
+        "math": "f(x)=x^5",
+        "question": "How do the left and right ends of the graph differ?"
+      },
+      {
+        "title": "A negative coefficient",
+        "body": "",
+        "math": "f(x)=-2x^4",
+        "question": "What is the end behavior on both sides?"
+      },
+      {
+        "title": "Arrow notation",
+        "body": "",
+        "math": "x\\to-\\infty,\\qquad f(x)\\to\\infty",
+        "question": "What does this statement say about a graph's left end?"
+      },
+      {
+        "title": "Polynomial functions",
+        "body": "A polynomial function is a finite sum of terms with nonnegative integer powers of the input.",
+        "math": "",
+        "question": "Why is x squared + 1/x not a polynomial function?"
+      },
+      {
+        "title": "Degree and leading coefficient",
+        "body": "",
+        "math": "f(x)=7-3x^5+2x^2",
+        "question": "What are the degree and leading coefficient?"
+      },
+      {
+        "title": "A constant polynomial",
+        "body": "",
+        "math": "f(x)=-8",
+        "question": "What is the degree of this nonzero constant polynomial?"
+      },
+      {
+        "title": "Leading-term behavior",
+        "body": "For large input magnitude, the leading term determines a polynomial's end behavior.",
+        "math": "f(x)=2x^4-9x^3+1",
+        "question": "Which term determines the ends of its graph?"
+      },
+      {
+        "title": "Even degree, positive coefficient",
+        "body": "",
+        "math": "f(x)=3x^6-x^2+4",
+        "question": "What is its end behavior in arrow notation?"
+      },
+      {
+        "title": "Even degree, negative coefficient",
+        "body": "",
+        "math": "f(x)=-x^4+8x+2",
+        "question": "What is its end behavior in arrow notation?"
+      },
+      {
+        "title": "Odd degree, positive coefficient",
+        "body": "",
+        "math": "f(x)=5x^3-2x^2+1",
+        "question": "What is its end behavior in arrow notation?"
+      },
+      {
+        "title": "Odd degree, negative coefficient",
+        "body": "",
+        "math": "f(x)=-2x^5+7x-6",
+        "question": "What is its end behavior in arrow notation?"
+      },
+      {
+        "title": "Factored form and degree",
+        "body": "",
+        "math": "f(x)=-(x+2)^2(x-1)^3",
+        "question": "What are its degree, leading coefficient, and end behavior?"
+      },
+      {
+        "title": "A zero versus an intercept",
+        "body": "A real zero r of f satisfies f(r) = 0.",
+        "math": "f(x)=x^3-4x",
+        "question": "Which graph points correspond to its real zeros?"
+      },
+      {
+        "title": "Turning-point limits",
+        "body": "A degree n polynomial has at most n - 1 turning points.",
+        "math": "",
+        "question": "What is the smallest possible degree for a polynomial with four turning points?"
+      },
+      {
+        "title": "A polynomial model",
+        "body": "A model for inventory t months after counting is:",
+        "math": "I(t)=-t^3+12t+40",
+        "question": "Does its long-term end behavior make unrestricted real-world use reasonable?"
+      }
+    ]
+  },
+  {
+    "number": "5.3",
+    "title": "Graphs of Polynomial Functions",
+    "slug": "5-3-graphs-of-polynomial-functions",
+    "slides": [
+      {
+        "title": "Continuous polynomial graphs",
+        "body": "A polynomial graph has no breaks or jumps.",
+        "math": "",
+        "question": "Could a graph with a hole represent a polynomial function on all real inputs?"
+      },
+      {
+        "title": "Smooth polynomial graphs",
+        "body": "A polynomial graph has no sharp corners.",
+        "math": "",
+        "question": "Could the graph of the absolute value function be a polynomial graph?"
+      },
+      {
+        "title": "Finding zeros by factoring",
+        "body": "",
+        "math": "f(x)=x^3-4x^2-5x",
+        "question": "What are all its real zeros?"
+      },
+      {
+        "title": "Zeros from factored form",
+        "body": "",
+        "math": "f(x)=2(x+3)(x-1)(x-4)",
+        "question": "Where does the graph meet the horizontal axis?"
+      },
+      {
+        "title": "Multiplicity",
+        "body": "A zero's multiplicity is the number of repetitions of its linear factor.",
+        "math": "f(x)=(x+2)^3(x-5)^2",
+        "question": "What multiplicity does each zero have?"
+      },
+      {
+        "title": "Odd multiplicity",
+        "body": "",
+        "math": "f(x)=(x-2)^3",
+        "question": "Does the graph change sign at x = 2?"
+      },
+      {
+        "title": "Even multiplicity",
+        "body": "",
+        "math": "f(x)=-(x+1)^4",
+        "question": "Does the graph cross or touch the horizontal axis at x = -1?"
+      },
+      {
+        "title": "Mixed multiplicities",
+        "body": "",
+        "math": "f(x)=(x+2)^2(x-1)^3",
+        "question": "At which zero does the graph cross, and at which does it touch?"
+      },
+      {
+        "title": "A vertical intercept",
+        "body": "",
+        "math": "f(x)=-(x+2)(x-1)^2",
+        "question": "What is the vertical intercept?"
+      },
+      {
+        "title": "End behavior from factors",
+        "body": "",
+        "math": "f(x)=-2(x+1)^2(x-3)^3",
+        "question": "What happens at each end of the graph?"
+      },
+      {
+        "title": "Intervals of positive values",
+        "body": "",
+        "math": "f(x)=(x+2)(x-1)(x-3)",
+        "question": "On what open intervals is f(x) positive?"
+      },
+      {
+        "title": "Intervals of negative values",
+        "body": "",
+        "math": "f(x)=(x+1)^2(x-2)",
+        "question": "On what open intervals is f(x) negative?"
+      },
+      {
+        "title": "A repeated zero and a sign chart",
+        "body": "",
+        "math": "f(x)=(x-1)^2(x-4)",
+        "question": "Why does x = 1 split the sign chart without changing the sign?"
+      },
+      {
+        "title": "Sketching a polynomial",
+        "body": "",
+        "math": "f(x)=-(x+2)(x-1)^2",
+        "question": "What sketch matches its intercepts, multiplicities, and end behavior?"
+      },
+      {
+        "title": "A higher-degree sketch",
+        "body": "",
+        "math": "f(x)=(x+1)^3(x-2)^2",
+        "question": "What sketch matches the zeros and both ends?"
+      },
+      {
+        "title": "Inferring a minimum degree",
+        "body": "A polynomial graph crosses at -2, touches at 1, and crosses at 4.",
+        "math": "",
+        "question": "What is the smallest degree consistent with these behaviors?"
+      },
+      {
+        "title": "Turning points",
+        "body": "A turning point changes a graph from increasing to decreasing or the reverse.",
+        "math": "",
+        "question": "Must every horizontal-axis crossing be a turning point?"
+      },
+      {
+        "title": "Counting possible turning points",
+        "body": "",
+        "math": "f(x)=(x-1)^2(x+2)^2",
+        "question": "What is the maximum possible number of turning points?"
+      },
+      {
+        "title": "Local maxima and minima",
+        "body": "A local maximum or minimum compares a function value with values at nearby inputs.",
+        "math": "",
+        "question": "How does a local maximum differ from an absolute maximum?"
+      },
+      {
+        "title": "Reading extrema with a utility",
+        "body": "",
+        "math": "f(x)=x^3-3x",
+        "question": "Where does a graphing utility locate the local maximum and local minimum?"
+      },
+      {
+        "title": "Increasing and decreasing intervals",
+        "body": "Use the graphing utility's graph of:",
+        "math": "f(x)=x^3-3x",
+        "question": "On what intervals is the function increasing or decreasing?"
+      },
+      {
+        "title": "Intermediate Value Theorem",
+        "body": "A polynomial takes every value between its outputs at the ends of an interval.",
+        "math": "f(1)=-3,\\qquad f(2)=5",
+        "question": "What can we conclude about a real zero between 1 and 2?"
+      },
+      {
+        "title": "Locating a zero",
+        "body": "",
+        "math": "f(x)=x^3-x-1",
+        "question": "What do f(1) and f(2) establish about a zero?"
+      },
+      {
+        "title": "The theorem's limitation",
+        "body": "",
+        "math": "f(x)=(x-1)^2",
+        "question": "Do positive values at x = 0 and x = 2 rule out a zero between them?"
+      }
+    ]
+  },
+  {
+    "number": "5.4",
+    "title": "Dividing Polynomials",
+    "slug": "5-4-dividing-polynomials",
+    "slides": [
+      {
+        "title": "The division identity",
+        "body": "For a nonzero polynomial divisor, the dividend equals divisor times quotient plus remainder.",
+        "math": "P(x)=D(x)Q(x)+R(x)",
+        "question": "How could this identity check a division result?"
+      },
+      {
+        "title": "The remainder's degree",
+        "body": "The remainder is zero or has degree smaller than the divisor.",
+        "math": "",
+        "question": "What forms can a remainder have when the divisor has degree 2?"
+      },
+      {
+        "title": "Dividing by a monomial",
+        "body": "",
+        "math": "\\frac{6x^4-9x^3+3x^2}{3x^2}",
+        "question": "What polynomial is equivalent for nonzero x?"
+      },
+      {
+        "title": "An exact division",
+        "body": "",
+        "math": "\\frac{x^2+7x+10}{x+2}",
+        "question": "What quotient and remainder result from long division?"
+      },
+      {
+        "title": "A nonzero remainder",
+        "body": "",
+        "math": "\\frac{x^2+2x+5}{x+1}",
+        "question": "What quotient and remainder result from long division?"
+      },
+      {
+        "title": "Writing a quotient expression",
+        "body": "",
+        "math": "P(x)=(x-2)(x+5)+3",
+        "question": "How can P(x)/(x - 2) be written for x not equal to 2?"
+      },
+      {
+        "title": "Missing powers",
+        "body": "",
+        "math": "\\frac{x^3-8}{x-2}",
+        "question": "Which zero coefficients belong in the division setup?"
+      },
+      {
+        "title": "Dividing a cubic",
+        "body": "",
+        "math": "\\frac{2x^3-3x^2-11x+6}{x-3}",
+        "question": "What quotient and remainder result?"
+      },
+      {
+        "title": "A non-monic divisor",
+        "body": "",
+        "math": "\\frac{4x^2+7x+2}{2x+1}",
+        "question": "What quotient and remainder result from long division?"
+      },
+      {
+        "title": "A quadratic divisor",
+        "body": "",
+        "math": "\\frac{x^4+2x^2+3}{x^2+1}",
+        "question": "What quotient and remainder result from long division?"
+      },
+      {
+        "title": "Checking a division",
+        "body": "A proposed result has quotient x + 3 and remainder 2.",
+        "math": "\\frac{x^2+2x-1}{x-1}",
+        "question": "Does multiplication verify the proposed result?"
+      },
+      {
+        "title": "Synthetic division",
+        "body": "The standard synthetic-division setup divides by x - k.",
+        "math": "",
+        "question": "What value of k belongs in the setup for division by x + 4?"
+      },
+      {
+        "title": "Synthetic division with a missing term",
+        "body": "",
+        "math": "\\frac{x^3+2x-3}{x-1}",
+        "question": "What coefficient list should be used?"
+      },
+      {
+        "title": "Performing synthetic division",
+        "body": "",
+        "math": "\\frac{x^3-2x^2-5x+6}{x-1}",
+        "question": "What quotient and remainder result?"
+      },
+      {
+        "title": "Interpreting the final row",
+        "body": "Synthetic division by x - 2 gives quotient coefficients 1, 3 and remainder -4.",
+        "math": "",
+        "question": "What identity connects the original polynomial, quotient, and remainder?"
+      },
+      {
+        "title": "Choosing a division method",
+        "body": "",
+        "math": "\\frac{x^4-1}{x^2+1}",
+        "question": "Does the standard x - k synthetic setup apply to this divisor?"
+      },
+      {
+        "title": "A lower-degree dividend",
+        "body": "",
+        "math": "\\frac{2x+3}{x^2+1}",
+        "question": "What are the polynomial quotient and remainder?"
+      },
+      {
+        "title": "A factor test",
+        "body": "Division by x + 2 gives remainder 0.",
+        "math": "",
+        "question": "What does this tell us about x + 2 as a factor?"
+      },
+      {
+        "title": "The division-domain restriction",
+        "body": "",
+        "math": "\\frac{x^3-8}{x-2}",
+        "question": "If the quotient is a polynomial, is the original rational expression defined at x = 2?"
+      }
+    ]
+  },
+  {
+    "number": "5.5",
+    "title": "Zeros of Polynomial Functions",
+    "slug": "5-5-zeros-of-polynomial-functions",
+    "slides": [
+      {
+        "title": "Remainder Theorem",
+        "body": "Dividing a polynomial f(x) by x - k leaves remainder f(k).",
+        "math": "f(x)=x^3-4x+1",
+        "question": "What is the remainder when f(x) is divided by x - 2?"
+      },
+      {
+        "title": "A negative test value",
+        "body": "",
+        "math": "f(x)=2x^3+x^2-5",
+        "question": "What is the remainder when dividing f(x) by x + 1?"
+      },
+      {
+        "title": "Factor Theorem",
+        "body": "For a polynomial f, x - k is a factor exactly when f(k) = 0.",
+        "math": "f(x)=x^3-2x^2-5x+6",
+        "question": "Is x - 1 a factor?"
+      },
+      {
+        "title": "Finding an unknown coefficient",
+        "body": "",
+        "math": "f(x)=x^3+ax+6",
+        "question": "What value of a makes x - 2 a factor?"
+      },
+      {
+        "title": "Reducing the degree",
+        "body": "The polynomial has a known zero at x = 1.",
+        "math": "f(x)=x^3-2x^2-5x+6",
+        "question": "What quadratic factor remains after dividing by x - 1?"
+      },
+      {
+        "title": "Completing the zero search",
+        "body": "",
+        "math": "f(x)=(x-1)(x^2-x-6)",
+        "question": "What are all the zeros?"
+      },
+      {
+        "title": "Rational Zero Theorem",
+        "body": "For integer coefficients, a rational zero p/q in lowest terms has p dividing the constant and q dividing the leading coefficient.",
+        "math": "",
+        "question": "Does the theorem guarantee that every candidate is a zero?"
+      },
+      {
+        "title": "Listing rational candidates",
+        "body": "",
+        "math": "f(x)=2x^3-3x^2-8x+12",
+        "question": "What distinct rational-zero candidates does the theorem allow?"
+      },
+      {
+        "title": "Testing candidates",
+        "body": "",
+        "math": "f(x)=2x^3-3x^2-8x+12",
+        "question": "Which positive candidates are zeros?"
+      },
+      {
+        "title": "Finding all zeros",
+        "body": "",
+        "math": "f(x)=2x^3-3x^2-8x+12",
+        "question": "What are all zeros after using a confirmed rational factor?"
+      },
+      {
+        "title": "No rational zeros",
+        "body": "",
+        "math": "f(x)=x^2-2",
+        "question": "Why does failure of the rational candidates not mean there are no real zeros?"
+      },
+      {
+        "title": "Fundamental Theorem of Algebra",
+        "body": "Every nonconstant polynomial has at least one complex zero.",
+        "math": "",
+        "question": "Must a nonconstant polynomial have a real zero?"
+      },
+      {
+        "title": "Counting complex zeros",
+        "body": "A degree n polynomial has exactly n complex zeros when multiplicity is counted.",
+        "math": "f(x)=(x-2)^3(x+1)^2",
+        "question": "How many zeros are counted, and how many are distinct?"
+      },
+      {
+        "title": "Nonreal conjugate pairs",
+        "body": "For real coefficients, nonreal zeros occur in conjugate pairs.",
+        "math": "",
+        "question": "If 2 + 3i is a zero, what other zero must occur?"
+      },
+      {
+        "title": "Complex zeros",
+        "body": "",
+        "math": "f(x)=(x-3)(x^2+4)",
+        "question": "What are all complex zeros?"
+      },
+      {
+        "title": "Linear factorization",
+        "body": "Over the complex numbers, a degree n polynomial factors into n linear factors, counting repeats.",
+        "math": "f(x)=x^2+9",
+        "question": "What is its linear factorization?"
+      },
+      {
+        "title": "Building a polynomial",
+        "body": "Find a monic polynomial with zeros -2, 1, and 4.",
+        "math": "",
+        "question": "What factored form has exactly these zeros?"
+      },
+      {
+        "title": "Building with multiplicities",
+        "body": "Find a monic polynomial with zero -1 of multiplicity 2 and zero 3 of multiplicity 1.",
+        "math": "",
+        "question": "What polynomial satisfies these conditions?"
+      },
+      {
+        "title": "Building from a complex zero",
+        "body": "Find a monic quadratic with real coefficients and zero 1 + 2i.",
+        "math": "",
+        "question": "What is the quadratic in expanded form?"
+      },
+      {
+        "title": "Descartes' Rule of Signs",
+        "body": "The number of positive real zeros, counting multiplicity, equals the sign changes in f(x) or is less by an even number.",
+        "math": "f(x)=x^4-3x^3+2x^2+x-5",
+        "question": "What positive-zero counts are possible?"
+      },
+      {
+        "title": "Possible negative zeros",
+        "body": "Apply Descartes' Rule of Signs to f(-x).",
+        "math": "f(x)=x^3+2x^2-5x-6",
+        "question": "What negative-zero counts are possible?"
+      },
+      {
+        "title": "Using a graph to guide a test",
+        "body": "",
+        "math": "f(x)=x^3-x-1",
+        "question": "Which pair of consecutive integers brackets a real zero?"
+      },
+      {
+        "title": "A volume equation",
+        "body": "A box has width x cm, length x + 2 cm, and height x - 1 cm. Its volume is 30 cubic centimeters.",
+        "math": "",
+        "question": "What polynomial equation and physical restriction describe x?"
+      },
+      {
+        "title": "A physical zero",
+        "body": "For the box dimensions x, x + 2, and x - 1 cm:",
+        "math": "x^3+x^2-2x-30=0",
+        "question": "Which solution gives physically valid dimensions?"
+      }
+    ]
+  },
+  {
+    "number": "5.6",
+    "title": "Rational Functions",
+    "slug": "5-6-rational-functions",
+    "slides": [
+      {
+        "title": "Rational functions",
+        "body": "A rational function is a quotient of polynomials on inputs where its denominator is nonzero.",
+        "math": "f(x)=\\frac{x+1}{x-3}",
+        "question": "What is its domain?"
+      },
+      {
+        "title": "Factoring the denominator",
+        "body": "",
+        "math": "f(x)=\\frac{x+2}{x^2-9}",
+        "question": "Which inputs are excluded from the domain?"
+      },
+      {
+        "title": "Cancellation and the domain",
+        "body": "",
+        "math": "f(x)=\\frac{x^2-4}{x-2}",
+        "question": "What restriction remains after canceling a common factor?"
+      },
+      {
+        "title": "A hole",
+        "body": "A canceled denominator factor can leave a missing point in the original graph.",
+        "math": "f(x)=\\frac{x^2-4}{x-2}",
+        "question": "What are the coordinates of the hole?"
+      },
+      {
+        "title": "Vertical asymptotes",
+        "body": "A vertical asymptote occurs where outputs become unbounded from at least one side.",
+        "math": "f(x)=\\frac{1}{x-3}",
+        "question": "What vertical line is its asymptote?"
+      },
+      {
+        "title": "A hole and an asymptote",
+        "body": "",
+        "math": "f(x)=\\frac{x^2-1}{x^2-x-2}",
+        "question": "Which excluded input creates a hole, and which creates a vertical asymptote?"
+      },
+      {
+        "title": "One-sided arrow notation",
+        "body": "",
+        "math": "x\\to2^-",
+        "question": "From which side is x approaching 2?"
+      },
+      {
+        "title": "One-sided behavior",
+        "body": "",
+        "math": "f(x)=\\frac{1}{x-2}",
+        "question": "What happens to f(x) as x approaches 2 from each side?"
+      },
+      {
+        "title": "An even denominator power",
+        "body": "",
+        "math": "f(x)=\\frac{1}{(x+1)^2}",
+        "question": "How does the output behave on the two sides of x = -1?"
+      },
+      {
+        "title": "Horizontal asymptotes",
+        "body": "A horizontal asymptote describes a graph's behavior as inputs become unbounded.",
+        "math": "f(x)=\\frac{3x+2}{x+5}",
+        "question": "What horizontal line describes its end behavior?"
+      },
+      {
+        "title": "Lower numerator degree",
+        "body": "",
+        "math": "f(x)=\\frac{4x-1}{x^2+1}",
+        "question": "What horizontal asymptote does the function have?"
+      },
+      {
+        "title": "Equal degrees",
+        "body": "",
+        "math": "f(x)=\\frac{2x^2+1}{5x^2-3}",
+        "question": "What is the horizontal asymptote?"
+      },
+      {
+        "title": "A slant asymptote",
+        "body": "",
+        "math": "f(x)=\\frac{x^2+1}{x-1}",
+        "question": "What slant asymptote does polynomial division reveal?"
+      },
+      {
+        "title": "Crossing a horizontal asymptote",
+        "body": "",
+        "math": "f(x)=\\frac{x^2+x}{x^2+1}",
+        "question": "Where does the graph cross its horizontal asymptote y = 1?"
+      },
+      {
+        "title": "Finding intercepts",
+        "body": "",
+        "math": "f(x)=\\frac{x-2}{x+3}",
+        "question": "What are the horizontal and vertical intercepts?"
+      },
+      {
+        "title": "A canceled numerator zero",
+        "body": "",
+        "math": "f(x)=\\frac{(x-1)(x+2)}{x-1}",
+        "question": "Is x = 1 a zero of the original function?"
+      },
+      {
+        "title": "Signs between critical inputs",
+        "body": "",
+        "math": "f(x)=\\frac{x-2}{x+1}",
+        "question": "On what intervals is f(x) positive?"
+      },
+      {
+        "title": "A rational inequality",
+        "body": "",
+        "math": "\\frac{x-2}{x+1}\\leq0",
+        "question": "Which inputs satisfy this inequality?"
+      },
+      {
+        "title": "Sketching from key features",
+        "body": "",
+        "math": "f(x)=\\frac{x+1}{x-2}",
+        "question": "What sketch matches its domain, intercepts, asymptotes, and signs?"
+      },
+      {
+        "title": "A graph with a hole",
+        "body": "",
+        "math": "f(x)=\\frac{x^2-1}{x^2+x-2}",
+        "question": "What sketch includes both the hole and the vertical asymptote?"
+      },
+      {
+        "title": "Average cost",
+        "body": "A workshop has $300 fixed cost and $12 cost per item. Let n be a positive integer.",
+        "math": "",
+        "question": "What rational function gives average cost per item?"
+      },
+      {
+        "title": "Interpreting an asymptote",
+        "body": "Average cost in dollars for n items is:",
+        "math": "A(n)=12+\\frac{300}{n},\\qquad n>0",
+        "question": "What does the horizontal asymptote mean in this model?"
+      },
+      {
+        "title": "Combined work rates",
+        "body": "One machine finishes a job in x hours and another in x + 2 hours. Assume constant rates and x > 0.",
+        "math": "",
+        "question": "What rational function gives their combined job rate?"
+      },
+      {
+        "title": "A domain-aware intersection",
+        "body": "",
+        "math": "f(x)=\\frac{2}{x-1},\\qquad g(x)=x",
+        "question": "At which points do these graphs intersect?"
+      }
+    ]
+  },
+  {
+    "number": "5.7",
+    "title": "Inverses and Radical Functions",
+    "slug": "5-7-inverses-and-radical-functions",
+    "slides": [
+      {
+        "title": "Inverse functions",
+        "body": "An inverse reverses a function's input-output pairs.",
+        "math": "",
+        "question": "If f(2) = 7, what does its inverse do to 7?"
+      },
+      {
+        "title": "One-to-one functions",
+        "body": "A function is one-to-one when different inputs always give different outputs.",
+        "math": "f(x)=x^2,\\qquad x\\in\\mathbb{R}",
+        "question": "Why does this function need a domain restriction to have an inverse function?"
+      },
+      {
+        "title": "The horizontal line test",
+        "body": "A graph represents a one-to-one function when every horizontal line meets it at most once.",
+        "math": "",
+        "question": "Does a cubic function f(x) = x cubed pass this test?"
+      },
+      {
+        "title": "An odd-power inverse",
+        "body": "",
+        "math": "f(x)=x^3+2",
+        "question": "What is the inverse function?"
+      },
+      {
+        "title": "A scaled cubic",
+        "body": "",
+        "math": "f(x)=2(x-1)^3+5",
+        "question": "What is the inverse function and its domain?"
+      },
+      {
+        "title": "The inverse notation",
+        "body": "",
+        "math": "f^{-1}(x)\\qquad\\text{and}\\qquad\\frac{1}{f(x)}",
+        "question": "Why do these expressions generally describe different functions?"
+      },
+      {
+        "title": "Restricting a square",
+        "body": "",
+        "math": "f(x)=x^2,\\qquad x\\geq0",
+        "question": "What inverse function results from this restriction?"
+      },
+      {
+        "title": "The other square branch",
+        "body": "",
+        "math": "f(x)=x^2,\\qquad x\\leq0",
+        "question": "What inverse function results from this restriction?"
+      },
+      {
+        "title": "A shifted quadratic",
+        "body": "",
+        "math": "f(x)=(x-3)^2+1,\\qquad x\\geq3",
+        "question": "What is the inverse function?"
+      },
+      {
+        "title": "Inverse domain and range",
+        "body": "",
+        "math": "f(x)=(x-3)^2+1,\\qquad x\\geq3",
+        "question": "What are the domain and range of its inverse?"
+      },
+      {
+        "title": "Choosing a restriction",
+        "body": "",
+        "math": "f(x)=2(x+1)^2-4",
+        "question": "Which two maximal intervals each make f one-to-one?"
+      },
+      {
+        "title": "A decreasing quadratic branch",
+        "body": "",
+        "math": "f(x)=2(x+1)^2-4,\\qquad x\\leq-1",
+        "question": "What is the inverse on this restricted domain?"
+      },
+      {
+        "title": "Verifying an inverse",
+        "body": "Use the stated domains.",
+        "math": "f(x)=x^2,\\ x\\geq0;\\quad g(x)=\\sqrt{x}",
+        "question": "How can both compositions verify that these functions are inverses?"
+      },
+      {
+        "title": "Why the restriction matters",
+        "body": "",
+        "math": "\\sqrt{x^2}=|x|",
+        "question": "Why does this identity prevent the square root from undoing squaring on all real inputs?"
+      },
+      {
+        "title": "Graph reflection",
+        "body": "Graphs of inverse functions reflect across the line y = x.",
+        "math": "",
+        "question": "Where does the point (4, 9) appear on the inverse graph?"
+      },
+      {
+        "title": "A radical function's domain",
+        "body": "",
+        "math": "g(x)=\\sqrt{2x-6}+1",
+        "question": "What are the real domain and range?"
+      },
+      {
+        "title": "Inverting a square-root function",
+        "body": "",
+        "math": "f(x)=\\sqrt{x-2}+3",
+        "question": "What is its inverse, including the inverse domain?"
+      },
+      {
+        "title": "An invertible rational function",
+        "body": "",
+        "math": "f(x)=\\frac{x+1}{x-2}",
+        "question": "What inverse formula and excluded input result?"
+      },
+      {
+        "title": "Checking the rational inverse domain",
+        "body": "",
+        "math": "f(x)=\\frac{x+1}{x-2}",
+        "question": "Why can the inverse not accept the input 1?"
+      },
+      {
+        "title": "A geometric inverse",
+        "body": "The volume in cubic centimeters of a cube with side length s cm is V(s) = s cubed, with s > 0.",
+        "math": "",
+        "question": "What inverse function gives side length from volume?"
+      },
+      {
+        "title": "Restricting to physical inputs",
+        "body": "The area in square meters of a square is A(s) = s squared, with s > 0.",
+        "math": "",
+        "question": "Which inverse branch gives a physical side length?"
+      },
+      {
+        "title": "Preparing to invert an exponential",
+        "body": "",
+        "math": "f(x)=2^x",
+        "question": "Does this function repeat an output, and why does that matter for an inverse?"
+      }
+    ]
+  }
+]

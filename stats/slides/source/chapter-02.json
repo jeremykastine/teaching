@@ -1,0 +1,1283 @@
+[
+  {
+    "number": "2.1",
+    "title": "Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",
+    "slug": "2-1-stem-and-leaf-graphs-stemplots-line-graphs-and-bar-graphs",
+    "slides": [
+      {
+        "title": "A stem and a leaf",
+        "body": "A stemplot displays each value as a stem and a final digit.",
+        "question": "For the value 47, what stem and leaf could we use?"
+      },
+      {
+        "title": "Reading the key",
+        "body": "Synthetic file sizes. Key: 3 | 4 means 34 KB.",
+        "question": "What values does this stemplot display?",
+        "table": {
+          "headers": [
+            "Stem",
+            "Leaves"
+          ],
+          "rows": [
+            [
+              "2",
+              "1 5 5"
+            ],
+            [
+              "3",
+              "0 4 8"
+            ],
+            [
+              "4",
+              "2"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Build a stemplot",
+        "body": "Synthetic file sizes (KB): 21, 25, 25, 30, 34, 38, 42.",
+        "question": "How would you organize these values into a stemplot with a key?"
+      },
+      {
+        "title": "Repeated values",
+        "body": "Synthetic file sizes. Key: 2 | 5 means 25 KB.",
+        "question": "How many files have size 25 KB?",
+        "table": {
+          "headers": [
+            "Stem",
+            "Leaves"
+          ],
+          "rows": [
+            [
+              "2",
+              "1 5 5"
+            ],
+            [
+              "3",
+              "0 4 8"
+            ],
+            [
+              "4",
+              "2"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Decimal leaves",
+        "body": "Synthetic response times: 1.2, 1.5, 1.5, 2.1, 2.8 seconds.",
+        "question": "What key and stemplot would preserve every recorded value?"
+      },
+      {
+        "title": "An empty stem",
+        "body": "Synthetic file sizes (KB): 12, 15, 17, 31, 35.",
+        "question": "Why should a stemplot include the stem 2?"
+      },
+      {
+        "title": "A possible outlier",
+        "body": "Synthetic response times: 1.1, 1.2, 1.3, 1.4, 1.6, 8.9 seconds.",
+        "question": "Which value deserves investigation?"
+      },
+      {
+        "title": "Keeping an unusual value",
+        "body": "A recorded file size is much larger than all others.",
+        "question": "What would you check before deciding whether to remove it?"
+      },
+      {
+        "title": "Comparing two groups",
+        "body": "Synthetic file sizes (KB). A: 12, 14, 16, 21, 23. B: 18, 21, 24, 27, 29.",
+        "question": "How could a back-to-back stemplot compare the two groups?"
+      },
+      {
+        "title": "A line graph",
+        "body": "Synthetic downloads per session.",
+        "question": "What does the peak show?",
+        "plot": {
+          "kind": "line",
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "y": [
+            2,
+            5,
+            8,
+            4,
+            1
+          ],
+          "xlabel": "Downloads per session",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Frequency from a graph",
+        "body": "Synthetic downloads per session.",
+        "question": "How many sessions had at least three downloads?",
+        "plot": {
+          "kind": "line",
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "y": [
+            2,
+            5,
+            8,
+            4,
+            1
+          ],
+          "xlabel": "Downloads per session",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Build a frequency line graph",
+        "body": "Synthetic downloads per session.",
+        "question": "Where should each frequency point be plotted?",
+        "table": {
+          "headers": [
+            "Downloads",
+            "Sessions"
+          ],
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A bar graph",
+        "body": "A bar graph uses separate bars for categories. Synthetic notebook counts: blue 12, black 8, red 5.",
+        "question": "What should the axes show?"
+      },
+      {
+        "title": "Counts or proportions?",
+        "body": "Synthetic notebook counts: blue 12, black 8, red 5.",
+        "question": "What height should the blue bar have on a relative-frequency graph?"
+      },
+      {
+        "title": "Category order",
+        "body": "Synthetic notebook counts: blue 12, black 8, red 5.",
+        "question": "Would changing the category order change the data being displayed?"
+      },
+      {
+        "title": "Choose a display",
+        "body": "A spreadsheet contains printer brands and file sizes in KB.",
+        "question": "Which variable is suited to a stemplot?"
+      }
+    ]
+  },
+  {
+    "number": "2.2",
+    "title": "Histograms, Frequency Polygons, and Time Series Graphs",
+    "slug": "2-2-histograms-frequency-polygons-and-time-series-graphs",
+    "slides": [
+      {
+        "title": "A histogram",
+        "body": "A histogram groups numerical values into intervals and displays their frequencies.",
+        "question": "How does its horizontal axis differ from a categorical bar graph?"
+      },
+      {
+        "title": "Define the intervals",
+        "body": "Synthetic download times: 2, 4, 5, 7, 9, 10, 13, 18 seconds. Use intervals [0,5), [5,10), [10,15), [15,20).",
+        "question": "Where does a time of exactly 5 seconds belong?"
+      },
+      {
+        "title": "Count the bins",
+        "body": "Synthetic download times: 2, 4, 5, 7, 9, 10, 13, 18 seconds. Use intervals [0,5), [5,10), [10,15), [15,20).",
+        "question": "What frequency belongs in each interval?"
+      },
+      {
+        "title": "Read a histogram",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "How many downloads took less than 10 seconds?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Read an interval",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "Which five-second interval contains the most observations?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Frequency to percentage",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "What percentage took from 10 to less than 15 seconds?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Information hidden by grouping",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "Can this graph reveal the exact number of times equal to 8 seconds?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Bin width",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "How does a wider bin change the detail we can see?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "A gap",
+        "body": "Synthetic file sizes (KB): 11, 12, 14, 16, 31, 33, 35.",
+        "question": "What will a histogram with bins [10,20), [20,30), [30,40) reveal?"
+      },
+      {
+        "title": "Describe the shape",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "Is the distribution roughly symmetric or longer-tailed on one side?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            11,
+            12,
+            13,
+            17,
+            18,
+            23
+          ],
+          "bins": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Label the axes",
+        "body": "A histogram has bars of heights 4, 7, and 9 but no axis labels.",
+        "question": "What must we know before interpreting these bars?"
+      },
+      {
+        "title": "Relative-frequency histogram",
+        "body": "Synthetic intervals have counts 4, 7, 9 out of 20 files.",
+        "question": "What heights would a relative-frequency histogram use?"
+      },
+      {
+        "title": "A frequency polygon",
+        "body": "A frequency polygon joins frequencies plotted at class midpoints.",
+        "question": "For intervals [0,5), [5,10), [10,15), where are the midpoints?"
+      },
+      {
+        "title": "Build a frequency polygon",
+        "body": "Synthetic download times. Equal-width class midpoints are 2.5, 7.5, 12.5, 17.5; counts are 4, 7, 6, 3.",
+        "question": "What points should the polygon connect?"
+      },
+      {
+        "title": "Read a frequency polygon",
+        "body": "Synthetic grouped times; zero endpoints close the polygon.",
+        "question": "Which class has the greatest frequency?",
+        "plot": {
+          "kind": "line",
+          "x": [
+            -2.5,
+            2.5,
+            7.5,
+            12.5,
+            17.5,
+            22.5
+          ],
+          "y": [
+            0,
+            4,
+            7,
+            6,
+            3,
+            0
+          ],
+          "xlabel": "Class midpoint (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "A time series",
+        "body": "A time series records a variable in chronological order.",
+        "question": "Why must the horizontal axis preserve time order?"
+      },
+      {
+        "title": "Read a time series",
+        "body": "Synthetic weekly print totals.",
+        "question": "During which adjacent weeks did printing increase most?",
+        "plot": {
+          "kind": "line",
+          "x": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "y": [
+            80,
+            95,
+            90,
+            130,
+            125,
+            140
+          ],
+          "xlabel": "Week",
+          "ylabel": "Pages printed"
+        }
+      },
+      {
+        "title": "Distribution or time order?",
+        "body": "Synthetic weekly print totals: 80, 95, 90, 130, 125, 140.",
+        "question": "What information would a histogram lose compared with a time-series graph?"
+      },
+      {
+        "title": "Unequal widths",
+        "body": "One histogram bin spans 0–5 seconds; another spans 5–20 seconds. Both contain 10 observations.",
+        "question": "Why might equal bar heights misrepresent the concentration of data?"
+      },
+      {
+        "title": "Choose a graph",
+        "body": "We record file sizes and the total files downloaded on each of 30 consecutive days.",
+        "question": "Which graph would best show the change in daily totals?"
+      }
+    ]
+  },
+  {
+    "number": "2.3",
+    "title": "Measures of the Location of the Data",
+    "slug": "2-3-measures-of-the-location-of-the-data",
+    "slides": [
+      {
+        "title": "Percentile",
+        "body": "A percentile locates a value relative to an ordered distribution.",
+        "question": "What does being near the 80th percentile tell us about a file size?"
+      },
+      {
+        "title": "Percentile or percent correct?",
+        "body": "A synthetic quiz score of 72 points is at the 90th percentile.",
+        "question": "Does this mean the student answered 90% of the questions correctly?"
+      },
+      {
+        "title": "Order first",
+        "body": "Synthetic file sizes (KB): 14, 8, 22, 10, 18, 12, 6.",
+        "question": "What is their order from smallest to largest?"
+      },
+      {
+        "title": "The median",
+        "body": "Synthetic data. The median separates ordered data into lower and upper halves.",
+        "question": "What is the median of 6, 8, 10, 12, 14, 18, 22?"
+      },
+      {
+        "title": "An even number of values",
+        "body": "Synthetic file sizes (KB): 2, 4, 4, 6, 8, 10, 10, 12.",
+        "question": "What is their median?"
+      },
+      {
+        "title": "Quartiles",
+        "body": "Q1, Q2, and Q3 mark approximately 25%, 50%, and 75% of an ordered distribution.",
+        "question": "Which quartile is the median?"
+      },
+      {
+        "title": "The lower quartile",
+        "body": "Synthetic file sizes (KB): 2, 4, 4, 6, 8, 10, 10, 12. Use medians of the two halves.",
+        "question": "What is Q1?"
+      },
+      {
+        "title": "The upper quartile",
+        "body": "Synthetic file sizes (KB): 2, 4, 4, 6, 8, 10, 10, 12. Use medians of the two halves.",
+        "question": "What is Q3?"
+      },
+      {
+        "title": "Interquartile range",
+        "body": "IQR is the distance from Q1 to Q3.",
+        "question": "For Q1 = 4 KB and Q3 = 10 KB, what is the IQR?",
+        "math": "\\mathrm{IQR}=Q_3-Q_1"
+      },
+      {
+        "title": "Interpret the middle half",
+        "body": "Synthetic file sizes have Q1 = 4 KB and Q3 = 10 KB.",
+        "question": "Approximately what fraction lies between these quartiles?"
+      },
+      {
+        "title": "An outlier rule",
+        "body": "A potential outlier lies below Q1 − 1.5 IQR or above Q3 + 1.5 IQR.",
+        "question": "For Q1 = 4 and Q3 = 10, what are the two fences?"
+      },
+      {
+        "title": "Flag a value",
+        "body": "Synthetic file sizes have Q1 = 4 KB, Q3 = 10 KB, and IQR = 6 KB.",
+        "question": "Does a 30 KB file fall beyond an outlier fence?"
+      },
+      {
+        "title": "At the fence",
+        "body": "Synthetic data have Q1 = 4 and Q3 = 10. The upper fence is 19.",
+        "question": "Does the 1.5 IQR rule flag a value equal to 19?"
+      },
+      {
+        "title": "Percentile from a rank",
+        "body": "Synthetic ordered values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Use 100 × (count below + half the count equal)/n.",
+        "question": "What percentile rank does 14 have under this rule?"
+      },
+      {
+        "title": "A percentile location",
+        "body": "Textbook rule: i = (k/100)(n + 1). An integer i selects position i; otherwise average the values at the adjacent positions.",
+        "question": "For n = 20 and k = 60, which ordered positions determine P60?"
+      },
+      {
+        "title": "A percentile calculation",
+        "body": "Synthetic ordered values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Use i = (k/100)(n + 1); average adjacent positions when i is noninteger.",
+        "question": "What is P60?"
+      },
+      {
+        "title": "Ties in percentile statements",
+        "body": "Half of a synthetic class has the same quiz score as the median.",
+        "question": "Why should we say approximately half rather than exactly half score below the median?"
+      },
+      {
+        "title": "Location and spread",
+        "body": "Two synthetic datasets have the same median but IQRs of 4 KB and 20 KB.",
+        "question": "What difference does the IQR reveal?"
+      }
+    ]
+  },
+  {
+    "number": "2.4",
+    "title": "Box Plots",
+    "slug": "2-4-box-plots",
+    "slides": [
+      {
+        "title": "Five-number summary",
+        "body": "Synthetic data. A five-number summary gives minimum, Q1, median, Q3, and maximum.",
+        "question": "What is the summary for 2, 4, 4, 6, 8, 10, 10, 12?"
+      },
+      {
+        "title": "Build a box plot",
+        "body": "Synthetic pages per job: minimum 2, Q1 = 4, median 7, Q3 = 10, maximum 12.",
+        "question": "How would you draw a box plot on a scaled number line?"
+      },
+      {
+        "title": "Read the median",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "What is the median?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Read the box",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "What interval contains approximately the middle half?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Read the range",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "What is the range?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Read the IQR",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "What is the IQR?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Length is not count",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "Does a longer quarter of the plot necessarily contain more observations?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Within a quarter",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "Can the plot determine exactly how many jobs printed 5 pages?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            12
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "Concentration",
+        "body": "Synthetic pages; min/max whiskers.",
+        "question": "Which quarter spans the shortest interval?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            3,
+            3,
+            4,
+            6,
+            10,
+            10,
+            20
+          ],
+          "xlabel": "Pages per job",
+          "whis": [
+            0,
+            100
+          ]
+        }
+      },
+      {
+        "title": "A modified box plot",
+        "body": "Synthetic pages; outliers are separate points.",
+        "question": "What does the point at 30 pages represent?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            30
+          ],
+          "xlabel": "Pages per job",
+          "whis": 1.5
+        }
+      },
+      {
+        "title": "The whisker endpoint",
+        "body": "Synthetic pages; outliers are separate points.",
+        "question": "Why does the upper whisker stop before 30?",
+        "plot": {
+          "kind": "boxplot",
+          "data": [
+            2,
+            4,
+            4,
+            6,
+            8,
+            10,
+            10,
+            30
+          ],
+          "xlabel": "Pages per job",
+          "whis": 1.5
+        }
+      },
+      {
+        "title": "Compare centers",
+        "body": "Synthetic five-number summaries. A: 2, 4, 7, 10, 12. B: 5, 7, 10, 13, 15.",
+        "question": "Which group has the higher median?"
+      },
+      {
+        "title": "Compare middle spreads",
+        "body": "Synthetic five-number summaries. A: 2, 4, 7, 10, 12. B: 2, 6, 7, 8, 12.",
+        "question": "Which group has the larger IQR?"
+      },
+      {
+        "title": "Same summary, different data",
+        "body": "Two synthetic datasets have the same five-number summary.",
+        "question": "Must their individual observations be identical?"
+      },
+      {
+        "title": "Match the graph to a question",
+        "body": "We want to compare the middle half of file sizes for two servers.",
+        "question": "What makes a box plot useful here?"
+      },
+      {
+        "title": "Investigate an outlier",
+        "body": "A modified box plot flags one large print job.",
+        "question": "What additional information would help interpret that job?"
+      }
+    ]
+  },
+  {
+    "number": "2.5",
+    "title": "Measures of the Center of the Data",
+    "slug": "2-5-measures-of-the-center-of-the-data",
+    "slides": [
+      {
+        "title": "The mean",
+        "body": "The mean is the sum of the values divided by their number.",
+        "question": "What is the mean of synthetic counts 2, 3, 5, 6?",
+        "math": "\\bar{x}=\\frac{\\sum x}{n}"
+      },
+      {
+        "title": "A mean with units",
+        "body": "Synthetic file sizes: 10, 15, 20, 35 KB.",
+        "question": "What is their mean, including units?"
+      },
+      {
+        "title": "Recover a total",
+        "body": "Five synthetic downloads have a mean duration of 8 seconds.",
+        "question": "What is their total duration?"
+      },
+      {
+        "title": "Sample and population means",
+        "body": "x-bar denotes a sample mean; μ denotes a population mean.",
+        "question": "Which symbol describes the mean size of all files on a server?"
+      },
+      {
+        "title": "The median",
+        "body": "Synthetic data. The median is the middle ordered value, or the average of the two middle values.",
+        "question": "What is the median of 9, 2, 7, 4, 3?"
+      },
+      {
+        "title": "An even-sized sample",
+        "body": "Synthetic downloads per session: 0, 1, 2, 2, 4, 9.",
+        "question": "What is the median?"
+      },
+      {
+        "title": "The mode",
+        "body": "Synthetic data. A mode is a value with greatest frequency.",
+        "question": "What is the mode of 0, 1, 2, 2, 2, 4, 4?"
+      },
+      {
+        "title": "Two modes",
+        "body": "Synthetic downloads per session: 0, 1, 1, 3, 3, 4.",
+        "question": "Which values are modes?"
+      },
+      {
+        "title": "A categorical mode",
+        "body": "Synthetic notebook colors: blue, black, blue, red, black, blue.",
+        "question": "Which measure of center is meaningful for these categories?"
+      },
+      {
+        "title": "Compare mean and median",
+        "body": "Synthetic file sizes (KB): 4, 5, 5, 6, 30.",
+        "question": "How do the mean and median compare?"
+      },
+      {
+        "title": "Sensitivity to one value",
+        "body": "Synthetic file sizes (KB): 4, 5, 5, 6, 30. Replace 30 with 300.",
+        "question": "Which measure of center changes more?"
+      },
+      {
+        "title": "Choosing a typical value",
+        "body": "Most files are small, but a few archive files are enormous.",
+        "question": "Which center would better describe a typical file?"
+      },
+      {
+        "title": "A mean from frequencies",
+        "body": "Synthetic print-job counts.",
+        "question": "What is the mean number of pages per job?",
+        "table": {
+          "headers": [
+            "Pages",
+            "Jobs"
+          ],
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Why weight the values?",
+        "body": "Synthetic job frequencies: one page 2 times, two pages 3 times, five pages 1 time.",
+        "question": "Why is (1 + 2 + 5)/3 not the mean per job?"
+      },
+      {
+        "title": "A grouped estimate",
+        "body": "Synthetic file sizes are grouped into intervals.",
+        "question": "What midpoints would you use to estimate the mean?",
+        "table": {
+          "headers": [
+            "Size (KB)",
+            "Frequency"
+          ],
+          "rows": [
+            [
+              "0 to <10",
+              3
+            ],
+            [
+              "10 to <20",
+              5
+            ],
+            [
+              "20 to <30",
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Estimate a grouped mean",
+        "body": "Synthetic file sizes: intervals [0,10), [10,20), [20,30) have frequencies 3, 5, 2.",
+        "question": "What mean results from weighting the class midpoints?"
+      },
+      {
+        "title": "Exact or estimated?",
+        "body": "A grouped table gives only interval counts, not individual values.",
+        "question": "Why is a midpoint-based mean generally an estimate?"
+      },
+      {
+        "title": "Combine two groups",
+        "body": "Synthetic group A: 10 jobs, mean 4 pages. Group B: 30 jobs, mean 8 pages.",
+        "question": "What is the mean for all 40 jobs?"
+      },
+      {
+        "title": "Adding a constant",
+        "body": "Every synthetic print job gains a two-page cover sheet.",
+        "question": "How does the mean pages per job change?"
+      },
+      {
+        "title": "Changing units",
+        "body": "Synthetic file sizes have mean 2 MB. Use 1 MB = 1,000 KB for this problem.",
+        "question": "What is the mean in KB?"
+      }
+    ]
+  },
+  {
+    "number": "2.6",
+    "title": "Skewness and the Mean, Median, and Mode",
+    "slug": "2-6-skewness-and-the-mean-median-and-mode",
+    "slides": [
+      {
+        "title": "Symmetry",
+        "body": "A symmetric distribution has approximately matching shapes on both sides of its center.",
+        "question": "What would symmetry look like in a histogram?"
+      },
+      {
+        "title": "Right skew",
+        "body": "Synthetic data. A right-skewed distribution has a longer tail toward larger values.",
+        "question": "Which observations form the tail in 1, 2, 2, 3, 3, 4, 12?"
+      },
+      {
+        "title": "Left skew",
+        "body": "Synthetic data. A left-skewed distribution has a longer tail toward smaller values.",
+        "question": "Which observations form the tail in 1, 8, 9, 9, 10, 10, 11?"
+      },
+      {
+        "title": "Read a right tail",
+        "body": "Synthetic times; bins are left-inclusive.",
+        "question": "In which direction is the distribution skewed?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            5,
+            8,
+            12
+          ],
+          "bins": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "xlabel": "Time (seconds)",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Read a left tail",
+        "body": "Synthetic quiz scores.",
+        "question": "In which direction is the distribution skewed?",
+        "plot": {
+          "kind": "histogram",
+          "data": [
+            30,
+            50,
+            60,
+            70,
+            75,
+            78,
+            80,
+            82,
+            84,
+            86,
+            88,
+            90,
+            92
+          ],
+          "bins": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "xlabel": "Quiz score",
+          "ylabel": "Frequency"
+        }
+      },
+      {
+        "title": "Mean and a right tail",
+        "body": "Synthetic values: 1, 2, 2, 3, 3, 4, 12.",
+        "question": "Is the mean above or below the median?"
+      },
+      {
+        "title": "Mean and a left tail",
+        "body": "Synthetic values: 1, 8, 9, 9, 10, 10, 11.",
+        "question": "Is the mean above or below the median?"
+      },
+      {
+        "title": "A symmetric example",
+        "body": "Synthetic values: 2, 3, 3, 4, 5, 5, 6.",
+        "question": "How do the mean and median compare?"
+      },
+      {
+        "title": "A larger extreme",
+        "body": "Synthetic values: 1, 2, 2, 3, 3, 4, 12. Replace 12 with 40.",
+        "question": "How does the mean move relative to the median?"
+      },
+      {
+        "title": "Skew names the tail",
+        "body": "A histogram has most observations on the left and a few far to the right.",
+        "question": "Is it left-skewed or right-skewed?"
+      },
+      {
+        "title": "The mode and shape",
+        "body": "Synthetic values: 1, 2, 2, 2, 3, 4, 12.",
+        "question": "Where are the mode, median, and mean relative to one another?"
+      },
+      {
+        "title": "A common pattern",
+        "body": "For many unimodal right-skewed distributions, the mean exceeds the median.",
+        "question": "Should this pattern be treated as a universal theorem for every dataset?"
+      },
+      {
+        "title": "Symmetry without one peak",
+        "body": "A symmetric histogram has two equal peaks on opposite sides of its center.",
+        "question": "Must the mode equal the mean?"
+      },
+      {
+        "title": "Choosing the center",
+        "body": "Synthetic response times have a pronounced right tail.",
+        "question": "Which center is less sensitive to unusually slow responses?"
+      },
+      {
+        "title": "A shift and shape",
+        "body": "Every file size increases by 5 KB.",
+        "question": "Does adding the same constant change the direction of skew?"
+      },
+      {
+        "title": "Toward later models",
+        "body": "One dataset is roughly bell-shaped; another has a strong right tail.",
+        "question": "Which looks more compatible with a symmetric normal model?"
+      }
+    ]
+  },
+  {
+    "number": "2.7",
+    "title": "Measures of the Spread of the Data",
+    "slug": "2-7-measures-of-the-spread-of-the-data",
+    "slides": [
+      {
+        "title": "Spread",
+        "body": "Spread describes how much the values vary.",
+        "question": "Which synthetic dataset varies more: 4, 5, 6 or 1, 5, 9?"
+      },
+      {
+        "title": "The range",
+        "body": "Synthetic data. Range is maximum minus minimum.",
+        "question": "What is the range of 3, 4, 4, 7, 12?"
+      },
+      {
+        "title": "A deviation",
+        "body": "A deviation is a value minus the mean.",
+        "question": "For mean 5 and value 8, what is the deviation?",
+        "math": "x-\\bar{x}"
+      },
+      {
+        "title": "Positive and negative deviations",
+        "body": "Synthetic values: 2, 4, 6, with mean 4.",
+        "question": "What deviations correspond to these values?"
+      },
+      {
+        "title": "Sum of deviations",
+        "body": "Synthetic values: 2, 4, 6, with mean 4.",
+        "question": "Why would summing their signed deviations fail to measure spread?"
+      },
+      {
+        "title": "Squared deviations",
+        "body": "Synthetic values: 2, 4, 6, with mean 4.",
+        "question": "What is the sum of squared deviations?"
+      },
+      {
+        "title": "Sample variance",
+        "body": "Synthetic data. Sample variance divides the sum of squared deviations by n − 1.",
+        "question": "What is the sample variance of 2, 4, 6?",
+        "math": "s^2=\\frac{\\sum(x-\\bar{x})^2}{n-1}"
+      },
+      {
+        "title": "Sample standard deviation",
+        "body": "Standard deviation is the square root of variance.",
+        "question": "If a sample variance is 4 seconds squared, what is its standard deviation?",
+        "math": "s=\\sqrt{s^2}"
+      },
+      {
+        "title": "Population variance",
+        "body": "Synthetic data. Population variance divides by the population size N.",
+        "question": "What is the population variance when the entire population is 2, 4, 6?",
+        "math": "\\sigma^2=\\frac{\\sum(x-\\mu)^2}{N}"
+      },
+      {
+        "title": "Choose the denominator",
+        "body": "We measure 12 randomly selected files from thousands on a server.",
+        "question": "Should the sample-variance denominator be 12 or 11?"
+      },
+      {
+        "title": "Units of spread",
+        "body": "File sizes are measured in KB.",
+        "question": "What units belong to variance and standard deviation?"
+      },
+      {
+        "title": "Interpret a standard deviation",
+        "body": "Synthetic response times have mean 20 seconds and standard deviation 3 seconds.",
+        "question": "What does the standard deviation describe?"
+      },
+      {
+        "title": "Compare variability",
+        "body": "Two synthetic servers have the same mean response time. Their standard deviations are 2 seconds and 8 seconds.",
+        "question": "Which server has more variable response times?"
+      },
+      {
+        "title": "Zero standard deviation",
+        "body": "A synthetic dataset has standard deviation zero.",
+        "question": "What must be true of every observation?"
+      },
+      {
+        "title": "One value changes",
+        "body": "Synthetic values: 4, 5, 6. Replace 6 with 60.",
+        "question": "How will the range and standard deviation respond?"
+      },
+      {
+        "title": "Adding a constant",
+        "body": "Every synthetic download time increases by 10 seconds.",
+        "question": "Does the standard deviation change?"
+      },
+      {
+        "title": "Scaling every value",
+        "body": "Convert every response time from seconds to milliseconds by multiplying by 1,000.",
+        "question": "How does the standard deviation change?"
+      },
+      {
+        "title": "Distance in standard deviations",
+        "body": "A synthetic file-size distribution has mean 40 KB and standard deviation 5 KB.",
+        "question": "How many standard deviations above the mean is 55 KB?",
+        "math": "\\frac{x-\\bar{x}}{s}"
+      },
+      {
+        "title": "Below the mean",
+        "body": "Synthetic response times have mean 20 seconds and standard deviation 4 seconds.",
+        "question": "What standardized distance corresponds to 12 seconds?"
+      },
+      {
+        "title": "Compare relative positions",
+        "body": "Synthetic quiz A: mean 70, SD 5, score 80. Quiz B: mean 60, SD 10, score 80.",
+        "question": "Which score is farther above its mean in standard-deviation units?"
+      },
+      {
+        "title": "Chebyshev’s bound",
+        "body": "For any distribution with finite, positive variance, at least 1 − 1/k² lies within k standard deviations of the mean, k > 1.",
+        "question": "What minimum fraction lies within two standard deviations?"
+      },
+      {
+        "title": "Empirical rule",
+        "body": "For an approximately bell-shaped distribution, about 68%, 95%, and 99.7% lie within one, two, and three standard deviations.",
+        "question": "With mean 50 and SD 4, what interval contains about 95%?"
+      }
+    ]
+  }
+]

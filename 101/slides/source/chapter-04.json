@@ -1,0 +1,335 @@
+[
+  {
+    "number": "4.1",
+    "title": "Linear Functions",
+    "slug": "4-1-linear-functions",
+    "slides": [
+      {
+        "title": "Linear functions",
+        "body": "A linear function has a constant rate of change.",
+        "math": "f(x)=mx+b",
+        "question": "What do m and b tell us about the graph?"
+      },
+      {
+        "title": "Recognizing a constant rate",
+        "body": "A function takes these values at equally spaced inputs.",
+        "math": "f(0)=7,\\quad f(1)=4,\\quad f(2)=1",
+        "question": "Are these values consistent with a linear function?"
+      },
+      {
+        "title": "Unequally spaced inputs",
+        "body": "The points belong to one function.",
+        "math": "(1,4),\\quad (3,10),\\quad (6,19)",
+        "question": "Are the rates between consecutive points equal?"
+      },
+      {
+        "title": "Slope",
+        "body": "For two distinct inputs, slope is the change in output divided by the change in input.",
+        "math": "m=\\frac{y_2-y_1}{x_2-x_1}",
+        "question": "Why must the input difference be nonzero?"
+      },
+      {
+        "title": "Calculating slope",
+        "body": "A line passes through these points.",
+        "math": "(-2,7),\\qquad (4,-5)",
+        "question": "What is its slope?"
+      },
+      {
+        "title": "Slope units",
+        "body": "A tank contains 80 liters at minute 2 and 56 liters at minute 8. Its volume changes linearly.",
+        "math": "",
+        "question": "What is the rate of change, including units?"
+      },
+      {
+        "title": "Increasing or decreasing",
+        "body": "",
+        "math": "f(x)=-\\frac{3}{2}x+6",
+        "question": "Is this function increasing, decreasing, or constant?"
+      },
+      {
+        "title": "A constant function",
+        "body": "",
+        "math": "f(x)=9",
+        "question": "How does its output change when the input increases?"
+      },
+      {
+        "title": "A vertical line",
+        "body": "",
+        "math": "x=4",
+        "question": "Why is this line not the graph of a function of x?"
+      },
+      {
+        "title": "The initial value",
+        "body": "A machine costs $240 to rent plus $18 per hour.",
+        "math": "C(h)=240+18h",
+        "question": "What does the vertical intercept represent?"
+      },
+      {
+        "title": "Point-slope form",
+        "body": "A line has slope 3 and passes through (2, -4).",
+        "math": "y-y_1=m(x-x_1)",
+        "question": "What equation describes the line?"
+      },
+      {
+        "title": "From two points",
+        "body": "A linear function satisfies these conditions.",
+        "math": "f(-1)=5,\\qquad f(3)=-3",
+        "question": "What is its formula in slope-intercept form?"
+      },
+      {
+        "title": "From standard form",
+        "body": "",
+        "math": "3x+2y=12",
+        "question": "What are the slope and vertical intercept?"
+      },
+      {
+        "title": "Graphing a line",
+        "body": "",
+        "math": "f(x)=\\frac{2}{3}x-4",
+        "question": "How can the intercept and slope locate points for a sketch?"
+      },
+      {
+        "title": "Finding intercepts",
+        "body": "",
+        "math": "f(x)=-4x+12",
+        "question": "Where does the graph meet each coordinate axis?"
+      },
+      {
+        "title": "Parallel lines",
+        "body": "Distinct nonvertical parallel lines have equal slopes.",
+        "math": "y=2x-5",
+        "question": "What equation describes the parallel line through (3, 4)?"
+      },
+      {
+        "title": "Perpendicular lines",
+        "body": "Two nonvertical perpendicular lines have slopes whose product is -1.",
+        "math": "y=-\\frac{2}{3}x+1",
+        "question": "What is the slope of a perpendicular line?"
+      },
+      {
+        "title": "A perpendicular equation",
+        "body": "",
+        "math": "y=4x+7",
+        "question": "What perpendicular line passes through (-2, 3)?"
+      },
+      {
+        "title": "Horizontal and vertical lines",
+        "body": "One line is horizontal and passes through (2, -3).",
+        "math": "",
+        "question": "What perpendicular line passes through the same point?"
+      },
+      {
+        "title": "An intersection",
+        "body": "",
+        "math": "f(x)=2x+1,\\qquad g(x)=-x+7",
+        "question": "At what point do these graphs intersect?"
+      },
+      {
+        "title": "Same slope, different intercepts",
+        "body": "",
+        "math": "f(x)=3x-2,\\qquad g(x)=3x+5",
+        "question": "Can their graphs intersect?"
+      },
+      {
+        "title": "Linear change versus a ratio",
+        "body": "",
+        "math": "f(x)=4x,\\qquad x>0",
+        "question": "Is the ratio f(x + 1)/f(x) constant?"
+      },
+      {
+        "title": "A model domain",
+        "body": "A taxi fare is $5 plus $2 per mile. Let d be distance traveled.",
+        "math": "",
+        "question": "What domain is reasonable for the fare function?"
+      }
+    ]
+  },
+  {
+    "number": "4.2",
+    "title": "Modeling with Linear Functions",
+    "slug": "4-2-modeling-with-linear-functions",
+    "slides": [
+      {
+        "title": "Choosing variables",
+        "body": "A delivery fee depends on distance traveled.",
+        "math": "",
+        "question": "Which quantity should be the input, and what units should each variable use?"
+      },
+      {
+        "title": "Building a cost model",
+        "body": "A workshop charges a $35 registration fee plus $8 per session. Let n count sessions.",
+        "math": "",
+        "question": "What function gives the total cost?"
+      },
+      {
+        "title": "Interpreting a model",
+        "body": "A tank initially contains 120 liters and drains at 6 liters per minute.",
+        "math": "V(t)=120-6t",
+        "question": "What does each parameter represent?"
+      },
+      {
+        "title": "The physical domain",
+        "body": "The tank begins with 120 liters and loses 6 liters per minute until empty.",
+        "math": "",
+        "question": "What time interval belongs in the model domain?"
+      },
+      {
+        "title": "Predicting an output",
+        "body": "A printer charges $24 setup plus $0.15 per page.",
+        "math": "C(n)=24+0.15n",
+        "question": "What is the cost of printing 160 pages?"
+      },
+      {
+        "title": "Finding an input",
+        "body": "A printer charges $24 setup plus $0.15 per page.",
+        "math": "C(n)=24+0.15n",
+        "question": "How many pages can be printed for exactly $54?"
+      },
+      {
+        "title": "Building from two observations",
+        "body": "A cooler warms at a constant rate: 8 degrees Celsius at hour 1 and 14 degrees at hour 4.",
+        "math": "",
+        "question": "What temperature function T(t) fits these observations?"
+      },
+      {
+        "title": "Changing the reference time",
+        "body": "A balance is $260 three weeks after saving begins and grows by $40 each week.",
+        "math": "",
+        "question": "What was the balance when saving began?"
+      },
+      {
+        "title": "Comparing plans",
+        "body": "Monthly costs in dollars depend on the number n of visits.",
+        "math": "A(n)=20+6n,\\qquad B(n)=44+3n",
+        "question": "For how many visits do the plans cost the same?"
+      },
+      {
+        "title": "Choosing a plan",
+        "body": "Monthly costs in dollars depend on the number n of visits.",
+        "math": "A(n)=20+6n,\\qquad B(n)=44+3n",
+        "question": "For which nonnegative integer values of n is plan B cheaper?"
+      },
+      {
+        "title": "Break-even",
+        "body": "A seller receives $15 per item. Fixed costs are $180 and production costs are $6 per item.",
+        "math": "",
+        "question": "How many items must be sold for revenue to equal cost?"
+      },
+      {
+        "title": "A linear conversion",
+        "body": "A measuring device displays 14 units for 2 cm and 38 units for 8 cm. Assume a linear conversion.",
+        "math": "",
+        "question": "What formula converts centimeters to displayed units?"
+      },
+      {
+        "title": "Exact model or approximation?",
+        "body": "Observed pairs are (0, 10), (1, 13), (2, 17), and (3, 19).",
+        "math": "",
+        "question": "Do all four points lie on one line?"
+      },
+      {
+        "title": "Checking a prediction",
+        "body": "A linear model for a draining tank predicts a negative volume after 30 minutes.",
+        "math": "",
+        "question": "What should this prediction tell us about using the model?"
+      }
+    ]
+  },
+  {
+    "number": "4.3",
+    "title": "Fitting Linear Models to Data",
+    "slug": "4-3-fitting-linear-models-to-data",
+    "slides": [
+      {
+        "title": "Scatter plots",
+        "body": "A scatter plot places one point for each observed pair of numerical measurements.",
+        "math": "",
+        "question": "What can its overall shape reveal about a possible linear model?"
+      },
+      {
+        "title": "Choosing axes",
+        "body": "A shop records advertising spending and weekly sales. It wants to predict sales from spending.",
+        "math": "",
+        "question": "Which variable belongs on the horizontal axis?"
+      },
+      {
+        "title": "Sketching data",
+        "body": "Plot these observed pairs: (1, 4), (2, 6), (3, 7), (4, 9), and (5, 11).",
+        "math": "",
+        "question": "Does a line appear to be a reasonable model?"
+      },
+      {
+        "title": "Direction of association",
+        "body": "Observed pairs are (1, 12), (2, 10), (3, 9), (4, 7), and (5, 5).",
+        "math": "",
+        "question": "Would a fitted line have positive or negative slope?"
+      },
+      {
+        "title": "A nonlinear pattern",
+        "body": "Observed pairs are (0, 1), (1, 2), (2, 5), (3, 10), and (4, 17).",
+        "math": "",
+        "question": "What feature makes a straight line a questionable model?"
+      },
+      {
+        "title": "Estimating a line",
+        "body": "A scatter plot trends near (0, 3) and (6, 15).",
+        "math": "",
+        "question": "What line through these two representative points could approximate the trend?"
+      },
+      {
+        "title": "Residuals",
+        "body": "A residual is the observed output minus the model prediction.",
+        "math": "y-\\widehat{y}",
+        "question": "What does a positive residual mean on a scatter plot?"
+      },
+      {
+        "title": "Calculating a residual",
+        "body": "An observation is (4, 12). The fitted model is:",
+        "math": "\\widehat{y}=2x+3",
+        "question": "What is the residual?"
+      },
+      {
+        "title": "Least-squares fitting",
+        "body": "A least-squares regression line minimizes the sum of squared residuals.",
+        "math": "",
+        "question": "Why measure vertical differences between observations and predictions?"
+      },
+      {
+        "title": "Using a graphing utility",
+        "body": "Enter the pairs (1, 4), (2, 6), (3, 7), (4, 9), and (5, 11).",
+        "math": "",
+        "question": "What least-squares linear model does your graphing utility report?"
+      },
+      {
+        "title": "Interpreting a fitted slope",
+        "body": "A model predicts sales y in dollars from advertising x in dollars.",
+        "math": "\\widehat{y}=2.4x+180",
+        "question": "What does the slope mean in this model?"
+      },
+      {
+        "title": "Interpolation",
+        "body": "A model was fitted using inputs from 10 through 30.",
+        "math": "\\widehat{y}=1.5x+8",
+        "question": "What does it predict at x = 22?"
+      },
+      {
+        "title": "Extrapolation",
+        "body": "A model was fitted using inputs from 10 through 30.",
+        "math": "\\widehat{y}=1.5x+8",
+        "question": "What additional concern arises when predicting at x = 100?"
+      },
+      {
+        "title": "Correlation",
+        "body": "The correlation coefficient r describes the direction and strength of a linear association.",
+        "math": "-1\\leq r\\leq 1",
+        "question": "Which suggests a stronger linear association: r = -0.92 or r = 0.35?"
+      },
+      {
+        "title": "A fitted relationship",
+        "body": "A fitted line relates advertising spending to sales in observational data.",
+        "math": "",
+        "question": "Does a strong linear association prove that increased spending caused higher sales?"
+      }
+    ]
+  }
+]

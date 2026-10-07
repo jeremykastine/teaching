@@ -1,0 +1,292 @@
+[
+  {
+    "number": "7.1",
+    "title": "Systems of Linear Equations: Two Variables",
+    "slug": "7-1-systems-of-linear-equations-two-variables",
+    "slides": [
+      {
+        "title": "A system solution",
+        "body": "A solution of a system must satisfy every equation simultaneously.",
+        "math": "x+y=7\\qquad x-y=1",
+        "question": "Does (4, 3) satisfy the system?"
+      },
+      {
+        "title": "Checking both equations",
+        "body": "",
+        "math": "2x+y=8\\qquad x-2y=1",
+        "question": "Is (3, 2) a solution of the entire system?"
+      },
+      {
+        "title": "Intersections of graphs",
+        "body": "",
+        "math": "y=x+1\\qquad y=-x+5",
+        "question": "What ordered pair belongs to both lines?"
+      },
+      {
+        "title": "Graphical solution",
+        "body": "",
+        "math": "y=2x-1\\qquad y=-x+5",
+        "question": "What intersection appears when you sketch both lines?"
+      },
+      {
+        "title": "One solution",
+        "body": "",
+        "math": "y=3x+2\\qquad y=-2x+7",
+        "question": "What graph feature guarantees exactly one intersection?"
+      },
+      {
+        "title": "Substitution",
+        "body": "",
+        "math": "y=4x-3\\qquad x+y=12",
+        "question": "What is the solution using substitution?"
+      },
+      {
+        "title": "Substitution with a coefficient",
+        "body": "",
+        "math": "x=2y+1\\qquad 3x-y=13",
+        "question": "What is the solution using substitution?"
+      },
+      {
+        "title": "Choosing a variable",
+        "body": "",
+        "math": "2x+y=9\\qquad 5x-3y=6",
+        "question": "Which equation makes substitution simplest, and what solution results?"
+      },
+      {
+        "title": "Addition method",
+        "body": "",
+        "math": "3x+y=11\\qquad 2x-y=4",
+        "question": "What is the solution after eliminating y?"
+      },
+      {
+        "title": "Scaling one equation",
+        "body": "",
+        "math": "2x+3y=13\\qquad x-y=4",
+        "question": "What is the solution using elimination?"
+      },
+      {
+        "title": "Scaling both equations",
+        "body": "",
+        "math": "3x+2y=12\\qquad 2x-3y=-5",
+        "question": "What is the solution using elimination?"
+      },
+      {
+        "title": "Fractional coefficients",
+        "body": "",
+        "math": "\\frac{x}{2}+y=5\\qquad x-y=1",
+        "question": "What is the exact ordered-pair solution?"
+      },
+      {
+        "title": "An inconsistent system",
+        "body": "An inconsistent system has no solution.",
+        "math": "y=2x+1\\qquad y=2x-4",
+        "question": "Why does this system have no solution?"
+      },
+      {
+        "title": "A dependent system",
+        "body": "A dependent linear system has equations describing the same line.",
+        "math": "x+2y=6\\qquad 2x+4y=12",
+        "question": "What entire set of ordered pairs solves this system?"
+      },
+      {
+        "title": "A contradiction after elimination",
+        "body": "",
+        "math": "2x-y=3\\qquad 4x-2y=9",
+        "question": "What does elimination reveal about the solution set?"
+      },
+      {
+        "title": "An identity after elimination",
+        "body": "",
+        "math": "3x+y=7\\qquad 6x+2y=14",
+        "question": "How can the infinite solution set be written using x as a parameter?"
+      },
+      {
+        "title": "Counting linear intersections",
+        "body": "Consider the solution set of a system of two linear equations in two variables.",
+        "math": "",
+        "question": "Can two lines in the plane have exactly two distinct common points?"
+      },
+      {
+        "title": "Selecting a method",
+        "body": "",
+        "math": "5x-y=8\\qquad 2x+y=13",
+        "question": "Which method seems efficient, and what is the solution?"
+      },
+      {
+        "title": "A ticket system",
+        "body": "A show sells 80 tickets for $620. Adult tickets cost $10 and student tickets $6. Every ticket is one of these types.",
+        "math": "",
+        "question": "What system represents the numbers of adult and student tickets?"
+      },
+      {
+        "title": "A mixture system",
+        "body": "Mix a 20% salt solution and a 50% salt solution to obtain 12 liters of 30% solution. Assume volumes add.",
+        "math": "",
+        "question": "How many liters of each solution are needed?"
+      },
+      {
+        "title": "A break-even point",
+        "body": "C and R are dollars; q is the number of items produced and sold, a nonnegative integer.",
+        "math": "C(q)=240+6q\\qquad R(q)=10q",
+        "question": "At what quantity does revenue equal cost?"
+      },
+      {
+        "title": "Connecting equations to functions",
+        "body": "",
+        "math": "f(x)=x+4\\qquad g(x)=3x-2",
+        "question": "How does solving f(x) = g(x) identify the solution of y = f(x), y = g(x)?"
+      }
+    ]
+  },
+  {
+    "number": "7.3",
+    "title": "Systems of Nonlinear Equations and Inequalities: Two Variables",
+    "slug": "7-3-systems-of-nonlinear-equations-and-inequalities-two-variables",
+    "slides": [
+      {
+        "title": "A nonlinear system",
+        "body": "",
+        "math": "y=x^2\\qquad y=x+2",
+        "question": "Which equation makes the system nonlinear?"
+      },
+      {
+        "title": "Checking an ordered pair",
+        "body": "",
+        "math": "y=x^2\\qquad x+y=6",
+        "question": "Does (2, 4) satisfy both equations?"
+      },
+      {
+        "title": "A line and a parabola",
+        "body": "",
+        "math": "y=x^2\\qquad y=x+2",
+        "question": "What are all real intersection points?"
+      },
+      {
+        "title": "A tangent intersection",
+        "body": "",
+        "math": "y=x^2\\qquad y=2x-1",
+        "question": "How many real intersection points does this system have?"
+      },
+      {
+        "title": "No real intersections",
+        "body": "",
+        "math": "y=x^2+2\\qquad y=-1",
+        "question": "Does this system have any real solution?"
+      },
+      {
+        "title": "Substitution and factoring",
+        "body": "",
+        "math": "y=x^2-4\\qquad y=2x-1",
+        "question": "What are all real solutions?"
+      },
+      {
+        "title": "A circle and a line",
+        "body": "",
+        "math": "x^2+y^2=25\\qquad y=x+1",
+        "question": "What are all real solutions?"
+      },
+      {
+        "title": "A circle and an axis-parallel line",
+        "body": "",
+        "math": "x^2+y^2=25\\qquad x=3",
+        "question": "What are all real solutions?"
+      },
+      {
+        "title": "Eliminating squared terms",
+        "body": "",
+        "math": "x^2+y^2=25\\qquad x^2-y^2=7",
+        "question": "What are all real solutions using elimination?"
+      },
+      {
+        "title": "Two intersecting circles",
+        "body": "",
+        "math": "x^2+y^2=25\\qquad (x-6)^2+y^2=25",
+        "question": "What are all real intersection points?"
+      },
+      {
+        "title": "Two nonlinear curves",
+        "body": "",
+        "math": "y=x^2\\qquad y=4-x^2",
+        "question": "What are all real intersections?"
+      },
+      {
+        "title": "Preserving both signs",
+        "body": "",
+        "math": "x^2+y^2=20\\qquad y^2=4",
+        "question": "How many ordered-pair solutions does the system have?"
+      },
+      {
+        "title": "A product and a sum",
+        "body": "",
+        "math": "x+y=7\\qquad xy=10",
+        "question": "What are all real ordered-pair solutions?"
+      },
+      {
+        "title": "An inequality solution",
+        "body": "",
+        "math": "y>x^2-1",
+        "question": "Does (0, 0) belong to the solution region?"
+      },
+      {
+        "title": "Boundary of a region",
+        "body": "",
+        "math": "y\\leq x^2+2",
+        "question": "What curve forms the boundary, and is it included?"
+      },
+      {
+        "title": "Choosing a side",
+        "body": "",
+        "math": "y<x^2-4",
+        "question": "Which side of the parabola contains the solution region?"
+      },
+      {
+        "title": "Inside or outside a circle",
+        "body": "",
+        "math": "x^2+y^2<9",
+        "question": "What region represents the solution set?"
+      },
+      {
+        "title": "A circular boundary",
+        "body": "",
+        "math": "x^2+y^2\\geq 16",
+        "question": "Is the circle included, and which side is shaded?"
+      },
+      {
+        "title": "A system of inequalities",
+        "body": "",
+        "math": "y\\geq x^2\\qquad y\\leq 4",
+        "question": "What region satisfies both inequalities?"
+      },
+      {
+        "title": "Testing a point in a system",
+        "body": "",
+        "math": "y>x^2\\qquad y<3-x",
+        "question": "Does (1, 2) satisfy both inequalities?"
+      },
+      {
+        "title": "Intersection boundaries",
+        "body": "",
+        "math": "y\\geq x^2\\qquad y\\leq x+2",
+        "question": "Where do the two boundary curves intersect?"
+      },
+      {
+        "title": "A mixed-boundary region",
+        "body": "",
+        "math": "y>x^2\\qquad y\\leq x+2",
+        "question": "What shaded region shows the included and excluded boundaries?"
+      },
+      {
+        "title": "A circle and a half-plane",
+        "body": "",
+        "math": "x^2+y^2\\leq 16\\qquad y\\geq x",
+        "question": "What common shaded region satisfies the system?"
+      },
+      {
+        "title": "A feasible region",
+        "body": "The variables x and y are constrained quantities; also require x ≥ 0 and y ≥ 0.",
+        "math": "y\\geq x^2\\qquad y\\leq 9",
+        "question": "What feasible region also satisfies the nonnegative-coordinate constraints?"
+      }
+    ]
+  }
+]
