@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic 13: Greatest Common Divisor (GCD) | TSM Lecture Notes</title>
+  <link rel="stylesheet" href="../styles.css?v=20261006-1">
+  <script defer src="../solutions.js?v=20261006-1"></script>
+  <script src="../mathjax-config.js?v=20261005-2"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <main class="lecture-notes">
+    <nav class="topic-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-12-multiplying-polynomials.html">Previous topic</a>
+        <a href="topic-14-greatest-common-factor-and-factoring-out-a-gcf.html">Next topic</a>
+    </nav>
+    <p class="series-title">TSM Lecture Notes</p>
+<h1 id="topic-13-greatest-common-divisor-gcd">Topic 13: Greatest Common
+Divisor (GCD)</h1>
+<p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2 id="overview-4">Overview</h2>
+<p>This topic finds the largest whole number that divides every number
+in a set, using factor lists or prime factorizations.</p>
+<h2 id="key-definitions-4">Key definitions</h2>
+<p>Common divisor: a whole number that divides each given number.
+Greatest common divisor (GCD), also called greatest common factor (GCF):
+the largest common divisor.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Find the GCF of 12 and 20 by listing their factors.</p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The positive factors of twelve are <span class="math inline">\(1,\
+2,\ 3,\ 4,\ 6,\ 12\)</span>. The positive factors of twenty are <span
+class="math inline">\(1,\ 2,\ 4,\ 5,\ 10,\ 20\)</span>. Their common
+factors are <span class="math inline">\(1,\ 2,\ 4\)</span>, and the
+greatest of these is four.</p>
+<p><span class="math display">\[GCF(12,\ 20)\  = \ 4\]</span></p>
+<p>A factor and a divisor describe the same relationship in this
+setting: each divides into the number with no remainder. Some materials
+use the abbreviation GCF for greatest common factor, while others use
+GCD for greatest common divisor. The two names ask for the same
+answer.</p>
+<p>The GCF or GCD is the largest positive factor shared by every number
+in the problem. For an LCM, we collected enough prime factors to cover
+all of the numbers. For a GCF, we keep only prime factors that all of
+the numbers have in common.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Find the GCD of 12 and 20 using prime factorization.</p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The prime factorization of twelve is:</p>
+<p><span class="math display">\[12\  = \ 2\  \cdot \ 2\  \cdot \
+3\]</span></p>
+<p>The prime factorization of twenty is:</p>
+<p><span class="math display">\[20\  = \ 2\  \cdot \ 2\  \cdot \
+5\]</span></p>
+<p>Both numbers contain two copies of two. The three appears only in
+twelve, and the five appears only in twenty, so neither belongs in the
+common factor.</p>
+<p><span class="math display">\[GCF(12,\ 20)\  = \ 2\  \cdot \
+2\]</span></p>
+<p><span class="math display">\[GCD(12,20)=2\cdot2=4.\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Find the GCD of 50, 60, and 70 using prime factorization.</p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p><span class="math display">\[50=2\cdot5\cdot5\]</span></p>
+<p>The second number has these prime factors.</p>
+<p><span class="math display">\[60\  = \ 2\  \cdot \ 2\  \cdot \
+3\  \cdot \ 5\]</span></p>
+<p>The third number has these prime factors.</p>
+<p><span class="math display">\[70\  = \ 2\  \cdot \ 5\  \cdot \
+7\]</span></p>
+<p>Every number contains one copy of two and one copy of five. No
+additional prime factor appears in all three numbers.</p>
+<p><span class="math display">\[GCD(50,\ 60,\ 70)\  = \ 2\  \cdot \
+5\]</span></p>
+<p>Evaluate the shared product.</p>
+<p><span class="math display">\[GCD(50,\ 60,\ 70)\  = \ 10\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Find the GCD of 6, 10, and 15 using prime factorization.</p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p><span class="math display">\[6=2\cdot3\]</span></p>
+<p>The second number is:</p>
+<p><span class="math display">\[10\  = \ 2\  \cdot \ 5\]</span></p>
+<p>The third number is:</p>
+<p><span class="math display">\[15\  = \ 3\  \cdot \ 5\]</span></p>
+<p>Each pair of numbers shares a prime factor, but no prime factor
+appears in all three factorizations. A common factor must belong to
+every number, not merely to some pair of numbers. The only positive
+factor shared by all three is one.</p>
+<p><span class="math display">\[GCF(6,\ 10,\ 15)\  = \ 1\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Find the GCD of 120 and 94 using prime factorization.</p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p><span class="math display">\[120=2\cdot2\cdot2\cdot3\cdot5\]</span></p>
+<p>Ninety-four is two times forty-seven, and forty-seven is prime.</p>
+<p><span class="math display">\[94\  = \ 2\  \cdot \ 47\]</span></p>
+<p>The two numbers share one copy of two. The extra twos in 120 cannot
+be used because 94 does not contain them, and none of the other prime
+factors are shared.</p>
+<p><span class="math display">\[GCD(120,\ 94)\  = \ 2\]</span></p>
+<p>Prime factorization reveals the structure underneath each whole
+number. For an LCM, collect enough copies of each prime to cover every
+number. For a GCF or GCD, keep only the copies that every number shares.
+The phrase “cover every number” points toward the LCM; the phrase
+“shared by every number” points toward the GCF.</p>
+</div>
+</section>
+
+    <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-12-multiplying-polynomials.html">Previous topic</a>
+        <a href="topic-14-greatest-common-factor-and-factoring-out-a-gcf.html">Next topic</a>
+    </nav>
+  </main>
+</body>
+</html>

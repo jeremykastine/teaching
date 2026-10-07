@@ -1,0 +1,574 @@
+[
+  {
+    "number": "1.1",
+    "title": "Definitions of Statistics, Probability, and Key Terms",
+    "slug": "1-1-definitions-of-statistics-probability-and-key-terms",
+    "slides": [
+      {
+        "title": "Statistics",
+        "body": "Statistics uses data to investigate questions.",
+        "question": "What data could help a college decide when to keep its library open?"
+      },
+      {
+        "title": "Descriptive statistics",
+        "body": "Descriptive statistics summarizes the data we observed.",
+        "question": "A survey finds that 36 of 60 students want later library hours. How could we summarize this result?"
+      },
+      {
+        "title": "Inferential statistics",
+        "body": "Inferential statistics uses sample evidence to draw conclusions about a population.",
+        "question": "Can those 60 responses tell us what all students want?"
+      },
+      {
+        "title": "Probability",
+        "body": "Probability measures how likely an event is.",
+        "question": "Does a 50% chance of heads guarantee five heads in ten tosses?"
+      },
+      {
+        "title": "Population",
+        "body": "The population is the entire group a study concerns.",
+        "question": "To study this quarter's enrolled students, who belongs in the population?"
+      },
+      {
+        "title": "Sample",
+        "body": "A sample is the part of a population actually studied.",
+        "question": "Would surveying one afternoon class give every student a chance to be included?"
+      },
+      {
+        "title": "Variable",
+        "body": "A variable is a characteristic recorded for each individual or object.",
+        "question": "For a library-hours survey, what could we record for each student?"
+      },
+      {
+        "title": "Data",
+        "body": "Data are the recorded values of variables.",
+        "question": "For the variable “number of library visits last week,” what could three data values look like?"
+      },
+      {
+        "title": "Parameter",
+        "body": "A parameter is a numerical summary of a population.",
+        "question": "What population percentage would the library-hours survey try to estimate?"
+      },
+      {
+        "title": "Statistic",
+        "body": "A statistic is a numerical summary of a sample.",
+        "question": "Of 60 surveyed students, 36 want later hours. What sample statistic can we calculate?"
+      },
+      {
+        "title": "Population or sample?",
+        "body": "A college enrolls 2,400 students. A researcher randomly selects 80 of them for a survey.",
+        "question": "Which group is the sample?"
+      },
+      {
+        "title": "Parameter or statistic?",
+        "body": "In a random sample of 80 students, 25% use the library on Fridays.",
+        "question": "Is 25% a parameter or a statistic?"
+      },
+      {
+        "title": "Variable or value?",
+        "body": "A survey asks each student how many courses they take. One response is 4.",
+        "question": "What is the variable, and what is the observed value?"
+      },
+      {
+        "title": "Mean",
+        "body": "The mean is the sum of the values divided by their number.",
+        "question": "Five study rooms contain 2, 3, 3, 5, and 7 students. What is the mean occupancy?"
+      },
+      {
+        "title": "Proportion",
+        "body": "A proportion is a part divided by its corresponding whole.",
+        "question": "Of 40 reserved study rooms, 14 are unused. What proportion is unused?"
+      },
+      {
+        "title": "A question of scope",
+        "body": "A survey of 50 library visitors finds that 90% want longer library hours.",
+        "question": "How far beyond these 50 visitors would you trust that result?"
+      }
+    ]
+  },
+  {
+    "number": "1.2",
+    "title": "Data, Sampling, and Variation in Data and Sampling",
+    "slug": "1-2-data-sampling-and-variation-in-data-and-sampling",
+    "slides": [
+      {
+        "title": "Qualitative data",
+        "body": "Qualitative data describe categories.",
+        "question": "Why is a course subject a category even if the school assigns it a number?"
+      },
+      {
+        "title": "Quantitative data",
+        "body": "Quantitative data record numerical amounts.",
+        "question": "Does the number 201 mean the same kind of thing in “room 201” and “201 seats”?"
+      },
+      {
+        "title": "Discrete data",
+        "body": "Discrete quantitative values belong to a separated, countable set.",
+        "question": "Can the number of open browser tabs be 4.5?"
+      },
+      {
+        "title": "Continuous data",
+        "body": "Continuous quantities can take any value within an interval.",
+        "question": "A download lasts 3.2 seconds. Could a more precise timer report 3.24 seconds?"
+      },
+      {
+        "title": "Classifying a variable",
+        "body": "A spreadsheet records each classroom's building name.",
+        "question": "What type of data is this?"
+      },
+      {
+        "title": "Classifying a count",
+        "body": "A spreadsheet records the number of chairs in each classroom.",
+        "question": "What type of data is this?"
+      },
+      {
+        "title": "Classifying a measurement",
+        "body": "A spreadsheet records each classroom's floor area in square meters.",
+        "question": "What type of data is this?"
+      },
+      {
+        "title": "Numbers as labels",
+        "body": "Students have identification numbers such as 10482 and 10517.",
+        "question": "Would the mean ID number describe a meaningful amount?"
+      },
+      {
+        "title": "Bar graphs",
+        "body": "A bar graph compares category counts or percentages using bar lengths.",
+        "question": "For 12 blue, 8 black, and 5 red notebooks, what would the bars show?"
+      },
+      {
+        "title": "Pie charts",
+        "body": "A pie chart represents mutually exclusive parts of one whole.",
+        "question": "Among 25 notebooks, 12 are blue, 8 black, and 5 red. What fraction belongs to each slice?"
+      },
+      {
+        "title": "Pareto charts",
+        "body": "A Pareto chart orders category bars from largest to smallest.",
+        "question": "How would you arrange categories with counts 7, 19, 4, and 11?"
+      },
+      {
+        "title": "Overlapping categories",
+        "body": "Among 100 students, 65 use laptops and 55 use tablets. Some use both.",
+        "question": "Would these percentages make a valid two-slice pie chart?"
+      },
+      {
+        "title": "Missing responses",
+        "body": "A class has 30 students. A device survey records 18 laptops and 9 tablets, with one response per student.",
+        "question": "What is missing from this summary?"
+      },
+      {
+        "title": "Simple random sampling",
+        "body": "Every possible sample of the chosen size has the same chance of selection.",
+        "question": "How could we choose 5 of 30 numbered students this way?"
+      },
+      {
+        "title": "Random number selection",
+        "body": "Choose 4 different IDs from 01 through 20. Generated IDs: 07, 07, 23, 14, 02, 19.",
+        "question": "Which IDs enter the sample?"
+      },
+      {
+        "title": "Stratified sampling",
+        "body": "Randomly sample individuals within every stratum.",
+        "question": "How could we sample 10% of students from each academic program?"
+      },
+      {
+        "title": "Cluster sampling",
+        "body": "Randomly select clusters and include everyone in those clusters.",
+        "question": "What sample results if we randomly choose three class sections and survey everyone in them?"
+      },
+      {
+        "title": "Systematic sampling",
+        "body": "After a random start, select every kth member of a list.",
+        "question": "On a list of 60 students, start at 4 and select every tenth student. Which IDs enter the sample?"
+      },
+      {
+        "title": "Convenience sampling",
+        "body": "A convenience sample uses readily available individuals.",
+        "question": "What could go wrong if a campus survey uses only students in the nearest classroom?"
+      },
+      {
+        "title": "Voluntary response",
+        "body": "A voluntary-response sample consists of people who choose to respond to an open invitation.",
+        "question": "Who might respond to an online poll about parking fees?"
+      },
+      {
+        "title": "Strata or clusters?",
+        "body": "Plan A samples 5 students from every program. Plan B randomly chooses 2 programs and surveys everyone in them.",
+        "question": "Which plan uses clusters?"
+      },
+      {
+        "title": "Sampling variation",
+        "body": "Different random samples can produce different statistics.",
+        "question": "Two random samples report 42% and 47% support for a proposal. Must one be wrong?"
+      },
+      {
+        "title": "Variation in data",
+        "body": "Observations within one sample can differ.",
+        "question": "Three printers take 9, 12, and 18 seconds for the same file. What might account for the variation?"
+      },
+      {
+        "title": "Bias",
+        "body": "Bias is a systematic tendency to misrepresent the target population or quantity.",
+        "question": "Would surveying 10,000 library visitors remove bias in a survey of all students?"
+      },
+      {
+        "title": "Nonresponse",
+        "body": "A college randomly invites 400 students to a survey. Only 35 reply.",
+        "question": "What concern remains even though the invitations were random?"
+      },
+      {
+        "title": "Question wording",
+        "body": "“Should the college waste money on longer library hours?”",
+        "question": "How could we ask about the same issue more neutrally?"
+      },
+      {
+        "title": "A sampling choice",
+        "body": "A college wants feedback from both online and on-campus students.",
+        "question": "What sampling plan would you propose?"
+      }
+    ]
+  },
+  {
+    "number": "1.3",
+    "title": "Frequency, Frequency Tables, and Levels of Measurement",
+    "slug": "1-3-frequency-frequency-tables-and-levels-of-measurement",
+    "slides": [
+      {
+        "title": "Frequency",
+        "body": "A frequency counts how often a value or category occurs.",
+        "question": "In 0, 1, 1, 2, 2, 2, 3, 4, what is the frequency of 2?"
+      },
+      {
+        "title": "Frequency tables",
+        "body": "Number of downloads for 12 sessions:\\n0, 1, 2, 1, 3, 2, 0, 2, 1, 4, 2, 2",
+        "question": "What frequency table summarizes these data?"
+      },
+      {
+        "title": "Relative frequency",
+        "body": "Relative frequency = frequency / total number of observations.",
+        "question": "If 5 of 12 sessions have two downloads, what is their relative frequency?"
+      },
+      {
+        "title": "Percentages",
+        "body": "Seven of 20 printers are in use.",
+        "question": "What percentage of the printers is in use?"
+      },
+      {
+        "title": "Cumulative relative frequency",
+        "body": "Cumulative relative frequency adds relative frequencies through a value.",
+        "question": "If frequencies for 0, 1, 2, 3 downloads are 2, 3, 4, 1, what fraction have at most 2?"
+      },
+      {
+        "title": "At most or less than?",
+        "body": "Downloads: 0, 1, 1, 2, 2, 2, 3, 4",
+        "question": "What percentage have fewer than 2 downloads?"
+      },
+      {
+        "title": "More than a cutoff",
+        "body": "Downloads: 0, 1, 1, 2, 2, 2, 3, 4",
+        "question": "What percentage have more than 2 downloads?"
+      },
+      {
+        "title": "Checking a table",
+        "body": "A frequency table for 20 observations lists counts 4, 7, and 8.",
+        "question": "What should we check before interpreting it?"
+      },
+      {
+        "title": "Grouped data",
+        "body": "Download times in seconds: 2, 4, 5, 7, 8, 9, 11, 14",
+        "question": "How many times belong in each interval: 0 to less than 5, 5 to less than 10, 10 to less than 15?"
+      },
+      {
+        "title": "Rounding",
+        "body": "The mean of 4, 5, and 8 is required to one decimal place.",
+        "question": "What answer should we report after calculating with full precision?"
+      },
+      {
+        "title": "Rounding totals",
+        "body": "Three equally frequent categories each have relative frequency 1/3.",
+        "question": "Why might displayed percentages fail to total exactly 100%?"
+      },
+      {
+        "title": "Nominal level",
+        "body": "Nominal data are categories with no inherent order.",
+        "question": "What is the level of measurement for a printer's brand?"
+      },
+      {
+        "title": "Ordinal level",
+        "body": "Ordinal data have an order without defined numerical gaps.",
+        "question": "What can “poor, fair, good, excellent” tell us about service?"
+      },
+      {
+        "title": "Interval level",
+        "body": "Interval data have meaningful differences but no meaningful absolute zero.",
+        "question": "Does 20 degrees Celsius represent twice the temperature of 10 degrees Celsius?"
+      },
+      {
+        "title": "Ratio level",
+        "body": "Ratio data have meaningful differences and a zero that represents none of the measured quantity.",
+        "question": "Does a 20-minute download take twice as long as a 10-minute download?"
+      },
+      {
+        "title": "Measurement level",
+        "body": "A tournament records first, second, and third place.",
+        "question": "What level of measurement is this?"
+      },
+      {
+        "title": "Measurement level",
+        "body": "A file list records sizes in bytes.",
+        "question": "What level of measurement is this?"
+      },
+      {
+        "title": "Choosing a summary",
+        "body": "A survey codes favorite browsers as 1, 2, 3, and 4.",
+        "question": "Would the mean of these codes answer a useful question?"
+      }
+    ]
+  },
+  {
+    "number": "1.4",
+    "title": "Experimental Design and Ethics",
+    "slug": "1-4-experimental-design-and-ethics",
+    "slides": [
+      {
+        "title": "Observational studies",
+        "body": "An observational study records conditions without assigning treatments.",
+        "question": "Students choose whether to attend tutoring. We compare their exam scores. What kind of study is this?"
+      },
+      {
+        "title": "Experiments",
+        "body": "An experiment assigns treatments and measures outcomes.",
+        "question": "A teacher randomly assigns two practice formats. What makes this an experiment?"
+      },
+      {
+        "title": "Experimental units",
+        "body": "An experimental unit is an individual or object that receives a treatment.",
+        "question": "Thirty printers are each assigned one of two paper types. What are the experimental units?"
+      },
+      {
+        "title": "Explanatory variables",
+        "body": "The explanatory variable is the proposed influence on an outcome.",
+        "question": "A study compares two paper types for their effect on printer jams. What is the explanatory variable?"
+      },
+      {
+        "title": "Response variables",
+        "body": "The response variable is the measured outcome.",
+        "question": "How could we measure printer performance in the paper-type study?"
+      },
+      {
+        "title": "Treatments",
+        "body": "Treatments are the experimental conditions assigned to units.",
+        "question": "A printer study uses standard, recycled, and coated paper. What are the treatments?"
+      },
+      {
+        "title": "Lurking variables",
+        "body": "A lurking variable is an unaccounted-for influence on a study.",
+        "question": "Students who choose tutoring earn higher scores. What other influence might explain the difference?"
+      },
+      {
+        "title": "Confounding",
+        "body": "Confounding prevents us from separating the effects of different influences.",
+        "question": "One practice format is taught only by Teacher A, the other only by Teacher B. What is confounded?"
+      },
+      {
+        "title": "Random assignment",
+        "body": "Random assignment uses chance to allocate treatments.",
+        "question": "How could we assign 40 volunteers to two practice formats?"
+      },
+      {
+        "title": "Chance imbalance",
+        "body": "Forty volunteers are randomly assigned to two practice formats.",
+        "question": "Must the two groups begin with exactly equal prior knowledge?"
+      },
+      {
+        "title": "Random sampling or assignment?",
+        "body": "A researcher randomly selects 100 students, then lets each choose a practice format.",
+        "question": "Which part is random sampling, and is there random assignment?"
+      },
+      {
+        "title": "Control groups",
+        "body": "A control group provides a comparison condition.",
+        "question": "What would be a useful control group for a study of a new practice app?"
+      },
+      {
+        "title": "Placebos",
+        "body": "A placebo resembles a treatment but lacks its active component.",
+        "question": "Why might an inactive version of a treatment be useful in a comparison?"
+      },
+      {
+        "title": "Placebo effects",
+        "body": "A placebo effect is a response associated with expectations of treatment.",
+        "question": "How could a participant's expectations change a self-reported outcome?"
+      },
+      {
+        "title": "Blinding",
+        "body": "Blinding withholds treatment identities from specified people.",
+        "question": "Why might a grader receive assignments without knowing each student's practice group?"
+      },
+      {
+        "title": "Double blinding",
+        "body": "In a double-blind study, participants and relevant researchers do not know treatment assignments.",
+        "question": "Could students be blinded to whether their practice uses paper or an app?"
+      },
+      {
+        "title": "Replication",
+        "body": "Replication applies each treatment to multiple independent experimental units.",
+        "question": "Why would one printer per paper type be weak evidence?"
+      },
+      {
+        "title": "Causal conclusions",
+        "body": "Students who voluntarily use a new study app score higher than students who do not.",
+        "question": "Does this establish that the app caused the difference?"
+      },
+      {
+        "title": "A study design",
+        "body": "Forty volunteers will compare two versions of a practice app using the same final quiz.",
+        "question": "How would you design a fair experiment?"
+      },
+      {
+        "title": "Participation and consent",
+        "body": "A researcher tells students that refusing a study will lower their course grades.",
+        "question": "What is ethically wrong with this recruitment?"
+      },
+      {
+        "title": "Privacy",
+        "body": "A public spreadsheet lists participant names beside individual quiz scores.",
+        "question": "How should these data be handled before sharing?"
+      },
+      {
+        "title": "Honest reporting",
+        "body": "A researcher deletes accurate low scores because they weaken the desired conclusion.",
+        "question": "What is wrong with this decision?"
+      },
+      {
+        "title": "Selective reporting",
+        "body": "A team runs ten comparisons and reports only the one with its preferred result.",
+        "question": "What information does the audience need to judge the evidence?"
+      }
+    ]
+  },
+  {
+    "number": "1.5",
+    "title": "Data Collection Experiment",
+    "slug": "1-5-data-collection-experiment",
+    "slides": [
+      {
+        "title": "A class data question",
+        "body": "Class activity: investigate the number of files students downloaded yesterday.",
+        "question": "What exactly should count as one download?"
+      },
+      {
+        "title": "Collecting observations",
+        "body": "Use anonymous IDs and record one download count per willing participant.",
+        "question": "What recording rules would make everyone's counts comparable?"
+      },
+      {
+        "title": "A systematic sample",
+        "body": "Practice roster: IDs 01-24. Select 8 IDs using a random start from 1, 2, or 3 and a step of 3.",
+        "question": "Which IDs does our random start select?"
+      },
+      {
+        "title": "A practice dataset",
+        "body": "Synthetic counts for 24 students, in ID order:\\n0, 2, 4, 1, 3, 2, 5, 0, 1, 2, 6, 3,\\n1, 4, 2, 0, 5, 3, 2, 1, 4, 2, 3, 6",
+        "question": "What are the download counts for our 8 selected IDs?"
+      },
+      {
+        "title": "An exact-value table",
+        "body": "Use our 8 selected download counts.",
+        "question": "What frequency table can we make for the values 0 through 6?"
+      },
+      {
+        "title": "Relative frequencies",
+        "body": "Use our exact-value table for the 8 sampled students.",
+        "question": "What are the relative frequencies?"
+      },
+      {
+        "title": "Cumulative frequencies",
+        "body": "Use our exact-value table for the 8 sampled students.",
+        "question": "What are the cumulative relative frequencies?"
+      },
+      {
+        "title": "A grouped table",
+        "body": "Regroup the same sample into 0-1, 2-3, 4-5, and 6 or more downloads.",
+        "question": "What relative frequency table results?"
+      },
+      {
+        "title": "Information lost in grouping",
+        "body": "Use our exact-value and grouped tables.",
+        "question": "Which table can determine the exact percentage with at most 2 downloads?"
+      },
+      {
+        "title": "Interpreting a cutoff",
+        "body": "Use our exact-value and grouped tables.",
+        "question": "Can both tables determine the exact percentage with at most 3 downloads?"
+      },
+      {
+        "title": "A different starting point",
+        "body": "Repeat the systematic sample with a different starting ID.",
+        "question": "How does the percentage with at most 2 downloads change?"
+      },
+      {
+        "title": "Scope of the evidence",
+        "body": "A class collects real download counts only from its own willing participants.",
+        "question": "Which population could this sample reasonably describe?"
+      }
+    ]
+  },
+  {
+    "number": "1.6",
+    "title": "Sampling Experiment",
+    "slug": "1-6-sampling-experiment",
+    "slides": [
+      {
+        "title": "The sampling frame",
+        "body": "Fictional campus printers:\\nNorth: N1, N2, N3, N4, N5, N6\\nSouth: S1, S2, S3, S4, S5, S6\\nEast: E1, E2, E3, E4, E5, E6\\nWest: W1, W2, W3, W4, W5, W6",
+        "question": "How could we select printers to inspect?"
+      },
+      {
+        "title": "A simple random sample",
+        "body": "Use the 24-printer list from the first slide. Label the printers 01-24 in the displayed order.",
+        "question": "How can we randomly select 6 distinct printers so every group of 6 is equally likely?"
+      },
+      {
+        "title": "A systematic sample",
+        "body": "Use the same 24-printer list. Choose a random starting position from 1 through 4, then take every fourth printer.",
+        "question": "Which 6 printers enter our sample?"
+      },
+      {
+        "title": "Stratifying by building",
+        "body": "North, South, East, and West each contain 6 printers.",
+        "question": "How can we randomly select one-third of the printers in each building?"
+      },
+      {
+        "title": "A cluster sample",
+        "body": "Treat each of the four buildings as a cluster.",
+        "question": "How can we randomly select 2 buildings and inspect every printer in them?"
+      },
+      {
+        "title": "Same groups, different method",
+        "body": "Plan A selects 2 printers from each building. Plan B selects every printer in 2 randomly chosen buildings.",
+        "question": "How do the two selection procedures differ?"
+      },
+      {
+        "title": "Unequal strata",
+        "body": "A second campus has 12 printers in North, 8 in South, and 4 in East.",
+        "question": "For a proportional stratified sample of 6, how many should come from each building?"
+      },
+      {
+        "title": "Ordering matters",
+        "body": "A list repeats this sequence: color, black-and-white, black-and-white, black-and-white.",
+        "question": "What could happen if we sample every fourth printer?"
+      },
+      {
+        "title": "A reproducible procedure",
+        "body": "Another group must recreate our selection process using a fresh random draw.",
+        "question": "What details must our sampling description include?"
+      },
+      {
+        "title": "Choosing a method",
+        "body": "Travel between buildings is costly, but printers within one building may be very similar.",
+        "question": "Which sampling method would you choose, and what tradeoff would you accept?"
+      }
+    ]
+  }
+]

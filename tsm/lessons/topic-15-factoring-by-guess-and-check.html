@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic 15: Factoring by Guess and Check | TSM Lecture Notes</title>
+  <link rel="stylesheet" href="../styles.css?v=20261006-1">
+  <script defer src="../solutions.js?v=20261006-1"></script>
+  <script src="../mathjax-config.js?v=20261005-2"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <main class="lecture-notes">
+    <nav class="topic-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-14-greatest-common-factor-and-factoring-out-a-gcf.html">Previous topic</a>
+        <a href="topic-16-factoring-by-grouping.html">Next topic</a>
+    </nav>
+    <p class="series-title">TSM Lecture Notes</p>
+<h1 id="topic-15-factoring-by-guess-and-check">Topic 15: Factoring by
+Guess and Check</h1>
+<p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2 id="overview-6">Overview</h2>
+<p>This topic factors trinomials by choosing binomial factors whose
+product recreates the original trinomial, especially when the leading
+coefficient is 1.</p>
+<h2 id="key-definitions-6">Key definitions</h2>
+<p>Trinomial: a polynomial with three terms. Leading coefficient: the
+coefficient of the highest-degree term. Factor pair: two numbers whose
+product is a specified number. Prime polynomial: a polynomial that does
+not factor over the integers.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[t^{2}\  + \ 9t\  + \ 8\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>We need two integers with a sum of 9 and a product of 8. The numbers
+8 and 1 work:</p>
+<p><span class="math display">\[8\  + \ 1\  = \ 9\]</span></p>
+<p><span class="math display">\[8(1)\  = \ 8\]</span></p>
+<p>Now replace 9t with 8t + t. We have not changed the value of the
+expression; we have only rewritten its middle term.</p>
+<p><span class="math display">\[t^{2}\  + \ 9t\  + \ 8\]</span></p>
+<p><span class="math display">\[= \ t^{2}\  + \ 8t\  + \ t\  + \
+8\]</span></p>
+<p><span class="math display">\[= \ t(t\  + \ 8)\  + \ 1(t\  + \
+8)\]</span></p>
+<p><span class="math display">\[= \ (t\  + \ 8)(t\  + \ 1)\]</span></p>
+<p>The two groups both contained t + 8, so that common binomial became
+one factor. The remaining factors, t and 1, formed the other
+binomial.</p>
+<p>Factoring reverses multiplication</p>
+<p>When we multiply two binomials, the distributive property produces a
+polynomial. Factoring asks us to reverse that process: we begin with a
+polynomial and rewrite it as a product. An expression is not completely
+factored until it is written as multiplication.</p>
+<p>In this topic, the trinomials have a leading coefficient of 1. Their
+general form is:</p>
+<p><span class="math display">\[x^{2}\  + \ bx\  + \ c\]</span></p>
+<p>We are looking for two integers whose sum is the coefficient of the
+middle term and whose product is the constant term. If those integers
+are m and n, then:</p>
+<p><span class="math display">\[m\  + \ n\  = \ b\]</span></p>
+<p><span class="math display">\[mn\  = \ c\]</span></p>
+<p>Once we find m and n, we split the middle term into two terms. That
+creates four terms, so we can use factoring by grouping.</p>
+<p><span class="math display">\[x^{2}\  + \ bx\  + \ c\]</span></p>
+<p><span class="math display">\[= \ x^{2}\  + \ mx\  + \ nx\  + \
+c\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[s^{2}\  + \ 8s\  + \ 15\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>We need two integers whose sum is 8 and whose product is 15. The pair
+3 and 5 satisfies both conditions:</p>
+<p><span class="math display">\[3\  + \ 5\  = \ 8\]</span></p>
+<p><span class="math display">\[3(5)\  = \ 15\]</span></p>
+<p>Split the middle term and factor by grouping:</p>
+<p><span class="math display">\[s^{2}\  + \ 8s\  + \ 15\]</span></p>
+<p><span class="math display">\[= \ s^{2}\  + \ 3s\  + \ 5s\  + \
+15\]</span></p>
+<p><span class="math display">\[= \ s(s\  + \ 3)\  + \ 5(s\  + \
+3)\]</span></p>
+<p><span class="math display">\[= \ (s\  + \ 3)(s\  + \ 5)\]</span></p>
+<p>The order of the two numbers does not affect the final answer.
+Splitting 8s as 5s + 3s would lead to the same two factors in the
+opposite order.</p>
+<p>The shortcut when the leading coefficient is 1</p>
+<p>The first two examples showed why the sum-and-product method works:
+the two numbers split the middle term, and factoring by grouping then
+produces two binomial factors. Once that pattern is familiar, we usually
+do not need to write out the grouping steps every time.</p>
+<p>When the leading coefficient is 1, the first term of each factor must
+be x. If m and n are the two integers whose sum is b and whose product
+is c, those same two numbers become the constant terms in the
+factors:</p>
+<p><span class="math display">\[x^{2}\  + \ bx\  + \ c\  = \ (x\  + \
+m)(x\  + \ n)\]</span></p>
+<p>In other words, after we find the correct two numbers, we can place
+them directly into the two parentheses. Factoring by grouping explains
+and justifies the shortcut; the template lets us move directly to the
+answer. We still pay close attention to the signs and check by
+multiplying when needed.</p>
+<p>Use the signs to narrow the search</p>
+<p>The signs of the two numbers are controlled by their sum and product.
+If the product is negative, one number must be positive and the other
+negative. If the product is positive, the two numbers must have the same
+sign. Their sum tells us whether both are positive or both are
+negative.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[r^{2}\  + \ 2r\  - \ 63\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The product must be -63, so the numbers have opposite signs. Their
+sum must be positive 2, so the positive number must have the larger
+absolute value. The factor pair 9 and 7 has a difference of 2. We
+therefore use 9 and -7:</p>
+<p><span class="math display">\[9\  + \ ( - 7)\  = \ 2\]</span></p>
+<p><span class="math display">\[9( - 7)\  = \  - 63\]</span></p>
+<p>Because the leading coefficient is 1, we can now place 9 and -7
+directly into the two binomial factors:</p>
+<p><span class="math display">\[r^{2}\  + \ 2r\  - \ 63\  = \ (r\  + \
+9)(r\  - \ 7)\]</span></p>
+<p>A quick multiplication check shows that the middle terms combine
+correctly:</p>
+<p><span class="math display">\[(r\  + \ 9)(r\  - \ 7)\]</span></p>
+<p><span class="math display">\[= \ r^{2}\  - \ 7r\  + \ 9r\  - \
+63\]</span></p>
+<p><span class="math display">\[= \ r^{2}\  + \ 2r\  - \ 63\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[v^{2}\  - \ 13v\  + \ 40\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The product is positive 40, so the two numbers have the same sign.
+Their sum is negative 13, so both numbers must be negative. The numbers
+-5 and -8 work:</p>
+<p><span class="math display">\[( - 5)\  + \ ( - 8)\  = \  -
+13\]</span></p>
+<p><span class="math display">\[( - 5)( - 8)\  = \ 40\]</span></p>
+<p>Again, the leading coefficient is 1, so we can use the shortcut and
+write the factors immediately:</p>
+<p><span class="math display">\[v^{2}\  - \ 13v\  + \ 40\  = \ (v\  - \
+5)(v\  - \ 8)\]</span></p>
+<p>We can check by multiplying the binomials. FOIL is simply a quick way
+to organize the distributive property:</p>
+<p><span class="math display">\[(v\  - \ 5)(v\  - \ 8)\]</span></p>
+<p><span class="math display">\[= \ v^{2}\  - \ 8v\  - \ 5v\  + \
+40\]</span></p>
+<p><span class="math display">\[= \ v^{2}\  - \ 13v\  + \
+40\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[a^{2}\  + \ 7a\  + \ 60\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>We need two integers with a sum of 7 and a product of 60. If we begin
+with integer pairs that add to 7, the possibilities are 1 and 6, 2 and
+5, or 3 and 4. Their products are:</p>
+<p><span class="math display">\[1(6)\  = \ 6\]</span></p>
+<p><span class="math display">\[2(5)\  = \ 10\]</span></p>
+<p><span class="math display">\[3(4)\  = \ 12\]</span></p>
+<p>None of these products is 60. Looking from the other direction gives
+the same conclusion: no factor pair of 60 has a sum of 7. Therefore this
+trinomial is not factorable using integers. We leave it as written.</p>
+<p><span class="math display">\[a^{2}\  + \ 7a\  + \ 60\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or state that it is not factorable.</p>
+<p><span class="math display">\[t^{2}\  + \ 4tg\  - \
+21g^{2}\]</span></p>
+</div>
+
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The same idea works when the last term contains another variable.
+Factor:</p>
+<p><span class="math display">\[t^{2}\  + \ 4tg\  - \
+21g^{2}\]</span></p>
+<p>The first terms of the factors must multiply to t squared, so they
+will be t and t. The last terms must multiply to -21g squared. We still
+search for two integer coefficients whose sum is 4 and whose product is
+-21. The numbers 7 and -3 work:</p>
+<p><span class="math display">\[7\  + \ ( - 3)\  = \ 4\]</span></p>
+<p><span class="math display">\[7( - 3)\  = \  - 21\]</span></p>
+<p>Attach a factor of g to each of those numbers. The same shortcut now
+places 7g and -3g directly into the factors:</p>
+<p><span class="math display">\[t^{2}\  + \ 4tg\  - \ 21g^{2}\  = \
+(t\  + \ 7g)(t\  - \ 3g)\]</span></p>
+<ol start="11" type="1">
+<li><p>Write the trinomial in descending order and confirm that its
+leading coefficient is 1.</p></li>
+<li><p>Identify the middle coefficient and the constant term.</p></li>
+<li><p>Find two integers whose sum is the middle coefficient and whose
+product is the constant term.</p></li>
+<li><p>Place those integers directly into the two binomial factors. The
+full grouping method may still be used whenever you want to show why the
+shortcut works.</p></li>
+<li><p>Check by multiplying. If no integer pair works, the trinomial
+does not factor over the integers.</p></li>
+</ol>
+</div>
+</section>
+
+    <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-14-greatest-common-factor-and-factoring-out-a-gcf.html">Previous topic</a>
+        <a href="topic-16-factoring-by-grouping.html">Next topic</a>
+    </nav>
+  </main>
+</body>
+</html>

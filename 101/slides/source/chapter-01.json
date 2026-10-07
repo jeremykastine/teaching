@@ -1,0 +1,824 @@
+[
+  {
+    "number": "1.1",
+    "title": "Real Numbers: Algebra Essentials",
+    "slug": "1-1-real-numbers-algebra-essentials",
+    "slides": [
+      {
+        "title": "Natural numbers",
+        "body": "The natural numbers are the counting numbers, starting at 1.",
+        "math": "1,\\ 2,\\ 3,\\ 4,\\ \\ldots",
+        "question": "Is 0 a natural number under this convention?"
+      },
+      {
+        "title": "Whole numbers",
+        "body": "The whole numbers include 0 and the natural numbers.",
+        "math": "0,\\ 1,\\ 2,\\ 3,\\ \\ldots",
+        "question": "Which whole number is not a natural number?"
+      },
+      {
+        "title": "Integers",
+        "body": "The integers include whole numbers and their negatives.",
+        "math": "\\ldots,\\ -3,\\ -2,\\ -1,\\ 0,\\ 1,\\ 2,\\ 3,\\ \\ldots",
+        "question": "Is every integer a whole number?"
+      },
+      {
+        "title": "Rational numbers",
+        "body": "A rational number is a ratio of integers with a nonzero denominator.",
+        "math": "\\frac{p}{q},\\qquad p,q\\in\\mathbb{Z},\\ q\\ne 0",
+        "question": "How could we write -6 as a ratio of integers?"
+      },
+      {
+        "title": "Irrational numbers",
+        "body": "An irrational real number cannot be written as a ratio of integers.",
+        "math": "\\sqrt{7}",
+        "question": "What distinguishes its decimal expansion from a rational number's?"
+      },
+      {
+        "title": "Real numbers",
+        "body": "The real numbers include both rational and irrational numbers.",
+        "math": "",
+        "question": "Where does the number 0 belong in the number sets we have discussed?"
+      },
+      {
+        "title": "Classifying a number",
+        "body": "",
+        "math": "-\\frac{11}{4}",
+        "question": "Which of our number sets contain this number?"
+      },
+      {
+        "title": "Classifying a decimal",
+        "body": "",
+        "math": "0.375",
+        "question": "Is this number rational, and how could we justify our answer?"
+      },
+      {
+        "title": "A radical and its value",
+        "body": "",
+        "math": "\\sqrt{81}",
+        "question": "Which number sets contain the value of this expression?"
+      },
+      {
+        "title": "Order of operations",
+        "body": "",
+        "math": "18-2(3+1)^2",
+        "question": "What value does this expression have?"
+      },
+      {
+        "title": "Equal-precedence operations",
+        "body": "",
+        "math": "24\\div 6\\cdot 2",
+        "question": "What value results when we perform division and multiplication from left to right?"
+      },
+      {
+        "title": "Grouping matters",
+        "body": "",
+        "math": "(-4)^2\\qquad\\text{and}\\qquad -4^2",
+        "question": "What value does each expression have?"
+      },
+      {
+        "title": "Commutative properties",
+        "body": "Commuting changes the order of addends or factors.",
+        "math": "a+b=b+a\\qquad ab=ba",
+        "question": "Does subtraction have the same property?"
+      },
+      {
+        "title": "Associative properties",
+        "body": "Associating changes grouping without changing order.",
+        "math": "(a+b)+c=a+(b+c)",
+        "question": "Does division have the same property?"
+      },
+      {
+        "title": "Distributive property",
+        "body": "Multiplication distributes over addition.",
+        "math": "a(b+c)=ab+ac",
+        "question": "How would we rewrite 5(x - 3) without parentheses?"
+      },
+      {
+        "title": "Additive identity",
+        "body": "An identity leaves a value unchanged under the operation.",
+        "math": "a+0=a",
+        "question": "What is the multiplicative identity?"
+      },
+      {
+        "title": "Additive inverse",
+        "body": "An additive inverse adds to its original value to give 0.",
+        "math": "a+(-a)=0",
+        "question": "What is the additive inverse of -9?"
+      },
+      {
+        "title": "Multiplicative inverse",
+        "body": "A multiplicative inverse multiplies its original value to give 1.",
+        "math": "a\\cdot\\frac{1}{a}=1,\\qquad a\\ne 0",
+        "question": "Why must we exclude 0?"
+      },
+      {
+        "title": "Evaluating an expression",
+        "body": "Use x = -2.",
+        "math": "3x^2-4x+1",
+        "question": "What is the value of the expression?"
+      },
+      {
+        "title": "Like terms",
+        "body": "Like terms have the same variable factors and exponents.",
+        "math": "7x^2-3x+2x^2+8x",
+        "question": "What equivalent expression combines the like terms?"
+      },
+      {
+        "title": "Simplifying an expression",
+        "body": "",
+        "math": "4(2x-3)-3(x+5)",
+        "question": "What equivalent expression has no parentheses and no like terms left to combine?"
+      },
+      {
+        "title": "Identifying a property",
+        "body": "",
+        "math": "6(x+2)=6x+12",
+        "question": "Which property makes this equality true for every real x?"
+      }
+    ]
+  },
+  {
+    "number": "1.2",
+    "title": "Exponents and Scientific Notation",
+    "slug": "1-2-exponents-and-scientific-notation",
+    "slides": [
+      {
+        "title": "Positive integer exponents",
+        "body": "For positive integer n, a to the nth power multiplies n copies of a.",
+        "math": "a^n=a\\cdot a\\cdots a",
+        "question": "What are the base and exponent in 7 to the fourth power?"
+      },
+      {
+        "title": "Product rule",
+        "body": "Use the same base.",
+        "math": "a^m a^n=a^{m+n}",
+        "question": "Why do we add the exponents?"
+      },
+      {
+        "title": "A product of powers",
+        "body": "",
+        "math": "x^4x^7",
+        "question": "How can we write this product as a single power?"
+      },
+      {
+        "title": "Quotient rule",
+        "body": "The base is nonzero.",
+        "math": "\\frac{a^m}{a^n}=a^{m-n}",
+        "question": "What cancellation justifies this rule for positive integer exponents?"
+      },
+      {
+        "title": "A quotient of powers",
+        "body": "Assume x is nonzero.",
+        "math": "\\frac{x^9}{x^3}",
+        "question": "How can we write this quotient as a single power?"
+      },
+      {
+        "title": "Power of a power",
+        "body": "",
+        "math": "\\left(a^m\\right)^n=a^{mn}",
+        "question": "Why do we multiply the exponents here?"
+      },
+      {
+        "title": "A power of a power",
+        "body": "",
+        "math": "\\left(x^3\\right)^4",
+        "question": "What single power is equivalent to this expression?"
+      },
+      {
+        "title": "Zero exponents",
+        "body": "The base is nonzero.",
+        "math": "a^0=1",
+        "question": "How does the quotient of two equal powers support this rule?"
+      },
+      {
+        "title": "Negative exponents",
+        "body": "The base is nonzero.",
+        "math": "a^{-n}=\\frac{1}{a^n}",
+        "question": "What is the exact value of 3 to the power -2?"
+      },
+      {
+        "title": "Negative exponents in a quotient",
+        "body": "Assume x is nonzero.",
+        "math": "\\frac{x^2}{x^6}",
+        "question": "How can we express the result using positive exponents?"
+      },
+      {
+        "title": "Power of a product",
+        "body": "",
+        "math": "\\left(ab\\right)^n=a^nb^n",
+        "question": "How would we simplify the square of 3x?"
+      },
+      {
+        "title": "Power of a quotient",
+        "body": "The denominator is nonzero.",
+        "math": "\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}",
+        "question": "How would we simplify the cube of x divided by 2?"
+      },
+      {
+        "title": "Combining exponent rules",
+        "body": "Assume x and y are nonzero.",
+        "math": "\\frac{(2x^3y^{-2})^2}{4xy}",
+        "question": "What equivalent expression uses only positive exponents?"
+      },
+      {
+        "title": "A negative power of a fraction",
+        "body": "Assume x and y are nonzero.",
+        "math": "\\left(\\frac{2x}{3y}\\right)^{-2}",
+        "question": "What equivalent expression uses only positive exponents?"
+      },
+      {
+        "title": "Different bases",
+        "body": "",
+        "math": "2^3\\cdot 3^2",
+        "question": "Can we combine these into a power by adding the exponents?"
+      },
+      {
+        "title": "Powers of sums",
+        "body": "",
+        "math": "\\left(x+2\\right)^2",
+        "question": "Does the power-of-a-product rule apply to this sum?"
+      },
+      {
+        "title": "Scientific notation",
+        "body": "For a positive number, scientific notation uses a coefficient from 1 up to, but not including, 10.",
+        "math": "c\\times 10^n,\\qquad 1\\leq c<10",
+        "question": "Why is 24 times 10 to the fifth power not normalized scientific notation?"
+      },
+      {
+        "title": "A large number",
+        "body": "",
+        "math": "6{,}800{,}000",
+        "question": "How can we write this number in scientific notation?"
+      },
+      {
+        "title": "A small number",
+        "body": "",
+        "math": "0.000072",
+        "question": "How can we write this number in scientific notation?"
+      },
+      {
+        "title": "From scientific notation",
+        "body": "",
+        "math": "4.2\\times 10^{-3}",
+        "question": "What decimal does this expression represent?"
+      },
+      {
+        "title": "Multiplication in scientific notation",
+        "body": "",
+        "math": "\\left(3\\times 10^5\\right)\\left(4\\times 10^{-2}\\right)",
+        "question": "What is the product in normalized scientific notation?"
+      },
+      {
+        "title": "Division in scientific notation",
+        "body": "",
+        "math": "\\frac{8.4\\times 10^7}{2.1\\times 10^3}",
+        "question": "What is the quotient in scientific notation?"
+      }
+    ]
+  },
+  {
+    "number": "1.3",
+    "title": "Radicals and Rational Exponents",
+    "slug": "1-3-radicals-and-rational-exponents",
+    "slides": [
+      {
+        "title": "Principal square roots",
+        "body": "The principal square root is the nonnegative number whose square equals the radicand.",
+        "math": "\\sqrt{a},\\qquad a\\geq 0",
+        "question": "Why is the principal square root of 36 equal to 6 rather than -6?"
+      },
+      {
+        "title": "Evaluating a square root",
+        "body": "",
+        "math": "\\sqrt{\\frac{49}{64}}",
+        "question": "What is the exact value?"
+      },
+      {
+        "title": "Square roots and squares",
+        "body": "",
+        "math": "\\sqrt{x^2}",
+        "question": "What expression is equivalent for every real x?"
+      },
+      {
+        "title": "A negative input",
+        "body": "",
+        "math": "\\sqrt{(-5)^2}",
+        "question": "What value does this expression have?"
+      },
+      {
+        "title": "Even roots",
+        "body": "An even root of a negative number is not a real number.",
+        "math": "\\sqrt[4]{-16}",
+        "question": "Does this expression have a real value?"
+      },
+      {
+        "title": "Odd roots",
+        "body": "",
+        "math": "\\sqrt[3]{-125}",
+        "question": "What is the real value?"
+      },
+      {
+        "title": "Product rule for square roots",
+        "body": "Assume a and b are nonnegative.",
+        "math": "\\sqrt{ab}=\\sqrt{a}\\sqrt{b}",
+        "question": "How can this rule help simplify the square root of 72?"
+      },
+      {
+        "title": "Simplifying a radical",
+        "body": "",
+        "math": "\\sqrt{108}",
+        "question": "What simplified radical form gives the exact value?"
+      },
+      {
+        "title": "Variable radicals",
+        "body": "Let x be any real number.",
+        "math": "\\sqrt{50x^2}",
+        "question": "What simplified expression accounts for both positive and negative x?"
+      },
+      {
+        "title": "Quotient rule for square roots",
+        "body": "Assume a is nonnegative and b is positive.",
+        "math": "\\sqrt{\\frac{a}{b}}=\\frac{\\sqrt{a}}{\\sqrt{b}}",
+        "question": "Why does the denominator require a stricter condition?"
+      },
+      {
+        "title": "A radical quotient",
+        "body": "",
+        "math": "\\sqrt{\\frac{18}{25}}",
+        "question": "What is the simplified exact value?"
+      },
+      {
+        "title": "Combining radicals",
+        "body": "",
+        "math": "4\\sqrt{5}-\\sqrt{5}+2\\sqrt{5}",
+        "question": "What equivalent expression combines these terms?"
+      },
+      {
+        "title": "Simplifying before combining",
+        "body": "",
+        "math": "\\sqrt{48}+\\sqrt{75}",
+        "question": "What is the simplified exact sum?"
+      },
+      {
+        "title": "A radical of a sum",
+        "body": "",
+        "math": "\\sqrt{9+16}",
+        "question": "Is its value equal to the sum of the square roots of 9 and 16?"
+      },
+      {
+        "title": "Multiplying radicals",
+        "body": "",
+        "math": "\\sqrt{6}\\sqrt{15}",
+        "question": "What is the simplified exact product?"
+      },
+      {
+        "title": "Rationalizing a denominator",
+        "body": "",
+        "math": "\\frac{7}{\\sqrt{3}}",
+        "question": "What equivalent fraction has a rational denominator?"
+      },
+      {
+        "title": "Conjugates",
+        "body": "Conjugates have the same terms with the sign between them reversed.",
+        "math": "2+\\sqrt{3}\\qquad\\text{and}\\qquad 2-\\sqrt{3}",
+        "question": "What happens when we multiply these conjugates?"
+      },
+      {
+        "title": "Rationalizing a binomial denominator",
+        "body": "",
+        "math": "\\frac{4}{1+\\sqrt{5}}",
+        "question": "What equivalent expression has a rational denominator?"
+      },
+      {
+        "title": "Rational exponents",
+        "body": "For nonnegative a and positive integer n:",
+        "math": "a^{1/n}=\\sqrt[n]{a}",
+        "question": "What does an exponent of one-fourth mean?"
+      },
+      {
+        "title": "A fractional power",
+        "body": "",
+        "math": "27^{2/3}",
+        "question": "What is the exact value?"
+      },
+      {
+        "title": "A negative fractional power",
+        "body": "",
+        "math": "16^{-3/4}",
+        "question": "What is the exact value?"
+      },
+      {
+        "title": "A variable fractional power",
+        "body": "Assume x is nonnegative.",
+        "math": "x^{3/2}",
+        "question": "How can we write this expression using a radical?"
+      },
+      {
+        "title": "Simplifying a higher root",
+        "body": "Let x be any real number.",
+        "math": "\\sqrt[3]{54x^4}",
+        "question": "What simplified radical expression is equivalent?"
+      }
+    ]
+  },
+  {
+    "number": "1.4",
+    "title": "Polynomials",
+    "slug": "1-4-polynomials",
+    "slides": [
+      {
+        "title": "Polynomials",
+        "body": "A polynomial is a finite sum of terms whose variable exponents are nonnegative integers.",
+        "math": "5x^3-2x+8",
+        "question": "What makes this expression a polynomial?"
+      },
+      {
+        "title": "Testing the definition",
+        "body": "",
+        "math": "x^{-1}+4",
+        "question": "Why is this expression not a polynomial in x?"
+      },
+      {
+        "title": "Testing the definition",
+        "body": "",
+        "math": "\\sqrt{x}+2",
+        "question": "Why is this expression not a polynomial in x?"
+      },
+      {
+        "title": "Degree",
+        "body": "The degree of a nonzero polynomial in one variable is its largest variable exponent.",
+        "math": "3x^5-8x^2+6",
+        "question": "What is the degree?"
+      },
+      {
+        "title": "Leading coefficient",
+        "body": "In descending-power order, the leading coefficient belongs to the highest-degree term.",
+        "math": "9-2x^4+7x",
+        "question": "What is the leading coefficient?"
+      },
+      {
+        "title": "Standard form",
+        "body": "",
+        "math": "6x-4x^3+2x^2-9",
+        "question": "How can we write this polynomial in descending-power order?"
+      },
+      {
+        "title": "Counting terms",
+        "body": "Monomials, binomials, and trinomials have one, two, and three nonzero terms, respectively.",
+        "math": "4x^2-7x+1",
+        "question": "What name describes this polynomial by its number of terms?"
+      },
+      {
+        "title": "Adding polynomials",
+        "body": "",
+        "math": "\\left(3x^2-2x+5\\right)+\\left(x^2+6x-8\\right)",
+        "question": "What is the sum in standard form?"
+      },
+      {
+        "title": "Subtracting polynomials",
+        "body": "",
+        "math": "\\left(5x^2+x-4\\right)-\\left(2x^2-3x+7\\right)",
+        "question": "What is the difference in standard form?"
+      },
+      {
+        "title": "A negative sign before a sum",
+        "body": "",
+        "math": "-\\left(2x^2-5x+3\\right)",
+        "question": "What equivalent polynomial has no parentheses?"
+      },
+      {
+        "title": "A monomial times a polynomial",
+        "body": "",
+        "math": "-3x\\left(2x^2-x+4\\right)",
+        "question": "What is the product in standard form?"
+      },
+      {
+        "title": "Two binomials",
+        "body": "",
+        "math": "\\left(x+5\\right)\\left(x-2\\right)",
+        "question": "What is the expanded product?"
+      },
+      {
+        "title": "Two binomials with coefficients",
+        "body": "",
+        "math": "\\left(2x-3\\right)\\left(3x+4\\right)",
+        "question": "What is the expanded product?"
+      },
+      {
+        "title": "A binomial times a trinomial",
+        "body": "",
+        "math": "\\left(x+2\\right)\\left(x^2-3x+4\\right)",
+        "question": "What is the product in standard form?"
+      },
+      {
+        "title": "A squared binomial",
+        "body": "",
+        "math": "\\left(x-4\\right)^2",
+        "question": "What is the expanded polynomial?"
+      },
+      {
+        "title": "Conjugate binomials",
+        "body": "",
+        "math": "\\left(3x+2\\right)\\left(3x-2\\right)",
+        "question": "What is the expanded polynomial?"
+      },
+      {
+        "title": "Several variables",
+        "body": "The degree of a monomial is the sum of its variable exponents.",
+        "math": "7x^2y^3",
+        "question": "What is the degree of this monomial?"
+      },
+      {
+        "title": "Combining multivariable terms",
+        "body": "",
+        "math": "3x^2y+5xy^2-2x^2y+xy^2",
+        "question": "What equivalent expression combines the like terms?"
+      },
+      {
+        "title": "A multivariable product",
+        "body": "",
+        "math": "\\left(x+2y\\right)\\left(3x-y\\right)",
+        "question": "What is the expanded product?"
+      },
+      {
+        "title": "An area expression",
+        "body": "A rectangle has length x + 4 and width x + 1.",
+        "math": "",
+        "question": "What polynomial in standard form represents its area?"
+      }
+    ]
+  },
+  {
+    "number": "1.5",
+    "title": "Factoring Polynomials",
+    "slug": "1-5-factoring-polynomials",
+    "slides": [
+      {
+        "title": "Factoring",
+        "body": "Factoring writes an expression as a product.",
+        "math": "x^2+7x+12",
+        "question": "What two binomials could have this product?"
+      },
+      {
+        "title": "Greatest common factor",
+        "body": "",
+        "math": "18x^3+12x^2",
+        "question": "What is the greatest common monomial factor?"
+      },
+      {
+        "title": "Factoring out the GCF",
+        "body": "",
+        "math": "15x^4-10x^3+5x^2",
+        "question": "What completely factored form results?"
+      },
+      {
+        "title": "A common binomial factor",
+        "body": "",
+        "math": "4x(x+3)-5(x+3)",
+        "question": "What factored form uses the repeated binomial?"
+      },
+      {
+        "title": "Factoring by grouping",
+        "body": "",
+        "math": "x^3+2x^2+3x+6",
+        "question": "How can we factor this polynomial by grouping?"
+      },
+      {
+        "title": "Factoring a trinomial",
+        "body": "",
+        "math": "x^2+9x+20",
+        "question": "What is the completely factored form?"
+      },
+      {
+        "title": "A trinomial with a negative constant",
+        "body": "",
+        "math": "x^2-x-12",
+        "question": "What is the completely factored form?"
+      },
+      {
+        "title": "A trinomial with two negative factors",
+        "body": "",
+        "math": "x^2-11x+24",
+        "question": "What is the completely factored form?"
+      },
+      {
+        "title": "A non-monic trinomial",
+        "body": "",
+        "math": "6x^2+11x+3",
+        "question": "What is the completely factored form?"
+      },
+      {
+        "title": "A non-monic trinomial",
+        "body": "",
+        "math": "8x^2-2x-3",
+        "question": "What is the completely factored form?"
+      },
+      {
+        "title": "Difference of squares",
+        "body": "A difference of squares factors into conjugate binomials.",
+        "math": "a^2-b^2=(a-b)(a+b)",
+        "question": "How would we factor 25x squared minus 9?"
+      },
+      {
+        "title": "A repeated factoring step",
+        "body": "",
+        "math": "x^4-81",
+        "question": "What is the completely factored form over the integers?"
+      },
+      {
+        "title": "Perfect square trinomials",
+        "body": "",
+        "math": "x^2-14x+49",
+        "question": "What binomial square equals this expression?"
+      },
+      {
+        "title": "A perfect square with coefficients",
+        "body": "",
+        "math": "9x^2+24x+16",
+        "question": "What binomial square equals this expression?"
+      },
+      {
+        "title": "A sum of cubes",
+        "body": "",
+        "math": "x^3+27",
+        "question": "What is the factored form over the integers?"
+      },
+      {
+        "title": "A difference of cubes",
+        "body": "",
+        "math": "8x^3-125",
+        "question": "What is the factored form over the integers?"
+      },
+      {
+        "title": "A common factor before a pattern",
+        "body": "",
+        "math": "3x^3-48x",
+        "question": "What is the completely factored form over the integers?"
+      },
+      {
+        "title": "Factoring with fractional exponents",
+        "body": "Assume x is nonnegative.",
+        "math": "x^{3/2}+4x^{1/2}",
+        "question": "What expression results when we factor out the smallest power of x?"
+      },
+      {
+        "title": "Factoring with negative exponents",
+        "body": "Assume x is nonzero.",
+        "math": "x^{-3}+5x^{-2}",
+        "question": "What expression results when we factor out the smallest power of x?"
+      },
+      {
+        "title": "Checking a factorization",
+        "body": "",
+        "math": "x^2-2x-15=(x-5)(x+3)",
+        "question": "How can we verify this proposed factorization?"
+      },
+      {
+        "title": "The coefficient domain",
+        "body": "",
+        "math": "x^2+9",
+        "question": "Can we factor this polynomial into real linear factors?"
+      },
+      {
+        "title": "A factoring strategy",
+        "body": "Factor over the integers.",
+        "math": "2x^4-32",
+        "question": "Which method should we use first, and what is the completely factored form?"
+      }
+    ]
+  },
+  {
+    "number": "1.6",
+    "title": "Rational Expressions",
+    "slug": "1-6-rational-expressions",
+    "slides": [
+      {
+        "title": "Rational expressions",
+        "body": "A rational expression is a quotient of polynomials with a nonzero denominator.",
+        "math": "\\frac{x+2}{x-5}",
+        "question": "Which input is excluded?"
+      },
+      {
+        "title": "Finding restrictions",
+        "body": "",
+        "math": "\\frac{3x}{x^2-16}",
+        "question": "For which real values of x is this expression undefined?"
+      },
+      {
+        "title": "Simplifying a rational expression",
+        "body": "",
+        "math": "\\frac{x^2-25}{x^2+2x-15}",
+        "question": "What simplified expression is equivalent on the original domain?"
+      },
+      {
+        "title": "Preserving the original domain",
+        "body": "",
+        "math": "\\frac{x^2-9}{x-3}",
+        "question": "After simplifying, which input must still be excluded?"
+      },
+      {
+        "title": "Canceling factors",
+        "body": "",
+        "math": "\\frac{x(x+4)}{x}",
+        "question": "What can we cancel, and what restriction remains?"
+      },
+      {
+        "title": "A sum in the numerator",
+        "body": "",
+        "math": "\\frac{x+4}{x}",
+        "question": "Can we cancel the x terms in this expression?"
+      },
+      {
+        "title": "Opposite factors",
+        "body": "",
+        "math": "\\frac{3-x}{x-3}",
+        "question": "What constant value does this expression have wherever it is defined?"
+      },
+      {
+        "title": "Multiplying rational expressions",
+        "body": "",
+        "math": "\\frac{x^2-4}{x^2-9}\\cdot\\frac{x+3}{x+2}",
+        "question": "What simplified expression results, with all original restrictions recorded?"
+      },
+      {
+        "title": "Dividing rational expressions",
+        "body": "",
+        "math": "\\frac{x^2-1}{x+3}\\div\\frac{x-1}{x+3}",
+        "question": "What simplified expression results, and which inputs are excluded?"
+      },
+      {
+        "title": "A zero divisor",
+        "body": "Assume x is nonzero.",
+        "math": "\\frac{1}{x}\\div\\frac{x-2}{x}",
+        "question": "Why must x = 2 also be excluded?"
+      },
+      {
+        "title": "Adding with a common denominator",
+        "body": "",
+        "math": "\\frac{3x}{x-2}+\\frac{5}{x-2}",
+        "question": "What is the sum, and where is it defined?"
+      },
+      {
+        "title": "Subtracting with a common denominator",
+        "body": "",
+        "math": "\\frac{5x+1}{x+4}-\\frac{2x-3}{x+4}",
+        "question": "What is the difference, and where is it defined?"
+      },
+      {
+        "title": "Finding a common denominator",
+        "body": "",
+        "math": "\\frac{2}{x}\\qquad\\text{and}\\qquad\\frac{3}{x+1}",
+        "question": "What least common denominator could we use?"
+      },
+      {
+        "title": "Adding with different denominators",
+        "body": "",
+        "math": "\\frac{2}{x}+\\frac{3}{x+1}",
+        "question": "What single rational expression represents this sum?"
+      },
+      {
+        "title": "Subtracting with different denominators",
+        "body": "",
+        "math": "\\frac{4}{x-2}-\\frac{1}{x+2}",
+        "question": "What single rational expression represents this difference?"
+      },
+      {
+        "title": "Nested denominator factors",
+        "body": "",
+        "math": "\\frac{1}{x-1}+\\frac{2}{x^2-1}",
+        "question": "What simplified rational expression represents this sum?"
+      },
+      {
+        "title": "A repeated denominator factor",
+        "body": "",
+        "math": "\\frac{1}{x}+\\frac{2}{x^2}",
+        "question": "What single rational expression represents this sum?"
+      },
+      {
+        "title": "Complex rational expressions",
+        "body": "A complex rational expression contains a fraction in its numerator or denominator.",
+        "math": "\\frac{\\frac{3}{x}}{\\frac{6}{x^2}}",
+        "question": "What simplified expression is equivalent for nonzero x?"
+      },
+      {
+        "title": "Simplifying a complex fraction",
+        "body": "",
+        "math": "\\frac{1+\\frac{2}{x}}{1-\\frac{4}{x^2}}",
+        "question": "What simplified expression results, with all original restrictions recorded?"
+      },
+      {
+        "title": "Combining before simplifying",
+        "body": "",
+        "math": "\\frac{x}{x-3}-\\frac{3}{x-3}",
+        "question": "What simplified value results, and which input remains excluded?"
+      },
+      {
+        "title": "An average-cost expression",
+        "body": "A print shop spends $120 in setup costs and $4 per booklet. It produces n booklets.",
+        "math": "",
+        "question": "What rational expression gives the average cost per booklet for positive n?"
+      }
+    ]
+  }
+]

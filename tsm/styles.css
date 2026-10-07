@@ -1,0 +1,121 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #1f2933;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  --page-gutter: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px var(--page-gutter) 72px;
+}
+
+main.lecture-notes { max-width: none; }
+
+.solution-instructions { color: #52606d; font-size: 0.9rem; }
+
+h1, h2, h3 { line-height: 1.25; }
+h1 { color: #163a5f; margin: 0 0 18px; }
+h2 { color: #245985; margin-top: 34px; }
+h3 { color: #334e68; }
+p { margin: 0 0 16px; }
+a { color: #175f9e; }
+
+.series-title {
+  color: #52606d;
+  font-size: 0.95rem;
+  margin: 18px 0 8px;
+}
+
+.topic-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9e2ec;
+  font-size: 0.95rem;
+}
+
+.bottom-nav {
+  margin-top: 44px;
+  padding-top: 12px;
+  padding-bottom: 0;
+  border-top: 1px solid #d9e2ec;
+  border-bottom: 0;
+}
+
+.toc { padding-left: 1.4rem; }
+.toc li { margin-bottom: 9px; }
+.assignment {
+  display: block;
+  color: #52606d;
+  font-size: 0.9rem;
+}
+
+.worked-example {
+  width: calc(100% + 2 * var(--page-gutter));
+  margin: 32px calc(-1 * var(--page-gutter)) 0;
+  padding: 18px var(--page-gutter) 0;
+  border-top: 2px solid #9fb3c8;
+}
+
+.problem-statement {
+  min-width: 0;
+}
+
+.example-label {
+  margin-bottom: 10px;
+}
+
+.solution-area {
+  display: flow-root;
+  width: 100%;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.solution-area:focus-visible {
+  outline: 2px solid #175f9e;
+  outline-offset: 2px;
+}
+
+.solution-panel {
+  display: flow-root;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Keep all solution text in the rendered document, including MathJax glyphs.
+   Only its foreground color changes; borders such as fraction bars follow it. */
+.solution-panel:not(.solution-visible),
+.solution-panel:not(.solution-visible) * {
+  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  forced-color-adjust: none;
+}
+
+.solution-panel:not(.solution-visible)::selection,
+.solution-panel:not(.solution-visible) *::selection {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Let MathJax wrap at mathematical breakpoints. Formula containers must not
+   create scrollbars or clip radicals, fractions, exponents, or wrapped lines. */
+.math.display { display: block; max-width: 100%; overflow: visible; }
+.math.inline { display: inline; overflow: visible; }
+mjx-container { overflow: visible; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  main { --page-gutter: 14px; padding: 28px var(--page-gutter) 56px; }
+}
