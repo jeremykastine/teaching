@@ -17,6 +17,11 @@
         "question": "Would a histogram of those means display 25,000 masses or 1,000 means?"
       },
       {
+        "title": "Sample size versus repetitions",
+        "body": "Sample size n is the number of observations in each average. A simulation draws 1,000 samples of 25 observations each.",
+        "question": "Which number is n in the standard-error formula?"
+      },
+      {
         "title": "An observation and an average",
         "body": "X represents one observation; X̄ represents the mean of n observations.",
         "math": "",
@@ -60,7 +65,7 @@
       },
       {
         "title": "The central limit theorem",
-        "body": "For independent, identically distributed observations with finite variance, sample means become approximately normal as sample size grows.",
+        "body": "The central limit theorem for means says averages of independent, identically distributed observations with finite variance become approximately normally distributed as n grows.",
         "math": "",
         "question": "Does this theorem say that the individual observations become normal?"
       },
@@ -131,6 +136,16 @@
         "question": "What is the 95th percentile of the sample-mean distribution?"
       },
       {
+        "title": "Quartiles of sample means",
+        "body": "Synthetic independent durations have μ = 12 s and σ = 4 s. Samples have n = 64; use a normal approximation.",
+        "question": "What are Q1, Q3, and the IQR of the sample means?"
+      },
+      {
+        "title": "A specified standard-error distance",
+        "body": "Model: population mean 50 seconds, SD 12 seconds. Independent samples contain 36 observations.",
+        "question": "What sample mean is 1.5 standard errors above the population mean?"
+      },
+      {
         "title": "One value versus a mean",
         "body": "Model: independent masses follow N(500,20).",
         "math": "",
@@ -186,6 +201,11 @@
         "question": "If σ=4 g and n=100, what is the SD of total mass?"
       },
       {
+        "title": "Recovering sample size",
+        "body": "Synthetic independent observations have σ = 6. Their sum has standard deviation 42.",
+        "question": "What sample size produced this sum?"
+      },
+      {
         "title": "Independent variation",
         "body": "Model: individual item masses have SD 4 g; 100 items are independent.",
         "math": "",
@@ -205,7 +225,7 @@
       },
       {
         "title": "A normal approximation for sums",
-        "body": "For independent, identically distributed observations with finite variance, large-sample sums can be approximated by a normal distribution.",
+        "body": "The central limit theorem for sums makes totals of many independent, identically distributed observations approximately normally distributed when variance is finite.",
         "math": "",
         "question": "What information about strong skewness would you want before using that approximation?"
       },
@@ -235,9 +255,14 @@
       },
       {
         "title": "A capacity cutoff",
-        "body": "Model: 100 independent item masses follow N(50,4), in grams.",
+        "body": "A percentile of sums is a cutoff for total values. Model: 100 independent masses follow N(50,4), in grams.",
         "math": "",
         "question": "What capacity would exceed the total mass in 99% of shipments?"
+      },
+      {
+        "title": "A specified distance for a sum",
+        "body": "Model: independent observations have mean 50 g and SD 4 g. Each sample contains 100 observations.",
+        "question": "What total lies 1.5 standard deviations above the mean of the sums?"
       },
       {
         "title": "An equivalent event",
@@ -290,7 +315,7 @@
       },
       {
         "title": "One observation",
-        "body": "Model: independent task durations are exponential with mean 6 minutes.",
+        "body": "Model: independent task durations follow an exponential distribution with mean 6 minutes.",
         "math": "",
         "question": "What is the probability that one task takes longer than 8 minutes?"
       },
@@ -349,6 +374,36 @@
         "question": "What is the approximate probability that their mean is below 5.5 seconds?"
       },
       {
+        "title": "A uniform total",
+        "body": "Model: 64 independent processing times follow the uniform distribution U(2,10), in seconds.",
+        "question": "What is the approximate probability that their total is below 350 seconds?"
+      },
+      {
+        "title": "A uniform mean percentile",
+        "body": "Model: 64 independent times follow U(2,10), in seconds.",
+        "question": "What is the approximate 90th percentile of their sample mean?"
+      },
+      {
+        "title": "A uniform total percentile",
+        "body": "Model: 64 independent times follow U(2,10), in seconds.",
+        "question": "What is the approximate 90th percentile of their total?"
+      },
+      {
+        "title": "Quartiles and IQR of sample means",
+        "body": "Model: independent observations have mean 20 min and SD 4 min. Samples contain 100 observations. Use a normal approximation.",
+        "question": "What are the sample-mean quartiles and IQR?"
+      },
+      {
+        "title": "Quartiles and IQR of sums",
+        "body": "Model: independent observations have mean 20 min and SD 4 min. Samples contain 100 observations. Use a normal approximation.",
+        "question": "What are the sum quartiles and IQR?"
+      },
+      {
+        "title": "A central interval for totals",
+        "body": "Synthetic independent durations are exponential with mean 8 min. Sum 64 durations; use the normal approximation.",
+        "question": "Between which two totals does the middle 80% lie?"
+      },
+      {
         "title": "Checking the approximation",
         "body": "Model: independent processing times follow U(2,10). A normal approximation is used for a mean of 64 times.",
         "math": "",
@@ -383,6 +438,57 @@
         "body": "Use synthetic independent draws from U(0,12), in minutes. For each n, collect many sample means.",
         "math": "",
         "question": "What changes would you expect in histograms for n=1, n=5, and n=50?"
+      },
+      {
+        "title": "Normal approximation to the binomial",
+        "body": "A binomial distribution counts successes in n independent constant-p trials. For sufficiently large expected counts, a normal distribution can approximate it.",
+        "question": "What mean and standard deviation should approximate B(100, 0.4)?"
+      },
+      {
+        "title": "Approximation conditions",
+        "body": "OpenStax requires np > 5 and nq > 5, with q = 1 − p; both at least 10 generally improve the approximation.",
+        "question": "Would B(100, 0.02) meet these conditions?"
+      },
+      {
+        "title": "The approximating normal model",
+        "body": "For X ~ B(n,p), use a continuous Y with the same mean and standard deviation.",
+        "question": "For X ~ B(100, 0.4), what are the parameters of Y?",
+        "math": "Y\\sim N\\!\\left(np,\\sqrt{np(1-p)}\\right)"
+      },
+      {
+        "title": "Continuity correction factor",
+        "body": "The continuity correction factor 0.5 matches each discrete integer k to a continuous interval from k − 0.5 to k + 0.5.",
+        "question": "Why should a normal approximation to P(X = 40) use an interval rather than one point?"
+      },
+      {
+        "title": "At least: continuity correction",
+        "body": "Model: X ~ B(100, 0.4). Approximate using Y ~ N(40, √24).",
+        "question": "Which boundary and normal tail approximate P(X ≥ 45), and what probability results?"
+      },
+      {
+        "title": "At most: continuity correction",
+        "body": "Model: X ~ B(100, 0.4). Approximate using Y ~ N(40, √24).",
+        "question": "Which boundary and normal tail approximate P(X ≤ 45), and what probability results?"
+      },
+      {
+        "title": "More than: continuity correction",
+        "body": "Model: X ~ B(100, 0.4). Approximate using Y ~ N(40, √24).",
+        "question": "Which boundary and normal tail approximate P(X > 45), and what probability results?"
+      },
+      {
+        "title": "Fewer than: continuity correction",
+        "body": "Model: X ~ B(100, 0.4). Approximate using Y ~ N(40, √24).",
+        "question": "Which boundary and normal tail approximate P(X < 45), and what probability results?"
+      },
+      {
+        "title": "Exactly: continuity correction",
+        "body": "Model: X ~ B(100, 0.4). Approximate using Y ~ N(40, √24).",
+        "question": "Which two boundaries approximate P(X = 45), and what probability results?"
+      },
+      {
+        "title": "Checking the approximation",
+        "body": "For X ~ B(100, 0.4), use software to find the exact P(X ≥ 45).",
+        "question": "How does it compare with the continuity-corrected normal approximation?"
       },
       {
         "title": "Predicting precision",

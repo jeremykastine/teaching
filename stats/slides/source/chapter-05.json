@@ -12,7 +12,7 @@
       },
       {
         "title": "A probability density",
-        "body": "A probability density is nonnegative, and its total area is one.",
+        "body": "A continuous probability density function (PDF), written f(x), is nonnegative and has total area one.",
         "math": "",
         "question": "What would fail if part of a proposed density lay below the horizontal axis?"
       },
@@ -24,7 +24,7 @@
       },
       {
         "title": "Probability as area",
-        "body": "For a continuous distribution, interval probabilities are areas under the density.",
+        "body": "Model: f(x) = 0.1 for 0 ≤ x ≤ 10 seconds, zero elsewhere. Interval probabilities are areas under the density.",
         "math": "",
         "question": "For the rectangular density, what region represents durations between 3 and 7 seconds?"
       },
@@ -33,6 +33,11 @@
         "body": "Model: the density is 0.1 on the interval from 0 to 10 seconds and zero elsewhere.",
         "math": "",
         "question": "What is the probability of a duration between 3 and 7 seconds?"
+      },
+      {
+        "title": "Graphing a continuous density",
+        "body": "Model: f(x) = 0.1 for 0 ≤ x ≤ 10 seconds, zero elsewhere.",
+        "question": "How would you label both axes and shade the area representing P(3 < X < 7)?"
       },
       {
         "title": "Height is not probability",
@@ -60,7 +65,7 @@
       },
       {
         "title": "The cumulative distribution",
-        "body": "The cumulative distribution function gives the probability at or below a cutoff.",
+        "body": "The cumulative distribution function (CDF), F(x), gives the probability at or below a cutoff.",
         "math": "F(x)=P(X\\leq x)",
         "question": "What does F(6) describe when X measures a duration in seconds?"
       },
@@ -199,9 +204,14 @@
       },
       {
         "title": "A conditional interval",
-        "body": "Model: a shuttle wait is uniform from 0 to 12 minutes. The wait has already exceeded 4 minutes.",
+        "body": "Conditional probability restricts the possible outcomes. A wait is uniform from 0 to 12 minutes and has already exceeded 4 minutes.",
         "math": "",
         "question": "What is the probability that the total wait exceeds 8 minutes?"
+      },
+      {
+        "title": "The conditional density",
+        "body": "Model: X ~ U(0,12), in minutes. We know X > 4.",
+        "question": "What new uniform density describes the restricted interval, and how does it give P(X > 8 | X > 4)?"
       },
       {
         "title": "Changing the range",
@@ -214,6 +224,11 @@
         "body": "Synthetic waits, in minutes: 0.4, 0.6, 0.7, 0.9, 1.1, 1.3, 9.8, 11.5.",
         "math": "",
         "question": "What feature would you investigate before accepting a uniform model on 0 to 12?"
+      },
+      {
+        "title": "Theoretical and empirical summaries",
+        "body": "Synthetic sample: mean 8.2 min, SD 3.6 min. Proposed model: U(2,14), with theoretical mean 8 and SD about 3.46.",
+        "question": "Must the sample summaries exactly equal the model parameters?"
       },
       {
         "title": "From one wait to many",
@@ -230,7 +245,7 @@
     "slides": [
       {
         "title": "An exponential waiting model",
-        "body": "An exponential distribution models certain nonnegative waiting times using a positive rate.",
+        "body": "The exponential distribution models a continuous random variable, often a nonnegative waiting time, using a positive rate.",
         "math": "",
         "question": "Why does a nonnegative waiting time alone not establish an exponential model?"
       },
@@ -242,7 +257,7 @@
       },
       {
         "title": "Rate notation",
-        "body": "The exponential rate m has units reciprocal to the time units.",
+        "body": "The rate m, called the decay parameter, has units reciprocal to the time units.",
         "math": "X\\sim\\operatorname{Exp}(m)",
         "question": "If time is measured in hours, what units should m have?"
       },
@@ -265,6 +280,16 @@
         "question": "For m=0.2 per minute, which interval has more probability: 0 to 1 or 5 to 6 minutes?"
       },
       {
+        "title": "The number e",
+        "body": "The exponential density uses the constant e ≈ 2.71828. The natural logarithm ln reverses exponentiation with base e.",
+        "question": "Which calculator operation evaluates e raised to −0.8?"
+      },
+      {
+        "title": "Sketching the exponential density",
+        "body": "Model: f(x) = 0.2e^(−0.2x) for x ≥ 0, with x measured in minutes.",
+        "question": "How would you label the axes and sketch its starting height and declining shape?"
+      },
+      {
         "title": "The upper tail",
         "body": "The exponential survival probability gives the chance of exceeding a cutoff.",
         "math": "P(X>x)=e^{-mx}",
@@ -275,6 +300,12 @@
         "body": "Model: an exponential wait has mean 5 minutes.",
         "math": "",
         "question": "What is the probability that the wait is at most 8 minutes?"
+      },
+      {
+        "title": "Exponential CDF",
+        "body": "The cumulative distribution function (CDF) gives area to the left of x for x ≥ 0.",
+        "question": "For m = 0.2 per minute, what probability lies to the left of 8 minutes?",
+        "math": "F(x)=P(X\\leq x)=1-e^{-mx}"
       },
       {
         "title": "Between two waits",
@@ -301,6 +332,12 @@
         "question": "What cutoff has 90% of waits at or below it?"
       },
       {
+        "title": "An inverse exponential calculation",
+        "body": "For an exponential rate m and probability 0 < a < 1, the a-quantile solves F(k) = a.",
+        "question": "With m = 0.2 per minute, what calculation gives the median?",
+        "math": "k=-\\frac{\\ln(1-a)}{m}"
+      },
+      {
         "title": "Mean and median",
         "body": "Model: an exponential wait has mean 5 minutes.",
         "math": "",
@@ -311,6 +348,11 @@
         "body": "The exponential standard deviation equals its mean.",
         "math": "\\sigma=\\mu=\\frac{1}{m}",
         "question": "What are the mean and standard deviation when m=0.25 per minute?"
+      },
+      {
+        "title": "Expected total lifetime",
+        "body": "Model: five independent components are used one after another. Each lifetime is exponential with mean 8 years.",
+        "question": "What total operating lifetime is expected?"
       },
       {
         "title": "The memoryless property",
@@ -338,9 +380,14 @@
       },
       {
         "title": "A Poisson connection",
-        "body": "Model: requests arrive as a Poisson process at 6 per hour.",
+        "body": "For a Poisson process, the count in a fixed interval has a Poisson distribution. Synthetic rate: 6 requests per hour.",
         "math": "",
         "question": "What is the mean number of requests in 20 minutes?"
+      },
+      {
+        "title": "Computing the linked count probability",
+        "body": "Model: independent times between requests are exponential with rate 6 per hour.",
+        "question": "What is the probability of exactly two requests during 20 minutes?"
       },
       {
         "title": "An empty interval",

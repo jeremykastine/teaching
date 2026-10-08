@@ -6,7 +6,7 @@
     "slides": [
       {
         "title": "A random variable",
-        "body": "A random variable assigns a numerical value to each outcome of an experiment.",
+        "body": "A random variable (RV), usually written X, assigns a numerical value to each outcome of an experiment.",
         "question": "For two coin tosses, how could X count the heads?"
       },
       {
@@ -25,6 +25,11 @@
         "question": "Which variable is discrete?"
       },
       {
+        "title": "Discrete random variable",
+        "body": "A discrete random variable has a finite or countably infinite set of possible numerical values.",
+        "question": "Can a discrete random variable have infinitely many possible values?"
+      },
+      {
         "title": "Outcomes versus values",
         "body": "For two independent fair-coin tosses, X counts heads.",
         "question": "Which sample-space outcomes produce X = 1?"
@@ -41,8 +46,8 @@
       },
       {
         "title": "A discrete probability distribution",
-        "body": "A discrete probability distribution assigns a probability to each possible value.",
-        "question": "What does P(X = 2) mean in this synthetic model?",
+        "body": "A discrete probability distribution function (PDF) lists values and probabilities.",
+        "question": "What does P(X = 2), also written P(2), mean here?",
         "table": {
           "headers": [
             "x",
@@ -325,6 +330,11 @@
         "question": "Must ten sessions have exactly 17 downloads?"
       },
       {
+        "title": "Law of large numbers for averages",
+        "body": "With independent repetitions and a finite mean, the observed average tends toward the expected value as the number of repetitions grows.",
+        "question": "Why can a game’s short-run average differ greatly from its expected gain?"
+      },
+      {
         "title": "Expected total",
         "body": "A synthetic model has expected value 1.7 downloads per session.",
         "question": "What total would be expected over 100 sessions?"
@@ -350,6 +360,11 @@
         "body": "Synthetic model: X = 0 or 2, each with probability 0.5; μ = 1.",
         "question": "What is its standard deviation?",
         "math": "\\sigma=\\sqrt{\\sum (x-\\mu)^2P(X=x)}"
+      },
+      {
+        "title": "Unequal probability weights",
+        "body": "Synthetic model: P(X = 0) = 0.2, P(X = 1) = 0.5, P(X = 2) = 0.3; μ = 1.1.",
+        "question": "What standard deviation results when each squared deviation receives its probability weight?"
       },
       {
         "title": "Same mean, different spread",
@@ -409,6 +424,11 @@
         "question": "Do ten independent fair-coin tosses satisfy these conditions?"
       },
       {
+        "title": "Bernoulli trials",
+        "body": "A Bernoulli trial has two outcomes called success and failure. A binomial experiment counts successes in n independent Bernoulli trials with the same p.",
+        "question": "What is one Bernoulli trial in a transmission experiment?"
+      },
+      {
         "title": "Define success",
         "body": "Each independent transmission either succeeds or fails.",
         "question": "Must “success” mean a desirable outcome in a binomial model?"
@@ -424,13 +444,18 @@
         "question": "What are n and p?"
       },
       {
+        "title": "Success and failure probabilities",
+        "body": "The probability of failure is q = 1 − p. Each independent transmission succeeds with probability p = 0.85.",
+        "question": "What is q, and which outcome does it describe?"
+      },
+      {
         "title": "Possible values",
         "body": "X counts successes in 6 independent trials.",
         "question": "What values can X take?"
       },
       {
         "title": "Binomial notation",
-        "body": "X follows a binomial distribution with parameters n and p.",
+        "body": "The binomial probability distribution uses n trials and success probability p.",
         "question": "What experiment could be described by X ~ B(8, 0.25)?",
         "math": "X\\sim B(n,p)"
       },
@@ -466,6 +491,11 @@
         "math": "P(X=x)=\\binom{n}{x}p^x(1-p)^{n-x}"
       },
       {
+        "title": "A full binomial distribution",
+        "body": "Let X count successes in three independent trials, each with p = 0.25.",
+        "question": "What probability table and probability bar graph describe X?"
+      },
+      {
         "title": "No successes",
         "body": "Five independent trials each succeed with probability 0.2.",
         "question": "What is P(X = 0)?"
@@ -486,6 +516,11 @@
         "question": "What is P(X ≥ 8)?"
       },
       {
+        "title": "PDF and CDF commands",
+        "body": "For a discrete model, PDF gives P(X = x); the cumulative distribution function (CDF) gives P(X ≤ x).",
+        "question": "For X ~ B(10, 0.8), which command evaluates exactly eight successes and which evaluates at most eight?"
+      },
+      {
         "title": "Expected successes",
         "body": "A binomial count has mean np.",
         "question": "For 20 independent trials with p = 0.3, what is the expected number of successes?",
@@ -496,6 +531,11 @@
         "body": "A binomial count has standard deviation √[np(1 − p)].",
         "question": "For n = 20 and p = 0.3, what is σ?",
         "math": "\\sigma=\\sqrt{np(1-p)}"
+      },
+      {
+        "title": "Binomial variance",
+        "body": "For a binomial count, variance is σ² = npq and standard deviation is its square root.",
+        "question": "For n = 20, p = 0.3, q = 0.7, how do the variance and standard deviation differ?"
       },
       {
         "title": "A fixed count?",
@@ -625,6 +665,32 @@
         "question": "How are X and Y related?"
       },
       {
+        "title": "Failures-before-success probabilities",
+        "body": "Y counts failures before the first success, so Y = 0, 1, 2, … . Each independent trial succeeds with probability p.",
+        "question": "For p = 0.2, what is P(Y = 3)?",
+        "math": "P(Y=y)=(1-p)^y p"
+      },
+      {
+        "title": "Expected failures",
+        "body": "For failures before success, E(Y) = (1 − p)/p. Trials through success have E(X) = 1/p.",
+        "question": "For p = 0.2, what are the two expected counts?"
+      },
+      {
+        "title": "Spread under a change of convention",
+        "body": "Trial count X and failure count Y satisfy Y = X − 1. Both have variance (1 − p)/p².",
+        "question": "Why does subtracting one change the mean but leave the standard deviation unchanged?"
+      },
+      {
+        "title": "The common ratio",
+        "body": "Geometric probabilities form a geometric sequence: each probability is 1 − p times the preceding one. This factor is the common ratio.",
+        "question": "For p = 0.2 and P(X = 3) = 0.128, what is P(X = 4)?"
+      },
+      {
+        "title": "Graphing geometric probabilities",
+        "body": "Let X ~ G(0.25) count trials through first success.",
+        "question": "How would the first five probability bars show the geometric progression?"
+      },
+      {
         "title": "When the model changes",
         "body": "A user learns from each attempt, increasing the chance of success.",
         "question": "Which geometric assumption is no longer appropriate?"
@@ -689,8 +755,8 @@
       },
       {
         "title": "An exact probability",
-        "body": "A synthetic box has 7 red and 5 blue tokens. Select 4 uniformly without replacement; X counts red.",
-        "question": "What is P(X = 2)?",
+        "body": "Synthetic box: 7 red and 5 blue tokens. Draw 4 uniformly without replacement; X counts red.",
+        "question": "What hypergeometric probability gives P(X = 2)?",
         "math": "P(X=x)=\\frac{\\binom{r}{x}\\binom{b}{n-x}}{\\binom{r+b}{n}}"
       },
       {
@@ -699,10 +765,21 @@
         "question": "Which probabilities add to P(X ≤ 1)?"
       },
       {
+        "title": "A hypergeometric upper tail",
+        "body": "Synthetic batch: 7 red, 5 blue tokens. Select 4 uniformly without replacement; X counts red.",
+        "question": "What is P(X > 2), using the hypergeometric formula or software?"
+      },
+      {
         "title": "An expected count",
         "body": "The expected hypergeometric count is sample size times the population proportion of interest.",
         "question": "For 4 draws from 7 red and 5 blue tokens, what red count is expected?",
         "math": "\\mu=n\\frac{r}{r+b}"
+      },
+      {
+        "title": "Hypergeometric standard deviation",
+        "body": "Let N = r + b and p = r/N. Synthetic urn: r = 7 red, b = 5 blue; draw n = 4 without replacement.",
+        "question": "What is the standard deviation of the red count?",
+        "math": "\\sigma=\\sqrt{np(1-p)\\frac{N-n}{N-1}}"
       },
       {
         "title": "Compare sampling designs",
@@ -748,7 +825,7 @@
       },
       {
         "title": "Poisson notation",
-        "body": "X ~ P(μ) uses the mean count for the specified interval.",
+        "body": "A Poisson probability distribution uses mean count μ for a fixed interval. The mean is also often written λ (lambda).",
         "question": "What does X ~ P(2) mean?",
         "math": "X\\sim P(\\mu)"
       },
@@ -816,9 +893,19 @@
         "math": "\\mu=np"
       },
       {
+        "title": "Checking a Poisson approximation",
+        "body": "Let X ~ B(1,000, 0.002). Approximate X by Y ~ P(2). Use software for both probabilities.",
+        "question": "How close are P(X = 3) and P(Y = 3)?"
+      },
+      {
         "title": "Count versus waiting time",
         "body": "A Poisson-process model describes requests arriving in time.",
         "question": "How does counting requests in five minutes differ from measuring time until the next request?"
+      },
+      {
+        "title": "Graphing a Poisson distribution",
+        "body": "Synthetic arrivals follow X ∼ P(3) per hour. Calculate P(X = x) for x = 0, 1, …, 10.",
+        "question": "How would you sketch and label the probability distribution?"
       }
     ]
   }

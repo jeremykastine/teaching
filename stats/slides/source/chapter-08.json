@@ -6,7 +6,7 @@
     "slides": [
       {
         "title": "The target parameter",
-        "body": "A confidence interval for a population mean estimates μ.",
+        "body": "A confidence interval (CI) estimates a population parameter. Estimating a population mean μ from sample data is inferential statistics.",
         "math": "",
         "question": "For transfer duration, does μ describe one transfer, the sample mean, or the population mean?"
       },
@@ -30,13 +30,13 @@
       },
       {
         "title": "Margin of error",
-        "body": "The margin of error is the distance from the point estimate to either endpoint of a symmetric confidence interval.",
+        "body": "The margin of error, or error bound for a population mean (EBM), is the distance from the point estimate to either endpoint.",
         "math": "",
         "question": "For an interval from 10 to 14 minutes, what is the margin of error?"
       },
       {
         "title": "Confidence level",
-        "body": "A 95% confidence procedure captures the fixed population parameter in about 95% of repeated intervals under its assumptions.",
+        "body": "The confidence level (CL) is the long-run capture rate. A valid 95% procedure captures the fixed parameter in about 95% of repeated intervals.",
         "math": "",
         "question": "What would 95% describe if we repeatedly sampled and constructed intervals?"
       },
@@ -48,13 +48,13 @@
       },
       {
         "title": "The two tails",
-        "body": "A central confidence level leaves the remaining normal area in two equal tails.",
+        "body": "Alpha (α) is the long-run noncoverage probability, 1 − CL. A central normal interval divides it equally between two tails.",
         "math": "\\alpha=1-CL",
         "question": "For 95% confidence, how much area belongs in each tail?"
       },
       {
         "title": "A critical z value",
-        "body": "The positive critical value z* cuts off α/2 in the upper standard-normal tail.",
+        "body": "The positive critical value z*, written z_(α/2) in OpenStax, cuts off α/2 in the upper standard-normal tail.",
         "math": "P(Z>z^*)=\\frac{\\alpha}{2}",
         "question": "Which area to the left identifies z* for 95% confidence?"
       },
@@ -87,6 +87,11 @@
         "body": "Synthetic independent random sample: n=64, mean=12 minutes. Normal population; known SD=4 minutes; 95% confidence; z*=1.96.",
         "math": "",
         "question": "What is the confidence interval for μ?"
+      },
+      {
+        "title": "A mean interval from raw data",
+        "body": "Synthetic independent normal sample (min): 9, 11, 12, 14. Known population SD = 2; 90% confidence; z* = 1.645.",
+        "question": "What confidence interval for μ follows from the raw observations?"
       },
       {
         "title": "Interpreting the interval",
@@ -159,6 +164,11 @@
         "body": "Synthetic result: a 95% interval for μ is 11.02 to 12.98 minutes. A claim states μ=12.",
         "math": "",
         "question": "Is the claimed value compatible with this interval?"
+      },
+      {
+        "title": "Sketching the confidence interval",
+        "body": "Synthetic known-σ result: a 95% confidence interval for μ is (18, 22), with sample mean 20.",
+        "question": "How would you mark the estimate, endpoints, and error bound, and show the critical tail areas on a z curve?"
       }
     ]
   },
@@ -169,7 +179,7 @@
     "slides": [
       {
         "title": "An unknown population SD",
-        "body": "When σ is unknown, a one-sample mean interval estimates it with the sample SD s and uses a t critical value.",
+        "body": "When the population standard deviation σ is unknown, a mean interval estimates it with the sample standard deviation s and uses a t critical value.",
         "math": "",
         "question": "Does a large sample make the population SD known?"
       },
@@ -181,19 +191,19 @@
       },
       {
         "title": "A t statistic",
-        "body": "A t statistic standardizes a sample mean using its estimated standard error.",
+        "body": "A t-score (t statistic), like a z-score, measures standardized distance, but uses an estimated standard error.",
         "math": "t=\\frac{\\overline{x}-\\mu}{s/\\sqrt{n}}",
         "question": "What extra estimated quantity distinguishes this from the known-SD z statistic?"
       },
       {
         "title": "The t distribution",
-        "body": "A Student t distribution is symmetric about zero and has heavier tails than the standard normal.",
+        "body": "Student’s t-distribution is symmetric about zero and has heavier tails than the standard normal distribution.",
         "math": "",
         "question": "What additional uncertainty might those heavier tails reflect?"
       },
       {
         "title": "Degrees of freedom",
-        "body": "For a one-sample t procedure, the degrees of freedom are n-1.",
+        "body": "Degrees of freedom (df) count freely varying deviations. For a one-sample t procedure, df = n − 1.",
         "math": "df=n-1",
         "question": "What degrees of freedom belong to a sample of 25 observations?"
       },
@@ -214,6 +224,11 @@
         "body": "A positive t* value cuts off α/2 in the upper tail of the appropriate t distribution.",
         "math": "",
         "question": "Which degrees of freedom and left-tail area locate t* for n=25 and 95% confidence?"
+      },
+      {
+        "title": "Reading a t table",
+        "body": "A t table may label columns by confidence, one-tail area, or two-tail area. Use df = 14 for a 95% interval.",
+        "question": "What area should you locate in each kind of table?"
       },
       {
         "title": "Comparing critical values",
@@ -253,7 +268,7 @@
       },
       {
         "title": "The t margin of error",
-        "body": "A one-sample t margin is its critical value times the estimated standard error.",
+        "body": "The error bound for a population mean (EBM) uses a t critical value when σ is estimated by s.",
         "math": "EBM=t^*\\frac{s}{\\sqrt{n}}",
         "question": "For t*=2.064, s=5, and n=25, what is EBM?"
       },
@@ -310,6 +325,11 @@
         "body": "Synthetic result: a 95% t interval for μ is 9.94 to 14.06 minutes. A claim states μ=8.",
         "math": "",
         "question": "Is 8 minutes compatible with this interval?"
+      },
+      {
+        "title": "Sketching the confidence interval",
+        "body": "Synthetic n = 16 sample: a 95% t interval for μ is (18, 22), with sample mean 20.",
+        "question": "How would you mark the estimate, endpoints, and error bound, and show the critical tail areas on a t curve?"
       }
     ]
   },
@@ -337,6 +357,11 @@
         "question": "Which symbol refers to the unknown population proportion?"
       },
       {
+        "title": "The failure proportion",
+        "body": "For population proportions, q = 1 − p. For sample proportions, q′ = 1 − p′, also written 1 − p-hat.",
+        "question": "If 128 of 400 observations are successes, what is q′?"
+      },
+      {
         "title": "Count or proportion?",
         "body": "Synthetic random sample: 128 of 400 students used the printing service this week.",
         "math": "",
@@ -344,15 +369,26 @@
       },
       {
         "title": "A binary outcome",
-        "body": "A proportion records whether each observation meets a specified condition.",
+        "body": "The binomial distribution counts successes in n independent binary trials with constant probability p. The sample proportion divides this count by n.",
         "math": "",
         "question": "Would average pages printed per student be a proportion problem?"
       },
       {
         "title": "Sampling variability of proportions",
-        "body": "For independent binary observations with success probability p, the sample proportion has mean p and SD √(p(1-p)/n).",
+        "body": "For large enough expected success and failure counts, the sample proportion is approximately normal with mean p and SD √[p(1 − p)/n].",
         "math": "\\operatorname{SD}(\\widehat{p})=\\sqrt{\\frac{p(1-p)}{n}}",
         "question": "What happens to this SD when n quadruples?"
+      },
+      {
+        "title": "A proportion sampling model",
+        "body": "Independent binary observations have p = 0.4 and n = 100. Both expected counts exceed five.",
+        "question": "What normal distribution approximates the sample proportion?"
+      },
+      {
+        "title": "Standardizing a sample proportion",
+        "body": "Use the population p to describe sampling variation when p is known.",
+        "question": "For p = 0.4, n = 100, and p′ = 0.5, what z-score results?",
+        "math": "z=\\frac{p^{\\prime}-p}{\\sqrt{p(1-p)/n}}"
       },
       {
         "title": "An estimated standard error",
@@ -386,7 +422,7 @@
       },
       {
         "title": "A proportion margin of error",
-        "body": "A normal-approximation proportion margin is a critical z value times estimated standard error.",
+        "body": "The error bound for a population proportion (EBP) is a critical z value times the estimated standard error.",
         "math": "EBP=z^*\\sqrt{\\frac{\\widehat{p}(1-\\widehat{p})}{n}}",
         "question": "For p̂=0.32, n=400, and z*=1.96, what is EBP?"
       },
@@ -479,6 +515,16 @@
         "body": "For a proportion interval, standard error uses p̂. A proportion test may instead use a hypothesized p₀.",
         "math": "",
         "question": "Why could two analyses of the same sample use different standard errors?"
+      },
+      {
+        "title": "Sketching the confidence interval",
+        "body": "Synthetic survey: a 95% interval for p is (0.42, 0.58), with sample proportion 0.50.",
+        "question": "How would you mark the estimate, endpoints, and error bound, and show the critical tail areas on a z curve?"
+      },
+      {
+        "title": "Recovering a proportion estimate",
+        "body": "A synthetic survey reports a 95% confidence interval from 0.36 to 0.44.",
+        "question": "What are its point estimate and error bound in proportion units and percentage points?"
       }
     ]
   }

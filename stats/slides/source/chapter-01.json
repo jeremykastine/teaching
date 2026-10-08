@@ -6,7 +6,7 @@
     "slides": [
       {
         "title": "Statistics",
-        "body": "Statistics uses data to investigate questions.",
+        "body": "Statistics is the collection, analysis, interpretation, and presentation of data.",
         "question": "What data could help a college decide when to keep its library open?"
       },
       {
@@ -25,14 +25,24 @@
         "question": "Does a 50% chance of heads guarantee five heads in ten tosses?"
       },
       {
+        "title": "Long-run probability",
+        "body": "A fair coin has probability 0.5 of heads on each independent toss.",
+        "question": "Why should 4,000 tosses usually give a proportion nearer 0.5 than four tosses?"
+      },
+      {
         "title": "Population",
         "body": "The population is the entire group a study concerns.",
         "question": "To study this quarter's enrolled students, who belongs in the population?"
       },
       {
         "title": "Sample",
-        "body": "A sample is the part of a population actually studied.",
+        "body": "A sample is the part of a population actually studied. Sampling is the process of selecting a sample.",
         "question": "Would surveying one afternoon class give every student a chance to be included?"
+      },
+      {
+        "title": "Representative sample",
+        "body": "A representative sample reflects the characteristics of the population relevant to the study.",
+        "question": "Would a sample containing only morning classes represent all college students?"
       },
       {
         "title": "Variable",
@@ -40,8 +50,23 @@
         "question": "For a library-hours survey, what could we record for each student?"
       },
       {
+        "title": "Numerical variables",
+        "body": "A numerical (quantitative) variable records an amount with meaningful numerical units.",
+        "question": "Is the number of library visits a numerical variable?"
+      },
+      {
+        "title": "Categorical variables",
+        "body": "A categorical (qualitative) variable assigns a label or category.",
+        "question": "Why is preferred study location categorical even if locations receive number codes?"
+      },
+      {
+        "title": "Classifying variables",
+        "body": "A survey records each student’s preferred study location and weekly library visits.",
+        "question": "Which variable is categorical, and which is numerical?"
+      },
+      {
         "title": "Data",
-        "body": "Data are the recorded values of variables.",
+        "body": "Data are the observed values of a variable. One observed value is a datum.",
         "question": "For the variable “number of library visits last week,” what could three data values look like?"
       },
       {
@@ -71,7 +96,7 @@
       },
       {
         "title": "Mean",
-        "body": "The mean is the sum of the values divided by their number.",
+        "body": "The arithmetic mean, commonly called the average, is the sum of the values divided by their number.",
         "question": "Five study rooms contain 2, 3, 3, 5, and 7 students. What is the mean occupancy?"
       },
       {
@@ -83,6 +108,21 @@
         "title": "A question of scope",
         "body": "A survey of 50 library visitors finds that 90% want longer library hours.",
         "question": "How far beyond these 50 visitors would you trust that result?"
+      },
+      {
+        "title": "The terms in a mean study",
+        "body": "Synthetic study: estimate mean pages printed per student at a college. Randomly survey 60 students; observed counts include 8, 12, and 19.",
+        "question": "What are the population, sample, variable, data, parameter, and statistic?"
+      },
+      {
+        "title": "The terms in a proportion study",
+        "body": "Synthetic study: estimate the proportion of all campus printers needing repair. Inspect 20 randomly chosen printers; 3 need repair.",
+        "question": "What are the population, sample, variable, data, parameter, and statistic?"
+      },
+      {
+        "title": "Dot plots",
+        "body": "A dot plot places one dot per observation above a number line, stacking repeated values. Synthetic visits: 0, 1, 1, 2, 2, 2, 4.",
+        "question": "How would a dot plot show where these observations cluster?"
       }
     ]
   },
@@ -93,23 +133,28 @@
     "slides": [
       {
         "title": "Qualitative data",
-        "body": "Qualitative data describe categories.",
+        "body": "Qualitative data, also called categorical data, describe categories.",
         "question": "Why is a course subject a category even if the school assigns it a number?"
       },
       {
         "title": "Quantitative data",
-        "body": "Quantitative data record numerical amounts.",
+        "body": "Quantitative data, also called numerical data, record counts or measurements.",
         "question": "Does the number 201 mean the same kind of thing in “room 201” and “201 seats”?"
       },
       {
         "title": "Discrete data",
-        "body": "Discrete quantitative values belong to a separated, countable set.",
+        "body": "Quantitative discrete data take separated, countable values, commonly from counting.",
         "question": "Can the number of open browser tabs be 4.5?"
       },
       {
         "title": "Continuous data",
-        "body": "Continuous quantities can take any value within an interval.",
+        "body": "Quantitative continuous data measure quantities that can take any value within an interval.",
         "question": "A download lasts 3.2 seconds. Could a more precise timer report 3.24 seconds?"
+      },
+      {
+        "title": "Continuous random variable",
+        "body": "A continuous random variable has possible numerical values throughout an interval.",
+        "question": "Could the unrounded time until a download completes be continuous?"
       },
       {
         "title": "Classifying a variable",
@@ -130,6 +175,11 @@
         "title": "Numbers as labels",
         "body": "Students have identification numbers such as 10482 and 10517.",
         "question": "Would the mean ID number describe a meaningful amount?"
+      },
+      {
+        "title": "Numbers recoded as categories",
+        "body": "A teacher records numerical quiz scores, then reports A, B, C, D, or F.",
+        "question": "How does converting scores to categories change the information retained?"
       },
       {
         "title": "Bar graphs",
@@ -157,9 +207,19 @@
         "question": "What is missing from this summary?"
       },
       {
+        "title": "Comparing different totals",
+        "body": "Synthetic surveys: Campus A has 40 tablet users among 100 respondents; Campus B has 60 among 200.",
+        "question": "Which campus has the larger proportion of tablet users?"
+      },
+      {
         "title": "Simple random sampling",
         "body": "Every possible sample of the chosen size has the same chance of selection.",
         "question": "How could we choose 5 of 30 numbered students this way?"
+      },
+      {
+        "title": "Random sampling",
+        "body": "Random sampling uses chance to select population members. A simple random sample gives every group of the chosen size equal probability.",
+        "question": "Does selecting every tenth ID after a random start make every possible group equally likely?"
       },
       {
         "title": "Random number selection",
@@ -168,12 +228,12 @@
       },
       {
         "title": "Stratified sampling",
-        "body": "Randomly sample individuals within every stratum.",
+        "body": "Divide the population into groups called strata. In proportional stratified sampling, randomly select the same fraction from every stratum.",
         "question": "How could we sample 10% of students from each academic program?"
       },
       {
         "title": "Cluster sampling",
-        "body": "Randomly select clusters and include everyone in those clusters.",
+        "body": "Divide the population into groups called clusters. Randomly select clusters and include everyone in the selected groups.",
         "question": "What sample results if we randomly choose three class sections and survey everyone in them?"
       },
       {
@@ -188,7 +248,7 @@
       },
       {
         "title": "Voluntary response",
-        "body": "A voluntary-response sample consists of people who choose to respond to an open invitation.",
+        "body": "A voluntary-response or self-selected sample consists of people who choose to respond to an open invitation.",
         "question": "Who might respond to an online poll about parking fees?"
       },
       {
@@ -197,9 +257,34 @@
         "question": "Which plan uses clusters?"
       },
       {
+        "title": "Sampling with replacement",
+        "body": "Sampling with replacement returns a selected member before the next selection, allowing repeats.",
+        "question": "If a drawn numbered card is returned and shuffled in, can it appear again?"
+      },
+      {
+        "title": "Sampling without replacement",
+        "body": "Sampling without replacement allows each member to be selected only once.",
+        "question": "How does leaving each drawn card out change the next selection?"
+      },
+      {
         "title": "Sampling variation",
         "body": "Different random samples can produce different statistics.",
         "question": "Two random samples report 42% and 47% support for a proposal. Must one be wrong?"
+      },
+      {
+        "title": "Sampling error",
+        "body": "Sampling error is the difference arising because a sample, rather than the whole population, is observed.",
+        "question": "Can an unbiased random sample still give a statistic different from the population parameter?"
+      },
+      {
+        "title": "Nonsampling error",
+        "body": "Nonsampling errors arise from problems such as inaccurate measurement, data entry, nonresponse, or biased design.",
+        "question": "Would recording 42 as 24 be sampling error or nonsampling error?"
+      },
+      {
+        "title": "Sample size and precision",
+        "body": "Larger random samples generally reduce sampling variability. They do not repair a biased selection procedure.",
+        "question": "Which helps more: enlarging a biased poll or correcting its selection method?"
       },
       {
         "title": "Variation in data",
@@ -207,19 +292,34 @@
         "question": "Three printers take 9, 12, and 18 seconds for the same file. What might account for the variation?"
       },
       {
-        "title": "Bias",
-        "body": "Bias is a systematic tendency to misrepresent the target population or quantity.",
+        "title": "Sampling bias",
+        "body": "Sampling bias occurs when selection systematically favors some population members or outcomes.",
         "question": "Would surveying 10,000 library visitors remove bias in a survey of all students?"
       },
       {
         "title": "Nonresponse",
-        "body": "A college randomly invites 400 students to a survey. Only 35 reply.",
+        "body": "Nonresponse occurs when selected individuals do not provide data. A college randomly invites 400 students; only 35 reply.",
         "question": "What concern remains even though the invitations were random?"
       },
       {
         "title": "Question wording",
         "body": "“Should the college waste money on longer library hours?”",
         "question": "How could we ask about the same issue more neutrally?"
+      },
+      {
+        "title": "Undue influence",
+        "body": "Undue influence occurs when collection conditions or wording pressure people toward a response.",
+        "question": "How could asking about a service while its manager watches affect answers?"
+      },
+      {
+        "title": "Causality and confounding",
+        "body": "Association means variables vary together. Causality means one influences the other; confounding makes their effects difficult to separate.",
+        "question": "Do higher scores among voluntary tutoring users prove tutoring caused the difference?"
+      },
+      {
+        "title": "Self-funded studies",
+        "body": "A self-funded or self-interest study is supported by someone with a stake in its result.",
+        "question": "What methods and disclosures would you examine before accepting a software vendor’s study?"
       },
       {
         "title": "A sampling choice",
@@ -259,6 +359,11 @@
         "question": "If frequencies for 0, 1, 2, 3 downloads are 2, 3, 4, 1, what fraction have at most 2?"
       },
       {
+        "title": "Cumulative frequency",
+        "body": "Cumulative frequency counts observations at or below a cutoff. Synthetic frequencies for 0, 1, 2, 3 downloads: 2, 3, 4, 1.",
+        "question": "How many sessions have at most 2 downloads?"
+      },
+      {
         "title": "At most or less than?",
         "body": "Downloads: 0, 1, 1, 2, 2, 2, 3, 4",
         "question": "What percentage have fewer than 2 downloads?"
@@ -279,9 +384,19 @@
         "question": "How many times belong in each interval: 0 to less than 5, 5 to less than 10, 10 to less than 15?"
       },
       {
+        "title": "Reading a grouped frequency table",
+        "body": "Synthetic duration classes [0,5), [5,10), [10,15), [15,20) seconds have frequencies 2, 5, 8, 5.",
+        "question": "What percentage of durations are at least 5 but less than 15 seconds?"
+      },
+      {
+        "title": "Recovering interval frequency",
+        "body": "Synthetic cumulative relative frequencies at upper boundaries 5, 10, 15, 20 seconds are 0.10, 0.35, 0.75, 1.00.",
+        "question": "What relative frequency lies from 10 up to 15 seconds?"
+      },
+      {
         "title": "Rounding",
-        "body": "The mean of 4, 5, and 8 is required to one decimal place.",
-        "question": "What answer should we report after calculating with full precision?"
+        "body": "Textbook convention: keep one more decimal place than the original data and round only the final result.",
+        "question": "For synthetic values 4, 5, and 8, what mean should we report?"
       },
       {
         "title": "Rounding totals",
@@ -289,23 +404,28 @@
         "question": "Why might displayed percentages fail to total exactly 100%?"
       },
       {
+        "title": "Levels of measurement",
+        "body": "A level of measurement describes which comparisons are meaningful: category, order, differences, or ratios.",
+        "question": "Why should the measurement level affect which summaries we calculate?"
+      },
+      {
         "title": "Nominal level",
-        "body": "Nominal data are categories with no inherent order.",
+        "body": "The nominal scale has categories with no inherent order.",
         "question": "What is the level of measurement for a printer's brand?"
       },
       {
         "title": "Ordinal level",
-        "body": "Ordinal data have an order without defined numerical gaps.",
+        "body": "The ordinal scale orders categories without defined numerical gaps.",
         "question": "What can “poor, fair, good, excellent” tell us about service?"
       },
       {
         "title": "Interval level",
-        "body": "Interval data have meaningful differences but no meaningful absolute zero.",
+        "body": "The interval scale has meaningful numerical differences but no absolute zero representing none of the quantity.",
         "question": "Does 20 degrees Celsius represent twice the temperature of 10 degrees Celsius?"
       },
       {
         "title": "Ratio level",
-        "body": "Ratio data have meaningful differences and a zero that represents none of the measured quantity.",
+        "body": "The ratio scale has meaningful differences and ratios, with a zero representing none of the measured quantity.",
         "question": "Does a 20-minute download take twice as long as a 10-minute download?"
       },
       {
@@ -337,7 +457,7 @@
       },
       {
         "title": "Experiments",
-        "body": "An experiment assigns treatments and measures outcomes.",
+        "body": "An experiment assigns treatments and measures outcomes. A randomized experiment uses chance to assign the treatments.",
         "question": "A teacher randomly assigns two practice formats. What makes this an experiment?"
       },
       {
@@ -347,12 +467,12 @@
       },
       {
         "title": "Explanatory variables",
-        "body": "The explanatory variable is the proposed influence on an outcome.",
+        "body": "The explanatory variable, also called the independent variable, is the proposed influence on an outcome.",
         "question": "A study compares two paper types for their effect on printer jams. What is the explanatory variable?"
       },
       {
         "title": "Response variables",
-        "body": "The response variable is the measured outcome.",
+        "body": "The response variable, also called the dependent variable, is the measured outcome.",
         "question": "How could we measure printer performance in the paper-type study?"
       },
       {
@@ -402,12 +522,12 @@
       },
       {
         "title": "Blinding",
-        "body": "Blinding withholds treatment identities from specified people.",
+        "body": "Blinding, also called masking, withholds treatment identities from specified people.",
         "question": "Why might a grader receive assignments without knowing each student's practice group?"
       },
       {
         "title": "Double blinding",
-        "body": "In a double-blind study, participants and relevant researchers do not know treatment assignments.",
+        "body": "In a double-blind experiment, neither participants nor the people measuring outcomes know the treatment identities.",
         "question": "Could students be blinded to whether their practice uses paper or an app?"
       },
       {
@@ -426,9 +546,39 @@
         "question": "How would you design a fair experiment?"
       },
       {
+        "title": "When assignment is impossible",
+        "body": "A study compares performance across naturally occurring academic-year groups. Researchers cannot randomly assign a student’s year of study.",
+        "question": "How does this limit the study’s ability to establish causation?"
+      },
+      {
+        "title": "Treatment order",
+        "body": "Every volunteer tries two practice formats. Randomly choose which format each person uses first.",
+        "question": "Why might using the same format first for everyone confound the comparison?"
+      },
+      {
+        "title": "The parts of an experiment",
+        "body": "Synthetic study: randomly select 40 campus printers, assign standard or recycled paper, and count jams per 1,000 pages.",
+        "question": "What are the population, sample, experimental units, explanatory variable, response variable, and treatments?"
+      },
+      {
         "title": "Participation and consent",
         "body": "A researcher tells students that refusing a study will lower their course grades.",
         "question": "What is ethically wrong with this recruitment?"
+      },
+      {
+        "title": "Informed consent",
+        "body": "Informed consent is voluntary agreement after understanding the study, its risks, costs, and potential benefits.",
+        "question": "What information should a participant receive before agreeing?"
+      },
+      {
+        "title": "Institutional Review Board",
+        "body": "An Institutional Review Board (IRB) reviews proposed human-subject research and protections for participants.",
+        "question": "Why should review occur before recruitment and data collection?"
+      },
+      {
+        "title": "Risk and benefit",
+        "body": "Ethical research minimizes risks and weighs them against anticipated benefits.",
+        "question": "How could a driving simulator reduce the risks of studying distraction?"
       },
       {
         "title": "Privacy",
@@ -444,6 +594,26 @@
         "title": "Selective reporting",
         "body": "A team runs ten comparisons and reports only the one with its preferred result.",
         "question": "What information does the audience need to judge the evidence?"
+      },
+      {
+        "title": "Fabrication and falsification",
+        "body": "Fabrication invents observations. Falsification alters or selectively removes observations to misrepresent findings.",
+        "question": "What is wrong with copying completed survey responses to fill missing records?"
+      },
+      {
+        "title": "Stopping when results look favorable",
+        "body": "A team checks results repeatedly and stops as soon as the preferred conclusion appears.",
+        "question": "How could a prespecified data-collection plan improve the reliability of the study?"
+      },
+      {
+        "title": "Graph scales and ethical reporting",
+        "body": "Two graphs show the same synthetic rise from 98 to 102. One vertical axis starts at 0; the other starts at 97.",
+        "question": "How could the choice of scale influence a reader’s impression?"
+      },
+      {
+        "title": "Comparing complaint rates",
+        "body": "Synthetic service A has 30 complaints from 1,000 customers; B has 20 from 200.",
+        "question": "Would reporting only complaint counts give a fair comparison?"
       }
     ]
   },
@@ -503,6 +673,21 @@
         "question": "Can both tables determine the exact percentage with at most 3 downloads?"
       },
       {
+        "title": "Above a cutoff",
+        "body": "Use the exact-value and grouped frequency tables from our download-count activity.",
+        "question": "Which table determines the exact percentage with more than 2 downloads?"
+      },
+      {
+        "title": "Above a class boundary",
+        "body": "Use the exact-value and grouped frequency tables from our download-count activity.",
+        "question": "Can both tables determine the percentage with more than 3 downloads?"
+      },
+      {
+        "title": "Choosing a grouping",
+        "body": "The same observations can be grouped as 0–1, 2–3, 4–5, 6+, or displayed separately.",
+        "question": "Is one table more correct, or do the tables answer different questions?"
+      },
+      {
         "title": "A different starting point",
         "body": "Repeat the systematic sample with a different starting ID.",
         "question": "How does the percentage with at most 2 downloads change?"
@@ -553,6 +738,16 @@
         "title": "Unequal strata",
         "body": "A second campus has 12 printers in North, 8 in South, and 4 in East.",
         "question": "For a proportional stratified sample of 6, how many should come from each building?"
+      },
+      {
+        "title": "Stratifying by another characteristic",
+        "body": "Fictional fleet: 16 black-and-white and 8 color printers. Select one-quarter of each type by simple random sampling.",
+        "question": "How many printers belong in each stratum’s sample?"
+      },
+      {
+        "title": "Rounding allocations",
+        "body": "Fictional strata contain 7, 9, and 12 printers. Select 25% from each and round each allocation to the nearest whole number.",
+        "question": "What sample sizes result, and does their sum equal exactly 25% of the fleet?"
       },
       {
         "title": "Ordering matters",

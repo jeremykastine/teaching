@@ -1,5 +1,7 @@
 # Statistics Chapters 2–4: coverage and connections
 
+See the [complete textbook coverage audit](textbook-coverage-audit.md) for terminology and problem-type evidence by PDF page. The tables below retain the course’s pedagogical connections.
+
 These original discussion prompts follow OpenStax **Introductory Statistics 2e** section scope. Numerical datasets are labeled synthetic; abstract probability models and standard fair-coin/die experiments state their assumptions. Definitions and formulas introduce a single discussion task. No student slide contains a solution or worked calculation.
 
 ## Chapter 2: Descriptive Statistics
@@ -16,7 +18,7 @@ The chapter develops displays, position, center, and spread. Numerical summaries
 | 2.6 | Identify symmetry and tail direction; compare mean, median, and mode; assess the effect of extreme values; distinguish common patterns from universal rules. | Uses graph shape and center. Symmetry and bell shape prepare the normal model while skewed examples discourage uncritical use of it. | [OpenStax 2.6](https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode) |
 | 2.7 | Calculate range, deviations, sample/population variance, and SD; retain variance/SD units; compare spreads; standardize distances; recognize Chebyshev and empirical-rule scopes. | Means and center are reused. Standard-deviation units receive modest extra practice for z scores, sampling distributions, and confidence intervals. | [OpenStax 2.7](https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data) |
 
-Quartile exercises state the median-of-halves convention and use even-sized samples. Graph datasets have repeated quartile values, so the renderer’s percentile interpolation agrees with the stated convention. Percentile-value questions use the current textbook rule: `i = (k/100)(n + 1)`; an integer selects that position, while a noninteger averages its adjacent positions. Percentile-rank questions include half the tied observations in the count. Other software conventions can differ.
+Quartile exercises state the median-of-halves convention; the odd-sized example explicitly excludes the median. Graph datasets have repeated quartile values, so the renderer’s percentile interpolation agrees with the stated convention. Percentile-value questions use the current textbook rule: `i = (k/100)(n + 1)`; an integer selects that position, while a noninteger averages its adjacent positions. Percentile-rank questions include half the tied observations in the count. Other software conventions can differ.
 
 ## Chapter 3: Probability Topics
 
@@ -42,15 +44,15 @@ The chapter begins by separating a random variable from one realization. The com
 | 4.2 | Calculate probability-weighted expected value and variance/SD; interpret a noninteger mean; distinguish expectation from a guaranteed result; calculate net gain and a fair game fee. | Weighted frequency means and squared deviations from 2.5/2.7 are reused. Model mean/SD prepares normal and sampling-distribution notation. | [OpenStax 4.2](https://openstax.org/books/introductory-statistics-2e/pages/4-2-mean-or-expected-value-and-standard-deviation) |
 | 4.3 | Check all binomial conditions; define n, p, and success count; count arrangements; calculate exact/cumulative/complement probabilities; interpret np and SD. | Products, independence, complements, and expected value are prerequisites. One expected-success/failure question prepares later normal approximation without teaching that later method here. | [OpenStax 4.3](https://openstax.org/books/introductory-statistics-2e/pages/4-3-binomial-distribution) |
 | 4.4 | Check geometric conditions; count trials including success; calculate first-success and tail probabilities; interpret mean/SD; apply precise memorylessness; relate trials to failures. | Reuses independent constant-p trials but changes the stopping rule. Waiting-time questions anticipate the exponential model in Chapter 5. | [OpenStax 4.4](https://openstax.org/books/introductory-statistics-2e/pages/4-4-geometric-distribution) |
-| 4.5 | Identify finite sampling without replacement; determine both support bounds; use combinations for exact probabilities; calculate expected sample count; compare exact and approximate binomial designs. | Conditional denominators from Chapter 3 make dependence visible. Population/sample design connects back to Chapter 1. | [OpenStax 4.5](https://openstax.org/books/introductory-statistics-2e/pages/4-5-hypergeometric-distribution) |
+| 4.5 | Identify finite sampling without replacement; determine both support bounds; use combinations for exact probabilities; calculate expected sample count and hypergeometric SD; compare exact and approximate binomial designs. | Conditional denominators from Chapter 3 make dependence visible. Population/sample design connects back to Chapter 1. | [OpenStax 4.5](https://openstax.org/books/introductory-statistics-2e/pages/4-5-hypergeometric-distribution) |
 | 4.6 | Identify count intervals and Poisson-process assumptions; scale means with units; calculate exact/tail/complement probabilities; use √μ; compare counts, trials, and waiting times. | Complements and expected counts recur. The rare-binomial approximation links 4.3 to 4.6; count versus waiting time prepares the exponential model. | [OpenStax 4.6](https://openstax.org/books/introductory-statistics-2e/pages/4-6-poisson-distribution) |
 
-Geometric formulas consistently use support 1, 2, 3, … for trials through first success. The memoryless statement is `P(X > m + k | X > m) = P(X > k)` for nonnegative integer m, k. The failures-before-success variant is introduced by `X = Y + 1`; no claim equates their means. Poisson examples specify a model or its assumptions rather than inferring a Poisson distribution from an average alone.
+Geometric formulas consistently use support 1, 2, 3, … for trials through first success. The memoryless statement is `P(X > m + k | X > m) = P(X > k)` for nonnegative integer m, k. The failures-before-success variant is introduced by `X = Y + 1`; their means differ by one and their standard deviations are equal. Poisson examples specify a model or its assumptions rather than inferring a Poisson distribution from an average alone.
 
 ## Source counts and verification
 
-- Chapter 2: 128 slides across 7 sections.
-- Chapter 3: 92 slides across 5 sections.
-- Chapter 4: 114 slides across 6 sections.
-- Every slide has a focused question; body text is at most 45 words and questions at most 25 words.
+- Chapter 2: 160 slides across 7 sections.
+- Chapter 3: 101 slides across 5 sections.
+- Chapter 4: 131 slides across 6 sections.
+- Every slide has a focused question and must pass the renderer’s upper-half boundary check.
 - Mathematical rules, sample spaces, support bounds, table totals, and probability-model assumptions were checked. Layout is validated by the shared renderer before publication.

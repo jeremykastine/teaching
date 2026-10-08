@@ -6,12 +6,12 @@
     "slides": [
       {
         "title": "A probability experiment",
-        "body": "A probability experiment produces an outcome that is uncertain before it occurs.",
+        "body": "A chance experiment produces an uncertain result called an outcome.",
         "question": "What are the possible outcomes when a fair six-sided die is rolled?"
       },
       {
         "title": "Sample space",
-        "body": "The sample space contains all possible outcomes.",
+        "body": "The sample space S contains all possible outcomes of the experiment.",
         "question": "What sample space describes two ordered tosses of a fair coin?"
       },
       {
@@ -21,12 +21,12 @@
       },
       {
         "title": "Equally likely outcomes",
-        "body": "If all outcomes are equally likely, event probability is favorable outcomes divided by total outcomes.",
+        "body": "Equally likely outcomes have the same probability. A fair die has six equally likely faces.",
         "question": "What is the probability of a value greater than 4 on a fair six-sided die?"
       },
       {
         "title": "Unequal probabilities",
-        "body": "A spinner has a red region covering half the circle and two other regions covering one quarter each.",
+        "body": "An unfair or biased device gives unequal chances to outcomes intended to be equally likely. A spinner has regions of sizes 1/2, 1/4, 1/4.",
         "question": "Are its three color outcomes equally likely?"
       },
       {
@@ -36,17 +36,17 @@
       },
       {
         "title": "Relative frequency",
-        "body": "Synthetic simulation: 124 heads in 250 independent fair-coin tosses.",
+        "body": "Empirical means observed. Relative frequency is an observed count divided by trials. Synthetic simulation: 124 heads in 250 tosses.",
         "question": "What is the observed relative frequency of heads?"
       },
       {
-        "title": "Long-run behavior",
-        "body": "A fair coin has probability 0.5 of heads on each independent toss.",
+        "title": "Law of large numbers",
+        "body": "As independent repetitions increase, long-term relative frequency tends toward theoretical probability. A fair coin has P(heads) = 0.5.",
         "question": "Must the first ten tosses include exactly five heads?"
       },
       {
         "title": "A complement",
-        "body": "The complement of A contains outcomes outside A.",
+        "body": "The complement of event A contains outcomes outside A. OpenStax writes A′; Aᶜ means the same event.",
         "question": "If P(A) = 0.35, what is P(A-complement)?",
         "math": "P(A^c)=1-P(A)"
       },
@@ -57,12 +57,12 @@
       },
       {
         "title": "The intersection",
-        "body": "A AND B means both events occur.",
+        "body": "The AND event, or intersection A ∩ B, contains outcomes in both A and B.",
         "question": "For a fair die, A = even and B = greater than 3. Which outcomes belong to A AND B?"
       },
       {
         "title": "The union",
-        "body": "A OR B means A occurs, B occurs, or both occur.",
+        "body": "The OR event, or union A ∪ B, contains outcomes in A, B, or both.",
         "question": "For a fair die, A = even and B = greater than 3. Which outcomes belong to A OR B?"
       },
       {
@@ -74,6 +74,12 @@
         "title": "Conditional probability",
         "body": "P(A | B) is the probability of A when the outcome is restricted to B.",
         "question": "For a fair die, what is P(even | greater than 3)?"
+      },
+      {
+        "title": "The conditional-probability formula",
+        "body": "Condition on B only when P(B) > 0.",
+        "question": "For P(A AND B) = 0.12 and P(B) = 0.4, what is P(A | B)?",
+        "math": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
       },
       {
         "title": "The conditioned group",
@@ -115,7 +121,7 @@
       },
       {
         "title": "Dependence",
-        "body": "P(A) = 0.4 and P(A | B) = 0.7, with P(B) > 0.",
+        "body": "Dependent events are events for which knowing one occurred changes the probability of the other. P(A) = 0.4; P(A | B) = 0.7.",
         "question": "What does knowing B change?"
       },
       {
@@ -134,8 +140,13 @@
         "question": "Are A and B independent?"
       },
       {
+        "title": "Counting a combined sample space",
+        "body": "Flip a fair coin and independently roll a fair six-sided die.",
+        "question": "How would you list all outcomes and find P(heads AND an even number)?"
+      },
+      {
         "title": "Mutually exclusive events",
-        "body": "Mutually exclusive events cannot occur together in one experiment.",
+        "body": "Mutually exclusive, or disjoint, events share no outcomes and cannot occur together.",
         "question": "On one die roll, are “a 2” and “a 5” mutually exclusive?"
       },
       {
@@ -228,8 +239,14 @@
       },
       {
         "title": "A disjoint union",
-        "body": "A fair six-sided die is rolled.",
+        "body": "A fair die has sample space {1, 2, 3, 4, 5, 6}.",
         "question": "What is the probability of rolling 1 or 6?"
+      },
+      {
+        "title": "Addition for disjoint events",
+        "body": "When A and B are mutually exclusive, their intersection is empty.",
+        "question": "If disjoint A and B have probabilities 0.25 and 0.35, what is P(A OR B)?",
+        "math": "P(A\\cup B)=P(A)+P(B)"
       },
       {
         "title": "Complement of a union",
@@ -284,6 +301,11 @@
         "math": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}"
       },
       {
+        "title": "A conditional complement",
+        "body": "A = a file is archived; B = it is readable. P(B | A) = 0.92.",
+        "question": "What is P(not B | A), keeping the same conditioning group?"
+      },
+      {
         "title": "A zero denominator",
         "body": "P(B) = 0.",
         "question": "Can the usual conditional-probability ratio define P(A | B)?"
@@ -312,6 +334,11 @@
         "title": "A complement shortcut",
         "body": "Three independent transmissions each succeed with probability 0.9.",
         "question": "What is the probability at least one fails?"
+      },
+      {
+        "title": "Recovering a missing probability",
+        "body": "Synthetic events A and B are independent. P(A) = 0.40 and P(A OR B) = 0.70.",
+        "question": "What value of P(B) satisfies the addition and multiplication rules?"
       }
     ]
   },
@@ -322,7 +349,7 @@
     "slides": [
       {
         "title": "A contingency table",
-        "body": "A contingency table records counts for combinations of categorical variables.",
+        "body": "A contingency table cross-classifies counts or probabilities for two categorical variables. Synthetic survey:",
         "question": "Which two variables organize this synthetic survey?",
         "table": {
           "headers": [
@@ -750,6 +777,40 @@
         }
       },
       {
+        "title": "A probability contingency table",
+        "body": "Synthetic routes: A is chosen with probability 0.4, B with 0.6. P(delay | A) = 0.1; P(delay | B) = 0.2.",
+        "question": "What joint probabilities belong in a route-by-delay table, including its margins?"
+      },
+      {
+        "title": "Conditioning on a combined category",
+        "body": "Synthetic counts, with each job in one cell.",
+        "question": "Given a delayed job, what is the probability it used route A or B?",
+        "table": {
+          "headers": [
+            "Route",
+            "Delayed",
+            "On time"
+          ],
+          "rows": [
+            [
+              "A",
+              4,
+              36
+            ],
+            [
+              "B",
+              12,
+              28
+            ],
+            [
+              "C",
+              10,
+              10
+            ]
+          ]
+        }
+      },
+      {
         "title": "Percent of which group?",
         "body": "Synthetic survey: 18 of 30 tablet users also use laptops; 18 of 60 laptop users also use tablets.",
         "question": "Which statement corresponds to 60%?"
@@ -980,6 +1041,11 @@
         "question": "How do the second-stage branch labels differ from drawing without replacement?"
       },
       {
+        "title": "Frequency-labeled trees",
+        "body": "A box has 2 labeled red and 3 labeled blue tokens. Draw twice with replacement and mixing.",
+        "question": "How many ordered token pairs follow each color path, and how many exist altogether?"
+      },
+      {
         "title": "A weighted path",
         "body": "Synthetic model: 40% of jobs use server A, 60% use B; completion probabilities are 0.9 on A and 0.8 on B.",
         "question": "What is the probability of choosing A and completing the job?"
@@ -1075,6 +1141,11 @@
             "neither": 28
           }
         }
+      },
+      {
+        "title": "Conditional probability in a Venn diagram",
+        "body": "Synthetic model: P(A) = 0.6, P(B) = 0.4, P(A AND B) = 0.2.",
+        "question": "After drawing the Venn regions, what is P(A | B)?"
       },
       {
         "title": "Disjoint circles",

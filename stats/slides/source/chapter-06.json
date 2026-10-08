@@ -6,7 +6,7 @@
     "slides": [
       {
         "title": "A normal distribution",
-        "body": "A normal distribution is symmetric and bell shaped, with mean μ and standard deviation σ.",
+        "body": "A normal (Gaussian) distribution is continuous, symmetric, and bell shaped, with mean μ and standard deviation σ.",
         "math": "",
         "question": "What does moving μ change about the curve?"
       },
@@ -89,6 +89,11 @@
         "question": "For μ=40 and σ=6, what interval contains that central region?"
       },
       {
+        "title": "Empirical Rule",
+        "body": "The Empirical Rule, or 68–95–99.7 rule, gives approximate central areas within one, two, and three normal standard deviations.",
+        "question": "For μ = 40 and σ = 6, what endpoints enclose the middle 99.7%?"
+      },
+      {
         "title": "Two standard deviations",
         "body": "For a normal distribution, about 95% of values lie within two standard deviations of the mean.",
         "math": "",
@@ -99,6 +104,11 @@
         "body": "For a normal distribution, about 99.7% of values lie within three standard deviations of the mean.",
         "math": "",
         "question": "Approximately what proportion lies outside that interval?"
+      },
+      {
+        "title": "Areas between standard deviations",
+        "body": "Use the 68–95–99.7 rule for a normal distribution.",
+        "question": "What percentage lies between one and two standard deviations above the mean?"
       },
       {
         "title": "Using a cumulative table",
@@ -139,13 +149,13 @@
       },
       {
         "title": "A lower-tail probability",
-        "body": "Model: X~N(500,20), measured in grams.",
+        "body": "Area to the left of a cutoff gives a lower-tail probability. Model: X ~ N(500,20), in grams.",
         "math": "",
         "question": "What is the probability that one package weighs less than 480 g?"
       },
       {
         "title": "An upper-tail probability",
-        "body": "Model: X~N(500,20), measured in grams.",
+        "body": "Area to the right of a cutoff gives an upper-tail probability. Model: X ~ N(500,20), in grams.",
         "math": "",
         "question": "What is the probability that one package weighs more than 530 g?"
       },
@@ -174,6 +184,11 @@
         "question": "For P(X>530) when X~N(500,20), what information should you enter?"
       },
       {
+        "title": "Shading a normal probability",
+        "body": "Model: package mass X ~ N(500,20), in grams.",
+        "question": "How would you sketch and shade the region for P(490 < X < 520)?"
+      },
+      {
         "title": "Checking the direction",
         "body": "Model: X~N(500,20). A calculation for P(X>530) returns 0.9332.",
         "math": "",
@@ -198,10 +213,20 @@
         "question": "What mass is the 90th percentile?"
       },
       {
+        "title": "Inverse normal input",
+        "body": "An inverse normal calculation returns the cutoff for a specified area to its left. Model: X ~ N(500,20).",
+        "question": "What inputs find the mass exceeded by only 10% of packages?"
+      },
+      {
         "title": "An upper-tail cutoff",
         "body": "Model: X~N(500,20), measured in grams.",
         "math": "",
         "question": "Only 5% of packages exceed what mass?"
+      },
+      {
+        "title": "Critical value",
+        "body": "A critical value is a cutoff marking a specified probability region. Such cutoffs will be used in confidence intervals and tests.",
+        "question": "What standard-normal critical value leaves area 0.025 to its right?"
       },
       {
         "title": "A lower-tail cutoff",
@@ -262,6 +287,11 @@
         "body": "Model: independent package masses follow N(500,20).",
         "math": "",
         "question": "Should an average of 100 masses be analyzed using the same standard deviation as one mass?"
+      },
+      {
+        "title": "Checking an empirical normal model",
+        "body": "Synthetic durations (s): 8, 9, 9, 10, 10, 10, 11, 11, 12, 20. Fit a normal model using the sample mean and SD.",
+        "question": "How does its predicted proportion above 12 compare with the observed proportion?"
       }
     ]
   }

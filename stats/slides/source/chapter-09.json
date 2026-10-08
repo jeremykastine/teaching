@@ -6,7 +6,7 @@
     "slides": [
       {
         "title": "A claim about a population",
-        "body": "A hypothesis test uses sample evidence to assess a claim about a population parameter.",
+        "body": "Hypothesis testing uses sample evidence to assess a hypothesis: a claim about a population parameter.",
         "math": "",
         "question": "Does a claim about average processing time concern μ or the observed sample mean?"
       },
@@ -24,9 +24,19 @@
       },
       {
         "title": "Direction of the question",
-        "body": "A one-sided alternative specifies a direction; a two-sided alternative allows either direction.",
+        "body": "A left-tailed alternative uses <, a right-tailed alternative uses >, and a two-tailed alternative uses ≠.",
         "math": "",
         "question": "Which alternative matches a question about any change from μ=12?"
+      },
+      {
+        "title": "Complementary hypotheses",
+        "body": "For a claim that a proportion exceeds 0.4, OpenStax permits H₀: p ≤ 0.4 with Hₐ: p > 0.4; calculations use the boundary p = 0.4.",
+        "question": "How would you state hypotheses for a claim that a proportion is less than 0.4?"
+      },
+      {
+        "title": "Mean or proportion hypotheses",
+        "body": "A service advertises that 90% of requests finish on time.",
+        "question": "Which parameter belongs in hypotheses about whether the advertised percentage is too high?"
       },
       {
         "title": "Choosing before looking",
@@ -41,6 +51,21 @@
         "question": "Why should this model concern sample means rather than individual processing times?"
       },
       {
+        "title": "The Central Limit Theorem in testing",
+        "body": "The Central Limit Theorem can justify an approximately normal sampling distribution for a mean when its conditions hold.",
+        "question": "Does it say that individual observations must be normally distributed?"
+      },
+      {
+        "title": "Choosing a reference distribution",
+        "body": "Mean tests use a normal distribution with known population SD, or Student’s t-distribution with estimated SD, under suitable assumptions.",
+        "question": "Why does unknown population standard deviation affect the reference distribution?"
+      },
+      {
+        "title": "A proportion test model",
+        "body": "A proportion test starts with a binomial distribution. A normal approximation uses the null proportion and adequate expected success and failure counts.",
+        "question": "Why should the null claim supply p when finding a p-value?"
+      },
+      {
         "title": "A test statistic",
         "body": "A test statistic summarizes how far sample evidence departs from the null model.",
         "math": "",
@@ -48,7 +73,7 @@
       },
       {
         "title": "An assumption check",
-        "body": "A valid test relies on the sampling design and the assumptions of its probability model.",
+        "body": "A simple random sample gives every sample of a fixed size the same chance. A valid test also needs its probability-model assumptions.",
         "math": "",
         "question": "Could a very small p-value repair a strongly biased sample?"
       },
@@ -59,10 +84,20 @@
         "question": "Which assumption about H₀ is used when calculating it?"
       },
       {
+        "title": "Rare-event reasoning",
+        "body": "A rare result under a null model can count as evidence against that model, provided the sampling assumptions are reasonable.",
+        "question": "Why does an unlikely result prompt scrutiny rather than prove the null hypothesis false?"
+      },
+      {
         "title": "One tail or two?",
         "body": "Synthetic result: the sample mean is above the null mean. The alternative is two-sided.",
         "math": "",
         "question": "Would considering only equally high sample means capture all results at least as extreme?"
+      },
+      {
+        "title": "Shading the p-value",
+        "body": "A right-tailed test has an observed statistic to the right of the null center.",
+        "question": "Which tail beyond the observed statistic represents its p-value?"
       },
       {
         "title": "A p-value is not a hypothesis probability",
@@ -72,7 +107,7 @@
       },
       {
         "title": "Significance level",
-        "body": "The significance level α sets the rejection rule and controls the Type I error rate under a valid test.",
+        "body": "The significance level, or level of significance, α sets the rejection rule and controls the Type I error rate under a valid test.",
         "math": "",
         "question": "Why should α be chosen before examining the p-value?"
       },
@@ -89,6 +124,11 @@
         "question": "Does failing to reject H₀ establish that it is true?"
       },
       {
+        "title": "The decision rule",
+        "body": "For this course, follow OpenStax: reject when p-value < α; otherwise do not reject. Apply the rule to unrounded values.",
+        "question": "What decision follows when an exact p-value equals α?"
+      },
+      {
         "title": "Type I error",
         "body": "A Type I error rejects a null hypothesis that is true.",
         "math": "",
@@ -101,8 +141,18 @@
         "question": "If the true mean exceeds 12 minutes, what would a Type II error miss?"
       },
       {
+        "title": "Alpha and beta",
+        "body": "Alpha (α) is the Type I error probability. Beta (β) is the Type II error probability for a specified false-null alternative.",
+        "question": "If β = 0.2 at a particular alternative, what is the power?"
+      },
+      {
+        "title": "Consequences of errors",
+        "body": "H₀ says a printing process meets its quality target. Rejecting triggers an expensive shutdown. Failing to reject leaves it running.",
+        "question": "How would you compare the consequences of Type I and Type II errors?"
+      },
+      {
         "title": "Power",
-        "body": "Power is the probability of rejecting H₀ for a specified alternative that is true.",
+        "body": "Power of the test is 1 − β: the probability of rejecting H₀ for a specified alternative that is true.",
         "math": "",
         "question": "How might a larger sample help detect a small departure from the null value?"
       },
@@ -114,7 +164,7 @@
       },
       {
         "title": "An interval connection",
-        "body": "For matching two-sided mean procedures, a 95% confidence interval excluding μ₀ corresponds to rejecting H₀:μ=μ₀ at α=0.05.",
+        "body": "For matching two-sided mean procedures, 95% confidence intervals excluding μ₀ correspond to rejecting H₀: μ = μ₀ at α = 0.05.",
         "math": "",
         "question": "Would a matching interval from 12.2 to 12.8 reject a null mean of 12?"
       },
@@ -123,6 +173,11 @@
         "body": "Synthetic valid test rejects H₀:μ=12 in favor of Hₐ:μ>12.",
         "math": "",
         "question": "How would you state the evidence without claiming proof or explaining why the mean changed?"
+      },
+      {
+        "title": "Interpreting a supplied test result",
+        "body": "Synthetic valid test: H₀: p = 0.9, Hₐ: p < 0.9, p-value = 0.12, α = 0.05. Here p is the on-time fraction.",
+        "question": "What decision and contextual conclusion follow without claiming that 90% has been proved?"
       }
     ]
   }

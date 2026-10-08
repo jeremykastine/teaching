@@ -1,10 +1,12 @@
 # Statistics class slides
 
-Open `index.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 701 portrait discussion pages.
+Open `index.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
 
-Selected sections cover Chapters 1–8. Chapter 9 has one conceptual overview deck (9.0), rather than the full chapter’s computational procedures. The approved Chapter 1 lab resources 1.5 and 1.6 remain available.
+Selected sections cover Chapters 1–8. Chapter 9 has one conceptual overview deck (9.0), rather than the full chapter’s computational procedures. Chapter 1 lab resources 1.5 and 1.6 are included in the review.
 
 Each page contains one definition, concept, or problem with a focused question. All prompt content stays in the upper half of US Letter portrait pages; the lower half is clear for pen annotations. The instructor provides explanations and worked solutions.
+
+The [October 2026 textbook coverage audit](docs/textbook-coverage-audit.md) maps section terminology, chapter glossary entries and major textbook problem types to specific revised PDF pages.
 
 ## Editing and rebuilding
 
@@ -15,7 +17,7 @@ python -m pip install -r requirements.txt
 python scripts/build_slides.py
 ```
 
-To rebuild later chapters without changing the approved Chapter 1 PDFs:
+To rebuild a selected set of chapters:
 
 ```bash
 python scripts/build_slides.py --chapters 2 3 4 5 6 7 8 9
