@@ -157,3 +157,15 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Include a brief linked historical note establishing the use of square-root tables and their savings in manual calculation. Describe the short-table example as a practical application; do not claim that this was the primary historical origin or motivation for radical simplification without evidence.
 - Give `sqrt(75)`, `sqrt(90)`, `sqrt(-45)`, `sqrt(12)`, `sqrt(50)`, `sqrt(98)`, and `sqrt(-80)` separate visible problems and complete, independently toggled solutions. Do not bury these tasks in another solution.
 - State the nonnegative-real-factor condition when introducing the product property. Handle negative radicands by introducing `i` and then simplifying the positive radical.
+
+## 17. Course labels and independent work during exclusive lessons
+
+- Keep the index's course labels consistent with each lesson's Assigned to line. The current 37-topic sequence labels Topics 6, 16, 17, 18, 20, 23, 27, 29, 32, and 34 as TSM 099 only; all others are shared. There are currently no TSM 098-only lessons. The user selected these current lesson labels over the older 38-topic schedule on October 8, 2026.
+- Every course-exclusive index entry must state what the other course reviews, link to the prerequisite notes, and link to a printable practice PDF and separate answer PDF. Apply this symmetrically if TSM 098-only lessons are added later.
+- Use the review assignments recorded in the co-listed schedule, mapped by title to the current topic numbers. Align the schedule with the maintained lecture-note index rather than retaining obsolete topic numbers.
+- For Topic 32, use earlier linear equations and checking proposed solutions of systems; do not require substitution or elimination before Topic 33. For Topic 34, include algebraic systems now that Topic 33 has been taught.
+- Each current packet contains four pages: three core pages and one extension page. Provide a substantive range of standard problems, signs, and relevant reasoning tasks. Plan approximately 45-60 minutes for core work and 15-25 minutes for extensions, recognizing individual pacing. These are practice packets, not tests; do not impose test question-count, scoring, or booklet/answer-sheet packaging rules.
+- Keep core and extension tasks within material already taught to the practicing course. For TSM 098 factoring, use GCF, monic trinomials, and difference of squares; include broader polynomial multiplication without assigning TSM 099-only advanced factoring.
+- In numerical-fraction equations, follow the Topic 28 method: combine/simplify each side before moving remaining denominators to multiply the opposite side.
+- Maintain reproducible source in `scripts/build_independent_practice.py` and packet metadata in `practice/independent-practice.json`. Keep student PDFs and separately linked keys in `practice/independent/`. Check every answer exactly, render all final pages, and verify index links before publishing.
+

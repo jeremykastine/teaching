@@ -119,3 +119,17 @@ mjx-container { overflow: visible; }
   body { font-size: 16px; }
   main { --page-gutter: 14px; padding: 28px var(--page-gutter) 56px; }
 }
+
+/* Course-specific independent work on the lecture-note contents page. */
+.toc .assignment { font-weight: 600; }
+.independent-review {
+  margin: 6px 0 18px;
+  padding: 9px 12px;
+  border-left: 3px solid #9fb3c8;
+  background: #f4f7fa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.independent-review p { margin: 0 0 5px; }
+.independent-review p:last-child { margin-bottom: 0; }
+
