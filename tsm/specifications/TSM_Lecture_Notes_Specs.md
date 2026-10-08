@@ -139,3 +139,12 @@ Apply this approach consistently in Topic 28 and Topic 29, in the HTML notes:
 - Teach the method through these worked steps rather than instructing students to multiply every term of the original equation by an LCM or LCD. Common denominators are still used to combine fractions within each side.
 - Explain the equality-preserving multiplication where it first becomes relevant. Move a denominator only when it divides the whole side, and retain parentheses around sums and differences.
 - For variable denominators, state restrictions from every original denominator before simplifying. Retain them even after a denominator disappears. Divide out a common factor only when it is nonzero for allowable values, and check every candidate in the original equation.
+
+## 15. Integer-pair preparation for factoring
+
+At the end of Topic 3, include separate worked examples asking students to find two integers with a specified sum and product. Prepare students for later trinomial factoring while keeping the task focused on signed-number operations.
+
+- Include positive products with positive and negative sums, negative products with positive, negative, and zero sums, repeated integers, and a zero-product case.
+- Make every problem self-contained and give it its own complete hidden solution using the established reveal behavior.
+- Explain how the product restricts the signs and how the sum determines the signs or relative sizes. Search factor pairs and verify both the sum and product with the same pair.
+- Include the example with sum `-2` and product `-48`. Do not introduce trinomial factoring procedures in this topic.
