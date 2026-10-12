@@ -23,7 +23,7 @@ Maintain one HTML file per topic using the established filenames, numbered Topic
 
 ## 4. Topic introduction
 
-Begin each topic with its established title, Assigned to line, brief Overview, and Key definitions. Keep detailed procedures, warnings, reasoning, and examples in the worked solutions near the steps where they become relevant.
+Begin each topic with its established title, Assigned to line, brief Overview, and Key definitions. Place brief general background before the first related problem, including at the start of a new section within a topic. Keep introductions conceptual: definitions, notation, the purpose of a method, and essential rules. Do not solve specific examples in introductions. Keep detailed calculations and reasoning for a stated problem in its own worked solution.
 
 ## 5. Worked examples and browser behavior
 
@@ -59,17 +59,18 @@ Do not use the compare/contrast exception merely to save space.
 
 Topic 5 must contain five separate worked-example sections: evaluate `sqrt(36)`, evaluate `sqrt(81)`, evaluate `sqrt(-25)` in terms of `i`, evaluate `sqrt(-121)` in terms of `i`, and compare evaluating `sqrt(9)` with solving `x^2 = 9`. Give each section its own complete problem statement and independently toggled solution area. Do not combine these into one large exercise.
 
-## 7. Examples-first instructional style
+## 7. Brief background followed by problems and solutions
 
-- Introduce procedures through problems rather than through a long preliminary lecture.
-- A student may initially see a problem without yet knowing the method. The worked explanation must then be complete enough for an absent student to reconstruct the lesson.
-- Put the detailed rule, method, warning, and reasoning near the step where it becomes relevant.
-- Keep student-facing prose direct and relatively short.
-- Preserve useful conceptual explanations, but integrate them into worked solutions instead of creating separate sections headed “Procedure,” “Summary,” “Common Mistake,” or similar.
+- Keep most of each topic in the problem–solution pattern, but do not force all instruction into solution panels.
+- At the start of a topic or a new section, provide concise, visible background students need to approach the upcoming problems. Introductions may explain notation, concepts, general rules, and method selection without working specific numerical or algebraic examples.
+- A solution must address only its complete visible problem statement. Keep explanations of its actual steps, sign choices, and checks with that solution.
+- Move broad introductions and material about later problem types before the first relevant problem. Condense repeated general summaries instead of hiding them in the final solution.
+- Give an embedded worked example its own visible task and independently toggled solution. Do not put solved examples into the general background. Avoid duplicate illustrations and incomplete practice prompts.
+- Keep prose concise, while leaving enough worked reasoning for independent study.
 
 ## 8. Worked-solution standards
 
-- Show the intermediate steps students are expected to learn, not only the starting expression and final answer.
+- Show the intermediate steps students are expected to learn, not only the starting expression and final answer. General background does not replace the reasoning needed for the particular problem.
 - Keep each algebraic line equivalent to the preceding line unless the prose clearly explains a substitution, comparison, or check.
 - Explain important sign changes, distribution, cancellation, common denominators, factoring decisions, equation-solving operations, and graphing choices in plain language.
 - State restrictions from the original equation before canceling factors or moving variable denominators to the opposite side.
@@ -169,3 +170,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - In numerical-fraction equations, follow the Topic 28 method: combine/simplify each side before moving remaining denominators to multiply the opposite side.
 - Maintain reproducible source in `scripts/build_independent_practice.py` and packet metadata in `practice/independent-practice.json`. Keep student PDFs and separately linked keys in `practice/independent/`. Check every answer exactly, render all final pages, and verify index links before publishing.
 
+
+## 18. Topic 3: signed-number reasoning
+
+- For addition and subtraction, first identify the sign of the first term, then decide whether the second term supports or opposes it. Consider the operation and every sign attached to the second number together.
+- Supporting terms combine their sizes and keep their common sign. Opposing terms ask “Which one wins, and by how much?” Use the difference of their sizes and the winner’s sign. Equal opposing sizes give zero. Zero is neither positive nor negative.
+- Use this language instead of the former team metaphor. Do not require rewriting every addition or subtraction expression.
+- Keep the first addition solution and the first multiplication solution focused on their own expressions. Put shared background before the respective problem sequences.
+- End the integer-pair sequence with harder examples using integers in the teens or twenties and larger products, covering two positives, two negatives, and opposite signs with both positive and negative sums. Show factor-pair reasoning and verify both conditions.
