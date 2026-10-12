@@ -1,0 +1,815 @@
+[
+  {
+    "course": "Statistics",
+    "title": "Chapter 1 Homework",
+    "subtitle": "Sampling, data, and study design",
+    "coverage": "Sections 1.1-1.4",
+    "file": "chapter-1-homework.pdf",
+    "sections": [
+      {
+        "title": "Populations, samples, and variables",
+        "problems": [
+          {
+            "prompt": "A college randomly selects 80 of its 2,000 students to ask whether they used the tutoring center this quarter. Of those selected, 28 say yes. Identify the population, sample, variable, and observed data type. Compute the sample proportion and distinguish it from the unknown population proportion.",
+            "math": [],
+            "answer": "2000 all;80 sample;use yes/no categorical;28/80=.35 statistic;population proportion parameter",
+            "minutes": 6
+          },
+          {
+            "prompt": "In Problem 1, distinguish (a) reporting that 35% of the sample used tutoring from (b) estimating tutoring use among all 2,000 students. Which is descriptive and which is inferential? Why might another sample give a different proportion?",
+            "math": [],
+            "answer": "a descriptive b inferential;sampling variation",
+            "minutes": 4
+          },
+          {
+            "prompt": "Classify each as categorical, numerical discrete, or numerical continuous. Also give its level of measurement: nominal, ordinal, interval, or ratio. (a) Course subject; (b) number of visits; (c) measured visit length; (d) satisfaction rated poor/fair/good/excellent; (e) room temperature in degrees Celsius.",
+            "math": [],
+            "answer": "nominal categorical;ratio discrete;ratio continuous;ordinal categorical;interval continuous",
+            "minutes": 6
+          }
+        ]
+      },
+      {
+        "title": "Sampling and frequency tables",
+        "problems": [
+          {
+            "prompt": "Identify the sampling method. (a) Randomly choose 20 names from the full roster. (b) Randomly choose 5 students in each year of study. (c) Randomly choose 3 class sections and survey everyone in those sections. (d) Choose a random starting name and then every 25th name. Which method guarantees representation from every year?",
+            "math": [],
+            "answer": "SRS,stratified,cluster,systematic; b",
+            "minutes": 5
+          },
+          {
+            "prompt": "A survey link is posted only in the tutoring center and participation is voluntary. Explain two sources of bias if the goal is to estimate college-wide tutoring use. Would collecting 1,000 responses automatically fix them?",
+            "math": [],
+            "answer": "coverage/selection and voluntary response;size does not remove bias",
+            "minutes": 4
+          },
+          {
+            "prompt": "These 12 students reported numbers of tutoring visits: 0, 1, 2, 0, 3, 1, 1, 2, 0, 4, 2, 0. Build a table of frequency, relative frequency, and cumulative relative frequency for 0 through 4 visits. What fraction reported at most 2 visits?",
+            "math": [],
+            "answer": "counts4,3,3,1,1;cum4,7,10,11,12 /12;10/12",
+            "minutes": 8
+          }
+        ]
+      },
+      {
+        "title": "Evidence, causation, and ethics",
+        "problems": [
+          {
+            "prompt": "Students who choose tutoring have higher course averages. Can this observation establish that tutoring caused the difference? Name a plausible confounding variable and explain its role.",
+            "math": [],
+            "answer": "No;motivation/preparation affects both",
+            "minutes": 4
+          },
+          {
+            "prompt": "Design an experiment comparing two problem-practice formats using 60 volunteers. Identify the experimental units, treatments, response variable, and random assignment. Explain why random assignment helps, and why volunteers still limit generalization.",
+            "math": [],
+            "answer": "students;formats;score;random30 each;balances confounders not representative guarantee",
+            "minutes": 6
+          },
+          {
+            "prompt": "A report excludes unfavorable responses and publishes student names next to their ratings without permission. Identify the ethical problems and describe a better reporting practice.",
+            "math": [],
+            "answer": "selective reporting and privacy;all valid data, aggregate/deidentify, consent",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 2 Homework",
+    "subtitle": "Describing distributions",
+    "coverage": "Sections 2.1-2.7",
+    "file": "chapter-2-homework.pdf",
+    "sections": [
+      {
+        "title": "Displays, position, and shape",
+        "problems": [
+          {
+            "prompt": "The following are waiting times in minutes: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 19. Make a stem-and-leaf plot with a key. Identify a gap and describe the tail direction.",
+            "math": [],
+            "answer": "0|23344556678 1|9;gap9-18;right tail",
+            "minutes": 5
+          },
+          {
+            "prompt": "Use the data in Problem 1 to make a frequency histogram with intervals [0, 5), [5, 10), [10, 15), [15, 20). Label axes and explain where a wait of exactly 5 belongs.",
+            "math": [],
+            "answer": "5,6,0,1;5 in second bin",
+            "minutes": 5
+          },
+          {
+            "prompt": "Find the five-number summary and IQR for Problem 1. Use the median-of-halves convention. Find the 1.5-IQR fences and identify any outlier.",
+            "math": [],
+            "answer": "2,3.5,5,6.5,19;IQR3;fences-1,11;19 outlier",
+            "minutes": 6
+          },
+          {
+            "prompt": "Draw a modified box plot for Problem 1: whiskers end at the most extreme non-outliers, and outliers are plotted separately. Does a longer quarter of a box plot necessarily contain more observations?",
+            "math": [],
+            "answer": "whiskers2,8 outlier19;no",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the mean and median for Problem 1. Which better represents a typical wait here, and why? Predict how each changes if 19 is replaced by 39, then check.",
+            "math": [],
+            "answer": "mean6 median5;median less affected;newmean23/3 median5",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Spread, weights, and choice of display",
+        "problems": [
+          {
+            "prompt": "For the sample 2, 4, 4, 6 minutes, make columns for each value, deviation from the mean, and squared deviation. Find the sample variance and sample SD, with units. You may use √(8/3) ≈ 1.633. Why divide by 3 instead of 4?",
+            "math": [],
+            "answer": "mean4;dev-2,0,0,2;ss8;s²8/3 min²;s1.633min;sample n-1",
+            "minutes": 7
+          },
+          {
+            "prompt": "Two groups have the same mean of 10 minutes; their SDs are 2 and 5 minutes. In which group is a 14-minute wait more unusual in SD units? Compute both standardized distances; do not assume normality.",
+            "math": [],
+            "answer": "2 SD vs .8 SD; first",
+            "minutes": 3
+          },
+          {
+            "prompt": "A class of 10 students has mean 12 points; another class of 30 has mean 16 points. Find the combined mean. Explain why simply averaging 12 and 16 is wrong.",
+            "math": [],
+            "answer": "15;unequal weights",
+            "minutes": 4
+          },
+          {
+            "prompt": "Choose a bar chart, histogram, or time-series graph for (a) counts by course subject, (b) distribution of individual wait lengths, and (c) average wait each day for a month. Explain one choice.",
+            "math": [],
+            "answer": "bar,histogram,time series",
+            "minutes": 3
+          },
+          {
+            "prompt": "Every waiting time in a dataset increases by 3 minutes. What happens to its mean, median, IQR, and SD? Explain without recomputing the dataset.",
+            "math": [],
+            "answer": "mean/median+3;IQR/SD unchanged",
+            "minutes": 3
+          },
+          {
+            "prompt": "A distribution is approximately bell-shaped with mean 20 and SD 3. Use the empirical rule to estimate the fraction between 14 and 26. Could you make the same estimate from mean and SD alone for a strongly skewed distribution?",
+            "math": [],
+            "answer": "95%;no bell shape needed",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 3 Homework",
+    "subtitle": "Probability and conditional reasoning",
+    "coverage": "Sections 3.1-3.5",
+    "file": "chapter-3-homework.pdf",
+    "sections": [
+      {
+        "title": "Events and denominators",
+        "problems": [
+          {
+            "prompt": "Roll a fair six-sided die. List the sample space. Let A be an even result and B a result greater than 4. List A, B, their intersection, their union, and the complement of A; find the probability of each listed event.",
+            "math": [],
+            "answer": "S1..6;A246 B56 inter6 union2456 Ac135;1/2,1/3,1/6,2/3,1/2",
+            "minutes": 5
+          },
+          {
+            "prompt": "For the die events in Problem 1, are A and B mutually exclusive? Are they independent? Use a numerical test for each claim.",
+            "math": [],
+            "answer": "not exclusive inter1/6;independent product1/6",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student is chosen uniformly from this table of 100 students. Compute the probability of using tutoring, attending morning class, and both. Add all missing row and column totals.",
+            "math": [],
+            "answer": "tutoring40/100;morning50/100;both30/100",
+            "minutes": 5,
+            "table": [
+              [
+                "",
+                "Tutoring",
+                "No tutoring"
+              ],
+              [
+                "Morning",
+                "30",
+                "20"
+              ],
+              [
+                "Afternoon",
+                "10",
+                "40"
+              ]
+            ]
+          },
+          {
+            "prompt": "Using Problem 3, find P(tutoring | morning) and P(morning | tutoring). State the denominator group in each case and explain why the answers differ.",
+            "math": [],
+            "answer": ".6 and .75;50morning,40tutoring",
+            "minutes": 5
+          },
+          {
+            "prompt": "Using Problem 3, find P(morning OR tutoring). Are these events independent? Support your answers with calculations.",
+            "math": [],
+            "answer": ".6;not independent .3 !=.5*.4",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Trees, complements, and dependence",
+        "problems": [
+          {
+            "prompt": "A bag holds 3 red and 2 blue tokens. Draw two tokens uniformly without replacement. Draw a probability tree for the two colors and label every branch.",
+            "math": [],
+            "answer": "R3/5 B2/5 then R2/4 B2/4 or R3/4 B1/4",
+            "minutes": 6
+          },
+          {
+            "prompt": "Using the tree in Problem 6, find the probability of (a) two red tokens, (b) exactly one red token, and (c) at least one red token. Show how you combine paths or use a complement.",
+            "math": [],
+            "answer": ".3,.6,.9",
+            "minutes": 5
+          },
+          {
+            "prompt": "Repeat only the probability of two red tokens if the first token is replaced before the second draw. Explain what changed about independence.",
+            "math": [],
+            "answer": "9/25=.36;independent same probabilities",
+            "minutes": 3
+          },
+          {
+            "prompt": "Each of three independent deliveries arrives on time with probability 0.8. Find the probability that at least one is late. Explain why 3 × 0.2 is not the answer.",
+            "math": [],
+            "answer": "1-.8³=.488;overlaps",
+            "minutes": 4
+          },
+          {
+            "prompt": "Out of 60 people, 25 use service A, 20 use service B, and 8 use both. Draw a Venn diagram with counts in all four regions. Find the probability that a randomly chosen person uses neither.",
+            "math": [],
+            "answer": "Aonly17 Bonly12 both8 neither23;23/60",
+            "minutes": 4
+          },
+          {
+            "prompt": "A fair coin lands heads five times. Is tails more likely on the next toss? Explain in terms of the model assumptions.",
+            "math": [],
+            "answer": "no .5;independent",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 4 Homework",
+    "subtitle": "Discrete random variables and expected value",
+    "coverage": "Sections 4.1-4.6",
+    "file": "chapter-4-homework.pdf",
+    "sections": [
+      {
+        "title": "One distribution, several questions",
+        "problems": [
+          {
+            "prompt": "Let X be the number of late deliveries in a day. Complete the probability distribution and explain why it is valid.",
+            "math": [],
+            "answer": "missing .3;nonnegative sum1",
+            "minutes": 4,
+            "table": [
+              [
+                "x",
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              [
+                "P(X = x)",
+                "0.2",
+                "0.4",
+                "?",
+                "0.1"
+              ]
+            ]
+          },
+          {
+            "prompt": "For Problem 1 find P(X ≥ 2), P(X &gt; 2), and P(X ≤ 1). Explain the difference between the first two events.",
+            "math": [],
+            "answer": ".4,.1,.6;include2 vs not",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find the expected number of late deliveries for Problem 1. Explain why a noninteger expected value is meaningful even though X is a count.",
+            "math": [],
+            "answer": "1.3;long-run average",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 1, compute E(X squared), the variance, and SD. Use variance = E(X squared) - [E(X)] squared, and √0.81 = 0.9. What are the SD units?",
+            "math": [],
+            "answer": "2.5;.81;.9 deliveries",
+            "minutes": 5
+          },
+          {
+            "prompt": "A game pays $0, $4, or $10 with probabilities 0.5, 0.4, and 0.1. It costs $3 to play. Find expected payout, expected net gain, and a fair entry fee. Does expected loss mean every play loses money?",
+            "math": [],
+            "answer": "2.6;-.4;2.6;no",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Choose a model from its assumptions",
+        "problems": [
+          {
+            "prompt": "Four independent packages each have probability 0.25 of arriving late. Let Y count late packages. Name the distribution and its parameters. Find P(Y = 1), P(Y ≥ 1), and E(Y).",
+            "math": [],
+            "answer": "bin n4 p.25;4*.25*.75³=.421875;1-.75^4=.68359375;1",
+            "minutes": 6
+          },
+          {
+            "prompt": "Independent attempts succeed with probability 0.2. Let T count attempts through the first success. Name the model. Find P(T = 3), P(T &gt; 3), and E(T). State whether T counts failures or all attempts.",
+            "math": [],
+            "answer": "geometric;.8²*.2=.128;.8³=.512;5;all attempts",
+            "minutes": 5
+          },
+          {
+            "prompt": "A box has 5 marked and 3 unmarked cards. Select 2 uniformly without replacement. Let H count marked cards. Identify the distribution and possible values; find P(H = 2). You may use 8 choose 2 = 28 and 5 choose 2 = 10.",
+            "math": [],
+            "answer": "hypergeometric N8 K5 n2;0,1,2;10/28",
+            "minutes": 5
+          },
+          {
+            "prompt": "Assume arrivals follow a constant-rate Poisson process averaging 2 per hour. State the mean count in 30 minutes. Find the probability of no arrivals in 30 minutes, using P(X = 0) = e to the power -mean and e to the power -1 ≈ 0.3679.",
+            "math": [],
+            "answer": "mean1;.3679",
+            "minutes": 4
+          },
+          {
+            "prompt": "Explain which earlier model applies to (a) a fixed number of independent yes/no trials, (b) trials until first success, (c) a fixed-size sample without replacement, and (d) counts in a fixed time interval under constant-rate Poisson assumptions. For each, identify what the random variable counts.",
+            "math": [],
+            "answer": "binomial,geometric,hypergeometric,Poisson;counts vs trials clear",
+            "minutes": 5
+          },
+          {
+            "prompt": "Why is the number of marked cards in Problem 8 not exactly binomial? Explain what happens to the next-draw success probability after a marked card is selected.",
+            "math": [],
+            "answer": "without replacement dependence;5/8 becomes4/7",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 5 Homework",
+    "subtitle": "Continuous models, areas, and waiting times",
+    "coverage": "Sections 5.1-5.3",
+    "file": "chapter-5-homework.pdf",
+    "sections": [
+      {
+        "title": "Uniform waiting times",
+        "problems": [
+          {
+            "prompt": "A shuttle wait X is modeled as uniform from 0 to 12 minutes. Sketch its density and find its height. Explain why the total area is 1.",
+            "math": [],
+            "answer": "height1/12 rectangle;12*1/12=1",
+            "minutes": 5
+          },
+          {
+            "prompt": "For Problem 1 find P(3 &lt; X &lt; 9), P(X &gt; 8), and P(X = 8). Mark each region on a sketch and distinguish a density height from a probability.",
+            "math": [],
+            "answer": "1/2,1/3,0;areas not heights",
+            "minutes": 5
+          },
+          {
+            "prompt": "For Problem 1 find the mean and SD. Use the uniform SD formula (b - a)/√12 and √12 ≈ 3.464. Interpret the mean with units.",
+            "math": [],
+            "answer": "6min;3.464min;longrun mean wait",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the 75th percentile of the shuttle wait. Explain which area lies to its left.",
+            "math": [],
+            "answer": "9min;.75",
+            "minutes": 4
+          },
+          {
+            "prompt": "Given that the shuttle wait already exceeds 4 minutes, find P(X &gt; 9 | X &gt; 4). Compare it with P(X &gt; 5). Is this uniform model memoryless?",
+            "math": [],
+            "answer": "3/8 vs7/12;not memoryless",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Exponential waiting times",
+        "problems": [
+          {
+            "prompt": "A service follows a constant-rate Poisson process, with mean time between arrivals 4 minutes. Let T be time until the next arrival. Identify its model, rate per minute, mean, SD, and possible values.",
+            "math": [],
+            "answer": "exponential rate1/4 mean4 sd4 support>=0",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 6, use the tail formula below to find P(T &gt; 2) and P(T ≤ 2). Use e to the power -0.5 ≈ 0.6065.",
+            "math": [
+              "P(T>t)=e^{-t/4},\\qquad t\\geq0"
+            ],
+            "answer": ".6065,.3935",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 6 find P(2 &lt; T &lt; 6). Use e to the power -0.5 ≈ 0.6065 and e to the power -1.5 ≈ 0.2231. Explain why you subtract the two tails.",
+            "math": [],
+            "answer": ".3834",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the median waiting time for Problem 6 using t = -4 ln(1 - p) for percentile p. Use ln(0.5) ≈ -0.6931. Why is this median less than the mean?",
+            "math": [],
+            "answer": "2.7724min;right skew",
+            "minutes": 5
+          },
+          {
+            "prompt": "No arrival has occurred for 5 minutes. Under the same exponential model, find the probability of waiting more than 2 additional minutes. Explain how this differs from P(T &gt; 7) measured from the original start.",
+            "math": [],
+            "answer": ".6065 conditional;unconditional e^-1.75 different",
+            "minutes": 4
+          },
+          {
+            "prompt": "Under the process in Problem 6, identify the distribution and mean for the number of arrivals in 20 minutes. Explain how the count variable differs from the waiting-time variable.",
+            "math": [],
+            "answer": "Poisson mean5;discrete count vs continuous time",
+            "minutes": 3
+          },
+          {
+            "prompt": "A model is continuous, but a recorded wait is rounded to the nearest minute. Explain why a displayed value of 8 can occur even though P(X = 8) = 0 for the exact continuous value.",
+            "math": [],
+            "answer": "rounded8 represents interval7.5 to8.5 with positive area",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 6 Homework",
+    "subtitle": "Normal distributions and percentiles",
+    "coverage": "Sections 6.1-6.2",
+    "file": "chapter-6-homework.pdf",
+    "sections": [
+      {
+        "title": "Location, area, and standardization",
+        "problems": [
+          {
+            "prompt": "Package masses are normally distributed with mean 500 g and SD 10 g. Sketch the curve and label the mean and positions one, two, and three SDs from the mean.",
+            "math": [],
+            "answer": "470,480,490,500,510,520,530",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 1, find z-scores for 485 g and 520 g. Explain the sign and magnitude of each. Is a z-score itself a probability?",
+            "math": [],
+            "answer": "-1.5,2;distance in SD;not probability",
+            "minutes": 4
+          },
+          {
+            "prompt": "Use the empirical rule to estimate the probability that a package weighs between 480 g and 520 g. Estimate the probability above 530 g.",
+            "math": [],
+            "answer": ".95;.0015",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find P(X &lt; 485), P(X &gt; 520), and P(485 &lt; X &lt; 520), where X is package mass. Show the z conversion and shade each region. Use the cumulative values below.",
+            "math": [],
+            "answer": ".0668,.0228,.9104",
+            "minutes": 6,
+            "table": [
+              [
+                "z",
+                "-1.50",
+                "0",
+                "2.00"
+              ],
+              [
+                "P(Z ≤ z)",
+                "0.0668",
+                "0.5000",
+                "0.9772"
+              ]
+            ]
+          },
+          {
+            "prompt": "Find P(|X - 500| &gt; 20) for the masses in Problem 1. Explain why two tails are needed. Use P(Z ≤ 2) = 0.9772 and symmetry.",
+            "math": [],
+            "answer": ".0456",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Reverse questions and comparisons",
+        "problems": [
+          {
+            "prompt": "Find the 90th percentile of package mass using z = 1.2816. Interpret the percentile in context.",
+            "math": [],
+            "answer": "512.816g;90% below",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the central 95% interval of individual package masses using z = ±1.96. Explain why this is not an interval estimating an unknown population mean.",
+            "math": [],
+            "answer": "[480.4,519.6]g;distribution interval for individuals",
+            "minutes": 5
+          },
+          {
+            "prompt": "Machine B produces masses with mean 800 g and SD 20 g, also normally distributed. Which is more unusually high: 515 g from the first machine or 820 g from B? Compare standardized distances.",
+            "math": [],
+            "answer": "first z1.5 vs B1",
+            "minutes": 4
+          },
+          {
+            "prompt": "Given that a package from the first machine weighs more than 500 g, find the probability it exceeds 520 g. Use the tail values from Problem 4 and state the new denominator.",
+            "math": [],
+            "answer": ".0228/.5=.0456;upperhalf",
+            "minutes": 5
+          },
+          {
+            "prompt": "A wait-time dataset is strongly right-skewed but has a mean and SD. A student standardizes one observation and immediately uses a normal table. Explain the missing assumption and why standardizing does not supply it.",
+            "math": [],
+            "answer": "normal individual model unjustified;scaling preserves shape",
+            "minutes": 4
+          },
+          {
+            "prompt": "Suppose the first machine’s mean stays 500 g while its SD drops to 5 g. Without finding a new table value, explain how P(X &gt; 520) changes. Compute the new z-score.",
+            "math": [],
+            "answer": "z4;tail decreases",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 7 Homework",
+    "subtitle": "Sampling distributions and the CLT",
+    "coverage": "Sections 7.1-7.3",
+    "file": "chapter-7-homework.pdf",
+    "sections": [
+      {
+        "title": "Individuals, averages, and sums",
+        "problems": [
+          {
+            "prompt": "A population of completion times has mean 12 minutes and SD 6 minutes and is moderately right-skewed without extreme outliers. Random observations are independent. For samples of 36, find the mean and standard error of the sample mean. Explain why a normal approximation is reasonable.",
+            "math": [],
+            "answer": "12;6/sqrt36=1;CLT moderate skew large n",
+            "minutes": 5
+          },
+          {
+            "prompt": "Distinguish the population SD from the standard error in Problem 1. Which describes spread among individual times, and which among repeated sample means?",
+            "math": [],
+            "answer": "6 individual;1 sample means",
+            "minutes": 4
+          },
+          {
+            "prompt": "For samples of 36, approximate P(sample mean &gt; 13). Sketch and label the sampling distribution. Use P(Z ≤ 1) = 0.8413.",
+            "math": [],
+            "answer": ".1587",
+            "minutes": 4
+          },
+          {
+            "prompt": "For samples of 36, approximate P(11.5 &lt; sample mean &lt; 12.5). Use P(Z ≤ 0.5) = 0.6915 and P(Z ≤ -0.5) = 0.3085.",
+            "math": [],
+            "answer": ".3830",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the mean and SD of the sum of 36 times. Rewrite the event “sum exceeds 468 minutes” as an event about the sample mean, and find its approximate probability.",
+            "math": [],
+            "answer": "432;36;mean>13;.1587",
+            "minutes": 6
+          },
+          {
+            "prompt": "Increase the sample size to 144. Find the new standard error. Explain why multiplying sample size by 4 does not divide the standard error by 4.",
+            "math": [],
+            "answer": ".5;root n scaling",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "When approximations apply",
+        "problems": [
+          {
+            "prompt": "Can the normal approximation for the sample mean in Problem 1 be used to calculate P(one individual time &gt; 13)? Explain. What additional information would be needed?",
+            "math": [],
+            "answer": "no;individual distribution/model needed",
+            "minutes": 4
+          },
+          {
+            "prompt": "A team takes 36 successive readings that are strongly correlated. Explain why inserting n = 36 in the usual standard-error formula may underestimate uncertainty.",
+            "math": [],
+            "answer": "independence fails positive covariance adds variance",
+            "minutes": 4
+          },
+          {
+            "prompt": "For samples of 36 in Problem 1, find the 95th percentile of the sample mean using z = 1.6449. Explain what repeated samples have to do with this percentile.",
+            "math": [],
+            "answer": "13.6449;95% of samplemeans below",
+            "minutes": 4
+          },
+          {
+            "prompt": "Let Y be binomial with n = 100 and p = 0.4. Check the textbook criteria np &gt; 5 and n(1 - p) &gt; 5. Find the mean and SD (use √24 ≈ 4.899). Approximate P(Y ≤ 45) using the continuity correction 45.5. Round z to 1.12 and use P(Z ≤ 1.12) = 0.8686.",
+            "math": [],
+            "answer": "40,60 yes;mean40 sd4.899;z1.1227;.8686",
+            "minutes": 6
+          },
+          {
+            "prompt": "A student says that increasing sample size makes the original population bell-shaped and removes selection bias. Correct both claims.",
+            "math": [],
+            "answer": "sampling means may approx normal;population unchanged;bias persists",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional.",
+    "compact": true
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 8 Homework",
+    "subtitle": "Confidence intervals and their interpretation",
+    "coverage": "Sections 8.1-8.3",
+    "file": "chapter-8-homework.pdf",
+    "sections": [
+      {
+        "title": "Means: choose the right uncertainty",
+        "problems": [
+          {
+            "prompt": "An independent random sample of 64 package masses has mean 50 g. The population SD is known to be 8 g. Use a normal-model 95% interval with critical value 1.96. Find the standard error, margin of error, and interval; state the relevant sampling/normal-approximation conditions.",
+            "math": [],
+            "answer": "SE1 margin1.96 [48.04,51.96];random independent CLT n64",
+            "minutes": 6
+          },
+          {
+            "prompt": "Interpret the confidence level from Problem 1 in terms of repeated samples. Explain why the interval does not claim that 95% of individual packages have masses in this interval.",
+            "math": [],
+            "answer": "95% procedure intervals cover fixed mean;not individuals",
+            "minutes": 5
+          },
+          {
+            "prompt": "A separate independent random sample of 16 masses from a normal population has mean 50 g and sample SD 8 g. The population SD is unknown. Use t* = 2.131 for 95% confidence. Find degrees of freedom, standard error, margin of error, and the interval. Why use t?",
+            "math": [],
+            "answer": "df15 SE2 margin4.262 [45.738,54.262];sigma estimated",
+            "minutes": 6
+          },
+          {
+            "prompt": "For the known-SD setting in Problem 1, explain how interval width changes if (a) confidence increases with n unchanged or (b) n increases from 64 to 256 at the same confidence. Compute the new standard error for (b).",
+            "math": [],
+            "answer": "a wider;b half;SE.5",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Proportions and planning",
+        "problems": [
+          {
+            "prompt": "In an independent random sample of 100 students, 60 prefer format A. Check the textbook success/failure counts (&gt; 5 each) for an ordinary normal-approximation interval. Compute a 95% interval using z* = 1.96 and standard error √[p-hat(1 - p-hat)/n] ≈ 0.0490.",
+            "math": [],
+            "answer": "60,40>5;phat.6;margin.09604;[.50396,.69604]",
+            "minutes": 6
+          },
+          {
+            "prompt": "Explain what the interval in Problem 5 suggests about whether more than half of all students prefer A. Does it establish that format A causes better learning?",
+            "math": [],
+            "answer": "entire approx interval>.5 evidence preference majority;no learning causal claim",
+            "minutes": 4
+          },
+          {
+            "prompt": "For a future 95% proportion interval with margin of error at most 0.05, use the conservative planning value p = 0.5 and the formula below. Compute n and explain how to round it.",
+            "math": [
+              "n=\\frac{(1.96)^2(0.5)(0.5)}{(0.05)^2}"
+            ],
+            "answer": "384.16 round up385",
+            "minutes": 5
+          },
+          {
+            "prompt": "Choose the method: known-SD z interval, unknown-SD t interval, or proportion interval. (a) Estimate mean time with population SD known. (b) Estimate mean time with only sample SD. (c) Estimate the fraction that chooses A. Name the population parameter each targets.",
+            "math": [],
+            "answer": "z mean;t mean;proportion p",
+            "minutes": 4
+          },
+          {
+            "prompt": "A sample of 8 from a strongly skewed population has an extreme outlier and unknown population SD. Explain why a routine t interval may be unreliable. Would a narrow interval remove the concern?",
+            "math": [],
+            "answer": "small n lacks approx normality;outlier undermines;no",
+            "minutes": 4
+          },
+          {
+            "prompt": "A website uses a voluntary poll of 5,000 visitors and reports a very narrow interval for all college students. Explain what the narrow interval fails to address and propose a better sampling design.",
+            "math": [],
+            "answer": "selection/coverage bias;random roster sample",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  },
+  {
+    "course": "Statistics",
+    "title": "Chapter 9 Homework",
+    "subtitle": "Hypothesis testing: conceptual overview",
+    "coverage": "Chapter 9 conceptual coverage only",
+    "file": "chapter-9-homework.pdf",
+    "sections": [
+      {
+        "title": "Claims, evidence, and decisions",
+        "problems": [
+          {
+            "prompt": "A shipping service claims mean delivery time is 3 days. A study investigates whether the population mean exceeds 3 days. Define the population parameter and write the null and alternative hypotheses.",
+            "math": [],
+            "answer": "mu mean delivery time;H0mu3;Hamu>3",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 1, a valid test returns p = 0.03. Explain this p-value in terms of the null model and results at least as extreme as observed, in the direction of the alternative. Why is it not a 3% probability that the null hypothesis is true?",
+            "math": [],
+            "answer": "if null,3% probability statistic >= observed;not posterior null probability",
+            "minutes": 6
+          },
+          {
+            "prompt": "Using p = 0.03, make a decision at (a) significance level 0.05 and (b) 0.01. Write a conclusion about the mean delivery time for each level.",
+            "math": [],
+            "answer": "reject at .05 evidence mean>3;fail reject .01 insufficient evidence",
+            "minutes": 5
+          },
+          {
+            "prompt": "Another study returns p = 0.40 for the same hypotheses. Write an appropriate conclusion. Explain why “the mean is proved to equal 3 days” is too strong.",
+            "math": [],
+            "answer": "fail reject insufficient evidence >3;absence of evidence not equality proof",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Errors and the quality of evidence",
+        "problems": [
+          {
+            "prompt": "Describe a Type I error and a Type II error for Problem 1. Give one practical consequence of each.",
+            "math": [],
+            "answer": "I conclude delay when null true;II miss real delay;consequences context",
+            "minutes": 6
+          },
+          {
+            "prompt": "A team lowers its significance level from 0.05 to 0.01 with its sample size and test otherwise unchanged. Explain the effect on Type I error risk and the general tradeoff with power.",
+            "math": [],
+            "answer": "I risk lower;power lower/II risk higher",
+            "minutes": 4
+          },
+          {
+            "prompt": "A large study finds an estimated increase of 0.01 day and p = 0.001. What does the p-value say? What additional information helps judge practical importance?",
+            "math": [],
+            "answer": "evidence against null;effect size interval costs context;not practical magnitude",
+            "minutes": 5
+          },
+          {
+            "prompt": "A valid two-sided test of a population mean uses the same assumptions and method as a 95% confidence interval. The interval is (3.2, 3.8) days. At significance level 0.05, what is the decision for a null mean of 3? Explain without calculating a test statistic.",
+            "math": [],
+            "answer": "reject since3 outside matching95%CI",
+            "minutes": 4
+          },
+          {
+            "prompt": "A researcher tries 20 outcome measures and reports only the smallest p-value. Explain why this selective reporting can mislead. What should be disclosed or planned before data analysis?",
+            "math": [],
+            "answer": "multiple testing/selective reporting;prespecify outcomes disclose all analyses and adjustments",
+            "minutes": 5
+          },
+          {
+            "prompt": "A report says: “p = 0.02, so there is a 98% chance our claim is true, the effect is large, and it applies to everyone.” Identify and correct all three unsupported conclusions.",
+            "math": [],
+            "answer": "not probability hypothesis;not effect size;generalization depends sampling/context",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+  }
+]

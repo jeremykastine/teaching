@@ -32,3 +32,7 @@ The shared renderer is `../scripts/slide_builder.py`. It requires DejaVu Sans fo
 Barbara Illowsky and Susan Dean, *Introductory Statistics 2e*, OpenStax, Rice University. [Access for free](https://openstax.org/books/introductory-statistics-2e/pages/1-introduction). Each index entry links to its corresponding source section.
 
 Slides and their source content are shared under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Definitions are concise paraphrases; examples, questions, scenarios, and datasets are original classroom adaptations. Synthetic datasets are identified on new slides. These are not official OpenStax slides.
+
+## Homework
+
+Compact PDF homework assignments are linked from the course index. See [the homework design and coverage map](homework/README.md) for priorities, topic groupings, editable sources, and rebuild instructions. Students work on separate paper and upload one best representative page in Blackboard.

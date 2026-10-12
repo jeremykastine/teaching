@@ -1,0 +1,2349 @@
+[
+  {
+    "course": "TSM 098",
+    "title": "Homework 1",
+    "subtitle": "Number structure, signs, and fraction reduction",
+    "coverage": "Topics 1-4",
+    "file": "tsm-098-homework-01.pdf",
+    "sections": [
+      {
+        "title": "Factors and signs",
+        "problems": [
+          {
+            "prompt": "Compute without a calculator. Use a related multiplication fact to explain each division.",
+            "math": [
+              "7\\cdot8,\\quad9\\cdot6,\\quad56\\div7,\\quad54\\div9"
+            ],
+            "answer": "56,54,8,6",
+            "minutes": 3
+          },
+          {
+            "prompt": "For each number, identify which of 2, 3, 5, 9, and 10 divide it. Explain using divisibility rules.",
+            "math": [
+              "126,\\quad240,\\quad315"
+            ],
+            "answer": "126:2,3,9;240:2,3,5,10;315:3,5,9",
+            "minutes": 4
+          },
+          {
+            "prompt": "Write each prime factorization.",
+            "math": [
+              "72,\\quad90,\\quad140"
+            ],
+            "answer": "2³3²;2*3²5;2²57",
+            "minutes": 4
+          },
+          {
+            "prompt": "Explain why 1 is not prime and why 49 is not prime.",
+            "math": [],
+            "answer": "prime needs exactly2 positive divisors;49=7²",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate each sum or difference.",
+            "math": [
+              "-8+13,\\quad6-11,\\quad-4-9,\\quad-7+7"
+            ],
+            "answer": "5,-5,-13,0",
+            "minutes": 4
+          },
+          {
+            "prompt": "Evaluate each expression. Explain the sign of each result.",
+            "math": [
+              "(-6)(-4),\\quad(-3)(5),\\quad\\frac{-24}{6},\\quad\\frac{-35}{-7}"
+            ],
+            "answer": "24,-15,-4,5",
+            "minutes": 4
+          },
+          {
+            "prompt": "Evaluate or state that the expression is undefined. Explain the role of zero.",
+            "math": [
+              "\\frac{0}{8},\\quad\\frac{8}{0},\\quad\\frac{0}{0},\\quad0(-5)"
+            ],
+            "answer": "0,undefined,undefined,0",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find two integers with each specified sum and product: (a) sum 1, product -12; (b) sum -7, product 12; (c) sum 7, product 12.",
+            "math": [],
+            "answer": "4,-3;-3,-4;3,4",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Reduce each fraction completely",
+        "problems": [
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{42}{56}"
+            ],
+            "answer": "3/4",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{-54}{81}"
+            ],
+            "answer": "-2/3",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{84}{126}"
+            ],
+            "answer": "2/3",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{-45}{-75}"
+            ],
+            "answer": "3/5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{120}{168}"
+            ],
+            "answer": "5/7",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify and show common factors.",
+            "math": [
+              "\\frac{-36}{48}"
+            ],
+            "answer": "-3/4",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Check structure",
+        "problems": [
+          {
+            "prompt": "Fill in the missing numerator and explain why the fractions are equivalent.",
+            "math": [
+              "\\frac{3}{5}=\\frac{n}{40}"
+            ],
+            "answer": "24 multiply top/bottom8",
+            "minutes": 2
+          },
+          {
+            "prompt": "A student reduces 12/18 to 2/8 by deleting the digit 1 from the numerator and denominator. Explain why this is invalid; reduce 12/18 correctly.",
+            "math": [],
+            "answer": "digits not factors;2/3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Without decimals, decide which is larger: -3/4 or -2/3. Use equivalent fractions and explain the effect of the negative signs.",
+            "math": [],
+            "answer": "-2/3=-8/12 > -9/12",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 2",
+    "subtitle": "Square roots, order of operations, and evaluation",
+    "coverage": "Topics 5, 7-8",
+    "file": "tsm-098-homework-02.pdf",
+    "sections": [
+      {
+        "title": "Roots and signs",
+        "problems": [
+          {
+            "prompt": "Evaluate.",
+            "math": [
+              "\\sqrt{81},\\quad-\\sqrt{81},\\quad\\sqrt{0},\\quad\\sqrt{\\frac{25}{36}}"
+            ],
+            "answer": "9,-9,0,5/6",
+            "minutes": 4
+          },
+          {
+            "prompt": "Evaluate and explain why the answers differ.",
+            "math": [
+              "(-5)^2,\\qquad-5^2"
+            ],
+            "answer": "25,-25;grouping of negative",
+            "minutes": 3
+          },
+          {
+            "prompt": "In the real-number system, does √(-16) have a value? Explain. If a problem allows complex numbers, write the principal square root using i.",
+            "math": [],
+            "answer": "no real;4i",
+            "minutes": 3
+          },
+          {
+            "prompt": "Explain the difference between evaluating √49 and solving x squared = 49.",
+            "math": [],
+            "answer": "principal7 vs solutions+/-7",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Order of operations",
+        "problems": [
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "18-3(2+4)"
+            ],
+            "answer": "0",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "-4+2(7-10)"
+            ],
+            "answer": "-10",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "24\\div(3\\cdot2)+5"
+            ],
+            "answer": "9",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "3^2-2(-4)"
+            ],
+            "answer": "17",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "\\frac{15-3}{2+4}"
+            ],
+            "answer": "2",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate. Show the order of your steps.",
+            "math": [
+              "2[5-3(4-6)]"
+            ],
+            "answer": "22",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Substitution and comparison",
+        "problems": [
+          {
+            "prompt": "Evaluate at x = -3 and y = 2.",
+            "math": [
+              "4x-3y+5"
+            ],
+            "answer": "-13",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate at x = -2.",
+            "math": [
+              "3x^2+2x-5"
+            ],
+            "answer": "3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate at a = -4 and b = -2.",
+            "math": [
+              "\\frac{a^2-b}{3}"
+            ],
+            "answer": "6",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate both sides at x = -1, 0, and 2. Then use an algebraic property to explain whether the equation is true for every x.",
+            "math": [
+              "3(x+2)=3x+6"
+            ],
+            "answer": "3=3,6=6,12=12;distributive proves",
+            "minutes": 5
+          },
+          {
+            "prompt": "Evaluate both sides at x = -1, 0, and 2. Is the equation true for every x? Does agreement at one input prove an identity?",
+            "math": [
+              "(x+1)^2=x^2+1"
+            ],
+            "answer": "0vs2;1vs1;9vs5;no;one counterexample disproves",
+            "minutes": 5
+          },
+          {
+            "prompt": "For x = -2, a student evaluates x squared as -4. Explain the substitution error and give the correct value.",
+            "math": [],
+            "answer": "(-2)²=4 requires grouping entire input",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      5,
+      7,
+      8
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 3",
+    "subtitle": "Combining terms, distribution, and polynomial products",
+    "coverage": "Topics 9-12",
+    "file": "tsm-098-homework-03.pdf",
+    "sections": [
+      {
+        "title": "Terms and factors",
+        "problems": [
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "5x-3x+7-10"
+            ],
+            "answer": "2x-3",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "4a^2+3a-2a^2+5a"
+            ],
+            "answer": "2a²+8a",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "(-3x^2)(4x^3)"
+            ],
+            "answer": "-12x5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "2a\\cdot3a\\cdot a^2"
+            ],
+            "answer": "6a4",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "(2x^2)^3"
+            ],
+            "answer": "8x6",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Read the operation",
+        "problems": [
+          {
+            "prompt": "Simplify 3x + 3x and (3x)(3x). Explain why only the product changes the exponent.",
+            "math": [],
+            "answer": "6x vs9x²;addition like terms vs product factors",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Distribution and sums",
+        "problems": [
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "4(2x-3)-3(x+2)"
+            ],
+            "answer": "5x-18",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "-2x(3x^2-4x+5)"
+            ],
+            "answer": "-6x³+8x²-10x",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "(3x^2-5x+2)+(2x^2+x-7)"
+            ],
+            "answer": "5x²-4x-5",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "(5x^2+2x-4)-(2x^2-3x+1)"
+            ],
+            "answer": "3x²+5x-5",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "2(x-3)+4(2x+1)-5x"
+            ],
+            "answer": "5x-2",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Polynomial multiplication",
+        "problems": [
+          {
+            "prompt": "Multiply and combine like terms. Show every product.",
+            "math": [
+              "(x+3)(x-5)"
+            ],
+            "answer": "x²-2x-15",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms. Show every product.",
+            "math": [
+              "(2x-1)(3x+4)"
+            ],
+            "answer": "6x²+5x-4",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms. Show every product.",
+            "math": [
+              "(x+4)^2"
+            ],
+            "answer": "x²+8x+16",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms. Show every product.",
+            "math": [
+              "(x-2)(x^2+3x+1)"
+            ],
+            "answer": "x³+x²-5x-2",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Larger products and checking",
+        "problems": [
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(x^2+x+1)(x^2-x+2)"
+            ],
+            "answer": "x4+2x²+x+2",
+            "minutes": 5
+          },
+          {
+            "prompt": "Check your answer to Problem 16 by evaluating both the original product and your expanded polynomial at x = 1. Explain why this check alone is not a proof for every x.",
+            "math": [],
+            "answer": "both6;one-input check not identity proof",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 4",
+    "subtitle": "Common factors and introductory factoring",
+    "coverage": "Topics 13-15",
+    "file": "tsm-098-homework-04.pdf",
+    "sections": [
+      {
+        "title": "Common divisors and common factors",
+        "problems": [
+          {
+            "prompt": "Find the GCD using prime factorizations.",
+            "math": [
+              "36,\\quad60"
+            ],
+            "answer": "12",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find the GCD using prime factorizations.",
+            "math": [
+              "84,\\quad126"
+            ],
+            "answer": "42",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find the greatest common monomial factor.",
+            "math": [
+              "18x^3y^2,\\quad24x^2y^4"
+            ],
+            "answer": "6x²y²",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Factor out the GCF",
+        "problems": [
+          {
+            "prompt": "Factor out the greatest common factor.",
+            "math": [
+              "12x^3+18x^2"
+            ],
+            "answer": "6x²(2x+3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor out the greatest common factor.",
+            "math": [
+              "15a^2b-20ab^2"
+            ],
+            "answer": "5ab(3a-4b)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor out the greatest common factor.",
+            "math": [
+              "8x^2-12x+4"
+            ],
+            "answer": "4(2x²-3x+1)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor out the greatest common factor.",
+            "math": [
+              "14x^4-21x^3+7x^2"
+            ],
+            "answer": "7x²(2x²-3x+1)",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Guess and check",
+        "problems": [
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2+7x+12"
+            ],
+            "answer": "(x+3)(x+4)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2-x-12"
+            ],
+            "answer": "(x-4)(x+3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2-7x+10"
+            ],
+            "answer": "(x-5)(x-2)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2+2x-15"
+            ],
+            "answer": "(x+5)(x-3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2-25"
+            ],
+            "answer": "(x-5)(x+5)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely over the integers. Check by multiplication.",
+            "math": [
+              "x^2+6x+9"
+            ],
+            "answer": "(x+3)²",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Choose a first step",
+        "problems": [
+          {
+            "prompt": "Factor completely. Start with the GCF.",
+            "math": [
+              "3x^2+15x+18"
+            ],
+            "answer": "3(x+2)(x+3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely. Start with the GCF.",
+            "math": [
+              "2x^3-18x"
+            ],
+            "answer": "2x(x-3)(x+3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Can x squared + 4 be factored into integer linear factors? Explain using possible integer pairs.",
+            "math": [],
+            "answer": "no pair sum0 product4",
+            "minutes": 2
+          },
+          {
+            "prompt": "A student claims x squared + 5x + 6 = (x + 1)(x + 6). Multiply to locate the error, then give the correct factors.",
+            "math": [],
+            "answer": "middle7x not5x; (x+2)(x+3)",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 5",
+    "subtitle": "Numerical fraction operations",
+    "coverage": "Topics 19, 21-22",
+    "file": "tsm-098-homework-05.pdf",
+    "sections": [
+      {
+        "title": "Products, quotients, and common multiples",
+        "problems": [
+          {
+            "prompt": "Find the LCM of each pair using prime factorization: (a) 12 and 18; (b) 8 and 20; (c) 9 and 15.",
+            "math": [],
+            "answer": "36,40,45",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Multiply or divide",
+        "problems": [
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{-3}{8}\\cdot\\frac{4}{9}"
+            ],
+            "answer": "-1/6",
+            "minutes": 2
+          },
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{14}{15}\\cdot\\frac{25}{21}"
+            ],
+            "answer": "10/9",
+            "minutes": 2
+          },
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{-5}{12}\\cdot\\frac{-18}{25}"
+            ],
+            "answer": "3/10",
+            "minutes": 2
+          },
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{7}{9}\\div\\frac{14}{15}"
+            ],
+            "answer": "5/6",
+            "minutes": 2
+          },
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{-4}{5}\\div\\frac{2}{3}"
+            ],
+            "answer": "-6/5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Compute and reduce completely. Show cancellation or the reciprocal step.",
+            "math": [
+              "\\frac{3}{5}\\div\\left(-\\frac{9}{10}\\right)"
+            ],
+            "answer": "-2/3",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Add or subtract",
+        "problems": [
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "\\frac{5}{6}+\\frac{1}{4}"
+            ],
+            "answer": "13/12",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "\\frac{7}{8}-\\frac{1}{3}"
+            ],
+            "answer": "13/24",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "-\\frac{2}{5}+\\frac{3}{10}"
+            ],
+            "answer": "-1/10",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "\\frac{4}{9}-\\left(-\\frac{1}{6}\\right)"
+            ],
+            "answer": "11/18",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "\\frac{7}{12}+\\frac{5}{18}"
+            ],
+            "answer": "31/36",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute using a common denominator and reduce.",
+            "math": [
+              "\\frac{3}{8}-\\frac{7}{20}"
+            ],
+            "answer": "1/40",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Mixed operations and explanations",
+        "problems": [
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "\\frac{2}{3}-\\frac{1}{4}\\cdot\\frac{8}{9}"
+            ],
+            "answer": "4/9",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "\\left(\\frac{5}{6}-\\frac{1}{4}\\right)\\div\\frac{7}{12}"
+            ],
+            "answer": "1",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate the complex fraction.",
+            "math": [
+              "\\frac{\\frac{3}{4}+\\frac{1}{6}}{\\frac{5}{8}}"
+            ],
+            "answer": "22/15",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student writes 1/2 + 1/3 = 2/5. Explain the denominator error and give the correct sum.",
+            "math": [],
+            "answer": "need common-sized parts;5/6",
+            "minutes": 2
+          },
+          {
+            "prompt": "Explain why dividing 3/4 by 1/2 gives a result larger than 3/4. Compute the quotient and describe how many halves fit into three-fourths.",
+            "math": [],
+            "answer": "3/2;1.5 halves",
+            "minutes": 2
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      19,
+      21,
+      22
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 6",
+    "subtitle": "Linear equations, parentheses, and fractions",
+    "coverage": "Topics 24-26, 28",
+    "file": "tsm-098-homework-06.pdf",
+    "sections": [
+      {
+        "title": "Isolate the variable",
+        "problems": [
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "-7x=21"
+            ],
+            "answer": "-3",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "\\frac{2}{3}x=-8"
+            ],
+            "answer": "-12",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "5x-4=2x+11"
+            ],
+            "answer": "5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "7-3x=2x-8"
+            ],
+            "answer": "3",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Parentheses and solution sets",
+        "problems": [
+          {
+            "prompt": "Solve. State a value, no solution, or all real numbers as appropriate.",
+            "math": [
+              "3(x-2)+4=2x+9"
+            ],
+            "answer": "11",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. State a value, no solution, or all real numbers as appropriate.",
+            "math": [
+              "5-2(3x-4)=x+6"
+            ],
+            "answer": "1",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. State a value, no solution, or all real numbers as appropriate.",
+            "math": [
+              "4(x+2)-3=4x+5"
+            ],
+            "answer": "all real",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. State a value, no solution, or all real numbers as appropriate.",
+            "math": [
+              "2(x-1)+3=2x+5"
+            ],
+            "answer": "none",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. State a value, no solution, or all real numbers as appropriate.",
+            "math": [
+              "3(2x-1)-2(x+4)=x+7"
+            ],
+            "answer": "6",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Fraction equations",
+        "problems": [
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{x}{3}+\\frac{1}{2}=\\frac{5}{6}"
+            ],
+            "answer": "1",
+            "minutes": 4
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{x+2}{4}=\\frac{2x-1}{3}"
+            ],
+            "answer": "2",
+            "minutes": 4
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{3x-1}{5}-\\frac{x}{2}=\\frac{7}{10}"
+            ],
+            "answer": "9",
+            "minutes": 4
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{2x+5}{6}+\\frac{x}{4}=\\frac{3}{2}"
+            ],
+            "answer": "8/7",
+            "minutes": 4
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{x+1}{3}-\\frac{x-2}{6}=2"
+            ],
+            "answer": "8",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Explain a correction",
+        "problems": [
+          {
+            "prompt": "A student turns 2(x - 3) = 10 into 2x - 3 = 10. Explain and correct the distribution error, solve, and check.",
+            "math": [],
+            "answer": "both terms multiplied;2x-6=10;x8",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact answers. For equations with fractions, combine and simplify each side first. Then move each remaining denominator to multiply the entire opposite side. Check solutions in the original equation.",
+    "topics": [
+      24,
+      25,
+      26,
+      28
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 7",
+    "subtitle": "Coordinate graphs and linear systems",
+    "coverage": "Topics 30-31, 33",
+    "file": "tsm-098-homework-07.pdf",
+    "sections": [
+      {
+        "title": "Points and lines",
+        "problems": [
+          {
+            "prompt": "Plot (-2, 3), (0, -1), and (4, 0). State the quadrant or axis of each point.",
+            "math": [],
+            "answer": "II,y-axis,x-axis",
+            "minutes": 3
+          },
+          {
+            "prompt": "Graph using intercepts and a third point; check all three points in the equation.",
+            "math": [
+              "2x+3y=6"
+            ],
+            "answer": "(3,0),(0,2),(-3,4)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Graph x = -2 and y = 3. Give their intersection and check it in both equations.",
+            "math": [],
+            "answer": "(-2,3)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Graph both equations using points. Estimate the intersection, then check it exactly.",
+            "math": [
+              "x+y=5,\\qquad x-y=1"
+            ],
+            "answer": "(3,2)",
+            "minutes": 6
+          }
+        ]
+      },
+      {
+        "title": "Algebraic systems",
+        "problems": [
+          {
+            "prompt": "Solve by substitution. Check both equations.",
+            "math": [
+              "y=2x+1,\\qquad x+y=7"
+            ],
+            "answer": "(2,5)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve by elimination. Check both equations.",
+            "math": [
+              "2x+3y=13,\\qquad2x-y=1"
+            ],
+            "answer": "(2,3)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve by elimination or substitution. Show any preparation needed.",
+            "math": [
+              "3x+2y=4,\\qquad5x-2y=12"
+            ],
+            "answer": "(2,-1)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve and describe the full solution set.",
+            "math": [
+              "x+2y=6,\\qquad2x+4y=12"
+            ],
+            "answer": "all points on x+2y6",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve and describe the full solution set.",
+            "math": [
+              "x+2y=6,\\qquad2x+4y=10"
+            ],
+            "answer": "no solution",
+            "minutes": 4
+          },
+          {
+            "prompt": "Does (2, 1) solve the system? Explain why checking just one equation is insufficient.",
+            "math": [
+              "x+y=3,\\qquad2x-y=5"
+            ],
+            "answer": "no second3!=5",
+            "minutes": 3
+          },
+          {
+            "prompt": "Choose substitution or elimination, solve, and explain why your method is efficient.",
+            "math": [
+              "x=3y-2,\\qquad2x+y=10"
+            ],
+            "answer": "(4,2);substitution",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      30,
+      31,
+      33
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "title": "Homework 8",
+    "subtitle": "Percents and equations in context",
+    "coverage": "Topics 35-37",
+    "file": "tsm-098-homework-08.pdf",
+    "sections": [
+      {
+        "title": "Part, whole, and percent",
+        "problems": [
+          {
+            "prompt": "Convert: (a) 35% to a decimal; (b) 0.08 to a percent; (c) 3/4 to a percent; (d) 125% to a decimal.",
+            "math": [],
+            "answer": ".35,8%,75%,1.25",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find 18% of 150. Write the part = rate × whole equation.",
+            "math": [],
+            "answer": "27",
+            "minutes": 3
+          },
+          {
+            "prompt": "42 is what percent of 120? Identify the whole.",
+            "math": [],
+            "answer": "35%;whole120",
+            "minutes": 3
+          },
+          {
+            "prompt": "36 is 45% of what number? Define the unknown and solve an equation.",
+            "math": [],
+            "answer": "80",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Changes and successive percents",
+        "problems": [
+          {
+            "prompt": "A $60 item is discounted by 25%. Find the discount and sale price.",
+            "math": [],
+            "answer": "15;45",
+            "minutes": 3
+          },
+          {
+            "prompt": "A $50 item is taxed at 8%. Find the tax and total.",
+            "math": [],
+            "answer": "4;54",
+            "minutes": 3
+          },
+          {
+            "prompt": "Enrollment grows from 80 to 100. Find the percent increase and explain why you divide by 80.",
+            "math": [],
+            "answer": "25%;original reference",
+            "minutes": 4
+          },
+          {
+            "prompt": "A price falls from $120 to $90. Find the percent decrease. What percent increase takes $90 back to $120?",
+            "math": [],
+            "answer": "25%;33 1/3%",
+            "minutes": 5
+          },
+          {
+            "prompt": "A $100 item is discounted 20%, then taxed 5% on the discounted price. Find the total. Explain why subtracting 15% from the original price gives a different result.",
+            "math": [],
+            "answer": "84 vs85;different bases",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Translate, solve, and check",
+        "problems": [
+          {
+            "prompt": "A rectangle has perimeter 34 cm. Its length is 3 cm more than its width. Define a variable, write an equation, and find both dimensions.",
+            "math": [],
+            "answer": "w7 l10",
+            "minutes": 5
+          },
+          {
+            "prompt": "A club sells 20 tickets: student tickets cost $4 and general tickets cost $7. Total revenue is $107. Define variables, write a system, solve, and check both the ticket count and revenue.",
+            "math": [],
+            "answer": "11student9general",
+            "minutes": 6
+          },
+          {
+            "prompt": "A printer rental costs $12 plus $0.05 per page. The total is $22. Write and solve an equation for the number of pages. Check the units and total cost.",
+            "math": [],
+            "answer": "200pages",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      35,
+      36,
+      37
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 1",
+    "subtitle": "Number structure, radicals, and evaluation",
+    "coverage": "Topics 1-8",
+    "file": "tsm-099-homework-01.pdf",
+    "sections": [
+      {
+        "title": "Arithmetic foundations",
+        "problems": [
+          {
+            "prompt": "Use divisibility rules to decide which of 2, 3, 5, 9, and 10 divide 450 and 234. Explain without long division.",
+            "math": [],
+            "answer": "450all;234 2,3,9",
+            "minutes": 3
+          },
+          {
+            "prompt": "Write the prime factorization of 180 and use it to reduce 126/180.",
+            "math": [],
+            "answer": "2²3²5;7/10",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate or state undefined. Explain each zero-denominator case.",
+            "math": [
+              "\\frac{-42}{-6},\\quad\\frac{0}{-9},\\quad\\frac{-9}{0},\\quad\\frac{0}{0}"
+            ],
+            "answer": "7,0,undefined,undefined",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find an integer pair for each sum/product: (a) -1 and -20; (b) -11 and 24; (c) 2 and -15.",
+            "math": [],
+            "answer": "4,-5;-3,-8;5,-3",
+            "minutes": 4
+          },
+          {
+            "prompt": "Simplify.",
+            "math": [
+              "\\frac{-84}{126},\\qquad\\frac{-72}{-120}"
+            ],
+            "answer": "-2/3,3/5",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Radicals and signs",
+        "problems": [
+          {
+            "prompt": "Simplify exactly.",
+            "math": [
+              "\\sqrt{72}"
+            ],
+            "answer": "6sqrt2",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify exactly.",
+            "math": [
+              "\\sqrt{\\frac{49}{81}}"
+            ],
+            "answer": "7/9",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify exactly.",
+            "math": [
+              "\\sqrt{200}"
+            ],
+            "answer": "10sqrt2",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify exactly.",
+            "math": [
+              "\\sqrt{50}+\\sqrt{8}"
+            ],
+            "answer": "7sqrt2",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Real and complex contexts",
+        "problems": [
+          {
+            "prompt": "For each expression, state whether it has a real value. Then simplify over the complex numbers using i where needed.",
+            "math": [
+              "\\sqrt{-49},\\qquad-\\sqrt{49},\\qquad\\sqrt{(-7)^2}"
+            ],
+            "answer": "7i,-7,7;only first nonreal",
+            "minutes": 4
+          },
+          {
+            "prompt": "Simplify for every real x, including negative inputs.",
+            "math": [
+              "\\sqrt{16x^2}"
+            ],
+            "answer": "4|x|",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Order, substitution, and equivalence",
+        "problems": [
+          {
+            "prompt": "Evaluate.",
+            "math": [
+              "-3^2+2(-4+1)^2"
+            ],
+            "answer": "9",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate.",
+            "math": [
+              "\\frac{18-2(3+1)}{5-3}"
+            ],
+            "answer": "5",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate when x = -2 and y = 3.",
+            "math": [
+              "2x^2-3xy+y^2"
+            ],
+            "answer": "35",
+            "minutes": 3
+          },
+          {
+            "prompt": "Evaluate both values when a = 1, b = -3, and c = -2. Simplify the radical.",
+            "math": [
+              "\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+            ],
+            "answer": "(3+/-sqrt17)/2",
+            "minutes": 4
+          },
+          {
+            "prompt": "Evaluate both sides at x = -2, 0, and 3. Then decide, with algebraic justification, whether the equation is an identity.",
+            "math": [
+              "(x-2)(x+2)=x^2-4"
+            ],
+            "answer": "0=-0 at-2; -4=-4;5=5;difference squares",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student claims √(a + b) = √a + √b for nonnegative a and b. Test a = 9, b = 16; explain the conclusion.",
+            "math": [],
+            "answer": "5 !=7 disproves",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 2",
+    "subtitle": "Polynomial structure and operations",
+    "coverage": "Topics 9-12",
+    "file": "tsm-099-homework-02.pdf",
+    "sections": [
+      {
+        "title": "Terms, factors, and exponents",
+        "problems": [
+          {
+            "prompt": "Simplify. Keep unlike terms separate.",
+            "math": [
+              "7x^2-3x+4-2x^2+8x-9"
+            ],
+            "answer": "5x²+5x-5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify. Keep unlike terms separate.",
+            "math": [
+              "3ab-5a^2+7ab+2a^2"
+            ],
+            "answer": "10ab-3a²",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify. Keep unlike terms separate.",
+            "math": [
+              "(-2x^3y)(5xy^2)"
+            ],
+            "answer": "-10x4y3",
+            "minutes": 2
+          },
+          {
+            "prompt": "Simplify. Keep unlike terms separate.",
+            "math": [
+              "(3a^2b)^2"
+            ],
+            "answer": "9a4b²",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Read the structure",
+        "problems": [
+          {
+            "prompt": "Simplify (2x) cubed and 2x cubed. Evaluate each at x = -1 and explain the role of parentheses.",
+            "math": [],
+            "answer": "8x³ vs2x³;-8 vs-2",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Distribute and combine",
+        "problems": [
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "-3x^2(2x^3-x+4)"
+            ],
+            "answer": "-6x5+3x³-12x²",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "2(3x-4)-5(x+1)"
+            ],
+            "answer": "x-13",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "(4x^3-2x^2+x)-(x^3+5x^2-3)"
+            ],
+            "answer": "3x³-7x²+x+3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as needed and combine like terms.",
+            "math": [
+              "3(x-2)-2(4-x)+5x"
+            ],
+            "answer": "10x-14",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Binomial products",
+        "problems": [
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(3x-2)(2x+5)"
+            ],
+            "answer": "6x²+11x-10",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(4x+1)(x-3)"
+            ],
+            "answer": "4x²-11x-3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(2x-5)^2"
+            ],
+            "answer": "4x²-20x+25",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(3x+4)(3x-4)"
+            ],
+            "answer": "9x²-16",
+            "minutes": 3
+          },
+          {
+            "prompt": "Multiply and combine like terms.",
+            "math": [
+              "(2a-3b)(a+4b)"
+            ],
+            "answer": "2a²+5ab-12b²",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Explain and verify",
+        "problems": [
+          {
+            "prompt": "Simplify 2(x + 1) squared - (x - 2)(x + 2). Then check at x = -1.",
+            "math": [],
+            "answer": "x²+4x+6;at-1=3",
+            "minutes": 5
+          },
+          {
+            "prompt": "A student writes (x - 5) squared = x squared + 25. Explain the missing term by showing distribution, and correct the result.",
+            "math": [],
+            "answer": "-10x omitted;x²-10x+25",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 3",
+    "subtitle": "Common factors and advanced factoring",
+    "coverage": "Topics 13-17",
+    "file": "tsm-099-homework-03.pdf",
+    "sections": [
+      {
+        "title": "GCF first",
+        "problems": [
+          {
+            "prompt": "Find the GCD of 72 and 108. Then find the greatest common monomial factor of 18x cubed y and 30x squared y cubed.",
+            "math": [],
+            "answer": "36;6x²y",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor out the GCF.",
+            "math": [
+              "18x^3y-30x^2y^2"
+            ],
+            "answer": "6x²y(3x-5y)",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Factor trinomials",
+        "problems": [
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "x^2-2x-24"
+            ],
+            "answer": "(x-6)(x+4)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "x^2-11x+24"
+            ],
+            "answer": "(x-3)(x-8)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "6x^2+7x+2"
+            ],
+            "answer": "(3x+2)(2x+1)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "8x^2-2x-3"
+            ],
+            "answer": "(4x-3)(2x+1)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "10x^2-13x+3"
+            ],
+            "answer": "(10x-3)(x-1)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely over the integers. Verify by multiplication.",
+            "math": [
+              "12x^2+11x+2"
+            ],
+            "answer": "(3x+2)(4x+1)",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Grouping and complete factorization",
+        "problems": [
+          {
+            "prompt": "Factor by grouping.",
+            "math": [
+              "x^3+2x^2-9x-18"
+            ],
+            "answer": "(x+2)(x-3)(x+3)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor by grouping.",
+            "math": [
+              "6x^3-9x^2+4x-6"
+            ],
+            "answer": "(2x-3)(3x²+2)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Factor completely.",
+            "math": [
+              "3x^3-12x"
+            ],
+            "answer": "3x(x-2)(x+2)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely.",
+            "math": [
+              "2x^2-8x+8"
+            ],
+            "answer": "2(x-2)²",
+            "minutes": 3
+          },
+          {
+            "prompt": "Factor completely.",
+            "math": [
+              "9x^2-25"
+            ],
+            "answer": "(3x-5)(3x+5)",
+            "minutes": 3
+          },
+          {
+            "prompt": "A student factors 4x squared - 16 as 4(x squared - 4) and stops. Explain why the answer is incomplete and finish it.",
+            "math": [],
+            "answer": "4(x-2)(x+2)",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 4",
+    "subtitle": "Simplifying, multiplying, and dividing fractions",
+    "coverage": "Topics 18-20",
+    "file": "tsm-099-homework-04.pdf",
+    "sections": [
+      {
+        "title": "Numerical structure",
+        "problems": [
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "\\frac{15}{28}\\cdot\\frac{14}{25}"
+            ],
+            "answer": "3/10",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "\\frac{-7}{12}\\div\\frac{14}{9}"
+            ],
+            "answer": "-3/8",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Simplifying rational expressions",
+        "problems": [
+          {
+            "prompt": "Simplify and state original restrictions.",
+            "math": [
+              "\\frac{x^2-16}{x^2+7x+12}"
+            ],
+            "answer": "(x-4)/(x+3), excl-4,-3",
+            "minutes": 4
+          },
+          {
+            "prompt": "Simplify and state original restrictions.",
+            "math": [
+              "\\frac{3x^2-12x}{6x}"
+            ],
+            "answer": "(x-4)/2,excl0",
+            "minutes": 4
+          },
+          {
+            "prompt": "Simplify and state original restrictions.",
+            "math": [
+              "\\frac{x^2-6x+9}{x^2-9}"
+            ],
+            "answer": "(x-3)/(x+3),excl+/-3",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Products and quotients",
+        "problems": [
+          {
+            "prompt": "Multiply and simplify. State every original restriction.",
+            "math": [
+              "\\frac{x^2-4}{x^2-5x+6}\\cdot\\frac{x-3}{x+2}"
+            ],
+            "answer": "1;excl-2,2,3",
+            "minutes": 5
+          },
+          {
+            "prompt": "Multiply and simplify. State every original restriction.",
+            "math": [
+              "\\frac{x^2-9}{x^2+x-6}\\cdot\\frac{x-2}{x^2-3x}"
+            ],
+            "answer": "1/x;excl-3,0,2,3",
+            "minutes": 5
+          },
+          {
+            "prompt": "Divide and simplify. Include restrictions caused by the divisor.",
+            "math": [
+              "\\frac{x^2-1}{x+3}\\div\\frac{x-1}{x+2}"
+            ],
+            "answer": "(x+1)(x+2)/(x+3);excl-3,-2,1",
+            "minutes": 5
+          },
+          {
+            "prompt": "Divide and simplify. Include restrictions caused by the divisor.",
+            "math": [
+              "\\frac{2x}{x-4}\\div\\frac{x^2}{x^2-16}"
+            ],
+            "answer": "2(x+4)/x;excl-4,0,4",
+            "minutes": 5
+          },
+          {
+            "prompt": "Explain why canceling x from (x + 2)/x is invalid. Rewrite the expression as a sum of two terms for nonzero x.",
+            "math": [],
+            "answer": "x not factor whole numerator;1+2/x",
+            "minutes": 3
+          },
+          {
+            "prompt": "A simplified expression equals 1, but its original form was (x squared - 4)/[(x - 2)(x + 2)]. State its domain and explain why it is not the constant function 1 on all real numbers.",
+            "math": [],
+            "answer": "excludes +/-2;original undefined there",
+            "minutes": 4
+          },
+          {
+            "prompt": "For Problem 8, check the original and simplified expressions at x = 2. Explain why the restriction x ≠ 1 remains even though a factor canceled.",
+            "math": [],
+            "answer": "12/5 both;divisor0 at1",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers. State every restriction from the original expression, including any value that makes a divisor zero. Cancel common factors, not terms.",
+    "topics": [
+      18,
+      19,
+      20
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 5",
+    "subtitle": "Common denominators and sums of fractions",
+    "coverage": "Topics 21-23",
+    "file": "tsm-099-homework-05.pdf",
+    "sections": [
+      {
+        "title": "Build common denominators",
+        "problems": [
+          {
+            "prompt": "Find the LCM of 18 and 24. Then find the least common denominator of 1/(x squared - 1) and 1/(x squared + x). State excluded values.",
+            "math": [],
+            "answer": "72;x(x-1)(x+1);excl-1,0,1",
+            "minutes": 5
+          },
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "\\frac{7}{12}-\\frac{5}{18}"
+            ],
+            "answer": "11/36",
+            "minutes": 3
+          },
+          {
+            "prompt": "Compute and reduce.",
+            "math": [
+              "-\\frac{3}{8}+\\frac{5}{12}"
+            ],
+            "answer": "1/24",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Add or subtract rational expressions",
+        "problems": [
+          {
+            "prompt": "Combine, simplify, and state original restrictions.",
+            "math": [
+              "\\frac{2}{x}+\\frac{3}{x+1}"
+            ],
+            "answer": "(5x+2)/[x(x+1)],excl0,-1",
+            "minutes": 5
+          },
+          {
+            "prompt": "Combine, simplify, and state original restrictions.",
+            "math": [
+              "\\frac{3}{x-2}-\\frac{1}{x+2}"
+            ],
+            "answer": "(2x+8)/(x²-4),excl+/-2",
+            "minutes": 5
+          },
+          {
+            "prompt": "Combine, simplify, and state original restrictions.",
+            "math": [
+              "\\frac{x}{x-1}-\\frac{2}{x-1}"
+            ],
+            "answer": "(x-2)/(x-1),excl1",
+            "minutes": 5
+          },
+          {
+            "prompt": "Combine, simplify, and state original restrictions.",
+            "math": [
+              "\\frac{2}{x^2-x}+\\frac{3}{x^2-1}"
+            ],
+            "answer": "(5x+2)/[x(x-1)(x+1)],excl0,+/-1",
+            "minutes": 5
+          },
+          {
+            "prompt": "Combine, simplify, and state original restrictions.",
+            "math": [
+              "\\frac{4}{x^2-4}-\\frac{1}{x^2+x-2}"
+            ],
+            "answer": "(3x-2)/[(x-2)(x+2)(x-1)],excl-2,1,2",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Cancellation, signs, and checking",
+        "problems": [
+          {
+            "prompt": "Combine and simplify. Retain original restrictions.",
+            "math": [
+              "\\frac{x}{x-3}-\\frac{3}{x-3}"
+            ],
+            "answer": "1,excl3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Simplify. Factor the denominator before choosing a common denominator.",
+            "math": [
+              "\\frac{1}{x-1}+\\frac{2}{2-2x}"
+            ],
+            "answer": "0,excl1",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student writes 1/x + 1/(x + 1) = 2/(2x + 1). Use x = 1 to disprove the claim, then derive the correct expression and state restrictions.",
+            "math": [],
+            "answer": "3/2 vs2/3;(2x+1)/[x(x+1)],excl0,-1",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers. State every restriction from the original expression, including any value that makes a divisor zero. Cancel common factors, not terms.",
+    "topics": [
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 6",
+    "subtitle": "Linear and quadratic equations",
+    "coverage": "Topics 24-28",
+    "file": "tsm-099-homework-06.pdf",
+    "sections": [
+      {
+        "title": "Linear equations and fractions",
+        "problems": [
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "-\\frac{3}{5}x=9"
+            ],
+            "answer": "-15",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve and check.",
+            "math": [
+              "4(2x-3)-3(x+1)=2x+6"
+            ],
+            "answer": "7",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve each equation; state the full solution set.",
+            "math": [
+              "2(3x-1)+5=6x+3",
+              "5(x+1)=5x+2"
+            ],
+            "answer": "all real;none",
+            "minutes": 3
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{x+1}{3}+\\frac{x-2}{6}=\\frac{5}{2}"
+            ],
+            "answer": "5",
+            "minutes": 4
+          },
+          {
+            "prompt": "Combine and simplify each side first, then solve and check.",
+            "math": [
+              "\\frac{2x-1}{4}=\\frac{x+2}{3}"
+            ],
+            "answer": "11/2",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Three quadratic methods",
+        "problems": [
+          {
+            "prompt": "Solve by factoring.",
+            "math": [
+              "x^2+3x=18"
+            ],
+            "answer": "3,-6",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve by factoring.",
+            "math": [
+              "2x^2-7x+3=0"
+            ],
+            "answer": "1/2,3",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve by taking square roots.",
+            "math": [
+              "2(x+1)^2=18"
+            ],
+            "answer": "2,-4",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve by taking square roots. Give exact real solutions.",
+            "math": [
+              "(x-3)^2=7"
+            ],
+            "answer": "3+/-sqrt7",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve with the quadratic formula.",
+            "math": [
+              "2x^2+x-4=0"
+            ],
+            "answer": "(-1+/-sqrt33)/4",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve with the quadratic formula.",
+            "math": [
+              "3x^2-2x=2"
+            ],
+            "answer": "(1+/-sqrt7)/3",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve over the real numbers. Then state the complex solutions if complex numbers are allowed.",
+            "math": [
+              "x^2+4=0"
+            ],
+            "answer": "no real;+/-2i",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Choose and explain",
+        "problems": [
+          {
+            "prompt": "Choose an efficient method and solve. Explain the method choice.",
+            "math": [
+              "5(x-2)^2=20"
+            ],
+            "answer": "0,4;square roots",
+            "minutes": 3
+          },
+          {
+            "prompt": "A student solves x squared - 5x = 0 by dividing by x. Explain the lost solution and solve correctly.",
+            "math": [],
+            "answer": "0 lost;factor x(x-5);0,5",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact answers. For equations with fractions, combine and simplify each side first. Then move each remaining denominator to multiply the entire opposite side. Check solutions in the original equation.",
+    "topics": [
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 7",
+    "subtitle": "Rational equations and excluded values",
+    "coverage": "Topics 29",
+    "file": "tsm-099-homework-07.pdf",
+    "sections": [
+      {
+        "title": "Simplify each side, then move denominators",
+        "problems": [
+          {
+            "prompt": "State restrictions, solve, and check in the original equation.",
+            "math": [
+              "\\frac{24}{3x-6}+\\frac{2}{x-2}=5"
+            ],
+            "answer": "exclude2;4",
+            "minutes": 5
+          },
+          {
+            "prompt": "State restrictions, solve, and check in the original equation.",
+            "math": [
+              "\\frac{3}{x+1}=\\frac{2}{x-2}"
+            ],
+            "answer": "exclude-1,2;8",
+            "minutes": 4
+          },
+          {
+            "prompt": "State restrictions, solve, and check in the original equation.",
+            "math": [
+              "\\frac{x+2}{x-1}=3"
+            ],
+            "answer": "exclude1;5/2",
+            "minutes": 4
+          },
+          {
+            "prompt": "State restrictions, solve, and check in the original equation.",
+            "math": [
+              "\\frac{1}{x}+\\frac{1}{x+1}=\\frac{3}{x(x+1)}"
+            ],
+            "answer": "exclude0,-1;1",
+            "minutes": 5
+          },
+          {
+            "prompt": "State restrictions, solve, and check every candidate.",
+            "math": [
+              "\\frac{2}{x-1}=\\frac{x}{x-1}"
+            ],
+            "answer": "exclude1;2",
+            "minutes": 4
+          },
+          {
+            "prompt": "State restrictions, solve, and check every candidate.",
+            "math": [
+              "\\frac{x}{x-2}-\\frac{2}{x-2}=2"
+            ],
+            "answer": "exclude2;left1 hence none",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Keep restrictions through cancellation",
+        "problems": [
+          {
+            "prompt": "State restrictions, simplify both sides, and give the full solution set.",
+            "math": [
+              "\\frac{x+1}{x-1}=1+\\frac{2}{x-1}"
+            ],
+            "answer": "all real except1",
+            "minutes": 5
+          },
+          {
+            "prompt": "State restrictions, solve, and check every candidate.",
+            "math": [
+              "\\frac{x}{x-1}=\\frac{1}{x-1}"
+            ],
+            "answer": "exclude1;candidate1 invalid;none",
+            "minutes": 5
+          },
+          {
+            "prompt": "State restrictions, solve, and check every candidate.",
+            "math": [
+              "\\frac{1}{x-1}+\\frac{1}{x+1}=1"
+            ],
+            "answer": "exclude+/-1;1+/-sqrt2",
+            "minutes": 7
+          },
+          {
+            "prompt": "A student turns 1/x + 2 = 3/x into 1 + 2 = 3 by moving denominators before combining whole sides. Explain the error, solve correctly, and check.",
+            "math": [],
+            "answer": "2 term becomes2x; x1 restriction0;1+2x3",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact answers. For equations with fractions, combine and simplify each side first. Then move each remaining denominator to multiply the entire opposite side. Check solutions in the original equation. State every original denominator restriction before simplifying.",
+    "topics": [
+      29
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 8",
+    "subtitle": "Lines, slopes, graphs, and systems",
+    "coverage": "Topics 30-34",
+    "file": "tsm-099-homework-08.pdf",
+    "sections": [
+      {
+        "title": "Representing lines",
+        "problems": [
+          {
+            "prompt": "Graph by intercepts and check a third point.",
+            "math": [
+              "3x+2y=6"
+            ],
+            "answer": "(2,0),(0,3),(-2,6)",
+            "minutes": 4
+          },
+          {
+            "prompt": "State the slope and y-intercept, then graph using the slope.",
+            "math": [
+              "y=-\\frac{2}{3}x+1"
+            ],
+            "answer": "m-2/3 b1;points(0,1),(3,-1)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Write the equation of the graphed line in slope-intercept form. Use the marked lattice points.",
+            "math": [],
+            "answer": "y=2x/3-1",
+            "minutes": 4,
+            "graph": "line"
+          },
+          {
+            "prompt": "Find the slope through (-2, 5) and (4, -1), then write the line equation in slope-intercept form.",
+            "math": [],
+            "answer": "-1;y=-x+3",
+            "minutes": 5
+          },
+          {
+            "prompt": "Find the slope through (2, -3) and (2, 4). Write the line equation. Compare it with the line through (-1, 4) and (3, 4).",
+            "math": [],
+            "answer": "undefined x2;other slope0 y4",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Intersections and algebraic methods",
+        "problems": [
+          {
+            "prompt": "Graph the system, read its intersection, and check both equations.",
+            "math": [
+              "y=x-1,\\qquad y=-2x+5"
+            ],
+            "answer": "(2,1)",
+            "minutes": 6
+          },
+          {
+            "prompt": "Solve by substitution and check.",
+            "math": [
+              "y=3x-4,\\qquad2x+y=11"
+            ],
+            "answer": "(3,5)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Solve by elimination and check.",
+            "math": [
+              "2x+3y=7,\\qquad3x-2y=4"
+            ],
+            "answer": "(2,1)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Classify and solve each system. Explain the graph relationship.",
+            "math": [
+              "\\mathrm{a)}\\ 2x-y=3,\\quad4x-2y=6",
+              "\\mathrm{b)}\\ 2x-y=3,\\quad4x-2y=8"
+            ],
+            "answer": "a same line infinite; b parallel none",
+            "minutes": 5
+          },
+          {
+            "prompt": "Find the line through (1, -2) parallel to y = 3x + 4. Check that the point lies on your line and explain why the slopes agree.",
+            "math": [],
+            "answer": "y3x-5",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student says a negative slope means every point on the line has a negative y-coordinate. Use y = -x + 3 to disprove the claim and explain what the slope means.",
+            "math": [],
+            "answer": "(0,3);as x increases1 y decreases1",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      30,
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "title": "Homework 9",
+    "subtitle": "Percents, models, and contextual systems",
+    "coverage": "Topics 35-37",
+    "file": "tsm-099-homework-09.pdf",
+    "sections": [
+      {
+        "title": "Translate percent relationships",
+        "problems": [
+          {
+            "prompt": "Convert (a) 0.6% to a decimal, (b) 1.25 to a percent, and (c) 7/8 to a percent.",
+            "math": [],
+            "answer": ".006,125%,87.5%",
+            "minutes": 3
+          },
+          {
+            "prompt": "A class has 32 students; 28 complete an assignment. Find the completion percentage and the number that did not complete it.",
+            "math": [],
+            "answer": "87.5%;4",
+            "minutes": 3
+          },
+          {
+            "prompt": "A sale price of $68 is 80% of the original price. Define the unknown, write an equation, and find the original price.",
+            "math": [],
+            "answer": "85",
+            "minutes": 4
+          },
+          {
+            "prompt": "A quantity increases from 48 to 60, then decreases from 60 to 48. Find both percent changes and explain why they differ.",
+            "math": [],
+            "answer": "25% increase;20% decrease;different bases",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Successive changes and equations",
+        "problems": [
+          {
+            "prompt": "A $200 item is discounted 15%, then taxed 6% on the sale price. Find the total and the net percent change from $200.",
+            "math": [],
+            "answer": "180.20;9.9%decrease",
+            "minutes": 5
+          },
+          {
+            "prompt": "After an 8% increase, a fee is $81. Find its original amount. Explain why subtracting 8% of $81 is not the inverse calculation.",
+            "math": [],
+            "answer": "75;base original not81",
+            "minutes": 4
+          },
+          {
+            "prompt": "A number plus 30% of itself is 91. Write and solve an equation.",
+            "math": [],
+            "answer": "70",
+            "minutes": 3
+          },
+          {
+            "prompt": "A rectangle has perimeter 46 cm, and its length is 5 cm more than its width. Find its dimensions and area; check the perimeter.",
+            "math": [],
+            "answer": "w9 l14 area126",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Systems and reasonableness",
+        "problems": [
+          {
+            "prompt": "A venue sells 30 tickets. Standard tickets cost $12; discounted tickets cost $8. Revenue is $304. Define variables, solve a system, and check both totals.",
+            "math": [],
+            "answer": "16 standard14 discount",
+            "minutes": 6
+          },
+          {
+            "prompt": "Mix a 10% solution and a 30% solution to obtain 10 liters of a 22% solution. Assume volumes add. Define variables, write a total-volume equation and a solute equation, then solve.",
+            "math": [],
+            "answer": "4L10%;6L30%",
+            "minutes": 6
+          },
+          {
+            "prompt": "Two rental plans cost A = 18 + 3h and B = 6 + 5h dollars for h hours. Find when the costs are equal. Use a check at h = 2 and h = 10 to decide which is cheaper on each side of that point.",
+            "math": [],
+            "answer": "h6 cost36;at2 B16 vsA24;at10 A48 vsB56",
+            "minutes": 4
+          },
+          {
+            "prompt": "A model gives -3 as the number of tickets to buy. Explain why an algebraic solution may not be a valid answer to a word problem, and name two checks to perform.",
+            "math": [],
+            "answer": "negative count invalid;units/domain and original constraints",
+            "minutes": 2
+          }
+        ]
+      }
+    ],
+    "directions": "Work without a calculator before checking. Give exact, simplified answers.",
+    "topics": [
+      35,
+      36,
+      37
+    ]
+  }
+]

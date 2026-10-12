@@ -1,0 +1,743 @@
+[
+  {
+    "course": "MATH 101",
+    "title": "Chapter 2 Homework",
+    "subtitle": "Equations and inequalities",
+    "coverage": "Sections 2.1-2.2 and 2.4-2.7",
+    "file": "chapter-2-homework.pdf",
+    "sections": [
+      {
+        "title": "Equations and their graphs",
+        "problems": [
+          {
+            "prompt": "Find the x- and y-intercepts, then sketch the line.",
+            "math": [
+              "2x+3y=12"
+            ],
+            "answer": "(6,0), (0,4)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. Check your solution.",
+            "math": [
+              "3(2x-1)-4=2(x+5)"
+            ],
+            "answer": "17/4",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve each equation; describe the full solution set.",
+            "math": [
+              "\\mathrm{a)}\\ 2(x-3)+5=2x-1",
+              "\\mathrm{b)}\\ 3(x+1)=3x-2"
+            ],
+            "answer": "a all real; b no solution",
+            "minutes": 3
+          },
+          {
+            "prompt": "State the excluded input, solve, and check in the original equation.",
+            "math": [
+              "\\frac{x+1}{x-2}=2"
+            ],
+            "answer": "x != 2; x=5",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Quadratic and other equations",
+        "problems": [
+          {
+            "prompt": "Solve by factoring.",
+            "math": [
+              "x^2-5x-14=0"
+            ],
+            "answer": "-2,7",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve by taking square roots.",
+            "math": [
+              "3(x-2)^2=27"
+            ],
+            "answer": "-1,5",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve with the quadratic formula. Give exact answers.",
+            "math": [
+              "2x^2-3x-1=0"
+            ],
+            "answer": "(3 +/- sqrt17)/4",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve over the complex numbers. State why there are no real solutions.",
+            "math": [
+              "x^2+6x+13=0"
+            ],
+            "answer": "-3 +/- 2i; discriminant -16",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. Check every candidate in the original equation.",
+            "math": [
+              "\\sqrt{x+6}=x"
+            ],
+            "answer": "3 valid; -2 extraneous",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve by treating the equation as a quadratic in x squared.",
+            "math": [
+              "x^4-5x^2+4=0"
+            ],
+            "answer": "-2,-1,1,2",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve.",
+            "math": [
+              "|2x-1|=7"
+            ],
+            "answer": "-3,4",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Inequalities and reasoning",
+        "problems": [
+          {
+            "prompt": "Solve and write the answer in interval notation.",
+            "math": [
+              "5-2x\\geq 11"
+            ],
+            "answer": "(-inf,-3]",
+            "minutes": 2
+          },
+          {
+            "prompt": "Solve and sketch the solution on a number line.",
+            "math": [
+              "-3<2x+1\\leq7"
+            ],
+            "answer": "(-2,3]",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve and write the answer in interval notation.",
+            "math": [
+              "|x-2|<5"
+            ],
+            "answer": "(-3,7)",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve and write the answer in interval notation.",
+            "math": [
+              "|x+1|\\geq3"
+            ],
+            "answer": "(-inf,-4] union [2,inf)",
+            "minutes": 3
+          },
+          {
+            "prompt": "A student solves x(x - 4) = 0 by dividing by x and reports only x = 4. Identify the lost solution and explain which division was invalid.",
+            "math": [],
+            "answer": "Lost 0; division by x assumes nonzero.",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning."
+  },
+  {
+    "course": "MATH 101",
+    "title": "Chapter 3 Homework",
+    "subtitle": "Functions, composition, and inverses",
+    "coverage": "Sections 3.1-3.7",
+    "file": "chapter-3-homework.pdf",
+    "sections": [
+      {
+        "title": "Function language and domains",
+        "problems": [
+          {
+            "prompt": "Which relation defines y as a function of x? Which is also one-to-one? Explain.",
+            "math": [
+              "A=\\{(-1,2),(0,2),(1,4)\\}",
+              "B=\\{(-1,2),(-1,3),(1,4)\\}"
+            ],
+            "answer": "A function not one-to-one; B not function",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find f(-2), f(a + 1), and the inputs for which f(x) = 5.",
+            "math": [
+              "f(x)=x^2-4"
+            ],
+            "answer": "0; a²+2a-3; +/-3",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the real domain of each function in interval notation.",
+            "math": [
+              "\\mathrm{a)}\\ f(x)=\\frac{x+2}{x^2-9}",
+              "\\mathrm{b)}\\ g(x)=\\sqrt{5-2x}"
+            ],
+            "answer": "a R except +/-3; b (-inf,5/2]",
+            "minutes": 4
+          },
+          {
+            "prompt": "For h(x) = -x + 1 when x &lt; 0 and h(x) = x squared when x ≥ 0, find h(-2), h(0), and h(3). Sketch the two pieces, showing endpoint inclusion.",
+            "math": [],
+            "answer": "3,0,9; open (0,1), closed (0,0)",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Rates and function structure",
+        "problems": [
+          {
+            "prompt": "Find the average rate of change on [-1, 2]. Is the function constant on this interval? Explain.",
+            "math": [
+              "f(x)=(x-1)^2"
+            ],
+            "answer": "-1; no, endpoint difference -3 /3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find both compositions and their domains. Does order matter?",
+            "math": [
+              "f(x)=x^2,\\qquad g(x)=x-3"
+            ],
+            "answer": "(x-3)² and x²-3; both R; order matters",
+            "minutes": 4
+          },
+          {
+            "prompt": "Give functions f and g with h = f composed with g, with neither chosen function equal to the identity.",
+            "math": [
+              "h(x)=\\sqrt{3x+4}"
+            ],
+            "answer": "g=3x+4 f=sqrt x",
+            "minutes": 3
+          },
+          {
+            "prompt": "The solid graph is f and the dashed graph is g. Write g in terms of f. Read the domain and range of each graph.",
+            "math": [],
+            "answer": "g(x)=f(x-3)-2; f D[-3,2] R[-1,2]; g D[0,5] R[-3,0]",
+            "minutes": 5,
+            "graph": "transform"
+          }
+        ]
+      },
+      {
+        "title": "Graph features and inverses",
+        "problems": [
+          {
+            "prompt": "Describe the transformations from y = |x|. Sketch the graph and give its vertex, range, and increasing/decreasing intervals.",
+            "math": [
+              "y=-2|x+1|+4"
+            ],
+            "answer": "left1 reflect x scale2 up4; vertex(-1,4); R<=4; inc(-inf,-1), dec(-1,inf)",
+            "minutes": 6
+          },
+          {
+            "prompt": "Find the inverse and verify both compositions.",
+            "math": [
+              "f(x)=3x-5"
+            ],
+            "answer": "inverse (x+5)/3; both identity",
+            "minutes": 5
+          },
+          {
+            "prompt": "Find the inverse of the restricted function. State the domain and range of the function and its inverse; explain the chosen square-root sign.",
+            "math": [
+              "f(x)=(x-2)^2,\\qquad x\\geq2"
+            ],
+            "answer": "inv 2+sqrt x D[0,inf) R[2,inf); f D[2,inf) R[0,inf)",
+            "minutes": 7
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning."
+  },
+  {
+    "course": "MATH 101",
+    "title": "Chapter 4 Homework",
+    "subtitle": "Linear functions",
+    "coverage": "Section 4.1",
+    "file": "chapter-4-homework.pdf",
+    "sections": [
+      {
+        "title": "Recognizing and describing linear functions",
+        "problems": [
+          {
+            "prompt": "For each table, decide whether a linear function fits all points. Justify using rates of change. If linear, find its rule.",
+            "math": [],
+            "answer": "A=3x+2; B nonlinear",
+            "minutes": 5,
+            "table": [
+              [
+                "x",
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              [
+                "A(x)",
+                "2",
+                "5",
+                "8",
+                "11"
+              ],
+              [
+                "B(x)",
+                "2",
+                "4",
+                "8",
+                "16"
+              ]
+            ]
+          },
+          {
+            "prompt": "State the slope and y-intercept; decide whether the function increases or decreases. Find f(-2) and solve f(x) = 1.",
+            "math": [
+              "f(x)=-\\frac{3}{2}x+4"
+            ],
+            "answer": "m -3/2 b4; decreases;7;x2",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the equation of the line through the two points. Use function notation.",
+            "math": [
+              "(-2,5),\\quad(4,-1)"
+            ],
+            "answer": "f=-x+3",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the slope and y-intercept, then sketch the graph.",
+            "math": [
+              "3x+2y=8"
+            ],
+            "answer": "m -3/2 b4",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Connecting equations, graphs, and rates",
+        "problems": [
+          {
+            "prompt": "Sketch both equations. Identify which one defines y as a function of x, and explain.",
+            "math": [
+              "x=-2,\\qquad y=3"
+            ],
+            "answer": "horizontal y3 is function; vertical x-2 not",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find equations of the lines through (2, -1) that are (a) parallel and (b) perpendicular to the given line.",
+            "math": [
+              "y=\\frac{2}{3}x+4"
+            ],
+            "answer": "a 2x/3-7/3; b -3x/2+2",
+            "minutes": 5
+          },
+          {
+            "prompt": "A tank contains 180 liters and loses 6 liters per minute at a constant rate. Write V(t), interpret its slope and intercept with units, and give a physically meaningful domain.",
+            "math": [],
+            "answer": "180-6t; -6 L/min 180L;[0,30]",
+            "minutes": 5
+          },
+          {
+            "prompt": "For the tank in Problem 7, find V(8) and when the volume reaches 60 liters. Explain the difference between these two questions.",
+            "math": [],
+            "answer": "132 L;20min;output vs input",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Intersections and reasoning",
+        "problems": [
+          {
+            "prompt": "Find the intersection algebraically and confirm it by sketching both lines.",
+            "math": [
+              "f(x)=2x+1,\\qquad g(x)=-x+7"
+            ],
+            "answer": "(2,5)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the input interval on which f(x) is greater than g(x), using the functions in Problem 9. Explain what this means on the graph.",
+            "math": [],
+            "answer": "x>2, f graph above g",
+            "minutes": 3
+          },
+          {
+            "prompt": "A line has slope -2 and passes through (3, 5). A student writes y = -2x + 5. Explain the error and give the correct equation.",
+            "math": [],
+            "answer": "point y not intercept; y=-2x+11",
+            "minutes": 3
+          },
+          {
+            "prompt": "Find the inverse of f(x) = 4x - 6. State its slope. Explain why the two graphs are reflections across y = x.",
+            "math": [],
+            "answer": "(x+6)/4;1/4; ordered pairs reverse",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning."
+  },
+  {
+    "course": "MATH 101",
+    "title": "Chapter 5 Homework",
+    "subtitle": "Polynomial, rational, and radical functions",
+    "coverage": "Sections 5.1-5.7",
+    "file": "chapter-5-homework.pdf",
+    "sections": [
+      {
+        "title": "Polynomial graphs and zeros",
+        "problems": [
+          {
+            "prompt": "Write in vertex form. Give the vertex, intercepts, and increasing/decreasing intervals; sketch the parabola.",
+            "math": [
+              "f(x)=x^2-4x-5"
+            ],
+            "answer": "(x-2)²-9;V(2,-9);zeros -1,5;y-5;dec before2 inc after",
+            "minutes": 5
+          },
+          {
+            "prompt": "State the degree, leading coefficient, end behavior, zeros, and multiplicities. At each zero, does the graph cross or touch the axis?",
+            "math": [
+              "p(x)=-2(x+1)^2(x-3)^3"
+            ],
+            "answer": "degree5 LC-2 left up right down; -1 mult2 touch;3 mult3 cross",
+            "minutes": 4
+          },
+          {
+            "prompt": "The graph is a cubic. Its only zeros are -2 (crossing) and 1 (touching); the labeled point is on the graph. Write its equation in factored form.",
+            "math": [],
+            "answer": "(x+2)(x-1)²",
+            "minutes": 4,
+            "graph": "polynomial"
+          },
+          {
+            "prompt": "List all Rational Root Theorem candidates. Test only -1, 1, and 2. Use the rational zero you find and polynomial long division, then the quadratic formula, to find every zero.",
+            "math": [
+              "p(x)=x^3-2x^2-2x+4"
+            ],
+            "answer": "candidates +/-1,2,4; p(-1)=3 p1=1 p2=0; quotient x²-2;2,+/-sqrt2",
+            "minutes": 9
+          },
+          {
+            "prompt": "A real-coefficient polynomial has degree 4 and zeros 2 (multiplicity 2) and 1 + i. State its remaining zero and explain why your list is complete.",
+            "math": [],
+            "answer": "1-i; conjugate pair plus double root accounts4",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Rational and radical functions",
+        "problems": [
+          {
+            "prompt": "Find the domain, hole (if any), vertical and horizontal asymptotes, and intercepts. Use the original restrictions.",
+            "math": [
+              "r(x)=\\frac{(x-2)(x+1)}{(x-2)(x-3)}"
+            ],
+            "answer": "exclude2,3; hole(2,-3);VA3 HA1;x(-1,0);y(0,-1/3)",
+            "minutes": 6
+          },
+          {
+            "prompt": "Use polynomial long division to find the slant asymptote. Give the domain and vertical asymptote.",
+            "math": [
+              "s(x)=\\frac{x^2+x+1}{x-1}"
+            ],
+            "answer": "x+2+3/(x-1);slant yx+2;D!=1;VA1",
+            "minutes": 4
+          },
+          {
+            "prompt": "Find the domain, range, both intercepts, and end behavior; sketch the graph.",
+            "math": [
+              "h(x)=2\\sqrt{x+1}-4"
+            ],
+            "answer": "D>=-1 R>=-4 x3 y-2; x->infty h->infty; endpoint(-1,-4)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Find the inverse, with its domain and range.",
+            "math": [
+              "f(x)=(x+1)^2,\\qquad x\\leq-1"
+            ],
+            "answer": "-1-sqrtx D>=0 R<=-1",
+            "minutes": 4
+          },
+          {
+            "prompt": "Use a sign chart to solve. Explain whether each boundary point is included.",
+            "math": [
+              "\\frac{x-1}{x+2}\\leq0"
+            ],
+            "answer": "(-2,1]",
+            "minutes": 4
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning."
+  },
+  {
+    "course": "MATH 101",
+    "title": "Chapter 6 Homework",
+    "subtitle": "Exponential and logarithmic functions",
+    "coverage": "Sections 6.1-6.6",
+    "file": "chapter-6-homework.pdf",
+    "sections": [
+      {
+        "title": "Exponential functions and inverse language",
+        "problems": [
+          {
+            "prompt": "Evaluate f(-1), f(0), and f(2). State the growth factor and percent increase for each unit increase in x.",
+            "math": [
+              "f(x)=3\\cdot2^x"
+            ],
+            "answer": "1.5,3,12;factor2 increase100%",
+            "minutes": 3
+          },
+          {
+            "prompt": "On the same axes sketch f and g using x = -1, 0, 1, 2. Label intercepts and identify which function grows faster.",
+            "math": [
+              "f(x)=2\\cdot2^x,\\qquad g(x)=2\\cdot3^x"
+            ],
+            "answer": "same intercept2;g faster;values f1,2,4,8 g2/3,2,6,18",
+            "minutes": 4
+          },
+          {
+            "prompt": "Sketch the function. Give its domain, range, horizontal asymptote, and end behavior.",
+            "math": [
+              "h(x)=3\\left(\\frac{1}{2}\\right)^x"
+            ],
+            "answer": "D R;range>0;HA0;left infinity right0",
+            "minutes": 3
+          },
+          {
+            "prompt": "Rewrite each statement in the other form (logarithmic or exponential).",
+            "math": [
+              "\\mathrm{a)}\\ 2^5=32\\qquad\\mathrm{b)}\\ \\log_3\\!\\left(\\frac{1}{9}\\right)=-2"
+            ],
+            "answer": "log2 32=5;3^-2=1/9",
+            "minutes": 2
+          },
+          {
+            "prompt": "Evaluate exactly.",
+            "math": [
+              "\\log_2 8,\\quad\\log_3\\!\\left(\\frac{1}{27}\\right),\\quad\\log_5 1,\\quad\\ln(e^4)"
+            ],
+            "answer": "3,-3,0,4",
+            "minutes": 3
+          }
+        ]
+      },
+      {
+        "title": "Logarithmic graphs and properties",
+        "problems": [
+          {
+            "prompt": "Give the domain, range, vertical asymptote, x-intercept, and end behavior. Sketch using two convenient points.",
+            "math": [
+              "f(x)=\\log_2(x-3)+1"
+            ],
+            "answer": "D>3 R;VA3;x7/2;left -infty right infty;points(4,1),(5,2)",
+            "minutes": 5
+          },
+          {
+            "prompt": "Use logarithmic properties to evaluate exactly. Here log means base 10.",
+            "math": [
+              "\\mathrm{a)}\\ \\log 4+\\log 25\\qquad\\mathrm{b)}\\ \\log 45-\\log 0.45"
+            ],
+            "answer": "2;2",
+            "minutes": 3
+          },
+          {
+            "prompt": "Expand as a sum or difference of logarithms. Assume x and y are positive.",
+            "math": [
+              "\\ln\\!\\left(\\frac{x^2\\sqrt{y}}{3}\\right)"
+            ],
+            "answer": "2lnx+1/2lny-ln3",
+            "minutes": 3
+          },
+          {
+            "prompt": "Condense to one logarithm, and state the original domain.",
+            "math": [
+              "2\\log_3x-\\log_3(x-1)"
+            ],
+            "answer": "log3(x²/(x-1));x>1",
+            "minutes": 3
+          },
+          {
+            "prompt": "Use change of base to evaluate exactly.",
+            "math": [
+              "\\frac{\\log 16}{\\log 4}"
+            ],
+            "answer": "2",
+            "minutes": 2
+          }
+        ]
+      },
+      {
+        "title": "Equations and domain checks",
+        "problems": [
+          {
+            "prompt": "Solve by rewriting with a common base.",
+            "math": [
+              "8^{x-1}=4^{x+1}"
+            ],
+            "answer": "5",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve exactly using logarithms; no decimal approximation is required.",
+            "math": [
+              "5^x=7"
+            ],
+            "answer": "ln7/ln5",
+            "minutes": 3
+          },
+          {
+            "prompt": "State domain restrictions and solve. Check the candidate.",
+            "math": [
+              "\\log_2(x-1)+\\log_2(x+1)=3"
+            ],
+            "answer": "x>1; x3; -3 rejected",
+            "minutes": 5
+          },
+          {
+            "prompt": "State domain restrictions and solve.",
+            "math": [
+              "\\log_3(x+4)-\\log_3x=1"
+            ],
+            "answer": "x>0;x2",
+            "minutes": 4
+          },
+          {
+            "prompt": "A student claims ln(a + b) = ln(a) + ln(b) for positive a and b. Use a = b = 1 to disprove the claim. State the correct product property.",
+            "math": [],
+            "answer": "ln2 !=0;lnab=lna+lnb",
+            "minutes": 3
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning."
+  },
+  {
+    "course": "MATH 101",
+    "title": "Chapter 7 Homework",
+    "subtitle": "Systems of equations and inequalities",
+    "coverage": "Sections 7.1 and 7.3",
+    "file": "chapter-7-homework.pdf",
+    "sections": [
+      {
+        "title": "Linear systems",
+        "problems": [
+          {
+            "prompt": "Solve by substitution and check the ordered pair in both equations.",
+            "math": [
+              "y=2x-1,\\qquad x+y=8"
+            ],
+            "answer": "(3,5)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve by elimination and check both equations.",
+            "math": [
+              "2x+3y=7,\\qquad3x-2y=4"
+            ],
+            "answer": "(2,1)",
+            "minutes": 4
+          },
+          {
+            "prompt": "Solve each system and describe its full solution set.",
+            "math": [
+              "\\mathrm{a)}\\ x+2y=4,\\quad2x+4y=8",
+              "\\mathrm{b)}\\ x+2y=4,\\quad2x+4y=10"
+            ],
+            "answer": "a all points line; b none",
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "title": "Nonlinear intersections",
+        "problems": [
+          {
+            "prompt": "Solve algebraically, then sketch to confirm the number of intersections.",
+            "math": [
+              "y=x+2,\\qquad y=x^2"
+            ],
+            "answer": "(-1,1),(2,4)",
+            "minutes": 6
+          },
+          {
+            "prompt": "Solve and check both ordered pairs.",
+            "math": [
+              "x^2+y^2=25,\\qquad y=x+1"
+            ],
+            "answer": "(3,4),(-4,-3)",
+            "minutes": 6
+          },
+          {
+            "prompt": "Solve. Explain graphically why the solution count differs from Problem 4.",
+            "math": [
+              "y=x^2,\\qquad y=-1"
+            ],
+            "answer": "none; line below parabola",
+            "minutes": 3
+          },
+          {
+            "prompt": "Solve. Explain graphically why there is only one intersection.",
+            "math": [
+              "y=x^2,\\qquad y=2x-1"
+            ],
+            "answer": "(1,1);tangent",
+            "minutes": 4
+          }
+        ]
+      },
+      {
+        "title": "Regions and complete solutions",
+        "problems": [
+          {
+            "prompt": "Sketch the solution region. Show solid or dashed boundaries and shade only the overlap.",
+            "math": [
+              "y\\geq x^2,\\qquad y<x+2"
+            ],
+            "answer": "above/on parabola below strict line; -1<x<2",
+            "minutes": 6
+          },
+          {
+            "prompt": "Sketch the solution region and decide whether (0, 0), (1, 1), and (2, 2) belong to it.",
+            "math": [
+              "x^2+y^2\\leq4,\\qquad y\\geq x"
+            ],
+            "answer": "half disk y>=x;yes yes no",
+            "minutes": 5
+          },
+          {
+            "prompt": "For x squared + y squared = 25 and y = x + 1, a student reports x = 3 and x = -4 as the final answer. Explain what is missing; write and check the complete solutions.",
+            "math": [],
+            "answer": "Need y values ordered pairs (3,4),(-4,-3), both check",
+            "minutes": 5
+          }
+        ]
+      }
+    ],
+    "directions": "Give exact answers. Use a basic four-function calculator only if needed; show algebraic reasoning.",
+    "compact": true
+  }
+]
