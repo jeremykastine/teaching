@@ -58,23 +58,14 @@ $10.50. How many of each coin are there?</p>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Suppose <span class="math inline">\(30\)</span> coins are quarters
-and half-dollars with a total value of <span class="math inline">\(\$
-10.50\)</span>. Let <span class="math inline">\(q\)</span> be quarters
-and <span class="math inline">\(h\)</span> be half-dollars.</p>
-<p><span class="math display">\[\begin{matrix}
-q + h &amp; = 30, \\
-0.25q + 0.50h &amp; = 10.50.
-\end{matrix}\]</span></p>
-<p>Substitute <span class="math inline">\(q = 30 - h\)</span> into the
-value equation.</p>
-<p><span class="math display">\[0.25(30 - h) + 0.50h =
-10.50\]</span></p>
-<p><span class="math display">\[7.50 + 0.25h = 10.50\]</span></p>
-<p><span class="math display">\[h = 12.\]</span></p>
-<p>Then <span class="math inline">\(q = 18\)</span>. Check both the
-total number of coins and the total value.</p>
-
+<p>Let <span class="math inline">\(q\)</span> be the number of quarters and <span class="math inline">\(h\)</span> the number of half-dollars. Both counts must be nonnegative integers. The count and value give two conditions:</p>
+<p><span class="math display">\[\begin{cases}q+h=30\\0.25q+0.50h=10.50\end{cases}\]</span></p>
+<p>Solve the count equation for q and substitute into the value equation, keeping both conditions.</p>
+<p><span class="math display">\[\begin{cases}q=30-h\\0.25(30-h)+0.50h=10.50\end{cases}\]</span></p>
+<p><span class="math display">\[\begin{cases}q=30-h\\7.50+0.25h=10.50\end{cases}\]</span></p>
+<p>Subtract 7.50 and divide by 0.25 in the second equation, then find q.</p>
+<p><span class="math display">\[\begin{cases}q=18\\h=12\end{cases}\]</span></p>
+<p>There are 18 quarters and 12 half-dollars. Both totals check (<span class="math inline">\(18+12=30\)</span> and <span class="math inline">\(0.25(18)+0.50(12)=10.50\)</span>).</p>
 </div>
 </section>
 <section class="worked-example">
@@ -103,7 +94,10 @@ The check is <span class="math inline">\(116 + 130 = 246\)</span> and
 <p>Two concert groups visit 178 cities in total, counting each group’s visits separately. One visits 96 more cities than the other. How many does each visit?</p>
 </div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Let n be the smaller count; the larger is n+96.</p><p><span class="math display">\[n+(n+96)=178\]</span></p><p><span class="math display">\[2n=82\quad\Rightarrow\quad n=41\]</span></p><p>The groups visit 41 and 137 cities. Check: <span class="math inline">\(41+137=178\)</span> and <span class="math inline">\(137-41=96\)</span>.</p>
+<p>Let n be the smaller count; the larger is n+96.</p>
+<p><span class="math display">\[n+(n+96)=178\]</span></p>
+<p><span class="math display">\[2n=82\quad\Rightarrow\quad n=41\]</span></p>
+<p>The groups visit 41 and 137 cities. Check: <span class="math inline">\(41+137=178\)</span> and <span class="math inline">\(137-41=96\)</span>.</p>
 </div>
 </section>
 

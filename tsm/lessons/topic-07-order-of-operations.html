@@ -30,7 +30,7 @@ exponents, multiplication and division from left to right, then addition
 and subtraction from left to right. Substitution: replacing a variable
 with a given value.</p>
 <h2>Reading powers</h2>
-<p>For a positive integer exponent, the base is the repeated factor and the exponent counts its copies. An expansion writes those factors out; the value is their product. An exponent is not a multiplier of the base. As an exponent decreases by one, divide the preceding value by the nonzero base.</p>
+<p>For a positive integer exponent, the base is the repeated factor and the exponent counts its copies. An expansion writes those factors out; the value is their product. An exponent is not a multiplier of the base. As an exponent decreases by one, divide the preceding value by the nonzero base. Continuing this pattern gives <span class="math inline">\(a^0=1\)</span> for a nonzero base.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
@@ -40,32 +40,11 @@ zero power.</p>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Begin with</p>
-<p><span class="math display">\[3^{3} = 27.\]</span></p>
-
-<p>Reducing the exponent from 3 to 2 removes one factor of 3.
-Equivalently, we divide the previous value by 3:</p>
-<p><span class="math display">\[27 \div 3 = 9.\]</span></p>
-<p>Therefore,</p>
-<p><span class="math display">\[3^{2} = 9.\]</span></p>
-<p>Reducing the exponent again means dividing by 3 again:</p>
-<p><span class="math display">\[9 \div 3 = 3.\]</span></p>
-<p>Therefore,</p>
-<p><span class="math display">\[3^{1} = 3.\]</span></p>
-<p>The same pattern must continue when the exponent decreases from 1 to
-0:</p>
-<p><span class="math display">\[3 \div 3 = 1.\]</span></p>
-<p>Therefore,</p>
-<p><span class="math display">\[3^{0} = 1.\]</span></p>
-<p>It can be tempting to think that an exponent of zero should make the
-answer zero. However, the exponent is not being multiplied by the base.
-The exponent tells us how many copies of the base are being multiplied.
-More importantly, the sequence of values must continue consistently:
-every time the exponent drops by one, the value is divided by the
-base.</p>
-<p>For the nonzero bases used in this topic,</p>
-<p><span class="math display">\[a^{0} = 1.\]</span></p>
-
+<p>Begin with <span class="math inline">\(3^3=27\)</span>. Each decrease of one in the exponent divides the value by 3.</p>
+<p>The next power is <span class="math inline">\(3^2=9\)</span> (<span class="math inline">\(27\div3=9\)</span>), followed by <span class="math inline">\(3^1=3\)</span> (<span class="math inline">\(9\div3=3\)</span>).</p>
+<p>Continue that pattern from exponent 1 to exponent 0 (<span class="math inline">\(3\div3=1\)</span>):</p>
+<p><span class="math display">\[3^0=1\]</span></p>
+<p>An exponent of zero does not mean multiplying the base by zero. The value must fit the same divide-by-3 pattern.</p>
 </div>
 </section>
 <section class="worked-example">
@@ -75,7 +54,8 @@ base.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The base is 3 and the exponent is 4, so use four factors of 3.</p><p><span class="math display">\[3^4=3\cdot3\cdot3\cdot3=81\]</span></p>
+<p>The base is 3 and the exponent is 4, so use four factors of 3.</p>
+<p><span class="math display">\[3^4=3\cdot3\cdot3\cdot3=81\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -85,7 +65,8 @@ base.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Starting at the zero power, divide by 3 each time the exponent decreases by one.</p><p><span class="math display">\[3^0=1,\quad 3^{-1}=\frac13\]</span></p><p><span class="math display">\[3^{-2}=\frac19,\quad 3^{-3}=\frac1{27}\]</span></p>
+<p>Starting at <span class="math inline">\(3^0=1\)</span>, divide by 3 each time the exponent decreases by one. This gives <span class="math inline">\(3^{-1}=\frac13\)</span> and then <span class="math inline">\(3^{-2}=\frac19\)</span>. Dividing by 3 once more gives the requested value:</p>
+<p><span class="math display">\[3^{-3}=\frac1{27}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -95,7 +76,8 @@ base.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>A negative exponent gives a reciprocal.</p><p><span class="math display">\[5^{-2}=\frac1{5^2}=\frac1{25}\]</span></p>
+<p>A negative exponent gives a reciprocal.</p>
+<p><span class="math display">\[5^{-2}=\frac1{5^2}=\frac1{25}\]</span></p>
 </div>
 </section>
 <h2>Signs, parentheses, and negative exponents</h2>
@@ -109,8 +91,8 @@ base.</p>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Parentheses make the negative sign part of the base. The base is</p>
-<p><span class="math display">\[- 4.\]</span></p>
+<p>Parentheses make the negative sign part of the base. The base is <span class="math inline">\(-4\)</span>.</p>
+
 <p>The exponent applies to the entire base inside the parentheses.
 Therefore, the expansion is</p>
 <p><span class="math display">\[( - 4)( - 4).\]</span></p>
@@ -126,7 +108,8 @@ Therefore, the expansion is</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Three negative factors leave one unpaired negative sign.</p><p><span class="math display">\[(-4)^3=(-4)(-4)(-4)=-64\]</span></p>
+<p>Three negative factors leave one unpaired negative sign.</p>
+<p><span class="math display">\[(-4)^3=(-4)(-4)(-4)=-64\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -136,7 +119,8 @@ Therefore, the expansion is</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Take the reciprocal of the positive power; its sign is still negative.</p><p><span class="math display">\[(-4)^{-3}=\frac1{(-4)^3}=-\frac1{64}\]</span></p>
+<p>Take the reciprocal of the positive power; its sign is still negative.</p>
+<p><span class="math display">\[(-4)^{-3}=\frac1{(-4)^3}=-\frac1{64}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -149,31 +133,11 @@ Therefore, the expansion is</p>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Now compare</p>
-<p><span class="math display">\[( - 4)^{2}\]</span></p>
-<p>with</p>
-<p><span class="math display">\[- 4^{2}.\]</span></p>
-<p>These expressions look similar, but they do not mean the same
-thing.</p>
-<p>In</p>
-<p><span class="math display">\[( - 4)^{2},\]</span></p>
-<p>the parentheses make</p>
-<p><span class="math display">\[- 4\]</span></p>
-<p>the base. The exponent applies to both the 4 and its negative
-sign:</p>
-<p><span class="math display">\[( - 4)^{2} = ( - 4)( - 4) =
-16.\]</span></p>
-<p>In</p>
-<p><span class="math display">\[- 4^{2},\]</span></p>
-<p>the base of the power is only 4. The exponent applies to 4 first, and
-the negative sign remains outside the power:</p>
-<p><span class="math display">\[- 4^{2} = - \left( 4^{2}
-\right).\]</span></p>
-<p>Expanding the power gives</p>
-<p><span class="math display">\[- 4^{2} = - (4 \cdot 4).\]</span></p>
-<p>Therefore,</p>
-<p><span class="math display">\[- 4^{2} = - 16.\]</span></p>
-
+<p>In the first expression, parentheses make <span class="math inline">\(-4\)</span> the complete base. Squaring repeats both the number and its sign:</p>
+<p><span class="math display">\[(-4)^2=(-4)(-4)=16\]</span></p>
+<p>In the second expression, the base is only <span class="math inline">\(4\)</span>. Evaluate that power first; the negative sign remains outside it:</p>
+<p><span class="math display">\[-4^2=-(4^2)=-(4\cdot4)=-16\]</span></p>
+<p>The parentheses determine whether the negative sign is squared.</p>
 </div>
 </section>
 <section class="worked-example">
@@ -183,7 +147,9 @@ the negative sign remains outside the power:</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The first expression has base negative four. In the second, the minus sign is outside the power.</p><p><span class="math display">\[(-4)^0=1\]</span></p><p><span class="math display">\[-4^0=-(4^0)=-1\]</span></p>
+<p>The first expression has base negative four. In the second, the minus sign is outside the power.</p>
+<p><span class="math display">\[(-4)^0=1\]</span></p>
+<p><span class="math display">\[-4^0=-(4^0)=-1\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -214,7 +180,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Multiply the numerator factors together and the denominator factors together.</p><p><span class="math display">\[\left(\frac54\right)^{2}=\frac{5^2}{4^2}=\frac{25}{16}\]</span></p>
+<p>Multiply the numerator factors together and the denominator factors together.</p>
+<p><span class="math display">\[\left(\frac54\right)^{2}=\frac{5^2}{4^2}=\frac{25}{16}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -224,7 +191,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Multiply the numerator factors together and the denominator factors together.</p><p><span class="math display">\[\left(\frac54\right)^{3}=\frac{5^3}{4^3}=\frac{125}{64}\]</span></p>
+<p>Multiply the numerator factors together and the denominator factors together.</p>
+<p><span class="math display">\[\left(\frac54\right)^{3}=\frac{5^3}{4^3}=\frac{125}{64}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -234,7 +202,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The base is nonzero, so its zero power is 1.</p><p><span class="math display">\[\left(\frac54\right)^{0}=1\]</span></p>
+<p>The base is nonzero, so its zero power is 1.</p>
+<p><span class="math display">\[\left(\frac54\right)^{0}=1\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -244,7 +213,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p><p><span class="math display">\[\left(\frac54\right)^{-1}=\left(\frac45\right)^{1}=\frac{4}{5}\]</span></p>
+<p>Reverse the fraction and make the exponent positive.</p>
+<p><span class="math display">\[\left(\frac54\right)^{-1}=\left(\frac45\right)^{1}=\frac{4}{5}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -254,7 +224,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p><p><span class="math display">\[\left(\frac54\right)^{-2}=\left(\frac45\right)^{2}=\frac{16}{25}\]</span></p>
+<p>Reverse the fraction and make the exponent positive.</p>
+<p><span class="math display">\[\left(\frac54\right)^{-2}=\left(\frac45\right)^{2}=\frac{16}{25}\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -264,7 +235,8 @@ is applied afterward.</p>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p><p><span class="math display">\[\left(\frac54\right)^{-3}=\left(\frac45\right)^{3}=\frac{64}{125}\]</span></p>
+<p>Reverse the fraction and make the exponent positive.</p>
+<p><span class="math display">\[\left(\frac54\right)^{-3}=\left(\frac45\right)^{3}=\frac{64}{125}\]</span></p>
 </div>
 </section>
 <h2>Order of operations</h2>
@@ -278,22 +250,8 @@ is applied afterward.</p>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>One possible first move would be to add two and three. That would
-produce the following calculation.</p>
-<p><span class="math inline">\(2 + 3 \cdot 4 = 5 \cdot 4 =
-20\)</span></p>
-<p>Another possible first move would be to multiply three and four. That
-produces a different calculation.</p>
-<p><span class="math inline">\(2 + 3 \cdot 4 = 2 + 12 = 14\)</span></p>
-<p>The original expression cannot be allowed to have both values. We
-therefore use a convention: an arbitrary rule that everyone agrees to
-follow. In this convention, multiplication takes precedence over
-addition. The multiplication must be evaluated before the addition, so
-the value of the expression is fourteen. The step that changes two plus
-three into five is not a valid first step because the three is also
-involved in a multiplication, and that multiplication has higher
-precedence.</p>
-
+<p>Adding first would give <span class="math inline">\(5\cdot4=20\)</span>, but that is an invalid first step: the 3 is part of a multiplication that takes precedence over addition. Multiply first to preserve the original value:</p>
+<p><span class="math display">\[2+3\cdot4=2+12=14\]</span></p>
 </div>
 </section>
 <section class="worked-example">
@@ -389,12 +347,12 @@ calculations may be completed first.</p>
 3^{2}}\)</span></p>
 <p>In the denominator, the exponent belongs to the three only. The
 subtraction sign in front of the power is not part of the base.
-Exponentiation therefore happens before the subtraction.</p>
-<p><span class="math inline">\(- 3^{2} = - 3 \cdot 3 = - 9\)</span></p>
+Exponentiation therefore happens before the subtraction (<span class="math inline">\(- 3^{2} = - 3 \cdot 3 = - 9\)</span>).</p>
+
 <p>This is different from squaring a negative number written inside
 parentheses. Parentheses would make the negative sign part of the
-base.</p>
-<p><span class="math inline">\({( - 3)}^{2} = 9\)</span></p>
+base (<span class="math inline">\({( - 3)}^{2} = 9\)</span>).</p>
+
 <p>Now evaluate the products in the numerator and denominator.</p>
 <p>= <span class="math inline">\(\frac{45 + 3}{21 - 9}\)</span></p>
 <p>Complete the additions and subtraction within the fraction.</p>

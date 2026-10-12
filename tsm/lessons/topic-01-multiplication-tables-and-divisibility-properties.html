@@ -76,7 +76,6 @@
         <p>Twenty-four is divisible by two because it can be written as \(2\cdot12\). That is, twenty-four contains exactly twelve groups of two, with nothing left over.</p>
         <p>Twenty-five is not divisible by two. Twelve groups of two account for twenty-four, leaving one extra. In other words, dividing twenty-five by two would produce a remainder of one.</p>
 
-
       </div>
     </section>
 
@@ -84,19 +83,9 @@
 <section class="worked-example">
 <div class="problem-row"><div class="problem-statement"><p>Compare and contrast counting by 2, 5, and 10. List the first ten positive multiples of each number. Identify the repeating final digits and explain the corresponding divisibility tests.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Start by looking at what happens when we count by 2. These are the first several multiples of 2:</p>
-    <p class="math display">\[2,\ 4,\ 6,\ 8,\ 10,\ 12,\ 14,\ 16,\ 18,\ 20,\ 22,\ 24,\ldots\]</p>
-    <p>Look only at the final digit. The final digits repeat:</p>
-    <p class="math display">\[2,\ 4,\ 6,\ 8,\ 0,\ 2,\ 4,\ 6,\ 8,\ 0,\ldots\]</p>
-    <p>Every number we reach by counting by 2 ends in 0, 2, 4, 6, or 8. This gives us a shortcut: a whole number is divisible by 2 exactly when its final digit is 0, 2, 4, 6, or 8.</p>
-
-    <p>Now count by 5:</p>
-    <p class="math display">\[5,\ 10,\ 15,\ 20,\ 25,\ 30,\ 35,\ 40,\ 45,\ 50,\ldots\]</p>
-    <p>The final digits alternate between 5 and 0. So a whole number is divisible by 5 exactly when its final digit is 5 or 0.</p>
-
-    <p>Finally, count by 10:</p>
-    <p class="math display">\[10,\ 20,\ 30,\ 40,\ 50,\ 60,\ 70,\ 80,\ 90,\ 100,\ldots\]</p>
-    <p>Every multiple of 10 ends in 0. So a whole number is divisible by 10 exactly when its final digit is 0.</p>
+<p>The first ten positive multiples of 2 are <span class="math inline">\(2,\allowbreak4,\allowbreak6,\allowbreak8,\allowbreak10,\allowbreak12,\allowbreak14,\allowbreak16,\allowbreak18,\allowbreak20\)</span>. Their final digits cycle through 2, 4, 6, 8, and 0, so divisibility by 2 is determined by an even final digit.</p>
+<p>For 5, the first ten multiples are <span class="math inline">\(5,\allowbreak10,\allowbreak15,\allowbreak20,\allowbreak25,\allowbreak30,\allowbreak35,\allowbreak40,\allowbreak45,\allowbreak50\)</span>. Their final digits alternate between 5 and 0, giving the divisibility test for 5.</p>
+<p>For 10, the first ten multiples are <span class="math inline">\(10,\allowbreak20,\allowbreak30,\allowbreak40,\allowbreak50,\allowbreak60,\allowbreak70,\allowbreak80,\allowbreak90,\allowbreak100\)</span>. Every final digit is 0. All three tests use the final digit, but the allowed final digits differ.</p>
 </div>
 </section>
 <h2>Tests using the final digit</h2>
@@ -189,21 +178,10 @@
 <section class="worked-example">
 <div class="problem-row"><div class="problem-statement"><p>Compare and contrast divisibility by 3 and 9. List the first nine positive multiples of each number and examine the digit sums of the two-digit multiples. Also test 123, 372, and 1248 for divisibility by 3, and 117, 459, 1206, and 8019 for divisibility by 9. Explain the digit-sum tests.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The final digit works beautifully for 2, 5, and 10. But the multiples of 3 do not have a useful final-digit pattern:</p>
-    <p class="math display">\[3,\ 6,\ 9,\ 12,\ 15,\ 18,\ 21,\ 24,\ 27,\ldots\]</p>
-    <p>Instead, look at the two-digit multiples and add their digits:</p>
-    <p class="math display">\[\begin{aligned}12 &: 1+2=3 \\ 15 &: 1+5=6 \\ 18 &: 1+8=9 \\ 21 &: 2+1=3 \\ 24 &: 2+4=6 \\ 27 &: 2+7=9\end{aligned}\]</p>
-    <p>The digit sums are themselves multiples of 3. This pattern does not stop when the numbers become larger. If we continue counting by 3, we eventually reach three-digit and still larger multiples:</p>
-    <p class="math display">\[\begin{aligned}123 &: 1+2+3=6 \\ 372 &: 3+7+2=12 \\ 1248 &: 1+2+4+8=15\end{aligned}\]</p>
-    <p>Each digit sum is divisible by 3. This leads to the divisibility property for 3: a whole number is divisible by 3 exactly when the sum of its digits is divisible by 3.</p>
-
-    <p>Now look at the multiples of 9:</p>
-    <p class="math display">\[9,\ 18,\ 27,\ 36,\ 45,\ 54,\ 63,\ 72,\ 81,\ldots\]</p>
-    <p>Again, add the digits of several two-digit multiples:</p>
-    <p class="math display">\[\begin{aligned}18 &: 1+8=9 \\ 27 &: 2+7=9 \\ 36 &: 3+6=9 \\ 45 &: 4+5=9 \\ 54 &: 5+4=9 \\ 63 &: 6+3=9 \\ 72 &: 7+2=9\end{aligned}\]</p>
-    <p>And if we keep counting by 9, the same idea survives with much larger numbers:</p>
-    <p class="math display">\[\begin{aligned}117 &: 1+1+7=9 \\ 459 &: 4+5+9=18 \\ 1206 &: 1+2+0+6=9 \\ 8019 &: 8+0+1+9=18\end{aligned}\]</p>
-    <p>The digit sum does not always equal 9, but it is always divisible by 9. So a whole number is divisible by 9 exactly when the sum of its digits is divisible by 9.</p>
+<p>The first nine positive multiples of 3 are <span class="math inline">\(3,\allowbreak6,\allowbreak9,\allowbreak12,\allowbreak15,\allowbreak18,\allowbreak21,\allowbreak24,\allowbreak27\)</span>. The two-digit multiples have digit sums <span class="math inline">\(1+2=3\)</span>, <span class="math inline">\(1+5=6\)</span>, <span class="math inline">\(1+8=9\)</span>, <span class="math inline">\(2+1=3\)</span>, <span class="math inline">\(2+4=6\)</span>, and <span class="math inline">\(2+7=9\)</span>. Each sum is divisible by 3.</p>
+<p>The larger examples also pass: 123 has digit sum <span class="math inline">\(1+2+3=6\)</span>, 372 has digit sum <span class="math inline">\(3+7+2=12\)</span>, and 1248 has digit sum <span class="math inline">\(1+2+4+8=15\)</span>. All three original numbers are divisible by 3.</p>
+<p>The first nine positive multiples of 9 are <span class="math inline">\(9,\allowbreak18,\allowbreak27,\allowbreak36,\allowbreak45,\allowbreak54,\allowbreak63,\allowbreak72,\allowbreak81\)</span>. Each two-digit multiple has digit sum 9: <span class="math inline">\(1+8=9\)</span>, <span class="math inline">\(2+7=9\)</span>, <span class="math inline">\(3+6=9\)</span>, <span class="math inline">\(4+5=9\)</span>, <span class="math inline">\(5+4=9\)</span>, <span class="math inline">\(6+3=9\)</span>, <span class="math inline">\(7+2=9\)</span>, and <span class="math inline">\(8+1=9\)</span>.</p>
+<p>The larger examples have digit sums <span class="math inline">\(1+1+7=9\)</span>, <span class="math inline">\(4+5+9=18\)</span>, <span class="math inline">\(1+2+0+6=9\)</span>, and <span class="math inline">\(8+0+1+9=18\)</span>. Thus 117, 459, 1206, and 8019 are all divisible by 9. A digit sum need not equal 9; it must be divisible by 9. Both tests use the digit sum, with a different divisor.</p>
 </div>
 </section>
 <h2>Tests using the digit sum</h2>
@@ -278,11 +256,8 @@
 <section class="worked-example">
 <div class="problem-row"><div class="problem-statement"><p>List the first seventeen positive multiples of 7. Compare their final digits and compute the digit sums of 14, 21, 28, 35, and 42. Explain why the final-digit and digit-sum tests used for 2, 3, 5, 9, and 10 cannot simply be reused for 7.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>It is tempting to hope that every multiplication table gives us a simple divisibility shortcut. Consider the multiples of 7:</p>
-    <p class="math display">\[7,\ 14,\ 21,\ 28,\ 35,\ 42,\ 49,\ 56,\ 63,\ 70,\ 77,\ 84,\ 91,\ 98,\ 105,\ 112,\ 119,\ldots\]</p>
-    <p>The final digits wander through many possibilities. They do not settle into a small set like the multiples of 2, 5, or 10. Adding the digits does not give us a simple pattern either:</p>
-    <p class="math display">\[\begin{aligned}14 &: 1+4=5 \\ 21 &: 2+1=3 \\ 28 &: 2+8=10 \\ 35 &: 3+5=8 \\ 42 &: 4+2=6\end{aligned}\]</p>
-    <p>The final digits and digit sums do not give the tests used for the other divisors. For example, 14 is divisible by 7, but its digit sum is 5. We need a different test or division itself.</p>
+<p>The first seventeen positive multiples of 7 are <span class="math inline">\(7,\allowbreak14,\allowbreak21,\allowbreak28,\allowbreak35,\allowbreak42,\allowbreak49,\allowbreak56,\allowbreak63,\allowbreak70,\allowbreak77,\allowbreak84,\allowbreak91,\allowbreak98,\allowbreak105,\allowbreak112,\allowbreak119\)</span>. Their final digits include every digit, so no small set of allowed final digits identifies divisibility by 7.</p>
+<p>The requested digit sums are <span class="math inline">\(1+4=5\)</span>, <span class="math inline">\(2+1=3\)</span>, <span class="math inline">\(2+8=10\)</span>, <span class="math inline">\(3+5=8\)</span>, and <span class="math inline">\(4+2=6\)</span>. These sums are not divisible by 7 even though the original numbers are. We cannot reuse the tests for 2, 3, 5, 9, or 10; we need a different test or division itself.</p>
 </div>
 </section>
 <h2>When a quick test is unavailable</h2>

@@ -71,7 +71,10 @@ Topic 5 must contain five separate worked-example sections: evaluate `sqrt(36)`,
 ## 8. Worked-solution standards
 
 - Show the intermediate steps students are expected to learn, not only the starting expression and final answer. General background does not replace the reasoning needed for the particular problem.
-- Keep each algebraic line equivalent to the preceding line unless the prose clearly explains a substitution, comparison, or check.
+- Reserve a centered display line for the original mathematical object or a complete equivalent form of it. Expressions must retain the same value on the original domain; equations and systems must retain the same solution set under the stated restrictions. Prose does not create an exception for a nonequivalent displayed step.
+- Put supporting arithmetic, coefficient or exponent calculations, trial values, bounds, approximations, reference formulas, isolated pieces of an expression, and substitution checks inline within explanatory prose, preferably in parentheses when appropriate. Do not place these on standalone math-only lines.
+- Preserve the whole expression in each displayed rewrite. For a system, retain all required conditions together in every displayed step; put work on an isolated consequence inline. In an intentional comparison, each displayed chain must clearly belong to one of the original objects being compared.
+- Word-problem displays may show a model representing the full stated relationships and equivalent transformations of that model. Keep variable definitions and contextual restrictions explicit. Approximate numerical results belong inline and must use approximation notation.
 - Explain important sign changes, distribution, cancellation, common denominators, factoring decisions, equation-solving operations, and graphing choices in plain language.
 - State restrictions from the original equation before canceling factors or moving variable denominators to the opposite side.
 - Check possible extraneous solutions in the original rational equation.
@@ -178,3 +181,9 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Use this language instead of the former team metaphor. Do not require rewriting every addition or subtraction expression.
 - Keep the first addition solution and the first multiplication solution focused on their own expressions. Put shared background before the respective problem sequences.
 - End the integer-pair sequence with harder examples using integers in the teens or twenties and larger products, covering two positives, two negatives, and opposite signs with both positive and negative sums. Show factor-pair reasoning and verify both conditions.
+
+## 19. Topic 5: real and complex square roots
+
+- Explain that a negative radicand has no real square root. In a real-only problem or application, “no real value” is a complete answer; proceeding to imaginary numbers is not required.
+- Explain that other applications and classroom directions permit or require complex answers. In that setting, use the imaginary unit and continue. The context determines the intended number system; lack of a real value does not imply lack of a complex value.
+- Keep the existing problems that explicitly request answers in terms of `i`, and explain in their solutions why that instruction calls for continuing beyond the real numbers. Keep the general distinction in visible background before those problems.
