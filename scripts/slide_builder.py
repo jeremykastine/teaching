@@ -234,6 +234,10 @@ def build_index(root, cfg, sections):
             cards.append(f'<li><span class="section">{label}</span><h3><a href="slides/{filename}">{escape(section["title"])}</a></h3>'
                          f'<p class="links"><a href="slides/{filename}">Open slides <span class="meta">(PDF, {len(section["slides"])} slides)</span></a>'
                          f'<a href="{base + section["slug"]}">Read textbook section</a></p></li>')
+        homework = f'homework/chapter-{chapter}-homework.pdf'
+        if (root / homework).is_file():
+            cards.append(f'<li><span class="section">Homework</span><h3><a href="{homework}">Chapter {chapter} Homework</a></h3>'
+                         f'<p class="links"><a href="{homework}">Open homework <span class="meta">(PDF)</span></a></p></li>')
         chunks.append(f'<section aria-labelledby="chapter-{chapter}"><h2 id="chapter-{chapter}">Chapter {chapter} · {cfg["chapters"][chapter]}</h2>'
                       f'<p>{note}</p><ul>{"".join(cards)}</ul></section>')
     html = f'''<!doctype html>
