@@ -6,6 +6,12 @@ Selected sections through Chapter 7 follow `course-schedule.md`; application opt
 
 Each page contains one definition, concept, or problem with a focused question. All prompt content stays in the upper half of US Letter portrait pages; the lower half is clear for pen annotations. The instructor provides explanations and worked solutions.
 
+## Assessment specifications
+
+- [Four unit-test specifications](unit-test-specifications.md): five main questions per test, 20 points each, 100 points total, designed for 30 minutes. Units follow Chapters 1–2, Chapters 3–4, Chapter 5, and Chapters 6–7 within the scheduled section scope.
+- [Cumulative diagnostic/final specifications](final-exam-specifications.md): ten required problem families, 10 points each, 100 points total.
+- Tests cover strictly algebraic content, including graphs. Word problems and applications are classroom activities/labs, including application exercises inside otherwise tested sections.
+
 ## Editing and rebuilding
 
 Edit the appropriate `slides/source/chapter-NN.json`. From this course folder, run:

@@ -71,7 +71,11 @@
 
 - Final Exam
 
-### Applications chosen from the following
+### Classroom application labs
+
+Word problems and applications are in-class activities/labs, not test items. This also applies to application exercises embedded in the core sections. All tests assess strictly algebraic content, including graphs. See [unit-test-specifications.md](unit-test-specifications.md) for the four five-question, 100-point, 30-minute unit-test blueprints.
+
+Select labs from the following
 
 - 2.3 Models and Applications
 - 4.2 Modeling with Linear Functions

@@ -5,6 +5,11 @@ Standing specification for generating MATH 101 (College Algebra) assessments and
 
 Unless a rule is explicitly limited to a particular assessment, the presentation, directions, answer-sheet, answer-key, verification, and packaging conventions in this document apply equally to practice and non-practice versions and to diagnostics and finals.
 
+## Assessment scope and unit tests
+- All MATH 101 tests assess strictly algebraic content, including graph interpretation. Word problems, contextual applications, modeling, regression, and optimization applications are classroom activities/labs, not test items.
+- For the four five-question, 30-minute unit tests and their practice/retake versions, use [unit-test-specifications.md](unit-test-specifications.md). Each unit-test question is worth 20 points; its unit-specific structure and scoring override the cumulative architecture below. Shared presentation, calculator, identifier, verification, and packaging rules still apply.
+- The ten problem types and ten-point question amounts below define the cumulative diagnostic/final family; they are not the question map for a unit test.
+
 ## Instruction hierarchy and verification
 - Follow the problem-type specification first, then the global rules in this document.
 - A specific problem-type requirement overrides a general presentation preference when the two conflict.
@@ -13,7 +18,7 @@ Unless a rule is explicitly limited to a particular assessment, the presentation
 - Work every problem completely before presenting it. Verify algebra, domains, intercepts, roots, graphs, and final simplifications.
 - A new version must use genuinely new numerical values, expressions, or graphs where applicable; merely reordering the same questions does not create a new version.
 
-## Global structure
+## Global structure — cumulative diagnostics and finals
 - Exactly **10 main questions**, one from each problem type below.
 - **100 points total; 10 points per main question.** A question may have multiple parts, but all parts stay on one topic.
 - Presentation order is **randomized by default** unless explicitly fixed.
