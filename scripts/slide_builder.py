@@ -223,7 +223,7 @@ def build_index(root, cfg, sections):
     for chapter, group in groups.items():
         note = 'Selected sections from the course schedule.'
         if cfg['name'] == 'Statistics' and chapter == 9:
-            note = 'A conceptual introduction; detailed Chapter 9 calculation procedures are outside this course plan.'
+            note = 'A conceptual introduction for assignment or participation; Chapter 9 is not tested. Detailed calculation procedures are outside this course plan.'
         cards = []
         for section in group:
             number = section['number']
@@ -246,13 +246,33 @@ def build_index(root, cfg, sections):
                     cards.append(practice['html'])
         chunks.append(f'<section aria-labelledby="chapter-{chapter}"><h2 id="chapter-{chapter}">Chapter {chapter} · {cfg["chapters"][chapter]}</h2>'
                       f'<p>{note}</p><ul>{"".join(cards)}</ul></section>')
+    banks_html = ''
+    banks_manifest = root / 'question-banks/manifest.json'
+    if cfg['name'] == 'Statistics' and banks_manifest.is_file():
+        bank_cards = []
+        for bank in json.loads(banks_manifest.read_text()):
+            a, b = bank['chapters']
+            bank_cards.append(f'<li><span class="section">Unit {bank["unit"]} · Chapters {a}-{b} · {bank["question_count"]} questions</span>'
+                              f'<h3>{escape(bank["title"])}</h3><p class="links">'
+                              f'<a href="question-banks/{bank["html"]}">Study question bank online</a>'
+                              f'<a href="question-banks/{bank["pdf"]}">Download bank and answer key (PDF)</a>'
+                              f'<a href="question-banks/{bank["json"]}" download>Download JSON for AI study</a></p></li>')
+        banks_html = ('<section aria-labelledby="unit-test-banks"><h2 id="unit-test-banks">Unit-test question banks</h2>'
+                      '<p>Public study banks: 100 multiple-choice questions per unit, with answers, explanations, and slide references. '
+                      'Tests draw ten questions across the ten skill groups, emphasizing conceptual reasoning and small calculations. '
+                      'A four-function calculator is allowed. Chapter 9 is not tested.</p>'
+                      '<p class="links"><a href="question-banks/index.html">All question banks and AI study prompt</a>'
+                      '<a href="unit-test-specifications.md">Unit-test specifications</a>'
+                      '<a href="question-banks/create-unit-test-prompt.txt">Instructor test-generation prompt</a></p>'
+                      f'<ul>{"".join(bank_cards)}</ul></section>')
+        nav = '<a href="#unit-test-banks">Question banks</a>' + nav
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{cfg['name']} | Class Slides</title><meta name="description" content="Portrait discussion slides for OpenStax {cfg['book']}, organized by covered chapter and section.">
 <style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="../index.html">Teaching</a></p>
 <h1>{cfg['heading']}</h1><p>Discussion questions and problems for <a href="https://openstax.org/details/books/{cfg['slug']}">OpenStax <em>{cfg['book']}</em></a>.</p>
 <p>One concept or problem per portrait slide, with room for class notes and worked solutions.</p>
-<nav aria-label="Chapters" class="chapter-links">{nav}</nav></header>{''.join(chunks)}
+<nav aria-label="Course resources" class="chapter-links">{nav}</nav></header>{banks_html}{''.join(chunks)}
 <footer><p>Aligned to <em>{cfg['book']}</em> by {cfg['authors']}, OpenStax, Rice University ({cfg['year']}). Definitions, problems, and synthetic datasets are original classroom adaptations aligned to the textbook sections.</p>
 <p>Slide materials: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. <a href="{base + cfg['intro']}">Access the textbook for free</a>.</p></footer></main></body></html>'''
     (root / 'index.html').write_text(html)

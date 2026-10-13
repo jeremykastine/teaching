@@ -1,0 +1,2320 @@
+{
+  "schema_version": 1,
+  "unit": 2,
+  "title": "Probability and discrete models",
+  "chapters": [
+    3,
+    4
+  ],
+  "question_count": 100,
+  "calculator": "Four-function calculator allowed; supplied nontrivial values.",
+  "study_note": "All questions, answers, and explanations are public. Numerical examples are illustrative classroom scenarios.",
+  "quiz_prompt": "Quiz me from this statistics unit bank, one question at a time. Keep all four choices visible, but withhold the correct answer and explanation until I respond. Ask me to explain my reasoning. Then give feedback, cite the question ID, and revisit missed concepts later. Use a mix of skill groups. Do not invent harder calculations.",
+  "groups": [
+    {
+      "id": "U2-G01",
+      "name": "Events, complements, and probability claims"
+    },
+    {
+      "id": "U2-G02",
+      "name": "Independence, dependence, and conditions"
+    },
+    {
+      "id": "U2-G03",
+      "name": "Probability rules and shortcuts"
+    },
+    {
+      "id": "U2-G04",
+      "name": "Tables, trees, and Venn reasoning"
+    },
+    {
+      "id": "U2-G05",
+      "name": "Discrete distributions and support"
+    },
+    {
+      "id": "U2-G06",
+      "name": "Expected value, costs, and spread"
+    },
+    {
+      "id": "U2-G07",
+      "name": "Binomial reasoning"
+    },
+    {
+      "id": "U2-G08",
+      "name": "Geometric reasoning"
+    },
+    {
+      "id": "U2-G09",
+      "name": "Hypergeometric and sampling design"
+    },
+    {
+      "id": "U2-G10",
+      "name": "Poisson counts and model comparisons"
+    }
+  ],
+  "questions": [
+    {
+      "id": "U2-001",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "evaluate",
+      "stem": "A spinner has three colors occupying half, one quarter, and one quarter of its area. Why is assigning each color probability 1/3 inappropriate?",
+      "explanation": "Equally likely colors require equal chance, not merely three category names.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 5,
+        "slide_title": "Unequal probabilities",
+        "pdf": "../slides/section-3-1.pdf#page=5"
+      },
+      "choices": [
+        "Every color must have probability 1/2.",
+        "Probabilities must be whole numbers.",
+        "The color areas are unequal.",
+        "A spinner cannot have three outcomes."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-002",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "calculate",
+      "stem": "A fair six-sided die is rolled. What is the probability of a result greater than 4?",
+      "explanation": "Only 5 and 6 satisfy the event among six equally likely outcomes.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 4,
+        "slide_title": "Equally likely outcomes",
+        "pdf": "../slides/section-3-1.pdf#page=4"
+      },
+      "choices": [
+        "1/6.",
+        "4/6.",
+        "2/6.",
+        "5/6."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-003",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "evaluate",
+      "stem": "A fair coin gives 8 heads in 10 tosses. What follows?",
+      "explanation": "Long-run probability does not impose exact counts in short sequences.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 8,
+        "slide_title": "Law of large numbers",
+        "pdf": "../slides/section-3-1.pdf#page=8"
+      },
+      "choices": [
+        "The coin's future head probability is now 0.8.",
+        "Fairness requires exactly 5 heads in every ten tosses.",
+        "Such a short-run imbalance can occur with a fair coin.",
+        "The next two tosses must be tails."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-004",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "calculate",
+      "stem": "A service meets its deadline with probability 0.80. What is the probability of missing it?",
+      "explanation": "The complement has probability 1-0.80.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 9,
+        "slide_title": "A complement",
+        "pdf": "../slides/section-3-1.pdf#page=9"
+      },
+      "choices": [
+        "0.80.",
+        "0.40.",
+        "1.80.",
+        "0.20."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-005",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "interpret",
+      "stem": "An event is described as drawing a heart or a king. Does the king of hearts qualify?",
+      "explanation": "Inclusive OR includes outcomes satisfying either or both conditions.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 13,
+        "slide_title": "Inclusive “or”",
+        "pdf": "../slides/section-3-1.pdf#page=13"
+      },
+      "choices": [
+        "Only if the card is drawn twice.",
+        "No; OR always excludes overlap.",
+        "Only if hearts and kings are independent.",
+        "Yes; the statistical OR includes the overlap."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-006",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "interpret",
+      "stem": "On a die, A is even and B is greater than 3. Which results satisfy both?",
+      "explanation": "The intersection contains results meeting both conditions.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 11,
+        "slide_title": "The intersection",
+        "pdf": "../slides/section-3-1.pdf#page=11"
+      },
+      "choices": [
+        "2, 4, 5, 6.",
+        "4 and 6.",
+        "5 only.",
+        "2 only."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-007",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "interpret",
+      "stem": "On a die, A is even and B is greater than 3. Which results satisfy at least one condition?",
+      "explanation": "The union includes all outcomes in either event, counting overlaps once.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 12,
+        "slide_title": "The union",
+        "pdf": "../slides/section-3-1.pdf#page=12"
+      },
+      "choices": [
+        "All six results.",
+        "1, 3 only.",
+        "4, 6 only.",
+        "2, 4, 5, 6."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-008",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "interpret",
+      "stem": "X counts the successes. Which values satisfy fewer than 3 successes?",
+      "explanation": "Fewer than is a strict inequality and excludes 3.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 19,
+        "slide_title": "Write a probability event",
+        "pdf": "../slides/section-3-1.pdf#page=19"
+      },
+      "choices": [
+        "0, 1, 2, 3.",
+        "3 and above.",
+        "0, 1, 2.",
+        "1, 2, 3 only."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-009",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "interpret",
+      "stem": "Among 200 recorded jobs, 30 were late. What does 30/200 describe?",
+      "explanation": "An empirical frequency summarizes observations and can estimate a probability.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 7,
+        "slide_title": "Relative frequency",
+        "pdf": "../slides/section-3-1.pdf#page=7"
+      },
+      "choices": [
+        "The number of late jobs that must occur tomorrow.",
+        "A guarantee that the next job is late.",
+        "The exact long-run probability under every possible condition.",
+        "The observed late-job relative frequency."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-010",
+      "group": "U2-G01",
+      "skill_group": "Events, complements, and probability claims",
+      "reasoning": "evaluate",
+      "stem": "A proposed event probability is 1.15. What is wrong?",
+      "explanation": "Probability measures a fraction of total chance and lies between 0 and 1.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 6,
+        "slide_title": "Probability bounds",
+        "pdf": "../slides/section-3-1.pdf#page=6"
+      },
+      "choices": [
+        "Probabilities must always equal 0.5.",
+        "All probabilities must be integers.",
+        "A probability cannot exceed 1.",
+        "Only complements may exceed 1."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-011",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "predict",
+      "stem": "An independent fair coin has just produced five tails. What is the chance of heads next?",
+      "explanation": "Past independent outcomes do not change the next toss probability.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 19,
+        "slide_title": "Coin tosses and “due” outcomes",
+        "pdf": "../slides/section-3-2.pdf#page=19"
+      },
+      "choices": [
+        "Greater than 1/2 because heads is due.",
+        "1.",
+        "1/2.",
+        "Less than 1/2 because tails is favored."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-012",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "evaluate",
+      "stem": "P(A)=0.30 and P(A given B)=0.30, with P(B)>0. What does this support?",
+      "explanation": "Conditioning on B does not change the probability of A.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 15,
+        "slide_title": "A conditional check",
+        "pdf": "../slides/section-3-2.pdf#page=15"
+      },
+      "choices": [
+        "B guarantees A.",
+        "A is impossible.",
+        "A and B are mutually exclusive.",
+        "A and B are independent."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-013",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "interpret",
+      "stem": "A late-job rate is 10% overall but 30% during storms. What does storm information do?",
+      "explanation": "Different conditional and overall rates indicate dependence in this model.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 3,
+        "slide_title": "Dependence",
+        "pdf": "../slides/section-3-2.pdf#page=3"
+      },
+      "choices": [
+        "It changes the estimated chance of lateness.",
+        "It establishes that every storm job is late.",
+        "It makes lateness impossible outside storms.",
+        "It proves the events are independent."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-014",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "evaluate",
+      "stem": "Two mutually exclusive events each have positive probability. Can they be independent?",
+      "explanation": "For positive-probability disjoint events, the intersection is zero but the product is positive.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 11,
+        "slide_title": "Disjoint or independent?",
+        "pdf": "../slides/section-3-2.pdf#page=11"
+      },
+      "choices": [
+        "Yes; both have positive probabilities.",
+        "No; one occurring makes the other impossible.",
+        "Yes; disjoint always means independent.",
+        "Only if their probabilities add to 1."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-015",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "compare",
+      "stem": "Tokens are replaced and mixed after each draw. Compared with leaving them out, what does replacement preserve?",
+      "explanation": "Replacement restores the composition before the next randomized draw.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 12,
+        "slide_title": "With replacement",
+        "pdf": "../slides/section-3-2.pdf#page=12"
+      },
+      "choices": [
+        "A guarantee that colors alternate.",
+        "A decreasing total number of tokens.",
+        "The same token being selected every time.",
+        "The original color probabilities on each independent draw."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-016",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "predict",
+      "stem": "A box has 3 red and 2 blue tokens. After a red token is drawn and not replaced, what happens to the red chance on the next draw?",
+      "explanation": "Removing red reduces the red share of the remaining box.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 13,
+        "slide_title": "Without replacement",
+        "pdf": "../slides/section-3-2.pdf#page=13"
+      },
+      "choices": [
+        "It falls from 3/5 to 2/4.",
+        "It rises from 3/5 to 3/4.",
+        "It stays 3/5.",
+        "It becomes zero."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-017",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "evaluate",
+      "stem": "Two servers share one power supply. Why might independent failure events be a poor model?",
+      "explanation": "A shared influence can create dependence.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 17,
+        "slide_title": "An independence model",
+        "pdf": "../slides/section-3-2.pdf#page=17"
+      },
+      "choices": [
+        "A power failure can affect both servers together.",
+        "Failure probabilities must sum to 1.",
+        "Shared equipment guarantees no failures.",
+        "Different server names prove independence."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-018",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "calculate",
+      "stem": "P(A)=0.4, P(B)=0.5, and P(A AND B)=0.2. Which check supports independence?",
+      "explanation": "Independence requires the joint probability to equal the product.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 2,
+        "slide_title": "Test independence",
+        "pdf": "../slides/section-3-2.pdf#page=2"
+      },
+      "choices": [
+        "The intersection is positive.",
+        "0.5 minus 0.4 equals 0.1.",
+        "0.4 times 0.5 equals 0.2.",
+        "0.4 plus 0.5 equals 0.9."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-019",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "compare",
+      "stem": "20 students use both devices; 40 use tablets and 80 use laptops. Which conditional probability is larger?",
+      "explanation": "The fractions are 20/40 versus 20/80, with different conditioning denominators.",
+      "source": {
+        "section": "3.1",
+        "slide_page": 17,
+        "slide_title": "Reverse the condition",
+        "pdf": "../slides/section-3-1.pdf#page=17"
+      },
+      "choices": [
+        "Tablet use given laptop use.",
+        "They must be equal.",
+        "Laptop use given tablet use.",
+        "Neither can use the overlap count."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-020",
+      "group": "U2-G02",
+      "skill_group": "Independence, dependence, and conditions",
+      "reasoning": "evaluate",
+      "stem": "A fair die is rolled. A means even; B means 6. Why are these events dependent?",
+      "explanation": "Fair outcomes within one roll do not imply independent events on that roll.",
+      "source": {
+        "section": "3.2",
+        "slide_page": 20,
+        "slide_title": "Trials versus events",
+        "pdf": "../slides/section-3-2.pdf#page=20"
+      },
+      "choices": [
+        "Knowing B guarantees A, changing its probability.",
+        "They cannot happen together.",
+        "A fair die makes all events independent.",
+        "Both are separate die rolls."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-021",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "interpret",
+      "stem": "40 students use laptops, 25 use tablets, and 10 use both. Why subtract 10 when counting either device?",
+      "explanation": "Subtracting one copy of the overlap counts each person once.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 2,
+        "slide_title": "Why subtract the overlap?",
+        "pdf": "../slides/section-3-3.pdf#page=2"
+      },
+      "choices": [
+        "Adding the first two counts includes the overlap twice.",
+        "Subtraction is required because the sample is random.",
+        "Both-device users must be excluded entirely.",
+        "The overlap does not use either device."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A",
+      "figure": {
+        "file": "figures/U2-021.svg",
+        "alt": "Venn regions: 30 laptop only, 10 both, 15 tablet only. The illustrated universe is the 55 users of either device.",
+        "data": {
+          "kind": "venn",
+          "regions": [
+            30,
+            10,
+            15,
+            0
+          ],
+          "labels": [
+            "Laptop",
+            "Tablet"
+          ],
+          "alt": "Venn regions: 30 laptop only, 10 both, 15 tablet only. The illustrated universe is the 55 users of either device."
+        }
+      }
+    },
+    {
+      "id": "U2-022",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "calculate",
+      "stem": "P(A)=0.4, P(B)=0.5, and their overlap is 0.2. What is P(A OR B)?",
+      "explanation": "Add the two probabilities and subtract the overlap.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 1,
+        "slide_title": "The addition rule",
+        "pdf": "../slides/section-3-3.pdf#page=1"
+      },
+      "choices": [
+        "0.7.",
+        "1.1.",
+        "0.9.",
+        "0.2."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-023",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "calculate",
+      "stem": "P(A OR B)=0.75. What is the probability of neither?",
+      "explanation": "Neither is the complement of the union.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 6,
+        "slide_title": "Complement of a union",
+        "pdf": "../slides/section-3-3.pdf#page=6"
+      },
+      "choices": [
+        "0.25.",
+        "1.75.",
+        "0.75.",
+        "0.50."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-024",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "interpret",
+      "stem": "To find the probability of A followed by B when the stages may be dependent, which expression fits?",
+      "explanation": "The general multiplication rule uses the appropriate conditional probability.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 8,
+        "slide_title": "The multiplication rule",
+        "pdf": "../slides/section-3-3.pdf#page=8"
+      },
+      "choices": [
+        "P(A) plus P(B).",
+        "P(A) times P(B given A).",
+        "P(A) minus P(B given A).",
+        "P(A) times P(B) without checking independence."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-025",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "evaluate",
+      "stem": "Which event is the complement of at least one failure in three trials?",
+      "explanation": "The only way to avoid any failure is to have none.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 13,
+        "slide_title": "At least one",
+        "pdf": "../slides/section-3-3.pdf#page=13"
+      },
+      "choices": [
+        "No failures.",
+        "At least two failures.",
+        "Exactly one failure.",
+        "All three failures."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-026",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "compare",
+      "stem": "For two trials with positive chance of two failures, how do exactly one failure and at least one failure compare?",
+      "explanation": "At least one includes both exactly one and two failures.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 14,
+        "slide_title": "Exactly one",
+        "pdf": "../slides/section-3-3.pdf#page=14"
+      },
+      "choices": [
+        "Exactly one has greater probability.",
+        "The two events are complements.",
+        "At least one has greater probability.",
+        "They must be equal."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-027",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "calculate",
+      "stem": "Given A, the chance of B is 0.7. What is the chance of not B given A?",
+      "explanation": "The complementary outcomes are evaluated within the same conditioned group.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 16,
+        "slide_title": "A conditional complement",
+        "pdf": "../slides/section-3-3.pdf#page=16"
+      },
+      "choices": [
+        "0.3.",
+        "Cannot be found unless A is independent of B.",
+        "0.7.",
+        "1.7."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-028",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "evaluate",
+      "stem": "A conditioning event has probability zero. What happens to the usual conditional-probability ratio?",
+      "explanation": "The elementary conditional ratio requires a positive-probability conditioning event.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 17,
+        "slide_title": "A zero denominator",
+        "pdf": "../slides/section-3-3.pdf#page=17"
+      },
+      "choices": [
+        "Its denominator is zero, so this ratio is undefined.",
+        "The ratio automatically equals 1.",
+        "The ratio automatically equals 0.5.",
+        "Zero divided by zero equals zero."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-029",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "evaluate",
+      "stem": "P(A)=0.2 but P(A AND B)=0.3. Why is this impossible?",
+      "explanation": "The intersection is a subset of A and cannot be more probable than A.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 20,
+        "slide_title": "Check coherence",
+        "pdf": "../slides/section-3-3.pdf#page=20"
+      },
+      "choices": [
+        "A probability cannot be below 0.5.",
+        "The overlap cannot exceed the probability of A.",
+        "The overlap must always equal zero.",
+        "B must have probability 1."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-030",
+      "group": "U2-G03",
+      "skill_group": "Probability rules and shortcuts",
+      "reasoning": "interpret",
+      "stem": "Independent tasks each succeed with probability 0.9. Which shortcut gives at least one failure among three tasks?",
+      "explanation": "At least one failure complements all successes.",
+      "source": {
+        "section": "3.3",
+        "slide_page": 22,
+        "slide_title": "A complement shortcut",
+        "pdf": "../slides/section-3-3.pdf#page=22"
+      },
+      "choices": [
+        "0.9 plus 0.9 plus 0.9.",
+        "The probability all three fail.",
+        "1 minus the probability all three succeed.",
+        "1 minus the probability exactly one succeeds."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-031",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "calculate",
+      "stem": "Among 20 tablet users, 12 also use laptops. What is P(laptop given tablet) in this sample?",
+      "explanation": "Conditioning restricts the denominator to tablet users.",
+      "source": {
+        "section": "3.4",
+        "slide_page": 8,
+        "slide_title": "Condition on a row",
+        "pdf": "../slides/section-3-4.pdf#page=8"
+      },
+      "choices": [
+        "12/20.",
+        "20/12.",
+        "8/20.",
+        "12 divided by all college students."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-032",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "interpret",
+      "stem": "To find P(tablet given laptop) from a table, which denominator is needed?",
+      "explanation": "The group after given supplies the denominator.",
+      "source": {
+        "section": "3.4",
+        "slide_page": 9,
+        "slide_title": "Condition on a column",
+        "pdf": "../slides/section-3-4.pdf#page=9"
+      },
+      "choices": [
+        "Only the number using both.",
+        "The number of laptop users.",
+        "Only the number using neither.",
+        "The number of tablet users."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-033",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "compare",
+      "stem": "Half of tablet users use laptops, and half of non-tablet users use laptops. What does this suggest in these data?",
+      "explanation": "Equal conditional rates across the groups support independence in the empirical table.",
+      "source": {
+        "section": "3.4",
+        "slide_page": 11,
+        "slide_title": "An independence check",
+        "pdf": "../slides/section-3-4.pdf#page=11"
+      },
+      "choices": [
+        "Laptop use does not depend on tablet-use status.",
+        "Every student uses both devices.",
+        "The events are mutually exclusive.",
+        "Every student uses exactly one device."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-034",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "evaluate",
+      "stem": "A table contains 5 students using both devices. What does this show about mutual exclusivity?",
+      "explanation": "An observed overlap rules out disjointness in the table.",
+      "source": {
+        "section": "3.4",
+        "slide_page": 12,
+        "slide_title": "Mutual exclusivity check",
+        "pdf": "../slides/section-3-4.pdf#page=12"
+      },
+      "choices": [
+        "The two use events are not mutually exclusive.",
+        "They are mutually exclusive.",
+        "They must be independent.",
+        "Neither event has positive probability."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-035",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "evaluate",
+      "stem": "Device-use events appear independent in one class's table. What conclusion needs caution?",
+      "explanation": "A class sample does not automatically establish a population-wide relationship.",
+      "source": {
+        "section": "3.4",
+        "slide_page": 18,
+        "slide_title": "Scope of the table",
+        "pdf": "../slides/section-3-4.pdf#page=18"
+      },
+      "choices": [
+        "The table records that class.",
+        "Their rates match within the observed table.",
+        "The comparison used conditional rates.",
+        "They are independent for all students at the college."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-036",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "evaluate",
+      "stem": "At a tree node, two exhaustive outgoing branch probabilities are 0.6 and 0.5. What is wrong?",
+      "explanation": "Exhaustive alternative branches at a node must sum to 1.",
+      "source": {
+        "section": "3.5",
+        "slide_page": 7,
+        "slide_title": "Branch totals",
+        "pdf": "../slides/section-3-5.pdf#page=7"
+      },
+      "choices": [
+        "They should both be zero.",
+        "They total more than 1.",
+        "Branches cannot represent conditional probabilities.",
+        "All tree branches must be 0.5."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B",
+      "figure": {
+        "file": "figures/U2-036.svg",
+        "alt": "A proposed tree node has two exhaustive outgoing branches labeled 0.6 and 0.5.",
+        "data": {
+          "kind": "tree",
+          "branches": [
+            0.6,
+            0.5
+          ],
+          "alt": "A proposed tree node has two exhaustive outgoing branches labeled 0.6 and 0.5."
+        }
+      }
+    },
+    {
+      "id": "U2-037",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "calculate",
+      "stem": "A first branch has probability 0.4; its next conditional branch is 0.5. What is the path probability?",
+      "explanation": "Multiply probabilities along a path.",
+      "source": {
+        "section": "3.5",
+        "slide_page": 3,
+        "slide_title": "Multiply along a path",
+        "pdf": "../slides/section-3-5.pdf#page=3"
+      },
+      "choices": [
+        "0.1.",
+        "0.2.",
+        "0.8.",
+        "0.9."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-038",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "interpret",
+      "stem": "Two distinct terminal paths describe exactly one head in two tosses. How is their combined probability found?",
+      "explanation": "Distinct terminal outcomes are disjoint, so their probabilities add.",
+      "source": {
+        "section": "3.5",
+        "slide_page": 4,
+        "slide_title": "Add terminal paths",
+        "pdf": "../slides/section-3-5.pdf#page=4"
+      },
+      "choices": [
+        "Subtract the smaller from the larger.",
+        "Add the two path probabilities.",
+        "Multiply the two path probabilities.",
+        "Ignore one because both describe one head."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-039",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "calculate",
+      "stem": "A Venn summary has 30 in A, including 8 in both A and B. How many are in A only?",
+      "explanation": "Remove the overlap from the total in A.",
+      "source": {
+        "section": "3.5",
+        "slide_page": 15,
+        "slide_title": "Only one category",
+        "pdf": "../slides/section-3-5.pdf#page=15"
+      },
+      "choices": [
+        "30.",
+        "22.",
+        "38.",
+        "8."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-040",
+      "group": "U2-G04",
+      "skill_group": "Tables, trees, and Venn reasoning",
+      "reasoning": "interpret",
+      "stem": "Which Venn region is the complement of A OR B?",
+      "explanation": "The union includes both circles; its complement is outside both.",
+      "source": {
+        "section": "3.5",
+        "slide_page": 18,
+        "slide_title": "Shade a complement",
+        "pdf": "../slides/section-3-5.pdf#page=18"
+      },
+      "choices": [
+        "Inside A only.",
+        "Outside both circles.",
+        "Every region inside either circle.",
+        "Only the overlap."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-041",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "evaluate",
+      "stem": "X counts heads in three independent fair-coin tosses. Are 0, 1, 2, and 3 heads equally likely?",
+      "explanation": "Equal chance of individual sequences does not mean equal chance of aggregated counts.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 8,
+        "slide_title": "Equal values, unequal chances",
+        "pdf": "../slides/section-4-1.pdf#page=8"
+      },
+      "choices": [
+        "Yes; there are four possible counts.",
+        "No; 1 and 2 each occur through more sequences.",
+        "Yes; every fair-coin count is equally likely.",
+        "No; 0 is impossible."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-042",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "evaluate",
+      "stem": "A proposed table gives probabilities 0.2, 0.5, 0.3 for X=0,1,2. Is it valid?",
+      "explanation": "These are the requirements for a discrete probability distribution.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 10,
+        "slide_title": "Probability requirements",
+        "pdf": "../slides/section-4-1.pdf#page=10"
+      },
+      "choices": [
+        "No; entries must all be equal.",
+        "No; X cannot include zero.",
+        "No; one entry exceeds 0.25.",
+        "Yes; entries are nonnegative and total 1."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-043",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "calculate",
+      "stem": "A distribution gives P(X=0)=0.2 and P(X=1)=0.5, with only X=0,1,2 possible. What is P(X=2)?",
+      "explanation": "The missing probability makes the total equal to 1.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 11,
+        "slide_title": "A missing probability",
+        "pdf": "../slides/section-4-1.pdf#page=11"
+      },
+      "choices": [
+        "0.7.",
+        "0.3.",
+        "0.5.",
+        "1.3."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-044",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "evaluate",
+      "stem": "A probability table totals 1 but contains one entry of -0.1. What follows?",
+      "explanation": "Both nonnegativity and total 1 are required.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 12,
+        "slide_title": "An invalid distribution",
+        "pdf": "../slides/section-4-1.pdf#page=12"
+      },
+      "choices": [
+        "It is valid if the mean is positive.",
+        "It is invalid because probabilities cannot be negative.",
+        "It is valid because only the total matters.",
+        "Negative probabilities simply indicate rare events."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-045",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "calculate",
+      "stem": "X=0,1,2 has probabilities 0.2,0.5,0.3. What is P(X<2)?",
+      "explanation": "The event includes only 0 and 1.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 14,
+        "slide_title": "Fewer than two",
+        "pdf": "../slides/section-4-1.pdf#page=14"
+      },
+      "choices": [
+        "0.7.",
+        "1.",
+        "0.3.",
+        "0.5."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A",
+      "figure": {
+        "file": "figures/U2-045.svg",
+        "alt": "Probability bars: P(0)=0.2, P(1)=0.5, P(2)=0.3.",
+        "data": {
+          "kind": "prob",
+          "values": [
+            0,
+            1,
+            2
+          ],
+          "probabilities": [
+            0.2,
+            0.5,
+            0.3
+          ],
+          "alt": "Probability bars: P(0)=0.2, P(1)=0.5, P(2)=0.3."
+        }
+      }
+    },
+    {
+      "id": "U2-046",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "interpret",
+      "stem": "Which expression computes P(X>0) for a nonnegative count X?",
+      "explanation": "Positive counts complement zero when negative counts are impossible.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 16,
+        "slide_title": "A complement",
+        "pdf": "../slides/section-4-1.pdf#page=16"
+      },
+      "choices": [
+        "The mean of X.",
+        "1-P(X=0).",
+        "P(X=0).",
+        "1-P(X=1)."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-047",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "compare",
+      "stem": "Which quantity naturally has discrete possible values?",
+      "explanation": "Counts take separated integer values, unlike continuous measurements.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 4,
+        "slide_title": "Discrete versus continuous",
+        "pdf": "../slides/section-4-1.pdf#page=4"
+      },
+      "choices": [
+        "An unrounded measured length.",
+        "An unrounded file-transfer duration.",
+        "The exact mass of a package.",
+        "The number of failed files."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-048",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "evaluate",
+      "stem": "A model allows counts 0,1,2,... without a finite upper limit. Can it still be discrete?",
+      "explanation": "Discrete support can be infinite without forming a continuum.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 5,
+        "slide_title": "Discrete random variable",
+        "pdf": "../slides/section-4-1.pdf#page=5"
+      },
+      "choices": [
+        "Only if every count has equal probability.",
+        "No; a count must stop at 10.",
+        "Yes; countably many separated values can be discrete.",
+        "No; all infinite possibilities are continuous."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-049",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "evaluate",
+      "stem": "A model assigns a 5% chance to 4 failures. One session has 4 failures. What follows?",
+      "explanation": "An event with positive probability can occur, even if uncommon.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 19,
+        "slide_title": "Distribution versus one observation",
+        "pdf": "../slides/section-4-1.pdf#page=19"
+      },
+      "choices": [
+        "All future sessions must have 4 failures.",
+        "The observation is uncommon but consistent with the model.",
+        "The model is disproved by this one allowed outcome.",
+        "Its probability must now be 100%."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-050",
+      "group": "U2-G05",
+      "skill_group": "Discrete distributions and support",
+      "reasoning": "interpret",
+      "stem": "In many sessions, 20% have no failures. How might this inform a model?",
+      "explanation": "Relative frequencies can estimate a distribution without imposing a fixed order.",
+      "source": {
+        "section": "4.1",
+        "slide_page": 18,
+        "slide_title": "From data to a model",
+        "pdf": "../slides/section-4-1.pdf#page=18"
+      },
+      "choices": [
+        "Declare zero failures impossible.",
+        "Set every count probability to 0.20.",
+        "Use 0.20 as an empirical estimate for P(X=0).",
+        "Infer that every fifth session must have no failures."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-051",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "interpret",
+      "stem": "A count variable has expected value 0.4. What does that mean?",
+      "explanation": "An expectation is an average, not necessarily a possible individual value.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 4,
+        "slide_title": "A mean between integers",
+        "pdf": "../slides/section-4-2.pdf#page=4"
+      },
+      "choices": [
+        "Its long-run average can be 0.4 despite integer observations.",
+        "The model is invalid.",
+        "Exactly 40% of sessions must contain one event.",
+        "A single session must contain 0.4 events."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-052",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "evaluate",
+      "stem": "Outcomes 0 and 10 have probabilities 0.9 and 0.1. Why is their expected value not 5?",
+      "explanation": "The weighted mean is 1, not the unweighted midpoint.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 3,
+        "slide_title": "Not an unweighted average",
+        "pdf": "../slides/section-4-2.pdf#page=3"
+      },
+      "choices": [
+        "The larger value is impossible.",
+        "The values cannot be averaged.",
+        "Expected value always equals the most likely outcome.",
+        "The outcomes require unequal probability weights."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-053",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "predict",
+      "stem": "Probability is shifted from a low outcome to a higher outcome, with other probabilities unchanged. What happens to expected value?",
+      "explanation": "Giving more weight to a larger value raises the weighted mean.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 2,
+        "slide_title": "The weighted mean formula",
+        "pdf": "../slides/section-4-2.pdf#page=2"
+      },
+      "choices": [
+        "It cannot change.",
+        "It increases.",
+        "It must become the largest outcome.",
+        "It decreases."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-054",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "compare",
+      "stem": "Game A pays 5 with certainty. Game B pays 0 or 10 with equal chance. What is true?",
+      "explanation": "Both means are 5, but only B varies from play to play.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 14,
+        "slide_title": "Same mean, different spread",
+        "pdf": "../slides/section-4-2.pdf#page=14"
+      },
+      "choices": [
+        "A has greater spread.",
+        "B has a larger expected payout.",
+        "They have equal expected payout; B has greater spread.",
+        "Both have zero spread."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C",
+      "figure": {
+        "file": "figures/U2-054.svg",
+        "alt": "Game A has payout 5 with probability 1; Game B has payouts 0 and 10 with probability 0.5 each.",
+        "data": {
+          "kind": "prob_compare",
+          "alt": "Game A has payout 5 with probability 1; Game B has payouts 0 and 10 with probability 0.5 each."
+        }
+      }
+    },
+    {
+      "id": "U2-055",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "calculate",
+      "stem": "A game pays a prize of 8 and costs 3 to play. What is the net gain on that outcome?",
+      "explanation": "Net gain subtracts the fee from the prize.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 16,
+        "slide_title": "Net gain",
+        "pdf": "../slides/section-4-2.pdf#page=16"
+      },
+      "choices": [
+        "11.",
+        "3.",
+        "8.",
+        "5."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-056",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "interpret",
+      "stem": "A game's expected prize is 4 dollars. Which entry fee makes expected net gain zero?",
+      "explanation": "Expected net gain is expected prize minus the fixed fee.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 18,
+        "slide_title": "Fair entry fee",
+        "pdf": "../slides/section-4-2.pdf#page=18"
+      },
+      "choices": [
+        "8 dollars.",
+        "4 dollars.",
+        "0 dollars.",
+        "The maximum possible prize regardless of its probability."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-057",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "evaluate",
+      "stem": "A game has negative expected net gain. Can a player still win money on one play?",
+      "explanation": "An average loss does not rule out individual wins.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 19,
+        "slide_title": "A negative expected gain",
+        "pdf": "../slides/section-4-2.pdf#page=19"
+      },
+      "choices": [
+        "No; every outcome must lose money.",
+        "Only after the expected value changes.",
+        "Yes, if positive-gain outcomes have positive probability.",
+        "No; the largest prize must be negative."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-058",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "predict",
+      "stem": "A fixed fee increases by 2 dollars. What happens to net-gain mean and SD?",
+      "explanation": "Subtracting a constant shifts all outcomes without changing their spread.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 21,
+        "slide_title": "Shift and spread",
+        "pdf": "../slides/section-4-2.pdf#page=21"
+      },
+      "choices": [
+        "Mean is unchanged; SD rises.",
+        "Mean falls by 2; SD is unchanged.",
+        "Both double.",
+        "Both fall by 2."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-059",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "calculate",
+      "stem": "Expected jobs per session are 1.5. What total is expected over 20 such sessions?",
+      "explanation": "Expected totals add; the actual total is not guaranteed.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 8,
+        "slide_title": "Expected total",
+        "pdf": "../slides/section-4-2.pdf#page=8"
+      },
+      "choices": [
+        "Exactly 30 in every collection of sessions.",
+        "21.5.",
+        "30.",
+        "1.5."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-060",
+      "group": "U2-G06",
+      "skill_group": "Expected value, costs, and spread",
+      "reasoning": "interpret",
+      "stem": "A payout variable is measured in dollars. What units belong to its variance?",
+      "explanation": "Variance uses squared deviations from the expected payout.",
+      "source": {
+        "section": "4.2",
+        "slide_page": 9,
+        "slide_title": "Variance of a distribution",
+        "pdf": "../slides/section-4-2.pdf#page=9"
+      },
+      "choices": [
+        "Dollars.",
+        "Dollars squared.",
+        "Percent.",
+        "No units."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-061",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "evaluate",
+      "stem": "Ten independent trials each have success probability 0.3. X counts successes. What makes a binomial model appropriate?",
+      "explanation": "Those experimental conditions define the binomial setting.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 1,
+        "slide_title": "A binomial experiment",
+        "pdf": "../slides/section-4-3.pdf#page=1"
+      },
+      "choices": [
+        "Success probability exceeds 0.5.",
+        "Fixed trial count, two outcomes, independence, and constant success chance.",
+        "Every trial must succeed.",
+        "The expected count is an integer."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-062",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "interpret",
+      "stem": "X counts broken cables in independent checks. Can broken be called success in a binomial model?",
+      "explanation": "Success is a modeling label, not a value judgment.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 3,
+        "slide_title": "Define success",
+        "pdf": "../slides/section-4-3.pdf#page=3"
+      },
+      "choices": [
+        "No; success must be desirable.",
+        "Only if more than half are broken.",
+        "Only if no cables are broken.",
+        "Yes; success means the counted outcome."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-063",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "calculate",
+      "stem": "There are 20 independent trials with p=0.3. What is the expected success count?",
+      "explanation": "The expected count is np=20 times 0.3.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 21,
+        "slide_title": "Expected successes",
+        "pdf": "../slides/section-4-3.pdf#page=21"
+      },
+      "choices": [
+        "6.",
+        "14.",
+        "20.",
+        "0.3."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-064",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "evaluate",
+      "stem": "A binomial count has mean 6. What does this imply about the next experiment?",
+      "explanation": "Expected count is not a fixed outcome.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 24,
+        "slide_title": "A fixed count?",
+        "pdf": "../slides/section-4-3.pdf#page=24"
+      },
+      "choices": [
+        "Its count may differ from 6.",
+        "Its count cannot exceed 6.",
+        "Its count must be exactly 6.",
+        "Its count cannot be below 6."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-065",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "evaluate",
+      "stem": "Six tokens are drawn without replacement from a small mixed box. What challenges an exact binomial model?",
+      "explanation": "Without replacement from a small population violates the independent constant-p trial model.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 25,
+        "slide_title": "Sampling without replacement",
+        "pdf": "../slides/section-4-3.pdf#page=25"
+      },
+      "choices": [
+        "The number of draws is fixed.",
+        "The count is an integer.",
+        "There are only two colors.",
+        "Draws change the composition and are dependent."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-066",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "evaluate",
+      "stem": "A machine's success chance steadily falls as it warms. Which binomial requirement is questionable?",
+      "explanation": "Changing trial probabilities undermine the common-p binomial model.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 26,
+        "slide_title": "Changing probabilities",
+        "pdf": "../slides/section-4-3.pdf#page=26"
+      },
+      "choices": [
+        "There being two possible outcomes.",
+        "A fixed number of trials.",
+        "A numerical success count.",
+        "Constant success probability across trials."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-067",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "interpret",
+      "stem": "Which shortcut finds at least one success in a fixed set of independent trials?",
+      "explanation": "At least one success is the complement of zero successes.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 17,
+        "slide_title": "At least one success",
+        "pdf": "../slides/section-4-3.pdf#page=17"
+      },
+      "choices": [
+        "1 minus the probability of no successes.",
+        "The probability of exactly one success only.",
+        "1 minus the probability all succeed.",
+        "The expected success count."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-068",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "interpret",
+      "stem": "Two successes in four trials can occur in several orders. Why must all those orders be considered?",
+      "explanation": "A count aggregates several distinct trial sequences.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 13,
+        "slide_title": "Count the arrangements",
+        "pdf": "../slides/section-4-3.pdf#page=13"
+      },
+      "choices": [
+        "The expected count is an order.",
+        "Different orders are the same elementary outcome.",
+        "Only the first successful order can occur.",
+        "The count event includes every order with two successes."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-069",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "interpret",
+      "stem": "X counts successes in 8 trials. Which proposed outcome is impossible?",
+      "explanation": "A success count cannot exceed the fixed number of trials.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 7,
+        "slide_title": "Possible values",
+        "pdf": "../slides/section-4-3.pdf#page=7"
+      },
+      "choices": [
+        "X=9.",
+        "X=0.",
+        "X=8.",
+        "X=4."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-070",
+      "group": "U2-G07",
+      "skill_group": "Binomial reasoning",
+      "reasoning": "interpret",
+      "stem": "A supplied probability table lists P(X=0),...,P(X=8). To find P(X<=2), which entries are needed?",
+      "explanation": "At most 2 is a cumulative event including all counts through 2.",
+      "source": {
+        "section": "4.3",
+        "slide_page": 20,
+        "slide_title": "PDF and CDF commands",
+        "pdf": "../slides/section-4-3.pdf#page=20"
+      },
+      "choices": [
+        "The expected value.",
+        "The entries for 0, 1, and 2.",
+        "Only the entry for 2.",
+        "The entries for 3 through 8."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-071",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "compare",
+      "stem": "Plan A checks 10 items and counts successes. Plan B checks until the first success and counts trials. Which is geometric under independent constant-p trials?",
+      "explanation": "A geometric variable counts trials through the first success.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 1,
+        "slide_title": "A geometric experiment",
+        "pdf": "../slides/section-4-4.pdf#page=1"
+      },
+      "choices": [
+        "Neither because trials are discrete.",
+        "Both must be geometric.",
+        "Plan A.",
+        "Plan B."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-072",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "interpret",
+      "stem": "Outcomes are failure, failure, success. When X counts trials through first success, what is X?",
+      "explanation": "This convention includes the successful trial.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 2,
+        "slide_title": "Our counting convention",
+        "pdf": "../slides/section-4-4.pdf#page=2"
+      },
+      "choices": [
+        "0.",
+        "1.",
+        "3.",
+        "2."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-073",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "interpret",
+      "stem": "Which sequence gives the first success on trial 4?",
+      "explanation": "The first three must fail and the fourth must succeed.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 6,
+        "slide_title": "First success on trial four",
+        "pdf": "../slides/section-4-4.pdf#page=6"
+      },
+      "choices": [
+        "Four successes.",
+        "Failure, success, failure, success.",
+        "Success, failure, failure, failure.",
+        "Failure, failure, failure, success."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-074",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "interpret",
+      "stem": "X counts trials through first success. What does X>3 require?",
+      "explanation": "Waiting more than three trials means no success in those trials.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 9,
+        "slide_title": "More than three trials",
+        "pdf": "../slides/section-4-4.pdf#page=9"
+      },
+      "choices": [
+        "Exactly three successes.",
+        "A success on trial 3.",
+        "At least one success in the first three trials.",
+        "Failures on the first three trials."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-075",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "compare",
+      "stem": "How do X>=3 and X>3 differ?",
+      "explanation": "Inclusive and strict cutoffs differ by the count at the boundary.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 12,
+        "slide_title": "At least three trials",
+        "pdf": "../slides/section-4-4.pdf#page=12"
+      },
+      "choices": [
+        "They are the same event.",
+        "X>=3 includes first success on trial 3.",
+        "X>3 includes first success on trial 3.",
+        "X>=3 requires four initial failures."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-076",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "calculate",
+      "stem": "Independent trials have p=0.25. What is the expected number of trials through first success?",
+      "explanation": "The geometric mean is 1/p.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 13,
+        "slide_title": "Expected trials",
+        "pdf": "../slides/section-4-4.pdf#page=13"
+      },
+      "choices": [
+        "3.",
+        "25.",
+        "4.",
+        "0.25."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-077",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "evaluate",
+      "stem": "The mean waiting count is 4 trials. Must the first success occur by trial 4?",
+      "explanation": "A geometric distribution has no finite maximum waiting count.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 15,
+        "slide_title": "Expectation is not a deadline",
+        "pdf": "../slides/section-4-4.pdf#page=15"
+      },
+      "choices": [
+        "Yes; 4 is the maximum.",
+        "Yes; the mean is a deadline.",
+        "No; it must occur exactly on trial 5.",
+        "No; longer waits remain possible."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-078",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "predict",
+      "stem": "After five failures with constant independent p=0.2, what is the chance the next trial succeeds?",
+      "explanation": "The trial chance stays unchanged; success does not become due.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 18,
+        "slide_title": "Success is not “due”",
+        "pdf": "../slides/section-4-4.pdf#page=18"
+      },
+      "choices": [
+        "1.",
+        "0.8.",
+        "0.2.",
+        "0.2 divided by 5."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-079",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "compare",
+      "stem": "X counts trials through first success; Y counts failures before it. What is the relationship?",
+      "explanation": "The only counting difference is the final successful trial.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 19,
+        "slide_title": "Count failures instead",
+        "pdf": "../slides/section-4-4.pdf#page=19"
+      },
+      "choices": [
+        "X=Y+1.",
+        "X=Y.",
+        "X=2Y.",
+        "Y=X+1."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-080",
+      "group": "U2-G08",
+      "skill_group": "Geometric reasoning",
+      "reasoning": "evaluate",
+      "stem": "The success chance improves after each failed attempt because the process learns. Why is a geometric model questionable?",
+      "explanation": "Geometric waiting assumes independent trials with a constant success chance.",
+      "source": {
+        "section": "4.4",
+        "slide_page": 25,
+        "slide_title": "When the model changes",
+        "pdf": "../slides/section-4-4.pdf#page=25"
+      },
+      "choices": [
+        "There is a stopping rule.",
+        "Failures are counted.",
+        "The first success occurs eventually.",
+        "The success probability is not constant."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-081",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "interpret",
+      "stem": "Four cables are sampled uniformly without replacement from 12, of which 5 are faulty. Which model directly fits the faulty count?",
+      "explanation": "The finite population and no-replacement design fit the hypergeometric model.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 1,
+        "slide_title": "A hypergeometric experiment",
+        "pdf": "../slides/section-4-5.pdf#page=1"
+      },
+      "choices": [
+        "Continuous uniform.",
+        "Geometric waiting count.",
+        "Hypergeometric.",
+        "Normal individual measurement."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-082",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "evaluate",
+      "stem": "A box has 3 red and 7 blue tokens; 5 are drawn without replacement. Why is 4 red impossible?",
+      "explanation": "The success count is bounded by available red tokens.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 5,
+        "slide_title": "A maximum count",
+        "pdf": "../slides/section-4-5.pdf#page=5"
+      },
+      "choices": [
+        "Red probability must be zero.",
+        "Only 3 red tokens exist.",
+        "The sample contains 5 tokens.",
+        "Half the population is drawn."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-083",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "interpret",
+      "stem": "A box has 8 red and 2 blue tokens; 5 are drawn without replacement. What is the minimum red count?",
+      "explanation": "At most two drawn tokens can be blue, leaving at least three red.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 6,
+        "slide_title": "A minimum count",
+        "pdf": "../slides/section-4-5.pdf#page=6"
+      },
+      "choices": [
+        "3.",
+        "2.",
+        "0.",
+        "5."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-084",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "interpret",
+      "stem": "A box has 4 red and 6 blue tokens; 3 are drawn without replacement. What red counts are possible?",
+      "explanation": "The count ranges from zero through the sample size, within population limits.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 7,
+        "slide_title": "The support",
+        "pdf": "../slides/section-4-5.pdf#page=7"
+      },
+      "choices": [
+        "0 through 6.",
+        "1, 2, 3, 4.",
+        "Only 0 or 3.",
+        "0, 1, 2, 3."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-085",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "predict",
+      "stem": "A box has 4 red and 6 blue tokens. One red is removed. What is the next red probability?",
+      "explanation": "Both the red count and total count decrease by one.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 8,
+        "slide_title": "Conditional probability changes",
+        "pdf": "../slides/section-4-5.pdf#page=8"
+      },
+      "choices": [
+        "4/9.",
+        "3/9.",
+        "3/10.",
+        "4/10."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U2-086",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "calculate",
+      "stem": "A population is half faulty cables. A random sample of 6 is drawn without replacement. What faulty count is expected?",
+      "explanation": "Expected count equals sample size times population faulty fraction.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 14,
+        "slide_title": "An expected count",
+        "pdf": "../slides/section-4-5.pdf#page=14"
+      },
+      "choices": [
+        "3.",
+        "6.",
+        "0.5.",
+        "Exactly 3 in every sample."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-087",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "compare",
+      "stem": "Which design permits an exact binomial count model with independent randomized draws?",
+      "explanation": "Replacement and remixing preserve the same independent success chance.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 16,
+        "slide_title": "Compare sampling designs",
+        "pdf": "../slides/section-4-5.pdf#page=16"
+      },
+      "choices": [
+        "Always stopping at first red.",
+        "Drawing without replacement until the box is empty.",
+        "Replacing and remixing each drawn token.",
+        "Drawing most of a small population without replacement."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-088",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "evaluate",
+      "stem": "Ten cables are sampled without replacement from 100,000. Why might binomial be a useful approximation?",
+      "explanation": "A tiny sampling fraction makes dependence weak, but the exact design remains hypergeometric.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 17,
+        "slide_title": "A small sampling fraction",
+        "pdf": "../slides/section-4-5.pdf#page=17"
+      },
+      "choices": [
+        "The faulty count is continuous.",
+        "No-replacement draws become exactly independent.",
+        "All samples have the same faulty count.",
+        "The small sample barely changes the population composition."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-089",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "interpret",
+      "stem": "The sample is an unordered set of cables. Why count combinations rather than different orders of the same set?",
+      "explanation": "Unordered sampling treats permutations of the same selected set as one sample.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 9,
+        "slide_title": "Count possible samples",
+        "pdf": "../slides/section-4-5.pdf#page=9"
+      },
+      "choices": [
+        "Selection order determines whether a cable is faulty.",
+        "Every sample set has only one cable.",
+        "Combinations assume replacement.",
+        "Reordering the same selected cables does not create a new sample set."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-090",
+      "group": "U2-G09",
+      "skill_group": "Hypergeometric and sampling design",
+      "reasoning": "evaluate",
+      "stem": "A population has 2 faulty cables among 10; 8 are sampled without replacement. What sample information constrains the count?",
+      "explanation": "Finite-population availability sets both upper and lower support bounds.",
+      "source": {
+        "section": "4.5",
+        "slide_page": 18,
+        "slide_title": "Select the distribution",
+        "pdf": "../slides/section-4-5.pdf#page=18"
+      },
+      "choices": [
+        "Only whether the count is odd.",
+        "Only the first cable's color.",
+        "Both available faulty cables and available nonfaulty cables.",
+        "Only the population mean."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-091",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "calculate",
+      "stem": "A constant-rate Poisson process averages 2 requests per minute. What is the mean count over 3 minutes?",
+      "explanation": "Expected count scales with interval length: rate times time.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 3,
+        "slide_title": "Scale the mean",
+        "pdf": "../slides/section-4-6.pdf#page=3"
+      },
+      "choices": [
+        "3.",
+        "2/3.",
+        "2.",
+        "6."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-092",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "calculate",
+      "stem": "A Poisson count has mean 9. What is its standard deviation?",
+      "explanation": "Poisson variance equals the mean, so SD is its square root.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 12,
+        "slide_title": "Mean and standard deviation",
+        "pdf": "../slides/section-4-6.pdf#page=12"
+      },
+      "choices": [
+        "0.",
+        "81.",
+        "9.",
+        "3."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U2-093",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "compare",
+      "stem": "Which variable is a count rather than a waiting time?",
+      "explanation": "A Poisson variable counts events in an interval; a waiting time is a different variable.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 19,
+        "slide_title": "Count versus waiting time",
+        "pdf": "../slides/section-4-6.pdf#page=19"
+      },
+      "choices": [
+        "Minutes until the next request.",
+        "Duration of a request.",
+        "Requests received in the next five minutes.",
+        "Exact time between two requests."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-094",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "evaluate",
+      "stem": "Requests average 1 per minute overnight and 8 per minute at noon. What challenges a single constant-rate model for the entire day?",
+      "explanation": "A single homogeneous Poisson model assumes a stable rate over its modeled interval.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 14,
+        "slide_title": "A variable rate",
+        "pdf": "../slides/section-4-6.pdf#page=14"
+      },
+      "choices": [
+        "Both rates are positive.",
+        "The events are counts.",
+        "The rate varies by time of day.",
+        "The overnight mean is smaller."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-095",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "evaluate",
+      "stem": "Requests arrive in coordinated bursts. Which Poisson-process assumption deserves scrutiny?",
+      "explanation": "Clustering can make the independent-event model inappropriate.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 15,
+        "slide_title": "Clustering",
+        "pdf": "../slides/section-4-6.pdf#page=15"
+      },
+      "choices": [
+        "Measuring an interval.",
+        "Nonnegative counts.",
+        "Independent arrivals.",
+        "The possibility of zero requests."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-096",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "compare",
+      "stem": "X counts failures in exactly 20 independent trials; Y counts arrivals during an hour with no fixed trial total. Which distinction matters?",
+      "explanation": "A fixed set of trials differs from event counts over an interval.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 16,
+        "slide_title": "Binomial or Poisson?",
+        "pdf": "../slides/section-4-6.pdf#page=16"
+      },
+      "choices": [
+        "X fits a binomial setting; Y may fit a Poisson setting if its assumptions hold.",
+        "Y must be geometric.",
+        "Both must have the same maximum.",
+        "X must be continuous."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-097",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "interpret",
+      "stem": "A supplied Poisson table gives P(X=0)=0.12. How is the probability of at least one found?",
+      "explanation": "At least one complements zero events.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 9,
+        "slide_title": "At least one event",
+        "pdf": "../slides/section-4-6.pdf#page=9"
+      },
+      "choices": [
+        "1-0.12.",
+        "0.12.",
+        "The mean count.",
+        "0.12 squared."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-098",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "calculate",
+      "stem": "A rare-event binomial count has n=1,000 and p=0.002. What mean would its Poisson approximation use?",
+      "explanation": "The approximating mean is np.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 17,
+        "slide_title": "A rare-event approximation",
+        "pdf": "../slides/section-4-6.pdf#page=17"
+      },
+      "choices": [
+        "1,000.",
+        "0.002.",
+        "2.",
+        "500."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U2-099",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "evaluate",
+      "stem": "A Poisson count has mean 2. Does this rule out 5 events?",
+      "explanation": "A mean sets the center, not a finite upper support bound.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 6,
+        "slide_title": "Possible values",
+        "pdf": "../slides/section-4-6.pdf#page=6"
+      },
+      "choices": [
+        "No; counts above the mean remain possible.",
+        "Yes; only 0, 1, 2 are allowed.",
+        "Yes; 2 is the maximum.",
+        "No; every count is equally likely."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U2-100",
+      "group": "U2-G10",
+      "skill_group": "Poisson counts and model comparisons",
+      "reasoning": "predict",
+      "stem": "Under a constant errors-per-page Poisson model, document length doubles. What happens to the mean error count?",
+      "explanation": "At a fixed spatial rate, expected count is proportional to length.",
+      "source": {
+        "section": "4.6",
+        "slide_page": 13,
+        "slide_title": "A spatial interval",
+        "pdf": "../slides/section-4-6.pdf#page=13"
+      },
+      "choices": [
+        "It becomes the square root of the original mean.",
+        "It doubles.",
+        "It stays unchanged.",
+        "It halves."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    }
+  ],
+  "alignment": {
+    "basis": "Existing section slides, original adapted questions; computational load intentionally reduced.",
+    "source_sha256": {
+      "stats/slides/source/chapter-03.json": "81bc1a826b9e552ca3b436d222326d5a78b4c87f34f2e8cb516be0cd5ebe9042",
+      "stats/slides/source/chapter-04.json": "ad3a60b2366a3244534f8f791a2adf5128950ee28e8e88ba9bb1ab1c4cd6aa09"
+    }
+  }
+}

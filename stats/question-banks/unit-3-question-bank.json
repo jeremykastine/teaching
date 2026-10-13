@@ -1,0 +1,2349 @@
+{
+  "schema_version": 1,
+  "unit": 3,
+  "title": "Continuous probability models",
+  "chapters": [
+    5,
+    6
+  ],
+  "question_count": 100,
+  "calculator": "Four-function calculator allowed; supplied nontrivial values.",
+  "study_note": "All questions, answers, and explanations are public. Numerical examples are illustrative classroom scenarios.",
+  "quiz_prompt": "Quiz me from this statistics unit bank, one question at a time. Keep all four choices visible, but withhold the correct answer and explanation until I respond. Ask me to explain my reasoning. Then give feedback, cite the question ID, and revisit missed concepts later. Use a mix of skill groups. Do not invent harder calculations.",
+  "groups": [
+    {
+      "id": "U3-G01",
+      "name": "Continuous densities, areas, and cumulative probabilities"
+    },
+    {
+      "id": "U3-G02",
+      "name": "Uniform probabilities and cutoffs"
+    },
+    {
+      "id": "U3-G03",
+      "name": "Uniform changes, conditioning, and assumptions"
+    },
+    {
+      "id": "U3-G04",
+      "name": "Exponential shape, rates, and tails"
+    },
+    {
+      "id": "U3-G05",
+      "name": "Exponential memorylessness and count connections"
+    },
+    {
+      "id": "U3-G06",
+      "name": "Normal location, spread, and symmetry"
+    },
+    {
+      "id": "U3-G07",
+      "name": "Standardized comparisons and units"
+    },
+    {
+      "id": "U3-G08",
+      "name": "Normal areas and supplied probabilities"
+    },
+    {
+      "id": "U3-G09",
+      "name": "Normal percentiles and critical cutoffs"
+    },
+    {
+      "id": "U3-G10",
+      "name": "Model choice and integrated comparisons"
+    }
+  ],
+  "questions": [
+    {
+      "id": "U3-001",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "evaluate",
+      "stem": "A density is flat at height 2 over a half-unit interval and zero elsewhere. Is height 2 alone a problem?",
+      "explanation": "A density can exceed 1; probabilities are areas, and the full area here is 2 times 0.5.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 7,
+        "slide_title": "Height is not probability",
+        "pdf": "../slides/section-5-1.pdf#page=7"
+      },
+      "choices": [
+        "Yes; every density height must be at most 1.",
+        "No; its total area is 1, and height is not probability.",
+        "Yes; its probability is 2 everywhere.",
+        "No; total area may be any positive number."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B",
+      "figure": {
+        "file": "figures/U3-001.svg",
+        "alt": "A rectangular density has height 2 from 0 to 0.5 and is zero outside.",
+        "data": {
+          "kind": "rectangle",
+          "low": 0,
+          "high": 0.5,
+          "height": 2,
+          "alt": "A rectangular density has height 2 from 0 to 0.5 and is zero outside."
+        }
+      }
+    },
+    {
+      "id": "U3-002",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "evaluate",
+      "stem": "A proposed density dips below zero over an interval. What is wrong?",
+      "explanation": "Nonnegative density is required for nonnegative interval probabilities.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 2,
+        "slide_title": "A probability density",
+        "pdf": "../slides/section-5-1.pdf#page=2"
+      },
+      "choices": [
+        "Its maximum must equal 1.",
+        "A density must be flat everywhere.",
+        "It would assign negative area to that interval.",
+        "Every valid density must be symmetric."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-003",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "calculate",
+      "stem": "A rectangular density covers 0 to 4 and is zero elsewhere. What height makes total area 1?",
+      "explanation": "Width times height must equal 1.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 3,
+        "slide_title": "The entire distribution",
+        "pdf": "../slides/section-5-1.pdf#page=3"
+      },
+      "choices": [
+        "1.",
+        "4.",
+        "0.5.",
+        "0.25."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-004",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "interpret",
+      "stem": "An exact continuous duration has P(X=4)=0. Can a timer report 4 seconds?",
+      "explanation": "A rounded recorded value can have positive probability even though an exact point has zero area.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 8,
+        "slide_title": "One exact value",
+        "pdf": "../slides/section-5-1.pdf#page=8"
+      },
+      "choices": [
+        "Only if the density equals zero everywhere.",
+        "Yes; rounding collects a positive-width interval of exact values.",
+        "Only if the model becomes discrete before rounding.",
+        "No; 4 seconds can never be recorded."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-005",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "compare",
+      "stem": "For a continuous duration, how do P(X<6) and P(X<=6) compare?",
+      "explanation": "An individual boundary point has zero probability.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 10,
+        "slide_title": "Endpoints",
+        "pdf": "../slides/section-5-1.pdf#page=10"
+      },
+      "choices": [
+        "They are equal.",
+        "The first is always zero.",
+        "They differ by the density height at 6.",
+        "The second is always twice the first."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-006",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "interpret",
+      "stem": "A continuous model gives F(6)=0.70. What does that say?",
+      "explanation": "The cumulative function gives probability up through the cutoff.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 11,
+        "slide_title": "The cumulative distribution",
+        "pdf": "../slides/section-5-1.pdf#page=11"
+      },
+      "choices": [
+        "The density height at 6 is 0.70.",
+        "The mean is 6.",
+        "70% of modeled durations are at most 6.",
+        "70% of durations equal exactly 6."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-007",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "calculate",
+      "stem": "F(3)=0.20 and F(7)=0.80 for a continuous variable. What is P(3<X<7)?",
+      "explanation": "Subtract the cumulative areas at the two cutoffs.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 14,
+        "slide_title": "Between two cutoffs",
+        "pdf": "../slides/section-5-1.pdf#page=14"
+      },
+      "choices": [
+        "0.20.",
+        "1.00.",
+        "0.60.",
+        "0.80."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-008",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "evaluate",
+      "stem": "Someone reports F(4)=0.6 and F(8)=0.4 for one variable. Why is this impossible?",
+      "explanation": "The event up through 4 is contained in the event up through 8.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 16,
+        "slide_title": "A possible cumulative function",
+        "pdf": "../slides/section-5-1.pdf#page=16"
+      },
+      "choices": [
+        "Cumulative functions must always equal 0.5.",
+        "Both numbers are below 1.",
+        "Every cutoff must have the same probability.",
+        "A cumulative probability cannot decrease as the cutoff rises."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-009",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "calculate",
+      "stem": "A continuous model has F(9)=0.80. What percent exceeds 9?",
+      "explanation": "The upper tail complements the cumulative probability.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 17,
+        "slide_title": "A percentile",
+        "pdf": "../slides/section-5-1.pdf#page=17"
+      },
+      "choices": [
+        "9%.",
+        "100%.",
+        "20%.",
+        "80%."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-010",
+      "group": "U3-G01",
+      "skill_group": "Continuous densities, areas, and cumulative probabilities",
+      "reasoning": "interpret",
+      "stem": "Durations are rounded to the nearest whole second. Ignoring tie conventions at boundaries, which exact interval reports as 4?",
+      "explanation": "Nearest-unit rounding collects values within half a unit of 4.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 9,
+        "slide_title": "Rounded measurements",
+        "pdf": "../slides/section-5-1.pdf#page=9"
+      },
+      "choices": [
+        "0 to 4 seconds.",
+        "4 to 5 seconds.",
+        "3.5 to 4.5 seconds.",
+        "Only the exact point 4."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-011",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "compare",
+      "stem": "X is uniform from 0 to 10. Compare intervals 1 to 3 and 7 to 9.",
+      "explanation": "Under a flat density, equal-length intervals inside the support have equal area.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 1,
+        "slide_title": "The uniform distribution",
+        "pdf": "../slides/section-5-2.pdf#page=1"
+      },
+      "choices": [
+        "The second is more likely because its values are larger.",
+        "The first is more likely because it is closer to zero.",
+        "Their probabilities depend on the sample median.",
+        "They have equal probability."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D",
+      "figure": {
+        "file": "figures/U3-011.svg",
+        "alt": "A uniform density on 0 to 10 highlights intervals 1 to 3 and 7 to 9.",
+        "data": {
+          "kind": "uniform",
+          "low": 0,
+          "high": 10,
+          "intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              7,
+              9
+            ]
+          ],
+          "alt": "A uniform density on 0 to 10 highlights intervals 1 to 3 and 7 to 9."
+        }
+      }
+    },
+    {
+      "id": "U3-012",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "calculate",
+      "stem": "A wait is uniform from 0 to 12 minutes. What is P(3<X<6)?",
+      "explanation": "The interval occupies 3 of the support's 12 minutes.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 4,
+        "slide_title": "A waiting interval",
+        "pdf": "../slides/section-5-2.pdf#page=4"
+      },
+      "choices": [
+        "3/6.",
+        "9/12.",
+        "6/12.",
+        "3/12."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-013",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "interpret",
+      "stem": "X is uniform from 2 to 10. To find P(0<X<5), which portion contributes area?",
+      "explanation": "There is no density outside the support, so only the overlap contributes.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 7,
+        "slide_title": "A partially overlapping interval",
+        "pdf": "../slides/section-5-2.pdf#page=7"
+      },
+      "choices": [
+        "2 to 5.",
+        "5 to 10.",
+        "0 to 5.",
+        "0 to 2."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-014",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "evaluate",
+      "stem": "X is uniform from 2 to 10. What can be said about P(X>12)?",
+      "explanation": "The event lies entirely outside the model's support.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 8,
+        "slide_title": "Outside the support",
+        "pdf": "../slides/section-5-2.pdf#page=8"
+      },
+      "choices": [
+        "It is 1/2.",
+        "It is larger than P(X>8).",
+        "It is zero.",
+        "It is the density height at 12."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-015",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "calculate",
+      "stem": "A continuous uniform model runs from 4 to 12. What is its mean?",
+      "explanation": "The mean is the midpoint of the support.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 9,
+        "slide_title": "The center of a uniform distribution",
+        "pdf": "../slides/section-5-2.pdf#page=9"
+      },
+      "choices": [
+        "12.",
+        "16.",
+        "8.",
+        "4."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-016",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "calculate",
+      "stem": "A wait is uniform from 0 to 20 minutes. What is its 75th percentile?",
+      "explanation": "The cutoff lies 75% of the distance across the support.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 12,
+        "slide_title": "A percentile cutoff",
+        "pdf": "../slides/section-5-2.pdf#page=12"
+      },
+      "choices": [
+        "15 minutes.",
+        "75 minutes.",
+        "5 minutes.",
+        "20 minutes."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-017",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "interpret",
+      "stem": "A uniform wait ranges from 0 to 10. Only 10% exceed a cutoff. Where is that cutoff?",
+      "explanation": "The uppermost tenth of the support is 9 to 10.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 13,
+        "slide_title": "An upper-tail cutoff",
+        "pdf": "../slides/section-5-2.pdf#page=13"
+      },
+      "choices": [
+        "At 1.",
+        "At 9.",
+        "At 5.",
+        "At 10."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-018",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "interpret",
+      "stem": "X is uniform from 0 to 12. Which symmetric interval contains the middle 50%?",
+      "explanation": "The middle half has half the full width and is centered at 6.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 14,
+        "slide_title": "The middle half",
+        "pdf": "../slides/section-5-2.pdf#page=14"
+      },
+      "choices": [
+        "5 to 7.",
+        "3 to 9.",
+        "6 to 12.",
+        "0 to 6."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-019",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "compare",
+      "stem": "X is uniform from 0 to 10. Which event is more likely?",
+      "explanation": "The lower interval has width 6, while the upper interval has width 4.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 5,
+        "slide_title": "A short wait",
+        "pdf": "../slides/section-5-2.pdf#page=5"
+      },
+      "choices": [
+        "X<6.",
+        "X>6.",
+        "They are equally likely.",
+        "X=6."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-020",
+      "group": "U3-G02",
+      "skill_group": "Uniform probabilities and cutoffs",
+      "reasoning": "interpret",
+      "stem": "Uniform model A spans width 4; model B spans width 8. Which density is taller?",
+      "explanation": "A narrower rectangular support requires a taller density to preserve total area 1.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 3,
+        "slide_title": "Uniform density",
+        "pdf": "../slides/section-5-2.pdf#page=3"
+      },
+      "choices": [
+        "B.",
+        "The one with the larger mean regardless of width.",
+        "They have equal height.",
+        "A."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-021",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "compare",
+      "stem": "Compare U(0,12) and U(20,32). What is true about their standard deviations?",
+      "explanation": "A common shift changes center without changing spread.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 10,
+        "slide_title": "Uniform spread",
+        "pdf": "../slides/section-5-2.pdf#page=10"
+      },
+      "choices": [
+        "The first is larger because it includes zero.",
+        "The second is larger because its mean is larger.",
+        "They are equal.",
+        "Both standard deviations are zero."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-022",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "predict",
+      "stem": "The model changes from U(0,10) to U(0,20). What happens to P(X<5)?",
+      "explanation": "The favorable interval retains width 5 while total support width doubles.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 17,
+        "slide_title": "Changing the range",
+        "pdf": "../slides/section-5-2.pdf#page=17"
+      },
+      "choices": [
+        "It halves.",
+        "It stays unchanged.",
+        "It becomes 1.",
+        "It doubles."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-023",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "predict",
+      "stem": "Both endpoints of a uniform model increase by 4. What happens to its mean and SD?",
+      "explanation": "A translation shifts location but preserves distances.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 10,
+        "slide_title": "Uniform spread",
+        "pdf": "../slides/section-5-2.pdf#page=10"
+      },
+      "choices": [
+        "Mean rises by 4; SD stays unchanged.",
+        "SD rises by 4; mean stays unchanged.",
+        "Both stay unchanged.",
+        "Both rise by 4."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-024",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "predict",
+      "stem": "A uniform interval centered at 10 doubles its width while keeping center 10. What happens?",
+      "explanation": "Uniform mean depends on midpoint; SD is proportional to width.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 11,
+        "slide_title": "Calculating uniform spread",
+        "pdf": "../slides/section-5-2.pdf#page=11"
+      },
+      "choices": [
+        "Mean stays 10; SD doubles.",
+        "Both stay unchanged.",
+        "Both double.",
+        "Mean doubles; SD stays unchanged."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-025",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "calculate",
+      "stem": "X is uniform from 0 to 12. Given X>4, what is P(X>8)?",
+      "explanation": "The conditioned support is 4 to 12, with favorable part 8 to 12.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 15,
+        "slide_title": "A conditional interval",
+        "pdf": "../slides/section-5-2.pdf#page=15"
+      },
+      "choices": [
+        "8/12.",
+        "4/8.",
+        "8/8.",
+        "4/12."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-026",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "interpret",
+      "stem": "Given that a U(0,12) wait exceeds 4, what shape describes the total wait's conditional density?",
+      "explanation": "Restricting a uniform density to a subinterval and renormalizing preserves flatness there.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 16,
+        "slide_title": "The conditional density",
+        "pdf": "../slides/section-5-2.pdf#page=16"
+      },
+      "choices": [
+        "A point at 4.",
+        "Flat over 4 to 12.",
+        "Normal over all real numbers.",
+        "Flat over 0 to 12 unchanged."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-027",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "evaluate",
+      "stem": "Observed waits cluster near 0 and near 12, with few in the middle. What does that suggest about U(0,12)?",
+      "explanation": "Support endpoints do not determine the shape inside the support.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 18,
+        "slide_title": "Checking the model",
+        "pdf": "../slides/section-5-2.pdf#page=18"
+      },
+      "choices": [
+        "The uniform model is automatically proved.",
+        "The range alone establishes the density.",
+        "Its flat-density assumption deserves checking.",
+        "A mean of 6 guarantees the uniform model."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-028",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "evaluate",
+      "stem": "A U(0,10) sample has mean 5.4. Must the model be wrong?",
+      "explanation": "Sampling variation can produce means away from the theoretical center.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 19,
+        "slide_title": "Theoretical and empirical summaries",
+        "pdf": "../slides/section-5-2.pdf#page=19"
+      },
+      "choices": [
+        "No; any mean proves the model.",
+        "Yes; all uniform values must equal 5.",
+        "No; a sample mean can differ from the model mean.",
+        "Yes; every sample must average exactly 5."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-029",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "compare",
+      "stem": "Compare one U(0,12) wait with the average of 100 independent such waits. Which is less variable?",
+      "explanation": "Averaging independent observations reduces variability without fixing the result exactly.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 20,
+        "slide_title": "From one wait to many",
+        "pdf": "../slides/section-5-2.pdf#page=20"
+      },
+      "choices": [
+        "The average.",
+        "The individual wait.",
+        "They have identical spread.",
+        "The average must have zero spread."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-030",
+      "group": "U3-G03",
+      "skill_group": "Uniform changes, conditioning, and assumptions",
+      "reasoning": "predict",
+      "stem": "A U(0,12) wait has already lasted 11 minutes. What is the largest possible additional wait under this model?",
+      "explanation": "The total wait cannot exceed the upper support endpoint 12.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 15,
+        "slide_title": "A conditional interval",
+        "pdf": "../slides/section-5-2.pdf#page=15"
+      },
+      "choices": [
+        "1 minute.",
+        "There is no upper bound.",
+        "11 minutes.",
+        "12 minutes."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-031",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "compare",
+      "stem": "For an exponential wait, which one-minute interval has more probability?",
+      "explanation": "An exponential density decreases with waiting time.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 6,
+        "slide_title": "The density",
+        "pdf": "../slides/section-5-3.pdf#page=6"
+      },
+      "choices": [
+        "5 to 6 minutes.",
+        "They have equal probability.",
+        "Both have probability zero.",
+        "0 to 1 minute."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D",
+      "figure": {
+        "file": "figures/U3-031.svg",
+        "alt": "A declining exponential density highlights 0 to 1 minute and 5 to 6 minutes.",
+        "data": {
+          "kind": "exponential",
+          "rate": 0.2,
+          "intervals": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "alt": "A declining exponential density highlights 0 to 1 minute and 5 to 6 minutes."
+        }
+      }
+    },
+    {
+      "id": "U3-032",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "calculate",
+      "stem": "Requests follow a constant-rate Poisson process at 4 per hour. What is the mean waiting time to the next request?",
+      "explanation": "Mean wait is one quarter hour, or 15 minutes.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 4,
+        "slide_title": "Mean waiting time",
+        "pdf": "../slides/section-5-3.pdf#page=4"
+      },
+      "choices": [
+        "4 minutes.",
+        "240 minutes.",
+        "60 minutes.",
+        "15 minutes."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-033",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "calculate",
+      "stem": "An exponential waiting time has mean 5 minutes. What rate per minute matches it?",
+      "explanation": "Rate is the reciprocal of mean wait in consistent units.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 5,
+        "slide_title": "Converting a mean to a rate",
+        "pdf": "../slides/section-5-3.pdf#page=5"
+      },
+      "choices": [
+        "25.",
+        "0.2.",
+        "0.5.",
+        "5."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-034",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "interpret",
+      "stem": "An exponential model has mean wait 4 minutes. What is its SD?",
+      "explanation": "For an exponential distribution, mean and SD are both the reciprocal of the rate.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 18,
+        "slide_title": "Exponential spread",
+        "pdf": "../slides/section-5-3.pdf#page=18"
+      },
+      "choices": [
+        "16 minutes.",
+        "2 minutes.",
+        "0 minutes.",
+        "4 minutes."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-035",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "compare",
+      "stem": "For an exponential distribution with mean 5 minutes, how does its median compare?",
+      "explanation": "The long right tail pulls the mean above the median.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 17,
+        "slide_title": "Mean and median",
+        "pdf": "../slides/section-5-3.pdf#page=17"
+      },
+      "choices": [
+        "The median is below 5.",
+        "The median exceeds 5.",
+        "The median equals 5.",
+        "The median does not exist."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-036",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "calculate",
+      "stem": "A supplied exponential model gives P(X>8)=0.20. What is P(X<=8)?",
+      "explanation": "Meeting the deadline complements exceeding it.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 10,
+        "slide_title": "A wait within a deadline",
+        "pdf": "../slides/section-5-3.pdf#page=10"
+      },
+      "choices": [
+        "0.40.",
+        "0.80.",
+        "0.20.",
+        "1.20."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-037",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "calculate",
+      "stem": "P(X>2)=0.50 and P(X>6)=0.125 for an exponential wait. What is P(2<X<6)?",
+      "explanation": "Subtract the farther upper tail from the nearer upper tail: 0.50-0.125=0.375.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 12,
+        "slide_title": "Between two waits",
+        "pdf": "../slides/section-5-3.pdf#page=12"
+      },
+      "choices": [
+        "0.375.",
+        "0.125.",
+        "0.625.",
+        "0.50."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-038",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "evaluate",
+      "stem": "A rate is stated per hour but a cutoff is inserted as a number of minutes. What must be done before using the tail formula?",
+      "explanation": "The rate-time product must use matching units.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 14,
+        "slide_title": "Units in the exponent",
+        "pdf": "../slides/section-5-3.pdf#page=14"
+      },
+      "choices": [
+        "Round the probability to an integer.",
+        "Multiply both numbers by the sample size.",
+        "Replace the cutoff with the mean.",
+        "Express rate and cutoff in compatible time units."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-039",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "evaluate",
+      "stem": "Waits are nonnegative. Is that sufficient to establish an exponential model?",
+      "explanation": "Support alone does not determine the density or a constant-rate process.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 1,
+        "slide_title": "An exponential waiting model",
+        "pdf": "../slides/section-5-3.pdf#page=1"
+      },
+      "choices": [
+        "No; exponential values must be negative.",
+        "No; the arrival process and distributional assumptions still need support.",
+        "Yes; nonnegative variables have equal mean and SD.",
+        "Yes; every nonnegative variable is exponential."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-040",
+      "group": "U3-G04",
+      "skill_group": "Exponential shape, rates, and tails",
+      "reasoning": "interpret",
+      "stem": "An exponential density extends far right with diminishing height. What does that say about very long waits?",
+      "explanation": "An unbounded right tail allows large values without making them frequent.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 8,
+        "slide_title": "Sketching the exponential density",
+        "pdf": "../slides/section-5-3.pdf#page=8"
+      },
+      "choices": [
+        "They are possible but less common than short waits.",
+        "They must occur as often as short waits.",
+        "They are impossible once the mean is exceeded.",
+        "Every long wait has probability 1."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-041",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "predict",
+      "stem": "An exponential wait has already lasted 10 minutes. Compared with a fresh wait, what is the distribution of the additional wait?",
+      "explanation": "Memorylessness concerns additional waiting conditional on having waited so far.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 20,
+        "slide_title": "The memoryless property",
+        "pdf": "../slides/section-5-3.pdf#page=20"
+      },
+      "choices": [
+        "It must end immediately.",
+        "The same under the memoryless model.",
+        "Its expected remaining duration is the original mean minus 10.",
+        "It becomes uniform."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-042",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "interpret",
+      "stem": "For an exponential model, P(X>3)=0.40. Given X>7, what is the chance of more than 3 additional minutes?",
+      "explanation": "Memorylessness gives P(X>10 given X>7)=P(X>3).",
+      "source": {
+        "section": "5.3",
+        "slide_page": 21,
+        "slide_title": "A remaining wait",
+        "pdf": "../slides/section-5-3.pdf#page=21"
+      },
+      "choices": [
+        "0.40.",
+        "1.",
+        "0.",
+        "0.40 divided by 7."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-043",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "compare",
+      "stem": "After an 11-minute wait, U(0,12) allows at most 1 more minute. An exponential model allows longer additional waits. What explains the difference?",
+      "explanation": "Their supports and conditional-wait behavior differ.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 22,
+        "slide_title": "Comparing waiting models",
+        "pdf": "../slides/section-5-3.pdf#page=22"
+      },
+      "choices": [
+        "Uniform waits have a finite endpoint; exponential waits do not.",
+        "Exponential waits stop at their mean.",
+        "Uniform waits are always zero.",
+        "Both models are memoryless."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-044",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "evaluate",
+      "stem": "Arrival rates sharply rise at lunchtime. What is questionable about a single exponential waiting model over the whole day?",
+      "explanation": "The homogeneous exponential waiting model relies on a stable Poisson-process rate.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 27,
+        "slide_title": "Model assumptions",
+        "pdf": "../slides/section-5-3.pdf#page=27"
+      },
+      "choices": [
+        "Recording waits in minutes.",
+        "Allowing a long wait.",
+        "Nonnegative waiting times.",
+        "A constant rate across the whole period."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-045",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "interpret",
+      "stem": "The same process supplies arrivals per hour and time until next arrival. Which assignment is appropriate?",
+      "explanation": "These are linked but different random variables under a constant-rate Poisson process.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 23,
+        "slide_title": "Counts or waiting time?",
+        "pdf": "../slides/section-5-3.pdf#page=23"
+      },
+      "choices": [
+        "Uniform for both automatically.",
+        "Binomial for both automatically.",
+        "Poisson for the count; exponential for the wait.",
+        "Exponential for the count; Poisson for the wait."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-046",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "compare",
+      "stem": "How does no arrivals in the next 5 minutes relate to waiting more than 5 minutes for the next arrival?",
+      "explanation": "No event before the cutoff means the next event occurs after it.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 26,
+        "slide_title": "An empty interval",
+        "pdf": "../slides/section-5-3.pdf#page=26"
+      },
+      "choices": [
+        "The first requires exactly one arrival.",
+        "They are independent unrelated events.",
+        "They describe the same event, ignoring a zero-probability boundary.",
+        "They are complements."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-047",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "calculate",
+      "stem": "A constant-rate process averages 0.5 requests per minute. What is the mean request count over 10 minutes?",
+      "explanation": "Expected count is rate times interval length.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 24,
+        "slide_title": "A Poisson connection",
+        "pdf": "../slides/section-5-3.pdf#page=24"
+      },
+      "choices": [
+        "20.",
+        "0.5.",
+        "10.",
+        "5."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-048",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "predict",
+      "stem": "An exponential arrival rate doubles. What happens to mean waiting time?",
+      "explanation": "Mean wait is the reciprocal of rate.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 4,
+        "slide_title": "Mean waiting time",
+        "pdf": "../slides/section-5-3.pdf#page=4"
+      },
+      "choices": [
+        "It stays unchanged.",
+        "It becomes zero.",
+        "It doubles.",
+        "It halves."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-049",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "interpret",
+      "stem": "The mean lifetime is 8 hours. What does an expected total lifetime of 80 hours for ten items mean?",
+      "explanation": "Expected values add but individual and total outcomes still vary.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 19,
+        "slide_title": "Expected total lifetime",
+        "pdf": "../slides/section-5-3.pdf#page=19"
+      },
+      "choices": [
+        "Every set totals exactly 80 hours.",
+        "All items fail simultaneously at hour 80.",
+        "It is an average total over repeated sets, not a guaranteed total.",
+        "Every item lasts exactly 8 hours."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-050",
+      "group": "U3-G05",
+      "skill_group": "Exponential memorylessness and count connections",
+      "reasoning": "compare",
+      "stem": "Compare one exponential duration with the average of many independent durations. What remains the same?",
+      "explanation": "Averaging preserves the expected center while reducing variability.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 28,
+        "slide_title": "Preparing for averages",
+        "pdf": "../slides/section-5-3.pdf#page=28"
+      },
+      "choices": [
+        "The SD.",
+        "The mean.",
+        "The maximum possible duration becomes finite for the average.",
+        "The entire density shape."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-051",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "predict",
+      "stem": "A normal model's mean rises from 40 to 50 while SD stays 6. What happens to the curve?",
+      "explanation": "The mean controls location; SD controls width.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 1,
+        "slide_title": "A normal distribution",
+        "pdf": "../slides/section-6-1.pdf#page=1"
+      },
+      "choices": [
+        "It becomes wider.",
+        "It shifts right without changing width.",
+        "Its total area increases.",
+        "It becomes right-skewed."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-052",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "compare",
+      "stem": "Normal models A and B share mean 50, with SDs 2 and 8. Which has more probability above 60?",
+      "explanation": "A fixed cutoff above the mean is fewer SD away in the wider model.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 20,
+        "slide_title": "Different spreads",
+        "pdf": "../slides/section-6-2.pdf#page=20"
+      },
+      "choices": [
+        "Both probabilities are exactly zero.",
+        "B.",
+        "They have equal upper tails.",
+        "A."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B",
+      "figure": {
+        "file": "figures/U3-052.svg",
+        "alt": "Two normal densities centered at 50, with standard deviations 2 and 8; cutoff 60 is marked.",
+        "data": {
+          "kind": "normals",
+          "models": [
+            [
+              50,
+              2,
+              "A: SD 2"
+            ],
+            [
+              50,
+              8,
+              "B: SD 8"
+            ]
+          ],
+          "cutoff": 60,
+          "alt": "Two normal densities centered at 50, with standard deviations 2 and 8; cutoff 60 is marked."
+        }
+      }
+    },
+    {
+      "id": "U3-053",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "compare",
+      "stem": "For a standard normal variable, compare P(Z<-1.4) and P(Z>1.4).",
+      "explanation": "Normal symmetry makes opposite equal-distance tails equal.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 12,
+        "slide_title": "Symmetry",
+        "pdf": "../slides/section-6-1.pdf#page=12"
+      },
+      "choices": [
+        "The left tail is larger.",
+        "They are equal.",
+        "The right tail is larger.",
+        "Both equal 0.5."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-054",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "interpret",
+      "stem": "A normal model has mean 20. What is P(X<20)?",
+      "explanation": "The symmetric center splits total area in half.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 13,
+        "slide_title": "The center divides the area",
+        "pdf": "../slides/section-6-1.pdf#page=13"
+      },
+      "choices": [
+        "1.",
+        "0.5.",
+        "0.",
+        "The SD."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-055",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "evaluate",
+      "stem": "The course uses N(mean, SD). A technician expects readings from N(40,6) to cluster near 6. What is the best correction?",
+      "explanation": "The first parameter is the center; the SD measures variation around it, rather than another center.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 2,
+        "slide_title": "Normal notation",
+        "pdf": "../slides/section-6-1.pdf#page=2"
+      },
+      "choices": [
+        "They cluster near 6; 40 is the sample size.",
+        "The model allows only the two values 6 and 40.",
+        "The readings cluster near 40; 6 describes their spread.",
+        "Every reading must equal 40."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-056",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "compare",
+      "stem": "Two normal curves share SD but have different means. What is equal?",
+      "explanation": "A common SD gives identical shape and width; different means shift the curves.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 1,
+        "slide_title": "A normal distribution",
+        "pdf": "../slides/section-6-1.pdf#page=1"
+      },
+      "choices": [
+        "Their centers.",
+        "Their widths and shapes.",
+        "Their 90th-percentile values.",
+        "Their probabilities below every fixed cutoff."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-057",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "evaluate",
+      "stem": "A strongly skewed variable is converted to z-scores. Does it become normal?",
+      "explanation": "A linear transformation preserves distributional shape.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 22,
+        "slide_title": "Location versus shape",
+        "pdf": "../slides/section-6-1.pdf#page=22"
+      },
+      "choices": [
+        "Yes; subtracting the mean removes the tail.",
+        "Yes; every z-score distribution is standard normal.",
+        "No; z-scores cannot be negative.",
+        "No; standardization shifts and rescales without removing skew."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-058",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "evaluate",
+      "stem": "A proposed normal model gives substantial probability to negative durations. What is the concern?",
+      "explanation": "A normal approximation may be poor when impossible values receive meaningful probability.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 24,
+        "slide_title": "A model boundary",
+        "pdf": "../slides/section-6-2.pdf#page=24"
+      },
+      "choices": [
+        "It assigns appreciable probability to impossible values.",
+        "Normal distributions cannot model any positive variable.",
+        "Its mean must be zero.",
+        "Every duration must be negative."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-059",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "predict",
+      "stem": "The SD of a normal model increases while the mean stays fixed. What happens to its peak?",
+      "explanation": "Spreading the same area over a wider curve lowers its peak.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 1,
+        "slide_title": "A normal distribution",
+        "pdf": "../slides/section-6-1.pdf#page=1"
+      },
+      "choices": [
+        "The center shifts right.",
+        "It becomes higher and narrower.",
+        "It becomes lower as the curve spreads out.",
+        "The total area rises above 1."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-060",
+      "group": "U3-G06",
+      "skill_group": "Normal location, spread, and symmetry",
+      "reasoning": "compare",
+      "stem": "Normal models share SD 4 but have means 10 and 14. Which has more probability below 8?",
+      "explanation": "A left cutoff is nearer the center of the mean-10 model.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 21,
+        "slide_title": "Different centers",
+        "pdf": "../slides/section-6-2.pdf#page=21"
+      },
+      "choices": [
+        "They have equal probabilities.",
+        "The mean-10 model.",
+        "The mean-14 model.",
+        "Both have probability 0.5."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-061",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "calculate",
+      "stem": "A normal variable has mean 40 and SD 5. What z-score corresponds to 50?",
+      "explanation": "The value is 10 above the mean, or 2 SD.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 5,
+        "slide_title": "A positive z-score",
+        "pdf": "../slides/section-6-1.pdf#page=5"
+      },
+      "choices": [
+        "10.",
+        "0.2.",
+        "2.",
+        "-2."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-062",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "calculate",
+      "stem": "A variable has mean 20 and SD 4. What z-score corresponds to 12?",
+      "explanation": "The value is 8 below the mean, or -2 SD.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 6,
+        "slide_title": "A negative z-score",
+        "pdf": "../slides/section-6-1.pdf#page=6"
+      },
+      "choices": [
+        "3.",
+        "-8.",
+        "2.",
+        "-2."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-063",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "interpret",
+      "stem": "A value equals its distribution's mean. What is its z-score?",
+      "explanation": "Its deviation from the mean is zero.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 7,
+        "slide_title": "At the mean",
+        "pdf": "../slides/section-6-1.pdf#page=7"
+      },
+      "choices": [
+        "The mean.",
+        "The SD.",
+        "0.",
+        "1."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-064",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "interpret",
+      "stem": "A recorded value has z=-1.5. What does that mean?",
+      "explanation": "A z-score measures signed distance in SD units.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 4,
+        "slide_title": "A standardized value",
+        "pdf": "../slides/section-6-1.pdf#page=4"
+      },
+      "choices": [
+        "It has probability -1.5.",
+        "It is above 98.5% of values automatically.",
+        "It is 1.5 original units below zero.",
+        "It is 1.5 SD below the mean."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-065",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "calculate",
+      "stem": "Mean is 30 and SD is 4. Which value has z=1.5?",
+      "explanation": "Add 1.5 times 4 to the mean.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 8,
+        "slide_title": "Returning to original units",
+        "pdf": "../slides/section-6-1.pdf#page=8"
+      },
+      "choices": [
+        "36.",
+        "45.",
+        "26.",
+        "31.5."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-066",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "compare",
+      "stem": "A is 6 above its mean with SD 3; B is 8 above its mean with SD 8. Which is more extreme above its group center?",
+      "explanation": "Their z-scores are 2 and 1.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 9,
+        "slide_title": "Comparing different scales",
+        "pdf": "../slides/section-6-1.pdf#page=9"
+      },
+      "choices": [
+        "A.",
+        "They are equally extreme.",
+        "B.",
+        "The larger raw difference always determines extremeness."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-067",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "evaluate",
+      "stem": "A student treats z=2 as a probability of 2. What is wrong?",
+      "explanation": "Z-scores can exceed 1, while probabilities cannot.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 10,
+        "slide_title": "Scores are not probabilities",
+        "pdf": "../slides/section-6-1.pdf#page=10"
+      },
+      "choices": [
+        "A standardized distance is not an area probability.",
+        "A z-score can never exceed 1.",
+        "A normal model cannot have positive z-scores.",
+        "A z-score must be a percentage."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-068",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "interpret",
+      "stem": "X has mean 50, SD 10. Which standard-normal event corresponds to X<60?",
+      "explanation": "Subtract the mean and divide by SD without reversing the inequality.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 11,
+        "slide_title": "Standardizing an event",
+        "pdf": "../slides/section-6-1.pdf#page=11"
+      },
+      "choices": [
+        "Z>1.",
+        "Z<6.",
+        "Z<1.",
+        "Z<-1."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-069",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "evaluate",
+      "stem": "A nonnormal variable has a well-defined mean and SD. Can its z-score automatically be looked up as a standard-normal probability?",
+      "explanation": "Standardization is broadly possible, but normal probabilities require a normal model.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 21,
+        "slide_title": "Normality matters",
+        "pdf": "../slides/section-6-1.pdf#page=21"
+      },
+      "choices": [
+        "No; the normal shape assumption still matters.",
+        "No; only normal variables can be standardized.",
+        "Yes; z-scores always imply normality.",
+        "Yes; a positive SD is sufficient."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-070",
+      "group": "U3-G07",
+      "skill_group": "Standardized comparisons and units",
+      "reasoning": "predict",
+      "stem": "All values and their mean and SD are converted from meters to centimeters. What happens to z-scores?",
+      "explanation": "The conversion factor cancels in the standardized ratio.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 8,
+        "slide_title": "Returning to original units",
+        "pdf": "../slides/section-6-1.pdf#page=8"
+      },
+      "choices": [
+        "They stay unchanged.",
+        "They divide by 100.",
+        "They all become positive.",
+        "They multiply by 100."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-071",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "interpret",
+      "stem": "For a bell-shaped normal model, about 68% lies within 1 SD. About how much lies outside that central interval?",
+      "explanation": "The outside area is the complement, split between two tails.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 14,
+        "slide_title": "One standard deviation",
+        "pdf": "../slides/section-6-1.pdf#page=14"
+      },
+      "choices": [
+        "68%.",
+        "95%.",
+        "32%.",
+        "16% in total."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-072",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "interpret",
+      "stem": "About 95% of a normal model lies within 2 SD. About what percent lies above mean+2 SD?",
+      "explanation": "The remaining 5% is split equally between the two tails.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 16,
+        "slide_title": "Two standard deviations",
+        "pdf": "../slides/section-6-1.pdf#page=16"
+      },
+      "choices": [
+        "2.5%.",
+        "95%.",
+        "47.5%.",
+        "5%."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-073",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "interpret",
+      "stem": "About 99.7% lies within 3 SD in a normal model. About what percent lies outside on both sides combined?",
+      "explanation": "The combined outside area is 100%-99.7%.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 17,
+        "slide_title": "Three standard deviations",
+        "pdf": "../slides/section-6-1.pdf#page=17"
+      },
+      "choices": [
+        "0.15%.",
+        "99.7%.",
+        "3%.",
+        "0.3%."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-074",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "calculate",
+      "stem": "A supplied normal table gives P(Z<1.2)=0.8849. What is P(Z>1.2)?",
+      "explanation": "Use the complement for the upper tail.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 19,
+        "slide_title": "Using a cumulative table",
+        "pdf": "../slides/section-6-1.pdf#page=19"
+      },
+      "choices": [
+        "1.8849.",
+        "0.1151.",
+        "0.44245.",
+        "0.8849."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-075",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "interpret",
+      "stem": "P(Z>1.2)=0.1151. By symmetry, what is P(Z<-1.2)?",
+      "explanation": "Opposite equal-distance tails have equal positive probability.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 20,
+        "slide_title": "A negative cumulative cutoff",
+        "pdf": "../slides/section-6-1.pdf#page=20"
+      },
+      "choices": [
+        "0.5.",
+        "0.8849.",
+        "0.1151.",
+        "-0.1151."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-076",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "calculate",
+      "stem": "For one normal model, P(X<40)=0.20 and P(X<60)=0.85. What is P(40<X<60)?",
+      "explanation": "Subtract cumulative lower-tail areas.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 4,
+        "slide_title": "A probability between cutoffs",
+        "pdf": "../slides/section-6-2.pdf#page=4"
+      },
+      "choices": [
+        "0.65.",
+        "1.05.",
+        "0.20.",
+        "0.85."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-077",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "calculate",
+      "stem": "A normal model assigns 0.90 inside an accepted interval. What probability is outside it?",
+      "explanation": "Outside complements inside; without symmetry of the interval its tails need not be equal.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 5,
+        "slide_title": "Outside an acceptable range",
+        "pdf": "../slides/section-6-2.pdf#page=5"
+      },
+      "choices": [
+        "0.90.",
+        "0.10.",
+        "1.90.",
+        "0.05 necessarily."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-078",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "evaluate",
+      "stem": "For a normal variable, a cutoff above the mean is reported to have upper-tail probability 0.80. What should be checked?",
+      "explanation": "A cutoff above the symmetric center leaves less than half the area to its right.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 9,
+        "slide_title": "Checking the direction",
+        "pdf": "../slides/section-6-2.pdf#page=9"
+      },
+      "choices": [
+        "Whether an upper tail must be negative.",
+        "Whether every normal curve has mean zero.",
+        "The tail direction; that upper tail must be below 0.5.",
+        "Whether probabilities can exceed 0.5 at all."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-079",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "compare",
+      "stem": "Under an exact normal model, how do probabilities below 480 and at most 480 compare?",
+      "explanation": "A continuous point contributes zero probability.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 6,
+        "slide_title": "Strict or inclusive?",
+        "pdf": "../slides/section-6-2.pdf#page=6"
+      },
+      "choices": [
+        "They are equal.",
+        "Below is always zero.",
+        "At most is larger by the density height.",
+        "They differ by 1/480."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-080",
+      "group": "U3-G08",
+      "skill_group": "Normal areas and supplied probabilities",
+      "reasoning": "calculate",
+      "stem": "A model predicts 5% of items fall outside specifications. Among 200 items, how many are expected outside?",
+      "explanation": "Expected count is sample count times the modeled fraction, without a guarantee.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 10,
+        "slide_title": "From probability to expected count",
+        "pdf": "../slides/section-6-2.pdf#page=10"
+      },
+      "choices": [
+        "5.",
+        "10.",
+        "Exactly 10 must occur.",
+        "40."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-081",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "interpret",
+      "stem": "What equation describes a continuous model's 90th percentile k?",
+      "explanation": "The percentile cutoff has the stated area to its left.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 11,
+        "slide_title": "A percentile",
+        "pdf": "../slides/section-6-2.pdf#page=11"
+      },
+      "choices": [
+        "The mean equals 0.90k.",
+        "P(X=k)=0.90.",
+        "P(X>k)=0.90.",
+        "P(X<=k)=0.90."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-082",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "compare",
+      "stem": "For a normal model, where is the 10th percentile?",
+      "explanation": "The lowest tenth ends on the lower side of the symmetric center.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 16,
+        "slide_title": "A lower-tail cutoff",
+        "pdf": "../slides/section-6-2.pdf#page=16"
+      },
+      "choices": [
+        "Below the mean.",
+        "At the largest possible value.",
+        "At the mean.",
+        "Above the mean."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-083",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "interpret",
+      "stem": "Only 5% exceed cutoff k. Which percentile is k?",
+      "explanation": "The remaining 95% lies at or below the cutoff.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 14,
+        "slide_title": "An upper-tail cutoff",
+        "pdf": "../slides/section-6-2.pdf#page=14"
+      },
+      "choices": [
+        "5th.",
+        "100th.",
+        "95th.",
+        "50th."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-084",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "calculate",
+      "stem": "Mean is 100, SD is 10, and the supplied 90th-percentile z is 1.28. What is the corresponding value?",
+      "explanation": "Return to original units with mean plus z times SD.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 12,
+        "slide_title": "Finding a percentile",
+        "pdf": "../slides/section-6-2.pdf#page=12"
+      },
+      "choices": [
+        "101.28.",
+        "112.8.",
+        "12.8.",
+        "87.2."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-085",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "interpret",
+      "stem": "A symmetric central normal interval contains 90%. How much area lies in each outside tail?",
+      "explanation": "The excluded 10% splits equally between the tails.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 17,
+        "slide_title": "The middle 90%",
+        "pdf": "../slides/section-6-2.pdf#page=17"
+      },
+      "choices": [
+        "90%.",
+        "5%.",
+        "45%.",
+        "10%."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-086",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "interpret",
+      "stem": "A supplied positive critical z leaves 0.025 to its right. What cumulative area lies to its left?",
+      "explanation": "Left and right areas total 1.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 15,
+        "slide_title": "Critical value",
+        "pdf": "../slides/section-6-2.pdf#page=15"
+      },
+      "choices": [
+        "0.95.",
+        "0.5.",
+        "0.025.",
+        "0.975."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-087",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "compare",
+      "stem": "For a normal distribution, how do Q1 and Q3 lie relative to the mean?",
+      "explanation": "Quartile cutoffs are symmetric about the normal center.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 18,
+        "slide_title": "Quartiles from a model",
+        "pdf": "../slides/section-6-2.pdf#page=18"
+      },
+      "choices": [
+        "Both lie above it.",
+        "They are equally distant on opposite sides.",
+        "Both equal it.",
+        "Q3 must be twice Q1."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-088",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "interpret",
+      "stem": "A question asks for the mass exceeded by only 10% of packages. What units should the answer have?",
+      "explanation": "The requested answer is an original-scale cutoff, not a probability.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 22,
+        "slide_title": "A probability or a cutoff?",
+        "pdf": "../slides/section-6-2.pdf#page=22"
+      },
+      "choices": [
+        "A percentage of sample size.",
+        "Probability units only.",
+        "No units because it is a z-score automatically.",
+        "Mass units."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-089",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "predict",
+      "stem": "A normal model's mean rises by 3 with SD fixed. What happens to its 90th percentile?",
+      "explanation": "Every fixed percentile shifts with the mean when spread stays fixed.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 12,
+        "slide_title": "Finding a percentile",
+        "pdf": "../slides/section-6-2.pdf#page=12"
+      },
+      "choices": [
+        "It rises by 3.",
+        "It stays unchanged.",
+        "It falls by 3.",
+        "It rises by 90%."
+      ],
+      "answer_index": 0,
+      "answer_letter": "A"
+    },
+    {
+      "id": "U3-090",
+      "group": "U3-G09",
+      "skill_group": "Normal percentiles and critical cutoffs",
+      "reasoning": "predict",
+      "stem": "A normal model's SD doubles with mean fixed. What happens to its model IQR?",
+      "explanation": "Normal quartile distances scale with SD.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 19,
+        "slide_title": "An interquartile range",
+        "pdf": "../slides/section-6-2.pdf#page=19"
+      },
+      "choices": [
+        "It quadruples.",
+        "It becomes zero.",
+        "It stays unchanged.",
+        "It doubles."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-091",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "compare",
+      "stem": "Normal models have the same mean. For a fixed cutoff below that mean, which has the larger lower-tail probability?",
+      "explanation": "A wider curve places more area beyond a fixed cutoff away from its center.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 20,
+        "slide_title": "Different spreads",
+        "pdf": "../slides/section-6-2.pdf#page=20"
+      },
+      "choices": [
+        "They must have equal tails.",
+        "The one with more recorded observations regardless of SD.",
+        "The model with the smaller SD.",
+        "The model with the larger SD."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-092",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "predict",
+      "stem": "A normal model's mean increases, with SD fixed. At a fixed deadline, what happens to the probability of finishing before it?",
+      "explanation": "Shifting durations right moves area away from the fixed lower-tail deadline.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 21,
+        "slide_title": "Different centers",
+        "pdf": "../slides/section-6-2.pdf#page=21"
+      },
+      "choices": [
+        "It becomes exactly 0.5.",
+        "It stays unchanged.",
+        "It increases.",
+        "It decreases."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-093",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "calculate",
+      "stem": "P(X>50)=0.50 and P(X>60)=0.10. Given X>50, what is P(X>60)?",
+      "explanation": "The smaller upper-tail event is contained in the conditioned event, giving 0.10/0.50.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 23,
+        "slide_title": "Conditional normal probability",
+        "pdf": "../slides/section-6-2.pdf#page=23"
+      },
+      "choices": [
+        "0.60.",
+        "0.40.",
+        "0.10.",
+        "0.20."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-094",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "evaluate",
+      "stem": "A fitted normal model predicts 2% above a cutoff, while a large observed dataset has 18% above it. What should be investigated?",
+      "explanation": "A large model-data discrepancy warrants checking fit and assumptions.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 26,
+        "slide_title": "Checking an empirical normal model",
+        "pdf": "../slides/section-6-2.pdf#page=26"
+      },
+      "choices": [
+        "Only the number of decimal places.",
+        "Whether observations should be changed to fit the model.",
+        "Whether the model fits the observed tail.",
+        "Whether probabilities above 2% are impossible."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-095",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "compare",
+      "stem": "A model describes the mass of one package. Is its SD automatically appropriate for the mean mass of 100 independent packages?",
+      "explanation": "Units can match while distributions and spreads differ.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 25,
+        "slide_title": "One package or an average?",
+        "pdf": "../slides/section-6-2.pdf#page=25"
+      },
+      "choices": [
+        "Yes; both are measured in grams.",
+        "No; averages have no units.",
+        "Yes; averages always vary more.",
+        "No; the average has less spread."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-096",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "compare",
+      "stem": "Which model assigns equal probability to all equal-length subintervals within its support?",
+      "explanation": "Flat density, not continuity alone, gives equal interval areas.",
+      "source": {
+        "section": "5.2",
+        "slide_page": 1,
+        "slide_title": "The uniform distribution",
+        "pdf": "../slides/section-5-2.pdf#page=1"
+      },
+      "choices": [
+        "A normal model.",
+        "Every continuous model.",
+        "An exponential model.",
+        "A continuous uniform model."
+      ],
+      "answer_index": 3,
+      "answer_letter": "D"
+    },
+    {
+      "id": "U3-097",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "compare",
+      "stem": "One model is symmetric and bell-shaped; another has a long right tail and decreases from zero onward. Which pairing fits those shapes?",
+      "explanation": "Normal symmetry and exponential right-skew are distinct modeling features.",
+      "source": {
+        "section": "5.3",
+        "slide_page": 17,
+        "slide_title": "Mean and median",
+        "pdf": "../slides/section-5-3.pdf#page=17"
+      },
+      "choices": [
+        "Both must be uniform.",
+        "Exponential first; normal second.",
+        "Normal first; exponential second.",
+        "Uniform first; normal second."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-098",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "calculate",
+      "stem": "A normal model has mean 50 and SD 2. Which interval contains about 99.7%?",
+      "explanation": "The empirical rule uses three SD on each side.",
+      "source": {
+        "section": "6.1",
+        "slide_page": 15,
+        "slide_title": "Empirical Rule",
+        "pdf": "../slides/section-6-1.pdf#page=15"
+      },
+      "choices": [
+        "50 to 56.",
+        "48 to 52.",
+        "44 to 56.",
+        "46 to 54."
+      ],
+      "answer_index": 2,
+      "answer_letter": "C"
+    },
+    {
+      "id": "U3-099",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "predict",
+      "stem": "A probability interval is widened to include its original interval plus a region of positive density. What happens to its probability?",
+      "explanation": "Adding positive area raises probability while the total remains at most 1.",
+      "source": {
+        "section": "5.1",
+        "slide_page": 4,
+        "slide_title": "Probability as area",
+        "pdf": "../slides/section-5-1.pdf#page=4"
+      },
+      "choices": [
+        "It exceeds 1 automatically.",
+        "It increases.",
+        "It decreases.",
+        "It stays unchanged."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B"
+    },
+    {
+      "id": "U3-100",
+      "group": "U3-G10",
+      "skill_group": "Model choice and integrated comparisons",
+      "reasoning": "interpret",
+      "stem": "A package is accepted if 490<mass<520. Which part of its normal curve should be shaded?",
+      "explanation": "A between-cutoffs event corresponds to the intervening area.",
+      "source": {
+        "section": "6.2",
+        "slide_page": 8,
+        "slide_title": "Shading a normal probability",
+        "pdf": "../slides/section-6-2.pdf#page=8"
+      },
+      "choices": [
+        "Only the point 500.",
+        "Only the area between 490 and 520.",
+        "Both outside tails.",
+        "Everything above 520."
+      ],
+      "answer_index": 1,
+      "answer_letter": "B",
+      "figure": {
+        "file": "figures/U3-100.svg",
+        "alt": "A normal density with vertical boundary lines at 490 and 520; no area is preselected.",
+        "data": {
+          "kind": "normal_interval",
+          "mean": 500,
+          "sd": 20,
+          "limits": [
+            490,
+            520
+          ],
+          "alt": "A normal density with vertical boundary lines at 490 and 520; no area is preselected."
+        }
+      }
+    }
+  ],
+  "alignment": {
+    "basis": "Existing section slides, original adapted questions; computational load intentionally reduced.",
+    "source_sha256": {
+      "stats/slides/source/chapter-05.json": "fd7e1dc197b2b3554fa1be6394e5d9238a83ff17299e7abfb8c9d9df618d3257",
+      "stats/slides/source/chapter-06.json": "275a523451dd1b3719c8679310b7f29b6700ce4309c2348623d03905f2acafbc"
+    }
+  }
+}
