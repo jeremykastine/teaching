@@ -238,6 +238,12 @@ def build_index(root, cfg, sections):
         if (root / homework).is_file():
             cards.append(f'<li><span class="section">Homework</span><h3><a href="{homework}">Chapter {chapter} Homework</a></h3>'
                          f'<p class="links"><a href="{homework}">Open homework <span class="meta">(PDF)</span></a></p></li>')
+        practice_manifest = root / 'practice-tests/manifest.json'
+        if practice_manifest.is_file():
+            from generate_practice_batch import cards as practice_cards
+            for practice in practice_cards(json.loads(practice_manifest.read_text())):
+                if practice['end'] == chapter:
+                    cards.append(practice['html'])
         chunks.append(f'<section aria-labelledby="chapter-{chapter}"><h2 id="chapter-{chapter}">Chapter {chapter} · {cfg["chapters"][chapter]}</h2>'
                       f'<p>{note}</p><ul>{"".join(cards)}</ul></section>')
     html = f'''<!doctype html>

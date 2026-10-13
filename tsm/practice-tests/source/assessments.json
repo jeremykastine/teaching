@@ -1,0 +1,4170 @@
+[
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.1",
+    "questions": [
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -2, y = 3. Show the substituted expression.",
+        "math": [
+          "3 x - 4 y - 2"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-20",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "x (x + 2) = x^{2} + 2 x"
+        ],
+        "rows": [
+          {
+            "label": "x = 2",
+            "answer": "Left 8; right 8; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -2",
+            "answer": "Left 0; right 0; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 0; right 0; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            2,
+            "",
+            "",
+            ""
+          ],
+          [
+            -2,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad 9-(-5)",
+          "(b)\\quad (-6)(-4)",
+          "(c)\\quad \\frac{7}{0}",
+          "(d)\\quad -8-5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "14",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "24",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "Undefined",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "-13",
+            "points": 5,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate the same expression at (a) x = 10, (b) x = -10, and (c) x = 0. Show substitution.",
+        "math": [
+          "x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "72",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "132",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "2",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{14}{21}",
+          "(b)\\quad \\frac{42}{66}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{11}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "98-arithmetic-practice-202610122020.1.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.2",
+    "questions": [
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -3, y = 4. Show the substituted expression.",
+        "math": [
+          "4 x - 5 y - 3"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-35",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate the same expression at (a) x = 10, (b) x = -10, and (c) x = 0. Show substitution.",
+        "math": [
+          "2 x^{2} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "163",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "243",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "3",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad -9+(-12)",
+          "(b)\\quad (-7)(-5)",
+          "(c)\\quad -10-(-6)",
+          "(d)\\quad \\frac{0}{8}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "-21",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "35",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "-4",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "0",
+            "points": 5,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{60}{84}",
+          "(b)\\quad \\frac{25}{35}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{5}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "x (x + 3) = x^{2} + 4 x"
+        ],
+        "rows": [
+          {
+            "label": "x = 3",
+            "answer": "Left 18; right 21; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -3",
+            "answer": "Left 0; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 0; right 0; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            3,
+            "",
+            "",
+            ""
+          ],
+          [
+            -3,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "98-arithmetic-practice-202610122020.2.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.3",
+    "questions": [
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -4, y = 5. Show the substituted expression.",
+        "math": [
+          "5 x - 6 y - 4"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-54",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate the same expression at (a) x = 10, (b) x = -10, and (c) x = 0. Show substitution.",
+        "math": [
+          "3 x^{2} - 5 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "254",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "354",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "4",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad -10-7",
+          "(b)\\quad (-8)(-6)",
+          "(c)\\quad 11-(-7)",
+          "(d)\\quad \\frac{9}{0}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "-17",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "48",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "18",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "Undefined",
+            "points": 5,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{21}{35}",
+          "(b)\\quad \\frac{70}{110}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{11}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "x (x + 4) = x^{2} + 4 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "x = 4",
+            "answer": "Left 32; right 36; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -4",
+            "answer": "Left 0; right 4; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 0; right 4; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            -4,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "98-arithmetic-practice-202610122020.3.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-polynomials",
+    "title": "TSM 098 Polynomials Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.4",
+    "questions": [
+      {
+        "id": "P98-sub",
+        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
+        "math": [
+          "(3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+1)(x-3)",
+          "(b)\\quad (2x-1)(3x+3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} + 3 x - 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and combine like terms.",
+        "math": [
+          "(x - 1)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - x^{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(2 x^{6} - 3 x^{5} + x^{3} + 4 x - 5) + (- x^{6} + 2 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{6} - 3 x^{5} + 2 x^{4} - x^{3} + 3 x^{2} + 4 x - 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-3x^2(2 x^{3} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 6 x^{5} + 3 x^{3} - 9 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "98-polynomials-practice-202610122020.4.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-polynomials",
+    "title": "TSM 098 Polynomials Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.5",
+    "questions": [
+      {
+        "id": "P98-sub",
+        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
+        "math": [
+          "(4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-4x^2(2 x^{3} - 2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 8 x^{5} + 8 x^{3} - 12 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and combine like terms.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 4 x - 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+2)(x-4)",
+          "(b)\\quad (3x-2)(4x+3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(2 x^{6} - 3 x^{5} + 2 x^{3} + 4 x - 5) + (- x^{6} + 3 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{6} - 3 x^{5} + 3 x^{4} + 3 x^{2} + 4 x - 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "98-polynomials-practice-202610122020.5.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-polynomials",
+    "title": "TSM 098 Polynomials Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.6",
+    "questions": [
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+3)(x-5)",
+          "(b)\\quad (4x-3)(5x+3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "20 x^{2} - 3 x - 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(2 x^{6} - 3 x^{5} + 3 x^{3} + 4 x - 5) + (- x^{6} + 4 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{6} - 3 x^{5} + 4 x^{4} + x^{3} + 3 x^{2} + 4 x - 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-sub",
+        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
+        "math": [
+          "(5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and combine like terms.",
+        "math": [
+          "(x^{2} + x - 3)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 4 x^{2} + 6 x - 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-5x^2(2 x^{3} - 3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 10 x^{5} + 15 x^{3} - 15 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "98-polynomials-practice-202610122020.6.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-fractions",
+    "title": "TSM 098 Fractions Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.7",
+    "questions": [
+      {
+        "id": "F98-div",
+        "prompt": "Compute and give the result in lowest terms. Show multiplication by the reciprocal.",
+        "math": [
+          "4 \\div \\frac{8}{5}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{5}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{1}{6} + \\frac{1}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-mult",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{14}{15} \\times \\frac{25}{21} \\times \\frac{9}{10}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-sub",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{3}{4} - \\frac{1}{6}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{7}{12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-extra",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{2}{7} + \\frac{3}{7}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{5}{7}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "98-fractions-practice-202610122020.7.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-fractions",
+    "title": "TSM 098 Fractions Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.8",
+    "questions": [
+      {
+        "id": "F98-sub",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{5}{6} - \\frac{1}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-extra",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{2}{3} \\times \\frac{5}{7}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{10}{21}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-mult",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "4 \\times \\frac{3}{8} \\times \\frac{2}{9}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{1}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-div",
+        "prompt": "Compute and give the result in lowest terms. Show multiplication by the reciprocal.",
+        "math": [
+          "\\frac{28}{45} \\div \\frac{42}{35}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{14}{27}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{2}{5} + \\frac{1}{6}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{17}{30}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "98-fractions-practice-202610122020.8.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-fractions",
+    "title": "TSM 098 Fractions Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.9",
+    "questions": [
+      {
+        "id": "F98-sub",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{5}{6} - \\frac{1}{4}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{7}{12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{1}{12} + \\frac{1}{4}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{1}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-div",
+        "prompt": "Compute and give the result in lowest terms. Show multiplication by the reciprocal.",
+        "math": [
+          "6 \\div \\frac{9}{4}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{8}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-extra",
+        "prompt": "Compute and give the result in lowest terms. Show multiplication by the reciprocal.",
+        "math": [
+          "\\frac{2}{3} \\div \\frac{5}{7}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "\\frac{14}{15}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "F98-mult",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{22}{15} \\times \\frac{25}{33} \\times \\frac{9}{10}"
+        ],
+        "rows": [
+          {
+            "label": "Result",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "98-fractions-practice-202610122020.9.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.10",
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "2 x + 3 y = 7",
+          "3 x + 5 y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve and check.",
+        "math": [
+          "3(2x-2)-(x+3) + 1x = 2 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+2)+1 = 3x+8"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve and check.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{4} = \\frac{31}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "y = 2 x - 3",
+          "x + y = 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "98-linear-practice-202610122020.10.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.11",
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "y = 2 x - 4",
+          "x + y = 5"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve and check.",
+        "math": [
+          "3(2x-3)-(x+4) = 2 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "2 x + 3 y = 12",
+          "3 x + 5 y = 19"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-3)+14 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve and check.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x - 1}{4} = \\frac{23}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "98-linear-practice-202610122020.11.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test",
+    "short": "TSM 098 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.12",
+    "questions": [
+      {
+        "id": "L98-dist",
+        "prompt": "Solve and check.",
+        "math": [
+          "3(2x-4)-(x+5) + 3x = 2 x - 29"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = -2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "y = 2 x - 5",
+          "x + y = 7"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system and check in both equations.",
+        "math": [
+          "2 x + 3 y = 17",
+          "3 x + 5 y = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve and check.",
+        "math": [
+          "\\frac{x + 4}{3} + \\frac{x - 1}{4} = \\frac{37}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "98-linear-practice-202610122020.12.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam",
+    "short": "TSM 098 Final",
+    "practice": 1,
+    "version": "202610122020.13",
+    "questions": [
+      {
+        "id": "I098-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x}{4} = 2"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{12}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S098-system",
+        "prompt": "Solve by substitution or elimination; check both equations.",
+        "math": [
+          "y = 2 x - 5",
+          "x + y = 4"
+        ],
+        "rows": [
+          {
+            "label": "Ordered pair",
+            "answer": "( 3, \\  1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3 x - 4)(x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "3 x^{2} + 5 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve and check.",
+        "math": [
+          "2x-3 = -x+5+2x"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-2x^1(2 x^{2} - 3 x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 4 x^{3} + 6 x^{2} - 8 x",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2(x-3)+7 = 2x+2"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; the constants differ by 1 after distribution.",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S098-sub",
+        "prompt": "Subtract; show distribution of the negative and combine like terms.",
+        "math": [
+          "(2 x^{2} - x + 3) - (x^{2} + 2 x - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{2} - 3 x + 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and combine like terms.",
+        "math": [
+          "(2 x^{2} + 3 x - 4) + (- x^{2} - 4 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{2} - x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-fraction",
+        "prompt": "Add and reduce to lowest terms.",
+        "math": [
+          "\\frac{1}{4} + \\frac{1}{6}"
+        ],
+        "rows": [
+          {
+            "label": "Fraction",
+            "answer": "\\frac{5}{12}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -3, y = 1. Show substitution.",
+        "math": [
+          "3 x - 2 y + 1"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-10",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "98-final-practice-202610122020.13.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam",
+    "short": "TSM 098 Final",
+    "practice": 2,
+    "version": "202610122020.14",
+    "questions": [
+      {
+        "id": "I098-4",
+        "prompt": "Solve and check.",
+        "math": [
+          "3x-3 = -x+6+2x"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{9}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -4, y = 2. Show substitution.",
+        "math": [
+          "3 x - 3 y + 1"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-17",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and combine like terms.",
+        "math": [
+          "(3 x^{2} + 3 x - 4) + (- x^{2} - 5 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{2} - 2 x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(4 x - 4)(x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "4 x^{2} + 12 x - 16",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-3x^2(2 x^{2} - 4 x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 6 x^{4} + 12 x^{3} - 12 x^{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-fraction",
+        "prompt": "Add and reduce to lowest terms.",
+        "math": [
+          "\\frac{2}{9} + \\frac{1}{6}"
+        ],
+        "rows": [
+          {
+            "label": "Fraction",
+            "answer": "\\frac{7}{18}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S098-system",
+        "prompt": "Solve by substitution or elimination; check both equations.",
+        "math": [
+          "y = 2 x - 6",
+          "x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Ordered pair",
+            "answer": "( 4, \\  2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S098-sub",
+        "prompt": "Subtract; show distribution of the negative and combine like terms.",
+        "math": [
+          "(2 x^{2} - 2 x + 3) - (x^{2} + 3 x - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{2} - 5 x + 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+4)-2 = 3x+10"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides agree after distribution.",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{x + 4}{3} + \\frac{x}{4} = 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{20}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      }
+    ],
+    "end": 34,
+    "file": "98-final-practice-202610122020.14.pdf"
+  },
+  {
+    "course": "TSM 098",
+    "folder": "tsm",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam",
+    "short": "TSM 098 Final",
+    "practice": 3,
+    "version": "202610122020.15",
+    "questions": [
+      {
+        "id": "S098-system",
+        "prompt": "Solve by substitution or elimination; check both equations.",
+        "math": [
+          "y = 2 x - 7",
+          "x + y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Ordered pair",
+            "answer": "( 5, \\  3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{x + 5}{3} + \\frac{x}{4} = 4"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S098-sub",
+        "prompt": "Subtract; show distribution of the negative and combine like terms.",
+        "math": [
+          "(2 x^{2} - 3 x + 3) - (x^{2} + 4 x - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "x^{2} - 7 x + 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-4x^3(2 x^{2} - 5 x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 8 x^{5} + 20 x^{4} - 16 x^{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-fraction",
+        "prompt": "Add and reduce to lowest terms.",
+        "math": [
+          "\\frac{1}{8} + \\frac{1}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Fraction",
+            "answer": "\\frac{5}{24}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve and check.",
+        "math": [
+          "4x-3 = -x+7+2x"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{10}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2(x-5)+7 = 2x+-2"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; the constants differ by 1 after distribution.",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(5 x - 4)(x + 5)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "5 x^{2} + 21 x - 20",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and combine like terms.",
+        "math": [
+          "(4 x^{2} + 3 x - 4) + (- x^{2} - 6 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "3 x^{2} - 3 x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -5, y = 3. Show substitution.",
+        "math": [
+          "3 x - 4 y + 1"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-26",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "98-final-practice-202610122020.15.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-arithmetic",
+    "title": "TSM 099 Arithmetic Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.16",
+    "questions": [
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{25}",
+          "(b)\\quad \\sqrt{-49}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "7i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 4}{x - 2} = \\frac{x^{2} + 5 x + 6}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "x = 6",
+            "answer": "Left 8; right 8; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -6",
+            "answer": "Left -4; right -4; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 2; right 2; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            6,
+            "",
+            "",
+            ""
+          ],
+          [
+            -6,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2. Show substitution.",
+        "math": [
+          "x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{14}{21}",
+          "(b)\\quad \\frac{42}{66}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{11}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "99-arithmetic-practice-202610122020.16.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-arithmetic",
+    "title": "TSM 099 Arithmetic Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.17",
+    "questions": [
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3. Show substitution.",
+        "math": [
+          "(x + 3) (2 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 9}{x - 3} = \\frac{2 x^{2} + 11 x + 12}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "x = 7",
+            "answer": "Left 10; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -7",
+            "answer": "Left -4; right -11; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 3; right 3; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            -7,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-64}",
+          "(b)\\quad \\sqrt{36}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "6",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{60}{84}",
+          "(b)\\quad \\frac{25}{35}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{5}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "99-arithmetic-practice-202610122020.17.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-arithmetic",
+    "title": "TSM 099 Arithmetic Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.18",
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Substitute a = 2, b = -5, c = 2 into the formula. Evaluate both branches.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "Both values",
+            "answer": "x = \\frac{1}{2},\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 16}{x - 4} = \\frac{x^{2} + 10 x + 25}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "x = 8",
+            "answer": "Left 12; right 13; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -8",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 4; right 5; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            8,
+            "",
+            "",
+            ""
+          ],
+          [
+            -8,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{21}{35}",
+          "(b)\\quad \\frac{70}{110}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{11}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{49}",
+          "(b)\\quad \\sqrt{-81}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "9i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ],
+    "end": 8,
+    "file": "99-arithmetic-practice-202610122020.18.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.19",
+    "questions": [
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} - 5 x - 3",
+          "(b)\\quad 2 x^{2} + x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 3) (2 x + 1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2x-3)(3x+2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "6 x^{2} - 5 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor using the ac-method and grouping. Show ac, the split middle term, and the grouping.",
+        "math": [
+          "12 x^{2} + 29 x + 15"
+        ],
+        "rows": [
+          {
+            "label": "ac; pair",
+            "answer": "ac=180;\\ 9,\\ 20",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Split middle term",
+            "answer": "12x^2+9x+20x+15",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Grouping",
+            "answer": "3 x (4 x + 3) + 5 (4 x + 3)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Factored form",
+            "answer": "(3 x + 5) (4 x + 3)",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 8",
+          "(b)\\quad x^{2} - 25"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 2) (x + 4)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "4 x^{4} - 2 x^{3} + 6 x^{2}"
+        ],
+        "rows": [
+          {
+            "label": "Factored form",
+            "answer": "2 x^{2}(2 x^{2} - x + 3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "99-polynomials-practice-202610122020.19.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.20",
+    "questions": [
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 15",
+          "(b)\\quad 4 x^{2} - 9"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(2 x - 3) (2 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 3 x^{2} + 2 x + 1",
+          "(b)\\quad 3 x^{2} + x - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 1) (3 x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "6 x^{4} - 3 x^{3} + 12 x^{2}"
+        ],
+        "rows": [
+          {
+            "label": "Factored form",
+            "answer": "3 x^{2}(2 x^{2} - x + 4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3x-3)(4x+2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "12 x^{2} - 6 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor using the ac-method and grouping. Show ac, the split middle term, and the grouping.",
+        "math": [
+          "12 x^{2} + 25 x + 12"
+        ],
+        "rows": [
+          {
+            "label": "ac; pair",
+            "answer": "ac=144;\\ 9,\\ 16",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Split middle term",
+            "answer": "12x^2+9x+16x+12",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Grouping",
+            "answer": "3 x (4 x + 3) + 4 (4 x + 3)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Factored form",
+            "answer": "(3 x + 4) (4 x + 3)",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "99-polynomials-practice-202610122020.20.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.21",
+    "questions": [
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} + x - 6",
+          "(b)\\quad 2 x^{2} + x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 2) (2 x - 3)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 24",
+          "(b)\\quad 9 x^{2} - 16"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 4) (x + 6)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(3 x - 4) (3 x + 4)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor using the ac-method and grouping. Show ac, the split middle term, and the grouping.",
+        "math": [
+          "15 x^{2} - 29 x + 12"
+        ],
+        "rows": [
+          {
+            "label": "ac; pair",
+            "answer": "ac=180;\\ -9,\\ -20",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Split middle term",
+            "answer": "15x^2-9x-20x+12",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Grouping",
+            "answer": "3 x (5 x - 3) + - 4 (5 x - 3)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Factored form",
+            "answer": "(3 x - 4) (5 x - 3)",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(4x-3)(5x+2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "20 x^{2} - 7 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "8 x^{4} - 4 x^{3} + 20 x^{2}"
+        ],
+        "rows": [
+          {
+            "label": "Factored form",
+            "answer": "4 x^{2}(2 x^{2} - x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 17,
+    "file": "99-polynomials-practice-202610122020.21.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-rational",
+    "title": "TSM 099 Rational Expressions Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.22",
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 2} + \\frac{3}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify. Show multiplication by the reciprocal.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + x - 12}\\div\\frac{x + 3}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 3 x - 2}{3 x^{2} + 6 x - 24}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 (x + 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 2} - \\frac{1}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 11}{(x - 5) (x - 2)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 12 x}{9 x^{2} + 18 x - 72}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "99-rational-practice-202610122020.22.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-rational",
+    "title": "TSM 099 Rational Expressions Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.23",
+    "questions": [
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify. Show multiplication by the reciprocal.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + x - 20}\\div\\frac{x + 4}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 3} + \\frac{1}{x^{2} - 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{x (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 18 x}{9 x^{2} + 18 x - 135}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 5 x - 3}{3 x^{2} + 6 x - 45}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 (x + 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 3} - \\frac{3}{x^{2} - 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "99-rational-practice-202610122020.23.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-rational",
+    "title": "TSM 099 Rational Expressions Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.24",
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 4} + \\frac{3}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 7}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 7 x - 4}{3 x^{2} + 6 x - 72}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 (x + 6)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 24 x}{9 x^{2} + 18 x - 216}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify. Show multiplication by the reciprocal.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + x - 30}\\div\\frac{x + 5}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 4} - \\frac{1}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 15}{(x - 7) (x - 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 23,
+    "file": "99-rational-practice-202610122020.24.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.25",
+    "questions": [
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. List excluded values and check in the original equation.",
+        "math": [
+          "\\frac{4}{2 x - 2} + \\frac{7}{x^{2} - 5 x + 4} = \\frac{3}{x - 4}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{1, 4\\}",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "Solution/check",
+            "answer": "x = 2",
+            "points": 15,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. List excluded values and check candidates in the original equation.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{5}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{-2, 2\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Candidates/check",
+            "answer": "x=2\\ (\\mathrm{rejected}),\\ x=4",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -4,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve by taking square roots; do not expand the square.",
+        "math": [
+          "2(x + 1)^2 = 8"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve with the quadratic formula. Simplify radicals.",
+        "math": [
+          "2 x^{2} + x - 2 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{17}}{4},\\ - \\frac{\\sqrt{17}}{4} - \\frac{1}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 29,
+    "file": "99-equations-practice-202610122020.25.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.26",
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 3 x - 10 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -5,\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve by taking square roots; do not expand the square.",
+        "math": [
+          "2(x)^2 = 18"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. List excluded values and check in the original equation.",
+        "math": [
+          "\\frac{6}{2 x - 4} + \\frac{10}{x^{2} - 7 x + 10} = \\frac{4}{x - 5}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{2, 5\\}",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "Solution/check",
+            "answer": "x = 3",
+            "points": 15,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve with the quadratic formula. Simplify radicals.",
+        "math": [
+          "2 x^{2} + 2 x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{7}}{2},\\ - \\frac{\\sqrt{7}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. List excluded values and check candidates in the original equation.",
+        "math": [
+          "\\frac{6}{x^{2} - 9} + \\frac{x - 4}{x - 3} = \\frac{7}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{-3, 3\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Candidates/check",
+            "answer": "x=3\\ (\\mathrm{rejected}),\\ x=5",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 29,
+    "file": "99-equations-practice-202610122020.26.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.27",
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. List excluded values and check candidates in the original equation.",
+        "math": [
+          "\\frac{8}{x^{2} - 16} + \\frac{x - 5}{x - 4} = \\frac{9}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{-4, 4\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Candidates/check",
+            "answer": "x=4\\ (\\mathrm{rejected}),\\ x=6",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. List excluded values and check in the original equation.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{13}{x^{2} - 9 x + 18} = \\frac{5}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "Excluded values",
+            "answer": "\\{3, 6\\}",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "Solution/check",
+            "answer": "x = 4",
+            "points": 15,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve with the quadratic formula. Simplify radicals.",
+        "math": [
+          "2 x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{3}{4} + \\frac{\\sqrt{41}}{4},\\ - \\frac{\\sqrt{41}}{4} - \\frac{3}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 3 x - 18 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -6,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve by taking square roots; do not expand the square.",
+        "math": [
+          "2(x - 1)^2 = 32"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 29,
+    "file": "99-equations-practice-202610122020.27.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.28",
+    "questions": [
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points. Show the slope formula and determination of the intercept.",
+        "math": [
+          "( 1, \\  1);\\ ( 3, \\  5)"
+        ],
+        "rows": [
+          {
+            "label": "Slope",
+            "answer": "2",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Equation",
+            "answer": "y = 2 x - 1",
+            "points": 14,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Solve by graphing both lines on this grid. Algebra alone is insufficient.",
+        "math": [
+          "y = x + 1",
+          "y = 4 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 1 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 1,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} - 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      }
+    ],
+    "end": 34,
+    "file": "99-graphing-practice-202610122020.28.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.29",
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} - 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Solve by graphing both lines on this grid. Algebra alone is insufficient.",
+        "math": [
+          "y = 2 x - 3",
+          "y = 7 - 3 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points. Show the slope formula and determination of the intercept.",
+        "math": [
+          "( 1, \\  \\frac{1}{3});\\ ( 4, \\  \\frac{4}{3})"
+        ],
+        "rows": [
+          {
+            "label": "Slope",
+            "answer": "\\frac{1}{3}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3}",
+            "points": 14,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 2,
+          "point": 3
+        }
+      }
+    ],
+    "end": 34,
+    "file": "99-graphing-practice-202610122020.29.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test",
+    "short": "TSM 099 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.30",
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points. Show the slope formula and determination of the intercept.",
+        "math": [
+          "( 1, \\  0);\\ ( 3, \\  -2)"
+        ],
+        "rows": [
+          {
+            "label": "Slope",
+            "answer": "-1",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "Equation",
+            "answer": "y = 1 - x",
+            "points": 14,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2}"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 3,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Solve by graphing both lines on this grid. Algebra alone is insufficient.",
+        "math": [
+          "y = 3 x - 7",
+          "y = 7 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      }
+    ],
+    "end": 34,
+    "file": "99-graphing-practice-202610122020.30.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-final",
+    "title": "TSM 099 Final Exam",
+    "short": "TSM 099 Final",
+    "practice": 1,
+    "version": "202610122020.31",
+    "questions": [
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  -1);\\ ( 4, \\  0)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{2} - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} - 5 x - 6"
+        ],
+        "rows": [
+          {
+            "label": "Factors",
+            "answer": "(2 x - 3) (3 x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-1)^2 = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 2 x} + \\frac{3}{x^{2} - 4}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{5 x + 4}{x (x - 2) (x + 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve using the quadratic formula. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} = 4 - x"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{33}}{4},\\ - \\frac{\\sqrt{33}}{4} - \\frac{1}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 2 x = 8"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -4,\\ 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{2}{x - 3} = 2"
+        ],
+        "rows": [
+          {
+            "label": "Solution/check",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} - 2 x - 35}\\times\\frac{x + 5}{x^{2} + 2 x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 2}{x (x - 7)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (2 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "99-final-practice-202610122020.31.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-final",
+    "title": "TSM 099 Final Exam",
+    "short": "TSM 099 Final",
+    "practice": 2,
+    "version": "202610122020.32",
+    "questions": [
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve using the quadratic formula. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} = 5 - x"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{6} + \\frac{\\sqrt{61}}{6},\\ - \\frac{\\sqrt{61}}{6} - \\frac{1}{6}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  1);\\ ( 4, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} - 2 x - 48}\\times\\frac{x + 6}{x^{2} + 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 3}{x (x - 8)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 3 x} + \\frac{3}{x^{2} - 9}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{5 x + 6}{x (x - 3) (x + 3)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-2)^2 = 48"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 2 x = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -5,\\ 3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{10}{2 x - 8} + \\frac{2}{x - 4} = \\frac{7}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Solution/check",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "10 x^{2} - 11 x - 6"
+        ],
+        "rows": [
+          {
+            "label": "Factors",
+            "answer": "(2 x - 3) (5 x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (3 x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 34,
+    "file": "99-final-practice-202610122020.32.pdf"
+  },
+  {
+    "course": "TSM 099",
+    "folder": "tsm",
+    "assessment": "99-final",
+    "title": "TSM 099 Final Exam",
+    "short": "TSM 099 Final",
+    "practice": 3,
+    "version": "202610122020.33",
+    "questions": [
+      {
+        "id": "I099-4",
+        "prompt": "Solve by factoring.",
+        "math": [
+          "x^{2} + 2 x = 24"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -6,\\ 4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 4 x} + \\frac{3}{x^{2} - 16}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{5 x + 8}{x (x - 4) (x + 4)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  3);\\ ( 4, \\  6)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve using the quadratic formula. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 6 - x"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{8} + \\frac{\\sqrt{97}}{8},\\ - \\frac{\\sqrt{97}}{8} - \\frac{1}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "12 x^{2} + 5 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "Factors",
+            "answer": "(3 x - 1) (4 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (4 x - 12)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-20",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank"
+        }
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-3)^2 = 75"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} - 2 x - 63}\\times\\frac{x + 7}{x^{2} + 4 x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 4}{x (x - 9)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve and check in the original equation.",
+        "math": [
+          "\\frac{12}{2 x - 10} + \\frac{2}{x - 5} = \\frac{8}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Solution/check",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      }
+    ],
+    "end": 34,
+    "file": "99-final-practice-202610122020.33.pdf"
+  }
+]

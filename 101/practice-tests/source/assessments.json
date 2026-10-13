@@ -1,0 +1,3234 @@
+[
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-1",
+    "title": "MATH 101 Unit 1: Expressions, Equations, and Inequalities",
+    "short": "MATH 101 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.34",
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 3"
+        ],
+        "rows": [
+          {
+            "label": "Derived bounds",
+            "answer": "-1\\leq x\\leq 2",
+            "points": 12,
+            "plain": false
+          },
+          {
+            "label": "Interval",
+            "answer": "[-1, 2]",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 2 x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 2}{x + 4}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-4, 2\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-2}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{3}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations. In (b), state original restrictions and check your answer.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 3 = 0",
+          "(b)\\quad \\frac{4}{2 x - 4} + \\frac{1}{x - 2} = 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b), with check",
+            "answer": "x = 3;\\ x\\ne 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (2 x - 3)(x + 2)",
+          "(b)\\quad 2 x^{2} - 5 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (2 x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 2,
+    "file": "101-unit-1-practice-202610122020.34.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-1",
+    "title": "MATH 101 Unit 1: Expressions, Equations, and Inequalities",
+    "short": "MATH 101 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.35",
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-3}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{48}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{4}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + 2 x - 15}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 3}{x + 5}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-5, 3\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (3 x - 3)(x + 3)",
+          "(b)\\quad 2 x^{2} - 6 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x^{2} + 6 x - 9",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 4) (x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations. In (b), state original restrictions and check your answer.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 8 = 0",
+          "(b)\\quad \\frac{5}{2 x - 6} + \\frac{1}{x - 3} = \\frac{7}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -4,\\ 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b), with check",
+            "answer": "x = 4;\\ x\\ne 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 4"
+        ],
+        "rows": [
+          {
+            "label": "Derived bounds",
+            "answer": "- \\frac{3}{2}\\leq x\\leq \\frac{5}{2}",
+            "points": 12,
+            "plain": false
+          },
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{3}{2}, \\frac{5}{2}]",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 2,
+    "file": "101-unit-1-practice-202610122020.35.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-1",
+    "title": "MATH 101 Unit 1: Expressions, Equations, and Inequalities",
+    "short": "MATH 101 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.36",
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-4}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{125}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{5}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (4 x - 3)(x + 4)",
+          "(b)\\quad 2 x^{2} - 7 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} + 13 x - 12",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (2 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 5"
+        ],
+        "rows": [
+          {
+            "label": "Derived bounds",
+            "answer": "-2\\leq x\\leq 3",
+            "points": 12,
+            "plain": false
+          },
+          {
+            "label": "Interval",
+            "answer": "[-2, 3]",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + 2 x - 24}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 4}{x + 6}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-6, 4\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations. In (b), state original restrictions and check your answer.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 15 = 0",
+          "(b)\\quad \\frac{6}{2 x - 8} + \\frac{1}{x - 4} = 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -5,\\ 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b), with check",
+            "answer": "x = 5;\\ x\\ne 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 2,
+    "file": "101-unit-1-practice-202610122020.36.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs",
+    "short": "MATH 101 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.37",
+    "questions": [
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(2 x + 1)^2+3",
+          "A.\\quad f(x)=2 x + 1,\\ g(x)=x^{2} + 3",
+          "B.\\quad f(x)=2 x^{2} + 3,\\ g(x)=x + 1",
+          "C.\\quad f(x)=x^{2} + 1,\\ g(x)=2 x + 3",
+          "D.\\quad f(x)=x^{2} + 3,\\ g(x)=2 x + 1",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 2,\\ x_0=3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "D",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 4 x + 4",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-1), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=2 |{x - 1}| - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "2",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-2, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  1);\\ ( 3, \\  5)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=2 x - 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{2} + \\frac{1}{2}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -2 to x = 4; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{6}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-2,0)\\cup(2,4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  2)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 2, \\  -2)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -2,
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              -2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x-3)-2",
+          "B.\\quad g(x)=f(x+3)+2",
+          "C.\\quad g(x)=f(x+3)-2",
+          "D.\\quad g(x)=f(x-3)+2"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 3,
+          "k": -2
+        }
+      }
+    ],
+    "end": 4,
+    "file": "101-unit-2-practice-202610122020.37.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs",
+    "short": "MATH 101 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.38",
+    "questions": [
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x)-2",
+          "B.\\quad g(x)=-2f(x)",
+          "C.\\quad g(x)=2f(x)",
+          "D.\\quad g(x)=f(-2x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "B",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              3
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -2
+        }
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -3 to x = 5; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{8}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-3,0)\\cup(3,5)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,3)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  3)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 3, \\  -3)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              -3
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  3);\\ ( 3, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=3 x",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{3}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-2), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=3 |{x - 2}| - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "9",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-3, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(3 x + 2)^2+4",
+          "A.\\quad f(x)=x^{2} + 4,\\ g(x)=3 x + 2",
+          "B.\\quad f(x)=3 x + 2,\\ g(x)=x^{2} + 4",
+          "C.\\quad f(x)=x^{2} + 2,\\ g(x)=3 x + 4",
+          "D.\\quad f(x)=3 x^{2} + 4,\\ g(x)=x + 2",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 3,\\ x_0=4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "A",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 6 x + 9",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 4,
+    "file": "101-unit-2-practice-202610122020.38.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs",
+    "short": "MATH 101 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.39",
+    "questions": [
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(4 x + 3)^2+5",
+          "A.\\quad f(x)=x^{2} + 5,\\ g(x)=4 x + 3",
+          "B.\\quad f(x)=4 x + 3,\\ g(x)=x^{2} + 5",
+          "C.\\quad f(x)=x^{2} + 3,\\ g(x)=4 x + 5",
+          "D.\\quad f(x)=4 x^{2} + 5,\\ g(x)=x + 3",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 4,\\ x_0=5"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "A",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 8 x + 16",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x/2)",
+          "B.\\quad g(x)=2f(x)",
+          "C.\\quad g(x)=f(2x)",
+          "D.\\quad g(x)=f(x-2)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "C",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              4
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "horizontal",
+          "a": 2
+        }
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -4 to x = 6; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{10}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-4,0)\\cup(4,6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  4)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 4, \\  -4)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -4,
+              0
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              4,
+              -4
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  5);\\ ( 3, \\  13)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=4 x + 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{4} - \\frac{1}{4}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-3), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=4 |{x - 3}| - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "20",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-4, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 4,
+    "file": "101-unit-2-practice-202610122020.39.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions",
+    "short": "MATH 101 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.40",
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only 2 and -2; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-2, -1, 1, 2\\};\\ x=2",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + x - 1;\\ R=0",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 1) (x + 3)}{(x - 5) (x - 1)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{1, 5\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 1, \\  -1)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 1} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -1)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -2",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=(x + 1)^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( -1, \\  -4)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-4",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      }
+    ],
+    "end": 5,
+    "file": "101-unit-3-practice-202610122020.40.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions",
+    "short": "MATH 101 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.41",
+    "questions": [
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=2 x^{2} - 18"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 0, \\  -18)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-18",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 2) (x + 4)}{(x - 6) (x - 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{2, 6\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 2, \\  - \\frac{3}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only -1 and 1; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-1, 1\\};\\ x=-1",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + 3 x + 1;\\ R=0",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=2 \\sqrt{x + 4} - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-6, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -2)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -6",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      }
+    ],
+    "end": 5,
+    "file": "101-unit-3-practice-202610122020.41.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions",
+    "short": "MATH 101 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.42",
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 9} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -3)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -12",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=3 (x - 1)^{2} - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 1, \\  -48)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-48",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 3) (x + 5)}{(x - 7) (x - 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{3, 7\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 3, \\  -2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only 1 and -1; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-3, -1, 1, 3\\};\\ x=1",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + x - 3;\\ R=0",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 8,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 5,
+    "file": "101-unit-3-practice-202610122020.42.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-4",
+    "title": "MATH 101 Unit 4: Exponentials, Logarithms, and Systems",
+    "short": "MATH 101 Unit Practice",
+    "practice": 1,
+    "version": "202610122020.43",
+    "questions": [
+      {
+        "id": "U4-3",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.2)+\\log(500)",
+          "(b)\\quad \\frac{\\log_{3}(8)}{\\log_{3}(4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-4",
+        "prompt": "Solve both equations exactly. Check the logarithmic domain in (b).",
+        "math": [
+          "(a)\\quad 4^{x-1}=2^{x+2}",
+          "(b)\\quad \\log_{2}(x-1)+\\log_{2}(3)=2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = 4",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b), with domain",
+            "answer": "x = \\frac{7}{3};\\ x>1",
+            "points": 12,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-2",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{2}(x-1)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{3}{2}, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 1^+:\\ f(x)\\to-\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-1",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 1(2)^x",
+          "(b)\\quad 2(\\frac{3}{2})^x",
+          "(c)\\quad 2(\\frac{2}{3})^x",
+          "(d)\\quad 1(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              1.5
+            ],
+            [
+              1,
+              0.5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0.6666666666666666
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U4-5",
+        "prompt": "(a) Solve the linear system. (b) Solve the nonlinear system algebraically. (c) Test whether (0,0) belongs to the region given by the inequalities; show both comparisons.",
+        "math": [
+          "(a)\\quad x + y = 3",
+          "x - y = 1",
+          "(b)\\quad x^{2} + y^{2} = 5",
+          "y = x + 1",
+          "(c)\\quad x^2+y^2\\leq 5,\\ y>x+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Intersections",
+            "answer": "( 1, \\  2);\\ ( -2, \\  -1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(c) Membership",
+            "answer": "At (0,0): 0 <= 5, but 0 > 1 is false; not in the region.",
+            "points": 4,
+            "plain": true
+          }
+        ]
+      }
+    ],
+    "end": 7,
+    "file": "101-unit-4-practice-202610122020.43.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-4",
+    "title": "MATH 101 Unit 4: Exponentials, Logarithms, and Systems",
+    "short": "MATH 101 Unit Practice",
+    "practice": 2,
+    "version": "202610122020.44",
+    "questions": [
+      {
+        "id": "U4-4",
+        "prompt": "Solve both equations exactly. Check the logarithmic domain in (b).",
+        "math": [
+          "(a)\\quad 4^{x-2}=2^{x+3}",
+          "(b)\\quad \\log_{3}(x-2)+\\log_{3}(4)=2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = 7",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b), with domain",
+            "answer": "x = \\frac{17}{4};\\ x>2",
+            "points": 12,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-3",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.4)+\\log(2500)",
+          "(b)\\quad \\frac{\\log_{4}(27)}{\\log_{4}(9)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-5",
+        "prompt": "(a) Solve the linear system. (b) Solve the nonlinear system algebraically. (c) Test whether (0,0) belongs to the region given by the inequalities; show both comparisons.",
+        "math": [
+          "(a)\\quad x + y = 5",
+          "x - y = 1",
+          "(b)\\quad y = x^{2}",
+          "y = x + 2",
+          "(c)\\quad y\\geq x^2,\\ y<x+2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Ordered pair",
+            "answer": "( 3, \\  2)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Intersections",
+            "answer": "( -1, \\  1);\\ ( 2, \\  4)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(c) Membership",
+            "answer": "At (0,0): 0 >= 0 and 0 < 2; yes, in the region.",
+            "points": 4,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "U4-1",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 3(\\frac{2}{3})^x",
+          "(b)\\quad 2(\\frac{1}{2})^x",
+          "(c)\\quad 2(2)^x",
+          "(d)\\quad 3(\\frac{3}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              0.5
+            ],
+            [
+              3,
+              1.5
+            ],
+            [
+              3,
+              0.6666666666666666
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U4-2",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{3}(x-2)+2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=2",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{19}{9}, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 2^+:\\ f(x)\\to-\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 7,
+    "file": "101-unit-4-practice-202610122020.44.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-unit-4",
+    "title": "MATH 101 Unit 4: Exponentials, Logarithms, and Systems",
+    "short": "MATH 101 Unit Practice",
+    "practice": 3,
+    "version": "202610122020.45",
+    "questions": [
+      {
+        "id": "U4-3",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.5)+\\log(20000)",
+          "(b)\\quad \\frac{\\log_{5}(64)}{\\log_{5}(16)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-2",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{4}(x-3)+3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(3, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=3",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{193}{64}, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 3^+:\\ f(x)\\to-\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-5",
+        "prompt": "(a) Solve the linear system. (b) Solve the nonlinear system algebraically. (c) Test whether (0,0) belongs to the region given by the inequalities; show both comparisons.",
+        "math": [
+          "(a)\\quad x + y = 7",
+          "x - y = 1",
+          "(b)\\quad x^{2} + y^{2} = 17",
+          "y = x + 3",
+          "(c)\\quad x^2+y^2\\leq 17,\\ y>x+3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Ordered pair",
+            "answer": "( 4, \\  3)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Intersections",
+            "answer": "( 1, \\  4);\\ ( -4, \\  -1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(c) Membership",
+            "answer": "At (0,0): 0 <= 17, but 0 > 3 is false; not in the region.",
+            "points": 4,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "U4-4",
+        "prompt": "Solve both equations exactly. Check the logarithmic domain in (b).",
+        "math": [
+          "(a)\\quad 4^{x-3}=2^{x+4}",
+          "(b)\\quad \\log_{4}(x-3)+\\log_{4}(5)=2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = 10",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b), with domain",
+            "answer": "x = \\frac{31}{5};\\ x>3",
+            "points": 12,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U4-1",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 2(2)^x",
+          "(b)\\quad 2(\\frac{1}{2})^x",
+          "(c)\\quad 1(3)^x",
+          "(d)\\quad 1(\\frac{1}{3})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              0.5
+            ],
+            [
+              1,
+              0.3333333333333333
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        }
+      }
+    ],
+    "end": 7,
+    "file": "101-unit-4-practice-202610122020.45.pdf",
+    "minutes": 30
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam",
+    "short": "MATH 101 Final",
+    "practice": 1,
+    "version": "202610122020.46",
+    "questions": [
+      {
+        "id": "M101-solving",
+        "prompt": "Solve the nonlinear system algebraically.",
+        "math": [
+          "x^{2} + y^{2} = 5",
+          "y = x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Intersections",
+            "answer": "( 1, \\  2);\\ ( -2, \\  -1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "system"
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(3 x + 3)^2+4",
+          "A.\\quad f(x)=x^{2} + 4,\\ g(x)=3 x + 3",
+          "B.\\quad f(x)=x^{2} + 3,\\ g(x)=3 x + 4",
+          "C.\\quad f(x)=3 x^{2} + 4,\\ g(x)=x + 3",
+          "D.\\quad f(x)=3 x + 3,\\ g(x)=x^{2} + 4"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.25)+\\log(400)",
+          "(b)\\quad \\frac{\\log_{6}(27)}{\\log_{6}(9)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{2}(x-2)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(2, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=2",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{5}{2}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 2^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x+4)+2",
+          "B.\\quad g(x)=f(x-4)-2",
+          "C.\\quad g(x)=f(x-4)+2",
+          "D.\\quad g(x)=f(x+4)-2"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "B",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 4,
+          "k": -2
+        }
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 3(\\frac{2}{3})^x",
+          "(b)\\quad 2(\\frac{1}{2})^x",
+          "(c)\\quad 2(2)^x",
+          "(d)\\quad 3(\\frac{3}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              0.5
+            ],
+            [
+              3,
+              1.5
+            ],
+            [
+              3,
+              0.6666666666666666
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "\\frac{1}{2}(x + 1)(x - 3)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 0.5,
+          "point": [
+            0,
+            4.5
+          ]
+        }
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 4} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -2",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only 3 and -3; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} - 2 x^{2} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-3, -1, 1, 3\\};\\ x=3",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + x - 1;\\ R=0",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 2) (x + 3)}{(x - 5) (x + 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-2, 5\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -2, \\  - \\frac{1}{7})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "end": 7,
+    "file": "101-final-practice-202610122020.46.pdf"
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam",
+    "short": "MATH 101 Final",
+    "practice": 2,
+    "version": "202610122020.47",
+    "questions": [
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 3) (x + 4)}{(x - 6) (x + 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-3, 6\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -3, \\  - \\frac{1}{9})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 4(\\frac{3}{2})^x",
+          "(b)\\quad 4(\\frac{2}{3})^x",
+          "(c)\\quad 3(2)^x",
+          "(d)\\quad 3(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              4,
+              0.6666666666666666
+            ],
+            [
+              3,
+              0.5
+            ],
+            [
+              4,
+              1.5
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(4 x + 4)^2+5",
+          "A.\\quad f(x)=x^{2} + 5,\\ g(x)=4 x + 4",
+          "B.\\quad f(x)=4 x + 4,\\ g(x)=x^{2} + 5",
+          "C.\\quad f(x)=x^{2} + 4,\\ g(x)=4 x + 5",
+          "D.\\quad f(x)=4 x^{2} + 5,\\ g(x)=x + 4"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 2)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -8.0
+          ]
+        }
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only -2 and 2; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} + 5 x^{2} + 7 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-2, -1, 1, 2\\};\\ x=-2",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + 3 x + 1;\\ R=0",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=2 \\sqrt{x + 9} - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-6, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -6",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.8)+\\log(1250)",
+          "(b)\\quad \\frac{\\log_{7}(64)}{\\log_{7}(16)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{3}(x-3)+2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(3, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=3",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{28}{9}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 3^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve the nonlinear system algebraically.",
+        "math": [
+          "y = x^{2}",
+          "y = x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Intersections",
+            "answer": "( -1, \\  1);\\ ( 2, \\  4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "system"
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=3f(x)",
+          "B.\\quad g(x)=f(-3x)",
+          "C.\\quad g(x)=-3f(x)",
+          "D.\\quad g(x)=f(x)-3"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "C",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              3
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -3
+        }
+      }
+    ],
+    "end": 7,
+    "file": "101-final-practice-202610122020.47.pdf"
+  },
+  {
+    "course": "MATH 101",
+    "folder": "101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam",
+    "short": "MATH 101 Final",
+    "practice": 3,
+    "version": "202610122020.48",
+    "questions": [
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.05)+\\log(200000)",
+          "(b)\\quad \\frac{\\log_{8}(125)}{\\log_{8}(25)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(5 x + 5)^2+6",
+          "A.\\quad f(x)=5 x^{2} + 6,\\ g(x)=x + 5",
+          "B.\\quad f(x)=5 x + 5,\\ g(x)=x^{2} + 6",
+          "C.\\quad f(x)=x^{2} + 5,\\ g(x)=5 x + 6",
+          "D.\\quad f(x)=x^{2} + 6,\\ g(x)=5 x + 5"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 2(3)^x",
+          "(b)\\quad 2(\\frac{1}{3})^x",
+          "(c)\\quad 3(2)^x",
+          "(d)\\quad 3(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              0.3333333333333333
+            ],
+            [
+              3,
+              0.5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 16} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-16, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -16^+:\\ f(x)\\to -12",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros: (a) list Rational Root Theorem candidates, then test only -1 and 1; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.",
+        "math": [
+          "p(x)=x^{3} + 3 x^{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Candidates/root",
+            "answer": "\\{-2, -1, 1, 2\\};\\ x=-1",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Quotient",
+            "answer": "x^{2} + 2 x - 2;\\ R=0",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Other zeros",
+            "answer": "x = -1 + \\sqrt{3},\\ - \\sqrt{3} - 1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve exactly.",
+        "math": [
+          "8^{x-3}=4^{x+4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 17",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "exponential"
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 3)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            12.0
+          ]
+        }
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{4}(x-4)+3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(4, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=4",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{257}{64}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 4^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 4) (x + 5)}{(x - 7) (x + 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-4, 7\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -4, \\  - \\frac{1}{11})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(3x)",
+          "B.\\quad g(x)=f(x-3)",
+          "C.\\quad g(x)=f(x/3)",
+          "D.\\quad g(x)=3f(x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              4
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "horizontal",
+          "a": 3
+        }
+      }
+    ],
+    "end": 7,
+    "file": "101-final-practice-202610122020.48.pdf"
+  }
+]
