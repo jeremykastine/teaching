@@ -28,7 +28,7 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 ## 5. Worked examples and browser behavior
 
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
-- Place a simple `index.html` at the repository root and list all topic links in numerical order as one continuous table of contents.
+- Use `tsm/index.html` as the course landing page with exactly three resource categories: Lecture notes, Homework, and Practice tests. List all topic links in numerical order as one continuous table of contents in `tsm/lecture-notes.html`.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
 - Use the full browser width for worked examples, with modest text gutters and an edge-to-edge horizontal rule. Do not reserve a side column or impose a narrow maximum width on lecture pages. Begin every worked example with the horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
 - Write each problem statement as a concise, precise, self-contained task that can be understood and attempted with the solution hidden. State the action (evaluate, simplify, factor, solve, graph, find, or explain) and include every given expression, equation, value, condition, and requested answer form. Wording such as “Consider,” “Start with,” “Begin with,” or “Worked example” does not state a task by itself.
@@ -120,7 +120,7 @@ Before pushing, review every changed problem and worked solution, check the math
 
 ## 13. Quality-control checklist
 
-- All 37 topics remain linked from `index.html` in numerical order, without unit headings or grouping.
+- All 37 topics remain linked from `lecture-notes.html` in numerical order, without unit headings or grouping.
 - Topic titles, assignment labels, overviews, and key definitions are intact.
 - Worked problems and solutions are correctly numbered in document order, restarting with Problem 1 and Solution 1 on each topic.
 - Each example begins with a horizontal rule and contains a complete problem statement and worked solution.

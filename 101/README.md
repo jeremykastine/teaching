@@ -1,6 +1,6 @@
 # MATH 101 course materials
 
-Open `index.html` for the 40 section PDFs aligned to OpenStax **College Algebra 2e**. The course contains 844 portrait discussion pages.
+Open `index.html` to choose class slides, homework, or practice tests. Open `class-slides.html` for the 40 section PDFs aligned to OpenStax **College Algebra 2e**. The course contains 844 portrait discussion pages.
 
 Selected sections through Chapter 7 follow `course-schedule.md`; application options 2.3, 4.2, 4.3, 6.7, and 6.8 are labeled optional. Complex-number work in 2.4 is limited to what supports quadratic and polynomial solutions.
 
@@ -39,4 +39,4 @@ Slides and their source content are shared under [Creative Commons Attribution-N
 
 ## Homework
 
-Compact PDF homework assignments are linked from the course index. See [the homework design and coverage map](homework/README.md) for priorities, topic groupings, editable sources, and rebuild instructions. Students work on separate paper and upload one best representative page in Blackboard.
+Compact PDF homework assignments are linked from `homework.html`. See [the homework design and coverage map](homework/README.md) for priorities, topic groupings, editable sources, and rebuild instructions. Students work on separate paper and upload one best representative page in Blackboard.

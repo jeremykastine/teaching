@@ -1,7 +1,7 @@
 # MATH 101 lecture slides
 
 - Textbook: OpenStax **College Algebra 2e**, Jay Abramson (2021). Use the second edition.
-- Organize PDFs by numbered textbook section, with one linked PDF per section in index.html.
+- Organize PDFs by numbered textbook section, with one linked PDF per section in class-slides.html.
 - Use the same teaching format as the statistics slides: one definition, concept, or problem per page, with a focused discussion question whenever possible.
 - Keep definitions brief. Omit worked solutions, explanation paragraphs, and presenter narration. The instructor explains concepts and writes the work with a pen.
 - Use white US Letter portrait pages (8.5 × 11 inches), large dark text, and conventional mathematical notation. Keep all prompt content in the upper half and the lower half clear for annotations.
@@ -10,7 +10,7 @@
 - Use original examples aligned to each section's objectives, rather than reproducing textbook exercises.
 - Add questions that expose misconceptions alongside procedural examples.
 - Cover all six Chapter 1 sections. Section 1.2 should emphasize exponent rules, consistent with course-schedule.md, while providing a brief scientific-notation review.
-- Maintain editable content in slides/source/chapter-NN.json, one file per chapter. Generate PDFs and index.html with scripts/build_slides.py; the shared renderer is ../scripts/slide_builder.py.
+- Maintain editable content in slides/source/chapter-NN.json, one file per chapter. Generate PDFs and class-slides.html with scripts/build_slides.py; the shared renderer is ../scripts/slide_builder.py.
 - Visually review all pages, confirm annotation space, check mathematical correctness, and verify local index links before publishing.
 - Lecture-slide layout is separate from the compact assessment layout in final-exam-specifications.md. Do not apply exam page-count, problem-count, grading, or workspace rules to lecture slides.
 
@@ -39,3 +39,5 @@
 - Mathematical formulas and chart/table layouts must pass width and page-midpoint checks. Review rendered pages, not just source strings.
 
 Algebra: include the schedule’s optional applications 2.3, 4.2, 4.3, 6.7, and 6.8, clearly labeled in the index. Keep 2.4 focused on complex arithmetic needed for quadratic and polynomial solutions. Reinforce domains, factoring and zeros, function inputs, transformations, inverse restrictions, and graph intersections where later sections use them.
+
+Course navigation: `index.html` lists only Class slides, Homework, and Practice tests. Resource listings live in `class-slides.html`, `homework.html`, and `practice-tests.html`; rebuilds preserve this separation.

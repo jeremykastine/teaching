@@ -72,7 +72,7 @@ def main():
     pages={}
     for a in assessments:
         count=verify(a,records[a['file']]);pages[count]=pages.get(count,0)+1
-        assert f'practice-tests/{a["file"]}' in (ROOT/a['folder']/'index.html').read_text()
+        assert f'practice-tests/{a["file"]}' in (ROOT/a['folder']/'practice-tests.html').read_text()
     print(json.dumps({'verified':len(assessments),'student_page_counts':pages,
                       'checks':['100-point scoring','page-matching key columns','exact separator geometry',
                                 'duplex blank pages','no hidden answers in response areas','print margins','index links']}))

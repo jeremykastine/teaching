@@ -206,13 +206,14 @@ h1{font-size:clamp(2.6rem,7vw,4rem);line-height:1.05;letter-spacing:-.04em;margi
 h2{font-size:1.65rem;margin:42px 0 10px}h3{font-size:1.22rem;line-height:1.4;margin:6px 0 14px}h3 a{color:var(--ink);text-decoration:none}
 a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration:underline}a:focus-visible{outline:3px solid #b05819;outline-offset:5px}
 ul{list-style:none;padding:0;margin:24px 0}li{padding:26px 0;border-top:1px solid #c7d2d7}.section{font-size:.88rem;color:var(--muted);font-weight:650}
-.links,.chapter-links{display:flex;gap:12px 28px;flex-wrap:wrap;margin:0;font-size:.95rem}.meta{color:var(--muted);font-size:.88rem}
+.resource-nav,.links,.chapter-links{display:flex;gap:12px 28px;flex-wrap:wrap;margin:0;font-size:.95rem}.meta{color:var(--muted);font-size:.88rem}
 footer{margin-top:42px;border-top:1px solid #c7d2d7;padding-top:24px;font-size:.82rem;color:var(--muted)}
 @media(max-width:520px){main{padding:36px 20px}.links{flex-direction:column;gap:10px}h2{font-size:1.4rem}}
 '''
 
 
 def build_index(root, cfg, sections):
+    from course_pages import build_categories, navigation
     base = f'https://openstax.org/books/{cfg["slug"]}/pages/'
     groups = {}
     for section in sections:
@@ -234,48 +235,19 @@ def build_index(root, cfg, sections):
             cards.append(f'<li><span class="section">{label}</span><h3><a href="slides/{filename}">{escape(section["title"])}</a></h3>'
                          f'<p class="links"><a href="slides/{filename}">Open slides <span class="meta">(PDF, {len(section["slides"])} slides)</span></a>'
                          f'<a href="{base + section["slug"]}">Read textbook section</a></p></li>')
-        homework = f'homework/chapter-{chapter}-homework.pdf'
-        if (root / homework).is_file():
-            cards.append(f'<li><span class="section">Homework</span><h3><a href="{homework}">Chapter {chapter} Homework</a></h3>'
-                         f'<p class="links"><a href="{homework}">Open homework <span class="meta">(PDF)</span></a></p></li>')
-        practice_manifest = root / 'practice-tests/manifest.json'
-        if practice_manifest.is_file():
-            from generate_practice_batch import cards as practice_cards
-            for practice in practice_cards(json.loads(practice_manifest.read_text())):
-                if practice['end'] == chapter:
-                    cards.append(practice['html'])
         chunks.append(f'<section aria-labelledby="chapter-{chapter}"><h2 id="chapter-{chapter}">Chapter {chapter} · {cfg["chapters"][chapter]}</h2>'
                       f'<p>{note}</p><ul>{"".join(cards)}</ul></section>')
-    banks_html = ''
-    banks_manifest = root / 'question-banks/manifest.json'
-    if cfg['name'] == 'Statistics' and banks_manifest.is_file():
-        bank_cards = []
-        for bank in json.loads(banks_manifest.read_text()):
-            a, b = bank['chapters']
-            bank_cards.append(f'<li><span class="section">Unit {bank["unit"]} · Chapters {a}-{b} · {bank["question_count"]} questions</span>'
-                              f'<h3>{escape(bank["title"])}</h3><p class="links">'
-                              f'<a href="question-banks/{bank["html"]}">Study question bank online</a>'
-                              f'<a href="question-banks/{bank["pdf"]}">Download bank and answer key (PDF)</a>'
-                              f'<a href="question-banks/{bank["json"]}" download>Download JSON for AI study</a></p></li>')
-        banks_html = ('<section aria-labelledby="unit-test-banks"><h2 id="unit-test-banks">Unit-test question banks</h2>'
-                      '<p>Public study banks: 100 multiple-choice questions per unit, with answers, explanations, and slide references. '
-                      'Tests draw ten questions across the ten skill groups, emphasizing conceptual reasoning and small calculations. '
-                      'A four-function calculator is allowed. Chapter 9 is not tested.</p>'
-                      '<p class="links"><a href="question-banks/index.html">All question banks and AI study prompt</a>'
-                      '<a href="unit-test-specifications.md">Unit-test specifications</a>'
-                      '<a href="question-banks/create-unit-test-prompt.txt">Instructor test-generation prompt</a></p>'
-                      f'<ul>{"".join(bank_cards)}</ul></section>')
-        nav = '<a href="#unit-test-banks">Question banks</a>' + nav
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{cfg['name']} | Class Slides</title><meta name="description" content="Portrait discussion slides for OpenStax {cfg['book']}, organized by covered chapter and section.">
-<style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="../index.html">Teaching</a></p>
+<style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="index.html">{cfg['name']} course home</a></p>
 <h1>{cfg['heading']}</h1><p>Discussion questions and problems for <a href="https://openstax.org/details/books/{cfg['slug']}">OpenStax <em>{cfg['book']}</em></a>.</p>
 <p>One concept or problem per portrait slide, with room for class notes and worked solutions.</p>
-<nav aria-label="Course resources" class="chapter-links">{nav}</nav></header>{banks_html}{''.join(chunks)}
+{navigation(root.name, "class-slides.html")}<nav aria-label="Chapters" class="chapter-links">{nav}</nav></header>{''.join(chunks)}
 <footer><p>Aligned to <em>{cfg['book']}</em> by {cfg['authors']}, OpenStax, Rice University ({cfg['year']}). Definitions, problems, and synthetic datasets are original classroom adaptations aligned to the textbook sections.</p>
 <p>Slide materials: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. <a href="{base + cfg['intro']}">Access the textbook for free</a>.</p></footer></main></body></html>'''
-    (root / 'index.html').write_text(html)
+    (root / 'class-slides.html').write_text(html)
+    build_categories(root)
 
 
 def main(course_root):

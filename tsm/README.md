@@ -2,7 +2,8 @@
 
 Lecture notes and planning documents for the co-listed TSM 098–099 course.
 
-- `index.html` is the table of contents for the browser edition.
+- `index.html` is the course landing page with lecture notes, homework, and practice tests.
+- `lecture-notes.html` is the table of contents for the browser edition.
 - `lessons/` contains one HTML file for each of the 37 topics.
 - `planning/` contains the co-listed course schedule.
 - `specifications/` contains the lecture-note and test specifications.
@@ -13,4 +14,4 @@ Edit lecture notes directly in `lessons/`. All lecture-note content is maintaine
 
 ## Homework
 
-Compact PDF homework assignments are linked from the course index. See [the homework design and coverage map](homework/README.md) for priorities, topic groupings, editable sources, and rebuild instructions. Students work on separate paper and upload one best representative page in Blackboard.
+Compact PDF homework assignments are linked from `homework.html`. See [the homework design and coverage map](homework/README.md) for priorities, topic groupings, editable sources, and rebuild instructions. Students work on separate paper and upload one best representative page in Blackboard.

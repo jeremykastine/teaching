@@ -136,19 +136,8 @@ def build(course, a):
     return {'file':str(target.relative_to(ROOT)),'pages':len(reader.pages),'problems':number,'work_minutes':minutes}
 
 def link_tsm(assignments):
-    index=ROOT/'tsm/index.html';text=index.read_text()
-    groups=[]
-    for course in ['TSM 098','TSM 099']:
-        rows=[]
-        for a in assignments:
-            if a['course']!=course:continue
-            rows.append(f'<li><a href="homework/{a["file"]}">{course} {escape(a["title"])}: {escape(a["coverage"])} - {escape(a["subtitle"])} (PDF)</a></li>')
-        groups.append(f'<h3>{course}</h3><ul>'+''.join(rows)+'</ul>')
-    section='<!-- homework:start -->\n<section id="homework" aria-labelledby="homework-heading"><h2 id="homework-heading">Homework assignments</h2><p>Each assignment is designed for about one hour, including checking and corrections. Show all work on separate paper, upload a clear photo of your one best representative page in Blackboard, and keep all your work.</p>'+''.join(groups)+'</section>\n<!-- homework:end -->'
-    if '<!-- homework:start -->' in text:text=re.sub(r'<!-- homework:start -->.*?<!-- homework:end -->',lambda _:section,text,flags=re.S)
-    else:text=text.replace('    <section>\n      <h2>Course files</h2>',section+'\n    <section>\n      <h2>Course files</h2>')
-    if 'href="#homework"' not in text:text=text.replace('      <p>Topics 1 through 37</p>','      <p>Topics 1 through 37</p>\n      <p><a href="#homework">TSM 098 and TSM 099 homework PDFs</a></p>')
-    index.write_text(text)
+    from course_pages import build_categories
+    build_categories(ROOT/'tsm')
     # Add each packet at its completion point as well as in the homework list.
     for lesson in (ROOT/'tsm/lessons').glob('topic-*.html'):
         n=int(lesson.name.split('-')[1]);html=lesson.read_text()

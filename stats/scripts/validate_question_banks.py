@@ -124,7 +124,7 @@ def main():
     for doc in pdfs.values():
         doc.close()
     link_count = 0
-    html_paths = [ROOT / 'stats/index.html']+list(BANKS.glob('*.html'))
+    html_paths = list((ROOT / 'stats').glob('*.html'))+list(BANKS.glob('*.html'))
     parsed = {}
     for path in html_paths:
         parser = Links()

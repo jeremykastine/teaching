@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build three practice forms per assessment, then refresh the two course indexes."""
+"""Build three practice forms per assessment, then refresh the two course resource pages."""
 import sys
 from build_practice_tests import *
 import practice_math101 as M
@@ -57,14 +57,8 @@ def cards(manifest):
     return groups
 
 def link_tsm(manifest):
-    path=ROOT/'tsm/index.html';html=path.read_text()
-    html=re.sub(r'<!-- practice-tests-topic-\d+:start -->.*?<!-- practice-tests-topic-\d+:end -->\s*','',html,flags=re.S)
-    for topic in sorted(set(a['end'] for a in manifest)):
-        block='\n<!-- practice-tests-topic-'+str(topic)+':start -->\n'+''.join(g['html'] for g in cards(manifest) if g['end']==topic)+'\n<!-- practice-tests-topic-'+str(topic)+':end -->'
-        pattern=r'(<li><a href="lessons/topic-'+f'{topic:02d}'+r'-.*?</li>)'
-        html,count=re.subn(pattern,lambda m:m.group(1)+block,html,count=1,flags=re.S);assert count==1,topic
-    html=html.replace('<p>Topics 1 through 37</p>','<p>Topics 1 through 37</p>\n      <p>Three practice tests for each unit and final are linked below at the corresponding test points.</p>') if 'Three practice tests for each unit' not in html else html
-    path.write_text(html)
+    from course_pages import build_categories
+    build_categories(ROOT/'tsm')
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--version',default='202610122020');parser.add_argument('--only',help='Assessment slug for a focused rebuild');parser.add_argument('--validate-only',action='store_true');args=parser.parse_args()
