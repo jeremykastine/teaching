@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to request an excused absence or complete the AI-guided missed-class assignment.">
+  <title>Absence Procedure · Teaching</title>
+  <style>
+    :root { color-scheme: light; --ink: #14232d; --accent: #185f72; --muted: #52616b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f7f8; color: var(--ink); font: 18px/1.6 system-ui, sans-serif; }
+    main { max-width: 860px; margin: auto; padding: 48px 28px; }
+    h1 { line-height: 1.15; font-size: clamp(2rem, 7vw, 3rem); }
+    h2 { font-size: 1.4rem; margin-top: 32px; }
+    a { color: var(--accent); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    li { margin-bottom: 16px; }
+    .prompt { padding: 22px; border: 1px solid #c7d2d7; border-radius: 8px; background: #fff; overflow-wrap: anywhere; white-space: pre-wrap; }
+    button { padding: 10px 18px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #b05819; outline-offset: 5px; }
+    .note { color: var(--muted); }
+    @media (max-width: 520px) { main { padding: 28px 20px; } }
+    @media print { body { background: #fff; } main { padding: 0; } button, #copy-status { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html#generic-resources">Teaching · Generic Resources</a></p>
+    <h1>Absence Procedure</h1>
+    <p>For TSM 098, TSM 099, MATH 101, and Statistics.</p>
+    <p><strong>One excused absence per quarter:</strong> Email <a href="mailto:Jeremy.Kastine@Life.edu">Jeremy.Kastine@Life.edu</a> to request it. You do not need to explain why.</p>
+    <h2>For additional absences</h2>
+    <ol>
+      <li>Find the missed date in <strong>“Up-to-date course schedule”</strong> in Blackboard. Complete the assigned textbook reading or lecture notes before the 80-minute learning period.</li>
+      <li>Open an AI chat (such as ChatGPT, Claude, or Copilot) and paste the prompt below. Have the complete schedule entry ready to paste when the AI asks.</li>
+      <li>Follow the AI’s guidance and complete <strong>at least 80 minutes of active course-related work</strong>, in the chat, independently, or both. Reading assigned in advance, setup, breaks, and unrelated activity do not count. Provide your start and finish times, describe what you worked on, and complete the closing self-assessment.</li>
+      <li>Email <strong>the full conversation</strong> to <a href="mailto:Jeremy.Kastine@Life.edu">Jeremy.Kastine@Life.edu</a> as a PDF or a shareable link that the instructor can open. Include your course and missed date, all your messages and the AI’s responses, and the closing review. An AI-generated summary alone is not sufficient.</li>
+    </ol>
+    <h2>Copy/paste prompt</h2>
+    <div class="prompt" id="ai-prompt">Help me complete my instructor’s AI-guided missed-class assignment. Read the entire assignment and its AI specifications here:
+https://jeremykastine.github.io/teaching/missed-class-ai-guided-assignment.html
+
+Follow those instructions and guide me one question or task at a time, waiting for my responses. Begin by asking my course and the date I missed, then ask me to paste the complete entry from “Up-to-date course schedule” in Blackboard. Confirm the assigned reading is complete before starting the 80-minute active learning period. Allow course-related work in chat or independently. At the end, ask for my current time, review my work and active minutes, complete the required closing self-assessment, and help me email the full transcript to Jeremy.Kastine@Life.edu as a PDF or an accessible share link.
+
+If you cannot open or read the linked specifications in full, ask me to paste the page’s text or upload it before proceeding.</div>
+    <p><button type="button" id="copy-prompt">Copy prompt</button> <span id="copy-status" role="status" aria-live="polite"></span></p>
+    <p class="note">If the AI cannot read the link, open the <a href="missed-class-ai-guided-assignment.html">full assignment and AI specifications</a> and copy its text into the chat, or save the page as a PDF and upload it.</p>
+    <p class="note">The instructor determines whether the assignment is adequately completed. Tests and other course obligations still follow their own instructions.</p>
+  </main>
+  <script>
+    document.getElementById('copy-prompt').addEventListener('click', async () => {
+      const status = document.getElementById('copy-status');
+      try {
+        await navigator.clipboard.writeText(document.getElementById('ai-prompt').textContent);
+        status.textContent = 'Prompt copied.';
+      } catch {
+        status.textContent = 'Select the prompt above and copy it manually.';
+      }
+    });
+  </script>
+</body>
+</html>
