@@ -53,7 +53,7 @@ def cards(manifest):
         if entry['assessment'] in [g['assessment'] for g in groups]:continue
         related=[a for a in manifest if a['assessment']==entry['assessment']]
         links=' &middot; '.join(f'<a href="practice-tests/{a["file"]}">Practice {a["practice"]} (PDF)</a>' for a in related)
-        groups.append(dict(assessment=entry['assessment'],title=entry['title'],end=entry['end'],html='<li class="practice-test-links"><strong>'+escape(entry['title'])+'</strong><p>'+links+'</p><p class="practice-note">Includes an answer sheet and answer key. Try the test before checking the key.</p></li>'))
+        groups.append(dict(assessment=entry['assessment'],title=entry['title'],end=entry['end'],html='<li class="practice-test-links"><strong>'+escape(entry['title'])+'</strong><p>'+links+'</p><p class="practice-note">Includes answer spaces beside each question and a matched instructor key. Try the test before checking the key.</p></li>'))
     return groups
 
 def link_tsm(manifest):

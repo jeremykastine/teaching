@@ -127,84 +127,9 @@ def graphpdf(serial):
     ax.spines['left'].set_linewidth(.9);ax.spines['bottom'].set_linewidth(.9)
     fig.tight_layout(pad=.8);b=BytesIO();fig.savefig(b,format='pdf');plt.close(fig);return b.getvalue()
 
-def footer(c,doc,title,vid):
-    c.setFont('DV',7.5);c.setFillColor(HexColor('#475569'));c.drawString(42,28,title+' | '+vid);c.drawRightString(570,28,str(doc.page))
-
-def booklet(a):
-    overlays=[];story=[Paragraph(escape(a['title'])+' - Practice '+str(a['practice']),TITLE),Paragraph('Version '+a['version']+' | Name: ______________________________',SMALL)]
-    directions='Complete and show all work on a separate sheet of paper. Record final answers on the answer sheet. Give exact answers and simplify completely. '
-    if a['course']=='MATH 101':directions+='Only a basic four-function calculator may be used. '
-    if a.get('minutes'):directions+=f"Suggested timed practice: {a['minutes']} minutes. "
-    if 'Linear Equations and Linear Systems' in a['title']:directions+='Check numerical answers in the original equations. Equations may have no solution or all real numbers; systems may have no solution or infinitely many solutions. '
-    story += [Paragraph(directions,SMALL),Paragraph('Answer key follows the answer sheet. Attempt the test before checking it.',SMALL),Spacer(1,7)]
-    for number,q in enumerate(a['questions'],1):
-        block=[Paragraph(f'<b>{number}.</b> '+q['prompt'],BODY)]
-        for t in q['math']:block += [formula(t,overlays),Spacer(1,4)]
-        if q.get('graph'):block += [Vector(graphpdf(json.dumps(q['graph'],sort_keys=True)),overlays,maxheight=205 if q['graph']['kind'] in ('blank','line') else 168),Spacer(1,5)]
-        if q.get('table'):
-            rows=[[Paragraph(escape(str(c)),SMALL) for c in row] for row in q['table']]
-            table=Table(rows,colWidths=[516/len(rows[0])]*len(rows[0]),hAlign='LEFT')
-            table.setStyle(TableStyle([('GRID',(0,0),(-1,-1),.35,HexColor('#9ca3af')),('BACKGROUND',(0,0),(-1,0),HexColor('#eef2f5')),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]));block.append(table)
-        block.append(Spacer(1,8));story.append(KeepTogether(block))
-    b=BytesIO();doc=SimpleDocTemplate(b,pagesize=(612,792),leftMargin=42,rightMargin=42,topMargin=40,bottomMargin=48)
-    doc.build(story,onFirstPage=lambda c,d:footer(c,d,a['short'],a['version']),onLaterPages=lambda c,d:footer(c,d,a['short'],a['version']))
-    reader=PdfReader(BytesIO(b.getvalue()))
-    for idx,page,scale,px,py,w,h in overlays:
-        assert px>=41 and px+w<=571 and py>=47 and py+h<=753,(a['file'],idx,px,py,w,h)
-        reader.pages[idx].merge_transformed_page(page,Transformation().scale(scale).translate(px,py))
-    return reader
-
-def response_pages(a,key):
-    if len(a['questions'])==5 and a['course']!='MATH 101':
-        groups=[a['questions']]
-    else:
-        qs=a['questions'];cost=lambda items:sum(28*len(q['rows'])+36 for q in items)
-        cut=min(range(1,len(qs)),key=lambda i:max(cost(qs[:i]),cost(qs[i:])))
-        groups=[qs[:cut],qs[cut:]]
-    b=BytesIO();c=Canvas(b,pagesize=(612,792));overlays=[];layout=[];num=0
-    for pageidx,questions in enumerate(groups):
-        c.setFont('DVB',15);c.drawString(42,753,'Answer key' if key else 'Student answer sheet')
-        c.setFont('DV',9);c.drawString(42,735,a['title']+' | Practice '+str(a['practice']));c.setFont('DV',8.5);c.drawString(42,719,'Version '+a['version']+' | Name: ______________________________')
-        totalrows=sum(len(q['rows']) for q in questions);available=644
-        rowheight=min(42,(available-36*len(questions))/totalrows)
-        assert rowheight>=25,(a['file'],totalrows,rowheight)
-        py=692
-        for qi,q in enumerate(questions):
-            num+=1;c.setFont('DVB',9);c.drawString(42,py,f'Question {num}');py-=18
-            for ri,r in enumerate(q['rows']):
-                rh=rowheight
-                c.setFont('DV',8.2);c.drawString(44,py-rh/2,r['label']);c.drawRightString(568,py-rh+8,str(r['points'])+' pts')
-                if key:
-                    if r['plain']:
-                        p=Paragraph(escape(r['answer']),SMALL);pw,ph=p.wrap(348,rh-3);assert ph<rh,(a['file'],r,ph,rh);p.drawOn(c,164,py-(rh+ph)/2+3)
-                    else:
-                        f=formula(r['answer'],overlays,size=11,maxwidth=348);assert f.height<rh-1,(a['file'],r,f.height,rh)
-                        f.canv=c;f.drawOn(c,164,py-(rh+f.height)/2+2)
-                layout.append((pageidx,num,ri,round(py,2),round(rh,2),r['points']));py-=rh
-                if ri<len(q['rows'])-1:
-                    c.setStrokeColor(HexColor('#bdc5cc'));c.setLineWidth(.4);c.setDash(1.2,2.2);c.line(42,py,570,py);c.setDash()
-            if qi<len(questions)-1:
-                c.setStrokeColor(HexColor(INK));c.setLineWidth(.7);c.line(42,py-4,570,py-4)
-            py-=18
-        assert py>=43,(a['file'],py)
-        c.setFont('DV',7.5);c.drawString(42,28,a['short']+' | '+a['version']);c.drawRightString(570,28,str(pageidx+1));c.showPage()
-    c.save();reader=PdfReader(BytesIO(b.getvalue()))
-    for idx,page,scale,px,py,w,h in overlays:reader.pages[idx].merge_transformed_page(page,Transformation().scale(scale).translate(px,py))
-    return reader,layout
-
 def build(a):
-    key,kl=response_pages(a,True);student,sl=response_pages(a,False);assert kl==sl
-    book=booklet(a);writer=PdfWriter();starts={}
-    for name,reader in [('booklet',book),('sheet',student),('key',key)]:
-        if len(writer.pages)%2:writer.add_blank_page(612,792)
-        starts[name]=len(writer.pages)+1
-        for p in reader.pages:writer.add_page(p)
-    target=ROOT/a['folder']/'practice-tests'/a['file'];target.parent.mkdir(parents=True,exist_ok=True)
-    writer.add_metadata({'/Title':a['title']+' - Practice '+str(a['practice']),'/Author':'Jeremy Kastine','/Subject':'Original practice assessment with matched answer sheet and key','/Creator':'Teaching practice-test builder'})
-    with target.open('wb') as out:writer.write(out)
-    assert all(v%2==1 for v in starts.values())
-    st=''.join(p.extract_text() for p in student.pages);assert 'Answer key' not in st
-    return dict(file=str(target.relative_to(ROOT)),pages=len(writer.pages),booklet_pages=len(book.pages),sheet_pages=len(student.pages),key_pages=len(key.pages),starts=starts,questions=len(a['questions']))
+    from algebra_test_layout import build as build_combined
+    return build_combined(a)
 
 # Question constructors are below. All answers are computed from their source data.
 def arithmetic98(v):
@@ -367,8 +292,8 @@ def graph99(v):
     p,q=[(1,2),(2,1),(2,-1)][v];mm=S.Integer(v+1);nn=-S.Integer(v+2);bb=q-mm*p;cc=q-nn*p
     readm=[-S.Rational(1,2),-S.Rational(2,3),-S.Rational(3,2)][v];readb=v+1
     pointm=[S.Integer(2),S.Rational(1,3),S.Integer(-1)][v];pointb=v-1;xs=[1,4] if v==1 else [1,3];pts=[(z,pointm*z+pointb) for z in xs]
-    return [question('G99-slope','Graph the line on the grid. Mark at least two points.',[eq(y,m*x+b)],[ans('Graph (booklet)',eq(y,m*x+b),20)],graph={'kind':'blank'}),
-      question('G99-standard','Find both intercepts and graph through them on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),8),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),12)],graph={'kind':'blank'}),
-      question('G99-system','Solve by graphing both lines on this grid. Algebra alone is insufficient.',[eq(y,mm*x+bb),eq(y,nn*x+cc)],[ans('Graph (booklet)','Both given lines meet at the reported solution.',12,True),ans('Ordered pair',tex(S.Tuple(p,q)),8)],graph={'kind':'blank'}),
+    return [question('G99-slope','Graph the line on the grid. Mark at least two points.',[eq(y,m*x+b)],[ans('Graph (booklet)',eq(y,m*x+b),20)],graph={'kind':'blank','answer_lines':[[float(m),float(b)]]}),
+      question('G99-standard','Find both intercepts and graph through them on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),8),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),12)],graph={'kind':'blank','answer_lines':[[-A/B,C/B]]}),
+      question('G99-system','Solve by graphing both lines on this grid. Algebra alone is insufficient.',[eq(y,mm*x+bb),eq(y,nn*x+cc)],[ans('Graph (booklet)','Both given lines meet at the reported solution.',12,True),ans('Ordered pair',tex(S.Tuple(p,q)),8)],graph={'kind':'blank','answer_lines':[[float(mm),float(bb)],[float(nn),float(cc)]]}),
       question('G99-read','Write the equation of the displayed line in slope-intercept form.',[],[ans('Equation',eq(y,readm*x+readb),20)],graph={'kind':'line','m':float(readm),'b':readb,'point':2 if v!=1 else 3}),
       question('G99-points','Find the slope-intercept equation through the two points. Show the slope formula and determination of the intercept.',[tex(S.Tuple(*pts[0]))+r';\ '+tex(S.Tuple(*pts[1]))],[ans('Slope',tex(pointm),6),ans('Equation',eq(y,pointm*x+pointb),14)])]

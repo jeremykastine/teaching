@@ -64,7 +64,7 @@ State the assessment name and number of versions. The standardized presentation 
 - **Do not use lettered labels such as Version A/B.**
 - A single generated version uses a **12-digit timestamp identifier** in the format `YYYYMMDDHHMM`, using the user's local date/time, a 24-hour clock, and the nearest minute, with no punctuation.
 - Multiple versions generated in the same request use the same timestamp plus `.1`, `.2`, `.3`, and so on.
-- Use the same version identifier on the exam booklet, student answer sheet, answer key, requested compliance report, and filename when practical.
+- Use the same version identifier on the combined student test, instructor answer key, requested compliance report, and filename when practical.
 - When an option is meant to vary across versions, distribute the options as evenly as practical across a large batch rather than relying on uncontrolled randomness.
 - Randomization must never weaken a required constraint. Generate first, verify second, and replace any item that fails the specification.
 
@@ -85,75 +85,35 @@ State the assessment name and number of versions. The standardized presentation 
 - If a main question has multiple parts, assign subpart point values that sum to the full value of that main question: **20 points for Part III unit-test questions** and **10 points for Part IV exam questions**.
 - Prefer whole-number point values; half-points are acceptable when needed for an even or sensible distribution.
 - Point weights should reflect the mathematical work expected rather than merely the number of blanks.
-- Do **not** print point values in the exam booklet by default. Point values belong on the student answer sheet and answer key unless a request explicitly asks for them in the booklet.
+- Print point values only in the right-hand response areas and the matched instructor key, at the response-part level. Do not repeat point totals beside problem headings.
 
-## 5. Exam-booklet presentation
+## 5. Combined question-and-answer presentation
 
-- Begin with the exact assessment title, version identifier, and short directions applicable to that test.
-- Include a student-name line. Do **not** include a section/course-section field.
-- Do not label questions by hidden role, such as basic problem, exceptional case, formula problem, institutional item, supplemental item, or cancellation problem.
-- Use conventional mathematical notation, clear grouping symbols, and unambiguous subtraction signs.
-- Keep prompts **compact**. Short feature lists or one- or two-word response categories should usually be written in one sentence rather than stacked vertically.
-- Keep vertical subparts only when they represent genuinely different tasks or a deliberate sequence of work.
-- Multiple-choice options may remain vertical when clearer.
-- Avoid unnecessary blank vertical space simply to separate short questions.
-- Provide adequate workspace only where the mathematical task itself calls for substantial written work, tables, or graphs.
-- For graphing questions, provide accurate coordinate grids with the required scale in the exam booklet.
-- Keep answer-key content and compliance metadata off student-facing pages.
+Follow the approved [algebra test format](../../docs/algebra-test-format.md) for all unit tests, practice versions, diagnostics, and finals. This replaces the former separate booklet/answer-sheet format.
 
-## 6. Student answer sheet and answer key
+- Use the left two-thirds of the printable page for questions and the right one-third for vertically aligned final-answer spaces.
+- Begin with the exact assessment title, version identifier, student-name line, and concise test-specific directions. Do not include a course-section field or hidden institutional/archetype labels.
+- Use conventional notation and compact prompts. Students complete and show all work on separate paper and record exact final answers in the right column.
+- Put blank grids students complete in the right column and supplied graphs they interpret with the left-side prompt. Keep question units together and preserve required scales.
+- Aim for one or two student pages; allow longer diagnostics/finals when readability requires them.
 
-Every generated assessment version includes a student answer sheet and a paired answer key unless the request explicitly asks for a different format.
+## 6. Matched instructor key
 
-### Content
+- Use one key column per student test page: one, two, or three columns on a single page for one-, two-, or three-page tests. Longer tests may require additional key pages with up to three columns per page.
+- Generate student and key pages from a shared key-first layout. Each key column must exactly match the vertical boundaries, labels, row heights, and point positions of the corresponding test page's right answer column. Do not require equal student/key page counts.
+- Student pages must contain no hidden answer text. Omit answers from the shared geometry rather than recoloring or hiding them.
+- Keep response areas open without writing baselines. Use solid rules between questions and light dotted/dashed rules only between subparts. Put point values at the bottom of each response area; show each question's full total through its part weights (20 for Part III units, 10 for Part IV exams), without a repeated heading total.
+- The key is a concise grading reference. Include essential method/check information and completed graphs where needed; extended worked solutions remain optional.
 
-- The answer sheet contains **no problem statements**.
-- Include the version identifier, **student name**, question numbers, concise part labels, point values, and appropriately sized answer lines/boxes.
-- Do **not** include a section/course-section field.
-- Follow the actual randomized or standardized numbering/order of that version.
-- For Part III unit tests, each main question visibly totals **20 points** and multipart point values sum to 20.
-- For Part IV diagnostics, practice finals, and official finals, each main question visibly totals **10 points** and multipart point values sum to 10.
-- For a single-part question, show the question once with its full point value (`20 points` on a Part III unit test or `10 points` on a Part IV exam); do not invent a redundant A/1 subpart or a second point-value label beneath it.
-- For graphing work performed directly on a grid in the exam booklet, the answer sheet may use a concise label such as `Graph (see booklet)` with its point value rather than duplicating the entire grid, unless a generation request says otherwise.
+## 7. Combined PDF and duplex-safe printing
 
-### Row geometry
+Default order: combined student test -> completely blank padding page only if needed -> instructor answer key -> optional requested instructor-only compliance report.
 
-- Left part labels/descriptors occupy a narrow left column; point values occupy a narrow right column.
-- For multipart rows, the response line runs essentially the **full usable width between the left label and the right-aligned point value**.
-- Do not leave a short isolated blank in the middle of a row.
-- Use **solid horizontal rules only between main questions**.
-- Use **dashed horizontal rules only between successive parts of the same main question**.
-- Dashed rules appear only *between* parts: two parts -> one dashed rule; three parts -> two; four parts -> three; and so on.
-- Do **not** draw a dashed rule after the final part of a multipart question.
-- Do **not** draw any dashed internal separator for a single-part question.
-- Never stack a dashed rule and a solid main-question rule beneath the same final response area.
-
-### Key-first matched layout
-
-- Build the **answer key first** as the canonical layout.
-- Generate the student answer sheet from the same source/template so page breaks, row heights, spacing, line lengths, labels, point-value positions, and separator rules are geometrically identical.
-- Preferred method: typeset the key answers and create the student version by hiding the answer text (for example, white text) while preserving dimensions.
-- The answer key is a concise grading reference. When a test-specific rule requires essential method steps, checks, rejected candidates, or a graph feature, include that information compactly in the corresponding key area while preserving the matched layout.
-- Extended worked solutions are not included by default; provide them separately only when explicitly requested.
-
-## 7. Standard output package and duplex-safe printing
-
-By default, deliver **one combined PDF per version** in this order:
-
-1. Exam booklet
-2. Student answer sheet
-3. Answer key
-4. Optional compliance report only when explicitly requested
-
-Printing rules:
-
-- Each included section begins on an **odd-numbered PDF page**, i.e. the front of a fresh physical sheet when printed duplex starting with page 1 as a front side.
-- Insert completely blank padding pages wherever needed so a section never begins on the back side of the preceding section.
-- Student answer sheet and answer key must always have the **same page count and matched geometry**.
-- For a five-question unit test, keep the answer sheet and key to **one page each when practical**; if additional space is genuinely needed, use the same increased page count for both.
-- For a ten-question diagnostic, practice final, or official final, use **two pages for the answer sheet and two pages for the key** unless a problem-specific graphical requirement makes that genuinely impractical; if so, preserve identical page count/geometry between sheet and key and maintain duplex-safe section starts.
-- If a requested compliance report is included, it begins on a fresh front side after the answer key.
-- If the user explicitly requests separate files or a different packaging order, follow that request instead.
+- Both the student test and key begin on odd-numbered PDF pages. Insert one completely blank page before the key when the test has an odd number of pages; insert none when it has an even number.
+- Aim for one instructor-key page, front only, with the correct number of page-matching columns. There is no separate student answer sheet.
+- Pad between complete packets if merging versions so each new test starts on a fresh front side.
+- A requested compliance report starts on a fresh front side after the key. Follow explicit requests for separate files or other packaging.
+- Retain existing filenames and identifiers when only reformatting a version. Verify all rendering and vertical coordinate matches before publication.
 
 ## 8. Compliance reports and default behavior
 
@@ -891,11 +851,11 @@ Before returning tests created from this guide, the generating system must confi
 - Institutional archetypes are distributed fairly across a batch, and microvariation has not altered the measured construct or difficulty.
 - Every problem has been solved independently and checked for unintended behavior.
 - Student copies reveal no hidden roles, intended methods, exceptional locations, institutional IDs, or compliance metadata.
-- Exam booklets are compact and omit point values by default.
-- Student answer sheets contain no problem statements and no section field.
-- Answer sheets and keys use matched key-first geometry, full-width response lines, solid main-question separators, dashed internal-part separators, and no redundant separator after a final part.
+- Student tests combine compact left-side questions and aligned right-side response areas; point values appear only with the response parts.
+- Student tests have no separate answer sheet and no section field.
+- Right-hand response areas and page-matching key columns use shared key-first vertical geometry, open answer areas without baselines, solid main-question separators, and light dashed internal-part separators only between parts.
 - Answer keys include the required essential steps, checks, rejected candidates, and graph features when test-specific rules require them.
-- The default combined PDF is duplex-safe and ordered exam booklet -> student answer sheet -> answer key.
+- The default combined PDF is duplex-safe: combined student test -> a blank page only after an odd-length test -> instructor key with vertically matched page columns.
 - A compliance report is **not** included unless explicitly requested.
 - If a compliance report is requested, it identifies every required randomized option, institutional mapping, supplemental selection, and version-specific constraint needed to certify the generated assessment.
 - Formatting is readable, notation is unambiguous, graphs are exact, and no answer-key content appears visibly on a student page.

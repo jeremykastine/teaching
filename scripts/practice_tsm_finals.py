@@ -39,7 +39,7 @@ def final(course,v):
         fm=S.Rational(v+1,2);fb=v-2;pt1=(2,2*fm+fb);pt2=(4,4*fm+fb)
         A,B,C=[(2,1,6),(1,2,8),(3,2,12)][v];ev=(v+2)*(x-v-1)*(x+3);inp=-2;sh=v+1;sk=v+3
         out += [question('S099-line','Find the slope-intercept equation through these two points.',[tex(S.Tuple(*pt1))+r';\ '+tex(S.Tuple(*pt2))],[ans('Equation',eq(y,fm*x+fb),10)]),
-          question('S099-graph','Find the intercepts and graph the line on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),4),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),6)],graph={'kind':'blank'}),
+          question('S099-graph','Find the intercepts and graph the line on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),4),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),6)],graph={'kind':'blank','answer_lines':[[-A/B,C/B]]}),
           question('S099-eval',f'Evaluate at x = {inp}; show substitution.',[tex(ev)],[ans('Value',tex(exact('S099-eval',ev.subs(x,inp))),10)]),
           question('S099-sqrt','Solve by taking square roots.',[f'3(x-{sh})^2 = {3*sk*sk}'],[ans('Solutions',solution_tex([sh-sk,sh+sk]),10)])]
     assert len(out)==10 and sum(q['id'].startswith('I') for q in out)==6

@@ -48,11 +48,13 @@ Change numerical data, expressions, or graphs, not merely order or names. Preser
 
 ### Presentation and output
 
-Follow the existing MATH 101 rules: compact booklet without point values or reserved workspace; directions to complete and show all work on separate paper and record final answers on the answer sheet; no course-section field; timestamp IDs in America/New_York, with .1/.2 suffixes for batches; concise key first and student sheet from the same fixed geometry; no hidden answer text.
+Follow the approved [algebra test format](../docs/algebra-test-format.md): combine questions in the left two-thirds of each printable page and aligned answer spaces in the right one-third. Students show all work on separate paper and record exact final answers in the right column. Omit a course-section field; keep timestamp IDs in America/New_York with batch suffixes.
 
-The existing MATH 101 default remains **exactly two PDF pages each for the student answer sheet and matched key**, one physical sheet front/back, unless the instructor requests another format. Use compact final-answer areas, solid rules between main questions, light dotted/dashed rules only between parts, and no internal answer baselines. Show **20 points per main question only through its response-part weights**, not repeated in its heading. This replaces the cumulative exam's 10-point amounts when using its shared layout.
+Aim for one or two student pages. The concise instructor key uses one column per test page, preserving exact vertical response geometry; one-, two-, or three-page tests have one-, two-, or three-column keys respectively. Longer tests may require additional key pages. There is no separate student answer sheet and no requirement for equal student/key page counts.
 
-Default package: one PDF per version, booklet → student answer sheet → concise key. Each section begins on an odd-numbered page; insert blank padding if needed. Include worked solutions or an audit only when requested. For a future actual PDF, render and visually inspect all pages, including graphs, and check the student file contains no answer text. Do not generate student exams merely because these specifications were requested.
+Use open response areas with no answer baselines, solid rules between main questions, and light dotted/dashed rules only between parts. Put part points at the bottom of the response area; express each 20-point question's total through its part weights rather than repeating it in the heading. Generate both views from shared key-first geometry and omit answers entirely from student pages.
+
+Default package: combined student test -> completely blank padding page only if the test length is odd -> concise instructor key. The key starts on an odd-numbered page. Render and inspect all pages, verify vertical matches and duplex padding, and keep supplied interpretation graphs with questions and blank student grids in the answer column. Include worked solutions or audits only when requested.
 
 ## 3. Unit 1 — Algebraic Expressions, Equations, and Inequalities
 
@@ -264,8 +266,8 @@ Perform these checks for every version; expose an audit only when requested.
 5. Estimate student time for the whole form from reading, mathematical decisions, written work, and transferring answers. Verify the 24–25-minute question target plus remaining allowance within 30 minutes. Check all multipart workloads, especially U1-4, U3-3/U3-4, and U4-5. Instructor speed alone is not evidence.
 6. For graph items, verify the underlying formulas/coordinates, plotted zeros/multiplicities, labeled points, transformed coordinates, scales, and unique answer choices. Never use a graph image that merely suggests the required data.
 7. For matched forms, preserve constructs, subtypes, scoring, method requirements, supports, reading demand, and approximate difficulty; vary numerical content genuinely.
-8. Check randomization keeps related parts together and answer sheet/key follow printed order. Use timestamp identifiers consistently; no Version A/B.
-9. For actual PDFs, render every page and inspect legibility, wrapping, graph labels, and page breaks. Confirm compact booklet with no deliberate work areas, two pages each for matched sheet/key, integer part points only in response areas, correct separators, no answer baselines, no hidden answers, and odd-page section starts.
+8. Check randomization keeps related parts together and response areas/key columns follow printed order. Use timestamp identifiers consistently; no Version A/B.
+9. For actual PDFs, render every page and inspect legibility, wrapping, graph labels, and page breaks. Confirm combined questions/answers with no deliberate work areas, one key column per student page and exact vertical matches, integer part points only in response areas, correct separators, no answer baselines, no hidden answers, and odd-page section starts.
 10. Deliver only the requested tests/versions and requested format. Do not automatically add finals, homework, worked-solution documents, or audit reports.
 
 ## 8. Sources and standing decisions
