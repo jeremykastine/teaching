@@ -39,4 +39,4 @@
 
 Statistics: cover the scheduled sections in Chapters 1–8 and preserve the existing Chapter 1 lab decks. Chapter 9 receives one conceptual overview (PDF identifier 9.0), not the full chapter’s calculation procedures. Reinforce frequencies and denominators, distribution shape and spread, conditional probability, random variables, tail areas, sampling distributions and standard errors, and interval/test interpretations. Use the textbook’s stated approximation criteria and explicitly identify the method when conventions differ.
 
-Course navigation: `index.html` lists only Class slides, Homework, and Practice tests. Resource listings live in `class-slides.html`, `homework.html`, and `practice-tests.html`; rebuilds preserve this separation.
+Course navigation: the root Teaching `index.html` links directly to Class slides, Homework, and Practice tests under each course heading. Course indexes redirect to that single navigation page. Resource listings live in `class-slides.html`, `homework.html`, and `practice-tests.html`; rebuilds preserve this separation.

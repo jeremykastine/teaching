@@ -1,4 +1,4 @@
-"""Build the three resource categories and a compact landing page for each course."""
+"""Build course resource pages linked from the single Teaching index."""
 import json
 from html import escape
 from pathlib import Path
@@ -8,20 +8,21 @@ COURSES = {
     'stats': ('Statistics', 'Class slides', 'class-slides.html'),
     'tsm': ('TSM 098 / 099', 'Lecture notes', 'lecture-notes.html'),
 }
+ANCHORS = {'101': 'math101', 'stats': 'stats', 'tsm': 'tsm'}
 
 
 def navigation(course, active=None):
     _, notes, filename = COURSES[course]
-    links = [('index.html', 'Course home'), (filename, notes),
+    links = [(f'../index.html#{ANCHORS[course]}', 'Teaching'), (filename, notes),
              ('homework.html', 'Homework'), ('practice-tests.html', 'Practice tests')]
     return '<nav aria-label="Course resources" class="resource-nav">' + ''.join(
         f'<a href="{href}"' + (' aria-current="page"' if href == active else '') +
         f'>{label}</a>' for href, label in links) + '</nav>'
 
 
-def page(root, filename, heading, body, *, landing=False):
+def page(root, filename, heading, body):
     course, _, _ = COURSES[root.name]
-    nav = '' if landing else navigation(root.name, filename)
+    nav = navigation(root.name, filename)
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(course)} · {escape(heading)}</title><link rel="stylesheet" href="../course-pages.css"></head>
@@ -78,12 +79,13 @@ def build_practice(root):
 
 def build_categories(course_root):
     root = Path(course_root)
-    course, label, filename = COURSES[root.name]
-    body = '<nav aria-label="Course categories"><ul class="category-list">' + ''.join(
-        f'<li><a href="{href}">{text}</a></li>' for href, text in
-        [(filename, label), ('homework.html', 'Homework'), ('practice-tests.html', 'Practice tests')]
-    ) + '</ul></nav>'
-    page(root, 'index.html', course, body, landing=True)
+    # Preserve old course URLs without introducing another navigation page.
+    destination = f'../index.html#{ANCHORS[root.name]}'
+    (root / 'index.html').write_text(f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url={destination}"><title>Teaching</title></head>
+<body><p><a href="{destination}">Teaching resources</a></p></body></html>
+''')
     build_homework(root)
     build_practice(root)
 

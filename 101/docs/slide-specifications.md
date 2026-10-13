@@ -40,4 +40,4 @@
 
 Algebra: include the schedule’s optional applications 2.3, 4.2, 4.3, 6.7, and 6.8, clearly labeled in the index. Keep 2.4 focused on complex arithmetic needed for quadratic and polynomial solutions. Reinforce domains, factoring and zeros, function inputs, transformations, inverse restrictions, and graph intersections where later sections use them.
 
-Course navigation: `index.html` lists only Class slides, Homework, and Practice tests. Resource listings live in `class-slides.html`, `homework.html`, and `practice-tests.html`; rebuilds preserve this separation.
+Course navigation: the root Teaching `index.html` links directly to Class slides, Homework, and Practice tests under each course heading. Course indexes redirect to that single navigation page. Resource listings live in `class-slides.html`, `homework.html`, and `practice-tests.html`; rebuilds preserve this separation.

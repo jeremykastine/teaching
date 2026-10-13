@@ -28,7 +28,7 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 ## 5. Worked examples and browser behavior
 
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
-- Use `tsm/index.html` as the course landing page with exactly three resource categories: Lecture notes, Homework, and Practice tests. List all topic links in numerical order as one continuous table of contents in `tsm/lecture-notes.html`.
+- Use the root Teaching `index.html` as the single navigation page, with Lecture notes, Homework, and Practice tests linked directly under the TSM 098 / 099 heading. `tsm/index.html` redirects to that heading. List all topic links in numerical order as one continuous table of contents in `tsm/lecture-notes.html`.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
 - Use the full browser width for worked examples, with modest text gutters and an edge-to-edge horizontal rule. Do not reserve a side column or impose a narrow maximum width on lecture pages. Begin every worked example with the horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
 - Write each problem statement as a concise, precise, self-contained task that can be understood and attempted with the solution hidden. State the action (evaluate, simplify, factor, solve, graph, find, or explain) and include every given expression, equation, value, condition, and requested answer form. Wording such as “Consider,” “Start with,” “Begin with,” or “Worked example” does not state a task by itself.

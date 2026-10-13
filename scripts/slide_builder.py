@@ -213,7 +213,7 @@ footer{margin-top:42px;border-top:1px solid #c7d2d7;padding-top:24px;font-size:.
 
 
 def build_index(root, cfg, sections):
-    from course_pages import build_categories, navigation
+    from course_pages import ANCHORS, build_categories, navigation
     base = f'https://openstax.org/books/{cfg["slug"]}/pages/'
     groups = {}
     for section in sections:
@@ -240,7 +240,7 @@ def build_index(root, cfg, sections):
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{cfg['name']} | Class Slides</title><meta name="description" content="Portrait discussion slides for OpenStax {cfg['book']}, organized by covered chapter and section.">
-<style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="index.html">{cfg['name']} course home</a></p>
+<style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="../index.html#{ANCHORS[root.name]}">Teaching</a></p>
 <h1>{cfg['heading']}</h1><p>Discussion questions and problems for <a href="https://openstax.org/details/books/{cfg['slug']}">OpenStax <em>{cfg['book']}</em></a>.</p>
 <p>One concept or problem per portrait slide, with room for class notes and worked solutions.</p>
 {navigation(root.name, "class-slides.html")}<nav aria-label="Chapters" class="chapter-links">{nav}</nav></header>{''.join(chunks)}

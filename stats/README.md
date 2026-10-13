@@ -1,6 +1,6 @@
 # Statistics class slides
 
-Open `index.html` to choose class slides, homework, or practice tests. Open `class-slides.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
+Open `../index.html` to choose class slides, homework, or practice tests under your course. Open `class-slides.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
 
 Selected sections cover Chapters 1–8. Chapter 9 has one conceptual overview deck (9.0), rather than the full chapter’s computational procedures. Chapter 1 lab resources 1.5 and 1.6 are included in the review.
 

@@ -2,7 +2,7 @@
 
 Lecture notes and planning documents for the co-listed TSM 098–099 course.
 
-- `index.html` is the course landing page with lecture notes, homework, and practice tests.
+- `../index.html` is the single Teaching page with direct links to lecture notes, homework, and practice tests under TSM 098 / 099. `tsm/index.html` redirects there.
 - `lecture-notes.html` is the table of contents for the browser edition.
 - `lessons/` contains one HTML file for each of the 37 topics.
 - `planning/` contains the co-listed course schedule.
