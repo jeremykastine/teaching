@@ -1,0 +1,18 @@
+/* Shared presentation only; each class owns its independent HTML schedule. */
+:root { color-scheme: light; --ink: #14232d; --accent: #185f72; --muted: #52616b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f7f8; color: var(--ink); font: 18px/1.6 system-ui, sans-serif; }
+main { max-width: 860px; margin: auto; padding: 48px 28px; }
+a { color: var(--accent); text-underline-offset: 4px; }
+a:focus-visible { outline: 3px solid #b05819; outline-offset: 5px; }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; }
+.course { color: var(--accent); font-weight: 700; }
+header { margin-bottom: 36px; }
+header p:not(.course) { color: var(--muted); }
+.updated { font-size: .9rem; }
+section { border-top: 1px solid #c7d2d7; padding: 18px 0; }
+h2 { font-size: 1.35rem; margin: 0 0 12px; }
+ul { list-style: none; padding: 0; margin: 0; }
+li + li { margin-top: 8px; }
+@media (max-width: 520px) { main { padding: 28px 20px; } }
+@media print { body { background: white; font-size: 11pt; } main { max-width: none; padding: 0; } h2 { break-after: avoid; } li { break-inside: avoid; } header > p:first-child { display: none; } }
