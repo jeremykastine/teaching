@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Topic 1: Multiplication Tables and Divisibility Properties | TSM Lecture Notes</title>
+  <title>Topic 1: Division and Divisibility | TSM Lecture Notes</title>
   <link rel="stylesheet" href="../styles.css?v=20261006-1">
   <script defer src="../solutions.js?v=20261006-1"></script>
   <script src="../mathjax-config.js?v=20261005-2"></script>
@@ -16,20 +16,100 @@
       <a href="topic-02-prime-factorization.html">Next topic</a>
     </nav>
     <p class="series-title">TSM Lecture Notes</p>
-    <h1 id="topic-1-multiplication-tables-and-divisibility-properties">Topic 1: Multiplication Tables and Divisibility Properties</h1>
+    <h1 id="topic-1-multiplication-tables-and-divisibility-properties">Topic 1: Division and Divisibility</h1>
     <p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
 <p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
 
     <h2 id="overview">Overview</h2>
-    <p>Multiplication tables do more than help us multiply quickly. When we count by a number, we generate all of the positive multiples of that number. Looking at those multiples reveals patterns that can sometimes tell us whether a much larger number is divisible by that number without actually doing the division. In this topic, we will discover useful divisibility properties for 2, 5, 10, 3, and 9 by looking for patterns in their multiplication tables. We will also see what happens with 7, where no comparably simple pattern appears.</p>
+    <p>This course assumes that you can perform basic addition, subtraction, and multiplication. Here we develop division: how to write it, how it relates to multiplication by unit fractions, and how repeated divisions can be combined or separated. Then we use multiplication-table patterns to investigate divisibility by 2, 5, 10, 3, and 9, and examine why those same tests do not work for 7.</p>
 
     <h2 id="key-definitions">Key definitions</h2>
+    <p><strong>Quotient:</strong> The result of division. <strong>Divisor:</strong> The number by which we divide; it must be nonzero.</p>
+    <p><strong>Unit fraction:</strong> A fraction with numerator 1 and a positive whole-number denominator. For a positive whole number \(n\), its reciprocal is \(\frac1n\).</p>
+    <p><strong>Repeated division:</strong> Dividing a result again. Without parentheses that change the grouping, successive multiplication and division operations are evaluated from left to right.</p>
     <p><strong>Multiple:</strong> A number obtained by multiplying a given whole number by a whole number.</p>
-    <p><strong>Divisible:</strong> A whole number is divisible by another whole number when the division has remainder 0.</p>
+    <p><strong>Divisible:</strong> A whole number is divisible by a positive whole number when the division has remainder 0.</p>
     <p><strong>Factor:</strong> A whole number that divides another whole number evenly.</p>
     <p><strong>Divisibility property:</strong> A shortcut for deciding whether a number is divisible by another number without carrying out the division.</p>
 
-    <h2 id="multiplication-division-facts">Multiplication and division facts</h2>
+    <h2>Division reverses multiplication</h2>
+<p>Dividing a quantity into equal groups asks how much belongs in each group. Multiplication checks the result: the quotient multiplied by the divisor must give the original quantity. Division by zero is undefined. In this topic our divisors are positive whole numbers.</p>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Use \(6\cdot9=54\) to state the two related division facts.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The product tells us that 54 can be shared into six groups of nine or nine groups of six. Thus \(54\div6=9\) and \(54\div9=6\). Each quotient multiplied by its divisor returns 54. This connection supports divisibility, fraction reduction, factoring, and equation solving.</p>
+</div>
+</section>
+<h2>Ways to write division</h2>
+<p>The division symbol \(\div\), a slash, and a fraction bar can all indicate division. The fraction bar groups the entire numerator and the entire denominator; use parentheses when a slash would otherwise leave the grouping unclear. Fraction notation is also useful for keeping an exact answer when a quotient is not a whole number.</p>
+<p>Dividing by a positive whole number \(n\) is the same as multiplying by the unit fraction \(\frac1n\). Both mean taking one of \(n\) equal parts of the quantity. The symbols \(\times\) and \(\cdot\) both mean multiplication. A dot alone does not mean division; the reciprocal factor makes the multiplication equivalent to division. This rewrite is useful when combining repeated divisions.</p>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Rewrite \(12\div3\) using a slash, a fraction bar, and multiplication by a unit fraction with both multiplication symbols. Evaluate and explain why the forms agree.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Sharing 12 into three equal parts gives 4 in each part. Taking one third of 12 describes the same operation.</p>
+<p class="math display">\[12\div3=12/3=\frac{12}{3}=4\]</p>
+<p class="math display">\[12\times\frac13=12\cdot\frac13=4\]</p>
+<p>The multiplication check is \(4\cdot3=12\). All five forms give the same quotient.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Rewrite \(1\div3\) as a fraction and as multiplication by a unit fraction. Give the exact answer.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>One whole shared into three equal parts gives one third. Taking one third of 1 gives the same amount.</p>
+<p class="math display">\[1\div3=\frac13=1\cdot\frac13\]</p>
+<p>The exact answer is \(\frac13\); no decimal approximation is needed.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Write \(\frac{8+4}{2+1}\) using a slash and using \(\div\), with parentheses to preserve the grouping. Evaluate.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The fraction bar divides the entire numerator by the entire denominator. Parentheses preserve those two groups in horizontal notation.</p>
+<p class="math display">\[\frac{8+4}{2+1}=(8+4)/(2+1)\]</p>
+<p class="math display">\[(8+4)\div(2+1)=12\div3=4\]</p>
+</div>
+</section>
+<h2>Combining and separating repeated divisions</h2>
+<p>Dividing by one positive whole number and then another is equivalent to dividing once by their product. Conversely, division by a product can be separated into successive divisions by its factors. Read an unparenthesized string of divisions from left to right; dividing by a quotient in parentheses is a different operation.</p>
+<p>In unit-fraction notation, multiply the denominators to combine the factors; the numerator stays 1. Taking one equal part of another equal part subdivides the original whole again. This is the fraction arithmetic needed here; general multiplication and division of fractions come later.</p>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Evaluate \(24\div3\div4\) from left to right. Rewrite it as one division and as multiplication by unit fractions, and explain why the forms agree.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>First divide 24 by 3, then divide the result by 4.</p>
+<p class="math display">\[24\div3\div4=8\div4=2\]</p>
+<p>Splitting each of three equal groups into four gives twelve equal groups altogether.</p>
+<p class="math display">\[24\div3\div4=24\div(3\cdot4)=24\div12=2\]</p>
+<p>Each division can also be written as multiplication by a unit fraction.</p>
+<p class="math display">\[24\cdot\frac13\cdot\frac14=24\cdot\frac1{12}=2\]</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Evaluate \(\frac13\cdot\frac14\). Write it as repeated division starting from 1, and explain the denominator of the answer.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>One third of one fourth of a whole is one of twelve equal pieces: divide the whole into fourths, then split each fourth into thirds. Equivalently, divide into thirds and split each third into fourths.</p>
+<p class="math display">\[\frac13\cdot\frac14=1\div3\div4\]</p>
+<p class="math display">\[\frac13\cdot\frac14=\frac1{3\cdot4}=\frac1{12}\]</p>
+<p>The denominators multiply because each subdivision multiplies the number of equal pieces. The numerator remains 1.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Rewrite \(1\div3\div3\div3\) as a product of unit fractions and as one division. Give the exact answer as a fraction.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Replace each division by 3 with multiplication by one third.</p>
+<p class="math display">\[1\div3\div3\div3=\frac13\cdot\frac13\cdot\frac13\]</p>
+<p>Three successive divisions by 3 combine into division by their product.</p>
+<p class="math display">\[1\div3\div3\div3=1\div(3\cdot3\cdot3)\]</p>
+<p class="math display">\[1\div27=\frac1{27}\]</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement"><p>Separate \(60\div12\) into division by 3 followed by division by 4. Evaluate and explain why this preserves the quotient.</p></div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Because \(12=3\cdot4\), division by 12 can be separated into those two successive divisions.</p>
+<p class="math display">\[60\div12=60\div3\div4=20\div4=5\]</p>
+<p>We could also divide by 4 and then by 3. Both orders divide by the same product.</p>
+</div>
+</section>
+    <h2 id="multiplication-division-facts">Multiplication facts for divisibility</h2>
 
 <p>Multiplication describes equal groups. Reversing the order of two factors does not change their product. Division reverses multiplication, so one multiplication fact supplies two related division facts. Practice these facts through <span class="math inline">\(12\cdot12\)</span>, especially those that are not yet automatic.</p>
 <section class="worked-example">
@@ -54,16 +134,7 @@
       </div>
     </section>
 
-    <section class="worked-example">
-      <div class="problem-row"><div class="problem-statement">
-        <p>Use \(6\cdot9=54\) to state the two related division facts.</p>
-      </div></div>
-      <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-        <p>Division reverses multiplication. The fact \(6\cdot9=54\) also gives \(54\div6=9\) and \(54\div9=6\). This connection supports divisibility, fraction reduction, factoring, and equation solving.</p>
-        <p class="math display">\[54\div6=9\quad\text{and}\quad54\div9=6.\]</p>
 
-      </div>
-    </section>
 
     <h2>Divisibility</h2>
 <p>Divisibility is a yes-or-no question about a whole number. When we ask whether a number is divisible by another number, we are asking whether it can be separated into equal groups with nothing left over. If nothing is left over, the answer is yes. If there is a remainder, the answer is no.</p>
@@ -299,3 +370,4 @@
   </main>
 </body>
 </html>
+

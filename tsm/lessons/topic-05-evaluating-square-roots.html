@@ -8,6 +8,22 @@
   <script defer src="../solutions.js?v=20261006-1"></script>
   <script src="../mathjax-config.js?v=20261005-2"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+  <style>
+    .power-table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 18px 0 28px; }
+    .power-table caption { text-align: left; font-weight: bold; margin-bottom: 8px; }
+    .power-table th, .power-table td { border: 1px solid currentColor; padding: 14px 10px; text-align: center; vertical-align: middle; overflow-wrap: anywhere; }
+    .power-table tbody tr { height: 90px; }
+    .power-table .expression-column { width: 19%; }
+    .power-table .base-column { width: 11%; }
+    .power-table .exponent-column { width: 12%; }
+    .power-table .operation-column { width: 42%; }
+    .power-table .answer-column { width: 16%; }
+    @media (max-width: 600px) {
+      .power-table th, .power-table td { padding: 12px 3px; }
+      .power-table thead { font-size: 0.75rem; }
+      .power-table tbody tr { height: 100px; }
+    }
+  </style>
 </head>
 <body>
   <main class="lecture-notes">
@@ -21,50 +37,38 @@
 <p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
 <p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
 <h2 id="overview-4">Overview</h2>
-<p>This topic evaluates powers with positive, zero, and negative integer exponents, including negative and fractional bases. It then connects squaring with square roots, evaluates roots of perfect squares, and distinguishes real and complex answers.</p>
+<p>This topic evaluates powers with positive, zero, and negative integer exponents, including negative bases. It then connects squaring with square roots, evaluates roots of perfect squares, and distinguishes real and complex answers.</p>
 <h2 id="key-definitions-4">Key definitions</h2>
 <p>Base: the quantity being raised to a power. Exponent: for a positive integer exponent, the number of copies of the base used as factors. Power: an expression consisting of a base raised to an exponent. A zero exponent on a nonzero base gives 1; a negative integer exponent gives a reciprocal. Square root: a number that produces the radicand when multiplied by
 itself. Radicand: the expression beneath a radical sign. Perfect square:
 the square of an integer. Imaginary unit: i, defined by i squared equals
 negative 1.</p>
 <h2>Reading powers</h2>
-<p>For a positive integer exponent, the base is the repeated factor and the exponent counts its copies. An expansion writes those factors out; the value is their product. An exponent is not a multiplier of the base. As an exponent decreases by one, divide the preceding value by the nonzero base. Continuing this pattern gives <span class="math inline">\(a^0=1\)</span> for a nonzero base.</p>
+<p>For a positive integer exponent, the base is the repeated factor and the exponent counts its copies. An exponent is not a multiplier of the base. To connect positive, zero, and negative integer exponents, start from 1: multiply by the base for each positive step, do nothing for exponent zero, and divide by the base for each negative step. Zero and negative exponents require a nonzero base.</p>
+<p>As the exponent decreases by one, divide the preceding value by the base. Recall from <a href="topic-01-multiplication-tables-and-divisibility-properties.html">Topic 1: Division and Divisibility</a> that successive divisions combine by multiplying their divisors, or equivalently by multiplying unit fractions.</p>
 <section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Identify the base and exponent, expand, and evaluate <span class="math inline">\(3^4\)</span>.</p>
-</div>
-</div>
+<div class="problem-row"><div class="problem-statement"><p>Complete the table: identify the base and exponent, write the indicated multiplication or division starting from 1, and give the exact final answer. For exponent zero, write “Do nothing.” Use horizontal division symbols for negative exponents and fractions for their final answers. Work from the positive exponents through zero to the negative exponents.</p><table class="power-table"><caption>Powers of 3 — fill in the blank cells</caption><colgroup><col class="expression-column"><col class="base-column"><col class="exponent-column"><col class="operation-column"><col class="answer-column"></colgroup><thead><tr><th scope="col">Exponential expression</th><th scope="col">Base</th><th scope="col">Exponent</th><th scope="col">Multiplication or division indicated</th><th scope="col">Final answer</th></tr></thead><tbody>
+<tr><th scope="row">\(3^{4}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{3}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{2}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{1}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{0}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{-1}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{-2}\)</th><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">\(3^{-3}\)</th><td></td><td></td><td></td><td></td></tr>
+</tbody></table></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The base is 3 and the exponent is 4, so use four factors of 3.</p>
-<p><span class="math display">\[3^4=3\cdot3\cdot3\cdot3=81\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Use the exponent pattern to determine the value of 3 raised to the
-zero power.</p>
-</div>
-
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Begin with <span class="math inline">\(3^3=27\)</span>. Each decrease of one in the exponent divides the value by 3.</p>
-<p>The next power is <span class="math inline">\(3^2=9\)</span> (<span class="math inline">\(27\div3=9\)</span>), followed by <span class="math inline">\(3^1=3\)</span> (<span class="math inline">\(9\div3=3\)</span>).</p>
-<p>Continue that pattern from exponent 1 to exponent 0 (<span class="math inline">\(3\div3=1\)</span>):</p>
-<p><span class="math display">\[3^0=1\]</span></p>
-<p>An exponent of zero does not mean multiplying the base by zero. The value must fit the same divide-by-3 pattern.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Use the exponent pattern to evaluate <span class="math inline">\(3^{-3}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Starting at <span class="math inline">\(3^0=1\)</span>, divide by 3 each time the exponent decreases by one. This gives <span class="math inline">\(3^{-1}=\frac13\)</span> and then <span class="math inline">\(3^{-2}=\frac19\)</span>. Dividing by 3 once more gives the requested value:</p>
-<p><span class="math display">\[3^{-3}=\frac1{27}\]</span></p>
+<p>The base is 3 in every row. Starting from 1, a positive exponent counts multiplications by 3. The initial factor 1 does not change the product; for example, \(1\times3\times3\times3\times3\) is the usual four-factor expansion of \(3^4\).</p>
+<p>Each step down divides the previous answer by 3. At exponent zero, do nothing to the starting value 1, so the answer remains 1. Below zero, divide 1 by 3 the indicated number of times. For example, \(1\div3\div3=1\div9=\frac19\), using the repeated-division rule from Topic 1. A negative exponent indicates division, not a negative answer.</p><table class="power-table"><caption>Completed power table</caption><colgroup><col class="expression-column"><col class="base-column"><col class="exponent-column"><col class="operation-column"><col class="answer-column"></colgroup><thead><tr><th scope="col">Exponential expression</th><th scope="col">Base</th><th scope="col">Exponent</th><th scope="col">Multiplication or division indicated</th><th scope="col">Final answer</th></tr></thead><tbody>
+<tr><th scope="row">\(3^{4}\)</th><td>3</td><td>4</td><td>\(1\times3\times3\times3\times3\)</td><td>\(81\)</td></tr>
+<tr><th scope="row">\(3^{3}\)</th><td>3</td><td>3</td><td>\(1\times3\times3\times3\)</td><td>\(27\)</td></tr>
+<tr><th scope="row">\(3^{2}\)</th><td>3</td><td>2</td><td>\(1\times3\times3\)</td><td>\(9\)</td></tr>
+<tr><th scope="row">\(3^{1}\)</th><td>3</td><td>1</td><td>\(1\times3\)</td><td>\(3\)</td></tr>
+<tr><th scope="row">\(3^{0}\)</th><td>3</td><td>0</td><td>Do nothing</td><td>\(1\)</td></tr>
+<tr><th scope="row">\(3^{-1}\)</th><td>3</td><td>-1</td><td>\(1\div3\)</td><td>\(\frac1{3}\)</td></tr>
+<tr><th scope="row">\(3^{-2}\)</th><td>3</td><td>-2</td><td>\(1\div3\div3\)</td><td>\(\frac1{9}\)</td></tr>
+<tr><th scope="row">\(3^{-3}\)</th><td>3</td><td>-3</td><td>\(1\div3\div3\div3\)</td><td>\(\frac1{27}\)</td></tr>
+</tbody></table>
 </div>
 </section>
 <section class="worked-example">
@@ -170,73 +174,6 @@ is applied afterward.</p>
 
 </div>
 </section>
-<h2>Fractional bases</h2><p>A fraction in parentheses is one complete base. For a positive exponent, repeat the entire fraction as a factor. For a negative exponent, take its reciprocal and use the corresponding positive exponent. The original base must be nonzero.</p>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{2}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Multiply the numerator factors together and the denominator factors together.</p>
-<p><span class="math display">\[\left(\frac54\right)^{2}=\frac{5^2}{4^2}=\frac{25}{16}\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{3}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Multiply the numerator factors together and the denominator factors together.</p>
-<p><span class="math display">\[\left(\frac54\right)^{3}=\frac{5^3}{4^3}=\frac{125}{64}\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{0}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The base is nonzero, so its zero power is 1.</p>
-<p><span class="math display">\[\left(\frac54\right)^{0}=1\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{-1}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p>
-<p><span class="math display">\[\left(\frac54\right)^{-1}=\left(\frac45\right)^{1}=\frac{4}{5}\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{-2}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p>
-<p><span class="math display">\[\left(\frac54\right)^{-2}=\left(\frac45\right)^{2}=\frac{16}{25}\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(\left(\frac54\right)^{-3}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Reverse the fraction and make the exponent positive.</p>
-<p><span class="math display">\[\left(\frac54\right)^{-3}=\left(\frac45\right)^{3}=\frac{64}{125}\]</span></p>
-</div>
-</section>
 <h2>Principal square roots</h2>
 <p>Squaring is raising a number to the second power. Finding a square root reverses that operation. The principal square root of a nonnegative number is the nonnegative number whose square is the original number.</p>
 <h2>Perfect squares</h2>
@@ -316,3 +253,4 @@ is applied afterward.</p>
   </main>
 </body>
 </html>
+

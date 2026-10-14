@@ -194,10 +194,10 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Keep all 37 topic numbers and established filenames. Title Topic 5 **Evaluating Powers and Square Roots**, retaining its existing URL and heading anchor so prior links still work.
 - In Topic 2, briefly introduce positive-integer exponent notation as shorthand for repeated prime factors; identify the base and explain that the exponent counts factors, not multiplication by the exponent. Link to Topic 5 for the fuller treatment.
 - Move the numerical-power instruction and all 16 related worked examples from Topic 7 into Topic 5, before the square-root material. Begin with identifying the base/exponent, expansion, and evaluation of a positive integer power. Then extend the decreasing-exponent pattern to zero and negative exponents.
-- Cover negative bases with even and odd exponents, parentheses versus an outside negative sign (positive, zero, and negative exponents), and fractional bases with positive, zero, and negative exponents. State that zero and negative exponent rules require a nonzero base. Negative exponents indicate reciprocals, not negative values.
+- Cover negative bases with even and odd exponents, parentheses versus an outside negative sign (positive, zero, and negative exponents), with integer bases. Omit the standalone numerical fractional-base examples from Topic 5; algebraic quotient powers remain in Topic 10. State that zero and negative exponent rules require a nonzero base. Negative exponents indicate reciprocals, not negative values.
 - Connect squaring to square roots and retain all five square-root examples, the principal-root versus equation-solution distinction, and the real-only versus complex-context guidance.
 - Topic 7 applies powers in mixed expressions and substitution rather than repeating the standalone power lesson. Its overview links back to Topic 5. Its example set and internal course split are governed by Section 21 below.
-- Keep the existing reveal behavior and renumber problems automatically within each topic. Topic 5 has 21 worked examples; Topic 7 now has 16 under Section 21. Allow more than one meeting for Topic 5 within the general schedule.
+- Keep the existing reveal behavior and renumber problems automatically within each topic. Topic 5 has 13 worked examples; Topic 7 now has 16 under Section 21. Allow more than one meeting for Topic 5 within the general schedule.
 - Update the contents page, co-listed schedule, homework descriptions and affected PDFs, and assessment prerequisite guidance. This relocation does not redefine test question types or point structures.
 
 
@@ -213,3 +213,14 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Every actual division and every final value in Topic 7 must be an integer, including both quadratic-formula branches. Integer results may be negative or zero. The integer formula results also satisfy the requirement for rational solutions. Do not introduce noninteger fraction arithmetic in this topic.
 - In multi-input or two-branch comparison examples, put every requested input or branch in the visible problem and explicitly compare results in the solution. Supporting calculations belong inline; displayed rewrites retain the complete expression for the input or branch being evaluated.
 - Update the index, schedule, and course documentation to make the shared/099 boundary clear. This redesign does not change test question maps or point structures; the earlier TSM 098 Arithmetic Test quadratic-evaluation requirement remains separately specified.
+
+
+
+## 22. Division foundation and power table (October 14, 2026)
+
+- Title Topic 1 **Division and Divisibility**, preserving its filename and heading anchor. State basic addition, subtraction, and multiplication as prerequisites.
+- Begin with division reversing multiplication; notation using a division symbol, slash, and fraction bar; and division by a positive whole number as multiplication by its unit-fraction reciprocal. Explain the roles of grouping, exact fractions, and both multiplication symbols. Exclude zero divisors.
+- Teach repeated division from left to right, combining successive divisors by multiplication, separating division by a product, and multiplying unit fractions by multiplying their denominators. Include unequal divisors and three repeated divisions by 3. Preserve all existing multiplication facts, table-pattern investigations, and divisibility examples after the division instruction.
+- Topic 5 Problem 1 contains one large visible table with rows from 3^4 through 3^(-3). Prefill only the exponential-expression column; leave base, exponent, multiplication/division indicated, and final-answer cells blank with ample writing room. Supply a completed copy inside its independently toggled solution.
+- Establish 1 as the starting value. Show positive powers as repeated multiplication from 1, zero as **Do nothing** with answer 1, and negative powers as horizontal repeated division from 1. Give fractional final answers. Refer to Topic 1 for the supporting fraction facts.
+- Replace the former first three separate power examples with this table. Remove the six numerical fractional-base examples without relocating them. Preserve all integer-base/sign/parentheses and square-root examples.
