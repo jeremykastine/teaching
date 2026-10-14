@@ -8,6 +8,8 @@ These are homework sets, not five- or ten-question tests. The newer lecture-note
 
 The topic table of contents stays in its original continuous order without unit headings. A homework section lists exact topics for each course; completion-point lesson pages also link the relevant packet. Existing independent-practice packets remain distinct from homework.
 
+Topic 5 is now **Evaluating Powers and Square Roots**: its power examples precede roots, and Topic 7 applies powers in mixed expressions. TSM 098 Homework 2 and TSM 099 Homework 1 already cover the affected topic ranges, so their problem sets and completion points remain appropriate; their descriptions explicitly identify powers. Topic 2 supplies the brief exponent-notation introduction needed for Homework 1 prime factorizations.
+
 ## Format and workload
 
 Match the approved Math 101 Chapter 1 approach: compact US Letter PDFs with no reserved working space or separate answer sheets. Students complete and show all work on separate paper, check and correct it, complete the Blackboard self-evaluation, upload one clear photo of their best representative page, and retain all work. Each set targets roughly 45-50 minutes of problem work plus 10-15 minutes of checking and submission. Times are planning estimates, not deadlines or measured student completion times. No points or test grading structure are imposed.
@@ -17,14 +19,14 @@ Match the approved Math 101 Chapter 1 approach: compact US Letter PDFs with no r
 | Assignment | Coverage | Emphasis | Problems | Estimated problem work |
 |---|---|---|---:|---:|
 | TSM 098 Homework 1 | Topics 1-4 | Number structure, signs, and fraction reduction | 17 | 48 min |
-| TSM 098 Homework 2 | Topics 5, 7-8 | Square roots, order of operations, and evaluation | 16 | 47 min |
+| TSM 098 Homework 2 | Topics 5, 7-8 | Powers, square roots, and expression evaluation | 16 | 47 min |
 | TSM 098 Homework 3 | Topics 9-12 | Combining terms, distribution, and polynomial products | 17 | 48 min |
 | TSM 098 Homework 4 | Topics 13-15 | Common factors and introductory factoring | 17 | 50 min |
 | TSM 098 Homework 5 | Topics 19, 21-22 | Numerical fraction operations | 18 | 48 min |
 | TSM 098 Homework 6 | Topics 24-26, 28 | Linear equations, parentheses, and fractions | 15 | 48 min |
 | TSM 098 Homework 7 | Topics 30-31, 33 | Coordinate graphs and linear systems | 11 | 48 min |
 | TSM 098 Homework 8 | Topics 35-37 | Percents and equations in context | 12 | 48 min |
-| TSM 099 Homework 1 | Topics 1-8 | Number structure, radicals, and evaluation | 17 | 50 min |
+| TSM 099 Homework 1 | Topics 1-8 | Number structure, powers, radicals, and evaluation | 17 | 50 min |
 | TSM 099 Homework 2 | Topics 9-12 | Polynomial structure and operations | 16 | 48 min |
 | TSM 099 Homework 3 | Topics 13-17 | Common factors and advanced factoring | 14 | 50 min |
 | TSM 099 Homework 4 | Topics 18-20 | Simplifying, multiplying, and dividing fractions | 12 | 48 min |

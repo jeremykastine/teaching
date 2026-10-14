@@ -861,3 +861,7 @@ Before returning tests created from this guide, the generating system must confi
 - Formatting is readable, notation is unambiguous, graphs are exact, and no answer-key content appears visibly on a student page.
 
 **Source basis:** This guide compiles the instructor's assessment-design specifications, the cross-listed TSM 098-099 curriculum schedule, and the institutional TSM Assessment Procedure. It is intended to be reused as a controlling prompt for future AI-generated assessment batches.
+
+## Instructional prerequisite alignment (October 14, 2026)
+
+The 37-topic numbering is unchanged. Topic 2 briefly introduces positive-integer exponent notation in prime factorizations. Topic 5, **Evaluating Powers and Square Roots**, now teaches numerical powers (positive, zero, and negative integer exponents, negative bases, parentheses, and fractional bases) before square roots. Topic 6 continues radical simplification for TSM 099; Topic 7 applies powers in mixed expressions and substitution. Use these locations when referring students to prerequisite instruction for arithmetic tests and practice tests. This instructional relocation does not change the assessment question-unit maps, difficulty controls, or point structures above.

@@ -3,7 +3,7 @@
 This schedule is designed for a cross-listed TSM 098–099 course in which students enrolled in TSM 098 and TSM 099 share the same class period but do not always complete the same material. Most topics are taught together, while some are required only for one course; when the two groups differ, the schedule indicates what each group should be working on. Even when both courses are covering the same topic, the expected level of difficulty, complexity, and depth of the problems may differ substantially between TSM 098 and TSM 099 students. The weeks shown are intended as a general pacing framework rather than rigid deadlines. Likewise, any test listed in a particular week represents the earliest point at which a student may reasonably begin taking that test. Students may continue taking or retaking available tests throughout the remainder of the quarter, up to the end of the course.
 
 
-The topic numbers and course labels below match the current 37-topic lecture notes. Independent-practice packets have three core pages and an extension page; use remaining instructional time for corrections and extensions. Time estimates are planning guides, not deadlines.
+The topic numbers and course labels below match the current 37-topic lecture notes. Independent-practice packets have three core pages and an extension page; use remaining instructional time for corrections and extensions. Time estimates are planning guides, not deadlines. Topic 2 briefly introduces positive-integer exponent notation for repeated prime factors. Topic 5 provides the full treatment of numerical powers before square roots; Topic 7 applies that foundation to mixed expressions. Topic 5 may span more than one meeting without changing the topic numbering or the general Week 2 grouping.
 
 Week 1
 Topic 1 - Multiplication Tables and Divisibility Properties (TSM 098 and TSM 099)  
@@ -12,7 +12,7 @@ Topic 3 - Signed Numbers, Including Dividing by Zero (TSM 098 and TSM 099)
 Topic 4 - Simplifying Fractions (TSM 098 and TSM 099)  
 
 Week 2
-Topic 5 - Evaluating Square Roots (TSM 098 and TSM 099)  
+Topic 5 - Evaluating Powers and Square Roots (TSM 098 and TSM 099)\
 Topic 6 - Simplifying Square Roots (TSM 099 only)  
 TSM 098: Review simplifying numerical fractions and creating equivalent fractions. [Practice PDF](../practice/independent/topic-06-tsm-098-practice.pdf); [answers](../practice/independent/topic-06-tsm-098-answers.pdf).  
 Topic 7 - Order of Operations (TSM 098 and TSM 099)  

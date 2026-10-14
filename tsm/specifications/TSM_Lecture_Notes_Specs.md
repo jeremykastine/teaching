@@ -57,7 +57,7 @@ More than one problem may share a section only when the problems are intentional
 
 Do not use the compare/contrast exception merely to save space.
 
-Topic 5 must contain five separate worked-example sections: evaluate `sqrt(36)`, evaluate `sqrt(81)`, evaluate `sqrt(-25)` in terms of `i`, evaluate `sqrt(-121)` in terms of `i`, and compare evaluating `sqrt(9)` with solving `x^2 = 9`. Give each section its own complete problem statement and independently toggled solution area. Do not combine these into one large exercise.
+After the power examples, Topic 5 must retain these five separate square-root worked-example sections: evaluate `sqrt(36)`, evaluate `sqrt(81)`, evaluate `sqrt(-25)` in terms of `i`, evaluate `sqrt(-121)` in terms of `i`, and compare evaluating `sqrt(9)` with solving `x^2 = 9`. Give each section its own complete problem statement and independently toggled solution area. Do not combine these into one large exercise.
 
 ## 7. Brief background followed by problems and solutions
 
@@ -187,3 +187,15 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Explain that a negative radicand has no real square root. In a real-only problem or application, “no real value” is a complete answer; proceeding to imaginary numbers is not required.
 - Explain that other applications and classroom directions permit or require complex answers. In that setting, use the imaginary unit and continue. The context determines the intended number system; lack of a real value does not imply lack of a complex value.
 - Keep the existing problems that explicitly request answers in terms of `i`, and explain in their solutions why that instruction calls for continuing beyond the real numbers. Keep the general distinction in visible background before those problems.
+
+
+## 20. Powers before square roots (October 14, 2026)
+
+- Keep all 37 topic numbers and established filenames. Title Topic 5 **Evaluating Powers and Square Roots**, retaining its existing URL and heading anchor so prior links still work.
+- In Topic 2, briefly introduce positive-integer exponent notation as shorthand for repeated prime factors; identify the base and explain that the exponent counts factors, not multiplication by the exponent. Link to Topic 5 for the fuller treatment.
+- Move the numerical-power instruction and all 16 related worked examples from Topic 7 into Topic 5, before the square-root material. Begin with identifying the base/exponent, expansion, and evaluation of a positive integer power. Then extend the decreasing-exponent pattern to zero and negative exponents.
+- Cover negative bases with even and odd exponents, parentheses versus an outside negative sign (positive, zero, and negative exponents), and fractional bases with positive, zero, and negative exponents. State that zero and negative exponent rules require a nonzero base. Negative exponents indicate reciprocals, not negative values.
+- Connect squaring to square roots and retain all five square-root examples, the principal-root versus equation-solution distinction, and the real-only versus complex-context guidance.
+- Topic 7 retains all seven mixed-operation and substitution examples. Its overview links back to Topic 5. Teach grouping, including fraction bars, precedence, and valid independent computations here rather than repeating the standalone power lesson.
+- Keep the existing reveal behavior and renumber problems automatically within each topic. Topic 5 now has 21 worked examples; Topic 7 has seven. Allow more than one meeting for Topic 5 within the general schedule.
+- Update the contents page, co-listed schedule, homework descriptions and affected PDFs, and assessment prerequisite guidance. This relocation does not redefine test question types or point structures.
