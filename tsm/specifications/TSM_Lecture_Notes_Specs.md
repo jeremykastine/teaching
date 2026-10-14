@@ -47,9 +47,9 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 
 ## 6. One-problem rule and compare/contrast exception
 
-Normally, place only one problem in a worked-example section.
+Normally, place only one problem in a worked-example section. Topic 5 Problems 2 and 4 are explicitly requested multipart exercises; keep each exercise and its complete solution in one section, with matching lettered parts.
 
-More than one problem may share a section only when the problems are intentionally presented as a comparison. In that case:
+Apart from the explicitly requested multipart exercises above, more than one problem may share a section only when the problems are intentionally presented as a comparison. In that case:
 
 - begin with wording such as `Compare and contrast the following two problems.` or `Compare and contrast the following four problems.`;
 - place all compared problem statements in the problem statement, before the solution area; and
@@ -193,11 +193,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 
 - Keep all 37 topic numbers and established filenames. Title Topic 5 **Evaluating Powers and Square Roots**, retaining its existing URL and heading anchor so prior links still work.
 - In Topic 2, briefly introduce positive-integer exponent notation as shorthand for repeated prime factors; identify the base and explain that the exponent counts factors, not multiplication by the exponent. Link to Topic 5 for the fuller treatment.
-- Move the numerical-power instruction and all 16 related worked examples from Topic 7 into Topic 5, before the square-root material. Begin with identifying the base/exponent, expansion, and evaluation of a positive integer power. Then extend the decreasing-exponent pattern to zero and negative exponents.
+- Keep numerical-power instruction in Topic 5, before the square-root material; Section 22 governs its current four-problem arrangement. Begin with identifying the base/exponent, expansion, and evaluation of a positive integer power. Then extend the decreasing-exponent pattern to zero and negative exponents.
 - Cover negative bases with even and odd exponents, parentheses versus an outside negative sign (positive, zero, and negative exponents), with integer bases. Omit the standalone numerical fractional-base examples from Topic 5; algebraic quotient powers remain in Topic 10. State that zero and negative exponent rules require a nonzero base. Negative exponents indicate reciprocals, not negative values.
 - Connect squaring to square roots and retain all five square-root examples, the principal-root versus equation-solution distinction, and the real-only versus complex-context guidance.
 - Topic 7 applies powers in mixed expressions and substitution rather than repeating the standalone power lesson. Its overview links back to Topic 5. Its example set and internal course split are governed by Section 21 below.
-- Keep the existing reveal behavior and renumber problems automatically within each topic. Topic 5 has 13 worked examples; Topic 7 now has 16 under Section 21. Allow more than one meeting for Topic 5 within the general schedule.
+- Keep the existing reveal behavior and renumber problems automatically within each topic. Topic 5 has nine worked examples (four power exercises followed by five square-root exercises); Topic 7 now has 16 under Section 21. Allow more than one meeting for Topic 5 within the general schedule.
 - Update the contents page, co-listed schedule, homework descriptions and affected PDFs, and assessment prerequisite guidance. This relocation does not redefine test question types or point structures.
 
 
@@ -219,8 +219,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 ## 22. Division foundation and power table (October 14, 2026)
 
 - Title Topic 1 **Division and Divisibility**, preserving its filename and heading anchor. State basic addition, subtraction, and multiplication as prerequisites.
-- Begin with division reversing multiplication; notation using a division symbol, slash, and fraction bar; and division by a positive whole number as multiplication by its unit-fraction reciprocal. Explain the roles of grouping, exact fractions, and both multiplication symbols. Exclude zero divisors.
-- Teach repeated division from left to right, combining successive divisors by multiplication, separating division by a product, and multiplying unit fractions by multiplying their denominators. Include unequal divisors and three repeated divisions by 3. Preserve all existing multiplication facts, table-pattern investigations, and divisibility examples after the division instruction.
+- Begin with division reversing multiplication; notation using a division symbol, slash, and fraction bar; and expressing a division with a fraction bar to keep an exact answer. Explain grouping. Defer unit-fraction terminology and division as multiplication by a reciprocal until the fuller treatment of fractions later in the course. Exclude zero divisors.
+- Teach **successive divisions** from left to right, combining them into one division by the product of the divisors and separating one division by a product into successive divisions by its factors. Keep this instruction in Topic 1 alongside divisibility, without unit-fraction multiplication. Include unequal divisors, three successive divisions by 3, and a division-by-6 example separated into division by 2 followed by division by 3; explain that the first quotient is divisible by the second factor. Preserve all existing multiplication facts, table-pattern investigations, and divisibility examples after the division instruction.
 - Topic 5 Problem 1 contains one large visible table with rows from 3^4 through 3^(-3). Prefill only the exponential-expression column; leave base, exponent, multiplication/division indicated, and final-answer cells blank. Keep rows content-sized with only 3px of vertical cell padding and no fixed row height, on desktop and mobile. Supply a completed copy inside its independently toggled solution.
-- Establish 1 as the starting value. Show positive powers as repeated multiplication from 1, zero as **Do nothing** with answer 1, and negative powers as horizontal repeated division from 1. Give fractional final answers. Refer to Topic 1 for the supporting fraction facts.
-- Replace the former first three separate power examples with this table. Remove the six numerical fractional-base examples without relocating them. Preserve all integer-base/sign/parentheses and square-root examples.
+- Establish 1 as the starting value. Show positive powers as repeated multiplication from 1, zero as **Do nothing** with answer 1, and negative powers as horizontal repeated division from 1. Give fractional final answers. Refer to Topic 1 for combining and separating successive divisions, using division notation.
+- Topic 5 Problem 2 is a four- or five-part standalone exercise using assorted positive integer bases and positive, zero, and negative integer exponents in a mixed order. Use no negative bases or outside minus signs. Give exact fractional answers where needed and complete worked solutions for every part.
+- Topic 5 Problem 3 is a two-column comparison table: `-5^n` on the left and `(-5)^n` on the right, for exponents 3, 2, 1, 0, -1, -2 in that order. Left-align the expression in each cell, keep rows content-sized, and provide a completed comparison table with explanations in its independently toggled solution.
+- Topic 5 Problem 4 is a four- or five-part standalone exercise mixing negative bases in parentheses and outside minus signs, with assorted integer bases and positive, zero, and negative integer exponents. Ask students to identify the base and evaluate; show all parts and complete worked solutions.
+- These four power exercises replace the previous standalone power examples. Keep the five existing square-root exercises as Problems 5–9, with their individual solutions. Omit numerical fractional-base examples without relocating them.

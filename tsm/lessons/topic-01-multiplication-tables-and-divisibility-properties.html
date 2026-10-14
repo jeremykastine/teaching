@@ -21,12 +21,11 @@
 <p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
 
     <h2 id="overview">Overview</h2>
-    <p>This course assumes that you can perform basic addition, subtraction, and multiplication. Here we develop division: how to write it, how it relates to multiplication by unit fractions, and how repeated divisions can be combined or separated. Then we use multiplication-table patterns to investigate divisibility by 2, 5, 10, 3, and 9, and examine why those same tests do not work for 7.</p>
+    <p>This course assumes that you can perform basic addition, subtraction, and multiplication. Here we develop division: how to write it, how successive divisions can be combined or separated, and how that connects to divisibility. Then we use multiplication-table patterns to investigate divisibility by 2, 5, 10, 3, and 9, and examine why those same tests do not work for 7.</p>
 
     <h2 id="key-definitions">Key definitions</h2>
     <p><strong>Quotient:</strong> The result of division. <strong>Divisor:</strong> The number by which we divide; it must be nonzero.</p>
-    <p><strong>Unit fraction:</strong> A fraction with numerator 1 and a positive whole-number denominator. For a positive whole number \(n\), its reciprocal is \(\frac1n\).</p>
-    <p><strong>Repeated division:</strong> Dividing a result again. Without parentheses that change the grouping, successive multiplication and division operations are evaluated from left to right.</p>
+    <p><strong>Successive divisions:</strong> Dividing a result again. Without parentheses that change the grouping, successive multiplication and division operations are evaluated from left to right.</p>
     <p><strong>Multiple:</strong> A number obtained by multiplying a given whole number by a whole number.</p>
     <p><strong>Divisible:</strong> A whole number is divisible by a positive whole number when the division has remainder 0.</p>
     <p><strong>Factor:</strong> A whole number that divides another whole number evenly.</p>
@@ -42,21 +41,19 @@
 </section>
 <h2>Ways to write division</h2>
 <p>The division symbol \(\div\), a slash, and a fraction bar can all indicate division. The fraction bar groups the entire numerator and the entire denominator; use parentheses when a slash would otherwise leave the grouping unclear. Fraction notation is also useful for keeping an exact answer when a quotient is not a whole number.</p>
-<p>Dividing by a positive whole number \(n\) is the same as multiplying by the unit fraction \(\frac1n\). Both mean taking one of \(n\) equal parts of the quantity. The symbols \(\times\) and \(\cdot\) both mean multiplication. A dot alone does not mean division; the reciprocal factor makes the multiplication equivalent to division. This rewrite is useful when combining repeated divisions.</p>
 <section class="worked-example">
-<div class="problem-row"><div class="problem-statement"><p>Rewrite \(12\div3\) using a slash, a fraction bar, and multiplication by a unit fraction with both multiplication symbols. Evaluate and explain why the forms agree.</p></div></div>
+<div class="problem-row"><div class="problem-statement"><p>Rewrite \(12\div3\) using a slash and a fraction bar. Evaluate and explain why the forms agree.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Sharing 12 into three equal parts gives 4 in each part. Taking one third of 12 describes the same operation.</p>
+<p>Sharing 12 into three equal parts gives 4 in each part. Each notation describes that same division.</p>
 <p class="math display">\[12\div3=12/3=\frac{12}{3}=4\]</p>
-<p class="math display">\[12\times\frac13=12\cdot\frac13=4\]</p>
-<p>The multiplication check is \(4\cdot3=12\). All five forms give the same quotient.</p>
+<p>The multiplication check is \(4\cdot3=12\). All three forms give the same quotient.</p>
 </div>
 </section>
 <section class="worked-example">
-<div class="problem-row"><div class="problem-statement"><p>Rewrite \(1\div3\) as a fraction and as multiplication by a unit fraction. Give the exact answer.</p></div></div>
+<div class="problem-row"><div class="problem-statement"><p>Rewrite \(1\div3\) using a fraction bar. Give the exact answer.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>One whole shared into three equal parts gives one third. Taking one third of 1 gives the same amount.</p>
-<p class="math display">\[1\div3=\frac13=1\cdot\frac13\]</p>
+<p>One whole shared into three equal parts gives one third. A fraction bar records this division exactly.</p>
+<p class="math display">\[1\div3=\frac13\]</p>
 <p>The exact answer is \(\frac13\); no decimal approximation is needed.</p>
 </div>
 </section>
@@ -68,37 +65,32 @@
 <p class="math display">\[(8+4)\div(2+1)=12\div3=4\]</p>
 </div>
 </section>
-<h2>Combining and separating repeated divisions</h2>
-<p>Dividing by one positive whole number and then another is equivalent to dividing once by their product. Conversely, division by a product can be separated into successive divisions by its factors. Read an unparenthesized string of divisions from left to right; dividing by a quotient in parentheses is a different operation.</p>
-<p>In unit-fraction notation, multiply the denominators to combine the factors; the numerator stays 1. Taking one equal part of another equal part subdivides the original whole again. This is the fraction arithmetic needed here; general multiplication and division of fractions come later.</p>
+<h2>Combining and separating successive divisions</h2>
+<p>Dividing by one positive whole number and then another is equivalent to dividing once by their product. Conversely, a single division by a product can be separated into successive divisions by its factors. Read an unparenthesized string of divisions from left to right; dividing by a quotient in parentheses is a different operation.</p>
+<p>This connects division to divisibility: if a whole number is divisible by a product, dividing it by one factor gives a whole-number quotient that is divisible by the other factor. Successive divisions by those factors therefore come out evenly.</p>
 <section class="worked-example">
-<div class="problem-row"><div class="problem-statement"><p>Evaluate \(24\div3\div4\) from left to right. Rewrite it as one division and as multiplication by unit fractions, and explain why the forms agree.</p></div></div>
+<div class="problem-row"><div class="problem-statement"><p>Evaluate \(24\div3\div4\) from left to right. Combine the successive divisions into one division, and explain why the quotient stays the same.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
 <p>First divide 24 by 3, then divide the result by 4.</p>
 <p class="math display">\[24\div3\div4=8\div4=2\]</p>
-<p>Splitting each of three equal groups into four gives twelve equal groups altogether.</p>
+<p>Splitting each of three equal groups into four gives twelve equal groups altogether. Multiply the divisors to combine the divisions.</p>
 <p class="math display">\[24\div3\div4=24\div(3\cdot4)=24\div12=2\]</p>
-<p>Each division can also be written as multiplication by a unit fraction.</p>
-<p class="math display">\[24\cdot\frac13\cdot\frac14=24\cdot\frac1{12}=2\]</p>
 </div>
 </section>
 <section class="worked-example">
-<div class="problem-row"><div class="problem-statement"><p>Evaluate \(\frac13\cdot\frac14\). Write it as repeated division starting from 1, and explain the denominator of the answer.</p></div></div>
+<div class="problem-row"><div class="problem-statement"><p>Separate \(42\div6\) into division by 2 followed by division by 3. Evaluate, and explain how this relates to divisibility by 6.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>One third of one fourth of a whole is one of twelve equal pieces: divide the whole into fourths, then split each fourth into thirds. Equivalently, divide into thirds and split each third into fourths.</p>
-<p class="math display">\[\frac13\cdot\frac14=1\div3\div4\]</p>
-<p class="math display">\[\frac13\cdot\frac14=\frac1{3\cdot4}=\frac1{12}\]</p>
-<p>The denominators multiply because each subdivision multiplies the number of equal pieces. The numerator remains 1.</p>
+<p>Since \(6=2\cdot3\), division by 6 can be separated into those two successive divisions.</p>
+<p class="math display">\[42\div6=42\div2\div3=21\div3=7\]</p>
+<p>Forty-two is divisible by 6. Dividing it by 2 gives 21, which is divisible by 3. Both divisions come out evenly, and their combined effect is division by 6.</p>
 </div>
 </section>
 <section class="worked-example">
-<div class="problem-row"><div class="problem-statement"><p>Rewrite \(1\div3\div3\div3\) as a product of unit fractions and as one division. Give the exact answer as a fraction.</p></div></div>
+<div class="problem-row"><div class="problem-statement"><p>Combine \(1\div3\div3\div3\) into one division. Give the exact answer as a fraction.</p></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Replace each division by 3 with multiplication by one third.</p>
-<p class="math display">\[1\div3\div3\div3=\frac13\cdot\frac13\cdot\frac13\]</p>
-<p>Three successive divisions by 3 combine into division by their product.</p>
-<p class="math display">\[1\div3\div3\div3=1\div(3\cdot3\cdot3)\]</p>
-<p class="math display">\[1\div27=\frac1{27}\]</p>
+<p>Three successive divisions by 3 combine into division by the product of the three divisors.</p>
+<p class="math display">\[1\div3\div3\div3=1\div(3\cdot3\cdot3)=1\div27=\frac1{27}\]</p>
+<p>The fraction bar expresses the final division exactly; no decimal approximation is needed.</p>
 </div>
 </section>
 <section class="worked-example">

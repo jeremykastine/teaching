@@ -17,6 +17,9 @@
     .power-table .exponent-column { width: 12%; }
     .power-table .operation-column { width: 42%; }
     .power-table .answer-column { width: 16%; }
+    .power-table.sign-table th, .power-table.sign-table td { width: 50%; text-align: left; }
+    .power-parts { padding-left: 1.6rem; }
+    .power-parts li { margin-bottom: 12px; }
     @media (max-width: 600px) {
       .power-table th, .power-table td { padding: 3px 3px; }
       .power-table thead { font-size: 0.75rem; }
@@ -43,7 +46,7 @@ the square of an integer. Imaginary unit: i, defined by i squared equals
 negative 1.</p>
 <h2>Reading powers</h2>
 <p>For a positive integer exponent, the base is the repeated factor and the exponent counts its copies. An exponent is not a multiplier of the base. To connect positive, zero, and negative integer exponents, start from 1: multiply by the base for each positive step, do nothing for exponent zero, and divide by the base for each negative step. Zero and negative exponents require a nonzero base.</p>
-<p>As the exponent decreases by one, divide the preceding value by the base. Recall from <a href="topic-01-multiplication-tables-and-divisibility-properties.html">Topic 1: Division and Divisibility</a> that successive divisions combine by multiplying their divisors, or equivalently by multiplying unit fractions.</p>
+<p>As the exponent decreases by one, divide the preceding value by the base. Recall from <a href="topic-01-multiplication-tables-and-divisibility-properties.html">Topic 1: Division and Divisibility</a> that successive divisions combine into a single division by the product of their divisors, and division by a product can be separated into successive divisions.</p>
 <section class="worked-example">
 <div class="problem-row"><div class="problem-statement"><p>Complete the table: identify the base and exponent, write the indicated multiplication or division starting from 1, and give the exact final answer. For exponent zero, write “Do nothing.” Use horizontal division symbols for negative exponents and fractions for their final answers. Work from the positive exponents through zero to the negative exponents.</p><table class="power-table"><caption>Powers of 3 — fill in the blank cells</caption><colgroup><col class="expression-column"><col class="base-column"><col class="exponent-column"><col class="operation-column"><col class="answer-column"></colgroup><thead><tr><th scope="col">Exponential expression</th><th scope="col">Base</th><th scope="col">Exponent</th><th scope="col">Multiplication or division indicated</th><th scope="col">Final answer</th></tr></thead><tbody>
 <tr><th scope="row">\(3^{4}\)</th><td></td><td></td><td></td><td></td></tr>
@@ -57,7 +60,7 @@ negative 1.</p>
 </tbody></table></div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
 <p>The base is 3 in every row. Starting from 1, a positive exponent counts multiplications by 3. The initial factor 1 does not change the product; for example, \(1\times3\times3\times3\times3\) is the usual four-factor expansion of \(3^4\).</p>
-<p>Each step down divides the previous answer by 3. At exponent zero, do nothing to the starting value 1, so the answer remains 1. Below zero, divide 1 by 3 the indicated number of times. For example, \(1\div3\div3=1\div9=\frac19\), using the repeated-division rule from Topic 1. A negative exponent indicates division, not a negative answer.</p><table class="power-table"><caption>Completed power table</caption><colgroup><col class="expression-column"><col class="base-column"><col class="exponent-column"><col class="operation-column"><col class="answer-column"></colgroup><thead><tr><th scope="col">Exponential expression</th><th scope="col">Base</th><th scope="col">Exponent</th><th scope="col">Multiplication or division indicated</th><th scope="col">Final answer</th></tr></thead><tbody>
+<p>Each step down divides the previous answer by 3. At exponent zero, do nothing to the starting value 1, so the answer remains 1. Below zero, divide 1 by 3 the indicated number of times. For example, \(1\div3\div3=1\div9=\frac19\), using the successive-division rule from Topic 1. A negative exponent indicates division, not a negative answer.</p><table class="power-table"><caption>Completed power table</caption><colgroup><col class="expression-column"><col class="base-column"><col class="exponent-column"><col class="operation-column"><col class="answer-column"></colgroup><thead><tr><th scope="col">Exponential expression</th><th scope="col">Base</th><th scope="col">Exponent</th><th scope="col">Multiplication or division indicated</th><th scope="col">Final answer</th></tr></thead><tbody>
 <tr><th scope="row">\(3^{4}\)</th><td>3</td><td>4</td><td>\(1\times3\times3\times3\times3\)</td><td>\(81\)</td></tr>
 <tr><th scope="row">\(3^{3}\)</th><td>3</td><td>3</td><td>\(1\times3\times3\times3\)</td><td>\(27\)</td></tr>
 <tr><th scope="row">\(3^{2}\)</th><td>3</td><td>2</td><td>\(1\times3\times3\)</td><td>\(9\)</td></tr>
@@ -70,106 +73,80 @@ negative 1.</p>
 </div>
 </section>
 <section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\(5^{-2}\)</span>.</p>
-</div>
-</div>
+<div class="problem-row"><div class="problem-statement">
+<p>Evaluate each power. Give exact answers, using fractions when needed.</p>
+<ol type="a" class="power-parts">
+<li>\(2^6\)</li>
+<li>\(7^0\)</li>
+<li>\(4^{-2}\)</li>
+<li>\(10^{-3}\)</li>
+<li>\(6^1\)</li>
+</ol>
+</div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>A negative exponent gives a reciprocal.</p>
-<p><span class="math display">\[5^{-2}=\frac1{5^2}=\frac1{25}\]</span></p>
+<ol type="a" class="power-parts">
+<li><p>Multiply by 2 six times starting from 1.</p><p class="math display">\[2^6=1\cdot2\cdot2\cdot2\cdot2\cdot2\cdot2=64\]</p></li>
+<li><p>For exponent zero, do nothing to the starting value 1. The base 7 is nonzero.</p><p class="math display">\[7^0=1\]</p></li>
+<li><p>Divide 1 by 4 twice. Combine the successive divisions by multiplying the divisors.</p><p class="math display">\[4^{-2}=1\div4\div4=1\div16=\frac1{16}\]</p></li>
+<li><p>Divide 1 by 10 three times.</p><p class="math display">\[10^{-3}=1\div10\div10\div10=1\div1000=\frac1{1000}\]</p></li>
+<li><p>Multiply the starting value 1 by 6 once.</p><p class="math display">\[6^1=1\cdot6=6\]</p></li>
+</ol>
 </div>
 </section>
 <h2>Signs, parentheses, and negative exponents</h2>
-<p>Parentheses determine whether a negative sign is part of the base. A negative base has a positive value for an even integer exponent and a negative value for an odd integer exponent. A nonzero base to the zero power equals 1. A negative exponent indicates a reciprocal, not a negative value: <span class="math inline">\(a^{-n}=1/a^n\)</span> for <span class="math inline">\(a\ne0\)</span>.</p>
+<p>Parentheses determine whether a negative sign is part of the base. With parentheses, the exponent applies to the entire negative base. Without parentheses, evaluate the power of the positive base first, then apply the outside minus sign. A negative base has a positive value for an even integer exponent and a negative value for an odd integer exponent. A nonzero base to the zero power equals 1. A negative exponent indicates division, not a negative value: \(a^{-n}=1/a^n\) for \(a\ne0\).</p>
 <section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Identify the base and evaluate the power.</p>
-<p><span class="math display">\[(-4)^2\]</span></p>
-</div>
-
-</div>
+<div class="problem-row"><div class="problem-statement">
+<p>Evaluate every expression in the table. Compare each pair and explain when the parentheses change the answer. Give exact answers.</p>
+<table class="power-table sign-table">
+<caption>Compare powers with and without a negative base</caption>
+<thead><tr><th scope="col">Minus sign outside the power</th><th scope="col">Negative base in parentheses</th></tr></thead>
+<tbody>
+<tr><td>\(-5^3\)</td><td>\((-5)^3\)</td></tr>
+<tr><td>\(-5^2\)</td><td>\((-5)^2\)</td></tr>
+<tr><td>\(-5^1\)</td><td>\((-5)^1\)</td></tr>
+<tr><td>\(-5^0\)</td><td>\((-5)^0\)</td></tr>
+<tr><td>\(-5^{-1}\)</td><td>\((-5)^{-1}\)</td></tr>
+<tr><td>\(-5^{-2}\)</td><td>\((-5)^{-2}\)</td></tr>
+</tbody></table>
+</div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Parentheses make the negative sign part of the base. The base is <span class="math inline">\(-4\)</span>.</p>
-
-<p>The exponent applies to the entire base inside the parentheses.
-Therefore, the expansion is</p>
-<p><span class="math display">\[( - 4)( - 4).\]</span></p>
-<p>The value is</p>
-<p><span class="math display">\[16.\]</span></p>
-
+<p>On the left, the base is 5 and the minus sign is applied after evaluating the power. On the right, the base is \(-5\), so the exponent applies to the number and its sign together.</p>
+<table class="power-table sign-table">
+<caption>Completed comparison table</caption>
+<thead><tr><th scope="col">Minus sign outside the power</th><th scope="col">Negative base in parentheses</th></tr></thead>
+<tbody>
+<tr><td>\(-5^3=-125\)</td><td>\((-5)^3=-125\)</td></tr>
+<tr><td>\(-5^2=-25\)</td><td>\((-5)^2=25\)</td></tr>
+<tr><td>\(-5^1=-5\)</td><td>\((-5)^1=-5\)</td></tr>
+<tr><td>\(-5^0=-1\)</td><td>\((-5)^0=1\)</td></tr>
+<tr><td>\(-5^{-1}=-\frac15\)</td><td>\((-5)^{-1}=-\frac15\)</td></tr>
+<tr><td>\(-5^{-2}=-\frac1{25}\)</td><td>\((-5)^{-2}=\frac1{25}\)</td></tr>
+</tbody></table>
+<p>For exponent 3, \((-5)(-5)(-5)=-125\); for exponent 2, \((-5)(-5)=25\). Exponent 1 leaves the base unchanged. A single division \(1\div(-5)\) gives \(-\frac15\), while two successive divisions give \(\frac1{25}\).</p>
+<p>The answers agree for odd exponents (3, 1, and \(-1\)). For even exponents (2, 0, and \(-2\)), parentheses give a positive answer while the outside minus sign gives a negative answer. Exponent zero gives 1 for either nonzero base, but an outside minus sign still changes that 1 to \(-1\).</p>
+<p>For negative exponents, successive divisions still combine by multiplying their divisors. For example, two divisions by \(-5\) combine into division by 25. The negative exponent tells us to divide; the placement of the minus sign determines the answer's sign.</p>
 </div>
 </section>
 <section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\((-4)^3\)</span>.</p>
-</div>
-</div>
+<div class="problem-row"><div class="problem-statement">
+<p>Identify the base and evaluate each expression. Give exact answers, using fractions when needed.</p>
+<ol type="a" class="power-parts">
+<li>\((-2)^6\)</li>
+<li>\(-4^0\)</li>
+<li>\((-3)^{-2}\)</li>
+<li>\(-2^4\)</li>
+<li>\((-4)^{-3}\)</li>
+</ol>
+</div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Three negative factors leave one unpaired negative sign.</p>
-<p><span class="math display">\[(-4)^3=(-4)(-4)(-4)=-64\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Evaluate <span class="math inline">\((-4)^{-3}\)</span>.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Take the reciprocal of the positive power; its sign is still negative.</p>
-<p><span class="math display">\[(-4)^{-3}=\frac1{(-4)^3}=-\frac1{64}\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Compare and contrast these two expressions: evaluate each and explain how the parentheses affect the result.</p>
-<p><span class="math display">\[(-4)^2\]</span></p>
-<p><span class="math display">\[-4^2\]</span></p>
-</div>
-
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>In the first expression, parentheses make <span class="math inline">\(-4\)</span> the complete base. Squaring repeats both the number and its sign:</p>
-<p><span class="math display">\[(-4)^2=(-4)(-4)=16\]</span></p>
-<p>In the second expression, the base is only <span class="math inline">\(4\)</span>. Evaluate that power first; the negative sign remains outside it:</p>
-<p><span class="math display">\[-4^2=-(4^2)=-(4\cdot4)=-16\]</span></p>
-<p>The parentheses determine whether the negative sign is squared.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Compare and contrast <span class="math inline">\((-4)^0\)</span> and <span class="math inline">\(-4^0\)</span>. Evaluate each and explain the role of parentheses.</p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The first expression has base negative four. In the second, the minus sign is outside the power.</p>
-<p><span class="math display">\[(-4)^0=1\]</span></p>
-<p><span class="math display">\[-4^0=-(4^0)=-1\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Compare and contrast these two expressions: evaluate each and explain how the parentheses affect the result.</p>
-<p><span class="math display">\[(-4)^{-2}\]</span></p>
-<p><span class="math display">\[-4^{-2}\]</span></p>
-</div>
-
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p><span class="math display">\[(-4)^{-2}=\frac{1}{(-4)^2}=\frac{1}{16}.\]</span></p>
-<p>For the expression without parentheses,</p>
-<p><span class="math display">\[- 4^{- 2} = - \frac{1}{16}.\]</span></p>
-<p>When the negative sign is inside parentheses, it is part of the base
-and is repeated. When the negative sign is outside the power, it is not
-repeated. The exponent is evaluated first, and the outside negative sign
-is applied afterward.</p>
-
+<ol type="a" class="power-parts">
+<li><p>The base is \(-2\). Six negative factors form three pairs, so the product is positive.</p><p class="math display">\[(-2)^6=(-2)(-2)(-2)(-2)(-2)(-2)=64\]</p></li>
+<li><p>The base is 4. Its zero power is 1; the outside minus sign is applied afterward.</p><p class="math display">\[-4^0=-(4^0)=-1\]</p></li>
+<li><p>The base is \(-3\). Divide 1 by \(-3\) twice; multiplying the two divisors gives 9.</p><p class="math display">\[(-3)^{-2}=1\div(-3)\div(-3)=1\div9=\frac19\]</p></li>
+<li><p>The base is 2. Raise it to the fourth power, then apply the outside minus sign.</p><p class="math display">\[-2^4=-(2\cdot2\cdot2\cdot2)=-16\]</p></li>
+<li><p>The base is \(-4\). Three divisions by \(-4\) combine into division by \((-4)(-4)(-4)=-64\).</p><p class="math display">\[(-4)^{-3}=1\div(-4)\div(-4)\div(-4)=1\div(-64)=-\frac1{64}\]</p></li>
+</ol>
 </div>
 </section>
 <h2>Principal square roots</h2>
