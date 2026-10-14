@@ -1,4 +1,4 @@
-"""Build the ten TSM 098 independent-practice packets and separate keys.
+"""Build the ten TSM 098 independent-practice packets with answers appended.
 
 Run from the repository root with Python containing reportlab, matplotlib,
 and pypdf. All calculations use exact rational or polynomial arithmetic.
@@ -340,6 +340,23 @@ def make_pdf(topic,title,pages,key=False):
     assert all(p.extract_text().strip() for p in check.pages)
     return path,number
 
+def combine_packet(practice, answers):
+    """Append the complete key on new pages; retain old key URLs for compatibility."""
+    practice_reader, answer_reader = PdfReader(practice), PdfReader(answers)
+    practice_pages, answer_pages = len(practice_reader.pages), len(answer_reader.pages)
+    writer = PdfWriter()
+    writer.append(practice_reader)
+    writer.append(answer_reader)
+    writer.add_metadata({'/Title': practice_reader.metadata.title + ' - Practice and answers', '/Author': 'Jeremy Kastine'})
+    writer.add_outline_item('Practice', 0)
+    writer.add_outline_item('Answers', practice_pages)
+    buffer = io.BytesIO()
+    writer.write(buffer)
+    practice.write_bytes(buffer.getvalue())
+    assert len(PdfReader(practice).pages) == practice_pages + answer_pages
+    return practice_pages, answer_pages
+
+
 def main():
     manifest=[]
     for topic,(title,review,description) in META.items():
@@ -357,8 +374,10 @@ def main():
         practice,count=make_pdf(topic,title,pages)
         answers,count2=make_pdf(topic,title,pages,key=True)
         assert count==count2
-        manifest.append(dict(topic=topic,course='TSM 098',focus=description,review_topics=review,practice='independent/'+practice.name,answers='independent/'+answers.name,problem_count=count,core_problem_count=sum(len(items) for _,items in pages[:3]),pages=4,estimated_minutes='45-60 core; 15-25 extension'))
-        print(f'Topic {topic}: {count} problems; practice and answers created',flush=True)
+        practice_pages, answer_pages = combine_packet(practice, answers)
+        manifest.append(dict(topic=topic,course='TSM 098',focus=description,review_topics=review,practice='independent/'+practice.name,problem_count=count,core_problem_count=sum(len(items) for _,items in pages[:3]),pages=practice_pages+answer_pages,practice_pages=practice_pages,answer_pages=answer_pages,answers_start_page=practice_pages+1,estimated_minutes='45-60 core; 15-25 extension'))
+        print(f'Topic {topic}: {count} problems; combined practice and answers created',flush=True)
     (ROOT/'practice'/'independent-practice.json').write_text(json.dumps(manifest,indent=2)+'\n')
 
 if __name__=='__main__':main()
+
