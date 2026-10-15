@@ -18,7 +18,7 @@ TSM 098: Review simplifying numerical fractions and creating equivalent fraction
 Topic 7 - Order of Operations (TSM 098 and TSM 099)\
 Everyone studies all 16 problems: numerical precedence, linear expressions, constant denominators, linear combinations, factored and expanded polynomials, variable denominators, and the quadratic formula. Selected problems carry **Assessment: TSM 099 only**; this is an assessment distinction, not a separate instructional track. The quadratic-trinomial evaluation at -10, 0, and 10 remains within TSM 098 assessment expectations. Every division in Topic 7 comes out as an integer.\
 Topic 8 - Comparing Equations and Expressions Through Evaluation (TSM 098 and TSM 099)\
-Everyone compares the same expression pairs: always or almost always equal on the common domain, sometimes equal, and never equal. Preserve domain restrictions and distinguish tested evidence from conclusions about every input. Selected rational-expression comparisons carry **Assessment: TSM 099 only**.\
+Everyone compares the same expression pairs: equal everywhere (except in special cases where certain values make a calculation impossible), equal at one or a few scattered values, or equal nowhere. Use ordinary expression notation and concrete division-by-zero reminders. Explain what the chosen calculations show. Selected rational-expression comparisons carry **Assessment: TSM 099 only**.\
 TSM 098 and TSM 099 Arithmetic Test
 
 Week 3
