@@ -89,4 +89,4 @@ Cumulative review of Chapters 1–8.
 
 Chapter 1 sections 1.5 and 1.6 remain available as supporting lab resources.
 
-Unit-test organization (October 12, 2026): Unit 1 covers Chapters 1-2; Unit 2 covers Chapters 3-4; Unit 3 covers Chapters 5-6; Unit 4 covers Chapters 7-8. Chapter 9 is assignment or participation material and is not tested. See unit-test-specifications.md for the ten-question conceptual multiple-choice format and question-banks/ for public study banks.
+Unit-test organization (October 12, 2026): Unit 1 covers Chapters 1-2; Unit 2 covers Chapters 3-4; Unit 3 covers Chapters 5-6; Unit 4 covers Chapters 7-8. Chapter 9 is assignment or participation material and is not tested. See question-banks/index.html for questions and answer keys, and excel-competency-checks.html for face-to-face spreadsheet demonstrations.

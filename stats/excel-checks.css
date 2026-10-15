@@ -1,0 +1,12 @@
+@import url('../course-pages.css');
+main{max-width:1000px}
+h1{font-size:clamp(2.1rem,6vw,3.3rem);overflow-wrap:anywhere}
+li{margin:10px 0}ol,ul{padding-left:1.5em}
+code{font: .92em/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;background:#eaf0f2;padding:2px 5px;border-radius:3px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;tab-size:12;background:white;border:1px solid #c7d2d7;padding:18px;font: .95em/1.6 ui-monospace,monospace}
+.callout{background:#eaf2f4;border-left:4px solid #185f72;padding:16px 20px}
+.aside{color:#40535d;font-size:.95em}
+.resources{padding-left:0}.resources h2{font-size:1.4rem;margin:5px 0 12px}
+footer{border-top:1px solid #c7d2d7;margin-top:48px;padding-top:24px;font-size:.92em}
+summary{cursor:pointer;color:#185f72}summary:focus-visible{outline:3px solid #b05819;outline-offset:4px}
+@media print{body{background:white;font-size:11pt}main{max-width:none;padding:0}h1{font-size:25pt}h2{font-size:16pt;break-after:avoid}pre,.callout{break-inside:avoid}nav,footer{display:none}a{color:inherit}code{background:none}}

@@ -4,7 +4,7 @@ Course materials for Jeremy Kastine. **This is the only active repository for TS
 
 - [TSM 098 / 099](tsm/index.html) — lecture notes
 - [MATH 101](101/index.html) — College Algebra slides, schedule, and assessment specifications
-- [Statistics](stats/index.html) — slides and specifications
+- [Statistics](stats/index.html) — slides, homework, test banks with answer keys, and Excel competency checks
 
 Publish GitHub Pages from `main` and `/(root)`. The root `index.html` links to each course.
 

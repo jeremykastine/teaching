@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check 4: Calculate sample standard deviation two ways · Statistics</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 4 · Chapter 2</p>
+<nav aria-label="Breadcrumb"><a href="../../index.html#stats">Teaching</a> / <a href="../excel-competency-checks.html">Excel competency checks</a></nav>
+<h1>Calculate sample standard deviation two ways</h1><p>Show deviations and squared deviations, then verify against the built-in function.</p>
+<p class="callout">Prepare to build and explain a working spreadsheet face to face in about five minutes after practicing. The example below teaches the steps; your instructor may supply new data and choose one of the listed variations. Variations are alternatives, not additional tasks all required in one check.</p></header>
+
+<h2>What to learn</h2><p>Show the calculation of a sample standard deviation in visible spreadsheet steps. Use the same data with Excel’s built-in function and verify that the two methods agree.</p>
+<h2>Practice example</h2><p>Put the heading <strong>Observation</strong> in A1 and the values 2, 4, 4, 6, 6, 8 in A2:A7. Put <strong>Deviation</strong> in B1 and <strong>Squared deviation</strong> in C1.</p>
+<ol>
+<li>Build a summary in E2:F8. In E2:E8 put the labels Mean, Count, Squared-deviation sum, Sample variance, Sample standard deviation, Built-in standard deviation, and Difference.</li>
+<li>In F2 enter <code>=AVERAGE(A2:A7)</code>; in F3 enter <code>=COUNT(A2:A7)</code>.</li>
+<li>In B2 enter <code>=A2-$F$2</code>. In C2 enter <code>=B2^2</code>. Fill both down through row 7. Check that the mean reference stays F2 while each observation reference changes.</li>
+<li>In F4 enter <code>=SUM(C2:C7)</code>. In F5 enter <code>=F4/(F3-1)</code>. In F6 enter <code>=SQRT(F5)</code>.</li>
+<li>In F7 enter <code>=STDEV.S(A2:A7)</code>. In F8 enter <code>=ABS(F6-F7)</code>. Both standard deviations should be approximately 2.0976; the difference should be zero or extremely small because of computer rounding.</li>
+<li>Change the last observation from 8 to 28. Watch the mean, <em>all</em> deviations, variance, and both standard-deviation results update. The two methods must still agree.</li>
+</ol>
+<p>Keep full precision in formulas and use number formatting to shorten the display. Squaring the deviations prevents positive and negative deviations from canceling. For a <em>sample</em>, divide the squared-deviation sum by n − 1.</p>
+<p class="aside">(Google Sheets: <code>STDEV.S</code> works; <code>STDEV</code> also calculates the sample standard deviation. The other formulas are the same.)</p>
+<h2>During your check</h2><p>From a supplied list of about six observations, construct both methods, show their agreement, and demonstrate one requested data change. Fill formulas down rather than typing every row separately.</p>
+<h2>Variations to prepare for</h2><ul><li>A different list or number of observations: update all affected ranges and use a count formula.</li><li>Add the same constant to every observation and compare the mean and standard deviation before and after.</li><li>If explicitly asked for a population standard deviation, divide by n and compare with <code>STDEV.P</code> instead. Do not mix sample and population methods.</li></ul>
+<h2>Be ready to explain</h2><p>Why the mean reference is fixed, why changing one observation affects every deviation, and why the standard deviation uses the original measurement units.</p>
+<footer><nav aria-label="Other checks" class="links"><a href="03-target-mean-median.html">Previous check</a><a href="../excel-competency-checks.html">All eight checks</a><a href="05-two-way-probability.html">Next check</a></nav></footer>
+</main></body></html>

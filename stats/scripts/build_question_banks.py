@@ -39,15 +39,8 @@ FONT = Path('/usr/share/fonts/truetype/dejavu')
 pdfmetrics.registerFont(TTFont('BankSans', str(FONT / 'DejaVuSans.ttf')))
 pdfmetrics.registerFont(TTFont('BankBold', str(FONT / 'DejaVuSans-Bold.ttf')))
 
-QUIZ_PROMPT = (
-    'Quiz me from this statistics unit bank, one question at a time. Keep all four '
-    'choices visible, but withhold the correct answer and explanation until I respond. '
-    'Ask me to explain my reasoning. Then give feedback, cite the question ID, and '
-    'revisit missed concepts later. Use a mix of skill groups. Do not invent harder calculations.'
-)
-
 # Supplemental figures preserve the data stated in the question. Every question
-# remains self-contained in text, including for an AI that cannot read a figure.
+# remains self-contained in text, including when a figure is unavailable.
 FIGURES = {
     'U1-008': {'kind': 'dots', 'data': [2, 2, 2, 2, 2, 8], 'xlabel': 'Library visits',
                'alt': 'Five dots at 2 visits and one dot at 8 visits.'},
@@ -150,7 +143,7 @@ def parse_bank(unit, slides, hashes):
         'chapters': [2*unit-1, 2*unit], 'question_count': 100,
         'calculator': 'Four-function calculator allowed; supplied nontrivial values.',
         'study_note': 'All questions, answers, and explanations are public. Numerical examples are illustrative classroom scenarios.',
-        'quiz_prompt': QUIZ_PROMPT, 'groups': groups, 'questions': questions,
+        'groups': groups, 'questions': questions,
         'alignment': {'basis': 'Existing section slides, original adapted questions; computational load intentionally reduced.',
                       'source_sha256': {p: h for p, h in hashes.items() if any(f'chapter-{n:02}' in p for n in [2*unit-1, 2*unit])}},
     }
@@ -312,9 +305,7 @@ def render_pdf(bank):
     story = [p(f'Statistics - Unit {unit}', 'title'), p(bank['title'], 'subtitle'),
              p(f'Chapters {bank["chapters"][0]}-{bank["chapters"][1]} | 100 multiple-choice questions'),
              p('Choose one answer per question. These questions emphasize interpretation, prediction, and statistical reasoning. A four-function calculator is sufficient; any other required values are supplied. All numerical scenarios are illustrative. Chapter 9 is not tested.'),
-             p('Answers and brief explanations appear after Question 100. For independent practice, cover that section until you have answered. Each question cites the matching section-slide page.'),
-             p('Study with AI', 'subtitle'), p(QUIZ_PROMPT),
-             p('Unit tests draw ten questions, one from each skill group, with a mix of reasoning types and at most three calculation questions. Instructor generation specifications are linked on the course page.')]
+             p('Answers and brief explanations appear after Question 100. Each question cites the matching section-slide page.')]
     last_group = None
     for q in bank['questions']:
         if q['group'] != last_group:
@@ -379,11 +370,10 @@ def render_html(bank):
     options = ''.join(f'<option value="{g["id"]}">{escape(g["name"])}</option>' for g in bank['groups'])
     html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Statistics Unit {unit} question bank</title><meta name="description" content="100 conceptual multiple-choice statistics practice questions with public answers and slide references."><style>{CSS}</style></head>
-<body><main><p><a href="../practice-tests.html#unit-test-banks">Statistics practice tests</a> / <a href="index.html">All banks</a></p>
+<body><main><p><a href="../../index.html#stats">Teaching</a> / <a href="index.html">Test banks and answer keys</a></p>
 <h1>Unit {unit}: {escape(bank['title'])}</h1><p>Chapters {bank['chapters'][0]}-{bank['chapters'][1]} · 100 questions · Four-function calculator allowed</p>
 <p>Choose one answer. Reveal feedback after trying the question. All numerical scenarios are illustrative. The full bank and explanations are available for study; Chapter 9 is not tested.</p>
-<p class="links"><a href="unit-{unit}-question-bank.pdf">Download printable PDF with key</a><a href="unit-{unit}-question-bank.json" download>Download JSON for AI study</a><a href="../unit-test-specifications.md">Unit-test specifications</a></p>
-<div class="prompt"><strong>Study with AI</strong><p>{escape(QUIZ_PROMPT)}</p><p>Upload this bank's PDF or JSON along with that prompt.</p></div>
+<p class="links"><a href="unit-{unit}-question-bank.pdf">Download printable PDF with answer key</a></p>
 <div class="controls"><label for="group">Skill group</label><select id="group"><option value="all">All ten groups</option>{options}</select><button type="button" id="answers">Reveal all answers</button><span id="count" class="meta" aria-live="polite">100 questions</span></div>
 {''.join(chunks)}<footer><p>Original classroom adaptations aligned to the existing MSC 201 slides and OpenStax Introductory Statistics 2e. See the linked section slides for explanations and examples.</p></footer></main>
 <script>
@@ -394,32 +384,17 @@ button.addEventListener('click',()=>{{const open=button.textContent==='Reveal al
     (OUT / f'unit-{unit}-question-bank.html').write_text(html)
 
 
-def check_selection(bank):
-    by_group = [[q for q in bank['questions'] if q['group'] == g['id']] for g in bank['groups']]
-    rng = random.Random(1700+bank['unit'])
-    valid_examples = []
-    for _ in range(10000):
-        chosen = [rng.choice(qs) for qs in by_group]
-        mix = Counter(q['reasoning'] for q in chosen)
-        if mix['calculate'] <= 3 and mix['evaluate'] >= 2 and mix['interpret'] >= 2 and mix['predict']+mix['compare'] >= 1:
-            valid_examples.append([q['id'] for q in chosen])
-            if len(valid_examples) == 100:
-                break
-    assert len(valid_examples) == 100, 'Blueprint is too restrictive or infeasible'
-    return valid_examples[0]
-
-
 def build_overview(banks):
     manifest = []
     rows = []
     for b in banks:
         n = b['unit']
-        rows.append(f'<li><h2>Unit {n}: {escape(b["title"])}</h2><p>Chapters {b["chapters"][0]}-{b["chapters"][1]} · 100 questions</p><p class="links"><a href="unit-{n}-question-bank.html">Study online</a><a href="unit-{n}-question-bank.pdf">Printable PDF with key</a><a href="unit-{n}-question-bank.json" download>JSON for AI study</a></p></li>')
+        rows.append(f'<li><h2>Unit {n}: {escape(b["title"])}</h2><p>Chapters {b["chapters"][0]}-{b["chapters"][1]} · 100 questions</p><p class="links"><a href="unit-{n}-question-bank.html">Questions and answers (HTML)</a><a href="unit-{n}-question-bank.pdf">Questions and answer key (PDF)</a></p></li>')
         manifest.append({'unit': n, 'title': b['title'], 'chapters': b['chapters'],
                          'question_count': 100, 'html': f'unit-{n}-question-bank.html',
                          'pdf': f'unit-{n}-question-bank.pdf', 'json': f'unit-{n}-question-bank.json'})
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
-    (OUT / 'index.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistics public question banks</title><style>{CSS}</style></head><body><main><p><a href="../practice-tests.html">Statistics practice tests</a></p><h1>Statistics question banks</h1><p>Four units, 100 multiple-choice questions per unit. Study the reasoning and explanations, then practice answering before revealing the key. A four-function calculator is sufficient.</p><p>Unit tests contain ten questions, one from each skill group, predominantly conceptual with at most three small-calculation items. Chapter 9 is assignment or participation material and is not tested.</p><p class="links"><a href="../unit-test-specifications.md">Test specifications</a><a href="create-unit-test-prompt.txt">Instructor test-generation prompt</a></p><ul>{''.join(rows)}</ul><div class="prompt"><strong>Student AI study prompt</strong><p>{escape(QUIZ_PROMPT)}</p></div></main></body></html>''')
+    (OUT / 'index.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistics test banks and answer keys</title><style>{CSS}</style></head><body><main><p><a href="../../index.html#stats">Teaching · Statistics</a> / <a href="../excel-competency-checks.html">Excel competency checks</a></p><h1>Statistics test banks and answer keys</h1><p>Four banks, each containing 100 multiple-choice questions with answers, brief explanations, and slide references. A four-function calculator is sufficient. Chapter 9 is not tested.</p><ul>{''.join(rows)}</ul></main></body></html>''')
 
 
 def refresh_index():
@@ -465,7 +440,7 @@ def main():
                        'reasoning_counts': dict(Counter(q['reasoning'] for q in bank['questions'])),
                        'answer_letter_counts': dict(Counter(q['answer_letter'] for q in bank['questions'])),
                        'section_counts': dict(Counter(q['source']['section'] for q in bank['questions'])),
-                       'valid_selection_example_ids': check_selection(bank), **result})
+                       **result})
         banks.append(bank)
     assert len(set(q['stem'] for bank in banks for q in bank['questions'])) == 400
     build_overview(banks)

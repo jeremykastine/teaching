@@ -1,6 +1,6 @@
 # Statistics class slides
 
-Open `../index.html` to choose class slides, homework, or practice tests under your course. Open `class-slides.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
+Open `../index.html` to choose the schedule, class slides, homework, test banks and answer keys, or Excel competency checks under Statistics. Open `class-slides.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
 
 Selected sections cover Chapters 1–8. Chapter 9 has one conceptual overview deck (9.0), rather than the full chapter’s computational procedures. Chapter 1 lab resources 1.5 and 1.6 are included in the review.
 
@@ -39,6 +39,10 @@ Compact PDF homework assignments are linked from `homework.html`. See [the homew
 
 ## Unit tests and public question banks
 
-Four units pair Chapters 1-2, 3-4, 5-6, and 7-8. Chapter 9 is assignment or participation material, not tested. Each [public unit bank](question-banks/index.html) contains 100 multiple-choice questions, with student-visible answers, explanations, and source-slide references. HTML, printable PDF, and structured JSON versions contain the same questions. The test selects ten questions, one per skill group, mostly conceptual with at most three small-calculation items and a four-function calculator.
+Four units pair Chapters 1-2, 3-4, 5-6, and 7-8. Chapter 9 is assignment or participation material, not tested. Each [public unit bank](question-banks/index.html) contains 100 multiple-choice questions, with student-visible answers, explanations, and source-slide references. Students can read HTML or printable PDF versions. Structured JSON files support building and validating the same questions.
 
-See [unit-test specifications](unit-test-specifications.md) and the [instructor AI generation prompt](question-banks/create-unit-test-prompt.txt). Rebuild from the Teaching root with `python stats/scripts/build_question_banks.py`. Editable question sources are in `question-banks/source/`. Future slide/homework index rebuilds retain the bank links through the shared index builder.
+Rebuild from the Teaching root with `python stats/scripts/build_question_banks.py`. Editable question sources are in `question-banks/source/`. Keep the student pages focused on questions and answer keys; there are no separate statistics practice tests, generation prompts, or test-form specifications. Shared course navigation preserves direct bank and competency-check links when rebuilding slides or homework.
+
+## Excel competency checks
+
+The [eight competency checks](excel-competency-checks.html) have detailed HTML preparation directions, practice examples, a roughly five-minute face-to-face demonstration, and alternative variations. They cover data preparation, frequency tables and charts, target means and medians, sample standard deviation, contingency tables and probabilities, random-trial simulation and the law of large numbers, normal probabilities, and sample-size/confidence-interval comparisons. Google Sheets differences appear in parentheses. Rebuild the index and directions with `python stats/scripts/build_competency_checks.py`; styling is in `excel-checks.css`.

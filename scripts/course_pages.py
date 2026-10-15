@@ -14,7 +14,12 @@ ANCHORS = {'101': 'math101', 'stats': 'stats', 'tsm': 'tsm'}
 def navigation(course, active=None):
     _, notes, filename = COURSES[course]
     links = [(f'../index.html#{ANCHORS[course]}', 'Teaching'), (filename, notes),
-             ('homework.html', 'Homework'), ('practice-tests.html', 'Practice tests')]
+             ('homework.html', 'Homework')]
+    if course == 'stats':
+        links += [('question-banks/index.html', 'Test banks and answer keys'),
+                  ('excel-competency-checks.html', 'Excel competency checks')]
+    else:
+        links.append(('practice-tests.html', 'Practice tests'))
     return '<nav aria-label="Course resources" class="resource-nav">' + ''.join(
         f'<a href="{href}"' + (' aria-current="page"' if href == active else '') +
         f'>{label}</a>' for href, label in links) + '</nav>'
@@ -52,6 +57,8 @@ def build_homework(root):
 
 
 def build_practice(root):
+    if root.name == 'stats':
+        return
     manifest = root / 'practice-tests/manifest.json'
     body = ''
     if manifest.is_file():
@@ -66,14 +73,6 @@ def build_practice(root):
                 body += ''.join(f'<a href="practice-tests/{escape(a["file"], quote=True)}">Practice {a["practice"]} (PDF)</a>' for a in items)
                 body += '</p></li>'
             body += '</ul></section>'
-    bank_manifest = root / 'question-banks/manifest.json'
-    if bank_manifest.is_file():
-        body += '<section id="unit-test-banks"><h2>Unit-test question banks</h2><p>Practice with 100 multiple-choice questions per unit, including answers, explanations, and slide references. Tests draw ten questions across the ten skill groups, emphasizing conceptual reasoning and small calculations. A four-function calculator is allowed. Chapter 9 is not tested.</p><p class="links"><a href="question-banks/index.html">All question banks and AI study prompt</a><a href="unit-test-specifications.md">Unit-test specifications</a><a href="question-banks/create-unit-test-prompt.txt">Instructor test-generation prompt</a></p><ul class="resources">'
-        for bank in json.loads(bank_manifest.read_text()):
-            a, b = bank['chapters']
-            body += f'<li><p class="meta">Unit {bank["unit"]} · Chapters {a}–{b} · {bank["question_count"]} questions</p><h3>{escape(bank["title"])}</h3><p class="links">'
-            body += f'<a href="question-banks/{bank["html"]}">Practice online</a><a href="question-banks/{bank["pdf"]}">Bank and answer key (PDF)</a><a href="question-banks/{bank["json"]}" download>JSON for AI study</a></p></li>'
-        body += '</ul></section>'
     page(root, 'practice-tests.html', 'Practice tests', body)
 
 

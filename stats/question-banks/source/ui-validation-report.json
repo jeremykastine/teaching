@@ -5,8 +5,8 @@
     "native_details_count": 100,
     "group_filter_callbacks": "passed",
     "reveal_hide_callbacks": "passed",
-    "test_environment": "Node vm with DOM test doubles",
-    "browser_visual_check": "not run; browser binary download unavailable"
+    "test_environment": "Playwright with Chromium 153",
+    "browser_visual_check": "passed at 390px and 1280px; no horizontal overflow"
   },
   {
     "unit": 2,
@@ -14,8 +14,8 @@
     "native_details_count": 100,
     "group_filter_callbacks": "passed",
     "reveal_hide_callbacks": "passed",
-    "test_environment": "Node vm with DOM test doubles",
-    "browser_visual_check": "not run; browser binary download unavailable"
+    "test_environment": "Playwright with Chromium 153",
+    "browser_visual_check": "passed at 390px and 1280px; no horizontal overflow"
   },
   {
     "unit": 3,
@@ -23,8 +23,8 @@
     "native_details_count": 100,
     "group_filter_callbacks": "passed",
     "reveal_hide_callbacks": "passed",
-    "test_environment": "Node vm with DOM test doubles",
-    "browser_visual_check": "not run; browser binary download unavailable"
+    "test_environment": "Playwright with Chromium 153",
+    "browser_visual_check": "passed at 390px and 1280px; no horizontal overflow"
   },
   {
     "unit": 4,
@@ -32,7 +32,7 @@
     "native_details_count": 100,
     "group_filter_callbacks": "passed",
     "reveal_hide_callbacks": "passed",
-    "test_environment": "Node vm with DOM test doubles",
-    "browser_visual_check": "not run; browser binary download unavailable"
+    "test_environment": "Playwright with Chromium 153",
+    "browser_visual_check": "passed at 390px and 1280px; no horizontal overflow"
   }
 ]
