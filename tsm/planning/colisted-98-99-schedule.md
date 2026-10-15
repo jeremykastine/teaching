@@ -15,10 +15,10 @@ Week 2
 Topic 5 - Evaluating Powers and Square Roots (TSM 098 and TSM 099)\
 Topic 6 - Simplifying Square Roots (TSM 099 only)  
 TSM 098: Review simplifying numerical fractions and creating equivalent fractions. [Practice PDF](../practice/independent/topic-06-tsm-098-practice.pdf); [answers](../practice/independent/topic-06-tsm-098-answers.pdf).  
-Topic 7 - Order of Operations (shared skills for both classes, followed by TSM 099-only evaluation)\
-TSM 098: numerical precedence, linear expressions with parentheses and numerical denominators, linear combinations, and factored-polynomial evaluation. During the TSM 099 extension, continue practicing this shared section.\
-TSM 099: also evaluate expanded polynomials at -10, 0, and 10, rational expressions with variable denominators, and both branches of the quadratic formula. Every division in Topic 7 comes out as an integer.\
-Topic 8 - Comparing Equations and Expressions Through Evaluation (TSM 098 and TSM 099)  
+Topic 7 - Order of Operations (TSM 098 and TSM 099)\
+Everyone studies all 16 problems: numerical precedence, linear expressions, constant denominators, linear combinations, factored and expanded polynomials, variable denominators, and the quadratic formula. Selected problems carry **Assessment: TSM 099 only**; this is an assessment distinction, not a separate instructional track. The quadratic-trinomial evaluation at -10, 0, and 10 remains within TSM 098 assessment expectations. Every division in Topic 7 comes out as an integer.\
+Topic 8 - Comparing Equations and Expressions Through Evaluation (TSM 098 and TSM 099)\
+Everyone compares the same expression pairs: always or almost always equal on the common domain, sometimes equal, and never equal. Preserve domain restrictions and distinguish tested evidence from conclusions about every input. Selected rational-expression comparisons carry **Assessment: TSM 099 only**.\
 TSM 098 and TSM 099 Arithmetic Test
 
 Week 3
