@@ -66,9 +66,9 @@ Car</pre>
 <h2>Variations to prepare for</h2><ul><li>Different category names, counts, or list length; adjust every raw-data reference.</li><li>A chart of relative frequency instead of frequency.</li><li>One additional category: add a summary row and extend totals and the chart range.</li></ul>
 <h2>Be ready to explain</h2><p>What a relative frequency measures and why its denominator is the total number of observations. If the frequencies do not sum to the data count, check for an omitted category or an inconsistent spelling.</p>
 '''),
-    ('03-target-mean-median', 'Create data with a target mean and median', 'Chapter 2',
-     'Build a live summary, then adjust observations to satisfy two statistical targets.', '''
-<h2>What to learn</h2><p>Use a spreadsheet to construct a dataset with specified properties. Enter formulas once, then adjust the data while watching the mean and median respond.</p>
+    ('03-target-mean-median', 'Create data with specified statistical properties', 'Chapter 2',
+     'Adjust observations to match varying combinations of mean, median, extremes, and standard deviation.', '''
+<h2>What to learn</h2><p>Use a spreadsheet to construct a dataset with specified properties. Enter formulas once, then adjust the observations while watching your summary update. The generated assignment specifies which statistics must match; the others may vary.</p>
 <h2>Practice example</h2>
 <ol>
 <li>Use A2:A6 for exactly five observations. Put labels <strong>Count</strong>, <strong>Sum</strong>, <strong>Mean</strong>, and <strong>Median</strong> in D2:D5. In E2:E5 enter <code>=COUNT(A2:A6)</code>, <code>=SUM(A2:A6)</code>, <code>=AVERAGE(A2:A6)</code>, and <code>=MEDIAN(A2:A6)</code>.</li>
@@ -79,8 +79,15 @@ Car</pre>
 </ol>
 <p>Use the underlying results to check your work. Formatting 9.96 to display as 10 does not make its actual value equal to 10. Avoid changing the formulas to display the requested answer.</p>
 <p class="aside">(Google Sheets: these formulas and cell-reference rules are the same.)</p>
-<h2>During your check</h2><p>Create the summary formulas and a dataset meeting the supplied count, mean, median, and number restrictions. Then make one requested adjustment while preserving the other target. The instructor will choose attainable targets.</p>
-<h2>Variations to prepare for</h2><ul><li>Different attainable target means and medians, or allowing negative values.</li><li>Six observations instead of five: the median is the average of the third and fourth values after sorting. Update the formula ranges and required total.</li><li>Preserve the mean while changing the median, or preserve the median while changing the mean. A request to change two values may be used when necessary.</li></ul>
+<h2>How to approach the generated variations</h2><ul>
+<li><strong>Mean and median:</strong> aim for a total of count × target mean (with whole numbers, use an attainable integer total within the stated mean tolerance). Sort the values and control the middle observation (or the average of the middle pair). Increasing one maximum raises the mean without changing the median.</li>
+<li><strong>Mean and sample standard deviation:</strong> use <code>AVERAGE</code> and <code>STDEV.S</code>. Start with pairs equally far above and below the target mean; for an odd count, add the mean itself. Move pairs farther apart to increase spread, or closer together to decrease it. Decimals are allowed. Adding a constant to every observation shifts the mean and leaves standard deviation unchanged.</li>
+<li><strong>Minimum, maximum, and sample standard deviation:</strong> keep one observation at each required endpoint. Start the remaining values near the midpoint, and move interior pairs toward the endpoints to increase spread. Adjust and recheck until the standard deviation is within the stated tolerance.</li>
+<li><strong>Median with extremes:</strong> fix both endpoints, then place the middle observation or middle pair at the requested median.</li>
+<li><strong>Mean with extremes:</strong> fix both endpoints, subtract their sum from the required total, then distribute the remaining total among the interior observations without exceeding the endpoints.</li>
+</ul><p>Use <code>COUNT</code>, <code>AVERAGE</code>, <code>MEDIAN</code>, <code>MIN</code>, <code>MAX</code>, and <code>STDEV.S</code> for the live summary. (Google Sheets supports the same functions.) Exact-match requirements and tolerances appear in the generated task. Keep all underlying precision; number formatting alone does not satisfy a target.</p>
+<h2>During your check</h2><p>Meet all the generated requirements at once, using the specified count and allowed values. Demonstrate the listed follow-up change and explain which statistics it preserves. The targets are generated from attainable datasets; many different answers may work.</p>
+<h2>Variations to prepare for</h2><ul><li>Use the selector to practice all five target combinations above. Only the listed targets are required for an attempt.</li><li>The count can be 5, 6, 7, 8, or 10. For an even count, the median is the average of the two middle values after sorting. Update all summary ranges.</li><li>Some tasks require whole numbers; the standard-deviation constructions allow decimals. Read the allowed-values row and the follow-up before starting.</li></ul>
 <h2>Be ready to explain</h2><p>How the required total helps you control the mean, why changing an extreme observation can leave the median unchanged, and why the number of observations must remain fixed.</p>
 '''),
     ('04-standard-deviation', 'Calculate sample standard deviation two ways', 'Chapter 2',
@@ -185,6 +192,31 @@ Afternoon\tB</pre>
 '''),
 ]
 
+
+def generator_section(i):
+    return f'''<section class="generator" data-check="{i}" aria-labelledby="generator-heading">
+<h2 id="generator-heading">Your generated assignment</h2>
+<p>Practice from a fresh worksheet. Regenerate for another attempt; at your live check, generate a new version in front of your instructor and keep that version throughout the attempt.</p>
+<noscript><p class="callout">Enable JavaScript to generate an assignment. The worked example below remains available without JavaScript.</p></noscript>
+<div id="generator-controls"><div class="generator-toolbar">
+<label class="field" for="variation">Practice variation<select id="variation"><option value="mixed">Random variation</option></select></label>
+<button id="regenerate" class="primary" type="button">Regenerate problem</button></div>
+<label class="toggle"><input type="checkbox" id="live-check">Live check view — hide worked examples and practice answers</label></div>
+<p id="task-status" role="status" aria-live="polite"></p>
+<div id="generated-content">
+<p class="task-version">Version <span id="version-code"></span> · <a id="version-link">Reopen this version</a></p>
+<h3 id="task-title"></h3><table class="task-table"><caption class="aside">Requirements for this attempt</caption><tbody id="task-facts"></tbody></table>
+<ol id="task-steps"></ol>
+<div id="task-data-wrap" hidden><h3>Source data</h3><p id="data-help"></p>
+<label for="task-data">Data to copy (read only)</label><textarea id="task-data" readonly spellcheck="false"></textarea>
+<div class="button-row"><button id="copy-data" type="button">Copy data</button></div></div>
+<h3>Follow-up change</h3><p id="task-change" class="task-change"></p>
+<div class="button-row"><button id="copy-task" type="button">Copy assignment</button><button id="copy-link" type="button">Copy version link</button></div>
+<details id="answers"><summary>Practice self-check — open after your attempt</summary><p>These checks help you review your practice. At a live check, demonstrate your spreadsheet formulas and explain your results to the instructor.</p><ul id="task-answers"></ul></details>
+</div>
+<div id="copy-fallback-wrap" hidden><label for="copy-fallback">Select and copy this text manually</label><textarea id="copy-fallback" readonly rows="6"></textarea></div>
+</section>'''
+
 def main():
     OUT.mkdir(exist_ok=True)
     for i, (slug, title, coverage, summary, body) in enumerate(CHECKS, 1):
@@ -192,12 +224,14 @@ def main():
         following = f'<a href="{CHECKS[i][0]}.html">Next check</a>' if i < len(CHECKS) else ''
         (OUT / f'{slug}.html').write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Check {i}: {escape(title)} · Statistics</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<title>Check {i}: {escape(title)} · Statistics</title><link rel="stylesheet" href="../excel-checks.css"><script defer src="generators.js"></script><script defer src="check-page.js"></script></head>
 <body><main><header><p class="eyebrow">Statistics · Excel competency check {i} · {coverage}</p>
 <nav aria-label="Breadcrumb"><a href="../../index.html#stats">Teaching</a> / <a href="../excel-competency-checks.html">Excel competency checks</a></nav>
 <h1>{escape(title)}</h1><p>{escape(summary)}</p>
-<p class="callout">Prepare to build and explain a working spreadsheet face to face in about five minutes after practicing. The example below teaches the steps; your instructor may supply new data and choose one of the listed variations. Variations are alternatives, not additional tasks all required in one check.</p></header>
-{body}<footer><nav aria-label="Other checks" class="links">{previous}<a href="../excel-competency-checks.html">All eight checks</a>{following}</nav></footer>
+<p class="callout">Prepare to build and explain a working spreadsheet face to face in about five minutes after practicing. The generated assignment is your task for this attempt. The expandable directions below teach the workflow; their example numbers are separate from your generated version.</p></header>
+{generator_section(i)}
+<details class="learning"><summary>Learn the workflow and see a worked example</summary>
+{body}</details><footer><nav aria-label="Other checks" class="links">{previous}<a href="../excel-competency-checks.html">All eight checks</a>{following}</nav></footer>
 </main></body></html>''')
     rows = ''.join(f'<li><p class="meta">Check {i} · {coverage}</p><h2><a href="excel-checks/{slug}.html">{escape(title)}</a></h2><p>{escape(summary)}</p></li>'
                    for i, (slug, title, coverage, summary, _) in enumerate(CHECKS, 1))
@@ -209,7 +243,10 @@ def main():
 <section><h2>How to prepare</h2><ul>
 <li>Open the page for the check and practice its complete workflow in Excel until you can build it efficiently from a fresh worksheet with new data. Relevant Google Sheets differences appear in parentheses.</li>
 <li>A prepared demonstration should take about five minutes. The detailed directions are for learning in advance; practice itself may take longer.</li>
-<li>The instructor supplies the task data, targets, and any needed critical values. Be ready for a listed variation and one small input change. You do not need to complete every variation in one check.</li>
+<li>Every check has a <strong>Regenerate problem</strong> button that changes the data, parameters, or requirements within the same skill. Start with Random variation; use the practice selector to try each listed type deliberately. Complete one generated task and its follow-up per attempt.</li>
+<li>For a live check, open the skill page, regenerate a fresh problem in front of the instructor, and use that version for the entire attempt. Live check view hides practice answers and worked examples. Demonstrate the work in Excel or Sheets; these pages do not submit or grade a workbook.</li>
+<li>Copy data directly from the generated task when provided. Use <strong>Copy version link</strong> to save or share the exact requirements and data. Refreshing that link keeps the same task; press Regenerate for a new one. Random spreadsheet trial results in Check 6 will still vary on recalculation.</li>
+<li>Expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
 <li>Use formulas linked to the data and inputs. Be able to show the formulas, fill them across or down, explain fixed versus changing cell references, and explain the result. A page of typed final answers does not demonstrate these skills.</li>
 <li>Use clear labels and readable number formats. Keep full precision in calculations. These examples assume English function names and comma argument separators; regional settings may use semicolons.</li>
 </ul></section><section><h2>The eight checks</h2><ul class="resources">{rows}</ul></section>
