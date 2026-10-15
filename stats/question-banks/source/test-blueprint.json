@@ -1,0 +1,670 @@
+{
+  "generator_version": 1,
+  "questions_per_test": 10,
+  "questions_per_pool": 1,
+  "sampling": "Choose one question independently from each of ten topic pools, then shuffle the selected questions and their answer choices.",
+  "scope": "Chapters 1-8; Chapter 9 is not tested. Use the same pool coverage for instructor-requested printable tests.",
+  "publication": "Two student HTML options per unit. Printed assessment PDFs are produced separately on instructor request, not published by this builder.",
+  "units": [
+    {
+      "unit": 1,
+      "pools": [
+        {
+          "id": "U1-G01",
+          "name": "Sampling scope and variables",
+          "question_ids": [
+            "U1-001",
+            "U1-002",
+            "U1-003",
+            "U1-004",
+            "U1-005",
+            "U1-006",
+            "U1-007",
+            "U1-008",
+            "U1-009",
+            "U1-010"
+          ]
+        },
+        {
+          "id": "U1-G02",
+          "name": "Sampling design and bias",
+          "question_ids": [
+            "U1-011",
+            "U1-012",
+            "U1-013",
+            "U1-014",
+            "U1-015",
+            "U1-016",
+            "U1-017",
+            "U1-018",
+            "U1-019",
+            "U1-020"
+          ]
+        },
+        {
+          "id": "U1-G03",
+          "name": "Study design and evidence",
+          "question_ids": [
+            "U1-021",
+            "U1-022",
+            "U1-023",
+            "U1-024",
+            "U1-025",
+            "U1-026",
+            "U1-027",
+            "U1-028",
+            "U1-029",
+            "U1-030"
+          ]
+        },
+        {
+          "id": "U1-G04",
+          "name": "Frequencies and meaningful comparisons",
+          "question_ids": [
+            "U1-031",
+            "U1-032",
+            "U1-033",
+            "U1-034",
+            "U1-035",
+            "U1-036",
+            "U1-037",
+            "U1-038",
+            "U1-039",
+            "U1-040"
+          ]
+        },
+        {
+          "id": "U1-G05",
+          "name": "Reading displays",
+          "question_ids": [
+            "U1-041",
+            "U1-042",
+            "U1-043",
+            "U1-044",
+            "U1-045",
+            "U1-046",
+            "U1-047",
+            "U1-048",
+            "U1-049",
+            "U1-050"
+          ]
+        },
+        {
+          "id": "U1-G06",
+          "name": "Median, quartiles, and box plots",
+          "question_ids": [
+            "U1-051",
+            "U1-052",
+            "U1-053",
+            "U1-054",
+            "U1-055",
+            "U1-056",
+            "U1-057",
+            "U1-058",
+            "U1-059",
+            "U1-060"
+          ]
+        },
+        {
+          "id": "U1-G07",
+          "name": "Mean, weights, and changes",
+          "question_ids": [
+            "U1-061",
+            "U1-062",
+            "U1-063",
+            "U1-064",
+            "U1-065",
+            "U1-066",
+            "U1-067",
+            "U1-068",
+            "U1-069",
+            "U1-070"
+          ]
+        },
+        {
+          "id": "U1-G08",
+          "name": "Shape and outlier effects",
+          "question_ids": [
+            "U1-071",
+            "U1-072",
+            "U1-073",
+            "U1-074",
+            "U1-075",
+            "U1-076",
+            "U1-077",
+            "U1-078",
+            "U1-079",
+            "U1-080"
+          ]
+        },
+        {
+          "id": "U1-G09",
+          "name": "Spread and transformations",
+          "question_ids": [
+            "U1-081",
+            "U1-082",
+            "U1-083",
+            "U1-084",
+            "U1-085",
+            "U1-086",
+            "U1-087",
+            "U1-088",
+            "U1-089",
+            "U1-090"
+          ]
+        },
+        {
+          "id": "U1-G10",
+          "name": "Comparing distributions and summaries",
+          "question_ids": [
+            "U1-091",
+            "U1-092",
+            "U1-093",
+            "U1-094",
+            "U1-095",
+            "U1-096",
+            "U1-097",
+            "U1-098",
+            "U1-099",
+            "U1-100"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "pools": [
+        {
+          "id": "U2-G01",
+          "name": "Events, complements, and probability claims",
+          "question_ids": [
+            "U2-001",
+            "U2-002",
+            "U2-003",
+            "U2-004",
+            "U2-005",
+            "U2-006",
+            "U2-007",
+            "U2-008",
+            "U2-009",
+            "U2-010"
+          ]
+        },
+        {
+          "id": "U2-G02",
+          "name": "Independence, dependence, and conditions",
+          "question_ids": [
+            "U2-011",
+            "U2-012",
+            "U2-013",
+            "U2-014",
+            "U2-015",
+            "U2-016",
+            "U2-017",
+            "U2-018",
+            "U2-019",
+            "U2-020"
+          ]
+        },
+        {
+          "id": "U2-G03",
+          "name": "Probability rules and shortcuts",
+          "question_ids": [
+            "U2-021",
+            "U2-022",
+            "U2-023",
+            "U2-024",
+            "U2-025",
+            "U2-026",
+            "U2-027",
+            "U2-028",
+            "U2-029",
+            "U2-030"
+          ]
+        },
+        {
+          "id": "U2-G04",
+          "name": "Tables, trees, and Venn reasoning",
+          "question_ids": [
+            "U2-031",
+            "U2-032",
+            "U2-033",
+            "U2-034",
+            "U2-035",
+            "U2-036",
+            "U2-037",
+            "U2-038",
+            "U2-039",
+            "U2-040"
+          ]
+        },
+        {
+          "id": "U2-G05",
+          "name": "Discrete distributions and support",
+          "question_ids": [
+            "U2-041",
+            "U2-042",
+            "U2-043",
+            "U2-044",
+            "U2-045",
+            "U2-046",
+            "U2-047",
+            "U2-048",
+            "U2-049",
+            "U2-050"
+          ]
+        },
+        {
+          "id": "U2-G06",
+          "name": "Expected value, costs, and spread",
+          "question_ids": [
+            "U2-051",
+            "U2-052",
+            "U2-053",
+            "U2-054",
+            "U2-055",
+            "U2-056",
+            "U2-057",
+            "U2-058",
+            "U2-059",
+            "U2-060"
+          ]
+        },
+        {
+          "id": "U2-G07",
+          "name": "Binomial reasoning",
+          "question_ids": [
+            "U2-061",
+            "U2-062",
+            "U2-063",
+            "U2-064",
+            "U2-065",
+            "U2-066",
+            "U2-067",
+            "U2-068",
+            "U2-069",
+            "U2-070"
+          ]
+        },
+        {
+          "id": "U2-G08",
+          "name": "Geometric reasoning",
+          "question_ids": [
+            "U2-071",
+            "U2-072",
+            "U2-073",
+            "U2-074",
+            "U2-075",
+            "U2-076",
+            "U2-077",
+            "U2-078",
+            "U2-079",
+            "U2-080"
+          ]
+        },
+        {
+          "id": "U2-G09",
+          "name": "Hypergeometric and sampling design",
+          "question_ids": [
+            "U2-081",
+            "U2-082",
+            "U2-083",
+            "U2-084",
+            "U2-085",
+            "U2-086",
+            "U2-087",
+            "U2-088",
+            "U2-089",
+            "U2-090"
+          ]
+        },
+        {
+          "id": "U2-G10",
+          "name": "Poisson counts and model comparisons",
+          "question_ids": [
+            "U2-091",
+            "U2-092",
+            "U2-093",
+            "U2-094",
+            "U2-095",
+            "U2-096",
+            "U2-097",
+            "U2-098",
+            "U2-099",
+            "U2-100"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "pools": [
+        {
+          "id": "U3-G01",
+          "name": "Continuous densities, areas, and cumulative probabilities",
+          "question_ids": [
+            "U3-001",
+            "U3-002",
+            "U3-003",
+            "U3-004",
+            "U3-005",
+            "U3-006",
+            "U3-007",
+            "U3-008",
+            "U3-009",
+            "U3-010"
+          ]
+        },
+        {
+          "id": "U3-G02",
+          "name": "Uniform probabilities and cutoffs",
+          "question_ids": [
+            "U3-011",
+            "U3-012",
+            "U3-013",
+            "U3-014",
+            "U3-015",
+            "U3-016",
+            "U3-017",
+            "U3-018",
+            "U3-019",
+            "U3-020"
+          ]
+        },
+        {
+          "id": "U3-G03",
+          "name": "Uniform changes, conditioning, and assumptions",
+          "question_ids": [
+            "U3-021",
+            "U3-022",
+            "U3-023",
+            "U3-024",
+            "U3-025",
+            "U3-026",
+            "U3-027",
+            "U3-028",
+            "U3-029",
+            "U3-030"
+          ]
+        },
+        {
+          "id": "U3-G04",
+          "name": "Exponential shape, rates, and tails",
+          "question_ids": [
+            "U3-031",
+            "U3-032",
+            "U3-033",
+            "U3-034",
+            "U3-035",
+            "U3-036",
+            "U3-037",
+            "U3-038",
+            "U3-039",
+            "U3-040"
+          ]
+        },
+        {
+          "id": "U3-G05",
+          "name": "Exponential memorylessness and count connections",
+          "question_ids": [
+            "U3-041",
+            "U3-042",
+            "U3-043",
+            "U3-044",
+            "U3-045",
+            "U3-046",
+            "U3-047",
+            "U3-048",
+            "U3-049",
+            "U3-050"
+          ]
+        },
+        {
+          "id": "U3-G06",
+          "name": "Normal location, spread, and symmetry",
+          "question_ids": [
+            "U3-051",
+            "U3-052",
+            "U3-053",
+            "U3-054",
+            "U3-055",
+            "U3-056",
+            "U3-057",
+            "U3-058",
+            "U3-059",
+            "U3-060"
+          ]
+        },
+        {
+          "id": "U3-G07",
+          "name": "Standardized comparisons and units",
+          "question_ids": [
+            "U3-061",
+            "U3-062",
+            "U3-063",
+            "U3-064",
+            "U3-065",
+            "U3-066",
+            "U3-067",
+            "U3-068",
+            "U3-069",
+            "U3-070"
+          ]
+        },
+        {
+          "id": "U3-G08",
+          "name": "Normal areas and supplied probabilities",
+          "question_ids": [
+            "U3-071",
+            "U3-072",
+            "U3-073",
+            "U3-074",
+            "U3-075",
+            "U3-076",
+            "U3-077",
+            "U3-078",
+            "U3-079",
+            "U3-080"
+          ]
+        },
+        {
+          "id": "U3-G09",
+          "name": "Normal percentiles and critical cutoffs",
+          "question_ids": [
+            "U3-081",
+            "U3-082",
+            "U3-083",
+            "U3-084",
+            "U3-085",
+            "U3-086",
+            "U3-087",
+            "U3-088",
+            "U3-089",
+            "U3-090"
+          ]
+        },
+        {
+          "id": "U3-G10",
+          "name": "Model choice and integrated comparisons",
+          "question_ids": [
+            "U3-091",
+            "U3-092",
+            "U3-093",
+            "U3-094",
+            "U3-095",
+            "U3-096",
+            "U3-097",
+            "U3-098",
+            "U3-099",
+            "U3-100"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "pools": [
+        {
+          "id": "U4-G01",
+          "name": "Sampling distributions and their centers",
+          "question_ids": [
+            "U4-001",
+            "U4-002",
+            "U4-003",
+            "U4-004",
+            "U4-005",
+            "U4-006",
+            "U4-007",
+            "U4-008",
+            "U4-009",
+            "U4-010"
+          ]
+        },
+        {
+          "id": "U4-G02",
+          "name": "Standard error and sample-size effects",
+          "question_ids": [
+            "U4-011",
+            "U4-012",
+            "U4-013",
+            "U4-014",
+            "U4-015",
+            "U4-016",
+            "U4-017",
+            "U4-018",
+            "U4-019",
+            "U4-020"
+          ]
+        },
+        {
+          "id": "U4-G03",
+          "name": "CLT assumptions, shape, and sampling quality",
+          "question_ids": [
+            "U4-021",
+            "U4-022",
+            "U4-023",
+            "U4-024",
+            "U4-025",
+            "U4-026",
+            "U4-027",
+            "U4-028",
+            "U4-029",
+            "U4-030"
+          ]
+        },
+        {
+          "id": "U4-G04",
+          "name": "Sums versus means",
+          "question_ids": [
+            "U4-031",
+            "U4-032",
+            "U4-033",
+            "U4-034",
+            "U4-035",
+            "U4-036",
+            "U4-037",
+            "U4-038",
+            "U4-039",
+            "U4-040"
+          ]
+        },
+        {
+          "id": "U4-G05",
+          "name": "Choosing models, areas, and approximations",
+          "question_ids": [
+            "U4-041",
+            "U4-042",
+            "U4-043",
+            "U4-044",
+            "U4-045",
+            "U4-046",
+            "U4-047",
+            "U4-048",
+            "U4-049",
+            "U4-050"
+          ]
+        },
+        {
+          "id": "U4-G06",
+          "name": "Confidence interval meaning and reading",
+          "question_ids": [
+            "U4-051",
+            "U4-052",
+            "U4-053",
+            "U4-054",
+            "U4-055",
+            "U4-056",
+            "U4-057",
+            "U4-058",
+            "U4-059",
+            "U4-060"
+          ]
+        },
+        {
+          "id": "U4-G07",
+          "name": "Interval width, conditions, and planning",
+          "question_ids": [
+            "U4-061",
+            "U4-062",
+            "U4-063",
+            "U4-064",
+            "U4-065",
+            "U4-066",
+            "U4-067",
+            "U4-068",
+            "U4-069",
+            "U4-070"
+          ]
+        },
+        {
+          "id": "U4-G08",
+          "name": "Student t and estimated uncertainty",
+          "question_ids": [
+            "U4-071",
+            "U4-072",
+            "U4-073",
+            "U4-074",
+            "U4-075",
+            "U4-076",
+            "U4-077",
+            "U4-078",
+            "U4-079",
+            "U4-080"
+          ]
+        },
+        {
+          "id": "U4-G09",
+          "name": "Proportion estimates, intervals, and interpretation",
+          "question_ids": [
+            "U4-081",
+            "U4-082",
+            "U4-083",
+            "U4-084",
+            "U4-085",
+            "U4-086",
+            "U4-087",
+            "U4-088",
+            "U4-089",
+            "U4-090"
+          ]
+        },
+        {
+          "id": "U4-G10",
+          "name": "Proportion conditions, precision, and adjustment",
+          "question_ids": [
+            "U4-091",
+            "U4-092",
+            "U4-093",
+            "U4-094",
+            "U4-095",
+            "U4-096",
+            "U4-097",
+            "U4-098",
+            "U4-099",
+            "U4-100"
+          ]
+        }
+      ]
+    }
+  ]
+}

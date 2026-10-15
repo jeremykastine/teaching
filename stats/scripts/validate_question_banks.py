@@ -90,8 +90,10 @@ class Links(HTMLParser):
 
 def main():
     questions = {}
+    banks = {}
     for path in sorted(BANKS.glob('unit-*-question-bank.json')):
         b = json.loads(path.read_text())
+        banks[b['unit']] = b
         for q in b['questions']:
             questions[q['id']] = q
     assert len(questions) == 400
@@ -123,6 +125,34 @@ def main():
         assert normalize(source['slide_title']) in normalize(page.get_text()), q['id']
     for doc in pdfs.values():
         doc.close()
+    # Student publication contract: two HTML modes, ten pools, no public bank PDFs.
+    manifest = json.loads((BANKS / 'manifest.json').read_text())
+    blueprint = json.loads((BANKS / 'source/test-blueprint.json').read_text())
+    assert len(manifest) == 4 and blueprint['questions_per_pool'] == 1
+    assert blueprint['questions_per_test'] == 10
+    assert not list(BANKS.glob('unit-*-question-bank.pdf'))
+    index = Links()
+    index.feed((BANKS / 'index.html').read_text())
+    assert len([href for href in index.links if href.startswith('unit-')]) == 8
+    for entry in manifest:
+        unit = entry['unit']
+        bank = banks[unit]
+        assert 'pdf' not in entry and entry['pool_count'] == 10 and entry['questions_per_test'] == 10
+        assert entry['html'] in index.links and entry['generator'] in index.links
+        assert len(bank['groups']) == 10
+        assert all(sum(q['group'] == g['id'] for q in bank['questions']) == 10 for g in bank['groups'])
+        full = (BANKS / entry['html']).read_text()
+        assert full.count('<div class="bank-answer">') == 100
+        assert '<details' not in full, 'Complete-bank answers must be visible without clicks'
+        generator = (BANKS / entry['generator']).read_text()
+        embedded = re.search(r'<script id="bank-data" type="application/json">(.*?)</script>', generator, re.S)
+        assert embedded and json.loads(embedded.group(1)) == {k: bank[k] for k in ('unit', 'groups', 'questions')}
+        for html in (full, generator):
+            assert not re.search(r'href=[\"\'][^\"\']*question-bank\.pdf', html)
+        pools = next(u['pools'] for u in blueprint['units'] if u['unit'] == unit)
+        assert [p['id'] for p in pools] == [g['id'] for g in bank['groups']]
+        for pool in pools:
+            assert pool['question_ids'] == [q['id'] for q in bank['questions'] if q['group'] == pool['id']]
     link_count = 0
     html_paths = [ROOT / 'index.html'] + list((ROOT / 'stats').rglob('*.html'))
     parsed = {}
@@ -147,6 +177,9 @@ def main():
         'source_slide_pdf_page_titles_verified': len(questions),
         'local_links_and_image_targets_verified': link_count,
         'additional_numeric_reasoning_and_model_checks': 9,
+        'student_html_modes_verified': 8,
+        'topic_pools_verified': 40,
+        'public_bank_pdfs': 0,
         'all_checks_passed': True,
     }
     (BANKS / 'source/validation-report.json').write_text(json.dumps(report, indent=2)+'\n')

@@ -295,9 +295,12 @@ def pdf_header(canvas, doc):
     canvas.restoreState()
 
 
-def render_pdf(bank):
+def render_pdf(bank, output_path):
     unit = bank['unit']
-    path = OUT / f'unit-{unit}-question-bank.pdf'
+    # Explicit instructor exports must use a destination outside the published site.
+    path = Path(output_path)
+    if path.resolve().is_relative_to(ROOT):
+        raise ValueError('Write instructor PDF exports outside the published Teaching repository.')
     doc = SimpleDocTemplate(str(path), pagesize=(612, 792), leftMargin=42, rightMargin=42,
                             topMargin=45, bottomMargin=42,
                             title=f'Statistics Unit {unit}: {bank["title"]} - 100 questions', author='Jeremy Kastine')
@@ -348,6 +351,17 @@ details p{margin:8px 0}img{display:block;width:min(100%,650px);height:auto;margi
 label{font-weight:600}select,input,button{font:inherit;padding:7px;border:1px solid #9aadb5;border-radius:4px}
 .controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.controls select{max-width:100%;min-width:0}.prompt{background:#eaf2f4;padding:18px;border-radius:6px}
 .question[hidden],section[hidden]{display:none}a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #b05819;outline-offset:3px}
+
+.bank-answer{margin-top:16px;padding:12px 16px;background:#edf4f5;border-left:4px solid var(--accent)}.bank-answer p{margin:5px 0}
+.bank-list{list-style:none;padding:0}.bank-list>li{border-top:1px solid #c7d2d7;padding:10px 0 24px}
+fieldset{border:0;padding:0;margin:0;min-width:0}legend{font-size:1.08rem;font-weight:650;line-height:1.55;padding:0;width:100%;overflow-wrap:anywhere}
+.test-choice{display:flex;gap:12px;align-items:flex-start;padding:11px 12px;margin:8px 0;border:1px solid #dbe3e6;border-radius:5px;font-weight:400;cursor:pointer}
+.test-choice:has(input:checked){border-color:var(--accent);background:#edf4f5}.test-choice input{flex-shrink:0;width:18px;height:18px;margin:4px 0 0}.test-choice span{min-width:0;overflow-wrap:anywhere}
+button{min-height:44px;cursor:pointer}button.primary{background:var(--accent);color:white;font-weight:650}button:disabled{opacity:.6;cursor:default}
+.feedback{border-left:4px solid #9aadb5;background:#f4f6f7;padding:12px 16px;margin-top:18px}.feedback.correct{border-color:#287245}.feedback.incorrect{border-color:#ad4f25}.feedback p{margin:6px 0}
+.callout{border-left:4px solid var(--accent);background:#edf4f5;padding:15px 18px}.pool-list{margin-top:30px}.pool-list li{margin:8px 0}
+[hidden]{display:none!important}#copy-link-text{display:block;width:100%;margin:8px 0;min-width:0}.question{scroll-margin-top:20px}
+@media(max-width:520px){main{padding:28px 16px}h1{font-size:1.9rem}.question{padding:16px}.links{gap:12px}.controls{align-items:stretch}.controls select{width:100%}}
 @media print{body{background:white;font-size:10pt}main{max-width:none;padding:0}.controls,.prompt{display:none}.question{break-inside:avoid;border-radius:0}img{width:380px}h1{font-size:20pt}}
 '''
 
@@ -355,7 +369,7 @@ label{font-weight:600}select,input,button{font:inherit;padding:7px;border:1px so
 def render_html(bank):
     unit = bank['unit']
     chunks = []
-    for group in bank['groups']:
+    for number, group in enumerate(bank['groups'], 1):
         questions = []
         for q in bank['questions']:
             if q['group'] != group['id']:
@@ -367,37 +381,72 @@ def render_html(bank):
             src = q['source']
             questions.append(f'''<article class="question" id="{q['id']}" data-group="{q['group']}">
 <h3>{q['id']}. {text_html(q['stem'])}</h3>{figure}<ol class="choices" type="A">{choices}</ol>
-<p class="meta"><a href="{src['pdf']}">Slides {src['section']}, page {src['slide_page']}: {escape(src['slide_title'])}</a> · {q['reasoning']}</p>
-<details><summary>Reveal answer and explanation</summary><p><strong>{q['answer_letter']}. {text_html(q['choices'][q['answer_index']])}</strong></p><p>{text_html(q['explanation'])}</p></details></article>''')
-        chunks.append(f'<section id="{group["id"]}" data-group="{group["id"]}"><h2>{group["id"]}: {escape(group["name"])}</h2>{"".join(questions)}</section>')
-    options = ''.join(f'<option value="{g["id"]}">{escape(g["name"])}</option>' for g in bank['groups'])
+<div class="bank-answer"><p><strong>Answer: {q['answer_letter']}. {text_html(q['choices'][q['answer_index']])}</strong></p><p>{text_html(q['explanation'])}</p></div>
+<p class="meta"><a href="{src['pdf']}">Slides {src['section']}, page {src['slide_page']}: {escape(src['slide_title'])}</a></p></article>''')
+        chunks.append(f'<section id="{group["id"]}" data-group="{group["id"]}"><h2>Pool {number}: {escape(group["name"])}</h2>{"".join(questions)}</section>')
+    options = ''.join(f'<option value="{g["id"]}">Pool {i}: {escape(g["name"])}</option>' for i, g in enumerate(bank['groups'], 1))
     html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Statistics Unit {unit} question bank</title><meta name="description" content="100 conceptual multiple-choice statistics practice questions with public answers and slide references."><style>{CSS}</style></head>
+<title>Statistics Unit {unit}: complete bank with answers</title><meta name="description" content="All 100 statistics questions, each immediately followed by its answer and explanation."><style>{CSS}</style></head>
 <body><main><p><a href="../../index.html#stats">Teaching</a> / <a href="index.html">Test banks and answer keys</a></p>
-<h1>Unit {unit}: {escape(bank['title'])}</h1><p>Chapters {bank['chapters'][0]}-{bank['chapters'][1]} · 100 questions · Four-function calculator allowed</p>
-<p>Choose one answer. Reveal feedback after trying the question. All numerical scenarios are illustrative. The full bank and explanations are available for study; Chapter 9 is not tested.</p>
-<p class="links"><a href="unit-{unit}-question-bank.pdf">Download printable PDF with answer key</a></p>
-<div class="controls"><label for="group">Skill group</label><select id="group"><option value="all">All ten groups</option>{options}</select><button type="button" id="answers">Reveal all answers</button><span id="count" class="meta" aria-live="polite">100 questions</span></div>
-{''.join(chunks)}<footer><p>Original classroom adaptations aligned to the existing MSC 201 slides and OpenStax Introductory Statistics 2e. See the linked section slides for explanations and examples.</p></footer></main>
+<h1>Unit {unit}: {escape(bank['title'])}</h1><p>Complete bank · Chapters {bank['chapters'][0]}-{bank['chapters'][1]} · 100 questions · Ten topic pools</p>
+<p>Read each question and its choices, followed immediately by the correct answer and explanation. A four-function calculator is sufficient. Chapter 9 is not tested.</p>
+<p class="links"><a href="unit-{unit}-test-generator.html">Generate a 10-question practice test</a></p>
+<div class="controls"><label for="group">Topic pool</label><select id="group"><option value="all">All ten pools (100 questions)</option>{options}</select><span id="count" class="meta" aria-live="polite">100 questions</span></div>
+{''.join(chunks)}<footer><p>Original classroom adaptations aligned to the existing MSC 201 slides and OpenStax Introductory Statistics 2e. Numerical scenarios are illustrative.</p></footer></main>
 <script>
-const group=document.getElementById('group'),button=document.getElementById('answers');
-group.addEventListener('change',()=>{{let n=0;document.querySelectorAll('section[data-group]').forEach(s=>{{s.hidden=group.value!=='all'&&s.dataset.group!==group.value;if(!s.hidden)n+=s.querySelectorAll('.question').length;}});document.getElementById('count').textContent=n+' questions';}});
-button.addEventListener('click',()=>{{const open=button.textContent==='Reveal all answers';document.querySelectorAll('.question details').forEach(d=>d.open=open);button.textContent=open?'Hide all answers':'Reveal all answers';}});
+const group=document.getElementById('group');
+function filterPools(){{let n=0;document.querySelectorAll('section[data-group]').forEach(s=>{{s.hidden=group.value!=='all'&&s.dataset.group!==group.value;if(!s.hidden)n+=s.querySelectorAll('.question').length;}});document.getElementById('count').textContent=n+' questions';}}
+group.addEventListener('change',filterPools);
+// A link to a particular question must reveal its pool, even after filtering.
+function showLinkedQuestion(){{if(location.hash){{group.value='all';filterPools();}}}}
+window.addEventListener('hashchange',showLinkedQuestion);showLinkedQuestion();
 </script></body></html>'''
     (OUT / f'unit-{unit}-question-bank.html').write_text(html)
 
 
+def render_generator(bank):
+    unit = bank['unit']
+    # Embedded data also permits local/offline use without fetching a JSON file.
+    data = json.dumps({k: bank[k] for k in ('unit', 'groups', 'questions')}, ensure_ascii=False)
+    data = data.replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
+    pools = ''.join(f'<li>{escape(g["name"])} ({sum(q["group"] == g["id"] for q in bank["questions"])} questions)</li>' for g in bank['groups'])
+    (OUT / f'unit-{unit}-test-generator.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Statistics Unit {unit}: practice test generator</title><style>{CSS}</style><script defer src="test-generator.js"></script></head>
+<body><main><p><a href="../../index.html#stats">Teaching</a> / <a href="index.html">Test banks and answer keys</a></p>
+<h1>Unit {unit}: practice test generator</h1><p>{escape(bank['title'])} · Chapters {bank['chapters'][0]}-{bank['chapters'][1]}</p>
+<p>Each test draws one question from each of the ten topic pools, then shuffles the questions and answer choices. Choose your answers and select <strong>Check answers</strong> for your score and explanations. Generate another test whenever you want more practice. A four-function calculator is allowed.</p>
+<p><a href="unit-{unit}-question-bank.html">Read the complete bank with answers</a></p>
+<noscript><p class="callout">Enable JavaScript to generate a test, or use the complete bank above.</p></noscript>
+<div class="controls"><button id="generate-test" type="button" class="primary" disabled>Generate new test</button><button id="copy-link" type="button" disabled>Copy test link</button></div>
+<p id="generator-status" class="meta" role="status" aria-live="polite"></p>
+<div id="copy-fallback" hidden><label for="copy-link-text">Copy this test link manually</label><input id="copy-link-text" type="text" readonly></div>
+<div id="test-content" hidden><p class="meta"><span id="test-version"></span> · <a id="test-link">Reopen this test</a></p>
+<div id="test-questions"></div><button id="check-answers" type="button" class="primary" disabled>Check answers</button>
+<p id="test-result" class="callout" role="status" tabindex="-1" hidden></p></div>
+<details class="pool-list"><summary>Topics included in every test</summary><ol>{pools}</ol></details>
+</main><script id="bank-data" type="application/json">{data}</script></body></html>''')
+
+
 def build_overview(banks):
-    manifest = []
-    rows = []
+    manifest, rows, units = [], [], []
     for b in banks:
         n = b['unit']
-        rows.append(f'<li><h2>Unit {n}: {escape(b["title"])}</h2><p>Chapters {b["chapters"][0]}-{b["chapters"][1]} · 100 questions</p><p class="links"><a href="unit-{n}-question-bank.html">Questions and answers (HTML)</a><a href="unit-{n}-question-bank.pdf">Questions and answer key (PDF)</a></p></li>')
+        rows.append(f'<li><h2>Unit {n}: {escape(b["title"])}</h2><p>Chapters {b["chapters"][0]}-{b["chapters"][1]} · 100 questions · Ten pools</p><p class="links"><a href="unit-{n}-question-bank.html">Complete bank with answers (HTML)</a><a href="unit-{n}-test-generator.html">10-question test generator (HTML)</a></p></li>')
         manifest.append({'unit': n, 'title': b['title'], 'chapters': b['chapters'],
                          'question_count': 100, 'html': f'unit-{n}-question-bank.html',
-                         'pdf': f'unit-{n}-question-bank.pdf', 'json': f'unit-{n}-question-bank.json'})
+                         'generator': f'unit-{n}-test-generator.html', 'json': f'unit-{n}-question-bank.json',
+                         'pool_count': 10, 'questions_per_test': 10})
+        units.append({'unit': n, 'pools': [{'id': g['id'], 'name': g['name'],
+                       'question_ids': [q['id'] for q in b['questions'] if q['group'] == g['id']]}
+                      for g in b['groups']]})
+    (OUT / 'source/test-blueprint.json').write_text(json.dumps({
+        'generator_version': 1, 'questions_per_test': 10, 'questions_per_pool': 1,
+        'sampling': 'Choose one question independently from each of ten topic pools, then shuffle the selected questions and their answer choices.',
+        'scope': 'Chapters 1-8; Chapter 9 is not tested. Use the same pool coverage for instructor-requested printable tests.',
+        'publication': 'Two student HTML options per unit. Printed assessment PDFs are produced separately on instructor request, not published by this builder.',
+        'units': units}, indent=2)+'\n')
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
-    (OUT / 'index.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistics test banks and answer keys</title><style>{CSS}</style></head><body><main><p><a href="../../index.html#stats">Teaching · Statistics</a> / <a href="../excel-competency-checks.html">Excel competency checks</a></p><h1>Statistics test banks and answer keys</h1><p>Four banks, each containing 100 multiple-choice questions with answers, brief explanations, and slide references. A four-function calculator is sufficient. Chapter 9 is not tested.</p><ul>{''.join(rows)}</ul></main></body></html>''')
+    (OUT / 'index.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistics test banks and practice generators</title><style>{CSS}</style></head><body><main><p><a href="../../index.html#stats">Teaching · Statistics</a> / <a href="../excel-competency-checks.html">Excel competency checks</a></p><h1>Statistics test banks</h1><p>Choose either the complete bank, with an answer and explanation after every question, or a generator that creates a fresh 10-question practice test. Every generated test includes one question from each of ten topic pools, in random order.</p><p>A four-function calculator is sufficient. Chapter 9 is not tested.</p><ul class="bank-list">{''.join(rows)}</ul></main></body></html>''')
 
 
 def refresh_index():
@@ -437,13 +486,13 @@ def main():
                 make_figure(q)
         (OUT / f'unit-{n}-question-bank.json').write_text(json.dumps(bank, indent=2, ensure_ascii=False)+'\n')
         render_html(bank)
-        pdf = render_pdf(bank)
-        result = validate_pdf(pdf, bank)
+        render_generator(bank)
         report.append({'unit': n, 'questions': 100, 'groups': 10,
                        'reasoning_counts': dict(Counter(q['reasoning'] for q in bank['questions'])),
                        'answer_letter_counts': dict(Counter(q['answer_letter'] for q in bank['questions'])),
                        'section_counts': dict(Counter(q['source']['section'] for q in bank['questions'])),
-                       **result})
+                       'html_questions_with_visible_answers': len(bank['questions']),
+                       'pool_sizes': dict(Counter(q['group'] for q in bank['questions']))})
         banks.append(bank)
     assert len(set(q['stem'] for bank in banks for q in bank['questions'])) == 400
     build_overview(banks)

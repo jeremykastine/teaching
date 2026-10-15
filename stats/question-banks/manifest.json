@@ -8,8 +8,10 @@
     ],
     "question_count": 100,
     "html": "unit-1-question-bank.html",
-    "pdf": "unit-1-question-bank.pdf",
-    "json": "unit-1-question-bank.json"
+    "generator": "unit-1-test-generator.html",
+    "json": "unit-1-question-bank.json",
+    "pool_count": 10,
+    "questions_per_test": 10
   },
   {
     "unit": 2,
@@ -20,8 +22,10 @@
     ],
     "question_count": 100,
     "html": "unit-2-question-bank.html",
-    "pdf": "unit-2-question-bank.pdf",
-    "json": "unit-2-question-bank.json"
+    "generator": "unit-2-test-generator.html",
+    "json": "unit-2-question-bank.json",
+    "pool_count": 10,
+    "questions_per_test": 10
   },
   {
     "unit": 3,
@@ -32,8 +36,10 @@
     ],
     "question_count": 100,
     "html": "unit-3-question-bank.html",
-    "pdf": "unit-3-question-bank.pdf",
-    "json": "unit-3-question-bank.json"
+    "generator": "unit-3-test-generator.html",
+    "json": "unit-3-question-bank.json",
+    "pool_count": 10,
+    "questions_per_test": 10
   },
   {
     "unit": 4,
@@ -44,7 +50,9 @@
     ],
     "question_count": 100,
     "html": "unit-4-question-bank.html",
-    "pdf": "unit-4-question-bank.pdf",
-    "json": "unit-4-question-bank.json"
+    "generator": "unit-4-test-generator.html",
+    "json": "unit-4-question-bank.json",
+    "pool_count": 10,
+    "questions_per_test": 10
   }
 ]
