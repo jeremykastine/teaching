@@ -1238,8 +1238,8 @@
       "group": "U1-G06",
       "skill_group": "Median, quartiles, and box plots",
       "reasoning": "interpret",
-      "stem": "A score is at about the 90th percentile. What does that describe?",
-      "explanation": "A percentile is a relative rank, not a percentage correct.",
+      "stem": "A score is reported at approximately the 90th percentile. What kind of information does that give?",
+      "explanation": "A percentile describes relative position, not percentage correct. This question does not require an exact rank, tie rule, or interpolation convention.",
       "source": {
         "section": "2.3",
         "slide_page": 2,
@@ -1282,8 +1282,8 @@
       "group": "U1-G06",
       "skill_group": "Median, quartiles, and box plots",
       "reasoning": "calculate",
-      "stem": "Group A has Q1=3, Q3=9; group B has Q1=10, Q3=14. Which has greater IQR?",
-      "explanation": "The IQRs are 6 and 4.",
+      "stem": "Using the reported quartiles, group A has Q1=3, Q3=9; group B has Q1=10, Q3=14. Which has greater IQR?",
+      "explanation": "Use the reported quartiles: the IQRs are 9-3=6 and 14-10=4. No choice of quartile algorithm is required.",
       "source": {
         "section": "2.3",
         "slide_page": 10,
@@ -1304,8 +1304,8 @@
       "group": "U1-G06",
       "skill_group": "Median, quartiles, and box plots",
       "reasoning": "interpret",
-      "stem": "A box plot's top quarter is much longer than its bottom quarter. With no ties at quartiles, what does that suggest?",
-      "explanation": "Quarter lengths describe numerical spread, not sample counts.",
+      "stem": "A basic box plot reports minimum 0, Q1=2, median 3, Q3=4, maximum 20. Which comparison is supported?",
+      "explanation": "Using the displayed summary, the upper segment spans 20-4=16 units and the lower segment spans 2-0=2 units. Segment length describes numerical spread, not an exact observation count; quartile conventions and ties can affect those counts.",
       "source": {
         "section": "2.4",
         "slide_page": 8,
@@ -1314,9 +1314,9 @@
       },
       "choices": [
         "The plot establishes the exact mean.",
-        "The bottom quarter contains no observations.",
-        "The top quarter contains three times as many observations.",
-        "The top quarter covers a wider range, not more observations."
+        "The lower segment contains no observations.",
+        "The upper segment must contain three times as many observations.",
+        "The segment from Q3 to the maximum spans a wider numerical range than the segment from the minimum to Q1."
       ],
       "answer_index": 3,
       "answer_letter": "D",
@@ -1390,8 +1390,8 @@
       "group": "U1-G06",
       "skill_group": "Median, quartiles, and box plots",
       "reasoning": "interpret",
-      "stem": "An upper outlier fence is 19. A value equals 19. Under the beyond-the-fence rule, what happens?",
-      "explanation": "The stated rule flags values strictly beyond the fence.",
+      "stem": "Two reasonable quartile methods give upper outlier fences of 18 and 20 for the same dataset. One observation is 35. Which conclusion agrees with both methods?",
+      "explanation": "The value 35 is well above both reported fences, so choosing between these conventions does not change the flag. An outlier flag alone does not establish a recording error.",
       "source": {
         "section": "2.3",
         "slide_page": 14,
@@ -1399,10 +1399,10 @@
         "pdf": "../slides/section-2-3.pdf#page=14"
       },
       "choices": [
-        "The median becomes 19.",
-        "It is automatically flagged.",
-        "The upper quartile becomes 19.",
-        "It is not flagged by this rule."
+        "Only the method with fence 18 flags the observation.",
+        "The observation is not flagged under either method.",
+        "The observation must be a recording error.",
+        "The observation is flagged as unusually high under both methods."
       ],
       "answer_index": 3,
       "answer_letter": "D"

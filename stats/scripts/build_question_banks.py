@@ -308,10 +308,11 @@ def render_pdf(bank):
              p('Answers and brief explanations appear after Question 100. Each question cites the matching section-slide page.')]
     last_group = None
     for q in bank['questions']:
+        block = []
         if q['group'] != last_group:
-            story.append(p(f'{q["group"]}: {q["skill_group"]}', 'group'))
+            block.append(p(f'{q["group"]}: {q["skill_group"]}', 'group'))
             last_group = q['group']
-        block = [p(f'{q["id"]}. {q["stem"]}', 'stem')]
+        block.append(p(f'{q["id"]}. {q["stem"]}', 'stem'))
         if 'figure' in q:
             png = OUT / q['figure']['file'].replace('.svg', '.png')
             block.append(Image(str(png), width=390, height=118))
@@ -323,11 +324,13 @@ def render_pdf(bank):
     story += [PageBreak(), p('Answers and explanations', 'title'), p('Public study key. Explain the statistical reason as well as selecting the letter.')]
     last_group = None
     for q in bank['questions']:
+        block = []
         if q['group'] != last_group:
-            story.append(p(q['skill_group'], 'group'))
+            block.append(p(q['skill_group'], 'group'))
             last_group = q['group']
         answer = q['choices'][q['answer_index']]
-        story.append(KeepTogether([p(f'{q["id"]} - {q["answer_letter"]}. {answer}', 'keyanswer'), p(q['explanation'], 'key')]))
+        block.extend([p(f'{q["id"]} - {q["answer_letter"]}. {answer}', 'keyanswer'), p(q['explanation'], 'key')])
+        story.append(KeepTogether(block))
     doc.build(story, onFirstPage=pdf_header, onLaterPages=pdf_header)
     return path
 

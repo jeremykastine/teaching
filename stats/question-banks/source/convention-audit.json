@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-15",
+  "scope": "All four public Statistics banks: stems, choices, keyed answers, explanations, and supplied box-plot summaries.",
+  "policy": "Do not distinguish correct answers by sample-quartile/sample-percentile algorithms, interpolation, median inclusion, or tie/rank choices. Use supplied summaries or convention-robust choices. Avoid exact sample-quartile counts and fence-equality minutiae. Continuous-model quantiles remain in scope.",
+  "questions_scanned": 400,
+  "relevant_items_reviewed": 26,
+  "by_unit": {
+    "1": {
+      "questions_scanned": 100,
+      "relevant_items_reviewed": 15
+    },
+    "2": {
+      "questions_scanned": 100,
+      "relevant_items_reviewed": 0
+    },
+    "3": {
+      "questions_scanned": 100,
+      "relevant_items_reviewed": 10
+    },
+    "4": {
+      "questions_scanned": 100,
+      "relevant_items_reviewed": 1
+    }
+  },
+  "raw_sample_quartile_or_percentile_computation_questions": 0,
+  "remaining_convention_dependent_keyed_answers": 0,
+  "revised_question_ids": [
+    "U1-053",
+    "U1-055",
+    "U1-056",
+    "U1-059"
+  ],
+  "items": [
+    {
+      "id": "U1-051",
+      "disposition": "retained",
+      "review": "Ordinary odd-sample median; no sample quartile or percentile rule is involved."
+    },
+    {
+      "id": "U1-052",
+      "disposition": "retained",
+      "review": "Ordinary even-sample median; no sample quartile or percentile rule is involved."
+    },
+    {
+      "id": "U1-053",
+      "disposition": "revised",
+      "review": "Uses an explicitly reported approximate percentile and asks only what relative position means."
+    },
+    {
+      "id": "U1-054",
+      "disposition": "retained",
+      "review": "Supplied Q1 and Q3; approximate middle-half interpretation, with ties/conventions acknowledged."
+    },
+    {
+      "id": "U1-055",
+      "disposition": "revised",
+      "review": "Explicitly uses reported quartiles; IQR subtraction does not require choosing an algorithm."
+    },
+    {
+      "id": "U1-056",
+      "disposition": "revised",
+      "review": "Uses supplied five-number summary and compares numerical segment lengths, without asserting exact quartile-group counts."
+    },
+    {
+      "id": "U1-057",
+      "disposition": "retained",
+      "review": "Tests information lost in a summary rather than exact counts at a quartile."
+    },
+    {
+      "id": "U1-058",
+      "disposition": "retained",
+      "review": "Tests that a five-number summary does not determine every observation."
+    },
+    {
+      "id": "U1-059",
+      "disposition": "revised",
+      "review": "Both supplied fences flag the observation by a wide margin; no equality-at-the-fence decision."
+    },
+    {
+      "id": "U1-060",
+      "disposition": "retained",
+      "review": "Interprets an explicitly supplied modified-box-plot whisker and outlier; no quartiles must be computed."
+    },
+    {
+      "id": "U1-091",
+      "disposition": "retained",
+      "review": "Medians and IQRs are explicitly supplied for comparison."
+    },
+    {
+      "id": "U1-092",
+      "disposition": "retained",
+      "review": "Translation leaves IQR unchanged across standard translation-equivariant quartile methods."
+    },
+    {
+      "id": "U1-093",
+      "disposition": "retained",
+      "review": "Compares range with IQR conceptually; no sample quartile computation."
+    },
+    {
+      "id": "U1-094",
+      "disposition": "retained",
+      "review": "A tied-data median counterexample; no choice of sample percentile convention."
+    },
+    {
+      "id": "U1-100",
+      "disposition": "retained",
+      "review": "Interprets a supplied outlier flag without asserting an error or requiring a quartile calculation."
+    },
+    {
+      "id": "U3-016",
+      "disposition": "retained",
+      "review": "Percentile of a specified continuous uniform model, not an empirical sample percentile."
+    },
+    {
+      "id": "U3-018",
+      "disposition": "retained",
+      "review": "Middle half of a specified continuous uniform model; unique model cutoffs."
+    },
+    {
+      "id": "U3-056",
+      "disposition": "retained",
+      "review": "Normal-model shape/spread comparison, not empirical percentile estimation."
+    },
+    {
+      "id": "U3-081",
+      "disposition": "retained",
+      "review": "Continuous-model cumulative probability definition; no sample rank rule."
+    },
+    {
+      "id": "U3-082",
+      "disposition": "retained",
+      "review": "Normal-model symmetry locates a model percentile."
+    },
+    {
+      "id": "U3-083",
+      "disposition": "retained",
+      "review": "Continuous-model tail probability determines the percentile level."
+    },
+    {
+      "id": "U3-084",
+      "disposition": "retained",
+      "review": "The normal-model percentile z score is supplied explicitly."
+    },
+    {
+      "id": "U3-087",
+      "disposition": "retained",
+      "review": "Quartiles of a normal model are symmetric; no empirical quartile computation."
+    },
+    {
+      "id": "U3-089",
+      "disposition": "retained",
+      "review": "A location shift moves a normal-model percentile by the same amount."
+    },
+    {
+      "id": "U3-090",
+      "disposition": "retained",
+      "review": "Normal-model IQR scales with its standard deviation, independent of sample algorithms."
+    },
+    {
+      "id": "U4-045",
+      "disposition": "retained",
+      "review": "Interprets a supplied sampling-distribution percentile, not a small sample percentile."
+    }
+  ]
+}

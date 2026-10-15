@@ -41,6 +41,8 @@ Compact PDF homework assignments are linked from `homework.html`. See [the homew
 
 Four units pair Chapters 1-2, 3-4, 5-6, and 7-8. Chapter 9 is assignment or participation material, not tested. Each [public unit bank](question-banks/index.html) contains 100 multiple-choice questions, with student-visible answers, explanations, and source-slide references. Students can read HTML or printable PDF versions. Structured JSON files support building and validating the same questions.
 
+Questions must not depend on a particular sample-quartile or sample-percentile convention, including whether an odd sample's median is included in either half, interpolation, and tie/rank choices. Supply any needed quartiles, percentile cutoffs, or fences explicitly, or choose data and answer options whose keyed choice is unchanged across reasonable methods. Use approximate language for sample percentile positions and middle-half interpretations; do not require exact observation counts at quartile boundaries or fence-equality minutiae. Continuous-model percentiles may still be assessed from their model probabilities. The October 15, 2026 audit is recorded in `question-banks/source/convention-audit.json`.
+
 Rebuild from the Teaching root with `python stats/scripts/build_question_banks.py`. Editable question sources are in `question-banks/source/`. Keep the student pages focused on questions and answer keys; there are no separate statistics practice tests, generation prompts, or test-form specifications. Shared course navigation preserves direct bank and competency-check links when rebuilding slides or homework.
 
 ## Excel competency checks
