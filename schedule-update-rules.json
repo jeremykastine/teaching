@@ -1,1 +1,53 @@
-{"version":1,"timezone":"America/New_York","source_of_truth":"each_schedule_html","schedules":{"tsm-9am":{"path":"tsm/schedule-9am.html","label":"TSM 098 / 099 \u00b7 9 a.m.","independent":true},"tsm-1pm":{"path":"tsm/schedule-1pm.html","label":"TSM 098 / 099 \u00b7 1 p.m.","independent":true},"math101":{"path":"101/schedule.html","label":"MATH 101 \u00b7 College Algebra","independent":true},"statistics":{"path":"stats/schedule.html","label":"Statistics","independent":true}},"update_policy":{"trigger":"instructor_requests_update_at_start_of_class","initial_quarter_format":"Week 1 through Week 10 followed by partial Week 11; list planned topics under each week","target":"resolve_explicit_class_or_meeting_time; ask_if_ambiguous","cross_section_sync":false,"history":"retain_existing_dated_meetings_unless_instructor_corrects_them","meeting":"insert_or_update_one_dated_meeting_in_chronological_order_before_weekly_outline; use_instructor_supplied_topics_and_order","date":"use_instructor_supplied_date_else_current_date_in_timezone","remaining_outline":"remove_only_topic_occurrences_assigned_to_dated_meeting; preserve_unassigned_topics_and_tests_under_original_week; remove_week_heading_only_if_empty","repeat_topics":"keep_explicit_finish_review_or_repeat_occurrences","future_dates":"preserve_instructor_supplied_future_dated_meetings; do_not_mark_dated_as_completed","rescheduling":"adjust_cancellations_tests_and_remaining_weeks_only_as_directed; do_not_infer_calendar","content_authority":"instructor_schedule_overrides_other_topic_numbering_and_course_requirements; do_not_rewrite_lessons_as_side_effect","last_updated":"set_target_page_last_updated_to_actual_edit_date","html":"static_student_readable_content; preserve_meeting_data-date_ISO_and_data-kind_attributes","navigation":"keep_root_index_schedule_links_under_corresponding_course_heading","validation":["preserve_all_unassigned_topics_and_assessments","no_accidental_duplicate_when_moving_topic","other_sections_unchanged","relative_links_resolve"]}}
+{
+  "version": 2,
+  "timezone": "America/New_York",
+  "source_of_truth": "each_schedule_html",
+  "schedules": {
+    "tsm-9am": {
+      "path": "tsm/schedule-9am.html",
+      "label": "TSM 098 / 099 · 9 a.m.",
+      "independent": true
+    },
+    "tsm-1pm": {
+      "path": "tsm/schedule-1pm.html",
+      "label": "TSM 098 / 099 · 1 p.m.",
+      "independent": true
+    },
+    "math101": {
+      "path": "101/schedule.html",
+      "label": "MATH 101 · College Algebra",
+      "independent": true
+    },
+    "statistics": {
+      "path": "stats/schedule.html",
+      "label": "Statistics",
+      "independent": true
+    }
+  },
+  "update_policy": {
+    "trigger": "instructor_requests_update_at_start_of_class",
+    "initial_quarter_format": "Week 1 through Week 10 followed by partial Week 11; list planned topics under each week",
+    "target": "resolve_explicit_class_or_meeting_time; ask_if_ambiguous",
+    "cross_section_sync": false,
+    "history": "retain_existing_dated_meetings_unless_instructor_corrects_them",
+    "meeting": "insert or update dated tbody groups in chronological order before weekly groups; use instructor-supplied topics and order, one row per topic",
+    "date": "use_instructor_supplied_date_else_current_date_in_timezone",
+    "remaining_outline": "remove only topic rows assigned to dated meetings; move their attached after-class work with them; preserve other topic rows; remove weekly group only if empty",
+    "repeat_topics": "keep_explicit_finish_review_or_repeat_occurrences",
+    "future_dates": "preserve_instructor_supplied_future_dated_meetings; do_not_mark_dated_as_completed",
+    "rescheduling": "adjust_cancellations_tests_and_remaining_weeks_only_as_directed; do_not_infer_calendar",
+    "content_authority": "instructor_schedule_overrides_other_topic_numbering_and_course_requirements; do_not_rewrite_lessons_as_side_effect",
+    "last_updated": "set_target_page_last_updated_to_actual_edit_date",
+    "html": "static student-readable three-column table: date/week, class topics, after-class work; preserve data-date ISO and data-kind attributes on tbody groups",
+    "navigation": "keep_root_index_schedule_links_under_corresponding_course_heading",
+    "validation": [
+      "preserve_all_unassigned_topics_and_assessments",
+      "no_accidental_duplicate_when_moving_topic",
+      "other_sections_unchanged",
+      "relative_links_resolve"
+    ],
+    "after_class": "align homework and Begin studying for test prompts with the last relevant topic; TSM homework names the student course; no fixed test appointments in class-topics column",
+    "column_heading": "state homework is due at midnight on the day of the next class meeting, and tests can be taken or retaken during the last 30 minutes of every class meeting after studying; do not repeat timing in individual tasks",
+    "assessments": "replace prior fixed test-availability schedule entries with study prompts beside last relevant topic; diagnostic availability belongs in after-class column"
+  }
+}
