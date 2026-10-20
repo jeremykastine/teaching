@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet setup and reasoning · Excel check 1</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 1 · Help</p>
+<h1>Spreadsheet setup and reasoning</h1><p><a href="01-match-summary.html">Back to the problem</a></p></header>
+
+<h2>Set up your spreadsheet</h2>
+<p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter your own numbers in A2 downward, one number per cell. Reserve column A for observations only.</p>
+<p>One possible summary layout is:</p>
+<table class="task-table"><thead><tr><th>Label cell</th><th>Label</th><th>Formula cell</th><th>Formula</th></tr></thead><tbody>
+<tr><td>C2</td><td>Count</td><td>D2</td><td><code>=COUNT(A:A)</code></td></tr>
+<tr><td>C3</td><td>Mean</td><td>D3</td><td><code>=AVERAGE(A:A)</code></td></tr>
+<tr><td>C4</td><td>Median</td><td>D4</td><td><code>=MEDIAN(A:A)</code></td></tr>
+<tr><td>C5</td><td>Mode(s)</td><td>D5</td><td><code>=MODE.MULT(A:A)</code></td></tr>
+</tbody></table>
+<p>Keep D6 empty. Enter <code>MODE.MULT</code> once in D5; two modes spill into D5:D6. If you see <code>#SPILL!</code>, clear the cells blocking the results. If you see <code>#N/A</code>, check whether any observation repeats. The text header in A1 is ignored by these formulas.</p>
+<p>Changing a number in column A should immediately update the summary. Display enough decimal places to judge the mean error; changing the number format does not change the underlying answer.</p>
+<h2>Reason about the median</h2>
+<p>Think about your observations in sorted order. For an odd count, the median is the middle observation. For an even count, it is the average of the two middle observations.</p>
+<p>For example, with 60 observations, the median comes from positions 30 and 31. Because the header occupies A1, those positions are A31 and A32 after sorting the observations. Decide what the middle value or pair must be, then consider how many observations should lie on either side. Recheck the middle positions whenever an adjustment changes the order.</p>
+<h2>Reason about the mode or modes</h2>
+<p>A mode is a value occurring most often. For a one-mode target, that value must occur more often than every other value. For two modes, both target values must tie for the highest frequency, with every other value occurring less often. Watch for accidental repetitions as you edit. The order in which <code>MODE.MULT</code> lists two modes does not matter.</p>
+<h2>Reason about the mean</h2>
+<p>The required total is count × target mean. Changing the total by a small amount changes the mean by that amount divided by the count. If your mean is too low, the total must increase; if it is too high, the total must decrease.</p>
+<p>Experiment with values away from the middle positions and required repetitions. Use progressively smaller decimal adjustments while staying between 0 and 1,000. Recheck the count, median, and mode(s) after each adjustment. Your instructor decides whether the mean is close enough; there is no fixed numerical tolerance.</p>
+<p>There are many possible datasets. Use these ideas to guide your own guesses and corrections, and be ready to explain how you could narrow the mean error further while preserving the exact requirements.</p>
+
+<footer><a href="01-match-summary.html">Back to the problem</a></footer></main></body></html>

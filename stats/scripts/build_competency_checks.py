@@ -13,27 +13,28 @@ OUT = COURSE / 'excel-checks'
 
 # Existing URL slugs are stable so previously saved version links keep working.
 CHECKS = [
-    ('01-match-summary', 'Match count, mean, median, and mode(s)', 'Chapter 2',
+    ('01-match-summary', 'Match Count, Mean, Median, and Mode', 'Chapter 2',
      'Create 50–100 observations of your own to match generated summary statistics.', '''
-<h2>What to learn</h2>
-<p>Construct a dataset from its summary statistics. The generator creates a hidden dataset with 50–100 observations between 0 and 1,000, but provides only its count, mean, median, and mode or modes. About half of random challenges have one mode; the other half have exactly two. At least one measure of center is substantially different from the others. Your numbers may differ from the original hidden numbers.</p>
-<h2>Set up a blank Excel workbook</h2>
-<ol>
-<li>Generate one assignment and keep its version link. Open a new, blank Excel workbook and put <strong>Observation</strong> in A1. Enter your own numbers in A2 downward, one number per cell. Use exactly the target count and keep every value between 0 and 1,000 inclusive. Decimals are allowed.</li>
-<li>Put the labels <strong>Count</strong>, <strong>Mean</strong>, <strong>Median</strong>, and <strong>Mode(s)</strong> in C2:C5. In D2:D5 enter <code>=COUNT(A:A)</code>, <code>=AVERAGE(A:A)</code>, <code>=MEDIAN(A:A)</code>, and <code>=MODE.MULT(A:A)</code>. Keep column A reserved for your observations; the text header is ignored.</li>
-<li>Leave D6 empty. Enter MODE.MULT once in D5: in current Excel, two modes spill into D5:D6 automatically. A blocked destination produces <code>#SPILL!</code>; clear the obstruction. A dataset with no repeated value gives <code>#N/A</code>, so create the required repetitions. In older Excel without dynamic arrays, select D5:D6, enter the formula with Ctrl+Shift+Enter, and disregard an unused #N/A slot for a one-mode result.</li>
-<li>Adjust your observations while watching the formulas update. The count and median must match exactly. MODE.MULT must return exactly the listed mode or both listed modes, in either order, with no additional modes. For two modes, both must occur equally often and more often than any other value.</li>
-<li>Bring the mean as close as possible to the target. Your instructor judges whether it is close enough; there is no fixed numerical tolerance. Show enough decimal places to inspect the error. Keep the count, median, and mode(s) exact throughout your final adjustments.</li>
-</ol>
-<h2>Ways to reason about your adjustments</h2>
-<ul><li>The required total is count × target mean. Changing the total by a small amount changes the mean by that amount divided by the count.</li>
-<li>For an odd count, control the middle value after sorting. For an even count, control the average of the two middle values.</li>
-<li>Give the required mode or modes the highest frequency. Avoid accidentally creating other equally frequent values.</li>
-<li>To refine the mean, adjust values away from the middle positions and required repetitions. Use progressively smaller decimal changes, keep values in bounds, and recheck every summary after each adjustment.</li></ul>
-<p>Formatting an incorrect value to look correct does not satisfy an exact target. Use formulas connected to the observations, rather than typing the target answers into the summary cells. The generated mean is an exact whole-number target, so you can keep refining your actual result without ambiguity from a rounded target.</p>
-<h2>During your check</h2>
-<p>Show your completed column A and all four formula-based summaries to your instructor. Match count, median, and the complete set of modes exactly, and mean approximately to the instructor’s satisfaction. Explain how you could narrow the mean error arbitrarily far while preserving the other requirements. You do not need to reproduce the hidden dataset or perform a second target change.</p>
-<h2>Practice variations</h2><p>Start with Random variation for approximately equal chances of one or two modes. Use the selector to practice either kind deliberately. Regenerate for different counts and target values. The original hidden numbers are never shown, including in the practice self-check.</p>
+<h2>Set up your spreadsheet</h2>
+<p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter your own numbers in A2 downward, one number per cell. Reserve column A for observations only.</p>
+<p>One possible summary layout is:</p>
+<table class="task-table"><thead><tr><th>Label cell</th><th>Label</th><th>Formula cell</th><th>Formula</th></tr></thead><tbody>
+<tr><td>C2</td><td>Count</td><td>D2</td><td><code>=COUNT(A:A)</code></td></tr>
+<tr><td>C3</td><td>Mean</td><td>D3</td><td><code>=AVERAGE(A:A)</code></td></tr>
+<tr><td>C4</td><td>Median</td><td>D4</td><td><code>=MEDIAN(A:A)</code></td></tr>
+<tr><td>C5</td><td>Mode(s)</td><td>D5</td><td><code>=MODE.MULT(A:A)</code></td></tr>
+</tbody></table>
+<p>Keep D6 empty. Enter <code>MODE.MULT</code> once in D5; two modes spill into D5:D6. If you see <code>#SPILL!</code>, clear the cells blocking the results. If you see <code>#N/A</code>, check whether any observation repeats. The text header in A1 is ignored by these formulas.</p>
+<p>Changing a number in column A should immediately update the summary. Display enough decimal places to judge the mean error; changing the number format does not change the underlying answer.</p>
+<h2>Reason about the median</h2>
+<p>Think about your observations in sorted order. For an odd count, the median is the middle observation. For an even count, it is the average of the two middle observations.</p>
+<p>For example, with 60 observations, the median comes from positions 30 and 31. Because the header occupies A1, those positions are A31 and A32 after sorting the observations. Decide what the middle value or pair must be, then consider how many observations should lie on either side. Recheck the middle positions whenever an adjustment changes the order.</p>
+<h2>Reason about the mode or modes</h2>
+<p>A mode is a value occurring most often. For a one-mode target, that value must occur more often than every other value. For two modes, both target values must tie for the highest frequency, with every other value occurring less often. Watch for accidental repetitions as you edit. The order in which <code>MODE.MULT</code> lists two modes does not matter.</p>
+<h2>Reason about the mean</h2>
+<p>The required total is count × target mean. Changing the total by a small amount changes the mean by that amount divided by the count. If your mean is too low, the total must increase; if it is too high, the total must decrease.</p>
+<p>Experiment with values away from the middle positions and required repetitions. Use progressively smaller decimal adjustments while staying between 0 and 1,000. Recheck the count, median, and mode(s) after each adjustment. Your instructor decides whether the mean is close enough; there is no fixed numerical tolerance.</p>
+<p>There are many possible datasets. Use these ideas to guide your own guesses and corrections, and be ready to explain how you could narrow the mean error further while preserving the exact requirements.</p>
 '''),
     ('01-prepare-data', 'Prepare comma-separated data for analysis', 'Chapters 1–2',
      'Split text into values, transpose to one editable column, sort, and summarize.', '''
@@ -240,9 +241,42 @@ def generator_section(i):
 <div id="copy-fallback-wrap" hidden><label for="copy-fallback">Select and copy this text manually</label><textarea id="copy-fallback" readonly rows="6"></textarea></div>
 </section>'''
 
+def build_summary_check(body):
+    (OUT / '01-match-summary.html').write_text('''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check 1: Match Count, Mean, Median, and Mode · Statistics</title><link rel="stylesheet" href="../excel-checks.css"><script defer src="generators.js"></script><script defer src="match-summary-page.js"></script></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 1</p>
+<h1>Match Count, Mean, Median, and Mode</h1>
+<p id="summary-problem" aria-live="polite">Loading your problem…</p>
+<p>Make an Excel spreadsheet that helps you guess and check which observations would have these outcomes.</p></header>
+<noscript><p class="callout">Enable JavaScript to generate a problem.</p></noscript>
+<div class="generator-toolbar"><button id="regenerate" class="primary" type="button">Regenerate problem</button></div>
+<section aria-labelledby="requirements-heading"><h2 id="requirements-heading">Requirements</h2>
+<ul>
+<li>A new Excel workbook with your own values in column A, one observation per cell, all between 0 and 1,000 inclusive. Decimals are allowed.</li>
+<li>Exactly the required number of numerical observations.</li>
+<li>An exact match for the median and the complete set of modes, with no additional modes. For two modes, both occur equally often and more frequently than every other value.</li>
+<li>A mean approximately equal to the target, close enough to satisfy your instructor.</li>
+<li>Labeled, live formulas using <code>COUNT</code>, <code>AVERAGE</code>, <code>MEDIAN</code>, and <code>MODE.MULT</code>, linked to column A and updating when its values change.</li>
+</ul></section>
+<p><a href="01-match-summary-help.html">Talk me through the spreadsheet setup and how to reason about adjustments →</a></p>
+<footer><nav aria-label="Other checks" class="links"><a href="../excel-competency-checks.html">All nine checks</a><a href="01-prepare-data.html">Next check</a></nav></footer>
+</main></body></html>''')
+    (OUT / '01-match-summary-help.html').write_text(f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet setup and reasoning · Excel check 1</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 1 · Help</p>
+<h1>Spreadsheet setup and reasoning</h1><p><a href="01-match-summary.html">Back to the problem</a></p></header>
+{body}
+<footer><a href="01-match-summary.html">Back to the problem</a></footer></main></body></html>''')
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     for i, (slug, title, coverage, summary, body) in enumerate(CHECKS, 1):
+        if i == 1:
+            build_summary_check(body)
+            continue
         previous = f'<a href="{CHECKS[i-2][0]}.html">Previous check</a>' if i > 1 else ''
         following = f'<a href="{CHECKS[i][0]}.html">Next check</a>' if i < len(CHECKS) else ''
         (OUT / f'{slug}.html').write_text(f'''<!doctype html>
@@ -266,10 +300,10 @@ def main():
 <section><h2>How to prepare</h2><ul>
 <li>Open the page for the check and practice its complete workflow in Excel until you can build it efficiently from a fresh worksheet with new data. Relevant Google Sheets differences appear in parentheses.</li>
 <li>A prepared demonstration should take about five minutes. The detailed directions are for learning in advance; practice itself may take longer.</li>
-<li>Every check has a <strong>Regenerate problem</strong> button that changes the data, parameters, or requirements within the same skill. Start with Random variation; use the practice selector to try each listed type deliberately. Complete one generated task and its listed explanation or follow-up per attempt.</li>
-<li>For a live check, open the skill page, regenerate a fresh problem in front of the instructor, and use that version for the entire attempt. Live check view hides practice answers and worked examples. Demonstrate the work in Excel or Sheets; these pages do not submit or grade a workbook.</li>
-<li>Copy data directly from the generated task when provided. Use <strong>Copy version link</strong> to save or share the exact requirements and data. Refreshing that link keeps the same task; press Regenerate for a new one. Random spreadsheet trial results in Check 7 will still vary on recalculation.</li>
-<li>Expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
+<li>Every check has a <strong>Regenerate problem</strong> button that changes the data, parameters, or requirements within the same skill. Check 1 randomly alternates between one and two modes; the other checks also offer a practice variation selector. Complete one generated task and its listed explanation or follow-up per attempt.</li>
+<li>For a live check, open the skill page, regenerate a fresh problem in front of the instructor, and use that version for the entire attempt. On Checks 2–9, Live check view hides practice answers and worked examples. Demonstrate the work in Excel or Sheets; these pages do not submit or grade a workbook.</li>
+<li>Copy data directly from the generated task when provided. On Checks 2–9, use <strong>Copy version link</strong> to save or share the exact requirements and data. Refreshing that link keeps the same task; press Regenerate for a new one. Random spreadsheet trial results in Check 7 will still vary on recalculation.</li>
+<li>For Check 1, follow the help link for setup and reasoning. For Checks 2–9, expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
 <li>Use formulas linked to the data and inputs. Be able to show the formulas, fill them across or down, explain fixed versus changing cell references, and explain the result. A page of typed final answers does not demonstrate these skills.</li>
 <li>Use clear labels and readable number formats. Keep full precision in calculations. These examples assume English function names and comma argument separators; regional settings may use semicolons.</li>
 </ul></section><section><h2>The nine checks</h2><ul class="resources">{rows}</ul></section>
