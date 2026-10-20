@@ -1,4 +1,4 @@
-/* Browser controls shared by all eight checks; assignments are generated only on request. */
+/* Browser controls shared by all nine checks; assignments are generated only on request. */
 (function () {
   'use strict';
   const api=window.ExcelCheckGenerators, host=document.querySelector('[data-check]');
@@ -52,3 +52,4 @@
   window.addEventListener('popstate',()=>location.reload());
   load();
 })();
+
