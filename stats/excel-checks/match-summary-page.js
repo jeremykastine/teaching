@@ -17,16 +17,15 @@
     const { targets } = api.generate(1, seed, variation).meta;
     const { count, mean, median, modes } = targets;
     const target = value => {
-      const node = document.createElement('span');
+      const node = document.createElement('u');
       node.className = 'summary-target';
       node.textContent = String(value);
       return node;
     };
-    problem.replaceChildren('Suppose ', target(count), ' observations have a mean of ',
-      target(mean), ', a median of ', target(median),
-      modes.length === 1 ? ', and a mode of ' : ', and modes of ', target(modes[0]));
-    if (modes.length === 2) problem.append(' and ', target(modes[1]));
-    problem.append('.');
+    problem.replaceChildren('Suppose ', target(`${count} observations`), ' have a ',
+      target(`mean of ${mean}`), ', a ', target(`median of ${median}`),
+      modes.length === 1 ? ', and a ' : ', and ',
+      target(modes.length === 1 ? `mode of ${modes[0]}` : `modes of ${modes[0]} and ${modes[1]}`), '.');
   }
   regenerate.addEventListener('click', () => render(freshSeed()));
   // Previously shared links still open their original task, without visible version controls.
