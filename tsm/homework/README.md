@@ -10,6 +10,10 @@ The topic table of contents stays in its original continuous order without unit 
 
 Topic 5 is now **Evaluating Powers and Square Roots**: its power examples precede roots, and Topic 7 applies powers in mixed expressions. TSM 098 Homework 2 and TSM 099 Homework 1 already cover the affected topic ranges, so their problem sets and completion points remain appropriate; their descriptions explicitly identify powers. Topic 2 supplies the brief exponent-notation introduction needed for Homework 1 prime factorizations.
 
+## Single-variable scope
+
+Polynomial multiplication, GCFs and factoring, rational-expression operations, and rational equations use at most one variable per exercise, matching the October 20, 2026 lecture-note and test specifications. Earlier combining-terms, combining-factors, and introductory distribution practice may use multiple variables; graphing and linear systems retain two variables. Keep editorial answers consistent when changing an exercise.
+
 ## Format and workload
 
 Match the approved Math 101 Chapter 1 approach: compact US Letter PDFs with no reserved working space or separate answer sheets. Students complete and show all work on separate paper, check and correct it, complete the Blackboard self-evaluation, upload one clear photo of their best representative page, and retain all work. Each set targets roughly 45-50 minutes of problem work plus 10-15 minutes of checking and submission. Times are planning estimates, not deadlines or measured student completion times. No points or test grading structure are imposed.

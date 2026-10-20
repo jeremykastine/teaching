@@ -21,6 +21,12 @@ Maintain one HTML file per topic using the established filenames, numbered Topic
 - Use **TSM 098** and **TSM 099** consistently.
 - Preserve every topic's **Assigned to** line. Do not infer assessment coverage from a topic's course assignment.
 
+## Single-variable polynomial and rational-expression scope
+
+Effective October 20, 2026, Topics 12-23 use at most one variable per problem, including every intermediate step and worked solution. This applies to polynomial multiplication, GCFs, all factoring methods, and rational-expression simplification and operations. Rational equations in Topic 29 follow the same single-variable rule. Use numerical coefficients and constants in concrete exercises. Letters denoting fixed coefficients in a general formula are not additional variables; identify them as fixed numbers when introducing the formula.
+
+Earlier combining-like-terms, combining-like-factors, and introductory distributive-property work may retain multiple variables. Later graphing and linear systems retain their required two-variable notation. Preserve useful polynomial and rational-expression skills by rewriting multivariable exercises with one variable; omit redundant examples whose only additional purpose was multivariable practice. Keep homework and assessment sources consistent with this boundary.
+
 ## 4. Topic introduction
 
 Begin each topic with its established title, Assigned to line, brief Overview, and Key definitions. Place brief general background before the first related problem, including at the start of a new section within a topic. Keep introductions conceptual: definitions, notation, the purpose of a method, and essential rules. Do not solve specific examples in introductions. Keep detailed calculations and reasoning for a stated problem in its own worked solution.

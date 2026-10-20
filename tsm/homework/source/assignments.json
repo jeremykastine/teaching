@@ -512,9 +512,9 @@
           {
             "prompt": "Find the greatest common monomial factor.",
             "math": [
-              "18x^3y^2,\\quad24x^2y^4"
+              "18x^3,\\quad24x^2"
             ],
-            "answer": "6x²y²",
+            "answer": "6x²",
             "minutes": 3
           }
         ]
@@ -533,9 +533,9 @@
           {
             "prompt": "Factor out the greatest common factor.",
             "math": [
-              "15a^2b-20ab^2"
+              "15a^3-20a^2"
             ],
-            "answer": "5ab(3a-4b)",
+            "answer": "5a²(3a-4)",
             "minutes": 3
           },
           {
@@ -1486,9 +1486,9 @@
           {
             "prompt": "Multiply and combine like terms.",
             "math": [
-              "(2a-3b)(a+4b)"
+              "(2a-3)(a+4)"
             ],
-            "answer": "2a²+5ab-12b²",
+            "answer": "2a²+5a-12",
             "minutes": 3
           }
         ]
@@ -1530,17 +1530,17 @@
         "title": "GCF first",
         "problems": [
           {
-            "prompt": "Find the GCD of 72 and 108. Then find the greatest common monomial factor of 18x cubed y and 30x squared y cubed.",
+            "prompt": "Find the GCD of 72 and 108. Then find the greatest common monomial factor of 18x cubed and 30x squared.",
             "math": [],
-            "answer": "36;6x²y",
+            "answer": "36;6x²",
             "minutes": 3
           },
           {
             "prompt": "Factor out the GCF.",
             "math": [
-              "18x^3y-30x^2y^2"
+              "18x^3-30x^2"
             ],
-            "answer": "6x²y(3x-5y)",
+            "answer": "6x²(3x-5)",
             "minutes": 3
           }
         ]

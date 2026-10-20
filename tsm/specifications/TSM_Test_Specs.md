@@ -70,6 +70,7 @@ State the assessment name and number of versions. The standardized presentation 
 
 ## 3. Mathematical quality
 
+- **Single-variable scope (October 20, 2026):** Every polynomial-operation, polynomial-factoring, rational-expression, and rational-equation task uses at most one variable, including its worked key, on unit tests, diagnostics, practice finals, and official finals. Use numerical coefficients and constants in concrete exercises. This does not remove permitted multivariable evaluation or earlier combining-terms/distribution exercises, nor the two-variable notation required for graphing and linear systems.
 - Work every problem completely before presenting it. Verify operations, factoring, domains, intersections, discriminants, candidate solutions, excluded values, graphs, and final reductions.
 - Use integer coefficients and manageable values unless a specification explicitly requires a fractional answer or irrational result.
 - Avoid accidental cancellation, unintended extra solutions, unintended factoring methods, ambiguous notation, and answers outside the stated graphing window.
