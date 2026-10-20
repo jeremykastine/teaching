@@ -295,8 +295,8 @@ def main():
     (COURSE / 'excel-competency-checks.html').write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Excel competency checks · Statistics</title><link rel="stylesheet" href="excel-checks.css"></head>
-<body><main><header><p class="eyebrow">MSC 201 · Statistics</p><h1>Excel competency checks</h1>{navigation('stats', 'excel-competency-checks.html')}
-<p>Learn these spreadsheet skills, practice with the examples, and demonstrate them to your instructor face to face. Each check combines several connected calculations or operations with a short explanation.</p></header>
+<body><main><header><h1>Excel Competency Checks</h1></header>
+<section aria-label="Competency checks"><ul class="resources">{rows}</ul></section>
 <section><h2>How to prepare</h2><ul>
 <li>Open the page for the check and practice its complete workflow in Excel until you can build it efficiently from a fresh worksheet with new data. Relevant Google Sheets differences appear in parentheses.</li>
 <li>A prepared demonstration should take about five minutes. The detailed directions are for learning in advance; practice itself may take longer.</li>
@@ -306,7 +306,7 @@ def main():
 <li>For Check 1, follow the help link for setup and reasoning. For Checks 2–9, expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
 <li>Use formulas linked to the data and inputs. Be able to show the formulas, fill them across or down, explain fixed versus changing cell references, and explain the result. A page of typed final answers does not demonstrate these skills.</li>
 <li>Use clear labels and readable number formats. Keep full precision in calculations. These examples assume English function names and comma argument separators; regional settings may use semicolons.</li>
-</ul></section><section><h2>The nine checks</h2><ul class="resources">{rows}</ul></section>
+</ul></section>
 <footer><p>Course alignment: sampling and descriptive statistics, probability and expected value, normal models, sampling distributions, and confidence intervals. The random-trial experiment illustrates the law of large numbers.</p>
 <details><summary>Spreadsheet help</summary><ul>
 <li><a href="https://support.microsoft.com/en-us/excel/split-a-cell-in-excel">Microsoft: splitting text and transposing values</a></li>
