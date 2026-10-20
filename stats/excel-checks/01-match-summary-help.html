@@ -7,12 +7,12 @@
 <h2>Set up your spreadsheet</h2>
 <p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter your own numbers in A2 downward, one number per cell. Reserve column A for observations only.</p>
 <p>One possible summary layout is:</p>
-<table class="task-table"><thead><tr><th>Label cell</th><th>Label</th><th>Formula cell</th><th>Formula</th></tr></thead><tbody>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Label cell</th><th>Label</th><th>Formula cell</th><th>Formula</th></tr></thead><tbody>
 <tr><td>C2</td><td>Count</td><td>D2</td><td><code>=COUNT(A:A)</code></td></tr>
 <tr><td>C3</td><td>Mean</td><td>D3</td><td><code>=AVERAGE(A:A)</code></td></tr>
 <tr><td>C4</td><td>Median</td><td>D4</td><td><code>=MEDIAN(A:A)</code></td></tr>
 <tr><td>C5</td><td>Mode(s)</td><td>D5</td><td><code>=MODE.MULT(A:A)</code></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>Keep D6 empty. Enter <code>MODE.MULT</code> once in D5; two modes spill into D5:D6. If you see <code>#SPILL!</code>, clear the cells blocking the results. If you see <code>#N/A</code>, check whether any observation repeats. The text header in A1 is ignored by these formulas.</p>
 <p>Changing a number in column A should immediately update the summary. Display enough decimal places to judge the mean error; changing the number format does not change the underlying answer.</p>
 <h2>Reason about the median</h2>

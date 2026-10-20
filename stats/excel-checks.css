@@ -1,4 +1,9 @@
 @import url('../course-pages.css');
+.summary-target{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:2px}
+.spreadsheet-table-wrap{overflow-x:auto}
+.task-table.spreadsheet-layout th{width:auto}
+.spreadsheet-layout th:nth-child(-n+3),.spreadsheet-layout td:nth-child(-n+3){width:1%;white-space:nowrap}
+.spreadsheet-layout td:last-child code{white-space:nowrap;overflow-wrap:normal}
 main{max-width:1000px}
 h1{font-size:clamp(2.1rem,6vw,3.3rem);overflow-wrap:anywhere}
 li{margin:10px 0}ol,ul{padding-left:1.5em}
@@ -30,3 +35,4 @@ textarea{width:100%;display:block;max-width:100%;resize:vertical;border:1px soli
 .live-check .learning,.live-check #answers{display:none}[hidden]{display:none!important}
 @media(max-width:520px){.generator{padding:18px 14px}.generator-toolbar{align-items:stretch}.generator-toolbar button{width:100%}.task-table th{width:42%}.task-table th,.task-table td{padding:9px 5px}}
 @media print{.generator{border:0;padding:0;margin:0}.generator-toolbar,.button-row,.toggle,.learning,#answers,#task-status,#copy-fallback-wrap,.task-version a{display:none}.task-table tr{break-inside:avoid}textarea{font-size:9pt;border:0;field-sizing:content;min-height:8em}.task-table th,.task-table td{padding:5px}.generator h3{margin-top:16px}}
+
