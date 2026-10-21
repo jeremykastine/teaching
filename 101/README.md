@@ -2,7 +2,7 @@
 
 Open `../index.html` to choose class slides, homework, or practice tests under your course. Open `class-slides.html` for the 40 section PDFs aligned to OpenStax **College Algebra 2e**. The course contains 844 portrait discussion pages.
 
-Selected sections through Chapter 7 follow `course-schedule.md`; application options 2.3, 4.2, 4.3, 6.7, and 6.8 are labeled optional. Complex-number work in 2.4 is limited to what supports quadratic and polynomial solutions.
+Selected sections through Chapter 7 follow `course-schedule.md`; application options 2.3, 4.2, 4.3, 6.7, and 6.8 are labeled optional. Section 2.4 introduces the imaginary unit, complex-number notation, and simplifying square roots of negative numbers (including non-perfect-square magnitudes) to prepare for the quadratic formula in 2.5. It excludes complex-number operations, powers-of-i exercises, conjugates, and quadratic-factor exercises.
 
 Each page contains one definition, concept, or problem with a focused question. All prompt content stays in the upper half of US Letter portrait pages; the lower half is clear for pen annotations. The instructor provides explanations and worked solutions.
 

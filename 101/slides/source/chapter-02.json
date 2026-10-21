@@ -393,9 +393,9 @@
       },
       {
         "title": "The imaginary unit",
-        "body": "The imaginary unit is defined by its square.",
-        "math": "i^2=-1",
-        "question": "What value does (3i)² have?"
+        "body": "The imaginary unit i is the principal square root of -1; its square is -1.",
+        "math": "i=\\sqrt{-1}",
+        "question": "Why is i not a real number?"
       },
       {
         "title": "A complex number",
@@ -410,10 +410,28 @@
         "question": "What are this number’s real part and imaginary part?"
       },
       {
+        "title": "Square roots of negative numbers",
+        "body": "For a positive real number a, move the negative sign out of the square root as i. Then simplify the positive radical.",
+        "math": "\\sqrt{-a}=i\\sqrt{a}\\qquad(a>0)",
+        "question": "Which simplification skills from Section 1.3 still apply?"
+      },
+      {
+        "title": "A negative perfect square",
+        "body": "",
+        "math": "\\sqrt{-36}",
+        "question": "How can we write the principal square root as a multiple of i?"
+      },
+      {
         "title": "A negative radicand",
         "body": "Use the principal complex square root.",
         "math": "\\sqrt{-50}",
         "question": "How can we write this radical in standard complex form?"
+      },
+      {
+        "title": "A negative radicand with a square factor",
+        "body": "",
+        "math": "\\sqrt{-12}",
+        "question": "How can we write the principal square root as i times a simplified radical?"
       },
       {
         "title": "Two square roots",
@@ -422,52 +440,10 @@
         "question": "What are both complex solutions?"
       },
       {
-        "title": "Add complex numbers",
+        "title": "One principal root or two solutions?",
         "body": "",
-        "math": "(3-2i)+(5+7i)",
-        "question": "What is the sum in standard form?"
-      },
-      {
-        "title": "Subtract complex numbers",
-        "body": "",
-        "math": "(2+6i)-(5-3i)",
-        "question": "What is the difference in standard form?"
-      },
-      {
-        "title": "Multiply complex numbers",
-        "body": "",
-        "math": "(2+i)(3-4i)",
-        "question": "What is the product in standard form?"
-      },
-      {
-        "title": "Powers of i",
-        "body": "",
-        "math": "i^7",
-        "question": "How can we simplify this power?"
-      },
-      {
-        "title": "Complex conjugates",
-        "body": "The conjugate of a + bi is a - bi.",
-        "math": "4+3i",
-        "question": "What happens when this number is multiplied by its conjugate?"
-      },
-      {
-        "title": "Divide by a complex number",
-        "body": "",
-        "math": "\\frac{5}{2-i}",
-        "question": "What is the quotient in standard form?"
-      },
-      {
-        "title": "Complex roots of a quadratic",
-        "body": "",
-        "math": "(x-2)^2=-12",
-        "question": "What are the complex solutions in exact form?"
-      },
-      {
-        "title": "A quadratic factor",
-        "body": "",
-        "math": "(x-i)(x+i)",
-        "question": "What real polynomial does this product produce?"
+        "math": "\\sqrt{-12}\\qquad\\mathrm{and}\\qquad x^2=-12",
+        "question": "Simplify the radical, then solve the equation. Which answer needs a plus-or-minus sign?"
       }
     ]
   },
