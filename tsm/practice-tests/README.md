@@ -15,6 +15,6 @@ python -m pip install -r scripts/practice-requirements.txt
 python scripts/generate_practice_batch.py --version 202610122020
 ```
 
-This rebuilds the 48-file TSM/MATH 101 batch. For a focused rebuild, add `--only` followed by a slug in the manifest, such as `98-arithmetic`, `99-graphing`, or `99-final`. Identifiers use the timestamp plus a unique batch suffix. The key is for checking after attempting the test; no extra compliance report is included in the practice PDFs.
+This rebuilds the 48-file TSM/MATH 101 batch. For a focused rebuild, add `--only` followed by a slug in the manifest, such as `98-arithmetic`, `99-graphing`, or `99-final`. For each newly generated practice version, independently choose a random five-digit integer from 10000 through 99999. Duplicates are acceptable; no timestamp, sequential numbering, batch suffix, or numerical ordering is required. Use the same identifier on the student test, corresponding answer key, and filename when practical. The key is for checking after attempting the test; no extra compliance report is included in the practice PDFs.
 
 After building, run `python scripts/verify_algebra_tests.py` from the repository root to check scoring, vertical matches, point positions, empty student answer regions, duplex padding, print margins, and index links. Render and visually inspect the PDFs before publishing.

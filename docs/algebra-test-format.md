@@ -6,6 +6,10 @@ Approved October 12, 2026. Applies to TSM 098, TSM 099, and MATH 101 unit tests,
 
 Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
 
+## Version identifiers
+
+For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical. Preserve existing identifiers when only reformatting existing versions.
+
 ## Student test
 
 - Combine problem statements and final-answer spaces on the same pages. Use US Letter portrait pages with print-safe margins. Within the usable width, the questions occupy the left two-thirds and answers occupy the right one-third.

@@ -65,10 +65,7 @@ State the assessment name and number of versions. The standardized presentation 
 - For Part IV exams, follow the requested ordering mode: STANDARDIZED for an official final when a fixed item-number map is supplied; RANDOMIZED for a diagnostic or practice final unless the request states otherwise.
 - A new version must use genuinely new numerical values and expressions; merely reordering the same problems does not create a new version.
 - Within a batch, avoid duplicate questions, equivalent coefficient sets, repeated graphs, and identical answer patterns when reasonable.
-- **Do not use lettered labels such as Version A/B.**
-- A single generated version uses a **12-digit timestamp identifier** in the format `YYYYMMDDHHMM`, using the user's local date/time, a 24-hour clock, and the nearest minute, with no punctuation.
-- Multiple versions generated in the same request use the same timestamp plus `.1`, `.2`, `.3`, and so on.
-- Use the same version identifier on the combined student test, instructor answer key, requested compliance report, and filename when practical.
+- For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical. Use the same identifier on any explicitly requested compliance report.
 - When an option is meant to vary across versions, distribute the options as evenly as practical across a large batch rather than relying on uncontrolled randomness.
 - Randomization must never weaken a required constraint. Generate first, verify second, and replace any item that fails the specification.
 
@@ -851,7 +848,7 @@ Before returning tests created from this guide, the generating system must confi
 - Every Part III unit-test version contains exactly five numbered question units. Every Part IV exam version contains exactly ten numbered question units. Required multipart structures remain intact.
 - Every Part III unit-test main question is worth **20 points** and each Part III test totals **100 points**; every Part IV exam main question is worth **10 points** and each Part IV exam totals **100 points**. Multipart point values sum correctly to the applicable main-question value.
 - Question order follows the correct mode: randomized for unit tests, diagnostics, and practice finals unless otherwise requested; standardized for an official final only when the official position map is available. Numerical content varies across versions without violating constraints.
-- Version identifiers follow the timestamp convention `YYYYMMDDHHMM`, with `.1`, `.2`, `.3`, etc. only for multiple versions generated together.
+- Every newly generated version uses an independently chosen random five-digit identifier from 10000 through 99999. Duplicates are acceptable; no sequence, sorting, timestamp, or batch suffix is required.
 - Every diagnostic or final has exactly six institutional items and four coverage-balancing supplemental items.
 - Institutional archetypes are distributed fairly across a batch, and microvariation has not altered the measured construct or difficulty.
 - Every problem has been solved independently and checked for unintended behavior.

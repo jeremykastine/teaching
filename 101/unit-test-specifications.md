@@ -52,7 +52,7 @@ Change numerical data, expressions, or graphs, not merely order or names. Preser
 
 ### Presentation and output
 
-Follow the approved [algebra test format](../docs/algebra-test-format.md): combine questions in the left two-thirds of each printable page and aligned answer spaces in the right one-third. Students show all work on separate paper and record exact final answers in the right column. Omit a course-section field; keep timestamp IDs in America/New_York with batch suffixes.
+Follow the approved [algebra test format](../docs/algebra-test-format.md): combine questions in the left two-thirds of each printable page and aligned answer spaces in the right one-third. Students show all work on separate paper and record exact final answers in the right column. Omit a course-section field. For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical.
 
 Aim for one or two student pages. The concise instructor key uses one column per test page, preserving exact vertical response geometry; one-, two-, or three-page tests have one-, two-, or three-column keys respectively. Longer tests may require additional key pages. There is no separate student answer sheet and no requirement for equal student/key page counts.
 
@@ -270,7 +270,7 @@ Perform these checks for every version; expose an audit only when requested.
 5. Estimate student time for the whole form from reading, mathematical decisions, written work, and transferring answers. Verify the 24–25-minute question target plus remaining allowance within 30 minutes. Check all multipart workloads, especially U1-4, U3-3/U3-4, and U4-5. Instructor speed alone is not evidence.
 6. For graph items, verify the underlying formulas/coordinates, plotted zeros/multiplicities, labeled points, transformed coordinates, scales, and unique answer choices. Never use a graph image that merely suggests the required data.
 7. For matched forms, preserve constructs, subtypes, scoring, method requirements, supports, reading demand, and approximate difficulty; vary numerical content genuinely.
-8. Check randomization keeps related parts together and response areas/key columns follow printed order. Use timestamp identifiers consistently; no Version A/B.
+8. Check randomization keeps related parts together and response areas/key columns follow printed order. Use each version's random five-digit identifier consistently; duplicates are acceptable and no sequence is required.
 9. For actual PDFs, render every page and inspect legibility, wrapping, graph labels, and page breaks. Confirm combined questions/answers with no deliberate work areas, one key column per student page and exact vertical matches, integer part points only in response areas, correct separators, no answer baselines, no hidden answers, and odd-page section starts.
 10. Deliver only the requested tests/versions and requested format. Do not automatically add finals, homework, worked-solution documents, or audit reports.
 

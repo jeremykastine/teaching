@@ -13,7 +13,7 @@ python -m pip install -r scripts/practice-requirements.txt
 python scripts/generate_practice_batch.py --version 202610122020
 ```
 
-This rebuilds the entire 48-file TSM/MATH 101 batch. For a focused rebuild, add `--only 101-unit-1`, `101-unit-2`, `101-unit-3`, `101-unit-4`, or `101-final`. The version is a local timestamp followed by a unique batch suffix, not a lettered version. Unit timing remains an authoring estimate to refine after classroom use.
+This rebuilds the entire 48-file TSM/MATH 101 batch. For a focused rebuild, add `--only 101-unit-1`, `101-unit-2`, `101-unit-3`, `101-unit-4`, or `101-final`. For each newly generated practice version, independently choose a random five-digit integer from 10000 through 99999. Duplicates are acceptable; no timestamp, sequential numbering, batch suffix, or numerical ordering is required. Use the same identifier on the student test, corresponding answer key, and filename when practical. Unit timing remains an authoring estimate to refine after classroom use.
 
 The index builder reads the manifest so rebuilding slides or homework preserves the practice-test links.
 
