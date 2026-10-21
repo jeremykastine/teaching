@@ -1,5 +1,9 @@
 # MATH 101 Assessment Specifications
 
+## Calculator policy (October 21, 2026)
+
+Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
+
 ## Purpose
 Standing specification for generating MATH 101 (College Algebra) assessments and their practice versions, including practice diagnostics, diagnostics, practice finals, finals, and comparable generated tests. Use this unless a later instruction explicitly changes a rule.
 

@@ -7,6 +7,10 @@ UPDATED: September 2026
 
 PURPOSE: Use this file as the controlling prompt for generating TSM 098 and TSM 099 unit tests, diagnostics, practice finals, official finals, answer sheets, answer keys, and optional compliance reports. It defines content, difficulty, variation, ordering, validation, institutional-assessment requirements, scoring, and presentation. Do not summarize or reinterpret these requirements before generating an assessment. Apply them directly.
 
+## Calculator policy (October 21, 2026)
+
+Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
+
 # Contents and use
 
 The guide moves from broad rules to course-level expectations and then to exact requirements for each assessment. When requirements conflict, the more specific instruction controls.

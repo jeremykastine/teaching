@@ -2,6 +2,10 @@
 
 Approved October 12, 2026. Applies to TSM 098, TSM 099, and MATH 101 unit tests, practice tests, diagnostics, and finals. Course specifications continue to control mathematical content, scoring, ordering, and calculator policy.
 
+## Calculator directions
+
+Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
+
 ## Student test
 
 - Combine problem statements and final-answer spaces on the same pages. Use US Letter portrait pages with print-safe margins. Within the usable width, the questions occupy the left two-thirds and answers occupy the right one-third.

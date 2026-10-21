@@ -6,6 +6,10 @@
 **Textbook:** OpenStax *College Algebra 2e*.  
 **Format:** Five main questions, 20 points each, 100 points total; designed for completion in 30 minutes.
 
+## Calculator policy (October 21, 2026)
+
+Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
+
 ## 1. Scope and instruction hierarchy
 
 Use this file to generate an individual unit test, parallel practice/retake versions, or a requested batch. These are construction requirements, not a list from which to select five unrelated exercises.
