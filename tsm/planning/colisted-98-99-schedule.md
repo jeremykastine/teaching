@@ -27,7 +27,7 @@ Topic 10 - Combining Like Factors (TSM 098 and TSM 099)
 Topic 11 - The Distributive Property (TSM 098 and TSM 099)  
 Topic 12 - Multiplying Polynomials (TSM 098 and TSM 099)  
 Topic 13 - Greatest Common Divisor (GCD) (TSM 098 and TSM 099)  
-Topic 14 - Greatest Common Factor and Factoring Out a GCF (TSM 098 and TSM 099)  
+Topic 14 - Factoring Out a GCF (TSM 098 and TSM 099)\
 
 Week 4
 Topic 15 - Factoring by Guess and Check (TSM 098 and TSM 099)  

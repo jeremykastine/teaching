@@ -254,3 +254,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Retain only Problems 1–11 and their complete worked solutions, ending with the four-part comparison of addition and multiplication involving `3x^4` and `3x^5`. Preserve the original first eleven problems without reordering or rewriting them.
 - Remove everything after Problem 11 in the instructional content, including Problems 12–24 and the sections on powers of powers, powers of products and quotients, quotient rules, negative-exponent manipulation, and nonzero-base restrictions. Preserve bottom lesson navigation.
 - Limit the overview and definitions to counting repeated factors, multiplying coefficients, combining powers with the same base by adding exponents, and distinguishing products from sums. Do not relocate the removed material or change assessment specifications.
+
+
+## Topics 13 and 14: GCF organization (October 21, 2026)
+
+- Topic 13 includes numerical GCD/GCF and GCFs of terms with variables. Every problem explicitly requires both methods: listing factors and prime factorization; solutions demonstrate both. Include 90 and 126 (GCD 18). For variable terms, list coefficient factors and common variable factors, then compare prime factorizations and repeated variable factors.
+- Topic 14 is titled **Factoring Out a GCF** and focuses on factoring sums/differences, including common parenthetical factors. Move standalone variable-GCF instruction and problems to Topic 13. Omit standalone monomial factoring/missing-factor problems. Retain existing lesson URLs.
+
+- State explicitly in Topic 13 that GCF and GCD mean the same thing in this course and are interchangeable for both whole numbers and algebraic terms, including terms with variables. Do not distinguish the terms by numerical versus algebraic context.
