@@ -44,7 +44,7 @@
     },
     {
       "id": "U1-G09",
-      "name": "Spread and transformations"
+      "name": "Understanding and comparing spread"
     },
     {
       "id": "U1-G10",
@@ -1565,20 +1565,20 @@
       "id": "U1-067",
       "group": "U1-G07",
       "skill_group": "Mean, weights, and changes",
-      "reasoning": "predict",
-      "stem": "Every recorded duration increases by 3 seconds. What happens to the mean and median?",
-      "explanation": "A common additive shift moves both centers by that amount.",
+      "reasoning": "calculate",
+      "stem": "Five print jobs contain 2, 3, 3, 5, and 7 pages. What is the mean number of pages per job?",
+      "explanation": "The total is 20 pages, and 20 divided by 5 jobs is 4 pages per job.",
       "source": {
         "section": "2.5",
-        "slide_page": 20,
-        "slide_title": "Adding a constant",
-        "pdf": "../slides/section-2-5.pdf#page=20"
+        "slide_page": 1,
+        "slide_title": "The mean",
+        "pdf": "../slides/section-2-5.pdf#page=1"
       },
       "choices": [
-        "Both multiply by 3.",
-        "Only the median increases.",
-        "Only the mean increases.",
-        "Both increase by 3 seconds."
+        "20.",
+        "5.",
+        "3.",
+        "4."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1587,20 +1587,20 @@
       "id": "U1-068",
       "group": "U1-G07",
       "skill_group": "Mean, weights, and changes",
-      "reasoning": "predict",
-      "stem": "Every size is converted from MB to KB using 1 MB=1,000 KB. What happens to the mean's numerical value?",
-      "explanation": "A unit conversion scales every observation and its mean equally.",
+      "reasoning": "interpret",
+      "stem": "The numbers of pages in six jobs are 1, 2, 2, 4, 4, 5. Which statement about the mode is correct?",
+      "explanation": "The values 2 and 4 each occur twice, more often than any other value.",
       "source": {
         "section": "2.5",
-        "slide_page": 21,
-        "slide_title": "Changing units",
-        "pdf": "../slides/section-2-5.pdf#page=21"
+        "slide_page": 9,
+        "slide_title": "Two modes",
+        "pdf": "../slides/section-2-5.pdf#page=9"
       },
       "choices": [
-        "It divides by 1,000.",
-        "It stays the same.",
-        "It multiplies by 1,000.",
-        "It increases by 1,000."
+        "Only 4 is a mode.",
+        "Only 2 is a mode.",
+        "Both 2 and 4 are modes.",
+        "The mode is 3, halfway between 2 and 4."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1741,20 +1741,20 @@
       "id": "U1-075",
       "group": "U1-G08",
       "skill_group": "Shape and outlier effects",
-      "reasoning": "predict",
-      "stem": "Add 10 to every value in a right-skewed dataset. What happens to its shape?",
-      "explanation": "Translation moves locations without changing shape.",
+      "reasoning": "interpret",
+      "stem": "Most scores cluster near the high end, with a few scores extending far toward smaller values. How is the distribution described?",
+      "explanation": "The long tail points toward smaller values, so the distribution is left-skewed.",
       "source": {
         "section": "2.6",
-        "slide_page": 17,
-        "slide_title": "A shift and shape",
-        "pdf": "../slides/section-2-6.pdf#page=17"
+        "slide_page": 4,
+        "slide_title": "Left skew",
+        "pdf": "../slides/section-2-6.pdf#page=4"
       },
       "choices": [
-        "It becomes left-skewed.",
-        "It remains right-skewed.",
-        "It becomes symmetric.",
-        "Its tail disappears."
+        "Symmetric.",
+        "Left-skewed.",
+        "Right-skewed.",
+        "Uniform."
       ],
       "answer_index": 1,
       "answer_letter": "B"
@@ -1872,7 +1872,7 @@
     {
       "id": "U1-081",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "compare",
       "stem": "Compare 4, 5, 6 with 1, 5, 9. Which statement is correct?",
       "explanation": "Both center at 5; the second has observations farther from the center.",
@@ -1894,7 +1894,7 @@
     {
       "id": "U1-082",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "interpret",
       "stem": "A dataset's standard deviation is zero. What must be true?",
       "explanation": "Zero spread requires identical values, which need not be zero.",
@@ -1916,21 +1916,21 @@
     {
       "id": "U1-083",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
-      "reasoning": "predict",
-      "stem": "Add 7 seconds to every duration. What happens to standard deviation?",
-      "explanation": "Distances from the shifted mean stay the same.",
+      "skill_group": "Understanding and comparing spread",
+      "reasoning": "calculate",
+      "stem": "A population contains 4 observations with a sum of squared deviations from its mean of 36. What is the population variance?",
+      "explanation": "Population variance divides the sum of squared deviations by the population size: 36/4=9.",
       "source": {
         "section": "2.7",
-        "slide_page": 19,
-        "slide_title": "Adding a constant",
-        "pdf": "../slides/section-2-7.pdf#page=19"
+        "slide_page": 9,
+        "slide_title": "Population variance",
+        "pdf": "../slides/section-2-7.pdf#page=9"
       },
       "choices": [
-        "It increases by 7 seconds.",
-        "It becomes zero.",
-        "It is unchanged.",
-        "It multiplies by 7."
+        "12.",
+        "36.",
+        "9.",
+        "3."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1938,21 +1938,21 @@
     {
       "id": "U1-084",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
-      "reasoning": "predict",
-      "stem": "Multiply every observation by 3. What happens to standard deviation?",
-      "explanation": "Standard deviation scales like the observations; variance scales by the square.",
+      "skill_group": "Understanding and comparing spread",
+      "reasoning": "calculate",
+      "stem": "A sample has variance 16 seconds squared. What is its standard deviation?",
+      "explanation": "The standard deviation is the square root of 16 and is measured in seconds.",
       "source": {
         "section": "2.7",
-        "slide_page": 20,
-        "slide_title": "Scaling every value",
-        "pdf": "../slides/section-2-7.pdf#page=20"
+        "slide_page": 8,
+        "slide_title": "Sample standard deviation",
+        "pdf": "../slides/section-2-7.pdf#page=8"
       },
       "choices": [
-        "It increases by 3.",
-        "It multiplies by 3.",
-        "It multiplies by 9.",
-        "It stays unchanged."
+        "4 seconds squared.",
+        "4 seconds.",
+        "8 seconds.",
+        "16 seconds."
       ],
       "answer_index": 1,
       "answer_letter": "B"
@@ -1960,7 +1960,7 @@
     {
       "id": "U1-085",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "interpret",
       "stem": "Durations are in seconds. Which units belong to variance and standard deviation, respectively?",
       "explanation": "Variance averages squared distances; standard deviation takes the square root.",
@@ -1982,7 +1982,7 @@
     {
       "id": "U1-086",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "evaluate",
       "stem": "Why is adding signed deviations from the sample mean unsuitable as a spread measure?",
       "explanation": "Signed deviations sum to zero even when observations are widely spread.",
@@ -2004,7 +2004,7 @@
     {
       "id": "U1-087",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "interpret",
       "stem": "A sample has 8 observations. Its sum of squared deviations is already supplied. Which divisor gives sample variance?",
       "explanation": "Sample variance uses n-1, unlike the population calculation with all population members.",
@@ -2026,7 +2026,7 @@
     {
       "id": "U1-088",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "calculate",
       "stem": "A file is 60 KB; its group has mean 50 KB and SD 5 KB. How far above the mean is it?",
       "explanation": "The difference is 10 KB, or twice the 5 KB standard deviation.",
@@ -2048,7 +2048,7 @@
     {
       "id": "U1-089",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "compare",
       "stem": "Score A is 10 above its mean with SD 5; score B is 12 above its mean with SD 12. Which is relatively farther above its group mean?",
       "explanation": "A is 2 SD above its mean; B is 1 SD above.",
@@ -2070,7 +2070,7 @@
     {
       "id": "U1-090",
       "group": "U1-G09",
-      "skill_group": "Spread and transformations",
+      "skill_group": "Understanding and comparing spread",
       "reasoning": "interpret",
       "stem": "Two services have mean wait 10 minutes, but SDs 1 and 6 minutes. What does the larger SD suggest?",
       "explanation": "Standard deviation describes variation around a center, not an extra amount added to it.",
@@ -2143,9 +2143,9 @@
       "id": "U1-092",
       "group": "U1-G10",
       "skill_group": "Comparing distributions and summaries",
-      "reasoning": "predict",
-      "stem": "Every value in a dataset increases by 5. What happens to the IQR?",
-      "explanation": "Both quartiles shift by 5, so their difference is unchanged.",
+      "reasoning": "compare",
+      "stem": "Two groups have the same median. Group A has Q1=6 and Q3=10; group B has Q1=3 and Q3=13. Which conclusion is supported?",
+      "explanation": "The IQRs are 4 for A and 10 for B; equal centers do not require equal spreads.",
       "source": {
         "section": "2.4",
         "slide_page": 15,
@@ -2153,10 +2153,10 @@
         "pdf": "../slides/section-2-4.pdf#page=15"
       },
       "choices": [
-        "It increases by 5.",
-        "It becomes the median.",
-        "It doubles.",
-        "It stays unchanged."
+        "Group B has less spread in its middle half.",
+        "Every value in group A is smaller than every value in group B.",
+        "Their equal medians require equal IQRs.",
+        "Group A has less spread in its middle half."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -2253,20 +2253,20 @@
       "id": "U1-097",
       "group": "U1-G10",
       "skill_group": "Comparing distributions and summaries",
-      "reasoning": "evaluate",
-      "stem": "A distribution's shape is unknown. Which claim about the fraction within 2 SD is justified by Chebyshev's bound?",
-      "explanation": "Chebyshev gives a general lower bound; the empirical rule needs an appropriate bell shape.",
+      "reasoning": "interpret",
+      "stem": "A bell-shaped distribution of scores has mean 50 and standard deviation 5. Approximately what percentage of scores lies between 45 and 55?",
+      "explanation": "The interval extends one standard deviation on either side of the mean, so the empirical rule gives about 68%.",
       "source": {
         "section": "2.7",
-        "slide_page": 27,
-        "slide_title": "Chebyshev’s bound",
-        "pdf": "../slides/section-2-7.pdf#page=27"
+        "slide_page": 28,
+        "slide_title": "Empirical rule",
+        "pdf": "../slides/section-2-7.pdf#page=28"
       },
       "choices": [
-        "At least 75%, assuming a finite nonzero variance.",
-        "Exactly 95%.",
-        "Exactly 68%.",
-        "At most 25%."
+        "68%.",
+        "95%.",
+        "99.7%.",
+        "50%."
       ],
       "answer_index": 0,
       "answer_letter": "A"

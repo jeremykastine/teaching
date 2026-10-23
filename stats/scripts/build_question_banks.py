@@ -439,7 +439,10 @@ def build_overview(banks):
         units.append({'unit': n, 'pools': [{'id': g['id'], 'name': g['name'],
                        'question_ids': [q['id'] for q in b['questions'] if q['group'] == g['id']]}
                       for g in b['groups']]})
-    (OUT / 'source/test-blueprint.json').write_text(json.dumps({
+    blueprint_path = OUT / 'source/test-blueprint.json'
+    existing_policy = json.loads(blueprint_path.read_text()) if blueprint_path.exists() else {}
+    blueprint_path.write_text(json.dumps({
+        **existing_policy,
         'generator_version': 1, 'questions_per_test': 10, 'questions_per_pool': 1,
         'sampling': 'Choose one question independently from each of ten topic pools, then shuffle the selected questions and their answer choices.',
         'scope': 'Chapters 1-8; Chapter 9 is not tested. Use the same pool coverage for instructor-requested printable tests.',

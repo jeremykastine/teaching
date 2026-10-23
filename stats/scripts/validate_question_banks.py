@@ -27,6 +27,8 @@ def calculations():
         'U1-045': num(3+7), 'U1-051': num(statistics.median([2,4,4,7,20])),
         'U1-052': num(statistics.median([1,3,5,9])),
         'U1-055': 'Group A.' if 9-3 > 14-10 else 'Group B.',
+        'U1-067': num(sum([2,3,3,5,7])/5),
+        'U1-083': num(36/4), 'U1-084': num(math.sqrt(16), ' seconds.'),
         'U1-066': num(4*5), 'U1-088': num((60-50)/5, ' standard deviations.'),
         'U1-098': num(math.sqrt(9), ' minutes.'),
         'U2-002': f'{len([x for x in range(1,7) if x>4])}/6.',
