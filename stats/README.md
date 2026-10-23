@@ -39,6 +39,8 @@ Compact PDF homework assignments are linked from `homework.html`. See [the homew
 
 ## Unit tests and public question banks
 
+Read and follow [Statistics Test Specifications](specifications/Statistics_Test_Specs.md) before generating any statistics test, retake, diagnostic, final, or practice version. The approved default is a two-page student test with a narrow answer column, a single-page two-column key matching the student-page row geometry, and a completely blank key verso. These specifications supersede older separate-answer-sheet and two-page-key formats.
+
 Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
 
 For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical.
