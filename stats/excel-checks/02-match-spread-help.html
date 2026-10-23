@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet setup and reasoning · Excel check 2</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 2 · Help</p>
+<h1>Spreadsheet setup and reasoning</h1><p><a href="01-prepare-data.html">Back to the problem</a></p></header>
+
+<h2>Set up your spreadsheet</h2>
+<p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter exactly ten numbers of your own in A2:A11, one per cell. All values must be between 0 and 1,000 inclusive; decimals are allowed. Reserve column A for observations only.</p>
+<p>Work from left to right. One possible layout is:</p>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Column</th><th>Heading in row 1</th><th>Formula in row 2</th><th>What to do</th></tr></thead><tbody>
+<tr><td>A</td><td>Observation</td><td>Your chosen numbers</td><td>Enter ten values in A2:A11.</td></tr>
+<tr><td>B</td><td>Mean</td><td><code>=AVERAGE(A:A)</code></td><td>Fill B2 down through B11.</td></tr>
+<tr><td>C</td><td>Deviation from mean</td><td><code>=A2-B2</code></td><td>Fill C2 down through C11.</td></tr>
+<tr><td>D</td><td>Squared deviation</td><td><code>=C2^2</code></td><td>Fill D2 down through D11.</td></tr>
+<tr><td>E</td><td>Sum of squared deviations</td><td><code>=SUM(D:D)</code></td><td>Enter once in E2.</td></tr>
+<tr><td>F</td><td>Population variance or Sample variance</td><td>Choose the formula below.</td><td>Enter once in F2.</td></tr>
+<tr><td>G</td><td>Population standard deviation or Sample standard deviation</td><td><code>=SQRT(F2)</code></td><td>Use G2 only when standard deviation is requested.</td></tr>
+</tbody></table></div>
+<p>In B2, <code>=AVERAGE(A:A)</code> calculates the mean of the entire observation column. Drag the fill handle down through B11 (or select B2:B11 and use Fill Down). Every copied formula still refers to column A, so <strong>the same current mean appears in all ten rows</strong>. You do not need dollar signs. Do not use a moving range such as <code>=AVERAGE(A2:A11)</code> and drag it down: that would leave out observations as the range shifts. The text heading in A1 is ignored.</p>
+<p>Fill C2 and D2 down through row 11. Each deviation uses the observation and mean on its own row. When you change any observation, the mean in every row and all the deviations must update. Squaring the deviations prevents positive and negative differences from canceling.</p>
+<h2>Choose the correct division and stopping point</h2>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Requested measure</th><th>Formula in F2</th><th>Final result</th></tr></thead><tbody>
+<tr><td>Population variance</td><td><code>=E2/COUNT(A:A)</code></td><td>F2; divide by n = 10 and stop.</td></tr>
+<tr><td>Population standard deviation</td><td><code>=E2/COUNT(A:A)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
+<tr><td>Sample variance</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>F2; divide by n − 1 = 9 and stop.</td></tr>
+<tr><td>Sample standard deviation</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
+</tbody></table></div>
+<p>Use the row matching your generated problem. Label F1 with the correct kind of variance, and G1 with the correct kind of standard deviation if needed. Variance is the division result; take its square root only when the problem asks for standard deviation. Show these steps rather than using <code>VAR.P</code>, <code>VAR.S</code>, <code>STDEV.P</code>, or <code>STDEV.S</code> as a shortcut.</p>
+<h2>Calculate the range separately</h2>
+<p>Put <strong>Range</strong> in I2 and <code>=MAX(A:A)-MIN(A:A)</code> in J2. Put <strong>Count</strong> in I3 and <code>=COUNT(A:A)</code> in J3. Keep these summaries outside column A so they are not counted as observations. Your count must remain exactly 10.</p>
+<p>Keep full precision in every calculation. Display enough decimal places to compare your mean and requested spread with their targets; rounding the display does not change the underlying result. These formulas also work in Google Sheets.</p>
+<h2>Reason about the mean and range</h2>
+<p>The required total is 10 × target mean. If the current mean is too low, increase the total; if it is too high, decrease the total. Increasing the total by 1 increases the mean by 0.1.</p>
+<p>Choose a minimum and maximum whose difference is the required range. Their locations are yours to choose; the problem does not give a required minimum or maximum. To keep the range fixed, retain at least one observation at each endpoint and keep the other values between them. If the target mean is difficult to reach within those endpoints, try shifting the entire interval.</p>
+<p>Adding the same amount to every observation shifts the mean by that amount and leaves both range and spread unchanged. Stay between 0 and 1,000. This can help you correct the mean after you have a suitable range and spread.</p>
+<h2>Reason about the spread</h2>
+<p>With the mean and endpoints fixed, moving two interior values apart by equal amounts increases their spread while preserving their total. Moving them closer together decreases spread. Keep each value within the endpoints and watch the spreadsheet recalculate.</p>
+<p>Try different arrangements: values clustered near the center, values clustered near both endpoints, or many values near one end with a few farther away. A fixed range does not determine the variance or standard deviation. Recheck the mean, range, and count after each adjustment, and use progressively smaller decimal changes to refine the requested spread.</p>
+<p>The spread target is rounded to four decimal places. Aim for a mean and requested spread as close as possible to the displayed targets; your instructor decides whether they are close enough, as in Check 1. Count and range must match exactly. There is no fixed numerical tolerance.</p>
+<p>Many datasets can work. You do not need to recover the hidden original observations or reproduce their shape. Use your own guesses and corrections, and be ready to explain your division, your stopping point, and how you could refine the remaining errors.</p>
+
+<footer><a href="01-prepare-data.html">Back to the problem</a></footer></main></body></html>

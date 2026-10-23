@@ -36,26 +36,42 @@ CHECKS = [
 <p>Experiment with values away from the middle positions and required repetitions. Use progressively smaller decimal adjustments while staying between 0 and 1,000. Recheck the count, median, and mode(s) after each adjustment. Your instructor decides whether the mean is close enough; there is no fixed numerical tolerance.</p>
 <p>There are many possible datasets. Use these ideas to guide your own guesses and corrections, and be ready to explain how you could narrow the mean error further while preserving the exact requirements.</p>
 '''),
-    ('01-prepare-data', 'Prepare comma-separated data for analysis', 'Chapters 1–2',
-     'Split text into values, transpose to one editable column, sort, and summarize.', '''
-<h2>What to learn</h2>
-<p>Turn a line of comma-separated numbers into individual numeric cells, arrange the observations in one column, and summarize them with formulas. Keep the original text available so you can check your work.</p>
-<h2>Practice example</h2>
-<p>Paste this entire line into cell A1 as text:</p>
-<pre>12,8,15,10,7,14,9,11,13,6,16,10,8,12,9</pre>
-<ol>
-<li>Copy A1 to A3. Select A3 and use <strong>Data → Text to Columns → Delimited → Comma</strong>. The 15 observations should occupy A3:O3; leave the cells to the right empty before splitting. If the menus look different, choose the available split-by-delimiter tool and select comma.</li>
-<li>Copy A3:O3. Select A6 and use <strong>Paste Special → Transpose</strong> so the observations occupy A6:A20. Paste values if necessary: the final column must contain individually editable numbers.</li>
-<li>Select only A6:A20 and sort smallest to largest. Be able to sort largest to smallest as well. With a multi-column record list, select the whole record range before sorting so related fields stay together.</li>
-<li>In a separate labeled summary area, calculate the number of observations with <code>=COUNT(A6:A20)</code> and the mean with <code>=AVERAGE(A6:A20)</code>. Confirm the count is 15 and the mean is approximately 10.6667. A count below 15 may mean some entries are still text.</li>
-<li>Change the largest observation from 16 to 26. Confirm the mean becomes approximately 11.3333 and the count stays 15. The original text should still be available in A1.</li>
-</ol>
-<p class="aside">(Excel for the web or a version without the wizard: enter <code>=TEXTSPLIT(A1,",")</code> in A3 if available, then copy its results and paste transposed <em>values</em> into A6. Google Sheets: select the copied text and use <strong>Data → Split text to columns</strong>, choosing comma; then use <strong>Edit → Paste special → Transposed</strong>. You can also split with <code>=SPLIT(A1,",")</code>. Convert formula results to values before sorting or editing individual observations.)</p>
-<h2>During your check</h2>
-<p>From a new supplied line of data, create a sorted, editable column and a formula-based count and mean. Make one requested correction and show the summary updating.</p>
-<h2>Variations to prepare for</h2>
-<ul><li>A different number of observations or a different destination cell.</li><li>Semicolons or tabs as the delimiter; negative or decimal values.</li><li>Descending instead of ascending order, or deleting a specified observation. If deleting, ensure the summary still includes all remaining observations.</li></ul>
-<h2>Be ready to explain</h2><p>Why one cell containing a whole line of text is not yet a column of numerical observations, and how you verified that no observations were lost.</p>
+    ('01-prepare-data', 'Match Mean, Range, and Spread', 'Chapter 2',
+     'Create ten observations to match a generated mean, range, and standard deviation or variance, showing the spread calculation step by step.', '''
+<h2>Set up your spreadsheet</h2>
+<p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter exactly ten numbers of your own in A2:A11, one per cell. All values must be between 0 and 1,000 inclusive; decimals are allowed. Reserve column A for observations only.</p>
+<p>Work from left to right. One possible layout is:</p>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Column</th><th>Heading in row 1</th><th>Formula in row 2</th><th>What to do</th></tr></thead><tbody>
+<tr><td>A</td><td>Observation</td><td>Your chosen numbers</td><td>Enter ten values in A2:A11.</td></tr>
+<tr><td>B</td><td>Mean</td><td><code>=AVERAGE(A:A)</code></td><td>Fill B2 down through B11.</td></tr>
+<tr><td>C</td><td>Deviation from mean</td><td><code>=A2-B2</code></td><td>Fill C2 down through C11.</td></tr>
+<tr><td>D</td><td>Squared deviation</td><td><code>=C2^2</code></td><td>Fill D2 down through D11.</td></tr>
+<tr><td>E</td><td>Sum of squared deviations</td><td><code>=SUM(D:D)</code></td><td>Enter once in E2.</td></tr>
+<tr><td>F</td><td>Population variance or Sample variance</td><td>Choose the formula below.</td><td>Enter once in F2.</td></tr>
+<tr><td>G</td><td>Population standard deviation or Sample standard deviation</td><td><code>=SQRT(F2)</code></td><td>Use G2 only when standard deviation is requested.</td></tr>
+</tbody></table></div>
+<p>In B2, <code>=AVERAGE(A:A)</code> calculates the mean of the entire observation column. Drag the fill handle down through B11 (or select B2:B11 and use Fill Down). Every copied formula still refers to column A, so <strong>the same current mean appears in all ten rows</strong>. You do not need dollar signs. Do not use a moving range such as <code>=AVERAGE(A2:A11)</code> and drag it down: that would leave out observations as the range shifts. The text heading in A1 is ignored.</p>
+<p>Fill C2 and D2 down through row 11. Each deviation uses the observation and mean on its own row. When you change any observation, the mean in every row and all the deviations must update. Squaring the deviations prevents positive and negative differences from canceling.</p>
+<h2>Choose the correct division and stopping point</h2>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Requested measure</th><th>Formula in F2</th><th>Final result</th></tr></thead><tbody>
+<tr><td>Population variance</td><td><code>=E2/COUNT(A:A)</code></td><td>F2; divide by n = 10 and stop.</td></tr>
+<tr><td>Population standard deviation</td><td><code>=E2/COUNT(A:A)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
+<tr><td>Sample variance</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>F2; divide by n − 1 = 9 and stop.</td></tr>
+<tr><td>Sample standard deviation</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
+</tbody></table></div>
+<p>Use the row matching your generated problem. Label F1 with the correct kind of variance, and G1 with the correct kind of standard deviation if needed. Variance is the division result; take its square root only when the problem asks for standard deviation. Show these steps rather than using <code>VAR.P</code>, <code>VAR.S</code>, <code>STDEV.P</code>, or <code>STDEV.S</code> as a shortcut.</p>
+<h2>Calculate the range separately</h2>
+<p>Put <strong>Range</strong> in I2 and <code>=MAX(A:A)-MIN(A:A)</code> in J2. Put <strong>Count</strong> in I3 and <code>=COUNT(A:A)</code> in J3. Keep these summaries outside column A so they are not counted as observations. Your count must remain exactly 10.</p>
+<p>Keep full precision in every calculation. Display enough decimal places to compare your mean and requested spread with their targets; rounding the display does not change the underlying result. These formulas also work in Google Sheets.</p>
+<h2>Reason about the mean and range</h2>
+<p>The required total is 10 × target mean. If the current mean is too low, increase the total; if it is too high, decrease the total. Increasing the total by 1 increases the mean by 0.1.</p>
+<p>Choose a minimum and maximum whose difference is the required range. Their locations are yours to choose; the problem does not give a required minimum or maximum. To keep the range fixed, retain at least one observation at each endpoint and keep the other values between them. If the target mean is difficult to reach within those endpoints, try shifting the entire interval.</p>
+<p>Adding the same amount to every observation shifts the mean by that amount and leaves both range and spread unchanged. Stay between 0 and 1,000. This can help you correct the mean after you have a suitable range and spread.</p>
+<h2>Reason about the spread</h2>
+<p>With the mean and endpoints fixed, moving two interior values apart by equal amounts increases their spread while preserving their total. Moving them closer together decreases spread. Keep each value within the endpoints and watch the spreadsheet recalculate.</p>
+<p>Try different arrangements: values clustered near the center, values clustered near both endpoints, or many values near one end with a few farther away. A fixed range does not determine the variance or standard deviation. Recheck the mean, range, and count after each adjustment, and use progressively smaller decimal changes to refine the requested spread.</p>
+<p>The spread target is rounded to four decimal places. Aim for a mean and requested spread as close as possible to the displayed targets; your instructor decides whether they are close enough, as in Check 1. Count and range must match exactly. There is no fixed numerical tolerance.</p>
+<p>Many datasets can work. You do not need to recover the hidden original observations or reproduce their shape. Use your own guesses and corrections, and be ready to explain your division, your stopping point, and how you could refine the remaining errors.</p>
 '''),
     ('02-frequency-table', 'Build a frequency table and bar chart', 'Chapters 1–2',
      'Count categories, calculate relative frequencies, and connect a chart to the results.', '''
@@ -271,11 +287,46 @@ def build_summary_check(body):
 <footer><a href="01-match-summary.html">Back to the problem</a></footer></main></body></html>''')
 
 
+def build_spread_check(body):
+    # Keep the old Check 2 URL so existing course links open its replacement.
+    (OUT / '01-prepare-data.html').write_text('''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check 2: Match Mean, Range, and Spread · Statistics</title><link rel="stylesheet" href="../excel-checks.css"><script defer src="match-spread-generator.js?v=20261023"></script><script defer src="match-spread-page.js?v=20261023"></script></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 2</p>
+<h1>Match Mean, Range, and Spread</h1>
+<p id="spread-problem" aria-live="polite">Loading your problem…</p>
+<p>Make an Excel spreadsheet that helps you guess and check which observations would have these outcomes.</p></header>
+<noscript><p class="callout">Enable JavaScript to generate a problem.</p></noscript>
+<div class="generator-toolbar"><button id="regenerate" class="primary" type="button">Regenerate problem</button></div>
+<section aria-labelledby="requirements-heading"><h2 id="requirements-heading">Requirements</h2>
+<ul>
+<li>A new Excel workbook with exactly ten of your own values in A2:A11, one observation per cell, all between 0 and 1,000 inclusive. Decimals are allowed.</li>
+<li>An exact match for the count and range.</li>
+<li>A mean and the requested standard deviation or variance approximately equal to their targets, close enough to satisfy your instructor. The spread target is rounded to four decimal places.</li>
+<li>Labeled, live formulas from left to right: observations, a column repeating the current mean, deviations from that mean, squared deviations, their sum, the correct division, and a square root only if standard deviation is requested.</li>
+<li>Calculate the mean with <code>AVERAGE</code> of the entire observation column and fill it down. Use <code>SUM</code> and division by n for a population or n − 1 for a sample. Show the spread calculation step by step rather than using a built-in variance or standard-deviation shortcut.</li>
+<li>A separate range calculation using <code>MAX</code> minus <code>MIN</code>, and a <code>COUNT</code> formula to confirm ten observations. All calculations must update when your observations change.</li>
+</ul></section>
+<p><a href="02-match-spread-help.html">Talk me through the spreadsheet setup and how to reason about adjustments →</a></p>
+<footer><nav aria-label="Other checks" class="links"><a href="01-match-summary.html">Previous check</a><a href="../excel-competency-checks.html">All nine checks</a><a href="02-frequency-table.html">Next check</a></nav></footer>
+</main></body></html>''')
+    (OUT / '02-match-spread-help.html').write_text(f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet setup and reasoning · Excel check 2</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 2 · Help</p>
+<h1>Spreadsheet setup and reasoning</h1><p><a href="01-prepare-data.html">Back to the problem</a></p></header>
+{body}
+<footer><a href="01-prepare-data.html">Back to the problem</a></footer></main></body></html>''')
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     for i, (slug, title, coverage, summary, body) in enumerate(CHECKS, 1):
         if i == 1:
             build_summary_check(body)
+            continue
+        if i == 2:
+            build_spread_check(body)
             continue
         previous = f'<a href="{CHECKS[i-2][0]}.html">Previous check</a>' if i > 1 else ''
         following = f'<a href="{CHECKS[i][0]}.html">Next check</a>' if i < len(CHECKS) else ''
@@ -300,10 +351,10 @@ def main():
 <section><h2>How to prepare</h2><ul>
 <li>Open the page for the check and practice its complete workflow in Excel until you can build it efficiently from a fresh worksheet with new data. Relevant Google Sheets differences appear in parentheses.</li>
 <li>A prepared demonstration should take about five minutes. The detailed directions are for learning in advance; practice itself may take longer.</li>
-<li>Every check has a <strong>Regenerate problem</strong> button that changes the data, parameters, or requirements within the same skill. Check 1 randomly alternates between one and two modes; the other checks also offer a practice variation selector. Complete one generated task and its listed explanation or follow-up per attempt.</li>
-<li>For a live check, open the skill page, regenerate a fresh problem in front of the instructor, and use that version for the entire attempt. On Checks 2–9, Live check view hides practice answers and worked examples. Demonstrate the work in Excel or Sheets; these pages do not submit or grade a workbook.</li>
-<li>Copy data directly from the generated task when provided. On Checks 2–9, use <strong>Copy version link</strong> to save or share the exact requirements and data. Refreshing that link keeps the same task; press Regenerate for a new one. Random spreadsheet trial results in Check 7 will still vary on recalculation.</li>
-<li>For Check 1, follow the help link for setup and reasoning. For Checks 2–9, expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
+<li>Every check has a <strong>Regenerate problem</strong> button that changes the data, parameters, or requirements within the same skill. Check 1 randomly alternates between one and two modes. Check 2 randomly chooses a population or sample standard deviation or variance. Checks 3–9 also offer a practice variation selector. Complete one generated task and its listed explanation or follow-up per attempt.</li>
+<li>For a live check, open the skill page, regenerate a fresh problem in front of the instructor, and use that version for the entire attempt. On Checks 3–9, Live check view hides practice answers and worked examples. Demonstrate the work in Excel or Sheets; these pages do not submit or grade a workbook.</li>
+<li>Copy data directly from the generated task when provided. On Checks 3–9, use <strong>Copy version link</strong> to save or share the exact requirements and data. Refreshing that link keeps the same task; press Regenerate for a new one. Random spreadsheet trial results in Check 7 will still vary on recalculation.</li>
+<li>For Checks 1–2, follow the help link for setup and reasoning. For Checks 3–9, expand the worked directions to learn the method. Their fixed example is separate from the generated assignment. After practice, use the self-check to review your results. No practice-answer reveal is needed during the live demonstration.</li>
 <li>Use formulas linked to the data and inputs. Be able to show the formulas, fill them across or down, explain fixed versus changing cell references, and explain the result. A page of typed final answers does not demonstrate these skills.</li>
 <li>Use clear labels and readable number formats. Keep full precision in calculations. These examples assume English function names and comma argument separators; regional settings may use semicolons.</li>
 </ul></section>
