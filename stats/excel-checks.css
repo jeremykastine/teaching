@@ -36,3 +36,18 @@ textarea{width:100%;display:block;max-width:100%;resize:vertical;border:1px soli
 @media(max-width:520px){.generator{padding:18px 14px}.generator-toolbar{align-items:stretch}.generator-toolbar button{width:100%}.task-table th{width:42%}.task-table th,.task-table td{padding:9px 5px}}
 @media print{.generator{border:0;padding:0;margin:0}.generator-toolbar,.button-row,.toggle,.learning,#answers,#task-status,#copy-fallback-wrap,.task-version a{display:none}.task-table tr{break-inside:avoid}textarea{font-size:9pt;border:0;field-sizing:content;min-height:8em}.task-table th,.task-table td{padding:5px}.generator h3{margin-top:16px}}
 
+/* Check 2's long worksheet headings must wrap, including on desktop. */
+.task-table.spreadsheet-layout.mobile-cards th,
+.task-table.spreadsheet-layout.mobile-cards td{width:auto;white-space:normal}
+.task-table.mobile-cards td code{white-space:normal;overflow-wrap:anywhere}
+@media screen and (max-width:640px){
+  .task-table.mobile-cards{display:block}
+  .mobile-cards thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .mobile-cards tbody{display:grid;gap:16px}
+  .mobile-cards tr{display:block;border:1px solid #b7cbd2;border-radius:6px;overflow:hidden;background:white}
+  .task-table.mobile-cards td{display:block;padding:10px 14px;border-bottom:1px solid #d9e2e5}
+  .mobile-cards td:first-child{background:#eaf2f4;font-weight:650}
+  .mobile-cards td:last-child{border-bottom:0}
+  .mobile-cards td::before{content:attr(data-label);display:block;margin-bottom:3px;color:#40535d;font-size:.8rem;font-weight:650}
+}
+

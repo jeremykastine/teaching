@@ -41,23 +41,23 @@ CHECKS = [
 <h2>Set up your spreadsheet</h2>
 <p>Open a new, blank Excel workbook. Put <strong>Observation</strong> in A1 and enter exactly ten numbers of your own in A2:A11, one per cell. All values must be between 0 and 1,000 inclusive; decimals are allowed. Reserve column A for observations only.</p>
 <p>Work from left to right. One possible layout is:</p>
-<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Column</th><th>Heading in row 1</th><th>Formula in row 2</th><th>What to do</th></tr></thead><tbody>
-<tr><td>A</td><td>Observation</td><td>Your chosen numbers</td><td>Enter ten values in A2:A11.</td></tr>
-<tr><td>B</td><td>Mean</td><td><code>=AVERAGE(A:A)</code></td><td>Fill B2 down through B11.</td></tr>
-<tr><td>C</td><td>Deviation from mean</td><td><code>=A2-B2</code></td><td>Fill C2 down through C11.</td></tr>
-<tr><td>D</td><td>Squared deviation</td><td><code>=C2^2</code></td><td>Fill D2 down through D11.</td></tr>
-<tr><td>E</td><td>Sum of squared deviations</td><td><code>=SUM(D:D)</code></td><td>Enter once in E2.</td></tr>
-<tr><td>F</td><td>Population variance or Sample variance</td><td>Choose the formula below.</td><td>Enter once in F2.</td></tr>
-<tr><td>G</td><td>Population standard deviation or Sample standard deviation</td><td><code>=SQRT(F2)</code></td><td>Use G2 only when standard deviation is requested.</td></tr>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout mobile-cards"><thead><tr><th>Column</th><th>Heading in row 1</th><th>Formula in row 2</th><th>What to do</th></tr></thead><tbody>
+<tr><td data-label="Column">A</td><td data-label="Heading in row 1">Observation</td><td data-label="Formula in row 2">Your chosen numbers</td><td data-label="What to do">Enter ten values in A2:A11.</td></tr>
+<tr><td data-label="Column">B</td><td data-label="Heading in row 1">Mean</td><td data-label="Formula in row 2"><code>=AVERAGE(A:A)</code></td><td data-label="What to do">Fill B2 down through B11.</td></tr>
+<tr><td data-label="Column">C</td><td data-label="Heading in row 1">Deviation from mean</td><td data-label="Formula in row 2"><code>=A2-B2</code></td><td data-label="What to do">Fill C2 down through C11.</td></tr>
+<tr><td data-label="Column">D</td><td data-label="Heading in row 1">Squared deviation</td><td data-label="Formula in row 2"><code>=C2^2</code></td><td data-label="What to do">Fill D2 down through D11.</td></tr>
+<tr><td data-label="Column">E</td><td data-label="Heading in row 1">Sum of squared deviations</td><td data-label="Formula in row 2"><code>=SUM(D:D)</code></td><td data-label="What to do">Enter once in E2.</td></tr>
+<tr><td data-label="Column">F</td><td data-label="Heading in row 1">Population variance or Sample variance</td><td data-label="Formula in row 2">Choose the formula below.</td><td data-label="What to do">Enter once in F2.</td></tr>
+<tr><td data-label="Column">G</td><td data-label="Heading in row 1">Population standard deviation or Sample standard deviation</td><td data-label="Formula in row 2"><code>=SQRT(F2)</code></td><td data-label="What to do">Use G2 only when standard deviation is requested.</td></tr>
 </tbody></table></div>
 <p>In B2, <code>=AVERAGE(A:A)</code> calculates the mean of the entire observation column. Drag the fill handle down through B11 (or select B2:B11 and use Fill Down). Every copied formula still refers to column A, so <strong>the same current mean appears in all ten rows</strong>. You do not need dollar signs. Do not use a moving range such as <code>=AVERAGE(A2:A11)</code> and drag it down: that would leave out observations as the range shifts. The text heading in A1 is ignored.</p>
 <p>Fill C2 and D2 down through row 11. Each deviation uses the observation and mean on its own row. When you change any observation, the mean in every row and all the deviations must update. Squaring the deviations prevents positive and negative differences from canceling.</p>
 <h2>Choose the correct division and stopping point</h2>
-<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout"><thead><tr><th>Requested measure</th><th>Formula in F2</th><th>Final result</th></tr></thead><tbody>
-<tr><td>Population variance</td><td><code>=E2/COUNT(A:A)</code></td><td>F2; divide by n = 10 and stop.</td></tr>
-<tr><td>Population standard deviation</td><td><code>=E2/COUNT(A:A)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
-<tr><td>Sample variance</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>F2; divide by n − 1 = 9 and stop.</td></tr>
-<tr><td>Sample standard deviation</td><td><code>=E2/(COUNT(A:A)-1)</code></td><td>G2 with <code>=SQRT(F2)</code>.</td></tr>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout mobile-cards"><thead><tr><th>Requested measure</th><th>Formula in F2</th><th>Final result</th></tr></thead><tbody>
+<tr><td data-label="Requested measure">Population variance</td><td data-label="Formula in F2"><code>=E2/COUNT(A:A)</code></td><td data-label="Final result">F2; divide by n = 10 and stop.</td></tr>
+<tr><td data-label="Requested measure">Population standard deviation</td><td data-label="Formula in F2"><code>=E2/COUNT(A:A)</code></td><td data-label="Final result">G2 with <code>=SQRT(F2)</code>.</td></tr>
+<tr><td data-label="Requested measure">Sample variance</td><td data-label="Formula in F2"><code>=E2/(COUNT(A:A)-1)</code></td><td data-label="Final result">F2; divide by n − 1 = 9 and stop.</td></tr>
+<tr><td data-label="Requested measure">Sample standard deviation</td><td data-label="Formula in F2"><code>=E2/(COUNT(A:A)-1)</code></td><td data-label="Final result">G2 with <code>=SQRT(F2)</code>.</td></tr>
 </tbody></table></div>
 <p>Use the row matching your generated problem. Label F1 with the correct kind of variance, and G1 with the correct kind of standard deviation if needed. Variance is the division result; take its square root only when the problem asks for standard deviation. Show these steps rather than using <code>VAR.P</code>, <code>VAR.S</code>, <code>STDEV.P</code>, or <code>STDEV.S</code> as a shortcut.</p>
 <h2>Calculate the range separately</h2>
@@ -291,7 +291,7 @@ def build_spread_check(body):
     # Keep the old Check 2 URL so existing course links open its replacement.
     (OUT / '01-prepare-data.html').write_text('''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Check 2: Match Mean, Range, and Spread · Statistics</title><link rel="stylesheet" href="../excel-checks.css"><script defer src="match-spread-generator.js?v=20261023"></script><script defer src="match-spread-page.js?v=20261023"></script></head>
+<title>Check 2: Match Mean, Range, and Spread · Statistics</title><link rel="stylesheet" href="../excel-checks.css?v=20261023-mobile"><script defer src="match-spread-generator.js?v=20261023"></script><script defer src="match-spread-page.js?v=20261023"></script></head>
 <body><main><header><p class="eyebrow">Statistics · Excel competency check 2</p>
 <h1>Match Mean, Range, and Spread</h1>
 <p id="spread-problem" aria-live="polite">Loading your problem…</p>
@@ -312,7 +312,7 @@ def build_spread_check(body):
 </main></body></html>''')
     (OUT / '02-match-spread-help.html').write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Spreadsheet setup and reasoning · Excel check 2</title><link rel="stylesheet" href="../excel-checks.css"></head>
+<title>Spreadsheet setup and reasoning · Excel check 2</title><link rel="stylesheet" href="../excel-checks.css?v=20261023-mobile"></head>
 <body><main><header><p class="eyebrow">Statistics · Excel competency check 2 · Help</p>
 <h1>Spreadsheet setup and reasoning</h1><p><a href="01-prepare-data.html">Back to the problem</a></p></header>
 {body}
