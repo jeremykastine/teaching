@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Topic 15: Factoring by Guess and Check | TSM Lecture Notes</title>
   <link rel="stylesheet" href="../styles.css?v=20261006-1">
-  <script defer src="../solutions.js?v=20261006-1"></script>
-  <script src="../mathjax-config.js?v=20261005-2"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+  <script defer src="../solutions.js?v=20261006-1">
+</script>
+  <script src="../mathjax-config.js?v=20261005-2">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js">
+</script>
+
+  <style>
+    .search-grid { border-collapse: collapse; margin: 18px 0; width: 100%; max-width: 660px; table-layout: fixed; }
+    .search-grid th, .search-grid td { border: 1px solid currentColor; padding: 8px 4px; text-align: center; font-weight: normal; overflow-wrap: anywhere; }
+    .search-grid td { height: 54px; }
+    .search-grid th:first-child { width: 25%; }
+    .search-grid .accepted { display: inline-block; border: 2px solid currentColor; border-radius: 50%; padding: 0 10px; }
+    .decision-tree, .decision-tree ul { list-style: none; padding-left: 0; margin: 12px 0; }
+    .decision-tree ul { margin-left: 16px; padding-left: 20px; border-left: 1px solid currentColor; }
+    .decision-tree li { position: relative; margin: 12px 0; }
+    .decision-tree ul > li::before { content: ''; position: absolute; top: 16px; left: -20px; width: 20px; border-top: 1px solid currentColor; }
+    .decision-tree .choice { display: inline-block; border: 1px solid currentColor; padding: 5px 10px; max-width: 100%; }
+    .guess-log li { margin-bottom: 12px; }
+    @media (max-width: 600px) {
+      .search-grid th, .search-grid td { padding: 6px 2px; }
+      .decision-tree ul { margin-left: 8px; padding-left: 12px; }
+      .decision-tree ul > li::before { left: -12px; width: 12px; }
+    }
+  </style>
 </head>
 <body>
   <main class="lecture-notes">
@@ -19,149 +41,1460 @@
     <p class="series-title">TSM Lecture Notes</p>
 <h1 id="topic-15-factoring-by-guess-and-check">Topic 15: Factoring by
 Guess and Check</h1>
-<p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
+<p>
+<strong>Assigned to:</strong> TSM 098 and TSM 099</p>
 <p class="solution-instructions">Double-click or double-tap the space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
-<h2 id="overview-6">Overview</h2>
-<p>This topic factors trinomials by choosing binomial factors whose
-product recreates the original trinomial, especially when the leading
-coefficient is 1.</p>
-<h2 id="key-definitions-6">Key definitions</h2>
-<p>Trinomial: a polynomial with three terms. Leading coefficient: the
-coefficient of the highest-degree term. Factor pair: two numbers whose
-product is a specified number. Prime polynomial: a polynomial that does
-not factor over the integers.</p>
-<h2>Factoring a monic trinomial</h2>
-<p>Factoring reverses multiplication: write a polynomial as a product. For <span class="math inline">\(x^2+bx+c\)</span>, where x is the variable and b and c are fixed integers, seek integers with sum <span class="math inline">\(b\)</span> and product <span class="math inline">\(c\)</span>. Splitting the middle term using that pair allows factoring by grouping.</p>
+<h2>Overview</h2>
+<p>Factor by guessing possible binomial factors and multiplying to check them. Use a decision tree, then a table, to keep track of the choices. Include leading coefficients greater than 1 and differences of squares.</p>
+<h2>Key definitions</h2>
+<p>
+<strong>Factor:</strong> an expression being multiplied. <strong>Trinomial:</strong> a polynomial with three terms. <strong>Leading coefficient:</strong> the coefficient of the highest-degree term. <strong>Factor pair:</strong> two numbers or terms with a specified product. <strong>Prime polynomial:</strong> a nonconstant polynomial that cannot be factored into nonunit polynomial factors over the integers. <strong>Difference of squares:</strong> one squared expression minus another.</p>
+<h2>Guess the factors; check by multiplying</h2>
+<p>Factoring reverses multiplication. First check for a GCF. For a quadratic, try two binomials: their first terms must multiply to the leading term, and their last terms must multiply to the constant term. Those choices produce a guess. Multiply to see whether its middle terms combine correctly. Until a guess passes the check, do not write it as equal to the original polynomial.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers, or state that it is not factorable.</p>
-<p><span class="math display">\[t^{2}\  + \ 9t\  + \ 8\]</span></p>
+<p>Factor completely over the integers. Guess two binomial factors and check by multiplying.</p>
+<p>
+<span class="math display">\[t^2+9t+8\]</span>
+</p>
 </div>
-
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>We need two integers with a sum of 9 and a product of 8. The numbers
-8 and 1 work (<span class="math inline">\(8\ + \ 1\ = \ 9\)</span>; <span class="math inline">\(8(1)\ = \ 8\)</span>).</p>
-
-<p>Now replace 9t with 8t + t. We have not changed the value of the
-expression; we have only rewritten its middle term.</p>
-<p><span class="math display">\[t^{2}\  + \ 9t\  + \ 8\]</span></p>
-<p><span class="math display">\[= \ t^{2}\  + \ 8t\  + \ t\  + \
-8\]</span></p>
-<p><span class="math display">\[= \ t(t\  + \ 8)\  + \ 1(t\  + \
-8)\]</span></p>
-<p><span class="math display">\[= \ (t\  + \ 8)(t\  + \ 1)\]</span></p>
-<p>The two groups both contained t + 8, so that common binomial became
-one factor. The remaining factors, t and 1, formed the other
-binomial.</p>
-
+<p>The first terms can be <span class="math inline">\(t\)</span> and <span class="math inline">\(t\)</span>. For the last terms, try <span class="math inline">\(+8\)</span> and <span class="math inline">\(+1\)</span>, whose product is 8. Our guess is <span class="math inline">\((t+8)(t+1)\)</span>. Multiply to check:</p>
+<p>
+<span class="math display">\[(t+8)(t+1)=t^2+t+8t+8=t^2+9t+8\]</span>
+</p>
+<p>All three terms match, so the guess works.</p>
+<p>
+<span class="math display">\[t^2+9t+8=(t+8)(t+1)\]</span>
+</p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers, or state that it is not factorable.</p>
-<p><span class="math display">\[s^{2}\  + \ 8s\  + \ 15\]</span></p>
+<p>Factor completely over the integers. Show an unsuccessful guess before finding and checking a successful guess.</p>
+<p>
+<span class="math display">\[s^2+8s+15\]</span>
+</p>
 </div>
-
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>We need two integers whose sum is 8 and whose product is 15. The pair
-3 and 5 satisfies both conditions (<span class="math inline">\(3\ + \ 5\ = \ 8\)</span>; <span class="math inline">\(3(5)\ = \ 15\)</span>).</p>
-
-<p>Split the middle term and factor by grouping:</p>
-<p><span class="math display">\[s^{2}\  + \ 8s\  + \ 15\]</span></p>
-<p><span class="math display">\[= \ s^{2}\  + \ 3s\  + \ 5s\  + \
-15\]</span></p>
-<p><span class="math display">\[= \ s(s\  + \ 3)\  + \ 5(s\  + \
-3)\]</span></p>
-<p><span class="math display">\[= \ (s\  + \ 3)(s\  + \ 5)\]</span></p>
-<p>The order of the two numbers does not affect the final answer.
-Splitting 8s as 5s + 3s would lead to the same two factors in the
-opposite order.</p>
-
+<p>The first terms can be <span class="math inline">\(s\)</span> and <span class="math inline">\(s\)</span>. The last terms must multiply to 15. Try <span class="math inline">\((s+1)(s+15)\)</span>. Its product is <span class="math inline">\(s^2+16s+15\)</span>, so reject it: the middle term is wrong.</p>
+<p>Try another guess, <span class="math inline">\((s+3)(s+5)\)</span>.</p>
+<p>
+<span class="math display">\[(s+3)(s+5)=s^2+5s+3s+15=s^2+8s+15\]</span>
+</p>
+<p>
+<span class="math display">\[s^2+8s+15=(s+3)(s+5)\]</span>
+</p>
 </div>
 </section>
-<h2>Using the binomial pattern</h2>
-<p>Once the pair of integers <span class="math inline">\(m,n\)</span> with the required sum and product is found, the factors are <span class="math inline">\((x+m)(x+n)\)</span>. A positive product requires matching signs; a negative product requires opposite signs. The sum determines the signs or which size is larger. Check by multiplying; if no integer pair works, the trinomial does not factor over the integers.</p>
+<h2>Organize the decisions in a tree</h2>
+<p>Choose the first terms, then choose the last terms and their placement. Each endpoint of the tree represents a guess to check. For a positive leading coefficient, we can use positive first terms: two negative first terms can be replaced by positive ones by negating both entire factors. List each first-term pair once, and allow the different last-term placements. Interchanging two whole factors does not change a product; exchanging only the last terms while keeping the first terms fixed can change it.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers, or state that it is not factorable.</p>
-<p><span class="math display">\[r^{2}\  + \ 2r\  - \ 63\]</span></p>
+<p>Factor completely over the integers. Draw a decision tree of possible binomial factors and check guesses until one works.</p>
+<p>
+<span class="math display">\[2x^2+7x+3\]</span>
+</p>
 </div>
-
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The product must be -63, so the numbers have opposite signs. Their
-sum must be positive 2, so the positive number must have the larger
-absolute value. The factor pair 9 and 7 has a difference of 2. We
-therefore use 9 and -7 (<span class="math inline">\(9\ + \ ( - 7)\ = \ 2\)</span>; <span class="math inline">\(9( - 7)\ = \ - 63\)</span>).</p>
-
-<p>Because the leading coefficient is 1, we can now place 9 and -7
-directly into the two binomial factors:</p>
-<p><span class="math display">\[r^{2}\  + \ 2r\  - \ 63\  = \ (r\  + \
-9)(r\  - \ 7)\]</span></p>
-<p>A quick multiplication check shows that the middle terms combine
-correctly:</p>
-<p><span class="math display">\[(r\  + \ 9)(r\  - \ 7)\]</span></p>
-<p><span class="math display">\[= \ r^{2}\  - \ 7r\  + \ 9r\  - \
-63\]</span></p>
-<p><span class="math display">\[= \ r^{2}\  + \ 2r\  - \ 63\]</span></p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Factor completely over the integers, or state that it is not factorable.</p>
-<p><span class="math display">\[v^{2}\  - \ 13v\  + \ 40\]</span></p>
-</div>
-
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The product is positive 40, so the two numbers have the same sign.
-Their sum is negative 13, so both numbers must be negative. The numbers
--5 and -8 work (<span class="math inline">\(( - 5)\ + \ ( - 8)\ = \ - 13\)</span>; <span class="math inline">\(( - 5)( - 8)\ = \ 40\)</span>).</p>
-
-<p>Again, the leading coefficient is 1, so we can use the shortcut and
-write the factors immediately:</p>
-<p><span class="math display">\[v^{2}\  - \ 13v\  + \ 40\  = \ (v\  - \
-5)(v\  - \ 8)\]</span></p>
-<p>We can check by multiplying the binomials. FOIL is simply a quick way
-to organize the distributive property:</p>
-<p><span class="math display">\[(v\  - \ 5)(v\  - \ 8)\]</span></p>
-<p><span class="math display">\[= \ v^{2}\  - \ 8v\  - \ 5v\  + \
-40\]</span></p>
-<p><span class="math display">\[= \ v^{2}\  - \ 13v\  + \
-40\]</span></p>
+<p>Use first terms <span class="math inline">\(x\)</span> and <span class="math inline">\(2x\)</span>. The constant and middle coefficient are positive, so use two positive last terms; two negative last terms would give a negative middle term. The last terms can be placed as <span class="math inline">\(+1,+3\)</span> or <span class="math inline">\(+3,+1\)</span>.</p>
+<ul class="decision-tree" aria-label="Decision tree of possible factors">
+<li>
+<span class="choice">
+<span class="math inline">\(2x^2+7x+3\)</span>
+</span>
+<ul>
+<li>
+<span class="choice">First terms: <span class="math inline">\(x,\ 2x\)</span>
+</span>
+<ul>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+1,\ +3\)</span> &rarr; <span class="math inline">\((x+1)(2x+3)\)</span>
+</span>
+</li>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+3,\ +1\)</span> &rarr; <span class="math inline">\((x+3)(2x+1)\)</span>
+</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Try <span class="math inline">\((x+1)(2x+3)\)</span>: the middle terms combine as <span class="math inline">\(3x+2x=5x\)</span>, so reject it. Try <span class="math inline">\((x+3)(2x+1)\)</span>: the middle terms are <span class="math inline">\(x+6x=7x\)</span>.</p>
+<p>
+<span class="math display">\[(x+3)(2x+1)=2x^2+x+6x+3=2x^2+7x+3\]</span>
+</p>
+<p>
+<span class="math display">\[2x^2+7x+3=(x+3)(2x+1)\]</span>
+</p>
+<p>The two placements of 1 and 3 give different products. We must include both choices.</p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers, or state that it is not factorable.</p>
-<p><span class="math display">\[a^{2}\  + \ 7a\  + \ 60\]</span></p>
+<p>Factor completely over the integers. Draw a decision tree including the possible first-term pairs and the different last-term placements.</p>
+<p>
+<span class="math display">\[6x^2+7x+2\]</span>
+</p>
 </div>
-
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>We need two integers with a sum of 7 and a product of 60. A positive product and positive sum require two positive integers. The only pairs with sum 7 are 1 and 6, 2 and 5, or 3 and 4. None has product 60 (<span class="math inline">\(1(6)=6\)</span>, <span class="math inline">\(2(5)=10\)</span>, and <span class="math inline">\(3(4)=12\)</span>).</p>
-
-<p>Looking from the other direction gives
-the same conclusion: no factor pair of 60 has a sum of 7. Therefore this
-trinomial is not factorable using integers. We leave it as written.</p>
-<p><span class="math display">\[a^{2}\  + \ 7a\  + \ 60\]</span></p>
+<p>The first terms can be <span class="math inline">\(x,6x\)</span> or <span class="math inline">\(2x,3x\)</span>. The positive constant and middle coefficient require positive last terms: <span class="math inline">\(+1,+2\)</span> or <span class="math inline">\(+2,+1\)</span>.</p>
+<ul class="decision-tree" aria-label="Decision tree of possible factors">
+<li>
+<span class="choice">
+<span class="math inline">\(6x^2+7x+2\)</span>
+</span>
+<ul>
+<li>
+<span class="choice">First terms: <span class="math inline">\(x,\ 6x\)</span>
+</span>
+<ul>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+1,\ +2\)</span> &rarr; <span class="math inline">\((x+1)(6x+2)\)</span>
+</span>
+</li>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+2,\ +1\)</span> &rarr; <span class="math inline">\((x+2)(6x+1)\)</span>
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span class="choice">First terms: <span class="math inline">\(2x,\ 3x\)</span>
+</span>
+<ul>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+1,\ +2\)</span> &rarr; <span class="math inline">\((2x+1)(3x+2)\)</span>
+</span>
+</li>
+<li>
+<span class="choice">Last terms: <span class="math inline">\(+2,\ +1\)</span> &rarr; <span class="math inline">\((2x+2)(3x+1)\)</span>
+</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Choose any endpoint to test. For example, <span class="math inline">\((2x+2)(3x+1)\)</span> gives middle terms <span class="math inline">\(2x+6x=8x\)</span>, so cross out that guess. Try <span class="math inline">\((2x+1)(3x+2)\)</span> next.</p>
+<p>
+<span class="math display">\[(2x+1)(3x+2)=6x^2+4x+3x+2=6x^2+7x+2\]</span>
+</p>
+<p>
+<span class="math display">\[6x^2+7x+2=(2x+1)(3x+2)\]</span>
+</p>
 </div>
 </section>
-
+<h2>Keep the same choices in a table</h2>
+<p>A tree can take a lot of space. Put the possible first-term pairs across the top of a table and the possible last-term pairs down the left. In each pair, the first entry goes in the first binomial and the second entry goes in the second binomial. Each empty box represents one possible factorization. For a negative constant, include both sign placements and both orders. For a positive constant, use two positive or two negative last terms as required by the middle term.</p>
+<ol>
+<li>Choose any empty box and put a <strong>?</strong> in it.</li>
+<li>Write its proposed factors beside the table and multiply to check.</li>
+<li>If the guess fails, cross out the question mark and choose another empty box.</li>
+<li>If the guess works, circle the question mark and write the verified factorization.</li>
+</ol>
+<p>There is no required order for choosing boxes. Leave untried boxes empty. After checking the first and last products, you may check just the two middle terms when testing a guess. Verify the final factorization by multiplying. If every possible box fails, the quadratic does not factor into integer binomials; first make sure no GCF was missed.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using the table. Mark each chosen box with a question mark, check its factors, and cross it out or circle it.</p>
+<p>
+<span class="math display">\[6x^2+7x+2\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 3x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>This is the same set of choices as the larger tree. Here is one possible search; another order is equally valid.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(6x+2)\)</span>. Check the middle: <span class="math inline">\(2x+(6x)=8x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+2)(6x+1)\)</span>. Check the middle: <span class="math inline">\(x+(12x)=13x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(3x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(6x)=8x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(3x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(3x)=7x\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 3x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +2\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +1\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[6x^2+7x+2=(2x+1)(3x+2)\]</span>
+</p>
+<p>
+<span class="math display">\[(2x+1)(3x+2)=6x^2+7x+2\]</span>
+</p>
+</div>
+</section>
+<h2>More signs and more choices</h2>
+<p>Keep using the table to record guesses. Signed last terms are part of each choice. The first and last products fit by construction; the check decides whether the middle term fits too.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[r^2+2r-63\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(r,\ r\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -63\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +63\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ -21\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-3,\ +21\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+7,\ -9\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-7,\ +9\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+9,\ -7\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-9,\ +7\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+21,\ -3\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-21,\ +3\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+63,\ -1\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-63,\ +1\)</span>
+</th>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The first terms are both <span class="math inline">\(r\)</span>. A negative constant requires opposite signs. Both orders and both sign placements are available.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+1)(r-63)\)</span>. Check the middle: <span class="math inline">\(-63r+(r)=-62r\)</span>. It does not match <span class="math inline">\(2r\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+7)(r-9)\)</span>. Check the middle: <span class="math inline">\(-9r+(7r)=-2r\)</span>. It does not match <span class="math inline">\(2r\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+9)(r-7)\)</span>. Check the middle: <span class="math inline">\(-7r+(9r)=2r\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(r,\ r\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -63\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +63\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ -21\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-3,\ +21\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+7,\ -9\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-7,\ +9\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+9,\ -7\)</span>
+</th>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-9,\ +7\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+21,\ -3\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-21,\ +3\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+63,\ -1\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-63,\ +1\)</span>
+</th>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[r^2+2r-63=(r+9)(r-7)\]</span>
+</p>
+<p>
+<span class="math display">\[(r+9)(r-7)=r^2+2r-63\]</span>
+</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[v^2-13v+40\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(v,\ v\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ -40\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-2,\ -20\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-4,\ -10\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-5,\ -8\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-8,\ -5\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-10,\ -4\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-20,\ -2\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-40,\ -1\)</span>
+</th>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Both last terms are negative: their product is positive, and with positive first terms their cross terms must combine to a negative middle term.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-1)(v-40)\)</span>. Check the middle: <span class="math inline">\(-40v+(-v)=-41v\)</span>. It does not match <span class="math inline">\(-13v\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-4)(v-10)\)</span>. Check the middle: <span class="math inline">\(-10v+(-4v)=-14v\)</span>. It does not match <span class="math inline">\(-13v\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-5)(v-8)\)</span>. Check the middle: <span class="math inline">\(-8v+(-5v)=-13v\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(v,\ v\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ -40\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-2,\ -20\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-4,\ -10\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-5,\ -8\)</span>
+</th>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-8,\ -5\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-10,\ -4\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-20,\ -2\)</span>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-40,\ -1\)</span>
+</th>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[v^2-13v+40=(v-5)(v-8)\]</span>
+</p>
+<p>
+<span class="math display">\[(v-5)(v-8)=v^2-13v+40\]</span>
+</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[6x^2-x-2\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 3x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ -1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-2,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The negative constant requires opposite signs. Keep all four ordered signed pairs in the table.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(6x-2)\)</span>. Check the middle: <span class="math inline">\(-2x+(6x)=4x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(3x-1)\)</span>. Check the middle: <span class="math inline">\(-2x+(6x)=4x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x-1)(3x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(-3x)=x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(3x-2)\)</span>. Check the middle: <span class="math inline">\(-4x+(3x)=-x\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 3x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -2\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ -1\)</span>
+</th>
+<td>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-2,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[6x^2-x-2=(2x+1)(3x-2)\]</span>
+</p>
+<p>
+<span class="math display">\[(2x+1)(3x-2)=6x^2-x-2\]</span>
+</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[12x^2+17x+6\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +6\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +3\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+6,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>There are three choices for the first terms and four ordered choices for the positive last terms.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x+6)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(17x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+6)(6x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(17x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+2)(4x+3)\)</span>. Check the middle: <span class="math inline">\(9x+(8x)=17x\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +6\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +3\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+6,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+<s>?</s>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[12x^2+17x+6=(3x+2)(4x+3)\]</span>
+</p>
+<p>
+<span class="math display">\[(3x+2)(4x+3)=12x^2+17x+6\]</span>
+</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[12x^2-11x-5\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -5\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +5\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+5,\ -1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-5,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Retain both orders and both sign placements. A negative middle coefficient does not mean both last terms are negative when the constant is negative.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x-5)\)</span>. Check the middle: <span class="math inline">\(-5x+(12x)=7x\)</span>. It does not match <span class="math inline">\(-11x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+5)(4x-1)\)</span>. Check the middle: <span class="math inline">\(-3x+(20x)=17x\)</span>. It does not match <span class="math inline">\(-11x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+1)(4x-5)\)</span>. Check the middle: <span class="math inline">\(-15x+(4x)=-11x\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ -5\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+</td>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-1,\ +5\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+5,\ -1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(-5,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[12x^2-11x-5=(3x+1)(4x-5)\]</span>
+</p>
+<p>
+<span class="math display">\[(3x+1)(4x-5)=12x^2-11x-5\]</span>
+</p>
+</div>
+</section>
+<h2>Difference of squares: make the middle term zero</h2>
+<p>A quadratic with no written middle term has a middle coefficient of zero. Use the same guesses and checks, looking for two middle terms that cancel. A difference of squares has the form <span class="math inline">\(A^2-B^2\)</span>, where <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> stand for expressions. First obtain the factors by guessing and checking; then observe the cancellation pattern.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers by guessing and checking. Show why the missing middle term is zero.</p>
+<p>
+<span class="math display">\[x^2-25\]</span>
+</p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Think of the original polynomial as <span class="math inline">\(x^2+0x-25\)</span>. First terms <span class="math inline">\(x,x\)</span> have the required product. Try last terms <span class="math inline">\(+1,-25\)</span>: <span class="math inline">\((x+1)(x-25)\)</span> gives middle terms <span class="math inline">\(-25x+x=-24x\)</span>, so reject it. Try <span class="math inline">\(+5,-5\)</span> next.</p>
+<p>
+<span class="math display">\[(x+5)(x-5)=x^2-5x+5x-25=x^2-25\]</span>
+</p>
+<p>The middle terms cancel, so the guess works.</p>
+<p>
+<span class="math display">\[x^2-25=(x+5)(x-5)\]</span>
+</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers by guessing and checking. Verify that the middle terms cancel.</p>
+<p>
+<span class="math display">\[9x^2-16\]</span>
+</p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The first terms can be <span class="math inline">\(x,9x\)</span> or <span class="math inline">\(3x,3x\)</span>. Last terms must multiply to -16. Try <span class="math inline">\((x+4)(9x-4)\)</span>: its middle terms combine to <span class="math inline">\(-4x+36x=32x\)</span>, so it fails. Try <span class="math inline">\((3x+4)(3x-4)\)</span>.</p>
+<p>
+<span class="math display">\[(3x+4)(3x-4)=9x^2-12x+12x-16=9x^2-16\]</span>
+</p>
+<p>
+<span class="math display">\[9x^2-16=(3x+4)(3x-4)\]</span>
+</p>
+</div>
+</section>
+<p>In both examples, equal first terms and opposite last terms made the cross terms cancel. This is the difference-of-squares pattern: <span class="math inline">\(A^2-B^2=(A+B)(A-B)\)</span>. Always check that the original expression is a subtraction of squares.</p>
+<h2>Factor completely</h2>
+<p>Check for a GCF before guessing binomial factors. Repeated factors are allowed. Stop only when the remaining factors cannot be factored further over the integers.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers. Begin by factoring out the GCF, then guess and check the remaining factors.</p>
+<p>
+<span class="math display">\[12x^2+14x+4\]</span>
+</p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The GCF is 2. Remove it first:</p>
+<p>
+<span class="math display">\[12x^2+14x+4=2(6x^2+7x+2)\]</span>
+</p>
+<p>For the quadratic, try <span class="math inline">\((x+2)(6x+1)\)</span>: its middle term is <span class="math inline">\(13x\)</span>, so reject it. Try <span class="math inline">\((2x+1)(3x+2)\)</span>: the middle terms combine to <span class="math inline">\(4x+3x=7x\)</span>. Keep the outside factor of 2.</p>
+<p>
+<span class="math display">\[12x^2+14x+4=2(2x+1)(3x+2)\]</span>
+</p>
+<p>Checking the whole product gives <span class="math inline">\(2(6x^2+7x+2)=12x^2+14x+4\)</span>.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>
+<span class="math display">\[4x^2+12x+9\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 4x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 2x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +9\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +3\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+9,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The table includes equal first terms and equal last terms. A working guess may give two identical factors.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(4x+9)\)</span>. Check the middle: <span class="math inline">\(9x+(4x)=13x\)</span>. It does not match <span class="math inline">\(12x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+3)(4x+3)\)</span>. Check the middle: <span class="math inline">\(3x+(12x)=15x\)</span>. It does not match <span class="math inline">\(12x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+3)(2x+3)\)</span>. Check the middle: <span class="math inline">\(6x+(6x)=12x\)</span>. It works; circle the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 4x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 2x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +9\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +3\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<span class="accepted">?</span>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+9,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>
+<span class="math display">\[4x^2+12x+9=(2x+3)(2x+3)\]</span>
+</p>
+<p>
+<span class="math display">\[(2x+3)(2x+3)=4x^2+12x+9\]</span>
+</p>
+<p>The identical factors may also be written as <span class="math inline">\((2x+3)^2\)</span>.</p>
+</div>
+</section>
+<h2>When every guess fails</h2>
+<p>Failure of a few guesses is not enough to declare a polynomial nonfactorable. Build the complete table, including every relevant order and sign placement, and check every box. With a positive constant and positive middle coefficient, positive first terms require positive last terms; two negative last terms would give a negative middle coefficient.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers, or show that the polynomial is not factorable over the integers. Use the complete 12-cell table and check every possible guess.</p>
+<p>
+<span class="math display">\[12x^2+19x+6\]</span>
+</p>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +6\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +3\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +2\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+6,\ +1\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>There is no GCF other than 1. The three first-term pairs cover all positive factor pairs of <span class="math inline">\(12x^2\)</span>. The four rows include both orders of every positive factor pair of 6. With these positive first terms, two negative last terms would make a negative middle term, so no such rows are needed. Reversing two whole factors or negating both whole factors would only duplicate these possibilities.</p>
+<p>Here is one possible order for trying the boxes. Each candidate has the correct leading and constant terms; check whether its middle term is <span class="math inline">\(19x\)</span>.</p>
+<ol class="guess-log">
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+1)(4x+6)\)</span>. Check the middle: <span class="math inline">\(18x+(4x)=22x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+3)(12x+2)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(6x+3)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+6)(4x+1)\)</span>. Check the middle: <span class="math inline">\(3x+(24x)=27x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x+6)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+2)(4x+3)\)</span>. Check the middle: <span class="math inline">\(9x+(8x)=17x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+6)(12x+1)\)</span>. Check the middle: <span class="math inline">\(x+(72x)=73x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+3)(6x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(18x)=22x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(6x+6)\)</span>. Check the middle: <span class="math inline">\(12x+(6x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+6)(6x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+2)(12x+3)\)</span>. Check the middle: <span class="math inline">\(3x+(24x)=27x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+3)(4x+2)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+</ol>
+<table class="search-grid" aria-label="Possible binomial factor choices">
+<thead>
+<tr>
+<td>
+</td>
+<th scope="col">
+<span class="math inline">\(x,\ 12x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(2x,\ 6x\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(3x,\ 4x\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<span class="math inline">\(+1,\ +6\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+2,\ +3\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+3,\ +2\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(+6,\ +1\)</span>
+</th>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+<td>
+<s>?</s>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Every box has been checked and crossed out. None gives the required middle term. The polynomial has no common factor other than 1, so it is <strong>not factorable over the integers</strong>. A few failed guesses would not be enough; this conclusion uses the complete search.</p>
+</div>
+</section>
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
       <a href="../lecture-notes.html">Table of contents</a>
         <a href="topic-14-greatest-common-factor-and-factoring-out-a-gcf.html">Previous topic</a>
         <a href="topic-16-factoring-by-grouping.html">Next topic</a>
     </nav>
 <!-- homework:start -->
-<aside class="homework-links"><h2>Homework</h2><p><a href="../homework/tsm-098-homework-04.pdf">TSM 098 Homework 4: Topics 13-15 (PDF)</a></p><p>Complete on separate paper; upload one best representative page in Blackboard and retain all work.</p></aside>
+<aside class="homework-links">
+<h2>Homework</h2>
+<p>
+<a href="../homework/tsm-098-homework-04.pdf">TSM 098 Homework 4: Topics 13-15 (PDF)</a>
+</p>
+<p>Complete on separate paper; upload one best representative page in Blackboard and retain all work.</p>
+</aside>
 <!-- homework:end -->
   </main>
 </body>

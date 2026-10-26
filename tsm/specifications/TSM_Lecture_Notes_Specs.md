@@ -262,3 +262,15 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Topic 14 is titled **Factoring Out a GCF** and focuses on factoring sums/differences, including common parenthetical factors. Move standalone variable-GCF instruction and problems to Topic 13. Omit standalone monomial factoring/missing-factor problems. Retain existing lesson URLs.
 
 - State explicitly in Topic 13 that GCF and GCD mean the same thing in this course and are interchangeable for both whole numbers and algebraic terms, including terms with variables. Do not distinguish the terms by numerical versus algebraic context.
+
+
+## Topic 15: guessing, decision trees, and search tables (October 26, 2026)
+
+- Preserve the established title, filename, assignment to both courses, navigation, homework links, and independently toggled solutions. Expand beyond monic trinomials to leading coefficients greater than 1, signs, differences of squares, a GCF first, and repeated factors. This does not change assessment coverage.
+- Teach direct guesses of binomial factors and multiplication checks. Replace the former sum-product procedure, middle-term splitting, and grouping explanations in this topic. The first terms multiply to the leading term; the signed last terms multiply to the constant term; check the cross terms against the middle term.
+- After the first two introductory examples, use one or two decision trees. Include multiple first-term choices and explain that last-term placement matters while exchanging whole factors preserves the product.
+- Then compress the choices into tables: first-term pairs across the top and signed last-term pairs down the left. Show only the pairs, with an empty corner; omit written headings such as First terms, Last terms, and In order. Explain the pairing convention in prose. Include both orders and necessary sign placements, explaining any omitted duplicates or impossible signs.
+- Begin search cells empty. Choose any empty cell, put a question mark in it, check its candidate, cross out the question mark if it fails, and choose another empty cell. Circle a successful question mark and stop, leaving untried cells empty. No preferred search order or additional selection strategy is prescribed. Keep the candidate and check beside the table in the worked solution.
+- Introduce differences of squares through a zero middle coefficient and cancellation of cross terms, then name the pattern.
+- Retain a substantial nonfactorable example with leading coefficient greater than 1: `12x^2+19x+6`, using a complete 4-row by 3-column search table (12 candidate cells). Check and reject every cell before concluding not factorable over the integers. Do not infer nonfactorability from a few failed guesses.
+- Keep tables and trees responsive, with borders following foreground color so concealed solutions remain entirely blank and preserve their natural height. Preserve complete static solution content and MathJax rendering.
