@@ -1,5 +1,13 @@
 # MATH 101 Assessment Specifications
 
+## Minimal answer-area labels (October 26, 2026)
+
+- Keep each student answer area as clean as possible: include only the question number, necessary part labels such as (a) and (b), and the applicable points. For a single-part question, use just its number and points; do not invent a part label.
+- Do not print redundant answer-type words or descriptors such as “Polynomial,” “Value,” “Result,” “Solution,” “Equation,” or “Factored form” in the answer area. Put the task and required answer form in the question prompt.
+- When several answers must be distinguished, label the requested outputs as parts in the prompt and use only those matching part labels in the response areas. Add no explanatory wording merely to fill a response area.
+- Retain only structures essential to answering the question, such as a required blank graph grid with its axis labels or a table students must complete. These do not justify extra answer-type captions.
+- Use the same minimal question/part labels in the matched instructor key, alongside the actual answers and points. This is a standing rule for future generation; do not regenerate existing tests solely to apply it.
+
 ## Final-answer directions and grading (October 26, 2026)
 
 This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
