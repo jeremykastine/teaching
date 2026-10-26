@@ -195,18 +195,20 @@ Guess and Check</h1>
 </div>
 </section>
 <h2>Keep the same choices in a table</h2>
-<p>A tree can take a lot of space. Put the possible first-term pairs across the top of a table and the possible last-term pairs down the left. In each pair, the first entry goes in the first binomial and the second entry goes in the second binomial. Each empty box represents one possible factorization. For a negative constant, include both sign placements and both orders. For a positive constant, use two positive or two negative last terms as required by the middle term.</p>
+<p>A tree can take a lot of space. Put possible first-term pairs down the left and possible signed last-term pairs across the top. List each last-term pair once, without adding its reverse as another column. Each empty box now represents two possible placements of the last terms.</p>
+<p>For a chosen box, keep the first terms in the displayed order. Try the last terms in the displayed order, then swap only the last terms and try again. Check the two cross products and combine them in each placement. If either placement produces the required middle term, the factorization works. If the first terms or the last terms are equal, the two placements give the same middle-term check.</p>
 <ol>
 <li>Choose any empty box and put a <strong>?</strong> in it.</li>
-<li>Write its proposed factors beside the table and multiply to check.</li>
-<li>If the guess fails, cross out the question mark and choose another empty box.</li>
-<li>If the guess works, circle the question mark and write the verified factorization.</li>
+<li>Write and check a guess using the first placement of the last terms.</li>
+<li>If it fails, swap the last terms and check the other placement in the same box.</li>
+<li>Cross out the question mark only if both placements fail; then choose another empty box.</li>
+<li>If either placement works, circle the question mark and write the successful factorization.</li>
 </ol>
-<p>There is no required order for choosing boxes. Leave untried boxes empty. After checking the first and last products, you may check just the two middle terms when testing a guess. Verify the final factorization by multiplying. If every possible box fails, the quadratic does not factor into integer binomials; first make sure no GCF was missed.</p>
+<p>There is no required order for choosing boxes. Leave untried boxes empty. After checking the first and last products, you may check just the middle terms when testing a guess. Verify the final factorization by multiplying. A complete unsuccessful search requires checking both placements in every cell, after making sure no GCF was missed.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using the table. Mark each chosen box with a question mark, check its factors, and cross it out or circle it.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[6x^2+7x+2\]</span>
 </p>
@@ -216,29 +218,22 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(2x,\ 3x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+2\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +2\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +1\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 </tr>
@@ -247,12 +242,16 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>This is the same set of choices as the larger tree. Here is one possible search; another order is equally valid.</p>
+<p>The table compresses the same choices shown in the larger tree: one cell now includes both placements of 1 and 2.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(6x+2)\)</span>. Check the middle: <span class="math inline">\(2x+(6x)=8x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+2)(6x+1)\)</span>. Check the middle: <span class="math inline">\(x+(12x)=13x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(3x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(6x)=8x\)</span>. It does not match <span class="math inline">\(7x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(3x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(3x)=7x\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+2\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(6x+2)\)</span>. The middle terms give <span class="math inline">\(2x+(6x)=8x\)</span>. This does not match <span class="math inline">\(7x\)</span>.</li>
+<li>Try <span class="math inline">\((x+2)(6x+1)\)</span>. The middle terms give <span class="math inline">\(x+(12x)=13x\)</span>. This does not match <span class="math inline">\(7x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+2\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+1)(3x+2)\)</span>. The middle terms give <span class="math inline">\(4x+(3x)=7x\)</span>. This matches <span class="math inline">\(7x\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -260,53 +259,44 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(2x,\ 3x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+2\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +2\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
 <td>
 <s>?</s>
-</td>
-<td>
-<span class="accepted">?</span>
 </td>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +1\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>
 </th>
 <td>
-<s>?</s>
-</td>
-<td>
-<s>?</s>
+<span class="accepted">?</span>
 </td>
 </tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[6x^2+7x+2=(2x+1)(3x+2)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(2x+1)(3x+2)=6x^2+7x+2\]</span>
+</p>
+<p>
+<span class="math display">\[6x^2+7x+2=(2x+1)(3x+2)\]</span>
 </p>
 </div>
 </section>
 <h2>More signs and more choices</h2>
-<p>Keep using the table to record guesses. Signed last terms are part of each choice. The first and last products fit by construction; the check decides whether the middle term fits too.</p>
+<p>Keep using the table to record guesses. Signed last terms are part of each choice. The first and last products fit by construction; check both placements of the last terms before crossing out a cell.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[r^2+2r-63\]</span>
 </p>
@@ -316,92 +306,40 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(r,\ r\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-63\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+63\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(-21\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-3\)</span>, <span class="math inline">\(+21\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(+7\)</span>, <span class="math inline">\(-9\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-7\)</span>, <span class="math inline">\(+9\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -63\)</span>
+<span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span>
 </th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-1,\ +63\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+3,\ -21\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-3,\ +21\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+7,\ -9\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-7,\ +9\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+9,\ -7\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-9,\ +7\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+21,\ -3\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-21,\ +3\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+63,\ -1\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-63,\ +1\)</span>
-</th>
 <td>
 </td>
 </tr>
@@ -410,11 +348,24 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The first terms are both <span class="math inline">\(r\)</span>. A negative constant requires opposite signs. Both orders and both sign placements are available.</p>
+<p>The negative constant requires opposite signs. Each signed pair appears only once; reversing it is checked inside its cell. Because the first terms are equal, the two placements in each cell give the same middle term.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+1)(r-63)\)</span>. Check the middle: <span class="math inline">\(-63r+(r)=-62r\)</span>. It does not match <span class="math inline">\(2r\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+7)(r-9)\)</span>. Check the middle: <span class="math inline">\(-9r+(7r)=-2r\)</span>. It does not match <span class="math inline">\(2r\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((r+9)(r-7)\)</span>. Check the middle: <span class="math inline">\(-7r+(9r)=2r\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(-63\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((r+1)(r-63)\)</span>. The middle terms give <span class="math inline">\(-63r+(r)=-62r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+<li>Try <span class="math inline">\((r-63)(r+1)\)</span>. The middle terms give <span class="math inline">\(r+(-63r)=-62r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(-21\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((r+3)(r-21)\)</span>. The middle terms give <span class="math inline">\(-21r+(3r)=-18r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+<li>Try <span class="math inline">\((r-21)(r+3)\)</span>. The middle terms give <span class="math inline">\(3r+(-21r)=-18r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span> and <span class="math inline">\(+7\)</span>, <span class="math inline">\(-9\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((r+7)(r-9)\)</span>. The middle terms give <span class="math inline">\(-9r+(7r)=-2r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+<li>Try <span class="math inline">\((r-9)(r+7)\)</span>. The middle terms give <span class="math inline">\(7r+(-9r)=-2r\)</span>. This does not match <span class="math inline">\(2r\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span> and <span class="math inline">\(-7\)</span>, <span class="math inline">\(+9\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((r-7)(r+9)\)</span>. The middle terms give <span class="math inline">\(9r+(-7r)=2r\)</span>. This matches <span class="math inline">\(2r\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -422,113 +373,62 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(r,\ r\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-63\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+63\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(-21\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-3\)</span>, <span class="math inline">\(+21\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(+7\)</span>, <span class="math inline">\(-9\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-7\)</span>, <span class="math inline">\(+9\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -63\)</span>
+<span class="math inline">\(r\)</span>, <span class="math inline">\(r\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-1,\ +63\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+3,\ -21\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-3,\ +21\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+7,\ -9\)</span>
-</th>
 <td>
 <s>?</s>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-7,\ +9\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+9,\ -7\)</span>
-</th>
+<td>
+<s>?</s>
+</td>
 <td>
 <span class="accepted">?</span>
 </td>
 </tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-9,\ +7\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+21,\ -3\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-21,\ +3\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+63,\ -1\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-63,\ +1\)</span>
-</th>
-<td>
-</td>
-</tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
+<p>Verify the complete product:</p>
 <p>
-<span class="math display">\[r^2+2r-63=(r+9)(r-7)\]</span>
+<span class="math display">\[(r-7)(r+9)=r^2+2r-63\]</span>
 </p>
 <p>
-<span class="math display">\[(r+9)(r-7)=r^2+2r-63\]</span>
+<span class="math display">\[r^2+2r-63=(r-7)(r+9)\]</span>
 </p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[v^2-13v+40\]</span>
 </p>
@@ -538,64 +438,30 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(v,\ v\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(-40\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-2\)</span>, <span class="math inline">\(-20\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-4\)</span>, <span class="math inline">\(-10\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-5\)</span>, <span class="math inline">\(-8\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(-1,\ -40\)</span>
+<span class="math inline">\(v\)</span>, <span class="math inline">\(v\)</span>
 </th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-2,\ -20\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-4,\ -10\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-5,\ -8\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-8,\ -5\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-10,\ -4\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-20,\ -2\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-40,\ -1\)</span>
-</th>
 <td>
 </td>
 </tr>
@@ -604,11 +470,20 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Both last terms are negative: their product is positive, and with positive first terms their cross terms must combine to a negative middle term.</p>
+<p>Both last terms must be negative to give a positive constant and a negative middle coefficient. The equal first terms make the two placements equivalent, but both are accounted for in each check.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-1)(v-40)\)</span>. Check the middle: <span class="math inline">\(-40v+(-v)=-41v\)</span>. It does not match <span class="math inline">\(-13v\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-4)(v-10)\)</span>. Check the middle: <span class="math inline">\(-10v+(-4v)=-14v\)</span>. It does not match <span class="math inline">\(-13v\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((v-5)(v-8)\)</span>. Check the middle: <span class="math inline">\(-8v+(-5v)=-13v\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(v\)</span>, <span class="math inline">\(v\)</span> and <span class="math inline">\(-1\)</span>, <span class="math inline">\(-40\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((v-1)(v-40)\)</span>. The middle terms give <span class="math inline">\(-40v+(-v)=-41v\)</span>. This does not match <span class="math inline">\(-13v\)</span>.</li>
+<li>Try <span class="math inline">\((v-40)(v-1)\)</span>. The middle terms give <span class="math inline">\(-v+(-40v)=-41v\)</span>. This does not match <span class="math inline">\(-13v\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(v\)</span>, <span class="math inline">\(v\)</span> and <span class="math inline">\(-4\)</span>, <span class="math inline">\(-10\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((v-4)(v-10)\)</span>. The middle terms give <span class="math inline">\(-10v+(-4v)=-14v\)</span>. This does not match <span class="math inline">\(-13v\)</span>.</li>
+<li>Try <span class="math inline">\((v-10)(v-4)\)</span>. The middle terms give <span class="math inline">\(-4v+(-10v)=-14v\)</span>. This does not match <span class="math inline">\(-13v\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(v\)</span>, <span class="math inline">\(v\)</span> and <span class="math inline">\(-5\)</span>, <span class="math inline">\(-8\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((v-5)(v-8)\)</span>. The middle terms give <span class="math inline">\(-8v+(-5v)=-13v\)</span>. This matches <span class="math inline">\(-13v\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -616,85 +491,51 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(v,\ v\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(-40\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-2\)</span>, <span class="math inline">\(-20\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-4\)</span>, <span class="math inline">\(-10\)</span>
+</th>
+<th scope="col">
+<span class="math inline">\(-5\)</span>, <span class="math inline">\(-8\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(-1,\ -40\)</span>
+<span class="math inline">\(v\)</span>, <span class="math inline">\(v\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-2,\ -20\)</span>
-</th>
 <td>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-4,\ -10\)</span>
-</th>
 <td>
 <s>?</s>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-5,\ -8\)</span>
-</th>
 <td>
 <span class="accepted">?</span>
 </td>
 </tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-8,\ -5\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-10,\ -4\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-20,\ -2\)</span>
-</th>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-40,\ -1\)</span>
-</th>
-<td>
-</td>
-</tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[v^2-13v+40=(v-5)(v-8)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(v-5)(v-8)=v^2-13v+40\]</span>
+</p>
+<p>
+<span class="math display">\[v^2-13v+40=(v-5)(v-8)\]</span>
 </p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[6x^2-x-2\]</span>
 </p>
@@ -704,17 +545,17 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 6x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-2\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 3x\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+2\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -2\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
 <td>
 </td>
@@ -723,25 +564,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(-1,\ +2\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+2,\ -1\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-2,\ +1\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>
 </th>
 <td>
 </td>
@@ -753,12 +576,20 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The negative constant requires opposite signs. Keep all four ordered signed pairs in the table.</p>
+<p>The two signed pairs across the top are different choices of signs. Each is listed once; swapping its two entries is tested in the same cell.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(6x-2)\)</span>. Check the middle: <span class="math inline">\(-2x+(6x)=4x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(3x-1)\)</span>. Check the middle: <span class="math inline">\(-2x+(6x)=4x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x-1)(3x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(-3x)=x\)</span>. It does not match <span class="math inline">\(-x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(3x-2)\)</span>. Check the middle: <span class="math inline">\(-4x+(3x)=-x\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(-2\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(6x-2)\)</span>. The middle terms give <span class="math inline">\(-2x+(6x)=4x\)</span>. This does not match <span class="math inline">\(-x\)</span>.</li>
+<li>Try <span class="math inline">\((x-2)(6x+1)\)</span>. The middle terms give <span class="math inline">\(x+(-12x)=-11x\)</span>. This does not match <span class="math inline">\(-x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span> and <span class="math inline">\(-1\)</span>, <span class="math inline">\(+2\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x-1)(3x+2)\)</span>. The middle terms give <span class="math inline">\(4x+(-3x)=x\)</span>. This does not match <span class="math inline">\(-x\)</span>.</li>
+<li>Try <span class="math inline">\((2x+2)(3x-1)\)</span>. The middle terms give <span class="math inline">\(-2x+(6x)=4x\)</span>. This does not match <span class="math inline">\(-x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(-2\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+1)(3x-2)\)</span>. The middle terms give <span class="math inline">\(-4x+(3x)=-x\)</span>. This matches <span class="math inline">\(-x\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -766,69 +597,50 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 6x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-2\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 3x\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+2\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -2\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>
+</th>
 <td>
 <span class="accepted">?</span>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-1,\ +2\)</span>
-</th>
-<td>
-</td>
 <td>
 <s>?</s>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+2,\ -1\)</span>
-</th>
-<td>
-</td>
-<td>
-<s>?</s>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-2,\ +1\)</span>
-</th>
-<td>
-</td>
-<td>
 </td>
 </tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[6x^2-x-2=(2x+1)(3x-2)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(2x+1)(3x-2)=6x^2-x-2\]</span>
+</p>
+<p>
+<span class="math display">\[6x^2-x-2=(2x+1)(3x-2)\]</span>
 </p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[12x^2+17x+6\]</span>
 </p>
@@ -838,23 +650,18 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+6\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(+2\)</span>, <span class="math inline">\(+3\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +6\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -862,10 +669,8 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +3\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -873,21 +678,8 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+3,\ +2\)</span>
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+6,\ +1\)</span>
-</th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -898,11 +690,20 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>There are three choices for the first terms and four ordered choices for the positive last terms.</p>
+<p>Use three first-term pairs down the left and two last-term pairs across the top. Every cell includes both possible placements of its last terms.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x+6)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(17x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+6)(6x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(17x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+2)(4x+3)\)</span>. Check the middle: <span class="math inline">\(9x+(8x)=17x\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+6\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(12x+6)\)</span>. The middle terms give <span class="math inline">\(6x+(12x)=18x\)</span>. This does not match <span class="math inline">\(17x\)</span>.</li>
+<li>Try <span class="math inline">\((x+6)(12x+1)\)</span>. The middle terms give <span class="math inline">\(x+(72x)=73x\)</span>. This does not match <span class="math inline">\(17x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+2\)</span>, <span class="math inline">\(+3\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+2)(6x+3)\)</span>. The middle terms give <span class="math inline">\(6x+(12x)=18x\)</span>. This does not match <span class="math inline">\(17x\)</span>.</li>
+<li>Try <span class="math inline">\((2x+3)(6x+2)\)</span>. The middle terms give <span class="math inline">\(4x+(18x)=22x\)</span>. This does not match <span class="math inline">\(17x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+2\)</span>, <span class="math inline">\(+3\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x+2)(4x+3)\)</span>. The middle terms give <span class="math inline">\(9x+(8x)=17x\)</span>. This matches <span class="math inline">\(17x\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -910,79 +711,59 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+6\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(+2\)</span>, <span class="math inline">\(+3\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +6\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
 <td>
 </td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
+</th>
 <td>
+</td>
+<td>
+<s>?</s>
 </td>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +3\)</span>
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 <td>
 <span class="accepted">?</span>
 </td>
 </tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+3,\ +2\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+6,\ +1\)</span>
-</th>
-<td>
-</td>
-<td>
-<s>?</s>
-</td>
-<td>
-</td>
-</tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[12x^2+17x+6=(3x+2)(4x+3)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(3x+2)(4x+3)=12x^2+17x+6\]</span>
+</p>
+<p>
+<span class="math display">\[12x^2+17x+6=(3x+2)(4x+3)\]</span>
 </p>
 </div>
 </section>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[12x^2-11x-5\]</span>
 </p>
@@ -992,23 +773,18 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-5\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+5\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -5\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -1016,10 +792,8 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(-1,\ +5\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -1027,21 +801,8 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+5,\ -1\)</span>
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-5,\ +1\)</span>
-</th>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -1052,11 +813,20 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Retain both orders and both sign placements. A negative middle coefficient does not mean both last terms are negative when the constant is negative.</p>
+<p>A negative constant requires opposite signs. Keep both signed pairs, but do not add separate columns for their reversals.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x-5)\)</span>. Check the middle: <span class="math inline">\(-5x+(12x)=7x\)</span>. It does not match <span class="math inline">\(-11x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+5)(4x-1)\)</span>. Check the middle: <span class="math inline">\(-3x+(20x)=17x\)</span>. It does not match <span class="math inline">\(-11x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+1)(4x-5)\)</span>. Check the middle: <span class="math inline">\(-15x+(4x)=-11x\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(-5\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(12x-5)\)</span>. The middle terms give <span class="math inline">\(-5x+(12x)=7x\)</span>. This does not match <span class="math inline">\(-11x\)</span>.</li>
+<li>Try <span class="math inline">\((x-5)(12x+1)\)</span>. The middle terms give <span class="math inline">\(x+(-60x)=-59x\)</span>. This does not match <span class="math inline">\(-11x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(-1\)</span>, <span class="math inline">\(+5\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x-1)(4x+5)\)</span>. The middle terms give <span class="math inline">\(15x+(-4x)=11x\)</span>. This does not match <span class="math inline">\(-11x\)</span>.</li>
+<li>Try <span class="math inline">\((3x+5)(4x-1)\)</span>. The middle terms give <span class="math inline">\(-3x+(20x)=17x\)</span>. This does not match <span class="math inline">\(-11x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(-5\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x+1)(4x-5)\)</span>. The middle terms give <span class="math inline">\(-15x+(4x)=-11x\)</span>. This matches <span class="math inline">\(-11x\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -1064,72 +834,52 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(-5\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
-</th>
-<th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(-1\)</span>, <span class="math inline">\(+5\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ -5\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
 <td>
 </td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
+</th>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
+</th>
 <td>
 <span class="accepted">?</span>
 </td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-1,\ +5\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+5,\ -1\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
 <td>
 <s>?</s>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(-5,\ +1\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-<td>
 </td>
 </tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[12x^2-11x-5=(3x+1)(4x-5)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(3x+1)(4x-5)=12x^2-11x-5\]</span>
+</p>
+<p>
+<span class="math display">\[12x^2-11x-5=(3x+1)(4x-5)\]</span>
 </p>
 </div>
 </section>
@@ -1201,7 +951,7 @@ Guess and Check</h1>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers using a search table. Mark and check each guess.</p>
+<p>Factor completely over the integers using the table. Try both placements of the last terms before crossing out a cell; circle a successful cell and write the factors.</p>
 <p>
 <span class="math display">\[4x^2+12x+9\]</span>
 </p>
@@ -1211,17 +961,17 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 4x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+9\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 2x\)</span>
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(+3\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +9\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
 <td>
 </td>
@@ -1230,16 +980,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+3,\ +3\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+9,\ +1\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(2x\)</span>
 </th>
 <td>
 </td>
@@ -1251,11 +992,20 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>The table includes equal first terms and equal last terms. A working guess may give two identical factors.</p>
+<p>Equal first terms or equal last terms can make the two placements give the same check. A working cell may produce two identical factors.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(4x+9)\)</span>. Check the middle: <span class="math inline">\(9x+(4x)=13x\)</span>. It does not match <span class="math inline">\(12x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+3)(4x+3)\)</span>. Check the middle: <span class="math inline">\(3x+(12x)=15x\)</span>. It does not match <span class="math inline">\(12x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+3)(2x+3)\)</span>. Check the middle: <span class="math inline">\(6x+(6x)=12x\)</span>. It works; circle the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+9\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(4x+9)\)</span>. The middle terms give <span class="math inline">\(9x+(4x)=13x\)</span>. This does not match <span class="math inline">\(12x\)</span>.</li>
+<li>Try <span class="math inline">\((x+9)(4x+1)\)</span>. The middle terms give <span class="math inline">\(x+(36x)=37x\)</span>. This does not match <span class="math inline">\(12x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(+3\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+3)(4x+3)\)</span>. The middle terms give <span class="math inline">\(3x+(12x)=15x\)</span>. This does not match <span class="math inline">\(12x\)</span>.</li>
+<li>Try <span class="math inline">\((x+3)(4x+3)\)</span>. The middle terms give <span class="math inline">\(3x+(12x)=15x\)</span>. This does not match <span class="math inline">\(12x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(2x\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(+3\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+3)(2x+3)\)</span>. The middle terms give <span class="math inline">\(6x+(6x)=12x\)</span>. This matches <span class="math inline">\(12x\)</span>.</li>
+</ul>Circle the question mark. The successful placement gives the factors.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -1263,64 +1013,55 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 4x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+9\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 2x\)</span>
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(+3\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +9\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
 <td>
 <s>?</s>
 </td>
 <td>
+<s>?</s>
 </td>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+3,\ +3\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(2x\)</span>
 </th>
 <td>
-<s>?</s>
 </td>
 <td>
 <span class="accepted">?</span>
 </td>
 </tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+9,\ +1\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-</tr>
 </tbody>
 </table>
-<p>The circled box gives the factorization. Multiply once more to verify the complete expression:</p>
-<p>
-<span class="math display">\[4x^2+12x+9=(2x+3)(2x+3)\]</span>
-</p>
+<p>Verify the complete product:</p>
 <p>
 <span class="math display">\[(2x+3)(2x+3)=4x^2+12x+9\]</span>
+</p>
+<p>
+<span class="math display">\[4x^2+12x+9=(2x+3)(2x+3)\]</span>
 </p>
 <p>The identical factors may also be written as <span class="math inline">\((2x+3)^2\)</span>.</p>
 </div>
 </section>
 <h2>When every guess fails</h2>
-<p>Failure of a few guesses is not enough to declare a polynomial nonfactorable. Build the complete table, including every relevant order and sign placement, and check every box. With a positive constant and positive middle coefficient, positive first terms require positive last terms; two negative last terms would give a negative middle coefficient.</p>
+<p>Failure of a few guesses is not enough to declare a polynomial nonfactorable. Build the complete table, listing each last-term pair once, and check both placements in every box. With a positive constant and positive middle coefficient, positive first terms require positive last terms; two negative last terms would give a negative middle coefficient.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
-<p>Factor completely over the integers, or show that the polynomial is not factorable over the integers. Use the complete 12-cell table and check every possible guess.</p>
+<p>Factor completely over the integers, or show that the polynomial is not factorable over the integers. Check both placements in every cell of the complete nine-cell table before concluding that no factorization works.</p>
 <p>
-<span class="math display">\[12x^2+19x+6\]</span>
+<span class="math display">\[12x^2+37x+12\]</span>
 </p>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -1328,20 +1069,20 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+12\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
+<span class="math inline">\(+2\)</span>, <span class="math inline">\(+6\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(+4\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +6\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
 <td>
 </td>
@@ -1352,7 +1093,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +3\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
 <td>
 </td>
@@ -1363,18 +1104,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+3,\ +2\)</span>
-</th>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+6,\ +1\)</span>
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
 <td>
 </td>
@@ -1388,21 +1118,45 @@ Guess and Check</h1>
 </div>
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>There is no GCF other than 1. The three first-term pairs cover all positive factor pairs of <span class="math inline">\(12x^2\)</span>. The four rows include both orders of every positive factor pair of 6. With these positive first terms, two negative last terms would make a negative middle term, so no such rows are needed. Reversing two whole factors or negating both whole factors would only duplicate these possibilities.</p>
-<p>Here is one possible order for trying the boxes. Each candidate has the correct leading and constant terms; check whether its middle term is <span class="math inline">\(19x\)</span>.</p>
+<p>There is no GCF other than 1. The three rows give every positive first-term pair, and the three columns give every positive last-term pair once. Two negative last terms would produce a negative middle coefficient, so they need not be tried. Swapping whole factors or negating both whole factors would only duplicate these choices. There are nine cells, with two placements to check in each cell.</p>
+<p>Here is one possible order for trying the boxes. Choose any empty box; a crossed-out box must have failed in both placements.</p>
 <ol class="guess-log">
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+1)(4x+6)\)</span>. Check the middle: <span class="math inline">\(18x+(4x)=22x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+3)(12x+2)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+2)(6x+3)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+6)(4x+1)\)</span>. Check the middle: <span class="math inline">\(3x+(24x)=27x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+1)(12x+6)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+2)(4x+3)\)</span>. Check the middle: <span class="math inline">\(9x+(8x)=17x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+6)(12x+1)\)</span>. Check the middle: <span class="math inline">\(x+(72x)=73x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+3)(6x+2)\)</span>. Check the middle: <span class="math inline">\(4x+(18x)=22x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+1)(6x+6)\)</span>. Check the middle: <span class="math inline">\(12x+(6x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((2x+6)(6x+1)\)</span>. Check the middle: <span class="math inline">\(2x+(36x)=38x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((x+2)(12x+3)\)</span>. Check the middle: <span class="math inline">\(3x+(24x)=27x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
-<li>Put a <strong>?</strong> in the box for <span class="math inline">\((3x+3)(4x+2)\)</span>. Check the middle: <span class="math inline">\(6x+(12x)=18x\)</span>. It does not match <span class="math inline">\(19x\)</span>; cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(+4\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+3)(12x+4)\)</span>. The middle terms give <span class="math inline">\(4x+(36x)=40x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((x+4)(12x+3)\)</span>. The middle terms give <span class="math inline">\(3x+(48x)=51x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+12\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x+1)(4x+12)\)</span>. The middle terms give <span class="math inline">\(36x+(4x)=40x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((3x+12)(4x+1)\)</span>. The middle terms give <span class="math inline">\(3x+(48x)=51x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+2\)</span>, <span class="math inline">\(+6\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+2)(6x+6)\)</span>. The middle terms give <span class="math inline">\(12x+(12x)=24x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((2x+6)(6x+2)\)</span>. The middle terms give <span class="math inline">\(4x+(36x)=40x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+12\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+1)(12x+12)\)</span>. The middle terms give <span class="math inline">\(12x+(12x)=24x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((x+12)(12x+1)\)</span>. The middle terms give <span class="math inline">\(x+(144x)=145x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(+4\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x+3)(4x+4)\)</span>. The middle terms give <span class="math inline">\(12x+(12x)=24x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((3x+4)(4x+3)\)</span>. The middle terms give <span class="math inline">\(9x+(16x)=25x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+1\)</span>, <span class="math inline">\(+12\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+1)(6x+12)\)</span>. The middle terms give <span class="math inline">\(24x+(6x)=30x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((2x+12)(6x+1)\)</span>. The middle terms give <span class="math inline">\(2x+(72x)=74x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span> and <span class="math inline">\(+2\)</span>, <span class="math inline">\(+6\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((x+2)(12x+6)\)</span>. The middle terms give <span class="math inline">\(6x+(24x)=30x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((x+6)(12x+2)\)</span>. The middle terms give <span class="math inline">\(2x+(72x)=74x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span> and <span class="math inline">\(+2\)</span>, <span class="math inline">\(+6\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((3x+2)(4x+6)\)</span>. The middle terms give <span class="math inline">\(18x+(8x)=26x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((3x+6)(4x+2)\)</span>. The middle terms give <span class="math inline">\(6x+(24x)=30x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
+<li>Choose an empty box and put a <strong>?</strong> in it. With <span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span> and <span class="math inline">\(+3\)</span>, <span class="math inline">\(+4\)</span>, check the two placements:<ul>
+<li>Try <span class="math inline">\((2x+3)(6x+4)\)</span>. The middle terms give <span class="math inline">\(8x+(18x)=26x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+<li>Try <span class="math inline">\((2x+4)(6x+3)\)</span>. The middle terms give <span class="math inline">\(6x+(24x)=30x\)</span>. This does not match <span class="math inline">\(37x\)</span>.</li>
+</ul>Both placements failed. Cross out the question mark.</li>
 </ol>
 <table class="search-grid" aria-label="Possible binomial factor choices">
 <thead>
@@ -1410,20 +1164,20 @@ Guess and Check</h1>
 <td>
 </td>
 <th scope="col">
-<span class="math inline">\(x,\ 12x\)</span>
+<span class="math inline">\(+1\)</span>, <span class="math inline">\(+12\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(2x,\ 6x\)</span>
+<span class="math inline">\(+2\)</span>, <span class="math inline">\(+6\)</span>
 </th>
 <th scope="col">
-<span class="math inline">\(3x,\ 4x\)</span>
+<span class="math inline">\(+3\)</span>, <span class="math inline">\(+4\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<span class="math inline">\(+1,\ +6\)</span>
+<span class="math inline">\(x\)</span>, <span class="math inline">\(12x\)</span>
 </th>
 <td>
 <s>?</s>
@@ -1437,7 +1191,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+2,\ +3\)</span>
+<span class="math inline">\(2x\)</span>, <span class="math inline">\(6x\)</span>
 </th>
 <td>
 <s>?</s>
@@ -1451,21 +1205,7 @@ Guess and Check</h1>
 </tr>
 <tr>
 <th scope="row">
-<span class="math inline">\(+3,\ +2\)</span>
-</th>
-<td>
-<s>?</s>
-</td>
-<td>
-<s>?</s>
-</td>
-<td>
-<s>?</s>
-</td>
-</tr>
-<tr>
-<th scope="row">
-<span class="math inline">\(+6,\ +1\)</span>
+<span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>
 </th>
 <td>
 <s>?</s>
@@ -1479,7 +1219,7 @@ Guess and Check</h1>
 </tr>
 </tbody>
 </table>
-<p>Every box has been checked and crossed out. None gives the required middle term. The polynomial has no common factor other than 1, so it is <strong>not factorable over the integers</strong>. A few failed guesses would not be enough; this conclusion uses the complete search.</p>
+<p>All nine cells have been crossed out, and both placements were checked in every cell. None gives <span class="math inline">\(37x\)</span>. There is no GCF other than 1, so the polynomial is <strong>not factorable over the integers</strong>. Several unsuccessful guesses alone would not justify this conclusion; the complete search does.</p>
 </div>
 </section>
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
