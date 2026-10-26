@@ -1,5 +1,15 @@
 # Algebra test format
 
+## Final-answer directions and grading (October 26, 2026)
+
+This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
+
+- Student-facing directions and individual prompts must never ask students to show work, show substitution, show checks, show partial products, explain a calculation method, or display particular intermediate steps. Do not prescribe a solution method or require separate-paper work.
+- Ask only for the requested final result, such as an exact value, simplified expression, factorization, solution set, graph, or requested function feature. Use concise directions such as “Write exact final answers in the right column.” Retain the calculator policy.
+- Grade the requested answer in the right-hand response area. Do not imply that shown work earns partial credit or that missing work loses credit. Assign points to final-answer outputs, never to intermediate work, checks, or use of a particular method.
+- References to methods or checks describe authoring, expected difficulty, internal verification, or instructor-key content only. They must not become student directions, intermediate response rows, or method-based grading criteria. Independently solve and verify every item before delivery.
+
+
 Approved October 12, 2026. Applies to TSM 098, TSM 099, and MATH 101 unit tests, practice tests, diagnostics, and finals. Course specifications continue to control mathematical content, scoring, ordering, and calculator policy.
 
 ## Calculator directions
@@ -15,7 +25,7 @@ For every newly generated test/exam or practice test/exam version, independently
 - Combine problem statements and final-answer spaces on the same pages. Use US Letter portrait pages with print-safe margins. Within the usable width, the questions occupy the left two-thirds and answers occupy the right one-third.
 - Align every answer area vertically with its question. Keep each main question and its response rows together on one page. Use natural content flow; do not add working space to fill a page.
 - Aim for one or two student pages (at most one physical sheet front/back). Longer finals may use three or more pages when needed for legibility and adequate answer space.
-- Include title, version identifier, name, and concise directions to complete and show all work on separate paper and write exact final answers in the right column. Do not include a course-section field.
+- Include title, version identifier, name, and concise directions to write exact final answers in the right column. Do not include a course-section field.
 - Put blank grids or other structures students complete in the answer column. Put supplied graphs students interpret with the problem statement. Keep graph labels and scales legible at printed size.
 - Keep response areas open, without internal answer baselines. Use solid rules between main questions, a vertical question/answer divider, and light dotted or dashed rules only between subparts. Put each part's points at the bottom of its answer area; do not repeat the main question's point total in its heading.
 - Never embed hidden, white, or transparent key answers on student pages.

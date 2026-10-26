@@ -140,10 +140,10 @@ def arithmetic98(v):
     q1=question('A98-signs','Evaluate each expression.',[rf'({chr(97+i)})\quad '+p for i,(p,a) in enumerate(ops)],[ans('('+chr(97+i)+')',str(a),5,True) for i,(p,a) in enumerate(ops)])
     q2=fraction_reduction(v,'A98-frac')
     e=(k+1)*x-(k+2)*y-k;px=-k;py=k+1;a=exact('A98-eval',e.subs({x:px,y:py}))
-    q3=question('A98-eval',f'Evaluate at x = {px}, y = {py}. Show the substituted expression.',[tex(e)],[ans('Value',tex(a),20)])
+    q3=question('A98-eval',f'Evaluate at x = {px}, y = {py}.',[tex(e)],[ans('Value',tex(a),20)])
     e=(v+1)*x*x-(v+3)*x+v+2
     vals=[10,-10,0];weights=[7,7,6]
-    q4=question('A98-quad','Evaluate the same expression at (a) x = 10, (b) x = -10, and (c) x = 0. Show substitution.',[tex(e)],[ans('('+chr(97+i)+')',tex(exact('A98-quad',e.subs(x,z))),weights[i]) for i,z in enumerate(vals)])
+    q4=question('A98-quad','Evaluate the same expression at (a) x = 10, (b) x = -10, and (c) x = 0.',[tex(e)],[ans('('+chr(97+i)+')',tex(exact('A98-quad',e.subs(x,z))),weights[i]) for i,z in enumerate(vals)])
     l=x*(x+k);r=x*x+k*x+(0 if v==0 else x if v==1 else k)
     q5=comparison('A98-compare',l,r,[k,-k,0],20)
     return [q1,q2,q3,q4,q5]
@@ -168,17 +168,28 @@ def comparison(fid,l,r,inputs,points):
 
 def polynomials98(v):
     k=v+1
-    p=2*x**6-3*x**5+k*x**3+4*x-5;q=-x**6+(k+1)*x**4-2*x**3+3*x*x+2
-    assert len(S.Poly(p,x).terms())>=5 and len(S.Poly(q,x).terms())>=5
+    # Compact, one-line sums: four exponents across two three-term factors.
+    p=2*x**3-(k+1)*x**2-k
+    q=-(k+2)*x**3+(k+1)*x+k+2
     r=(k+2)*x**4-2*x*x+x-k;t=3*x**4+(k+1)*x*x-4
     e=-(k+2)*x**2*(2*x**3-k*x+3)
     small=[((x+k)*(x-k-2)),((k+1)*x-k)*((k+2)*x+3)]
     factors=[(x-k,2*x*x+x+1),(x+2,2*x**3-x*x+3*x-k),(x*x+x-k,2*x*x-x+3)][v]
-    return [question('P98-add','Add and simplify.',[par(p)+' + '+par(q)],[ans('Polynomial',tex(exact('P98-add',p+q)),20)]),
-      question('P98-sub','Subtract. Show distribution of the leading negative before combining terms.',[par(r)+' - '+par(t)],[ans('Polynomial',tex(exact('P98-sub',r-t)),20)]),
+    gcf=(k+2)*x**(v+1);inside=2*x*x+(-1 if v%2 else 1)*3*x+5
+    gp=S.expand(gcf*inside)
+    roots=[(2,3),(-2,-5),(-3,5)][v]
+    mono=S.expand((x+roots[0])*(x+roots[1]))
+    assert S.Poly(mono,x).LC()==1 and len(S.Poly(mono,x).terms())==3
+    assert S.expand(S.factor(gp)-gp)==0 and S.expand(S.factor(mono)-mono)==0
+    return [question('P98-addsub','(a) Add and simplify. (b) Subtract and simplify.',
+      [r'(a)\quad '+par(p)+' + '+par(q),r'(b)\quad '+par(r)+' - '+par(t)],
+      [ans('(a)',tex(exact('P98-add',p+q)),10),ans('(b)',tex(exact('P98-sub',r-t)),10)]),
       question('P98-dist','Distribute and simplify.',[f'-{k+2}x^2'+par(2*x**3-k*x+3)],[ans('Polynomial',tex(exact('P98-dist',e)),20)]),
       question('P98-binomial','Multiply and simplify both products.',[rf'(a)\quad (x+{k})(x-{k+2})',rf'(b)\quad ({k+1}x-{k})({k+2}x+3)'],[ans('(a)',tex(exact('P98-binomial-a',small[0])),10),ans('(b)',tex(exact('P98-binomial-b',small[1])),10)]),
-      question('P98-large','Multiply and combine like terms.',[par(factors[0])+par(factors[1])],[ans('Polynomial',tex(exact('P98-large',factors[0]*factors[1])),20)])]
+      question('P98-large','Multiply and simplify.',[par(factors[0])+par(factors[1])],[ans('Polynomial',tex(exact('P98-large',factors[0]*factors[1])),20)]),
+      question('P98-factor','(a) Factor out the greatest common factor. (b) Factor the trinomial.',
+      [r'(a)\quad '+tex(gp),r'(b)\quad '+tex(mono)],
+      [ans('(a)',tex(S.factor(gp)),10),ans('(b)',tex(S.factor(mono)),10)])]
 
 def fractions98(v):
     add=[[(1,6),(1,3)],[(2,5),(1,6)],[(1,12),(1,4)]][v]
@@ -197,7 +208,7 @@ def fractions98(v):
         for z in values[1:]:e=e+z if op=='+' else e-z if op=='-' else e*z if op==r'\times' else e/z
         assert e>0
         expr=(' '+op+' ').join(tex(S.Integer(n)) if d==1 else frac(n,d) for n,d in pairs)
-        prompt='Compute and give the result in lowest terms.'+(' Show multiplication by the reciprocal.' if op==r'\div' else '')
+        prompt='Compute and give the result in lowest terms.'
         out.append(question(fid,prompt,[expr],[ans('Result',tex(e),20)]));exact(fid,e)
     return out
 
@@ -212,10 +223,10 @@ def linear98(v):
     if v==0:ex=[f'3(x+{k})+1 = 3x+{3*k+2}'];answer='No solution; simplifying gives 1 = 2.'
     elif v==1:ex=[f'4(x-{k})+{4*k+2} = 2(2x+1)'];answer='All real numbers; both sides reduce to 4x + 2.'
     else:ex=[eq(2*x+3*y,7),eq(4*x+6*y,15)];answer='No solution; doubling the first equation contradicts the second.'
-    return [question('L98-frac','Solve and check.',[frac(x+k,3)+' + '+frac(x-1,4)+' = '+tex(rhs)],[ans('Solution',solution_tex([rf]),20)]),
-      question('L98-dist','Solve and check.',[f'3(2x-{k})-(x+{k+1})'+(' + '+str(m)+'x' if m else '')+' = '+tex(rr)],[ans('Solution',solution_tex([rl]),20)]),
-      question('L98-basic','Solve the system and check in both equations.',system,[ans('Solution',tex(S.Tuple(p,q)),20)]),
-      question('L98-general','Solve the system and check in both equations.',general,[ans('Solution',tex(S.Tuple(p,q)),20)]),
+    return [question('L98-frac','Solve.',[frac(x+k,3)+' + '+frac(x-1,4)+' = '+tex(rhs)],[ans('Solution',solution_tex([rf]),20)]),
+      question('L98-dist','Solve.',[f'3(2x-{k})-(x+{k+1})'+(' + '+str(m)+'x' if m else '')+' = '+tex(rr)],[ans('Solution',solution_tex([rl]),20)]),
+      question('L98-basic','Solve the system.',system,[ans('Solution',tex(S.Tuple(p,q)),20)]),
+      question('L98-general','Solve the system.',general,[ans('Solution',tex(S.Tuple(p,q)),20)]),
       question('L98-exception','Solve and state the complete solution set.',ex,[ans('Solution set',answer,20,True)])]
 
 def arithmetic99(v):
@@ -227,7 +238,7 @@ def arithmetic99(v):
     q3=question('A99-simplify','Simplify the square root.',[r'\sqrt{'+str(rad)+'}'],[ans('Radical',tex(S.sqrt(rad)),20)])
     if v<2:
         e=(v+1)*x*x-(v+3)*x+2 if v==0 else 2*(x-1)*(x+3)
-        vals=[v+2,-v-2];q4=question('A99-eval',f'Evaluate at (a) x = {vals[0]} and (b) x = {vals[1]}. Show substitution.',[tex(e)],[ans('('+chr(97+i)+')',tex(exact('A99-eval',e.subs(x,z))),10) for i,z in enumerate(vals)])
+        vals=[v+2,-v-2];q4=question('A99-eval',f'Evaluate at (a) x = {vals[0]} and (b) x = {vals[1]}.',[tex(e)],[ans('('+chr(97+i)+')',tex(exact('A99-eval',e.subs(x,z))),10) for i,z in enumerate(vals)])
     else:
         a,b,c=2,-5,2;rt=S.solve(a*x*x+b*x+c,x)
         q4=question('A99-formula','Substitute a = 2, b = -5, c = 2 into the formula. Evaluate both branches.',[r'x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}'],[ans('Both values',solution_tex(rt),20)])
@@ -249,7 +260,7 @@ def polynomials99(v):
       question('P99-gcf','Factor out the greatest common factor.',[tex(poly)],[ans('Factored form',tex(gcf)+par(inside),20)]),
       question('P99-basic','Factor completely.',[rf'(a)\quad '+tex(S.expand(mon)),rf'(b)\quad '+tex(ds)],[ans('(a)',tex(S.factor(mon)),10),ans('(b)',tex(S.factor(ds)),10)]),
       question('P99-small','Factor completely over the integers, or write prime.',[rf'({chr(97+i)})\quad '+tex(S.expand(e)) for i,e in enumerate(small)],[ans('('+chr(97+i)+')','Prime' if S.Poly(e,x).discriminant()<0 else tex(S.factor(e)),10,S.Poly(e,x).discriminant()<0) for i,e in enumerate(small)]),
-      question('P99-group','Factor using the ac-method and grouping. Show ac, the split middle term, and the grouping.',[tex(rp.as_expr())],[ans('ac; pair',rf'ac={ac};\ {u},\ {w}',4),ans('Split middle term',f'{a}x^2{int(u):+}x{int(w):+}x{int(c):+}',4),ans('Grouping',tex(S.factor(a*x*x+u*x))+' + '+tex(S.factor(w*x+c)),6),ans('Factored form',tex(S.factor(rich)),6)])]
+      question('P99-group','Factor completely.',[tex(rp.as_expr())],[ans('Factored form',tex(S.factor(rich)),20)])]
 
 def rational99(v):
     h=v+2;b=v+4;a=v+3
@@ -263,7 +274,7 @@ def rational99(v):
     subtex=frac(2 if v!=1 else 1,x-h)+' - '+frac(1 if v!=1 else 3,den)
     mul=(6*x*(x-h))/(9*(x-h)*(x+b))*(x+b)/x
     div=(x*x-a*a)/S.expand((x-a)*(x+b))/((x+a)/(x+b))
-    tasks=[('R99-simple',frac(n,d),simple,'Simplify.'),('R99-add',addtex,add,'Add and simplify.'),('R99-sub',subtex,sub,'Subtract and simplify.'),('R99-mul',frac(S.expand(6*x*(x-h)),S.expand(9*(x-h)*(x+b)))+r'\times'+frac(x+b,x),mul,'Multiply and simplify.'),('R99-div',frac(x*x-a*a,S.expand((x-a)*(x+b)))+r'\div'+frac(x+a,x+b),div,'Divide and simplify. Show multiplication by the reciprocal.')]
+    tasks=[('R99-simple',frac(n,d),simple,'Simplify.'),('R99-add',addtex,add,'Add and simplify.'),('R99-sub',subtex,sub,'Subtract and simplify.'),('R99-mul',frac(S.expand(6*x*(x-h)),S.expand(9*(x-h)*(x+b)))+r'\times'+frac(x+b,x),mul,'Multiply and simplify.'),('R99-div',frac(x*x-a*a,S.expand((x-a)*(x+b)))+r'\div'+frac(x+a,x+b),div,'Divide and simplify.')]
     out=[]
     for fid,t,e,prompt in tasks:out.append(question(fid,prompt,[t],[ans('Expression',tex(S.factor(exact(fid,e))),20)]))
     assert S.simplify(cancel-1/(x-k))==0
@@ -279,11 +290,11 @@ def equations99(v):
     poly=S.expand((x-(v+1))*(x+v+4));rt,_=solved('E99-factor',poly)
     qp=2*x*x+(v+1)*x-(v+2);qr,_=solved('E99-formula',qp);assert not S.sqrt(S.Poly(qp,x).discriminant()).is_integer
     sh=v-1;sk=v+2
-    return [question('E99-factor','Solve by factoring.',[eq(poly,0)],[ans('Solutions',solution_tex(rt),20)]),
-      question('E99-formula','Solve with the quadratic formula. Simplify radicals.',[eq(qp,0)],[ans('Solutions',solution_tex(qr),20)]),
-      question('E99-sqrt','Solve by taking square roots; do not expand the square.',['2'+par(x-sh)+rf'^2 = {2*sk*sk}'],[ans('Solutions',solution_tex([sh-sk,sh+sk]),20)]),
-      question('E99-rquad','Solve. List excluded values and check candidates in the original equation.',[frac(2*h,x*x-h*h)+' + '+frac(x-d,x-h)+' = '+frac(K,x+h)],[ans('Excluded values',tex(S.FiniteSet(-h,h)),4),ans('Candidates/check',rf'x={h}\ (\mathrm{{rejected}}),\ x={r}',6),ans('Solution',solution_tex([r]),10)]),
-      question('E99-rlinear','Solve. List excluded values and check in the original equation.',[frac(A,2*x-2*u)+' + '+frac(B,S.expand((x-u)*(x-w)))+' = '+frac(c,x-w)],[ans('Excluded values',tex(S.FiniteSet(u,w)),5),ans('Solution/check',solution_tex([p]),15)])]
+    return [question('E99-factor','Solve.',[eq(poly,0)],[ans('Solutions',solution_tex(rt),20)]),
+      question('E99-formula','Solve. Give exact simplified solutions.',[eq(qp,0)],[ans('Solutions',solution_tex(qr),20)]),
+      question('E99-sqrt','Solve.',['2'+par(x-sh)+rf'^2 = {2*sk*sk}'],[ans('Solutions',solution_tex([sh-sk,sh+sk]),20)]),
+      question('E99-rquad','Solve.',[frac(2*h,x*x-h*h)+' + '+frac(x-d,x-h)+' = '+frac(K,x+h)],[ans('Solution',solution_tex([r]),20)]),
+      question('E99-rlinear','Solve.',[frac(A,2*x-2*u)+' + '+frac(B,S.expand((x-u)*(x-w)))+' = '+frac(c,x-w)],[ans('Solution',solution_tex([p]),20)])]
 
 def graph99(v):
     ms=[S.Rational(1,2),S.Rational(2,3),S.Rational(3,2)];m=ms[v];b=v-2
@@ -294,6 +305,6 @@ def graph99(v):
     pointm=[S.Integer(2),S.Rational(1,3),S.Integer(-1)][v];pointb=v-1;xs=[1,4] if v==1 else [1,3];pts=[(z,pointm*z+pointb) for z in xs]
     return [question('G99-slope','Graph the line on the grid. Mark at least two points.',[eq(y,m*x+b)],[ans('Graph (booklet)',eq(y,m*x+b),20)],graph={'kind':'blank','answer_lines':[[float(m),float(b)]]}),
       question('G99-standard','Find both intercepts and graph through them on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),8),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),12)],graph={'kind':'blank','answer_lines':[[-A/B,C/B]]}),
-      question('G99-system','Solve by graphing both lines on this grid. Algebra alone is insufficient.',[eq(y,mm*x+bb),eq(y,nn*x+cc)],[ans('Graph (booklet)','Both given lines meet at the reported solution.',12,True),ans('Ordered pair',tex(S.Tuple(p,q)),8)],graph={'kind':'blank','answer_lines':[[float(mm),float(bb)],[float(nn),float(cc)]]}),
+      question('G99-system','Graph both lines on this grid and give their intersection.',[eq(y,mm*x+bb),eq(y,nn*x+cc)],[ans('Graph (booklet)','Both given lines meet at the reported solution.',12,True),ans('Ordered pair',tex(S.Tuple(p,q)),8)],graph={'kind':'blank','answer_lines':[[float(mm),float(bb)],[float(nn),float(cc)]]}),
       question('G99-read','Write the equation of the displayed line in slope-intercept form.',[],[ans('Equation',eq(y,readm*x+readb),20)],graph={'kind':'line','m':float(readm),'b':readb,'point':2 if v!=1 else 3}),
-      question('G99-points','Find the slope-intercept equation through the two points. Show the slope formula and determination of the intercept.',[tex(S.Tuple(*pts[0]))+r';\ '+tex(S.Tuple(*pts[1]))],[ans('Slope',tex(pointm),6),ans('Equation',eq(y,pointm*x+pointb),14)])]
+      question('G99-points','Find the slope-intercept equation through the two points.',[tex(S.Tuple(*pts[0]))+r';\ '+tex(S.Tuple(*pts[1]))],[ans('Equation',eq(y,pointm*x+pointb),20)])]

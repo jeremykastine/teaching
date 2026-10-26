@@ -1,5 +1,15 @@
 # MATH 101 Unit-Test Specifications
 
+## Final-answer directions and grading (October 26, 2026)
+
+This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
+
+- Student-facing directions and individual prompts must never ask students to show work, show substitution, show checks, show partial products, explain a calculation method, or display particular intermediate steps. Do not prescribe a solution method or require separate-paper work.
+- Ask only for the requested final result, such as an exact value, simplified expression, factorization, solution set, graph, or requested function feature. Use concise directions such as “Write exact final answers in the right column.” Retain the calculator policy.
+- Grade the requested answer in the right-hand response area. Do not imply that shown work earns partial credit or that missing work loses credit. Assign points to final-answer outputs, never to intermediate work, checks, or use of a particular method.
+- References to methods or checks describe authoring, expected difficulty, internal verification, or instructor-key content only. They must not become student directions, intermediate response rows, or method-based grading criteria. Independently solve and verify every item before delivery.
+
+
 **Owner:** Jeremy Kastine  
 **Updated:** October 12, 2026  
 **Status:** Standing generation specifications for the four unit tests and their practice/retake versions.  
@@ -36,7 +46,7 @@ The four units retain the [scheduled boundaries](course-schedule.md). Prerequisi
 - Exactly **five numbered main question units**, each worth **20 points**. Lettered parts stay inside their main question. Each version totals **100 points**.
 - Include each of the unit's five families exactly once. Family IDs below are internal identifiers, not fixed printed question numbers.
 - Randomize the five main questions independently per version. Keep ordered solution stages and all subparts together. Do not reveal family labels, intended methods, or exceptional outcomes unless a method is expressly required below.
-- Use the stated subpart weights. A single-part question has one 20-point response area. Award instructional partial credit for valid work; these tests have no supplied institutional binary-reporting requirement.
+- Use the stated subpart weights. A single-part question has one 20-point response area. Grade the requested final answers; do not award or withhold points for showing work or following a particular method. These tests have no supplied institutional binary-reporting requirement.
 - Default to free response, with the explicitly specified multiple-choice recognition tasks. Each multiple-choice part must have exactly one defensible answer; use four plausible options unless the task is the four-way graph matching.
 - Basic **four-function calculator only**; exact answers. No numerical logarithm approximations, statistical tools, graphing calculators, CAS, or advanced calculator keys.
 - Use small integer coefficients, simple fractions, and clean radicals. Do not rely on a square-root or exponent key; extracting small perfect squares and leaving simplified irrational radicals are mathematical tasks.
@@ -52,7 +62,7 @@ Change numerical data, expressions, or graphs, not merely order or names. Preser
 
 ### Presentation and output
 
-Follow the approved [algebra test format](../docs/algebra-test-format.md): combine questions in the left two-thirds of each printable page and aligned answer spaces in the right one-third. Students show all work on separate paper and record exact final answers in the right column. Omit a course-section field. For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical.
+Follow the approved [algebra test format](../docs/algebra-test-format.md): combine questions in the left two-thirds of each printable page and aligned answer spaces in the right one-third. Students record exact final answers in the right column. Omit a course-section field. For every newly generated test/exam or practice test/exam version, independently choose a random five-digit integer from 10000 through 99999 as its version identifier. Apply this to single versions and every version in a requested batch, including unit tests, retakes, diagnostics, and finals. Do not use timestamps, sequential numbering, lettered labels, or batch suffixes; no numerical ordering is required. Duplicate identifiers are acceptable; no uniqueness check or registry is required. Use the same identifier on the student test, corresponding answer key, and filename when practical.
 
 Aim for one or two student pages. The concise instructor key uses one column per test page, preserving exact vertical response geometry; one-, two-, or three-page tests have one-, two-, or three-column keys respectively. Longer tests may require additional key pages. There is no separate student answer sheet and no requirement for equal student/key page counts.
 
@@ -99,7 +109,7 @@ One operation only: simplify a quotient, multiply/divide two rational expression
 
 (a) One quadratic with no lengthy preliminary expansion. Rotate factoring, square-root form, and the quadratic formula across independent forms. The formula subtype has a manageable nonsquare discriminant; real irrational roots are the default. A negative discriminant is allowed in an independent form to assess the limited complex-number scope, with a small simplified imaginary result. Do not replace this with a standalone complex-number arithmetic drill.
 
-(b) Choose one short equation: a linear equation with numerical fractions and at most one distribution; a rational equation becoming linear after at most one denominator factorization; or a one-radical equation becoming a small factorable quadratic. For rational/radical variants require original restrictions/checks and rejection of invalid candidates. No two-radical equation, extra quadratic substitution, or long rational equation. Do not combine the upper-end quadratic-formula subtype in (a) with the upper-end radical subtype in (b); keep the combined seven-minute ceiling.
+(b) Choose one short equation: a linear equation with numerical fractions and at most one distribution; a rational equation becoming linear after at most one denominator factorization; or a one-radical equation becoming a small factorable quadratic. For rational/radical variants verify original restrictions and reject invalid candidates internally; request only the valid solution set. No two-radical equation, extra quadratic substitution, or long rational equation. Do not combine the upper-end quadratic-formula subtype in (a) with the upper-end radical subtype in (b); keep the combined seven-minute ceiling.
 
 Checking is included in the 10 points for the applicable equation, not an extra task outside the family.
 
@@ -165,7 +175,7 @@ Do not combine scaling/reflection families with one another or with translations
 |---|---|---|---|
 | U3-1 | Quadratic function features | (a) Vertex/extreme value 10; (b) zeros 10 | 3 min |
 | U3-2 | Construct a polynomial from a graph | Factored polynomial 16; end behavior 4 | 4 min |
-| U3-3 | Find all zeros of a cubic | (a) RRT candidates/test 5; (b) long division 7; (c) quadratic-formula zeros 8 | 7 min |
+| U3-3 | Find all zeros of a cubic | Complete final set of zeros 20 | 7 min |
 | U3-4 | Rational-function behavior | (a) Domain 4; (b) discontinuity/asymptote features 10; (c) intercepts 6 | 5 min |
 | U3-5 | Radical function analysis | (a) Domain/range 8; (b) intercepts 6; (c) end behavior 6 | 5 min |
 | **Total** | **Five families; 100 points** | | **24 min + 6 min allowance** |
@@ -180,19 +190,13 @@ Use the final's graph-to-polynomial task, restricted to degree 3 or 4 for unit t
 
 Require the factored polynomial (zeros/multiplicities 10 points; correct leading constant 6) and both directions of end behavior (2 points each). Do not require expanding the resulting polynomial or estimating extrema numerically. Degree and leading sign support the end-behavior response; do not add them as unrelated extra exercises.
 
-### U3-3 — Polynomial zeros with required methods (5.4–5.5)
+### U3-3 — Polynomial zeros (5.4–5.5)
 
-Retain the final's method sequence but use **degree 3 only**: one rational real zero and two real irrational zeros.
+Use degree 3 only: one rational real zero and two real irrational zeros. Use primitive integer coefficients and at most eight distinct Rational Root Theorem candidates, with a rational zero easy to find after testing at most two sensible candidates. Choose a small integer-coefficient quadratic quotient with a positive nonsquare discriminant and easy radical simplification. The full solution should fit approximately seven minutes.
 
-- Primitive integer coefficients; at most eight distinct Rational Root Theorem candidates after deduplication.
-- Ask for all candidates (3 points), but supply a subset of at most two to test; identifying the rational zero earns 2 points. Never require testing the whole candidate list.
-- Require **one polynomial long division** by the confirmed linear factor (7 points), with a small integer-coefficient quadratic quotient.
-- Require the **quadratic formula** for the remaining zeros (8 points); discriminant positive and nonsquare, with easy simplification.
-- Do not accept synthetic division as a substitute when long division is expressly required.
-- No second division, missing rational roots, complex final roots, long factor search, or additional polynomial-construction part.
-- Anchor workload: (x-1)(x²+2x-1) expands to x³+x²-3x+1; RRT candidates ±1, and remaining zeros -1±sqrt(2). This is an authoring model, not a question to reuse unchanged.
+RRT, division, and the quadratic formula are internal construction/verification tools, not student instructions or required work. Ask only “Find all zeros.” Assign all 20 points to the complete final set of zeros; remove intermediate candidate-list, quotient, and method response rows. Do not require long division instead of another valid method.
 
-The full method sequence, including recording all three zeros, must fit approximately seven minutes.
+No second division, missing rational roots, complex final roots, long factor search, or additional polynomial-construction part. Anchor workload: (x-1)(x²+2x-1) expands to x³+x²-3x+1; final zeros are 1 and -1±sqrt(2). This is an authoring model, not an item to reuse unchanged.
 
 ### U3-4 — Rational behavior (5.6)
 
@@ -200,7 +204,7 @@ Select one of the final's two approved families, with explicit unit workload lim
 
 **Form A (default):** Fully factored degree-at-most-2 numerator and denominator; one common linear factor creates a hole, and one remaining denominator factor creates a vertical asymptote. Choose a simple horizontal asymptote and clean intercepts. Score domain 4; hole coordinate 4, vertical asymptote 3, horizontal asymptote 3; x- and y-intercepts 3 each. At most one hole and one vertical asymptote.
 
-**Form B:** Unfactored quadratic numerator over a linear denominator, no cancellation/hole, and clean numerator roots. Score domain 4; polynomial division/slant asymptote 7 and vertical asymptote 3; x- and y-intercepts 3 each. No difficult factoring or extra horizontal-asymptote task. Pair this variant with particularly simple U3-1/U3-2 values so the full test stays within its timing budget.
+**Form B:** Unfactored quadratic numerator over a linear denominator, no cancellation/hole, and clean numerator roots. Score domain 4; slant asymptote 7 and vertical asymptote 3; x- and y-intercepts 3 each. No difficult factoring or extra horizontal-asymptote task. Pair this variant with particularly simple U3-1/U3-2 values so the full test stays within its timing budget.
 
 State nonexistent intercepts explicitly when appropriate. Original restrictions survive cancellation. Do not ask for a full rational graph sketch, a sign chart, or a second rational function.
 
@@ -245,7 +249,7 @@ Avoid expansion into many terms, arbitrary ln values needing a scientific calcul
 
 (a) Different-looking bases rewriting to a common base, then a linear equation in x; 8 points. Use a level comparable to 8^(x-1)=4^(x+1), without logs or long exponent expansion.
 
-(b) Exactly one log property before conversion to exponential form; 12 points including domain checks. Choose product→linear, quotient→linear, or product→small factorable quadratic with one rejected candidate. Match the final's approved subtypes, but keep the quadratic variant short and use simpler system values in U4-5 when it appears.
+(b) Exactly one log property before conversion to exponential form; 12 points for the valid final solution set; verify domain checks internally. Choose product→linear, quotient→linear, or product→small factorable quadratic with one rejected candidate. Match the final's approved subtypes, but keep the quadratic variant short and use simpler system values in U4-5 when it appears.
 
 Every form contains both equation categories; do not import the final's 25% radical/exponential/logarithmic/system lottery into a unit test. Radical equations belong in Unit 1; systems have their own Unit 4 family. No decimal approximation.
 

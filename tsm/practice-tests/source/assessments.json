@@ -522,19 +522,63 @@
     "title": "TSM 098 Polynomials Test",
     "short": "TSM 098 Unit Practice",
     "practice": 1,
-    "version": "202610122020.4",
+    "version": "84557",
     "questions": [
       {
-        "id": "P98-sub",
-        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
         "math": [
-          "(3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+          "(a)\\quad 6 x^{3} + 9 x^{2} + 15 x",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 1)(2 x^{2} + x + 1)"
         ],
         "rows": [
           {
             "label": "Polynomial",
-            "answer": "- 4 x^{2} + x + 3",
+            "answer": "2 x^{3} - x^{2} - 1",
             "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 2 x^{2} - 1) + (- 3 x^{3} + 2 x + 3)",
+          "(b)\\quad (3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- x^{3} - 2 x^{2} + 2 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 10,
             "plain": false
           }
         ]
@@ -557,36 +601,6 @@
             "label": "(b)",
             "answer": "6 x^{2} + 3 x - 3",
             "points": 10,
-            "plain": false
-          }
-        ]
-      },
-      {
-        "id": "P98-large",
-        "prompt": "Multiply and combine like terms.",
-        "math": [
-          "(x - 1)(2 x^{2} + x + 1)"
-        ],
-        "rows": [
-          {
-            "label": "Polynomial",
-            "answer": "2 x^{3} - x^{2} - 1",
-            "points": 20,
-            "plain": false
-          }
-        ]
-      },
-      {
-        "id": "P98-add",
-        "prompt": "Add and simplify.",
-        "math": [
-          "(2 x^{6} - 3 x^{5} + x^{3} + 4 x - 5) + (- x^{6} + 2 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
-        ],
-        "rows": [
-          {
-            "label": "Polynomial",
-            "answer": "x^{6} - 3 x^{5} + 2 x^{4} - x^{3} + 3 x^{2} + 4 x - 3",
-            "points": 20,
             "plain": false
           }
         ]
@@ -617,18 +631,40 @@
     "title": "TSM 098 Polynomials Test",
     "short": "TSM 098 Unit Practice",
     "practice": 2,
-    "version": "202610122020.5",
+    "version": "92631",
     "questions": [
       {
-        "id": "P98-sub",
-        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
         "math": [
-          "(4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+          "(a)\\quad (2 x^{3} - 3 x^{2} - 2) + (- 4 x^{3} + 3 x + 4)",
+          "(b)\\quad (4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 2 x^{3} - 3 x^{2} + 3 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 2)"
         ],
         "rows": [
           {
             "label": "Polynomial",
-            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 4 x - 4",
             "points": 20,
             "plain": false
           }
@@ -650,16 +686,23 @@
         ]
       },
       {
-        "id": "P98-large",
-        "prompt": "Multiply and combine like terms.",
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
         "math": [
-          "(x + 2)(2 x^{3} - x^{2} + 3 x - 2)"
+          "(a)\\quad 8 x^{4} - 12 x^{3} + 20 x^{2}",
+          "(b)\\quad x^{2} - 7 x + 10"
         ],
         "rows": [
           {
-            "label": "Polynomial",
-            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 4 x - 4",
-            "points": 20,
+            "label": "(a)",
+            "answer": "4 x^{2} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
             "plain": false
           }
         ]
@@ -685,21 +728,6 @@
             "plain": false
           }
         ]
-      },
-      {
-        "id": "P98-add",
-        "prompt": "Add and simplify.",
-        "math": [
-          "(2 x^{6} - 3 x^{5} + 2 x^{3} + 4 x - 5) + (- x^{6} + 3 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
-        ],
-        "rows": [
-          {
-            "label": "Polynomial",
-            "answer": "x^{6} - 3 x^{5} + 3 x^{4} + 3 x^{2} + 4 x - 3",
-            "points": 20,
-            "plain": false
-          }
-        ]
       }
     ],
     "end": 17,
@@ -712,8 +740,30 @@
     "title": "TSM 098 Polynomials Test",
     "short": "TSM 098 Unit Practice",
     "practice": 3,
-    "version": "202610122020.6",
+    "version": "14341",
     "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 10 x^{5} + 15 x^{4} + 25 x^{3}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{3} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
       {
         "id": "P98-binomial",
         "prompt": "Multiply and simplify both products.",
@@ -737,46 +787,23 @@
         ]
       },
       {
-        "id": "P98-add",
-        "prompt": "Add and simplify.",
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
         "math": [
-          "(2 x^{6} - 3 x^{5} + 3 x^{3} + 4 x - 5) + (- x^{6} + 4 x^{4} - 2 x^{3} + 3 x^{2} + 2)"
+          "(a)\\quad (2 x^{3} - 4 x^{2} - 3) + (- 5 x^{3} + 4 x + 5)",
+          "(b)\\quad (5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
         ],
         "rows": [
           {
-            "label": "Polynomial",
-            "answer": "x^{6} - 3 x^{5} + 4 x^{4} + x^{3} + 3 x^{2} + 4 x - 3",
-            "points": 20,
+            "label": "(a)",
+            "answer": "- 3 x^{3} - 4 x^{2} + 4 x + 2",
+            "points": 10,
             "plain": false
-          }
-        ]
-      },
-      {
-        "id": "P98-sub",
-        "prompt": "Subtract. Show distribution of the leading negative before combining terms.",
-        "math": [
-          "(5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
-        ],
-        "rows": [
+          },
           {
-            "label": "Polynomial",
+            "label": "(b)",
             "answer": "2 x^{4} - 6 x^{2} + x + 1",
-            "points": 20,
-            "plain": false
-          }
-        ]
-      },
-      {
-        "id": "P98-large",
-        "prompt": "Multiply and combine like terms.",
-        "math": [
-          "(x^{2} + x - 3)(2 x^{2} - x + 3)"
-        ],
-        "rows": [
-          {
-            "label": "Polynomial",
-            "answer": "2 x^{4} + x^{3} - 4 x^{2} + 6 x - 9",
-            "points": 20,
+            "points": 10,
             "plain": false
           }
         ]
@@ -791,6 +818,21 @@
           {
             "label": "Polynomial",
             "answer": "- 10 x^{5} + 15 x^{3} - 15 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 3)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 4 x^{2} + 6 x - 9",
             "points": 20,
             "plain": false
           }

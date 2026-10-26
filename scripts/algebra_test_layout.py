@@ -216,14 +216,13 @@ def header(c,a,page,total,key=False):
     title=('Instructor answer key: ' if key else '')+a['title']
     p,h=para(title,INNER,TITLE);p.drawOn(c,M,762-h)
     c.setFillColor(HexColor('#111111'));c.setFont('DV',8)
-    c.drawString(M,718,f"Practice {a['practice']} | Version {a['version']}"+(' | 30 minutes' if a.get('minutes') else ''))
+    c.drawString(M,718,((f"Practice {a['practice']} | " if a.get('practice') else '')+f"Version {a['version']}")+(' | 30 minutes' if a.get('minutes') else ''))
     if key:
         c.drawString(M,700,'Each column matches the vertical answer positions on its corresponding test page.')
-        c.drawString(M,683,'Concise grading reference; required work and checks are assessed on separate paper.')
+        c.drawString(M,683,'Grade the requested final answers in the response column.')
     else:
         c.setFont('DV',10);c.drawString(M,700,'Name: _________________________________________   Date: __________________')
-        text='Complete and show all work on separate paper. Write exact final answers at right.'
-        if a['course']=='MATH 101':text+=' Basic four-function calculator only.'
+        text='Write exact final answers in the right column. Students may use a basic, non-scientific calculator only.'
         p,h=para(text,INNER,SMALL);p.drawOn(c,M,687-h)
     c.setFont('DVB',8.8)
     if not key:

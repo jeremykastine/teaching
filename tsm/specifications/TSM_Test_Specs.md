@@ -1,5 +1,15 @@
 # TSM 098-099 AI Assessment Master Specification
 
+## Final-answer directions and grading (October 26, 2026)
+
+This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
+
+- Student-facing directions and individual prompts must never ask students to show work, show substitution, show checks, show partial products, explain a calculation method, or display particular intermediate steps. Do not prescribe a solution method or require separate-paper work.
+- Ask only for the requested final result, such as an exact value, simplified expression, factorization, solution set, graph, or requested function feature. Use concise directions such as “Write exact final answers in the right column.” Retain the calculator policy.
+- Grade the requested answer in the right-hand response area. Do not imply that shown work earns partial credit or that missing work loses credit. Assign points to final-answer outputs, never to intermediate work, checks, or use of a particular method.
+- References to methods or checks describe authoring, expected difficulty, internal verification, or instructor-key content only. They must not become student directions, intermediate response rows, or method-based grading criteria. Independently solve and verify every item before delivery.
+
+
 STATUS: CONTROLLING GENERATION SPECIFICATION  
 AUDIENCE: AI SYSTEMS ONLY  
 OWNER: Professor Jeremy Kastine  
@@ -95,7 +105,7 @@ Follow the approved [algebra test format](../../docs/algebra-test-format.md) for
 
 - Use the left two-thirds of the printable page for questions and the right one-third for vertically aligned final-answer spaces.
 - Begin with the exact assessment title, version identifier, student-name line, and concise test-specific directions. Do not include a course-section field or hidden institutional/archetype labels.
-- Use conventional notation and compact prompts. Students complete and show all work on separate paper and record exact final answers in the right column.
+- Use conventional notation and compact prompts. Students record exact final answers in the right column.
 - Put blank grids students complete in the right column and supplied graphs they interpret with the left-side prompt. Keep question units together and preserve required scales.
 - Aim for one or two student pages; allow longer diagnostics/finals when readability requires them.
 
@@ -163,7 +173,7 @@ TSM 099 extends the shared foundation into radicals, more complex evaluation, ad
 | **Course** | **Assessment**                           | **Primary domain**                                          |
 |------------|------------------------------------------|-------------------------------------------------------------|
 | TSM 098    | Arithmetic Test                          | Signed arithmetic, fraction reduction, and evaluation       |
-| TSM 098    | Polynomials Test                         | Addition, subtraction, distribution, and multiplication     |
+| TSM 098    | Polynomials Test                         | Addition/subtraction, distribution, multiplication, and basic factoring |
 | TSM 098    | Fractions Test                           | Adding, subtracting, multiplying, and dividing fractions    |
 | TSM 098    | Linear Equations and Linear Systems Test | Linear equations and algebraic systems                      |
 | TSM 099    | Arithmetic Test                          | Fractions, radicals, and advanced evaluation                |
@@ -210,14 +220,14 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 
 - Use a linear expression such as ax + by + c, with nonzero coefficients for x and y.
 - Supply one integer value for each variable. Vary the signs of coefficients and inputs across versions.
-- Include at least one meaningful signed-number issue and require the substituted numerical expression before evaluation.
+- Include at least one meaningful signed-number issue and verify substitution in the internal solution; request only the final value.
 - Use no exponents; keep the final value preferably between -100 and 100.
 
 ## Evaluate a quadratic trinomial
 
 - Use the same standard-form trinomial ax^2 + bx + c for three parts: x = 10, x = -10, and x = 0.
 - All three coefficients are nonzero integers; include at least one negative coefficient.
-- At x = -10, require parentheses around the substituted value so (-10)^2 is handled correctly.
+- In the internal solution/key, use parentheses around -10 so (-10)^2 is handled correctly; do not request the substituted expression.
 - Choose coefficients so the three results are distinct and preferably between -500 and 500.
 
 ## Compare two expressions by evaluation
@@ -232,29 +242,32 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 
 # 14. TSM 098 Polynomials Test
 
-**Assessment overview:** Five question units covering polynomial addition, polynomial subtraction, monomial distribution, two levels of binomial multiplication, and one larger polynomial product.
+**Assessment overview:** Five question units covering paired polynomial addition/subtraction, monomial distribution, two levels of binomial multiplication, one larger polynomial product, and paired GCF/monic-trinomial factoring.
 
 ## Question-unit map
 
-1. Add two polynomials
-2. Subtract two polynomials
-3. Distribute a monomial through a polynomial
-4. Multiply two binomials - two parts
-5. Multiply two larger polynomials
+1. Add/subtract polynomials — (a) addition, (b) subtraction; 10 points each
+2. Distribute a monomial through a polynomial — 20 points
+3. Multiply two binomials — (a) monic, (b) nonmonic; 10 points each
+4. Multiply two larger polynomials — 20 points
+5. Factor — (a) factor out the greatest common factor, (b) factor an always-factorable monic quadratic trinomial; 10 points each
+
+These are question families, not fixed printed positions. Randomize the five units independently in each version, keeping each pair of parts together. The addition/subtraction pair shares one numbered question; the factoring pair shares one numbered question. Print only final-answer prompts and response areas, with no directions to show work or particular steps.
 
 ## Add two polynomials
 
-- Use two parenthesized polynomials with at least five nonzero terms each and at least six distinct exponents across the pair.
+- Use two parenthesized single-variable polynomials, generally three nonzero terms each and three or four distinct exponents across the pair. Prefer degree 2–4 and small coefficients; sixth-degree polynomials and five-term factors are not required.
 - Write both in the same descending exponent order; do not scramble the order.
 - Omit at least one exponent entirely from one polynomial, without a zero placeholder, so at least one term has no like term in the other polynomial.
-- Include multiple genuine like-term pairs. Keep the final polynomial at five or more nonzero terms when practical and avoid excessive cancellation.
+- Include at least two genuine like-term pairs and avoid excessive cancellation. The final polynomial should generally retain at least three nonzero terms.
+- **Single-line addition requirement (October 26, 2026):** The entire addition expression, including both parenthesized polynomials and the plus sign, must fit on one line within the left question column at normal readable mathematical type size. Never split the sum across rows or shrink notation excessively. Shorten the polynomials, lower the degree, or simplify coefficients until it fits; this takes precedence over older term-count or degree preferences.
 
 ## Subtract two polynomials
 
 - Use P(x) - (Q(x)); Q(x) contains exactly three nonzero terms and exactly one internal plus sign and one internal minus sign.
 - The leading subtraction must change an internal positive term to negative and an internal negative term to positive.
 - Use at least three terms in P(x), at least two like-term pairs across the polynomials, descending order, and no nested parentheses.
-- Require students to show distribution of -1 before combining like terms.
+- Construct subtraction so distributing -1 is a meaningful part of solving it; verify this internally. The student prompt is simply “Subtract and simplify.”
 
 ## Distribute a monomial
 
@@ -267,7 +280,7 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 
 - Part (a) is monic: (x + a)(x + b), with varied sign patterns and a nonzero middle term. The result is a quadratic trinomial.
 - Part (b) is nonmonic: (ax + b)(cx + d), with both variable coefficients having absolute value greater than 1, preferably 2-5. The result is a quadratic trinomial.
-- Avoid difference-of-squares shortcuts and routine repetition of perfect-square trinomials. Require four partial products and combination of the middle terms.
+- Avoid difference-of-squares shortcuts and routine repetition of perfect-square trinomials. Construct items with four partial products and combination of the middle terms; do not ask students to display those steps.
 
 ## Larger polynomial multiplication
 
@@ -275,6 +288,13 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 - Write both factors in descending order, use small coefficients and mixed signs, and create several like-term groups.
 - Keep the final degree preferably no greater than 6 and the final answer at four or more nonzero terms when the structure permits.
 - Do not use monomials or special products that bypass systematic distribution. This item must be clearly more involved than the binomial items.
+
+## Factoring — two parts
+
+- Part (a): ask students to factor out the greatest common factor of a three- or four-term, single-variable polynomial. The GCF contains a numerical coefficient greater than 1 and a positive power of the variable. Use manageable integer coefficients and varied signs. After removing the full GCF, use a primitive remaining polynomial that requires no further factoring; this part assesses GCF extraction alone.
+- Part (b): ask students to factor a primitive monic quadratic trinomial x^2 + bx + c over the integers. The leading coefficient is always 1 and all three terms are nonzero. Generate from (x + r)(x + s), where r and s are nonzero integers and r + s is nonzero, so it is always factorable. Do not include a prime/nonfactorable case here.
+- Balance the four factor-sign patterns across a batch: both positive, both negative, and opposite signs with a positive or negative middle coefficient. Use manageable factors and avoid routine perfect-square repetition.
+- Award 10 points for each final factored form, totaling 20 for the question. Do not request factor-pair tables, guessing records, a named method, or intermediate steps.
 
 **Output:** Apply the standardized Part I output package. Compliance reporting is included only when explicitly requested, but every test-specific verification item above remains mandatory internally.
 
@@ -306,7 +326,7 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 ## Core multiplication and division
 
 - The multiplication item always has exactly three factors. If it contains a whole number, use n times a/b times c/d; otherwise use three fractions.
-- The division item is n divided by a/b, a/b divided by n, or a/b divided by c/d. Require rewriting as multiplication by the reciprocal.
+- The division item is n divided by a/b, a/b divided by n, or a/b divided by c/d. Use reciprocal multiplication in the internal solution; request only the reduced final value.
 - Across these two core items, exactly one contains a whole number written as a whole number. Randomize its location.
 - Exactly one item is designed for manageable straight-across multiplication followed by one reduction; keep raw products preferably no greater than 250.
 - Exactly one item is designed to reward cancellation before multiplication. After any reciprocal step, include at least one two-digit numerator and one two-digit denominator, preferably two cross-cancellations, and an uncanceled product preferably above 500. Keep original values generally no greater than 60.
@@ -335,7 +355,7 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 
 ## Directions and hidden exceptional case
 
-- At the top, direct students to solve and check numerical answers by substitution into the original equation or both original system equations.
+- At the top, direct students only to give the complete solution set. Verify numerical solutions in the original equation(s) internally; do not request student checks.
 - Warn generally that an equation may have no solution or all real numbers and a system may have no solution or infinitely many solutions.
 - Do not identify which question is exceptional. Exactly one question is exceptional on each version.
 
@@ -361,7 +381,7 @@ Present four lettered parts in randomized order. Include exactly one item of eac
 - Rotate between direct substitution and direct elimination.
 - For substitution, one variable is already isolated with coefficient 1 in a nonconstant expression; no rearrangement is needed.
 - For elimination, one variable's coefficients are already opposites; adding immediately eliminates it.
-- Use exactly one integer ordered-pair solution, preferably nonzero coordinates between -8 and 8, and require checking in both equations.
+- Use exactly one integer ordered-pair solution, preferably nonzero coordinates between -8 and 8, and verify it in both equations internally.
 
 ## General system
 
@@ -467,7 +487,7 @@ Choose one of the following formats for each version and distribute the formats 
 - Use a primitive, factorable ax^2 + bx + c with a greater than 1, no GCF, and no special-product shortcut.
 - Choose |ac| with many possibilities, preferably at least eight positive unordered factor pairs; suitable products include 72, 96, 120, and 144.
 - Keep a and |c| individually preferably no greater than 15. Choose the successful factor pair so it is not the first obvious guess.
-- Require calculation of ac, identification of two integers with product ac and sum b, splitting the middle term, and factoring the four-term result by grouping. The key must show that method.
+- Construct the item to support the ac-method and grouping at the intended difficulty. Verify ac, the factor pair, the split, and grouping internally or in the instructor key. Ask only for the final factored form and assign all 20 points to that form; do not print a method requirement or intermediate response rows.
 
 **Output:** Apply the standardized Part I output package. Compliance reporting is included only when explicitly requested, but every test-specific verification item above remains mandatory internally.
 
@@ -506,7 +526,7 @@ Choose one of the following formats for each version and distribute the formats 
 ## Multiplying and dividing
 
 - Each has at least one numerator or denominator requiring factoring and at least one polynomial cancellation.
-- The division item explicitly requires rewriting as multiplication by the reciprocal.
+- The internal solution rewrites division as multiplication by the reciprocal; student prompts request only the simplified final expression.
 - Do not require multiplying anything more complicated than two linear binomials.
 
 **Output:** Apply the standardized Part I output package. Compliance reporting is included only when explicitly requested, but every test-specific verification item above remains mandatory internally.
@@ -554,7 +574,7 @@ Choose one of the following formats for each version and distribute the formats 
 - Across the two rational equations there are exactly three candidates: two from the quadratic result and one from the linear result. Exactly one is extraneous because it makes an original denominator zero; the other two are valid.
 - At least one denominator in each rational equation requires factoring before finding the LCD.
 - Across the pair require at least three types from: difference of squares, numerical GCF, common variable factor, monic trinomial, and nonmonic trinomial.
-- Do not factor beyond degree 2, use sums/differences of cubes, or require four-term grouping. Direct students to list excluded values and check every candidate in the original equation.
+- Do not factor beyond degree 2, use sums/differences of cubes, or require four-term grouping. Verify excluded values and every candidate in the original equation internally; student prompts request only the valid solution set.
 
 **Output:** Apply the standardized Part I output package. Compliance reporting is included only when explicitly requested, but every test-specific verification item above remains mandatory internally.
 
@@ -591,7 +611,7 @@ Choose one of the following formats for each version and distribute the formats 
 
 - Use two nonparallel, nonidentical lines with one integer intersection, preferably both coordinates nonzero within -6 to 6.
 - Each line has at least two easily plotted lattice points and the lines meet at a visibly clear angle.
-- Require both lines on the same blank grid and the solution as an ordered pair. State that algebra alone is insufficient.
+- Require both lines on the same blank grid and the solution as an ordered pair. Score the requested final graph and ordered pair; do not require evidence of a particular solution method.
 
 ## Write an equation from a graph
 
@@ -603,7 +623,7 @@ Choose one of the following formats for each version and distribute the formats 
 
 - Give two distinct integer-coordinate points, neither the y-intercept, preferably within -8 to 8 and with different x-values.
 - The slope is a manageable integer or reduced fraction; coordinate differences are no greater than 6 in absolute value.
-- Choose points producing an integer y-intercept between -6 and 6. Require the slope formula, determination of b, and final slope-intercept form.
+- Choose points producing an integer y-intercept between -6 and 6. Verify slope and b internally; request and score only the final slope-intercept equation.
 
 **Output:** Apply the standardized Part I output package. Compliance reporting is included only when explicitly requested, but every test-specific verification item above remains mandatory internally.
 
@@ -763,7 +783,7 @@ Required controls: After rearranging and combining, use a quadratic with a posit
 
 ### I099-6 - Solve a rational equation with one valid solution
 
-Required controls: Use at least two visibly different denominators, with at least one requiring factorization. Clearing denominators produces a linear equation with exactly one candidate. The candidate is valid; there are no multiple or extraneous solutions. Require checking in the original equation.
+Required controls: Use at least two visibly different denominators, with at least one requiring factorization. Clearing denominators produces a linear equation with exactly one candidate. The candidate is valid; there are no multiple or extraneous solutions. Verify the answer in the original equation internally; do not request a student check.
 
 - A. `36/(3x - 15) + 1/(x - 5) = 13/3`; answer `x = 8`.
 - B. `20/(2x - 6) + 3/(x - 3) = 13/2`; answer `x = 5`.
@@ -834,7 +854,7 @@ Selection targets:
 ## 30. Institutional reporting controls
 
 - The six institutional questions correspond to SLO 1 and SLO 2, three questions each.
-- Institutional reporting records each assessment question as correct or incorrect. If partial credit is awarded instructionally, the instructor applies judgment when converting the result to the binary institutional report.
+- Institutional reporting records each assessment question as correct or incorrect. Judge the requested final answer; shown or missing intermediate work is not a scoring criterion.
 - Questions may technically be free response or multiple choice. Default to free response unless the generation request asks for multiple choice.
 - The four supplemental questions are not institutional-reporting items unless the instructor explicitly states otherwise.
 - Maintain an internal mapping for each institutional ID, archetype letter, actual item number, SLO, final answer, and correct/incorrect scoring criterion.

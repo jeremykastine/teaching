@@ -1,5 +1,15 @@
 # Statistics Test Specifications
 
+## Final-answer directions and grading (October 26, 2026)
+
+This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
+
+- Student-facing directions and individual prompts must never ask students to show work, show substitution, show checks, show partial products, explain a calculation method, or display particular intermediate steps. Do not prescribe a solution method or require separate-paper work.
+- Ask only for the requested final result, such as an exact value, simplified expression, factorization, solution set, graph, or requested function feature. Use concise directions such as “Write exact final answers in the right column.” Retain the calculator policy.
+- Grade the requested answer in the right-hand response area. Do not imply that shown work earns partial credit or that missing work loses credit. Assign points to final-answer outputs, never to intermediate work, checks, or use of a particular method.
+- References to methods or checks describe authoring, expected difficulty, internal verification, or instructor-key content only. They must not become student directions, intermediate response rows, or method-based grading criteria. Independently solve and verify every item before delivery.
+
+
 **Owner:** Jeremy Kastine  
 **Updated:** October 23, 2026  
 **Status:** Standing requirements for all future statistics tests, exams, retakes, diagnostics, finals, and practice versions unless the instructor explicitly requests a different format.

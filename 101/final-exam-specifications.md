@@ -1,5 +1,15 @@
 # MATH 101 Assessment Specifications
 
+## Final-answer directions and grading (October 26, 2026)
+
+This policy applies to every test, exam, retake, diagnostic, final, and practice version and overrides any conflicting method or presentation language elsewhere in these specifications.
+
+- Student-facing directions and individual prompts must never ask students to show work, show substitution, show checks, show partial products, explain a calculation method, or display particular intermediate steps. Do not prescribe a solution method or require separate-paper work.
+- Ask only for the requested final result, such as an exact value, simplified expression, factorization, solution set, graph, or requested function feature. Use concise directions such as “Write exact final answers in the right column.” Retain the calculator policy.
+- Grade the requested answer in the right-hand response area. Do not imply that shown work earns partial credit or that missing work loses credit. Assign points to final-answer outputs, never to intermediate work, checks, or use of a particular method.
+- References to methods or checks describe authoring, expected difficulty, internal verification, or instructor-key content only. They must not become student directions, intermediate response rows, or method-based grading criteria. Independently solve and verify every item before delivery.
+
+
 ## Calculator policy (October 21, 2026)
 
 Include this instruction in the student directions of every future test/exam and practice test/exam, including unit tests, retakes, diagnostics, and finals: **"Students may use a basic, non-scientific calculator only."** A basic four-function calculator is permitted; scientific, graphing, and CAS calculators are not permitted.
@@ -41,7 +51,7 @@ Follow the approved [algebra test format](../docs/algebra-test-format.md) for pr
 
 - Use US Letter portrait pages with print-safe margins: questions in the left two-thirds of the usable width and vertically aligned final-answer areas in the right one-third.
 - Keep prompts compact, notation conventional, and each main question together with its response areas. Include the title, identifier, and student name; omit the course-section field.
-- Directions must tell students to complete and show all work on separate paper and write exact final answers in the right column. Maintain the four-function-calculator policy.
+- Directions tell students to write exact final answers in the right column. Maintain the four-function-calculator policy.
 - Put blank grids students complete in the right answer column; supplied graphs they interpret stay with the left-hand prompt. Maintain legible scales and labels.
 - Aim for one or two student pages; permit longer finals when needed for adequate answer space and readable material.
 - The key should fit one page, front only, using exactly one, two, or three columns when the student test has one, two, or three pages. Each column identifies and matches its corresponding test page. Longer tests may require additional key pages with up to three columns per page.
@@ -87,13 +97,7 @@ Give a degree 3–5 polynomial graph. All real zeros and multiplicities must be 
 
 ## 4. Find All Polynomial Zeros — Section 5.5
 Degree 3 or 4 polynomial with exactly two real irrational roots plus one rational root (degree 3) or two rational roots (degree 4).
-Student must:
-1. list all Rational Root Theorem candidates;
-2. test only a small subset supplied by the problem;
-3. identify rational root(s);
-4. use **polynomial long division** to reduce to a quadratic;
-5. use the **quadratic formula** for the final two roots.
-Remaining quadratic has positive nonsquare discriminant; no complex final roots.
+Construct an item naturally supported by Rational Root Theorem reasoning, limited candidate testing, polynomial division, and a quadratic formula solution. Keep the remaining quadratic's discriminant positive and nonsquare; no complex final roots. These are internal design and verification controls only. The student prompt asks “Find all zeros.” Score the complete final set of zeros (10 points); do not ask for candidate lists, division work/quotients, formula substitution, or other intermediate steps.
 
 ## 5. Rational Function Behavior — Section 5.6
 Choose one comparable form:
@@ -153,4 +157,4 @@ Solve algebraically by substitution/equivalent method, normally with two interse
 The final emphasizes function-centered College Algebra. Quadratic equations and ordinary linear systems are prerequisite material rather than dedicated final topics, though quadratic solving may appear as a supporting skill. Domain/range are embedded in function-analysis questions.
 
 ## Generation checklist
-Before finalizing, verify all 10 problem types appear once; default order is randomized; Question 10 probabilities/subtype probabilities are respected; four-function-calculator limit is honored; graphs are legible; exponential graph labels follow the A–D solid-curve rule; exact values are used where possible; Q4 uses RRT + limited testing + long division + quadratic formula; Q5 uses approved Form A/B; log-property items genuinely benefit from the properties; whole-exam difficulty is balanced; scoring totals 100; points appear only in right-hand response areas and key; student test/key are key-first vertically matched layouts with open response areas and **no internal answer baselines**; question headings do **not** repeat `10 points`, while point values appear only with the response parts; solid rules separate questions and light dotted/dashed rules only separate internal parts; no redundant separators or single-part sublabels; **no section field appears**; version IDs follow the random five-digit rule (duplicates acceptable; no sequence required); internal verification has been completed; optional compliance/audit material is omitted unless requested; and the final PDF is duplex-safe with combined student test -> required blank padding -> page-matching key columns.
+Before finalizing, verify all 10 problem types appear once; default order is randomized; Question 10 probabilities/subtype probabilities are respected; four-function-calculator limit is honored; graphs are legible; exponential graph labels follow the A–D solid-curve rule; exact values are used where possible; Q4 is designed and verified internally with RRT + limited testing + division + quadratic formula, but requests/scores only final zeros; Q5 uses approved Form A/B; log-property items genuinely benefit from the properties; whole-exam difficulty is balanced; scoring totals 100; points appear only in right-hand response areas and key; student test/key are key-first vertically matched layouts with open response areas and **no internal answer baselines**; question headings do **not** repeat `10 points`, while point values appear only with the response parts; solid rules separate questions and light dotted/dashed rules only separate internal parts; no redundant separators or single-part sublabels; **no section field appears**; version IDs follow the random five-digit rule (duplicates acceptable; no sequence required); internal verification has been completed; optional compliance/audit material is omitted unless requested; and the final PDF is duplex-safe with combined student test -> required blank padding -> page-matching key columns.

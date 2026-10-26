@@ -10,9 +10,9 @@ def unit1(v):
     q3=question('U1-3','Simplify and state all values excluded by the original expression.',[frac(rn,rd)],[ans('Expression',tex(S.factor(exact('U1-3',expr))),14),ans('Excluded values',tex(S.FiniteSet(a,-b)),6)])
     quad=S.expand((x-(v+1))*(x+v+3));qr,_=solved('U1-4a',quad)
     h=v+2;ll=(v+4)/(2*x-2*h)+1/(x-h);rr=S.Rational(v+6,2);rt,_=solved('U1-4b',ll,rr,denoms=[x-h])
-    q4=question('U1-4','Solve both equations. In (b), state original restrictions and check your answer.',[r'(a)\quad '+eq(quad,0),r'(b)\quad '+frac(v+4,2*x-2*h)+' + '+frac(1,x-h)+' = '+tex(rr)],[ans('(a)',solution_tex(qr),10),ans('(b), with check',solution_tex(rt)+r';\ x\ne '+str(h),10)])
+    q4=question('U1-4','Solve both equations.',[r'(a)\quad '+eq(quad,0),r'(b)\quad '+frac(v+4,2*x-2*h)+' + '+frac(1,x-h)+' = '+tex(rr)],[ans('(a)',solution_tex(qr),10),ans('(b)',solution_tex(rt),10)])
     boundary=v+3;low=S.Rational(1-boundary,2);high=S.Rational(1+boundary,2)
-    q5=question('U1-5','Solve the inequality and write the solution in interval notation.',[r'|2x-1|\leq '+str(boundary)],[ans('Derived bounds',tex(low)+r'\leq x\leq '+tex(high),12),ans('Interval',tex(S.Interval(low,high)),8)])
+    q5=question('U1-5','Solve the inequality and write the solution in interval notation.',[r'|2x-1|\leq '+str(boundary)],[ans('Interval',tex(S.Interval(low,high)),20)])
     return [q1,q2,q3,q4,q5]
 
 def composition(v,points=20,final=False):
@@ -61,8 +61,7 @@ def zeros(v,final=False):
     q=x*x+bb*x+cc;p=S.expand((x-rr)*q);coeff=S.Poly(p,x).all_coeffs();candidates=sorted(set(S.Rational(t,d)*sgn for t in S.divisors(abs(int(coeff[-1]))) for d in S.divisors(abs(int(coeff[0]))) for sgn in [-1,1]))
     assert len(candidates)<=8 and S.div(p,x-rr)==(q,0)
     others=S.solve(q,x);assert len(others)==2 and all(z.is_real and z.is_irrational for z in others)
-    weights=[2,4,4] if final else [5,7,8]
-    return question('M101-zeros' if final else 'U3-3',rf'Find all zeros: (a) list Rational Root Theorem candidates, then test only {rr} and {-rr}; (b) use polynomial long division by the confirmed linear factor; (c) use the quadratic formula on the quotient. Record all zeros.',[r'p(x)='+tex(p)],[ans('(a) Candidates/root',tex(S.FiniteSet(*candidates))+rf';\ x={rr}',weights[0]),ans('(b) Quotient',tex(q)+r';\ R=0',weights[1]),ans('(c) Other zeros',solution_tex(others),weights[2])])
+    return question('M101-zeros' if final else 'U3-3','Find all zeros.',[r'p(x)='+tex(p)],[ans('Zeros',solution_tex([rr]+others),10 if final else 20)])
 
 def rational_behavior(v,final=False):
     h=-(v+2) if final else v+1;a=v+3;b=v+5
@@ -96,7 +95,7 @@ def logarithmic_behavior(v,final=False):
 
 def log_properties(v,final=False):
     pair=([('0.2','500',2),('0.4','2500',3),('0.5','20000',4)] if not final else [('0.25','400',2),('0.8','1250',3),('0.05','200000',4)])[v];base=v+3+3*int(final);q=v+2+int(final);w=5 if final else 10
-    return question('M101-logproperties' if final else 'U4-3','Evaluate exactly using logarithmic properties; show the property used. Here log means base 10.',[r'(a)\quad \log('+pair[0]+r')+\log('+pair[1]+')',r'(b)\quad \frac{\log_{'+str(base)+'}('+str(q**3)+r')}{\log_{'+str(base)+'}('+str(q**2)+')}'],[ans('(a)',str(pair[2]),w),ans('(b)',tex(S.Rational(3,2)),w)])
+    return question('M101-logproperties' if final else 'U4-3','Evaluate exactly. Here log means base 10.',[r'(a)\quad \log('+pair[0]+r')+\log('+pair[1]+')',r'(b)\quad \frac{\log_{'+str(base)+'}('+str(q**3)+r')}{\log_{'+str(base)+'}('+str(q**2)+')}'],[ans('(a)',str(pair[2]),w),ans('(b)',tex(S.Rational(3,2)),w)])
 
 def nonlinear(v):
     if v==1:
@@ -111,23 +110,23 @@ def nonlinear(v):
 def unit4(v):
     root=v*3+4;assert 2*(root-v-1)==root+v+2
     h=v+1;base=v+2;logroot=h+S.Rational(base**2,v+3)
-    q4=question('U4-4','Solve both equations exactly. Check the logarithmic domain in (b).',[r'(a)\quad 4^{x-'+str(v+1)+r'}=2^{x+'+str(v+2)+'}',r'(b)\quad \log_{'+str(base)+'}(x-'+str(h)+r')+\log_{'+str(base)+'}('+str(v+3)+')=2'],[ans('(a)',solution_tex([root]),8),ans('(b), with domain',solution_tex([logroot])+rf';\ x>{h}',12)])
+    q4=question('U4-4','Solve both equations exactly.',[r'(a)\quad 4^{x-'+str(v+1)+r'}=2^{x+'+str(v+2)+'}',r'(b)\quad \log_{'+str(base)+'}(x-'+str(h)+r')+\log_{'+str(base)+'}('+str(v+3)+')=2'],[ans('(a)',solution_tex([root]),8),ans('(b)',solution_tex([logroot]),12)])
     px=v+2;py=v+1;lins=[eq(x+y,px+py),eq(x-y,px-py)];maths,pts,ineq,check=nonlinear(v)
-    q5=question('U4-5','(a) Solve the linear system. (b) Solve the nonlinear system algebraically. (c) Test whether (0,0) belongs to the region given by the inequalities; show both comparisons.',[r'(a)\quad '+lins[0],lins[1],r'(b)\quad '+maths[0],maths[1],r'(c)\quad '+ineq[0]+r',\ '+ineq[1]],[ans('(a) Ordered pair',tex(S.Tuple(px,py)),6),ans('(b) Intersections',r';\ '.join(tex(S.Tuple(*p)) for p in pts),10),ans('(c) Membership',check,4,True)])
+    q5=question('U4-5','(a) Solve the linear system. (b) Solve the nonlinear system. (c) Test whether (0,0) belongs to the region given by the inequalities.',[r'(a)\quad '+lins[0],lins[1],r'(b)\quad '+maths[0],maths[1],r'(c)\quad '+ineq[0]+r',\ '+ineq[1]],[ans('(a) Ordered pair',tex(S.Tuple(px,py)),6),ans('(b) Intersections',r';\ '.join(tex(S.Tuple(*p)) for p in pts),10),ans('(c) Membership',check,4,True)])
     return [exponentials(v),logarithmic_behavior(v),log_properties(v),q4,q5]
 
 def final(v):
     out=[composition(v,10,True),transform(v,10,True),polynomial_graph(v,True),zeros(v,True),rational_behavior(v,True),radical_behavior(v,True),exponentials(v,True),logarithmic_behavior(v,True),log_properties(v,True)]
     category=random.Random(20261012+v).choice(['radical','exponential','logarithmic','system'])
     if category=='system':
-        maths,pts,_,_=nonlinear(v);q=question('M101-solving','Solve the nonlinear system algebraically.',maths,[ans('Intersections',r';\ '.join(tex(S.Tuple(*p)) for p in pts),10)])
+        maths,pts,_,_=nonlinear(v);q=question('M101-solving','Solve the nonlinear system.',maths,[ans('Intersections',r';\ '.join(tex(S.Tuple(*p)) for p in pts),10)])
     elif category=='exponential':
         root=5*v+7;assert 3*(root-v-1)==2*(root+v+2)
         q=question('M101-solving','Solve exactly.',[r'8^{x-'+str(v+1)+r'}=4^{x+'+str(v+2)+'}'],[ans('Solution',solution_tex([root]),10)])
     elif category=='logarithmic':
         h=v+2;base=v+2;root=h+S.Rational(base**2,v+4)
-        q=question('M101-solving','Solve exactly; check the domain.',[r'\log_{'+str(base)+'}(x-'+str(h)+r')+\log_{'+str(base)+'}('+str(v+4)+')=2'],[ans('Solution/domain',solution_tex([root])+rf';\ x>{h}',10)])
+        q=question('M101-solving','Solve exactly.',[r'\log_{'+str(base)+'}(x-'+str(h)+r')+\log_{'+str(base)+'}('+str(v+4)+')=2'],[ans('Solution',solution_tex([root]),10)])
     else:
         h=v+2;lhs=S.sqrt(x+h);rhs=x-h;rt=S.solve(lhs-rhs,x);candidates=S.solve(x+h-(x-h)**2,x)
-        q=question('M101-solving','Solve the one-radical equation. Check all candidates in the original equation.',[eq(lhs,rhs)],[ans('Valid solutions',solution_tex(rt),7),ans('Rejected candidate',tex(next(z for z in candidates if z not in rt)),3)])
+        q=question('M101-solving','Solve the equation.',[eq(lhs,rhs)],[ans('Solutions',solution_tex(rt),10)])
     q['category']=category;out.append(q);return out
