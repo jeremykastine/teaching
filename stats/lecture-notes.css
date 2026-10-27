@@ -1,0 +1,19 @@
+/* Statistics tables and diagrams extend the shared TSM lecture-note layout. */
+.table-scroll { max-width:100%; overflow-x:auto; margin:16px 0; }
+table { border-collapse:collapse; font-size:1em; width:100%; max-width:100%; }
+caption { text-align:left; margin-bottom:8px; }
+th, td { border:1px solid currentColor; padding:8px 12px; text-align:center; }
+th:first-child { text-align:left; }
+th { font-weight:600; }
+li { margin-bottom:10px; }
+.worked-example h3 { margin:0 0 16px; }
+figure { margin:20px 0; max-width:100%; }
+svg { display:block; width:100%; max-width:820px; height:auto; }
+figcaption { font-size:.9rem; margin-top:8px; }
+.attribution { margin-top:40px; padding-top:20px; border-top:1px solid #9fb3c8; font-size:.85rem; }
+.source-note { font-size:.95rem; }
+/* SVG marks must follow the shared color-only solution concealment. */
+.solution-panel svg [stroke] { stroke:currentColor; }
+.solution-panel svg text { fill:currentColor; }
+@media (max-width:600px) { th,td { padding:6px; font-size:.9rem; } .tree { min-width:590px; } figure:has(.tree) { overflow-x:auto; } }
+@media print { .topic-nav,.solution-instructions { display:none; } .worked-example { break-inside:avoid; } }

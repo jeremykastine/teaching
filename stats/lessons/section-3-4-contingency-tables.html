@@ -1,0 +1,217 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.4: Contingency Tables | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head>
+<body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-5-tree-and-venn-diagrams.html">Next section: 3.5</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-4-contingency-tables">Textbook section</a></nav>
+<p class="series-title">Statistics Lecture Notes · OpenStax Introductory Statistics 2e</p>
+<h1>3.4: Contingency Tables</h1>
+<p class="solution-instructions">Double-click or double-tap the blank space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<p class="source-note">Follow along with <a href="https://openstax.org/books/introductory-statistics-2e/pages/3-4-contingency-tables">Section 3.4 in the textbook</a>. Examples and Try It questions appear in textbook order.</p>
+<h2>Reading a contingency table</h2>
+<p>A <strong>contingency table</strong> groups observations by two categorical variables. An inside cell counts an intersection (AND). The margins contain row and column totals; the bottom-right entry is the grand total.</p>
+<p>For an unconditional probability, divide by the grand total. For P(A | B), read the bar as “given”: restrict attention to B and divide by the total for B. For an OR probability, add the two event totals and subtract their overlap.</p>
+<section class="worked-example" id="example-3-20"><div class="problem-statement"><h3>Example 3.20 · Drivers and speeding violations</h3>
+<p>The following fictional study classifies 755 drivers. Choose one driver at random. Let C = uses a cell phone while driving and V = had a speeding violation in the last year.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Driver</th><th scope="col">Violation</th><th scope="col">No violation</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Uses cell phone</th><td>25</td><td>280</td><td>305</td></tr>
+<tr><th scope="row">Does not use cell phone</th><td>45</td><td>405</td><td>450</td></tr>
+<tr><th scope="row">Total</th><td>70</td><td>685</td><td>755</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Find P(C).</li>
+<li>Find P(no violation).</li>
+<li>Find P(no violation AND C).</li>
+<li>Find P(C OR no violation).</li>
+<li>Find P(C | V).</li>
+<li>Find P(no violation | does not use cell phone).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>P(C) = 305/755 ≈ 0.4040. Use the cell-phone row total.</li>
+<li>P(no violation) = 685/755 ≈ 0.9073. Use the no-violation column total.</li>
+<li>P(no violation AND C) = 280/755 ≈ 0.3709. Use their common cell.</li>
+<li>P(C OR no violation) = (305 + 685 − 280)/755 = 710/755 ≈ 0.9404. Subtract the overlap once.</li>
+<li>P(C | V) = 25/70 ≈ 0.3571. The denominator is the 70 drivers with violations.</li>
+<li>P(no violation | does not use cell phone) = 405/450 = 0.9. The denominator is the 450 drivers who do not use cell phones.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-20"><div class="problem-statement"><h3>Try It 3.20 · Stretching and injuries</h3>
+<p>Select an athlete at random from this group.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Athlete</th><th scope="col">Injury</th><th scope="col">No injury</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Stretches</th><td>55</td><td>295</td><td>350</td></tr>
+<tr><th scope="row">Does not stretch</th><td>231</td><td>219</td><td>450</td></tr>
+<tr><th scope="row">Total</th><td>286</td><td>514</td><td>800</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Find P(stretches).</li>
+<li>Find P(stretches | no injury).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>350/800 = 0.4375.</li>
+<li>295/514 ≈ 0.5739. Restrict the denominator to the no-injury column.</li>
+</ol>
+</div></section>
+
+<h2>Missing entries, independence, and conditional probability</h2>
+<p>Use row and column totals to recover missing entries. To check independence, compare P(A AND B) with P(A)P(B). Equal values mean independent events; unequal values mean dependent events.</p>
+<section class="worked-example" id="example-3-21"><div class="problem-statement"><h3>Example 3.21 · Hiking preferences</h3>
+<p>A random sample contains 100 hikers. Let F = woman, M = man, C = prefers the coast, L = prefers lakes/streams, and K = prefers peaks.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Hiker</th><th scope="col">Coast</th><th scope="col">Lakes / streams</th><th scope="col">Peaks</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Women</th><td>18</td><td>16</td><td>____</td><td>45</td></tr>
+<tr><th scope="row">Men</th><td>____</td><td>____</td><td>14</td><td>55</td></tr>
+<tr><th scope="row">Total</th><td>____</td><td>41</td><td>____</td><td>100</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Complete the missing entries.</li>
+<li>Are F and C independent? Compare P(F AND C) and P(F)P(C).</li>
+<li>Find P(M | L). What word signals a conditional probability, and which hikers form the restricted sample space?</li>
+<li>Find P(F OR K). First identify P(F), P(K), and P(F AND K).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><div class="table-scroll"><table><thead><tr><th scope="col">Hiker</th><th scope="col">Coast</th><th scope="col">Lakes / streams</th><th scope="col">Peaks</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Women</th><td>18</td><td>16</td><td>11</td><td>45</td></tr>
+<tr><th scope="row">Men</th><td>16</td><td>25</td><td>14</td><td>55</td></tr>
+<tr><th scope="row">Total</th><td>34</td><td>41</td><td>25</td><td>100</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Women who prefer peaks: 45 − 18 − 16 = 11. Men who prefer lakes: 41 − 16 = 25. Men who prefer coast: 55 − 25 − 14 = 16. Add columns for the remaining totals.</li>
+<li>P(F AND C) = 18/100 = 0.18. P(F)P(C) = (45/100)(34/100) = 0.153. These differ, so the events are not independent.</li>
+<li>“Given” signals the condition. P(M | L) = 25/41 ≈ 0.6098. The restricted sample space is the 41 hikers who prefer lakes/streams.</li>
+<li>P(F) = 45/100; P(K) = 25/100; P(F AND K) = 11/100. Thus P(F OR K) = (45 + 25 − 11)/100 = 59/100.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-21"><div class="problem-statement"><h3>Try It 3.21 · Cycling routes</h3>
+<p>A random sample of 200 cyclists reports the following route preferences. Let O = older and H = prefers the hilly path.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Age group</th><th scope="col">Lake</th><th scope="col">Hilly</th><th scope="col">Wooded</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Younger</th><td>45</td><td>38</td><td>27</td><td>110</td></tr>
+<tr><th scope="row">Older</th><td>26</td><td>52</td><td>12</td><td>90</td></tr>
+<tr><th scope="row">Total</th><td>71</td><td>90</td><td>39</td><td>200</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Among older cyclists, what is the probability of preferring the hilly path?</li>
+<li>Are O and H independent?</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>P(H | O) = 52/90 = 26/45 ≈ 0.5778.</li>
+<li>P(O AND H) = 52/200 = 0.26. P(O)P(H) = (90/200)(90/200) = 0.2025. Unequal, so dependent.</li>
+</ol>
+</div></section>
+
+<h2>Tables whose entries are probabilities</h2>
+<p>A probability contingency table uses probabilities instead of counts. All inside cells together sum to 1. A joint entry is P(first event) × P(second event | first event); its factors need not be independent.</p>
+<section class="worked-example" id="example-3-22"><div class="problem-statement"><h3>Example 3.22 · Three doors</h3>
+<p>A mouse chooses one of three doors with equal probability. The probabilities of being caught, conditional on choosing Doors 1, 2, and 3, are 1/5, 1/4, and 1/2, respectively.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Outcome</th><th scope="col">Door 1</th><th scope="col">Door 2</th><th scope="col">Door 3</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Caught</th><td>1/15</td><td>1/12</td><td>1/6</td><td>____</td></tr>
+<tr><th scope="row">Not caught</th><td>4/15</td><td>3/12</td><td>1/6</td><td>____</td></tr>
+<tr><th scope="row">Total</th><td>____</td><td>____</td><td>____</td><td>1</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Verify the six inside entries and complete every total.</li>
+<li>Find P(not caught).</li>
+<li>Given that the mouse is caught, find P(Door 1 OR Door 2 | caught).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>Each door has probability 1/3. Multiply it by that door’s conditional caught or not-caught probability: (1/3)(1/5) = 1/15, (1/3)(4/5) = 4/15; (1/3)(1/4) = 1/12, (1/3)(3/4) = 3/12; (1/3)(1/2) = 1/6 for each Door 3 outcome.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Outcome</th><th scope="col">Door 1</th><th scope="col">Door 2</th><th scope="col">Door 3</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Caught</th><td>1/15</td><td>1/12</td><td>1/6</td><td>19/60</td></tr>
+<tr><th scope="row">Not caught</th><td>4/15</td><td>3/12</td><td>1/6</td><td>41/60</td></tr>
+<tr><th scope="row">Total</th><td>1/3</td><td>1/3</td><td>1/3</td><td>1</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Caught total: (4 + 5 + 10)/60 = 19/60. Not-caught total: (16 + 15 + 10)/60 = 41/60. Grand total: 60/60 = 1.</li>
+<li>P(not caught) = 41/60 ≈ 0.6833.</li>
+<li>P(Door 1 OR Door 2 | caught) = (1/15 + 1/12)/(19/60) = (9/60)/(19/60) = 9/19.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-22"><div class="problem-statement"><h3>Try It 3.22 · Mutually exclusive purchases</h3>
+<p>A shopper can buy at most one car. The probability of buying car A is 0.25; the probability of buying car B is 0.65.</p>
+<ol type="a"><li>Find P(A AND B).</li>
+<li>Find P(A OR B).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>0, because buying both is excluded.</li>
+<li>0.25 + 0.65 − 0 = 0.90. The remaining probability, 0.10, is buying neither.</li>
+</ol>
+</div></section>
+
+<h2>Larger tables</h2>
+<section class="worked-example" id="example-3-23"><div class="problem-statement"><h3>Example 3.23 · Year and incident category</h3>
+<p>This parallel version uses fictional <strong>incident counts</strong> in place of the textbook’s crime-rate entries. Each recorded incident belongs to one year and one category. Select one of these incidents at random.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Year</th><th scope="col">Robbery</th><th scope="col">Burglary</th><th scope="col">Vandalism</th><th scope="col">Vehicle</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">1</th><td>15</td><td>73</td><td>3</td><td>31</td><td>____</td></tr>
+<tr><th scope="row">2</th><td>13</td><td>72</td><td>3</td><td>26</td><td>____</td></tr>
+<tr><th scope="row">3</th><td>12</td><td>70</td><td>3</td><td>24</td><td>____</td></tr>
+<tr><th scope="row">4</th><td>11</td><td>70</td><td>2</td><td>23</td><td>____</td></tr>
+<tr><th scope="row">Total</th><td>____</td><td>____</td><td>____</td><td>____</td><td>____</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Complete all row and column totals.</li>
+<li>Find P(Year 2 AND robbery).</li>
+<li>Find P(Year 3 AND burglary).</li>
+<li>Find P(Year 3 OR burglary).</li>
+<li>Find P(Year 4 | vandalism).</li>
+<li>Find P(vehicle | Year 1).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><div class="table-scroll"><table><thead><tr><th scope="col">Year</th><th scope="col">Robbery</th><th scope="col">Burglary</th><th scope="col">Vandalism</th><th scope="col">Vehicle</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">1</th><td>15</td><td>73</td><td>3</td><td>31</td><td>122</td></tr>
+<tr><th scope="row">2</th><td>13</td><td>72</td><td>3</td><td>26</td><td>114</td></tr>
+<tr><th scope="row">3</th><td>12</td><td>70</td><td>3</td><td>24</td><td>109</td></tr>
+<tr><th scope="row">4</th><td>11</td><td>70</td><td>2</td><td>23</td><td>106</td></tr>
+<tr><th scope="row">Total</th><td>51</td><td>285</td><td>11</td><td>104</td><td>451</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Row totals are 122, 114, 109, 106; column totals are 51, 285, 11, 104. Grand total = 451.</li>
+<li>13/451 ≈ 0.0288.</li>
+<li>70/451 ≈ 0.1552.</li>
+<li>(109 + 285 − 70)/451 = 324/451 ≈ 0.7184.</li>
+<li>2/11 ≈ 0.1818. The denominator counts only vandalism incidents.</li>
+<li>31/122 ≈ 0.2541. The denominator counts only Year 1 incidents.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-23"><div class="problem-statement"><h3>Try It 3.23 · Height and weight categories</h3>
+<p>Select one individual at random from this observational study.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Weight / height</th><th scope="col">Tall</th><th scope="col">Medium</th><th scope="col">Short</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Overweight</th><td>18</td><td>28</td><td>14</td><td>____</td></tr>
+<tr><th scope="row">Typical range</th><td>20</td><td>51</td><td>28</td><td>____</td></tr>
+<tr><th scope="row">Underweight</th><td>12</td><td>25</td><td>9</td><td>____</td></tr>
+<tr><th scope="row">Total</th><td>____</td><td>____</td><td>____</td><td>____</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>Complete the row and column totals.</li>
+<li>Find P(tall).</li>
+<li>Find P(overweight AND tall).</li>
+<li>Find P(tall | overweight).</li>
+<li>Find P(overweight | tall).</li>
+<li>Find P(tall AND underweight).</li>
+<li>Are overweight and tall independent events?</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><div class="table-scroll"><table><thead><tr><th scope="col">Weight / height</th><th scope="col">Tall</th><th scope="col">Medium</th><th scope="col">Short</th><th scope="col">Total</th></tr>
+</thead>
+<tbody><tr><th scope="row">Overweight</th><td>18</td><td>28</td><td>14</td><td>60</td></tr>
+<tr><th scope="row">Typical range</th><td>20</td><td>51</td><td>28</td><td>99</td></tr>
+<tr><th scope="row">Underweight</th><td>12</td><td>25</td><td>9</td><td>46</td></tr>
+<tr><th scope="row">Total</th><td>50</td><td>104</td><td>51</td><td>205</td></tr>
+</tbody>
+</table>
+</div><ol type="a"><li>The grand total is 205.</li>
+<li>50/205 = 10/41 ≈ 0.2439.</li>
+<li>18/205 ≈ 0.0878.</li>
+<li>18/60 = 0.30.</li>
+<li>18/50 = 0.36. Reversing the condition changes the denominator.</li>
+<li>12/205 ≈ 0.0585.</li>
+<li>P(overweight AND tall) = 18/205 ≈ 0.0878; P(overweight)P(tall) = (60/205)(50/205) ≈ 0.0714. These differ, so dependent.</li>
+</ol>
+</div></section>
+
+<nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-5-tree-and-venn-diagrams.html">Next section: 3.5</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-4-contingency-tables">Textbook section</a></nav>
+<footer class="attribution"><p>Adapted from Barbara Illowsky and Susan Dean, <cite>Introductory Statistics 2e</cite>, OpenStax, Section 3.4. Example and Try It numbers match the textbook; wording is condensed, diagrams are redrawn, and solutions include additional teaching explanations.</p>
+<p>Access for free at <a href="https://openstax.org/books/introductory-statistics-2e/pages/1-introduction">OpenStax Introductory Statistics 2e</a>. These adapted notes are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+</footer>
+</main>
+</body>
+</html>

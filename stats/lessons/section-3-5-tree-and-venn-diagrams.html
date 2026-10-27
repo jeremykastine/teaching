@@ -1,0 +1,190 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.5: Tree and Venn Diagrams | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head>
+<body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-4-contingency-tables.html">Previous section: 3.4</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams">Textbook section</a></nav>
+<p class="series-title">Statistics Lecture Notes · OpenStax Introductory Statistics 2e</p>
+<h1>3.5: Tree and Venn Diagrams</h1>
+<p class="solution-instructions">Double-click or double-tap the blank space beneath a problem to show or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<p class="source-note">Follow along with <a href="https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams">Section 3.5 in the textbook</a>. Examples and Try It questions appear in textbook order.</p>
+<h2>Tree diagrams</h2>
+<p>A <strong>tree diagram</strong> records an experiment in stages. Each branch gives a count or a probability. Multiply along a path to find its joint probability; add the probabilities of distinct paths when either path satisfies the event. Branch probabilities leaving the same node sum to 1.</p>
+<section class="worked-example" id="example-3-24"><div class="problem-statement"><h3>Example 3.24 · Two draws with replacement</h3>
+<p>An urn contains three red balls and eight blue balls. Draw twice, replacing the first ball before the second draw. Label the balls R₁–R₃ and B₁–B₈. There are 11 × 11 = 121 equally likely ordered pairs of individual balls.</p>
+<figure><svg class="tree" viewBox="0 0 760 400" role="img" aria-label="Two draws with replacement: probabilities along each branch"><title>Two draws with replacement: probabilities along each branch</title><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40,215 L220,125"/><path d="M220,125 L435,80"/><path d="M220,125 L435,170"/><path d="M40,215 L220,305"/><path d="M220,305 L435,260"/><path d="M220,305 L435,350"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="45" y="30">Start</text><text x="220" y="30">First draw</text><text x="425" y="30">Second draw</text><text x="640" y="30">Path result</text><text x="105" y="110">B 8/11</text><text x="307" y="68">B 8/11</text><text x="565" y="87">BB: 64/121</text><text x="307" y="158">R 3/11</text><text x="565" y="177">BR: 24/121</text><text x="105" y="290">R 3/11</text><text x="307" y="248">B 8/11</text><text x="565" y="267">RB: 24/121</text><text x="307" y="338">R 3/11</text><text x="565" y="357">RR: 9/121</text></g></svg><figcaption>Two draws with replacement: probabilities along each branch</figcaption></figure>
+<p>In a frequency tree, the first branches have counts 8 B and 3 R; each second stage again has 8 B and 3 R. The four path counts are 64 BB, 24 BR, 24 RB, and 9 RR.</p>
+<ol type="a"><li>List the 24 individual-ball outcomes for BR.</li>
+<li>Find P(RR).</li>
+<li>Find P(RB OR BR).</li>
+<li>Find P(R on first AND B on second).</li>
+<li>Find P(R on second | B on first). Explain the restricted sample space.</li>
+<li>Find P(BB).</li>
+<li>Find P(B on second | R on first).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>B₁R₁, B₁R₂, B₁R₃; B₂R₁, B₂R₂, B₂R₃; B₃R₁, B₃R₂, B₃R₃; B₄R₁, B₄R₂, B₄R₃; B₅R₁, B₅R₂, B₅R₃; B₆R₁, B₆R₂, B₆R₃; B₇R₁, B₇R₂, B₇R₃; B₈R₁, B₈R₂, B₈R₃.</li>
+<li>(3/11)(3/11) = 9/121.</li>
+<li>(3/11)(8/11) + (8/11)(3/11) = 48/121.</li>
+<li>P(RB) = (3/11)(8/11) = 24/121.</li>
+<li>24/(64 + 24) = 24/88 = 3/11. Restrict to the 88 ordered pairs whose first ball is blue.</li>
+<li>(8/11)(8/11) = 64/121.</li>
+<li>24/(24 + 9) = 24/33 = 8/11. Replacement restores the original composition.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-24"><div class="problem-statement"><h3>Try It 3.24 · Cards with replacement</h3>
+<p>A standard deck has 12 face cards (F) and 40 other cards (N). Draw twice with replacement. Draw a frequency tree and find P(FF).</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="tree" viewBox="0 0 760 400" role="img" aria-label="Frequency tree for cards with replacement"><title>Frequency tree for cards with replacement</title><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40,215 L220,125"/><path d="M220,125 L435,80"/><path d="M220,125 L435,170"/><path d="M40,215 L220,305"/><path d="M220,305 L435,260"/><path d="M220,305 L435,350"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="45" y="30">Start</text><text x="220" y="30">First draw</text><text x="425" y="30">Second draw</text><text x="640" y="30">Path result</text><text x="105" y="110">F 12</text><text x="307" y="68">F 12</text><text x="565" y="87">FF: 144</text><text x="307" y="158">N 40</text><text x="565" y="177">FN: 480</text><text x="105" y="290">N 40</text><text x="307" y="248">F 12</text><text x="565" y="267">NF: 480</text><text x="307" y="338">N 40</text><text x="565" y="357">NN: 1600</text></g></svg><figcaption>Frequency tree for cards with replacement</figcaption></figure>
+<p>There are 52² = 2704 equally likely ordered card pairs. P(FF) = (12/52)(12/52) = 144/2704 = 9/169 ≈ 0.0533.</p>
+</div></section>
+
+<h2>Drawing without replacement</h2>
+<p><strong>Without replacement</strong> means the first selection stays out. The next denominator decreases by 1, and the numerator depends on what was removed. The second-stage labels are conditional probabilities, such as P(R on second | B on first).</p>
+<section class="worked-example" id="example-3-25"><div class="problem-statement"><h3>Example 3.25 · The same urn, without replacement</h3>
+<p>Use the urn of three red and eight blue balls. This time, do not replace the first ball.</p>
+<figure><svg class="tree" viewBox="0 0 760 400" role="img" aria-label="Two draws without replacement: second-stage probabilities change"><title>Two draws without replacement: second-stage probabilities change</title><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40,215 L220,125"/><path d="M220,125 L435,80"/><path d="M220,125 L435,170"/><path d="M40,215 L220,305"/><path d="M220,305 L435,260"/><path d="M220,305 L435,350"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="45" y="30">Start</text><text x="220" y="30">First draw</text><text x="425" y="30">Second draw</text><text x="640" y="30">Path result</text><text x="105" y="110">B 8/11</text><text x="307" y="68">B 7/10</text><text x="565" y="87">BB: 56/110</text><text x="307" y="158">R 3/10</text><text x="565" y="177">BR: 24/110</text><text x="105" y="290">R 3/11</text><text x="307" y="248">B 8/10</text><text x="565" y="267">RB: 24/110</text><text x="307" y="338">R 2/10</text><text x="565" y="357">RR: 6/110</text></g></svg><figcaption>Two draws without replacement: second-stage probabilities change</figcaption></figure>
+<ol type="a"><li>Find P(RR).</li>
+<li>Find P(RB OR BR). Write both products.</li>
+<li>Find P(R on second | B on first).</li>
+<li>Find P(R on first AND B on second).</li>
+<li>Find P(BB).</li>
+<li>Find P(B on second | R on first).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>(3/11)(2/10) = 6/110 = 3/55.</li>
+<li>(3/11)(8/10) + (8/11)(3/10) = 48/110 = 24/55.</li>
+<li>3/10. A blue ball was removed, leaving all three red balls among ten balls.</li>
+<li>P(RB) = (3/11)(8/10) = 24/110.</li>
+<li>(8/11)(7/10) = 56/110 = 28/55.</li>
+<li>8/10 = 4/5. After a red is removed, eight of the remaining ten are blue.</li>
+</ol>
+<p>Check: (56 + 24 + 24 + 6)/110 = 1. Notice the difference between a two-draw joint probability and a second-draw conditional probability.</p>
+</div></section>
+
+<section class="worked-example" id="try-it-3-25"><div class="problem-statement"><h3>Try It 3.25 · Cards without replacement</h3>
+<p>Draw two cards without replacement from a standard deck of 12 face cards (F) and 40 non-face cards (N). Draw and label a probability tree.</p>
+<ol type="a"><li>Find P(FN OR NF).</li>
+<li>Find P(N on second | F on first).</li>
+<li>Find P(at most one face card).</li>
+<li>Find P(at least one face card).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="tree" viewBox="0 0 760 400" role="img" aria-label="Corrected card tree: all second-draw denominators are 51"><title>Corrected card tree: all second-draw denominators are 51</title><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40,215 L220,125"/><path d="M220,125 L435,80"/><path d="M220,125 L435,170"/><path d="M40,215 L220,305"/><path d="M220,305 L435,260"/><path d="M220,305 L435,350"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="45" y="30">Start</text><text x="220" y="30">First draw</text><text x="425" y="30">Second draw</text><text x="640" y="30">Path result</text><text x="105" y="110">F 12/52</text><text x="307" y="68">F 11/51</text><text x="565" y="87">FF: 132/2652</text><text x="307" y="158">N 40/51</text><text x="565" y="177">FN: 480/2652</text><text x="105" y="290">N 40/52</text><text x="307" y="248">F 12/51</text><text x="565" y="267">NF: 480/2652</text><text x="307" y="338">N 39/51</text><text x="565" y="357">NN: 1560/2652</text></g></svg><figcaption>Corrected card tree: all second-draw denominators are 51</figcaption></figure>
+<ol type="a"><li>(12/52)(40/51) + (40/52)(12/51) = 960/2652 = 80/221 ≈ 0.3620.</li>
+<li>40/51. The first card is already known to be a face card.</li>
+<li>Zero or one: NN, FN, NF. Probability = (1560 + 480 + 480)/2652 = 2520/2652 = 210/221 ≈ 0.9502. Equivalently, 1 − P(FF).</li>
+<li>One or two: FN, NF, FF. Probability = (480 + 480 + 132)/2652 = 1092/2652 = 91/221 ≈ 0.4118. Equivalently, 1 − P(NN).</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="example-3-26"><div class="problem-statement"><h3>Example 3.26 · Selecting two kittens</h3>
+<p>A shelter has four tabby kittens (T) and five black kittens (B). Two kittens are selected randomly, without replacement. Draw a tree before calculating.</p>
+<ol type="a"><li>Find the probability of selecting two tabbies.</li>
+<li>Find the probability of selecting one of each color.</li>
+<li>Find P(tabby second | black first).</li>
+<li>Find the probability of selecting two of the same color.</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="tree" viewBox="0 0 760 400" role="img" aria-label="Kitten selection without replacement"><title>Kitten selection without replacement</title><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40,215 L220,125"/><path d="M220,125 L435,80"/><path d="M220,125 L435,170"/><path d="M40,215 L220,305"/><path d="M220,305 L435,260"/><path d="M220,305 L435,350"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="45" y="30">Start</text><text x="220" y="30">First draw</text><text x="425" y="30">Second draw</text><text x="640" y="30">Path result</text><text x="105" y="110">T 4/9</text><text x="307" y="68">T 3/8</text><text x="565" y="87">TT: 12/72</text><text x="307" y="158">B 5/8</text><text x="565" y="177">TB: 20/72</text><text x="105" y="290">B 5/9</text><text x="307" y="248">T 4/8</text><text x="565" y="267">BT: 20/72</text><text x="307" y="338">B 4/8</text><text x="565" y="357">BB: 20/72</text></g></svg><figcaption>Kitten selection without replacement</figcaption></figure>
+<ol type="a"><li>(4/9)(3/8) = 12/72 = 1/6.</li>
+<li>P(TB) + P(BT) = (4/9)(5/8) + (5/9)(4/8) = 40/72 = 5/9. Both orders count.</li>
+<li>4/8 = 1/2.</li>
+<li>P(TT) + P(BB) = 12/72 + 20/72 = 32/72 = 4/9.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-26"><div class="problem-statement"><h3>Try It 3.26 · One of each color</h3>
+<p>A box contains four red balls and three yellow balls. Draw two without replacement. What is the probability of drawing one of each color?</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>There are two acceptable paths: RY and YR. P(RY OR YR) = (4/7)(3/6) + (3/7)(4/6) = 24/42 = 4/7 ≈ 0.5714.</p>
+</div></section>
+
+<h2>Venn diagrams</h2>
+<p>A <strong>Venn diagram</strong> places events inside a rectangle representing the sample space S. Overlap means AND; the whole area in either event means OR. Outside an event is its complement. Each outcome belongs in exactly one region. A region containing several listed outcomes represents that many possible outcomes, not just one.</p>
+<section class="worked-example" id="example-3-27"><div class="problem-statement"><h3>Example 3.27 · Equally likely numbered outcomes</h3>
+<p>Let S = {1, 2, …, 12}, all equally likely. Let A = {1, 2, 3, 4, 5, 6} and B = {6, 7, 8, 9}. Draw a Venn diagram and identify A AND B and A OR B.</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="A and B within twelve equally likely outcomes"><title>A and B within twelve equally likely outcomes</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">A</text><text x="429" y="65">B</text><text x="205" y="140">1, 2, 3, 4, 5</text><text x="320" y="140">6</text><text x="436" y="140">7, 8, 9</text><text x="550" y="240">10, 11, 12</text></g></svg><figcaption>A and B within twelve equally likely outcomes</figcaption></figure>
+<p>A AND B = {6}. A OR B = {1, 2, 3, 4, 5, 6, 7, 8, 9}. Thus P(A AND B) = 1/12 and P(A OR B) = 9/12. The outcome 6 appears only once in the union.</p>
+</div></section>
+
+<section class="worked-example" id="try-it-3-27"><div class="problem-statement"><h3>Try It 3.27 · Color outcomes</h3>
+<p>The equally likely outcomes are black, white, red, orange, yellow, green, blue, and purple. Let C = {green, blue, purple} and P = {red, yellow, blue}. Draw a Venn diagram and identify the intersection and union.</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="Color outcomes placed in disjoint regions"><title>Color outcomes placed in disjoint regions</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">C</text><text x="429" y="65">P</text><text x="205" y="140">green, purple</text><text x="320" y="140">blue</text><text x="436" y="140">red, yellow</text><text x="550" y="240">black, white, orange</text></g></svg><figcaption>Color outcomes placed in disjoint regions</figcaption></figure>
+<p>C AND P = {blue}. C OR P = {green, blue, purple, red, yellow}. The probabilities are 1/8 and 5/8, respectively.</p>
+</div></section>
+
+<section class="worked-example" id="example-3-28"><div class="problem-statement"><h3>Example 3.28 · Two fair coins</h3>
+<p>Flip two fair coins. Let A = tails on the first coin and B = tails on the second coin. List S, A, B, A AND B, and A OR B. Draw the Venn diagram. Which outcome is in neither event?</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>S = {HH, HT, TH, TT}; A = {TH, TT}; B = {HT, TT}. A AND B = {TT}; A OR B = {TH, TT, HT}. HH is in neither event.</p>
+<figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="First-coin tails and second-coin tails"><title>First-coin tails and second-coin tails</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">A</text><text x="429" y="65">B</text><text x="205" y="140">TH</text><text x="320" y="140">TT</text><text x="436" y="140">HT</text><text x="550" y="240">HH</text></g></svg><figcaption>First-coin tails and second-coin tails</figcaption></figure>
+<p>Each outcome has probability 1/4, so the intersection has probability 1/4 and the union has probability 3/4.</p>
+</div></section>
+
+<section class="worked-example" id="try-it-3-28"><div class="problem-statement"><h3>Try It 3.28 · Prime and odd die rolls</h3>
+<p>Roll a fair six-sided die. Let A = prime result and B = odd result. Draw a Venn diagram, identifying both the overlap and the union.</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>A = {2, 3, 5}; B = {1, 3, 5}. A AND B = {3, 5}; A OR B = {1, 2, 3, 5}.</p>
+<figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="Prime and odd outcomes on a die"><title>Prime and odd outcomes on a die</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">A</text><text x="429" y="65">B</text><text x="205" y="140">2</text><text x="320" y="140">3, 5</text><text x="436" y="140">1</text><text x="550" y="240">4, 6</text></g></svg><figcaption>Prime and odd outcomes on a die</figcaption></figure>
+<p>P(A AND B) = 2/6 = 1/3. P(A OR B) = 4/6 = 2/3.</p>
+</div></section>
+
+<h2>Venn diagrams with percentages and probabilities</h2>
+<p>Start by putting the intersection in the overlap. Subtract it from each whole-event total to obtain the “only” regions. Subtract the union from 1 to obtain neither. For a conditional probability, divide the overlap by the probability of the given event.</p>
+<section class="worked-example" id="example-3-29"><div class="problem-statement"><h3>Example 3.29 · Clubs and part-time work</h3>
+<p>At a college, 40% of students belong to a club (C), 50% work part time (PT), and 5% do both. Draw a Venn diagram.</p>
+<ol type="a"><li>Find P(C).</li>
+<li>Find P(PT).</li>
+<li>Find P(C AND PT).</li>
+<li>Find P(C | PT).</li>
+<li>Find P(C OR PT).</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="College students: percentages in each region"><title>College students: percentages in each region</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">C</text><text x="429" y="65">PT</text><text x="205" y="140">35%</text><text x="320" y="140">5%</text><text x="436" y="140">45%</text><text x="550" y="240">15%</text></g></svg><figcaption>College students: percentages in each region</figcaption></figure>
+<ol type="a"><li>P(C) = 0.40 = 0.35 + 0.05.</li>
+<li>P(PT) = 0.50 = 0.45 + 0.05.</li>
+<li>P(C AND PT) = 0.05.</li>
+<li>P(C | PT) = 0.05/0.50 = 0.10. Among part-time workers, 10% belong to a club.</li>
+<li>P(C OR PT) = 0.40 + 0.50 − 0.05 = 0.85.</li>
+</ol>
+<p>Neither = 1 − 0.85 = 0.15. The 40% and 50% are whole-circle totals, not the “only” regions.</p>
+</div></section>
+
+<section class="worked-example" id="try-it-3-29"><div class="problem-statement"><h3>Try It 3.29 · Workers and households</h3>
+<p>At a factory, 50% of workers have a second job (W), 25% have a spouse who also works (S), and 5% satisfy both descriptions. Draw a Venn diagram.</p>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="Factory survey: percentages in each region"><title>Factory survey: percentages in each region</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">W</text><text x="429" y="65">S</text><text x="205" y="140">45%</text><text x="320" y="140">5%</text><text x="436" y="140">20%</text><text x="550" y="240">30%</text></g></svg><figcaption>Factory survey: percentages in each region</figcaption></figure>
+<p>W only = 50% − 5% = 45%. S only = 25% − 5% = 20%. Union = 70%; neither = 30%. The overlap is 5%.</p>
+</div></section>
+
+<section class="worked-example" id="example-3-30"><div class="problem-statement"><h3>Example 3.30 · Two blood characteristics</h3>
+<p>For this textbook probability exercise, use the supplied proportions for the population being modeled: P(O) = 0.51 for type O blood, P(R) = 0.075 for Rh-negative, and P(O AND R) = 0.04. The 0.075 is the textbook’s midpoint of 0.05 and 0.10. These are exercise assumptions. Draw a Venn diagram.</p>
+<ol type="a"><li>State P(O).</li>
+<li>State P(R).</li>
+<li>State P(O AND R).</li>
+<li>Find P(O OR R).</li>
+<li>Describe the overlap in a complete sentence.</li>
+<li>Describe the region outside both events in a complete sentence.</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="Blood characteristics using the supplied exercise probabilities"><title>Blood characteristics using the supplied exercise probabilities</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">O</text><text x="429" y="65">R</text><text x="205" y="140">47%</text><text x="320" y="140">4%</text><text x="436" y="140">3.5%</text><text x="550" y="240">45.5%</text></g></svg><figcaption>Blood characteristics using the supplied exercise probabilities</figcaption></figure>
+<ol type="a"><li>0.51.</li>
+<li>0.075.</li>
+<li>0.04.</li>
+<li>0.51 + 0.075 − 0.04 = 0.545.</li>
+<li>The overlap represents individuals who have both type O blood and an Rh-negative factor.</li>
+<li>Outside both represents individuals who have neither type O blood nor an Rh-negative factor. Its probability is 1 − 0.545 = 0.455.</li>
+</ol>
+</div></section>
+
+<section class="worked-example" id="try-it-3-30"><div class="problem-statement"><h3>Try It 3.30 · Bookstore purchases</h3>
+<p>A bookstore customer has probability 0.6 of buying a novel (N), probability 0.4 of buying nonfiction (F), and probability 0.2 of buying both.</p>
+<ol type="a"><li>Draw a Venn diagram.</li>
+<li>Find P(N OR F).</li>
+<li>Describe the overlap in a complete sentence.</li>
+<li>Add an oval for the event “buys only compact discs.” Where should it go?</li>
+</ol>
+</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><figure><svg class="venn" viewBox="0 0 640 270" role="img" aria-label="Novel and nonfiction purchases"><title>Novel and nonfiction purchases</title><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="250"/><ellipse cx="255" cy="135" rx="140" ry="100"/><ellipse cx="385" cy="135" rx="140" ry="100"/></g><g fill="currentColor" text-anchor="middle" font-family="Arial,sans-serif" font-size="20"><text x="35" y="38">S</text><text x="213" y="65">N</text><text x="429" y="65">F</text><text x="205" y="140">40%</text><text x="320" y="140">20%</text><text x="436" y="140">20%</text><text x="550" y="240">20%</text></g></svg><figcaption>Novel and nonfiction purchases</figcaption></figure>
+<ol type="a"><li>N only = 0.6 − 0.2 = 0.4. F only = 0.4 − 0.2 = 0.2. Both = 0.2; neither = 0.2.</li>
+<li>P(N OR F) = 0.6 + 0.4 − 0.2 = 0.8.</li>
+<li>The overlap represents customers who buy both a novel and a nonfiction book.</li>
+<li>Place the compact-discs-only oval inside the sample-space rectangle but completely outside both book circles. Its probability is not specified; it need not fill the entire neither region.</li>
+</ol>
+<p>One possible placement is shown below. The CD-only event is a subset of neither book event; its size is not to scale.</p>
+<figure><svg class="venn" viewBox="0 0 640 340" role="img" aria-label="A CD-only oval lies outside the novel and nonfiction circles but inside the sample space"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="10" width="620" height="320"/><ellipse cx="240" cy="125" rx="130" ry="95"/><ellipse cx="380" cy="125" rx="130" ry="95"/><ellipse cx="320" cy="280" rx="95" ry="30"/></g><g fill="currentColor" font-size="20" text-anchor="middle"><text x="210" y="120">N</text><text x="410" y="120">F</text><text x="320" y="287">CD only</text><text x="35" y="38">S</text></g></svg></figure>
+</div></section>
+
+<nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-4-contingency-tables.html">Previous section: 3.4</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams">Textbook section</a></nav>
+<footer class="attribution"><p>Adapted from Barbara Illowsky and Susan Dean, <cite>Introductory Statistics 2e</cite>, OpenStax, Section 3.5. Example and Try It numbers match the textbook; wording is condensed, diagrams are redrawn, and solutions include additional teaching explanations.</p>
+<p>Access for free at <a href="https://openstax.org/books/introductory-statistics-2e/pages/1-introduction">OpenStax Introductory Statistics 2e</a>. These adapted notes are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+</footer>
+</main>
+</body>
+</html>

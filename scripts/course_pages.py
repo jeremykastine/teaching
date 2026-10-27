@@ -16,6 +16,7 @@ def navigation(course, active=None):
     links = [(f'../index.html#{ANCHORS[course]}', 'Teaching'), (filename, notes),
              ('homework.html', 'Homework')]
     if course == 'stats':
+        links.insert(1, ('lecture-notes.html', 'Lecture notes'))
         links += [('question-banks/index.html', 'Test banks and answer keys'),
                   ('excel-competency-checks.html', 'Excel competency checks')]
     else:
