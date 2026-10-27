@@ -1,0 +1,4708 @@
+<div class="chapter-content-module" data-book-content="true" data-type="page" id="page_4aa9351c-019f-4c06-bb40-d58262ea7ec7"><h2 data-rex-keep="true" data-type="document-title" id="page_4aa9351c-019f-4c06-bb40-d58262ea7ec7_titlecreatedbycookbook"><span class="os-number">2.4</span>
+<span class="os-divider"> </span>
+<span class="os-text" data-type="" itemprop="">Complex Numbers</span>
+</h2><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Add and subtract complex numbers.</li>
+<li>Multiply and divide complex numbers.</li>
+<li>Simplify powers of <math display="inline"><semantics><mrow><mi>i</mi></mrow><annotation-xml encoding="MathML-Content"><mi>i</mi></annotation-xml></semantics></math></li>
+</ul></section></div>
+<div class="os-figure" id="Figure_02_04_001"><figure class="medium ui-has-child-figcaption" data-id="Figure_02_04_001"><span data-alt="A visual representation of the Mandelbrot set" data-type="media" id="fs-id1919899">
+<button aria-label="Click to enlarge image of A visual representation of the Mandelbrot set" class="image-button-wrapper" type="button"><img alt="A visual representation of the Mandelbrot set" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/250825d36367ccdee3e00cbf20958515aa106674" height="325" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/250825d36367ccdee3e00cbf20958515aa106674" width="437"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div><p id="fs-id2523388">Discovered by Benoit Mandelbrot around 1980, the Mandelbrot Set is one of the most recognizable fractal images. The image is built on the theory of self-similarity and the operation of iteration. Zooming in on a fractal image brings many surprises, particularly in the high level of repetition of detail that appears as magnification increases. The equation that generates this image turns out to be rather simple.</p>
+<p id="fs-id2510203">In order to better understand it, we need to become familiar with a new set of numbers. Keep in mind that the study of mathematics continuously builds upon itself. Negative integers, for example, fill a void left by the set of positive integers. The set of rational numbers, in turn, fills a void left by the set of integers. The set of real numbers fills a void left by the set of rational numbers. Not surprisingly, the set of real numbers has voids as well. In this section, we will explore a set of numbers that fills voids in the set of real numbers and find out how to work within it.</p><section data-depth="1" id="fs-id2425607"><h3 data-type="title">Expressing Square Roots of Negative Numbers as Multiples of <math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math> </h3>
+<p id="fs-id1385456">We know how to find the square root of any positive real number. In a similar way, we can find the square root of any negative number. The difference is that the root is not real. If the value in the radicand is negative, the root is said to be an imaginary number<strong>. </strong>The imaginary number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is defined as the square root of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−1.</mn>
+</mrow></annotation-xml></semantics></math></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1276418"> <math display="block"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+<mo>=</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+<mo>=</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id3155144">So, using properties of radicals,</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2005251"> <math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id1523248">We can write the square root of any negative number as a multiple of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> Consider the square root of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−49.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−49.</mn>
+</mrow></annotation-xml></semantics></math></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1296283"> <math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><msqrt><mrow><mn>−49</mn></mrow></msqrt></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>49</mn><mo>⋅</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>49</mn></mrow>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>7</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><msqrt><mrow><mn>−49</mn></mrow></msqrt></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>49</mn><mo>⋅</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>49</mn></mrow>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>7</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math> </div><p id="fs-id1149119">We use <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>7</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>7</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> and not <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−7</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−7</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> because the principal root of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>49</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>49</mn>
+</mrow></annotation-xml></semantics></math></span> is the positive root.</p>
+<p id="fs-id2708516">A complex number is the sum of a real number and an imaginary number. A complex number is expressed in standard form when written <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> where <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi>
+</mrow></annotation-xml></semantics></math></span> is the real part and <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi>
+</mrow></annotation-xml></semantics></math></span> is the imaginary part. For example, <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>5</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>5</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is a complex number. So, too, is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi><msqrt>
+<mn>3</mn>
+</msqrt>
+<mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi><msqrt>
+<mn>3</mn>
+</msqrt>
+<mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p>
+<span data-alt="The complex number 5 + 2i is displayed.  The 5 is labeled as: Real part and the 2i is labeled as: Imaginary part" data-type="media" id="fs-id1541885">
+<button aria-label="Click to enlarge image of The complex number 5 + 2i is displayed.  The 5 is labeled as: Real part and the 2i is labeled as: Imaginary part" class="image-button-wrapper" type="button"><img alt="The complex number 5 + 2i is displayed.  The 5 is labeled as: Real part and the 2i is labeled as: Imaginary part" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/b6771cfacdac806d7546b9b1d376853f0f822803" height="76" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/b6771cfacdac806d7546b9b1d376853f0f822803" width="487"/></button>
+</span>
+<p id="fs-id1174676">Imaginary numbers differ from real numbers in that a squared imaginary number produces a negative real number. Recall that when a positive real number is squared, the result is a positive real number and when a negative real number is squared, the result is also a positive real number. Complex numbers consist of real and imaginary numbers.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1558068"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Imaginary and Complex Numbers</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1689292">A <span data-type="term" group-by="c" id="term-00002">complex number</span> is a number of the form <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> where</p>
+<ul id="fs-id1531123"><li> <math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi>
+</mrow></annotation-xml></semantics></math> is the real part of the complex number.</li>
+<li> <math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi>
+</mrow></annotation-xml></semantics></math> is the imaginary part of the complex number.</li>
+</ul><p id="fs-id1402821">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi><mo>=</mo><mn>0</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> then <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is a real number. If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>=</mo><mn>0</mn>
+</mrow></annotation-xml></semantics></math></span> and <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi>
+</mrow></annotation-xml></semantics></math></span> is not equal to 0, the complex number is called a pure imaginary number. An <span data-type="term" group-by="i" id="term-00003">imaginary number</span> is an even root of a negative number.</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1266532"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1578095"><strong>Given an imaginary number, express it in the standard form of a complex number.</strong></p><ol id="fs-id1269513" type="1"><li>Write <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mo>−</mo><mi>a</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mo>−</mo><mi>a</mi>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math> as <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mi>a</mi>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+<mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mi>a</mi>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+<mo>.</mo>
+</mrow></annotation-xml></semantics></math> </li>
+<li>Express <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math> as <math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math> </li>
+<li>Write <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mi>a</mi>
+</msqrt>
+<mo>⋅</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mi>a</mi>
+</msqrt>
+<mo>⋅</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math> in simplest form.</li>
+</ol></div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_01"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1884617"><header></header><section>
+<div data-type="problem" id="fs-id1228287"><div class="os-problem-container"><h4 data-type="title">Expressing an Imaginary Number in Standard Form </h4>
+<p id="fs-id1274827">Express <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>−9</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>−9</mn>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> in standard form.</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id1813876">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2443487">
+<math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><msqrt><mrow><mn>−9</mn></mrow></msqrt></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mn>9</mn>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><msqrt><mrow><mn>−9</mn></mrow></msqrt></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mn>9</mn>
+</msqrt>
+<msqrt>
+<mrow>
+<mn>−1</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id881430">In standard form, this is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>0</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p>
+</div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id2375806"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#1</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_01"><header></header><section><div data-type="problem" id="fs-id1294134"><div class="os-problem-container"><p id="fs-id3048344">Express <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>−24</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>−24</mn>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> in standard form.</p></div></div>
+</section></div>
+</div></section></div>
+</section>
+<section data-depth="1" id="fs-id1591834"><h3 data-type="title">Plotting a Complex Number on the Complex Plane</h3>
+<p id="fs-id3176103">We cannot plot complex numbers on a number line as we might real numbers. However, we can still represent them graphically. To represent a complex number, we need to address the two components of the number. We use the <span data-type="term" group-by="c" id="term-00004">complex plane</span>, which is a coordinate system in which the horizontal axis represents the real component and the vertical axis represents the imaginary component. Complex numbers are the points on the plane, expressed as ordered pairs <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> where <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi>
+</mrow></annotation-xml></semantics></math></span> represents the coordinate for the horizontal axis and <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi>
+</mrow></annotation-xml></semantics></math></span> represents the coordinate for the vertical axis.</p><p id="fs-id2517292">Let’s consider the number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> The real part of the complex number is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−2</mn>
+</mrow></annotation-xml></semantics></math></span> and the imaginary part is 3. We plot the ordered pair <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>−2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><mn>−2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span> to represent the complex number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> as shown in <a aria-label="View Figure 2" class="autogenerated-content" href="2-4-complex-numbers#Figure_02_04_003">Figure 2</a><strong>.</strong></p><div class="os-figure" id="Figure_02_04_003"><figure class="small ui-has-child-figcaption" data-id="Figure_02_04_003">
+<span data-alt="Coordinate plane with the x and y axes ranging from negative 5 to 5.  The point negative 2 plus 3i is plotted on the graph.  An arrow extends leftward from the origin two units and then an arrow extends upward three units from the end of the previous arrow." data-type="media" id="fs-id1245266">
+<button aria-label="Click to enlarge image of Coordinate plane with the x and y axes ranging from negative 5 to 5.  The point negative 2 plus 3i is plotted on the graph.  An arrow extends leftward from the origin two units and then an arrow extends upward three units from the end of the previous arrow." class="image-button-wrapper" type="button"><img alt="Coordinate plane with the x and y axes ranging from negative 5 to 5.  The point negative 2 plus 3i is plotted on the graph.  An arrow extends leftward from the origin two units and then an arrow extends upward three units from the end of the previous arrow." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/4bc24ed9c0f41a9c1eb3faf6eea40b42241d503b" height="372" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/4bc24ed9c0f41a9c1eb3faf6eea40b42241d503b" width="357"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure></div>
+<div class="ui-has-child-title" data-type="note" id="fs-id1184889"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Complex Plane</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id3269164">In the complex plane, the horizontal axis is the real axis, and the vertical axis is the imaginary axis, as shown in <a aria-label="View Figure 3" class="autogenerated-content" href="2-4-complex-numbers#Figure_02_04_004">Figure 3</a>.</p><div class="os-figure" id="Figure_02_04_004"><figure class="small ui-has-child-figcaption" data-id="Figure_02_04_004"><span data-alt="A blank coordinate plane with the x-axis labeled: real and the y-axis labeled: imaginary." data-type="media" id="fs-id1943089">
+<button aria-label="Click to enlarge image of A blank coordinate plane with the x-axis labeled: real and the y-axis labeled: imaginary." class="image-button-wrapper" type="button"><img alt="A blank coordinate plane with the x-axis labeled: real and the y-axis labeled: imaginary." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/f597ea5f207951735a0de498e02a07e8cd28e3f5" height="208" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/f597ea5f207951735a0de498e02a07e8cd28e3f5" width="229"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure></div></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1273812"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1887259"><strong>Given a complex number, represent its components on the complex plane.</strong></p>
+<ol id="fs-id2484938" type="1">
+<li>Determine the real part and the imaginary part of the complex number.</li>
+<li>Move along the horizontal axis to show the real part of the number.</li>
+<li>Move parallel to the vertical axis to show the imaginary part of the number.</li>
+<li>Plot the point.</li>
+</ol>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_02"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id3113300"><header></header><section>
+<div data-type="problem" id="fs-id1787353"><div class="os-problem-container"><h4 data-type="title">Plotting a Complex Number on the Complex Plane</h4>
+<p id="fs-id1516111">Plot the complex number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mspace width="0.5em"></mspace></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mspace width="0.5em"></mspace></mrow></annotation-xml></semantics></math></span> on the complex plane.</p></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id1148988">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-id2438175">The real part of the complex number is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>3</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> and the imaginary part is –4. We plot the ordered pair <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>−4</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>−4</mn><mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span> as shown in <a aria-label="View Figure 4" class="autogenerated-content" href="2-4-complex-numbers#Figure_02_04_005">Figure 4</a><strong>.</strong></p><div class="os-figure" id="Figure_02_04_005">
+<figure class="small ui-has-child-figcaption" data-id="Figure_02_04_005"><span data-alt="Coordinate plane with the x and y axes ranging from -5 to 5.  The point 3 – 4i is plotted, with an arrow extending rightward from the origin 3 units and an arrow extending downward 4 units from the end of the previous arrow." data-type="media" id="fs-id915324">
+<button aria-label="Click to enlarge image of Coordinate plane with the x and y axes ranging from -5 to 5.  The point 3 – 4i is plotted, with an arrow extending rightward from the origin 3 units and an arrow extending downward 4 units from the end of the previous arrow." class="image-button-wrapper" type="button"><img alt="Coordinate plane with the x and y axes ranging from -5 to 5.  The point 3 – 4i is plotted, with an arrow extending rightward from the origin 3 units and an arrow extending downward 4 units from the end of the previous arrow." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/5cad9c29f707a8f3cd1716c1288a2ca1eb8963aa" height="372" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/5cad9c29f707a8f3cd1716c1288a2ca1eb8963aa" width="357"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+</figcaption></figure>
+</div></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id2512646"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#2</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_02"><header></header><section>
+<div data-type="problem" id="fs-id1593307"><div class="os-problem-container"><p id="fs-id2507797">Plot the complex number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−4</mn><mo>−</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−4</mn><mo>−</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> on the complex plane.</p></div></div>
+</section></div>
+</div></section></div>
+</section>
+<section data-depth="1" id="fs-id1424098"><h3 data-type="title">Adding and Subtracting Complex Numbers</h3>
+<p id="fs-id1463014">Just as with real numbers, we can perform arithmetic operations on complex numbers. To add or subtract complex numbers, we combine the real parts and then combine the imaginary parts.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1442785"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Complex Numbers: Addition and Subtraction</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1976732">Adding complex numbers:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1519513"> <math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>c</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>+</mo><mi>d</mi>
+</mrow>
+<mo>)</mo></mrow><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>c</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>+</mo><mi>d</mi>
+</mrow>
+<mo>)</mo></mrow><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id1446903">Subtracting complex numbers:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1018786"> <math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>c</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>−</mo><mi>d</mi>
+</mrow>
+<mo>)</mo></mrow><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>c</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>−</mo><mi>d</mi>
+</mrow>
+<mo>)</mo></mrow><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </div>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1296613"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id2383706"><strong>Given two complex numbers, find the sum or difference.</strong></p>
+<ol id="fs-id1805520" type="1">
+<li>Identify the real and imaginary parts of each number.</li>
+<li>Add or subtract the real parts.</li>
+<li>Add or subtract the imaginary parts.</li>
+</ol>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_03"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1133706"><header></header><section><div data-type="problem" id="fs-id1267465"><div class="os-problem-container"><h4 data-type="title">Adding and Subtracting Complex Numbers</h4>
+<p id="fs-id1567983">Add or subtract as indicated.</p>
+<ol class="circled" id="fs-id3257388" type="1"><li><span class="token">ⓐ</span> <math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow></annotation-xml></semantics></math> </li>
+<li><span class="token">ⓑ</span> <math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<mn>−11</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<mn>−11</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math>
+</li>
+</ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id1429773">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-id1288146">We add the real parts and add the imaginary parts.</p>
+<ol class="circled" id="fs-id2710031" type="1"><li><span class="token">ⓐ</span><span data-type="newline"><br/></span> <math display="inline"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>−4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>−4</mn><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>5</mn><mo>+</mo><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>−4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mn>5</mn><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>−4</mn><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mi>i</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>5</mn><mo>+</mo><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</li>
+<li><span class="token">ⓑ</span><span data-type="newline"><br/></span>
+<math display="inline"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−11</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo>+</mo><mn>11</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>−5</mn><mo>+</mo><mn>11</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo>−</mo><mn>2</mn><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>−5</mn><mo>+</mo><mn>11</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>6</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−11</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>−5</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo>+</mo><mn>11</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>−5</mn><mo>+</mo><mn>11</mn><mo>+</mo><mn>7</mn><mi>i</mi><mo>−</mo><mn>2</mn><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>−5</mn><mo>+</mo><mn>11</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>6</mn><mo>+</mo><mn>5</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math> </li>
+</ol></div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id2302121"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#3</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_03"><header></header><section><div data-type="problem" id="fs-id1339021"><div class="os-problem-container"><p id="fs-id1334125">Subtract <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> from <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mo>–</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>3</mn><mo>–</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div></div>
+</section></div>
+</div></section></div>
+</section>
+<section data-depth="1" id="fs-id1322676"><h3 data-type="title">Multiplying Complex Numbers</h3>
+<p id="fs-id1188861">Multiplying complex numbers is much like multiplying binomials. The major difference is that we work with the real and imaginary parts separately.</p>
+<section data-depth="2" id="fs-id2995792"><h4 data-type="title">Multiplying a Complex Number by a Real Number</h4>
+<p id="fs-id1533933">Lets begin by multiplying a complex number by a real number. We distribute the real number just as we would with a binomial. Consider, for example, <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mrow><mo>(</mo>
+<mrow>
+<mn>6</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>3</mn><mrow><mo>(</mo>
+<mrow>
+<mn>6</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> :
+</p><span data-alt="Multiplication of a real number and a complex number.  The 3 outside of the parentheses has arrows extending from it to both the 6 and the 2i inside of the parentheses.  This expression is set equal to the quantity three times six plus the quantity three times two times i; this is the distributive property.  The next line equals eighteen plus six times i; the simplification." data-type="media" id="fs-id1545734">
+<button aria-label="Click to enlarge image of Multiplication of a real number and a complex number.  The 3 outside of the parentheses has arrows extending from it to both the 6 and the 2i inside of the parentheses.  This expression is set equal to the quantity three times six plus the quantity three times two times i; this is the distributive property.  The next line equals eighteen plus six times i; the simplification." class="image-button-wrapper" type="button"><img alt="Multiplication of a real number and a complex number.  The 3 outside of the parentheses has arrows extending from it to both the 6 and the 2i inside of the parentheses.  This expression is set equal to the quantity three times six plus the quantity three times two times i; this is the distributive property.  The next line equals eighteen plus six times i; the simplification." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/cc0c0bc49d1474d8c158cb4600642d565a51fa2b" height="87" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/cc0c0bc49d1474d8c158cb4600642d565a51fa2b" width="487"/></button>
+</span>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1494245"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id2714950"><strong>Given a complex number and a real number, multiply to find the product.</strong></p>
+<ol id="fs-id1170540" type="1">
+<li>Use the distributive property.</li>
+<li>Simplify.</li>
+</ol>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_04"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1203991"><header></header><section>
+<div data-type="problem" id="fs-id1930439"><div class="os-problem-container"><h4 data-type="title">Multiplying a Complex Number by a Real Number</h4>
+<p id="fs-id1846156">Find the product <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id2664861">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-id1509986">Distribute the 4.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1133872">
+<math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>⋅</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo>⋅</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>8</mn><mo>+</mo><mn>20</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>⋅</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo>⋅</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>8</mn><mo>+</mo><mn>20</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</div></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id1745333"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#4</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_04"><header></header><section><div data-type="problem" id="fs-id1211448"><div class="os-problem-container"><p id="fs-id2497768">Find the product: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow></annotation-xml></semantics></math></span> </p></div></div>
+</section></div>
+</div></section></div>
+</section>
+<section data-depth="2" id="fs-id1342702"><h4 data-type="title">Multiplying Complex Numbers Together</h4>
+<p id="fs-id2700341">Now, let’s multiply two complex numbers. We can use either the distributive property or more specifically the FOIL method because we are dealing with binomials. Recall that FOIL is an acronym for multiplying First, Outer, Inner, and Last terms together. The difference with complex numbers is that when we get a squared term, <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> it equals <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−1.</mn>
+</mrow></annotation-xml></semantics></math></span> </p><div class="unnumbered" data-label="" data-type="equation" id="fs-id832128">
+<math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>a</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>c</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>d</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mi>a</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>c</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi></mrow></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>a</mi><mi>c</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo stretchy="false">)</mo><mi>i</mi></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Group real terms and imaginary terms</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>a</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>c</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>d</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mi>a</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>c</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi></mrow></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>a</mi><mi>c</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo stretchy="false">)</mo><mi>i</mi></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Group real terms and imaginary terms</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</div>
+<!--continue here-->
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1758537"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1457355"><strong>Given two complex numbers, multiply to find the product.</strong></p>
+<ol id="fs-id1973809" type="1">
+<li>Use the distributive property or the FOIL method.</li>
+<li>Remember that <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn>
+</mrow></annotation-xml></semantics></math> </li>
+<li>Group together the real terms and the imaginary terms</li>
+</ol>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_05"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">5</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1311930"><header></header><section>
+<div data-type="problem" id="fs-id988839"><div class="os-problem-container"><h4 data-type="title">Multiplying a Complex Number by a Complex Number</h4>
+<p id="fs-id1493312">Multiply: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id1435934">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1813679">
+<math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>8</mn><mo>−</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>6</mn><mi>i</mi><mo>−</mo><mn>15</mn><mo>(</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>8</mn><mo>+</mo><mn>15</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>−20</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>23</mn><mo>−</mo><mn>14</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>8</mn><mo>−</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>6</mn><mi>i</mi><mo>−</mo><mn>15</mn><mo>(</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mo stretchy="false">(</mo><mn>8</mn><mo>+</mo><mn>15</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>−20</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mi>i</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>23</mn><mo>−</mo><mn>14</mn><mi>i</mi></mrow></mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</div></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id2486744"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#5</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_05"><header></header><section>
+<div data-type="problem" id="fs-id2507020"><div class="os-problem-container"><p id="fs-id1475550">Multiply: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow></annotation-xml></semantics></math></span>
+</p></div></div>
+</section></div>
+</div></section></div>
+</section>
+</section>
+<section data-depth="1" id="fs-id1555648"><h3 data-type="title">Dividing Complex Numbers</h3><p id="fs-id1923471">Dividing two complex numbers is more complicated than adding, subtracting, or multiplying because we cannot divide by an imaginary number, meaning that any fraction must have a real-number denominator to write the answer in standard form <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> We need to find a term by which we can multiply the numerator and the denominator that will eliminate the imaginary portion of the denominator so that we end up with a real number as the denominator. This term is called the complex conjugate of the denominator, which is found by changing the sign of the imaginary part of the complex number. In other words, the complex conjugate of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> For example, the product of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> and <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id781562"> <math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd rowalign="center">
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd rowalign="center">
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</div><p id="fs-id1965413">The result is a real number.</p>
+<p id="fs-id1466166">Note that complex conjugates have an opposite relationship: The complex conjugate of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> and the complex conjugate of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> Further, when a quadratic equation with real coefficients has complex solutions, the solutions are always complex conjugates of one another.</p>
+<p id="fs-id2665321">Suppose we want to divide <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> by <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> where neither <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi>
+</mrow></annotation-xml></semantics></math></span> nor <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>b</mi>
+</mrow></annotation-xml></semantics></math></span> equals zero. We first write the division as a fraction, then find the complex conjugate of the denominator, and multiply.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1539267"> <math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>where </mtext><mi>a</mi><mo>≠</mo><mn>0</mn><mspace width="0.5em"></mspace><mtext>and </mtext><mi>b</mi><mo>≠</mo><mn>0</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>where </mtext><mi>a</mi><mo>≠</mo><mn>0</mn><mspace width="0.5em"></mspace><mtext>and </mtext><mi>b</mi><mo>≠</mo><mn>0</mn>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id2504346">Multiply the numerator and denominator by the complex conjugate of the denominator.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2015066"> <math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>⋅</mo><mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>⋅</mo><mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id2498465">Apply the distributive property.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2497874"> <math display="block"><semantics><mrow>
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>c</mi><mi>a</mi><mo>−</mo><mi>c</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>c</mi><mi>a</mi><mo>−</mo><mi>c</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id1790276">Simplify, remembering that <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn>
+</mrow></annotation-xml></semantics></math></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2841772">
+<math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>c</mi><mi>a</mi><mo>−</mo><mi>c</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mi>c</mi><mi>a</mi><mo>+</mo><mi>b</mi><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>c</mi><mi>b</mi><mo stretchy="false">)</mo><mi>i</mi>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>c</mi><mi>a</mi><mo>−</mo><mi>c</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>d</mi><mi>i</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>i</mi><mo>−</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mi>c</mi><mi>a</mi><mo>+</mo><mi>b</mi><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>c</mi><mi>b</mi><mo stretchy="false">)</mo><mi>i</mi>
+</mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow></annotation-xml></semantics></math> </div><div class="ui-has-child-title" data-type="note" id="fs-id1392562"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Complex Conjugate</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1280042">The <span data-type="term" group-by="c" id="term-00005">complex conjugate</span> of a complex number <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> It is found by changing the sign of the imaginary part of the complex number. The real part of the number is left unchanged.</p>
+<ul id="fs-id1435532">
+<li>When a complex number is multiplied by its complex conjugate, the result is a real number.</li>
+<li>When a complex number is added to its complex conjugate, the result is a real number.</li>
+</ul>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_06"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">6</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1332427"><header></header><section>
+<div data-type="problem" id="fs-id1208193"><div class="os-problem-container"><h4 data-type="title">Finding Complex Conjugates</h4>
+<p id="fs-id791546">Find the complex conjugate of each number.</p>
+<ol class="circled" id="fs-id1183222" type="1"><li><span class="token">ⓐ</span> <math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi><msqrt>
+<mn>5</mn>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi><msqrt>
+<mn>5</mn>
+</msqrt>
+</mrow></annotation-xml></semantics></math> </li>
+<li><span class="token">ⓑ</span> <math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math> </li>
+</ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id2935900">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol class="circled" id="fs-id1216223" type="1"><li><span class="token">ⓐ</span>The number is already in the form <math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math> The complex conjugate is <math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math> or <math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mi>i</mi><msqrt>
+<mn>5</mn>
+</msqrt>
+<mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>2</mn><mo>−</mo><mi>i</mi><msqrt>
+<mn>5</mn>
+</msqrt>
+<mo>.</mo>
+</mrow></annotation-xml></semantics></math> </li>
+<li><span class="token">ⓑ</span>We can rewrite this number in the form <math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi>
+</mrow></annotation-xml></semantics></math> as <math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>0</mn><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math> The complex conjugate is <math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math> or <math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>0</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math> This can be written simply as <math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math> </li>
+</ol></div>
+</section>
+</details>
+<div data-type="commentary" id="fs-id1425864"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id2315664">Although we have seen that we can find the complex conjugate of an imaginary number, in practice we generally find the complex conjugates of only complex numbers with both a real and an imaginary component. To obtain a real number from an imaginary number, we can simply multiply by <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p>
+</div>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id1445609"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#6</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_06"><header></header><section><div data-type="problem" id="fs-id1562514"><div class="os-problem-container"><p id="fs-id1562515">Find the complex conjugate of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−3</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div></div>
+</section></div>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id2521760"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1395747"><strong>Given two complex numbers, divide one by the other.</strong></p>
+<ol id="fs-id2753766" type="1"><li>Write the division problem as a fraction.</li>
+<li>Determine the complex conjugate of the denominator.</li>
+<li>Multiply the numerator and denominator of the fraction by the complex conjugate of the denominator.</li>
+<li>Simplify.</li>
+</ol></div></section></div>
+<div class="ui-has-child-title" data-type="example" id="Example_02_04_07"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">7</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1462292"><header></header><section>
+<div data-type="problem" id="fs-id1883764"><div class="os-problem-container"><h4 data-type="title">Dividing Complex Numbers</h4>
+<p id="fs-id1531602">Divide: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> by <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id1511138">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-id2483518">We begin by writing the problem as a fraction.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1736666"> <math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id3119235">Then we multiply the numerator and denominator by the complex conjugate of the denominator.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1500527"> <math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mo>⋅</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mo>⋅</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math> </div>
+<p id="fs-id1204485">To multiply two complex numbers, we expand the product as we would with polynomials (using FOIL).</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2906059"> <math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mo>⋅</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo>+</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>5</mn><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>16</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>−</mo><mn>4</mn><mi>i</mi><mo>−</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo>+</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>5</mn><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mn>16</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>−</mo><mn>4</mn><mi>i</mi><mo>−</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Because</mtext><mo> </mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>22</mn><mi>i</mi></mrow>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<mn>22</mn></mrow>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+<mi>i</mi></mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Separate real and imaginary parts</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mo>⋅</mo><mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo>+</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>5</mn><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>16</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>−</mo><mn>4</mn><mi>i</mi><mo>−</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo>+</mo><mn>20</mn><mi>i</mi><mo>+</mo><mn>5</mn><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mn>16</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo>−</mo><mn>4</mn><mi>i</mi><mo>−</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Because</mtext><mo> </mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1.</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>22</mn><mi>i</mi></mrow>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<mn>22</mn></mrow>
+<mrow>
+<mn>17</mn></mrow>
+</mfrac>
+<mi>i</mi></mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Separate real and imaginary parts</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow></annotation-xml></semantics></math>
+</div><p id="fs-id2486676">Note that this expresses the quotient in standard form.</p>
+</div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+</section><section data-depth="1" id="fs-id1555717"><h3 data-type="title">Simplifying Powers of <em data-effect="italics">i</em></h3><p id="fs-id2049707">The powers of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> are cyclic. Let’s look at what happens when we raise <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> to increasing powers.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1537277"> <math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>1</mn>
+</msup>
+<mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mn>−1</mn><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><mi>i</mi><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>1</mn>
+</msup>
+<mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mn>−1</mn><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><mi>i</mi><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>−</mi><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>⋅</mo><mi>i</mi><mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow></annotation-xml></semantics></math> </div><p id="fs-id2498837">We can see that when we get to the fifth power of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> it is equal to the first power. As we continue to multiply <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> by increasing powers, we will see a cycle of four. Let’s examine the next four powers of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1943372"> <math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>6</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mi>i</mi><mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>6</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mi>−</mi><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>9</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>6</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><mi>i</mi><mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>6</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mi>−</mi><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>9</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>⋅</mo><mi>i</mi><mo>=</mo><msup>
+<mi>i</mi>
+<mn>5</mn>
+</msup>
+<mo>=</mo><mi>i</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow></annotation-xml></semantics></math> </div><p id="fs-id1442394">The cycle is repeated continuously: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>,</mo><mn>−1</mn><mo>,</mo><mo>−</mo><mi>i</mi><mo>,</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi><mo>,</mo><mn>−1</mn><mo>,</mo><mo>−</mo><mi>i</mi><mo>,</mo><mn>1</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> every four powers.</p><div class="ui-has-child-title" data-type="example" id="Example_02_04_08"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">8</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1831392"><header></header><section>
+<div data-type="problem" id="fs-id2440261"><div class="os-problem-container"><h4 data-type="title">Simplifying Powers of <math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>i</mi>
+</mrow></annotation-xml></semantics></math> </h4>
+<p id="fs-id1716914">Evaluate: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-id2435624">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-id1269680">Since <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>1</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> we can simplify the problem by factoring out as many factors of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow></annotation-xml></semantics></math></span> as possible. To do so, first determine how many times 4 goes into 35: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>35</mn><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>3.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>35</mn><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>3.</mn>
+</mrow></annotation-xml></semantics></math></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1257595"> <math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>4</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>3</mn>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>4</mn><mo>⋅</mo><mn>8</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mn>1</mn>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mo>−</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>4</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>3</mn>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>4</mn><mo>⋅</mo><mn>8</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mn>1</mn>
+<mn>8</mn>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mo>−</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </div>
+</div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="precalculus try ui-has-child-title" data-has-label="true" data-label="Try It" data-type="note" id="fs-id1845345"><header><h3 class="os-title" data-label-parent="Try It">
+<span class="os-title-label">Try It </span>
+<span class="os-number">#7</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_04_07"><header></header><section><div data-type="problem" id="fs-id1745095"><div class="os-problem-container"><p id="fs-id1745096">Evaluate: <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>18</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>18</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> </p></div></div>
+</section></div>
+</div></section></div>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1567766"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id2683377"><strong>Can we write <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> in other helpful ways?</strong></p>
+<p id="fs-id1557516"><em data-effect="italics">As we saw in <a aria-label="Go to Example 8" class="autogenerated-content" href="2-4-complex-numbers#Example_02_04_08">Example 8</a>, we reduced <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> to <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+</mrow></annotation-xml></semantics></math></span> by dividing the exponent by 4 and using the remainder to find the simplified form. But perhaps another factorization of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> may be more useful. <a aria-label="View Table 1" class="autogenerated-content" href="2-4-complex-numbers#Table_02_04_01">Table 1</a> shows some other possible factorizations.</em></p><div class="os-table" id="Table_02_04_01"><table data-id="Table_02_04_01" data-summary="A table with 3 rows and 5 columns.  The entries in the first row are: Factorization of i raised to the thirty-fifth power, i to the thirty-fourth power times i, i raised to the thirty-third power times i squared, i to the thirty-first power times i to the fourth power and i to the nineteenth power times i to the sixteenth power.  The entries in the second row are: Reduced form, the quantity i squared raised to the seventeenth power times i, i to the thirty-third power times negative one, i to the thirty-first power times one and i to the nineteenth power times the quantity i to the fourth raised to the fourth power.  The entries in the third row are: Simplified form, negative one to the seventeenth power times i, negative i raised to the thirty-third power, i raised to the thirty-first power and i raised to the nineteenth power."><tbody>
+<tr>
+<td data-align="center"><strong>Factorization of</strong> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>35</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>34</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>34</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>16</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>16</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+</tr>
+<tr>
+<td data-align="center"><strong>Reduced form</strong></td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>17</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>17</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math>
+</td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mn>1</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mn>1</mn>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+</tr>
+<tr>
+<td data-align="center"><strong>Simplified form</strong></td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>17</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>17</mn>
+</mrow>
+</msup>
+<mo>⋅</mo><mi>i</mi>
+</mrow></annotation-xml></semantics></math>
+</td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo>−</mo><msup>
+<mi>i</mi>
+<mrow>
+<mn>33</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math>
+</td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>31</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+<td data-align="center"> <math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>19</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math> </td>
+</tr>
+</tbody></table><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">
+<span data-type="title">
+<!-- no-selfclose -->
+</span>
+</span>
+</div>
+</div>
+<p id="fs-id1164415"><em data-effect="italics">Each of these will eventually result in the answer we obtained above but may require several more steps than our earlier method.</em></p>
+</div></section></div>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id2888800"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1339843">Access these online resources for additional instruction and practice with complex numbers.</p>
+<ul id="fs-id2876017"><li><a aria-label="Go to Adding and Subtracting Complex Numbers" href="https://openstax.org/l/addsubcomplex" rel="noopener nofollow" target="_blank">Adding and Subtracting Complex Numbers</a></li>
+<li><a aria-label="Go to Multiply Complex Numbers" href="https://openstax.org/l/multiplycomplex" rel="noopener nofollow" target="_blank">Multiply Complex Numbers</a></li>
+<li><a aria-label="Go to Multiplying Complex Conjugates" href="https://openstax.org/l/multcompconj" rel="noopener nofollow" target="_blank">Multiplying Complex Conjugates</a></li>
+<li><a aria-label="Go to Raising i to Powers" href="https://openstax.org/l/raisingi" rel="noopener nofollow" target="_blank">Raising <em data-effect="italics">i</em> to Powers</a></li>
+</ul></div></section></div>
+</section>
+<div class="os-eos os-section-exercises-container" data-uuid-key=".section-exercises"><h3 data-type="document-title">
+<span class="os-text">2.4 Section Exercises</span>
+</h3>
+<section class="section-exercises" data-depth="1" id="fs-id3236190">
+<section data-depth="2" id="fs-id1399221"><h4 data-type="title">Verbal</h4>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1418488"><header></header><section><div data-type="problem" id="fs-id767934">
+<a aria-label="Go to 1" class="os-number" data-page-fragment="fs-id1418488-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">1</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id767935">Explain how to add complex numbers.</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2638642"><header></header><section><div data-type="problem" id="fs-id1561233">
+<span class="os-number">2</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1561234">What is the basic principle in multiplication of complex numbers?</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1265940"><header></header><section><div data-type="problem" id="fs-id1265942">
+<a aria-label="Go to 3" class="os-number" data-page-fragment="fs-id1265940-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">3</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1181910">Give an example to show that the product of two imaginary numbers is not always imaginary.</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1289893"><header></header><section><div data-type="problem" id="fs-id1289894">
+<span class="os-number">4</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1289895">What is a characteristic of the plot of a real number in the complex plane?</p></div>
+</div></section></div>
+</section>
+<section data-depth="2" id="fs-id2979908"><h4 data-type="title">Algebraic</h4>
+<p id="fs-id1722892">For the following exercises, evaluate the algebraic expressions.</p>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1295468"><header></header><section><div data-type="problem" id="fs-id2906264">
+<a aria-label="Go to 5" class="os-number" data-page-fragment="fs-id1295468-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">5</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2906265">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo>,</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo>,</mo></mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1332284"><header></header><section><div data-type="problem" id="fs-id1332285">
+<span class="os-number">6</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id3229108">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mo>,</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mo>,</mo></mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1570762"><header></header><section><div data-type="problem" id="fs-id1570763">
+<a aria-label="Go to 7" class="os-number" data-page-fragment="fs-id1570762-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">7</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1463486">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>,</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>,</mo></mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1339584"><header></header><section><div data-type="problem" id="fs-id1339585">
+<span class="os-number">8</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1339586">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>,</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>,</mo></mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1701288"><header></header><section><div data-type="problem" id="fs-id1701289">
+<a aria-label="Go to 9" class="os-number" data-page-fragment="fs-id1701288-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">9</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1701290">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mi>x</mi>
+</mrow>
+</mfrac>
+<mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mi>x</mi>
+</mrow>
+</mfrac>
+<mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>5</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mn>5</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1353461"><header></header><section><div data-type="problem" id="fs-id3008607">
+<span class="os-number">10</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id3008608">If <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mfrac>
+<mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mfrac>
+<mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>y</mi>
+</mrow></annotation-xml></semantics></math></span> given <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>x</mi><mo>=</mo><mn>4</mn><mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+</section>
+<section data-depth="2" id="fs-id1512803"><h4 data-type="title">Graphical</h4>
+<p id="fs-id1951802">For the following exercises, plot the complex numbers on the complex plane.</p>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2771166"><header></header><section><div data-type="problem" id="fs-id2771167">
+<a aria-label="Go to 11" class="os-number" data-page-fragment="fs-id2771166-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">11</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2771168"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>1</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1312026"><header></header><section><div data-type="problem" id="fs-id1312027">
+<span class="os-number">12</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2048575"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1045430"><header></header><section>
+<div data-type="problem" id="fs-id1403322">
+<a aria-label="Go to 13" class="os-number" data-page-fragment="fs-id1045430-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">13</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1403323"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mi>i</mi>
+</mrow><annotation-xml encoding="MathML-Content"><mi>i</mi></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2513619"><header></header><section><div data-type="problem" id="fs-id2513620">
+<span class="os-number">14</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2513621"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>−</mo><mn>4</mn><mi>i</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mn>−3</mn><mo>−</mo><mn>4</mn><mi>i</mi>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+</section>
+<section data-depth="2" id="fs-id2644609"><h4 data-type="title">Numeric</h4>
+<p id="fs-id2777086">For the following exercises, perform the indicated operation and express the result as a simplified complex number.</p>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1296020"><header></header><section><div data-type="problem" id="fs-id1296021">
+<a aria-label="Go to 15" class="os-number" data-page-fragment="fs-id1296020-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">15</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1296022"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>5</mn><mo>−</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>5</mn><mo>−</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1826038"><header></header><section><div data-type="problem" id="fs-id1826039">
+<span class="os-number">16</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1826040"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>6</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>6</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2441443"><header></header><section><div data-type="problem" id="fs-id2441444">
+<a aria-label="Go to 17" class="os-number" data-page-fragment="fs-id2441443-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">17</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2778017"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−5</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>−</mo><mo stretchy="false">(</mo><mn>6</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−5</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>−</mo><mo stretchy="false">(</mo><mn>6</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2439091"><header></header><section><div data-type="problem" id="fs-id2496696">
+<span class="os-number">18</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2496697"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1976046"><header></header><section><div data-type="problem" id="fs-id1976047">
+<a aria-label="Go to 19" class="os-number" data-page-fragment="fs-id1976046-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">19</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1976048"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>−4</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−6</mn><mo>+</mo><mn>9</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><mn>−4</mn><mo>+</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−6</mn><mo>+</mo><mn>9</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1509888"><header></header><section><div data-type="problem" id="fs-id1509889">
+<span class="os-number">20</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1509890"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mi>i</mi><mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1562525"><header></header><section><div data-type="problem" id="fs-id1562526">
+<a aria-label="Go to 21" class="os-number" data-page-fragment="fs-id1562525-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">21</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id3176342"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2505958"><header></header><section><div data-type="problem" id="fs-id2267959">
+<span class="os-number">22</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2267960"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>6</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>6</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1710164"><header></header><section><div data-type="problem" id="fs-id1710165">
+<a aria-label="Go to 23" class="os-number" data-page-fragment="fs-id1710164-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">23</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1710166"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mn>8</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mn>8</mn>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2905259"><header></header><section><div data-type="problem" id="fs-id1907594">
+<span class="os-number">24</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1907595"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2905821"><header></header><section><div data-type="problem" id="fs-id2781269">
+<a aria-label="Go to 25" class="os-number" data-page-fragment="fs-id2905821-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">25</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2781270"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn><mo>+</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−1</mn><mo>+</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>−2</mn><mo>+</mo><mn>3</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1832281"><header></header><section><div data-type="problem" id="fs-id1832282">
+<span class="os-number">26</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1832283"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1894961"><header></header><section><div data-type="problem" id="fs-id1894962">
+<a aria-label="Go to 27" class="os-number" data-page-fragment="fs-id1894961-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">27</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1894963"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1919888"><header></header><section><div data-type="problem" id="fs-id1919889">
+<span class="os-number">28</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1919890"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1403158"><header></header><section><div data-type="problem" id="fs-id2293278">
+<a aria-label="Go to 29" class="os-number" data-page-fragment="fs-id1403158-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">29</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2293280"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>6</mn><mo>−</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>6</mn><mo>−</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1576927"><header></header><section><div data-type="problem" id="fs-id1576928">
+<span class="os-number">30</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1726713"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mo>−</mo><mn>5</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mo>−</mo><mn>5</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1403309"><header></header><section><div data-type="problem" id="fs-id1403310">
+<a aria-label="Go to 31" class="os-number" data-page-fragment="fs-id1403309-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">31</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1403311"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>6</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mi>i</mi>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>6</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mi>i</mi>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1591150"><header></header><section><div data-type="problem" id="fs-id1228965">
+<span class="os-number">32</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1228966"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2437570"><header></header><section><div data-type="problem" id="fs-id1205233">
+<a aria-label="Go to 33" class="os-number" data-page-fragment="fs-id2437570-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">33</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1205234"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2484840"><header></header><section><div data-type="problem" id="fs-id2691265">
+<span class="os-number">34</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2691266"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2506948"><header></header><section><div data-type="problem" id="fs-id1482316">
+<a aria-label="Go to 35" class="os-number" data-page-fragment="fs-id2506948-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">35</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1482317"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>−9</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><mn>3</mn><msqrt>
+<mrow>
+<mn>−16</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>−9</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><mn>3</mn><msqrt>
+<mrow>
+<mn>−16</mn>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2048454"><header></header><section><div data-type="problem" id="fs-id3008542">
+<span class="os-number">36</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id3008543"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><msqrt>
+<mrow>
+<mn>−4</mn></mrow>
+</msqrt>
+<mo>−</mo><mn>4</mn><msqrt>
+<mrow>
+<mn>−25</mn></mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo>−</mo><msqrt>
+<mrow>
+<mn>−4</mn></mrow>
+</msqrt>
+<mo>−</mo><mn>4</mn><msqrt>
+<mrow>
+<mn>−25</mn></mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1823209"><header></header><section><div data-type="problem" id="fs-id1823210">
+<a aria-label="Go to 37" class="os-number" data-page-fragment="fs-id1823209-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">37</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1560121"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>+</mo><msqrt>
+<mrow>
+<mo>−</mo><mn>12</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mo>+</mo><msqrt>
+<mrow>
+<mo>−</mo><mn>12</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1823150"><header></header><section><div data-type="problem" id="fs-id2644284">
+<span class="os-number">38</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2644285"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>4</mn><mo>+</mo><msqrt>
+<mrow>
+<mo>−</mo><mn>20</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>4</mn><mo>+</mo><msqrt>
+<mrow>
+<mo>−</mo><mn>20</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1690727"><header></header><section><div data-type="problem" id="fs-id1690728">
+<a aria-label="Go to 39" class="os-number" data-page-fragment="fs-id1690727-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">39</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1690729"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>8</mn>
+</msup>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2995714"><header></header><section><div data-type="problem" id="fs-id2995715">
+<span class="os-number">40</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id3133451"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>15</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>15</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1479782"><header></header><section><div data-type="problem" id="fs-id2512584">
+<a aria-label="Go to 41" class="os-number" data-page-fragment="fs-id1479782-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">41</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2512585"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>22</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>22</mn>
+</mrow>
+</msup>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+</section>
+<section data-depth="2" id="fs-id1537530"><h4 data-type="title">Technology</h4>
+<p id="fs-id1353170">For the following exercises, use a calculator to help answer the questions.</p>
+<div data-type="exercise" id="fs-id2980662"><header></header><section><div data-type="problem" id="fs-id2980663">
+<span class="os-number">42</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2980664">Evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mi>k</mi>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mi>k</mi>
+</msup>
+</mrow></annotation-xml></semantics></math></span> for <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> and <span class="os-math-in-para"><math display="inline"><semantics><mrow><mn>12</mn></mrow><annotation-xml encoding="MathML-Content"><mn>12</mn></annotation-xml></semantics></math></span>. Predict the value if <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>16.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>16.</mn>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2279285"><header></header><section><div data-type="problem" id="fs-id2279286">
+<a aria-label="Go to 43" class="os-number" data-page-fragment="fs-id2279285-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">43</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2279287">Evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mi>k</mi>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+<mi>k</mi>
+</msup>
+</mrow></annotation-xml></semantics></math></span> for <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> and <span class="os-math-in-para"><math display="inline"><semantics><mrow><mn>10</mn></mrow><annotation-xml encoding="MathML-Content"><mn>10</mn></annotation-xml></semantics></math></span>. Predict the value if <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>14.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>14.</mn>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1007677"><header></header><section><div data-type="problem" id="fs-id1007678">
+<span class="os-number">44</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1520536">Evaluate <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mtext>l</mtext><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mi>k</mi>
+</msup>
+<mo>−</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mtext>l</mtext><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mi>k</mi>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mtext>l</mtext><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mi>k</mi>
+</msup>
+<mo>−</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mtext>l</mtext><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+<mi>k</mi>
+</msup>
+</mrow></annotation-xml></semantics></math></span> for <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo>
+</mrow></annotation-xml></semantics></math></span> and <span class="os-math-in-para"><math display="inline"><semantics><mrow><mn>12</mn></mrow><annotation-xml encoding="MathML-Content"><mn>12</mn></annotation-xml></semantics></math></span>. Predict the value for <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mn>16.</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>k</mi><mo>=</mo><mn>16.</mn>
+</mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2410330"><header></header><section><div data-type="problem" id="fs-id2410331">
+<a aria-label="Go to 45" class="os-number" data-page-fragment="fs-id2410330-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">45</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2410332">Show that a solution of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>6</mn>
+</msup>
+<mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>x</mi>
+<mn>6</mn>
+</msup>
+<mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1385742"><header></header><section><div data-type="problem" id="fs-id1385743">
+<span class="os-number">46</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1385744">Show that a solution of <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>8</mn>
+</msup>
+<mn>−1</mn><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>x</mi>
+<mn>8</mn>
+</msup>
+<mn>−1</mn><mo>=</mo><mn>0</mn>
+</mrow></annotation-xml></semantics></math></span> is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mi>i</mi><mo>.</mo>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+</section>
+<section data-depth="2" id="fs-id2494010"><h4 data-type="title">Extensions</h4>
+<p id="fs-id2371706">For the following exercises, evaluate the expressions, writing the result as a simplified complex number.</p>
+<div class="os-hasSolution" data-type="exercise" id="fs-id3161030"><header></header><section><div data-type="problem" id="fs-id3161031">
+<a aria-label="Go to 47" class="os-number" data-page-fragment="fs-id3161030-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">47</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2434972"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>i</mi>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>1</mn>
+<mi>i</mi>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2794969"><header></header><section><div data-type="problem" id="fs-id2794970">
+<span class="os-number">48</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2794971"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>11</mn>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>21</mn>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>11</mn>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>21</mn>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2716062"><header></header><section><div data-type="problem" id="fs-id2716064">
+<a aria-label="Go to 49" class="os-number" data-page-fragment="fs-id2716062-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">49</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2515854"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><msup>
+<mi>i</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2370481"><header></header><section><div data-type="problem" id="fs-id2943044">
+<span class="os-number">50</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2943045"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>−3</mn>
+</mrow>
+</msup>
+<mo>+</mo><mn>5</mn><msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msup>
+<mi>i</mi>
+<mrow>
+<mn>−3</mn>
+</mrow>
+</msup>
+<mo>+</mo><mn>5</mn><msup>
+<mi>i</mi>
+<mn>7</mn>
+</msup>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1390725"><header></header><section><div data-type="problem" id="fs-id1390726">
+<a aria-label="Go to 51" class="os-number" data-page-fragment="fs-id1390725-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">51</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1390727"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>−</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id1914286"><header></header><section><div data-type="problem" id="fs-id1914287">
+<span class="os-number">52</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id1945289"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>4</mn><mi>i</mi></mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+</p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id2357467"><header></header><section><div data-type="problem" id="fs-id2357468">
+<a aria-label="Go to 53" class="os-number" data-page-fragment="fs-id2357467-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">53</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2357469"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id2294729"><header></header><section><div data-type="problem" id="fs-id2721846">
+<span class="os-number">54</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2721848"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi>
+</mrow>
+</mfrac>
+<mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mi>i</mi>
+</mrow>
+</mfrac>
+<mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mo>+</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+<div class="os-hasSolution" data-type="exercise" id="fs-id1758544"><header></header><section><div data-type="problem" id="fs-id1758545">
+<a aria-label="Go to 55" class="os-number" data-page-fragment="fs-id1758544-solution" data-page-slug="chapter-2" data-page-uuid="56cb9f76-1e9d-5e02-b989-634734fbbd83" href="chapter-2">55</a><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2932432"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>4</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mi>i</mi>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>1</mn><mo>−</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>4</mn><mo>+</mo><mi>i</mi>
+</mrow>
+<mi>i</mi>
+</mfrac>
+<mo>+</mo><mfrac>
+<mrow>
+<mn>3</mn><mo>−</mo><mn>4</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>1</mn><mo>−</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div>
+</section></div>
+<div data-type="exercise" id="fs-id3034376"><header></header><section><div data-type="problem" id="fs-id3034377">
+<span class="os-number">56</span><span class="os-divider">. </span>
+<div class="os-problem-container"><p id="fs-id2402604"> <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+</mfrac>
+<mo>−</mo><mfrac>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>3</mn><mo>+</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>2</mn><mi>i</mi>
+</mrow>
+</mfrac>
+<mo>−</mo><mfrac>
+<mrow>
+<mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi>
+</mrow>
+<mrow>
+<mn>3</mn><mo>+</mo><mi>i</mi>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> </p></div>
+</div></section></div>
+</section>
+</section></div>
+</div>

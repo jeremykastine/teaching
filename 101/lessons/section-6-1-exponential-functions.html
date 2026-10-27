@@ -1,0 +1,3602 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>6.1: Exponential Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-5-7-inverses-and-radical-functions.html">Previous: 5.7</a><a href="section-6-2-graphs-of-exponential-functions.html">Next: 6.2</a><a href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>6.1: Exponential Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Evaluate exponential functions.</li>
+<li>Find the equation of an exponential function.</li>
+<li>Use compound interest formulas.</li>
+<li>Evaluate exponential functions with base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>e</mi></mrow></semantics></math></span> .</li>
+</ul></section></div>
+<p class="has-noteref" id="fs-id1165137640062">India is the second most populous country in the world with a population of about <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.39</mn>
+</mrow>
+</mrow></semantics></math></span></span> billion people in 2021. The population is growing at a rate of about <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.2</mn><mi>%</mi>
+</mrow>
+</mrow></semantics></math></span></span> each year<sup data-type="footnote-number" id="footnote-ref1"><a aria-label="Go to 2" data-type="footnote-link" epub:type="noteref" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#fs-id1165135184203" role="doc-noteref">2</a></sup>. If this rate continues, the population of India will exceed China’s population by the year <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2027.</mn>
+</mrow>
+</mrow></semantics></math></span></span> When populations grow rapidly, we often say that the growth is “exponential,” meaning that something is growing very rapidly. To a mathematician, however, the term <em data-effect="italics">exponential growth </em>has a very specific meaning. In this section, we will take a look at <em data-effect="italics">exponential functions</em>, which model this kind of rapid growth.</p>
+<section data-depth="1" id="fs-id1165135159940"><h3 data-type="title">Identifying Exponential Functions</h3>
+<p id="fs-id1165137446191">When exploring linear growth, we observed a constant rate of change—a constant number by which the output increased for each unit increase in input. For example, in the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the slope tells us the output increases by 3 each time the input increases by 1. The scenario in the India population example is different because we have a <em data-effect="italics">percent</em> change per unit time (rather than a constant change) in the number of people.</p>
+<section data-depth="2" id="fs-id1165137477143"><h4 data-type="title">Defining an Exponential Function</h4><p id="fs-id1165137553324">A study found that the percent of the population who are vegans in the United States doubled from 2009 to 2011. In 2011, 2.5% of the population was vegan, adhering to a diet that does not include any animal products—no meat, poultry, fish, dairy, or eggs. If this rate continues, vegans will make up 10% of the U.S. population in 2015, 40% in 2019, and 80% in 2021.</p><p id="fs-id1165134069131">What exactly does it mean to <em data-effect="italics">grow exponentially</em>? What does the word <em data-effect="italics">double </em>have in common with <em data-effect="italics">percent increase</em>? People toss these words around errantly. Are these words used correctly? The words certainly appear frequently in the media.
+</p><ul id="fs-id1165134042783">
+<li><strong>Percent change </strong>refers to a <em data-effect="italics">change</em> based on a <em data-effect="italics">percent</em> of the original amount.</li>
+<li><strong>Exponential growth </strong>refers to an <em data-effect="italics">increase</em> based on a constant multiplicative rate of change over equal increments of time, that is, a <em data-effect="italics">percent</em> increase of the original amount over time.</li>
+<li><span data-type="term" group-by="E" id="term-00004">Exponential decay</span> refers to a <em data-effect="italics">decrease</em> based on a constant multiplicative rate of change over equal increments of time, that is, a <em data-effect="italics">percent</em> decrease of the original amount over time.</li>
+</ul>
+<p id="fs-id1165137760753">For us to gain a clear understanding of <span class="no-emphasis" data-type="term" group-by="e" id="term-00005">exponential growth</span>, let us contrast exponential growth with <span class="no-emphasis" data-type="term" group-by="l" id="term-00006">linear growth</span>. We will construct two functions. The first function is exponential. We will start with an input of 0, and increase each input by 1. We will double the corresponding consecutive outputs. The second function is linear. We will start with an input of 0, and increase each input by 1. We will add 2 to the corresponding consecutive outputs. See <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_01">Table 1</a>.</p>
+<div class="os-table" id="Table_04_01_01"><div class="table-scroll"><table data-id="Table_04_01_01" data-summary="Eight rows and three columns. The first column is labeled, “x”, which goes from 0 to 6; the second column is labeled, “f(x)=2^x”; and the third column is labeled, “g(x) = 2x”. The following values are for the function f: (0, 1), (1, 2), (2, 4), (3, 8), (4, 16), (5, 32), and (6, 64). The following values are for the function g: (0, 0), (1, 2), (2, 4), (3, 6), (4, 8), (5, 10), and (6, 12)."><thead>
+<tr>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </th>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </th>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span> </th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">0</td>
+<td data-align="center">1</td>
+<td data-align="center">0</td>
+</tr>
+<tr>
+<td data-align="center">1</td>
+<td data-align="center">2</td>
+<td data-align="center">2</td>
+</tr>
+<tr>
+<td data-align="center">2</td>
+<td data-align="center">4</td>
+<td data-align="center">4</td>
+</tr>
+<tr>
+<td data-align="center">3</td>
+<td data-align="center">8</td>
+<td data-align="center">6</td>
+</tr>
+<tr>
+<td data-align="center">4</td>
+<td data-align="center">16</td>
+<td data-align="center">8</td>
+</tr>
+<tr>
+<td data-align="center">5</td>
+<td data-align="center">32</td>
+<td data-align="center">10</td>
+</tr>
+<tr>
+<td data-align="center">6</td>
+<td data-align="center">64</td>
+<td data-align="center">12</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+</div>
+</div><p id="fs-id1165135190676">From <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_01">Table 1</a> we can infer that for these two functions, exponential growth dwarfs linear growth.</p><ul id="fs-id1165137725808"><li><strong>Exponential growth </strong>refers to the original value from the range increasing by the <em data-effect="italics">same percentage</em> over equal increments found in the domain.</li>
+<li><strong>Linear growth</strong> refers to the original value from the range increasing by the <em data-effect="italics">same amount</em> over equal increments found in the domain.</li>
+</ul><p id="fs-id1165137561507">Apparently, the difference between “the same percentage” and “the same amount” is quite significant. For exponential growth, over equal increments, the constant multiplicative rate of change resulted in doubling the output whenever the input increased by one.  For linear growth, the constant additive rate of change over equal increments resulted in adding 2 to the output whenever the input was increased by one.</p><p id="fs-id1165135445949">The general form of the <span class="no-emphasis" data-type="term" group-by="e" id="term-00007">exponential function</span> is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> is any nonzero number, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span></span> is a positive real number not equal to 1.</p><ul id="fs-id1165137635065"><li>If <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>&gt;</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> the function grows at a rate proportional to its size.</li>
+<li>If <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> the function decays at a rate proportional to its size.</li>
+</ul><p id="fs-id1165137465225">Let’s look at the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> from our example. We will create a table (<a aria-label="View Table 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_02">Table 2</a>) to determine the corresponding outputs over an interval in the domain from <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>−</mi><mn>3</mn>
+</mrow>
+</mrow></semantics></math></span></span> to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="os-table" id="Table_04_01_02"><div class="table-scroll"><table data-id="Table_04_01_02" data-summary="Two rows and eight columns. The first row is labeled, “x”, and the second row is labeled, “f(x)=2^x”. Reading the columns as ordered pairs, we have the following values: (-3, 2^(-3)=1/8), (-2, 2^(-2)=1/4), (-1, 2^(-1)=1/2), (0, 2^(0)=1), (1, 2^(1)=2), (2, 2^(2)=4), and (3, 2^(3)=8)." role="presentation"><tbody>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </strong>
+</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mn>3</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mn>2</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>0</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>1</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>2</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>3</mn>
+</mrow></semantics></math></span> </td>
+</tr>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </strong></td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mrow>
+<mo>−</mo><mn>3</mn>
+</mrow>
+</msup>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mrow>
+<mo>−</mo><mn>2</mn>
+</mrow>
+</msup>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mn>0</mn>
+</msup>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mn>1</mn>
+</msup>
+<mo>=</mo><mn>2</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>4</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>2</mn>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mn>8</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+</div>
+</div><p id="fs-id1165137640874">Let us examine the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi>
+</mrow>
+</mrow></semantics></math></span></span> by plotting the ordered pairs we observe on the table in <a aria-label="View Figure 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_006">Figure 1</a>, and then make a few observations.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_006"><figure class="medium ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_006">
+<span data-alt="Graph of Companies A and B’s functions, which values are found in the previous table." data-type="media" id="fs-id1165137571891">
+<img alt="Graph of Companies A and B’s functions, which values are found in the previous table." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/8ecdaa9359fba13ac004ef97fb893abf3b8a1935" loading="lazy" src="../../notes-assets/df36a9899755f96eaad4.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div><p id="fs-id1165137408862">Let’s define the behavior of the graph of the exponential function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> and highlight some its key characteristics.</p><ul id="fs-id1165137566018"><li>the domain is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mi>∞</mi><mo>,</mo><mi>∞</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>the range is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>∞</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>as <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mrow><mrow><mo stretchy="false">→</mo></mrow></mrow><mi>∞</mi><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mrow><mrow><mo stretchy="false">→</mo></mrow></mrow><mi>∞</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>as <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mrow><mrow><mo stretchy="false">→</mo></mrow></mrow><mo>−</mo><mi>∞</mi><mo>,</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mrow><mrow><mo stretchy="false">→</mo></mrow></mrow><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> is always increasing,</li>
+<li>the graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> will never touch the <em data-effect="italics">x</em>-axis because base two raised to any exponent never has the result of zero.</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span> is the horizontal asymptote.</li>
+<li>the <em data-effect="italics">y</em>-intercept is 1.</li>
+</ul>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137442472"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Exponential Function</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137911387">For any real number <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> an exponential function is a function with the form</p>
+<div class="unnumbered" data-label="" data-type="equation" id="Equation_4_1_1"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-751">where</p><ul id="fs-id1165137401680"><li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> is a non-zero real number called the initial value and</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span> is any positive real number such that <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>The domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi>
+</mrow>
+</mrow></semantics></math></span> is all real numbers.</li>
+<li>The range of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi>
+</mrow>
+</mrow></semantics></math></span> is all positive real numbers if <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>&gt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>The range of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi>
+</mrow>
+</mrow></semantics></math></span> is all negative real numbers if <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>&lt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>The <em data-effect="italics">y</em>-intercept is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> and the horizontal asymptote is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ul></div></section></div>
+<section class="worked-example" id="Example_04_01_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137387381"><header></header><section>
+<div data-type="problem" id="fs-id1165137659178"><div class="os-problem-container"><h4 data-type="title">Identifying Exponential Functions</h4>
+<p id="fs-id1165137601478">Which of the following equations are <em data-effect="italics">not</em> exponential functions?</p>
+<ul id="fs-id1165135176602">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>4</mn>
+<mrow>
+<mn>3</mn><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>j</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ul>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137698136">By definition, an exponential function has a constant as a base and an independent variable as an exponent. Thus, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> does not represent an exponential function because the base is an independent variable. In fact, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is a power function.</p>
+<p id="fs-id1165137612252">Recall that the base <em data-effect="italics">b </em>of an exponential function is always a positive constant, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Thus, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>j</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> does not represent an exponential function because the base, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> is less than <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section><section class="worked-example" id="fs-id1165137436342"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_01"><header></header><section><div data-type="problem" id="fs-id1165137862673"><div class="os-problem-container"><p id="fs-id1165137424249">Which of the following equations represent exponential functions?</p>
+<ul id="fs-id1165135161022">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mn>0.875</mn>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.75</mn><mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>j</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mn>1095.6</mn>
+</mrow>
+<mrow>
+<mo>−</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ul>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137714559"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mn>0.875</mn>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>j</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mn>1095.6</mn>
+</mrow>
+<mrow>
+<mo>−</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> represent exponential functions.</p>
+</div></section>
+</section></section>
+<section data-depth="1" id="fs-id1165137640042"><h3 data-type="title">Evaluating Exponential Functions</h3>
+<p id="fs-id1165137784783">Recall that the base of an exponential function must be a positive real number other than <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Why do we limit the base <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span></span> to positive values? To ensure that the outputs will be real numbers. Observe what happens if the base is not positive:</p><ul id="fs-id1165137754880">
+<li>Let <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mo>−</mo><mn>9</mn>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> Then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>9</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><msqrt>
+<mrow>
+<mo>−</mo><mn>9</mn>
+</mrow>
+</msqrt>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> which is not a real number.</li>
+</ul>
+<p id="fs-id1165137563360">Why do we limit the base to positive values other than <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>?</mo>
+</mrow>
+</mrow></semantics></math></span></span> Because base <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</mrow></semantics></math></span></span> results in the constant function. Observe what happens if the base is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<ul id="fs-id1165137400268">
+<li>Let <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span> Then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>1</mn>
+<mi>x</mi>
+</msup>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span> for any value of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ul>
+<p id="fs-id1165137459694">To evaluate an exponential function with the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we simply substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> with the given value, and calculate the resulting power. For example:</p>
+<p id="fs-id1165135403544">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> What is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>?</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137643186"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msup>
+<mn>2</mn>
+<mn>3</mn>
+</msup>
+<mspace width="0.5em"></mspace><mtext></mtext>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute </mtext><mi>x</mi><mo>=</mo><mn>3.</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>8</mn><mspace width="0.5em"></mspace><mtext></mtext>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Evaluate the power</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137849020">To evaluate an exponential function with a form other than the basic form, it is important to follow the order of operations. For example:</p>
+<p id="fs-id1165137849024">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> What is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>?</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134086025"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>30</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>30</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute </mtext><mi>x</mi><mo>=</mo><mn>3.</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>30</mn><mrow><mo>(</mo>
+<mn>8</mn>
+<mo>)</mo></mrow><mspace width="0.5em"></mspace><mtext></mtext>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Simplify the power first</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>240</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Multiply</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137841073">Note that if the order of operations were not followed, the result would be incorrect:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135320147"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mn>3</mn>
+</msup>
+<mo>≠</mo><msup>
+<mrow>
+<mn>60</mn>
+</mrow>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mn>216,000</mn>
+</mrow>
+</mrow></semantics></math></span> </div><section class="worked-example" id="Example_04_01_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137455430"><header></header><section>
+<div data-type="problem" id="fs-id1165137455432"><div class="os-problem-container"><h4 data-type="title">Evaluating Exponential Functions</h4>
+<p id="fs-id1165137767841">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>5</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> without using a calculator.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137598173">Follow the order of operations. Be sure to pay attention to the parentheses.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135208555"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>5</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>5</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute </mtext><mi>x</mi><mo>=</mo><mn>2.</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>5</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Add the exponents</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>5</mn><mrow><mo>(</mo>
+<mrow>
+<mn>27</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Simplify the power</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>135</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Multiply</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137843864"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137762786"><div class="os-problem-container">
+<p id="fs-id1165137762788">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>8</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>5</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> using a calculator. Round to four decimal places.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135543522"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>5.5556</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<section data-depth="2" id="fs-id1165137439018"><h4 data-type="title">Defining Exponential Growth</h4><p id="fs-id1165137748523">Because the output of exponential functions increases very rapidly, the term “exponential growth” is often used in everyday language to describe anything that grows or increases rapidly. However, exponential growth can be defined more precisely in a mathematical sense. If the growth rate is proportional to the amount present, the function models exponential growth.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137564690"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Exponential Growth</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137834019">A function that models <span data-type="term" group-by="e" id="term-00008">exponential growth</span> grows by a rate proportional to the amount present. For any real number <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> and any positive real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo> </mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> an exponential growth function has the form</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137851784"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext></mtext><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-626">where</p><ul id="fs-id1165137863819"><li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> is the initial or starting value of the function.</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span> is the growth factor or growth multiplier per unit <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span> .</li>
+</ul></div></section></div>
+<p id="fs-id1165137644244">In more general terms, we have an <em data-effect="italics">exponential function</em>, in which a constant base is raised to a variable exponent. To differentiate between linear and exponential functions, let’s consider two companies, A and B. Company A has 100 stores and expands by opening 50 new stores a year, so its growth can be represented by the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>100</mn><mo>+</mo><mn>50</mn><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Company B has 100 stores and expands by increasing the number of stores by 50% each year, so its growth can be represented by the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>B</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135512493">A few years of growth for these companies are illustrated in <a aria-label="View Table 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_05">Table 3</a>.</p>
+<div class="os-table" id="Table_04_01_05"><div class="table-scroll"><table data-id="Table_04_01_05" data-summary="Six rows and three columns. The first column is labeled, “Year, x”, which goes from 0 to 3; the second column is labeled, “Stores, Company A”, which has a function of A(x) = 100+50x; and the third column is labeled, “Stores, Company B”, which has a function of B(x)=100(1+0.5)^x. The following values are for Company A’s function: (0, 100), (1, 150), (2, 200), and (3, 250). The following values are for the function Company B’s function: (0, 100), (1, 150), (2, 225), and (3, 337.5)."><thead>
+<tr>
+<th data-align="center" scope="col">Year, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </th>
+<th data-align="center" scope="col">Stores, Company A</th>
+<th data-align="center" scope="col">Stores, Company B</th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>0</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mn>50</mn><mrow><mo>(</mo>
+<mn>0</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>100</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>0</mn>
+</msup>
+<mo>=</mo><mn>100</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>1</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mn>50</mn><mrow><mo>(</mo>
+<mn>1</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>150</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>1</mn>
+</msup>
+<mo>=</mo><mn>150</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>2</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mn>50</mn><mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>200</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mn>225</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mn>3</mn>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mn>50</mn><mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow><mo>=</mo><mn>250</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>3</mn>
+</msup>
+<mo>=</mo><mn>337.5</mn>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>100</mn><mo>+</mo><mn>50</mn><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>B</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">3</span>
+<span class="os-divider"> </span>
+</div>
+</div><p id="fs-id1165137653733">The graphs comparing the number of stores for each company over a five-year period are shown in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_001">Figure 2</a><strong>.</strong> We can see that, with exponential growth, the number of stores increases much more rapidly than with linear growth.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_001"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_001">
+<span data-alt="Graph of Companies A and B’s functions, which values are found in the previous table." data-type="media" id="fs-id1165137933223">
+<img alt="Graph of Companies A and B’s functions, which values are found in the previous table." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/91db8ad3bcdf11eac64443894dc55a30a3447d6b" loading="lazy" src="../../notes-assets/7e861611b2aafd8a04a5.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph shows the numbers of stores Companies A and B opened over a five-year period.</span>
+</figcaption></figure></div><p id="fs-id1165135209682">Notice that the domain for both functions is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and the range for both functions is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">[</mo><mn>100</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> After year 1, Company B always has more stores than Company A.</p>
+<p id="fs-id1165137836429">Now we will turn our attention to the function representing the number of stores for Company B, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>B</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> In this exponential function, 100 represents the initial number of stores, 0.50 represents the growth rate, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>0.5</mn><mo>=</mo><mn>1.5</mn>
+</mrow>
+</mrow></semantics></math></span></span> represents the growth factor. Generalizing further, we can write this function as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>B</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>100</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where 100 is the initial value, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.5</mn>
+</mrow>
+</mrow></semantics></math></span></span> is called the <em data-effect="italics">base</em>, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> is called the <em data-effect="italics">exponent</em>.</p>
+<section class="worked-example" id="Example_04_01_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137535640"><header></header><section>
+<div data-type="problem" id="fs-id1165137535642"><div class="os-problem-container"><h4 data-type="title">Evaluating a Real-World Exponential Model</h4>
+<p id="fs-id1165135541867">At the beginning of this section, we learned that the population of India was about <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.25</mn>
+</mrow>
+</mrow></semantics></math></span></span> billion in the year 2013, with an annual growth rate of about <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.2</mn><mi>%</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> This situation is represented by the growth function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.25</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.012</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>t</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span></span> is the number of years since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2013.</mn>
+</mrow>
+</mrow></semantics></math></span></span> To the nearest thousandth, what will the population of India be in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>2031?</mtext>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137786635">To estimate the population in 2031, we evaluate the models for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>18</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> because 2031 is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>18</mn>
+</mrow>
+</mrow></semantics></math></span></span> years after 2013. Rounding to the nearest thousandth,</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135657117"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.25</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.012</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>18</mn>
+</mrow>
+</msup>
+<mo>≈</mo><mn>1.549</mn>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165135394343">There will be about 1.549 billion people in India in the year 2031.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165135536569"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_03"><header></header><section>
+<div data-type="problem" id="fs-id1165137635312"><div class="os-problem-container">
+<p id="fs-id1165137635314">The population of China was about 1.39 billion in the year 2013, with an annual growth rate of about <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0.6</mn><mi>%</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> This situation is represented by the growth function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.39</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.006</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>t</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span></span> is the number of years since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2013.</mn>
+</mrow>
+</mrow></semantics></math></span></span> To the nearest thousandth, what will the population of China be for the year 2031? How does this compare to the population prediction we made for India in <a aria-label="Go to Example 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Example_04_01_03">Example 3</a>?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134200186">About <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.548</mn>
+</mrow>
+</mrow></semantics></math></span></span> billion people; by the year 2031, India’s population will exceed China’s by about 0.001 billion, or 1 million people.</p>
+</div></section>
+</section></section><section data-depth="1" id="fs-id1165135526980"><h3 data-type="title">Finding Equations of Exponential Functions</h3>
+<p id="fs-id1165135526985">In the previous examples, we were given an exponential function, which we then evaluated for a given input. Sometimes we are given information about an exponential function without knowing the function explicitly. We must use the information to first write the form of the function, then determine the constants <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and evaluate the function.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165135369632"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135180102"><strong>Given two data points, write an exponential model.</strong></p>
+<ol id="fs-id1165135180107" type="1"><li>If one of the data points has the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> is the initial value. Using <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> substitute the second point into the equation <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> and solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>If neither of the data points have the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> substitute both points into two equations with the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> Solve the resulting system of two equations in two unknowns to find <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Using the <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span> found in the steps above, write the exponential function in the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_04_01_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137580876"><header></header><section><div data-type="problem" id="fs-id1165137580878"><div class="os-problem-container"><h4 data-type="title">Writing an Exponential Model When the Initial Value Is Known</h4>
+<p id="fs-id1165137667588">In 2006, 80 deer were introduced into a wildlife refuge. By 2012, the population had grown to 180 deer. The population was growing exponentially. Write an exponential function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span></span> representing the population <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> of deer over time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135188418">We let our independent variable <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span></span> be the number of years after 2006. Thus, the information given in the problem can be written as input-output pairs: (0, 80) and (6, 180). Notice that by choosing our input variable to be measured as years after 2006, we have given ourselves the initial value for the function, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>80.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We can now substitute the second point into the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>80</mn><msup>
+<mi>b</mi>
+<mi>t</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> to find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135432669"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>80</mn><msup>
+<mi>b</mi>
+<mi>t</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mn>180</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>80</mn><msup>
+<mi>b</mi>
+<mn>6</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute using point </mtext><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mo> </mo><mn>180</mn><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mfrac>
+<mn>9</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msup>
+<mi>b</mi>
+<mn>6</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide and write in lowest terms</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>b</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>9</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>6</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Isolate </mtext><mi>b</mi><mspace width="0.5em"></mspace><mtext>using properties of exponents</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>b</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mn>1.1447</mn><mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Round to 4 decimal places</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135193230"><strong>NOTE:</strong> <em data-effect="italics">Unless otherwise stated, do not round any intermediate calculations. Then round the final answer to four places for the remainder of this section.</em></p>
+<p id="fs-id1165137705073">The exponential model for the population of deer is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>80</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.1447</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>t</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> (Note that this exponential function models short-term growth. As the inputs gets large, the output will get increasingly larger, so much so that the model may not be useful in the long term.)</p>
+<p id="fs-id1165137724117">We can graph our model to observe the population growth of deer in the refuge over time. Notice that the graph in <a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_002">Figure 3</a> passes through the initial points given in the problem, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mn>80</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mtext>6</mtext><mo>,</mo><mn>180</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> We can also see that the domain for the function is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and the range for the function is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">[</mo><mn>80</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_002">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_002"><span data-alt="Graph of the exponential function, N(t) = 80(1.1447)^t, with labeled points at (0, 80) and (6, 180)." data-type="media" id="fs-id1165137598921">
+<img alt="Graph of the exponential function, N(t) = 80(1.1447)^t, with labeled points at (0, 80) and (6, 180)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/ba6714d3e16a95a86f44f988afae350e0ea62a01" loading="lazy" src="../../notes-assets/bf627767e0dd3a179a79.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+<span class="os-divider"> </span>
+<span class="os-caption">Graph showing the population of deer over time, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>80</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.1447</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>t</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span> years after 2006</span>
+</figcaption></figure>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137761908"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_04"><header></header><section>
+<div data-type="problem" id="fs-id1165135496544"><div class="os-problem-container">
+<p id="fs-id1165135496547">A wolf population is growing exponentially. In 2011, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>129</mn>
+</mrow>
+</mrow></semantics></math></span></span> wolves were counted. By <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>2013,</mtext>
+</mrow>
+</mrow></semantics></math></span></span> the population had reached 236 wolves. What two points can be used to derive an exponential equation modeling this situation? Write the equation representing the population <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi>
+</mrow>
+</mrow></semantics></math></span></span> of wolves over time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137737097"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mn>129</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mn>236</mn>
+</mrow>
+<mo>)</mo></mrow><mo>;</mo><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>129</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mtext>1</mtext><mtext>.3526</mtext>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>t</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<section class="worked-example" id="Example_04_01_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135411399"><header></header><section>
+<div data-type="problem" id="fs-id1165135411402"><div class="os-problem-container"><h4 data-type="title">Writing an Exponential Model When the Initial Value is Not Known</h4>
+<p id="fs-id1165135411407">Find an exponential function that passes through the points <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>2</mn><mo>,</mo><mn>6</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135646192">Because we don’t have the initial value, we substitute both points into an equation of the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and then solve the system for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><ul id="fs-id1165134044679">
+<li>Substituting <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>2</mn><mo>,</mo><mn>6</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> gives <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>6</mn><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mrow>
+<mo>−</mo><mn>2</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Substituting <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> gives <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ul>
+<p id="fs-id1165135361777">Use the first equation to solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> in terms of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+<span data-type="newline"><br/></span>
+</p>
+<span data-alt="Mathematical steps showing how to solve for 'a' from the equation 6 = ab^-2, by dividing by b^-2 and then using exponent properties to simplify to a = 6b^2." data-display="block" data-type="media" id="eip-id1619372">
+<img alt="Mathematical steps showing how to solve for 'a' from the equation 6 = ab^-2, by dividing by b^-2 and then using exponent properties to simplify to a = 6b^2." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/ff43c14ae0fea95fc5e25f2ca0b559e61da63853" loading="lazy" src="../../notes-assets/7272728479b8e4cb0a39.svg"/>
+</span>
+<p id="fs-id1165135180085">Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the second equation, and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="The image shows steps on how to substitute the expression found for a into a second equation to find the value of b." data-display="block" data-type="media" id="eip-id2591037">
+<img alt="The image shows steps on how to substitute the expression found for a into a second equation to find the value of b." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/d3e3b37803caaa421e47803d382c56aed86608f0" loading="lazy" src="../../notes-assets/671dce69689925efda13.svg"/>
+</span>
+<p id="fs-id1165137761627">Use the value of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the first equation to solve for the value of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+<span data-type="newline"><br/></span>
+</p>
+<span data-alt="A mathematical equation shows 'a = 6b^2 ≈ 6(0.6389)^2 ≈ 2.4492', demonstrating the calculation and approximation of the variable 'a' based on a given value of 'b'." data-display="block" data-type="media" id="eip-id2811781">
+<img alt="A mathematical equation shows 'a = 6b^2 ≈ 6(0.6389)^2 ≈ 2.4492', demonstrating the calculation and approximation of the variable 'a' based on a given value of 'b'." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/7cde0f491ebc5215a317954a4597d0b4ae400a40" loading="lazy" src="../../notes-assets/7f9ce07e6cd1125ac843.svg"/>
+</span>
+<p id="fs-id1165135168188">Thus, the equation is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2.4492</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>0.6389</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135482016">We can graph our model to check our work. Notice that the graph in <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_003">Figure 4</a> passes through the initial points given in the problem, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>2</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext>6</mtext>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext>1</mtext>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The graph is an example of an <span class="no-emphasis" data-type="term" group-by="e" id="term-00009">exponential decay</span> function.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_003">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_003">
+<span data-alt="Graph of the exponential function, f(x)=2.4492(0.6389)^x, with labeled points at (-2, 6) and (2, 1)." data-type="media" id="fs-id1165137400606">
+<img alt="Graph of the exponential function, f(x)=2.4492(0.6389)^x, with labeled points at (-2, 6) and (2, 1)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/cdc0f9d27d17a6535a15e517ebb9732c3ce395e1" loading="lazy" src="../../notes-assets/22ef215f686c7403fa7e.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2.4492</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>0.6389</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> models exponential decay.</span>
+</figcaption></figure>
+</div>
+</div></section><section class="worked-example" id="ti_11_04_01"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135169306"><header></header><section>
+<div data-type="problem" id="fs-id1165135169308"><div class="os-problem-container">
+<p id="fs-id1165135169310">Given the two points <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mn>4.5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> find the equation of the exponential function that passes through these two points.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137732257"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165137737999"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137738004"><strong>Do two points always determine a unique exponential function?</strong></p>
+<p id="fs-id1165137663981"><em data-effect="italics">Yes, provided the two points are either both above the x-axis or both below the x-axis and have different x-coordinates. But keep in mind that we also need to know that the graph is, in fact, an exponential function. Not every graph that looks exponential really is exponential. We need to know the graph is based on a model that shows the same percent growth with each unit increase in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> which in many real world cases involves time.</em></p></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137771573"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137771578"><strong>Given the graph of an exponential function, write its equation.</strong></p><ol id="fs-id1165137771583" type="1"><li>First, identify two points on the graph. Choose the <em data-effect="italics">y</em>-intercept as one of the two points whenever possible. Try to choose points that are as far apart as possible to reduce round-off error.</li>
+<li>If one of the data points is the <em data-effect="italics">y-</em>intercept <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> , then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> is the initial value. Using <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> substitute the second point into the equation <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> and solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>If neither of the data points have the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> substitute both points into two equations with the form <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> Solve the resulting system of two equations in two unknowns to find <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Write the exponential function, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_04_01_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137806415"><header></header><section>
+<div data-type="problem" id="fs-id1165137806417"><div class="os-problem-container"><h4 data-type="title">Writing an Exponential Function Given Its Graph</h4>
+<p id="fs-id1165135524507">Find an equation for the exponential function graphed in <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_004">Figure 5</a>.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_004"><figure class="medium ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_004">
+<span data-alt="Graph of an increasing exponential function with notable points at (0, 3) and (2, 12)." data-type="media" id="fs-id1165135524517">
+<img alt="Graph of an increasing exponential function with notable points at (0, 3) and (2, 12)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/d23cf9db7a70c2c183cfcb2a9af91f4a55d0674a" loading="lazy" src="../../notes-assets/18966ceacf628c94a103.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+</figcaption></figure></div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135415649">We can choose the <em data-effect="italics">y</em>-intercept of the graph, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> as our first point. This gives us the initial value, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Next, choose a point on the curve some distance away from <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> that has integer coordinates. One such point is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134216216"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext> </mtext><mi>y</mi><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Write the general form of an exponential equation</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext> </mtext><mi>y</mi><mo>=</mo><mn>3</mn><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute the initial value 3 for </mtext><mi>a</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>12</mn><mo>=</mo><mn>3</mn><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute in 12 for </mtext><mi>y</mi><mspace width="0.5em"></mspace><mtext>and 2 for </mtext><mi>x</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext> </mtext><mn>4</mn><mo>=</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by 3</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext> </mtext><mi>b</mi><mo>=</mo><mo>±</mo><mn>2</mn><mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the square root</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137769996">Because we restrict ourselves to positive values of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we will use <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span></span> into the standard form to yield the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section><section class="worked-example" id="fs-id1165135169326"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_06"><header></header><section>
+<div data-type="problem" id="fs-id1165135431682"><div class="os-problem-container">
+<p id="fs-id1165135431684">Find an equation for the exponential function graphed in <a aria-label="View Figure 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#CNX_Precalc_Figure_04_01_005">Figure 6</a>.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_01_005"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_01_005">
+<span data-alt="Graph of an increasing function with a labeled point at (0, sqrt(2))." data-type="media" id="fs-id1165135206178">
+<img alt="Graph of an increasing function with a labeled point at (0, sqrt(2))." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/06f3e62a1b0c4dc3746a0a7d1070570603c26886" loading="lazy" src="../../notes-assets/7a108e3182fc20e129d1.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">6</span>
+</figcaption></figure></div>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135191213"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mn>2</mn>
+</msqrt>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Answers may vary due to round-off error. The answer should be very close to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1.4142</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1.4142</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137936929"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137936934"><strong>Given two points on the curve of an exponential function, use a graphing calculator to find the equation.</strong></p>
+<ol id="fs-id1165135369319" type="1"><li>Press <strong>[STAT].</strong></li>
+<li>Clear any existing entries in columns <strong>L1</strong> or <strong>L2.</strong></li>
+<li>In <strong>L1</strong>, enter the <em data-effect="italics">x</em>-coordinates given.</li>
+<li>In <strong>L2</strong>, enter the corresponding <em data-effect="italics">y</em>-coordinates.</li>
+<li>Press <strong>[STAT] </strong>again. Cursor right to <strong>CALC</strong>, scroll down to <strong>ExpReg (Exponential Regression)</strong>, and press <strong>[ENTER].</strong></li>
+<li>The screen displays the values of <em data-effect="italics">a</em> and <em data-effect="italics">b</em> in the exponential equation <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><mo>⋅</mo><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> .</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_04_01_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137748679"><header></header><section>
+<div data-type="problem" id="fs-id1165137748681"><div class="os-problem-container"><h4 data-type="title">Using a Graphing Calculator to Find an Exponential Function</h4>
+<p id="fs-id1165137748687">Use a graphing calculator to find the exponential equation that includes the points <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>24.8</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>198.4</mn><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137843706">Follow the guidelines above. First press <strong>[STAT]</strong>, <strong>[EDIT]</strong>, <strong>[1: Edit…], </strong>and clear the lists <strong>L1</strong> and <strong>L2</strong>. Next, in the <strong>L1</strong> column, enter the <em data-effect="italics">x</em>-coordinates, 2 and 5. Do the same in the <strong>L2</strong> column for the <em data-effect="italics">y</em>-coordinates, 24.8 and 198.4. </p>
+<p id="fs-id1165137639756">Now press <strong>[STAT]</strong>, <strong>[CALC]</strong>, <strong>[0: ExpReg] </strong>and press <strong>[ENTER]</strong>. The values <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>6.2</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mrow></semantics></math></span></span> will be displayed. The exponential equation is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>6.2</mn><mo>⋅</mo><msup>
+<mn>2</mn>
+<mi>x</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<section class="worked-example" id="fs-id1165137771710"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_07_01_07"><header></header><section>
+<div data-type="problem" id="fs-id1165137656116"><div class="os-problem-container">
+<p id="fs-id1165137656119">Use a graphing calculator to find the exponential equation that includes the points (3, 75.98) and (6, 481.07).</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137651684"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>≈</mo><mn>12</mn><mo>⋅</mo><msup>
+<mrow>
+<mn>1.85</mn>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165137871708"><h3 data-type="title">Applying the Compound-Interest Formula</h3>
+<p id="fs-id1165137447026">Savings instruments in which earnings are continually reinvested, such as mutual funds and retirement accounts, use <span data-type="term" group-by="c" id="term-00010">compound interest</span>. The term <em data-effect="italics">compounding</em> refers to interest earned not only on the original value, but on the accumulated value of the account.</p><p id="fs-id1165137447037">The <span data-type="term" group-by="a" id="term-00011">annual percentage rate (APR)</span> of an account, also called the <span data-type="term" group-by="n" id="term-00012">nominal rate</span>, is the yearly interest rate earned by an investment account. The term <em data-effect="italics">nominal</em> is used when the compounding occurs a number of times other than once per year. In fact, when interest is compounded more than once a year, the effective interest rate ends up being <em data-effect="italics">greater</em> than the nominal rate! This is a powerful tool for investing.</p><p id="fs-id1165135160118">We can calculate the compound interest using the compound interest formula, which is an exponential function of the variables time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> principal <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> APR <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and number of compounding periods in a year <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-986"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mi>r</mi>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>n</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137935717">For example, observe <a aria-label="View Table 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_03">Table 4</a>, which shows the result of investing $1,000 at 10% for one year. Notice how the value of the account increases as the compounding frequency increases.</p><div class="os-table" id="Table_04_01_03"><div class="table-scroll"><table data-id="Table_04_01_03" data-summary="Six rows and two columns. The first column is labeled, “Frequency”, and the second column is labeled, “Value after 1 Year”. Reading the rows from left to right, we have that Annually is valued at 100, Semiannually at 102.50, Quarterly at 103.81, Monthly at 104.71, and Daily at 105.16."><thead>
+<tr>
+<th data-align="center" scope="col">Frequency</th>
+<th data-align="center" scope="col">Value after 1 year</th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">Annually</td>
+<td data-align="center">$1100</td>
+</tr>
+<tr>
+<td data-align="center">Semiannually</td>
+<td data-align="center">$1102.50</td>
+</tr>
+<tr>
+<td data-align="center">Quarterly</td>
+<td data-align="center">$1103.81</td>
+</tr>
+<tr>
+<td data-align="center">Monthly</td>
+<td data-align="center">$1104.71</td>
+</tr>
+<tr>
+<td data-align="center">Daily</td>
+<td data-align="center">$1105.16</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">4</span>
+<span class="os-divider"> </span>
+</div>
+</div><div class="ui-has-child-title" data-type="note" id="fs-id1165137793679"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Compound Interest Formula</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135184167"><strong>Compound interest</strong> can be calculated using the formula</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135184172"><span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mi>r</mi>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>n</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-237">where</p><ul id="fs-id1165137448453">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> is the account value,</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span> is measured in years,</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi>
+</mrow>
+</mrow></semantics></math></span> is the starting amount of the account, often called the principal, or more generally present value,</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi>
+</mrow>
+</mrow></semantics></math></span> is the annual percentage rate (APR) expressed as a decimal, and</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</mrow></semantics></math></span> is the number of compounding periods in one year.</li>
+</ul>
+</div></section></div>
+<section class="worked-example" id="Example_04_01_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135422940"><header></header><section>
+<div data-type="problem" id="fs-id1165137812820"><div class="os-problem-container"><h4 data-type="title">Calculating Compound Interest</h4>
+<p id="fs-id1165137812825">If we invest $3,000 in an investment account paying 3% interest compounded quarterly, how much will the account be worth in 10 years?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137812832">Because we are starting with $3,000, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>=</mo><mn>3000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Our interest rate is 3%, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mspace width="0.5em"></mspace><mtext></mtext><mo>=</mo><mspace width="0.5em"></mspace><mtext></mtext><mn>0.03.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Because we are compounding quarterly, we are compounding 4 times per year, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>=</mo><mn>4.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We want to know the value of the account in 10 years, so we are looking for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mrow><mo>(</mo>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the value when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mspace width="0.5em"></mspace><mtext></mtext><mo>=</mo><mspace width="0.5em"></mspace><mtext></mtext><mn>10.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1402796"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mi>r</mi>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>n</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the compound interest formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>3000</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mrow>
+<mn>0.03</mn>
+</mrow>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>4⋅10</mn>
+</mrow>
+</msup>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute using given values</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mtext>$</mtext><mn>4045.05</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Round to two decimal places</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137694040">The account will be worth about $4,045.05 in 10 years.</p>
+</div></section><section class="worked-example" id="fs-id1165137694046"><div class="problem-statement"><h3>Try It #8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_08"><header></header><section>
+<div data-type="problem" id="fs-id1165137694055"><div class="os-problem-container">
+<p id="fs-id1165135180428">An initial investment of $100,000 at 12% interest is compounded weekly (use 52 weeks in a year). What will the investment be worth in 30 years?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135180436">about $3,644,675.88</p>
+</div></section>
+<section class="worked-example" id="Example_04_01_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135180446"><header></header><section><div data-type="problem" id="fs-id1165135175321"><div class="os-problem-container"><h4 data-type="title">Using the Compound Interest Formula to Solve for the Principal</h4>
+<p id="fs-id1165135175327">A 529 Plan is a college-savings plan that allows relatives to invest money to pay for a child’s future college tuition; the account grows tax-free. Lily wants to set up a 529 account for her new granddaughter and wants the account to grow to $40,000 over 18 years. She believes the account will earn 6% compounded semi-annually (twice a year). To the nearest dollar, how much will Lily need to invest in the account now?</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137664627">The nominal interest rate is 6%, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>=</mo><mn>0.06.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Interest is compounded twice a year, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>=</mo><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135209414">We want to find the initial investment, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> needed so that the value of the account will be worth $40,000 in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>18</mn>
+</mrow>
+</mrow></semantics></math></span></span> years. Substitute the given values into the compound interest formula, and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165131884554"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mi>r</mi>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>n</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the compound interest formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>40,000</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mrow>
+<mn>0.06</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo>
+</mrow>
+</msup>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute using given values </mtext><mi>A</mi><mtext>, </mtext><mi>r</mi><mo>,</mo><mo> </mo><mi>n</mi><mtext>, and </mtext><mi>t</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>40,000</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1.03</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>36</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Simplify</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mrow>
+<mn>40,000</mn>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1.03</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>36</mn>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Isolate </mtext><mi>P</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>P</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mtext>$</mtext><mn>13</mn><mo>,</mo><mn>801</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide and round to the nearest dollar</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137937589">Lily will need to invest $13,801 to have $40,000 in 18 years.</p>
+</div></section><section class="worked-example" id="fs-id1165137937596"><div class="problem-statement"><h3>Try It #9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_9"><header></header><section>
+<div data-type="problem" id="fs-id1165135176727"><div class="os-problem-container">
+<p id="fs-id1165135176729">Refer to <a aria-label="Go to Example 9" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Example_04_01_09">Example 9</a>. To the nearest dollar, how much would Lily need to invest if the account is compounded quarterly?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135176738">$13,693</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137724961"><h3 data-type="title">Evaluating Functions with Base <em data-effect="italics">e</em></h3><p id="fs-id1165135684369">As we saw earlier, the amount earned on an account increases as the compounding frequency increases. <a aria-label="View Table 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_04">Table 5</a> shows that the increase from annual to semi-annual compounding is larger than the increase from monthly to daily compounding. This might lead us to ask whether this pattern will continue.</p>
+<p id="fs-id1165135684377">Examine the value of $1 invested at 100% interest for 1 year, compounded at various frequencies, listed in <a aria-label="View Table 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Table_04_01_04">Table 5</a>.</p><div class="os-table" id="Table_04_01_04"><div class="table-scroll"><table data-id="Table_04_01_04" data-summary="Nine rows and three columns. The first column is labeled, “Frequency”, the second column is labeled, “A(t)=(1+1/n)^x”, and the third column is labeled, “Value”. Reading the rows from left to right, we have that Annually has the input value of (1+1/1)^1 which equals to $2, and Semiannually has the input value of (1+1/2)^2 which equals to $2.25, Quarterly has the input value of (1+1/4)^4 which equals to $2.441406, Monthly has the input value of (1+1/12)^12 which equals to $2.613035, Daily has the input value of (1+1/365)^365 which equals to $2.714567, Hourly has the input value of (1+1/8766)^8766 which equals to $2.718127, One per minute has the input value of (1+1/525960)^525960 which equals to $2.718279, and Once per second has the input value of (1+1/31557600)^31557600 which equals to $2.718282."><thead>
+<tr>
+<th data-align="center" scope="col">Frequency</th>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>n</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </th>
+<th data-align="center" scope="col">Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">Annually</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>1</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>1</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2</td>
+</tr>
+<tr>
+<td data-align="center">Semiannually</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.25</td>
+</tr>
+<tr>
+<td data-align="center">Quarterly</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.441406</td>
+</tr>
+<tr>
+<td data-align="center">Monthly</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mn>12</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>12</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.613035</td>
+</tr>
+<tr>
+<td data-align="center">Daily</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mn>365</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>365</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.714567</td>
+</tr>
+<tr>
+<td data-align="center">Hourly</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mtext>8760</mtext>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mtext>8760</mtext>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.718127</td>
+</tr>
+<tr>
+<td data-align="center">Once per minute</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mtext>525600</mtext>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mtext>525600</mtext>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.718279</td>
+</tr>
+<tr>
+<td data-align="center">Once per second</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mrow><mn>31536000</mn></mrow></mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>31536000</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </td>
+<td data-align="center">$2.718282</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">5</span>
+<span class="os-divider"> </span>
+<span class="os-caption">
+<span data-type="title">
+<!-- no-selfclose -->
+</span>
+</span>
+</div>
+</div>
+<p id="fs-id1165137828146">These values appear to be approaching a limit as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</mrow></semantics></math></span></span> increases without bound. In fact, as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</mrow></semantics></math></span></span> gets larger and larger, the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>n</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> approaches a number used so frequently in mathematics that it has its own name: the letter <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> This value is an irrational number, which means that its decimal expansion goes on forever without repeating. Its approximation to six decimal places is shown below.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165135511324"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Number <span class="math-scroll inline-math"><math display="inline">
+<semantics>
+<mrow>
+<mi>e</mi>
+</mrow>
+
+</semantics>
+</math></span> </span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135511335">The letter <em data-effect="italics">e</em> represents the irrational number</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135378658"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>1</mn><mo>+</mo><mfrac>
+<mn>1</mn>
+<mi>n</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mi>n</mi>
+</msup>
+<mo>,</mo><mtext>as</mtext><mspace width="0.5em"></mspace><mi>n</mi><mspace width="0.5em"></mspace><mtext>increases without bound</mtext>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135369344">The letter <em data-effect="italics">e </em>is used as a base for many real-world exponential models. To work with base <em data-effect="italics">e</em>, we use the approximation, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>≈</mo><mn>2.718282.</mn>
+</mrow>
+</mrow></semantics></math></span></span> The constant was named by the Swiss mathematician Leonhard Euler (1707–1783) who first investigated and discovered many of its properties.</p>
+</div></section></div><section class="worked-example" id="Example_04_01_10"><div class="problem-statement"><h3>Example 10</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135344893"><header></header><section><div data-type="problem" id="fs-id1165135344895"><div class="os-problem-container"><h4 data-type="title">Using a Calculator to Find Powers of <em data-effect="italics">e</em></h4>
+<p id="fs-id1165135545973">Calculate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<mn>3.14</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Round to five decimal places.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135192745">On a calculator, press the button labeled <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<msup>
+<mi>e</mi>
+<mi>x</mi>
+</msup>
+</mrow> <mo>]</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The window shows <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mi>e</mi><mo>^</mo><mo stretchy="false">(</mo><mspace width="0.5em"></mspace><mtext></mtext>
+</mrow> <mo>]</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Type <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3.14</mn>
+</mrow>
+</mrow></semantics></math></span></span> and then close parenthesis, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>[</mo> <mo stretchy="false">)</mo> <mo>]</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Press [ENTER]. Rounding to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+</mrow></semantics></math></span></span> decimal places, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<mn>3.14</mn>
+</mrow>
+</msup>
+<mo>≈</mo><mn>23.10387.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Caution: Many scientific calculators have an “Exp” button, which is used to enter numbers in scientific notation. It is not used to find powers of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137447188"><div class="problem-statement"><h3>Try It #10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_10"><header></header><section>
+<div data-type="problem" id="fs-id1165135348435"><div class="os-problem-container">
+<p id="fs-id1165135348437">Use a calculator to find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.5</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Round to five decimal places.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135176288"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.5</mn>
+</mrow>
+</msup>
+<mo>≈</mo><mn>0.60653</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section><section data-depth="1" id="fs-id1165137827923"><h3 data-type="title">Investigating Continuous Growth</h3>
+<p id="fs-id1165137827929">So far we have worked with rational bases for exponential functions. For most real-world phenomena, however, <em data-effect="italics">e </em>is used as the base for exponential functions. Exponential models that use <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi>
+</mrow>
+</mrow></semantics></math></span></span> as the base are called <em data-effect="italics">continuous growth or decay models</em>. We see these models in finance, computer science, and most of the sciences, such as physics, toxicology, and fluid dynamics.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137664673"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Continuous Growth/Decay Formula</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135453868">For all real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and all positive numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> continuous growth or decay is represented by the formula</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135536370"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>r</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-101">where</p><ul id="fs-id1165135152052"><li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> is the initial value,</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi>
+</mrow>
+</mrow></semantics></math></span> is the continuous growth rate per unit time,</li>
+<li>and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span> is the elapsed time.</li>
+</ul><p id="fs-id1165135560686">If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>&gt;</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> , then the formula represents continuous growth. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>&lt;</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> , then the formula represents continuous decay.</p>
+<p id="fs-id1165137812323">For business applications, the continuous growth formula is called the continuous compounding formula and takes the form</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134324899"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>r</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="eip-962">where</p><ul id="fs-id1165137827330"><li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi>
+</mrow>
+</mrow></semantics></math></span> is the principal or the initial invested,</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi>
+</mrow>
+</mrow></semantics></math></span> is the growth or interest rate per unit time,</li>
+<li>and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span> is the period or term of the investment.</li>
+</ul></div></section></div><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165135411368"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135411373"><strong>Given the initial value, rate of growth or decay, and time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> solve a continuous growth or decay function.</strong></p><ol id="fs-id1165135511371" type="1"><li>Use the information in the problem to determine <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span> , the initial value of the function.</li>
+<li>Use the information in the problem to determine the growth rate <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+<ol id="fs-id1165135188096" type="a">
+<li>If the problem refers to continuous growth, then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>&gt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>If the problem refers to continuous decay, then <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>&lt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol>
+</li>
+<li>Use the information in the problem to determine the time <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Substitute the given information into the continuous growth formula and solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_04_01_11"><div class="problem-statement"><h3>Example 11</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137835464"><header></header><section>
+<div data-type="problem" id="fs-id1165137835466"><div class="os-problem-container"><h4 data-type="title">Calculating Continuous Growth</h4>
+<p id="fs-id1165137835472">A person invested $1,000 in an account earning a nominal 10% per year compounded continuously. How much was in the account at the end of one year?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137694205">Since the account is growing in value, this is a continuous compounding problem with growth rate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>=</mo><mn>0.10.</mn>
+</mrow>
+</mrow></semantics></math></span></span> The initial investment was $1,000, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>=</mo><mn>1000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We use the continuous compounding formula to find the value after <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span></span> year: </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133351794"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>P</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>r</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the continuous compounding formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>1000</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>0.1</mn>
+</mrow>
+</msup>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute known values for </mtext><mi>P</mi><mo>,</mo><mo> </mo><mi>r</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext>and </mtext><mi>t</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mn>1105.17</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use a calculator to approximate</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137895288">The account is worth $1,105.17 after one year.</p>
+</div></section><section class="worked-example" id="fs-id1165137895295"><div class="problem-statement"><h3>Try It #11</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_11"><header></header><section>
+<div data-type="problem" id="fs-id1165137895303"><div class="os-problem-container">
+<p id="fs-id1165137895305">A person invests $100,000 at a nominal 12% interest per year compounded continuously. What will be the value of the investment in 30 years?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134389978">$3,659,823.44</p>
+</div></section><section class="worked-example" id="Example_04_01_12"><div class="problem-statement"><h3>Example 12</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134389988"><header></header><section>
+<div data-type="problem" id="fs-id1165134389990"><div class="os-problem-container"><h4 data-type="title">Calculating Continuous Decay</h4>
+<p id="fs-id1165137803700">Radon-222 decays at a continuous rate of 17.3% per day. How much will 100 mg of Radon-222 decay to in 3 days?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137803708">Since the substance is decaying, the rate, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>17.3</mn><mi>%</mi>
+</mrow>
+</mrow></semantics></math></span></span> , is negative. So, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mspace width="0.5em"></mspace><mtext></mtext><mo>=</mo><mspace width="0.5em"></mspace><mtext></mtext><mo>−</mo><mn>0.173.</mn>
+</mrow>
+</mrow></semantics></math></span></span> The initial amount of radon-222 was <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>100</mn>
+</mrow>
+</mrow></semantics></math></span></span> mg, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>100.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We use the continuous decay formula to find the value after <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mrow></semantics></math></span></span> days: </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137779893"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>r</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>100</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.173</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</msup>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute known values for </mtext><mi>a</mi><mo>,</mo><mo> </mo><mi>r</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext>and </mtext><mi>t</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mn>59.5115</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use a calculator to approximate</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137697132">So 59.5115 mg of radon-222 will remain.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165135348462"><div class="problem-statement"><h3>Try It #12</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_01_12"><header></header><section>
+<div data-type="problem" id="fs-id1165135348470"><div class="os-problem-container">
+<p id="fs-id1165135348472">Using the data in <a aria-label="Go to Example 12" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions#Example_04_01_12">Example 12</a>, how much radon-222 will remain after one year?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135245734">3.77E-26 (This is calculator notation for the number written as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3.77</mn><mo>×</mo><msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>−</mo><mn>26</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> in scientific notation. While the output of an exponential function is never zero, this number is so close to zero that for all practical purposes we can accept zero as the answer.)</p>
+</div></section><div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165135191186"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135191191">Access these online resources for additional instruction and practice with exponential functions.</p>
+<ul id="fs-id1165135191194">
+<li><a aria-label="Go to Exponential Growth Function" href="https://openstax.org/l/expgrowth" rel="noopener nofollow" target="_blank">Exponential Growth Function</a></li>
+<li><a aria-label="Go to Compound Interest" href="https://openstax.org/l/compoundint" rel="noopener nofollow" target="_blank">Compound Interest</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

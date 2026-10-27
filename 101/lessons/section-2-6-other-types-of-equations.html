@@ -1,0 +1,3719 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2.6: Other Types of Equations | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-2-5-quadratic-equations.html">Previous: 2.5</a><a href="section-2-7-linear-inequalities-and-absolute-value-inequalities.html">Next: 2.7</a><a href="https://openstax.org/books/college-algebra-2e/pages/2-6-other-types-of-equations">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>2.6: Other Types of Equations</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Solve equations involving rational exponents.</li>
+<li>Solve equations using factoring.</li>
+<li>Solve radical equations.</li>
+<li>Solve absolute value equations.</li>
+<li>Solve other types of equations.</li>
+</ul></section></div>
+<p id="fs-id1519532">We have solved linear equations, rational equations, and quadratic equations using several methods. However, there are many other types of equations, and we will investigate a few more types in this section. We will look at equations involving rational exponents, polynomial equations, radical equations, absolute value equations, equations in quadratic form, and some rational equations that can be transformed into quadratics. Solving any equation, however, employs the same basic algebraic rules. We will learn some new techniques as they apply to certain equations, but the algebra never changes.</p>
+<section data-depth="1" id="fs-id2485804"><h3 data-type="title">Solving Equations Involving Rational Exponents</h3>
+<p id="fs-id1274976">Rational exponents are exponents that are fractions, where the numerator is a power and the denominator is a root. For example, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mn>16</mn>
+</mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is another way of writing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msqrt>
+<mn>16</mn>
+</msqrt>
+<mo>;</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>8</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is another way of writing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>​</mtext><mspace width="0.5em"></mspace><mroot>
+<mn>8</mn>
+<mn>3</mn>
+</mroot>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The ability to work with rational exponents is a useful skill, as it is highly applicable in calculus.</p><p id="fs-id1723049">We can solve equations in which a variable is raised to a rational exponent by raising both sides of the equation to the reciprocal of the exponent. The reason we raise the equation to the reciprocal of the exponent is because we want to eliminate the exponent on the variable term, and a number multiplied by its reciprocal equals 1. For example, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and so on.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1319605"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Rational Exponents</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1532274">A rational exponent indicates a power in the numerator and a root in the denominator. There are multiple ways of writing an expression, a variable, or a number with a rational exponent:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1512276"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>a</mi>
+<mrow>
+<mfrac>
+<mi>m</mi>
+<mi>n</mi>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>a</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>n</mi>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mi>m</mi>
+</msup>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>a</mi>
+<mi>m</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>n</mi>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><mroot>
+<mrow>
+<msup>
+<mi>a</mi>
+<mi>m</mi>
+</msup>
+</mrow>
+<mi>n</mi>
+</mroot>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mroot>
+<mi>a</mi>
+<mi>n</mi>
+</mroot>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mi>m</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div></div></section></div>
+<section class="worked-example" id="Example_02_06_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1458449"><header></header><section>
+<div data-type="problem" id="fs-id2592723"><div class="os-problem-container"><h4 data-type="title">Evaluating a Number Raised to a Rational Exponent</h4>
+<p id="fs-id1239738">Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mn>8</mn>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id2422284">Whether we take the root first or the power first depends on the number. It is easy to find the cube root of 8, so rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mn>8</mn>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mn>8</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1227998">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mn>8</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mn>4</mn></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1514351"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_01"><header></header><section><div data-type="problem" id="fs-id1336704"><div class="os-problem-container"><p id="fs-id2400251">Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mn>64</mn>
+</mrow>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id2434546"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_02_06_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id2385021"><header></header><section>
+<div data-type="problem" id="fs-id3264211"><div class="os-problem-container"><h4 data-type="title">Solve the Equation Including a Variable Raised to a Rational Exponent</h4>
+<p id="fs-id1198214">Solve the equation in which a variable is raised to a rational exponent: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>5</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><mn>32.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1569151">The way to remove the exponent on <em data-effect="italics">x</em> is by raising both sides of the equation to a power that is the reciprocal of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>5</mn>
+<mn>4</mn>
+</mfrac>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> which is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1277511">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>5</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>32</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>5</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>32</mn><mo stretchy="false">)</mo></mrow>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>The fifth root of 32 is 2.</mtext></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>16</mn></mrow></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1759744"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_02"><header></header><section><div data-type="problem" id="fs-id2293541"><div class="os-problem-container"><p id="fs-id1314798">Solve the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><mn>125.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id2753851"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>25</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_02_06_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id2437878"><header></header><section>
+<div data-type="problem" id="fs-id1335480"><div class="os-problem-container"><h4 data-type="title">Solving an Equation Involving Rational Exponents and Factoring</h4>
+<p id="fs-id1269017">Solve <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1296613">This equation involves rational exponents as well as factoring rational exponents. Let us take this one step at a time. First, put the variable terms on one side of the equal sign and set the equation equal to zero.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1400272">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mn>0</mn></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1368636">Now, it looks like we should factor the left side, but what do we factor out? We can always factor the term with the lowest exponent. Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Then, factor out <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> from both terms on the left.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1441452">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1933337">Where did <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> come from? Remember, when we multiply two numbers with the same base, we add the exponents. Therefore, if we multiply <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> back in using the distributive property, we get the expression we had before the factoring, which is what should happen. We need an exponent such that when added to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> equals <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Thus, the exponent on <em data-effect="italics">x </em>in the parentheses is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1891109">Let us continue. Now we have two factors and can use the zero factor theorem.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1422353">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>1</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Divide both sides by 3</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Raise both sides to the reciprocal of </mtext><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>81</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2957928">The two solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>81</mn>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1267637"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_03"><header></header><section><div data-type="problem" id="fs-id1411367"><div class="os-problem-container"><p id="fs-id1441991">Solve: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>=</mo><mn>8.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1846504"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>{</mo> <mrow>
+<mn>−1</mn>
+</mrow> <mo>}</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+</section>
+<section data-depth="1" id="fs-id2945385"><h3 data-type="title">Solving Equations Using Factoring</h3>
+<p id="fs-id2521696">We have used factoring to solve quadratic equations, but it is a technique that we can use with many types of polynomial equations, which are equations that contain a string of terms including numerical coefficients and variables. When we are faced with an equation containing polynomials of degree higher than 2, we can often solve them by factoring.</p><div class="ui-has-child-title" data-type="note" id="fs-id1786047"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Polynomial Equations</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id3231810">A polynomial of degree <em data-effect="italics">n </em>is an expression of the type</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2905918"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<msup>
+<mi>x</mi>
+<mi>n</mi>
+</msup>
+<mo>+</mo><msub>
+<mi>a</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msub>
+<msup>
+<mi>x</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>+</mo><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mo>⋅</mo><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mo>⋅</mo><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mo>⋅</mo><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mo>+</mo><msub>
+<mi>a</mi>
+<mn>2</mn>
+</msub>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><msub>
+<mi>a</mi>
+<mn>1</mn>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mi>a</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id2444064">where <em data-effect="italics">n</em> is a positive integer and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<mo>,</mo><mo>…</mo><mo>,</mo><msub>
+<mi>a</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> are real numbers and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<mo>≠</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id2931289">Setting the polynomial equal to zero gives a <span data-type="term" group-by="p" id="term-00001">polynomial equation</span>. The total number of solutions (real and complex) to a polynomial equation is equal to the highest exponent <em data-effect="italics">n</em>.</p></div></section></div>
+<section class="worked-example" id="Example_02_06_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1996696"><header></header><section>
+<div data-type="problem" id="fs-id2501149"><div class="os-problem-container"><h4 data-type="title">Solving a Polynomial by Factoring</h4>
+<p id="fs-id1391817">Solve the polynomial by factoring: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>5</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>80</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+<div data-type="commentary" id="fs-id1693367"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id768264">We can see the solutions on the graph in <a aria-label="View Figure 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/2-6-other-types-of-equations#Figure_02_06_001">Figure 1</a>. The <em data-effect="italics">x-</em>coordinates of the points where the graph crosses the <em data-effect="italics">x-</em>axis are the solutions—the <em data-effect="italics">x-</em>intercepts. Notice on the graph that at the solution <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the graph touches the <em data-effect="italics">x-</em>axis and bounces back. It does not cross the <em data-effect="italics">x-</em>axis. This is typical of double solutions.</p><div class="os-figure" id="Figure_02_06_001"><figure class="small ui-has-child-figcaption" data-id="Figure_02_06_001">
+<span data-alt="Coordinate plane with the x-axis ranging from negative 5 to 5 and the y-axis ranging from negative 400 to 500 in intervals of 100. The function five times x to the fourth power minus eighty x squared equals zero is graphed along with the points (negative 4,0), (0,0), and (4,0)." data-type="media" id="fs-id1548359">
+<img alt="Coordinate plane with the x-axis ranging from negative 5 to 5 and the y-axis ranging from negative 400 to 500 in intervals of 100. The function five times x to the fourth power minus eighty x squared equals zero is graphed along with the points (negative 4,0), (0,0), and (4,0)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/2e49a8dfcd752028a5ab6adfd4ad7bfdcb6e68a4" loading="lazy" src="../../notes-assets/82ea95868804c4b84914.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1419163">First, set the equation equal to zero. Then factor out what is common to both terms, the GCF.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2502503">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>5</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>80</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>16</mn><mo>)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1924982">Notice that we have the difference of squares in the factor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>16</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> which we will continue to factor and obtain two solutions. The first term, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> generates, technically, two solutions as the exponent is 2, but they are the same solution.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2824827">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>16</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>4</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−4</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2638784">The solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>0</mn><mspace width="0.5em"></mspace><mtext>(double solution),</mtext>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>−4.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id988839"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_04"><header></header><section>
+<div data-type="problem" id="fs-id2496351"><div class="os-problem-container"><p id="fs-id3040346">Solve by factoring: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>12</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>=</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1244467"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_02_06_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id2435055"><header></header><section>
+<div data-type="problem" id="fs-id1007381"><div class="os-problem-container"><h4 data-type="title">Solve a Polynomial by Grouping</h4>
+<p id="fs-id2501656">Solve a polynomial by grouping: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>9</mn><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+<div data-type="commentary" id="fs-id2504109"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1243628">We looked at solving quadratic equations by factoring when the leading coefficient is 1. When the leading coefficient is not 1, we solved by grouping. Grouping requires four terms, which we obtained by splitting the linear term of quadratic equations. We can also use grouping for some polynomials of degree higher than 2, as we saw here, since there were already four terms.</p>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1422651">This polynomial consists of 4 terms, which we can solve by grouping. Grouping procedures require factoring the first two terms and then factoring the last two terms. If the factors in the parentheses are identical, we can continue the process and solve, unless more factoring is suggested.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2516826">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>9</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><mn>9</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mo>)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1408391">The grouping process ends here, as we can factor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn></mrow>
+</mrow></semantics></math></span></span>
+using the difference of squares formula.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1402146">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mo>)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>3</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−3</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−1</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2528732">The solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>−1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Note that the highest exponent is 3 and we obtained 3 solutions. We can see the solutions, the <em data-effect="italics">x-</em>intercepts, on the graph in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/2-6-other-types-of-equations#Figure_02_06_002">Figure 2</a><strong>.</strong></p><div class="os-figure" id="Figure_02_06_002">
+<figure class="small ui-has-child-figcaption" data-id="Figure_02_06_002">
+<span data-alt="Coordinate plane with the x-axis ranging from negative 5 to 5 and the y-axis ranging from negative 30 to 20 in intervals of 5. The function x cubed plus x squared minus nine times x minus nine equals zero is graphed along with the points (negative 3,0), (negative 1,0), and (3,0)." data-type="media" id="fs-id2304259">
+<img alt="Coordinate plane with the x-axis ranging from negative 5 to 5 and the y-axis ranging from negative 30 to 20 in intervals of 5. The function x cubed plus x squared minus nine times x minus nine equals zero is graphed along with the points (negative 3,0), (negative 1,0), and (3,0)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/94b4e297364251745bf2d31918af414b117764c9" loading="lazy" src="../../notes-assets/c5225b17270716aced4f.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure>
+</div>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id2506398"><h3 data-type="title">Solving Radical Equations</h3>
+<p id="fs-id1846458"><strong>Radical equations</strong> are equations that contain variables in the <span class="no-emphasis" data-type="term" group-by="r" id="term-00002">radicand</span> (the expression under a radical symbol), such as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2781660">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>18</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mi>x</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>x</mi><mo>−</mo><mn>3</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn></mrow>
+</msqrt>
+<mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>2</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1719179">Radical equations may have one or more radical terms, and are solved by eliminating each radical, one at a time. We have to be careful when solving radical equations, as it is not unusual to find <span data-type="term" group-by="e" id="term-00003">extraneous solutions</span>, roots that are not, in fact, solutions to the equation. These solutions are not due to a mistake in the solving method, but result from the process of raising both sides of an equation to a power. However, checking each answer in the original equation will confirm the true solutions.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id2506978"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Radical Equations</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id3052762">An equation containing terms with a variable in the radicand is called  a <span data-type="term" group-by="r" id="term-00004">radical equation</span>.</p></div></section></div><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id2307719"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1517012"><strong>Given a radical equation, solve it.</strong></p>
+<ol id="fs-id3143660" type="1"><li>Isolate the radical expression on one side of the equal sign. Put all remaining terms on the other side.</li>
+<li>If the radical is a square root, then square both sides of the equation. If it is a cube root, then raise both sides of the equation to the third power. In other words, for an <em data-effect="italics">n</em>th root radical, raise both sides to the <em data-effect="italics">n</em>th power. Doing so eliminates the radical symbol.</li>
+<li>Solve the remaining equation.</li>
+<li>If a radical term still remains, repeat steps 1–2.</li>
+<li>Confirm solutions by substituting them into the original equation.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_02_06_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1222816"><header></header><section>
+<div data-type="problem" id="fs-id1551039"><div class="os-problem-container"><h4 data-type="title">Solving an Equation with One Radical</h4>
+<p id="fs-id1520471">Solve <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</msqrt>
+<mo>=</mo><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1332305">The radical is already isolated on the left side of the equal side, so proceed to square both sides.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1919300">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mi>x</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi></mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1895386">We see that the remaining equation is a quadratic. Set it equal to zero and solve.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1905278">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mn>0</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>15</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−5</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>3</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1257720">The proposed solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−5</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Let us check each solution back in the original equation. First, check <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mn>−5.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1463741">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mi>x</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−5</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>25</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−5</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>5</mn>
+</mtd>
+<mtd>
+<mo>≠</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo></mo><mn>−5</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id2628354">This is an extraneous solution. While no mistake was made solving the equation, we found a solution that does not satisfy the original equation.</p>
+<p id="fs-id1417225">Check <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1515949">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mi>x</mi></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mi>x</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>15</mn><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>3</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mn>9</mn>
+</msqrt>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>3</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>3</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>3</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1199291">The solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1441693"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_05"><header></header><section><div data-type="problem" id="fs-id1583879"><div class="os-problem-container"><p id="fs-id1583880">Solve the radical equation: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+<mo>=</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1535940"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1</mn><mo>;</mo>
+</mrow>
+</mrow></semantics></math></span></span> extraneous solution <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>−</mo><mfrac>
+<mn>2</mn>
+<mn>9</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_02_06_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1720874"><header></header><section>
+<div data-type="problem" id="fs-id2499586"><div class="os-problem-container"><h4 data-type="title">Solving a Radical Equation Containing Two Radicals</h4>
+<p id="fs-id1410869">Solve <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>=</mo><mn>4.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1929508">As this equation contains two radicals, we isolate one radical, eliminate it, and then isolate the second radical.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2268062">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+<mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>4</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Subtract </mtext><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+<mspace width="0.5em"></mspace><mtext>from both sides</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mrow>
+<mo>(</mo><mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+<mo>)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Square both sides</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1548786">Use the perfect square formula to expand the right side: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo><msup>
+<mi>a</mi>
+<mn>2</mn>
+</msup>
+<mn>−2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2506054">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><msup>
+<mrow>
+<mo>(</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>16</mn><mo>−</mo><mn>8</mn><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>14</mn><mo>+</mo><mi>x</mi><mo>−</mo><mn>8</mn><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Combine like terms</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>x</mi><mo>−</mo><mn>11</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−8</mn><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Isolate the second radical</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>11</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo>(</mo><mn>−8</mn><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Square both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>22</mn><mi>x</mi><mo>+</mo><mn>121</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>64</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1175462">Now that both radicals have been eliminated, set the quadratic equal to zero and solve.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2946619">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>22</mn><mi>x</mi><mo>+</mo><mn>121</mn></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>64</mn><mi>x</mi><mo>−</mo><mn>128</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>86</mn><mi>x</mi><mo>+</mo><mn>249</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>83</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Factor and solve</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>3</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>83</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1563543">The proposed solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>83.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Check each solution in the original equation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id2655511">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+<mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>4</mn>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mn>9</mn>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mn>1</mn>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mn>3</mn>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>3</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1840544">One solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id1918601">Check <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mn>83.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1941177">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+<mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>4</mn>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>83</mn><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mn>83</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mn>169</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mo>−</mo><msqrt>
+<mrow>
+<mn>81</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>13</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>≠</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo>−</mo><mn>5</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2293780">The only solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We see that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>83</mn>
+</mrow>
+</mrow></semantics></math></span></span> is an extraneous solution.</p></div></section>
+<section class="worked-example" id="fs-id2430499"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_06"><header></header><section>
+<div data-type="problem" id="fs-id2702970"><div class="os-problem-container"><p id="fs-id2429740">Solve the equation with two radicals: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msqrt>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>7</mn>
+</mrow>
+</msqrt>
+<mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+</msqrt>
+<mo>=</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1951350"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>;</mo>
+</mrow>
+</mrow></semantics></math></span></span> extraneous solution <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>−1</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+</section>
+<section data-depth="1" id="fs-id3240737"><h3 data-type="title">Solving an Absolute Value Equation</h3>
+<p id="fs-id1335626">Next, we will learn how to solve an <span class="no-emphasis" data-type="term" group-by="a" id="term-00005">absolute value equation</span>. To solve an equation such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>|</mo> <mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn></mrow> <mo>|</mo></mrow><mo>=</mo><mn>8</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we notice that the absolute value will be equal to 8 if the quantity inside the absolute value bars is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>8</mn>
+</mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>−8.</mn>
+</mrow>
+</mrow></semantics></math></span></span> This leads to two different equations we can solve independently.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2638694">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>8</mn>
+</mtd>
+<mtd rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>or</mtext><mspace width="2em"></mspace></mrow>
+</mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−8</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd rowalign="center">
+<mrow>
+<mn>14</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−2</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>7</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−1</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1280820">Knowing how to solve problems involving absolute value functions is useful. For example, we may need to identify numbers or points on a line that are at a specified distance from a given reference point.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id2918915"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Absolute Value Equations</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1542481">The absolute value of <em data-effect="italics">x </em>is written as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>|</mo> <mi>x</mi> <mo>|</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> It has the following properties:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2434805">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>If </mtext><mi>x</mi><mo>≥</mo><mn>0</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext>then </mtext><mo>|</mo><mi>x</mi><mo>|</mo><mo>=</mo><mi>x</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>If </mtext><mi>x</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext>then </mtext><mo>|</mo><mi>x</mi><mo>|</mo><mo>=</mo><mi>−</mi><mi>x</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id2905392">For real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>A</mi>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>B</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> an equation of the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>|</mo> <mi>A</mi> <mo>|</mo></mrow><mo>=</mo><mi>B</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>B</mi><mo>≥</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> will have solutions when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>A</mi><mo>=</mo><mi>B</mi>
+</mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>A</mi><mo>=</mo><mo>−</mo><mi>B</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>B</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>|</mo> <mi>A</mi> <mo>|</mo></mrow><mo>=</mo><mi>B</mi>
+</mrow>
+</mrow></semantics></math></span></span> has no solution.</p>
+<p id="fs-id1408140">An <span data-type="term" group-by="a" id="term-00006">absolute value equation</span> in the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>|</mo> <mrow>
+<mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi>
+</mrow> <mo>|</mo></mrow><mo>=</mo><mi>c</mi>
+</mrow>
+</mrow></semantics></math></span></span> has the following properties:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2655133"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>If  </mtext><mi>c</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo><mo>|</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>|</mo><mo>=</mo><mi>c</mi><mspace width="0.5em"></mspace><mtext>has no solution</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>If  </mtext><mi>c</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo>|</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>|</mo><mo>=</mo><mi>c</mi><mspace width="0.5em"></mspace><mtext>has one solution</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>If  </mtext><mi>c</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mo>|</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>|</mo><mo>=</mo><mi>c</mi><mspace width="0.5em"></mspace><mtext>has two solutions</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id3038796"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1793504"><strong>Given an absolute value equation, solve it.</strong></p>
+<ol id="fs-id2938958" type="1">
+<li>Isolate the absolute value expression on one side of the equal sign.</li>
+<li>If <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>c</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> write and solve two equations: <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>c</mi>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>=</mo><mo>−</mo><mi>c</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_02_06_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id3105697"><header></header><section><div data-type="problem" id="fs-id1836188"><div class="os-problem-container"><h4 data-type="title">Solving Absolute Value Equations</h4>
+<p id="fs-id1836194">Solve the following absolute value equations:</p>
+<ol class="circled" id="fs-id2370595" type="1"><li><span class="token">ⓐ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>6</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow> <mo>|</mo></mrow><mo>=</mo><mn>8</mn></mrow>
+</mrow></semantics></math></span> </li>
+<li><span class="token">ⓑ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow> <mo>|</mo></mrow><mo>=</mo><mn>−9</mn></mrow>
+</mrow></semantics></math></span> </li>
+<li><span class="token">ⓒ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow> <mo>|</mo></mrow><mo>−</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow>
+</mrow></semantics></math></span> </li>
+<li> <span class="token">ⓓ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>−5</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow> <mo>|</mo></mrow><mo>=</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span> </li>
+</ol>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol class="circled" id="fs-id2683629" type="1">
+<li><span class="token">ⓐ</span>
+<p id="fs-id1832720"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>6</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow> <mo>|</mo></mrow><mo>=</mo><mn>8</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id2389886">Write two equations and solve each:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1170402604810">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mn>6</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>8</mn>
+</mtd>
+<mtd><mspace width="5em"></mspace></mtd>
+<mtd columnalign="right">
+<mn>6</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>−8</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>6</mn><mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>4</mn>
+</mtd>
+<mtd><mspace width="5em"></mspace></mtd>
+<mtd columnalign="right">
+<mn>6</mn><mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>−12</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mtd>
+<mtd><mspace width="5em"></mspace></mtd>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>−2</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span>
+</div><p id="fs-id3203361">The two solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></li>
+<li><span class="token">ⓑ</span><p id="fs-id1879343"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow> <mo>|</mo></mrow><mo>=</mo><mn>−9</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id2293707">There is no solution as an absolute value cannot be negative.</p></li>
+<li><span class="token">ⓒ</span><p id="fs-id2888792"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn>
+</mrow> <mo>|</mo></mrow><mo>−</mo><mn>4</mn><mo>=</mo><mn>6</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id2436076">Isolate the absolute value expression and then write two equations.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id3274908">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow> <mo>|</mo></mrow><mo>−</mo><mn>4</mn></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mn>6</mn></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow> <mo>|</mo></mrow></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>10</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>10</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−10</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><mi>x</mi></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>15</mn></mrow></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>3</mn><mi>x</mi></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−5</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mn>5</mn></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center"><mi>x</mi></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo>−</mo><mfrac>
+<mn>5</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id2498828">There are two solutions: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>5</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>5</mn>
+<mn>3</mn>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></li>
+<li> <span class="token">ⓓ</span><p id="fs-id1340685">(d) <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mn>−5</mn><mi>x</mi><mo>+</mo><mn>10</mn>
+</mrow> <mo>|</mo></mrow><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id2016618">The equation is set equal to zero, so we have to write only one equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2431537">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−5</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right"><mrow><mn>−5</mn><mi>x</mi></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mn>−10</mn></mrow></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right"><mi>x</mi></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mn>2</mn></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1351555">There is one solution: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></li>
+</ol></div></section>
+<section class="worked-example" id="fs-id1535632"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_07"><header></header><section>
+<div data-type="problem" id="fs-id2515512"><div class="os-problem-container"><p id="fs-id2515513">Solve the absolute value equation: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mo>|</mo>
+<mn>1</mn><mo>−</mo><mn>4</mn><mi>x</mi>
+<mo>|</mo><mo>+</mo><mn>8</mn><mo>=</mo><mn>13.</mn>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id2385860"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+</section>
+<section data-depth="1" id="fs-id2653809"><h3 data-type="title">Solving Other Types of Equations</h3>
+<p id="fs-id3169548">There are many other types of equations in addition to the ones we have discussed so far. We will see more of them throughout the text. Here, we will discuss equations that are in quadratic form, and rational equations that result in a quadratic.</p>
+<section data-depth="2" id="fs-id1923869"><h4 data-type="title">Solving Equations in Quadratic Form</h4>
+<p id="fs-id1923873"><strong>Equations in quadratic form </strong>are equations with three terms. The first term has a power other than 2. The middle term has an exponent that is one-half the exponent of the leading term. The third term is a constant. We can solve equations in this form as if they were quadratic. A few examples of these equations include <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo>,</mo><msup>
+<mi>x</mi>
+<mn>6</mn>
+</msup>
+<mo>+</mo><mn>7</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>+</mo><mn>4</mn><msup>
+<mi>x</mi>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msup>
+<mo>+</mo><mn>2</mn><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span> In each one, doubling the exponent of the middle term equals the exponent on the leading term. We can solve these equations by substituting a variable for the middle term.</p><div class="ui-has-child-title" data-type="note" id="fs-id1834422"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Quadratic Form</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id3094567">If the exponent on the middle term is one-half of the exponent on the leading term, we have an <span data-type="term" group-by="e" id="term-00007">equation in quadratic form</span>, which we can solve as if it were a quadratic. We substitute a variable for the middle term to solve equations in quadratic form.</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1954745"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1385726"><strong>Given an equation quadratic in form, solve it.</strong></p>
+<ol id="fs-id1385730" type="1">
+<li>Identify the exponent on the leading term and determine whether it is double the exponent on the middle term.</li>
+<li>If it is, substitute a variable, such as <em data-effect="italics">u</em>, for the variable portion of the middle term.</li>
+<li>Rewrite the equation so that it takes on the standard form of a quadratic.</li>
+<li>Solve using one of the usual methods for solving a quadratic.</li>
+<li>Replace the substitution variable with the original term.</li>
+<li>Solve the remaining equation.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_02_06_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1357813"><header></header><section>
+<div data-type="problem" id="fs-id1357816"><div class="os-problem-container"><h4 data-type="title">Solving a Fourth-degree Equation in Quadratic Form</h4>
+<p id="fs-id2486573">Solve this fourth-degree equation: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1229229">This equation fits the main criteria, that the power on the leading term is double the power on the middle term. Next, we will make a substitution for the variable term in the middle. Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>u</mi><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Rewrite the equation in <em data-effect="italics">u</em>.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id3155491"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mn>3</mn><msup>
+<mi>u</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mi>u</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2371956">Now solve the quadratic.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2371960">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>3</mn><msup>
+<mi>u</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mi>u</mi><mo>−</mo><mn>1</mn></mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>u</mi><mo>+</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>u</mi><mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id2308574">Solve each factor and replace the original term for <em data-effect="italics">u.</em></p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2797268">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>3</mn><mi>u</mi><mo>+</mo><mn>1</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>3</mn><mi>u</mi></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>u</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>±</mo><mi>i</mi><msqrt>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1335933">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>u</mi><mo>−</mo><mn>1</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>u</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>±1</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id2980376">The solutions are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>±</mo><mi>i</mi><msqrt>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>±</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1929412"><div class="problem-statement"><h3>Try It #8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_08"><header></header><section><div data-type="problem" id="fs-id2514218"><div class="os-problem-container"><p id="fs-id2514219">Solve using substitution: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>8</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1929399"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>−</mo><mi>i</mi><mo>,</mo><mi>i</mi>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_02_06_10"><div class="problem-statement"><h3>Example 10</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id2444359"><header></header><section>
+<div data-type="problem" id="fs-id2444361"><div class="os-problem-container"><h4 data-type="title">Solving an Equation in Quadratic Form Containing a Binomial</h4>
+<p id="fs-id2029548">Solve the equation in quadratic form: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>11</mn><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mn>12</mn><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id2382012">This equation contains a binomial in place of the single variable. The tendency is to expand what is presented. However, recognizing that it fits the criteria for being in quadratic form makes all the difference in the solving process. First, make a substitution, letting <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>u</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Then rewrite the equation in <em data-effect="italics">u.</em></p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1929605">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>u</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>11</mn><mi>u</mi><mo>−</mo><mn>12</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo stretchy="false">(</mo><mi>u</mi><mo>+</mo><mn>12</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>u</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1691070">Solve using the zero-factor property and then replace <em data-effect="italics">u</em> with the original expression.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1516932">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>u</mi><mo>+</mo><mn>12</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>u</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−12</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−12</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−14</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1720759">The second factor results in</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2485990">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>u</mi><mo>−</mo><mn>1</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>u</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−1</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1943470">We have two solutions: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>−14</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1736480"><div class="problem-statement"><h3>Try It #9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_09"><header></header><section><div data-type="problem" id="fs-id1952007"><div class="os-problem-container"><p id="fs-id1952008">Solve: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>5</mn></mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>5</mn></mrow>
+<mo>)</mo></mrow><mo>−</mo><mn>21</mn><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1789429"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mo>,</mo><mn>12</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+</section>
+<section data-depth="2" id="fs-id2893053"><h4 data-type="title">Solving Rational Equations Resulting in a Quadratic</h4>
+<p id="fs-id1679917">Earlier, we solved rational equations. Sometimes, solving a rational equation results in a quadratic. When this happens, we continue the solution by simplifying the quadratic equation by one of the methods we have seen. It may turn out that there is no solution.</p>
+<section class="worked-example" id="Example_02_06_11"><div class="problem-statement"><h3>Example 11</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1970290"><header></header><section>
+<div data-type="problem" id="fs-id2508561"><div class="os-problem-container"><h4 data-type="title">Solving a Rational Equation Leading to a Quadratic</h4>
+<p id="fs-id2508566">Solve the following rational equation: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mrow>
+<mo>−</mo><mn>4</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mo>−</mo><mn>8</mn>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id2797287">We want all denominators in factored form to find the LCD. Two of the denominators cannot be factored further. However, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mn>−1</mn><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Then, the LCD is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Next, we multiply the whole equation by the LCD.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id2441856">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mrow><mo>[</mo> <mrow>
+<mfrac>
+<mrow>
+<mn>−4</mn><mi>x</mi></mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn></mrow>
+</mfrac>
+</mrow> <mo>]</mo></mrow></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mfrac>
+<mrow>
+<mn>−8</mn></mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow> <mo>]</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−4</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>4</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−8</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−4</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>4</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−8</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−4</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−4</mn><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−4</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>−1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id2980350">In this case, either solution produces a zero in the denominator in the original equation. Thus, there is no solution.</p>
+</div></section>
+<section class="worked-example" id="fs-id2906702"><div class="problem-statement"><h3>Try It #10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_02_06_10"><header></header><section><div data-type="problem" id="fs-id1751154"><div class="os-problem-container"><p id="fs-id1751155">Solve <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mo>−</mo><mn>2</mn>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1831304"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+</mrow></semantics></math></span></span>(<span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mn>0</mn></mrow></semantics></math></span></span> is not a solution).</p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id2665007"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1822998">Access these online resources for additional instruction and practice with different types of equations.</p>
+<ul id="fs-id1823002"><li><a aria-label="Go to Rational Equation with no Solution" href="https://openstax.org/l/rateqnosoln" rel="noopener nofollow" target="_blank">Rational Equation with no Solution</a></li>
+<li><a aria-label="Go to Solving equations with rational exponents using reciprocal powers" href="https://openstax.org/l/ratexprecpexp" rel="noopener nofollow" target="_blank">Solving equations with rational exponents using reciprocal powers</a></li>
+<li><a aria-label="Go to Solving radical equations part 1 of 2" href="https://openstax.org/l/radeqsolvepart1" rel="noopener nofollow" target="_blank">Solving radical equations part 1 of 2</a></li>
+<li><a aria-label="Go to Solving radical equations part 2 of 2" href="https://openstax.org/l/radeqsolvepart2" rel="noopener nofollow" target="_blank">Solving radical equations part 2 of 2</a></li>
+</ul></div></section></div>
+</section>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/2-6-other-types-of-equations">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

@@ -1,0 +1,178 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.3: Two Basic Rules of Probability | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-2-independent-and-mutually-exclusive-events.html">Previous: 3.2</a><a href="section-3-4-contingency-tables.html">Next: 3.4</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>3.3: Two Basic Rules of Probability</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="fs-idp70908880">When calculating probability, there are two rules to consider when determining if two events are independent or dependent and if they are mutually exclusive or not.</p>
+<section data-depth="1" id="element-860"><h3 data-type="title">The Multiplication Rule</h3>
+<p id="element-288">If <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are two events defined on a <span data-type="term" group-by="s" id="term-00001">sample space</span>, then: <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>).</p>
+<p id="element-423">This rule may also be written as: <em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>) = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mtext> AND </mtext><mi>B</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span></p>
+<p id="element-800">(The probability of <em data-effect="italics">A</em> given <em data-effect="italics">B</em> equals the probability of <em data-effect="italics">A</em> and <em data-effect="italics">B</em> divided by the probability of <em data-effect="italics">B</em>.)</p><p id="element-607">If <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are <span data-type="term" group-by="i" id="term-00002">independent</span>, then <em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>). Then <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>) becomes <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>).</p>
+</section>
+<section data-depth="1" id="element-56"><h3 data-type="title">The Addition Rule</h3>
+<p id="element-306">If <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are defined on a sample space, then: <em data-effect="italics">P</em>(<em data-effect="italics">A</em> OR <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>).</p>
+<p id="element-212">If <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are <span data-type="term" group-by="m" id="term-00003">mutually exclusive</span>, then <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0. Then <em data-effect="italics">P</em>(<em data-effect="italics">A</em> OR <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) becomes <em data-effect="italics">P</em>(<em data-effect="italics">A</em> OR <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">B</em>).</p>
+<section class="worked-example" id="element-898"><div class="problem-statement"><h3>Example 3.14</h3><p>A traveler can take at most one vacation. P(New Zealand) = 0.60 and P(Alaska) = 0.35. Find the probability of choosing both, either, and neither.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Both = 0, because the choices are mutually exclusive. Either = 0.60 + 0.35 = 0.95. Neither = 1 − 0.95 = 0.05.</p></div></section>
+<section class="worked-example" id="note-00001"><div class="problem-statement"><h3>Try It 3.14</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="exer-00001"><header></header><section>
+<div data-type="problem" id="prob-00001"><div class="os-problem-container">
+<p id="para-00011">Anna has to buy a new car. She has two choices, car A and car B. Anna can afford only one car. The probability that Anna will buy car A is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>25</mn></mrow></semantics></math></span></span>, and the probability that Anna will buy car B is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>65</mn></mrow></semantics></math></span></span>. Find:</p>
+<ul id="list-00001">
+<li><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo> </mo><mi>A</mi><mi>N</mi><mi>D</mi><mo> </mo><mi>B</mi><mo>)</mo></mrow></semantics></math></span></li>
+<li><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo> </mo><mi>O</mi><mi>R</mi><mo> </mo><mi>B</mi><mo>)</mo></mrow></semantics></math></span></li>
+</ul>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(A AND B) = 0; P(A OR B) = 0.25 + 0.65 = 0.90.</p></div></section>
+<section class="worked-example" id="element-83"><div class="problem-statement"><h3>Example 3.15</h3><section>
+<div class="body">
+<p id="element-230">Carlos plays college soccer. He makes a goal 65% of the time he shoots. Carlos is going to attempt two goals in a row in the next game. <em data-effect="italics">A</em> = the event Carlos is successful on his first attempt. <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = 0.65. <em data-effect="italics">B</em> = the event Carlos is successful on his second attempt. <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.65. Carlos tends to shoot in streaks. The probability that he makes the second goal <strong>GIVEN</strong> that he made the first goal is 0.90.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-639"><header></header><section>
+<div data-type="problem" id="id20946894">
+<div class="os-problem-container">
+<p id="element-639p">a. What is the probability that he makes both goals?</p>
+<p id="element-101p">b. What is the probability that Carlos makes either the first goal or the second goal?</p>
+<p id="element-356">c. Are <em data-effect="italics">A</em> and <em data-effect="italics">B</em> independent?</p>
+<p id="element-102p">d. Are <em data-effect="italics">A</em> and <em data-effect="italics">B</em> mutually exclusive?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-639s">a. The problem is asking you to find <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">A</em>). Since <em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">A</em>) = 0.90: <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">A</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">A</em>) <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = (0.90)(0.65) = 0.585</p>
+<p id="fs-idm26792640">Carlos makes the first and second goals with probability 0.585.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-101s">b. The problem is asking you to find <em data-effect="italics">P</em>(<em data-effect="italics">A</em> OR <em data-effect="italics">B</em>).</p>
+<p id="fs-idm17573264"><em data-effect="italics">P</em>(<em data-effect="italics">A</em> OR <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0.65 + 0.65 - 0.585 = 0.715</p>
+<p id="element-101s2">Carlos makes either the first goal or the second goal with probability 0.715.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-471">c. No, they are not, because <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">A</em>) = 0.585.</p><p id="fs-idm36249792"><em data-effect="italics">P</em>(<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = (0.65)(0.65) = 0.423</p><p id="fs-idp6892608">0.423 ≠ 0.585 = <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">A</em>)</p>
+<p id="element-990">So, <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">A</em>) is <strong>not</strong> equal to <em data-effect="italics">P</em>(<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">A</em>).<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-102s">d. No, they are not because <em data-effect="italics">P</em>(<em data-effect="italics">A</em> and <em data-effect="italics">B</em>) = 0.585.</p><p id="element-102s2">To be mutually exclusive, <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) must equal zero.</p>
+</div></section>
+<section class="worked-example" id="fs-idm59654416"><div class="problem-statement"><h3>Try It 3.15</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm50677584"><header></header><section>
+<div data-type="problem" id="fs-idm61670400"><div class="os-problem-container">
+<p id="fs-idm37435328">Helen plays basketball. For free throws, she makes the shot 75% of the time. Helen must now attempt two free throws. <em data-effect="italics">C</em> = the event that Helen makes the first shot. <em data-effect="italics">P</em>(<em data-effect="italics">C</em>) = 0.75. <em data-effect="italics">D</em> = the event Helen makes the second shot. <em data-effect="italics">P</em>(<em data-effect="italics">D</em>) = 0.75. The probability that Helen makes the second free throw given that she made the first is 0.85. What is the probability that Helen makes both free throws?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(C AND D) = P(C)P(D | C) = (0.75)(0.85) = 0.6375. Do not multiply the two unconditional 0.75 values; independence was not given.</p></div></section>
+<section class="worked-example" id="element-572"><div class="problem-statement"><h3>Example 3.16</h3><section>
+<div class="body">
+<p id="element-699">A community swim team has <strong>150</strong> members. <strong>Seventy-five</strong> of the members are advanced swimmers. <strong>Forty-seven</strong> of the members are intermediate swimmers. The remainder are novice swimmers. <strong>Forty</strong> of the advanced swimmers practice four times a week. <strong>Thirty</strong> of the intermediate swimmers practice four times a week. <strong>Ten</strong> of the novice swimmers practice four times a week. Suppose one member of the swim team is chosen randomly.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-201"><header></header><section>
+<div data-type="problem" id="id21150090">
+<div class="os-problem-container">
+<p id="element-201p">a. What is the probability that the member is a novice swimmer?</p>
+<p id="element-202p">b. What is the probability that the member practices four times a week?</p>
+<p id="element-203p">c. What is the probability that the member is an advanced swimmer and practices four times a week?</p>
+<p id="element-204p">d. What is the probability that a member is an advanced swimmer and an intermediate swimmer? Are being an advanced swimmer and an intermediate swimmer mutually exclusive? Why or why not?</p>
+<p id="eip-idm154998256">e. Are being a novice swimmer and practicing four times a week independent events? Why or why not?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-201s">a. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mfrac><mn>28</mn><mn>150</mn></mfrac></mrow></semantics></math></span></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-202s">b. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mfrac><mn>80</mn><mn>150</mn></mfrac></mrow></semantics></math></span></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-203s">c. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mfrac><mn>40</mn><mn>150</mn></mfrac></mrow></semantics></math></span></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-204s">d. <em data-effect="italics">P</em>(advanced AND intermediate) = 0, so these are mutually exclusive events. A swimmer cannot be an advanced swimmer and an intermediate swimmer at the same time.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-205s">e. No, these are not independent events.
+<span data-type="newline"><br/></span><em data-effect="italics">P</em>(novice AND practices four times per week) = 0.0667
+<span data-type="newline"><br/></span><em data-effect="italics">P</em>(novice)<em data-effect="italics">P</em>(practices four times per week) = 0.0996
+<span data-type="newline"><br/></span>0.0667 ≠ 0.0996</p>
+</div></section>
+<section class="worked-example" id="fs-idm17775392"><div class="problem-statement"><h3>Try It 3.16</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm36460112"><header></header><section>
+<div data-type="problem" id="fs-idm11280848"><div class="os-problem-container">
+<p id="fs-idp1767312">A school has 200 seniors of whom 140 will be going to college next year. Forty will be going directly to work. The remainder are taking a gap year. Fifty of the seniors going to college play sports. Thirty of the seniors going directly to work play sports. Five of the seniors taking a gap year play sports. What is the probability that a senior is taking a gap year?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Taking a gap year: 200 − 140 − 40 = 20 students. Probability = 20/200 = 0.10.</p></div></section>
+<section class="worked-example" id="fs-idm15085168"><div class="problem-statement"><h3>Example 3.17</h3><section>
+<div class="body">
+<p id="fs-idm37045312">Felicity attends Modesto JC in Modesto, CA. The probability that Felicity enrolls in a math class is 0.2 and the probability that she enrolls in a speech class is 0.65. The probability that she enrolls in a math class GIVEN that she enrolls in speech class is 0.25.</p><p id="fs-idm57022736">Let: <em data-effect="italics">M</em> = math class, <em data-effect="italics">S</em> = speech class, <em data-effect="italics">M</em>|<em data-effect="italics">S</em> = math given speech</p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idp38089552"><header></header><section>
+<div data-type="problem" id="fs-idm12150000">
+<div class="os-problem-container">
+<ol id="fs-idm41716768" type="a">
+<li>What is the probability that Felicity enrolls in math and speech?
+<span data-count="1" data-type="newline"><br/></span>Find <em data-effect="italics">P</em>(<em data-effect="italics">M</em> AND <em data-effect="italics">S</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">M</em>|<em data-effect="italics">S</em>)<em data-effect="italics">P</em>(<em data-effect="italics">S</em>).</li>
+<li>What is the probability that Felicity enrolls in math or speech classes?
+<span data-count="1" data-type="newline"><br/></span>Find <em data-effect="italics">P</em>(<em data-effect="italics">M</em> OR <em data-effect="italics">S</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">M</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">S</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">M</em> AND <em data-effect="italics">S</em>).</li>
+<li>Are <em data-effect="italics">M</em> and <em data-effect="italics">S</em> independent? Is <em data-effect="italics">P</em>(<em data-effect="italics">M</em>|<em data-effect="italics">S</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">M</em>)?</li>
+<li>Are <em data-effect="italics">M</em> and <em data-effect="italics">S</em> mutually exclusive? Is <em data-effect="italics">P</em>(<em data-effect="italics">M</em> AND <em data-effect="italics">S</em>) = 0?</li>
+</ol>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm40435168">a. 0.1625, b. 0.6875, c. No, d. No</p></div></section>
+<section class="worked-example" id="eip-400"><div class="problem-statement"><h3>Try It 3.17</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm68914864"><header></header><section>
+<div data-type="problem" id="fs-idm57353328"><div class="os-problem-container">
+<p id="fs-idm50508672">A student goes to the library. Let events <em data-effect="italics">B</em> = the student checks out a book and <em data-effect="italics">D</em> = the student checks out a DVD. Suppose that <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.40, <em data-effect="italics">P</em>(<em data-effect="italics">D</em>) = 0.30 and <em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">B</em>) = 0.5.</p><ol id="fs-idm35504336" type="a"><li>Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">D</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em> OR <em data-effect="italics">D</em>).</li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(B AND D) = P(B)P(D | B) = 0.40(0.50) = 0.20. P(B OR D) = 0.40 + 0.30 − 0.20 = 0.50.</p></div></section>
+<section class="worked-example" id="example5"><div class="problem-statement"><h3>Example 3.18</h3><section>
+<div class="body">
+<p id="element-472">Studies show that about one woman in seven (approximately 14.3%) who live to be 90 will develop breast cancer. Suppose that of those women who develop breast cancer, a test is negative 2% of the time. Also suppose that in the general population of women, the test for breast cancer is negative about 85% of the time. Let <em data-effect="italics">B</em> = woman develops breast cancer and let <em data-effect="italics">N</em> = tests negative. Suppose one woman is selected at random.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-301"><header></header><section>
+<div data-type="problem" id="id21164153">
+<div class="os-problem-container">
+<p id="element-301p">a. What is the probability that the woman develops breast cancer? What is the probability that woman tests negative?</p>
+<p id="element-302p">b. Given that the woman has breast cancer, what is the probability that she tests negative?</p>
+<p id="element-307p">c. What is the probability that the woman has breast cancer AND tests negative?</p>
+<p id="element-303p">d. What is the probability that the woman has breast cancer or tests negative?</p>
+<p id="element-304p">e. Are having breast cancer and testing negative independent events?</p>
+<p id="element-305p">f. Are having breast cancer and testing negative mutually exclusive?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-301s">a. <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.143; <em data-effect="italics">P</em>(<em data-effect="italics">N</em>) = 0.85<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-302s">b. <em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">B</em>) = 0.02<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-307s">c. <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">N</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">B</em>) = (0.143)(0.02) = 0.0029<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-303s">d. <em data-effect="italics">P</em>(<em data-effect="italics">B</em> OR <em data-effect="italics">N</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">N</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">N</em>) = 0.143 + 0.85 - 0.0029 = 0.9901<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-304s">e. No. <em data-effect="italics">P</em>(<em data-effect="italics">N</em>) = 0.85; <em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">B</em>) = 0.02. So, <em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">B</em>) does not equal <em data-effect="italics">P</em>(<em data-effect="italics">N</em>).<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-305s">f. No. <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">N</em>) = 0.0029. For <em data-effect="italics">B</em> and <em data-effect="italics">N</em> to be mutually exclusive, <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">N</em>) must be zero.</p>
+</div></section>
+<section class="worked-example" id="fs-idp45632144"><div class="problem-statement"><h3>Try It 3.18</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm57543872"><header></header><section>
+<div data-type="problem" id="fs-idm69233152"><div class="os-problem-container">
+<p id="fs-idm39897552">A school has 200 seniors of whom 140 will be going to college next year. Forty will be going directly to work. The remainder are taking a gap year. Fifty of the seniors going to college play sports. Thirty of the seniors going directly to work play sports. Five of the seniors taking a gap year play sports. What is the probability that a senior is going to college and plays sports?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>50/200 = 0.25. The denominator is all seniors because this is AND, not a conditional probability.</p></div></section><section class="worked-example" id="fs-idp15189248"><div class="problem-statement"><h3>Example 3.19</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm109502304"><header></header><section>
+<div data-type="problem" id="fs-idm59824144">
+<div class="os-problem-container">
+<p id="fs-idm8914880">Refer to the information in <a aria-label="Go to Example 3.18" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability#example5">Example 3.18</a>. <em data-effect="italics">P</em> = tests positive.</p>
+<ol id="fs-idm51077952" type="a">
+<li>Given that a woman develops breast cancer, what is the probability that she tests positive. Find <em data-effect="italics">P</em>(<em data-effect="italics">P</em>|<em data-effect="italics">B</em>) = 1 - <em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">B</em>).</li>
+<li>What is the probability that a woman develops breast cancer and tests positive. Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">P</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">P</em>|<em data-effect="italics">B</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>).</li>
+<li>What is the probability that a woman does not develop breast cancer. Find <em data-effect="italics">P</em>(<em data-effect="italics">B′</em>) = 1 - <em data-effect="italics">P</em>(<em data-effect="italics">B</em>).</li>
+<li>What is the probability that a woman tests positive for breast cancer. Find <em data-effect="italics">P</em>(<em data-effect="italics">P</em>) = 1 - <em data-effect="italics">P</em>(<em data-effect="italics">N</em>).</li></ol></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm40210528">a. 0.98; b. 0.1401; c. 0.857; d. 0.15</p>
+</div></section>
+<section class="worked-example" id="fs-idm25110496"><div class="problem-statement"><h3>Try It 3.19</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp6951808"><header></header><section>
+<div data-type="problem" id="fs-idm846464"><div class="os-problem-container">
+<p id="fs-idm37086800">A student goes to the library. Let events <em data-effect="italics">B</em> = the student checks out a book and <em data-effect="italics">D</em> = the student checks out a DVD. Suppose that <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.40, <em data-effect="italics">P</em>(<em data-effect="italics">D</em>) = 0.30 and <em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">B</em>) = 0.5.</p><ol id="fs-idm40366288" type="a"><li>Find <em data-effect="italics">P</em>(<em data-effect="italics">B′</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">D</em> AND <em data-effect="italics">B</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">D</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">D</em> AND <em data-effect="italics">B′</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">B′</em>).</li></ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(B′) = 0.60. P(D AND B) = 0.40(0.5) = 0.20. P(B | D) = 0.20/0.30 = 2/3. P(D AND B′) = 0.30 − 0.20 = 0.10. P(D | B′) = 0.10/0.60 = 1/6.</p></div></section>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

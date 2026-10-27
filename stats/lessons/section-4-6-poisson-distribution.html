@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>4.6: Poisson Distribution | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-4-5-hypergeometric-distribution.html">Previous: 4.5</a><a href="section-5-1-continuous-probability-functions.html">Next: 5.1</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/4-6-poisson-distribution">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>4.6: Poisson Distribution</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="fs-idp399448482">There are two main characteristics of a Poisson experiment.</p><ol id="element-1"><li>The <span data-type="term" group-by="P" id="term-00001">Poisson probability distribution</span> gives the probability of a number of events occurring in a <strong>fixed interval</strong> of time or space if these events happen with a known average rate and independently of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages.</li>
+<li>The Poisson distribution may be used to approximate the binomial if the probability of success is "small" (such as 0.01) and the number of trials is "large" (such as 1,000). You will verify the relationship in the homework exercises. <em data-effect="italics">n</em> is the number of trials, and <em data-effect="italics">p</em> is the probability of a "success."</li>
+</ol><p id="fs-idp39944848">The random variable <em data-effect="italics">X</em> = the number of occurrences in the interval of interest.</p>
+<section class="worked-example" id="element-743"><div class="problem-statement"><h3>Example 4.26</h3><p>A bakery places an average of 12 loaves on a shelf per 30 minutes. Under a constant-rate Poisson model, define the count for a five-minute interval, find its mean, and find the probability of exactly three loaves.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X counts loaves in five minutes. μ = 12(5/30) = 2, so X ∼ Poisson(2). P(X=3) = e⁻²2³/3! ≈ 0.1804.</p></div></section>
+<section class="worked-example" id="fs-idp39470352"><div class="problem-statement"><h3>Try It 4.26</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm102800576"><header></header><section>
+<div data-type="problem" id="fs-idm136652096"><div class="os-problem-container">
+<p id="fs-idm76340608">The average number of fish caught in an hour is eight. Of interest is the number of fish caught in 15 minutes. The time interval of interest is 15 minutes. What is the average number of fish caught in 15 minutes?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The expected count scales with time: 8(15/60) = 2 fish in 15 minutes, assuming the same average rate.</p></div></section><section class="worked-example" id="element-403"><div class="problem-statement"><h3>Example 4.27</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idp21926144"><header></header><section><div data-type="problem" id="fs-idp93226496">
+<div class="os-problem-container"><p id="element-244">A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let <em data-effect="italics">X</em> = the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Write a mathematical statement for the probability question.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm21074048"><em data-effect="italics">P</em>(<em data-effect="italics">x</em> &lt; 5)</p></div></section>
+<section class="worked-example" id="fs-idm3960864"><div class="problem-statement"><h3>Try It 4.27</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm122013280"><header></header><section>
+<div data-type="problem" id="fs-idp1855472"><div class="os-problem-container">
+<p id="fs-idm64281696">An electronics store expects to have ten returns per day on average. The manager wants to know the probability of the store getting fewer than eight returns on any given day. State the probability question mathematically.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>If X ∼ Poisson(10) counts daily returns, the question is P(X&lt;8) = P(X≤7).</p></div></section><section class="worked-example" id="element-774"><div class="problem-statement"><h3>Example 4.28</h3><section>
+<div class="body">
+<p id="element-234">You notice that a news reporter says "uh," on average, two times per broadcast. What is the probability that the news reporter says "uh" more than two times per broadcast.</p>
+<p id="element-235">This is a Poisson problem because you are interested in knowing the number of times the news reporter says "uh" during a broadcast.<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-895"><header></header><section>
+<div data-type="problem" id="id18394368">
+<div class="os-problem-container">
+<p id="element-734">a. What is the interval of interest?</p>
+<p id="element-10">b. What is the average number of times the news reporter says "uh" during one broadcast?</p>
+<p id="element-817">c. Let <em data-effect="italics">X</em> = ____________. What values does <em data-effect="italics">X</em> take on?</p>
+<p id="element-423">d. The probability question is <em data-effect="italics">P</em>(______).</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-227">a. one broadcast</p>
+<p id="element-40">b. 2</p>
+<p id="element-112">c. Let <em data-effect="italics">X</em> = the number of times the news reporter says "uh" during one broadcast.
+<span data-type="newline"><br/></span><em data-effect="italics">x</em> = 0, 1, 2, 3, ...
+  </p>
+<p id="element-683">d. <em data-effect="italics">P</em>(<em data-effect="italics">x</em> &gt; 2)</p></div></section>
+<section class="worked-example" id="fs-idm101937776"><div class="problem-statement"><h3>Try It 4.28</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm138494832"><header></header><section>
+<div data-type="problem" id="fs-idm76741440"><div class="os-problem-container">
+<p id="fs-idm124704784">An emergency room at a particular hospital gets an average of five patients per hour. A doctor wants to know the probability that the ER gets more than five patients per hour. Give the reason why this would be a Poisson distribution.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The outcome is a count of arrivals in a fixed one-hour interval. A Poisson model with mean 5 is appropriate only if arrivals are consistent with a constant-rate independent-arrival process. The average alone does not prove a Poisson distribution. Under that model, the event is X&gt;5.</p></div></section><section data-depth="1" id="element-210"><h3 data-type="title">Notation for the Poisson: P = Poisson Probability Distribution Function</h3>
+<p id="element-272"><em data-effect="italics">X</em> ~ <em data-effect="italics">P</em>(<em data-effect="italics">μ</em>)</p>
+<p id="element-273">Read this as "<em data-effect="italics">X</em> is a random variable with a Poisson distribution." The parameter is <em data-effect="italics">μ</em> (or <em data-effect="italics">λ</em>); <em data-effect="italics">μ</em> (or <em data-effect="italics">λ</em>) = the mean for the interval of interest. The standard deviation of the Poisson distribution with mean <em data-effect="italics">µ</em> is <em data-effect="italics">σ</em>=√<em data-effect="italics">μ</em> </p>
+</section>
+<section class="worked-example" id="element-784"><div class="problem-statement"><h3>Example 4.29</h3><p>Under a constant-rate Poisson model, a person averages six phone calls in two hours. Find the probability of more than one call in the next 15 minutes.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>μ = 6(15/120) = 0.75. P(X&gt;1) = 1 − [P(0)+P(1)] = 1 − e⁻⁰·⁷⁵(1+0.75) ≈ 0.1734. The complement includes both zero and one call.</p></div></section>
+<section class="worked-example" id="fs-idm14071904"><div class="problem-statement"><h3>Try It 4.29</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm114328016"><header></header><section>
+<div data-type="problem" id="fs-idm126244848"><div class="os-problem-container">
+<p id="fs-idm2292064">A customer service center receives about ten emails every half-hour. What is the probability that the customer service center receives more than four emails in the next six minutes?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>μ = 10(6/30) = 2 emails. P(X&gt;4) = 1 − P(X≤4) ≈ 0.0527, under the supplied Poisson-process model.</p></div></section><section class="worked-example" id="fs-idm98662832"><div class="problem-statement"><h3>Example 4.30</h3><section>
+<div class="body">
+<p id="fs-idm122953024">According to Baydin, an email management company, an email user gets, on average, 147 emails per day. Let <em data-effect="italics">X</em> = the number of emails an email user receives per day. The discrete random variable <em data-effect="italics">X</em> takes on the values <em data-effect="italics">x</em> = 0, 1, 2 …. The random variable <em data-effect="italics">X</em> has a Poisson distribution: <em data-effect="italics">X</em> ~ <em data-effect="italics">P</em>(147). The mean is 147 emails.</p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm81055280"><header></header><section>
+<div data-type="problem" id="fs-idm139603200">
+<div class="os-problem-container">
+<ol id="fs-idm148062160" type="a">
+<li>What is the probability that an email user receives exactly 160 emails per day?</li>
+<li>What is the probability that an email user receives at most 160 emails per day?</li>
+<li>What is the standard deviation?</li>
+</ol>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="fs-idm100902832" type="a"><li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 160) = poissonpdf(147, 160) ≈ 0.0180</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 160) = poissoncdf(147, 160) ≈ 0.8666</li>
+<li>Standard Deviation = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>σ</mi><mo>=</mo><msqrt>
+<mi>μ</mi>
+</msqrt>
+<mo>=</mo><msqrt>
+<mrow>
+<mn>147</mn>
+</mrow>
+</msqrt>
+<mo>≈</mo><mn>12.1244</mn>
+</mrow>
+</mrow></semantics></math></span>
+</li></ol></div></section>
+<section class="worked-example" id="fs-idm17831600"><div class="problem-statement"><h3>Try It 4.30</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm128601120"><header></header><section>
+<div data-type="problem" id="fs-idm195364880"><div class="os-problem-container">
+<p id="fs-idm191065552">According to a recent poll by the Pew Internet Project, people between the ages of 14 and 17 send an average of 187 text messages each day. Let <em data-effect="italics">X</em> = the number of texts that a girl aged 14 to 17 sends per day. The discrete random variable <em data-effect="italics">X</em> takes on the values <em data-effect="italics">x</em> = 0, 1, 2 …. The random variable <em data-effect="italics">X</em> has a Poisson distribution: <em data-effect="italics">X</em> ~ <em data-effect="italics">P</em>(187). The mean is 187 text messages.</p>
+<ol id="fs-idm153913056" type="a"><li>What is the probability that a person sends exactly 175 texts per day?</li>
+<li>What is the probability that a person sends at most 150 texts per day?</li>
+<li>What is the standard deviation?</li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>Using the exercise model X ∼ Poisson(187), P(X=175) ≈ 0.02034.</li><li>P(X≤150) ≈ 0.00297.</li><li>σ = √187 ≈ 13.6748 messages. This model is an exercise assumption; a mean alone does not establish that actual texting counts are Poisson.</li></ol></div></section><section class="worked-example" id="fs-idp46630000"><div class="problem-statement"><h3>Example 4.31</h3><section>
+<div class="body">
+<p id="fs-idm138564992">Text message users receive or send an average of 41.5 text messages per day.</p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm133688624"><header></header><section>
+<div data-type="problem" id="fs-idm129087696">
+<div class="os-problem-container">
+<ol id="fs-idm126097296" type="a"><li>How many text messages does a text message user receive or send per hour?</li>
+<li>What is the probability that a text message user receives or sends two messages per hour?</li>
+<li>What is the probability that a text message user receives or sends more than two messages per hour?</li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="fs-idm97821584" type="a"><li>Let <em data-effect="italics">X</em> = the number of texts that a user sends or receives in one hour. The average number of texts received per hour is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>41.5</mn>
+</mrow>
+<mrow>
+<mn>24</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> ≈ 1.7292.</li>
+<li><em data-effect="italics">X</em> ~ <em data-effect="italics">P</em>(1.7292), so <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 2) = poissonpdf(1.7292, 2) ≈ 0.2653</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> &gt; 2) = 1 – <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 2) = 1 – poissoncdf(1.7292, 2) ≈ 1 – 0.7495 = 0.2505</li>
+</ol></div></section>
+<section class="worked-example" id="fs-idm6127376"><div class="problem-statement"><h3>Try It 4.31</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-693"><header></header><section>
+<div data-type="problem" id="fs-idm114876624"><div class="os-problem-container">
+<p id="fs-idm31960976">Atlanta’s Hartsfield-Jackson International Airport is the busiest airport in the world. On average there are 2,700 arrivals and departures each day.</p>
+<ol id="fs-idm85294848" type="a"><li>How many airplanes arrive and depart the airport per hour?</li>
+<li>What is the probability that there are exactly 100 arrivals and departures in one hour? </li>
+<li>What is the probability that there are at most 100 arrivals and departures in one hour?</li>
+</ol></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>Using the supplied model and a constant rate over 24 hours, μ = 2700/24 = 112.5 movements per hour.</li><li>P(X=100) ≈ 0.01937.</li><li>P(X≤100) ≈ 0.12789.</li></ol></div></section><section class="worked-example" id="fs-idm140754736"><div class="problem-statement"><h3>Example 4.32</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm140268064"><header></header><section>
+<div data-type="problem" id="fs-idm63493200">
+<div class="os-problem-container">
+<p id="fs-idm59600144">On a certain day in May starting at 4:30 PM, the probability of low seismic activity for the next 48 hours in Alaska was reported as about 1.02%. Use this information for the next 200 days to find the probability that there will be low seismic activity in ten of the next 200 days. Use both the binomial and Poisson distributions to calculate the probabilities. Are they close?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm69654032">Let <em data-effect="italics">X</em> = the number of days with low seismic activity.</p><p id="fs-idm57624224">Using the binomial distribution:
+  </p><ul data-bullet-style="none" id="fs-idp4019536">
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 10) = binompdf(200, .0102, 10) ≈ 0.000039</li>
+</ul>
+<p id="fs-idm136827536">Using the Poisson distribution:
+</p><ul data-bullet-style="none" id="fs-idm9822304"><li>Calculate <em data-effect="italics">μ</em> = <em data-effect="italics">np</em> = 200(0.0102) ≈ 2.04</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 10) = poissonpdf(2.04, 10) ≈ 0.000045</li>
+</ul>
+<p id="fs-idm44106800">We expect the approximation to be good because <em data-effect="italics">n</em> is large (greater than 20) and <em data-effect="italics">p</em> is small (less than 0.05). The results are close—both probabilities reported are almost 0.</p></div></section>
+<section class="worked-example" id="fs-idp26868464"><div class="problem-statement"><h3>Try It 4.32</h3><p>As a mathematical comparison, suppose 100 independent, nonoverlapping 48-hour periods each have probability 0.0143 of the specified moderate-seismic-activity event. Find the probability of exactly five such periods using the binomial distribution and its Poisson approximation. Compare.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Exact model: X ∼ B(100,0.0143); P(X=5) ≈ 0.011459. Poisson approximation: μ = np = 1.43; P(Y=5) ≈ 0.011925. They are close. The consistent period definition and independence are explicit model assumptions; overlapping 48-hour forecasts for successive days would not supply independent trials.</p></div></section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/4-6-poisson-distribution">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

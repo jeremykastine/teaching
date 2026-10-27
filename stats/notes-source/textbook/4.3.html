@@ -1,0 +1,611 @@
+<div class="chapter-content-module" data-book-content="true" data-type="page" id="page_bc688b3a-f3f9-4686-899c-da9dae9fbf31"><h2 data-rex-keep="true" data-type="document-title" id="page_bc688b3a-f3f9-4686-899c-da9dae9fbf31_titlecreatedbycookbook"><span class="os-number">4.3</span>
+<span class="os-divider"> </span>
+<span class="os-text" data-type="" itemprop="">Binomial Distribution</span>
+</h2>
+<p id="element-999">There are three characteristics of a binomial experiment.
+</p><ol id="element-591"><li>There are a fixed number of trials. Think of trials as repetitions of an experiment. The letter <em data-effect="italics">n</em> denotes the number of trials.</li>
+<li>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <em data-effect="italics">p</em> denotes the probability of a success on one trial, and <em data-effect="italics">q</em> denotes the probability of a failure on one trial. <em data-effect="italics">p</em> + <em data-effect="italics">q</em> = 1.</li>
+<li>The <em data-effect="italics">n</em> trials are independent and are repeated using identical conditions. Because the <em data-effect="italics">n</em> trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <em data-effect="italics">p</em>, of a success and probability, <em data-effect="italics">q</em>, of a failure remain the same. For example, randomly guessing at a true-false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly. Suppose Joe always guesses correctly on any statistics true-false question with probability <em data-effect="italics">p</em> = 0.6. Then, <em data-effect="italics">q</em> = 0.4. This means that for every true-false statistics question Joe answers, his probability of success (<em data-effect="italics">p</em> = 0.6) and his probability of failure (<em data-effect="italics">q</em> = 0.4) remain the same.</li>
+</ol><p id="element-229">The outcomes of a binomial experiment fit a <span data-type="term" group-by="b" id="term-00001">binomial probability distribution</span>. The random variable <em data-effect="italics">X</em> = the number of successes obtained in the <em data-effect="italics">n</em> independent trials.</p><p id="element-108">The mean, <em data-effect="italics">μ</em>, and variance, <em data-effect="italics">σ</em><sup>2</sup>, for the binomial probability distribution are <em data-effect="italics">μ</em> = <em data-effect="italics">np</em> and <em data-effect="italics">σ</em><sup>2</sup> = <em data-effect="italics">npq</em>. The standard deviation, <em data-effect="italics">σ</em>, is then <em data-effect="italics">σ</em> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>.</p><p id="element-612">Any experiment that has characteristics two and three and where <em data-effect="italics">n</em> = 1 is called a <span data-type="term" group-by="B" id="term-00002">Bernoulli Trial</span> (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</p>
+<div class="ui-has-child-title" data-type="example" id="element-375"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.9</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-545">At ABC College, the withdrawal rate from an elementary physics course is 30% for any given term. This implies that, for any given term, 70% of the students stay in the class for the entire term. A "success" could be defined as an individual who withdrew. The random variable <em data-effect="italics">X</em> = the number of students who withdraw from the randomly selected elementary physics class.</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm41846320"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.9</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm40705376"><header></header><section>
+<div data-type="problem" id="fs-idm68456256"><div class="os-problem-container">
+<p id="fs-idm44525856">The state health board is concerned about the amount of fruit available in school lunches. Forty-eight percent of schools in the state offer fruit in their lunches every day. This implies that 52% do not. What would a "success" be in this case?</p></div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="fs-idm62623744"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.10</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-284">Suppose you play a game that you can only either win or lose. The probability that you win any game is 55%, and the probability that you lose is 45%. Each game you play is independent. If you play the game 20 times, write the function that describes the probability that you win 15 of the 20 times. Here, if you define <em data-effect="italics">X</em> as the number of wins, then <em data-effect="italics">X</em> takes on the values 0, 1, 2, 3, ..., 20. The probability of a success is <em data-effect="italics">p</em> = 0.55. The probability of a failure is <em data-effect="italics">q</em> = 0.45. The number of trials is <em data-effect="italics">n</em> = 20. The probability question can be stated mathematically as <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 15).</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm55323584"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.10</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm35562192"><header></header><section>
+<div data-type="problem" id="fs-idm43643408"><div class="os-problem-container">
+<p id="fs-idm43925792">A trainer is teaching a rescued dolphin to catch live fish before returning it to the wild. The probability that the dolphin successfully catches a fish is 35%, and the probability that the dolphin does not successfully catch the fish is 65%. Out of 20 attempts, you want to find the probability that the dolphin succeeds 12 times. State the probability question mathematically.</p></div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="element-167"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.11</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body"><div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm61431456"><header></header><section>
+<div data-type="problem" id="fs-idm3565248"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-104">A coin has been altered to weight the outcome from 0.5 to 0.25 and flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <em data-effect="italics">X</em> = the number of heads in 5 flips of the fair coin. <em data-effect="italics">X</em> takes on the values 0, 1, 2, 3, 4, 5. Since the coin is altered to result in <em data-effect="italics">p</em> = 0.25, <em data-effect="italics">q</em> is 0.75. The number of trials is <em data-effect="italics">n</em> = 5. State the probability question mathematically.</p>
+<p id="para-00001">First develop fully the probability density function and graph the probability density function. With the fully developed probability density function we can simply read the solution to the question <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mn>3</mn></mrow></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mn>3</mn></mrow></mfenced></annotation-xml></semantics></math></span> heads. <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></mfenced><mo>+</mo><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>0146</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>0007</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>0153</mn><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></mfenced><mo>+</mo><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>0146</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>0007</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>0153</mn><mo>.</mo></annotation-xml></semantics></math></span> We have added the two individual probabilities because of the addition rule from <a aria-label="Go to Probability Topics" data-page-fragment="" data-page-slug="3-introduction" data-page-uuid="326ee2e0-0ccd-46ae-a776-f8857a5dad4c" href="3-introduction">Probability Topics</a>.</p>
+<p id="para-00002"><a aria-label="View Figure 4.2" class="autogenerated-content" href="4-3-binomial-distribution#fig-00001">Figure 4.2</a> also allows us to see the link between the probability density function and probability and area. We also see in <a aria-label="View Figure 4.2" class="autogenerated-content" href="4-3-binomial-distribution#fig-00001">Figure 4.2</a> the skew of the binomial distribution when p is not equal to 0.5. In <a aria-label="View Figure 4.2" class="autogenerated-content" href="4-3-binomial-distribution#fig-00001">Figure 4.2</a> the distribution is skewed right as a result of <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>25</mn></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>25</mn></annotation-xml></semantics></math></span> because <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>25</mn></mrow><annotation-xml encoding="MathML-Content"><mi>p</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>25</mn></annotation-xml></semantics></math></span>.</p>
+<div class="os-figure" id="fig-00001"><figure class="ui-has-child-figcaption" data-id="fig-00001"><span data-alt="Histogram of probability density function of the given data." data-type="media"><button aria-label="Click to enlarge image of Histogram of probability density function of the given data." class="image-button-wrapper" type="button"><img alt="Histogram of probability density function of the given data." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/56277e8f536c287b8e00f0b236a9c6cd43694161" height="653" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/56277e8f536c287b8e00f0b236a9c6cd43694161" width="1183"/></button></span><figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4.2</span>
+</figcaption></figure></div>
+<div class="unnumbered" data-type="equation" id="eq-00001"><math display="block"><semantics><mrow><mtable columnalign="right center left" columnspacing="0px"><mtr><mtd><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mfenced></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mfenced><mtable><mtr><mtd><mi>n</mi></mtd></mtr><mtr><mtd><mi>x</mi></mtd></mtr></mtable></mfenced><msup><mi>p</mi><mi>x</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow></mfenced><mrow><mi>n</mi><mo>-</mo><mi>x</mi></mrow></msup></mtd></mtr><mtr><mtd></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mfenced><mtable><mtr><mtd><mn>5</mn></mtd></mtr><mtr><mtd><msub><mi>x</mi><mn>0</mn></msub></mtd></mtr></mtable></mfenced><mo>·</mo><msup><mn>25</mn><msub><mi>x</mi><mn>0</mn></msub></msup><mo>·</mo><msup><mn>75</mn><mrow><mn>5</mn><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></msup></mtd></mtr><mtr><mtd></mtd><mtd></mtd><mtd><mi>etc</mi><mo>.</mo></mtd></mtr><mtr><mtd><mi mathvariant="normal">μ</mi></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mi>np</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>25</mn></mtd></mtr></mtable></mrow><annotation-xml encoding="MathML-Content"><mtable columnalign="right center left" columnspacing="0px"><mtr><mtd><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mfenced></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mfenced><mtable><mtr><mtd><mi>n</mi></mtd></mtr><mtr><mtd><mi>x</mi></mtd></mtr></mtable></mfenced><msup><mi>p</mi><mi>x</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow></mfenced><mrow><mi>n</mi><mo>-</mo><mi>x</mi></mrow></msup></mtd></mtr><mtr><mtd></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mfenced><mtable><mtr><mtd><mn>5</mn></mtd></mtr><mtr><mtd><msub><mi>x</mi><mn>0</mn></msub></mtd></mtr></mtable></mfenced><mo>·</mo><msup><mn>25</mn><msub><mi>x</mi><mn>0</mn></msub></msup><mo>·</mo><msup><mn>75</mn><mrow><mn>5</mn><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></msup></mtd></mtr><mtr><mtd></mtd><mtd></mtd><mtd><mi>etc</mi><mo>.</mo></mtd></mtr><mtr><mtd><mi mathvariant="normal">μ</mi></mtd><mtd><mo> </mo><mo>=</mo><mo> </mo></mtd><mtd><mi>np</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>25</mn></mtd></mtr></mtable></annotation-xml></semantics></math></div>
+</div></div>
+</section></div>
+</div></section></div><div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm26333440"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.11</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm77060880"><header></header><section>
+<div data-type="problem" id="fs-idm123194928"><div class="os-problem-container"><p id="fs-idm39905824">A fair, six-sided die is rolled ten times. Each roll is independent. You want to find the probability of rolling a one more than three times. State the probability question mathematically.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="element-807"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.12</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-175">Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly.<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-1751"><header></header><section><div data-type="problem" id="id5317083"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-732">a. This is a binomial problem because there is only a success or a __________, there are a fixed number of trials, and the probability of a success is 0.70 for each trial.</p>
+<p id="element-73124">b. If we are interested in the number of students who do their homework on time, then how do we define <em data-effect="italics">X</em>?</p>
+<p id="element-732324">c. What values does <em data-effect="italics">x</em> take on?</p>
+<p id="element-7324">d. What is a "failure," in words?</p>
+<p id="element-74">e. If <em data-effect="italics">p</em> + <em data-effect="italics">q</em> = 1, then what is <em data-effect="italics">q</em>?</p>
+<p id="element-70">f. The words "at least" translate as what kind of inequality for the probability question <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ____ 40).</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="id5321627">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="element-23523">a. failure</p>
+<p id="element-235352">b. <em data-effect="italics">X</em> = the number of statistics students who do their homework on time<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-23352">c. 0, 1, 2, …, 50<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-232">d. Failure is defined as a student who does not complete their homework on time.</p>
+<p id="element-8865">The probability of a success is <em data-effect="italics">p</em> = 0.70. The number of trials is <em data-effect="italics">n</em> = 50.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-5352">e. <em data-effect="italics">q</em> = 0.30<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-23532">f. greater than or equal to (≥)
+<span data-count="1" data-type="newline"><br/></span>The probability question is <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≥ 40).</p></div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm63118928"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.12</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp231440"><header></header><section>
+<div data-type="problem" id="fs-idm386096"><div class="os-problem-container">
+<p id="fs-idm59210304">Sixty-five percent of people pass the state driver’s exam on the first try. A group of 50 individuals who have taken the driver’s exam is randomly selected. Give two reasons why this is a binomial problem.</p></div></div>
+</section></div>
+</div></section></div>
+<section data-depth="1" id="element-501"><h3 data-type="title">Notation for the Binomial: <em data-effect="italics">B</em> = Binomial Probability Distribution Function</h3><p id="element-715"><em data-effect="italics">X</em> ~ <em data-effect="italics">B</em>(<em data-effect="italics">n</em>, <em data-effect="italics">p</em>)</p>
+<p id="element-276">Read this as "<em data-effect="italics">X</em> is a random variable with a binomial distribution." The parameters are <em data-effect="italics">n</em> and <em data-effect="italics">p</em>; <em data-effect="italics">n</em> = number of trials, <em data-effect="italics">p</em> = probability of a success on each trial.</p>
+</section><div class="ui-has-child-title" data-type="example" id="example5"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.13</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body"><p id="fs-idp328960">It has been stated that about 41% of adult workers have a high school diploma but do not pursue any further education. If 20 adult workers are randomly selected, find the probability that at most 12 of them have a high school diploma but do not pursue any further education. How many adult workers do you expect to have a high school diploma but do not pursue any further education?</p>
+<p id="element-992">Let <em data-effect="italics">X</em> = the number of workers who have a high school diploma but do not pursue any further education.</p>
+<p id="element-570"><em data-effect="italics">X</em> takes on the values 0, 1, 2, ..., 20 where <em data-effect="italics">n</em> = 20, <em data-effect="italics">p</em> = 0.41, and <em data-effect="italics">q</em> = 1 – 0.41 = 0.59. <em data-effect="italics">X</em> ~ <em data-effect="italics">B</em>(20, 0.41)</p><p id="fs-idm48754320">Find <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 12). <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 12) = 0.9738. (calculator or computer)</p>
+<div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm73072400"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="element-224">Go into 2<sup>nd</sup> DISTR. The syntax for the instructions are as follows:</p>
+<p id="element-853"><strong>To calculate (<em data-effect="italics">x</em> = value): binompdf(<em data-effect="italics">n</em>, <em data-effect="italics">p</em>, number)</strong>
+if "number" is left out, the result is the binomial probability table.
+<span data-type="newline"><br/></span><strong>To calculate <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ value): binomcdf(<em data-effect="italics">n</em>, <em data-effect="italics">p</em>, number)</strong> if "number" is left out, the result is the cumulative binomial probability table.
+<span data-type="newline"><br/></span><strong>For this problem: After you are in <code data-type="code">2<sup>nd</sup> DISTR</code>, arrow down to <code data-type="code">binomcdf</code>. Press <code data-type="code">ENTER</code>. Enter 20,0.41,12). The result is <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 12) = 0.9738.</strong></p>
+</div></section></div><div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="id5442988"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">NOTE</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idm93661872">If you want to find <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 12), use the pdf (binompdf). If you want to find <em data-effect="italics">P</em>(<em data-effect="italics">x</em> &gt; 12), use 1 - binomcdf(20,0.41,12).</p></div></section></div>
+<p id="element-442">The probability that at most 12 workers have a high school diploma but do not pursue any further education is 0.9738.</p>
+<p id="element-586">The graph of <em data-effect="italics">X</em> ~ <em data-effect="italics">B</em>(20, 0.41) is as follows:</p><div class="os-figure" id="fs-idm42104448"><figure class="scaled-down ui-has-child-figcaption" data-id="fs-idm42104448"><span data-alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 20. The y-axis shows values from 0 to 0.2 in increments of 0.05." data-display="block" data-type="media" id="id5403497"><button aria-label="Click to enlarge image of This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 20. The y-axis shows values from 0 to 0.2 in increments of 0.05." class="image-button-wrapper" type="button"><img alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 20. The y-axis shows values from 0 to 0.2 in increments of 0.05." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/86dd46155ee990c265d7cd7e05f26d97093e47f6" height="622" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/86dd46155ee990c265d7cd7e05f26d97093e47f6" width="998"/></button></span><figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4.3</span>
+</figcaption></figure></div><p id="element-313">The <em data-effect="italics">y</em>-axis contains the probability of <em data-effect="italics">x</em>, where <em data-effect="italics">X</em> = the number of workers who have only a high school diploma.</p>
+<p id="element-363">The number of adult workers that you expect to have a high school diploma but not pursue any further education is the mean, <em data-effect="italics">μ</em> = <em data-effect="italics">np</em> = (20)(0.41) = 8.2.</p>
+<p id="element-949">The formula for the variance is σ<sup>2</sup> = <em data-effect="italics">npq</em>. The standard deviation is <em data-effect="italics">σ</em> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>. <span data-count="1" data-type="newline"><br/></span><em data-effect="italics">σ</em> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>20</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>0.41</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>0.59</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>20</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>0.41</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mn>0.59</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> = 2.20.</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm83776992"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.13</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm41424160"><header></header><section>
+<div data-type="problem" id="fs-idp5897264"><div class="os-problem-container">
+<p id="fs-idm41014848">About 32% of students participate in a community volunteer program outside of school. If 30 students are selected at random, find the probability that at most 14 of them participate in a community volunteer program outside of school. Use the TI-83+ or TI-84 calculator to find the answer.</p></div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="fs-idp7239760"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.14</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm18828000"><header></header><section><div data-type="problem" id="fs-idm39970896"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="fs-idm52160320">In the 2013 <em data-effect="italics">Jerry’s Artarama</em> art supplies catalog, there are 560 pages. Eight of the pages feature signature artists. Suppose we randomly sample 100 pages. Let <em data-effect="italics">X</em> = the number of pages that feature signature artists.</p>
+<ol id="fs-idm60857344" type="a">
+<li>What values does <em data-effect="italics">x</em> take on?</li>
+<li>What is the probability distribution? Find the following probabilities:
+  <ol id="fs-idm43999408" type="i">
+<li>the probability that two pages feature signature artists</li>
+<li>the probability that at most six pages feature signature artists</li>
+<li>the probability that more than three pages feature signature artists.</li>
+</ol>
+</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation.</li>
+</ol>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idm14196128">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="fs-idm1096144" type="a"><li><em data-effect="italics">x</em> = 0, 1, 2, 3, 4, 5, 6, 7, 8</li>
+<li><em data-effect="italics">X</em> ~ <em data-effect="italics">B</em><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math>
+<ol id="fs-idm2065488" type="i"><li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 2) = binompdf<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> = 0.2466</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 6) = binomcdf<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>6</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>6</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> = 0.9994</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> &gt; 3) = 1 – <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 3) = 1 – binomcdf<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> = 1 – 0.9443 = 0.0557</li>
+</ol></li>
+<li>
+<ol id="fs-idp38091616" type="i">
+<li>Mean = <em data-effect="italics">np</em> = (100)<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> = <math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>800</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>800</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math> ≈ 1.4286</li>
+<li>Standard Deviation = <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math> = <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>552</mn>
+</mrow>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>552</mn>
+</mrow>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math> ≈ 1.1867</li>
+</ol>
+</li>
+</ol></div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm76778272"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.14</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-771"><header></header><section><div data-type="problem" id="eip-idm151880496"><div class="os-problem-container">
+<p id="eip-4">According to a Gallup poll, 60% of American adults prefer saving over spending. Let <em data-effect="italics">X</em> = the number of American adults out of a random sample of 50 who prefer saving to spending.</p>
+<ol id="eip-idm151880240" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Use your calculator to find the following probabilities:
+  <ol id="eip-idm65992864" type="i">
+<li>the probability that 25 adults in the sample prefer saving over spending</li>
+<li>the probability that at most 20 adults prefer saving</li>
+<li>the probability that more than 30 adults prefer saving</li>
+</ol>
+</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+</ol>
+</div></div>
+</section></div></div></section></div>
+<div class="ui-has-child-title" data-type="example" id="fs-idm51513664"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.15</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="fs-idm124136240">The lifetime risk of developing cancer is about one in 67 (1.5%). Suppose we randomly sample 200 people. Let <em data-effect="italics">X</em> = the number of people who will develop cancer.</p><div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm129798576"><header></header><section>
+<div data-type="problem" id="fs-idm14459520"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<ol id="fs-idm74773968" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+<li>Use your calculator to find the probability that at most eight people develop cancer</li>
+<li>Is it more likely that five or six people will develop cancer? Justify your answer numerically.</li>
+</ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="sol-00001">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="list-00001" type="a">
+<li><math display="inline"><semantics><mrow><mi>X</mi><mo> </mo><mo>~</mo><mo> </mo><mi>B</mi><mfenced><mrow><mn>200</mn><mo>,</mo><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>X</mi><mo> </mo><mo>~</mo><mo> </mo><mi>B</mi><mfenced><mrow><mn>200</mn><mo>,</mo><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced></annotation-xml></semantics></math></li>
+<li><math display="inline"><semantics><mrow><mi>Mean</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>200</mn><mfenced><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>3</mn></mrow><annotation-xml encoding="MathML-Content"><mi>Mean</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>200</mn><mfenced><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>3</mn></annotation-xml></semantics></math><span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>Standard</mi><mo> </mo><mi>Deviation</mi><mo>=</mo><msqrt><mi>n</mi><mi>p</mi><mi>q</mi></msqrt><mo>=</mo><msqrt><mn>200</mn><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>)</mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>985</mn><mo>)</mo></msqrt><mo>=</mo><mn>1</mn><mo>.</mo><mn>719</mn></mrow><annotation-xml encoding="MathML-Content"><mi>Standard</mi><mo> </mo><mi>Deviation</mi><mo>=</mo><msqrt><mi>n</mi><mi>p</mi><mi>q</mi></msqrt><mo>=</mo><msqrt><mn>200</mn><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>)</mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>985</mn><mo>)</mo></msqrt><mo>=</mo><mn>1</mn><mo>.</mo><mn>719</mn></annotation-xml></semantics></math></li>
+<li><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>≤</mo><mn>8</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>9965</mn></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>≤</mo><mn>8</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>9965</mn></annotation-xml></semantics></math></li>
+<li>The probability that five people develop cancer is 0.1011. The probability that six people develop cancer is 0.0500.</li>
+</ol>
+</div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm113648656"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.15</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp4381328"><header></header><section>
+<div data-type="problem" id="fs-idm2089568"><div class="os-problem-container">
+<p id="fs-idm52769008">During a certain NBA season, a player for the Los Angeles Clippers had the highest field goal completion rate in the league. This player scored with 61.3% of his shots. Suppose you choose a random sample of 80 shots made by this player during the season. Let <em data-effect="italics">X</em> = the number of shots that scored points.</p>
+<ol id="fs-idm69954960" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+<li>Use your calculator to find the probability that this player scored with 60 of these shots.</li>
+<li>Find the probability that this player scored with more than 50 of these shots.</li>
+</ol>
+</div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="element-678"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.16</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-532">The following example illustrates a problem that is <strong>not</strong> binomial. It violates the condition of independence. ABC College has a student advisory committee made up of ten staff members and six students. The committee wishes to choose a chairperson and a recorder. What is the probability that the chairperson and recorder are both students? The names of all committee members are put into a box, and two names are drawn <strong>without replacement</strong>. The first name drawn determines the chairperson and the second name the recorder. There are two trials. However, the trials are not independent because the outcome of the first trial affects the outcome of the second trial. The probability of a student on the first draw is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>6</mn>
+<mrow>
+<mn>16</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>6</mn>
+<mrow>
+<mn>16</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>. The probability of a student on the second draw is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>5</mn>
+<mrow>
+<mn>15</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>5</mn>
+<mrow>
+<mn>15</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>, when the first draw selects a student. The probability is <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>6</mn>
+<mrow>
+<mn>15</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>6</mn>
+<mrow>
+<mn>15</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>, when the first draw selects a staff member. The probability of drawing a student's name changes for each of the trials and, therefore, violates the condition of independence.</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm127539840"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.16</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm74755088"><header></header><section>
+<div data-type="problem" id="fs-idp7533680"><div class="os-problem-container">
+<p id="fs-idm63476304">A lacrosse team is selecting a captain. The names of all the seniors are put into a hat, and the first three that are drawn will be the captains. The names are not replaced once they are drawn (one person cannot be two captains). You want to see if the captains all play the same position. State whether this is binomial or not and state why.</p></div></div>
+</section></div>
+</div></section></div>
+</div>

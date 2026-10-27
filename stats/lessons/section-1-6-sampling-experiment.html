@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>1.6: Sampling Experiment | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-1-5-data-collection-experiment.html">Previous: 1.5</a><a href="section-2-1-stem-and-leaf-graphs-stemplots-line-graphs-and-bar-graphs.html">Next: 2.1</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/1-6-sampling-experiment">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>1.6: Sampling Experiment</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><h2>Sampling experiment</h2><p>Follow the textbook’s restaurant-sampling sequence: simple random, systematic, stratified by city, stratified by price, and cluster by city. The textbook’s historical restaurant table is a sampling frame for this activity, not a current directory. Assign a distinct number to each listed restaurant before sampling.</p><p>Use the restaurant frame in <a href="https://openstax.org/books/introductory-statistics-2e/pages/1-6-sampling-experiment">Section 1.6</a> (reproduced below). Record the actual restaurants selected as well as your method. Random samples can differ and still be valid.</p><div class="table-scroll"><table class="top-titled" data-summary="This table provides a sample of restaurants.  Each cell contains a list of restaurants that correspond to the given location and price range.  The first column lists the location, the second column contains restaurants with entrees under $10, the third column contains restaurants with entrees between $10 and $15, the fourth column between $15 and $20, and the fifth column restaurants with entrees over $20." id="id9894hh324636"><thead>
+<tr>
+<th scope="col">Entree Cost</th>
+<th scope="col">Under $10</th>
+<th scope="col">$10 to under $15</th>
+<th scope="col">$15 to under $20</th>
+<th scope="col">Over $20</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>San Jose</td>
+<td>El Abuelo Taq, Pasta Mia, Emma’s Express, Bamboo Hut</td>
+<td>Emperor’s Guard, Creekside Inn</td>
+<td>Agenda, Gervais, Miro’s</td>
+<td>Blake’s, Eulipia, Hayes Mansion, Germania</td>
+</tr>
+<tr>
+<td>Palo Alto</td>
+<td>Senor Taco, Olive Garden, Taxi’s</td>
+<td>Ming’s, P.A. Joe’s, Stickney’s</td>
+<td>Scott’s Seafood, Poolside Grill, Fish Market</td>
+<td>Sundance Mine, Maddalena’s, Spago’s</td>
+</tr>
+<tr>
+<td>Los Gatos</td>
+<td>Mary’s Patio, Mount Everest, Sweet Pea’s, Andele Taqueria</td>
+<td>Lindsey’s, Willow Street</td>
+<td>Toll House</td>
+<td>Charter House, La Maison Du Cafe</td>
+</tr>
+<tr>
+<td>Mountain View</td>
+<td>Maharaja, New Ma’s, Thai-Rific, Garden Fresh</td>
+<td>Amber Indian, La Fiesta, Fiesta del Mar, Dawit</td>
+<td>Austin’s, Shiva’s, Mazeh</td>
+<td>Le Petit Bistro</td>
+</tr>
+<tr>
+<td>Cupertino</td>
+<td>Hobees, Hung Fu, Samrat, Panda Express</td>
+<td>Santa Barb. Grill, Mand. Gourmet, Bombay Oven, Kathmandu West</td>
+<td>Fontana’s, Blue Pheasant</td>
+<td>Hamasushi, Helios</td>
+</tr>
+<tr>
+<td>Sunnyvale</td>
+<td>Chekijababi, Taj India, Full Throttle, Tia Juana, Lemon Grass</td>
+<td>Pacific Fresh, Charley Brown’s, Cafe Cameroon, Faz, Aruba’s</td>
+<td>Lion &amp; Compass, The Palace, Beau Sejour</td>
+<td>
+</td></tr>
+<tr>
+<td>Santa Clara</td>
+<td>Rangoli, Armadillo Willy’s, Thai Pepper, Pasand</td>
+<td>Arthur’s, Katie’s Cafe, Pedro’s, La Galleria</td>
+<td>Birk’s, Truya Sushi, Valley Plaza</td>
+<td>Lakeside, Mariani’s</td>
+</tr>
+</tbody></table></div><section class="worked-example"><div class="problem-statement"><h3>1. Simple random sample</h3><p>Choose 15 restaurants. Describe the procedure and record the selected names.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Number all N restaurants in a fixed order, then select 15 distinct labels uniformly at random. Every set of 15 must have the same selection probability. Do not choose familiar restaurants or retain repeated labels as if they were new restaurants. Your selected names depend on the random draw.</p></div></section><section class="worked-example"><div class="problem-statement"><h3>2. Systematic sample</h3><p>Choose a systematic sample of 15 restaurants. Explain how you handle a frame size not divisible by 15.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>For N divisible by 15, let k=N/15, choose a uniform random starting integer from 1 through k, and take every kth name. For general N, use fractional interval k=N/15: choose u uniformly in (0,k] and take positions ceil(u+jk), j=0,…,14. The spacing is fixed apart from rounding, all 15 are distinct, and no wrapping is required. Check whether the ordering has a pattern related to the variable of interest.</p></div></section><section class="worked-example"><div class="problem-statement"><h3>3. Stratify by city</h3><p>Select about 25% of the restaurants within each city, rounding each city’s count to the nearest whole number. Record the number selected per city.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Cities are strata. Count Nᵢ in each city, allocate nᵢ = round(0.25Nᵢ), then choose nᵢ distinct restaurants randomly within every city. The rounded totals should be checked against the actual frame; do not force a stated grand total if the frame counts disagree. Every city contributes to the sample.</p></div></section><section class="worked-example"><div class="problem-statement"><h3>4. Stratify by entree price</h3><p>Repeat the 25% stratified procedure, now using the price categories rather than cities.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The price bands are now strata. Pool all restaurants in each band across cities, count each band, round its quarter, and sample randomly within each band. This gives representation across price categories. Use consistent boundaries so every restaurant belongs to one stratum.</p></div></section><section class="worked-example"><div class="problem-statement"><h3>5. Cluster by city</h3><p>Choose two cities at random and include their restaurants. Contrast this with stratifying by city.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Choose two distinct cities uniformly, then include every restaurant in those cities. The number of restaurants depends on the chosen cities. Stratification samples within every city; clustering selects only some cities and takes all units in those selected clusters. Cities differ in size, so a simple unweighted restaurant average from this design may need careful interpretation.</p></div></section><footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/1-6-sampling-experiment">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

@@ -1,0 +1,1615 @@
+<div class="chapter-content-module" data-book-content="true" data-type="page" id="page_af1b1264-e36c-4516-bbfa-d87c3aa59987"><h2 data-rex-keep="true" data-type="document-title" id="page_af1b1264-e36c-4516-bbfa-d87c3aa59987_titlecreatedbycookbook"><span class="os-number">3.5</span>
+<span class="os-divider"> </span>
+<span class="os-text" data-type="" itemprop="">Tree and Venn Diagrams</span>
+</h2>
+<p id="fs-idp115004208">Sometimes, when the probability problems are complex, it can be helpful to graph the situation. Tree diagrams and Venn diagrams are two tools that can be used to visualize and solve conditional probabilities.</p>
+<section data-depth="1" id="fs-idp113760352"><h3 data-type="title">Tree Diagrams</h3>
+<p id="fs-idp119305568">A <span data-type="term" group-by="t" id="term-00001">tree diagram</span> is a special type of graph used to determine the outcomes of an experiment. It consists of "branches" that are labeled with either frequencies or probabilities. Tree diagrams can make some probability problems easier to visualize and solve. The following example illustrates how to use a tree diagram.</p>
+<div class="ui-has-child-title" data-type="example" id="element-192"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.24</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-200">In an urn, there are 11 balls. Three balls are red (<em data-effect="italics">R</em>) and eight balls are blue (<em data-effect="italics">B</em>). Draw two balls, one at a time, <strong>with replacement</strong>. "With replacement" means that you put the first ball back in the urn before you select the second ball. The tree diagram using frequencies that show all the possible outcomes follows.</p><div class="os-figure" id="element-325"><figure class="scaled-down ui-has-child-figcaption" data-id="element-325"><span data-alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 8B and 3R. The second branch has a set of two lines (8B and 3R) for each line of the first branch. Multiply along each line to find 64BB, 24BR, 24RB, and 9RR." data-type="media" id="id47069242"><button aria-label="Click to enlarge image of This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 8B and 3R. The second branch has a set of two lines (8B and 3R) for each line of the first branch. Multiply along each line to find 64BB, 24BR, 24RB, and 9RR." class="image-button-wrapper" type="button"><img alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 8B and 3R. The second branch has a set of two lines (8B and 3R) for each line of the first branch. Multiply along each line to find 64BB, 24BR, 24RB, and 9RR." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/26c95c15f803f755ccb523a36664a8b0315f9112" height="545" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/26c95c15f803f755ccb523a36664a8b0315f9112" width="977"/></button></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.2</span>
+<span class="os-divider"> </span>
+<span class="os-caption">Total = 64 + 24 + 24 + 9 = 121</span>
+</figcaption></figure></div><p id="element-54">The first set of branches represents the first draw. The second set of branches represents the second draw. Each of the outcomes is distinct. In fact, we can list each red ball as <em data-effect="italics">R</em>1, <em data-effect="italics">R</em>2, and <em data-effect="italics">R</em>3 and each blue ball as <em data-effect="italics">B</em>1, <em data-effect="italics">B</em>2, <em data-effect="italics">B</em>3, <em data-effect="italics">B</em>4, <em data-effect="italics">B</em>5, <em data-effect="italics">B</em>6, <em data-effect="italics">B</em>7, and <em data-effect="italics">B</em>8. Then the nine <em data-effect="italics">RR</em> outcomes can be written as:</p>
+<p id="element-1255">
+<span data-display="inline" data-list-type="labeled-item" data-type="list" id="set-54_1">
+<span data-type="item"><em data-effect="italics">R</em>1<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>1<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>1<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>2<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>2<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>2<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>3<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>3<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">R</em>3<em data-effect="italics">R</em>3</span>
+</span>
+</p>
+<p id="element-5235">The other outcomes are similar.</p>
+<p id="element-767">There are a total of 11 balls in the urn. Draw two balls, one at a time, with replacement. There are 11(11) = 121 outcomes, the size of the <span data-type="term" group-by="s" id="term-00002">sample space</span>.<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-135"><header></header><section>
+<div data-type="problem" id="id47069535"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-638">a. List the 24 <em data-effect="italics">BR</em> outcomes: <em data-effect="italics">B</em>1<em data-effect="italics">R</em>1, <em data-effect="italics">B</em>1<em data-effect="italics">R</em>2, <em data-effect="italics">B</em>1<em data-effect="italics">R</em>3, ...</p>
+<p id="element-909">b. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">RR</em>).</p>
+<p id="element-865">c. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">RB</em> OR <em data-effect="italics">BR</em>).</p>
+<p id="element-972">d. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 1st draw AND <em data-effect="italics">B</em> on 2nd draw).</p>
+<p id="element-239">e. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd draw GIVEN <em data-effect="italics">B</em> on 1st draw).</p>
+<p id="element-42">f. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">BB</em>).</p>
+<p id="element-189">g. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on the 2nd draw given <em data-effect="italics">R</em> on the first draw).</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="id47069675">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="element-63435">a. <span data-display="inline" data-list-type="labeled-item" data-type="list" id="element-12351">
+<span data-type="item"><em data-effect="italics">B</em>1<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>1<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>1<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>2<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>2<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>2<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>3<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>3<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>3<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>4<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>4<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>4<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>5<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>5<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>5<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>6<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>6<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>6<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>7<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>7<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>7<em data-effect="italics">R</em>3<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>8<em data-effect="italics">R</em>1<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>8<em data-effect="italics">R</em>2<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item"><em data-effect="italics">B</em>8<em data-effect="italics">R</em>3</span>
+</span><span data-count="2" data-type="newline"><br/><br/></span>
+</p>
+<p id="element-913">b. <em data-effect="italics">P</em>(<em data-effect="italics">RR</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>9</mn>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>9</mn>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-968">c. <em data-effect="italics">P</em>(<em data-effect="italics">RB</em> OR <em data-effect="italics">BR</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> + <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-989">d. <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 1st draw AND <em data-effect="italics">B</em> on 2nd draw) = <em data-effect="italics">P</em>(<em data-effect="italics">RB</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span><span data-count="2" data-type="newline"><br/><br/></span>
+</p>
+<p id="element-70">e. <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd draw GIVEN <em data-effect="italics">B</em> on 1st draw) = <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd|<em data-effect="italics">B</em> on 1st) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>88</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>88</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+ = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+</p><p id="element-307">This problem is a conditional one. The sample space has been reduced to those outcomes that already have a blue on the first draw. There are  24 + 64 = 88 possible outcomes (24 <em data-effect="italics">BR</em> and 64 <em data-effect="italics">BB</em>). Twenty-four of the 88 possible outcomes are <em data-effect="italics">BR</em>. <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>88</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>88</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-925">f. <em data-effect="italics">P</em>(<em data-effect="italics">BB</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>64</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>64</mn>
+</mrow>
+<mrow>
+<mn>121</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span><span data-count="2" data-type="newline"><br/><br/></span>
+</p>
+<p id="element-602">g. <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on 2nd draw|<em data-effect="italics">R</em> on 1st draw) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span></p>
+<p id="element-892">There are 9 + 24 outcomes that have <em data-effect="italics">R</em> on the first draw (9 <em data-effect="italics">RR</em> and 24 <em data-effect="italics">RB</em>). The sample space is then 9 + 24 = 33. 24 of the 33 outcomes have <em data-effect="italics">B</em> on the second draw. The probability is then <span class="os-math-in-para"><math display="inline"><semantics><mrow><mfrac>
+<mn>24</mn>
+<mn>33</mn>
+</mfrac></mrow><annotation-xml encoding="MathML-Content"><mfrac>
+<mn>24</mn>
+<mn>33</mn>
+</mfrac></annotation-xml></semantics></math></span>.</p></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp102479616"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.24</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm22506096"><header></header><section><div data-type="problem" id="fs-idp17589872"><div class="os-problem-container">
+<p id="fs-idp67142992">In a standard deck, there are 52 cards. 12 cards are face cards (event <em data-effect="italics">F</em>) and 40 cards are not face cards (event <em data-effect="italics">N</em>). Draw two cards, one at a time, with replacement. All possible outcomes are shown in the tree diagram as frequencies. Using the tree diagram, calculate <em data-effect="italics">P</em>(<em data-effect="italics">FF</em>).</p>
+<div class="os-figure" id="eip-idp41385280"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idp41385280"><span data-alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 12F and 40N. The second branch has a set of two lines (12F and 40N) for each line of the first branch. Multiply along each line to find 144FF, 480FN, 480NF, and 1,600NN." data-display="block" data-type="media" id="fs-idm2866400"><button aria-label="Click to enlarge image of This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 12F and 40N. The second branch has a set of two lines (12F and 40N) for each line of the first branch. Multiply along each line to find 144FF, 480FN, 480NF, and 1,600NN." class="image-button-wrapper" type="button"><img alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 12F and 40N. The second branch has a set of two lines (12F and 40N) for each line of the first branch. Multiply along each line to find 144FF, 480FN, 480NF, and 1,600NN." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/4b3639d39d9345607eb454b768ba56be9f9444b3" height="546" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/4b3639d39d9345607eb454b768ba56be9f9444b3" width="976"/></button></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.3</span>
+</figcaption></figure></div>
+</div></div>
+</section></div></div></section></div>
+<div class="ui-has-child-title" data-type="example" id="element-841"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.25</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body"><p id="element-308">An urn has three red marbles and eight blue marbles in it. Draw two marbles, one at a time, this time without replacement, from the urn. <strong>"Without replacement"</strong> means that you do not put the first ball back before you select the second marble. Following is a tree diagram for this situation. The branches are labeled with probabilities instead of frequencies. The numbers at the ends of the branches are calculated by multiplying the numbers on the two corresponding branches, for example, <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>6</mn>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>6</mn>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>.</p>
+<div class="os-figure" id="element-325a"><figure class="scaled-down ui-has-child-figcaption" data-id="element-325a"><span data-alt="This is a tree diagram with branches showing probabilities of each draw. The first branch shows 2 lines: B 8/11 and R 3/11. The second branch has a set of 2 lines for each first branch line. Below B 8/11 are B 7/10 and R 3/10. Below R 3/11 are B 8/10 and R 2/10. Multiply along each line to find BB 56/110, BR 24/110, RB 24/110, and RR 6/110." data-type="media" id="id47078287"><button aria-label="Click to enlarge image of This is a tree diagram with branches showing probabilities of each draw. The first branch shows 2 lines: B 8/11 and R 3/11. The second branch has a set of 2 lines for each first branch line. Below B 8/11 are B 7/10 and R 3/10. Below R 3/11 are B 8/10 and R 2/10. Multiply along each line to find BB 56/110, BR 24/110, RB 24/110, and RR 6/110." class="image-button-wrapper" type="button"><img alt="This is a tree diagram with branches showing probabilities of each draw. The first branch shows 2 lines: B 8/11 and R 3/11. The second branch has a set of 2 lines for each first branch line. Below B 8/11 are B 7/10 and R 3/10. Below R 3/11 are B 8/10 and R 2/10. Multiply along each line to find BB 56/110, BR 24/110, RB 24/110, and RR 6/110." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/b4e22bc181ce040bace7f16ffb2cbe5cc04bfa00" height="770" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/b4e22bc181ce040bace7f16ffb2cbe5cc04bfa00" width="977"/></button></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.4</span>
+<span class="os-divider"> </span>
+<span class="os-caption">Total = <math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>56</mn><mo>+</mo><mn>24</mn><mo>+</mo><mn>24</mn><mo>+</mo><mn>6</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mn>110</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>56</mn><mo>+</mo><mn>24</mn><mo>+</mo><mn>24</mn><mo>+</mo><mn>6</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mn>110</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow></annotation-xml></semantics></math></span>
+</figcaption></figure></div>
+<div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="id47078390"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">NOTE</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-idp61215856">If you draw a red on the first draw from the three red possibilities, there are two red marbles left to draw on the second draw. You do not put back or replace the first marble after you have drawn it. You draw <strong>without replacement</strong>, so that on the second draw there are ten marbles left in the urn.</p></div></section></div>
+<p id="element-993"><span data-type="newline"><br/></span>Calculate the following probabilities using the tree diagram.<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-366"><header></header><section>
+<div data-type="problem" id="id47078429"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-452">a. <em data-effect="italics">P</em>(<em data-effect="italics">RR</em>) = ________</p>
+<p id="element-608">b. Fill in the blanks:</p>
+<p id="element-545"><em data-effect="italics">P</em>(<em data-effect="italics">RB</em> OR <em data-effect="italics">BR</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext> </mtext><mo>+</mo><mtext> (___)(___) </mtext><mo>=</mo><mtext> </mtext><mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext> </mtext><mo>+</mo><mtext> (___)(___) </mtext><mo>=</mo><mtext> </mtext><mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span></p>
+<p id="element-8295">c. <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd|<em data-effect="italics">B</em> on 1st) = </p>
+<p id="element-363">d. Fill in the blanks.</p>
+<p id="element-400"><em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 1st AND <em data-effect="italics">B</em> on 2nd) = <em data-effect="italics">P</em>(<em data-effect="italics">RB</em>) = (___)(___) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+</p>
+<p id="element-413">e. Find <em data-effect="italics">P</em>(<em data-effect="italics">BB</em>).</p>
+<p id="element-64">f. Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on 2nd|<em data-effect="italics">R</em> on 1st).</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="id47078452">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="element-659a">a. <em data-effect="italics">P</em>(<em data-effect="italics">RR</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>6</mn>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>6</mn>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span><span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="fs-idm21770224">b. <em data-effect="italics">P</em>(<em data-effect="italics">RB</em> OR <em data-effect="italics">BR</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> + <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>48</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span></p>
+<p id="element-43">c. <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd|<em data-effect="italics">B</em> on 1st) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span></p>
+<p id="element-411">d. <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 1st AND <em data-effect="italics">B</em> on 2nd) = <em data-effect="italics">P</em>(<em data-effect="italics">RB</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>24</mn>
+</mrow>
+<mrow>
+<mn>110</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+</p>
+<p id="element-547">e. <em data-effect="italics">P</em>(<em data-effect="italics">BB</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>7</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>11</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>7</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span></p>
+<p id="element-851">f. Using the tree diagram, <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on 2nd|<em data-effect="italics">R</em> on 1st) = <em data-effect="italics">P</em>(<em data-effect="italics">R</em>|<em data-effect="italics">B</em>) = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>.</p></div>
+</section>
+</details>
+</section></div>
+<p id="element-47">If we are using probabilities, we can label the tree in the following general way.</p>
+<span data-alt="This is a tree diagram for a two-step experiment. The first branch shows first outcome: P(B) and P(R). The second branch has a set of 2 lines for each line of the first branch: the probability of B given B = P(BB), the probability of R given B = P(RB), the probability of B given R = P(BR), and the probability of R given R = P(RR)." data-display="block" data-type="media" id="id46086747">
+<button aria-label="Click to enlarge image of This is a tree diagram for a two-step experiment. The first branch shows first outcome: P(B) and P(R). The second branch has a set of 2 lines for each line of the first branch: the probability of B given B = P(BB), the probability of R given B = P(RB), the probability of B given R = P(BR), and the probability of R given R = P(RR)." class="image-button-wrapper" type="button"><img alt="This is a tree diagram for a two-step experiment. The first branch shows first outcome: P(B) and P(R). The second branch has a set of 2 lines for each line of the first branch: the probability of B given B = P(BB), the probability of R given B = P(RB), the probability of B given R = P(BR), and the probability of R given R = P(RR)." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/db758f64dca2c6a40ac0630e81a150b5e46a1344" height="546" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/db758f64dca2c6a40ac0630e81a150b5e46a1344" width="1464"/></button></span>
+<ul id="element-425">
+<li><em data-effect="italics">P</em>(<em data-effect="italics">R</em>|<em data-effect="italics">R</em>) here means <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd|<em data-effect="italics">R</em> on 1st)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">R</em>) here means <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on 2nd|<em data-effect="italics">R</em> on 1st)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">R</em>|<em data-effect="italics">B</em>) here means <em data-effect="italics">P</em>(<em data-effect="italics">R</em> on 2nd|<em data-effect="italics">B</em> on 1st)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">B</em>) here means <em data-effect="italics">P</em>(<em data-effect="italics">B</em> on 2nd|<em data-effect="italics">B</em> on 1st)</li>
+</ul>
+</div></section></div><div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp64832640"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.25</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp40630704"><header></header><section><div data-type="problem" id="fs-idp516608"><div class="os-problem-container">
+<p id="fs-idp47082864">In a standard deck, there are 52 cards. Twelve cards are face cards (<em data-effect="italics">F</em>) and 40 cards are not face cards (<em data-effect="italics">N</em>). Draw two cards, one at a time, without replacement. The tree diagram is labeled with all possible probabilities.</p>
+<div class="os-figure" id="eip-idm127200928"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idm127200928"><span data-alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows 2 lines: F 12/52 and N 40/52. The second branch has a set of 2 lines (F 11/52 and N 40/51) for each line of the first branch. Multiply along each line to find FF 121/2652, FN 480/2652, NF 480/2652, and NN 1560/2652." data-display="block" data-type="media" id="fs-idp88881552"><button aria-label="Click to enlarge image of This is a tree diagram with branches showing frequencies of each draw. The first branch shows 2 lines: F 12/52 and N 40/52. The second branch has a set of 2 lines (F 11/52 and N 40/51) for each line of the first branch. Multiply along each line to find FF 121/2652, FN 480/2652, NF 480/2652, and NN 1560/2652." class="image-button-wrapper" type="button"><img alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows 2 lines: F 12/52 and N 40/52. The second branch has a set of 2 lines (F 11/52 and N 40/51) for each line of the first branch. Multiply along each line to find FF 121/2652, FN 480/2652, NF 480/2652, and NN 1560/2652." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/e659439831daa83cec5b528befedb1c096283fc5" height="754" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/e659439831daa83cec5b528befedb1c096283fc5" width="976"/></button></span><figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.5</span>
+</figcaption></figure></div>
+<ol id="fs-idm44947616" type="a"><li>Find <em data-effect="italics">P</em>(<em data-effect="italics">FN</em> OR <em data-effect="italics">NF</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">N</em>|<em data-effect="italics">F</em>).</li>
+<li>Find <em data-effect="italics">P</em>(at most one face card).
+<span data-type="newline"><br/></span>Hint: "At most one face card" means zero or one face card.</li>
+<li>Find <em data-effect="italics">P</em>(at least one face card).
+<span data-type="newline"><br/></span>Hint: "At least one face card" means one or two face cards.</li>
+</ol></div></div>
+</section></div></div></section></div>
+<div class="ui-has-child-title" data-type="example" id="fs-idp72039056"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.26</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="fs-idp127859600">A litter of kittens available for adoption at the Humane Society has four tabby kittens and five black kittens. A family comes in and randomly selects two kittens (without replacement) for adoption.</p>
+<span data-alt="This is a tree diagram with branches showing probabilities of kitten choices. The first branch shows two lines: T 4/9 and B 5/9. The second branch has a set of 2 lines for each first branch line. Below T 4/9 are T 3/8 and B 5/8. Below B 5/9 are T 4/8 and B 4/8. Multiply along each line to find probabilities of possible combinations." data-display="block" data-type="media" id="fs-idp49760160"><button aria-label="Click to enlarge image of This is a tree diagram with branches showing probabilities of kitten choices. The first branch shows two lines: T 4/9 and B 5/9. The second branch has a set of 2 lines for each first branch line. Below T 4/9 are T 3/8 and B 5/8. Below B 5/9 are T 4/8 and B 4/8. Multiply along each line to find probabilities of possible combinations." class="image-button-wrapper" type="button"><img alt="This is a tree diagram with branches showing probabilities of kitten choices. The first branch shows two lines: T 4/9 and B 5/9. The second branch has a set of 2 lines for each first branch line. Below T 4/9 are T 3/8 and B 5/8. Below B 5/9 are T 4/8 and B 4/8. Multiply along each line to find probabilities of possible combinations." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/331482bc5554a717d59e440bd168316974e59335" height="674" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/331482bc5554a717d59e440bd168316974e59335" width="976"/></button></span>
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idp40987552"><header></header><section>
+<div data-type="problem" id="fs-idp44496224"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<ol id="fs-idm1310240" type="a">
+<li>What is the probability that both kittens are tabby?
+<span data-count="2" data-type="newline"><br/><br/></span>a.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> b.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> c.<math display="inline"><semantics><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>3</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>3</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow></annotation-xml></semantics></math> d.<math display="inline"><semantics><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow></annotation-xml></semantics></math></li>
+<li>What is the probability that one kitten of each coloring is selected?
+<span data-count="2" data-type="newline"><br/><br/></span>a.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> b.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> c.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math>	d.<math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>5</mn>
+<mn>9</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mstyle scriptlevel="+1">
+<mfrac>
+<mn>4</mn>
+<mn>8</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></li>
+<li>What is the probability that a tabby is chosen as the second kitten when a black kitten was chosen as the first?</li>
+<li>What is the probability of choosing two kittens of the same color?</li>
+</ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idm2776368">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-idp7489584">a. c, b. d, c. <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>8</mn>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mn>4</mn>
+<mn>8</mn>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>, d. <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>32</mn>
+</mrow>
+<mrow>
+<mn>72</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mfrac>
+<mrow>
+<mn>32</mn>
+</mrow>
+<mrow>
+<mn>72</mn>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math></span>
+</p>
+</div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp64465776"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.26</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm62426848"><header></header><section>
+<div data-type="problem" id="fs-idp61299152"><div class="os-problem-container">
+<p id="fs-idm3074160">Suppose there are four red balls and three yellow balls in a box. Two balls are drawn from the box without replacement. What is the probability that one ball of each coloring is selected?</p></div></div>
+</section></div>
+</div></section></div>
+</section>
+<section data-depth="1" id="eip-922"><h3 data-type="title">Venn Diagram</h3>
+<p id="eip-9222">A <span data-type="term" group-by="V" id="term-00003">Venn diagram</span> is a picture that represents the outcomes of an experiment. It generally consists of a box that represents the sample space S together with circles or ovals. The circles or ovals represent events.</p>
+<div class="ui-has-child-title" data-type="example" id="element-513"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.27</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body"><p id="element-756">Suppose an experiment has the outcomes 1, 2, 3, ... , 12 where each outcome has an equal chance of occurring. Let event <em data-effect="italics">A</em> = {1, 2, 3, 4, 5, 6} and event <em data-effect="italics">B</em> = {6, 7, 8, 9}. Then <em data-effect="italics">A</em> AND <em data-effect="italics">B</em> = {6} and <em data-effect="italics">A</em> OR <em data-effect="italics">B</em> = {1, 2, 3, 4, 5, 6, 7, 8, 9}.  The Venn diagram is as follows:</p>
+<div class="os-figure" id="eip-idm17287840"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idm17287840"><span data-alt="A Venn diagram. An oval representing set A contains the values 1, 2, 3, 4, 5, and 6. An oval representing set B also contains the 6, along with 7, 8, and 9. The values 10, 11, and 12 are present but not contained in either set." data-display="block" data-type="media" id="id18119489"><button aria-label="Click to enlarge image of A Venn diagram. An oval representing set A contains the values 1, 2, 3, 4, 5, and 6. An oval representing set B also contains the 6, along with 7, 8, and 9. The values 10, 11, and 12 are present but not contained in either set." class="image-button-wrapper" type="button"><img alt="A Venn diagram. An oval representing set A contains the values 1, 2, 3, 4, 5, and 6. An oval representing set B also contains the 6, along with 7, 8, and 9. The values 10, 11, and 12 are present but not contained in either set." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/ca6fbb00a5183bd5521cdae923e17641a31842c2" height="379" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/ca6fbb00a5183bd5521cdae923e17641a31842c2" width="959"/></button></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.6</span>
+</figcaption></figure></div></div></section></div><div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp42923984"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.27</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp129832272"><header></header><section><div data-type="problem" id="fs-idp89658416"><div class="os-problem-container">
+<p id="fs-idp136729728">Suppose an experiment has outcomes black, white, red, orange, yellow, green, blue, and purple, where each outcome has an equal chance of occurring. Let event <em data-effect="italics">C</em> = {green, blue, purple} and event <em data-effect="italics">P</em> = {red, yellow, blue}. Then <em data-effect="italics">C</em> AND <em data-effect="italics">P</em> = {blue} and <em data-effect="italics">C</em> OR <em data-effect="italics">P</em> = {green, blue, purple, red, yellow}. Draw a Venn diagram representing this situation.</p></div></div>
+</section></div></div></section></div><div class="ui-has-child-title" data-type="example" id="element-872"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.28</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body"><p id="element-491">Flip two fair coins. Let <em data-effect="italics">A</em> = tails on the first coin. Let <em data-effect="italics">B</em> = tails on the second coin. Then <em data-effect="italics">A</em> = {<em data-effect="italics">TT</em>, <em data-effect="italics">TH</em>} and <em data-effect="italics">B</em> = {<em data-effect="italics">TT</em>, <em data-effect="italics">HT</em>}. Therefore, <em data-effect="italics">A</em> AND <em data-effect="italics">B</em> = {<em data-effect="italics">TT</em>}. <em data-effect="italics">A</em> OR <em data-effect="italics">B</em> =  {<em data-effect="italics">TH</em>, <em data-effect="italics">TT</em>, <em data-effect="italics">HT</em>}.</p><p id="element-245">The sample space when you flip two fair coins is <em data-effect="italics">X</em> = {<em data-effect="italics">HH</em>, <em data-effect="italics">HT</em>, <em data-effect="italics">TH</em>, <em data-effect="italics">TT</em>}. The outcome <em data-effect="italics">HH</em> is in NEITHER <em data-effect="italics">A</em> NOR <em data-effect="italics">B</em>. The Venn diagram is as follows:</p>
+<div class="os-figure" id="eip-idm154602320"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idm154602320"><span data-alt="This is a venn diagram. An oval representing set A contains Tails + Heads and Tails + Tails. An oval representing set B also contains Tails + Tails, along with Heads + Tails. The universe S contains Heads + Heads, but this value is not contained in either set A or B." data-display="block" data-type="media" id="id18154607">
+<button aria-label="Click to enlarge image of This is a venn diagram. An oval representing set A contains Tails + Heads and Tails + Tails. An oval representing set B also contains Tails + Tails, along with Heads + Tails. The universe S contains Heads + Heads, but this value is not contained in either set A or B." class="image-button-wrapper" type="button"><img alt="This is a venn diagram. An oval representing set A contains Tails + Heads and Tails + Tails. An oval representing set B also contains Tails + Tails, along with Heads + Tails. The universe S contains Heads + Heads, but this value is not contained in either set A or B." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/f95fe278142d1f079069438ca37d193e41619241" height="652" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/f95fe278142d1f079069438ca37d193e41619241" width="969"/></button></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.7</span>
+</figcaption></figure></div></div></section></div><div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm20878064"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.28</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-idm77418224"><header></header><section>
+<div data-type="problem" id="eip-idm66827488"><div class="os-problem-container">
+<p id="eip-idp2578208">Roll a fair, six-sided die. Let <em data-effect="italics">A</em> = a prime number of dots is rolled. Let <em data-effect="italics">B</em> = an odd number of dots is rolled. Then <em data-effect="italics">A</em> = {2, 3, 5} and <em data-effect="italics">B</em> = {1, 3, 5}. Therefore, <em data-effect="italics">A</em> AND <em data-effect="italics">B</em> = {3, 5}. <em data-effect="italics">A</em> OR <em data-effect="italics">B</em> = {1, 2, 3, 5}. The sample space for rolling a fair die is <em data-effect="italics">S</em> = {1, 2, 3, 4, 5, 6}. Draw a Venn diagram representing this situation.</p></div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="element-554"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.29</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-383"><strong>Forty percent</strong> of the students at a local college belong to a club and <strong>50%</strong> work part time. <strong>Five percent</strong> of the students work part time and belong to a club. Draw a Venn diagram showing the relationships. Let <em data-effect="italics">C</em> = student belongs to a club and <em data-effect="italics">PT</em> = student works part time.</p><div class="os-figure" id="fs-idp1123328"><figure class="scaled-down ui-has-child-figcaption" data-id="fs-idp1123328"><span data-alt="This is a venn diagram with one set containing students in clubs and another set containing students working  part-time. Both sets share students who are members of clubs and also work part-time. The universe is labeled S." data-type="media" id="id18154697">
+<button aria-label="Click to enlarge image of This is a venn diagram with one set containing students in clubs and another set containing students working  part-time. Both sets share students who are members of clubs and also work part-time. The universe is labeled S." class="image-button-wrapper" type="button"><img alt="This is a venn diagram with one set containing students in clubs and another set containing students working  part-time. Both sets share students who are members of clubs and also work part-time. The universe is labeled S." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/9ce0e9186a98e5f5a5d4043429f619b308d67bbb" height="748" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/9ce0e9186a98e5f5a5d4043429f619b308d67bbb" width="964"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.8</span>
+</figcaption></figure></div><p id="eip-827">If a student is selected at random, find</p>
+<ul id="element-621">
+<li>the probability that the student belongs to a club. <em data-effect="italics">P</em>(<em data-effect="italics">C</em>) = 0.40</li>
+<li>the probability that the student works part time. <em data-effect="italics">P</em>(<em data-effect="italics">PT</em>) = 0.50</li>
+<li>the probability that the student belongs to a club AND works part time. <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">PT</em>) = 0.05</li>
+<li>the probability that the student belongs to a club <strong>given</strong> that the student works part time. <math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext>|</mtext><mi>P</mi><mi>T</mi><mtext>)</mtext><mo> </mo><mo>=</mo><mo> </mo><mfrac>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext> AND </mtext><mi>P</mi><mi>T</mi><mtext>)</mtext>
+</mrow>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>P</mi><mi>T</mi><mtext>)</mtext>
+</mrow>
+</mfrac>
+<mo> </mo><mo>=</mo><mo> </mo><mfrac>
+<mrow>
+<mn>0.05</mn>
+</mrow>
+<mrow>
+<mn>0.50</mn>
+</mrow>
+</mfrac>
+<mo> </mo><mo>=</mo><mo> </mo><mn>0.1</mn>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext>|</mtext><mi>P</mi><mi>T</mi><mtext>)</mtext><mo> </mo><mo>=</mo><mo> </mo><mfrac>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext> AND </mtext><mi>P</mi><mi>T</mi><mtext>)</mtext>
+</mrow>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>P</mi><mi>T</mi><mtext>)</mtext>
+</mrow>
+</mfrac>
+<mo> </mo><mo>=</mo><mo> </mo><mfrac>
+<mrow>
+<mn>0.05</mn>
+</mrow>
+<mrow>
+<mn>0.50</mn>
+</mrow>
+</mfrac>
+<mo> </mo><mo>=</mo><mo> </mo><mn>0.1</mn>
+</mrow></annotation-xml></semantics></math></li>
+<li>the probability that the student belongs to a club <strong>OR</strong> works part time. <em data-effect="italics">P</em>(<em data-effect="italics">C</em> OR <em data-effect="italics">PT</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">C</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">PT</em>) - <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">PT</em>) = 0.40 + 0.50 - 0.05 = 0.85</li>
+</ul></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm55345616"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.29</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp89579120"><header></header><section>
+<div data-type="problem" id="fs-idp89636640"><div class="os-problem-container">
+<p id="fs-idp120162528">Fifty percent of the workers at a factory work a second job, 25% have a spouse who also works, 5% work a second job and have a spouse who also works. Draw a Venn diagram showing the relationships. Let <em data-effect="italics">W</em> = works a second job and <em data-effect="italics">S</em> = spouse also works.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="fs-idp87467600"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">3.30</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idp88064048"><header></header><section>
+<div data-type="problem" id="fs-idp115024704"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="fs-idp199220464">A person with type O blood and a negative Rh factor (Rh-) can donate blood to any person with any blood type. Four percent of African Americans have type O blood and a negative RH factor, 5−10% of African Americans have the Rh- factor, and 51% have type O blood.</p><div class="os-figure" id="fs-idp143600032"><figure class="scaled-down ui-has-child-figcaption" data-id="fs-idp143600032">
+<span data-alt="This is an empty Venn diagram showing two overlapping circles. The left circle is labeled O and the right circle is labeled RH-." data-type="media" id="fs-idp78366192">
+<button aria-label="Click to enlarge image of This is an empty Venn diagram showing two overlapping circles. The left circle is labeled O and the right circle is labeled RH-." class="image-button-wrapper" type="button"><img alt="This is an empty Venn diagram showing two overlapping circles. The left circle is labeled O and the right circle is labeled RH-." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/2819c13b9468ecbaf9aac2e721045d8aa38e32ee" height="695" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/2819c13b9468ecbaf9aac2e721045d8aa38e32ee" width="923"/></button></span><figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3.9</span>
+</figcaption></figure></div>
+<p id="fs-idp137061024">The “O” circle represents the African Americans with type O blood. The “Rh-“ oval represents the African Americans with the Rh- factor.</p>
+<p id="fs-idp107178080">We will take the average of 5% and 10% and use 7.5% as the percent of African Americans who have the Rh- factor. Let <em data-effect="italics">O</em> = African American with Type O blood and <em data-effect="italics">R</em> = African American with Rh- factor.</p>
+<ol id="fs-idp55980272" type="a"><li><em data-effect="italics">P</em>(<em data-effect="italics">O</em>) = ___________</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">R</em>) = ___________</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">O</em> AND <em data-effect="italics">R</em>) = ___________</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">O</em> OR <em data-effect="italics">R</em>) = ____________</li>
+<li>In the Venn Diagram, describe the overlapping area using a complete sentence.</li>
+<li>In the Venn Diagram, describe the area in the rectangle but outside both the circle and the oval using a complete sentence.</li></ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idp133204112">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="fs-idp88524560">a. 0.51; b. 0.075; c. 0.04; d. 0.545; e. The area represents the African Americans that have type O blood and the Rh- factor. f. The area represents the African Americans that have neither type O blood nor the Rh- factor.</p></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp47601696"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">3.30</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp85340096"><header></header><section><div data-type="problem" id="fs-idp129244656"><div class="os-problem-container">
+<p id="fs-idp200572912">In a bookstore, the probability that the customer buys a novel is 0.6, and the probability that the customer buys a non-fiction book is 0.4. Suppose that the probability that the customer buys both is 0.2.</p>
+<ol id="fs-idp93717888" type="a"><li>Draw a Venn diagram representing the situation.</li>
+<li>Find the probability that the customer buys either a novel or a non-fiction book.</li>
+<li>In the Venn diagram, describe the overlapping area using a complete sentence.</li>
+<li>Suppose that some customers buy only compact disks. Draw an oval in your Venn diagram representing this event.</li>
+</ol></div></div>
+</section></div></div></section></div></section>
+</div>

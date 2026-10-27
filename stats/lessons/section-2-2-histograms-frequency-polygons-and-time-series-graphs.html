@@ -1,0 +1,585 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2.2: Histograms, Frequency Polygons, and Time Series Graphs | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-2-1-stem-and-leaf-graphs-stemplots-line-graphs-and-bar-graphs.html">Previous: 2.1</a><a href="section-2-3-measures-of-the-location-of-the-data.html">Next: 2.3</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>2.2: Histograms, Frequency Polygons, and Time Series Graphs</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="element-657">For most of the work you do in this book, you will use a histogram to display the data. One advantage of a histogram is that it can readily display large data sets. A rule of thumb is to use a histogram when the data set consists of 100 values or more.</p>
+<p id="element-446">A <span data-type="term" group-by="h" id="term-00001">histogram</span> consists of contiguous (adjoining) boxes. It has both a horizontal axis and a vertical axis. The horizontal axis is labeled with what the data represents (for instance, distance from your home to school). The vertical axis is labeled either <span data-type="term" group-by="f" id="term-00002">frequency</span> or <span data-type="term" group-by="r" id="term-00003">relative frequency</span> (or percent frequency or probability). The graph will have the same shape with either label. The histogram (like the stemplot) can give you the shape of the data, the center, and the spread of the data.</p><p id="element-123">The relative frequency is equal to the frequency for an observed value of the data divided by the total number of data values in the sample. (Remember, frequency is defined as the number of times an answer occurs.) If:</p><ul id="element-614"><li><em data-effect="italics">f</em> = frequency</li>
+<li><em data-effect="italics">n</em> = total number of data values (or the sum of the individual frequencies), and</li>
+<li><em data-effect="italics">RF</em> = relative frequency,</li>
+</ul>
+<p id="element-700">then:
+</p><div class="unnumbered" data-label="" data-type="equation" id="element-1000"><span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mstyle fontsize="12pt">
+<mrow>
+<mrow>
+<mstyle fontstyle="italic">
+<mrow>
+<mtext>RF</mtext>
+</mrow>
+</mstyle>
+<mo stretchy="false">=</mo>
+<mfrac>
+<mstyle fontsize="8pt">
+<mrow>
+<mi>f</mi>
+</mrow>
+</mstyle>
+<mstyle fontsize="8pt">
+<mrow>
+<mi>n</mi>
+</mrow>
+</mstyle>
+</mfrac>
+</mrow>
+</mrow>
+</mstyle>
+<mrow></mrow>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="element-323">For example, if three students in an English class of 40 students received from 90% to 100%, then, <!--<newline count="1"/>--><em data-effect="italics">f</em> = 3, <em data-effect="italics">n</em> = 40, and <em data-effect="italics">RF</em> = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow> <mrow><mfrac><mi>f</mi><mi>n</mi></mfrac></mrow></mrow></semantics></math></span></span> = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>3</mn><mrow><mn>40</mn></mrow></mfrac></mrow></mrow></semantics></math></span></span> = 0.075. 7.5% of the students received 90–100%. 90–100% are quantitative measures.</p><p id="element-237"><strong>To construct a histogram</strong>, first decide how many <strong>bars</strong> or <span data-type="term" group-by="i" id="term-00005">intervals</span>, also called classes, represent the data. Many histograms consist of five to 15 bars or classes for clarity. The number of bars needs to be chosen. Choose a starting point for the first interval to be less than the smallest data value. A <strong>convenient starting point</strong> is a lower value carried out to one more decimal place than the value with the most decimal places. For example, if the value with the most decimal places is 6.1 and this is the smallest value, a convenient starting point is 6.05 (6.1 – 0.05 = 6.05). We say that 6.05 has more precision. If the value with the most decimal places is 2.23 and the lowest value is 1.5, a convenient starting point is 1.495 (1.5 – 0.005 = 1.495). If the value with the most decimal places is 3.234 and the lowest value is 1.0, a convenient starting point is 0.9995 (1.0 – 0.0005 = 0.9995). If all the data happen to be integers and the smallest value is two, then a convenient starting point is 1.5 (2 – 0.5 = 1.5). Also, when the starting point and other boundaries are carried to one additional decimal place, no data value will fall on a boundary. The next two examples go into detail about how to construct a histogram using continuous data and how to create a histogram using discrete data.</p><section class="worked-example" id="exampid1"><div class="problem-statement"><h3>Example 2.7</h3><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">2.7</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-743">The following data are the heights (in inches to the nearest half inch) of 100 semiprofessional soccer players. The heights are <strong>continuous</strong> data, since height is measured.
+<span data-type="newline"><br/></span>60; 60.5; 61; 61; 61.5
+<span data-type="newline"><br/></span>63.5; 63.5; 63.5
+<span data-type="newline"><br/></span>64; 64; 64; 64; 64; 64; 64; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5
+<span data-type="newline"><br/></span>66; 66; 66; 66; 66; 66; 66; 66; 66; 66; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5
+<span data-type="newline"><br/></span>68; 68; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69.5; 69.5; 69.5; 69.5; 69.5
+<span data-type="newline"><br/></span>70; 70; 70; 70; 70; 70; 70.5; 70.5; 70.5; 71; 71; 71
+<span data-type="newline"><br/></span>72; 72; 72; 72.5; 72.5; 73; 73.5
+<span data-type="newline"><br/></span>74
+</p><p>Construct a relative-frequency histogram with eight classes of width 2 starting at 59.95. Explain the boundaries.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">2.7</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-743">The following data are the heights (in inches to the nearest half inch) of 100 semiprofessional soccer players. The heights are <strong>continuous</strong> data, since height is measured.
+<span data-type="newline"><br/></span>60; 60.5; 61; 61; 61.5
+<span data-type="newline"><br/></span>63.5; 63.5; 63.5
+<span data-type="newline"><br/></span>64; 64; 64; 64; 64; 64; 64; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5
+<span data-type="newline"><br/></span>66; 66; 66; 66; 66; 66; 66; 66; 66; 66; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5
+<span data-type="newline"><br/></span>68; 68; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69.5; 69.5; 69.5; 69.5; 69.5
+<span data-type="newline"><br/></span>70; 70; 70; 70; 70; 70; 70.5; 70.5; 70.5; 71; 71; 71
+<span data-type="newline"><br/></span>72; 72; 72; 72.5; 72.5; 73; 73.5
+<span data-type="newline"><br/></span>74
+</p><p id="element-364">The smallest data value is 60. Since the data with the most decimal places has one decimal (for instance, 61.5), we want our starting point to have two decimal places. Since the numbers 0.5, 0.05, 0.005, etc. are convenient numbers, use 0.05 and subtract it from 60, the smallest value, for the convenient starting point.</p>
+<p id="element-906">60 – 0.05 = 59.95 which is more precise than, say, 61.5 by one decimal place. The starting point is, then, 59.95.</p><p id="element-291">The largest value is 74, so 74 + 0.05 = 74.05 is the ending value.</p><p id="element-236">Next, calculate the width of each bar or class interval. To calculate this width, subtract the starting point from the ending value and divide by the number of bars (you must choose the number of bars you desire). Suppose you choose eight bars.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="element-2133">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow><mtable><mtr><mtd><mn>74.05</mn><mo>-</mo><mn>59.95</mn><mo>=</mo><mn>14.1</mn></mtd></mtr><mtr><mtd><mn>14.1</mn><mo>÷</mo><mn>8</mn><mo>=</mo><mn>1.76</mn></mtd></mtr></mtable></mrow></semantics></math></span>
+</div>
+<div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="id7476385"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">NOTE</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idm11623536">We will round up to two and make each bar or class interval two units wide. Rounding up to two  is one way to prevent a value from falling on a boundary. Rounding to the next number is often necessary even if it goes against the standard rules of rounding. For this example, using 1.76 as the width would also work. A guideline that is followed by some for the number of bars or class intervals is to take the square root of the number of data values and then round to the nearest whole number, if necessary. For example, if there are 150 values of data, take the square root of 150 and round to 12 bars or intervals.</p></div></section></div>
+<p id="element-209">The boundaries are:</p>
+<ul id="element-790">
+<li>59.95</li>
+<li>59.95 + 2 = 61.95</li>
+<li>61.95 + 2 = 63.95</li>
+<li>63.95 + 2 = 65.95</li>
+<li>65.95 + 2 = 67.95</li>
+<li>67.95 + 2 = 69.95</li>
+<li>69.95 + 2 = 71.95</li>
+<li>71.95 + 2 = 73.95</li>
+<li>73.95 + 2 = 75.95</li>
+</ul>
+<p id="element-159">The heights 60 through 61.5 inches are in the interval 59.95–61.95. The heights that are 63.5 are in the interval 61.95–63.95. The heights that are 64 through 64.5 are in the interval 63.95–65.95. The heights 66 through 67.5 are in the interval 65.95–67.95. The heights 68 through 69.5 are in the interval 67.95–69.95. The heights 70 through 71 are in the interval 69.95–71.95. The heights 72 through 73.5 are in the interval 71.95–73.95. The height 74 is in the interval 73.95–75.95.</p>
+<p id="element-451">The following histogram displays the heights on the <em data-effect="italics">x</em>-axis and relative frequency on the <em data-effect="italics">y</em>-axis.</p>
+<div class="os-figure" id="eip-idm88475792"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idm88475792">
+<span data-alt="Histogram consists of 8 bars with the y-axis in increments of 0.05 from 0-0.4 and the x-axis in intervals of 2 from 59.95-75.95." data-display="block" data-type="media" id="id7474144"><img alt="Histogram consists of 8 bars with the y-axis in increments of 0.05 from 0-0.4 and the x-axis in intervals of 2 from 59.95-75.95." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/41fe0a21dc80b50fae69cff46c9a2edd1e794c47" loading="lazy" src="../../notes-assets/1f67a7457ccf530cbf02.svg"/></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2.5</span>
+</figcaption></figure></div>
+</div></section></div></section></div></section>
+<section class="worked-example" id="fs-idp304592"><div class="problem-statement"><h3>Try It 2.7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm28791888"><header></header><section>
+<div data-type="problem" id="fs-idp77099632"><div class="os-problem-container">
+<p id="fs-idp43536752">The following data are the shoe sizes of 50 students. The sizes are discrete data since shoe size is measured in whole and half units only. Construct a histogram and calculate the width of each bar or class interval. Suppose you choose six bars.
+<span data-type="newline"><br/></span>9; 9; 9.5; 9.5; 10; 10; 10; 10; 10; 10; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5
+<span data-type="newline"><br/></span>11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11.5; 11.5; 11.5; 11.5; 11.5; 11.5; 11.5
+<span data-type="newline"><br/></span>12; 12; 12; 12; 12; 12; 12; 12.5; 12.5; 12.5; 12.5; 14</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>One valid choice: begin at 8.95 and use six classes of width 1. The span 14.05 − 8.95 = 5.10 gives 5.10/6 = 0.85; rounding the width up to 1 is convenient. Use left-inclusive, right-exclusive intervals.</p><div class="table-scroll"><table><thead><tr><th>Interval</th><th>Frequency</th></tr></thead><tbody><tr><td>8.95–9.95</td><td>4</td></tr><tr><td>9.95–10.95</td><td>14</td></tr><tr><td>10.95–11.95</td><td>20</td></tr><tr><td>11.95–12.95</td><td>11</td></tr><tr><td>12.95–13.95</td><td>0</td></tr><tr><td>13.95–14.95</td><td>1</td></tr></tbody></table></div><figure><svg aria-label="Shoe sizes: width-one classes" role="img" viewbox="0 0 780 350">&lt;title&gt;Shoe sizes: width-one classes&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">4.6</text><text text-anchor="end" x="60" y="188.00000000000003">9.2</text><text text-anchor="end" x="60" y="142.0">13.8</text><text text-anchor="end" x="60" y="96.00000000000001">18.4</text><text text-anchor="end" x="60" y="50.0">23</text><text text-anchor="middle" x="126.66666666666666" y="300">9–9.5</text><text text-anchor="middle" x="240.0" y="300">10–10.5</text><text text-anchor="middle" x="353.3333333333333" y="300">11–11.5</text><text text-anchor="middle" x="466.6666666666667" y="300">12–12.5</text><text text-anchor="middle" x="580.0" y="300">13–13.5</text><text text-anchor="middle" x="693.3333333333334" y="300">14–14.5</text><text x="70" y="25">Frequency</text></g><rect fill="currentColor" height="40.0" opacity="1.0" width="81.6" x="85.86666666666666" y="235.0"></rect><rect fill="currentColor" height="140.0" opacity="1.0" width="81.6" x="199.2" y="135.0"></rect><rect fill="currentColor" height="200.0" opacity="1.0" width="81.6" x="312.5333333333333" y="75.0"></rect><rect fill="currentColor" height="110.0" opacity="1.0" width="81.6" x="425.8666666666667" y="165.0"></rect><rect fill="currentColor" height="0.0" opacity="1.0" width="81.6" x="539.2" y="275.0"></rect><rect fill="currentColor" height="10.0" opacity="1.0" width="81.6" x="652.5333333333334" y="265.0"></rect></svg><figcaption>Shoe sizes: width-one classes</figcaption></figure><p>Draw adjacent histogram bars with these heights; frequencies total 50. Other consistent class boundaries can also work.</p></div></section>
+<section class="worked-example" id="exampid2"><div class="problem-statement"><h3>Example 2.8</h3><section>
+<div class="body">
+<p id="element-972">Create a histogram for the following data: the number of books bought by 50 part-time college students at ABC College. The number of books is <strong>discrete data</strong>, since books are counted.
+<span data-type="newline"><br/></span>1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1
+<span data-type="newline"><br/></span>2; 2; 2; 2; 2; 2; 2; 2; 2; 2
+<span data-type="newline"><br/></span>3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3
+<span data-type="newline"><br/></span>4; 4; 4; 4; 4; 4
+<span data-type="newline"><br/></span>5; 5; 5; 5; 5
+<span data-type="newline"><br/></span>6; 6</p><p id="element-760">Eleven students buy one book. Ten students buy two books. Sixteen students buy three books. Six students buy four books. Five students buy five books. Two students buy six books.</p>
+<p id="element-728">Because the data are integers, subtract 0.5 from 1, the smallest data value and add 0.5 to 6, the largest data value. Then the starting point is 0.5 and the ending value is 6.5.</p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-545"><header></header><section><div data-type="problem" id="id8093949">
+<div class="os-problem-container">
+<p id="element-818">Next, calculate the width of each bar or class interval. If the data are discrete and there are not too many different values, a width that places the data values in the middle of the bar or class interval is the most convenient. Since the data consist of the numbers 1, 2, 3, 4, 5, 6, and the starting point is 0.5, a width of one places the 1 in the middle of the interval from 0.5 to 1.5, the 2 in the middle of the interval from 1.5 to 2.5, the 3 in the middle of the interval from 2.5 to 3.5, the 4 in the middle of the interval from _______ to _______, the 5 in the middle of the interval from _______ to _______, and the _______ in the middle of the interval from _______ to _______ .</p>
+</div></div>
+</section></div><p id="element-20">Calculate the number of bars as follows: </p>
+<div class="unnumbered" data-label="" data-type="equation" id="element-48">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow><mtable><mtr><mtd><mn>6.5</mn><mo>-</mo><mn>0.5</mn><mo>=</mo><mn>6</mn></mtd></mtr><mtr><mtd><mn>6</mn><mo>÷</mo><mn>1</mn><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></semantics></math></span>
+</div>
+<p id="element-600">where 1 is the width of a bar. Therefore, bars = 6.</p>
+<p id="element-756">The following histogram displays the number of books on the <em data-effect="italics">x</em>-axis and the frequency on the <em data-effect="italics">y</em>-axis.</p>
+<div class="os-figure" id="eip-idp35221648"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idp35221648">
+<span data-alt="Histogram consists of 6 bars with the y-axis in increments of 2 from 0-16 and the x-axis in intervals of 1 from 0.5-6.5." data-display="block" data-type="media" id="id5693638"><img alt="Histogram consists of 6 bars with the y-axis in increments of 2 from 0-16 and the x-axis in intervals of 1 from 0.5-6.5." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/ff860d852ac596df870fa9eb0664a659ba00e1ac" loading="lazy" src="../../notes-assets/12aeb36310e5c4e31f47.svg"/></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2.6</span>
+</figcaption></figure></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ul id="element-23523">
+<li>3.5 to 4.5</li>
+<li>4.5 to 5.5</li>
+<li>6</li>
+<li>5.5 to 6.5</li>
+</ul>
+</div></section>
+<div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm25803056"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idm23601024">Go to <a aria-label="Go to Appendix G NOTEs for the TI-83, 83+, 84, 84+ Calculators" class="autogenerated-content" data-page-fragment="" data-page-slug="g-notes-for-the-ti-83-83-84-84-calculators" data-page-uuid="d0ba1833-f0d2-4195-8765-3c436745f0fb" href="https://openstax.org/books/introductory-statistics-2e/pages/g-notes-for-the-ti-83-83-84-84-calculators">Appendix G NOTEs for the TI-83, 83+, 84, 84+ Calculators</a>. There are calculator instructions for entering data and for creating a customized histogram. Create the histogram for <a aria-label="Go to Example 2.8" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs#exampid2">Example 2.8</a>.</p><ul id="fs-idp2836464"><li>Press Y=. Press CLEAR to delete any equations.</li>
+<li>Press <code data-type="code">STAT 1:EDIT</code>. If <code data-type="code">L1</code> has data in it, arrow up into the name <code data-type="code">L1</code>, press CLEAR and then arrow down. If necessary, do the same for <code data-type="code">L2</code>.</li>
+<li>Into <code data-type="code">L1</code>, enter 1, 2, 3, 4, 5, 6.</li>
+<li>Into <code data-type="code">L2</code>, enter 11, 10, 16, 6, 5, 2.</li>
+<li>Press WINDOW. Set <code data-type="code">Xmin = .5</code>, <code data-type="code">Xmax = 6.5</code>, <code data-type="code">Xscl = (6.5 – .5)/6</code>, <code data-type="code">Ymin = –1</code>, <code data-type="code">Ymax = 20</code>, <code data-type="code">Yscl = 1</code>, <code data-type="code">Xres = 1</code>.</li>
+<li>Press 2<sup>nd</sup> Y=. Start by pressing <code data-type="code">4:Plotsoff</code> ENTER.</li>
+<li>Press 2<sup>nd</sup> Y=. Press <code data-type="code">1:Plot1</code>. Press ENTER. Arrow down to TYPE. Arrow to the 3<sup>rd</sup> picture (histogram). Press ENTER.</li>
+<li>Arrow down to Xlist: Enter L1 (2<sup>nd</sup> 1). Arrow down to Freq. Enter L2 (2<sup>nd</sup> 2).</li>
+<li>Press GRAPH.</li>
+<li>Use the TRACE key and the arrow keys to examine the histogram.</li>
+</ul></div></section></div>
+<section class="worked-example" id="fs-idm93603984"><div class="problem-statement"><h3>Try It 2.8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp68031136"><header></header><section><div data-type="problem" id="fs-idp68031392"><div class="os-problem-container">
+<p id="fs-idp62894704">The following data are the number of sports played by 50 student athletes. The number of sports is discrete data since sports are counted.</p>
+<p id="fs-idp50986496">1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1
+  <span data-type="newline"><br/></span>2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2; 2
+  <span data-type="newline"><br/></span>3; 3; 3; 3; 3; 3; 3; 3
+  <span data-type="newline"><br/></span>20 student athletes play one sport. 22 student athletes play two sports. Eight student athletes play three sports.</p>
+<p id="fs-idp11189216"><em data-effect="italics">Fill in the blanks for the following sentence.</em> Since the data consist of the numbers 1, 2, 3, and the starting point is 0.5, a width of one places the 1 in the middle of the interval 0.5 to _____, the 2 in the middle of the interval from _____ to _____, and the 3 in the middle of the interval from _____ to _____.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The missing boundaries are 1.5; 1.5 and 2.5; 2.5 and 3.5. Thus [0.5,1.5), [1.5,2.5), [2.5,3.5) contain 1, 2, and 3, respectively. Frequencies are 20, 22, and 8.</p></div></section><section class="worked-example" id="fs-idp46234048"><div class="problem-statement"><h3>Example 2.9</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm61675872"><header></header><section>
+<div data-type="problem" id="fs-idp66653792">
+<div class="os-problem-container"><p id="fs-idm21354960">Using this data set, construct a histogram.</p>
+<div class="os-table" id="fs-idp46234304"><div class="table-scroll"><table data-id="fs-idp46234304" data-summary=""><thead>
+<tr>
+<th colspan="5" scope="colgroup">Number of Hours My Classmates Spent Playing Video Games on Weekends</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>9.95</td>
+<td>10</td>
+<td>2.25</td>
+<td>16.75</td>
+<td>0</td>
+</tr>
+<tr>
+<td>19.5</td>
+<td>22.5</td>
+<td>7.5</td>
+<td>15</td>
+<td>12.75</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>11</td>
+<td>10</td>
+<td>20.75</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td>23</td>
+<td>21.9</td>
+<td>24</td>
+<td>23.75</td>
+<td>18</td>
+</tr>
+<tr>
+<td>20</td>
+<td>15</td>
+<td>22.9</td>
+<td>18.8</td>
+<td>20.5</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.13</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<div class="os-figure" id="fs-idp72238816"><figure class="scaled-down ui-has-child-figcaption" data-id="fs-idp72238816"><span data-alt="This is a histogram that matches the supplied data. The x-axis consists of 5 bars in intervals of 5 from 0 to 25. The y-axis is marked in increments of 1 from 0 to 10. The x-axis shows the number of hours spent playing video games on the weekends, and the y-axis shows the number of students." data-display="block" data-type="media" id="fs-idm21354576"><img alt="This is a histogram that matches the supplied data. The x-axis consists of 5 bars in intervals of 5 from 0 to 25. The y-axis is marked in increments of 1 from 0 to 10. The x-axis shows the number of hours spent playing video games on the weekends, and the y-axis shows the number of students." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/7ee497dd5c38c7f2913a7c3a21d9ba6467f7c424" loading="lazy" src="../../notes-assets/efcf432fe345449ab661.svg"/></span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2.7</span>
+</figcaption></figure></div>
+<p id="fs-idm106252848">Some values in this data set fall on boundaries for the class intervals. A value is counted in a class interval if it falls on the left boundary, but not if it falls on the right boundary. Different researchers may set up histograms for the same data in different ways. There is more than one correct way to set up a histogram.</p>
+</div></section>
+<section class="worked-example" id="fs-idm161572864"><div class="problem-statement"><h3>Try It 2.9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm32934816"><header></header><section><div data-type="problem" id="fs-idm4304416"><div class="os-problem-container">
+<p id="fs-idp57423888">The following data represent the number of employees at various restaurants in New York City. Using this data, create a histogram.</p>
+<p id="fs-idp57424272">
+<span data-display="inline" data-list-type="labeled-item" data-type="list" id="list-00001">
+<span data-type="item">22<span class="-os-inline-list-separator">; </span></span><span data-type="item">35<span class="-os-inline-list-separator">; </span></span><span data-type="item">15<span class="-os-inline-list-separator">; </span></span><span data-type="item">26<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item">40<span class="-os-inline-list-separator">; </span></span><span data-type="item">28<span class="-os-inline-list-separator">; </span></span><span data-type="item">18<span class="-os-inline-list-separator">; </span></span><span data-type="item">20<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item">25<span class="-os-inline-list-separator">; </span></span><span data-type="item">34<span class="-os-inline-list-separator">; </span></span><span data-type="item">39<span class="-os-inline-list-separator">; </span></span><span data-type="item">42<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item">24<span class="-os-inline-list-separator">; </span></span><span data-type="item">22<span class="-os-inline-list-separator">; </span></span><span data-type="item">19<span class="-os-inline-list-separator">; </span></span><span data-type="item">27<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item">22<span class="-os-inline-list-separator">; </span></span><span data-type="item">34<span class="-os-inline-list-separator">; </span></span><span data-type="item">40<span class="-os-inline-list-separator">; </span></span><span data-type="item">20<span class="-os-inline-list-separator">; </span></span>
+<span data-type="item">38<span class="-os-inline-list-separator">; </span></span><span data-type="item">and 28</span>
+</span>
+<span data-type="newline"><br/></span>Use 10–19 as the first interval.
+</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="Employees per restaurant" role="img" viewbox="0 0 780 350">&lt;title&gt;Employees per restaurant&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">2.53</text><text text-anchor="end" x="60" y="188.0">5.06</text><text text-anchor="end" x="60" y="142.0">7.59</text><text text-anchor="end" x="60" y="96.0">10.1</text><text text-anchor="end" x="60" y="50.0">12.6</text><text text-anchor="middle" x="155.0" y="300">10–19</text><text text-anchor="middle" x="325.0" y="300">20–29</text><text text-anchor="middle" x="495.0" y="300">30–39</text><text text-anchor="middle" x="665.0" y="300">40–49</text><text x="70" y="25">Frequency</text></g><rect fill="currentColor" height="54.54545454545453" opacity="1.0" width="122.39999999999999" x="93.80000000000001" y="220.45454545454547"></rect><rect fill="currentColor" height="200.00000000000003" opacity="1.0" width="122.39999999999999" x="263.8" y="74.99999999999997"></rect><rect fill="currentColor" height="90.9090909090909" opacity="1.0" width="122.39999999999999" x="433.8" y="184.0909090909091"></rect><rect fill="currentColor" height="54.54545454545453" opacity="1.0" width="122.39999999999999" x="603.8" y="220.45454545454547"></rect></svg><figcaption>Employees per restaurant</figcaption></figure><p>For whole-number counts, use boundaries 9.5, 19.5, 29.5, 39.5, and 49.5 and draw adjacent bars. Frequencies 3 + 11 + 5 + 3 = 22.</p></div></section><section class="worked-example" id="fs-idm107220592"><div class="problem-statement"><h3>Collaborative Exercise</h3><section>
+<div class="os-note-body">
+<p id="element-326">Count the money (bills and change) in your pocket or purse. Your instructor will record the amounts. As a class, construct a histogram displaying the data. Discuss how many intervals you think is appropriate. You may want to experiment with the number of intervals.</p>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The graph depends on the observed amounts. Choose nonoverlapping intervals spanning the minimum through maximum, tally every amount exactly once, and draw adjacent bars. Check that frequencies sum to the class size. Compare a smaller number of wider bins with more narrow bins: too few can hide patterns, while too many can make random variation dominate.</p></div></section>
+<section data-depth="1" id="fs-idm4800336"><h3 data-type="title">Frequency Polygons</h3>
+<p id="fs-idm417872"><span data-type="term" group-by="F" id="term-00006">Frequency polygons</span> are analogous to line graphs, and just as line graphs make continuous data visually easy to interpret, so too do frequency polygons.</p>
+<p id="fs-idp64102880">To construct a frequency polygon, first examine the data and decide on the number of intervals, or class intervals, to use on the <em data-effect="italics">x</em>-axis and <em data-effect="italics">y</em>-axis. After choosing the appropriate ranges, begin plotting the data points. After all the points are plotted, draw line segments to connect them.</p><section class="worked-example" id="example4"><div class="problem-statement"><h3>Example 2.10</h3><p>Using the frequency table, construct a frequency polygon. Identify the class midpoints and explain the extra endpoints on the horizontal axis.</p><div class="table-scroll"><table data-id="fs-idp57619648" data-summary=""><thead>
+<tr><th colspan="4" scope="colgroup">Frequency Distribution for Calculus Final Test Scores</th></tr>
+<tr><th scope="col">Lower Bound</th><th scope="col">Upper Bound</th> <th scope="col">Frequency</th><th scope="col">Cumulative Frequency</th></tr>
+</thead><tbody>
+<tr>
+<td>49.5</td>
+<td>59.5</td><td>5</td><td>5</td>
+</tr>
+<tr><td>59.5</td><td>69.5</td><td>10</td><td>15</td></tr><tr><td>69.5</td><td>79.5</td> <td>30</td><td>45</td></tr><tr><td>79.5</td><td>89.5</td><td>40</td><td>85</td></tr>
+<tr><td>89.5</td><td>99.5</td><td>15</td><td>100</td></tr>
+</tbody></table></div></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="Calculus exam frequency polygon" role="img" viewbox="0 0 780 350">&lt;title&gt;Calculus exam frequency polygon&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">9.2</text><text text-anchor="end" x="60" y="188.00000000000003">18.4</text><text text-anchor="end" x="60" y="142.0">27.6</text><text text-anchor="end" x="60" y="96.00000000000001">36.8</text><text text-anchor="end" x="60" y="50.0">46</text><text text-anchor="middle" x="118.57142857142857" y="300">44.5</text><text text-anchor="middle" x="215.71428571428572" y="300">54.5</text><text text-anchor="middle" x="312.8571428571429" y="300">64.5</text><text text-anchor="middle" x="410.0" y="300">74.5</text><text text-anchor="middle" x="507.14285714285717" y="300">84.5</text><text text-anchor="middle" x="604.2857142857143" y="300">94.5</text><text text-anchor="middle" x="701.4285714285714" y="300">104.5</text><text x="70" y="25">Frequency</text></g><circle cx="118.57142857142857" cy="275.0" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="250.0" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="225.0" fill="currentColor" r="4"></circle><circle cx="410.0" cy="125.0" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="75.0" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="200.0" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,275.0 215.71428571428572,250.0 312.8571428571429,225.0 410.0,125.0 507.14285714285717,75.0 604.2857142857143,200.0 701.4285714285714,275.0" stroke="currentColor" stroke-dasharray="none" stroke-width="2"></polyline></svg><figcaption>Calculus exam frequency polygon</figcaption></figure><p>Plot class midpoints 54.5, 64.5, 74.5, 84.5, 94.5 at their frequencies, then join them. Add zero-frequency points at 44.5 and 104.5. A midpoint of 54.5 does not establish that the lowest individual score was 54.5.</p></div></section>
+<section class="worked-example" id="fs-idm37683552"><div class="problem-statement"><h3>Try It 2.10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-idp12732512"><header></header><section>
+<div data-type="problem" id="eip-idp12732768"><div class="os-problem-container">
+<p id="fs-idp42868544">Construct a frequency polygon of U.S. Presidents’ ages at inauguration shown in <a aria-label="View Table 2.15" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs#fs-idp36852784">Table 2.15</a>.</p><div class="os-table" id="fs-idp36852784"><div class="table-scroll"><table data-id="fs-idp36852784" data-summary=""><thead>
+<tr><th scope="col">Age at Inauguration</th><th scope="col">Frequency</th></tr>
+</thead><tbody>
+<tr><td>41.5–46.5</td><td>4</td></tr>
+<tr><td>46.5–51.5</td><td>11</td></tr>
+<tr><td>51.5–56.5</td><td>14</td></tr>
+<tr><td>56.5–61.5</td><td>9</td></tr>
+<tr><td>61.5–66.5</td><td>4</td></tr>
+<tr><td>66.5–71.5</td><td>2</td></tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.15</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="Presidents’ ages at inauguration" role="img" viewbox="0 0 780 350">&lt;title&gt;Presidents’ ages at inauguration&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">3.22</text><text text-anchor="end" x="60" y="188.0">6.44</text><text text-anchor="end" x="60" y="142.0">9.66</text><text text-anchor="end" x="60" y="96.0">12.9</text><text text-anchor="end" x="60" y="50.0">16.1</text><text text-anchor="middle" x="112.5" y="300">39</text><text text-anchor="middle" x="197.5" y="300">44</text><text text-anchor="middle" x="282.5" y="300">49</text><text text-anchor="middle" x="367.5" y="300">54</text><text text-anchor="middle" x="452.5" y="300">59</text><text text-anchor="middle" x="537.5" y="300">64</text><text text-anchor="middle" x="622.5" y="300">69</text><text text-anchor="middle" x="707.5" y="300">74</text><text x="70" y="25">Frequency</text></g><circle cx="112.5" cy="275.0" fill="currentColor" r="4"></circle><circle cx="197.5" cy="217.85714285714286" fill="currentColor" r="4"></circle><circle cx="282.5" cy="117.85714285714285" fill="currentColor" r="4"></circle><circle cx="367.5" cy="74.99999999999997" fill="currentColor" r="4"></circle><circle cx="452.5" cy="146.42857142857142" fill="currentColor" r="4"></circle><circle cx="537.5" cy="217.85714285714286" fill="currentColor" r="4"></circle><circle cx="622.5" cy="246.42857142857142" fill="currentColor" r="4"></circle><circle cx="707.5" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="112.5,275.0 197.5,217.85714285714286 282.5,117.85714285714285 367.5,74.99999999999997 452.5,146.42857142857142 537.5,217.85714285714286 622.5,246.42857142857142 707.5,275.0" stroke="currentColor" stroke-dasharray="none" stroke-width="2"></polyline></svg><figcaption>Presidents’ ages at inauguration</figcaption></figure><p>Use midpoints 44, 49, 54, 59, 64, 69 and frequencies 4, 11, 14, 9, 4, 2. Add zero endpoints at 39 and 74.</p></div></section>
+<p id="fs-idp48307936">Frequency polygons are useful for comparing distributions. This is achieved by overlaying the frequency polygons drawn for different data sets.</p>
+<section class="worked-example" id="fs-idp21707856"><div class="problem-statement"><h3>Example 2.11</h3><p>Construct overlaid frequency polygons for the two calculus distributions. Use a common scale and distinguish the two lines.</p><div class="table-scroll"><table data-id="fs-idm10950720" data-summary=""><thead>
+<tr><th colspan="4" scope="colgroup">Frequency Distribution for Calculus Final Test Scores</th></tr>
+<tr><th scope="col">Lower Bound</th><th scope="col">Upper Bound</th> <th scope="col">Frequency</th><th scope="col">Cumulative Frequency</th></tr>
+</thead><tbody>
+<tr><td>49.5</td><td>59.5</td><td>5</td> <td>5</td></tr>
+<tr><td>59.5</td><td>69.5</td><td>10</td> <td>15</td></tr>
+<tr><td>69.5</td><td>79.5</td><td>30</td> <td>45</td></tr>
+<tr><td>79.5</td><td>89.5</td><td>40</td> <td>85</td></tr>
+<tr><td>89.5</td><td>99.5</td><td>15</td> <td>100</td></tr>
+</tbody></table></div><div class="table-scroll"><table data-id="fs-idp39914624" data-summary=""><thead>
+<tr><th colspan="4" scope="colgroup">Frequency Distribution for Calculus Final Grades</th></tr>
+<tr><th scope="col">Lower Bound</th> <th scope="col">Upper Bound</th> <th scope="col">Frequency</th><th scope="col">Cumulative Frequency</th></tr>
+</thead><tbody>
+<tr><td>49.5</td><td>59.5</td><td>10</td> <td>10</td></tr>
+<tr><td>59.5</td><td>69.5</td><td>10</td> <td>20</td></tr>
+<tr><td>69.5</td><td>79.5</td><td>30</td> <td>50</td></tr>
+<tr><td>79.5</td><td>89.5</td><td>45</td> <td>95</td></tr>
+<tr><td>89.5</td><td>99.5</td><td>5</td> <td>100</td></tr>
+</tbody></table></div></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="Calculus exam and final-grade frequency polygons" role="img" viewbox="0 0 780 350">&lt;title&gt;Calculus exam and final-grade frequency polygons&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">10.3</text><text text-anchor="end" x="60" y="188.00000000000003">20.7</text><text text-anchor="end" x="60" y="142.0">31</text><text text-anchor="end" x="60" y="96.00000000000001">41.4</text><text text-anchor="end" x="60" y="50.00000000000003">51.7</text><text text-anchor="middle" x="118.57142857142857" y="300">44.5</text><text text-anchor="middle" x="215.71428571428572" y="300">54.5</text><text text-anchor="middle" x="312.8571428571429" y="300">64.5</text><text text-anchor="middle" x="410.0" y="300">74.5</text><text text-anchor="middle" x="507.14285714285717" y="300">84.5</text><text text-anchor="middle" x="604.2857142857143" y="300">94.5</text><text text-anchor="middle" x="701.4285714285714" y="300">104.5</text><text x="70" y="25">Frequency</text></g><circle cx="118.57142857142857" cy="275.0" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="252.77777777777777" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="230.55555555555557" fill="currentColor" r="4"></circle><circle cx="410.0" cy="141.66666666666663" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="97.2222222222222" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="208.33333333333331" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,275.0 215.71428571428572,252.77777777777777 312.8571428571429,230.55555555555557 410.0,141.66666666666663 507.14285714285717,97.2222222222222 604.2857142857143,208.33333333333331 701.4285714285714,275.0" stroke="currentColor" stroke-dasharray="none" stroke-width="2"></polyline><circle cx="118.57142857142857" cy="275.0" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="230.55555555555557" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="230.55555555555557" fill="currentColor" r="4"></circle><circle cx="410.0" cy="141.66666666666663" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="74.99999999999997" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="252.77777777777777" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,275.0 215.71428571428572,230.55555555555557 312.8571428571429,230.55555555555557 410.0,141.66666666666663 507.14285714285717,74.99999999999997 604.2857142857143,252.77777777777777 701.4285714285714,275.0" stroke="currentColor" stroke-dasharray="7 4" stroke-width="2"></polyline></svg><figcaption>Calculus exam and final-grade frequency polygons. Solid: Exam; dashed: Final grade.</figcaption></figure><p>Both distributions peak at midpoint 84.5. Final grades have fewer scores in the highest interval and more in the lowest interval.</p></div></section>
+<section class="worked-example" id="note-00001"><div class="problem-statement"><h3>Try It 2.11</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="exer-00001"><header></header><section><div data-type="problem" id="prob-00001"><div class="os-problem-container">
+<p id="para-00001">We will construct an overlay frequency polygon comparing the scores from <a aria-label="Go to Example 2.11" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs#fs-idp21707856">Example 2.11</a> with the students’ final test scores in algebra.</p>
+<div class="os-table" id="table-00001"><div class="table-scroll"><table data-id="table-00001" data-summary=".."><thead>
+<tr>
+<th colspan="4" data-align="center" scope="colgroup"><strong>Frequency Distribution for Algebra Final Test Scores</strong></th>
+</tr>
+<tr>
+<th data-align="center" scope="col"><strong>Lower Bound</strong></th>
+<th data-align="center" scope="col"><strong>Upper Bound</strong></th>
+<th data-align="center" scope="col"><strong>Frequency</strong></th>
+<th data-align="center" scope="col"><strong>Cumulative Frequency</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">49.5</td>
+<td data-align="center">59.5</td>
+<td data-align="center">10</td>
+<td data-align="center">10</td>
+</tr>
+<tr>
+<td data-align="center">59.5</td>
+<td data-align="center">69.5</td>
+<td data-align="center">5</td>
+<td data-align="center">15</td>
+</tr>
+<tr>
+<td data-align="center">69.5</td>
+<td data-align="center">79.5</td>
+<td data-align="center">40</td>
+<td data-align="center">55</td>
+</tr>
+<tr>
+<td data-align="center">79.5</td>
+<td data-align="center">89.5</td>
+<td data-align="center">35</td>
+<td data-align="center">90</td>
+</tr>
+<tr>
+<td data-align="center">89.5</td>
+<td data-align="center">99.5</td>
+<td data-align="center">10</td>
+<td data-align="center">100</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.18</span>
+<span class="os-divider"> </span>
+<span class="os-title" data-type="title"><!-- no-selfclose --></span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="Calculus and algebra final test scores" role="img" viewbox="0 0 780 350">&lt;title&gt;Calculus and algebra final test scores&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">9.2</text><text text-anchor="end" x="60" y="188.00000000000003">18.4</text><text text-anchor="end" x="60" y="142.0">27.6</text><text text-anchor="end" x="60" y="96.00000000000001">36.8</text><text text-anchor="end" x="60" y="50.0">46</text><text text-anchor="middle" x="118.57142857142857" y="300">44.5</text><text text-anchor="middle" x="215.71428571428572" y="300">54.5</text><text text-anchor="middle" x="312.8571428571429" y="300">64.5</text><text text-anchor="middle" x="410.0" y="300">74.5</text><text text-anchor="middle" x="507.14285714285717" y="300">84.5</text><text text-anchor="middle" x="604.2857142857143" y="300">94.5</text><text text-anchor="middle" x="701.4285714285714" y="300">104.5</text><text x="70" y="25">Frequency</text></g><circle cx="118.57142857142857" cy="275.0" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="250.0" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="225.0" fill="currentColor" r="4"></circle><circle cx="410.0" cy="125.0" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="75.0" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="200.0" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,275.0 215.71428571428572,250.0 312.8571428571429,225.0 410.0,125.0 507.14285714285717,75.0 604.2857142857143,200.0 701.4285714285714,275.0" stroke="currentColor" stroke-dasharray="none" stroke-width="2"></polyline><circle cx="118.57142857142857" cy="275.0" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="225.0" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="250.0" fill="currentColor" r="4"></circle><circle cx="410.0" cy="75.0" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="99.99999999999999" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="225.0" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="275.0" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,275.0 215.71428571428572,225.0 312.8571428571429,250.0 410.0,75.0 507.14285714285717,99.99999999999999 604.2857142857143,225.0 701.4285714285714,275.0" stroke="currentColor" stroke-dasharray="7 4" stroke-width="2"></polyline></svg><figcaption>Calculus and algebra final test scores. Solid: Calculus; dashed: Algebra.</figcaption></figure><p>Use the calculus test-score table from Example 2.11. Algebra frequencies at 54.5 through 94.5 are 10, 5, 40, 35, 10; calculus frequencies are 5, 10, 30, 40, 15.</p></div></section>
+</section>
+<section data-depth="1" id="fs-idp1011776"><h3 data-type="title">Constructing a Time Series Graph</h3><p id="fs-idp59234016">Suppose that we want to study the temperature range of a region for an entire month. Every day at noon we note the temperature and write this down in a log. A variety of statistical studies could be done with this data. We could find the mean or the median temperature for the month. We could construct a histogram displaying the number of days that temperatures reach a certain range of values. However, all of these methods ignore a portion of the data that we have collected.</p>
+<p id="fs-idm25640016">One feature of the data that we may want to consider is that of time. Since each date is paired with the temperature reading for the day, we don‘t have to think of the data as being random. We can instead use the times given to impose a chronological order on the data. A graph that recognizes this ordering and displays the changing temperature as the month progresses is called a time series graph.</p>
+<p id="fs-idp69308288">To construct a time series graph, we must look at both pieces of our <span data-type="term" group-by="p" id="term-00004">paired data set</span>. We start with a standard Cartesian coordinate system. The horizontal axis is used to plot the date or time increments, and the vertical axis is used to plot the values of the variable that we are measuring. By doing this, we make each point on the graph correspond to a date and a measured quantity. The points on the graph are typically connected by straight lines in the order in which they occur.</p>
+<section class="worked-example" id="fs-idp7658080"><div class="problem-statement"><h3>Example 2.12</h3><section>
+<div class="body"><div class="unnumbered has-problem-title" data-type="exercise" id="fs-idp4161680"><header></header><section>
+<div data-type="problem" id="fs-idm51003184">
+<div class="os-problem-container"><p id="fs-idm34305376">The following data shows the Annual Consumer Price Index, each month, for ten years. Construct a time series graph for the Annual Consumer Price Index data only.</p><div class="os-table" id="fs-idp49086512"><div class="table-scroll"><table data-id="fs-idp49086512" data-summary=""><colgroup><col data-align="center"/><col/><col/><col/><col/><col/><col/><col/></colgroup><thead>
+<tr valign="middle">
+<th scope="col">Year</th><th scope="col">Jan</th><th scope="col">Feb</th><th scope="col">Mar</th><th scope="col">Apr</th><th scope="col">May</th><th scope="col">Jun</th><th scope="col">Jul</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>181.7</td><td>183.1</td><td>184.2</td><td>183.8</td>
+<td>183.5</td><td>183.7</td><td>183.9</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>185.2</td><td>186.2</td><td>187.4</td><td>188.0</td>
+<td>189.1</td><td>189.7</td><td>189.4</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>190.7</td><td>191.8</td><td>193.3</td><td>194.6</td>
+<td>194.4</td><td>194.5</td><td>195.4</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>198.3</td><td>198.7</td><td>199.8</td><td>201.5</td> <td>202.5</td><td>202.9</td><td>203.5</td></tr>
+<tr>
+<td><strong>5</strong></td>
+<td>202.416</td><td>203.499</td><td>205.352</td>
+<td>206.686</td><td>207.949</td><td>208.352</td>
+<td>208.299</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>211.080</td><td>211.693</td><td>213.528</td>
+<td>214.823</td><td>216.632</td><td>218.815</td>
+<td>219.964</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>211.143</td><td>212.193</td><td>212.709</td>
+<td>213.240</td><td>213.856</td><td>215.693</td>
+<td>215.351</td></tr>
+<tr>
+<td><strong>8</strong></td>
+<td>216.687</td><td>216.741</td><td>217.631</td>
+<td>218.009</td><td>218.178</td><td>217.965</td>
+<td>218.011</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>220.223</td><td>221.309</td><td>223.467</td>
+<td>224.906</td><td>225.964</td><td>225.722</td>
+<td>225.922</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>226.665</td><td>227.663</td><td>229.392</td>
+<td>230.085</td><td>229.815</td><td>229.478</td>
+<td>229.104</td></tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.19</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div>
+<div class="os-table" id="fs-idm48042992"><div class="table-scroll"><table data-id="fs-idm48042992" data-summary=""><colgroup><col data-align="center"/><col/><col/><col/><col/><col/><col/><col/></colgroup><thead>
+<tr>
+<th scope="col">Year</th>
+<th scope="col">Aug</th><th scope="col">Sep</th><th scope="col">Oct</th><th scope="col">Nov</th><th scope="col">Dec</th><th scope="col">Annual</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>184.6</td>
+<td>185.2</td><td>185.0</td><td>184.5</td><td>184.3</td>
+<td>184.0</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>189.5</td>
+<td>189.9</td><td>190.9</td><td>191.0</td><td>190.3</td>
+<td>188.9</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>196.4</td>
+<td>198.8</td><td>199.2</td><td>197.6</td><td>196.8</td>
+<td>195.3</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>203.9</td> <td>202.9</td><td>201.8</td><td>201.5</td><td>201.8</td> <td>201.6</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>207.917</td><td>208.490</td>
+<td>208.936</td><td>210.177</td><td>210.036</td>
+<td>207.342</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>219.086</td><td>218.783</td>
+<td>216.573</td><td>212.425</td><td>210.228</td>
+<td>215.303</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>215.834</td><td>215.969</td>
+<td>216.177</td><td>216.330</td><td>215.949</td>
+<td>214.537</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>218.312</td><td>218.439</td>
+<td>218.711</td><td>218.803</td><td>219.179</td>
+<td>218.056</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>226.545</td><td>226.889</td>
+<td>226.421</td><td>226.230</td><td>225.672</td>
+<td>224.939</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>230.379</td><td>231.407</td>
+<td>231.317</td><td>230.221</td><td>229.601</td>
+<td>229.594</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.20</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<div class="os-figure" id="eip-idm68714544"><figure class="scaled-down ui-has-child-figcaption" data-id="eip-idm68714544">
+<span data-alt="This is a times series graph that matches the supplied data. The x-axis shows years from 2003 to 2012, and the y-axis shows the annual CPI." data-display="block" data-type="media" id="fs-idm55888160">
+<img alt="This is a times series graph that matches the supplied data. The x-axis shows years from 2003 to 2012, and the y-axis shows the annual CPI." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/6639b99762de34e593f066abd35ca1fb1d5485f2" loading="lazy" src="../../notes-assets/ca981044e99711e55334.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2.10</span>
+</figcaption></figure></div>
+</div></section>
+<section class="worked-example" id="fs-idm11029344"><div class="problem-statement"><h3>Try It 2.12</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm10087584"><header></header><section><div data-type="problem" id="fs-idp2285280"><div class="os-problem-container">
+<p id="fs-idp25953376">The following table is a portion of a data set from <a aria-label="Go to www.worldbank.org" data-bare-link="true" href="https://www.worldbank.org">www.worldbank.org</a>. Use the table to construct a time series graph for CO<sub>2</sub> emissions for the United States.</p>
+<div class="os-table" id="fs-idp17543168"><div class="table-scroll"><table data-id="fs-idp17543168" data-summary=""><thead>
+<tr>
+<th colspan="4" scope="colgroup">CO2 Emissions</th>
+</tr>
+<tr>
+<th scope="col">Year</th>
+<th scope="col">Ukraine</th>
+<th scope="col">United Kingdom</th>
+<th scope="col">United States</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>352,259</td>
+<td>540,640</td>
+<td>5,681,664</td>
+</tr>
+<tr>
+<td>2</td>
+<td>343,121</td>
+<td>540,409</td>
+<td>5,790,761</td>
+</tr>
+<tr>
+<td>3</td>
+<td>339,029</td>
+<td>541,990</td>
+<td>5,826,394</td>
+</tr>
+<tr>
+<td>4</td>
+<td>327,797</td>
+<td>542,045</td>
+<td>5,737,615</td>
+</tr>
+<tr>
+<td>5</td>
+<td>328,357</td>
+<td>528,631</td>
+<td>5,828,697</td>
+</tr>
+<tr>
+<td>6</td>
+<td>323,657</td>
+<td>522,247</td>
+<td>5,656,839</td>
+</tr>
+<tr>
+<td>7</td>
+<td>272,176</td>
+<td>474,579</td>
+<td>5,299,563</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2.21</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><figure><svg aria-label="U.S. CO₂ emissions, textbook years 1–7" role="img" viewbox="0 0 780 350">&lt;title&gt;U.S. CO₂ emissions, textbook years 1–7&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">1.34e+06</text><text text-anchor="end" x="60" y="188.0">2.68e+06</text><text text-anchor="end" x="60" y="142.0">4.02e+06</text><text text-anchor="end" x="60" y="96.0">5.36e+06</text><text text-anchor="end" x="60" y="50.0">6.7e+06</text><text text-anchor="middle" x="118.57142857142857" y="300">1</text><text text-anchor="middle" x="215.71428571428572" y="300">2</text><text text-anchor="middle" x="312.8571428571429" y="300">3</text><text text-anchor="middle" x="410.0" y="300">4</text><text text-anchor="middle" x="507.14285714285717" y="300">5</text><text text-anchor="middle" x="604.2857142857143" y="300">6</text><text text-anchor="middle" x="701.4285714285714" y="300">7</text><text x="70" y="25">CO₂ emissions (table units)</text></g><circle cx="118.57142857142857" cy="80.04514130688213" fill="currentColor" r="4"></circle><circle cx="215.71428571428572" cy="76.30169744627314" fill="currentColor" r="4"></circle><circle cx="312.8571428571429" cy="75.07902280732725" fill="currentColor" r="4"></circle><circle cx="410.0" cy="78.12529541336596" fill="currentColor" r="4"></circle><circle cx="507.14285714285717" cy="75.0" fill="currentColor" r="4"></circle><circle cx="604.2857142857143" cy="80.89696119046847" fill="currentColor" r="4"></circle><circle cx="701.4285714285714" cy="93.15616766491722" fill="currentColor" r="4"></circle><polyline fill="none" points="118.57142857142857,80.04514130688213 215.71428571428572,76.30169744627314 312.8571428571429,75.07902280732725 410.0,78.12529541336596 507.14285714285717,75.0 604.2857142857143,80.89696119046847 701.4285714285714,93.15616766491722" stroke="currentColor" stroke-dasharray="none" stroke-width="2"></polyline></svg><figcaption>U.S. CO₂ emissions, textbook years 1–7</figcaption></figure><p>Connect the U.S. values in chronological order. Do not reorder them by magnitude. The overall final value is lower than the first, with fluctuations along the way.</p></div></section>
+<section data-depth="2" id="fs-idm42088096"><h4 data-type="title">Uses of a Time Series Graph</h4><p id="fs-idp23485776">Time series graphs are important tools in various applications of statistics. When recording values of the same variable over an extended period of time, sometimes it is difficult to discern any trend or pattern. However, once the same data points are displayed graphically, some features jump out. Time series graphs make trends easy to spot.</p>
+</section></section>
+<section data-depth="1" id="eip-48"><h3 data-type="title">How NOT to Lie with Statistics</h3><p id="eip-577">It is important to remember that the very reason we develop a variety of methods to present data is to develop insights into the subject of what the observations represent. We want to get a "sense" of the data. Are the observations all very much alike or are they spread across a wide range of values, are they bunched at one end of the spectrum or are they distributed evenly and so on. We are trying to get a visual picture of the numerical data. Shortly we will develop formal mathematical measures of the data, but our visual graphical presentation can say much. It can, unfortunately, also say much that is distracting, confusing and simply wrong in terms of the impression the visual leaves. Many years ago Darrell Huff wrote the book <em data-effect="italics">How to Lie with Statistics</em>. It has been through 25 plus printings and sold more than one and one-half million copies. His perspective was a harsh one and used many actual examples that were designed to mislead. He wanted to make people aware of such deception, but perhaps more importantly to educate so that others do not make the same errors inadvertently.
+</p><p id="eip-133">Again, the goal is to enlighten with visuals that tell the story of the data. Pie charts have a number of common problems when used to convey the message of the data. Too many pieces of the pie overwhelm the reader. More than perhaps five or six categories ought to give an idea of the relative importance of each piece. This is after all the goal of a pie chart, what subset matters most relative to the others. If there are more components than this then perhaps an alternative approach would be better or perhaps some can be consolidated into an "other" category. Pie charts cannot show changes over time, although we see this attempted all too often. In federal, state, and city finance documents pie charts are often presented to show the components of revenue available to the governing body for appropriation: income tax, sales tax motor vehicle taxes and so on. In and of itself this is interesting information and can be nicely done with a pie chart. The error occurs when two years are set side-by-side. Because the total revenues change year to year, but the size of the pie is fixed, no real information is provided and the relative size of each piece of the pie cannot be meaningfully compared. </p><p id="eip-961">Histograms can be very helpful in understanding the data. Properly presented, they can be a quick visual way to present probabilities of different categories by the simple visual of comparing relative areas in each category. Here the error, purposeful or not, is to vary the width of the categories. This of course makes comparison to the other categories impossible. It does embellish the importance of the category with the expanded width because it has a greater area, inappropriately, and thus visually "says" that that category has a higher probability of occurrence. </p><p id="eip-670">Time series graphs perhaps are the most abused. A plot of some variable across time should never be presented on axes that change part way across the page either in the vertical or horizontal dimension. Perhaps the time frame is changed from years to months. Perhaps this is to save space or because monthly data was not available for early years. In either case this confounds the presentation and destroys any value of the graph. If this is not done to purposefully confuse the reader, then it certainly is either lazy or sloppy work.</p><p id="eip-123">Changing the units of measurement of the axis can smooth out a drop or accentuate one. If you want to show large changes, then measure the variable in small units, penny rather than thousands of dollars. And of course to continue the fraud, be sure that the axis does not begin at zero, zero. If it begins at zero, zero, then it becomes apparent that the axis has been manipulated.</p><p id="eip-958">Perhaps you have a client that is concerned with the volatility of the portfolio you manage. An easy way to present the data is to use long time periods on the time series graph. Use months or better, quarters rather than daily or weekly data. If that doesn't get the volatility down then spread the time axis relative to the rate of return or portfolio valuation axis. If you want to show "quick" dramatic growth, then shrink the time axis. Any positive growth will show visually "high" growth rates. Do note that if the growth is negative then this trick will show the portfolio is collapsing at a dramatic rate.</p><p id="eip-757">Again, the goal of descriptive statistics is to convey meaningful visuals that tell the story of the data. Purposeful manipulation is fraud and unethical at the worst, but even at its best, making these type of errors will lead to confusion on the part of the analysis.</p></section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

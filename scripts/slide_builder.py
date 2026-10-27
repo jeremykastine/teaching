@@ -233,7 +233,7 @@ def build_index(root, cfg, sections):
             if number in cfg['optional']:
                 label += ' · Optional application'
             cards.append(f'<li><span class="section">{label}</span><h3><a href="slides/{filename}">{escape(section["title"])}</a></h3>'
-                         f'<p class="links"><a href="slides/{filename}">Open slides <span class="meta">(PDF, {len(section["slides"])} slides)</span></a>'
+                         f'<p class="links"><a href="lessons/section-{section["slug"]}.html">Lecture notes</a><a href="slides/{filename}">Open slides <span class="meta">(PDF, {len(section["slides"])} slides)</span></a>'
                          f'<a href="{base + section["slug"]}">Read textbook section</a></p></li>')
         chunks.append(f'<section aria-labelledby="chapter-{chapter}"><h2 id="chapter-{chapter}">Chapter {chapter} · {cfg["chapters"][chapter]}</h2>'
                       f'<p>{note}</p><ul>{"".join(cards)}</ul></section>')
@@ -243,6 +243,7 @@ def build_index(root, cfg, sections):
 <style>{CSS}</style></head><body><main><header><p class="eyebrow">Fall 2026 · Jeremy Kastine</p><p><a href="../index.html#{ANCHORS[root.name]}">Teaching</a></p>
 <h1>{cfg['heading']}</h1><p>Discussion questions and problems for <a href="https://openstax.org/details/books/{cfg['slug']}">OpenStax <em>{cfg['book']}</em></a>.</p>
 <p>One concept or problem per portrait slide, with room for class notes and worked solutions.</p>
+<p><a href="lecture-notes.html">Open the new textbook-aligned lecture notes</a> — examples and practice questions with double-click solutions.</p>
 {navigation(root.name, "class-slides.html")}<nav aria-label="Chapters" class="chapter-links">{nav}</nav></header>{''.join(chunks)}
 <footer><p>Aligned to <em>{cfg['book']}</em> by {cfg['authors']}, OpenStax, Rice University ({cfg['year']}). Definitions, problems, and synthetic datasets are original classroom adaptations aligned to the textbook sections.</p>
 <p>Slide materials: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. <a href="{base + cfg['intro']}">Access the textbook for free</a>.</p></footer></main></body></html>'''

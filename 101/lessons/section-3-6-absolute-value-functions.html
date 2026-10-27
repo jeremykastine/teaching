@@ -1,0 +1,751 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.6: Absolute Value Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-5-transformation-of-functions.html">Previous: 3.5</a><a href="section-3-7-inverse-functions.html">Next: 3.7</a><a href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>3.6: Absolute Value Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Graph an absolute value function.</li>
+<li>Solve an absolute value equation.</li>
+</ul></section></div>
+<div class="os-figure" id="Figure_01_06_001"><figure class="medium ui-has-child-figcaption" data-id="Figure_01_06_001"><span data-alt="The majestic Andromeda Galaxy (M31), our closest large galactic neighbor, with its faint spiral arms and bright core, surrounded by a myriad of stars in the vast cosmic expanse. Two smaller companion galaxies are also visible near M31." data-type="media" id="fs-id1165137466427">
+<img alt="The majestic Andromeda Galaxy (M31), our closest large galactic neighbor, with its faint spiral arms and bright core, surrounded by a myriad of stars in the vast cosmic expanse. Two smaller companion galaxies are also visible near M31." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/d78d5b954e217ab5e790857d208ec73c590c8781" loading="lazy" src="../../notes-assets/09940efa33c903bddbd0.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">Distances in deep space can be measured in all directions. As such, it is useful to consider distance in terms of absolute values. (credit: "s58y"/Flickr)</span>
+</figcaption></figure></div><p id="fs-id1165137475222">Until the 1920s, the so-called spiral nebulae were believed to be clouds of dust and gas in our own galaxy, some tens of thousands of light years away. Then, astronomer Edwin Hubble proved that these objects are galaxies in their own right, at distances of millions of light years. Today, astronomers can detect galaxies that are billions of light years away. Distances in the universe can be measured in all directions. As such, it is useful to consider distance as an absolute value function. In this section, we will continue our investigation of <span class="no-emphasis" data-type="term" group-by="a" id="term-00001">absolute value functions</span>.
+ </p><section data-depth="1" id="fs-id1165137426078"><h3 data-type="title">Understanding Absolute Value </h3><p id="fs-id1165135449691">Recall that in its basic form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>|</mo> <mi>x</mi> <mo>|</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the absolute value function is one of our toolkit functions. The <span class="no-emphasis" data-type="term" group-by="a" id="term-00002">absolute value</span> function is commonly thought of as providing the distance the number is from zero on a number line. Algebraically, for whatever the input value is, the output is the value without regard to sign. Knowing this, we can use absolute value functions to solve some kinds of real-world problems.</p><div class="ui-has-child-title" data-type="note" id="fs-id1165135404116"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Absolute Value Function</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137832269">The absolute value function can be defined as a piecewise function</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137665354"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>|</mo> <mi>x</mi> <mo>|</mo></mrow><mo>=</mo><mrow><mo>{</mo> <mrow>
+<mtable>
+<mtr>
+<mtd>
+<mi>x</mi>
+</mtd>
+<mtd>
+<mrow>
+<mtext>if</mtext></mrow>
+</mtd>
+<mtd>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>0</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mo>−</mo><mi>x</mi></mrow>
+</mtd>
+<mtd>
+<mrow>
+<mtext>if</mtext></mrow>
+</mtd>
+<mtd>
+<mrow>
+<mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow> </mrow></mrow>
+</mrow></semantics></math></span>
+</div>
+</div></section></div><section class="worked-example" id="Example_01_06_02"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137657277"><header></header><section><div data-type="problem" id="fs-id1165137579723"><div class="os-problem-container"><h4 data-type="title">Using Absolute Value to Determine Resistance</h4>
+<p id="fs-id1165135203760">Electrical parts, such as resistors and capacitors, come with specified values of their operating parameters: resistance, capacitance, etc. However, due to imprecision in manufacturing, the actual values of these parameters vary somewhat from piece to piece, even when they are supposed to be the same. The best that manufacturers can do is to try to guarantee that the variations will stay within a specified range, often <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>±1%,</mtext><mspace width="0.5em"></mspace><mo>±</mo><mtext>5%,</mtext></mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mtext>10%</mtext><mtext>.</mtext></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135175007">Suppose we have a resistor rated at 680 ohms, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mn>5</mn><mi>%</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Use the absolute value function to express the range of possible values of the actual resistance.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137600783">We can find that 5% of 680 ohms is 34 ohms. The absolute value of the difference between the actual and nominal resistance should not exceed the stated variability, so, with the resistance <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>R</mi></mrow>
+</mrow></semantics></math></span></span> in ohms,</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135176481"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mo>|</mo>
+<mi>R</mi><mo>−</mo><mn>680</mn> <mo>|</mo><mo>≤</mo><mn>34</mn>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137540249"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_06_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137828265"><div class="os-problem-container"><p id="fs-id1165137828266">Students who score within 20 points of 80 will pass a test. Write this as a distance from 80 using absolute value notation. </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165134090680">using the variable <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi></mrow>
+</mrow></semantics></math></span></span> for passing, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mrow>
+<mi>p</mi><mo>−</mo><mn>80</mn></mrow> <mo>|</mo></mrow><mo>≤</mo><mn>20</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135186288"><h3 data-type="title">Graphing an Absolute Value Function</h3>
+<p id="fs-id1165135570012">The most significant feature of the absolute value graph is the corner point at which the graph changes direction. This point is shown at the <span class="no-emphasis" data-type="term" group-by="o" id="term-00003">origin</span> in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_003">Figure 2</a>.</p><div class="os-figure" id="Figure_01_06_003"><figure class="small ui-has-child-figcaption" data-id="Figure_01_06_003">
+<span data-alt="Graph of an absolute function" data-type="media" id="fs-id1165137530693">
+<img alt="Graph of an absolute function" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/f97d1919a813c2fd5ca42cf569cc617b01695d32" loading="lazy" src="../../notes-assets/98b06a1cee88f370b239.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure></div>
+<p id="fs-id1165135639350"><a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_004">Figure 3</a> shows the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><mrow><mo>|</mo> <mrow>
+<mi>x</mi><mo>–</mo><mn>3</mn>
+</mrow> <mo>|</mo></mrow><mo>+</mo><mn>4.</mn></mrow>
+</mrow></semantics></math></span></span> The graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mrow><mo>|</mo> <mi>x</mi> <mo>|</mo></mrow></mrow>
+</mrow></semantics></math></span></span> has been shifted right 3 units, vertically stretched by a factor of 2, and shifted up 4 units. This means that the corner point is located at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>,</mo><mn>4</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> for this transformed function.</p><div class="os-figure" id="Figure_01_06_004"><figure class="small ui-has-child-figcaption" data-id="Figure_01_06_004">
+<span data-alt="Graph of the different types of transformations for an absolute function." data-type="media" id="fs-id1165137768813">
+<img alt="Graph of the different types of transformations for an absolute function." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/eab2f14a4a60fd1c639b2f1f8d74897f67c6c7b9" loading="lazy" src="../../notes-assets/b19c8dc2e8f38ba846d0.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure></div>
+<section class="worked-example" id="Example_01_06_03"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135187768"><header></header><section><div data-type="problem" id="fs-id1165137741094"><div class="os-problem-container"><h4 data-type="title">Writing an Equation for an Absolute Value Function Given a Graph</h4>
+<p id="fs-id1165135414332">Write an equation for the function graphed in <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_005">Figure 4</a>.</p>
+<div class="os-figure" id="Figure_01_06_005"><figure class="small ui-has-child-figcaption" data-id="Figure_01_06_005">
+<span data-alt="Graph of an absolute function." data-type="media" id="fs-id1165137838653">
+<img alt="Graph of an absolute function." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/7ac2f2030e89ac3e8e167a27f9acc82966bc691a" loading="lazy" src="../../notes-assets/41f93e632c02badd9dec.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+</figcaption></figure></div>
+</div></div>
+<div data-type="commentary" id="fs-id1165137706602"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137591631">Note that these equations are algebraically equivalent—the stretch for an absolute value function can be written interchangeably as a vertical or horizontal stretch or compression. Note also that if the vertical stretch factor is negative, there is also a reflection about the x-axis.</p>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137680556">The basic absolute value function changes direction at the origin, so this graph has been shifted to the right 3 units and down 2 units from the basic toolkit function. See <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_006">Figure 5</a>.</p>
+<div class="os-figure" id="Figure_01_06_006">
+<figure class="small ui-has-child-figcaption" data-id="Figure_01_06_006">
+<span data-alt="Graph of two transformations for an absolute function at (3, -2)." data-type="media" id="fs-id1165137901124">
+<img alt="Graph of two transformations for an absolute function at (3, -2)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/ccf016bcce1dfbda630ffbaf613a2da35b8643f7" loading="lazy" src="../../notes-assets/36ee3752d7963909e7dd.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165137805107">We also notice that the graph appears vertically stretched, because the width of the final graph on a horizontal line is not equal to 2 times the vertical distance from the corner to this line, as it would be for an unstretched absolute value function. Instead, the width is equal to 1 times the vertical distance as shown in <a aria-label="View Figure 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_007">Figure 6</a>.</p>
+<div class="os-figure" id="Figure_01_06_007">
+<figure class="small ui-has-child-figcaption" data-id="Figure_01_06_007">
+<span data-alt="Graph of two transformations for an absolute function at (3, -2) and describes the ratios between the two different transformations." data-type="media" id="fs-id1165135388376">
+<img alt="Graph of two transformations for an absolute function at (3, -2) and describes the ratios between the two different transformations." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/b405c358c2b8ac8c427059ba141ddcd94638b24f" loading="lazy" src="../../notes-assets/f7e51b664f5eb39eb6cd.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">6</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165137732766">From this information we can write the equation</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137425569"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mo>|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>|</mo><mo>−</mo><mn>2</mn><mo>,</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow><mspace width="1em"></mspace>
+<mtext>treating the stretch as </mtext><mi>a</mi><mspace width="0.5em"></mspace><mtext>vertical stretch,or</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>|</mo><mn>2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>|</mo><mo>−</mo><mn>2</mn><mo>,</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow><mspace width="1em"></mspace>
+<mtext>treating the stretch as </mtext><mi>a</mi><mspace width="0.5em"></mspace><mtext>horizontal compression</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165134377948"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135245777"><strong>If we couldn’t observe the stretch of the function from the graphs, could we algebraically determine it?</strong></p><p id="fs-id1165137473393"><em data-effect="italics">Yes. If we are unable to determine the stretch based on the width of the graph, we can solve for the stretch factor by putting in a known pair of values for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</em></p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135514699"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><mo>|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>|</mo><mo>−</mo><mn>2</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137694034"><em data-effect="italics">Now substituting in the point </em>(1, 2)</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135173265"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mn>2</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>a</mi><mo>|</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>|</mo><mo>−</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>4</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mi>a</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>a</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>2</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section></div>
+<section class="worked-example" id="fs-id1165137611709"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_06_03"><header></header><section>
+<div data-type="problem" id="fs-id1165134312222"><div class="os-problem-container">
+<p id="fs-id1165135497155">Write the equation for the absolute value function that is horizontally shifted left 2 units, is vertically reflected, and vertically shifted up 3 units. </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137758260"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mrow><mo>|</mo> <mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn></mrow> <mo>|</mo></mrow><mo>+</mo><mn>3</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135203778"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137527840"><strong>Do the graphs of absolute value functions always intersect the vertical axis? The horizontal axis?
+  </strong></p>
+<p id="fs-id1165137581861"><em data-effect="italics">Yes, they always intersect the vertical axis. The graph of an absolute value function will intersect the vertical axis when the input is zero.
+   </em></p>
+<p id="fs-id1165137444543"><em data-effect="italics">No, they do not always intersect the horizontal axis. The graph may or may not intersect the horizontal axis, depending on how the graph has been shifted and reflected. It is possible for the absolute value function to intersect the horizontal axis at zero, one, or two points (see <a aria-label="View Figure 7" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_008">Figure 7</a>).
+   </em></p>
+</div></section></div>
+<div class="os-figure" id="Figure_01_06_008"><figure class="ui-has-child-figcaption" data-id="Figure_01_06_008">
+<span data-alt="Graph of the different types of transformations for an absolute function." data-type="media" id="fs-id1165135523418">
+<img alt="Graph of the different types of transformations for an absolute function." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/e2801a7ea5d45ec2456287a0a47cc6b869435373" loading="lazy" src="../../notes-assets/0f5cd9c6881f4e87bedc.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">7</span>
+<span class="os-divider"> </span>
+<span class="os-caption">(a) The absolute value function does not intersect the horizontal axis. (b) The absolute value function intersects the horizontal axis at one point. (c) The absolute value function intersects the horizontal axis at two points.</span>
+</figcaption></figure></div>
+</section><section data-depth="1" id="fs-id1165133257286"><h3 data-type="title">Solving an Absolute Value Equation</h3>
+<p id="fs-id1165137401775">In <a aria-label="Go to Other Type of Equations" data-page-fragment="" data-page-slug="2-6-other-types-of-equations" data-page-uuid="b88d40b3-a0d5-4a8f-8b2e-85993b911cc0" href="https://openstax.org/books/college-algebra-2e/pages/2-6-other-types-of-equations">Other Type of Equations</a>, we touched on the concepts of absolute value equations. Now that we understand a little more about their graphs, we can take another look at these types of equations. Now that we can graph an absolute value function, we will learn how to solve an absolute value equation. To solve an equation such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>8</mn><mo>=</mo><mrow><mo>|</mo> <mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn></mrow> <mo>|</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we notice that the absolute value will be equal to 8 if the quantity inside the absolute value is 8 or -8. This leads to two different equations we can solve independently.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137583696"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>8</mn>
+</mtd>
+<mtd rowalign="center">
+<mrow>
+<mspace width="1em"></mspace><mtext>or</mtext><mspace width="1em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−8</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>14</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mi>x</mi>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mn>7</mn>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137641126">Knowing how to solve problems involving <span class="no-emphasis" data-type="term" group-by="a" id="term-00004">absolute value functions</span> is useful. For example, we may need to identify numbers or points on a line that are at a specified distance from a given reference point.</p><p id="fs-id1165137937577">An absolute value equation is an equation in which the unknown variable appears in absolute value bars. For example,</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137646929"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mo>|</mo> <mi>x</mi> <mo>|</mo><mo>=</mo><mn>4</mn><mo>,</mo>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mo fence="true" stretchy="true">|</mo>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+<mo fence="true" stretchy="true">|</mo><mo>=</mo><mn>3</mn><mo>,</mo><mtext>or</mtext>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mo>|</mo>
+<mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn>
+<mo>|</mo><mo>−</mo><mn>4</mn><mo>=</mo><mn>9</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span>
+</div><div class="ui-has-child-title" data-type="note" id="fs-id1165137692078"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Solutions to Absolute Value Equations</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137809877">For real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>A</mi>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>B</mi>
+</mrow></semantics></math></span></span> , an equation of the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mo>|</mo> <mi>A</mi> <mo>|</mo><mo>=</mo><mi>B</mi><mo>,</mo>
+</mrow></semantics></math></span></span> with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>B</mi><mo>≥</mo><mn>0</mn><mo>,</mo>
+</mrow></semantics></math></span></span> will have solutions when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>A</mi><mo>=</mo><mi>B</mi>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>A</mi><mo>=</mo><mo>−</mo><mi>B</mi><mo>.</mo>
+</mrow></semantics></math></span></span> If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>B</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo>
+</mrow></semantics></math></span></span> the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mo>|</mo> <mi>A</mi> <mo>|</mo><mo>=</mo><mi>B</mi>
+</mrow></semantics></math></span></span> has no solution.</p></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165135160087"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135593248"><strong>Given the formula for an absolute value function, find the horizontal intercepts of its graph</strong>.</p>
+<ol id="fs-id1165131968095" type="1"><li>Isolate the absolute value term.</li>
+<li>Use <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mi>A</mi> <mo>|</mo></mrow><mo>=</mo><mi>B</mi></mrow>
+</mrow></semantics></math></span> to write <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo>=</mo><mi>B</mi></mrow>
+</mrow></semantics></math></span> or <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>−A</mi><mo>=</mo><mi>B</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span> assuming <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>B</mi><mo>&gt;</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_01_06_04"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137619575"><header></header><section>
+<div data-type="problem" id="fs-id1165135309797"><div class="os-problem-container"><h4 data-type="title">Finding the Zeros of an Absolute Value Function</h4>
+<p id="fs-id1165137527684">For the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>|</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>|</mo><mo>−</mo><mn>7</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> find the values of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137618972"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mn>0</mn>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo>|</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>|</mo><mo>−</mo><mn>7</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mtext>Substitute 0 for </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mn>7</mn>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mo>|</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>|</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mtext>Isolate the absolute value on one side of the equation</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mn>7</mn>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mrow>
+<mtext>or</mtext>
+</mrow>
+</mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mn>−7</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mtext>Break into two separate equations and solve</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mn>6</mn>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mi>x</mi>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>−8</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>4</mn><mi>x</mi>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>6</mn>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mn>1.5</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mo>−</mo><mn>8</mn>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mo>−</mo><mn>2</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137870931">The function outputs 0 when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac></mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span> See <a aria-label="View Figure 8" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions#Figure_01_06_011">Figure 8</a>.
+      </p>
+<div class="os-figure" id="Figure_01_06_011">
+<figure class="medium ui-has-child-figcaption" data-id="Figure_01_06_011"><span data-alt="Graph an absolute function with x-intercepts at -2 and 1.5." data-type="media" id="fs-id1165137662351">
+<img alt="Graph an absolute function with x-intercepts at -2 and 1.5." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/d7a0c088c8378efda1ca1ad0cd472cd5de5388dc" loading="lazy" src="../../notes-assets/7a563123d578b7f1def5.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">8</span>
+</figcaption></figure>
+</div></div></section><section class="worked-example" id="fs-id1165137599670"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_06_04"><header></header><section>
+<div data-type="problem" id="fs-id1165135191411"><div class="os-problem-container"><p id="fs-id1165137843093">For the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>|</mo> <mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow> <mo>|</mo></mrow><mo>−</mo><mn>3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> find the values of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137481390"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135175321"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135606935"><strong>Should we always expect two answers when solving <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>|</mo> <mi>A</mi> <mo>|</mo></mrow><mo>=</mo><mi>B</mi><mo>?</mo>
+</mrow>
+</mrow></semantics></math></span></span> </strong></p><p id="fs-id1165137755892"><em data-effect="italics">No. We may find one, two, or even no answers. For example, there is no solution to</em>
+<span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mo>+</mo><mrow><mo>|</mo> <mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow> <mo>|</mo></mrow><mo>=</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section></div>
+</section><section data-depth="1" id="fs-id1165135571678"><div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165134257615"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165134332731">Access these online resources for additional instruction and practice with absolute value.</p>
+<ul id="fs-id1165137508064"><li><a aria-label="Go to Graphing Absolute Value Functions" href="https://openstax.org/l/graphabsvalue" rel="noopener nofollow" target="_blank">Graphing Absolute Value Functions</a></li>
+<li><a aria-label="Go to Graphing Absolute Value Functions 2" href="https://openstax.org/l/graphabsvalue2" rel="noopener nofollow" target="_blank">Graphing Absolute Value Functions 2</a></li>
+</ul></div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/3-6-absolute-value-functions">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

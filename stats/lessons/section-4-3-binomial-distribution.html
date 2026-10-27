@@ -1,0 +1,273 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>4.3: Binomial Distribution | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-4-2-mean-or-expected-value-and-standard-deviation.html">Previous: 4.2</a><a href="section-4-4-geometric-distribution.html">Next: 4.4</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/4-3-binomial-distribution">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>4.3: Binomial Distribution</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="element-999">There are three characteristics of a binomial experiment.
+</p><ol id="element-591"><li>There are a fixed number of trials. Think of trials as repetitions of an experiment. The letter <em data-effect="italics">n</em> denotes the number of trials.</li>
+<li>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <em data-effect="italics">p</em> denotes the probability of a success on one trial, and <em data-effect="italics">q</em> denotes the probability of a failure on one trial. <em data-effect="italics">p</em> + <em data-effect="italics">q</em> = 1.</li>
+<li>The <em data-effect="italics">n</em> trials are independent and are repeated using identical conditions. Because the <em data-effect="italics">n</em> trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <em data-effect="italics">p</em>, of a success and probability, <em data-effect="italics">q</em>, of a failure remain the same. For example, randomly guessing at a true-false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly. Suppose Joe always guesses correctly on any statistics true-false question with probability <em data-effect="italics">p</em> = 0.6. Then, <em data-effect="italics">q</em> = 0.4. This means that for every true-false statistics question Joe answers, his probability of success (<em data-effect="italics">p</em> = 0.6) and his probability of failure (<em data-effect="italics">q</em> = 0.4) remain the same.</li>
+</ol><p id="element-229">The outcomes of a binomial experiment fit a <span data-type="term" group-by="b" id="term-00001">binomial probability distribution</span>. The random variable <em data-effect="italics">X</em> = the number of successes obtained in the <em data-effect="italics">n</em> independent trials.</p><p id="element-108">The mean, <em data-effect="italics">μ</em>, and variance, <em data-effect="italics">σ</em><sup>2</sup>, for the binomial probability distribution are <em data-effect="italics">μ</em> = <em data-effect="italics">np</em> and <em data-effect="italics">σ</em><sup>2</sup> = <em data-effect="italics">npq</em>. The standard deviation, <em data-effect="italics">σ</em>, is then <em data-effect="italics">σ</em> = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span></span>.</p><p id="element-612">Any experiment that has characteristics two and three and where <em data-effect="italics">n</em> = 1 is called a <span data-type="term" group-by="B" id="term-00002">Bernoulli Trial</span> (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</p>
+<section class="worked-example" id="element-375"><div class="problem-statement"><h3>Example 4.9</h3><p>In the textbook’s model, 30% of students withdraw from a physics course. Define “success,” the success probability, and a random variable counting successes in a sample of n students.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Define success as withdrawal, with p = 0.30 and q = 0.70. X counts withdrawals among the n sampled students. Calling an outcome a success does not mean it is desirable. A binomial model also needs independent trials and constant p.</p></div></section>
+<section class="worked-example" id="fs-idm41846320"><div class="problem-statement"><h3>Try It 4.9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm40705376"><header></header><section>
+<div data-type="problem" id="fs-idm68456256"><div class="os-problem-container">
+<p id="fs-idm44525856">The state health board is concerned about the amount of fruit available in school lunches. Forty-eight percent of schools in the state offer fruit in their lunches every day. This implies that 52% do not. What would a "success" be in this case?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>One natural choice is “the school offers fruit daily,” so p = 0.48 and q = 0.52. You may instead define the opposite as success if you consistently use p = 0.52.</p></div></section><section class="worked-example" id="fs-idm62623744"><div class="problem-statement"><h3>Example 4.10</h3><p>Each of 20 independent games is won with probability 0.55. Define X, state its support and model, and express the probability of exactly 15 wins.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X = number of wins; X ∼ B(20,0.55), with values 0–20. P(X=15) = C(20,15)(0.55)¹⁵(0.45)⁵ ≈ 0.0365.</p></div></section>
+<section class="worked-example" id="fs-idm55323584"><div class="problem-statement"><h3>Try It 4.10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm35562192"><header></header><section>
+<div data-type="problem" id="fs-idm43643408"><div class="os-problem-container">
+<p id="fs-idm43925792">A trainer is teaching a rescued dolphin to catch live fish before returning it to the wild. The probability that the dolphin successfully catches a fish is 35%, and the probability that the dolphin does not successfully catch the fish is 65%. Out of 20 attempts, you want to find the probability that the dolphin succeeds 12 times. State the probability question mathematically.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Let X count successful catches in 20 attempts. Assuming independent attempts with the same success probability, X ∼ B(20,0.35); the question is P(X = 12).</p></div></section><section class="worked-example" id="element-167"><div class="problem-statement"><h3>Example 4.11</h3><p>A biased coin has P(heads) = 0.25. Flip it independently five times. Construct the probability distribution for X = number of heads, sketch its bar graph, and find P(X &gt; 3).</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><div class="table-scroll"><table><thead><tr><th>x</th><th>P(X=x)</th></tr></thead><tbody><tr><td>0</td><td>0.237305</td></tr><tr><td>1</td><td>0.395508</td></tr><tr><td>2</td><td>0.263672</td></tr><tr><td>3</td><td>0.087891</td></tr><tr><td>4</td><td>0.014648</td></tr><tr><td>5</td><td>0.000977</td></tr></tbody></table></div><figure><svg aria-label="Binomial probabilities: n=5, p=0.25" role="img" viewbox="0 0 780 350">&lt;title&gt;Binomial probabilities: n=5, p=0.25&lt;/title&gt;<g fill="none" stroke="currentColor" stroke-width="2"><path d="M70,45 V275 H750"></path></g><g fill="currentColor" font-family="Arial,sans-serif" font-size="16"><text text-anchor="end" x="60" y="280.0">0</text><text text-anchor="end" x="60" y="234.0">0.091</text><text text-anchor="end" x="60" y="188.00000000000003">0.182</text><text text-anchor="end" x="60" y="142.0">0.273</text><text text-anchor="end" x="60" y="96.00000000000001">0.364</text><text text-anchor="end" x="60" y="49.99999999999995">0.455</text><text text-anchor="middle" x="126.66666666666666" y="300">0</text><text text-anchor="middle" x="240.0" y="300">1</text><text text-anchor="middle" x="353.3333333333333" y="300">2</text><text text-anchor="middle" x="466.6666666666667" y="300">3</text><text text-anchor="middle" x="580.0" y="300">4</text><text text-anchor="middle" x="693.3333333333334" y="300">5</text><text x="70" y="25">Probability</text></g><rect fill="currentColor" height="119.99999999999989" opacity="1.0" width="81.6" x="85.86666666666666" y="155.0000000000001"></rect><rect fill="currentColor" height="200.0" opacity="1.0" width="81.6" x="199.2" y="75.0"></rect><rect fill="currentColor" height="133.33333333333323" opacity="1.0" width="81.6" x="312.5333333333333" y="141.66666666666677"></rect><rect fill="currentColor" height="44.4444444444444" opacity="1.0" width="81.6" x="425.8666666666667" y="230.5555555555556"></rect><rect fill="currentColor" height="7.407407407407391" opacity="1.0" width="81.6" x="539.2" y="267.5925925925926"></rect><rect fill="currentColor" height="0.49382716049382225" opacity="1.0" width="81.6" x="652.5333333333334" y="274.5061728395062"></rect></svg><figcaption>Binomial probabilities: n=5, p=0.25</figcaption></figure><p>P(X&gt;3) = P(4)+P(5) = 0.0146484375 + 0.0009765625 = 0.015625 ≈ 0.0156. The mean is np = 1.25. The coin is biased, not fair.</p></div></section><section class="worked-example" id="fs-idm26333440"><div class="problem-statement"><h3>Try It 4.11</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm77060880"><header></header><section>
+<div data-type="problem" id="fs-idm123194928"><div class="os-problem-container"><p id="fs-idm39905824">A fair, six-sided die is rolled ten times. Each roll is independent. You want to find the probability of rolling a one more than three times. State the probability question mathematically.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X = number of ones in ten independent rolls. X ∼ B(10,1/6). The question is P(X &gt; 3), equivalently 1 − P(X ≤ 3).</p></div></section><section class="worked-example" id="element-807"><div class="problem-statement"><h3>Example 4.12</h3><section>
+<div class="body">
+<p id="element-175">Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly.<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-1751"><header></header><section><div data-type="problem" id="id5317083">
+<div class="os-problem-container">
+<p id="element-732">a. This is a binomial problem because there is only a success or a __________, there are a fixed number of trials, and the probability of a success is 0.70 for each trial.</p>
+<p id="element-73124">b. If we are interested in the number of students who do their homework on time, then how do we define <em data-effect="italics">X</em>?</p>
+<p id="element-732324">c. What values does <em data-effect="italics">x</em> take on?</p>
+<p id="element-7324">d. What is a "failure," in words?</p>
+<p id="element-74">e. If <em data-effect="italics">p</em> + <em data-effect="italics">q</em> = 1, then what is <em data-effect="italics">q</em>?</p>
+<p id="element-70">f. The words "at least" translate as what kind of inequality for the probability question <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ____ 40).</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-23523">a. failure</p>
+<p id="element-235352">b. <em data-effect="italics">X</em> = the number of statistics students who do their homework on time<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-23352">c. 0, 1, 2, …, 50<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-232">d. Failure is defined as a student who does not complete their homework on time.</p>
+<p id="element-8865">The probability of a success is <em data-effect="italics">p</em> = 0.70. The number of trials is <em data-effect="italics">n</em> = 50.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-5352">e. <em data-effect="italics">q</em> = 0.30<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-23532">f. greater than or equal to (≥)
+<span data-count="1" data-type="newline"><br/></span>The probability question is <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≥ 40).</p></div></section>
+<section class="worked-example" id="fs-idm63118928"><div class="problem-statement"><h3>Try It 4.12</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp231440"><header></header><section>
+<div data-type="problem" id="fs-idm386096"><div class="os-problem-container">
+<p id="fs-idm59210304">Sixty-five percent of people pass the state driver’s exam on the first try. A group of 50 individuals who have taken the driver’s exam is randomly selected. Give two reasons why this is a binomial problem.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>There is a fixed sample of 50, and each result is pass-on-first-try or not. Under the model, p = 0.65 is constant and trials are approximately independent. Those last two assumptions are required as well as the first two features.</p></div></section>
+<section data-depth="1" id="element-501"><h3 data-type="title">Notation for the Binomial: <em data-effect="italics">B</em> = Binomial Probability Distribution Function</h3><p id="element-715"><em data-effect="italics">X</em> ~ <em data-effect="italics">B</em>(<em data-effect="italics">n</em>, <em data-effect="italics">p</em>)</p>
+<p id="element-276">Read this as "<em data-effect="italics">X</em> is a random variable with a binomial distribution." The parameters are <em data-effect="italics">n</em> and <em data-effect="italics">p</em>; <em data-effect="italics">n</em> = number of trials, <em data-effect="italics">p</em> = probability of a success on each trial.</p>
+</section><section class="worked-example" id="example5"><div class="problem-statement"><h3>Example 4.13</h3><p>Assume 41% of adult workers have a high-school diploma and no further education. In 20 independent selections, find P(at most 12 such workers), the expected count, and its standard deviation.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X ∼ B(20,0.41). P(X≤12) = Σ from k=0 to 12 of C(20,k)(0.41)ᵏ(0.59)²⁰⁻ᵏ ≈ 0.9738. μ = np = 8.2; σ = √(npq) = √[20(0.41)(0.59)] ≈ 2.1995.</p></div></section>
+<section class="worked-example" id="fs-idm83776992"><div class="problem-statement"><h3>Try It 4.13</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm41424160"><header></header><section>
+<div data-type="problem" id="fs-idp5897264"><div class="os-problem-container">
+<p id="fs-idm41014848">About 32% of students participate in a community volunteer program outside of school. If 30 students are selected at random, find the probability that at most 14 of them participate in a community volunteer program outside of school. Use the TI-83+ or TI-84 calculator to find the answer.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X ∼ B(30,0.32). P(X≤14) = binomial CDF through 14 ≈ 0.9695. Include every count from 0 through 14.</p></div></section><section class="worked-example" id="fs-idp7239760"><div class="problem-statement"><h3>Example 4.14</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm18828000"><header></header><section><div data-type="problem" id="fs-idm39970896">
+<div class="os-problem-container">
+<p id="fs-idm52160320">In the 2013 <em data-effect="italics">Jerry’s Artarama</em> art supplies catalog, there are 560 pages. Eight of the pages feature signature artists. Suppose we randomly sample 100 pages. Let <em data-effect="italics">X</em> = the number of pages that feature signature artists.</p>
+<ol id="fs-idm60857344" type="a">
+<li>What values does <em data-effect="italics">x</em> take on?</li>
+<li>What is the probability distribution? Find the following probabilities:
+  <ol id="fs-idm43999408" type="i">
+<li>the probability that two pages feature signature artists</li>
+<li>the probability that at most six pages feature signature artists</li>
+<li>the probability that more than three pages feature signature artists.</li>
+</ol>
+</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation.</li>
+</ol>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="fs-idm1096144" type="a"><li><em data-effect="italics">x</em> = 0, 1, 2, 3, 4, 5, 6, 7, 8</li>
+<li><em data-effect="italics">X</em> ~ <em data-effect="italics">B</em><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span>
+<ol id="fs-idm2065488" type="i"><li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 2) = binompdf<span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> = 0.2466</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 6) = binomcdf<span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>6</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> = 0.9994</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">x</em> &gt; 3) = 1 – <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≤ 3) = 1 – binomcdf<span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>100</mn><mo>,</mo><mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+<mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> = 1 – 0.9443 = 0.0557</li>
+</ol></li>
+<li>
+<ol id="fs-idp38091616" type="i">
+<li>Mean = <em data-effect="italics">np</em> = (100)<span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>800</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> ≈ 1.4286</li>
+<li>Standard Deviation = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mi>n</mi><mi>p</mi><mi>q</mi>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span> = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>8</mn>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>552</mn>
+</mrow>
+<mrow>
+<mn>560</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span> ≈ 1.1867</li>
+</ol>
+</li>
+</ol></div></section>
+<section class="worked-example" id="fs-idm76778272"><div class="problem-statement"><h3>Try It 4.14</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-771"><header></header><section><div data-type="problem" id="eip-idm151880496"><div class="os-problem-container">
+<p id="eip-4">According to a Gallup poll, 60% of American adults prefer saving over spending. Let <em data-effect="italics">X</em> = the number of American adults out of a random sample of 50 who prefer saving to spending.</p>
+<ol id="eip-idm151880240" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Use your calculator to find the following probabilities:
+  <ol id="eip-idm65992864" type="i">
+<li>the probability that 25 adults in the sample prefer saving over spending</li>
+<li>the probability that at most 20 adults prefer saving</li>
+<li>the probability that more than 30 adults prefer saving</li>
+</ol>
+</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+</ol>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>X ∼ B(50,0.60), assuming independent selections and constant success probability.</li><li>P(X=25) ≈ 0.0405; P(X≤20) ≈ 0.0034; P(X&gt;30) = 1 − P(X≤30) ≈ 0.4465.</li><li>μ = 50(0.6) = 30; σ = √[50(0.6)(0.4)] = 3.4641.</li></ol></div></section>
+<section class="worked-example" id="fs-idm51513664"><div class="problem-statement"><h3>Example 4.15</h3><section>
+<div class="body">
+<p id="fs-idm124136240">The lifetime risk of developing cancer is about one in 67 (1.5%). Suppose we randomly sample 200 people. Let <em data-effect="italics">X</em> = the number of people who will develop cancer.</p><div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm129798576"><header></header><section>
+<div data-type="problem" id="fs-idm14459520">
+<div class="os-problem-container">
+<ol id="fs-idm74773968" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+<li>Use your calculator to find the probability that at most eight people develop cancer</li>
+<li>Is it more likely that five or six people will develop cancer? Justify your answer numerically.</li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="list-00001" type="a">
+<li><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>X</mi><mo> </mo><mo>~</mo><mo> </mo><mi>B</mi><mfenced><mrow><mn>200</mn><mo>,</mo><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced></mrow></semantics></math></span></li>
+<li><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>Mean</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>200</mn><mfenced><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>3</mn></mrow></semantics></math></span><span data-type="newline"><br/></span><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>Standard</mi><mo> </mo><mi>Deviation</mi><mo>=</mo><msqrt><mi>n</mi><mi>p</mi><mi>q</mi></msqrt><mo>=</mo><msqrt><mn>200</mn><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>)</mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>985</mn><mo>)</mo></msqrt><mo>=</mo><mn>1</mn><mo>.</mo><mn>719</mn></mrow></semantics></math></span></li>
+<li><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>≤</mo><mn>8</mn></mrow></mfenced><mo> </mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>9965</mn></mrow></semantics></math></span></li>
+<li>The probability that five people develop cancer is 0.1011. The probability that six people develop cancer is 0.0500.</li>
+</ol>
+</div></section>
+<section class="worked-example" id="fs-idm113648656"><div class="problem-statement"><h3>Try It 4.15</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp4381328"><header></header><section>
+<div data-type="problem" id="fs-idm2089568"><div class="os-problem-container">
+<p id="fs-idm52769008">During a certain NBA season, a player for the Los Angeles Clippers had the highest field goal completion rate in the league. This player scored with 61.3% of his shots. Suppose you choose a random sample of 80 shots made by this player during the season. Let <em data-effect="italics">X</em> = the number of shots that scored points.</p>
+<ol id="fs-idm69954960" type="a">
+<li>What is the probability distribution for <em data-effect="italics">X</em>?</li>
+<li>Using the formulas, calculate the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+<li>Use your calculator to find the probability that this player scored with 60 of these shots.</li>
+<li>Find the probability that this player scored with more than 50 of these shots.</li>
+</ol>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>Under the independent-shot model, X ∼ B(80,0.613).</li><li>μ = 80(0.613) = 49.04; σ = √[80(0.613)(0.387)] ≈ 4.3564.</li><li>P(X=60) ≈ 0.0036.</li><li>P(X&gt;50) = 1 − P(X≤50) ≈ 0.3718.</li></ol></div></section><section class="worked-example" id="element-678"><div class="problem-statement"><h3>Example 4.16</h3><p>A committee has ten staff members and six students. Draw a chairperson and then a recorder without replacement. Find the probability both are students and explain why a binomial model is inappropriate.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(both students) = (6/16)(5/15) = 1/8. The second success probability depends on the first selection: 5/15 after a student, but 6/15 after a staff member. The independent constant-p conditions fail.</p></div></section>
+<section class="worked-example" id="fs-idm127539840"><div class="problem-statement"><h3>Try It 4.16</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm74755088"><header></header><section>
+<div data-type="problem" id="fs-idp7533680"><div class="os-problem-container">
+<p id="fs-idm63476304">A lacrosse team is selecting a captain. The names of all the seniors are put into a hat, and the first three that are drawn will be the captains. The names are not replaced once they are drawn (one person cannot be two captains). You want to see if the captains all play the same position. State whether this is binomial or not and state why.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Not binomial. Names are drawn without replacement, so composition and position probabilities change. Moreover “all play the same position” is an event about the joint selection, not by itself a definition of identical independent success/failure trials.</p></div></section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/4-3-binomial-distribution">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

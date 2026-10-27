@@ -1,0 +1,568 @@
+<div class="chapter-content-module" data-book-content="true" data-type="page" id="page_28eabf92-5a02-4a30-9158-a88d4cc3f7a8"><h2 data-rex-keep="true" data-type="document-title" id="page_28eabf92-5a02-4a30-9158-a88d4cc3f7a8_titlecreatedbycookbook"><span class="os-number">7.2</span>
+<span class="os-divider"> </span>
+<span class="os-text" data-type="" itemprop="">The Central Limit Theorem for Sums</span>
+</h2>
+<p id="fs-idm295307202">Suppose <em data-effect="italics">X</em> is a random variable with a distribution that may be <strong>known or unknown</strong> (it can be any distribution) and suppose:</p>
+<ol id="list-1" type="a"><li><em data-effect="italics">μ<sub>X</sub></em> = the mean of <em data-effect="italics">Χ</em></li>
+<li><em data-effect="italics">σ<sub>Χ</sub></em> = the standard deviation of <em data-effect="italics">X</em></li>
+</ol>
+<p id="fs-idm29530720">If you draw random samples of size <em data-effect="italics">n</em>, then as <em data-effect="italics">n</em> increases, the random variable Σ<em data-effect="italics">X</em> consisting of sums tends to be <span data-type="term" group-by="n" id="term-00001">normally distributed</span> and Σ<em data-effect="italics">Χ</em> ~ <em data-effect="italics">N</em>((<em data-effect="italics">n</em>)(<em data-effect="italics">μ<sub>Χ</sub></em>), (<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>)(<em data-effect="italics">σ<sub>Χ</sub></em>)).</p><p id="element-603"><strong>The</strong> <span data-type="term" group-by="c" id="term-00002">central limit theorem for sums</span> says that if you repeatedly draw samples of a given size (such as repeatedly rolling ten dice) and calculate the sum of each sample, these sums tend to follow a normal distribution. As sample sizes increase, the distribution of means more closely follows the normal distribution. <strong>The normal distribution has a mean equal to the original mean multiplied by the sample size and a standard deviation equal to the original standard deviation multiplied by the square root of the sample size.</strong></p><p id="element-7">The random variable Σ<em data-effect="italics">X</em> has the following <em data-effect="italics">z</em>-score associated with it:</p>
+<ol id="element-434" type="a"><li>Σ<em data-effect="italics">x</em> is one sum.</li>
+<li><math display="inline"><semantics><mrow>
+<mrow>
+<mi>z</mi><mtext> = </mtext><mfrac>
+<mrow>
+<mi>Σ</mi><mi>x</mi><mo>–</mo><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>μ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>z</mi><mtext> = </mtext><mfrac>
+<mrow>
+<mi>Σ</mi><mi>x</mi><mo>–</mo><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>μ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow></annotation-xml></semantics></math>
+<ol id="element-444" type="i">
+<li>(<em data-effect="italics">n</em>)(<em data-effect="italics">μ<sub>X</sub></em>) = the mean of Σ<em data-effect="italics">X</em></li>
+<li>
+<math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math> = standard deviation of <math display="inline"><semantics><mrow>
+<mrow>
+<mi>Σ</mi><mi>X</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>Σ</mi><mi>X</mi>
+</mrow></annotation-xml></semantics></math>
+</li>
+</ol></li></ol><div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm172522384"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idp42629152">To find probabilities for sums on the calculator, follow these steps.</p>
+<p id="fs-idm146409264">2<sup>nd</sup> <code data-type="code">DISTR</code>
+<span data-type="newline"><br/></span>2:<code data-type="code">normalcdf</code>
+<span data-type="newline"><br/></span><code data-type="code">normalcdf</code>(lower value of the area, upper value of the area, (<em data-effect="italics">n</em>)(mean), (<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>)(standard deviation))</p>
+<p id="fs-idm140461680">where:
+</p><ul id="fs-idm89750656"><li><em data-effect="italics">mean</em> is the mean of the original distribution</li>
+<li><em data-effect="italics">standard deviation</em> is the standard deviation of the original distribution</li>
+<li><span data-type="term" group-by="s" id="term-00003"><em data-effect="italics">sample size</em></span> = n</li>
+</ul>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="element-747"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">7.5</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-455">An unknown distribution has a mean of 90 and a standard deviation of 15. A sample of size 80 is drawn randomly from the population.<span data-type="newline"><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-55"><header></header><section><div data-type="problem" id="id12220262"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<ol id="element-710" type="a"><li>Find the probability that the sum of the 80 values (or the total of the 80 values) is more than 7,500.</li>
+<li>Find the sum that is 1.5 standard deviations above the mean of the sums.</li>
+</ol>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="id12220316">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="element-804">Let <em data-effect="italics">X</em> = one value from the original unknown population. The probability question asks you to find a probability for <strong>the sum (or total of) 80 values.</strong></p>
+<p id="element-56">Σ<em data-effect="italics">X</em> = the sum or total of 80 values. Since <em data-effect="italics">μ<sub>X</sub></em> = 90, <em data-effect="italics">σ<sub>X</sub></em> = 15, and <em data-effect="italics">n</em> = 80, <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>Σ</mi><mi>X</mi>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mi>Σ</mi><mi>X</mi>
+</mrow></annotation-xml></semantics></math></span> ~ <em data-effect="italics">N</em>((80)(90), <span data-type="newline"><br/></span>(<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mtext>80</mtext>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mtext>80</mtext>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>)(15))</p>
+<ul id="element-907"><li>mean of the sums = (<em data-effect="italics">n</em>)(<em data-effect="italics">μ<sub>X</sub></em>) = (80)(90) = 7,200</li>
+<li>standard deviation of the sums = <math display="inline"><semantics><mrow>
+<mrow>
+<mtext>(</mtext><msqrt>
+<mi>n</mi>
+</msqrt>
+<mtext>)(</mtext><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mtext>) = (</mtext><msqrt>
+<mrow>
+<mtext>80</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtext>(</mtext><msqrt>
+<mi>n</mi>
+</msqrt>
+<mtext>)(</mtext><msub>
+<mi>σ</mi>
+<mi>X</mi>
+</msub>
+<mtext>) = (</mtext><msqrt>
+<mrow>
+<mtext>80</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow></annotation-xml></semantics></math>(15)</li>
+<li>sum of 80 values = <em data-effect="italics">Σx</em> = 7,500<span data-type="newline"><br/></span></li>
+</ul><p id="fs-idm55727008">a. Find <em data-effect="italics">P</em>(Σ<em data-effect="italics">x</em> &gt; 7,500)</p>
+<p id="element-704"><em data-effect="italics">P</em>(Σ<em data-effect="italics">x</em> &gt; 7,500) = 0.0127</p>
+<div class="os-figure" id="fs-idm54365952"><figure class="scaled-down ui-has-child-figcaption" data-id="fs-idm54365952">
+<span data-alt="This is a normal distribution curve. The peak of the curve coincides with the point 7200 on the horizontal axis. The point 7500 is also labeled. A vertical line extends from point 7500 to the curve. The area to the right of 7500 below the curve is shaded." data-type="media" id="id12212529">
+<button aria-label="Click to enlarge image of This is a normal distribution curve. The peak of the curve coincides with the point 7200 on the horizontal axis. The point 7500 is also labeled. A vertical line extends from point 7500 to the curve. The area to the right of 7500 below the curve is shaded." class="image-button-wrapper" type="button"><img alt="This is a normal distribution curve. The peak of the curve coincides with the point 7200 on the horizontal axis. The point 7500 is also labeled. A vertical line extends from point 7500 to the curve. The area to the right of 7500 below the curve is shaded." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/0e84e430eae7c19a0ee2d74a075b3c03e4464e58" height="358" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/0e84e430eae7c19a0ee2d74a075b3c03e4464e58" width="882"/></button>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">7.3</span>
+</figcaption></figure></div>
+<div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm202010592"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="element-389">
+<code data-type="code">normalcdf</code>(lower value, upper value, mean of sums, <code data-type="code">stdev</code> of sums)</p>
+<p id="element-503">The parameter list is abbreviated(lower, upper, (<em data-effect="italics">n</em>)(<em data-effect="italics">μ<sub>X</sub></em>, <span class="os-math-in-para"><math display="inline"><semantics><mrow><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span>(<em data-effect="italics">σ<sub>X</sub></em>))</p>
+<p id="element-458"><code data-type="code">normalcdf</code> (7500,1E99,(80)(90),<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mn>80</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mn>80</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span>(15)) = 0.0127</p></div></section></div>
+<div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm71809936"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">REMINDER</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="element-565"><strong>1E99 = 10<sup>99</sup></strong>.</p>
+<p id="fs-idm138173168">Press the <code data-type="code">EE</code> key for E.</p>
+</div></section></div>
+<p id="fs-idm48238000">b. Find Σ<em data-effect="italics">x</em> where <em data-effect="italics">z</em> = 1.5.</p>
+<p id="fs-idm83248080">Σ<em data-effect="italics">x</em> = (<em data-effect="italics">n</em>)(<em data-effect="italics">μ<sub>X</sub></em>) + (<em data-effect="italics">z</em>)<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span>(<em data-effect="italics">σ<sub>Χ</sub></em>) = (80)(90) + (1.5)(<span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mn>80</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mn>80</mn>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span>)(15) = 7,401.2</p>
+</div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm51983600"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">7.5</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm105647824"><header></header><section><div data-type="problem" id="fs-idm71758576"><div class="os-problem-container">
+<p id="fs-idp18637136">An unknown distribution has a mean of 45 and a standard deviation of eight. A sample size of 50 is drawn randomly from the population. Find the probability that the sum of the 50 values is more than 2,400.</p>
+</div></div>
+</section></div></div></section></div>
+<div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm133155984"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idm82544544">To find percentiles for sums on the calculator, follow these steps.</p>
+<p id="fs-idm25568352"><code data-type="code">2<sup>nd</sup> DIStR</code>
+<span data-type="newline"><br/></span><code data-type="code">3:invNorm</code>
+<span data-type="newline"><br/></span><em data-effect="italics">k</em> = invNorm (area to the left of <em data-effect="italics">k</em>, (<em data-effect="italics">n</em>)(mean), <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>(</mtext><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mtext>(</mtext><msqrt>
+<mi>n</mi>
+</msqrt>
+<mo stretchy="false">)</mo>
+</mrow></annotation-xml></semantics></math></span>(standard deviation))</p>
+<p id="fs-idm95058576">where:
+</p><ul id="fs-idm10652880"><li><em data-effect="italics">k</em> is the <em data-effect="italics">k</em><sup>th</sup> <span data-type="term" group-by="p" id="term-00004">percentile</span></li>
+<li><em data-effect="italics">mean</em> is the mean of the original distribution</li>
+<li><em data-effect="italics">standard deviation</em> is the standard deviation of the original distribution</li>
+<li><em data-effect="italics">sample size</em> = <em data-effect="italics">n</em></li>
+</ul>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="fs-idm82232896"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">7.6</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm90047616"><header></header><section>
+<div data-type="problem" id="fs-idm70958544"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="fs-idm5626528">In a recent study, it was reported that the mean age of iPad users is 34 years. Suppose the standard deviation is 15 years. The sample of size is 50.</p>
+<ol id="fs-idm90393840" type="a">
+<li>What are the mean and standard deviation for the sum of the ages of iPad users? What is the distribution?</li>
+<li>Find the probability that the sum of the ages is between 1,500 and 1,800 years.</li>
+<li>Find the 80<sup>th</sup> percentile for the sum of the 50 ages.</li>
+</ol>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idp41767792">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="fs-idp6531984" type="a"><li><em data-effect="italics">μ<sub>Σx</sub></em> = <em data-effect="italics">nμ<sub>x</sub></em> = 50(34) = 1,700 and <em data-effect="italics">σ<sub>Σx</sub></em> = <math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow></annotation-xml></semantics></math><em data-effect="italics">σ<sub>x</sub></em> = <math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow></annotation-xml></semantics></math>(15) = 106.07
+<span data-count="1" data-type="newline"><br/></span>The distribution is normal for sums by the central limit theorem.</li>
+<li><em data-effect="italics">P</em>(1500 &lt; Σ<em data-effect="italics">x</em> &lt; 1800) = <code data-type="code">normalcdf</code>
+(1,500, 1,800, (50)(34), <math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow></annotation-xml></semantics></math>(15)) = 0.7974</li>
+<li>Let <em data-effect="italics">k</em> = the 80<sup>th</sup> percentile.
+<span data-count="1" data-type="newline"><br/></span><em data-effect="italics">k</em> = <code data-type="code">invNorm</code>(0.80,(50)(34),<math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>50</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow></annotation-xml></semantics></math>(15)) = 1,789.3</li>
+</ol></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp87073664"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">7.6</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm67768928"><header></header><section>
+<div data-type="problem" id="fs-idm16414224"><div class="os-problem-container">
+<p id="fs-idm98358608">In a recent study, it was reported that the mean age of iPad users is 35 years. Suppose the standard deviation is ten years. The sample size is 39.</p>
+<ol id="fs-idp46009888" type="a">
+<li>What are the mean and standard deviation for the sum of the ages of iPad users? What is the distribution?</li>
+<li>Find the probability that the sum of the ages is between 1,400 and 1,500 years.</li>
+<li>Find the 90<sup>th</sup> percentile for the sum of the 39 ages.</li>
+</ol></div></div>
+</section></div>
+</div></section></div>
+<div class="ui-has-child-title" data-type="example" id="fs-idm145402592"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">7.7</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm29377216"><header></header><section>
+<div data-type="problem" id="fs-idm71536528"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="fs-idm105248448">The mean number of minutes for app engagement by a tablet user is 8.2 minutes. Suppose the standard deviation is one minute. Take a sample of size 70.</p>
+<ol id="fs-idm71334512" type="a">
+<li>What are the mean and standard deviation for the sums?</li>
+<li>Find the 95<sup>th</sup> percentile for the sum of the sample. Interpret this value in a complete sentence.</li>
+<li>Find the probability that the sum of the sample is at least ten hours.</li>
+</ol>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idp2253552">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="fs-idm78488688" type="a"><li><em data-effect="italics">μ<sub>Σx</sub></em> = <em data-effect="italics">nμ<sub>x</sub></em> = 70(8.2) = 574 minutes and <em data-effect="italics">σ<sub>Σx</sub></em> = <math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>σ</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>n</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>σ</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math> = <math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext> )</mtext>
+</mrow></annotation-xml></semantics></math>(1) = 8.37 minutes</li>
+<li>Let <em data-effect="italics">k</em> = the 95<sup>th</sup> percentile.
+<span data-type="newline"><br/></span><em data-effect="italics">k</em> = invNorm
+(0.95,(70)(8.2),<math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow></annotation-xml></semantics></math>(1)) = 587.76 minutes
+<span data-count="1" data-type="newline"><br/></span>Ninety five percent of the sums of app engagement times are at most 587.76 minutes.</li>
+<li>ten hours = 600 minutes
+<span data-type="newline"><br/></span><em data-effect="italics">P</em>(Σ<em data-effect="italics">x</em> ≥ 600) = <code data-type="code">normalcdf</code>(600,E99,(70)(8.2),<math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mo stretchy="false">(</mo><msqrt>
+<mrow>
+<mtext>70</mtext>
+</mrow>
+</msqrt>
+<mtext>)</mtext>
+</mrow></annotation-xml></semantics></math>(1)) = 0.0009</li>
+</ol></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idp10112640"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">7.7</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp7815296"><header></header><section><div data-type="problem" id="fs-idm10364128"><div class="os-problem-container">
+<p id="fs-idp93890400">The mean number of minutes for app engagement by a table use is 8.2 minutes. Suppose the standard deviation is one minute. Take a sample size of 70.</p>
+<ol id="fs-idm85536928" type="a"><li>What is the probability that the sum of the sample is between seven hours and ten hours? What does this mean in context of the problem?</li>
+<li>Find the 84<sup>th</sup> and 16<sup>th</sup> percentiles for the sum of the sample. Interpret these values in context.</li>
+</ol></div></div>
+</section></div>
+</div></section></div>
+</div>

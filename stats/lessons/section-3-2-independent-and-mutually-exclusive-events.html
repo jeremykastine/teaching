@@ -1,0 +1,332 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.2: Independent and Mutually Exclusive Events | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-1-terminology.html">Previous: 3.1</a><a href="section-3-3-two-basic-rules-of-probability.html">Next: 3.3</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>3.2: Independent and Mutually Exclusive Events</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="element-755">Independent and mutually exclusive do <strong>not</strong> mean the same thing.</p>
+<section data-depth="1" id="element-20"><h3 data-type="title">Independent Events</h3>
+<p id="element-990">Two events are independent if the following are true:</p>
+<ul id="element-344">
+<li><em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">A</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>)</li>
+</ul>
+<p id="element-4053">Two events <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are <span data-type="term" group-by="i" id="term-00001">independent events</span> if the knowledge that one occurred does not affect the chance the other occurs. For example, the outcomes of two roles of a fair die are independent events. The outcome of the first roll does not change the probability for the outcome of the second roll. To show two events are independent, you must show <strong>only one</strong> of the above conditions. If two events are NOT independent, then we say that they are <span data-type="term" group-by="d" id="term-00004">dependent events</span>.</p>
+<p id="element-405">Sampling may be done <strong>with</strong> <span data-type="term" group-by="r" id="term-00002">replacement</span> or <strong>without replacement</strong>.</p>
+<ul id="fs-idm1341072"><li><strong>With replacement</strong>: If each member of a population is replaced after it is picked, then that member has the possibility of being chosen more than once. When sampling is done with replacement, then events are considered to be independent, meaning the result of the first pick will not change the probabilities for the second pick.</li>
+<li><strong>Without replacement</strong>: When sampling is done without replacement, each member of a population may be chosen only once. In this case, the probabilities for the second pick are affected by the result of the first pick. The events are considered to be dependent or not independent.</li>
+</ul>
+<p id="element-835">If it is not known whether <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are independent or dependent, <strong>assume they are dependent until you can show otherwise</strong>.</p>
+<section class="worked-example" id="fs-idm1963392"><div class="problem-statement"><h3>Example 3.4</h3><p>Draw three cards from a shuffled 52-card deck. Compare sampling with replacement and without replacement. How many cards are available on each draw? Can the same individual card appear twice?</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>With replacement and reshuffling, there are 52 choices each time and the same card can reappear. Without replacement there are 52, then 51, then 50 choices; no individual card can reappear. Removing a card changes subsequent probabilities.</p></div></section>
+<section class="worked-example" id="fs-idm17445584"><div class="problem-statement"><h3>Try It 3.4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm1262752"><header></header><section>
+<div data-type="problem" id="fs-idm318128"><div class="os-problem-container">
+<p id="fs-idp52703136">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <em data-effect="italics">J</em> (jack), <em data-effect="italics">Q</em> (queen), <em data-effect="italics">K</em> (king) of that suit. Three cards are picked at random.</p>
+<ol id="fs-idm4233984" type="a">
+<li>Suppose you know that the picked cards are <em data-effect="italics">Q</em> of spades, <em data-effect="italics">K</em> of hearts and <em data-effect="italics">Q</em> of spades. Can you decide if the sampling was with or without replacement?</li>
+<li>Suppose you know that the picked cards are <em data-effect="italics">Q</em> of spades, <em data-effect="italics">K</em> of hearts, and <em data-effect="italics">J</em> of spades. Can you decide if the sampling was with or without replacement?</li></ol>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>The queen of spades appearing twice requires replacement (in one standard deck).</li><li>Three different cards can occur with either method, so these observed cards do not determine the sampling method.</li></ol></div></section>
+<section class="worked-example" id="fs-idm1468672"><div class="problem-statement"><h3>Example 3.5</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm203264"><header></header><section>
+<div data-type="problem" id="fs-idm1147040">
+<div class="os-problem-container">
+<p id="fs-idm4186336">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts, and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <em data-effect="italics">J</em> (jack), <em data-effect="italics">Q</em> (queen), and <em data-effect="italics">K</em> (king) of that suit. <em data-effect="italics">S</em> = spades, <em data-effect="italics">H</em> = Hearts, <em data-effect="italics">D</em> = Diamonds, <em data-effect="italics">C</em> = Clubs.</p><ol id="fs-idm2936016" type="a"><li>Suppose you pick four cards, but do not put any cards back into the deck. Your cards are <em data-effect="italics">QS</em>, 1<em data-effect="italics">D</em>, 1<em data-effect="italics">C</em>, <em data-effect="italics">QD</em>.</li>
+<li>Suppose you pick four cards and put each card back before you pick the next card. Your cards are <em data-effect="italics">KH</em>, 7<em data-effect="italics">D</em>, 6<em data-effect="italics">D</em>, <em data-effect="italics">KH</em>.</li>
+</ol><p id="fs-idm61714144">Which of a. or b. did you sample with replacement and which did you sample without replacement?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm4124432">a. Without replacement; b. With replacement</p></div></section>
+<section class="worked-example" id="fs-idm64621712"><div class="problem-statement"><h3>Try It 3.5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm1421520"><header></header><section>
+<div data-type="problem" id="fs-idm5372176"><div class="os-problem-container">
+<p id="fs-idm328320">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts, and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <em data-effect="italics">J</em> (jack), <em data-effect="italics">Q</em> (queen), and <em data-effect="italics">K</em> (king) of that suit. <em data-effect="italics">S</em> = spades, <em data-effect="italics">H</em> = Hearts, <em data-effect="italics">D</em> = Diamonds, <em data-effect="italics">C</em> = Clubs. Suppose that you sample four cards without replacement. Which of the following outcomes are possible? Answer the same question for sampling with replacement.</p><ol id="fs-idm5107680" type="a"><li><em data-effect="italics">QS</em>, 1<em data-effect="italics">D</em>, 1<em data-effect="italics">C</em>, <em data-effect="italics">QD</em></li>
+<li><em data-effect="italics">KH</em>, 7<em data-effect="italics">D</em>, 6<em data-effect="italics">D</em>, <em data-effect="italics">KH</em></li>
+<li><em data-effect="italics">QS</em>, 7<em data-effect="italics">D</em>, 6<em data-effect="italics">D</em>, <em data-effect="italics">KS</em></li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Without replacement, outcomes (a) and (c) are possible; (b) repeats the king of hearts and is impossible. With replacement, all three are possible. Here the textbook’s “1” denotes an ace.</p></div></section>
+</section>
+<section data-depth="1" id="element-462"><h3 data-type="title">Mutually Exclusive Events</h3>
+<p id="element-548"><em data-effect="italics">A</em> and <em data-effect="italics">B</em> are <span data-type="term" group-by="m" id="term-00003">mutually exclusive</span> events if they cannot occur at the same time. This means that <em data-effect="italics">A</em> and <em data-effect="italics">B</em> do not share any outcomes and <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0.</p><p id="element-810">For example, suppose the sample space <em data-effect="italics">S</em> = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Let <em data-effect="italics">A</em> = {1, 2, 3, 4, 5}, <em data-effect="italics">B</em> = {4, 5, 6, 7, 8}, and <em data-effect="italics">C</em> = {7, 9}. <em data-effect="italics">A</em> AND <em data-effect="italics">B</em> = {4, 5}. <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>2</mn><mrow><mn>10</mn></mrow></mfrac></mrow></mrow></semantics></math></span></span> and is not equal to zero. Therefore, <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are not mutually exclusive. <em data-effect="italics">A</em> and <em data-effect="italics">C</em> do not have any numbers in common so <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">C</em>) = 0. Therefore, <em data-effect="italics">A</em> and <em data-effect="italics">C</em> are mutually exclusive.</p>
+<p id="element-529">If it is not known whether <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are mutually exclusive, <strong>assume they are not until you can show otherwise</strong>. The following examples illustrate these definitions and terms.</p>
+<section class="worked-example" id="element-931"><div class="problem-statement"><h3>Example 3.6</h3><p>Flip two independent fair coins. List the sample space and find the events/probabilities: A = at most one tail; B = all tails; C = all heads; D = more than one tail; E = head first; F = at least one tail. Which of A and B are complements, and are B and C mutually exclusive?</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>S = {HH, HT, TH, TT}. A = {HH, HT, TH}, P(A) = 3/4; B = {TT}, P(B) = 1/4; C = {HH}, P(C) = 1/4; D = {TT}, P(D) = 1/4; E = {HH, HT}, P(E) = 1/2; F = {HT, TH, TT}, P(F) = 3/4. B = A′. B and C are mutually exclusive since their intersection is empty.</p></div></section>
+<section class="worked-example" id="fs-idp18707552"><div class="problem-statement"><h3>Try It 3.6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp250992"><header></header><section>
+<div data-type="problem" id="fs-idm1214672"><div class="os-problem-container">
+<p id="fs-idm5147344">Draw two cards from a standard 52-card deck with replacement. Find the probability of getting at least one black card.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(at least one black) = 1 − P(two red) = 1 − (26/52)² = 3/4. Replacement makes the two draws independent.</p></div></section>
+<section class="worked-example" id="fs-idm3420000"><div class="problem-statement"><h3>Example 3.7</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm4639088"><header></header><section>
+<div data-type="problem" id="fs-idm173264">
+<div class="os-problem-container">
+<p id="fs-idm1266432">Flip two fair coins. Find the probabilities of the events.</p>
+<ol id="fs-idm3669424" type="a">
+<li>Let <em data-effect="italics">F</em> = the event of getting at most one tail (zero or one tail).</li>
+<li>Let <em data-effect="italics">G</em> = the event of getting two faces that are the same.</li>
+<li>Let <em data-effect="italics">H</em> = the event of getting a head on the first flip followed by a head or tail on the second flip.</li>
+<li>Are <em data-effect="italics">F</em> and <em data-effect="italics">G</em> mutually exclusive?</li>
+<li>Let <em data-effect="italics">J</em> = the event of getting all tails. Are <em data-effect="italics">J</em> and <em data-effect="italics">H</em> mutually exclusive?</li>
+</ol></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm5054528">Look at the sample space in <a aria-label="Go to Example 3.6" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events#element-931">Example 3.6</a>.</p>
+<ol id="fs-idm4693632" type="a"><li>Zero (0) or one (1) tails occur when the outcomes <em data-effect="italics">HH</em>, <em data-effect="italics">TH</em>, <em data-effect="italics">HT</em> show up. <em data-effect="italics">P</em>(<em data-effect="italics">F</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></li>
+<li>Two faces are the same if <em data-effect="italics">HH</em> or <em data-effect="italics">TT</em> show up. <em data-effect="italics">P</em>(<em data-effect="italics">G</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow></mrow></semantics></math></span></li>
+<li>A head on the first flip followed by a head or tail on the second flip occurs when <em data-effect="italics">HH</em> or <em data-effect="italics">HT</em> show up. <em data-effect="italics">P</em>(<em data-effect="italics">H</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow></mrow></semantics></math></span></li>
+<li><em data-effect="italics">F</em> and <em data-effect="italics">G</em> share <em data-effect="italics">HH</em> so <em data-effect="italics">P</em>(<em data-effect="italics">F</em> AND <em data-effect="italics">G</em>) is not equal to zero (0). <em data-effect="italics">F</em> and <em data-effect="italics">G</em> are not mutually exclusive.</li>
+<li>Getting all tails occurs when tails shows up on both coins (<em data-effect="italics">TT</em>). <em data-effect="italics">H</em>’s outcomes are <em data-effect="italics">HH</em> and <em data-effect="italics">HT</em>.</li>
+</ol><p id="fs-idm12598624"><em data-effect="italics">J</em> and <em data-effect="italics">H</em> have nothing in common so <em data-effect="italics">P</em>(<em data-effect="italics">J</em> AND <em data-effect="italics">H</em>) = 0. <em data-effect="italics">J</em> and <em data-effect="italics">H</em> are mutually exclusive.</p></div></section>
+<section class="worked-example" id="fs-idm101726688"><div class="problem-statement"><h3>Try It 3.7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm3945968"><header></header><section>
+<div data-type="problem" id="fs-idm4652384"><div class="os-problem-container">
+<p id="fs-idm1471712">A box has two balls, one white and one red. We select one ball, put it back in the box, and select a second ball (sampling with replacement). Find the probability of the following events:</p><ol id="fs-idm2908208" type="a">
+<li>Let <em data-effect="italics">F</em> = the event of getting the white ball twice.</li>
+<li>Let <em data-effect="italics">G</em> = the event of getting two balls of different colors.</li>
+<li>Let <em data-effect="italics">H</em> = the event of getting white on the first pick.</li>
+<li>Are <em data-effect="italics">F</em> and <em data-effect="italics">G</em> mutually exclusive?</li>
+<li>Are <em data-effect="italics">G</em> and <em data-effect="italics">H</em> mutually exclusive?</li>
+</ol>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>S = {WW, WR, RW, RR}, equally likely. F = {WW}, P(F) = 1/4. G = {WR, RW}, P(G) = 1/2. H = {WW, WR}, P(H) = 1/2. F and G are mutually exclusive; G and H are not, since WR is in both.</p></div></section>
+<section class="worked-example" id="element-56"><div class="problem-statement"><h3>Example 3.8</h3><section>
+<div class="body"><p id="example-3-2-para">Roll one fair, six-sided die. The sample space is {1, 2, 3, 4, 5, 6}. Let event <em data-effect="italics">A</em> = a face is odd. Then <em data-effect="italics">A</em> = {1, 3, 5}. Let event <em data-effect="italics">B</em> = a face is even. Then <em data-effect="italics">B</em> = {2, 4, 6}.</p>
+<ul id="element-677"><li>Find the complement of <em data-effect="italics">A</em>, <em data-effect="italics">A′</em>. The complement of <em data-effect="italics">A</em>, <em data-effect="italics">A′</em>, is <em data-effect="italics">B</em> because <em data-effect="italics">A</em> and <em data-effect="italics">B</em> together make up the sample space. <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) + <em data-effect="italics">P</em>(<em data-effect="italics">A′</em>) = 1. Also, <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>3</mn><mn>6</mn></mfrac></mrow></mrow></semantics></math></span> and <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>3</mn><mn>6</mn></mfrac></mrow></mrow></semantics></math></span>.</li>
+<li>Let event <em data-effect="italics">C</em> = odd faces larger than two. Then <em data-effect="italics">C</em> = {3, 5}. Let event <em data-effect="italics">D</em> = all even faces smaller than five. Then <em data-effect="italics">D</em> = {2, 4}. <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">D</em>) = 0 because you cannot have an odd and even face at the same time. Therefore, <em data-effect="italics">C</em> and <em data-effect="italics">D</em> are mutually exclusive events.</li>
+<li>Let event <em data-effect="italics">E</em> = all faces less than five. <em data-effect="italics">E</em> = {1, 2, 3, 4}.</li></ul>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-12341"><header></header><section><div data-type="problem" id="id9852986">
+<div class="os-problem-container">
+<p id="element-73455">Are <em data-effect="italics">C</em> and <em data-effect="italics">E</em> mutually exclusive events? (Answer yes or no.) Why or why not?</p>
+</div></div>
+</section></div><ul id="fs-idm67063616"><li>Find <em data-effect="italics">P</em>(<em data-effect="italics">C</em>|<em data-effect="italics">A</em>). This is a conditional probability. Recall that the event <em data-effect="italics">C</em> is {3, 5} and event <em data-effect="italics">A</em> is {1, 3, 5}. To find <em data-effect="italics">P</em>(<em data-effect="italics">C</em>|<em data-effect="italics">A</em>), find the probability of <em data-effect="italics">C</em> using the sample space <em data-effect="italics">A</em>. You have reduced the sample space from the original sample space {1, 2, 3, 4, 5, 6} to {1, 3, 5}. So, <em data-effect="italics">P</em>(<em data-effect="italics">C</em>|<em data-effect="italics">A</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span>.
+</li>
+</ul></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="element-032545">No. <em data-effect="italics">C</em> = {3, 5} and <em data-effect="italics">E</em> = {1, 2, 3, 4}. <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">E</em>) = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></mrow></semantics></math></span></span>. To be mutually exclusive, <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">E</em>) must be zero.</p>
+</div></section><section class="worked-example" id="fs-idm51413200"><div class="problem-statement"><h3>Try It 3.8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-idm3558336"><header></header><section>
+<div data-type="problem" id="fs-idm4126272"><div class="os-problem-container">
+<p id="fs-idm832352">Let event <em data-effect="italics">A</em> = learning Spanish. Let event <em data-effect="italics">B</em> = learning German. Then <em data-effect="italics">A</em> AND <em data-effect="italics">B</em> = learning Spanish and German. Suppose <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = 0.4 and <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.2. <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0.08. Are events <em data-effect="italics">A</em> and <em data-effect="italics">B</em> independent? Hint: You must show ONE of the following:</p><ul id="fs-idm143307488"><li><em data-effect="italics">P</em>(<em data-effect="italics">A</em>|<em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">A</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">B</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>)</li></ul></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(A)P(B) = (0.4)(0.2) = 0.08 = P(A AND B), so A and B are independent.</p></div></section><section class="worked-example" id="element-579"><div class="problem-statement"><h3>Example 3.9</h3><section>
+<div class="body">
+<p id="example-3-3-para">Let event <em data-effect="italics">G</em> = taking a math class. Let event <em data-effect="italics">H</em> = taking a science class. Then, <em data-effect="italics">G</em> AND <em data-effect="italics">H</em> = taking a math class and a science class. Suppose <em data-effect="italics">P</em>(<em data-effect="italics">G</em>) = 0.6, <em data-effect="italics">P</em>(<em data-effect="italics">H</em>) = 0.5, and <em data-effect="italics">P</em>(<em data-effect="italics">G</em> AND <em data-effect="italics">H</em>) = 0.3. Are <em data-effect="italics">G</em> and <em data-effect="italics">H</em> independent?</p><p id="element-456">If <em data-effect="italics">G</em> and <em data-effect="italics">H</em> are independent, then you must show <strong>ONE</strong> of the following:</p><ul id="element-358"><li><em data-effect="italics">P</em>(<em data-effect="italics">G</em>|<em data-effect="italics">H</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">G</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">H</em>|<em data-effect="italics">G</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">H</em>)</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">G</em> AND <em data-effect="italics">H</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">G</em>)<em data-effect="italics">P</em>(<em data-effect="italics">H</em>)</li></ul><div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="id9660801"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">NOTE</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-idp52179728"><strong>The choice you make depends on the information you have.</strong> You could choose any of the methods here because you have the necessary information.</p></div></section></div>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-3525"><header></header><section><div data-type="problem" id="id9660827">
+<div class="os-problem-container">
+<p id="element-52356">a. Show that <em data-effect="italics">P</em>(<em data-effect="italics">G</em>|<em data-effect="italics">H</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">G</em>).</p>
+</div></div>
+</section></div>
+<div class="unnumbered has-problem-title" data-type="exercise" id="element-32525"><header></header><section><div data-type="problem" id="id9660930">
+<div class="os-problem-container">
+<p id="element-52456">b. Show <em data-effect="italics">P</em>(<em data-effect="italics">G</em> AND <em data-effect="italics">H</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">G</em>)<em data-effect="italics">P</em>(<em data-effect="italics">H</em>).</p></div></div>
+</section></div>
+<p id="element-798">Since <em data-effect="italics">G</em> and <em data-effect="italics">H</em> are independent, knowing that a person is taking a science class does not change the chance that they are taking a math class. If the two events had not been independent (that is, they are dependent) then knowing that a person is taking a science class would change the chance they are taking math. For practice, show that <em data-effect="italics">P</em>(<em data-effect="italics">H</em>|<em data-effect="italics">G</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">H</em>) to show that <em data-effect="italics">G</em> and <em data-effect="italics">H</em> are independent events.</p></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-idm4674864"><em data-effect="italics">P</em>(<em data-effect="italics">G</em>|<em data-effect="italics">H</em>) = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>G</mi><mtext> AND </mtext><mi>H</mi><mtext>)</mtext>
+</mrow>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>H</mi><mtext>)</mtext>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> = <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>0</mtext><mtext>.3</mtext>
+</mrow>
+<mrow>
+<mtext>0</mtext><mtext>.5</mtext>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> = 0.6 = <em data-effect="italics">P</em>(<em data-effect="italics">G</em>)</p>
+<p id="element-3462"><em data-effect="italics">P</em>(<em data-effect="italics">G</em>)<em data-effect="italics">P</em>(<em data-effect="italics">H</em>) = (0.6)(0.5) = 0.3 = <em data-effect="italics">P</em>(<em data-effect="italics">G</em> AND <em data-effect="italics">H</em>)</p>
+</div></section>
+<section class="worked-example" id="fs-idm13687712"><div class="problem-statement"><h3>Try It 3.9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm4055200"><header></header><section><div data-type="problem" id="fs-idm3236672"><div class="os-problem-container">
+<p id="fs-idm3236416">In a bag, there are six red marbles and four green marbles. The red marbles are marked with the numbers 1, 2, 3, 4, 5, and 6. The green marbles are marked with the numbers 1, 2, 3, and 4.</p>
+<ul id="fs-idm5437072"><li><em data-effect="italics">R</em> = a red marble</li>
+<li><em data-effect="italics">G</em> = a  green marble</li>
+<li><em data-effect="italics">O</em> = an odd-numbered marble</li>
+<li>The sample space is <em data-effect="italics">S</em> = {<em data-effect="italics">R</em>1, <em data-effect="italics">R</em>2, <em data-effect="italics">R</em>3, <em data-effect="italics">R</em>4, <em data-effect="italics">R</em>5, <em data-effect="italics">R</em>6, <em data-effect="italics">G</em>1, <em data-effect="italics">G</em>2, <em data-effect="italics">G</em>3, <em data-effect="italics">G</em>4}.</li></ul>
+<p id="eip-idp4935776"><em data-effect="italics">S</em> has ten outcomes. What is <em data-effect="italics">P</em>(<em data-effect="italics">G</em> AND <em data-effect="italics">O</em>)?</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>G AND O = {G1, G3}; P(G AND O) = 2/10 = 1/5.</p></div></section>
+<section class="worked-example" id="fs-idm793920"><div class="problem-statement"><h3>Example 3.10</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm3514480"><header></header><section><div data-type="problem" id="fs-idm1757104">
+<div class="os-problem-container">
+<p id="fs-idm1756848">Let event <em data-effect="italics">C</em> = taking an English class. Let event <em data-effect="italics">D</em> = taking a speech class.</p><p id="fs-idm293392">Suppose <em data-effect="italics">P</em>(<em data-effect="italics">C</em>) = 0.75, <em data-effect="italics">P</em>(<em data-effect="italics">D</em>) = 0.3, <em data-effect="italics">P</em>(<em data-effect="italics">C</em>|<em data-effect="italics">D</em>) = 0.75 and <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">D</em>) = 0.225.</p><p id="fs-idm4675792">Justify your answers to the following questions numerically.</p><ol id="fs-idm5240736" type="a">
+<li>Are <em data-effect="italics">C</em> and <em data-effect="italics">D</em> independent?</li>
+<li>Are <em data-effect="italics">C</em> and <em data-effect="italics">D</em> mutually exclusive?</li>
+<li>What is <em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">C</em>)?</li>
+</ol>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="fs-idm316704" type="a">
+<li>Yes, because <em data-effect="italics">P</em>(<em data-effect="italics">C</em>|<em data-effect="italics">D</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">C</em>).</li>
+<li>No, because <em data-effect="italics">P</em>(<em data-effect="italics">C</em> AND <em data-effect="italics">D</em>) is not equal to zero.</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">C</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext> AND </mtext><mi>D</mi><mtext>)</mtext>
+</mrow>
+<mrow>
+<mi>P</mi><mtext>(</mtext><mi>C</mi><mtext>)</mtext>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow>
+<mfrac>
+<mrow>
+<mtext>0</mtext><mtext>.225</mtext>
+</mrow>
+<mrow>
+<mn>0.75</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> = 0.3</li></ol></div></section>
+<section class="worked-example" id="fs-idp11259824"><div class="problem-statement"><h3>Try It 3.10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm3333552"><header></header><section><div data-type="problem" id="fs-idm4100544"><div class="os-problem-container">
+<p id="fs-idm4100288">A student goes to the library. Let events <em data-effect="italics">B</em> = the student checks out a book and <em data-effect="italics">D</em> = the student checks out a DVD. Suppose that <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = 0.40, <em data-effect="italics">P</em>(<em data-effect="italics">D</em>) = 0.30 and <em data-effect="italics">P</em>(<em data-effect="italics">B</em> AND <em data-effect="italics">D</em>) = 0.20.</p><ol id="fs-idm4647408" type="a">
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em>|<em data-effect="italics">D</em>).</li>
+<li>Find <em data-effect="italics">P</em>(<em data-effect="italics">D</em>|<em data-effect="italics">B</em>).</li>
+<li>Are <em data-effect="italics">B</em> and <em data-effect="italics">D</em> independent?</li>
+<li>Are <em data-effect="italics">B</em> and <em data-effect="italics">D</em> mutually exclusive?</li>
+</ol>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>P(B | D) = 0.20/0.30 = 2/3.</li><li>P(D | B) = 0.20/0.40 = 1/2.</li><li>Not independent: 0.40 × 0.30 = 0.12 ≠ 0.20.</li><li>Not mutually exclusive: P(B AND D) = 0.20 &gt; 0.</li></ol></div></section><section class="worked-example" id="element-184"><div class="problem-statement"><h3>Example 3.11</h3><p>A box contains R1, R2, R3 and B1, B2, B3, B4, B5, equally likely. Let R = red, B = blue, E = even number, G = number greater than 3, and H = blue numbered 1 through 4. Find P(R), P(B), P(R AND B), P(E), P(E | B), P(B | E), P(G), and P(G | H). Are R and B mutually exclusive? Are G and H independent?</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(R) = 3/8; P(B) = 5/8; P(R AND B) = 0; P(E) = 3/8. P(E | B) = 2/5, while P(B | E) = 2/3. G = {B4,B5}, so P(G) = 2/8 = 1/4. H = {B1,B2,B3,B4}; P(G | H) = 1/4. R and B are mutually exclusive. G and H are independent because P(G | H) = P(G).</p></div></section>
+<section class="worked-example" id="fs-idm85337200"><div class="problem-statement"><h3>Try It 3.11</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm4149344"><header></header><section><div data-type="problem" id="fs-idm5137744"><div class="os-problem-container">
+<p id="fs-idm3390208">In a basketball arena,</p>
+<ul id="fs-idm626832">
+<li>70% of the fans are rooting for the home team.</li>
+<li>25% of the fans are wearing blue.</li>
+<li>20% of the fans are wearing blue and are rooting for the away team.</li>
+<li>Of the fans rooting for the away team, 67% are wearing blue.</li>
+</ul>
+<p id="fs-idm2657904">Let <em data-effect="italics">A</em> be the event that a fan is rooting for the away team.
+<span data-type="newline"><br/></span>Let <em data-effect="italics">B</em> be the event that a fan is wearing blue.
+<span data-type="newline"><br/></span>Are the events of rooting for the away team and wearing blue independent? Are they mutually exclusive?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>Not independent: assuming all fans support one of the two teams, P(A) = 0.30, so P(A)P(B) = 0.075 ≠ 0.20. Equivalently P(B | A) = 0.20/0.30 ≈ 0.667 differs from 0.25. Not mutually exclusive: the intersection is 0.20. The supplied 67% is rounded.</p></div></section>
+<section class="worked-example" id="eip-31"><div class="problem-statement"><h3>Example 3.12</h3><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="example"><header></header><section><div data-type="problem" id="exampley">
+<div class="os-problem-container"><p id="eip-311">In a particular college class, 60% of the students are women. Fifty percent of all students in the class have long hair. Forty-five percent of the students are women and have long hair. Of the women students, 75% have long hair. Let <em data-effect="italics">W</em> be the event that a student is a women. Let <em data-effect="italics">L</em> be the event that a student has long hair. One student is picked randomly. Are the events of being a woman and having long hair independent?</p>
+<ul id="eip-637"><li>The following probabilities are given in this example:</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">W</em>) = 0.60; <em data-effect="italics">P</em>(<em data-effect="italics">L</em>) = 0.50</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">W</em> AND <em data-effect="italics">L</em>) = 0.45</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">L</em>|<em data-effect="italics">W</em>) = 0.75</li></ul>
+<div class="ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="eip-843"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">NOTE</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-idm110347232"><strong>The choice you make depends on the information you have.</strong> You could use the first or last condition on the list for this example. You do not know <em data-effect="italics">P</em>(<em data-effect="italics">W</em>|<em data-effect="italics">L</em>) yet, so you cannot use the second condition.</p></div></section></div></div></div>
+<div data-type="commentary" id="examplecommentary">
+<p id="eip-103">
+The events of being a woman and having long hair are not independent; knowing that a student is a woman changes the probability that a student has long hair.</p>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="eip-166">&gt;Check whether <em data-effect="italics">P</em>(<em data-effect="italics">W</em> AND <em data-effect="italics">L</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">W</em>)<em data-effect="italics">P</em>(<em data-effect="italics">L</em>). We are given that <em data-effect="italics">P</em>(<em data-effect="italics">W</em> AND <em data-effect="italics">L</em>) = 0.45, but <em data-effect="italics">P</em>(<em data-effect="italics">W</em>)<em data-effect="italics">P</em>(<em data-effect="italics">L</em>) = (0.60)(0.50) = 0.30. The events of being a woman and having long hair are not independent because <em data-effect="italics">P</em>(<em data-effect="italics">W</em> AND <em data-effect="italics">L</em>) does not equal <em data-effect="italics">P</em>(<em data-effect="italics">W</em>)<em data-effect="italics">P</em>(<em data-effect="italics">L</em>).</p>
+<p id="eip-669">Check whether <em data-effect="italics">P</em>(<em data-effect="italics">L</em>|<em data-effect="italics">W</em>) equals <em data-effect="italics">P</em>(<em data-effect="italics">L</em>). We are given that <em data-effect="italics">P</em>(<em data-effect="italics">L</em>|<em data-effect="italics">W</em>) = 0.75, but <em data-effect="italics">P</em>(<em data-effect="italics">L</em>) = 0.50; they are not equal. The events of being a woman and having long hair are not independent.</p>
+</div></section>
+<section class="worked-example" id="fs-idp15300304"><div class="problem-statement"><h3>Try It 3.12</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm4091904"><header></header><section>
+<div data-type="problem" id="fs-idm4091648"><div class="os-problem-container">
+<p id="fs-idm2370976">Mark is deciding which route to take to work. His choices are <em data-effect="italics">I</em> = the Interstate and <em data-effect="italics">F</em> = Fifth Street.</p><ul id="fs-idm5051536"><li><em data-effect="italics">P</em>(<em data-effect="italics">I</em>) = 0.44 and <em data-effect="italics">P</em>(<em data-effect="italics">F</em>) = 0.56</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">I</em> AND <em data-effect="italics">F</em>) = 0 because Mark will take only one route to work.</li>
+</ul><p id="fs-idm1878352">What is the probability of <em data-effect="italics">P</em>(<em data-effect="italics">I</em> OR <em data-effect="italics">F</em>)?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>P(I OR F) = 0.44 + 0.56 − 0 = 1.</p></div></section>
+<section class="worked-example" id="fs-idm4667408"><div class="problem-statement"><h3>Example 3.13</h3><section>
+<div class="body"><div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm4667152"><header></header><section>
+<div data-type="problem" id="fs-idm336096">
+<div class="os-problem-container">
+<ol id="fs-idm335840" type="a"><li>Toss one fair coin (the coin has two sides, <em data-effect="italics">H</em> and <em data-effect="italics">T</em>). The outcomes are ________. Count the outcomes. There are ____ outcomes.</li>
+<li>Toss one fair, six-sided die (the die has 1, 2, 3, 4, 5 or 6 dots on a side). The outcomes are ________________. Count the outcomes. There are ___ outcomes.</li>
+<li>Multiply the two numbers of outcomes. The answer is _______.</li>
+<li>If you flip one fair coin and follow it with the toss of one fair, six-sided die, the answer in part c. is the number of outcomes (size of the sample space). What are the outcomes? (Hint: Two of the outcomes are <em data-effect="italics">H</em>1 and <em data-effect="italics">T</em>6.)</li>
+<li>Event <em data-effect="italics">A</em> = heads (<em data-effect="italics">H</em>) on the coin followed by an even number (2, 4, 6) on the die.
+<span data-type="newline"><br/></span><em data-effect="italics">A</em> = {_________________}. Find <em data-effect="italics">P</em>(<em data-effect="italics">A</em>).</li>
+<li>Event <em data-effect="italics">B</em> = heads on the coin followed by a three on the die. <em data-effect="italics">B</em> = {________}. Find <em data-effect="italics">P</em>(<em data-effect="italics">B</em>).</li>
+<li>Are <em data-effect="italics">A</em> and <em data-effect="italics">B</em> mutually exclusive? (Hint: What is <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>)? If <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0, then <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are mutually exclusive.)</li>
+<li>Are <em data-effect="italics">A</em> and <em data-effect="italics">B</em> independent? (Hint: Is <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>)? If <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>), then <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are independent. If not, then they are dependent).</li></ol></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<ol id="fs-idm15568720" type="a"><li><em data-effect="italics">H</em> and <em data-effect="italics">T</em>; 2</li>
+<li>1, 2, 3, 4, 5, 6; 6</li>
+<li>2(6) = 12</li>
+<li><em data-effect="italics">T</em>1, <em data-effect="italics">T</em>2, <em data-effect="italics">T</em>3, <em data-effect="italics">T</em>4, <em data-effect="italics">T</em>5, <em data-effect="italics">T</em>6, <em data-effect="italics">H</em>1, <em data-effect="italics">H</em>2, <em data-effect="italics">H</em>3, <em data-effect="italics">H</em>4, <em data-effect="italics">H</em>5, <em data-effect="italics">H</em>6</li>
+<li><em data-effect="italics">A</em> = {<em data-effect="italics">H</em>2, <em data-effect="italics">H</em>4, <em data-effect="italics">H</em>6}; <em data-effect="italics">P</em>(<em data-effect="italics">A</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow>
+<mfrac>
+<mtext>3</mtext>
+<mrow>
+<mn>12</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></li>
+<li><em data-effect="italics">B</em> = {<em data-effect="italics">H</em>3}; <em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mtext>1</mtext>
+<mrow>
+<mn>12</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></li>
+<li>Yes, because <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0</li>
+<li><em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) = 0.<em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mfrac><mn>3</mn><mn>12</mn></mfrac><mo>·</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>48</mn></mfrac></mrow></semantics></math></span>. <em data-effect="italics">P</em>(<em data-effect="italics">A</em> AND <em data-effect="italics">B</em>) does not equal <em data-effect="italics">P</em>(<em data-effect="italics">A</em>)<em data-effect="italics">P</em>(<em data-effect="italics">B</em>), so <em data-effect="italics">A</em> and <em data-effect="italics">B</em> are dependent.</li>
+</ol></div></section>
+<section class="worked-example" id="fs-idp34076080"><div class="problem-statement"><h3>Try It 3.13</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm5094416"><header></header><section>
+<div data-type="problem" id="fs-idm340208"><div class="os-problem-container">
+<p id="fs-idm339952">A box has two balls, one white and one red. We select one ball, put it back in the box, and select a second ball (sampling with replacement). Let <em data-effect="italics">T</em> be the event of getting the white ball twice, <em data-effect="italics">F</em> the event of picking the white ball first, <em data-effect="italics">S</em> the event of picking the white ball in the second drawing.</p>
+<ol id="fs-idm5499808" type="a"><li>Compute <em data-effect="italics">P</em>(<em data-effect="italics">T</em>).</li>
+<li>Compute <em data-effect="italics">P</em>(<em data-effect="italics">T</em>|<em data-effect="italics">F</em>).</li>
+<li>Are <em data-effect="italics">T</em> and <em data-effect="italics">F</em> independent?.</li>
+<li>Are <em data-effect="italics">F</em> and <em data-effect="italics">S</em> mutually exclusive?</li>
+<li>Are <em data-effect="italics">F</em> and <em data-effect="italics">S</em> independent?</li></ol></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>P(T) = P(WW) = 1/4.</li><li>P(T | F) = 1/2.</li><li>T and F are not independent because 1/2 ≠ 1/4.</li><li>F and S are not mutually exclusive: WW belongs to both.</li><li>F and S are independent: P(F AND S) = 1/4 = (1/2)(1/2).</li></ol></div></section>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>4.1: Probability Distribution Function (PDF) for a Discrete Random Variable | Statistics Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-5-tree-and-venn-diagrams.html">Previous: 3.5</a><a href="section-4-2-mean-or-expected-value-and-standard-deviation.html">Next: 4.2</a><a href="https://openstax.org/books/introductory-statistics-2e/pages/4-1-probability-distribution-function-pdf-for-a-discrete-random-variable">Textbook section</a></nav><p class="series-title">Statistics Lecture Notes · OpenStax</p><h1>4.1: Probability Distribution Function (PDF) for a Discrete Random Variable</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>
+<p id="element-1652">A discrete <span data-type="term" group-by="p" id="term-00001">probability distribution function</span> has two characteristics:</p>
+<ol id="element-yu2" type="1"><li>Each probability is between zero and one, inclusive.</li>
+<li>The sum of the probabilities is one.</li>
+</ol><section class="worked-example" id="example1"><div class="problem-statement"><h3>Example 4.1</h3><p>Let X count the weekly after-midnight awakenings in the textbook study. For 50 observations, the frequencies of x = 0,1,2,3,4,5 are 2,11,23,9,4,1. Construct a probability distribution and verify its two required properties.</p></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><div class="table-scroll"><table><thead><tr><th>x</th><th>P(X=x)</th></tr></thead><tbody><tr><td>0</td><td>2/50</td></tr><tr><td>1</td><td>11/50</td></tr><tr><td>2</td><td>23/50</td></tr><tr><td>3</td><td>9/50</td></tr><tr><td>4</td><td>4/50</td></tr><tr><td>5</td><td>1/50</td></tr></tbody></table></div><p>Every probability is between 0 and 1, and their sum is 50/50 = 1. X has a finite, countable set of possible values.</p></div></section>
+<section class="worked-example" id="fs-idm96796576"><div class="problem-statement"><h3>Try It 4.1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp42457440"><header></header><section>
+<div data-type="problem" id="fs-idp103638368"><div class="os-problem-container">
+<p id="fs-idp104932624">A hospital researcher is interested in the number of times the average post-op patient will ring the nurse during a 12-hour shift. For a random sample of 50 patients, the following information was obtained. Let <em data-effect="italics">X</em> = the number of times a patient rings the nurse during a 12-hour shift. For this exercise, <em data-effect="italics">x</em> = 0, 1, 2, 3, 4, 5. <em data-effect="italics">P</em>(<em data-effect="italics">x</em>) = the probability that <em data-effect="italics">X</em> takes on value <em data-effect="italics">x</em>. Why is this a discrete probability distribution function (two reasons)?</p>
+<div class="os-table" id="fs-idp71433824"><div class="table-scroll"><table data-id="fs-idp71433824" data-summary="Exercise 1 Table"><thead>
+<tr>
+<th scope="col"><em data-effect="italics">x</em></th>
+<th scope="col"><em data-effect="italics">P</em>(<em data-effect="italics">x</em>)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>0</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 0) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>4</mn><mrow><mn>50</mn></mrow></mfrac></mrow></mrow></semantics></math></span></td>
+</tr>
+<tr>
+<td>1</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 1) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>8</mn><mrow><mn>50</mn></mrow></mfrac></mrow></mrow></semantics></math></span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 2) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mrow><mn>16</mn></mrow><mrow><mn>50</mn></mrow></mfrac></mrow></mrow></semantics></math></span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 3) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mrow><mn>14</mn></mrow><mrow><mn>50</mn></mrow></mfrac></mrow> </mrow></semantics></math></span></td>
+</tr>
+<tr>
+<td>4</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 4) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>6</mn><mrow><mn>50</mn></mrow></mfrac></mrow></mrow></semantics></math></span></td>
+</tr>
+<tr>
+<td>5</td>
+<td><em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 5) = <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>2</mn><mrow><mn>50</mn></mrow></mfrac></mrow></mrow></semantics></math></span></td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">4.3</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>The possible values 0–5 form a discrete set. Each probability is in [0,1], and (4 + 8 + 16 + 14 + 6 + 2)/50 = 1. These verify a discrete probability distribution.</p></div></section><section class="worked-example" id="element-852"><div class="problem-statement"><h3>Example 4.2</h3><section>
+<div class="body"><p id="element-500">Suppose Nancy has classes <strong>three days</strong> a week. She attends classes three days a week <strong>80%</strong> of the time, <strong>two days 15%</strong> of the time, <strong>one day 4%</strong> of the time, and <strong>no days 1%</strong> of the time. Suppose one week is randomly selected.</p>
+<div class="unnumbered has-problem-title" data-type="exercise" id="eip-466"><header></header><section>
+<div data-type="problem" id="eip-idp158961632">
+<div class="os-problem-container">
+<p id="eip-idp110729456">a. Let <em data-effect="italics">X</em> = the number of days Nancy ____________________.</p>
+<p id="eip-idm52442560">b. <em data-effect="italics">X</em> takes on what values?</p>
+<p id="eip-idm2356304">c. Suppose one week is randomly chosen. Construct a probability distribution table (called a PDF table) like the one in <a aria-label="Go to Example 4.1" class="autogenerated-content" href="https://openstax.org/books/introductory-statistics-2e/pages/4-1-probability-distribution-function-pdf-for-a-discrete-random-variable#example1">Example 4.1</a>. The table should have two columns labeled <em data-effect="italics">x</em> and <em data-effect="italics">P</em>(<em data-effect="italics">x</em>). What does the <em data-effect="italics">P</em>(<em data-effect="italics">x</em>) column sum to?</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="eip-idp133021120">a. Let <em data-effect="italics">X</em> = the number of days Nancy attends class per week.<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="eip-idm11988624">b. 0, 1, 2, and 3<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="eip-idp146953184">c.
+  </p><div class="os-table" id="eip-idp64719200"><div class="table-scroll"><table data-id="eip-idp64719200" data-summary="PDF table of the number of times Nancy attends class per week and probabilities.">
+<thead>
+<tr>
+<th scope="col"><em data-effect="italics">x</em></th>
+<th scope="col"><em data-effect="italics">P</em>(<em data-effect="italics">x</em>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.80</td>
+</tr>
+</tbody>
+</table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">4.4</span>
+<span class="os-divider"> </span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></section><section class="worked-example" id="fs-idm157100592"><div class="problem-statement"><h3>Try It 4.2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idp17767152"><header></header><section>
+<div data-type="problem" id="fs-idm59642592"><div class="os-problem-container">
+<p id="fs-idp10711280">Jeremiah has basketball practice two days a week. Ninety percent of the time, he attends both practices. Eight percent of the time, he attends one practice. Two percent of the time, he does not attend either practice. What is <em data-effect="italics">X</em> and what values does it take on?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p>X = number of practices attended in a week. Its possible values are 0, 1, 2, with probabilities 0.02, 0.08, 0.90, respectively.</p></div></section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/introductory-statistics-2e/pages/4-1-probability-distribution-function-pdf-for-a-discrete-random-variable">OpenStax Introductory Statistics 2e, by Barbara Illowsky and Susan Dean</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

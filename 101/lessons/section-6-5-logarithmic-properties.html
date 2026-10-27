@@ -1,0 +1,4355 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>6.5: Logarithmic Properties | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-6-4-graphs-of-logarithmic-functions.html">Previous: 6.4</a><a href="section-6-6-exponential-and-logarithmic-equations.html">Next: 6.6</a><a href="https://openstax.org/books/college-algebra-2e/pages/6-5-logarithmic-properties">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>6.5: Logarithmic Properties</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Use the product rule for logarithms.</li>
+<li>Use the quotient rule for logarithms.</li>
+<li>Use the power rule for logarithms.</li>
+<li>Expand logarithmic expressions.</li>
+<li>Condense logarithmic expressions.</li>
+<li>Use the change-of-base formula for logarithms.</li>
+</ul></section></div>
+<div class="os-figure" id="CNX_Precalc_Figure_04_05_001"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_05_001"><span data-alt="Testing of the pH of hydrochloric acid." data-type="media" id="fs-id1165137431594">
+<img alt="Testing of the pH of hydrochloric acid." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/b1443bc4b3962e10bec04eae05a9abf41baafff8" loading="lazy" src="../../notes-assets/f9f55915221d023a815b.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The pH of hydrochloric acid is tested with litmus paper. (credit: David Berardan)</span>
+</figcaption></figure></div><p id="fs-id1165137759741">In chemistry, <span class="no-emphasis" data-type="term" group-by="p" id="term-00004">pH</span> is used as a measure of the acidity or alkalinity of a substance. The pH scale runs from 0 to 14. Substances with a pH less than 7 are considered acidic, and substances with a pH greater than 7 are said to be basic. Our bodies, for instance, must maintain a pH close to 7.35 in order for enzymes to work properly. To get a feel for what is acidic and what is basic, consider the following pH levels of some common substances:</p>
+<ul id="fs-id1165135253210"><li>Battery acid: 0.8</li>
+<li>Stomach acid: 2.7</li>
+<li>Orange juice: 3.3</li>
+<li>Pure water: 7 (at 25° C)</li>
+<li>Human blood: 7.35</li>
+<li>Fresh coconut: 7.8</li>
+<li>Sodium hydroxide (lye): 14</li>
+</ul><p id="fs-id1165137540406">To determine whether a solution is acidic or basic, we find its pH, which is a measure of the number of active positive hydrogen ions in the solution. The pH is defined by the following formula, where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup><mi>H</mi><mo>+</mo></msup></mrow>
+</mrow></semantics></math></span></span> is the concentration of hydrogen ion  in the solution</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-396"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mo stretchy="false">[</mo><msup>
+<mi>H</mi>
+<mo>+</mo>
+</msup>
+<mo stretchy="false">]</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mo stretchy="false">[</mo><msup>
+<mi>H</mi>
+<mo>+</mo>
+</msup>
+<mo stretchy="false">]</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137472164">The equivalence of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<msup>
+<mi>H</mi>
+<mo>+</mo>
+</msup>
+</mrow> <mo>]</mo></mrow>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<msup>
+<mi>H</mi>
+<mo>+</mo>
+</msup>
+</mrow> <mo>]</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is one of the logarithm properties we will examine in this section.</p>
+<section data-depth="1" id="fs-id1165137737533"><h3 data-type="title">Using the Product Rule for Logarithms</h3>
+<p id="fs-id1165137405402">Recall that the logarithmic and exponential functions “undo” each other. This means that logarithms have similar properties to exponents. Some important properties of logarithms are given here.  First, the following properties are easy to prove.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135349439"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<msub>
+<mi>log</mi>
+<mi>b</mi>
+</msub>
+<mn>1</mn><mo>=</mo><mn>0</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<msub>
+<mi>log</mi>
+<mi>b</mi>
+</msub>
+<mi>b</mi><mo>=</mo><mn>1</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137628765">For example, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>1</mn><mo>=</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span></span> since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>5</mn>
+<mn>0</mn>
+</msup>
+<mo>=</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span> And <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>5</mn><mo>=</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span></span> since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mn>5</mn>
+<mn>1</mn>
+</msup>
+<mo>=</mo><mn>5.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165137772010">Next, we have the inverse property.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-896"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mo stretchy="false">(</mo><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+<mo stretchy="false">)</mo><mo>=</mo><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>  </mtext><msup>
+<mi>b</mi>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi>
+</mrow>
+</msup>
+<mo>=</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137696455">For example, to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>100</mn>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we can rewrite the logarithm as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mrow>
+<mn>10</mn>
+</mrow>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and then apply the inverse property <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi></mrow>
+</mrow></semantics></math></span></span> to get <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mrow>
+<mn>10</mn>
+</mrow>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id1165134297163">To evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mn>7</mn>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we can rewrite the logarithm as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>e</mi>
+</msub>
+<mn>7</mn>
+</mrow>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and then apply the inverse property <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi>
+</mrow>
+</msup>
+<mo>=</mo><mi>x</mi></mrow>
+</mrow></semantics></math></span></span> to get <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>e</mi>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>e</mi>
+</msub>
+<mn>7</mn>
+</mrow>
+</msup>
+<mo>=</mo><mn>7.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id1165137592421">Finally, we have the <span class="no-emphasis" data-type="term" group-by="o" id="term-00005">one-to-one</span> property.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-186"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>N</mi><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mtext>if and only if</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mtext></mtext><mi>M</mi><mo>=</mo><mi>N</mi>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137723139">We can use the one-to-one property to solve the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Since the bases are the same, we can apply the one-to-one property by setting the arguments equal and solving for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-448"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Set the arguments equal</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>x</mi><mo>=</mo><mn>5</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Subtract 2</mtext><mi>x</mi><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135194712">But what about the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>?</mo></mrow>
+</mrow></semantics></math></span></span> The one-to-one property does not help us in this instance. Before we can solve an equation like this, we need a method for combining terms on the left side of the equation.</p>
+<p id="fs-id1165137455738">Recall that we use the <em data-effect="italics">product rule of exponents</em> to combine the product of powers by adding exponents: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mi>a</mi>
+</msup>
+<msup>
+<mi>x</mi>
+<mi>b</mi>
+</msup>
+<mo>=</mo><msup>
+<mi>x</mi>
+<mrow>
+<mi>a</mi><mo>+</mo><mi>b</mi>
+</mrow>
+</msup>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> We have a similar property for logarithms, called the <strong>product rule for logarithms</strong>, which says that the logarithm of a product is equal to a sum of logarithms. Because logs are exponents, and we multiply like bases, we can add the exponents. We will use the inverse property to derive the product rule below.</p><p id="fs-id1165137645446">Given any real number <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> and positive real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext></mtext><mi>M</mi><mo>,</mo><mi>N</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we will show</p><div class="unnumbered" data-label="" data-type="equation" id="eip-214"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>M</mi><mi>N</mi>
+</mrow>
+<mo>)</mo></mrow><mtext>=</mtext><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>M</mi>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135160334">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>m</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>N</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> In exponential form, these equations are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>m</mi>
+</msup>
+<mo>=</mo><mi>M</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>n</mi>
+</msup>
+<mo>=</mo><mi>N</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> It follows that</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-54"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>M</mi><mi>N</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>m</mi>
+</msup>
+<msup>
+<mi>b</mi>
+<mi>n</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>M</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>N</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>b</mi>
+<mrow>
+<mi>m</mi><mo>+</mo><mi>n</mi>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the product rule for exponents</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>m</mi><mo>+</mo><mi>n</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the inverse property of logs</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>M</mi>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>m</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>n</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137749030">Note that repeated applications of the product rule for logarithms allow us to simplify the logarithm of the product of any number of factors. For example, consider <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mo stretchy="false">(</mo><mi>w</mi><mi>x</mi><mi>y</mi><mi>z</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Using the product rule for logarithms, we can rewrite this logarithm of a product as the sum of logarithms of its factors:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-502"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mo stretchy="false">(</mo><mi>w</mi><mi>x</mi><mi>y</mi><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>w</mi><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>y</mi><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>z</mi>
+</mrow>
+</mrow></semantics></math></span> </div>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137891324"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Product Rule for Logarithms</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135344994">The <span data-type="term" group-by="p" id="term-00006">product rule for logarithms</span> can be used to simplify a logarithm of a product by rewriting it as a sum of individual logarithms.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134191558"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mo stretchy="false">(</mo><mi>M</mi><mi>N</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>M</mi>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow><mspace width="0.5em"></mspace><mtext>for </mtext><mi>b</mi><mo>&gt;</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137541378"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165134223340"><strong>Given the logarithm of a product, use the product rule of logarithms to write an equivalent sum of logarithms.</strong></p>
+<ol id="fs-id1165137748303" type="1">
+<li>Factor the argument completely, expressing each whole number factor as a product of primes.</li>
+<li>Write the equivalent expression by summing the logarithms of each factor.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_05_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135458651"><header></header><section><div data-type="problem" id="fs-id1165135458654"><div class="os-problem-container"><h4 data-type="title">Using the Product Rule for Logarithms</h4>
+<p id="fs-id1165137585196">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>30</mn><mi>x</mi><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137676251">We begin by factoring the argument completely, expressing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>30</mn></mrow>
+</mrow></semantics></math></span></span> as a product of primes.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137725082"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>30</mn><mi>x</mi><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mi>x</mi><mo>⋅</mo><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137438435">Next we write the equivalent equation by summing the logarithms of each factor.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137836500"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>30</mn><mi>x</mi><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>3</mn>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section>
+<section class="worked-example" id="fs-id1165135525909"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_01"><header></header><section>
+<div data-type="problem" id="fs-id1165137871799"><div class="os-problem-container">
+<p id="fs-id1165137871801">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mo stretchy="false">(</mo><mn>8</mn><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137849383"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mn>2</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mn>2</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mn>2</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>k</mi><mo>=</mo><mn>3</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mn>2</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>k</mi>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165135151295"><h3 data-type="title">Using the Quotient Rule for Logarithms</h3>
+<p id="fs-id1165135151301">For quotients, we have a similar rule for logarithms. Recall that we use the <em data-effect="italics">quotient rule of exponents</em> to combine the quotient of exponents by subtracting: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<msup>
+<mi>x</mi>
+<mrow>
+<mi>a</mi>
+</mrow>
+</msup>
+<msup>
+<mi>x</mi>
+<mrow>
+<mi>b</mi>
+</mrow>
+</msup>
+</mfrac>
+<mo>=</mo><msup>
+<mi>x</mi>
+<mrow>
+<mi>a</mi><mo>−</mo><mi>b</mi>
+</mrow>
+</msup>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> The <strong>quotient rule for logarithms</strong> says that the logarithm of a quotient is equal to a difference of logarithms. Just as with the product rule, we can use the inverse property to derive the quotient rule.</p><p id="fs-id1165137431410">Given any real number <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> and positive real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>M</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>N</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we will show</p><div class="unnumbered" data-label="" data-type="equation" id="eip-589"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>M</mi>
+<mi>N</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>=</mtext><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>M</mi>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137733602">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>m</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>N</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> In exponential form, these equations are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>m</mi>
+</msup>
+<mo>=</mo><mi>M</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>n</mi>
+</msup>
+<mo>=</mo><mi>N</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> It follows that</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-303"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>M</mi>
+<mi>N</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>m</mi>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>n</mi>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>M</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>N</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>b</mi>
+<mrow>
+<mi>m</mi><mo>−</mo><mi>n</mi>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the quotient rule for exponents</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>m</mi><mo>−</mo><mi>n</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the inverse property of logs</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>M</mi>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>N</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>m</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>n</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137474733">For example, to expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>6</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>9</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we must first express the quotient in lowest terms. Factoring and canceling we get,</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-598"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>6</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>9</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>3</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Factor the numerator and denominator</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>                      </mtext><mo>=</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mi>x</mi>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Cancel the common factors</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137805392">Next we apply the quotient rule by subtracting the logarithm of the denominator from the logarithm of the numerator. Then we apply the product rule.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-46"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mi>x</mi>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>log</mi><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>            </mtext><mo>=</mo><mi>log</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mi>log</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><div class="ui-has-child-title" data-type="note" id="fs-id1165137733855"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Quotient Rule for Logarithms</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id1165135390834">The <span data-type="term" group-by="q" id="term-00007">quotient rule for logarithms</span> can be used to simplify a logarithm or a quotient by rewriting it as the difference of individual logarithms.
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137834642"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>M</mi>
+<mi>N</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>N</mi>
+</mrow>
+</mrow></semantics></math></span> </div></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137749807"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137749813"><strong>Given the logarithm of a quotient, use the quotient rule of logarithms to write an equivalent difference of logarithms.</strong></p><ol id="fs-id1165137749817" type="1">
+<li>Express the argument in lowest terms by factoring the numerator and denominator and canceling common terms.</li>
+<li>Write the equivalent expression by subtracting the logarithm of the denominator from the logarithm of the numerator.</li>
+<li>Check to see that each term is fully expanded. If not, apply the product rule for logarithms to expand completely.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_05_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135185904"><header></header><section>
+<div data-type="problem" id="fs-id1165135185906"><div class="os-problem-container"><h4 data-type="title">Using the Quotient Rule for Logarithms</h4>
+<p id="fs-id1165135696743">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>15</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135251395"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137629471">There are exceptions to consider in this and later examples. First, because denominators must never be zero, this expression is not defined for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span> Also, since the argument of a logarithm must be positive, we note as we observe the expanded logarithm, that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&gt;</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&gt;</mo><mo>−</mo><mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&lt;</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span> Combining these conditions is beyond the scope of this section, and we will not consider them here or in subsequent exercises.</p></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137534102">First we note that the quotient is factored and in lowest terms, so we apply the quotient rule. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135241002"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>15</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>15</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137634442">Notice that the resulting terms are logarithms of products. To expand completely, we apply the product rule, noting that the prime factors of the factor 15 are 3 and 5.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137930288"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>15</mn><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">[</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>                                                                </mtext><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137534455"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137534464"><div class="os-problem-container">
+<p id="fs-id1165137534466">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>7</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>21</mn><mi>x</mi>
+</mrow>
+<mrow>
+<mn>7</mn><mi>x</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137939602"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165137627625"><h3 data-type="title">Using the Power Rule for Logarithms</h3>
+<p id="fs-id1165137732439">We’ve explored the product rule and the quotient rule, but how can we take the logarithm of a power, such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>?</mo></mrow>
+</mrow></semantics></math></span></span> One method is as follows:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-271"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>⋅</mo><mi>x</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>2</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137534037">Notice that we used the <span class="no-emphasis" data-type="term" group-by="p" id="term-00008">product rule for logarithms</span> to find a solution for the example above. By doing so, we have derived the <strong>power rule for logarithms</strong>, which says that the log of a power is equal to the exponent times the log of the base. Keep in mind that, although the input to a logarithm may not be written as a power, we may be able to change it to a power. For example,</p><div class="unnumbered" data-label="" data-type="equation" id="eip-702"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>100</mn><mo>=</mo><msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mn>2</mn>
+</msup>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msqrt>
+<mn>3</mn>
+</msqrt>
+<mo>=</mo><msup>
+<mn>3</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>e</mi>
+</mfrac>
+<mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137676322"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Power Rule for Logarithms</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137676330">The <span data-type="term" group-by="p" id="term-00009">power rule for logarithms</span> can be used to simplify the logarithm of a power by rewriting it as the product of the exponent times the logarithm of the base.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135632064"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>M</mi>
+<mi>n</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>n</mi><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137639704"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137639709"><strong>Given the logarithm of a power, use the power rule of logarithms to write an equivalent product of a factor and a logarithm.</strong></p>
+<ol id="fs-id1165137761651" type="1">
+<li>Express the argument as a power, if needed.</li>
+<li>Write the equivalent expression by multiplying the exponent times the logarithm of the base.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_05_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135593557"><header></header><section>
+<div data-type="problem" id="fs-id1165135593559"><div class="os-problem-container"><h4 data-type="title">Expanding a Logarithm with Powers</h4>
+<p id="fs-id1165135593564">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<msup>
+<mi>x</mi>
+<mn>5</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137843823">The argument is already written as a power, so we identify the exponent, 5, and the base, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and rewrite the equivalent expression by multiplying the exponent times the logarithm of the base.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132032525"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>5</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>5</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span> </div></div></section><section class="worked-example" id="fs-id1165135508373"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_03"><header></header><section>
+<div data-type="problem" id="fs-id1165135508382"><div class="os-problem-container">
+<p id="fs-id1165135508384">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135180121"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>ln</mi><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<section class="worked-example" id="Example_04_05_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134163985"><header></header><section>
+<div data-type="problem" id="fs-id1165134163988"><div class="os-problem-container"><h4 data-type="title">Rewriting an Expression as a Power before Using the Power Rule</h4>
+<p id="fs-id1165135181650">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>25</mn>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> using the power rule for logs.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137827658">Expressing the argument as a power, we get <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>25</mn>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mn>5</mn>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165137834568">Next we identify the exponent, 2, and the base, 5, and rewrite the equivalent expression by multiplying the exponent times the logarithm of the base.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133276220"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mn>5</mn>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>2</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section>
+<section class="worked-example" id="fs-id1165137643493"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_04"><header></header><section>
+<div data-type="problem" id="fs-id1165137643502"><div class="os-problem-container">
+<p id="fs-id1165137643504">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137705121"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mn>2</mn><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section><section class="worked-example" id="Example_04_05_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134435871"><header></header><section>
+<div data-type="problem" id="fs-id1165134435874"><div class="os-problem-container"><h4 data-type="title">Using the Power Rule in Reverse</h4>
+<p id="fs-id1165137714060">Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the power rule for logs to a single logarithm with a leading coefficient of 1.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137416106">Because the logarithm of a power is the product of the exponent times the logarithm of the base, it follows that the product of a number and a logarithm can be written as a power. For the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we identify the factor, 4, as the exponent and the argument, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> as the base, and rewrite the product as a logarithm of a power: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>ln</mi><mo stretchy="false">(</mo><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1165137724030"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_05"><header></header><section>
+<div data-type="problem" id="fs-id1165137502318"><div class="os-problem-container">
+<p id="fs-id1165137502321">Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mn>4</mn></mrow>
+</mrow></semantics></math></span></span> using the power rule for logs to a single logarithm with a leading coefficient of 1.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135377092"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mn>16</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section></section>
+<section data-depth="1" id="fs-id1165137657409"><h3 data-type="title">Expanding Logarithmic Expressions</h3>
+<p id="fs-id1165137558543">Taken together, the product rule, quotient rule, and power rule are often called “laws of logs.”  Sometimes we apply more than one rule in order to simplify an expression. For example:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-423"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>6</mn><mi>x</mi>
+</mrow>
+<mi>y</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>6</mn><mi>x</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mn>6</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>x</mi><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135545872">We can use the power rule to expand logarithmic expressions involving negative and fractional exponents. Here is an alternate proof of the quotient rule for logarithms using the fact that a reciprocal is a negative power:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-622"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>A</mi>
+<mi>C</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>A</mi><msup>
+<mi>C</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mi>A</mi>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>C</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>A</mi><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>C</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>A</mi><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>C</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135153099">We can also apply the product rule to express a sum or difference of logarithms as the logarithm of a product.</p>
+<p id="fs-id1165135153103">With practice, we can look at a logarithmic expression and expand it mentally, writing the final answer. Remember, however, that we can only do this with products, quotients, powers, and roots—never with addition or subtraction inside the argument of the logarithm.</p>
+<section class="worked-example" id="Example_04_05_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135173497"><header></header><section>
+<div data-type="problem" id="fs-id1165135173499"><div class="os-problem-container"><h4 data-type="title">Expanding Logarithms Using Product, Quotient, and Power Rules</h4>
+<p id="fs-id1165135173504">Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mi>y</mi>
+</mrow>
+<mn>7</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> as a sum or difference of logs.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135253768">First, because we have a quotient of two expressions, we can use the quotient rule:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135209370"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mi>y</mi>
+</mrow>
+<mn>7</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mi>y</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137854981">Then seeing the product in the first term, we use the product rule:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135474707"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mi>y</mi>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mi>ln</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165134154611">Finally, we use the power rule on the first term:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137463825"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mi>ln</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ln</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section>
+<section class="worked-example" id="fs-id1165135182933"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_07"><header></header><section>
+<div data-type="problem" id="fs-id1165135182942"><div class="os-problem-container">
+<p id="fs-id1165137635162">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mi>y</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mi>z</mi>
+<mn>4</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137593600"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>log</mi><mi>x</mi><mo>+</mo><mn>3</mn><mi>log</mi><mi>y</mi><mo>−</mo><mn>4</mn><mi>log</mi><mi>z</mi>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<section class="worked-example" id="Example_04_05_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137811250"><header></header><section><div data-type="problem" id="fs-id1165137811252"><div class="os-problem-container"><h4 data-type="title">Using the Power Rule for Logarithms to Simplify the Logarithm of a Radical Expression</h4>
+<p id="fs-id1165135637419">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135369492"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mi>log</mi><msup>
+<mi>x</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>log</mi><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div></div></section>
+<section class="worked-example" id="fs-id1165137804487"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_08"><header></header><section>
+<div data-type="problem" id="fs-id1165137804496"><div class="os-problem-container">
+<p id="fs-id1165137804498">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mroot>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135193090"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mi>ln</mi><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135173426"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id1165134197968"><strong>Can we expand</strong> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow> <mrow> <mspace width="0.5em"></mspace><mi>ln</mi><mrow><mo>(</mo> <mrow> <msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo><msup> <mi>y</mi> <mn>2</mn> </msup> </mrow> <mo>)</mo></mrow><mo>?</mo> </mrow> </mrow></semantics></math></span></span> </p><p id="fs-id1165135440437"><em data-effect="italics">No. There is no way to expand the logarithm of a sum or difference inside the argument of the logarithm.</em></p>
+</div></section></div><section class="worked-example" id="Example_04_05_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135440448"><header></header><section>
+<div data-type="problem" id="fs-id1165135440450"><div class="os-problem-container"><h4 data-type="title">Expanding Complex Logarithmic Expressions</h4>
+<p id="fs-id1165135150641">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>64</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134085801">We can expand by applying the Product and Quotient Rules. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134267967"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>64</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo stretchy="false">(</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mn>64</mn><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the Quotient Rule</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<msup>
+<mn>2</mn>
+<mn>6</mn>
+</msup>
+<mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mrow>
+<mtext>Simplify by writing  64 as 2</mtext>
+</mrow>
+<mn>6</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>6</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mn>2</mn><mo>+</mo><mn>3</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>6</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the Power Rule</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165135635237"><div class="problem-statement"><h3>Try It #8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_09"><header></header><section>
+<div data-type="problem" id="fs-id1165135635245"><div class="os-problem-container">
+<p id="fs-id1165135635247">Expand <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>9</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137725387"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165135190855"><h3 data-type="title">Condensing Logarithmic Expressions</h3><p id="fs-id1165135190860">We can use the rules of logarithms we just learned to condense sums, differences, and products with the same base as a single logarithm. It is important to remember that the logarithms must have the same base to be combined. We will learn later how to change the base of any logarithm before condensing.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165135190866"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135190871"><strong>Given a sum, difference, or product of logarithms with the same base, write an equivalent expression as a single logarithm.</strong></p><ol id="fs-id1165137833816" type="1">
+<li>Apply the power property first. Identify terms that are products of factors and a logarithm, and rewrite each as the logarithm of a power.</li>
+<li>Next apply the product property. Rewrite sums of logarithms as the logarithm of a product.</li>
+<li>Apply the quotient property last. Rewrite differences of logarithms as the logarithm of a quotient.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_05_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137833837"><header></header><section><div data-type="problem" id="fs-id1165137833839"><div class="os-problem-container"><h4 data-type="title">Using the Product and Quotient Rules to Combine Logarithms</h4>
+<p id="fs-id1165135484124">Write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>8</mn>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> as a single logarithm.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135527077">Using the product and quotient rules</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134357583"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>8</mn>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>⋅</mo><mn>8</mn>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>40</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165135400169">This reduces our original expression to</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135251094"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>40</mn><mo stretchy="false">)</mo><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137846453">Then, using the quotient rule</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135178053"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>40</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mn>2</mn>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>40</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>3</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mn>20</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section>
+<section class="worked-example" id="fs-id1165134047701"><div class="problem-statement"><h3>Try It #9</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_10"><header></header><section>
+<div data-type="problem" id="fs-id1165134047710"><div class="os-problem-container">
+<p id="fs-id1165134047712">Condense <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mn>3</mn><mo>−</mo><mi>log</mi><mn>4</mn><mo>+</mo><mi>log</mi><mn>5</mn><mo>−</mo><mi>log</mi><mn>6.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135417966"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>⋅</mo><mn>5</mn>
+</mrow>
+<mrow>
+<mn>4</mn><mo>⋅</mo><mn>6</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>;</mo></mrow>
+</mrow></semantics></math></span></span> can also be written <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>5</mn>
+<mn>8</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> by reducing the fraction to lowest terms.</p>
+</div></section>
+<section class="worked-example" id="Example_04_05_10"><div class="problem-statement"><h3>Example 10</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134435881"><header></header><section>
+<div data-type="problem" id="fs-id1165134435883"><div class="os-problem-container"><h4 data-type="title">Condensing Complex Logarithmic Expressions</h4>
+<p id="fs-id1165134435888">Condense <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mn>3</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135344097">We apply the power rule first:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165131962868"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mn>3</mn><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>6</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165135531546">Next we apply the product rule to the sum:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134209220"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>6</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>6</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165134280852">Finally, we apply the quotient rule to the difference:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134552640"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>6</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>6</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div>
+</div></section><section class="worked-example" id="eip-idm806696448"><div class="problem-statement"><h3>Try It #10</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_06"><header></header><section>
+<div data-type="problem" id="fs-id1165135511372"><div class="os-problem-container">
+<p id="fs-id1165135511375">Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow><mo>+</mo><mn>0.5</mn><mi>log</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>7</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>3</mn><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> as a single logarithm.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135245603"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>5</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>3</mn>
+</msup>
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>7</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section><section class="worked-example" id="Example_04_05_11"><div class="problem-statement"><h3>Example 11</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135519254"><header></header><section><div data-type="problem" id="fs-id1165135519256"><div class="os-problem-container"><h4 data-type="title">Rewriting as a Single Logarithm</h4>
+<p id="fs-id1165134156051">Rewrite <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>log</mi><mi>x</mi><mo>−</mo><mn>4</mn><mi>log</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> as a single logarithm.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135177652">We apply the power rule first:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135705873"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mn>2</mn><mi>log</mi><mi>x</mi><mo>–</mo><mn>4</mn><mi>log</mi><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></mrow>
+<mo>+</mo>
+<mrow><mfrac><mn>1</mn><mi>x</mi></mfrac>
+<mrow><mi>log</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></mrow></mrow>
+<mo>=</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mrow><mo>+</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135195405">Next we rearrange and apply the product rule to the sum:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134298825"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow>
+<msup>
+<mrow>
+<mo>(</mo>
+<mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow><mo>+</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></semantics></math></span> </div><div class="unnumbered" data-label="" data-type="equation" id="eip-id2302979"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mo>=</mo>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+<mo>+</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>log</mi>
+<msup>
+<mrow>
+<mo>(</mo>
+<mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow></semantics></math></span> </div><div class="unnumbered" data-label="" data-type="equation" id="eip-id2650164"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mo>=</mo><mi>log</mi><mo>(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</msup><mo>)</mo>
+<mo>−</mo><mi>log</mi><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></mrow><mn>4</mn></msup></mrow></semantics></math></span> </div><p id="fs-id1165134042304">Finally, we apply the quotient rule to the difference:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133324079"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mo>=</mo>
+<mi>log</mi>
+<mrow>
+<mo>(</mo>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mrow>
+<mo>(</mo>
+<mn>3</mn>
+<mi>x</mi>
+<mo>+</mo>
+<mn>5</mn>
+<mo>)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>−1</mn>
+</msup>
+</mrow>
+</msup>
+<mo>)</mo>
+<mo>−</mo>
+</mrow>
+<msup>
+<mrow>
+<mi>log</mi>
+<mo>(</mo>
+<mi>x</mi>
+<mo>+</mo>
+<mn>5</mn>
+<mo>)</mo>
+</mrow>
+<mn>4</mn>
+</msup>
+<mo>=</mo>
+<mi>log</mi>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mrow>
+<mo>(</mo>
+<mn>3</mn>
+<mi>x</mi>
+<mo>+</mo>
+<mn>5</mn>
+<mo>)</mo>
+</mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>−1</mn>
+</msup>
+</mrow>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mo>(</mo>
+<mi>x</mi>
+<mo>+</mo>
+<mn>5</mn>
+<mo>)</mo>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow></semantics></math></span> </div>
+</div></section>
+<section class="worked-example" id="eip-id2047062"><div class="problem-statement"><h3>Try It #11</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_11"><header></header><section>
+<div data-type="problem" id="fs-id1165134435983"><div class="os-problem-container">
+<p id="fs-id1165135627841">Condense <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>log</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>+</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo><mo>.</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134435757"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow>
+<mn>12</mn>
+</mrow>
+</msup>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>;</mo></mrow>
+</mrow></semantics></math></span></span> this answer could also be written <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mn>4</mn>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="Example_04_05_12"><div class="problem-statement"><h3>Example 12</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137400159"><header></header><section><div data-type="problem" id="fs-id1165137400162"><div class="os-problem-container"><h4 data-type="title">Applying of the Laws of Logs</h4>
+<p id="fs-id1165135530298">Recall that, in chemistry, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo stretchy="false">[</mo><msup>
+<mi>H</mi>
+<mo>+</mo>
+</msup>
+<mo stretchy="false">]</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> If the concentration of hydrogen ions in a liquid is doubled, what is the effect on pH?</p></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135415820">Suppose <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi></mrow>
+</mrow></semantics></math></span></span> is the original concentration of hydrogen ions, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi></mrow>
+</mrow></semantics></math></span></span> is the original pH of the liquid. Then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>=</mo><mo>–</mo><mi>log</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> If the concentration is doubled, the new concentration is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>C</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Then the pH of the new liquid is</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134547456"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>C</mi>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135571875">Using the product rule of logs</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134547498"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>C</mi>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<mi>log</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mi>log</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165135443976">Since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo>=</mo><mo>–</mo><mi>log</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the new pH is</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135440065"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>pH</mtext><mo>=</mo><mi>P</mi><mo>−</mo><mi>log</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>≈</mo><mi>P</mi><mo>−</mo><mn>0.301</mn>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135251361">When the concentration of hydrogen ions is doubled, the pH decreases by about 0.301.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165135251368"><div class="problem-statement"><h3>Try It #12</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_12"><header></header><section>
+<div data-type="problem" id="fs-id1165135251376"><div class="os-problem-container">
+<p id="fs-id1165135251378">How does the pH change when the concentration of positive hydrogen ions is decreased by half?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137675203">The pH increases by about 0.301.</p>
+</div></section>
+</section><section data-depth="1" id="fs-id1165137675210"><h3 data-type="title">Using the Change-of-Base Formula for Logarithms</h3><p id="fs-id1165137675216">Most calculators can evaluate only common and natural logs. In order to evaluate logarithms with a base other than 10 or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we use the <span data-type="term" group-by="c" id="term-00010">change-of-base formula</span> to rewrite the logarithm as the quotient of logarithms of any other base; when using a calculator, we would change them to common or natural logs.</p><p id="fs-id1165137855374">To derive the change-of-base formula, we use the <span class="no-emphasis" data-type="term" group-by="o" id="term-00011">one-to-one</span> property and <span class="no-emphais" data-type="term" group-by="p" id="term-00012">power rule for logarithms</span>.</p><p id="fs-id1165137855378">Given any positive real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>M</mi><mo>,</mo><mi>b</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>≠</mo><mn>1</mn><mo> </mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we show</p><div class="unnumbered" data-label="" data-type="equation" id="eip-643"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mtext>=</mtext><mfrac>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137932683">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>By exponentiating both sides with base<span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi></mrow>
+</mrow></semantics></math></span></span>, we arrive at an exponential form, namely <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>y</mi>
+</msup>
+<mo>=</mo><mi>M</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> It follows that</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-226"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mo stretchy="false">(</mo><msup>
+<mi>b</mi>
+<mi>y</mi>
+</msup>
+<mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the one-to-one property</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>b</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi><mo> </mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the power rule for logarithms.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Isolate </mtext><mi>y</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>y</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135207389">For example, to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>36</mn></mrow>
+</mrow></semantics></math></span></span> using a calculator, we must first rewrite the expression as a quotient of common or natural logs. We will use the common log.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-428"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>36</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mrow>
+<mn>36</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the change of base formula using base 10</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>≈</mo><mn>2.2266</mn><mspace width="0.5em"></mspace><mtext></mtext>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use a calculator to evaluate to 4 decimal places</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165134381722"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Change-of-Base Formula</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135342066">The <span data-type="term" group-by="c" id="term-00013">change-of-base formula</span> can be used to evaluate a logarithm with any base.</p>
+<p id="fs-id1165135342073">For any positive real numbers <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>M</mi><mo>,</mo><mi>b</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>≠</mo><mn>1</mn><mo> </mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>≠</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134247198"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mtext>=</mtext><mfrac>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>n</mi>
+</msub>
+<mi>b</mi>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165134042184">It follows that the change-of-base formula can be used to rewrite a logarithm with any base as the quotient of common or natural logs.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-936"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mi>M</mi>
+</mrow>
+<mrow>
+<mi>ln</mi><mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137935512">and</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-60"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>log</mi><mi>M</mi>
+</mrow>
+<mrow>
+<mi>log</mi><mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137893333"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137893339"><strong>Given a logarithm with the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> use the change-of-base formula to rewrite it as a quotient of logs with any positive base<strong> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> </strong> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>≠</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </strong></p><ol id="fs-id1165134172563" type="1"><li>Determine the new base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> remembering that the common log, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> has base 10, and the natural log, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> has base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Rewrite the log as a quotient using the change-of-base formula
+<ol id="fs-id1165134039298" type="a"><li>The numerator of the quotient will be a logarithm with base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi></mrow>
+</mrow></semantics></math></span> and argument <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>M</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>The denominator of the quotient will be a logarithm with base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi></mrow>
+</mrow></semantics></math></span> and argument <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol></li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_04_05_13"><div class="problem-statement"><h3>Example 13</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134196189"><header></header><section><div data-type="problem" id="fs-id1165134196191"><div class="os-problem-container"><h4 data-type="title">Changing Logarithmic Expressions to Expressions Involving Only Natural Logs</h4>
+<p id="fs-id1165134196197">Change <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>3</mn></mrow>
+</mrow></semantics></math></span></span> to a quotient of natural logarithms.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135444049">Because we will be expressing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>3</mn></mrow>
+</mrow></semantics></math></span></span> as a quotient of natural logarithms, the new base, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi><mo>=</mo><mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135690112">We rewrite the log as a quotient using the change-of-base formula. The numerator of the quotient will be the natural log with argument 3. The denominator of the quotient will be the natural log with argument 5.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135416564"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mi>b</mi>
+</msub>
+<mi>M</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mi>M</mi>
+</mrow>
+<mrow>
+<mi>ln</mi><mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mn>3</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>3</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mn>5</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div></div></section>
+<section class="worked-example" id="fs-id1165134223298"><div class="problem-statement"><h3>Try It #13</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_13"><header></header><section>
+<div data-type="problem" id="fs-id1165134223309"><div class="os-problem-container">
+<p id="fs-id1165134223311">Change <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mrow>
+<mn>0.5</mn>
+</mrow>
+</msub>
+<mn>8</mn></mrow>
+</mrow></semantics></math></span></span> to a quotient of natural logarithms.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135181780"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mn>8</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mn>0.5</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135181811"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id1172294599410"><strong>Can we change common logarithms to natural logarithms?</strong></p>
+<p id="fs-id1165135193274"><em data-effect="italics">Yes. Remember that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mn>9</mn></mrow>
+</mrow></semantics></math></span></span> means <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mtext>log</mtext>
+</mrow>
+<mrow>
+<mtext>10</mtext>
+</mrow>
+</msub>
+<mtext>9</mtext><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> So, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>log</mi><mn>9</mn><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>9</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mn>10</mn>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </em></p></div></section></div><section class="worked-example" id="Example_04_05_14"><div class="problem-statement"><h3>Example 14</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134084328"><header></header><section><div data-type="problem" id="fs-id1165134084330"><div class="os-problem-container"><h4 data-type="title">Using the Change-of-Base Formula with a Calculator</h4>
+<p id="fs-id1165134084335">Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the change-of-base formula with a calculator.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135353038">According to the change-of-base formula, we can rewrite the log base 2 as a logarithm of any other base. Since our calculators can evaluate the natural log, we might choose to use the natural logarithm, which is the log base <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135337069"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>2</mn>
+</msub>
+<mn>10</mn><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>10</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply the change of base formula using base </mtext><mi>e</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>≈</mo><mn>3.3219</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use a calculator to evaluate to 4 decimal places</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div></div></section>
+<section class="worked-example" id="fs-id1165135358905"><div class="problem-statement"><h3>Try It #14</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_05_14"><header></header><section>
+<div data-type="problem" id="fs-id1165135358915"><div class="os-problem-container">
+<p id="fs-id1165135358918">Evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>log</mi>
+</mrow>
+<mn>5</mn>
+</msub>
+<mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the change-of-base formula.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137896990"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mn>100</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mn>5</mn>
+</mrow>
+</mfrac>
+<mo>≈</mo><mfrac>
+<mrow>
+<mn>4.6051</mn>
+</mrow>
+<mrow>
+<mn>1.6094</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><mn>2.861</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165135593398"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135593404">Access these online resources for additional instruction and practice with laws of logarithms.</p>
+<ul id="fs-id1165135593408">
+<li><a aria-label="Go to The Properties of Logarithms" href="https://openstax.org/l/proplog" rel="noopener nofollow" target="_blank">The Properties of Logarithms</a></li>
+<li><a aria-label="Go to Expand Logarithmic Expressions" href="https://openstax.org/l/expandlog" rel="noopener nofollow" target="_blank">Expand Logarithmic Expressions</a></li>
+<li><a aria-label="Go to Evaluate a Natural Logarithmic Expression" href="https://openstax.org/l/evaluatelog" rel="noopener nofollow" target="_blank">Evaluate a Natural Logarithmic Expression</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/6-5-logarithmic-properties">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

@@ -1,0 +1,2313 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>5.5: Zeros of Polynomial Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-5-4-dividing-polynomials.html">Previous: 5.4</a><a href="section-5-6-rational-functions.html">Next: 5.6</a><a href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>5.5: Zeros of Polynomial Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Evaluate a polynomial using the Remainder Theorem.</li>
+<li>Use the Factor Theorem to solve a polynomial equation.</li>
+<li>Use the Rational Zero Theorem to find rational zeros.</li>
+<li>Find zeros of a polynomial function.</li>
+<li>Use the Linear Factorization Theorem to find polynomials with given zeros.</li>
+<li>Use Descartes’ Rule of Signs.</li>
+<li>Solve real-world applications of polynomial equations</li>
+</ul></section></div>
+<p id="fs-id1165137758829">A new bakery offers decorated, multi-tiered cakes for display and cutting at Quinceañera and wedding celebrations, as well as sheet cakes to serve most of the guests. The bakery wants the volume of a small sheet cake to be 351 cubic inches. The cake is in the shape of a rectangular solid. They want the length of the cake to be four inches longer than the width of the cake and the height of the cake to be one-third of the width. What should the dimensions of the cake pan be?</p><p id="eip-151">This problem can be solved by writing a cubic function and solving a cubic equation for the volume of the cake. In this section, we will discuss a variety of tools for writing polynomial functions and solving polynomial equations.</p><section data-depth="1" id="fs-id1165135533136"><h3 data-type="title">Evaluating a Polynomial Using the Remainder Theorem</h3>
+<p id="fs-id1165135471230">In the last section, we learned how to divide polynomials. We can now use polynomial division to evaluate polynomials using the <span data-type="term" group-by="R" id="term-00006">Remainder Theorem</span>. If the polynomial is divided by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>–</mo><mi>k</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the remainder may be found quickly by evaluating the polynomial function at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>k</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> that is, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mrow><mo>(</mo>
+<mi>k</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> Let’s walk through the proof of the theorem.</p><p id="fs-id1165134085965">Recall that the <span class="no-emphasis" data-type="term" group-by="D" id="term-00007">Division Algorithm</span> states that, given a polynomial dividend <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and a non-zero polynomial divisor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>, there exist unique polynomials <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> such that</p><div class="unnumbered" data-label="" data-type="equation" id="eip-753"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134094600">and either <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span></span> or the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is less than the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>. In practice divisors, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> will have degrees less than or equal to the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>. If the divisor, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> this takes the form</p><div class="unnumbered" data-label="" data-type="equation" id="eip-567"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137447771">Since the divisor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mi>k</mi></mrow>
+</mrow></semantics></math></span></span> is linear, the remainder will be a constant, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> And, if we evaluate this for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mi>k</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we have</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-791">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>0</mn><mo>⋅</mo><mi>q</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mi>r</mi></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135572088">In other words, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is the remainder obtained by dividing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="ui-has-child-title" data-type="note" id="fs-id1165134042705"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Remainder Theorem</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137725230">If a polynomial <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is divided by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> then the remainder is the value <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137823272"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165134130150"><strong>Given a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mi>k</mi></mrow>
+</mrow></semantics></math></span></span> using the Remainder Theorem.</strong></p><ol id="fs-id1165137870981" type="1">
+<li>Use synthetic division to divide the polynomial by <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>The remainder is the value <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_03_06_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135199549"><header></header><section><div data-type="problem" id="fs-id1165137727226"><div class="os-problem-container"><h4 data-type="title">Using the Remainder Theorem to Evaluate a Polynomial</h4>
+<p id="fs-id1165137855032">Use the Remainder Theorem to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>15</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>7</mn></mrow>
+</mrow></semantics></math></span></span>
+      at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165137627424"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135397290">We can check our answer by evaluating <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133308313">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>6</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>15</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>7</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>6</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+<mn>4</mn>
+</msup>
+<mo>−</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>15</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>25</mn></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137771250">To find the remainder using the Remainder Theorem, use synthetic division to divide the polynomial by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="An image showing a synthetic division problem with 2 as the divisor and the polynomial coefficients 6, -1, -15, 2, -7. The intermediate steps are shown, leading to the quotient coefficients 6, 11, 7, 16 and a remainder of 25." data-display="block" data-type="media" id="fs-id2085138">
+<img alt="An image showing a synthetic division problem with 2 as the divisor and the polynomial coefficients 6, -1, -15, 2, -7. The intermediate steps are shown, leading to the quotient coefficients 6, 11, 7, 16 and a remainder of 25." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/3a2dc1d526f65fed7c214e5ceb68e9193e22ef82" loading="lazy" src="../../notes-assets/e8ee97c08577c8ce5eb7.svg"/>
+</span>
+<p id="fs-id1165137932598">The remainder is 25. Therefore, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>25.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137580304"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_01"><header></header><section>
+<div data-type="problem" id="fs-id1165137566913"><div class="os-problem-container"><p id="fs-id1165137892503">Use the Remainder Theorem to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>5</mn>
+</msup>
+<mo>−</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>9</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>8</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn></mrow>
+</mrow></semantics></math></span></span>
+     at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mn>3.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135531579"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>412</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137894544"><h3 data-type="title">Using the Factor Theorem to Solve a Polynomial Equation</h3>
+<p id="fs-id1165137459796">The <strong>Factor Theorem </strong>is another theorem that helps us analyze polynomial equations. It tells us how the zeros of a polynomial are related to the factors. Recall that the Division Algorithm.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-10"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137463592">If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi></mrow>
+</mrow></semantics></math></span></span>
+   is a zero, then the remainder <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi></mrow>
+</mrow></semantics></math></span></span>
+   is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span></span>
+   and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mn>0</mn></mrow>
+</mrow></semantics></math></span></span>
+   or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135176357">Notice, written in this form, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mi>k</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> We can conclude if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>k</mi></mrow>
+</mrow></semantics></math></span></span>
+   is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mi>k</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165135684373">Similarly, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mi>k</mi></mrow>
+</mrow></semantics></math></span></span>
+   is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+   then the remainder of the Division Algorithm <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow>
+</mrow></semantics></math></span></span>
+   is 0. This tells us that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>k</mi></mrow>
+</mrow></semantics></math></span></span>
+   is a zero.</p>
+<p id="fs-id1165132943504">This pair of implications is the Factor Theorem. As we will soon see, a polynomial of degree <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi></mrow>
+</mrow></semantics></math></span></span>
+   in the complex number system will have <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span>
+   zeros. We can use the Factor Theorem to completely factor a polynomial into the product of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span>
+   factors. Once the polynomial has been completely factored, we can easily determine the zeros of the polynomial.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165135173601"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Factor Theorem</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135575975">According to the <span data-type="term" group-by="F" id="term-00008">Factor Theorem</span>, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>k</mi></mrow>
+</mrow></semantics></math></span></span>
+    is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+    if and only if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+    is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137809910"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165133356017"><strong>Given a factor and a third-degree polynomial, use the Factor Theorem to factor the polynomial.
+   </strong>
+</p>
+<ol id="fs-id1165135383467" type="1"><li>Use synthetic division to divide the polynomial by <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Confirm that the remainder is 0.</li>
+<li>Write the polynomial as the product of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span> and the quadratic quotient.</li>
+<li>If possible, factor the quadratic.</li>
+<li>Write the polynomial as the product of factors.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_03_06_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134273636"><header></header><section><div data-type="problem" id="fs-id1165134273638"><div class="os-problem-container"><h4 data-type="title">Using the Factor Theorem to Find the Zeros of a Polynomial Expression</h4>
+<p id="fs-id1165134198723">Show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+      is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>6</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>x</mi><mo>+</mo><mn>30.</mn></mrow>
+</mrow></semantics></math></span></span> Find the remaining factors. Use the factors to determine the zeros of the <span class="no-emphasis" data-type="term" group-by="p" id="term-00009">polynomial</span>.</p></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134109661">We can use synthetic division to show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is a factor of the polynomial.<span data-count="1" data-type="newline"><br/></span></p>
+<span data-alt="A synthetic division problem shows -2 dividing into coefficients 1, -6, -1, 30. The result is 1, -8, 15, with a remainder of 0, indicating x=-2 is a root." data-display="block" data-type="media" id="fs-id1527484">
+<img alt="A synthetic division problem shows -2 dividing into coefficients 1, -6, -1, 30. The result is 1, -8, 15, with a remainder of 0, indicating x=-2 is a root." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/9c49839b3f8bbaee651e91764e9b4d4cc7d471a7" loading="lazy" src="../../notes-assets/076e964c6616bfa898fc.svg"/>
+</span>
+<p id="fs-id1165134261634">The remainder is zero, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is a factor of the polynomial. We can use the Division Algorithm to write the polynomial as the product of the divisor and the quotient:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137848793"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>15</mn><mo>)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135440193">We can factor the quadratic factor to write the polynomial as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134554306"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137605065">By the Factor Theorem, the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>6</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>x</mi><mo>+</mo><mn>30</mn></mrow>
+</mrow></semantics></math></span></span> are –2, 3, and 5.</p></div></section>
+<section class="worked-example" id="fs-id1165137538735"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137476731"><div class="os-problem-container"><p id="fs-id1165134569514">Use the Factor Theorem to find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>4</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>16</mn></mrow>
+</mrow></semantics></math></span></span>
+     given that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+     is a factor of the polynomial.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137470625">The zeros are 2, –2, and –4.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165134152972"><h3 data-type="title">Using the Rational Zero Theorem to Find Rational Zeros</h3><p id="fs-id1165137660817">Another use for the Remainder Theorem is to test whether a rational number is a zero for a given polynomial. But first we need a pool of rational numbers to test. The <span data-type="term" group-by="R" id="term-00010">Rational Zero Theorem</span> helps us to narrow down the number of possible rational zeros using the ratio of the factors of the constant term and factors of the leading <span class="no-emphasis" data-type="term" group-by="c" id="term-00011">coefficient</span> of the polynomial</p>
+<p id="fs-id1165135508309">Consider a quadratic function with two zeros, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mfrac>
+<mn>2</mn>
+<mn>5</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span>
+   and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>=</mo><mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+<mspace width="0.2em"></mspace><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+   By the Factor Theorem, these zeros have factors associated with them. Let us set each factor equal to 0, and then construct the original quadratic function absent its stretching factor.</p>
+<span data-alt="This image demonstrates how to build a quadratic function from its roots. It shows the progression from fractional roots to integer factors, then multiplying these factors to form the quadratic expression, and finally expanding it." data-display="block" data-type="media" id="eip-id1165135315549">
+<img alt="This image demonstrates how to build a quadratic function from its roots. It shows the progression from fractional roots to integer factors, then multiplying these factors to form the quadratic expression, and finally expanding it." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/9d68ac2db23afc8ab023d9c0821d0af90b5bd2b9" loading="lazy" src="../../notes-assets/9602f48777ab38adbbef.svg"/>
+</span><p id="fs-id1165135485170">Notice that two of the factors of the constant term, 6, are the two numerators from the original rational roots: 2 and 3. Similarly, two of the factors from the leading coefficient, 20, are the two denominators from the original rational roots: 5 and 4.</p>
+<p id="fs-id1165137761317">We can infer that the numerators of the rational roots will always be factors of the constant term and the denominators will be factors of the leading coefficient. This is the essence of the Rational Zero Theorem; it is a means to give us a pool of possible rational zeros.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137737069"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Rational Zero Theorem</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135530393">The <span data-type="term" group-by="R" id="term-00012">Rational Zero Theorem</span> states that, if the polynomial <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<msup>
+<mi>x</mi>
+<mi>n</mi>
+</msup>
+<mo>+</mo><msub>
+<mi>a</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+</msub>
+<msup>
+<mi>x</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo>+</mo><mn>...</mn><mo>+</mo><msub>
+<mi>a</mi>
+<mn>1</mn>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mi>a</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> has integer coefficients <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math></span></span>, then every rational zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+    has the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>p</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of the constant term <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>a</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>q</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of the leading coefficient <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165137736282">When the leading coefficient is 1, the possible rational zeros are the factors of the constant term.</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137736287"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137446561"><strong>Given a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> use the Rational Zero Theorem to find rational zeros.</strong></p><ol id="fs-id1165137662157" type="1"><li>Determine all factors of the constant term and all factors of the leading coefficient.</li>
+<li>Determine all possible values of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>,</mo></mrow>
+</mrow></semantics></math></span> where <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi></mrow>
+</mrow></semantics></math></span> is a factor of the constant term and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>q</mi></mrow>
+</mrow></semantics></math></span> is a factor of the leading coefficient. Be sure to include both positive and negative candidates.</li>
+<li>Determine which possible zeros are actual zeros by evaluating each case of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mstyle scriptlevel="+1">
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mstyle>
+<mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li></ol>
+</div></section></div><section class="worked-example" id="Example_03_06_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135319520"><header></header><section><div data-type="problem" id="fs-id1165135319523"><div class="os-problem-container"><h4 data-type="title">Listing All Possible Rational Zeros</h4>
+<p id="fs-id1165135640968">List all possible rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134179675">The only possible rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+      are the quotients of the factors of the last term, –4, and the factors of the leading coefficient, 2. </p>
+<p id="fs-id1165132972963">The constant term is –4; the factors of –4 are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi><mo>=</mo><mn>±1</mn><mo>,</mo><mn>±2</mn><mo>,</mo><mn>±4.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165137571546">The leading coefficient is 2; the factors of 2 are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>q</mi><mo>=</mo><mn>±1</mn><mo>,</mo><mn>±2.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135557830">If any of the four real zeros are rational zeros, then they will be of one of the following factors of –4 divided by one of the factors of 2.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134284372"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>=</mo><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>1</mn>
+<mn>1</mn>
+</mfrac>
+<mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>   </mtext></mrow>
+</mtd>
+<mtd>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>=</mo><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>2</mn>
+<mn>1</mn>
+</mfrac>
+<mo>,</mo><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>2</mn>
+<mn>2</mn>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>   </mtext></mrow>
+</mtd>
+<mtd>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>=</mo><mspace width="0.5em"></mspace><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>4</mn>
+<mn>1</mn>
+</mfrac>
+<mo>,</mo><mo>±</mo><mspace width="0.5em"></mspace><mfrac>
+<mn>4</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135351678">Note that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>2</mn>
+</mfrac>
+<mo>=</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span></span>
+      and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>2</mn>
+</mfrac>
+<mo>=</mo><mn>2</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> which have already been listed. So we can shorten our list.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134284366"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mtext>Factors of the last</mtext></mrow>
+<mrow>
+<mtext>Factors of the first</mtext></mrow>
+</mfrac>
+<mo>=</mo><mn>±1</mn><mo>,</mo><mn>±2</mn><mo>,</mo><mn>±4</mn><mo>,</mo><mo>±</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div></div></section>
+<section class="worked-example" id="Example_03_06_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137611543"><header></header><section><div data-type="problem" id="fs-id1165137611546"><div class="os-problem-container"><h4 data-type="title">Using the Rational Zero Theorem to Find Rational Zeros</h4>
+<p id="fs-id1165137459844">Use the Rational Zero Theorem to find the rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135154382">The Rational Zero Theorem tells us that if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+      then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of 1 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>q</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of 2. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132032466">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mfrac><mi>p</mi><mi>q</mi></mfrac></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mfrac><mrow><mtext>factor of constant term</mtext></mrow><mrow>
+<mtext>factor of leading coefficient</mtext></mrow></mfrac></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mfrac><mrow><mtext>factor of 1</mtext></mrow><mrow><mtext>factor of 2</mtext></mrow></mfrac></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135209688">The factors of 1 are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn></mrow>
+</mrow></semantics></math></span></span> and the factors of 2 are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±2.</mn></mrow>
+</mrow></semantics></math></span></span> The possible values for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> These are the possible rational zeros for the function. We can determine which of the possible zeros are actual zeros by substituting these values for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137901111">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right"><mrow><mi>f</mi><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mn>2</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mn>−1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>4</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right"><mrow><mi>f</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mn>2</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>3</mn>
+</msup>
+<mo>+</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137731309">Of those, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1,</mn><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo><mspace width="0.5em"></mspace><mtext>and </mtext><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> are not zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> 1 is the only rational zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<section class="worked-example" id="fs-id1165137862894"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_03"><header></header><section>
+<div data-type="problem" id="fs-id1165134198688"><div class="os-problem-container"><p id="fs-id1165134198689">Use the Rational Zero Theorem to find the rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137724983">There are no rational zeros.</p></div></section>
+</section><section data-depth="1" id="fs-id1165137724990"><h3 data-type="title">Finding the Zeros of Polynomial Functions</h3>
+<p id="fs-id1165135530405">The Rational Zero Theorem helps us to narrow down the list of possible rational zeros for a polynomial function. Once we have done this, we can use <span class="no-emphasis" data-type="term" group-by="s" id="term-00013">synthetic division</span> repeatedly to determine all of the <span data-type="term" group-by="z" id="term-00014">zeros</span> of a polynomial function.</p><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165134155131"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165133364811"><strong>Given a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> use synthetic division to find its zeros.</strong></p><ol id="fs-id1165135400178" type="1">
+<li>Use the Rational Zero Theorem to list all possible rational zeros of the function.</li>
+<li>Use synthetic division to evaluate a given possible zero by synthetically dividing the candidate into the polynomial. If the remainder is 0, the candidate is a zero. If the remainder is not zero, discard the candidate.</li>
+<li>Repeat step two using the quotient found with synthetic division. If possible, continue until the quotient is a quadratic.</li>
+<li>Find the zeros of the quadratic function. Two possible methods for solving quadratics are factoring and using the quadratic formula.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_03_06_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137761977"><header></header><section><div data-type="problem" id="fs-id1165134198663"><div class="os-problem-container"><h4 data-type="title">Finding the Zeros of a Polynomial Function with Repeated Real Zeros</h4>
+<p id="fs-id1165134198668">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135519273"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135519278">Look at the graph of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> in <a aria-label="View Figure 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Figure_03_06_001">Figure 1</a>. Notice, at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mn>0.5</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the graph bounces off the <em data-effect="italics">x</em>-axis, indicating the even multiplicity (2,4,6…) for the zero <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mn>0.5.</mn></mrow>
+</mrow></semantics></math></span></span>
+      At <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>1</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the graph crosses the <em data-effect="italics">x</em>-axis, indicating the odd multiplicity (1,3,5…) for the zero <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="os-figure" id="Figure_03_06_001"><figure class="small ui-has-child-figcaption" data-id="Figure_03_06_001">
+<span data-alt="Graph of a polynomial that have its local maximum at (-0.5, 0) labeled as “Bounce” and its x-intercept at (1, 0) labeled, “Cross”." data-type="media" id="fs-id1165137932462">
+<img alt="Graph of a polynomial that have its local maximum at (-0.5, 0) labeled as “Bounce” and its x-intercept at (1, 0) labeled, “Cross”." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/44c0231c001a2247d1310ed865d9ef893c11241f" loading="lazy" src="../../notes-assets/d97827c3b8ee51df0401.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135393366">The Rational Zero Theorem tells us that if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi></mrow>
+</mrow></semantics></math></span></span>
+      is a factor of –1 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>q</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of 4. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132148416"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mtext>factor of constant term</mtext></mrow>
+<mrow>
+<mtext>factor of leading coefficient</mtext></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mtext>factor of –1</mtext></mrow>
+<mrow>
+<mtext>factor of 4</mtext></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135501059">The factors of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>–1</mn></mrow>
+</mrow></semantics></math></span></span>
+      are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn></mrow>
+</mrow></semantics></math></span></span>
+      and the factors of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>4</mn></mrow>
+</mrow></semantics></math></span></span>
+      are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn><mo>,</mo><mn>±2</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±4.</mn></mrow>
+</mrow></semantics></math></span></span> The possible values for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+      These are the possible rational zeros for the function. We will use synthetic division to evaluate each possible zero until we find one that gives a remainder of 0. Let’s begin with 1.</p>
+<span data-alt="A synthetic division problem is displayed, showing the division of a polynomial with coefficients 4, 0, -3, -1 by (x-1), yielding a quotient with coefficients 4, 4, 1 and a remainder of 0." data-type="media" id="fs-id1164451031904">
+<img alt="A synthetic division problem is displayed, showing the division of a polynomial with coefficients 4, 0, -3, -1 by (x-1), yielding a quotient with coefficients 4, 4, 1 and a remainder of 0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/96b053c41bec8626d2e4b6118303c3f6fc5b367f" loading="lazy" src="../../notes-assets/6203a25f18da9db85eab.svg"/>
+</span>
+<p id="fs-id1165137934395">Dividing by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+      gives a remainder of 0, so 1 is a zero of the function. The polynomial can be written as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135183905"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>4</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137605971">The quadratic is a perfect square. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+      can be written as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137397708"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135564194">We already know that 1 is a zero. The other zero will have a multiplicity of 2 because the factor is squared. To find the other zero, we can set the factor equal to 0.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135329712">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right"><mi>x</mi></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135651485">The zeros of the function are 1 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> with multiplicity 2.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137461780"><h3 data-type="title">Using the Fundamental Theorem of Algebra</h3>
+<p id="fs-id1165135547255">Now that we can find rational zeros for a polynomial function, we will look at a theorem that discusses the number of complex zeros of a polynomial function. The <strong>Fundamental Theorem of Algebra </strong>tells us that every polynomial function has at least one complex zero. This theorem forms the foundation for solving polynomial equations.</p>
+<p id="fs-id1165137771429">Suppose <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> is a polynomial function of degree four, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.</mn></mrow>
+</mrow></semantics></math></span></span> The Fundamental Theorem of Algebra states that there is at least one complex solution, call it <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>c</mi>
+<mn>1</mn>
+</msub>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> By the Factor Theorem, we can write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> as a product of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mtext>1</mtext>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> and a polynomial quotient. Since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mtext>1</mtext>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> is linear, the polynomial quotient will be of degree three. Now we apply the Fundamental Theorem of Algebra to the third-degree polynomial quotient. It will have at least one complex zero, call it <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>c</mi>
+<mtext>2</mtext>
+</msub>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> So we can write the polynomial quotient as a product of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mtext>2</mtext>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> and a new polynomial quotient of degree two. Continue to apply the Fundamental Theorem of Algebra until all of the zeros are found. There will be four of them and each one will yield a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="ui-has-child-title" data-type="note" id="fs-id1165135693782"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">The Fundamental Theorem of Algebra</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id2164365">The <span data-type="term" group-by="F" id="term-00015">Fundamental Theorem of Algebra</span> states that, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is a polynomial of degree <em data-effect="italics">n &gt; 0</em>, then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> has at least one complex zero.</p><p id="fs-id1165135409342">We can use this theorem to argue that, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is a polynomial of degree <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi></mrow>
+</mrow></semantics></math></span></span>
+    is a non-zero real number, then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> has exactly <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span>
+    linear factors</p><div class="unnumbered" data-label="" data-type="equation" id="eip-750"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">)</mo><mn>...</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub>
+<mi>c</mi>
+<mi>n</mi>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137889849">where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><msub>
+<mi>c</mi>
+<mn>1</mn>
+</msub>
+<mo>,</mo><msub>
+<mi>c</mi>
+<mn>2</mn>
+</msub>
+<mo>,</mo><mn>...</mn><mo>,</mo><msub>
+<mi>c</mi>
+<mi>n</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> are complex numbers. Therefore, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> has <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span> roots if we allow for multiplicities.</p></div></section></div><div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135481201"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135481208"><strong>Does every polynomial have at least one imaginary zero?</strong></p><p id="fs-id1165137883746"><em data-effect="italics">No. Real numbers are a subset of complex numbers, but not the other way around. A complex number is not necessarily imaginary. Real numbers are also complex numbers.</em></p></div></section></div>
+<section class="worked-example" id="Example_03_06_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135658206"><header></header><section><div data-type="problem" id="fs-id1165135658208"><div class="os-problem-container"><h4 data-type="title">Finding the Zeros of a Polynomial Function with Complex Zeros</h4>
+<p id="fs-id1165135658213">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>9</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>+</mo><mn>3.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135640992"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135640998">Look at the graph of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Figure_03_06_002">Figure 2</a>. Notice that, at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>−3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the graph crosses the <em data-effect="italics">x</em>-axis, indicating an odd multiplicity (1) for the zero <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>–3.</mn></mrow>
+</mrow></semantics></math></span></span> Also note the presence of the two turning points. This means that, since there is a 3<sup>rd</sup> degree polynomial, we are looking at the maximum number of turning points. So, the end behavior of increasing without bound to the right and decreasing without bound to the left will continue. Thus, all the <em data-effect="italics">x</em>-intercepts for the function are shown. So either the multiplicity of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>−3</mn></mrow>
+</mrow></semantics></math></span></span> is 1 and there are two complex solutions, which is what we found, or the multiplicity at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>−3</mn></mrow>
+</mrow></semantics></math></span></span> is three. Either way, our result is correct. </p><div class="os-figure" id="Figure_03_06_002"><figure class="small ui-has-child-figcaption" data-id="Figure_03_06_002">
+<span data-alt="Graph of a polynomial with its x-intercept at (-3, 0) labeled as “Cross”." data-type="media" id="fs-id1165135372087">
+<img alt="Graph of a polynomial with its x-intercept at (-3, 0) labeled as “Cross”." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/dc5041a99905fd98ab862a51011d7a13c69321c4" loading="lazy" src="../../notes-assets/68045bf542de9172b96d.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137430512">The Rational Zero Theorem tells us that if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of 3 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>q</mi></mrow>
+</mrow></semantics></math></span></span> is a factor of 3. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135258116">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mrow><mfrac><mi>p</mi><mi>q</mi></mfrac></mrow></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mtext>factor of constant term</mtext></mrow>
+<mrow>
+<mtext>factor of leading coefficient</mtext></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mtext>factor of 3</mtext></mrow>
+<mrow>
+<mtext>factor of 3</mtext></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165134212112">The factors of 3 are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±1</mn></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±3.</mn></mrow>
+</mrow></semantics></math></span></span> The possible values for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>p</mi>
+<mi>q</mi>
+</mfrac>
+<mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and therefore the possible rational zeros for the function, are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>±3</mn><mo>,</mo><mtext>±1, and </mtext><mo>±</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span> We will use synthetic division to evaluate each possible zero until we find one that gives a remainder of 0. Let’s begin with –3.</p>
+<span data-alt="An image demonstrating the process of synthetic division with a divisor of -3 and dividend coefficients of 3, 9, 1, and 3. The result shows quotient coefficients of 3, 0, 1, and a remainder of 0." data-type="media" id="fs-id1164451006413">
+<img alt="An image demonstrating the process of synthetic division with a divisor of -3 and dividend coefficients of 3, 9, 1, and 3. The result shows quotient coefficients of 3, 0, 1, and a remainder of 0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/9728d3c04a778783574513ddf3a77e4d30aae9b8" loading="lazy" src="../../notes-assets/a26f5d4f7d41ee3b69f3.svg"/>
+</span>
+<p id="fs-id1165135675242">Dividing by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives a remainder of 0, so –3 is a zero of the function. The polynomial can be written as</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134240862"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>(</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>1</mn><mo>)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134224528">We can then set the quadratic equal to 0 and solve to find the other zeros of the function.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134250674">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>3</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>1</mn></mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mn>0</mn></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>±</mo><msqrt>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</msqrt>
+<mo>=</mo><mo>±</mo><mfrac>
+<mrow>
+<mi>i</mi><msqrt>
+<mn>3</mn>
+</msqrt>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137756902">The zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+      are –3 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mfrac>
+<mrow>
+<mi>i</mi><msqrt>
+<mn>3</mn>
+</msqrt>
+</mrow>
+<mn>3</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+<section class="worked-example" id="fs-id1165133065163"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_04"><header></header><section>
+<div data-type="problem" id="fs-id1165135538761"><div class="os-problem-container"><p id="fs-id1165135538762">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>4.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137771383">The zeros are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mtext>–4, </mtext><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo><mspace width="0.5em"></mspace><mtext>and 1</mtext><mtext>.</mtext></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135501998"><h3 data-type="title">Using the Linear Factorization Theorem to Find Polynomials with Given Zeros</h3>
+<p id="fs-id1165135502003">A vital implication of the <span class="no-emphasis" data-type="term" group-by="F" id="term-00016">Fundamental Theorem of Algebra</span>, as we stated above, is that a polynomial function of degree <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi></mrow>
+</mrow></semantics></math></span></span>
+   will have <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span> zeros in the set of complex numbers, if we allow for multiplicities. This means that we can factor the polynomial function into <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>n</mi></mrow>
+</mrow></semantics></math></span></span> factors. The <span data-type="term" group-by="L" id="term-00017">Linear Factorization Theorem</span> tells us that a polynomial function will have the same number of factors as its degree, and that each factor will be in the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>c</mi></mrow>
+</mrow></semantics></math></span></span> is a complex number.</p><p id="eip-651">Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span>
+   be a polynomial function with real coefficients, and suppose <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mtext>, </mtext><mi>b</mi><mo>≠</mo><mn>0</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+   is a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+   Then, by the Factor Theorem, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+   is a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+   For <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi></mrow>
+</mrow></semantics></math></span></span>
+   to have real coefficients, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span>
+   must also be a factor of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+   This is true because any factor other than <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+   when multiplied by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>x</mi><mo>−</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+   will leave imaginary components in the product. Only multiplication with conjugate pairs will eliminate the imaginary parts and result in real coefficients. In other words, if a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi></mrow>
+</mrow></semantics></math></span></span>
+   with real coefficients has a complex zero <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+   then the complex conjugate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi></mrow>
+</mrow></semantics></math></span></span>
+   must also be a zero of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> This is called the <span class="no-emphasis" data-type="term" group-by="C" id="term-00018">Complex Conjugate Theorem</span>.</p><div class="ui-has-child-title" data-has-label="true" data-label="A Genereal Note" data-type="note" id="fs-id1165137933095"><header><h3 class="os-title" data-label-parent="A Genereal Note" data-type="title">
+<span class="os-title-label" data-type="">Complex Conjugate Theorem</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135436621">According to the <span data-type="term" group-by="L" id="term-00019">Linear Factorization Theorem</span><strong>,</strong> a polynomial function will have the same number of factors as its degree, and each factor will be in the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> , where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>c</mi></mrow>
+</mrow></semantics></math></span></span>
+    is a complex number.</p>
+<p id="fs-id1165135443970">If the polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi></mrow>
+</mrow></semantics></math></span></span>
+    has real coefficients and a complex zero in the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+    then the complex conjugate of the zero, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+    is also a zero.</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137832786"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137832792"><strong>Given the zeros of a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi></mrow>
+</mrow></semantics></math></span></span> and a point (<em data-effect="italics">c</em>, <em data-effect="italics">f</em>(<em data-effect="italics">c</em>)) on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> use the Linear Factorization Theorem to find the polynomial function.</strong></p><ol id="fs-id1165135534938" type="1"><li>Use the zeros to construct the linear factors of the polynomial.</li>
+<li>Multiply the linear factors to expand the polynomial.</li>
+<li>Substitute <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mrow><mo>(</mo>
+<mrow>
+<mi>c</mi><mo>,</mo><mi>f</mi><mrow><mo>(</mo>
+<mi>c</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span> into the function to determine the leading coefficient.</li>
+<li>Simplify.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_03_06_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137737023"><header></header><section><div data-type="problem" id="fs-id1165137737025"><div class="os-problem-container"><h4 data-type="title">Using the Linear Factorization Theorem to Find a Polynomial with Given Zeros</h4>
+<p id="fs-id1165134151154">Find a fourth degree polynomial with real coefficients that has zeros of –3, 2, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>100.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+<div data-type="commentary" id="fs-id1165135154283"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135154288">We found that both <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mi>i</mi></mrow>
+</mrow></semantics></math></span></span> were zeros, but only one of these zeros needed to be given. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi></mrow>
+</mrow></semantics></math></span></span> is a zero of a polynomial with real coefficients, then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mi>i</mi></mrow>
+</mrow></semantics></math></span></span> must also be a zero of the polynomial because <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>−</mo><mi>i</mi></mrow>
+</mrow></semantics></math></span></span> is the complex conjugate of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>i</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165132964597">Because <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mi>i</mi></mrow>
+</mrow></semantics></math></span></span>
+      is a zero, by the Complex Conjugate Theorem <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>–</mo><mi>i</mi></mrow>
+</mrow></semantics></math></span></span>
+      is also a zero. The polynomial must have factors of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>,</mo><mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>,</mo><mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Since we are looking for a degree 4 polynomial, and now have four zeros, we have all four factors. Let’s begin by multiplying these factors.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134240855">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>a</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>a</mi><mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>)</mo><mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>1</mn><mo>)</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>a</mi><mo>(</mo><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>)</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165134065076">We need to find <em data-effect="italics">a</em> to ensure <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>–</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>100.</mn></mrow>
+</mrow></semantics></math></span></span> Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>–</mo><mn>2</mn><mo> </mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>100</mn></mrow>
+</mrow></semantics></math></span></span>
+      into <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133211946">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right"><mrow><mn>100</mn></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>a</mi><mo stretchy="false">(</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo></mrow>
+<mn>4</mn>
+</msup>
+<mo>+</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo></mrow>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>6</mn><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right"><mrow><mn>100</mn></mrow></mtd>
+<mtd><mo>=</mo></mtd>
+<mtd columnalign="left"><mrow><mi>a</mi><mo stretchy="false">(</mo><mn>−20</mn><mo stretchy="false">)</mo></mrow></mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>−5</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mi>a</mi>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137407591">So the polynomial function is</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134393731"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>−5</mn><mo>(</mo><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>+</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>)</mo></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135406977">or</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134366626"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>25</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>30</mn></mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165135340588"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135340596"><strong>If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow>
+</mrow></semantics></math></span></span>
+    were given as a zero of a polynomial with real coefficients, would <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>2</mn><mo>−</mo><mn>3</mn><mi>i</mi></mrow>
+</mrow></semantics></math></span></span>
+    also need to be a zero?</strong></p><p id="fs-id1165134170187"><em data-effect="italics">Yes. When any complex number with an imaginary component is given as a zero of a polynomial with real coefficients, the conjugate must also be a zero of the polynomial.</em></p>
+</div></section></div>
+<section class="worked-example" id="fs-id1165134170196"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_05"><header></header><section>
+<div data-type="problem" id="fs-id1165134130176"><div class="os-problem-container"><p id="fs-id1165134130177">Find a third degree polynomial with real coefficients that has zeros of 5 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>−</mo><mn>2</mn><mi>i</mi></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135186392"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mfrac>
+<mn>5</mn>
+<mn>2</mn>
+</mfrac>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135177650"><h3 data-type="title">Using Descartes’ Rule of Signs</h3><p id="fs-id1165135177655">There is a straightforward way to determine the possible numbers of positive and negative real zeros for any polynomial function. If the polynomial is written in descending order,<strong> Descartes’ Rule of Signs</strong> tells us of a relationship between the number of sign changes in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and the number of positive real zeros. For example, the polynomial function below has one sign change.</p>
+<span data-alt="The function, f(x)=x^4+x^3+x^2+x-1, has one sign change between x and -1.`" data-display="block" data-type="media" id="fs-id1165134378690">
+<img alt="The function, f(x)=x^4+x^3+x^2+x-1, has one sign change between x and -1.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/091b2d6b486be3d41b3695544dfdd3cf6d09c97b" loading="lazy" src="../../notes-assets/b9b1194001c8a3afae5f.svg"/>
+</span>
+<p id="fs-id1165135206081">This tells us that the function must have 1 positive real zero.</p>
+<p id="fs-id1165135206084">There is a similar relationship between the number of sign changes in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and the number of negative real zeros.</p><span data-alt="The function, f(-x)=(-x)^4+(-x)^3+(-x)^2+(-x)-1=+ x^4-x^3+x^2-x-1, has three sign changes between x^4 and x^3, x^3 and x^2, and x^2 and x.`" data-display="block" data-type="media" id="fs-id1165135152070">
+<img alt="The function, f(-x)=(-x)^4+(-x)^3+(-x)^2+(-x)-1=+ x^4-x^3+x^2-x-1, has three sign changes between x^4 and x^3, x^3 and x^2, and x^2 and x.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/3dc71e35741d82539bfd3dd48ae16c450899ac10" loading="lazy" src="../../notes-assets/cdf74c50108e9d178d86.svg"/>
+</span>
+<p id="fs-id1165135152083">In this case, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> has 3 sign changes. This tells us that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> could have 3 or 1 negative real zeros.</p><div class="ui-has-child-title" data-type="note" id="fs-id1165137844271"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Descartes’ Rule of Signs</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137844280">According to <span data-type="term" group-by="D" id="term-00020">Descartes’ Rule of Signs</span>, if we let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+<mi>a</mi>
+<mi>n</mi>
+</msub>
+<msup>
+<mi>x</mi>
+<mi>n</mi>
+</msup>
+<mo>+</mo><msub>
+<mi>a</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+</msub>
+<msup>
+<mi>x</mi>
+<mrow>
+<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo>+</mo><mn>...</mn><mo>+</mo><msub>
+<mi>a</mi>
+<mn>1</mn>
+</msub>
+<mi>x</mi><mo>+</mo><msub>
+<mi>a</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span>
+    be a polynomial function with real coefficients:</p>
+<ul id="fs-id1165134351104"><li>The number of positive real zeros is either equal to the number of sign changes of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span> or is less than the number of sign changes by an even integer.</li>
+<li>The number of negative real zeros is either equal to the number of sign changes of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span> or is less than the number of sign changes by an even integer.</li>
+</ul></div></section></div>
+<section class="worked-example" id="Example_03_06_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134149118"><header></header><section><div data-type="problem" id="fs-id1165134149120"><div class="os-problem-container"><h4 data-type="title">Using Descartes’ Rule of Signs</h4>
+<p id="fs-id1165134149125">Use Descartes’ Rule of Signs to determine the possible numbers of positive and negative real zeros for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>6</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>12.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135628637"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135628642">We can confirm the numbers of positive and negative real roots by examining a graph of the function. See <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Figure_03_06_007">Figure 5</a>. We can see from the graph that the function has 0 positive real roots and 2 negative real roots.</p><div class="os-figure" id="Figure_03_06_007"><figure class="small ui-has-child-figcaption" data-id="Figure_03_06_007">
+<span data-alt="Graph of f(x)=-x^4-3x^3+6x^2-4x-12 with x-intercepts at -4.42 and -1." data-type="media" id="fs-id1165135628652">
+<img alt="Graph of f(x)=-x^4-3x^3+6x^2-4x-12 with x-intercepts at -4.42 and -1." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/89af8a9761382e78793c93331fe32ac2fd3c169e" loading="lazy" src="../../notes-assets/1e8838afc5eeaf1890a9.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137932381">Begin by determining the number of sign changes.</p>
+<div class="os-figure" id="eip-idm621546272">
+<figure class="ui-has-child-figcaption" data-id="eip-idm621546272">
+<span data-alt="The function, f(x)=-x^4-3x^3+6x^2-4x-12, has two sign change between -3x^3 and 6x^2, and 6x^2 and -4x.`" data-type="media" id="fs-id1165135547276">
+<img alt="The function, f(x)=-x^4-3x^3+6x^2-4x-12, has two sign change between -3x^3 and 6x^2, and 6x^2 and -4x.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/60c3950699892782eefdd1be06740af0657a007a" loading="lazy" src="../../notes-assets/b7d2833d3e50c763b2fb.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165135547290">There are two sign changes, so there are either 2 or 0 positive real roots. Next, we examine <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> to determine the number of negative real roots.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id2178145"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>3</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>6</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>+</mo><mn>3</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>6</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>12</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<div class="os-figure" id="eip-idm408470768">
+<figure class="ui-has-child-figcaption" data-id="eip-idm408470768">
+<span data-alt="The function, f(-x)=-x^4+3x^3+6x^2+4x-12, has two sign change between -x^4 and 3x^3, and 4x and -12.`" data-type="media" id="fs-id1165134234614">
+<img alt="The function, f(-x)=-x^4+3x^3+6x^2+4x-12, has two sign change between -x^4 and 3x^3, and 4x and -12.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/f07259b9deeb90b9280394014d79a88409a125fe" loading="lazy" src="../../notes-assets/f754f553286ea9e60560.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165135383099">Again, there are two sign changes, so there are either 2 or 0 negative real roots.</p>
+<p id="fs-id1165135383102">There are four possibilities, as we can see in <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Table_03_06_01">Table 1</a>.</p><div class="os-table" id="Table_03_06_01"><div class="table-scroll"><table data-id="Table_03_06_01" data-summary=".."><colgroup><col data-align="center"/><col data-align="center"/><col data-align="center"/><col data-align="center"/></colgroup><thead>
+<tr>
+<th data-align="center" scope="col">Positive Real
+         Zeros</th>
+<th data-align="center" scope="col">Negative Real
+         Zeros</th>
+<th data-align="center" scope="col">Complex
+         Zeros</th>
+<th data-align="center" scope="col">Total
+         Zeros</th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">2</td>
+<td data-align="center">2</td>
+<td data-align="center">0</td>
+<td data-align="center">4</td>
+</tr>
+<tr>
+<td data-align="center">2</td>
+<td data-align="center">0</td>
+<td data-align="center">2</td>
+<td data-align="center">4</td>
+</tr>
+<tr>
+<td data-align="center">0</td>
+<td data-align="center">2</td>
+<td data-align="center">2</td>
+<td data-align="center">4</td>
+</tr>
+<tr>
+<td data-align="center">0</td>
+<td data-align="center">0</td>
+<td data-align="center">4</td>
+<td data-align="center">4</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">
+<span data-type="title">
+<!-- no-selfclose -->
+</span>
+</span>
+</div>
+</div>
+</div></section><section class="worked-example" id="fs-id1165135177609"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_06"><header></header><section>
+<div data-type="problem" id="fs-id1165135177621"><div class="os-problem-container"><p id="fs-id1165135177622">Use Descartes’ Rule of Signs to determine the maximum possible numbers of positive and negative real zeros for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<mo>−</mo><mn>10</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>11</mn><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>15</mn><mi>x</mi><mo>+</mo><mn>12.</mn></mrow>
+</mrow></semantics></math></span></span>
+     Use a graph to verify the numbers of positive and negative real zeros for the function.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135440206">There must be 4, 2, or 0 positive real roots and 0 negative real roots. The graph shows that there are 2 positive real zeros and 0 negative real zeros.</p></div></section>
+</section><section data-depth="1" id="fs-id1165135440213"><h3 data-type="title">Solving Real-World Applications </h3>
+<p id="fs-id1165135440219">We have now introduced a variety of tools for solving polynomial equations. Let’s use these tools to solve the bakery problem from the beginning of the section.</p>
+<section class="worked-example" id="Example_03_06_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135440229"><header></header><section><div data-type="problem" id="fs-id1165135440231"><div class="os-problem-container"><h4 data-type="title">Solving Polynomial Equations</h4>
+<p id="fs-id1165135440236">A new bakery offers decorated, multi-tiered cakes for display and cutting at Quinceañera and wedding celebrations, as well as sheet cakes to serve most of the guests. The bakery wants the volume of a small sheet cake to be 351 cubic inches. The cake is in the shape of a rectangular solid. They want the length of the cake to be four inches longer than the width of the cake and the height of the cake to be one-third of the width. What should the dimensions of the cake pan be?</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135549014">Begin by writing an equation for the volume of the cake. The volume of a rectangular solid is given by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>=</mo><mi>l</mi><mi>w</mi><mi>h</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> We were given that the length must be four inches longer than the width, so we can express the length of the cake as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>l</mi><mo>=</mo><mi>w</mi><mo>+</mo><mn>4.</mn></mrow>
+</mrow></semantics></math></span></span> We were given that the height of the cake is one-third of the width, so we can express the height of the cake as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>w</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Let’s write the volume of the cake in terms of width of the cake.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165131890583">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mi>V</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo stretchy="false">(</mo><mi>w</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>w</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>V</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<msup>
+<mi>w</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+<msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135173357">Substitute the given volume into this equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135479015">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>351</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<msup>
+<mi>w</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+<msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Substitute 351 for </mtext><mi>V</mi><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>1053</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>w</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>4</mn><msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Multiply both sides by 3</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>0</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>w</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>4</mn><msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1053</mn></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mspace width="2em"></mspace><mtext>Subtract 1053 from both sides</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134070008">Descartes' rule of signs tells us there is one positive solution. The Rational Zero Theorem tells us that the possible rational zeros are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mn>1</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>3</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>9</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>13</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>27</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>39</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>81</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>117</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>351</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span>
+      and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>±</mo><mn>1053.</mn></mrow>
+</mrow></semantics></math></span></span>
+      We can use synthetic division to test these possible zeros. Only positive numbers make sense as dimensions for a cake, so we need not test any negative values. Let’s begin by testing values that make the most sense as dimensions for a small sheet cake. Use synthetic division to check <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span> </p><span data-alt="A synthetic division calculation is shown where a polynomial with coefficients 1, 4, 0, and -1053 is divided by (x-1). The result of the division yields a quotient with coefficients 1, 5, 5, and a remainder of -1048." data-display="block" data-type="media" id="fs-id2384268">
+<img alt="A synthetic division calculation is shown where a polynomial with coefficients 1, 4, 0, and -1053 is divided by (x-1). The result of the division yields a quotient with coefficients 1, 5, 5, and a remainder of -1048." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/c09b45e17e7998d48121b7977456a306921adbc2" loading="lazy" src="../../notes-assets/f62bf0054145aee144cf.svg"/>
+</span>
+<p id="fs-id1165135693719">Since 1 is not a solution, we will check <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>3.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="A synthetic division problem is shown with 3 as the divisor and 1, 4, 0, and -1053 as the coefficients of the dividend. The result of the division yields a quotient with coefficients 1, 7, 21 and a remainder of -990." data-display="block" data-type="media" id="fs-id2384297">
+<img alt="A synthetic division problem is shown with 3 as the divisor and 1, 4, 0, and -1053 as the coefficients of the dividend. The result of the division yields a quotient with coefficients 1, 7, 21 and a remainder of -990." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/33d3598bea033c8024c02522200a26d5ac27ef6c" loading="lazy" src="../../notes-assets/b7da86c4ccd099d841b6.svg"/>
+</span>
+<p id="fs-id1165134037580">Since 3 is not a solution either, we will test <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>9.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="A synthetic division calculation is shown, dividing a polynomial by x-9. The coefficients of the polynomial are 1, 4, 0, -1053. The process yields a quotient with coefficients 1, 13, 117 and a remainder of 0." data-display="block" data-type="media" id="fs-id2384328">
+<img alt="A synthetic division calculation is shown, dividing a polynomial by x-9. The coefficients of the polynomial are 1, 4, 0, -1053. The process yields a quotient with coefficients 1, 13, 117 and a remainder of 0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/f8bd39805598ca3b872ce21aebf4ac90393b6b7b" loading="lazy" src="../../notes-assets/4da6a02f4b05b6f7239b.svg"/>
+</span>
+<p id="fs-id1165135238389">Synthetic division gives a remainder of 0, so 9 is a solution to the equation. We can use the relationships between the width and the other dimensions to determine the length and height of the sheet cake pan.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134173736"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>l</mi><mo>=</mo><mi>w</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>9</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>13</mn><mspace width="0.5em"></mspace><mtext>and </mtext><mi>h</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>w</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn>
+</mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137843234">The sheet cake pan should have dimensions 13 inches by 9 inches by 3 inches.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137843240"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_07"><header></header><section>
+<div data-type="problem" id="fs-id1165137843250"><div class="os-problem-container"><p id="fs-id1165137843251">A shipping container in the shape of a rectangular solid must have a volume of 84 cubic meters. The client tells the manufacturer that, because of the contents, the length of the container must be one meter longer than the width, and the height must be one meter greater than twice the width. What should the dimensions of the container be?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137817618">3 meters by 4 meters by 7 meters</p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165137817623"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137817630">Access these online resources for additional instruction and practice with zeros of polynomial functions.</p>
+<ul id="fs-id1165137817634">
+<li><a aria-label="Go to Real Zeros, Factors, and Graphs of Polynomial Functions" href="https://openstax.org/l/realzeros" rel="noopener nofollow" target="_blank">Real Zeros, Factors, and Graphs of Polynomial Functions</a></li>
+<li><a aria-label="Go to Complex Factorization Theorem" href="https://openstax.org/l/factortheorem" rel="noopener nofollow" target="_blank">Complex Factorization Theorem</a></li>
+<li><a aria-label="Go to Find the Zeros of a Polynomial Function" href="https://openstax.org/l/findthezeros" rel="noopener nofollow" target="_blank">Find the Zeros of a Polynomial Function</a></li>
+<li><a aria-label="Go to Find the Zeros of a Polynomial Function 2" href="https://openstax.org/l/findthezeros2" rel="noopener nofollow" target="_blank">Find the Zeros of a Polynomial Function 2</a></li>
+<li><a aria-label="Go to Find the Zeros of a Polynomial Function 3" href="https://openstax.org/l/findthezeros3" rel="noopener nofollow" target="_blank">Find the Zeros of a Polynomial Function 3</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

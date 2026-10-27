@@ -1,0 +1,389 @@
+<div class="chapter-content-module" data-book-content="true" data-type="page" id="page_0748ab1e-328c-49c1-92d5-4637e365805d"><h2 data-rex-keep="true" data-type="document-title" id="page_0748ab1e-328c-49c1-92d5-4637e365805d_titlecreatedbycookbook"><span class="os-number">4.4</span>
+<span class="os-divider"> </span>
+<span class="os-text" data-type="" itemprop="">Geometric Distribution</span>
+</h2>
+<p id="para-00001">There are four main characteristics of a geometric experiment.</p>
+<ol id="list-00001" type="1">
+<li>A trial is repeated until a success occurs. Think of this as one or more Bernoulli trials with all failures except the last one, which is a success. In other words, you keep repeating what you are doing until the first success. Then you stop. For example, you throw a dart at a bullseye until you hit the bullseye. The first time you hit the bullseye is a "success," so you stop throwing the dart. It might take six tries until you hit the bullseye. You can think of the trials as failure, failure, failure, failure, failure, success, STOP. In theory, the number of trials could go on forever.</li>
+<li>The repeated trials are independent of each other.</li>
+<li>The probability, p, of a success and the probability, q, of a failure is the same for each trial. <math display="inline"><semantics><mrow><mi>p</mi><mo>+</mo><mi>q</mi><mo> </mo><mo>=</mo><mn>1</mn></mrow><annotation-xml encoding="MathML-Content"><mi>p</mi><mo>+</mo><mi>q</mi><mo> </mo><mo>=</mo><mn>1</mn></annotation-xml></semantics></math> and <math display="inline"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>q</mi><mo>=</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>.</mo></annotation-xml></semantics></math> For example, the probability of rolling a three when you throw one fair die is <math display="inline"><semantics><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><annotation-xml encoding="MathML-Content"><mn>1</mn><mo>/</mo><mn>6</mn></annotation-xml></semantics></math>. This is true no matter how many times you roll the die. Suppose you want to know the probability of getting the first three on the fifth roll. On rolls one through four, you do not get a face with a three. The probability for each of the rolls is <math display="inline"><semantics><mrow><mi>q</mi><mo>=</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>,</mo></mrow><annotation-xml encoding="MathML-Content"><mi>q</mi><mo>=</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>,</mo></annotation-xml></semantics></math>  the probability of a failure. The probability of getting a first three on the fifth roll is 
+  <math display="inline"><semantics><mrow><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>1</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>0804</mn></mrow><annotation-xml encoding="MathML-Content"><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>5</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo>(</mo><mn>1</mn><mo>/</mo><mn>6</mn><mo>)</mo><mo> </mo><mo>=</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>0804</mn></annotation-xml></semantics></math></li>
+<li>The random variable X represents the number of the trial in which the first success occurs.  That is, X = the number of independent trials until the first success.</li>
+</ol>
+<p id="para-00002">The following are additional attributes of the geometric distribution:</p>
+<ol id="list-00002" start="5" style="counter-reset: list-item 4" type="1">
+<li>The random variable is discrete. The random variable may be defined in two ways depending upon the analyst’s interest. In the example above for throwing a die, the question was “What is the probability that the first success will be on the fifth throw?” Alternatively, the question could be asked as “What is the probability that it takes four failures before a success?” We will see that each way of asking the question will alter the form of the geometric probability density function slightly and will change the mean and standard deviation of the geometric pdf.</li>
+<li>Implicit in the random variable is that the probability of a success is constant and therefore so is the probability of a failure. For flipping a coin this is obvious, but in experiments that require skill, such as hitting a baseball or throwing a dart, one might consider that learning during the experiment would alter the probability of a success. The geometric distribution cannot capture “learning” thus the historical probability of success is assumed to be constant.</li>
+<li>The geometric distribution is “memoryless.” There are very few probability density functions that are what is known as “memoryless,” and the Geometric distribution is the only one with a discrete random variable that is memoryless. As an example, historically Major League Baseball player Jones has a record of hitting the ball for at least an advance to first base with a probability of 0.20. Jones has not had a hit in his last 10 times at bat. What is the probability that Jones will get a hit in his third time at bat? The answer ignores his 10 previous failures. All events prior to the events in current time are irrelevant and thus are considered “memoryless.”</li>
+</ol>
+<p id="para-00003">Formally: <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mi>n</mi><mo>+</mo><mi>k</mi><mo>|</mo><mi>x</mi><mo>≥</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mi>n</mi><mo>)</mo><mo>,</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mi>n</mi><mo>+</mo><mi>k</mi><mo>|</mo><mi>x</mi><mo>≥</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mi>n</mi><mo>)</mo><mo>,</mo></annotation-xml></semantics></math></span> where k = number of previous failures</p>
+<p id="para-00004">Jones’s probability of a hit begins anew each time he comes to bat. This feature of the geometric distribution results in a curious result: Drawing parts from a manufacturing process to test for parts that are defective, the geometric distribution begins with a clean slate each time the tests begin with no consideration of previous test results. More on this when we get to the exponential probability density function.</p>
+<div class="ui-has-child-title" data-type="example" id="element-328"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.17</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-341">You play a game of chance that you can either win or lose (there are no other possibilities) <strong>until</strong> you lose. Your probability of losing is <em data-effect="italics">p</em> = 0.57. What is the
+probability that it takes five games until you lose? Let <em data-effect="italics">X</em> = the number of games you play until you lose (includes the losing game). Then <em data-effect="italics">X</em> takes on the values 1, 2, 3, ... (could go on indefinitely). The probability question is <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 5).</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm23905008"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.17</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm107886512"><header></header><section>
+<div data-type="problem" id="fs-idm74999200"><div class="os-problem-container">
+<p id="fs-idm66653104">You throw darts at a board until you hit the center area. Your probability of hitting the center area is <em data-effect="italics">p</em> = 0.17. You want to find the probability that it takes eight throws until you hit the center. What values does <em data-effect="italics">X</em> take on?</p></div></div>
+</section></div>
+</div></section></div><div class="ui-has-child-title" data-type="example" id="element-15"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.18</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="exer-00001"><header></header><section>
+<div data-type="problem" id="prob-00001"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-320">A safety engineer feels that 35% of all industrial accidents in the plant are caused by failure of employees to follow instructions. They decide to look at the accident reports (selected randomly and replaced in the pile after reading) <strong>until</strong> they find one that shows an accident caused by failure of employees to follow instructions. On average, how many reports would the safety engineer <strong>expect</strong> to look at until they find a report showing an accident caused by employee failure to follow instructions? What is the probability that the safety engineer will have to examine at least three reports until they find a report showing an accident caused by employee failure to follow instructions?</p><p id="element-112">Let <em data-effect="italics">X</em> = the number of accidents the safety engineer must examine <strong>until</strong> they find a report showing an accident caused by employee failure to follow instructions. <em data-effect="italics">X</em> takes on the values 1, 2, 3, .... The first question asks you to find the <strong>expected value</strong> or the mean. The second question asks you to find <em data-effect="italics">P</em>(<em data-effect="italics">x</em> ≥ 3). ("At least" translates to a "greater than or equal to" symbol).</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="sol-00001">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="list-00003" type="a">
+<li>On average, how many reports would the safety engineer <strong>expect</strong> to review until they find a report showing an accident caused by something other than failure to follow instructions? This question asks you to find the <strong>expected value</strong> or the mean. This is the average number of failures from something other than following instructions. The formula for the mean of this geometric distribution is:<span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mi>E</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>≈</mo><mn>2</mn><mo>.</mo><mn>8</mn></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mi>E</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>≈</mo><mn>2</mn><mo>.</mo><mn>8</mn></annotation-xml></semantics></math><span data-type="newline"><br/></span>Note that the mean does not need to be a whole number although the random variable is discrete and must be a counting number</li>
+<li>What is the probability that the safety engineer will have to examine at least three reports until they find a report showing an accident caused by employee failure to follow instructions?<span data-type="newline"><br/></span>This question is answered by first defining the random variable. Let <em data-effect="italics">X</em> = the number of accidents the safety engineer must examine <strong>until</strong> they find a report showing an accident caused by employee failure to follow instructions. <em data-effect="italics">X</em> can take on the values 1, 2, 3, 4, … ∞. Unlike the binomial distribution with a fixed number of trials, the geometric distribution may have an infinite number of failed trials before a success occurs.<span data-type="newline"><br/></span>This second question asks you to find <math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo> </mo><mo>≥</mo><mo> </mo><mn>3</mn><mo>)</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mo>(</mo><mi>x</mi><mo> </mo><mo>≥</mo><mo> </mo><mn>3</mn><mo>)</mo></annotation-xml></semantics></math>. ("At least" translates to a "greater than or equal to" symbol.)<span data-type="newline"><br/></span>In a binomial distribution, we saw the solution to questions of “more than” or “less than” would be to calculate each probability individually and add from zero to three. If the probability of interest is “greater than or equal to” (≥) the individual probabilities are added from zero to three and then subtracted from one.<span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo> </mo><mo>≥</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mn>1</mn><mo>-</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>&lt;</mo><mn>3</mn><mo>)</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo> </mo><mo>≥</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mn>1</mn><mo>-</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>&lt;</mo><mn>3</mn><mo>)</mo></annotation-xml></semantics></math><span data-type="newline"><br/></span>Because we cannot add the full range of the geometric distribution random variable because it goes through infinity, an alternative solution is developed. An alternative geometric distribution pair of formulas provides solutions for questions asking for probabilities “more than” and “less than.”<span data-type="newline"><br/></span>If the question is:<span data-type="newline"><br/></span>What is the probability it takes MORE THAN n events to get first success?<span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>n</mi></msup></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&gt;</mo><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>n</mi></msup></annotation-xml></semantics></math><span data-type="newline"><br/></span>What is the probability it takes LESS THAN n event for success?<span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&lt;</mo><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mrow><mn>1</mn><mo>-</mo><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>n</mi></msup></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>&lt;</mo><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mrow><mn>1</mn><mo>-</mo><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>n</mi></msup></annotation-xml></semantics></math></li>
+</ol>
+</div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm100368272"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.18</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm110743488"><header></header><section><div data-type="problem" id="fs-idm112214080"><div class="os-problem-container">
+<p id="fs-idm122054272">An instructor feels that 15% of students get below a C on their final exam. They decide to look at final exams (selected randomly and replaced in the pile after reading) until they find one that shows a grade below a C. We want to know the probability that the instructor will have to examine at least ten exams until they find one with a grade below a C. What is the probability question stated mathematically?</p></div></div>
+</section></div></div></section></div><div class="ui-has-child-title" data-type="example" id="element-616"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.19</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-741">Suppose that you are looking for a student at your college who lives within five miles of you. You know that 55% of the 25,000 students do live within five miles of you. You randomly contact students from the college <strong>until</strong> one says they live within five miles of you. What is the probability that you need to contact four people?</p><p id="element-724">This is a geometric problem because you may have a number of failures before you have the one success you desire. Also, the probability of a success stays the same each time you ask a student if they live within five miles of you. There is no definite number of trials (number of times you ask a student).<span data-count="2" data-type="newline"><br/><br/></span></p><div class="unnumbered has-problem-title" data-type="exercise" id="element-823"><header></header><section>
+<div data-type="problem" id="id27319141"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="element-4422">a. Let <em data-effect="italics">X</em> = the number of ____________ you must ask ____________ one says yes.</p>
+<p id="element-789">b. What values does <em data-effect="italics">X</em> take on?</p>
+<p id="element-884">c. What are <em data-effect="italics">p</em> and <em data-effect="italics">q</em>?</p>
+<p id="element-458">d. The probability question is <em data-effect="italics">P</em>(_______).</p>
+</div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="id27319163">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<p id="element-153">a. Let <em data-effect="italics">X</em> = the number of <strong>students</strong> you must ask <strong>until</strong> one says yes.</p>
+<p id="element-140">b. <em data-effect="italics">X</em> can be any positive integer: 1, 2, 3, 4, …,</p>
+<p id="fs-idm85251472">c. <em data-effect="italics">p</em> = 0.55; <em data-effect="italics">q</em> = 0.45<span data-count="2" data-type="newline"><br/><br/></span></p>
+<p id="element-996">d. <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 4)</p></div>
+</section>
+</details>
+</section></div></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm34549952"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.19</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm110058608"><header></header><section>
+<div data-type="problem" id="fs-idp36058000"><div class="os-problem-container">
+<p id="fs-idm107872832">You need to find a store that carries a special printer ink. You know that of the stores that carry printer ink, 10% of them carry the special ink. You randomly call each store until one has the ink you need. What are <em data-effect="italics">p</em> and <em data-effect="italics">q</em>?</p>
+</div></div>
+</section></div></div></section></div><section data-depth="1" id="element-125"><h3 data-type="title">Notation for the Geometric: G = Geometric Probability Distribution Function</h3>
+<p id="element-156"><em data-effect="italics">X</em> ~ <em data-effect="italics">G</em>(<em data-effect="italics">p</em>)</p><p id="element-953">Read this as "<em data-effect="italics">X</em> is a random variable with a <span data-type="term" group-by="g" id="term-00001">geometric distribution</span>." The parameter is <em data-effect="italics">p</em>; <em data-effect="italics">p</em> = the probability of a success for each trial.</p>
+<p id="para-00005">CASE I: Random Variable X Is Event of First Success</p>
+<p id="para-00006">In this case we ask, “What is the probability that we will have some number x of events of interest to us of failures before a success?”</p>
+<p id="para-00007">The geometric pdf tells us the probability that the first occurrence of success requires x number of failure independent trials, each with probability <span class="os-math-in-para"><math display="inline"><semantics><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><annotation-xml encoding="MathML-Content"><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></annotation-xml></semantics></math></span>. If the probability of success on each trial is <em data-effect="italics">p</em>, then the probability that the <em data-effect="italics">x</em>th trial (out of x trials) is the first success is:</p>
+<p id="para-00008"><span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></msup><mi>p</mi></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></msup><mi>p</mi></annotation-xml></semantics></math></span></p>
+<p id="para-00009">for <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></annotation-xml></semantics></math></span></p>
+<p id="para-00010">Like the binomial distribution, the geometric distribution has the parameters of the mean and standard deviation. The expected value of X, the mean for Case I, is <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>.</mo></annotation-xml></semantics></math></span> This tells us how many failed trials to expect until we get the first success. This count includes in the count of trials the trial that results in success. The above form of the geometric distribution is used for modeling the number of trials until the first success. The number of trials includes the one that is a success: x = all trials including the one that is a success. This can be seen in the form of the formula. If X = number of trials including the success, then we must multiply the probability of failure, <span class="os-math-in-para"><math display="inline"><semantics><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><annotation-xml encoding="MathML-Content"><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></annotation-xml></semantics></math></span>, times the number of failures, that is <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo>-</mo><mn>1</mn></annotation-xml></semantics></math></span>. The standard deviation of Case I of the geometric distribution is:</p>
+<div class="unnumbered" data-type="equation" id="eq-00001"><math display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt></mrow><annotation-xml encoding="MathML-Content"><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt></annotation-xml></semantics></math></div>
+<p id="para-00011">CASE II: Random Variable X Is Number of Failures BEFORE a Success</p>
+<p id="para-00012">By contrast to Case I, the following form of the geometric distribution used for modeling number of failures until the first success is:</p>
+<p id="para-00013"><span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>x</mi></msup><mi>p</mi></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mi>x</mi></msup><mi>p</mi></annotation-xml></semantics></math></span></p>
+<p id="para-00014">for <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo> </mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo> </mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></annotation-xml></semantics></math></span></p>
+<p id="para-00015">In this case the trial that is the success is not counted as a trial in the formula: x = number of failures. The expected value, the mean, of this distribution is <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><mi>p</mi></mfrac></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><mi>p</mi></mfrac></annotation-xml></semantics></math></span>. This tells us how many failures to expect before we have a success. In either case, the sequence of probabilities is a geometric sequence. In Case II, the standard deviation parameter is: <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></mfenced></msqrt><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></mfenced></msqrt><mo>.</mo></annotation-xml></semantics></math></span></p>
+<div class="os-figure" id="fig-00001"><figure class="ui-has-child-figcaption" data-id="fig-00001"><span data-alt="Bar graph of probability distribution of the given data." data-type="media"><button aria-label="Click to enlarge image of Bar graph of probability distribution of the given data." class="image-button-wrapper" type="button"><img alt="Bar graph of probability distribution of the given data." data-media-type="image/png" data-original-src="/apps/archive/20260604.144757/resources/b727c2865002988b6ea20c479edeb938ebc24ca5" height="617" loading="lazy" src="/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/b727c2865002988b6ea20c479edeb938ebc24ca5" width="1657"/></button></span><figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4.4</span>
+</figcaption></figure></div>
+<div class="unnumbered" data-type="equation" id="eq-00004"><math display="block"><semantics><mrow><mstyle align="left"><mi>GEOMETRIC:</mi></mstyle><mspace linebreak="newline"></mspace><mstyle align="left"><mi mathvariant="normal">P</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>.</mo></mstyle><mstyle align="left"><mn>02</mn></mstyle><mstyle align="left"><mo>,</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>Common</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>ratio</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>r</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>.</mo></mstyle><mstyle align="left"><mn>98</mn></mstyle></mrow><annotation-xml encoding="MathML-Content"><mstyle align="left"><mi>GEOMETRIC:</mi></mstyle><mspace linebreak="newline"></mspace><mstyle align="left"><mi mathvariant="normal">P</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>.</mo></mstyle><mstyle align="left"><mn>02</mn></mstyle><mstyle align="left"><mo>,</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>Common</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>ratio</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mi>r</mi></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>=</mo></mstyle><mstyle align="left"><mo> </mo></mstyle><mstyle align="left"><mo>.</mo></mstyle><mstyle align="left"><mn>98</mn></mstyle></annotation-xml></semantics></math></div>
+<p id="para-00016">The y-axis in <a aria-label="View Figure 4.4" class="autogenerated-content" href="4-4-geometric-distribution#fig-00001">Figure 4.4</a> contains the probability of <em data-effect="italics">x</em>, and the <em data-effect="italics">x</em>-axis is the random number components tested. For example, at <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo>=</mo><mn>1</mn></annotation-xml></semantics></math></span> the probability it will be found to be defective is 0.0196. With two components tested, the probability the second component is defective is graphed at a probability of 0.0196 at <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo>=</mo><mn>2</mn></annotation-xml></semantics></math></span> on the x axis. For the probability that the third component is defective we find <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>019208</mn><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mn>3</mn></mrow></mfenced><mo>=</mo><mn>0</mn><mo>.</mo><mn>019208</mn><mo>.</mo></annotation-xml></semantics></math></span> (The first two are the same because of rounding in the computations.)</p>
+<p id="para-00017">Notice on <a aria-label="View Figure 4.4" class="autogenerated-content" href="4-4-geometric-distribution#fig-00001">Figure 4.4</a> that the probabilities decline by the same step down with each change in the value of x. This increment is called the common ratio. This exists for the geometric probability distribution uniquely. The common ratio, called r, can be calculated by dividing any value by the previous value, e.g., <span class="os-math-in-para"><math display="inline"><semantics><mrow><mfrac><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>5</mn><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>4</mn><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>018447</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>018823</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>98</mn><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mfrac><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>5</mn><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>4</mn><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>018447</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>018823</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>98</mn><mo>.</mo></annotation-xml></semantics></math></span></p>
+<p id="para-00018">For this set of data, therefore, the common ratio is 0.98. The common ratio then multiplied by any other probability value will provide the next probability value in the sequence. For example, the probability that the sixth component tested is a failure is 0.018078. Check this using the formula from Case I. Now we have the <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></mfenced></annotation-xml></semantics></math></span>. Knowing this and the common ratio we can calculate the <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></mfenced></annotation-xml></semantics></math></span> by simple multiplication: <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></mfenced><mo>=</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>018078</mn></mrow></mfenced><mo> </mo><mo>*</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>98</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>017716</mn><mo>,</mo></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></mfenced><mo>=</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>018078</mn></mrow></mfenced><mo> </mo><mo>*</mo><mo> </mo><mn>0</mn><mo>.</mo><mn>98</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>017716</mn><mo>,</mo></annotation-xml></semantics></math></span>, the same value we found earlier by using the geometric probability distribution. This common ratio increment is the same ratio between every number and is called a geometric progression and thus the name for this probability density function. Once the common ratio is calculated, any <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mi>a</mi></msub></mrow></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mi>a</mi></msub></mrow></mfenced></annotation-xml></semantics></math></span> one desires to know can be easily found.</p>
+<p id="para-00019">The number of components that you would expect to test until you find the first defective component is the mean, <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>50</mn></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mn>50</mn></annotation-xml></semantics></math></span> for this case of defective components. The formula for the mean of the geometric distribution for the random variable defined as number of failures before first success is <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>=</mo><mn>50</mn></mrow><annotation-xml encoding="MathML-Content"><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>=</mo><mn>50</mn></annotation-xml></semantics></math></span></p>
+<p id="para-00020">See <a aria-label="Go to Example 4.20" class="autogenerated-content" href="4-4-geometric-distribution#element-340">Example 4.20</a> for an example where the geometric random variable is defined as number of trials until first success. The expected value of this formula for the geometric distribution will be different from this version of the distribution. Case II also has a variance, but this is changed from the Case I formula. This formula for the variance is:</p>
+<p id="para-00021"><span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></msup><mi>p</mi></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mfenced><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></msup><mi>p</mi></annotation-xml></semantics></math></span></p>
+<p id="para-00022">for <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>x</mi><mo> </mo><mo>=</mo><mo> </mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow><annotation-xml encoding="MathML-Content"><mi>x</mi><mo> </mo><mo>=</mo><mo> </mo><mn>1</mn><mo>,</mo><mo> </mo><mn>2</mn><mo>,</mo><mo> </mo><mn>3</mn><mo>,</mo><mo> </mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo></annotation-xml></semantics></math></span></p>
+<div class="unnumbered" data-label="" data-type="equation" id="eq-00002"><div data-type="title">The formula for the variance is </div><math display="block"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mfenced><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>2</mn><mo>,</mo><mn>450</mn></mrow><annotation-xml encoding="MathML-Content"><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mfenced><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>2</mn><mo>,</mo><mn>450</mn></annotation-xml></semantics></math></div>
+<div class="unnumbered" data-label="" data-type="equation" id="eq-00003"><div data-type="title">The standard deviation is </div><math display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt><mo>=</mo><mn>49</mn><mo>.</mo><mn>5</mn></mrow><annotation-xml encoding="MathML-Content"><mi>σ</mi><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mi>p</mi></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt><mo>=</mo><msqrt><mfenced><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac></mfenced><mfenced><mrow><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>02</mn></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></msqrt><mo>=</mo><mn>49</mn><mo>.</mo><mn>5</mn></annotation-xml></semantics></math></div>
+</section>
+<div class="ui-has-child-title" data-type="example" id="element-340"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.20</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<p id="element-38">Assume that the probability of a defective computer component is 0.02. Components are randomly selected. Find the probability that the first defect is caused by the seventh component tested. How many components do you expect to test until one is found to be defective?</p><p id="element-20">Let <em data-effect="italics">X</em> = the number of computer components tested until the first defect is found.</p>
+<p id="element-857"><em data-effect="italics">X</em> takes on the values 1, 2, 3, ... where <em data-effect="italics">p</em> = 0.02.</p>
+<p id="element-826">Find <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 7). <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 7) = 0.0177.</p>
+<div class="statistics calculator ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm55152368"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label">Using the TI-83, 83+, 84, 84+ Calculator</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-idm122297328">To find the probability that <em data-effect="italics">x</em> = 7,</p>
+<ul id="eip-179"><li>Enter <code data-type="code">2<sup>nd</sup>, DISTR</code></li>
+<li>Scroll down and select <code data-type="code">geometpdf</code>(</li>
+<li>Press <code data-type="code">ENTER</code></li>
+<li>Enter 0.02, 7); press <code data-type="code">ENTER</code> to see the result: <em data-effect="italics">P</em>(<em data-effect="italics">x</em> = 7) = 0.0177</li>
+</ul></div></section></div><p id="fs-idm136610832">To find the probability that <em data-effect="italics">x</em> ≤ 7, follow the same instructions EXCEPT select E:geometcdf(as the distribution function.</p>
+<p id="element-833">The probability that the seventh component is the first defect is 0.0177.</p>
+<p id="element-782">The formula for the variance is <em data-effect="italics">σ</em><sup>2</sup> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.02</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.02</mn>
+</mrow>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.02</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.02</mn>
+</mrow>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow></annotation-xml></semantics></math></span> = 2,450</p><p id="element-443">The standard deviation is <em data-effect="italics">σ</em> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>p</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> = <span class="os-math-in-para"><math display="inline"><semantics><mrow>
+<mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.</mn><mtext>02</mtext>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.</mn><mtext>02</mtext>
+</mrow>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow><annotation-xml encoding="MathML-Content"><mrow>
+<msqrt>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.</mn><mtext>02</mtext>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mn>0.</mn><mtext>02</mtext>
+</mrow>
+</mfrac>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msqrt>
+</mrow></annotation-xml></semantics></math></span> = 49.5</p></div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm16727632"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.20</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="fs-idm153734704"><header></header><section><div data-type="problem" id="fs-idm2610224"><div class="os-problem-container">
+<p id="fs-idm122642640">The probability of a defective steel rod is 0.01. Steel rods are selected at random. Find the probability that the first defect occurs on the ninth steel rod. Use the TI-83+ or TI-84 calculator to find the answer.</p>
+</div></div>
+</section></div></div></section></div><div class="ui-has-child-title" data-type="example" id="fs-idm65101072"><header><h3 class="os-title">
+<span class="os-title-label">Example </span>
+<span class="os-number">4.21</span>
+<span class="os-divider"> </span>
+</h3></header><section>
+<div class="body">
+<div class="unnumbered has-problem-title" data-type="exercise" id="fs-idm83790480"><header></header><section>
+<div data-type="problem" id="fs-idm65243344"><h4 data-type="problem-title">
+<span class="os-title-label">Problem</span>
+</h4>
+<div class="os-problem-container">
+<p id="fs-idm113071296">The lifetime risk of developing cancer is about one in 67 (1.5%). Let <em data-effect="italics">X</em> = the number of people you ask until one says they have cancer. Then <em data-effect="italics">X</em> is a discrete random variable with a geometric distribution: <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>X</mi><mo>~</mo><mi>G</mi><mfenced><mfrac><mn>1</mn><mn>67</mn></mfrac></mfenced></mrow><annotation-xml encoding="MathML-Content"><mi>X</mi><mo>~</mo><mi>G</mi><mfenced><mfrac><mn>1</mn><mn>67</mn></mfrac></mfenced></annotation-xml></semantics></math></span> or <span class="os-math-in-para"><math display="inline"><semantics><mrow><mi>X</mi><mo>~</mo><mi>G</mi><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>)</mo></mrow><annotation-xml encoding="MathML-Content"><mi>X</mi><mo>~</mo><mi>G</mi><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>)</mo></annotation-xml></semantics></math></span></p><ol id="fs-idm128110288" type="a"><li>What is the probability of that you ask ten people before one says they have cancer?</li>
+<li>What is the probability that you must ask 20 people?</li>
+<li>Find the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+</ol></div></div>
+<details aria-label="Show/Hide Solution" data-type="solution" id="fs-idp19888080">
+<summary class="btn-link ui-toggle" data-content="Show/Hide Solution" title="Show/Hide Solution"></summary>
+<section class="ui-body" role="alert"><h4 data-type="solution-title">
+<span class="os-title-label">Solution</span>
+</h4>
+<div class="os-solution-container">
+<ol id="fs-idm133938784" type="a">
+<li><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>10</mn><mo>)</mo><mo>=</mo><mi>g</mi><mi>e</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>p</mi><mi>d</mi><mi>f</mi><mo> </mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>,</mo><mn>10</mn><mo>)</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>0131</mn></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>10</mn><mo>)</mo><mo>=</mo><mi>g</mi><mi>e</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>p</mi><mi>d</mi><mi>f</mi><mo> </mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>,</mo><mn>10</mn><mo>)</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>0131</mn></annotation-xml></semantics></math></li>
+<li><math display="inline"><semantics><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>20</mn><mo>)</mo><mo>=</mo><mi>g</mi><mi>e</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>p</mi><mi>d</mi><mi>f</mi><mo> </mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>,</mo><mn>20</mn><mo>)</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>0113</mn></mrow><annotation-xml encoding="MathML-Content"><mi>P</mi><mo>(</mo><mi>x</mi><mo>=</mo><mn>20</mn><mo>)</mo><mo>=</mo><mi>g</mi><mi>e</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>p</mi><mi>d</mi><mi>f</mi><mo> </mo><mo>(</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>,</mo><mn>20</mn><mo>)</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>0113</mn></annotation-xml></semantics></math></li>
+<li><math display="inline"><semantics><mrow><mi>Mean</mi><mo>=</mo><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfrac><mo>=</mo><mn>66</mn><mo>.</mo><mn>67</mn></mrow><annotation-xml encoding="MathML-Content"><mi>Mean</mi><mo>=</mo><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfrac><mo>=</mo><mn>66</mn><mo>.</mo><mn>67</mn></annotation-xml></semantics></math><span data-type="newline"><br/></span><math display="inline"><semantics><mrow><mi>Standard</mi><mo> </mo><mi>Deviation</mi><mo>=</mo><mi>σ</mi><mo>=</mo><msqrt><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>1</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>015</mn></mrow><msup><mrow><mo>[</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>]</mo></mrow><mn>2</mn></msup></mfrac></msqrt><mo>=</mo><mn>66</mn><mo>.</mo><mn>16</mn></mrow><annotation-xml encoding="MathML-Content"><mi>Standard</mi><mo> </mo><mi>Deviation</mi><mo>=</mo><mi>σ</mi><mo>=</mo><msqrt><mfrac><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>1</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>015</mn></mrow><msup><mrow><mo>[</mo><mn>0</mn><mo>.</mo><mn>015</mn><mo>]</mo></mrow><mn>2</mn></msup></mfrac></msqrt><mo>=</mo><mn>66</mn><mo>.</mo><mn>16</mn></annotation-xml></semantics></math></li>
+</ol></div>
+</section>
+</details>
+</section></div>
+</div></section></div>
+<div class="statistics try ui-has-child-title" data-has-label="true" data-label="" data-type="note" id="fs-idm45764336"><header><h3 class="os-title">
+<span class="os-title-label">Try It </span>
+<span class="os-number">4.21</span>
+</h3></header><section>
+<div class="os-note-body">
+<div class="unnumbered" data-type="exercise" id="eip-271"><header></header><section><div data-type="problem" id="fs-idm130962416"><div class="os-problem-container">
+<p id="fs-idm153911248">The literacy rate for a nation measures the proportion of people age 15 and over who can read and write. The literacy rate for women in Afghanistan is 12%. Let <em data-effect="italics">X</em> = the number of Afghani women you ask until one says that she is literate.</p>
+<ol id="fs-idm111769216" type="a">
+<li>What is the probability distribution of <em data-effect="italics">X</em>?</li>
+<li>What is the probability that you ask five women before one says she is literate?</li>
+<li>What is the probability that you must ask ten women?</li>
+<li>Find the (i) mean and (ii) standard deviation of <em data-effect="italics">X</em>.</li>
+</ol></div></div>
+</section></div></div></section></div>
+</div>

@@ -1,0 +1,2798 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>7.1: Systems of Linear Equations: Two Variables | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-6-8-fitting-exponential-models-to-data.html">Previous: 6.8</a><a href="section-7-3-systems-of-nonlinear-equations-and-inequalities-two-variables.html">Next: 7.3</a><a href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>7.1: Systems of Linear Equations: Two Variables</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Solve systems of equations by graphing.</li>
+<li>Solve systems of equations by substitution.</li>
+<li>Solve systems of equations by addition.</li>
+<li>Identify inconsistent systems of equations containing two variables.</li>
+<li>Express the solution of a system of dependent equations containing two variables.</li>
+</ul></section></div>
+<div class="os-figure" id="Figure_09_01_001"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_001">
+<span data-alt="A skateboarder catches air in a concrete skatepark with the ocean and a sunset horizon in the background. Other people are seen relaxing on the beach and in the skatepark." data-type="media" id="fs-id1165137938552">
+<img alt="A skateboarder catches air in a concrete skatepark with the ocean and a sunset horizon in the background. Other people are seen relaxing on the beach and in the skatepark." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/8db994f0a4e152291196aae3d38d23143c6fdf0b" loading="lazy" src="../../notes-assets/c74ed3dcbbef22dbc67a.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">(credit: Thomas Sørenes)</span>
+</figcaption></figure></div>
+<p id="fs-id1165134188850">A skateboard manufacturer introduces a new line of boards. The manufacturer tracks its costs, which is the amount it spends to produce the boards, and its revenue, which is the amount it earns through sales of its boards. How can the company determine if it is making a profit with its new line? How many skateboards must be produced and sold before a profit is possible? In this section, we will consider linear equations with two variables to answer these and similar questions.</p>
+<section data-depth="1" id="fs-id1165133236395"><h3 data-type="title">Introduction to Systems of Equations</h3>
+<p id="fs-id1165137448108">In order to investigate situations such as that of the skateboard manufacturer, we need to recognize that we are dealing with more than one variable and likely more than one equation. A <span data-type="term" group-by="s" id="term-00001">system of linear equations</span> consists of two or more linear equations made up of two or more variables such that all equations in the system are considered simultaneously. To find the unique solution to a system of linear equations, we must find a numerical value for each variable in the system that will satisfy all equations in the system at the same time. Some linear systems may not have a solution and others may have an infinite number of solutions. In order for a linear system to have a unique solution, there must be at least as many equations as there are variables. Even so, this does not guarantee a unique solution.</p>
+<p id="fs-id1165137885053">In this section, we will look at systems of linear equations in two variables, which consist of two equations that contain two different variables. For example, consider the following system of linear equations in two variables.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134179562"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mtable>
+<mtr>
+<mtd>
+<mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mspace width="0.5em"></mspace><mtext></mtext><mn>15</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mn>3</mn><mi>x</mi><mo>–</mo><mi>y</mi><mo>=</mo><mspace width="0.5em"></mspace><mtext></mtext><mn>5</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135596356">The <em data-effect="italics">solution</em> to a system of linear equations in two variables is any ordered pair that satisfies each equation independently. In this example, the ordered pair (4, 7) is the solution to the system of linear equations. We can verify the solution by substituting the values into each equation to see if the ordered pair satisfies both equations. Shortly we will investigate methods of finding such a solution if it exists.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137666087"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mspace width="0.5em"></mspace><mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mspace width="0.5em"></mspace><mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165132912573">In addition to considering the number of equations and variables, we can categorize systems of linear equations by the number of solutions. A <span data-type="term" group-by="c" id="term-00002">consistent system</span> of equations has at least one solution. A consistent system is considered to be an <strong>independent system</strong> if it has a single solution, such as the example we just explored. The two lines have different slopes and intersect at one point in the plane. A consistent system is considered to be a <strong>dependent system</strong> if the equations have the same slope and the same <em data-effect="italics">y</em>-intercepts. In other words, the lines coincide so the equations represent the same line. Every point on the line represents a coordinate pair that satisfies the system. Thus, there are an infinite number of solutions.</p><p id="fs-id1165135262630">Another type of system of linear equations is an <strong>inconsistent system</strong>, which is one in which the equations represent two parallel lines. The lines have the same slope and different <em data-effect="italics">y-</em>intercepts. There are no points common to both lines; hence, there is no solution to the system.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137642700"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Types of Linear Systems </span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137655489">There are three types of systems of linear equations in two variables, and three types of solutions.
+</p><ul id="fs-id1165135430223">
+<li>An <span data-type="term" group-by="i" id="term-00003">independent system</span> has exactly one solution pair <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>,</mo><mi>y</mi>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> The point where the two lines intersect is the only solution.</li>
+<li>An <span data-type="term" group-by="i" id="term-00004">inconsistent system</span> has no solution. Notice that the two lines are parallel and will never intersect.</li>
+<li>A <span data-type="term" group-by="d" id="term-00005">dependent system</span> has infinitely many solutions. The lines are coincident. They are the same line, so every coordinate pair on the line is a solution to both equations.</li>
+</ul>
+<p id="fs-id1165134540073"><a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_002">Figure 2</a> compares graphical representations of each type of system.</p>
+<div class="os-figure" id="Figure_09_01_002"><figure class="ui-has-child-figcaption" data-id="Figure_09_01_002"><span data-alt='This image presents three graphs, each depicting a different type of linear system. The first graph on the left shows an "Independent System," where two distinct lines (one blue, one red) intersect at a single point, labeled (7/5, -11/5), indicating a unique solution. The middle graph illustrates an "Inconsistent System," with two parallel lines (one blue, one red) that never intersect, signifying no solution. The third graph on the right represents a "Dependent System," showing a single blue line with two labeled points (1, 2) and (-1, -2), implying that the two equations describe the same line, resulting in infinitely many solutions.' data-type="media" id="fs-id1165134137725">
+<img alt='This image presents three graphs, each depicting a different type of linear system. The first graph on the left shows an "Independent System," where two distinct lines (one blue, one red) intersect at a single point, labeled (7/5, -11/5), indicating a unique solution. The middle graph illustrates an "Inconsistent System," with two parallel lines (one blue, one red) that never intersect, signifying no solution. The third graph on the right represents a "Dependent System," showing a single blue line with two labeled points (1, 2) and (-1, -2), implying that the two equations describe the same line, resulting in infinitely many solutions.' data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/c8f7a36661238892c1cd1c28de3630abf4c2cce3" loading="lazy" src="../../notes-assets/33920d3147b17c12c044.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure></div></div></section></div><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137838246"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165134325199"><strong>Given a system of linear equations and an ordered pair, determine whether the ordered pair is a solution.</strong></p>
+<ol id="fs-id1165134117256" type="1">
+<li>Substitute the ordered pair into each equation in the system.</li>
+<li>Determine whether true statements result from the substitution in both equations; if so, the ordered pair is a solution.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_09_01_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135658058"><header></header><section><div data-type="problem" id="fs-id1165137942382"><div class="os-problem-container"><h4 data-type="title">Determining Whether an Ordered Pair Is a Solution to a System of Equations</h4>
+<p id="fs-id1165137734698">Determine whether the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>,</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> is a solution to the given system of equations.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134386589"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>8</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>2</mn><mi>x</mi><mo>−</mo><mn>9</mn><mo>=</mo><mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+<div data-type="commentary" id="fs-id1165135388571"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165132935132">We can see the solution clearly by plotting the graph of each equation. Since the solution is an ordered pair that satisfies both equations, it is a point on both of the lines and thus the point of intersection of the two lines. See <a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_003">Figure 3</a>.</p>
+<div class="os-figure" id="Figure_09_01_003"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_003">
+<span data-alt="A graph displays two intersecting lines representing the equations x + 3y = 8 (red) and 2x - 9 = y (blue), with their intersection point clearly marked at (5, 1)." data-type="media" id="fs-id1165135528468">
+<img alt="A graph displays two intersecting lines representing the equations x + 3y = 8 (red) and 2x - 9 = y (blue), with their intersection point clearly marked at (5, 1)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/d9a78f2f6d2b5bbf0023d28201280e9313521f53" loading="lazy" src="../../notes-assets/8c741b0eed6bb6b39aee.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135448282">Substitute the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>,</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> into both equations.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135602262"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>8</mn><mo>=</mo><mn>8</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>−</mo><mn>9</mn><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mtext>1=1</mtext>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135254607">The ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>,</mo><mn>1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> satisfies both equations, so it is the solution to the system.</p></div></section>
+<section class="worked-example" id="fs-id1165137758492"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165137892619"><header></header><section><div data-type="problem" id="fs-id1165135149914"><div class="os-problem-container"><p id="fs-id1165135149915">Determine whether the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>8</mn><mo>,</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> is a solution to the following system.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134380339"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>5</mn><mi>x</mi><mn>−4</mn><mi>y</mi><mo>=</mo><mn>20</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn><mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165134254086">Not a solution.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165134573832"><h3 data-type="title"> Solving Systems of Equations by Graphing</h3>
+<p id="fs-id1165137911750">There are multiple methods of solving systems of linear equations. For a <span class="no-emphasis" data-type="term" group-by="s" id="term-00006">system of linear equations</span> in two variables, we can determine both the type of system and the solution by graphing the system of equations on the same set of axes.</p>
+<section class="worked-example" id="Example_09_01_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137893297"><header></header><section><div data-type="problem" id="fs-id1165135309691"><div class="os-problem-container"><h4 data-type="title">Solving a System of Equations in Two Variables by Graphing</h4>
+<p id="fs-id1165135187742">Solve the following system of equations by graphing. Identify the type of system.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137685434"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−8</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137456534">Solve the first equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135370758"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−8</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mi>y</mi><mo>=</mo><mn>−2</mn><mi>x</mi><mn>−8</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134137738">Solve the second equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135634067"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135621960">Graph both equations on the same set of axes as in <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_012">Figure 4</a>.</p>
+<div class="os-figure" id="Figure_09_01_012">
+<figure class="small ui-has-child-figcaption" data-id="Figure_09_01_012">
+<span data-alt='This image displays a Cartesian coordinate system with grid lines, an x-axis, and a y-axis. Two linear equations are plotted. The first line is red and labeled "y = x + 1". The second line is blue and labeled "y = -2x - 8". The two lines intersect at a single point, which is marked with a black dot and explicitly labeled with the coordinates "(-3, -2)".' data-type="media" id="fs-id1165135186614">
+<img alt='This image displays a Cartesian coordinate system with grid lines, an x-axis, and a y-axis. Two linear equations are plotted. The first line is red and labeled "y = x + 1". The second line is blue and labeled "y = -2x - 8". The two lines intersect at a single point, which is marked with a black dot and explicitly labeled with the coordinates "(-3, -2)".' data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/e9b2076b26ff6ebb2663fd757743945b3c1fe515" loading="lazy" src="../../notes-assets/d9f32575f10d2362114f.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165135350498">The lines appear to intersect at the point <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−3,</mn><mn>−2</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> We can check to make sure that this is the solution to the system by substituting the ordered pair into both equations.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134237266"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>−3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>−8</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>−8</mn><mo>=</mo><mn>−8</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mn>−3</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>−1</mn><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135672798">The solution to the system is the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−3,</mn><mn>−2</mn>
+</mrow>
+<mo>)</mo></mrow><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> so the system is independent.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165133184270"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135190552"><header></header><section><div data-type="problem" id="fs-id1165137805333"><div class="os-problem-container"><p id="fs-id1165137805334">Solve the following system of equations by graphing.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137591168"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>−25</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>35</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137401108">The solution to the system is the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−5</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="A graph displays two intersecting lines. The blue line represents the equation y = (4/5)x + 7, and the orange line represents y = (2/5)x + 5. They intersect at the point (-5, 3)." data-type="media" id="fs-id1165135330938">
+<img alt="A graph displays two intersecting lines. The blue line represents the equation y = (4/5)x + 7, and the orange line represents y = (2/5)x + 5. They intersect at the point (-5, 3)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/5b7a7cb6c6469c2b48ae39ba3ba7b010e4f9056f" loading="lazy" src="../../notes-assets/310245208bbf6811efbe.svg"/>
+</span>
+</div></section><div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165132036982"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137443116"><strong>Can graphing be used if the system is inconsistent or dependent?</strong></p>
+<p id="fs-id1165133015238"><em data-effect="italics">Yes, in both cases we can still graph the system to determine the type of system and solution. If the two lines are parallel, the system has no solution and is inconsistent. If the two lines are identical, the system has infinite solutions and is a dependent system.</em></p>
+</div></section></div>
+</section>
+<section data-depth="1" id="fs-id1165135192374"><h3 data-type="title">Solving Systems of Equations by Substitution</h3>
+<p id="fs-id1165134361391">Solving a linear system in two variables by graphing works well when the solution consists of integer values, but if our solution contains decimals or fractions, it is not the most precise method. We will consider two more methods of solving a <span class="no-emphasis" data-type="term" group-by="s" id="term-00007">system of linear equations</span> that are more precise than graphing. One such method is solving a system of equations by the <span data-type="term" group-by="s" id="term-00008">substitution method</span>, in which we solve one of the equations for one variable and then substitute the result into the second equation to solve for the second variable. Recall that we can solve for only one variable at a time, which is the reason the substitution method is both valuable and practical.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137730313"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137897042"><strong>Given a system of two equations in two variables, solve using the substitution method.</strong></p>
+<ol id="fs-id1165137550726" type="1">
+<li>Solve one of the two equations for one of the variables in terms of the other.</li>
+<li>Substitute the expression for this variable into the second equation, then solve for the remaining variable.</li>
+<li>Substitute that solution into either of the original equations to find the value of the first variable. If possible, write the solution as an ordered pair.</li>
+<li>Check the solution in both equations.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_09_01_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137770184"><header></header><section>
+<div data-type="problem" id="fs-id1165137602393"><div class="os-problem-container"><h4 data-type="title">Solving a System of Equations in Two Variables by Substitution</h4>
+<p id="fs-id1165137735732">Solve the following system of equations by substitution.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137445889"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−5</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137768074">First, we will solve the first equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134113719"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−5</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mi>x</mi><mn>−5</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137812824">Now we can substitute the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mn>−5</mn>
+</mrow>
+</mrow></semantics></math></span></span> for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the second equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134165449"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mn>3</mn><mi>x</mi><mo>=</mo><mn>−24</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>=</mo><mn>8</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165131892586">Now, we substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>8</mn>
+</mrow>
+</mrow></semantics></math></span></span> into the first equation and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134066565"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo><mo>+</mo><mi>y</mi><mo>=</mo><mn>−5</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135500998">Our solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>8</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165134356834">Check the solution by substituting <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>8</mn><mo>,</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> into both equations.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135699138"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>5</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165135450312"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135160482"><header></header><section><div data-type="problem" id="fs-id1165135160483"><div class="os-problem-container"><p id="fs-id1165135160484">Solve the following system of equations by substitution.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165132059620"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>x</mi><mo>=</mo><mi>y</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>4</mn><mo>=</mo><mn>3</mn><mi>x</mi><mn>−2</mn><mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135516682"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>,</mo><mn>−5</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165137598962"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id3042099"><strong>Can the substitution method be used to solve any linear system in two variables?</strong></p>
+<p id="fs-id1165132973467"><em data-effect="italics">Yes, but the method works best if one of the equations contains a coefficient of 1 or –1 so that we do not have to deal with fractions.</em></p>
+</div></section></div></section>
+<section data-depth="1" id="fs-id1165132972949"><h3 data-type="title">Solving Systems of Equations in Two Variables by the Addition Method</h3>
+<p id="fs-id1165131968519">A third method of <span class="no-emphasis" data-type="term" group-by="s" id="term-00009">solving systems of linear equations</span> is the <span data-type="term" group-by="a" id="term-00010">addition method</span>. In this method, we add two terms with the same variable, but opposite coefficients, so that the sum is zero. Of course, not all systems are set up with the two terms of one variable having opposite coefficients. Often we must adjust one or both of the equations by multiplication so that one variable will be eliminated by addition.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165134555002"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135155300"><strong>Given a system of equations, solve using the addition method.</strong></p>
+<ol id="fs-id1165135638539" type="1"><li>Write both equations with <em data-effect="italics">x</em>- and <em data-effect="italics">y</em>-variables on the left side of the equal sign and constants on the right.</li>
+<li>Write one equation above the other, lining up corresponding variables. If one of the variables in the top equation has the opposite coefficient of the same variable in the bottom equation, add the equations together, eliminating one variable. If not, use multiplication by a nonzero number so that one of the variables in the top equation has the opposite coefficient of the same variable in the bottom equation, then add the equations to eliminate the variable.</li>
+<li>Solve the resulting equation for the remaining variable.</li>
+<li>Substitute that value into one of the original equations and solve for the second variable.</li>
+<li>Check the solution by substituting the values into the other equation.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_09_01_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137760592"><header></header><section>
+<div data-type="problem" id="fs-id1165134152521"><div class="os-problem-container"><h4 data-type="title">Solving a System by the Addition Method</h4>
+<p id="fs-id1165137456041">Solve the given system of equations by addition.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137456044"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+<div data-type="commentary" id="fs-id1165135190076"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135648608">We gain an important perspective on systems of equations by looking at the graphical representation. See <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_004">Figure 5</a> to find that the equations intersect at the solution. We do not need to ask whether there may be a second solution because observing the graph confirms that the system has exactly one solution.</p>
+<div class="os-figure" id="Figure_09_01_004"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_004">
+<span data-alt="This graph displays a system of two linear equations plotted on a coordinate plane. The blue line represents the equation x + 2y = -1, while the red line represents the equation -x + y = 3. The point where these two lines intersect, indicated by a black dot, is the solution to the system of equations and is labeled as (-7/3, 2/3). The x-axis ranges from -6 to 6, and the y-axis ranges from -5 to 5, with a grid background to aid in reading the coordinates." data-type="media" id="fs-id1165133055135">
+<img alt="This graph displays a system of two linear equations plotted on a coordinate plane. The blue line represents the equation x + 2y = -1, while the red line represents the equation -x + y = 3. The point where these two lines intersect, indicated by a black dot, is the solution to the system of equations and is labeled as (-7/3, 2/3). The x-axis ranges from -6 to 6, and the y-axis ranges from -5 to 5, with a grid background to aid in reading the coordinates." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/1064e9f61c297c658f69021dd2f6567ad0bb111e" loading="lazy" src="../../notes-assets/05b214971cfa3394023d.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+</figcaption></figure></div>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165133409999">Both equations are already set equal to a constant. Notice that the coefficient of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the second equation, –1, is the opposite of the coefficient of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the first equation, 1. We can add the two equations to eliminate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> without needing to multiply by a constant.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135339577"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mrow>
+<mtext></mtext><mtext></mtext><mtext></mtext><mtext></mtext><mtext></mtext><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135523279">Now that we have eliminated <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we can solve the resulting equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137921567"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135546806">Then, we substitute this value for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow></semantics></math></span></span> into one of the original equations and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135257023"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>+</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>=</mo><mn>3</mn><mo>−</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mi>x</mi><mo>=</mo><mfrac>
+<mn>7</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135333762">The solution to this system is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>3</mn>
+</mfrac>
+<mo>,</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135678637">Check the solution in the first equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137557817"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>2</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>3</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+<mo>=</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mfrac>
+<mn>3</mn>
+<mn>3</mn>
+</mfrac>
+<mo>=</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>−1</mn><mo>=</mo><mn>−1</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="Example_09_01_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134409145"><header></header><section>
+<div data-type="problem" id="fs-id1165137727665"><div class="os-problem-container"><h4 data-type="title">Using the Addition Method When Multiplication of One Equation Is Required</h4>
+<p id="fs-id1165137727670">Solve the given system of equations by the <span class="no-emphasis" data-type="term" group-by="a" id="term-00011">addition method</span>.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165131963805"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>−11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mspace width="0.5em"></mspace><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>11</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165133359271">Adding these equations as presented will not eliminate a variable. However, we see that the first equation has <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>3</mn><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> in it and the second equation has <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> So if we multiply the second equation by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the <em data-effect="italics">x</em>-terms will add to zero.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137921470"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mn>−2</mn><mi>y</mi><mo>=</mo><mn>11</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>−3</mn><mo stretchy="false">(</mo><mi>x</mi><mn>−2</mn><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>−3</mn><mo stretchy="false">(</mo><mn>11</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Multiply both sides by </mtext><mn>−3.</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>−3</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mn>−33</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the distributive property</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134567942">Now, let’s add them.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134567946"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<munder>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>  </mtext><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mn>−11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>−3</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mn>−33</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mo stretchy="true">_______________</mo>
+</munder>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>        </mtext><mn>11</mn><mi>y</mi><mo>=</mo><mn>−44</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>            </mtext><mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137714850">For the last step, we substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mrow></semantics></math></span></span> into one of the original equations and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134301482"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>3</mn><mi>x</mi><mo>−</mo><mn>20</mn><mo>=</mo><mo>−</mo><mn>11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>3</mn><mi>x</mi><mo>=</mo><mn>9</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165132005290">Our solution is the ordered pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mo>,</mo><mn>−4</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> See <a aria-label="View Figure 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_005">Figure 6</a>. Check the solution in the original second equation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137863988"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>11</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>+</mo><mn>8</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>11</mn><mo>=</mo><mn>11</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>True</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><div class="os-figure" id="Figure_09_01_005">
+<figure class="small ui-has-child-figcaption" data-id="Figure_09_01_005">
+<span data-alt="A graph shows two linear equations, 3x + 5y = -11 (red) and x - 2y = 11 (blue), intersecting at the point (3, -4) on a Cartesian coordinate system." data-type="media" id="fs-id1165137641223">
+<img alt="A graph shows two linear equations, 3x + 5y = -11 (red) and x - 2y = 11 (blue), intersecting at the point (3, -4) on a Cartesian coordinate system." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/504feb35c23e198b049008e8745e0907b5da5f73" loading="lazy" src="../../notes-assets/503bf3d40e0c51c43fda.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">6</span>
+</figcaption></figure>
+</div>
+</div></section>
+<section class="worked-example" id="fs-id1165132914098"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_09_01_05"><header></header><section>
+<div data-type="problem" id="fs-id1165137697048"><div class="os-problem-container"><p id="fs-id1165137697049">Solve the system of equations by addition.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137697052"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>2</mn><mi>x</mi><mn>−7</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−20</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137884375"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−6</mn><mo>,</mo><mn>−2</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<section class="worked-example" id="Example_09_01_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137698088"><header></header><section>
+<div data-type="problem" id="fs-id1165135593606"><div class="os-problem-container"><h4 data-type="title">Using the Addition Method When Multiplication of Both Equations Is Required</h4>
+<p id="fs-id1165132949906">Solve the given system of equations in two variables by addition.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165132949909"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>−16</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mn>5</mn><mi>x</mi><mn>−10</mn><mi>y</mi><mo>=</mo><mn>30</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137415015">One equation has <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> and the other has <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>5</mn><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The least common multiple is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>10</mn><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> so we will have to multiply both equations by a constant in order to eliminate one variable. Let’s eliminate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> by multiplying the first equation by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−5</mn>
+</mrow>
+</mrow></semantics></math></span></span> and the second equation by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165132947360"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo> </mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>−16</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>   </mtext><mo>−</mo><mn>10</mn><mi>x</mi><mo>−</mo><mn>15</mn><mi>y</mi><mo>=</mo><mn>80</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>     </mtext><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>10</mn><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>        </mtext><mn>10</mn><mi>x</mi><mo>−</mo><mn>20</mn><mi>y</mi><mo>=</mo><mn>60</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134430431">Then, we add the two equations together.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165133391517"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<munder accentunder="true">
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>−10</mn><mi>x</mi><mn>−15</mn><mi>y</mi><mo>=</mo><mn>80</mn><mspace width="0.5em"></mspace><mtext>  </mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>10</mn><mi>x</mi><mn>−20</mn><mi>y</mi><mo>=</mo><mn>60</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mo stretchy="true">________________</mo>
+</munder>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>−35</mn><mi>y</mi><mo>=</mo><mn>140</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133239816">Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mrow></semantics></math></span></span> into the original first equation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165131857354"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy="false">(</mo><mn>−4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>−16</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>2</mn><mi>x</mi><mo>−</mo><mn>12</mn><mo>=</mo><mn>−16</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>2</mn><mi>x</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>=</mo><mn>−2</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134301325">The solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>−2</mn><mo>,</mo><mn>−4</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Check it in the other equation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135354953"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="right">
+<mtr columnalign="right">
+<mtd columnalign="right">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>         </mtext><mn>5</mn><mi>x</mi><mn>−10</mn><mi>y</mi><mo>=</mo><mn>30</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="right">
+<mtd columnalign="right">
+<mrow>
+<mn>5</mn><mo stretchy="false">(</mo><mn>−2</mn><mo stretchy="false">)</mo><mn>−10</mn><mo stretchy="false">(</mo><mn>−4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="right">
+<mtd columnalign="right">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>        </mtext><mn>−10</mn><mo>+</mo><mn>40</mn><mo>=</mo><mn>30</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="right">
+<mtd columnalign="right">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>                   </mtext><mn>30</mn><mo>=</mo><mn>30</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133276174">See <a aria-label="View Figure 7" class="small autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_006">Figure 7</a>.</p><div class="os-figure" id="Figure_09_01_006">
+<figure class="ui-has-child-figcaption" data-id="Figure_09_01_006">
+<span data-alt="A graph displays two intersecting lines: a red line representing 2x + 3y = -16 and a blue line representing 5x - 10y = 30. Their intersection point is labeled as (-2, -4)." data-type="media" id="fs-id1165134073788">
+<img alt="A graph displays two intersecting lines: a red line representing 2x + 3y = -16 and a blue line representing 5x - 10y = 30. Their intersection point is labeled as (-2, -4)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/2e45613367cc2d4dcf9ed2934a347019bf6ea8ef" loading="lazy" src="../../notes-assets/7f49905c096695268c35.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">7</span>
+</figcaption></figure>
+</div>
+</div></section>
+<section class="worked-example" id="Example_09_01_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134342382"><header></header><section><div data-type="problem" id="fs-id1165134342384"><div class="os-problem-container"><h4 data-type="title">Using the Addition Method in Systems of Equations Containing Fractions</h4>
+<p id="fs-id1165134254318">Solve the given system of equations in two variables by addition.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134254322"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mi>x</mi>
+<mn>3</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mi>y</mi>
+<mn>6</mn>
+</mfrac>
+<mo>=</mo><mn>3</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mi>x</mi>
+<mn>2</mn>
+</mfrac>
+<mo>−</mo><mfrac>
+<mi>y</mi>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mtext>​</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135154456">First clear each equation of fractions by multiplying both sides of the equation by the least common denominator.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137428223"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>6</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>x</mi>
+<mn>3</mn>
+</mfrac>
+<mo>+</mo><mfrac>
+<mi>y</mi>
+<mn>6</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>6</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>   </mtext><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>18</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>4</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>x</mi>
+<mn>2</mn>
+</mfrac>
+<mo>−</mo><mfrac>
+<mi>y</mi>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>   </mtext><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>4</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137846173">Now multiply the second equation by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</mrow></semantics></math></span></span> so that we can eliminate the <em data-effect="italics">x</em>-variable.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165133437189"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>−1</mn><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>−1</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>   </mtext><mn>−2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133103851">Add the two equations to eliminate the <em data-effect="italics">x</em>-variable and solve the resulting equation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135432734"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>18</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<munder accentunder="true">
+<mrow>
+<mn>−2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>−4</mn>
+</mrow>
+<mo stretchy="true">_____________</mo>
+</munder>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mi>y</mi><mo>=</mo><mn>14</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mn>7</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135394046">Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>7</mn>
+</mrow>
+</mrow></semantics></math></span></span> into the first equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165132079320"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>        </mtext><mn>2</mn><mi>x</mi><mo>=</mo><mn>11</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>          </mtext><mi>x</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>11</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>            </mtext><mo>=</mo><mn>5.5</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135639176">The solution is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>11</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo><mn>7</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Check it in the other equation.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134301375"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mfrac>
+<mi>x</mi>
+<mn>2</mn>
+</mfrac>
+<mo>−</mo><mfrac>
+<mi>y</mi>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<mn>11</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mfrac>
+<mrow>
+<mn>11</mn>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>−</mo><mfrac>
+<mn>7</mn>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mfrac>
+<mn>4</mn>
+<mn>4</mn>
+</mfrac>
+<mo>=</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165134485606"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_09_01_06"><header></header><section>
+<div data-type="problem" id="fs-id1165134485616"><div class="os-problem-container"><p id="fs-id1165134485617">Solve the system of equations by addition.</p>
+<div class="unnumbered" data-type="equation" id="fs-id1165133110179"><span class="math-scroll display-math"><math display="block"><semantics><mrow><mtable><mtr><mtd columnalign="left"><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="right"><mn>8</mn></mtd></mtr><mtr><mtd columnalign="left"><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="right"><mn>10</mn></mtd></mtr></mtable></mrow></semantics></math></span></div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135547108"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>10</mn><mo>,</mo><mn>−4</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135462954"><h3 data-type="title">Identifying Inconsistent Systems of Equations Containing Two Variables</h3>
+<p id="fs-id1165135462960">Now that we have several methods for solving systems of equations, we can use the methods to identify inconsistent systems. Recall that an <span class="no-emphasis" data-type="term" group-by="i" id="term-00012">inconsistent system</span> consists of parallel lines that have the same slope but different <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow></semantics></math></span></span> -intercepts. They will never intersect. When searching for a solution to an inconsistent system, we will come up with a false statement, such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>12</mn><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><section class="worked-example" id="Example_09_01_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137701571"><header></header><section>
+<div data-type="problem" id="fs-id1165135263527"><div class="os-problem-container"><h4 data-type="title">Solving an Inconsistent System of Equations</h4>
+<p id="fs-id1165135263532">Solve the following system of equations.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135263536"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>x</mi><mo>=</mo><mn>9</mn><mn>−2</mn><mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+<div data-type="commentary" id="fs-id1165134116945"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165134176014">Writing the equations in slope-intercept form confirms that the system is inconsistent because all lines will intersect eventually unless they are parallel. Parallel lines will never intersect; thus, the two lines have no points in common. The graphs of the equations in this example are shown in <a aria-label="View Figure 8" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_007">Figure 8</a>.</p><div class="os-figure" id="Figure_09_01_007"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_007">
+<span data-alt="A Cartesian coordinate system shows two distinct parallel lines. The red line, labeled with the equation y = -1/2x + 9/2, has a negative slope and a y-intercept of 4.5. The blue line, labeled with the equation y = -1/2x + 13/2, also has a negative slope of -1/2 and a y-intercept of 6.5. Both lines extend across the grid, with the x-axis ranging from -12 to 12 and the y-axis ranging from -12 to 12, marked with increments of 2." data-type="media" id="fs-id1165134176028">
+<img alt="A Cartesian coordinate system shows two distinct parallel lines. The red line, labeled with the equation y = -1/2x + 9/2, has a negative slope and a y-intercept of 4.5. The blue line, labeled with the equation y = -1/2x + 13/2, also has a negative slope of -1/2 and a y-intercept of 6.5. Both lines extend across the grid, with the x-axis ranging from -12 to 12 and the y-axis ranging from -12 to 12, marked with increments of 2." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/0bc5feef62f26500d5c6222b75d57c6fc7896022" loading="lazy" src="../../notes-assets/a3480e4ac873e3961f1d.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">8</span>
+</figcaption></figure></div>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135369112">We can approach this problem in two ways. Because one equation is already solved for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the most obvious step is to use substitution.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135606813"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mn>9</mn><mo>−</mo><mn>2</mn><mi>y</mi><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>9</mn><mo>+</mo><mn>0</mn><mi>y</mi><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>9</mn><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134039252">Clearly, this statement is a contradiction because <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>9</mn><mo>≠</mo><mn>13.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Therefore, the system has no solution.</p>
+<p id="fs-id1165137742034">The second approach would be to first manipulate the equations so that they are both in slope-intercept form. We manipulate the first equation as follows.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137742038"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>=</mo><mn>9</mn><mn>−2</mn><mi>y</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>9</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>9</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135403368">We then convert the second equation expressed to slope-intercept form.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135403371"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>13</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mrow>
+<mn>13</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134117273">Comparing the equations, we see that they have the same slope but different <em data-effect="italics">y</em>-intercepts. Therefore, the lines are parallel and do not intersect.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165131892402"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>9</mn>
+<mn>2</mn>
+</mfrac>
+</mtd>
+</mtr>
+</mtable>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mrow>
+<mn>13</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165134258368"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135613523"><header></header><section><div data-type="problem" id="fs-id1165135613524"><div class="os-problem-container"><p id="fs-id1165135613525">Solve the following system of equations in two variables.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135613529"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mn>2</mn><mi>y</mi><mn>−2</mn><mi>x</mi><mo>=</mo><mn>2</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mn>2</mn><mi>y</mi><mn>−2</mn><mi>x</mi><mo>=</mo><mn>6</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135189711">No solution. It is an inconsistent system.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135189716"><h3 data-type="title">Expressing the Solution of a System of Dependent Equations Containing Two Variables </h3>
+<p id="fs-id1165133200582">Recall that a <span class="no-emphasis" data-type="term" group-by="d" id="term-00013">dependent system</span> of equations in two variables is a system in which the two equations represent the same line. Dependent systems have an infinite number of solutions because all of the points on one line are also on the other line. After using substitution or addition, the resulting equation will be an identity, such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<section class="worked-example" id="Example_09_01_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165133299011"><header></header><section>
+<div data-type="problem" id="fs-id1165133299013"><div class="os-problem-container"><h4 data-type="title">Finding a Solution to a Dependent System of Linear Equations </h4>
+<p id="fs-id1165134199526">Find a solution to the system of equations using the <span class="no-emphasis" data-type="term" group-by="a" id="term-00014">addition method</span>.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134199529"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow><mspace width="0.5em"></mspace><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>9</mn><mi>y</mi><mo>=</mo><mn>6</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+<div data-type="commentary" id="fs-id1165133188520"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137756871">If we rewrote both equations in the slope-intercept form, we might know what the solution would look like before adding. Let’s look at what happens when we convert the system to slope-intercept form.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137756878"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext> </mtext><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>       </mtext><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>         </mtext><mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>+</mo><mn>9</mn><mi>y</mi><mo>=</mo><mn>6</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>       </mtext><mn>9</mn><mi>y</mi><mo>=</mo><mn>−3</mn><mi>x</mi><mo>+</mo><mn>6</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>         </mtext><mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>3</mn>
+<mn>9</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>6</mn>
+<mn>9</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>         </mtext><mi>y</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135207240">See <a aria-label="View Figure 9" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_008">Figure 9</a>. Notice the results are the same. The general solution to the system is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>, −</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>x</mi><mo>+</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="os-figure" id="Figure_09_01_008"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_008"><span data-alt="A coordinate plane displays the graphs of two linear equations. The first equation, x + 3y = 2, is represented by a red line. The second equation, 3x + 9y = 6, is represented by a blue line. Both lines are coincident, meaning they overlap perfectly, indicating that the two equations are equivalent and have infinitely many solutions. The x-axis is labeled from -5 to 5, and the y-axis is labeled from -5 to 5. The lines pass through points such as (2, 0) and (-4, 2)." data-type="media" id="fs-id1165135523321">
+<img alt="A coordinate plane displays the graphs of two linear equations. The first equation, x + 3y = 2, is represented by a red line. The second equation, 3x + 9y = 6, is represented by a blue line. Both lines are coincident, meaning they overlap perfectly, indicating that the two equations are equivalent and have infinitely many solutions. The x-axis is labeled from -5 to 5, and the y-axis is labeled from -5 to 5. The lines pass through points such as (2, 0) and (-4, 2)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/08a2f54974371538714c32f2e0bb1562fea79cc9" loading="lazy" src="../../notes-assets/dc643205e7347aafcce0.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">9</span>
+</figcaption></figure></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135612011">With the addition method, we want to eliminate one of the variables by adding the equations. In this case, let’s focus on eliminating <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> If we multiply both sides of the first equation by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−3</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> then we will be able to eliminate the <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> -variable.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134042379"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>  </mo><mo stretchy="false">(</mo><mn>−3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>−3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>−3</mn><mi>x</mi><mo>−</mo><mn>9</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="eip-id1817181">Now add the equations.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165132035919"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<munder accentunder="true">
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>9</mn><mi>y</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>−6</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>+</mo><mspace width="0.5em"></mspace><mn>3</mn><mi>x</mi><mo>+</mo><mn>9</mn><mi>y</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>6</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mo stretchy="true">______________</mo>
+</munder>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mn>0</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>=</mo><mn>0</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133188516">We can see that there will be an infinite number of solutions that satisfy both equations.</p>
+</div></section><section class="worked-example" id="fs-id1165135536131"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135536137"><header></header><section><div data-type="problem" id="fs-id1165135536138"><div class="os-problem-container"><p id="fs-id1165135536139">Solve the following system of equations in two variables.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135536143"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mspace width="0.5em"></mspace><mtext>   </mtext><mtext></mtext><mtext></mtext><mi>y</mi><mn>−2</mn><mi>x</mi><mo>=</mo><mn>5</mn>
+</mtd>
+</mtr>
+</mtable>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>−3</mn><mi>y</mi><mo>+</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>−15</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135176848">The system is dependent so there are infinite solutions of the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135559421"><h3 data-type="title"> Using Systems of Equations to Investigate Profits</h3>
+<p id="fs-id1165135559426">Using what we have learned about systems of equations, we can return to the skateboard manufacturing problem at the beginning of the section. The skateboard manufacturer’s <span data-type="term" group-by="r" id="term-00015">revenue function</span> is the function used to calculate the amount of money that comes into the business. It can be represented by the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>R</mi><mo>=</mo><mi>x</mi><mi>p</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo>
+</mrow>
+</mrow></semantics></math></span></span> quantity and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>p</mi><mo>=</mo>
+</mrow>
+</mrow></semantics></math></span></span> price. The revenue function is shown in orange in <a aria-label="View Figure 10" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_009">Figure 10</a>.</p><p id="fs-id1165135459707">The <span data-type="term" group-by="c" id="term-00016">cost function</span> is the function used to calculate the costs of doing business. It includes fixed costs, such as rent and salaries, and variable costs, such as utilities. The cost function is shown in blue in <a aria-label="View Figure 10" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_009">Figure 10</a>. The <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span> -axis represents quantity in hundreds of units. The <em data-effect="italics">y</em>-axis represents either cost or revenue in hundreds of dollars.</p><div class="os-figure" id="Figure_09_01_009"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_009">
+<span data-alt="A break-even graph plots Money (in hundreds of dollars) vs. Quantity (in hundreds of units), showing Cost, Revenue, and the break-even point at (7, 33), with profit/loss regions." data-type="media" id="fs-id1165134381431">
+<img alt="A break-even graph plots Money (in hundreds of dollars) vs. Quantity (in hundreds of units), showing Cost, Revenue, and the break-even point at (7, 33), with profit/loss regions." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/bdd21595beb40b8b01818db5a1716c071dc93482" loading="lazy" src="../../notes-assets/54aa30dfca995b18b177.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">10</span>
+</figcaption></figure></div>
+<p id="fs-id1165135449745">The point at which the two lines intersect is called the <span data-type="term" group-by="b" id="term-00017">break-even point</span>. We can see from the graph that if 700 units are produced, the cost is $3,300 and the revenue is also $3,300. In other words, the company breaks even if they produce and sell 700 units. They neither make money nor lose money.</p>
+<p id="fs-id1165135449753">The shaded region to the right of the break-even point represents quantities for which the company makes a profit. The shaded region to the left represents quantities for which the company suffers a loss. The <span data-type="term" group-by="p" id="term-00018">profit function</span> is the revenue function minus the cost function, written as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>C</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Clearly, knowing the quantity for which the cost equals the revenue is of great importance to businesses.</p>
+<section class="worked-example" id="Example_09_01_010"><div class="problem-statement"><h3>Example 10</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134040438"><header></header><section><div data-type="problem" id="fs-id1165134040440"><div class="os-problem-container"><h4 data-type="title">Finding the Break-Even Point and the Profit Function Using Substitution</h4>
+<p id="fs-id1165134040445">Given the cost function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.85</mn><mi>x</mi><mo>+</mo><mn>35,000</mn>
+</mrow>
+</mrow></semantics></math></span></span> and the revenue function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.55</mn><mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> find the break-even point and the profit function.</p></div></div>
+<div data-type="commentary" id="fs-id1165131987013"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137683008">The cost to produce 50,000 units is $77,500, and the revenue from the sales of 50,000 units is also $77,500. To make a profit, the business must produce and sell more than 50,000 units. See <a aria-label="View Figure 11" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_010">Figure 11</a>.</p>
+<div class="os-figure" id="Figure_09_01_010"><figure class="small ui-has-child-figcaption" data-id="Figure_09_01_010">
+<span data-alt="A line graph plots 'Dollars' on the y-axis against 'Quantity' on the x-axis. The blue line represents the Revenue function, R(x) = 1.55x, starting from the origin. The red line represents the Cost function, C(x) = 0.85x + 35,000, starting from a y-intercept of 35,000. The two lines intersect at a point labeled 'Break-even point' with coordinates (50,000, 77,500). The shaded area where the revenue line is above the cost line, to the right of the break-even point, is labeled 'Profit'. The x-axis ranges from 0 to 100,000, and the y-axis ranges from 0 to 100,000." data-type="media" id="fs-id1165137683020">
+<img alt="A line graph plots 'Dollars' on the y-axis against 'Quantity' on the x-axis. The blue line represents the Revenue function, R(x) = 1.55x, starting from the origin. The red line represents the Cost function, C(x) = 0.85x + 35,000, starting from a y-intercept of 35,000. The two lines intersect at a point labeled 'Break-even point' with coordinates (50,000, 77,500). The shaded area where the revenue line is above the cost line, to the right of the break-even point, is labeled 'Profit'. The x-axis ranges from 0 to 100,000, and the y-axis ranges from 0 to 100,000." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/066300b1b3ce105f193b9a719be58553f179be3a" loading="lazy" src="../../notes-assets/d444099aaf3dd7b74c7c.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">11</span>
+</figcaption></figure></div>
+<p id="fs-id1165133311941">We see from the graph in <a aria-label="View Figure 12" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables#Figure_09_01_011">Figure 12</a> that the profit function has a negative value until <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>50,000</mn><mo>,</mo>
+</mrow></mrow></semantics></math></span></span> when the graph crosses the <em data-effect="italics">x</em>-axis. Then, the graph emerges into positive <em data-effect="italics">y</em>-values and continues on this path as the profit function is a straight line. This illustrates that the break-even point for businesses occurs when the profit function is 0. The area to the left of the break-even point represents operating at a loss.</p><div class="os-figure" id="Figure_09_01_011"><figure class="ui-has-child-figcaption" data-id="Figure_09_01_011">
+<span data-alt="A line graph showing profit P(x) = 0.7x - 35,000. The x-axis is quantity, y-axis is dollars profit. The break-even point is at (50,000, 0), where profit is zero." data-type="media" id="fs-id1165137480080">
+<img alt="A line graph showing profit P(x) = 0.7x - 35,000. The x-axis is quantity, y-axis is dollars profit. The break-even point is at (50,000, 0), where profit is zero." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/392f13fb4bd0a777a94bfa466bfd0b8735d72950" loading="lazy" src="../../notes-assets/5dd312d779ce337c3b2d.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">12</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135417010">Write the system of equations using <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi>
+</mrow>
+</mrow></semantics></math></span></span> to replace function notation.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134311198"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>y</mi><mo>=</mo><mn>0.85</mn><mi>x</mi><mo>+</mo><mn>35,000</mn>
+</mtd>
+</mtr>
+</mtable>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>y</mi><mo>=</mo><mn>1.55</mn><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133324060">Substitute the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0.85</mn><mi>x</mi><mo>+</mo><mn>35,000</mn>
+</mrow>
+</mrow></semantics></math></span></span> from the first equation into the second equation and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134154592"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mn>0.85</mn><mi>x</mi><mo>+</mo><mn>35,000</mn><mo>=</mo><mn>1.55</mn><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>35,000</mn><mo>=</mo><mn>0.7</mn><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mspace width="0.5em"></mspace><mn>50,000</mn><mo>=</mo><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134386693">Then, we substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>50,000</mn>
+</mrow>
+</mrow></semantics></math></span></span> into either the cost function or the revenue function.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134277192"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mn>1.55</mn><mrow><mo>(</mo>
+<mrow>
+<mn>50,000</mn>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>77,500</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133366175">The break-even point is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>50,000</mn><mo>,</mo><mn>77,500</mn>
+</mrow>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165134199380">The profit function is found using the formula <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>C</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135450285"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.55</mn><mi>x</mi><mo>−</mo><mo stretchy="false">(</mo><mn>0.85</mn><mi>x</mi><mo>+</mo><mn>35</mn><mo>,</mo><mn>000</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mtext>       </mtext><mo>=</mo><mn>0.7</mn><mi>x</mi><mo>−</mo><mn>35</mn><mo>,</mo><mn>000</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135551679">The profit function is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.7</mn><mi>x</mi><mn>−35,000.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<section class="worked-example" id="Example_09_01_011"><div class="problem-statement"><h3>Example 11</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135202419"><header></header><section>
+<div data-type="problem" id="fs-id1165135202422"><div class="os-problem-container"><h4 data-type="title">Writing and Solving a System of Equations in Two Variables</h4>
+<p id="fs-id1165135202427">The cost of a ticket to the circus is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>25.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> for children and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>50.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> for adults. On a certain day, attendance at the circus is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2,000</mn>
+</mrow>
+</mrow></semantics></math></span></span> and the total gate revenue is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>70,000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> How many children and how many adults bought tickets?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135173072">Let <em data-effect="italics">c</em> = the number of children and <em data-effect="italics">a</em> = the number of adults in attendance.</p><p id="fs-id1165134480848">The total number of people is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2,000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We can use this to write an equation for the number of people at the circus that day.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165133294309"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>a</mi><mo>=</mo><mn>2,000</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133194620">The revenue from all children can be found by multiplying <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>25.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> by the number of children, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>25</mn><mi>c</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The revenue from all adults can be found by multiplying <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>50.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> by the number of adults, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>50</mn><mi>a</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The total revenue is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>70,000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> We can use this to write an equation for the revenue.</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135253116"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mn>25</mn><mi>c</mi><mo>+</mo><mn>50</mn><mi>a</mi><mo>=</mo><mn>70,000</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135650583">We now have a system of linear equations in two variables.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135650586"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow><mspace width="0.5em"></mspace><mi>c</mi><mo>+</mo><mi>a</mi><mo>=</mo><mn>2,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mn>25</mn><mi>c</mi><mo>+</mo><mn>50</mn><mi>a</mi><mo>=</mo><mn>70,000</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135475866">In the first equation, the coefficient of both variables is 1. We can quickly solve the first equation for either <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi>
+</mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>a</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> We will solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165133348846"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mi>c</mi><mo>+</mo><mi>a</mi><mo>=</mo><mn>2,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mi>a</mi><mo>=</mo><mn>2,000</mn><mo>−</mo><mi>c</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165133074804">Substitute the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2,000</mn><mo>−</mo><mi>c</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the second equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi>
+</mrow>
+</mrow></semantics></math></span></span> and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165133364760"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>25</mn><mi>c</mi><mo>+</mo><mn>50</mn><mo stretchy="false">(</mo><mn>2,000</mn><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mn>70,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>25</mn><mi>c</mi><mo>+</mo><mn>100,000</mn><mo>−</mo><mn>50</mn><mi>c</mi><mo>=</mo><mn>70,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>−</mo><mn>25</mn><mi>c</mi><mo>=</mo><mn>−30,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>c</mi><mo>=</mo><mn>1,200</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135309876">Substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>=</mo><mn>1,200</mn>
+</mrow>
+</mrow></semantics></math></span></span> into the first equation to solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135372924"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>1,200</mn><mo>+</mo><mi>a</mi><mo>=</mo><mn>2,000</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>a</mi><mo>=</mo><mn>800</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135640567">We find that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1,200</mn>
+</mrow>
+</mrow></semantics></math></span></span> children and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>800</mn>
+</mrow>
+</mrow></semantics></math></span></span> adults bought tickets to the circus that day.</p></div></section>
+<section class="worked-example" id="fs-id1165135257013"><div class="problem-statement"><h3>Try It #8</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="fs-id1165135257020"><header></header><section><div data-type="problem" id="fs-id1165135257021"><div class="os-problem-container"><p id="fs-id1165137895098">Meal tickets at the circus cost <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>4.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> for children and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>12.00</mn>
+</mrow>
+</mrow></semantics></math></span></span> for adults. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>1,650</mn>
+</mrow>
+</mrow></semantics></math></span></span> meal tickets were bought for a total of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>$</mtext><mn>14,200</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> how many children and how many adults bought meal tickets?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165134483376">700 children, 950 adults</p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165134483380"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135649499">Access these online resources for additional instruction and practice with systems of linear equations.</p>
+<ul id="fs-id1165135649502">
+<li><a aria-label="Go to Solving Systems of Equations Using Substitution" href="https://openstax.org/l/syssubst" rel="noopener nofollow" target="_blank">Solving Systems of Equations Using Substitution</a></li>
+<li><a aria-label="Go to Solving Systems of Equations Using Elimination" href="https://openstax.org/l/syselim" rel="noopener nofollow" target="_blank">Solving Systems of Equations Using Elimination</a></li>
+<li><a aria-label="Go to Applications of Systems of Equations" href="https://openstax.org/l/sysapp" rel="noopener nofollow" target="_blank">Applications of Systems of Equations</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/7-1-systems-of-linear-equations-two-variables">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

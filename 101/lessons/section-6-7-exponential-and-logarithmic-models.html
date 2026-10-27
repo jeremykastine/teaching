@@ -1,0 +1,2378 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>6.7: Exponential and Logarithmic Models | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-6-6-exponential-and-logarithmic-equations.html">Previous: 6.6</a><a href="section-6-8-fitting-exponential-models-to-data.html">Next: 6.8</a><a href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>6.7: Exponential and Logarithmic Models</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Optional applications topic.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Model exponential growth and decay.</li>
+<li>Use Newton’s Law of Cooling.</li>
+<li>Use logistic-growth models.</li>
+<li>Choose an appropriate model for data.</li>
+<li>Express an exponential model in base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi>
+</mrow>
+</mrow></semantics></math></span> .</li>
+</ul></section></div>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_001"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_001"><span data-alt="Inside a nuclear research reactor." data-type="media" id="fs-id1165137664850">
+<img alt="Inside a nuclear research reactor." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/945d23a8c914713a75f1035f63853afa390c4897" loading="lazy" src="../../notes-assets/a9bd7eee98a2dd523c06.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+<span class="os-caption">A nuclear research reactor inside the Neely Nuclear Research Center on the Georgia Institute of Technology campus (credit: Georgia Tech Research Institute)</span>
+</figcaption></figure></div><p id="fs-id1165134081045">We have already explored some basic applications of exponential and logarithmic functions. In this section, we explore some important applications in more depth, including radioactive isotopes and Newton’s Law of Cooling.</p>
+<section data-depth="1" id="fs-id1165135190498"><h3 data-type="title">Modeling Exponential Growth and Decay</h3><p id="fs-id1165135169375">In real-world applications, we need to model the behavior of a function. In mathematical modeling, we choose a familiar general function with properties that suggest that it will model the real-world phenomenon we wish to analyze. In the case of rapid growth, we may choose the exponential growth function:</p><div class="unnumbered" data-label="" data-type="equation" id="eip-10"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span>
+</div><p id="eip-292">where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span></span> is equal to the value at time zero, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>e</mi></mrow></semantics></math></span></span> is Euler’s constant, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>k</mi></mrow></semantics></math></span></span> is a positive constant that determines the rate (percentage) of growth. We may use the <span class="no-emphasis" data-type="term" group-by="e" id="term-00006">exponential growth</span> function in applications involving <strong>doubling time</strong>, the time it takes for a quantity to double. Such phenomena as wildlife populations, financial investments, biological samples, and natural resources may exhibit growth based on a doubling time. In some applications, however, as we will see when we discuss the logistic equation, the logistic model sometimes fits the data better than the exponential model.</p><p id="fs-id1165137416167">On the other hand, if a quantity is falling rapidly toward zero, without ever reaching zero, then we should probably choose the <span data-type="term" group-by="e" id="term-00007">exponential decay</span> model. Again, we have the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span></span> where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span></span> is the starting value, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>e</mi></mrow></semantics></math></span></span> is Euler’s constant. Now <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>k</mi></mrow></semantics></math></span></span> is a negative constant that determines the rate of decay. We may use the exponential decay model when we are calculating <span data-type="term" group-by="h" id="term-00008">half-life</span>, or the time it takes for a substance to exponentially decay to half of its original quantity. We use half-life in applications involving radioactive isotopes.</p><p id="fs-id1165137824748">In our choice of a function to serve as a mathematical model, we often use data points gathered by careful observation and measurement to construct points on a graph and hope we can recognize the shape of the graph. Exponential growth and decay graphs have a distinctive shape, as we can see in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_002">Figure 2</a> and <a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_003">Figure 3</a>. It is important to remember that, although parts of each of the two graphs seem to lie on the <em data-effect="italics">x</em>-axis, they are really a tiny distance above the <em data-effect="italics">x</em>-axis.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_002"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_002">
+<span data-alt="Graph of y=2e^(3x) with the labeled points (-1/3, 2/e), (0, 2), and (1/3, 2e) and with the asymptote at y=0." data-type="media" id="fs-id1165137565761">
+<img alt="Graph of y=2e^(3x) with the labeled points (-1/3, 2/e), (0, 2), and (1/3, 2e) and with the asymptote at y=0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/b456a3248d9a06c67254150544811fd72d3d40d6" loading="lazy" src="../../notes-assets/b45d1759445d73fafa10.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+<span class="os-caption">A graph showing exponential growth. The equation is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>2</mn><msup><mi>e</mi><mrow><mn>3</mn><mi>x</mi></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span> </span>
+</figcaption></figure></div>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_003"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_003">
+<span data-alt="Graph of y=3e^(-2x) with the labeled points (-1/2, 3e), (0, 3), and (1/2, 3/e) and with the asymptote at y=0." data-type="media" id="fs-id1165137600882">
+<img alt="Graph of y=3e^(-2x) with the labeled points (-1/2, 3e), (0, 3), and (1/2, 3/e) and with the asymptote at y=0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/96fd35ae0ac8a68b4a0bed2977c27e446551da04" loading="lazy" src="../../notes-assets/788d978eded970feef29.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+<span class="os-divider"> </span>
+<span class="os-caption">A graph showing exponential decay. The equation is <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>3</mn><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>x</mi></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span> </span>
+</figcaption></figure></div>
+<p id="fs-id1165137643044">Exponential growth and decay often involve very large or very small numbers. To describe these numbers, we often use orders of magnitude. The <span data-type="term" group-by="o" id="term-00009">order of magnitude</span> is the power of ten, when the number is expressed in scientific notation, with one digit to the left of the decimal. For example, the distance to the nearest star, <span class="no-emphasis" data-type="term" group-by="P" id="term-00010">Proxima Centauri</span>, measured in kilometers, is 40,113,497,200,000 kilometers. Expressed in scientific notation, this is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mn>4.01134972</mn><mspace width="0.5em"></mspace><mo>×</mo><mspace width="0.5em"></mspace><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span></span> So, we could describe this number as having order of magnitude <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span></span> </p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165137414501"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Characteristics of the Exponential Function, <span class="math-scroll inline-math"><math display="inline">
+<semantics>
+<mrow>
+<mrow>
+<mi>y</mi>
+<mo>=</mo>
+<msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi>
+<mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow>
+
+</semantics>
+</math></span> </span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137551809">An exponential function with the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span></span> has the following characteristics:</p>
+<ul id="fs-id1165137530021">
+<li>one-to-one function</li>
+<li>horizontal asymptote: <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span> </li>
+<li>domain: <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mo>–</mo><mi>∞</mi><mo>,</mo><mo> </mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </li>
+<li>range: <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </li>
+<li>x intercept: none</li>
+<li>y-intercept: <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><msub><mi>A</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span> </li>
+<li>increasing if <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow></mrow></semantics></math></span> (see <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_004">Figure 4</a>)</li>
+<li>decreasing if <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>&lt;</mo><mn>0</mn></mrow></mrow></semantics></math></span> (see <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_004">Figure 4</a>)</li>
+</ul>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_004"><figure class="medium ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_004">
+<span data-alt="Two graphs of y=(A_0)(e^(kt)) with the asymptote at y=0. The first graph is of when k&gt;0 and with the labeled points (1/k, (A_0)e), (0, A_0), and (-1/k, (A_0)/e). The second graph is of when k&lt;0 and with the labeled points (-1/k, (A_0)e), (0, A_0), and (1/k, (A_0)/e)." data-type="media" id="fs-id1165135511596">
+<img alt="Two graphs of y=(A_0)(e^(kt)) with the asymptote at y=0. The first graph is of when k&gt;0 and with the labeled points (1/k, (A_0)e), (0, A_0), and (-1/k, (A_0)/e). The second graph is of when k&lt;0 and with the labeled points (-1/k, (A_0)e), (0, A_0), and (1/k, (A_0)/e)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/4dba2cb2195e3814b2d37e8cffdc0644df2f1f40" loading="lazy" src="../../notes-assets/2567cb31a95587fd3602.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+<span class="os-divider"> </span>
+<span class="os-caption">An exponential function models exponential growth when <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow></mrow></semantics></math></span> and exponential decay when <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>&lt;</mo><mn>0.</mn></mrow></mrow></semantics></math></span> </span>
+</figcaption></figure></div></div></section></div><section class="worked-example" id="Example_04_07_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137584968"><header></header><section><div data-type="problem" id="fs-id1165137399318"><div class="os-problem-container"><h4 data-type="title">Graphing Exponential Growth</h4>
+<p id="fs-id1165134381668">A population of bacteria doubles every hour. If the culture started with 10 bacteria, graph the population as a function of time.</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165137464184"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135188012">The population of bacteria after ten hours is 10,240. We could describe this amount is being of the order of magnitude <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>.</mo></mrow></mrow></semantics></math></span></span> The population of bacteria after twenty hours is 10,485,760 which is of the order of magnitude <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo>,</mo></mrow></mrow></semantics></math></span></span> so we could say that the population has increased by three orders of magnitude in ten hours.</p>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135261481">When an amount grows at a fixed percent per unit time, the growth is exponential. To find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span></span> we use the fact that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span></span> is the amount at time zero, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mn>10.</mn></mrow></mrow></semantics></math></span></span> To find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>,</mo></mrow></mrow></semantics></math></span></span> use the fact that after one hour <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span></span> the population doubles from <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mn>10</mn></mrow></mrow></semantics></math></span></span> to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mn>20.</mn></mrow></mrow></semantics></math></span></span> The formula is derived as follows</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137530969"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>20</mn><mo>=</mo><mn>10</mn><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mo>⋅</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>2</mn><mo>=</mo><msup>
+<mi>e</mi>
+<mi>k</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by 10</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mn>2</mn><mo>=</mo><mi>k</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural logarithm</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id3079167">so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>=</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow></mrow></semantics></math></span></span> Thus the equation we want to graph is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>10</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo stretchy="false">(</mo><mi>ln</mi><mn>2</mn><mo stretchy="false">)</mo><mi>t</mi>
+</mrow>
+</msup>
+<mo>=</mo><mn>10</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+</mrow>
+<mi>t</mi>
+</msup>
+<mo>=</mo><mn>10</mn><mo>·</mo><msup>
+<mn>2</mn>
+<mi>t</mi>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> The graph is shown in <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_005">Figure 5</a>.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_005">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_005"><span data-alt="A graph starting at ten on the y-axis and rising rapidly to the right." data-type="media" id="fs-id1165137715158">
+<img alt="A graph starting at ten on the y-axis and rising rapidly to the right." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/ec77c70bf2c26b01efc0d8c8f39bd4992016d3f8" loading="lazy" src="../../notes-assets/1ced7abf5bc320f1f8de.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>10</mn><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mi>ln</mi><mn>2</mn></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span> </span>
+</figcaption></figure>
+</div></div></section>
+<section data-depth="2" id="fs-id1165137803583"><h4 data-type="title">Half-Life</h4><p id="fs-id1165137696285">We now turn to <span data-type="term" group-by="e" id="term-00011">exponential decay</span>. One of the common terms associated with exponential decay, as stated above, is <strong>half-life</strong>, the length of time it takes an exponentially decaying quantity to decrease to half its original amount. Every radioactive isotope has a half-life, and the process describing the exponential decay of an isotope is called radioactive decay.</p><p id="eip-346">To find the half-life of a function describing exponential decay, solve the following equation:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-942"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><msub><mi>A</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span> </div><p id="fs-id1165135177747">We find that the half-life depends only on the constant <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>k</mi></mrow></semantics></math></span></span> and not on the starting quantity <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>.</mo></mrow></mrow></semantics></math></span></span> </p>
+<p id="fs-id1165137454141">The formula is derived as follows
+</p><div class="unnumbered" data-label="" data-type="equation" id="eip-167"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>=</mo><msub>
+<mi>A</mi>
+<mi>o</mi>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by </mtext><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>k</mi><mi>t</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural log</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mi>ln</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mi>t</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Apply laws of logarithms</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mo>−</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>k</mi>
+</mfrac>
+<mo>=</mo><mi>t</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by </mtext><mi>k</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137423324">Since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>t</mi><mo>,</mo></mrow></mrow></semantics></math></span></span> the time, is positive, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>k</mi></mrow></semantics></math></span></span> must, as expected, be negative. This gives us the half-life formula</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137697986"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mrow><mi>t</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>ln</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mi>k</mi></mfrac></mrow></mrow></semantics></math></span>
+</div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137418076"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137528941"><strong>Given the half-life, find the decay rate.</strong></p><ol id="fs-id1165135186559" type="1">
+<li>Write <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span> </li>
+<li>Replace <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>A</mi></mrow></semantics></math></span> by <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span> and replace <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>t</mi></mrow></semantics></math></span> by the given half-life.</li>
+<li>Solve to find <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>.</mo></mrow></mrow></semantics></math></span> Express <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>k</mi></mrow></semantics></math></span> as an exact value (do not round).</li>
+</ol>
+<p id="fs-id1165135613329">Note: <em data-effect="italics">It is also possible to find the decay rate using</em> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>k</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>ln</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mi>t</mi></mfrac><mo>.</mo></mrow></mrow></semantics></math></span></span> </p></div></section></div>
+<section class="worked-example" id="Example_04_07_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137827442"><header></header><section>
+<div data-type="problem" id="fs-id1165137732189"><div class="os-problem-container"><h4 data-type="title">Finding the Function that Describes Radioactive Decay</h4>
+<p id="fs-id1165137501905">The half-life of carbon-14 is 5,730 years. Express the amount of carbon-14 remaining as a function of time, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>t</mi><mo>.</mo></mrow></mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137805508">This formula is derived as follows.
+</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134317970"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>A</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>The continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>0.5</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mo>⋅</mo><mn>5730</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute the half-life for </mtext><mi>t</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mn>0.5</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mspace width="0.5em"></mspace><mtext>for </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>0.5</mn><mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mn>5730</mn><mi>k</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by </mtext><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5730</mn><mi>k</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural log of both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>k</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>5730</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by the coefficient of </mtext><mi>k</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>A</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>5730</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>r</mi><mspace width="0.5em"></mspace><mtext>in the continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137423070">The function that describes this continuous decay is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo></mrow><mrow><mn>5730</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mi>t</mi></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span></span> We observe that the coefficient of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>t</mi><mo>,</mo></mrow></mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mfrac><mrow><mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo></mrow><mrow><mn>5730</mn></mrow></mfrac><mo>≈</mo><mo>−</mo><mn>1.2097</mn><mo>×</mo><msup><mn>10</mn><mn>−4</mn></msup></mrow></mrow></semantics></math></span></span> is negative, as expected in the case of exponential decay.</p></div></section>
+<section class="worked-example" id="fs-id1165137639710"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_01"><header></header><section>
+<div data-type="problem" id="fs-id1165135527002"><div class="os-problem-container"><p id="fs-id1165135527004">The half-life of plutonium-244 is 80,000,000 years. Find a function that gives the amount of plutonium-244 remaining as a function of time, measured in years.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135484584"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mn>0.0000000087</mn><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span></span> </p></div></section>
+</section><section data-depth="2" id="fs-id1165137828123"><h4 data-type="title">Radiocarbon Dating</h4>
+<p id="fs-id1165135154026">The formula for radioactive decay is important in <span class="no-emphasis" data-type="term" group-by="r" id="term-00012">radiocarbon dating</span>, which is used to calculate the approximate date a plant or animal died. Radiocarbon dating was discovered in 1949 by Willard Libby, who won a Nobel Prize for his discovery. It compares the difference between the ratio of two isotopes of carbon in an organic artifact or fossil to the ratio of those two isotopes in the air. It is believed to be accurate to within about 1% error for plants or animals that died within the last 60,000 years.</p>
+<p id="fs-id1165137731568">Carbon-14 is a radioactive isotope of carbon that has a half-life of 5,730 years. It occurs in small quantities in the carbon dioxide in the air we breathe. Most of the carbon on Earth is carbon-12, which has an atomic weight of 12 and is not radioactive. Scientists have determined the ratio of carbon-14 to carbon-12 in the air for the last 60,000 years, using tree rings and other organic samples of known dates—although the ratio has changed slightly over the centuries.</p><p id="fs-id1165137409468">As long as a plant or animal is alive, the ratio of the two isotopes of carbon in its body is close to the ratio in the atmosphere. When it dies, the carbon-14 in its body decays and is not replaced. By comparing the ratio of carbon-14 to carbon-12 in a decaying sample to the known ratio in the atmosphere, the date the plant or animal died can be approximated.</p>
+<p id="fs-id1165135193799">Since the half-life of carbon-14 is 5,730 years, the formula for the amount of carbon-14 remaining after <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>t</mi></mrow></semantics></math></span></span> years is
+</p><div class="unnumbered" data-label="" data-type="equation" id="eip-866"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo>≈</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>5730</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-692">where</p><ul id="eip-id1165137849256">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>A</mi></mrow></semantics></math></span> is the amount of carbon-14 remaining</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span> is the amount of carbon-14 when the plant or animal began decaying.</li>
+</ul><p id="fs-id1165137634094">This formula is derived as follows:</p><div class="unnumbered" data-label="" data-type="equation" id="eip-777"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>A</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>The continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mtext></mtext><mn>0.5</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mo>⋅</mo><mn>5730</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute the half-life for</mtext><mspace width="0.4em"></mspace><mi>t</mi><mspace width="0.4em"></mspace><mtext>and</mtext><mspace width="0.4em"></mspace><mn>0.5</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mspace width="0.4em"></mspace><mtext>for</mtext><mspace width="0.4em"></mspace><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>0.5</mn><mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mn>5730</mn><mi>k</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by</mtext><mspace width="0.4em"></mspace><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5730</mn><mi>k</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural log of both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>k</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>5730</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by the coefficient of</mtext><mspace width="0.4em"></mspace><mi>k</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>A</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mn>5730</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for</mtext><mspace width="0.4em"></mspace><mi>k</mi><mspace width="0.4em"></mspace><mtext>in the continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137600416">To find the age of an object, we solve this equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>t</mi><mo>:</mo></mrow></mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-934"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mrow><mo>(</mo><mrow><mfrac><mi>A</mi><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mo>−</mo><mn>0.000121</mn></mrow></mfrac>
+</mrow></mrow></semantics></math></span> </div><p id="fs-id1165137841700">Out of necessity, we neglect here the many details that a scientist takes into consideration when doing carbon-14 dating, and we only look at the basic formula. The ratio of carbon-14 to carbon-12 in the atmosphere is approximately 0.0000000001%. Let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>r</mi></mrow></semantics></math></span></span> be the ratio of carbon-14 to carbon-12 in the organic artifact or fossil to be dated, determined by a method called liquid scintillation. From the equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>A</mi><mo>≈</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mn>0.000121</mn><mi>t</mi></mrow></msup></mrow></mrow></semantics></math></span></span> we know the ratio of the percentage of carbon-14 in the object we are dating to the initial amount of carbon-14 in the object when it was formed is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>r</mi><mo>=</mo><mfrac><mi>A</mi><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow></mfrac><mo>≈</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>0.000121</mn><mi>t</mi></mrow></msup><mo>.</mo></mrow></mrow></semantics></math></span></span> We solve this equation for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mrow><mi>t</mi><mo>,</mo></mrow></mrow></semantics></math></span></span> to get</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-453"> <span class="math-scroll display-math"><math display="block"><semantics><mrow><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow></mrow><mrow><mo>−</mo><mn>0.000121</mn></mrow></mfrac></mrow></mrow></semantics></math></span> </div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137807119"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165134086082"><strong>Given the percentage of carbon-14 in an object, determine its age.</strong></p>
+<ol id="fs-id1165135209232" type="1">
+<li>Express the given percentage of carbon-14 as an equivalent decimal, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Substitute for <em data-effect="italics">k</em> in the equation <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mi>r</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mo>−</mo><mn>0.000121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> and solve for the age, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_07_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137885960"><header></header><section>
+<div data-type="problem" id="fs-id1165137750064"><div class="os-problem-container"><h4 data-type="title">Finding the Age of a Bone</h4>
+<p id="fs-id1165137771807">A bone fragment is found that contains 20% of its original carbon-14. To the nearest year, how old is the bone?</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135512183"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135205625">The instruments that measure the percentage of carbon-14 are extremely sensitive and, as we mention above, a scientist will need to do much more work than we did in order to be satisfied. Even so, carbon dating is only accurate to about 1%, so this age should be given as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>13,301 years</mtext><mo>±</mo><mtext>1% or 13,301 years</mtext><mo>±</mo><mtext>133 years</mtext><mtext>.</mtext>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135445864">We substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>20</mn><mi>%</mi><mo>=</mo><mn>0.20</mn>
+</mrow>
+</mrow></semantics></math></span></span> for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>r</mi>
+</mrow>
+</mrow></semantics></math></span></span> in the equation and solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mi>t</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132938298"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo>−</mo><mn>0.000121</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use the general form of the equation</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo>−</mo><mn>0.000121</mn>
+</mrow>
+</mfrac>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute for </mtext><mi>r</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mo>≈</mo><mn>13301</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Round to the nearest year</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135512179">The bone fragment is about 13,301 years old.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137653205"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137892458"><div class="os-problem-container"><p id="fs-id1165137892459">Cesium-137 has a half-life of about 30 years. If we begin with 200 mg of cesium-137, will it take more or less than 230 years until only 1 milligram remains?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135150652">less than 230 years, 229.3157 to be exact</p></div></section>
+</section>
+<section data-depth="2" id="fs-id1165134040514"><h4 data-type="title">Calculating Doubling Time</h4>
+<p id="fs-id1165137897897">For decaying quantities, we determined how long it took for half of a substance to decay. For growing quantities, we might want to find out how long it takes for a quantity to double. As we mentioned above, the time it takes for a quantity to double is called the <span data-type="term" group-by="d" id="term-00013">doubling time</span>.</p>
+<p id="fs-id1165137447183">Given the basic <span class="no-emphasis" data-type="term" group-by="e" id="term-00014">exponential growth</span> equation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> doubling time can be found by solving for when the original quantity has doubled, that is, by solving <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="eip-853">The formula is derived as follows:</p><div class="unnumbered" data-label="" data-type="equation" id="eip-244"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by </mtext><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mn>2</mn><mo>=</mo><mi>k</mi><mi>t</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural logarithm</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mi>k</mi>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by the coefficient of </mtext><mi>t</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137722416">Thus the doubling time is</p><div class="unnumbered" data-label="" data-type="equation" id="eip-495"><span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mi>k</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div><section class="worked-example" id="Example_04_07_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137657275"><header></header><section>
+<div data-type="problem" id="fs-id1165137464856"><div class="os-problem-container"><h4 data-type="title">Finding a Function That Describes Exponential Growth</h4>
+<p id="fs-id1165135306923">According to Moore’s Law, the doubling time for the number of transistors that can be put on a computer chip is approximately two years. Give a function that describes this behavior.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134433339">The formula is derived as follows:
+</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135333736"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mi>k</mi>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>The doubling time formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>2</mn><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mi>k</mi>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Use a doubling time of two years</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>k</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Multiply by</mtext><mspace width="0.4em"></mspace><mi>k</mi><mspace width="0.4em"></mspace><mtext>and divide by 2</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>A</mi><mspace width="0.5em"></mspace><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mi>t</mi>
+</mrow>
+</msup>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute</mtext><mspace width="0.4em"></mspace><mi>k</mi><mspace width="0.4em"></mspace><mtext>into the continuous growth formula</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135365796">The function is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mi>t</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<section class="worked-example" id="fs-id1165135190645"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_03"><header></header><section>
+<div data-type="problem" id="fs-id1165137834355"><div class="os-problem-container"><p id="fs-id1165137758818">Recent data suggests that, as of 2013, the rate of growth predicted by Moore’s Law no longer holds. Growth has slowed to a doubling time of approximately three years. Find the new function that takes that longer doubling time into account.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135525926"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mfrac>
+<mrow>
+<mi>ln</mi><mn>2</mn>
+</mrow>
+<mn>3</mn>
+</mfrac>
+<mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+</section>
+</section><section data-depth="1" id="fs-id1165137854981"><h3 data-type="title">Using Newton’s Law of Cooling</h3>
+<p id="fs-id1165137854986">Exponential decay can also be applied to temperature. When a hot object is left in surrounding air that is at a lower temperature, the object’s temperature will decrease exponentially, leveling off as it approaches the surrounding air temperature. On a graph of the temperature function, the leveling off will correspond to a horizontal asymptote at the temperature of the surrounding air. Unless the room temperature is zero, this will correspond to a <span class="no-emphasis" data-type="term" group-by="v" id="term-00015">vertical shift</span> of the generic <span data-type="term" group-by="e" id="term-00016">exponential decay</span> function. This translation leads to <span data-type="term" group-by="N" id="term-00017">Newton’s Law of Cooling</span>, the scientific formula for temperature as a function of time as an object’s temperature is equalized with the ambient temperature</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-809"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137602810">This formula is derived as follows:</p><div class="unnumbered" data-label="" data-type="equation" id="eip-741"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>b</mi>
+<mrow>
+<mi>c</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><msup>
+<mi>b</mi>
+<mrow>
+<mi>c</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+<mtable>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Laws of logarithms</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>c</mi><mi>t</mi><mi>ln</mi><mi>b</mi>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Laws of logarithms</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Rename the constant </mtext><mi>c</mi><mo> </mo><mi>ln</mi><mo> </mo><mi>b</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext>calling it </mtext><mi>k</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><div class="ui-has-child-title" data-type="note" id="fs-id1165135629984"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Newton’s Law of Cooling</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137644683">The temperature of an object, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> in surrounding air with temperature <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span></span> will behave according to the formula
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137660934"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span> </div><p>
+where
+</p><ul id="fs-id1165137415924">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span> is time</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi>
+</mrow>
+</mrow></semantics></math></span> is the difference between the initial temperature of the object and the surroundings</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi>
+</mrow>
+</mrow></semantics></math></span> is a constant, the continuous rate of cooling of the object</li>
+</ul></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137667467"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-id2434562"><strong>Given a set of conditions, apply Newton’s Law of Cooling.</strong></p>
+<ol id="fs-id1165137563116" type="1">
+<li>Set <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span> equal to the <em data-effect="italics">y</em>-coordinate of the horizontal asymptote (usually the ambient temperature).</li>
+<li>Substitute the given values into the continuous growth formula <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mi>k</mi>
+</msup>
+<msup>
+<mrow></mrow>
+<mi>t</mi>
+</msup>
+<mo>+</mo><msub>
+<mi>T</mi>
+<mi>s</mi>
+</msub>
+</mrow>
+</mrow></semantics></math></span> to find the parameters <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>A</mi>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Substitute in the desired time to find the temperature or the desired temperature to find the time.</li>
+</ol>
+</div></section></div><section class="worked-example" id="Example_04_07_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135422904"><header></header><section>
+<div data-type="problem" id="fs-id1165135422906"><div class="os-problem-container"><h4 data-type="title">Using Newton’s Law of Cooling</h4>
+<p id="fs-id1165135439846">A cheesecake is taken out of the oven with an ideal internal temperature of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>165°F,</mtext>
+</mrow>
+</mrow></semantics></math></span></span> and is placed into a <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>35°F</mn>
+</mrow>
+</mrow></semantics></math></span></span> refrigerator. After 10 minutes, the cheesecake has cooled to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>150°F</mtext><mtext>.</mtext>
+</mrow>
+</mrow></semantics></math></span></span> If we must wait until the cheesecake has cooled to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>70°F</mtext>
+</mrow>
+</mrow></semantics></math></span></span> before we eat it, how long will we have to wait?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137705786">Because the surrounding air temperature in the refrigerator is 35 degrees, the cheesecake’s temperature will decay exponentially toward 35, following the equation
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134081701"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><mn>35</mn>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137563332">We know the initial temperature was 165, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mn>6</mn><mn>5</mn><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134353692"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>165</mn><mo>=</mo><mi>A</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mn>0</mn>
+</mrow>
+</msup>
+<mo>+</mo><mn>35</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute </mtext><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>165</mn><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>A</mi><mo>=</mo><mn>130</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Solve for </mtext><mi>A</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137677897">We were given another data point, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mn>1</mn><mn>0</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mn>5</mn><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> which we can use to solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134081505"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>150</mn><mo>=</mo><mn>130</mn><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mn>10</mn>
+</mrow>
+</msup>
+<mo>+</mo><mn>35</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute (10, 150)</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mn>115</mn><mo>=</mo><mn>130</mn><msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mn>10</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Subtract 35</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mfrac>
+<mrow>
+<mn>115</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mn>10</mn><mi>k</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by 130</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>115</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>10</mn><mi>k</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural log of both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>k</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>115</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mfrac>
+<mo>≈</mo><mo>−</mo><mn>0.0123</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by the coefficient of </mtext><mi>k</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134294911">This gives us the equation for the cooling of the cheesecake: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mn>3</mn><mn>0</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>–</mo><mn>0</mn><mo>.</mo><mn>0</mn><mn>1</mn><mn>2</mn><mn>3</mn><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><mn>3</mn><mn>5</mn><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135194273">Now we can solve for the time it will take for the temperature to cool to 70 degrees.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135149883"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>70</mn><mo>=</mo><mn>130</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.0123</mn><mi>t</mi>
+</mrow>
+</msup>
+<mo>+</mo><mn>35</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Substitute in 70 for </mtext><mi>T</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>35</mn><mo>=</mo><mn>130</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.0123</mn><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Subtract 35</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mrow>
+<mn>35</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+<mo>=</mo><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.0123</mn><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by 130</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mfrac>
+<mrow>
+<mn>35</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+<mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>0.0123</mn><mi>t</mi>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Take the natural log of both sides</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mfrac>
+<mrow>
+<mn>35</mn>
+</mrow>
+<mrow>
+<mn>130</mn>
+</mrow>
+</mfrac>
+<mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo>−</mo><mn>0.0123</mn>
+</mrow>
+</mfrac>
+<mo>≈</mo><mn>106.68</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Divide by the coefficient of </mtext><mi>t</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135186349">It will take about 107 minutes, or one hour and 47 minutes, for the cheesecake to cool to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>70°F</mtext><mtext>.</mtext>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section><section class="worked-example" id="fs-id1165135305911"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_04"><header></header><section>
+<div data-type="problem" id="fs-id1165137686700"><div class="os-problem-container"><p id="fs-id1165137686701">A pitcher of water at 40 degrees Fahrenheit is placed into a 70 degree room. One hour later, the temperature has risen to 45 degrees. How long will it take for the temperature to rise to 60 degrees?</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137686707">6.026 hours</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137737677"><h3 data-type="title">Using Logistic Growth Models</h3><p id="fs-id1165137737682">Exponential growth cannot continue forever. Exponential models, while they may be useful in the short term, tend to fall apart the longer they continue. Consider an aspiring writer who writes a single line on day one and plans to double the number of lines she writes each day for a month. By the end of the month, she must write over 17 billion lines, or one-half-billion pages. It is impractical, if not impossible, for anyone to write that much in such a short period of time. Eventually, an exponential model must begin to approach some limiting value, and then the growth is forced to slow. For this reason, it is often better to use a model with an upper bound instead of an <span class="no-emphasis" data-type="term" group-by="e" id="term-00018">exponential growth</span> model, though the exponential growth model is still useful over a short term, before approaching the limiting value.</p><p id="fs-id1165135194441">The <span data-type="term" group-by="l" id="term-00019">logistic growth model</span> is approximately exponential at first, but it has a reduced rate of growth as the output approaches the model’s upper bound, called the <span data-type="term" group-by="c" id="term-00020">carrying capacity</span>. For constants <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext fontstyle="italic">a, b,</mtext>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext fontstyle="italic">c,</mtext>
+</mrow>
+</mrow></semantics></math></span></span> the logistic growth of a population over time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mrow></semantics></math></span></span> is represented by the model</p><div class="unnumbered" data-label="" data-type="equation" id="eip-391"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mi>c</mi>
+<mrow>
+<mn>1</mn><mo>+</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mi>b</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135439859">The graph in <a aria-label="View Figure 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_006">Figure 6</a> shows how the growth rate changes over time. The graph increases from left to right, but the growth rate only increases until it reaches its point of maximum growth rate, at which point the rate of increase decreases.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_006"><figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_006">
+<span data-alt="Graph of f(t)=c/(1+ae^(-tx)). The carrying capacity is the asymptote at y=c. The initial value of population is (0, c/(1+a)). The point of maximum growth is (ln(a)/b, c/2)." data-type="media" id="fs-id1165137725470">
+<img alt="Graph of f(t)=c/(1+ae^(-tx)). The carrying capacity is the asymptote at y=c. The initial value of population is (0, c/(1+a)). The point of maximum growth is (ln(a)/b, c/2)." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/325d9549808f0fcb7677dfb65222b19a147c3f46" loading="lazy" src="../../notes-assets/65bfd399559286d73494.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">6</span>
+</figcaption></figure></div>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165135207602"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Logistic Growth</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135511485">The logistic growth model is</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134239632"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mi>c</mi>
+<mrow>
+<mn>1</mn><mo>+</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mi>b</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div><p id="eip-id1165135264518">where</p>
+<ul id="fs-id1165137526317">
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>c</mi>
+<mrow>
+<mn>1</mn><mo>+</mo><mi>a</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> is the initial value</li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi>
+</mrow>
+</mrow></semantics></math></span> is the <em data-effect="italics">carrying capacity</em>, or <em data-effect="italics">limiting value</em></li>
+<li> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi>
+</mrow>
+</mrow></semantics></math></span> is a constant determined by the rate of growth.</li>
+</ul>
+</div></section></div><section class="worked-example" id="Example_04_07_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165135572080"><header></header><section><div data-type="problem" id="fs-id1165135572082"><div class="os-problem-container"><h4 data-type="title">Using the Logistic-Growth Model</h4>
+<p id="fs-id1165135572087">An influenza epidemic spreads through a population rapidly, at a rate that depends on two factors: The more people who have the flu, the more rapidly it spreads, and also the more uninfected people there are, the more rapidly it spreads. These two factors make the logistic model a good one to study the spread of communicable diseases. And, clearly, there is a maximum value for the number of people infected: the entire population.</p>
+<p id="fs-id1165134194949">For example, at time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> there is one person in a community of 1,000 people who has the flu. So, in that community, at most 1,000 people can have the flu. Researchers find that for this particular strain of the flu, the logistic growth constant is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>0.6030.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Estimate the number of people in this community who will have had this flu after ten days. Predict how many people in this community will have had this flu after a long period of time has passed.</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165135445930"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135445936">Remember that, because we are dealing with a virus, we cannot predict with certainty the number of people infected. The model only approximates the number of people infected and will not give us exact or actual values. </p>
+<p id="fs-id1165135344064">The graph in <a aria-label="View Figure 7" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_007">Figure 7</a> gives a good picture of how this model fits the data.</p><div class="os-figure" id="CNX_Precalc_Figure_04_07_007"><figure class="medium ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_007"><span data-alt="Graph of f(x)=1000/(1+999e^(-0.5030x)) with the y-axis labeled as “Cases” and the x-axis labeled as “Days”. There was 1 case on day 0, 20 on day 5, 294 on day 10, and 1000 on day 21." data-type="media" id="fs-id1165135344072">
+<img alt="Graph of f(x)=1000/(1+999e^(-0.5030x)) with the y-axis labeled as “Cases” and the x-axis labeled as “Days”. There was 1 case on day 0, 20 on day 5, 294 on day 10, and 1000 on day 21." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/5153586b5e901e4656e478535bc6e3f0c1e9af16" loading="lazy" src="../../notes-assets/13a350df072ca7c80fd8.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">7</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow>
+<mn>1000</mn></mrow>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>999</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.6030</mn><mi>x</mi></mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </span>
+</figcaption></figure></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135471239">We substitute the given data into the logistic growth model</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133200610"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mi>c</mi>
+<mrow>
+<mn>1</mn><mo>+</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mi>b</mi><mi>t</mi>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165137698371">Because at most 1,000 people, the entire population of the community, can get the flu, we know the limiting value is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>=</mo><mn>1000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> To find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> we use the formula that the number of cases at time <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>c</mi>
+<mrow>
+<mn>1</mn><mo>+</mo><mi>a</mi>
+</mrow>
+</mfrac>
+<mo>=</mo><mn>1</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> from which it follows that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>999.</mn>
+</mrow>
+</mrow></semantics></math></span></span> This model predicts that, after ten days, the number of people who have had the flu is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow>
+<mn>1000</mn>
+</mrow>
+<mrow>
+<mn>1</mn><mo>+</mo><mn>999</mn><msup>
+<mi>e</mi>
+<mrow>
+<mo>−</mo><mn>0.6030</mn><mi>x</mi>
+</mrow>
+</msup>
+</mrow>
+</mfrac>
+<mo>≈</mo><mn>293.8.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Because the actual number must be a whole number (a person has either had the flu or not) we round to 294. In the long term, the number of people who will contract the flu is the limiting value, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo>=</mo><mn>1000.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section><section class="worked-example" id="fs-id1165135262651"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_05"><header></header><section>
+<div data-type="problem" id="fs-id1165135262661"><div class="os-problem-container">
+<p id="fs-id1165135689538">Using the model in <a aria-label="Go to Example 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#Example_04_07_06">Example 6</a>, estimate the number of cases of flu on day 15.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135689548">895 cases on day 15</p></div></section>
+</section><section data-depth="1" id="fs-id1165135511570"><h3 data-type="title">Choosing an Appropriate Model for Data</h3>
+<p id="fs-id1165135511575">Now that we have discussed various mathematical models, we need to learn how to choose the appropriate model for the raw data we have. Many factors influence the choice of a mathematical model, among which are experience, scientific laws, and patterns in the data itself. Not all data can be described by elementary functions. Sometimes, a function is chosen that approximates the data over a given interval. For instance, suppose data were gathered on the number of homes bought in the United States from the years 1960 to 2013. After plotting these data in a scatter plot, we notice that the shape of the data from the years 2000 to 2013 follow a logarithmic curve. We could restrict the interval from 2000 to 2010, apply regression analysis using a logarithmic model, and use it to predict the number of home buyers for the year 2015.</p>
+<p id="fs-id1165135532198">Three kinds of functions that are often useful in mathematical models are linear functions, exponential functions, and logarithmic functions. If the data lies on a straight line, or seems to lie approximately along a straight line, a linear model may be best. If the data is non-linear, we often consider an exponential or logarithmic model, though other models, such as quadratic models, may also be considered.</p>
+<p id="fs-id1165134550686">In choosing between an exponential model and a logarithmic model, we look at the way the data curves. This is called the concavity. If we draw a line between two data points, and all (or most) of the data between those two points lies above that line, we say the curve is concave down. We can think of it as a bowl that bends downward and therefore cannot hold water. If all (or most) of the data between those two points lies below the line, we say the curve is concave up. In this case, we can think of a bowl that bends upward and can therefore hold water. An exponential curve, whether rising or falling, whether representing growth or decay, is always concave up away from its horizontal asymptote. A logarithmic curve is always concave away from its vertical asymptote. In the case of positive data, which is the most common case, an exponential curve is always concave up, and a logarithmic curve always concave down.</p>
+<p id="fs-id1165137889851">A logistic curve changes concavity. It starts out concave up and then changes to concave down beyond a certain point, called a point of inflection.</p>
+<p id="fs-id1165135511577">After using the graph to help us choose a type of function to use as a model, we substitute points, and solve to find the parameters. We reduce round-off error by choosing points as far apart as possible.</p>
+<section class="worked-example" id="Example_04_07_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134550694"><header></header><section><div data-type="problem" id="fs-id1165135196760"><div class="os-problem-container"><h4 data-type="title">Choosing a Mathematical Model</h4>
+<p id="fs-id1165135196765">Does a linear, exponential, logarithmic, or logistic model best fit the values listed in <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#Table_04_07_001">Table 1</a>? Find the model, and use a graph to check your choice.</p><div class="os-table" id="Table_04_07_001"><div class="table-scroll"><table data-id="Table_04_07_001" data-summary=".." role="presentation"><tbody>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </strong></td>
+<td data-align="center">1</td>
+<td data-align="center">2</td>
+<td data-align="center">3</td>
+<td data-align="center">4</td>
+<td data-align="center">5</td>
+<td data-align="center">6</td>
+<td data-align="center">7</td>
+<td data-align="center">8</td>
+<td data-align="center">9</td>
+</tr>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>y</mi>
+</mrow></semantics></math></span> </strong></td>
+<td data-align="center">0</td>
+<td data-align="center">1.386</td>
+<td data-align="center">2.197</td>
+<td data-align="center">2.773</td>
+<td data-align="center">3.219</td>
+<td data-align="center">3.584</td>
+<td data-align="center">3.892</td>
+<td data-align="center">4.159</td>
+<td data-align="center">4.394</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+</div>
+</div>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135416449">First, plot the data on a graph as in <a aria-label="View Figure 8" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_008">Figure 8</a>. For the purpose of graphing, round the data to two decimal places.</p>
+<div class="os-figure" id="CNX_Precalc_Figure_04_07_008">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_008">
+<span data-alt="Graph of the previous table’s values." data-type="media" id="fs-id1165135457081">
+<img alt="Graph of the previous table’s values." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/c49e47bae489fb975c3a55dd28010413145bdae0" loading="lazy" src="../../notes-assets/6b66c4a042f90e9ded8e.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">8</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165135422920">Clearly, the points do not lie on a straight line, so we reject a linear model. If we draw a line between any two of the points, most or all of the points between those two points lie above the line, so the graph is concave down, suggesting a logarithmic model. We can try <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><mi>ln</mi><mo stretchy="false">(</mo><mi>b</mi><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Plugging in the first point, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mtext>1,0</mtext>
+</mrow>
+<mo>)</mo></mrow><mtext>,</mtext>
+</mrow>
+</mrow></semantics></math></span></span> gives <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>0</mn><mo>=</mo><mi>a</mi><mi>ln</mi><mi>b</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> We reject the case that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span> (if it were, all outputs would be 0), so we know <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> Thus <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>b</mi><mo>=</mo><mn>1</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><mi>ln</mi><mrow><mo>(</mo>
+<mtext>x</mtext>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> Next we can use the point <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mtext>9,4</mtext><mtext>.394</mtext>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> to solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>:</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134187109"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>y</mi><mo>=</mo><mi>a</mi><mi>ln</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mn>4.394</mn><mo>=</mo><mi>a</mi><mi>ln</mi><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mi>a</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>4.394</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135536301">Because <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>4.394</mn>
+</mrow>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mn>9</mn>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>≈</mo><mn>2</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> an appropriate model for the data is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><mi>ln</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165135393414">To check the accuracy of the model, we graph the function together with the given points as in <a aria-label="View Figure 9" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_009">Figure 9</a>.</p><div class="os-figure" id="CNX_Precalc_Figure_04_07_009">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_009">
+<span data-alt="Graph of previous table’s values showing that it fits the function y=2ln(x) with an asymptote at x=0." data-type="media" id="fs-id1165135393422">
+<img alt="Graph of previous table’s values showing that it fits the function y=2ln(x) with an asymptote at x=0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/731530abca164b89e48642a1831a098a83ee62a1" loading="lazy" src="../../notes-assets/8ad340da658b0b568a79.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">9</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><mi>ln</mi><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165135369595">We can conclude that the model is a good fit to the data.</p>
+<p id="fs-id1165135369598">Compare <a aria-label="View Figure 9" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_009">Figure 9</a> to the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> shown in <a aria-label="View Figure 10" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_009a">Figure 10</a>.</p><div class="os-figure" id="CNX_Precalc_Figure_04_07_009a">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_009a"><span data-alt="Graph of previous table’s values showing that it fits the function y=2ln(x) with an asymptote at x=0." data-type="media" id="fs-id1165137635174">
+<img alt="Graph of previous table’s values showing that it fits the function y=2ln(x) with an asymptote at x=0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/731530abca164b89e48642a1831a098a83ee62a1" loading="lazy" src="../../notes-assets/8ad340da658b0b568a79.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">10</span>
+<span class="os-divider"> </span>
+<span class="os-caption">The graph of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> </span>
+</figcaption></figure>
+</div><p id="fs-id1165137836798">The graphs appear to be identical when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&gt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> A quick check confirms this conclusion: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>2</mn><mi>ln</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&gt;</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span> </p><p id="fs-id1165137771398">However, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> includes a “extra” branch, as shown in <a aria-label="View Figure 11" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#CNX_Precalc_Figure_04_07_010">Figure 11</a>. This occurs because, while <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><mi>ln</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> cannot have negative values in the domain (as such values would force the argument to be negative), the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span></span> can have negative domain values.</p><div class="os-figure" id="CNX_Precalc_Figure_04_07_010">
+<figure class="small ui-has-child-figcaption" data-id="CNX_Precalc_Figure_04_07_010">
+<span data-alt="A graph with x and y axes shows a blue curve symmetric about the y-axis. It originates from approximately (0, -2) and curves upwards, extending indefinitely outwards to the left and right." data-type="media" id="fs-id1165134054923">
+<img alt="A graph with x and y axes shows a blue curve symmetric about the y-axis. It originates from approximately (0, -2) and curves upwards, extending indefinitely outwards to the left and right." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/9dd5bc5efaa79bc430a2af778e9b6e4f9357d685" loading="lazy" src="../../notes-assets/85dab9c5e68c0a9913db.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">11</span>
+</figcaption></figure>
+</div>
+</div></section><section class="worked-example" id="fs-id1165134054938"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_06"><header></header><section>
+<div data-type="problem" id="fs-id1165137611513"><div class="os-problem-container">
+<p id="fs-id1165137611515">Does a linear, exponential, or logarithmic model best fit the data in <a aria-label="View Table 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models#Table_04_07_02">Table 2</a>? Find the model.</p>
+<div class="os-table" id="Table_04_07_02"><div class="table-scroll"><table data-id="Table_04_07_02" data-summary=".." role="presentation"><tbody>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span> </strong></td>
+<td data-align="center">1</td>
+<td data-align="center">2</td>
+<td data-align="center">3</td>
+<td data-align="center">4</td>
+<td data-align="center">5</td>
+<td data-align="center">6</td>
+<td data-align="center">7</td>
+<td data-align="center">8</td>
+<td data-align="center">9</td>
+</tr>
+<tr>
+<td data-align="center"><strong> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>y</mi>
+</mrow></semantics></math></span> </strong></td>
+<td data-align="center">3.297</td>
+<td data-align="center">5.437</td>
+<td data-align="center">8.963</td>
+<td data-align="center">14.778</td>
+<td data-align="center">24.365</td>
+<td data-align="center">40.172</td>
+<td data-align="center">66.231</td>
+<td data-align="center">109.196</td>
+<td data-align="center">180.034</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+</div>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135173377">Exponential. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2</mn><msup>
+<mi>e</mi>
+<mrow>
+<mn>0.5</mn><mi>x</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165137749158"><h3 data-type="title">Expressing an Exponential Model in Base <span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mi>e</mi></mrow></semantics></math></span> </h3><p id="fs-id1165137852030">While powers and logarithms of any base can be used in modeling, the two most common bases are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>10</mn>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> In science and mathematics, the base <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi>
+</mrow>
+</mrow></semantics></math></span></span> is often preferred. We can use laws of exponents and laws of logarithms to change any base to base <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165134342616"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137452983"><strong>Given a model with the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+<mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> change it to the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>x</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </strong></p><ol id="fs-id1165134148496" type="1">
+<li>Rewrite <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span> as <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>b</mi>
+<mi>x</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Use the power rule of logarithms to rewrite y as <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>x</mi><mi>ln</mi><mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+<mo>=</mo><mi>a</mi><msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow><mi>x</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+<li>Note that <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+</mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>k</mi><mo>=</mo><mi>ln</mi><mrow><mo>(</mo>
+<mi>b</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span> in the equation <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>x</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span> </li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_04_07_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134261257"><header></header><section>
+<div data-type="problem" id="fs-id1165132957903"><div class="os-problem-container"><h4 data-type="title">Changing to base <em data-effect="italics">e</em></h4>
+<p id="fs-id1165132957912">Change the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2.5</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3.1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> so that this same function is written in the form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><msub>
+<mi>A</mi>
+<mn>0</mn>
+</msub>
+<msup>
+<mi>e</mi>
+<mrow>
+<mi>k</mi><mi>x</mi>
+</mrow>
+</msup>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137432379">The formula is derived as follows</p><div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134193507"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable columnalign="left">
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow>
+<mi>y</mi><mo>=</mo><mn>2.5</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>3.1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mspace width="0.5em"></mspace><mo>=</mo><mn>2.5</mn><msup>
+<mi>e</mi>
+<mrow>
+<mi>ln</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mrow>
+<mn>3.1</mn>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Insert exponential and its inverse</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mspace width="0.5em"></mspace><mo>=</mo><mn>2.5</mn><msup>
+<mi>e</mi>
+<mrow>
+<mi>x</mi><mi>ln</mi><mn>3.1</mn>
+</mrow>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Laws of logs</mtext><mtext>.</mtext>
+</mrow>
+</mtd>
+</mtr>
+<mtr columnalign="left">
+<mtd columnalign="left">
+<mrow><mspace width="0.5em"></mspace><mo>=</mo><mn>2.5</mn><msup>
+<mi>e</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>ln</mi><mn>3.1</mn>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+</msup>
+<msup>
+<mrow></mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mtext>Commutative law of multiplication</mtext>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span> </div></div></section><section class="worked-example" id="fs-id1165135664951"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_04_07_07"><header></header><section>
+<div data-type="problem" id="fs-id1165135664961"><div class="os-problem-container">
+<p id="fs-id1165135664963">Change the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>3</mn><msup>
+<mrow>
+<mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo>
+</mrow>
+<mi>x</mi>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> to one having <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>e</mi>
+</mrow>
+</mrow></semantics></math></span></span> as the base.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135333685"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mn>3</mn><msup>
+<mi>e</mi>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>ln</mi><mn>0.5</mn>
+</mrow>
+<mo>)</mo></mrow><mi>x</mi>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165135171587"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135171593">Access these online resources for additional instruction and practice with exponential and logarithmic models.</p>
+<ul id="fs-id1165135171598">
+<li><a aria-label="Go to Logarithm Application – pH" href="https://openstax.org/l/logph" rel="noopener nofollow" target="_blank">Logarithm Application – pH</a></li>
+<li><a aria-label="Go to Exponential Model – Age Using Half-Life" href="https://openstax.org/l/expmodelhalf" rel="noopener nofollow" target="_blank">Exponential Model – Age Using Half-Life</a></li>
+<li><a aria-label="Go to Newton’s Law of Cooling" href="https://openstax.org/l/newtoncooling" rel="noopener nofollow" target="_blank">Newton’s Law of Cooling</a></li>
+<li><a aria-label="Go to Exponential Growth Given Doubling Time" href="https://openstax.org/l/expgrowthdbl" rel="noopener nofollow" target="_blank">Exponential Growth Given Doubling Time</a></li>
+<li><a aria-label="Go to Exponential Growth – Find Initial Amount Given Doubling Time" href="https://openstax.org/l/initialdouble" rel="noopener nofollow" target="_blank">Exponential Growth – Find Initial Amount Given Doubling Time</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/6-7-exponential-and-logarithmic-models">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

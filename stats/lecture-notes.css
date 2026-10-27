@@ -17,3 +17,21 @@ figcaption { font-size:.9rem; margin-top:8px; }
 .solution-panel svg text { fill:currentColor; }
 @media (max-width:600px) { th,td { padding:6px; font-size:.9rem; } .tree { min-width:590px; } figure:has(.tree) { overflow-x:auto; } }
 @media print { .topic-nav,.solution-instructions { display:none; } .worked-example { break-inside:avoid; } }
+/* Textbook adaptations retain native mathematics and locally stored figures. */
+img { max-width:100%; height:auto; display:block; margin:1rem auto; }
+.solution-panel:not(.solution-visible) img { opacity:0; }
+math { font-size:1.05em; }
+math[display="block"] { display:block; max-width:100%; overflow-x:auto; padding:.5rem 0; }
+.os-note-body { margin:1rem 0; }
+[data-type="note"]:not(.worked-example) { margin:1.5rem 0; padding:1rem; border-left:3px solid #9fb3c8; }
+.os-table { max-width:100%; }
+.table-scroll table { min-width:max-content; }
+.solution-panel a { color:inherit; }
+@media(max-width:600px) { main { --page-gutter:14px; padding:20px 14px; } .worked-example { padding:16px; } }
+.math-scroll { display:inline-block; vertical-align:middle; max-width:100%; overflow-x:auto; overflow-y:hidden; padding:3px 0; }
+.math-scroll.display-math { display:block; margin:12px 0; }
+.math-scroll math { max-width:none; overflow:visible; }
+.table-scroll { display:block; width:100%; }
+.math-scroll.display-math math { width:max-content; min-width:max-content; margin:0; }
+figure img { max-width:min(100%, 820px); }
+p, li, figcaption { overflow-wrap:anywhere; }

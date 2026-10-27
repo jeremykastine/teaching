@@ -1,0 +1,2721 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>5.7: Inverses and Radical Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-5-6-rational-functions.html">Previous: 5.6</a><a href="section-6-1-exponential-functions.html">Next: 6.1</a><a href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>5.7: Inverses and Radical Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Find the inverse of an invertible polynomial function.</li>
+<li>Restrict the domain to find the inverse of a polynomial function.</li>
+</ul></section></div>
+<p id="fs-id1165137793975">Park rangers and other trail managers may construct rock piles, stacks, or other arrangements, usually called cairns, to mark trails or other landmarks. (Rangers and environmental scientists discourage hikers from doing the same, in order to avoid confusion and preserve the habitats of plants and animals.) A cairn in the form of a mound of gravel is in the shape of a cone with the height equal to twice the radius.</p>
+<div class="os-figure" id="Figure_03_08_001"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_001">
+<span data-alt="Gravel in the shape of a cone." data-type="media" id="fs-id1165137939558">
+<img alt="Gravel in the shape of a cone." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/4e48c38cebc2d8f901afba224a21d398257c71a8" loading="lazy" src="../../notes-assets/b3e3a59e8482f57a91a4.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div>
+<p id="fs-id1165137411369">The volume is found using a formula from elementary geometry.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-854">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd>
+<mi>V</mi>
+</mtd>
+<mtd columnalign="right" rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>π</mi><msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mi>h</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>π</mi><msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy="false">(</mo><mn>2</mn><mi>r</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mi>π</mi><msup>
+<mi>r</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137727278">We have written the volume <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi> </mrow>
+</mrow></semantics></math></span></span> in terms of the radius <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> However, in some cases, we may start out with the volume and want to find the radius. For example: A customer purchases 100 cubic feet of gravel to construct a cone shape mound with a height twice the radius. What are the radius and height of the new cone? To answer this question, we use the formula</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-931"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>=</mo><mroot>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mi>V</mi>
+</mrow>
+<mrow>
+<mn>2</mn><mi>π</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165134129769">This function is the inverse of the formula for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi> </mrow>
+</mrow></semantics></math></span></span> in terms of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p>
+<p id="fs-id1165137656509">In this section, we will explore the inverses of polynomial and rational functions and in particular the radical functions we encounter in the process.</p>
+<section data-depth="1" id="fs-id1165135500723"><h3 data-type="title">Finding the Inverse of a Polynomial Function</h3>
+<p id="fs-id1165137439029">Two functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi> </mrow>
+</mrow></semantics></math></span></span> are inverse functions if for every coordinate pair in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> there exists a corresponding coordinate pair in the inverse function, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>,</mo><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mspace width="0.5em"></mspace><mi>a</mi><mo stretchy="false">)</mo><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> In other words, the coordinate pairs of the inverse functions have the input and output interchanged. Only one-to-one functions have inverses. Recall that a one-to-one function has a  unique output value for each input value and passes the horizontal line test.</p><p id="fs-id1165137448308">For example, suppose the Sustainability Club builds a water runoff collector in the shape of a parabolic trough as shown in <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_002">Figure 2</a>. We can use the information in the figure to find the surface area of the water in the trough as a function of the depth of the water.</p>
+<div class="os-figure" id="Figure_03_08_002"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_002">
+<span data-alt="Diagram of a parabolic trough that is 18” in height, 3’ in length, and 12” in width." data-type="media" id="fs-id1165137471735">
+<img alt="Diagram of a parabolic trough that is 18” in height, 3’ in length, and 12” in width." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/abf6eda5f865e70cf5590c245e96690ad3130f3d" loading="lazy" src="../../notes-assets/cefb9eb2bac5568ef059.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure></div>
+<p id="fs-id1165137793665">Because it will be helpful to have an equation for the parabolic cross-sectional shape, we will impose a coordinate system at the cross section, with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> measured horizontally and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi> </mrow>
+</mrow></semantics></math></span></span> measured vertically, with the origin at the vertex of the parabola. See <a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_003">Figure 3</a>.</p>
+<div class="os-figure" id="Figure_03_08_003"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_003">
+<span data-alt="Graph of a parabola." data-type="media" id="fs-id1165137727320">
+<img alt="Graph of a parabola." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/626bcc38a71890589b32aca5f4c7b5b93ae4d5a1" loading="lazy" src="../../notes-assets/e4f086534ae7cb8ec3f7.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure></div>
+<p id="fs-id1165137771677">From this we find an equation for the parabolic shape. We placed the origin at the vertex of the parabola, so we know the equation will have form <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Our equation will need to pass through the point (6, 18), from which we can solve for the stretch factor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-893">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>18</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>a</mi><msup>
+<mn>6</mn>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>a</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>18</mn></mrow>
+<mrow>
+<mn>36</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137633973">Our parabolic cross section has the equation</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-420"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137770004">We are interested in the <span class="no-emphasis" data-type="term" group-by="s" id="term-00001">surface area</span> of the water, so we must determine the width at the top of the water as a function of the water depth. For any depth <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> the width will be given by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> so we need to solve the equation above for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and find the inverse function. However, notice that the original function is not one-to-one, and indeed, given any output there are two inputs that produce the same output, one positive and one negative.</p><p id="fs-id1165137638570">To find an inverse, we can restrict our original function to a limited domain on which it <em data-effect="italics">is</em> one-to-one. In this case, it makes sense to restrict ourselves to positive <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> values. On this domain, we can find an inverse by solving for the input variable:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-598">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mi>y</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>2</mn><mi>y</mi></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>±</mo><msqrt>
+<mrow>
+<mn>2</mn><mi>y</mi></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mo>∴</mo><mi>y</mi>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo>±</mo>
+<msqrt><mrow><mn>2</mn><mi>x</mi></mrow></msqrt>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137453965">This is not a function as written. Since we are limiting ourselves to positive <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> values in the original function, we can eliminate the negative solution, which gives us the inverse function we’re looking for.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-793"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo>
+<msqrt><mn>2</mn><mi>x</mi>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137643958">Because <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> is the distance from the center of the parabola to either side, the entire width of the water at the top will be <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> The trough is 3 feet (36 inches) long, so the surface area will then be:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-491">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mtext>Area</mtext></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>l</mi><mo>⋅</mo><mi>w</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>36</mn><mo>⋅</mo><mn>2</mn><mi>x</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>72</mn><mi>x</mi></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>72</mn><msqrt>
+<mrow>
+<mn>2</mn><mi>y</mi></mrow>
+</msqrt>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137407432">This example illustrates two important points:</p>
+<ol id="fs-id1165135545666" type="1">
+<li>When finding the inverse of a quadratic, we have to limit ourselves to a domain on which the function is one-to-one.</li>
+<li>The inverse of a quadratic function is a square root function. Both are toolkit functions and different types of power functions.</li>
+</ol>
+<p id="fs-id1165137618975">Functions involving roots are often called <span class="no-emphasis" data-type="term" group-by="r" id="term-00002">radical functions</span>. While it is not possible to find an inverse of most polynomial functions, some basic polynomials do have inverses. Such functions are called <span data-type="term" group-by="i" id="term-00003">invertible functions</span>, and we use the notation <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135185952">Warning: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is not the same as the reciprocal of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> This use of “–1” is reserved to denote inverse functions. To denote the reciprocal of a function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> we would need to write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow>
+</mrow>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165137561919">An important relationship between inverse functions is that they “undo” each other. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is the inverse of a function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span>
+then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> is the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> In other words, whatever the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> does to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+<span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> undoes it—and vice-versa.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-519"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext>for all </mtext><mi>x</mi><mspace width="0.5em"></mspace><mtext>in the domain of </mtext><mi>f</mi>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135503755">and</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-590"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext>for all </mtext><mi>x</mi><mspace width="0.5em"></mspace><mtext>in the domain of </mtext><msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="eip-457">Note that the inverse switches the domain and range of the original function.</p><div class="ui-has-child-title" data-type="note" id="fs-id1165137735698"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Verifying Two Functions Are Inverses of One Another</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137852132">Two functions, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span>
+and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> are inverses of one another if for all <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span>
+and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-973"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137646263"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137501372"><strong>Given a polynomial function, find the inverse of the function by restricting the domain in such a way that the new function is one-to-one.</strong></p>
+<ol id="fs-id1165133276230" type="1">
+<li>Replace <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span> with <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Interchange <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span> and rename the function <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_03_08_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135150650"><header></header><section><div data-type="problem" id="fs-id1165135620877"><div class="os-problem-container"><h4 data-type="title">Verifying Inverse Functions</h4>
+<p id="fs-id1165134148383">Show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn> </mrow>
+</mrow></semantics></math></span></span> are inverses, for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≠</mo><mn>0</mn><mo>,</mo><mn>−1</mn>
+</mrow>
+</mrow></semantics></math></span></span> .</p></div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137834138">We must show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165131967953">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn></mrow>
+</mfrac>
+</mrow>
+</mfrac>
+<mo>−</mo><mn>1</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mi>x</mi>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><msup>
+<mi>f</mi>
+<mrow>
+<mn>−1</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>1</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mi>x</mi>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135168183">Therefore, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span>
+and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mi>x</mi>
+</mfrac>
+<mo>−</mo><mn>1</mn> </mrow>
+</mrow></semantics></math></span></span> are inverses.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137594492"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_08_01"><header></header><section>
+<div data-type="problem" id="fs-id1165137552094"><div class="os-problem-container"><p id="fs-id1165137426116">Show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span>
+and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn> </mrow>
+</mrow></semantics></math></span></span> are inverses.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137696615"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mn>3</mn><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>5</mn>
+</mrow>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>−</mo><mn>5</mn><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>5</mn><mo>=</mo><mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn>
+</mrow>
+<mo>)</mo></mrow><mo>+</mo><mn>5</mn>
+</mrow>
+<mn>3</mn>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<mn>3</mn><mi>x</mi>
+</mrow>
+<mn>3</mn>
+</mfrac>
+<mo>=</mo><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<section class="worked-example" id="Example_03_08_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137600799"><header></header><section><div data-type="problem" id="fs-id1165135160775"><div class="os-problem-container"><h4 data-type="title">Finding the Inverse of a Cubic Function</h4>
+<p id="fs-id1165137569920">Find the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>1.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165137635322"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137641602">Look at the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>–1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Notice that one graph is the reflection of the other about the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> This is always the case when graphing a function and its inverse function. </p><p id="fs-id1165137793468">Also, since the method involved interchanging <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> notice corresponding points. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>–1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>–1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Similarly, since <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>–1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> See <a aria-label="View Figure 4" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_004">Figure 4</a>.</p><div class="os-figure" id="Figure_03_08_004"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_004">
+<span data-alt="Graph of f(x)=5x^3+1 and its inverse, f^(-1)(x)=3sqrt((x-1)/(5))." data-type="media" id="fs-id1165137891279">
+<img alt="Graph of f(x)=5x^3+1 and its inverse, f^(-1)(x)=3sqrt((x-1)/(5))." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/447dcc8a8d4abc6a6a5229d595cc345140c17ddb" loading="lazy" src="../../notes-assets/ecb6c84edc0f924ec6ba.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">4</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135412872">This is a transformation of the basic cubic toolkit function, and based on our knowledge of that function, we know it is one-to-one. Solving for the inverse by solving for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133077998">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mi>y</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>5</mn><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>5</mn><msup>
+<mi>y</mi>
+<mn>3</mn>
+</msup>
+<mo>+</mo><mn>1</mn></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>5</mn><msup>
+<mi>y</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mfrac>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+<mn>5</mn>
+</mfrac>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mi>y</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mroot>
+<mrow>
+<mfrac>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+<mn>5</mn>
+</mfrac>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137583696"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_08_02"><header></header><section>
+<div data-type="problem" id="fs-id1165137704564"><div class="os-problem-container"><p id="fs-id1165133047522">Find the inverse function of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mroot>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+<mn>3</mn>
+</mroot>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span> </p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137529408"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><mn>4</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137847291"><h3 data-type="title">Restricting the Domain to Find the Inverse of a Polynomial Function</h3>
+<p id="fs-id1165137471808">So far, we have been able to find the inverse functions of <span class="no-emphasis" data-type="term" group-by="c" id="term-00004">cubic functions</span> without having to restrict their domains. However, as we know, not all cubic polynomials are one-to-one. Some functions that are not one-to-one may have their domain restricted so that they are one-to-one, but only over that domain. The function over the restricted domain would then have an <span class="no-emphasis" data-type="term" group-by="i" id="term-00005">inverse function</span>. Since quadratic functions are not one-to-one, we must restrict their domain in order to find their inverses.</p><div class="ui-has-child-title" data-type="note" id="fs-id1165137434585"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Restricting the Domain</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137409777">If a function is not one-to-one, it cannot have an inverse. If we restrict the domain of the function so that it becomes one-to-one, thus creating a new function, this new function will have an inverse.</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137431545"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137656706"><strong>Given a polynomial function, restrict the domain of a function that is not one-to-one and then find the inverse.</strong></p>
+<ol id="fs-id1165137532171" type="1"><li>Restrict the domain by determining a domain on which the original function is one-to-one.</li>
+<li>Replace <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span> with <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Interchange <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span> and <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span> and rename the function or pair of function <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Revise the formula for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mn>−1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span> by ensuring that the outputs of the inverse function correspond to the restricted domain of the original function.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_03_08_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137737103"><header></header><section><div data-type="problem" id="fs-id1165137668130"><div class="os-problem-container"><h4 data-type="title">Restricting the Domain to Find the Inverse of a Polynomial Function</h4>
+<p id="fs-id1165137482766">Find the inverse function of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mtext>:</mtext>
+</mrow>
+</mrow></semantics></math></span></span> </p><ol class="circled" id="fs-id1165137638318" type="1">
+<li><span class="token">ⓐ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>,</mo><mo> </mo><mi>x</mi><mo>≥</mo><mn>4</mn>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+<li><span class="token">ⓑ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>,</mo><mo> </mo><mi>x</mi><mo>≤</mo><mn>4</mn>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+</ol>
+</div></div>
+<div data-type="commentary" id="fs-id1165137736620"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137534054">On the graphs in <a aria-label="View Figure 6" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_006">Figure 6</a>, we see the original function graphed on the same set of axes as its inverse function. Notice that together the graphs show symmetry about the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> The coordinate pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo> </mo><mn>0</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> and the coordinate pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mo> </mo><mn>4</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> For any coordinate pair, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext></mtext><mi>b</mi>
+</mrow>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>,</mo><mspace width="0.5em"></mspace><mtext></mtext><mi>a</mi>
+</mrow>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Finally, observe that the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> intersects the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> on the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Points of intersection for the graphs of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> will always lie on the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="os-figure" id="Figure_03_08_006"><figure class="ui-has-child-figcaption" data-id="Figure_03_08_006">
+<span data-alt="Two graphs of a parabolic function with half of its inverse." data-type="media" id="fs-id1165137471020">
+<img alt="Two graphs of a parabolic function with half of its inverse." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/6640177cc226c8b94a974b5405dafb8fdfe19876" loading="lazy" src="../../notes-assets/c0732f4b47a05d85f489.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">6</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137506731">The original function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is not one-to-one, but the function is restricted to a domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>4</mn> </mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≤</mo><mn>4</mn> </mrow>
+</mrow></semantics></math></span></span> on which it is one-to-one. See <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_005">Figure 5</a>.</p>
+<div class="os-figure" id="Figure_03_08_005">
+<figure class="medium ui-has-child-figcaption" data-id="Figure_03_08_005">
+<span data-alt="Two graphs of f(x)=(x-4)^2 where the first is when x&gt;=4 and the second is when x&lt;=4." data-type="media" id="fs-id1165137532798">
+<img alt="Two graphs of f(x)=(x-4)^2 where the first is when x&gt;=4 and the second is when x&lt;=4." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/a7ce5179e5d708c5222bc67d9a971821755ee70f" loading="lazy" src="../../notes-assets/54374166d3dc7ad55139.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">5</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165137706306">To find the inverse, start by replacing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> with the simple variable <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133259004">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Interchange</mtext><mo></mo><mi>x</mi><mo></mo><mtext>and </mtext><mi>y</mi><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Take the square root</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo>±</mo><msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>y</mi><mo>−</mo><mn>4</mn></mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Add</mtext><mo> </mo><mn>4</mn><mo> </mo><mtext>to both sides</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>4</mn><mo>±</mo><msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137444285">This is not a function as written. We need to examine the restrictions on the domain of the original function to determine the inverse. Since we reversed the roles of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi> </mrow>
+</mrow></semantics></math></span></span> for the original <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> we looked at the domain: the values <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span>
+could assume. When we reversed the roles of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span>
+this gave us the values <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi> </mrow>
+</mrow></semantics></math></span></span> could assume. For this function, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> so for the inverse, we should have <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>≥</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> which is what our inverse function gives.</p>
+<ol class="circled" id="fs-id1165137735027" type="1">
+<li><span class="token">ⓐ</span>The domain of the original function was restricted to <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span> so the outputs of the inverse need to be the same, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>≥</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span> and we must use the + case:
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134294825"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>+</mo><msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div></li>
+<li><span class="token">ⓑ</span>
+The domain of the original function was restricted to <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≤</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span> so the outputs of the inverse need to be the same, <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>≤</mo><mn>4</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span> and we must use the – case:
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165137482501"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>−</mo><msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div></li>
+</ol></div></section>
+<section class="worked-example" id="Example_03_08_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137786597"><header></header><section><div data-type="problem" id="fs-id1165135481235"><div class="os-problem-container"><h4 data-type="title">Finding the Inverse of a Quadratic Function When the Restriction Is Not Specified</h4>
+<p id="fs-id1165137410909">Restrict the domain and then find the inverse of</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133355860"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+</div></div>
+<div data-type="commentary" id="fs-id1165134362839"><h4 data-type="commentary-title"><span class="os-title-label">Analysis	</span></h4>
+<p id="fs-id1165135259538">Notice that we arbitrarily decided to restrict the domain on <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>2.</mn> </mrow>
+</mrow></semantics></math></span></span> We could just have easily opted to restrict the domain on <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≤</mo><mn>2</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> in which case <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>−</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Observe the original function graphed on the same set of axes as its inverse function in <a aria-label="View Figure 7" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_007">Figure 7</a>. Notice that both graphs show symmetry about the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> The coordinate pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext></mtext><mo>−</mo><mn>3</mn>
+</mrow>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> and the coordinate pair <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mn>3</mn><mo>,</mo><mspace width="0.5em"></mspace><mtext></mtext><mn>2</mn>
+</mrow>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> is on the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Observe from the graph of both functions on the same set of axes that </p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134122215"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>domain of </mtext><mi>f</mi><mo>=</mo><mtext>range of</mtext><mo> </mo><msup>
+<mi>f</mi>
+<mrow>
+<mo>–</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>=</mo><mrow><mo>[</mo> <mrow>
+<mn>2</mn><mo>,</mo><mi>∞</mi>
+</mrow> <mo>)</mo></mrow>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137642128">and</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165134279478"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>domain of </mtext><msup>
+<mi>f</mi>
+<mrow>
+<mo>–</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo>=</mo><mtext>range of</mtext><mo> </mo><mi>f</mi><mo>=</mo><mrow><mo>[</mo> <mrow>
+<mo>–</mo><mn>3</mn><mo>,</mo><mi>∞</mi>
+</mrow> <mo>)</mo></mrow><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137723812">Finally, observe that the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi> </mrow>
+</mrow></semantics></math></span></span> intersects the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> along the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="os-figure" id="Figure_03_08_007"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_007">
+<span data-alt="Graph of a parabolic function with half of its inverse." data-type="media" id="fs-id1165135194279">
+<img alt="Graph of a parabolic function with half of its inverse." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/ee562c60f385e383ca70f40f8e220dd891b4dab9" loading="lazy" src="../../notes-assets/3b0b7ce07dddf942e6b2.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">7</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137414415">We can see this is a parabola with vertex at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>–3</mn><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> that opens upward. Because the graph will be decreasing on one side of the vertex and increasing on the other side, we can restrict this function to a domain on which it will be one-to-one by limiting the domain to <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>2.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165137842529">To find the inverse, we will use the vertex form of the quadratic. We start by replacing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> with a simple variable, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> then solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133305354">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mtext>  </mtext><mtext>Interchange </mtext><mi>x</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>y</mi><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mtext>  </mtext><mtext>Add 3 to both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mtext>  </mtext><mtext>Take the square root</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo>±</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>y</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mtext>  </mtext><mtext>Add 2 to both sides</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mn>2</mn><mo>±</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow><mspace width="2em"></mspace>
+<mtext>  </mtext><mtext>Rename the function</mtext><mo>.</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>2</mn><mo>±</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137419504">Now we need to determine which case to use. Because we restricted our original function to a domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>2</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> the outputs of the inverse should be the same, telling us to utilize the + case</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132193808"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137827988">If the quadratic had not been given in vertex form, rewriting it into vertex form would be the first step. This way we may easily observe the coordinates of the vertex to help us restrict the domain.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137419950"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_08_03"><header></header><section>
+<div data-type="problem" id="fs-id1165137600895"><div class="os-problem-container"><p id="fs-id1165135596379">Find the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>1</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> on the domain <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≥</mo><mn>0.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137737550"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<section data-depth="2" id="fs-id1165137894462"><h4 data-type="title">Solving Applications of Radical Functions</h4>
+<p id="fs-id1165137696560">Notice that the functions from previous examples were all polynomials, and their inverses were radical functions. If we want to find the <span class="no-emphasis" data-type="term" group-by="i" id="term-00006">inverse of a radical function</span>, we will need to restrict the domain of the answer because the range of the original function is limited.</p><div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137415876"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137455923"><strong>Given a radical function, find the inverse.</strong></p>
+<ol id="fs-id1165137542989" type="1">
+<li>Determine the range of the original function.</li>
+<li>Replace <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span>
+with <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span> then solve for <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span>
+</li>
+<li>If necessary, restrict the domain of the inverse function to the range of the original function.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_03_08_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135173813"><header></header><section><div data-type="problem" id="fs-id1165137399685"><div class="os-problem-container"><h4 data-type="title">Finding the Inverse of a Radical Function</h4>
+<p id="fs-id1165135570491">Restrict the domain of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>4</mn>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span></span> and then find the inverse.
+</p></div></div>
+<div data-type="commentary" id="fs-id1165137750058"><h4 data-type="commentary-title"><span class="os-title-label">Analysis</span></h4>
+<p id="fs-id1165135173239">Notice in <a aria-label="View Figure 8" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_008">Figure 8</a> that the inverse is a reflection of the original function over the line <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>x</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Because the original function has only positive outputs, the inverse function has only positive inputs.</p>
+<div class="os-figure" id="Figure_03_08_008"><figure class="small ui-has-child-figcaption" data-id="Figure_03_08_008">
+<span data-alt="Graph of f(x)=sqrt(x-4) and its inverse, f^(-1)(x)=x^2+4." data-type="media" id="fs-id1165137803321">
+<img alt="Graph of f(x)=sqrt(x-4) and its inverse, f^(-1)(x)=x^2+4." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/96839ec291350f5957f9c68f33ae38153e7ccb9d" loading="lazy" src="../../notes-assets/a3543964aa048894c085.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">8</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135545767">Note that the original function has range <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≥</mo><mn>0.</mn> </mrow>
+</mrow></semantics></math></span></span> Replace <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo> </mrow>
+</mrow></semantics></math></span></span> with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> then solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135508330">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>4</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Replace </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mspace width="0.5em"></mspace><mtext>with </mtext><mi>y</mi><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mi>y</mi><mo>−</mo><mn>4</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Interchange </mtext><mi>x</mi><mspace width="0.5em"></mspace><mtext>and </mtext><mi>y</mi><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>x</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msqrt>
+<mrow>
+<mi>y</mi><mo>−</mo><mn>4</mn></mrow>
+</msqrt>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Square each side</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>y</mi><mo>−</mo><mn>4</mn></mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Add 4</mtext><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mi>y</mi>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Rename the function </mtext><msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn></mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div><p id="fs-id1165135209570">Recall that the domain of this function must be limited to the range of the original function.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135452086"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn><mo>,</mo><mi>x</mi><mo>≥</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137662048"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_08_04"><header></header><section>
+<div data-type="problem" id="fs-id1165135524557"><div class="os-problem-container"><p id="fs-id1165137784775">Restrict the domain and then find the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+</msqrt>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137419726"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>3</mn>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>,</mo><mi>x</mi><mo>≥</mo><mn>0</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="2" id="fs-id1165137761571"><h4 data-type="title">Solving Applications of Radical Functions</h4>
+<p id="fs-id1165135435831">Radical functions are common in physical models, as we saw in the section opener. We now have enough tools to be able to solve the problem posed at the start of the section.</p>
+<section class="worked-example" id="Example_03_08_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137634475"><header></header><section><div data-type="problem" id="fs-id1165137531120"><div class="os-problem-container"><h4 data-type="title">Solving an Application with a Cubic Function</h4>
+<p id="fs-id1165137771982">Park rangers construct a mound of gravel in the shape of a cone with the height equal to twice the radius. The volume of the cone in terms of the radius is given by</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132187568"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>=</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mi>π</mi><msup>
+<mi>r</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135181305">Find the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>=</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mi>π</mi><msup>
+<mi>r</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> that determines the volume <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi> </mrow>
+</mrow></semantics></math></span></span> of a cone and is a function of the radius <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Then use the inverse function to calculate the radius of such a mound of gravel measuring 100 cubic feet. Use <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>π</mi><mo>=</mo><mn>3.14.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137405144">Start with the given function for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Notice that the meaningful domain for the function is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi><mo>&gt;</mo><mn>0</mn> </mrow>
+</mrow></semantics></math></span></span> since negative radii would not make sense in this context nor would a radius of 0. Also note the range of the function (hence, the domain of the inverse function) is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>&gt;</mo><mn>0.</mn> </mrow>
+</mrow></semantics></math></span></span> Solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>r</mi> </mrow>
+</mrow></semantics></math></span></span> in terms of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> using the method outlined previously. Note that in real-world applications, we do not swap the variables when finding inverses. Instead, we change which variable is considered to be the independent variable.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133447890">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center"><mi>V</mi></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mi>V</mi></mrow>
+<mrow>
+<mn>2</mn><mi>π</mi></mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Solve for </mtext><msup>
+<mi>r</mi>
+<mn>3</mn>
+</msup>
+<mo>.</mo></mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>r</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mroot>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mi>V</mi></mrow>
+<mrow>
+<mn>2</mn><mi>π</mi></mrow>
+</mfrac>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mspace width="2em"></mspace><mtext>Solve for </mtext><mi>r</mi><mo>.</mo></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137730324">This is the result stated in the section opener. Now evaluate this for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>V</mi><mo>=</mo><mn>100</mn> </mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>π</mi><mo>=</mo><mn>3.14.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165135203234">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>r</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mroot>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mi>V</mi></mrow>
+<mrow>
+<mn>2</mn><mi>π</mi></mrow>
+</mfrac>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mroot>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mo>⋅</mo><mn>100</mn></mrow>
+<mrow>
+<mn>2</mn><mo>⋅</mo><mn>3.14</mn></mrow>
+</mfrac>
+</mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>≈</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mroot>
+<mrow>
+<mn>47.7707</mn></mrow>
+<mn>3</mn>
+</mroot>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd columnalign="left" rowalign="center">
+<mo>≈</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3.63</mn></mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span> </div>
+<p id="fs-id1165137706279">Therefore, the radius is about 3.63 ft.</p>
+</div></section>
+</section>
+<section data-depth="2" id="fs-id1165137580023"><h4 data-type="title">Determining the Domain of a Radical Function Composed with Other Functions</h4>
+<p id="fs-id1165134042947">When radical functions are composed with other functions, determining domain can become more complicated.</p>
+<section class="worked-example" id="Example_03_08_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135378774"><header></header><section><div data-type="problem" id="fs-id1165135378776"><div class="os-problem-container"><h4 data-type="title">Finding the Domain of a Radical Function Composed with a Rational Function</h4>
+<p id="fs-id1165137658778">Find the domain of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</msqrt>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137665549">Because a square root is only defined when the quantity under the radical is non-negative, we need to determine where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+<mo>≥</mo><mn>0.</mn> </mrow>
+</mrow></semantics></math></span></span> The output of a rational function can change signs (change from positive to negative or vice versa) at <em data-effect="italics">x</em>-intercepts and at vertical asymptotes. For this equation, the graph could change signs at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>–</mo><mn>2</mn><mo>,</mo><mo> </mo><mn>1</mn><mo>,</mo><mo> </mo><mtext>and</mtext><mo> </mo><mn>3.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135686721">To determine the intervals on which the rational expression is positive, we could test some values in the expression or sketch a graph. While both approaches work equally well, for this example we will use a graph as shown in <a aria-label="View Figure 9" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions#Figure_03_08_009">Figure 9</a>.</p>
+<div class="os-figure" id="Figure_03_08_009">
+<figure class="medium ui-has-child-figcaption" data-id="Figure_03_08_009">
+<span data-alt="Graph of a radical function that shows where the outputs are nonnegative." data-type="media" id="fs-id1165132950041">
+<img alt="Graph of a radical function that shows where the outputs are nonnegative." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/36e840997485cb2bf1a0fe1ff88f1cdc297213db" loading="lazy" src="../../notes-assets/c4c6774ab7cac4f370fb.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">9</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165137694167">This function has two <em data-effect="italics">x</em>-intercepts, both of which exhibit linear behavior near the <em data-effect="italics">x</em>-intercepts. There is one vertical asymptote, corresponding to a linear factor; this behavior is similar to the basic reciprocal toolkit function, and there is no horizontal asymptote because the degree of the numerator is larger than the degree of the denominator. There is a <em data-effect="italics">y</em>-intercept at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msqrt><mn>6</mn></msqrt><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165135333589">From the <em data-effect="italics">y</em>-intercept and <em data-effect="italics">x</em>-intercept at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>−2</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> we can sketch the left side of the graph. From the behavior at the asymptote, we can sketch the right side of the graph.</p><p id="fs-id1165137664081">From the graph, we can now tell on which intervals the outputs will be non-negative, so that we can be sure that the original function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> will be defined. <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow> </mrow>
+</mrow></semantics></math></span></span> has domain <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>−2</mn><mo>≤</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn><mspace width="0.5em"></mspace><mtext>or</mtext><mspace width="0.5em"></mspace><mi>x</mi><mo>≥</mo><mn>3</mn><mo>,</mo> </mrow>
+</mrow></semantics></math></span></span> or in interval notation, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo stretchy="false">[</mo><mn>−2</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo>∪</mo><mo stretchy="false">[</mo><mn>3</mn><mo>,</mo><mi>∞</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="2" id="fs-id1165135173899"><h4 data-type="title">Finding Inverses of Rational Functions</h4><p id="fs-id1165135475898">As with finding inverses of quadratic functions, it is sometimes desirable to find the <span class="no-emphasis" data-type="term" group-by="i" id="term-00007">inverse of a rational function</span>, particularly of rational functions that are the ratio of linear functions, such as in concentration applications.</p><section class="worked-example" id="Example_03_08_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137642525"><header></header><section><div data-type="problem" id="fs-id1165137642528"><div class="os-problem-container"><h4 data-type="title">Finding the Inverse of a Rational Function</h4>
+<p id="fs-id1165135332364">The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mo>=</mo><mfrac>
+<mrow>
+<mn>20</mn><mo>+</mo><mn>0.4</mn><mi>n</mi>
+</mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mi>n</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> represents the concentration <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi> </mrow>
+</mrow></semantics></math></span></span> of an acid solution after <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi> </mrow>
+</mrow></semantics></math></span></span> mL of 40% solution has been added to 100 mL of a 20% solution. First, find the inverse of the function; that is, find an expression for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi> </mrow>
+</mrow></semantics></math></span></span> in terms of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mo>.</mo> </mrow>
+</mrow></semantics></math></span></span> Then use your result to determine how much of the 40% solution should be added so that the final mixture is a 35% solution.</p>
+</div></div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165134223203">We first want the inverse of the function in order to determine how many mL we need for a given concentration. We will solve for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>n</mi> </mrow>
+</mrow></semantics></math></span></span> in terms of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165132957110">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mi>C</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mrow>
+<mn>20</mn><mo>+</mo><mn>0.4</mn><mi>n</mi></mrow>
+<mrow>
+<mn>100</mn><mo>+</mo><mi>n</mi></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>C</mi><mo stretchy="false">(</mo><mn>100</mn><mo>+</mo><mi>n</mi><mo stretchy="false">)</mo></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>20</mn><mo>+</mo><mn>0.4</mn><mi>n</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>100</mn><mi>C</mi><mo>+</mo><mi>C</mi><mi>n</mi></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>20</mn><mo>+</mo><mn>0.4</mn><mi>n</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>100</mn><mi>C</mi><mo>−</mo><mn>20</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>0.4</mn><mi>n</mi><mo>−</mo><mi>C</mi><mi>n</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mn>100</mn><mi>C</mi><mo>−</mo><mn>20</mn></mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mo stretchy="false">(</mo><mn>0.4</mn><mo>−</mo><mi>C</mi><mo stretchy="false">)</mo><mi>n</mi></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>n</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mfrac>
+<mrow>
+<mn>100</mn><mi>C</mi><mo>−</mo><mn>20</mn></mrow>
+<mrow>
+<mn>0.4</mn><mo>−</mo><mi>C</mi></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137637474">Now evaluate this function at 35%, which is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mo>=</mo><mn>0.35.</mn>
+</mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165131986931">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mi>n</mi>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>100</mn><mo stretchy="false">(</mo><mn>0.35</mn><mo stretchy="false">)</mo><mo>−</mo><mn>20</mn></mrow>
+<mrow>
+<mn>0.4</mn><mo>−</mo><mn>0.35</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mn>15</mn></mrow>
+<mrow>
+<mn>0.05</mn></mrow>
+</mfrac>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"><mo>=</mo></mtd>
+<mtd columnalign="left" rowalign="center"><mrow><mn>300</mn></mrow></mtd>
+</mtr>
+</mtable></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137706154">We can conclude that 300 mL of the 40% solution should be added.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137697102"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_08_05"><header></header><section>
+<div data-type="problem" id="fs-id1165134042922"><div class="os-problem-container"><p id="fs-id1165134042923">Find the inverse of the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</mfrac>
+<mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137731925"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<msup>
+<mi>f</mi>
+<mrow>
+<mo>−</mo><mn>1</mn>
+</mrow>
+</msup>
+<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mrow>
+<mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165137551968"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137761312">Access these online resources for additional instruction and practice with inverses and radical functions.</p>
+<ul id="fs-id1165134306731"><li><a aria-label="Go to Graphing the Basic Square Root Function" href="https://openstax.org/l/graphsquareroot" rel="noopener nofollow" target="_blank">Graphing the Basic Square Root Function</a></li>
+<li><a aria-label="Go to Find the Inverse of a Square Root Function" href="https://openstax.org/l/inversesquare" rel="noopener nofollow" target="_blank">Find the Inverse of a Square Root Function</a></li>
+<li><a aria-label="Go to Find the Inverse of a Rational Function" href="https://openstax.org/l/inverserational" rel="noopener nofollow" target="_blank">Find the Inverse of a Rational Function</a></li>
+<li><a aria-label="Go to Find the Inverse of a Rational Function and an Inverse Function Value" href="https://openstax.org/l/rationalinverse" rel="noopener nofollow" target="_blank">Find the Inverse of a Rational Function and an Inverse Function Value</a></li>
+<li><a aria-label="Go to Inverse Functions" href="https://openstax.org/l/inversefunction" rel="noopener nofollow" target="_blank">Inverse Functions</a></li>
+</ul></div></section></div>
+</section></section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/5-7-inverses-and-radical-functions">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>

@@ -1,0 +1,2325 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.4: Composition of Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../lecture-notes.html">Table of contents</a><a href="section-3-3-rates-of-change-and-behavior-of-graphs.html">Previous: 3.3</a><a href="section-3-5-transformation-of-functions.html">Next: 3.5</a><a href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>3.4: Composition of Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
+<li>Combine functions using algebraic operations.</li>
+<li>Create a new function by composition of functions.</li>
+<li>Evaluate composite functions.</li>
+<li>Find the domain of a composite function.</li>
+<li>Decompose a composite function into its component functions.</li>
+</ul></section></div>
+<p id="fs-id1165134094620">Suppose we want to calculate how much it costs to heat a house on a particular day of the year. The cost to heat a house will depend on the average daily temperature, and in turn, the average daily temperature depends on the particular day of the year. Notice how we have just defined two relationships: The cost depends on the temperature, and the temperature depends on the day.</p>
+<p id="fs-id1165134038788">Using descriptive variables, we can notate these two functions. The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mrow><mo>(</mo>
+<mi>T</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> gives the cost <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi></mrow>
+</mrow></semantics></math></span></span> of heating a house for a given average daily temperature in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi></mrow>
+</mrow></semantics></math></span></span> degrees Celsius. The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mi>d</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> gives the average daily temperature on day <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>d</mi></mrow>
+</mrow></semantics></math></span></span> of the year. For any given day, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mtext>Cost</mtext><mo>=</mo><mi>C</mi><mrow><mo>(</mo>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mi>d</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> means that the cost depends on the temperature, which in turns depends on the day of the year. Thus, we can evaluate the cost function at the temperature <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mi>d</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> For example, we could evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> to determine the average daily temperature on the 5th day of the year. Then, we could evaluate the <span class="no-emphasis" data-type="term" group-by="c" id="term-00003">cost function</span> at that temperature. We would write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>C</mi><mrow><mo>(</mo>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mn>5</mn>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="Explanation of C(T(5)), which is the cost for the temperature and T(5) is the temperature on day 5." data-display="block" data-type="media" id="fs-id1165137424478">
+<img alt="Explanation of C(T(5)), which is the cost for the temperature and T(5) is the temperature on day 5." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/336d97bc881544921ca4876a504752b89148f9fd" loading="lazy" src="../../notes-assets/ce96e40bdfcf0d4f2339.svg"/>
+</span>
+<p id="fs-id1165137460512">By combining these two relationships into one function, we have performed function composition, which is the focus of this section.</p>
+<section data-depth="1" id="fs-id1165135176393"><h3 data-type="title">Combining Functions Using Algebraic Operations</h3>
+<p id="fs-id1165137446477">Function composition is only one way to combine existing functions. Another way is to carry out the usual algebraic operations on functions, such as addition, subtraction, multiplication and division. We do this by performing the operations with the function outputs, defining the result as the output of our new function.</p>
+<p id="fs-id1165135533159">Suppose we need to add two columns of numbers that represent a husband and wife’s separate annual incomes over a period of years, with the result being their total household income. We want to do this for every year, adding only that year’s incomes and then collecting all the data in a new column. If <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>w</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is the wife’s income and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is the husband’s income in year <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and we want <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>T</mi></mrow>
+</mrow></semantics></math></span></span> to represent the total income, then we can define a new function.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137641862"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>T</mi><mrow><mo>(</mo>
+<mi>y</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>h</mi><mrow><mo>(</mo>
+<mi>y</mi>
+<mo>)</mo></mrow><mo>+</mo><mi>w</mi><mrow><mo>(</mo>
+<mi>y</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135347766">If this holds true for every year, then we can focus on the relation between the functions without reference to a year and write</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137665765">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>T</mi><mo>=</mo><mi>h</mi><mo>+</mo><mi>w</mi></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165132957142">Just as for this sum of two functions, we can define difference, product, and ratio functions for any pair of functions that have the same kinds of inputs (not necessarily numbers) and also the same kinds of outputs (which do have to be numbers so that the usual operations of algebra can apply to them, and which also must have the same units or no units when we add and subtract). In this way, we can think of adding, subtracting, multiplying, and dividing functions.</p>
+<p id="fs-id1165137424116">For two functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> with real number outputs, we define new functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>+</mo><mi>g</mi><mo>,</mo><mspace width="0.5em"></mspace><mi>f</mi><mo>−</mo><mi>g</mi><mo>,</mo><mspace width="0.5em"></mspace><mi>f</mi><mi>g</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mi>f</mi>
+<mi>g</mi>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> by the relations</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1352153">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>f</mi><mo>−</mo><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo> </mo><mo stretchy="false">(</mo><mi>f</mi><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>f</mi>
+<mi>g</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mtext>where</mtext><mspace width="0.5em"></mspace><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mspace width="0.5em"></mspace><mo>≠</mo><mspace width="0.5em"></mspace><mn>0</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><section class="worked-example" id="Example_01_04_01"><div class="problem-statement"><h3>Example 1</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137585443"><header></header><section>
+<div data-type="problem" id="fs-id1165137573272"><div class="os-problem-container"><h4 data-type="title">Performing Algebraic Operations on Functions</h4>
+<p id="fs-id1165135304963">Find and simplify the functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mo>−</mo><mi>f</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> given <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span> Are they the same function?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137466263">Begin by writing the general form, and then substitute the given functions.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135701567"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>x</mi>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo stretchy="false">(</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd> <mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo> </mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo> </mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd> <mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mfrac>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mtext>where </mtext><mi>x</mi><mo>≠</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mo> </mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow>
+</mtd> <mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+<mtd rowalign="center"></mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137553743">No, the functions are not the same.</p>
+<p id="fs-id1165135351612">Note: For <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>g</mi>
+<mi>f</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the condition <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≠</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span></span> is necessary because when <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>1</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> the denominator is equal to 0, which makes the function undefined.</p>
+</div></section>
+<section class="worked-example" id="fs-id1165137564163"><div class="problem-statement"><h3>Try It #1</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_09"><header></header><section>
+<div data-type="problem" id="fs-id1165137851458"><div class="os-problem-container"><p id="fs-id1165135333576">Find and simplify the functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>−</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137434994"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn><mspace width="0.5em"></mspace><mtext>   and    </mtext><mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137434911">Are they the same function?</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135511603"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mi>x</mi>
+<mn>3</mn>
+</msup>
+<mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>x</mi><mo>+</mo><mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>−</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>−</mo><mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>1</mn></mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165137424052">No, the functions are not the same.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165135690697"><h3 data-type="title">Create a Function by Composition of Functions</h3><p id="fs-id1165137451258">Performing algebraic operations on functions combines them into a new function, but we can also create functions by composing functions. When we wanted to compute a heating cost from a day of the year, we created a new function that takes a day as input and yields a cost as output. The process of <span class="no-emphasis" data-type="term" group-by="c" id="term-00004">combining functions</span> so that the output of one function becomes the input of another is known as a <span class="no-emphasis" data-type="term" group-by="c" id="term-00005">composition of functions</span><strong>.</strong> The resulting function is known as a <strong>composite function</strong>. We represent this combination by the following notation:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137605973"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137466004">We read the left-hand side as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>“</mo><mi>f</mi>
+</mrow>
+</mrow></semantics></math></span></span> composed with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,”</mo>
+</mrow>
+</mrow></semantics></math></span></span> and the right-hand side as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>“</mo><mi>f</mi>
+</mrow>
+</mrow></semantics></math></span></span> of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo><mo>”</mo>
+</mrow>
+</mrow></semantics></math></span></span> The two sides of the equation have the same mathematical meaning and are equal. The open circle symbol <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mo>∘</mo></mrow>
+</mrow></semantics></math></span></span> is called the composition operator. We use this operator mainly when we wish to emphasize the relationship between the functions themselves without referring to any particular input value. Composition is a binary operation that takes two functions and forms a new function, much as addition or multiplication takes two numbers and gives a new number. However, it is important not to confuse function composition with multiplication because, as we learned above, in most cases <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>≠</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo>
+</mrow>
+</mrow></semantics></math></span></span>
+</p><p id="fs-id1165135161270">It is also important to understand the order of operations in evaluating a composite function. We follow the usual convention with parentheses by starting with the innermost parentheses first, and then working to the outside. In the equation above, the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> takes the input <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> first and yields an output <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Then the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> takes <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> as an input and yields an output <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<span data-alt="Explanation of the composite function." data-display="block" data-type="media" id="fs-id1165135310687">
+<img alt="Explanation of the composite function." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/c02500912de8e653c7e833a6aa2d53696a4c7630" loading="lazy" src="../../notes-assets/8dfd73fb7c301ae956ad.svg"/>
+</span>
+<p id="fs-id1165137851405">In general, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>∘</mo><mi>f</mi></mrow>
+</mrow></semantics></math></span></span> are different functions. In other words, in many cases <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>≠</mo><mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> for all <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> We will also see that sometimes two functions can be composed only in one specific order.</p>
+<p id="fs-id1165135189964">For example, if <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> then</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165134047682">
+<span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>4</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137595004">but</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137461653"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mi>g</mi><mo>(</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137430833">These expressions are not equal for all values of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> so the two functions are not equal. It is irrelevant that the expressions happen to be equal for the single input value <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mo>−</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165137531472">Note that the range of the inside function (the first function to be evaluated) needs to be within the domain of the outside function. Less formally, the composition has to make sense in terms of inputs and outputs.</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165134190746"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Composition of Functions</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137783932">When the output of one function is used as the input of another, we call the entire operation a composition of functions. For any input <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> and functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> this action defines a <span data-type="term" group-by="c" id="term-00006">composite function</span>, which we write as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> such that</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137836657"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135503928">The domain of the composite function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is all <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> is in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<p id="fs-id1165135408440">It is important to realize that the product of functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is not the same as the function composition <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> because, in general, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>≠</mo><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section></div>
+<section class="worked-example" id="Example_01_04_02"><div class="problem-statement"><h3>Example 2</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137544021"><header></header><section>
+<div data-type="problem" id="fs-id1165137482990"><div class="os-problem-container"><h4 data-type="title">Determining whether Composition of Functions is Commutative</h4>
+<p id="fs-id1165137600071">Using the functions provided, find <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Determine whether the composition of the functions is <span class="no-emphasis" data-type="term" group-by="c" id="term-00007">commutative</span>.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135530570"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>−</mo><mi>x</mi>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137603003">Let’s begin by substituting <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> into <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135499437"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>6</mn><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>7</mn><mo>−</mo><mn>2</mn><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137786392">Now we can substitute <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> into <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135440456"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr rowalign="center">
+<mtd columnalign="right" rowalign="center">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mo>−</mo><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>3</mn><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr rowalign="center">
+<mtd rowalign="center"></mtd>
+<mtd rowalign="center">
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left" rowalign="center">
+<mrow>
+<mn>−2</mn><mi>x</mi><mo>+</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165135160089">We find that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>≠</mo><mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> so the operation of function composition is not commutative.</p></div></section>
+<section class="worked-example" id="Example_01_04_03"><div class="problem-statement"><h3>Example 3</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137603612"><header></header><section>
+<div data-type="problem" id="fs-id1165137761836"><div class="os-problem-container"><h4 data-type="title">Interpreting Composite Functions</h4>
+<p id="fs-id1165137695118">The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives the number of calories burned completing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>s</mi></mrow>
+</mrow></semantics></math></span></span> sit-ups, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>s</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives the number of sit-ups a person can complete in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi></mrow>
+</mrow></semantics></math></span></span> minutes. Interpret <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137659141">The inside expression in the composition is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>s</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Because the input to the <em data-effect="italics">s</em>-function is time, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi><mo>=</mo><mn>3</mn></mrow>
+</mrow></semantics></math></span></span> represents 3 minutes, and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>s</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is the number of sit-ups completed in 3 minutes. </p><p id="fs-id1165137844294">Using <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>s</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> as the input to the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>c</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives us the number of calories burned during the number of sit-ups that can be completed in 3 minutes, or simply the number of calories burned in 3 minutes (by doing sit-ups).</p>
+</div></section>
+<section class="worked-example" id="Example_01_04_04"><div class="problem-statement"><h3>Example 4</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137551439"><header></header><section>
+<div data-type="problem" id="fs-id1165135512587"><div class="os-problem-container"><h4 data-type="title">Investigating the Order of Function Composition</h4>
+<p id="fs-id1165137643603">Suppose <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives miles that can be driven in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> hours and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> gives the gallons of gas used in driving <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi></mrow>
+</mrow></semantics></math></span></span> miles. Which of these expressions is meaningful: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> or <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow><mo>?</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135545914">The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is a function whose output is the number of miles driven corresponding to the number of hours driven. </p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137648357"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>number of miles </mtext><mo>=</mo><mi>f</mi><mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mtext>number of hours</mtext><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137749316">The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>y</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is a function whose output is the number of gallons used corresponding to the number of miles driven. This means:</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137531080"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtext>number of gallons </mtext><mo>=</mo><mi>g</mi><mspace width="0.5em"></mspace><mo stretchy="false">(</mo><mtext>number of miles</mtext><mo stretchy="false">)</mo>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135190218">The expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> takes miles as the input and a number of gallons as the output. The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> requires a number of hours as the input. Trying to input a number of gallons does not make sense. The expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is meaningless.</p>
+<p id="fs-id1165137863600">The expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> takes hours as input and a number of miles driven as the output. The function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> requires a number of miles as the input. Using <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> (miles driven) as an input value for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> where gallons of gas depends on miles driven, does make sense. The expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> makes sense, and will yield the number of gallons of gas used, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> driving a certain number of miles, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> hours.</p>
+</div></section>
+<div class="precalculus qa ui-has-child-title" data-has-label="true" data-label="Q&amp;A" data-type="note" id="fs-id1165137768571"><header><h3 class="os-title" data-label-parent="Q&amp;A" data-type="title">
+<span class="os-title-label">Q&amp;A</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="eip-idm1433751568">Are there any situations where <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow> <mrow> <mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow> </mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow> <mrow> <mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow> </mrow></semantics></math></span></span> would both be meaningful or useful expressions?</p>
+<p id="fs-id1165137682006"><em data-effect="italics">Yes. For many pure mathematical functions, both compositions make sense, even though they usually produce different new functions. In real-world problems, functions whose inputs and outputs have the same units also may give compositions that are meaningful in either order.</em></p>
+</div></section></div><section class="worked-example" id="fs-id1165134558042"><div class="problem-statement"><h3>Try It #2</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_01"><header></header><section>
+<div data-type="problem" id="fs-id1165135560725"><div class="os-problem-container"><p id="fs-id1165135560726">The gravitational force on a planet a distance <em data-effect="italics">r</em> from the sun is given by the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>G</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> The acceleration of a planet subjected to any force <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>F</mi></mrow>
+</mrow></semantics></math></span></span> is given by the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Form a meaningful composition of these two functions, and explain what it means.</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137417358">A gravitational force is still a force, so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>a</mi><mrow><mo>(</mo>
+<mrow>
+<mi>G</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> makes sense as the acceleration of a planet at a distance <em data-effect="italics">r</em> from the Sun (due to gravity), but <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>G</mi><mrow><mo>(</mo>
+<mrow>
+<mi>a</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> does not make sense.</p></div></section>
+</section>
+<section data-depth="1" id="fs-id1165137560475"><h3 data-type="title">Evaluating Composite Functions</h3>
+<p id="fs-id1165135168147">Once we compose a new function from two existing functions, we need to be able to evaluate it for any input in its domain. We will do this with specific numerical inputs for functions expressed as tables, graphs, and formulas and with variables as inputs to functions expressed as formulas. In each case, we evaluate the inner function using the starting input and then use the inner function’s output as the input for the outer function.</p>
+<section data-depth="2" id="fs-id1165137760886"><h4 data-type="title">Evaluating Composite Functions Using Tables</h4>
+<p id="fs-id1165137725253">When working with functions given as tables, we read input and output values from the table entries and always work from the inside to the outside. We evaluate the inside function first and then use the output of the inside function as the input to the outside function.</p>
+<section class="worked-example" id="Example_01_04_05"><div class="problem-statement"><h3>Example 5</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137416770"><header></header><section>
+<div data-type="problem" id="fs-id1165137465672"><div class="os-problem-container"><h4 data-type="title">Using a Table to Evaluate a Composite Function</h4>
+<p id="fs-id1165135177664">Using <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Table_01_04_01">Table 1</a>, evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="os-table" id="Table_01_04_01"><div class="table-scroll"><table data-id="Table_01_04_01" data-summary="Five rows and three columns. The first column is labeled, “x”, the second column is labeled, “f(x)”, and the third column is labeled, “g(x)”. We have the following values for f(x): f(1)=6, f(2)=8, f(3)=3, and f(4)=1. And for g(1)=3, g(2)=5, g(3)=2, and g(4)=7."><colgroup><col data-align="center" data-width="55"/><col data-align="center" data-width="55"/><col data-align="center" data-width="55"/></colgroup><thead>
+<tr>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span>
+</th>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow></semantics></math></span>
+</th>
+<th data-align="center" scope="col"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+</mrow></semantics></math></span>
+</th>
+</tr>
+</thead><tbody>
+<tr>
+<td data-align="center">1</td>
+<td data-align="center">6</td>
+<td data-align="center">3</td>
+</tr>
+<tr>
+<td data-align="center">2</td>
+<td data-align="center">8</td>
+<td data-align="center">5</td>
+</tr>
+<tr>
+<td data-align="center">3</td>
+<td data-align="center">3</td>
+<td data-align="center">2</td>
+</tr>
+<tr>
+<td data-align="center">4</td>
+<td data-align="center">1</td>
+<td data-align="center">7</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">1</span>
+<span class="os-divider"> </span>
+</div>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135582221">To evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">),</mo></mrow>
+</mrow></semantics></math></span></span> we start from the inside with the input value 3. We then evaluate the inside expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the table that defines the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>:</mo></mrow>
+</mrow></semantics></math></span></span> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2.</mn></mrow>
+</mrow></semantics></math></span></span> We can then use that result as the input to the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> is replaced by 2 and we get <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Then, using the table that defines the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we find that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137415997"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>2</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165134259282">To evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">),</mo></mrow>
+</mrow></semantics></math></span></span> we first evaluate the inside expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the first table: <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3.</mn></mrow>
+</mrow></semantics></math></span></span> Then, using the table for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mtext>, </mtext>
+</mrow>
+</mrow></semantics></math></span></span> we can evaluate</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137841687"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165134231482"><a aria-label="View Table 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Table_01_04_02">Table 2</a> shows the composite functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>∘</mo><mi>f</mi></mrow>
+</mrow></semantics></math></span></span> as tables.</p>
+<div class="os-table" id="Table_01_04_02"><div class="table-scroll"><table data-id="Table_01_04_02" data-summary="Two rows and five columns. When x=3, g(3)=2, f(g(3))=8, f(3)=3, and g(f(3))=2." role="presentation"><colgroup><col data-align="center" data-width="60"/><col data-align="center" data-width="60"/><col data-align="center" data-width="60"/><col data-align="center" data-width="60"/><col data-align="center" data-width="60"/></colgroup><tbody>
+<tr>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mi>x</mi>
+</mrow></semantics></math></span>
+</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</td>
+<td data-align="center"> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</td>
+</tr>
+<tr>
+<td data-align="center">3</td>
+<td data-align="center">2</td>
+<td data-align="center">8</td>
+<td data-align="center">3</td>
+<td data-align="center">2</td>
+</tr>
+</tbody></table></div><div class="os-caption-container">
+<span class="os-title-label">Table </span>
+<span class="os-number">2</span>
+<span class="os-divider"> </span>
+</div>
+</div></div></section>
+<section class="worked-example" id="fs-id1165137724943"><div class="problem-statement"><h3>Try It #3</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_02"><header></header><section>
+<div data-type="problem" id="fs-id1165134297600"><div class="os-problem-container">
+<p id="fs-id1165134297603">Using <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Table_01_04_01">Table 1</a>, evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137836967"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+</section>
+<section data-depth="2" id="fs-id1165137756068"><h4 data-type="title">Evaluating Composite Functions Using Graphs</h4>
+<p id="fs-id1165137428192">When we are given individual functions as graphs, the procedure for evaluating composite functions is similar to the process we use for evaluating tables. We read the input and output values, but this time, from the <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span></span> axes of the graphs.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137634364"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137660530"><strong>Given a composite function and graphs of its individual functions, evaluate it using the information provided by the graphs.
+</strong></p>
+<ol id="fs-id1165133248553" type="1"><li>Locate the given input to the inner function on the <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span> axis of its graph.</li>
+<li>Read off the output of the inner function from the <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span> axis of its graph.</li>
+<li>Locate the inner function output on the <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span> axis of the graph of the outer function.</li>
+<li>Read the output of the outer function from the <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>y</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span> axis of its graph. This is the output of the composite function.</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_01_04_06"><div class="problem-statement"><h3>Example 6</h3><section>
+<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165137758193"><header></header><section><div data-type="problem" id="fs-id1165137758196"><div class="os-problem-container"><h4 data-type="title">Using a Graph to Evaluate a Composite Function</h4>
+<p id="fs-id1165134226787">Using <a aria-label="View Figure 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Figure_01_04_002">Figure 1</a>, evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="os-figure" id="Figure_01_04_002"><figure class="ui-has-child-figcaption" data-id="Figure_01_04_002">
+<span data-alt="Explanation of the composite function." data-type="media" id="fs-id1165134060392">
+<img alt="Explanation of the composite function." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/710401844b9cc0b203a1628994a0471665da4606" loading="lazy" src="../../notes-assets/0f0261f5c206d9f1987e.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">1</span>
+</figcaption></figure></div>
+</div></div>
+<div data-type="commentary" id="fs-id1165135646128"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137602379"><a aria-label="View Figure 3" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Figure_01_04_005">Figure 3</a> shows how we can mark the graphs with arrows to trace the path from the input value to the output value.</p><div class="os-figure" id="Figure_01_04_005"><figure class="ui-has-child-figcaption" data-id="Figure_01_04_005">
+<span data-alt="Two graphs of a positive and negative parabola." data-type="media" id="fs-id1165135500730">
+<img alt="Two graphs of a positive and negative parabola." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/1e361fa96a49dfe00c62ba71530d9e241e620872" loading="lazy" src="../../notes-assets/d0deb6d7871c176e0ae6.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">3</span>
+</figcaption></figure></div>
+</div>
+</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135545948">To evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we start with the inside evaluation. See <a aria-label="View Figure 2" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Figure_01_04_004">Figure 2</a>.</p><div class="os-figure" id="Figure_01_04_004">
+<figure class="ui-has-child-figcaption" data-id="Figure_01_04_004">
+<span data-alt="Two graphs of a positive parabola (g(x)) and a negative parabola (f(x)). The following points are plotted: g(1)=3 and f(3)=6." data-type="media" id="fs-id1165137644158">
+<img alt="Two graphs of a positive parabola (g(x)) and a negative parabola (f(x)). The following points are plotted: g(1)=3 and f(3)=6." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/1a4f77e97532d00365df5e04baa926573bf7dc1d" loading="lazy" src="../../notes-assets/cc62f8599971925c7895.svg"/>
+</span>
+<figcaption class="os-caption-container">
+<span class="os-title-label">Figure </span>
+<span class="os-number">2</span>
+</figcaption></figure>
+</div>
+<p id="fs-id1165137566106">We evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> using the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> finding the input of 1 on the <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mtext>-</mtext></mrow>
+</mrow></semantics></math></span></span> axis and finding the output value of the graph at that input. Here, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3.</mn></mrow>
+</mrow></semantics></math></span></span> We use this value as the input to the function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p><div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135432881"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137831420">We can then evaluate the composite function by looking to the graph of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> finding the input of 3 on the <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mtext>-</mtext>
+</mrow>
+</mrow></semantics></math></span></span> axis and reading the output value of the graph at this input. Here, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mn>6.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section><section class="worked-example" id="fs-id1165137723402"><div class="problem-statement"><h3>Try It #4</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_03"><header></header><section>
+<div data-type="problem" id="fs-id1165137588093"><div class="os-problem-container"><p id="fs-id1165137423742">Using <a aria-label="View Figure 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions#Figure_01_04_002">Figure 1</a>, evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137502186"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow>
+</mrow></semantics></math></span></span>
+</p></div></section>
+</section>
+<section data-depth="2" id="fs-id1165137452389"><h4 data-type="title">Evaluating Composite Functions Using Formulas</h4>
+<p id="fs-id1165137432176">When evaluating a composite function where we have either created or been given formulas, the rule of working from the inside out remains the same. The input value to the outer function will be the output of the inner function, which may be a numerical value, a variable name, or a more complicated expression.</p>
+<p id="fs-id1165137567159">While we can compose the functions for each individual input value, it is sometimes helpful to find a single formula that will calculate the result of a composition <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> To do this, we will extend our idea of function evaluation. Recall that, when we evaluate a function like <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>t</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we substitute the value inside the parentheses into the formula wherever we see the input variable.</p>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137584280"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137676972"><strong>Given a formula for a composite function, evaluate the function.
+</strong></p>
+<ol id="fs-id1165137564125" type="1">
+<li>Evaluate the inside function using the input value or variable provided.</li>
+<li>Use the resulting output as the input to the outside function.</li>
+</ol>
+</div></section></div>
+<section class="worked-example" id="Example_01_04_07"><div class="problem-statement"><h3>Example 7</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134070851"><header></header><section>
+<div data-type="problem" id="fs-id1165134070853"><div class="os-problem-container"><h4 data-type="title">Evaluating a Composition of Functions Expressed as Formulas with a Numerical Input</h4>
+<p id="fs-id1165137447886">Given <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>t</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></div>
+<div data-type="commentary" id="fs-id1165137530479"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165137714335">It makes no difference what the input variables <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>t</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> were called in this problem because we evaluated for specific numerical values.</p>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135528526">Because the inside expression is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we start by evaluating <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> at 1.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137443116"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>5</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137445352">Then <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> so we evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span></span> at an input of 5.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137706989"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<msup>
+<mn>5</mn>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mn>5</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>20</mn>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+</div></section>
+<section class="worked-example" id="fs-id1165137570158"><div class="problem-statement"><h3>Try It #5</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_04"><header></header><section>
+<div data-type="problem" id="fs-id1165134544989"><div class="os-problem-container"><p id="fs-id1165134544990">Given <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>−</mo><mi>t</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> evaluate </p>
+<ol class="circled" id="fs-id1165137758652" type="1"><li><span class="token">ⓐ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li><span class="token">ⓑ</span> <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+</ol></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><ol class="circled first-inline-list-element" id="fs-id1165134261859" type="1"><li><span class="token">ⓐ</span> 8</li> <li><span class="token">ⓑ</span> 20</li></ol></div></section>
+</section>
+</section>
+<section data-depth="1" id="fs-id1165135567444"><h3 data-type="title">Finding the Domain of a Composite Function</h3>
+<p id="fs-id1165135519324">As we discussed previously, the <span class="no-emphasis" data-type="term" group-by="d" id="term-00008">domain of a composite function</span> such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is dependent on the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> It is important to know when we can apply a composite function and when we cannot, that is, to know the domain of a function such as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Let us assume we know the domains of the functions <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> separately. If we write the composite function for an input <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> as <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> we can see right away that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> must be a member of the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> in order for the expression to be meaningful, because otherwise we cannot complete the inner function evaluation. However, we also see that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> must be a member of the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> otherwise the second function evaluation in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> cannot be completed, and the expression is still undefined. Thus the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> consists of only those inputs in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> that produce outputs from <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> belonging to the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Note that the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> composed with <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is the set of all <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> such that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> is in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="ui-has-child-title" data-type="note" id="fs-id1165135547254"><header><h3 class="os-title" data-type="title">
+<span class="os-title-label" data-type="">Domain of a Composite Function</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135426375">The domain of a composite function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is the set of those inputs <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> for which <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> is in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section></div>
+<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137663970"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
+<span class="os-title-label">How To</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165135203267"><strong>Given a function composition <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>,</mo>
+</mrow>
+</mrow></semantics></math></span></span> determine its domain.</strong></p><ol id="fs-id1165137714200" type="1"><li>Find the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span> </li>
+<li>Find the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+<li>Find those inputs <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span> in the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span> for which <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span> is in the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span> That is, exclude those inputs <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span> from the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span> for which <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span> is not in the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span> The resulting set is the domain of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span>
+</li>
+</ol></div></section></div>
+<section class="worked-example" id="Example_01_04_08"><div class="problem-statement"><h3>Example 8</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165137646695"><header></header><section>
+<div data-type="problem" id="fs-id1165137646697"><div class="os-problem-container"><h4 data-type="title">Finding the Domain of a Composite Function</h4>
+<p id="fs-id1165135640630">Find the domain of</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135349196"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mspace width="0.5em"></mspace><mtext>where</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mn>5</mn>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>1</mn></mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>and</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137627922">The domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> consists of all real numbers except <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mo>,</mo></mrow>
+</mrow></semantics></math></span></span> since that input value would cause us to divide by 0. Likewise, the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi></mrow>
+</mrow></semantics></math></span></span> consists of all real numbers except 1. So we need to exclude from the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span> that value of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>x</mi></mrow>
+</mrow></semantics></math></span></span> for which <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>1.</mn></mrow>
+</mrow></semantics></math></span></span>
+</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137455472"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd columnalign="right">
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>1</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>4</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mn>6</mn>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mrow>
+<mn>3</mn><mi>x</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd columnalign="right">
+<mi>x</mi>
+</mtd>
+<mtd>
+<mo>=</mo>
+</mtd>
+<mtd columnalign="left">
+<mn>2</mn>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+<p id="fs-id1165137891240">So the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is the set of all real numbers except <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>2.</mn></mrow>
+</mrow></semantics></math></span></span> This means that</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165131959460"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>x</mi><mo>≠</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext>or</mtext><mspace width="0.5em"></mspace><mi>x</mi><mo>≠</mo><mn>2</mn></mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135152098">We can write this in interval notation as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137638095"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mo>−</mo><mi>∞</mi><mo>,</mo><mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+<mo>,</mo><mn>2</mn></mrow>
+<mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mo>,</mo><mi>∞</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span>
+</div></div></section>
+<section class="worked-example" id="Example_01_04_09"><div class="problem-statement"><h3>Example 9</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165135353057"><header></header><section>
+<div data-type="problem" id="fs-id1165137444218"><div class="os-problem-container"><h4 data-type="title">Finding the Domain of a Composite Function Involving Radicals</h4>
+<p id="fs-id1165135547426">Find the domain of</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137806037"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mspace width="0.5em"></mspace><mtext> where</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>2</mn></mrow>
+</msqrt>
+<mspace width="0.5em"></mspace><mtext> and  </mtext><mspace width="0.5em"></mspace><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mn>3</mn><mo>−</mo><mi>x</mi></mrow>
+</msqrt></mrow>
+</mrow></semantics></math></span>
+</div></div></div>
+<div data-type="commentary" id="fs-id1165137637475"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
+<p id="fs-id1165135241313">This example shows that knowledge of the range of functions (specifically the inner function) can also be helpful in finding the domain of a composite function. It also shows that the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+</mrow></semantics></math></span></span> can contain values that are not in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> though they must be in the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo>.</mo></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137812353">Because we cannot take the square root of a negative number, the domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo> <mrow>
+<mo>−</mo><mi>∞</mi><mo>,</mo><mn>3</mn></mrow> <mo>]</mo></mrow><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> Now we check the domain of the composite function</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137874760"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow><mo>(</mo>
+<mi>f</mi><mo>∘</mo><mi>g</mi>
+<mo>)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo>
+<msqrt><msqrt>
+<mn>3</mn><mo>−</mo><mi>x</mi></msqrt><mo>+</mo><mn>2</mn>
+</msqrt>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165137871761">For <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>(</mo>
+<mi>f</mi><mo>∘</mo><mi>g</mi>
+<mo>)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo>
+<msqrt><msqrt>
+<mn>3</mn><mo>−</mo><mi>x</mi></msqrt><mo>+</mo><mn>2</mn>
+</msqrt><mo>,</mo>
+<msqrt><mn>3</mn><mo>−</mo><mi>x</mi></msqrt><mo>+</mo><mn>2</mn>
+<mo>≥</mo><mn>0</mn><mo>,</mo>
+</mrow></semantics></math></span></span>
+since the radicand of a square root must be positive. Since square roots are positive, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow><mtext></mtext>
+<mrow>
+<msqrt>
+<mn>3</mn><mo>−</mo><mi>x</mi></msqrt>
+<mo>≥</mo><mn>0</mn>
+<mo>,</mo>
+</mrow><mtext></mtext>
+</mrow></semantics></math></span></span> or, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mn>3</mn><mo>−</mo><mi>x</mi>
+<mo>≥</mo><mn>0</mn><mo>,</mo>
+</mrow><mtext></mtext>
+</mrow></semantics></math></span></span> which gives a domain of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow><mo>(</mo><mo>-∞</mo><mo>,</mo><mn>3</mn><mo>]</mo>
+</mrow></mrow></semantics></math></span></span> .</p></div></section>
+<section class="worked-example" id="fs-id1165135435597"><div class="problem-statement"><h3>Try It #6</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_07"><header></header><section>
+<div data-type="problem" id="fs-id1165137937116"><div class="os-problem-container"><p id="fs-id1165137937117">Find the domain of</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165135194427"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>f</mi><mo>∘</mo><mi>g</mi></mrow>
+<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mspace width="0.5em"></mspace><mtext> where</mtext><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mspace width="0.5em"></mspace><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<mi>x</mi><mo>−</mo><mn>2</mn></mrow>
+</mfrac>
+<mspace width="0.5em"></mspace><mtext> and  </mtext><mspace width="0.5em"></mspace><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mi>x</mi><mo>+</mo><mn>4</mn></mrow>
+</msqrt></mrow>
+</mrow></semantics></math></span> </div></div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137827717"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mo>−</mo><mn>4</mn><mo>,</mo><mn>0</mn></mrow> <mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo>
+<mrow>
+<mn>0</mn><mo>,</mo><mi>∞</mi></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow></semantics></math></span></span>
+</p>
+</div></section>
+</section>
+<section data-depth="1" id="fs-id1165137425738"><h3 data-type="title">Decomposing a Composite Function into its Component Functions</h3><p id="fs-id1165135185936">In some cases, it is necessary to decompose a complicated function. In other words, we can write it as a composition of two simpler functions. There may be more than one way to <span class="no-emphasis" data-type="term" group-by="d" id="term-00009">decompose a composite function</span>, so we may choose the decomposition that appears to be most expedient.</p>
+<section class="worked-example" id="Example_01_04_10"><div class="problem-statement"><h3>Example 10</h3><section>
+<div class="body">
+<div class="unnumbered" data-type="exercise" id="fs-id1165134319721"><header></header><section>
+<div data-type="problem" id="fs-id1165134319723"><div class="os-problem-container"><h4 data-type="title">Decomposing a Function</h4>
+<p id="fs-id1165137771903">Write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mrow>
+<mn>5</mn><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span></span> as the composition of two functions.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165135194522">We are looking for two functions, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>g</mi></mrow>
+</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo>,</mo></mrow>
+</mrow></semantics></math></span></span> so <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> To do this, we look for a function inside a function in the formula for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
+</mrow></semantics></math></span></span> As one possibility, we might notice that the expression <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mn>5</mn><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mrow></semantics></math></span></span> is the inside of the square root. We could then decompose the function as</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137413960"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mspace width="0.5em"></mspace><mtext>and </mtext><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div><p id="fs-id1165135250635">We can check our answer by recomposing the functions.</p>
+<div class="unnumbered" data-label="" data-type="equation" id="fs-id1165137730234"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<mrow>
+<mi>g</mi><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mrow><mo>(</mo>
+<mrow>
+<mn>5</mn><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><msqrt>
+<mrow>
+<mn>5</mn><mo>−</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+</mrow></semantics></math></span>
+</div>
+</div></section>
+<section class="worked-example" id="fs-id1165131878633"><div class="problem-statement"><h3>Try It #7</h3><section>
+<div class="os-note-body">
+<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_01_04_08"><header></header><section>
+<div data-type="problem" id="fs-id1165137501975"><div class="os-problem-container"><p id="fs-id1165137501976">Write <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mrow>
+<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<mn>3</mn><mo>−</mo><msqrt>
+<mrow>
+<mn>4</mn><mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mrow>
+</mfrac>
+</mrow>
+</mrow></semantics></math></span></span> as the composition of two functions.</p>
+</div></div>
+</section></div>
+</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
+<p id="fs-id1165137411053">Possible answer:<span data-type="newline"><br/></span></p><p id="fs-id1165135333608"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+<mtable columnalign="left">
+<mtr>
+<mtd>
+<mi>g</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><msqrt>
+<mrow>
+<mn>4</mn><mo>+</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>h</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>4</mn>
+<mrow>
+<mn>3</mn><mo>−</mo><mi>x</mi></mrow>
+</mfrac>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>f</mi><mo>=</mo><mi>h</mi><mo>∘</mo><mi>g</mi>
+</mtd>
+</mtr>
+</mtable>
+</mrow></semantics></math></span></span>
+</p></div></section>
+<div class="media-notitle ui-has-child-title" data-has-label="true" data-label="Media" data-type="note" id="fs-id1165135699157"><header><h3 class="os-title" data-label-parent="Media" data-type="title">
+<span class="os-title-label">Media</span>
+</h3></header><section>
+<div class="os-note-body">
+<p id="fs-id1165137600228">Access these online resources for additional instruction and practice with composite functions.</p>
+<ul id="fs-id1165137600231">
+<li><a aria-label="Go to Composite Functions" href="https://openstax.org/l/compfunction" rel="noopener nofollow" target="_blank">Composite Functions</a></li>
+<li><a aria-label="Go to Composite Function Notation Application" href="https://openstax.org/l/compfuncnot" rel="noopener nofollow" target="_blank">Composite Function Notation Application</a></li>
+<li><a aria-label="Go to Composite Functions Using Graphs" href="https://openstax.org/l/compfuncgraph" rel="noopener nofollow" target="_blank">Composite Functions Using Graphs</a></li>
+<li><a aria-label="Go to Decompose Functions" href="https://openstax.org/l/decompfunction" rel="noopener nofollow" target="_blank">Decompose Functions</a></li>
+<li><a aria-label="Go to Composite Function Values" href="https://openstax.org/l/compfuncvalue" rel="noopener nofollow" target="_blank">Composite Function Values</a></li>
+</ul>
+</div></section></div>
+</section>
+<footer class="attribution">Adapted from <a href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions">OpenStax College Algebra 2e, by Jay Abramson</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>
