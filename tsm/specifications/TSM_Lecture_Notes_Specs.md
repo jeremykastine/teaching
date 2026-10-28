@@ -276,11 +276,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Keep tables and trees responsive, with borders following foreground color so concealed solutions remain entirely blank and preserve their natural height. Preserve complete static solution content and MathJax rendering.
 
 
-## Topic 16: challenging grouping examples (October 28, 2026)
+## Topic 17: challenging sum-product examples (October 28, 2026)
 
-- Retain the existing six examples and append four more challenging four-term polynomials whose leading coefficients and constants have many positive factor pairs: 36/90, 60/84, 72/120, and 36/144. Keep this a grouping lesson; do not replace it with trinomial guess-and-check.
-- Use 36x^3+81x^2+40x+90, 60x^3-144x^2-35x+84, 72x^3+90x^2+96x+120, and 144+36x^3-81x^2-64x. Include matching binomials with nonunit coefficients, a negative group GCF, a whole-polynomial GCF before grouping, rearrangement of signed terms, and a difference of squares after grouping.
-- Explain the larger factor choices in the worked solutions, show each GCF and common-binomial step without first enclosing unfactored pairs, factor completely over the integers, and verify each final answer by multiplication. Preserve single-variable scope, assignment, navigation, and independently concealed solutions with natural height.
+- Retain the existing six examples and append four harder trinomials: 36x^2+121x+90, 60x^2-109x-84, 72x^2-199x+120, and 96x^2+188x+90. Use leading coefficients and constants with multiple positive factor pairs, including after removing a GCF.
+- Demonstrate the sum-product search with candidate factor pairs, verify both the signed sum and product, split the middle term, and factor by grouping. Include positive constants with positive and negative middle coefficients, a negative constant, a negative group GCF, and an outside GCF retained throughout. Verify each final factorization by multiplication.
+- Keep all six original Topic 16 examples without the added challenging-coefficient section; this harder-number request applies to Topic 17. Preserve both topics' assignment, navigation, single-variable scope, and independently concealed solutions with natural height.
 
 ## Topic 18: comprehensive factoring and opposite-factor cancellation (October 28, 2026)
 

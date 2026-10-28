@@ -182,6 +182,86 @@ does not factor over the integers, and we leave it as written.</p>
 </div>
 </section>
 
+<h2>More challenging factor choices</h2>
+<p>These trinomials have more possible factors in both the leading coefficient and the constant term. After removing any GCF, use the sum-product method to organize the search: find a signed factor pair of the product of the leading coefficient and constant whose sum is the middle coefficient. Then split the middle term and group.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using the sum-product method and grouping.</p>
+<p><span class="math display">\[36x^2+121x+90\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>There is no GCF greater than 1. The leading coefficient 36 has five positive factor pairs, and the constant 90 has six. Rather than trying every combination of binomial factors, find two integers with product <span class="math inline">\(36(90)=3240\)</span> and sum 121.</p>
+<p>Both numbers must be positive. Some factor pairs are 30 and 108 (sum 138), 36 and 90 (sum 126), and 40 and 81 (sum 121). The last pair works because <span class="math inline">\(40+81=121\)</span> and <span class="math inline">\(40(81)=3240\)</span>.</p>
+<p>Split the middle term, then factor the GCF from each pair.</p>
+<p><span class="math display">\[36x^2+81x+40x+90\]</span></p>
+<p><span class="math display">\[9x(4x+9)+10(4x+9)\]</span></p>
+<p>Factor out the matching binomial.</p>
+<p><span class="math display">\[(4x+9)(9x+10)\]</span></p>
+<p>The numbers 81 and 40 split the middle term; they are not the constants in the final binomials. Check by multiplying and combining the middle terms.</p>
+<p><span class="math display">\[(4x+9)(9x+10)=36x^2+40x+81x+90=36x^2+121x+90\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using the sum-product method and grouping.</p>
+<p><span class="math display">\[60x^2-109x-84\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>There is no GCF greater than 1. Both 60 and 84 have six positive factor pairs. We need two integers with product <span class="math inline">\(60(-84)=-5040\)</span> and sum -109.</p>
+<p>The signs must be opposite, with the larger size negative. Factor pairs of 5040 include 30 and 168 (difference 138), 35 and 144 (difference 109), and 36 and 140 (difference 104). Choose -144 and 35: <span class="math inline">\(-144+35=-109\)</span> and <span class="math inline">\((-144)(35)=-5040\)</span>.</p>
+<p>Split the middle term.</p>
+<p><span class="math display">\[60x^2-144x+35x-84\]</span></p>
+<p>Factor <span class="math inline">\(12x\)</span> from the first pair and 7 from the second pair.</p>
+<p><span class="math display">\[12x(5x-12)+7(5x-12)\]</span></p>
+<p><span class="math display">\[(5x-12)(12x+7)\]</span></p>
+<p>Check the signs and the middle coefficient by multiplying.</p>
+<p><span class="math display">\[(5x-12)(12x+7)=60x^2+35x-144x-84=60x^2-109x-84\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers using the sum-product method and grouping.</p>
+<p><span class="math display">\[72x^2-199x+120\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>There is no GCF greater than 1. The leading coefficient 72 has six positive factor pairs, and 120 has eight. The required product is <span class="math inline">\(72(120)=8640\)</span>, and the required sum is -199.</p>
+<p>Both numbers must be negative. Among positive factor pairs of 8640, 60 and 144 sum to 204, 64 and 135 sum to 199, and 72 and 120 sum to 192. Thus choose -135 and -64: <span class="math inline">\(-135+(-64)=-199\)</span> and <span class="math inline">\((-135)(-64)=8640\)</span>.</p>
+<p>Split the middle term, then remove <span class="math inline">\(9x\)</span> from the first pair and negative 8 from the second pair.</p>
+<p><span class="math display">\[72x^2-135x-64x+120\]</span></p>
+<p><span class="math display">\[9x(8x-15)-8(8x-15)\]</span></p>
+<p>Factoring out negative 8 creates the same binomial as in the first group.</p>
+<p><span class="math display">\[(8x-15)(9x-8)\]</span></p>
+<p>Check by multiplying.</p>
+<p><span class="math display">\[(8x-15)(9x-8)=72x^2-64x-135x+120=72x^2-199x+120\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely over the integers. Begin with a GCF, then use the sum-product method and grouping.</p>
+<p><span class="math display">\[96x^2+188x+90\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>First remove the GCF 2 from the entire trinomial.</p>
+<p><span class="math display">\[2(48x^2+94x+45)\]</span></p>
+<p>The remaining leading coefficient 48 has five positive factor pairs, and the constant 45 has three. For this smaller trinomial, the required product is <span class="math inline">\(48(45)=2160\)</span>, and the required sum is 94. Both numbers are positive.</p>
+<p>Factor pairs of 2160 include 30 and 72 (sum 102), 36 and 60 (sum 96), and 40 and 54 (sum 94). Choose 54 and 40, since <span class="math inline">\(54+40=94\)</span> and <span class="math inline">\(54(40)=2160\)</span>.</p>
+<p>Split the middle term inside the parentheses, keeping the outside factor 2.</p>
+<p><span class="math display">\[2(48x^2+54x+40x+45)\]</span></p>
+<p><span class="math display">\[2\left[6x(8x+9)+5(8x+9)\right]\]</span></p>
+<p><span class="math display">\[2(8x+9)(6x+5)\]</span></p>
+<p>Both binomials are fully factored. Check the product, including the outside factor.</p>
+<p><span class="math display">\[2(8x+9)(6x+5)=2(48x^2+94x+45)=96x^2+188x+90\]</span></p>
+</div>
+</section>
+
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
       <a href="../lecture-notes.html">Table of contents</a>
         <a href="topic-16-factoring-by-grouping.html">Previous topic</a>
@@ -193,3 +273,4 @@ does not factor over the integers, and we leave it as written.</p>
   </main>
 </body>
 </html>
+
