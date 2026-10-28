@@ -274,3 +274,11 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Introduce differences of squares through a zero middle coefficient and cancellation of cross terms, then name the pattern.
 - Retain a substantial nonfactorable example with leading coefficient greater than 1 and at least eight cells after removing reversed pairs: `12x^2+37x+12`, using a complete 3-row by 3-column search table (nine cells, 18 placement checks). Check and reject both placements in every cell before concluding not factorable over the integers. Do not infer nonfactorability from a few failed guesses.
 - Keep tables and trees responsive, with borders following foreground color so concealed solutions remain entirely blank and preserve their natural height. Preserve complete static solution content and MathJax rendering.
+
+
+## Topic 18: comprehensive factoring and opposite-factor cancellation (October 28, 2026)
+
+- Teach simplification only after factoring numerators and denominators completely. Include numerical/variable GCFs, monic trinomials, non-monic trinomials using sum-product and grouping, factoring four terms by grouping, and differences of squares; include examples requiring more than one method.
+- Teach that opposite binomial factors satisfy \(a-b=-(b-a)\). Canceling opposite factors leaves a negative sign. Distinguish cancellation of whole nonzero factors from invalid cancellation of individual terms in sums or differences.
+- In every rational-expression example, state restrictions from the original denominator and retain exclusions even if their factors disappear in the simplified form. Include a no-common-factor example to reinforce that cancellation is not always possible.
+- Preserve the per-example hidden-solution interaction and the existing course label and sequence.
