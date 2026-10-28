@@ -34,7 +34,7 @@
     const task={check,seed:seed>>>0,variant,title:variants[check].find(v=>v[0]===variant)[1],facts:[],steps:[],change:'',data:'',dataHelp:'',answers:[],meta:{}};
     const t=task;
     if(check===1) {
-      const n=int(50,100), modeCount=variant==='two-modes'?2:1, frequency=int(5,8);
+      const n=int(20,30), modeCount=variant==='two-modes'?2:1, frequency=int(5,8);
       const modes=shuffle(Array.from({length:81},(_,i)=>i+10)).slice(0,modeCount);
       const remaining=n-modeCount*frequency, lowCount=Math.round(remaining*0.65);
       let witness=[...modes.flatMap(x=>Array(frequency).fill(x)),
