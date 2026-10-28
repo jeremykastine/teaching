@@ -29,6 +29,9 @@ canceling common factors, and preserving excluded input values.</p>
 that makes an original denominator 0. Common factor: a factor appearing
 in both numerator and denominator. Cancellation: dividing numerator and
 denominator by the same nonzero factor.</p>
+<h2>Choose a factoring method first</h2>
+<p>For TSM 099, practice the full range of factoring used in Topics 14–17: remove a numerical or variable GCF, factor monic trinomials by sum and product (or guess and check), factor trinomials with leading coefficient greater than 1 by splitting the middle term, factor four terms by grouping, and recognize a difference of two squares. A single numerator or denominator may require more than one of these methods. Factor <em>completely</em> before looking for cancellations.</p>
+<p>Opposite binomial factors differ by a negative sign: <span class="math inline">\(a-b=-(b-a)\)</span>. For example, <span class="math inline">\((x-5)/(5-x)=-1\)</span> when <span class="math inline">\(x\ne5\)</span>. Keep the negative sign when canceling opposites. Never cancel individual terms across addition or subtraction: <span class="math inline">\((x+3)/x\)</span> is not 3.</p>
 <h2>Restrictions and cancellation</h2>
 <p>A rational expression is a ratio of polynomials with a nonzero denominator. Record excluded values from the original denominator before simplifying. Factor the numerator and denominator, then cancel only common nonzero factors, not separate terms in sums. Original restrictions remain after cancellation.</p>
 <section class="worked-example">
@@ -121,6 +124,84 @@ not its original domain.</p>
 <p>The original denominator requires <span class="math inline">\(m\ne-2,2\)</span>. Factor and remove common nonzero factors.</p><p><span class="math display">\[\frac{3m^2+12m}{6m^2-24}=\frac{3m(m+4)}{6(m-2)(m+2)}=\frac{m(m+4)}{2(m-2)(m+2)}\]</span></p>
 </div>
 </section>
+
+
+<h2>More factoring combinations and opposite factors</h2>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Simplify using the sum-product method for a leading coefficient greater than 1. State restrictions.</p>
+<p><span class="math display">\[\frac{6x^2+11x+3}{3x^2+7x+2}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>In the numerator, split 11x into 9x+2x and group. In the denominator, split 7x into 6x+x and group.</p>
+<p><span class="math display">\[\frac{3x(2x+3)+1(2x+3)}{3x(x+2)+1(x+2)}
+=\frac{(3x+1)(2x+3)}{(3x+1)(x+2)}
+=\frac{2x+3}{x+2}\]</span></p>
+<p>The original denominator is zero at <span class="math inline">\(x=-\frac13,-2\)</span>; both values remain excluded.</p>
+</div></section>
+
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Simplify by factoring a four-term polynomial by grouping and using a difference of squares. State restrictions.</p>
+<p><span class="math display">\[\frac{x^3+3x^2-4x-12}{x^2-4}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Group the first two and last two numerator terms. Then factor the common binomial and the difference of squares.</p>
+<p><span class="math display">\[\frac{x^2(x+3)-4(x+3)}{(x-2)(x+2)}
+=\frac{(x+3)(x^2-4)}{(x-2)(x+2)}
+=\frac{(x+3)(x-2)(x+2)}{(x-2)(x+2)}
+=x+3\]</span></p>
+<p>Even though the simplified form is a polynomial, the original expression is undefined at <span class="math inline">\(x=-2,2\)</span>.</p>
+</div></section>
+
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Simplify, being careful with opposite factors. State restrictions.</p>
+<p><span class="math display">\[\frac{y^2-25}{5-y}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Factor the difference of squares. Rewrite the denominator as the negative of the matching factor.</p>
+<p><span class="math display">\[\frac{(y-5)(y+5)}{-(y-5)}
+=-(y+5)=-y-5,\qquad y\ne5\]</span></p>
+<p>The factor <span class="math inline">\(5-y\)</span> is the <em>opposite</em> of <span class="math inline">\(y-5\)</span>; canceling them without the negative sign would give the wrong answer.</p>
+</div></section>
+
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Simplify a trinomial together with opposite factors. State all original restrictions.</p>
+<p><span class="math display">\[\frac{2t^2+3t-2}{(1-t)(t+2)}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Split the middle term: <span class="math inline">\(2t^2+4t-t-2=(t+2)(2t-1)\)</span>. The denominator has <span class="math inline">\(1-t=-(t-1)\)</span>, but here its factor <span class="math inline">\(t+2\)</span> is the common one.</p>
+<p><span class="math display">\[\frac{(t+2)(2t-1)}{(1-t)(t+2)}
+=\frac{2t-1}{1-t}
+=-\frac{2t-1}{t-1}\]</span></p>
+<p>Original restrictions: <span class="math inline">\(t\ne1,-2\)</span>. The second form shows the negative sign required when the remaining denominator is reversed.</p>
+</div></section>
+
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>First remove the GCF, then factor a difference of squares and a monic trinomial. Simplify and state restrictions.</p>
+<p><span class="math display">\[\frac{2u^2-8}{u^2+5u+6}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Both the numerical GCF and the difference of squares are needed in the numerator.</p>
+<p><span class="math display">\[\frac{2(u^2-4)}{(u+2)(u+3)}
+=\frac{2(u-2)(u+2)}{(u+2)(u+3)}
+=\frac{2(u-2)}{u+3}\]</span></p>
+<p>Original restrictions: <span class="math inline">\(u\ne-2,-3\)</span>, including the canceled denominator zero.</p>
+</div></section>
+
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Determine whether anything cancels after factoring. Simplify and state restrictions.</p>
+<p><span class="math display">\[\frac{v^2+v+1}{v^2-1}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The denominator is <span class="math inline">\((v-1)(v+1)\)</span>. The numerator has no integer factor pair with sum 1 and product 1, so it does not factor over the integers and shares no factor with the denominator.</p>
+<p><span class="math display">\[\frac{v^2+v+1}{(v-1)(v+1)},\qquad v\ne-1,1\]</span></p>
+<p>No cancellation is possible. Terms such as <span class="math inline">\(v^2\)</span> cannot be canceled across sums.</p>
+</div></section>
 
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
       <a href="../lecture-notes.html">Table of contents</a>
