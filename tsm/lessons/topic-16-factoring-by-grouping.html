@@ -155,6 +155,80 @@ and the second pair has GCF <span class="math inline">\(3\)</span>.</p>
 </div>
 </section>
 
+<h2>More challenging coefficients</h2>
+<p>The next polynomials have leading coefficients and constant terms with many possible factors. Begin by checking for a GCF of the entire polynomial. Then use the GCF of each pair to produce matching binomial factors. Keep signs attached when rearranging terms, and check whether any resulting factor can be factored further.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely by grouping.</p>
+<p><span class="math display">\[36x^3+81x^2+40x+90\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The leading coefficient 36 has factor pairs <span class="math inline">\(1\cdot36,\ 2\cdot18,\ 3\cdot12,\ 4\cdot9,\ 6\cdot6\)</span>. The constant 90 has factor pairs <span class="math inline">\(1\cdot90,\ 2\cdot45,\ 3\cdot30,\ 5\cdot18,\ 6\cdot15,\ 9\cdot10\)</span>. Grouping uses the other coefficients to identify useful factors instead of guessing among all these combinations.</p>
+<p>There is no GCF greater than 1 for all four terms. The first pair has GCF <span class="math inline">\(9x^2\)</span>, and the second has GCF 10.</p>
+<p><span class="math display">\[9x^2(4x+9)+10(4x+9)\]</span></p>
+<p>Factor out the matching binomial.</p>
+<p><span class="math display">\[(4x+9)(9x^2+10)\]</span></p>
+<p>The quadratic has no GCF and is a sum of positive terms, so it does not factor further over the integers. Check by multiplying.</p>
+<p><span class="math display">\[(4x+9)(9x^2+10)=36x^3+81x^2+40x+90\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely by grouping.</p>
+<p><span class="math display">\[60x^3-144x^2-35x+84\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Both 60 and 84 have six positive factor pairs, but the four terms have no common factor greater than 1. For the first pair, factor out <span class="math inline">\(12x^2\)</span>. For the second pair, factor out negative 7 so that the binomials match.</p>
+<p><span class="math display">\[12x^2(5x-12)-7(5x-12)\]</span></p>
+<p>Removing negative 7 changes the signs inside its parentheses: <span class="math inline">\(-35x\div(-7)=5x\)</span> and <span class="math inline">\(84\div(-7)=-12\)</span>.</p>
+<p><span class="math display">\[(5x-12)(12x^2-7)\]</span></p>
+<p>The quadratic cannot factor further over the integers: its possible roots would require <span class="math inline">\(x^2=7/12\)</span>, which has no rational square root. Check the product.</p>
+<p><span class="math display">\[(5x-12)(12x^2-7)=60x^3-144x^2-35x+84\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely. Begin with a GCF, then use grouping.</p>
+<p><span class="math display">\[72x^3+90x^2+96x+120\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The leading coefficient 72 has six positive factor pairs, and the constant 120 has eight. First simplify the coefficients by factoring the GCF 6 from the entire polynomial.</p>
+<p><span class="math display">\[6(12x^3+15x^2+16x+20)\]</span></p>
+<p>Inside the parentheses, factor <span class="math inline">\(3x^2\)</span> from the first pair and 4 from the second pair.</p>
+<p><span class="math display">\[6\left[3x^2(4x+5)+4(4x+5)\right]\]</span></p>
+<p>Factor out the common binomial and retain the outside factor 6.</p>
+<p><span class="math display">\[6(4x+5)(3x^2+4)\]</span></p>
+<p>The quadratic does not factor further over the integers. Check by distributing the binomials and then the outside factor.</p>
+<p><span class="math display">\[6(4x+5)(3x^2+4)=6(12x^3+15x^2+16x+20)=72x^3+90x^2+96x+120\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Factor completely by grouping. Rearrange the terms if needed.</p>
+<p><span class="math display">\[144+36x^3-81x^2-64x\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The cubic coefficient 36 and constant 144 have five and eight positive factor pairs, respectively. There is no GCF greater than 1 for the whole polynomial. Rearrange the signed terms into descending powers.</p>
+<p><span class="math display">\[36x^3-81x^2-64x+144\]</span></p>
+<p>Factor <span class="math inline">\(9x^2\)</span> from the first pair and negative 16 from the second pair.</p>
+<p><span class="math display">\[9x^2(4x-9)-16(4x-9)\]</span></p>
+<p>Remove the matching binomial.</p>
+<p><span class="math display">\[(4x-9)(9x^2-16)\]</span></p>
+<p>The second factor is a difference of squares: <span class="math inline">\(9x^2=(3x)^2\)</span> and <span class="math inline">\(16=4^2\)</span>. Continue factoring.</p>
+<p><span class="math display">\[(4x-9)(3x-4)(3x+4)\]</span></p>
+<p>Check by multiplying the last two factors first, then distributing the remaining binomial.</p>
+<p><span class="math display">\[(4x-9)(3x-4)(3x+4)=(4x-9)(9x^2-16)=36x^3-81x^2-64x+144\]</span></p>
+</div>
+</section>
+
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
       <a href="../lecture-notes.html">Table of contents</a>
         <a href="topic-15-factoring-by-guess-and-check.html">Previous topic</a>
@@ -163,3 +237,4 @@ and the second pair has GCF <span class="math inline">\(3\)</span>.</p>
   </main>
 </body>
 </html>
+

@@ -276,9 +276,16 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Keep tables and trees responsive, with borders following foreground color so concealed solutions remain entirely blank and preserve their natural height. Preserve complete static solution content and MathJax rendering.
 
 
+## Topic 16: challenging grouping examples (October 28, 2026)
+
+- Retain the existing six examples and append four more challenging four-term polynomials whose leading coefficients and constants have many positive factor pairs: 36/90, 60/84, 72/120, and 36/144. Keep this a grouping lesson; do not replace it with trinomial guess-and-check.
+- Use 36x^3+81x^2+40x+90, 60x^3-144x^2-35x+84, 72x^3+90x^2+96x+120, and 144+36x^3-81x^2-64x. Include matching binomials with nonunit coefficients, a negative group GCF, a whole-polynomial GCF before grouping, rearrangement of signed terms, and a difference of squares after grouping.
+- Explain the larger factor choices in the worked solutions, show each GCF and common-binomial step without first enclosing unfactored pairs, factor completely over the integers, and verify each final answer by multiplication. Preserve single-variable scope, assignment, navigation, and independently concealed solutions with natural height.
+
 ## Topic 18: comprehensive factoring and opposite-factor cancellation (October 28, 2026)
 
 - Teach simplification only after factoring numerators and denominators completely. Include numerical/variable GCFs, monic trinomials, non-monic trinomials using sum-product and grouping, factoring four terms by grouping, and differences of squares; include examples requiring more than one method.
 - Teach that opposite binomial factors satisfy \(a-b=-(b-a)\). Canceling opposite factors leaves a negative sign. Distinguish cancellation of whole nonzero factors from invalid cancellation of individual terms in sums or differences.
 - In every rational-expression example, state restrictions from the original denominator and retain exclusions even if their factors disappear in the simplified form. Include a no-common-factor example to reinforce that cancellation is not always possible.
 - Preserve the per-example hidden-solution interaction and the existing course label and sequence.
+
