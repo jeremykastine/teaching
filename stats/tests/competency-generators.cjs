@@ -20,7 +20,7 @@ for(let check=1;check<=9;check++) {
       if(variant==='mixed')seen.add(t.variant);
       if(check===1) {
         const a=m.witness, target=m.targets, counts=new Map();
-        assert.ok(a.length>=50&&a.length<=100);assert.equal(a.length,target.count);
+        assert.ok(a.length>=20&&a.length<=30);assert.equal(a.length,target.count);
         assert.ok(a.every(x=>Number.isFinite(x)&&x>=0&&x<=1000));
         a.forEach(x=>counts.set(x,(counts.get(x)||0)+1));
         const top=Math.max(...counts.values());
