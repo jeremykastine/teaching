@@ -1,0 +1,3208 @@
+[
+  {
+    "version": "50277",
+    "seed": 2408378295,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 491.4000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 491.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 491.4000000000001,
+        "bottom": 445.1000000000001,
+        "rows": [
+          {
+            "top": 491.4000000000001,
+            "bottom": 445.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 445.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 445.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 7",
+          "3 x + 5 y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{4} = \\frac{31}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+2)+1 = 3x+8"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-2)-(4x+3)+x = -3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 3",
+          "x + y = 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "78697",
+    "seed": 2614825097,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 510.4000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 510.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.4000000000001,
+        "bottom": 445.1000000000001,
+        "rows": [
+          {
+            "top": 510.4000000000001,
+            "bottom": 445.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 445.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 445.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-3)-(4x+4)+x = -8"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{4} = \\frac{19}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-2)+10 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 3",
+          "x + y = 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 7",
+          "3 x + 5 y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "46200",
+    "seed": 3876870147,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 464.1000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 464.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 464.1000000000001,
+        "bottom": 410.80000000000007,
+        "rows": [
+          {
+            "top": 464.1000000000001,
+            "bottom": 410.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 410.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 410.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 7",
+          "3 x + 5 y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 3",
+          "x + y = 3"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{4} = \\frac{25}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-4)-(4x+5)+x = -5"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "97874",
+    "seed": 3238840203,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x - 1}{4} = \\frac{13}{8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-5)-(4x+6)+x = -6"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 12",
+          "3 x + 5 y = 19"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 4",
+          "x + y = 5"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+3)+1 = 3x+11"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "49633",
+    "seed": 3472323101,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 476.1000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 476.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 476.1000000000001,
+        "bottom": 426.1000000000001,
+        "rows": [
+          {
+            "top": 476.1000000000001,
+            "bottom": 426.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 426.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 426.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 12",
+          "3 x + 5 y = 19"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 4",
+          "x + y = 5"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x - 1}{4} = \\frac{23}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-3)+14 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-6)-(4x+7)+x = -20"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "22454",
+    "seed": 629576306,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-2)-(4x+3)+x = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x - 1}{4} = \\frac{31}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 12",
+          "3 x + 5 y = 19"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 4",
+          "x + y = 5"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "14215",
+    "seed": 3008191968,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 491.4000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 491.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 491.4000000000001,
+        "bottom": 445.1000000000001,
+        "rows": [
+          {
+            "top": 491.4000000000001,
+            "bottom": 445.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 445.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 445.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 4}{3} + \\frac{x - 1}{4} = \\frac{47}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 5",
+          "x + y = 7"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+4)+1 = 3x+14"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-3)-(4x+4)+x = -1"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 17",
+          "3 x + 5 y = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "14478",
+    "seed": 243301949,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 479.4000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 479.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 479.4000000000001,
+        "bottom": 426.1000000000001,
+        "rows": [
+          {
+            "top": 479.4000000000001,
+            "bottom": 426.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 426.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 426.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 5",
+          "x + y = 7"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 17",
+          "3 x + 5 y = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-4)+18 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 4}{3} + \\frac{x - 1}{4} = \\frac{9}{4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-4)-(4x+5)+x = -12"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "22835",
+    "seed": 3638042662,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-5)-(4x+6)+x = -15"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 5",
+          "x + y = 7"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 4}{3} + \\frac{x - 1}{4} = \\frac{37}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 17",
+          "3 x + 5 y = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 4, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "20965",
+    "seed": 789387177,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 544.7,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 544.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 544.7,
+        "bottom": 479.40000000000003,
+        "rows": [
+          {
+            "top": 544.7,
+            "bottom": 479.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 479.40000000000003,
+        "bottom": 426.1,
+        "rows": [
+          {
+            "top": 479.40000000000003,
+            "bottom": 426.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 426.1,
+        "bottom": 379.8,
+        "rows": [
+          {
+            "top": 426.1,
+            "bottom": 379.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 6",
+          "x + y = 9"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+5)+1 = 3x+17"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 22",
+          "3 x + 5 y = 35"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 5}{3} + \\frac{x - 1}{4} = \\frac{55}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-6)-(4x+7)+x = -16"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "69395",
+    "seed": 3425187828,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610,
+        "bottom": 544.7,
+        "rows": [
+          {
+            "top": 610,
+            "bottom": 544.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 544.7,
+        "bottom": 498.40000000000003,
+        "rows": [
+          {
+            "top": 544.7,
+            "bottom": 498.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 498.40000000000003,
+        "bottom": 433.1,
+        "rows": [
+          {
+            "top": 498.40000000000003,
+            "bottom": 433.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 433.1,
+        "bottom": 379.8,
+        "rows": [
+          {
+            "top": 433.1,
+            "bottom": 379.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-5)+22 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 22",
+          "3 x + 5 y = 35"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-2)-(4x+3)+x = -4"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 6",
+          "x + y = 9"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 5}{3} + \\frac{x - 1}{4} = \\frac{31}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "93340",
+    "seed": 4158577235,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 483.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 483.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 483.1000000000001,
+        "bottom": 417.80000000000007,
+        "rows": [
+          {
+            "top": 483.1000000000001,
+            "bottom": 417.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 417.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 417.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 6",
+          "x + y = 9"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-3)-(4x+4)+x = 2"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 22",
+          "3 x + 5 y = 35"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 5, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 5}{3} + \\frac{x - 1}{4} = \\frac{43}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "49199",
+    "seed": 740404172,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610,
+        "bottom": 556.7,
+        "rows": [
+          {
+            "top": 610,
+            "bottom": 556.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 556.7,
+        "bottom": 491.40000000000003,
+        "rows": [
+          {
+            "top": 556.7,
+            "bottom": 491.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 491.40000000000003,
+        "bottom": 426.1,
+        "rows": [
+          {
+            "top": 491.40000000000003,
+            "bottom": 426.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 426.1,
+        "bottom": 379.8,
+        "rows": [
+          {
+            "top": 426.1,
+            "bottom": 379.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+6)+1 = 3x+20"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 6}{3} + \\frac{x - 1}{4} = \\frac{21}{8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 27",
+          "3 x + 5 y = 43"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 7",
+          "x + y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-4)-(4x+5)+x = -11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "82330",
+    "seed": 4208964112,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 445.1000000000001,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 445.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 445.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 445.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 6}{3} + \\frac{x - 1}{4} = \\frac{35}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-5)-(4x+6)+x = -16"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 27",
+          "3 x + 5 y = 43"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-6)+26 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 7",
+          "x + y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "29934",
+    "seed": 2950941875,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 6}{3} + \\frac{x - 1}{4} = \\frac{49}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-6)-(4x+7)+x = -13"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 27",
+          "3 x + 5 y = 43"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 7",
+          "x + y = 11"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 6, \\  5)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "81229",
+    "seed": 798139301,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 476.1000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 476.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 476.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 476.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 8",
+          "x + y = 13"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 7}{3} + \\frac{x - 1}{4} = \\frac{71}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 32",
+          "3 x + 5 y = 51"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-2)-(4x+3)+x = 6"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+7)+1 = 3x+23"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "79824",
+    "seed": 4086568372,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610,
+        "bottom": 563.7,
+        "rows": [
+          {
+            "top": 610,
+            "bottom": 563.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 563.7,
+        "bottom": 498.40000000000003,
+        "rows": [
+          {
+            "top": 563.7,
+            "bottom": 498.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 498.40000000000003,
+        "bottom": 445.1,
+        "rows": [
+          {
+            "top": 498.40000000000003,
+            "bottom": 445.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 445.1,
+        "bottom": 379.8,
+        "rows": [
+          {
+            "top": 445.1,
+            "bottom": 379.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-7)+30 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-3)-(4x+4)+x = -8"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 32",
+          "3 x + 5 y = 51"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 7}{3} + \\frac{x - 1}{4} = \\frac{13}{4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 8",
+          "x + y = 13"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "94212",
+    "seed": 2518041127,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 483.1000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 483.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 483.1000000000001,
+        "bottom": 417.80000000000007,
+        "rows": [
+          {
+            "top": 483.1000000000001,
+            "bottom": 417.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 417.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 417.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 32",
+          "3 x + 5 y = 51"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 7",
+          "4 x + 6 y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; doubling the first equation contradicts the second.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-4)-(4x+5)+x = -8"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 8",
+          "x + y = 13"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 7, \\  6)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 7}{3} + \\frac{x - 1}{4} = \\frac{55}{18}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "19560",
+    "seed": 730974193,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 37",
+          "3 x + 5 y = 59"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 8, \\  7)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-5)-(4x+6)+x = -9"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 8}{3} + \\frac{x - 1}{4} = \\frac{79}{24}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 9",
+          "x + y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 8, \\  7)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x+8)+1 = 3x+26"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "No solution; simplifying gives 1 = 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "31071",
+    "seed": 3650874694,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 476.1000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 476.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 476.1000000000001,
+        "bottom": 426.1000000000001,
+        "rows": [
+          {
+            "top": 476.1000000000001,
+            "bottom": 426.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 426.1000000000001,
+        "bottom": 379.80000000000007,
+        "rows": [
+          {
+            "top": 426.1000000000001,
+            "bottom": 379.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 37",
+          "3 x + 5 y = 59"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 8, \\  7)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 9",
+          "x + y = 15"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "( 8, \\  7)",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x + 8}{3} + \\frac{x - 1}{4} = \\frac{43}{12}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-8)+34 = 2(2x+1)"
+        ],
+        "rows": [
+          {
+            "label": "Solution set",
+            "answer": "All real numbers; both sides reduce to 4x + 2.",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve.",
+        "math": [
+          "3(2x-6)-(4x+7)+x = -20"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

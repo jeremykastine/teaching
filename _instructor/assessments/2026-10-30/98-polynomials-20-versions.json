@@ -1,0 +1,3942 @@
+[
+  {
+    "version": "96667",
+    "seed": 3499036378,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 531.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 456.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 494.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.1,
+            "bottom": 456.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 456.1,
+        "bottom": 380.1,
+        "rows": [
+          {
+            "top": 456.1,
+            "bottom": 418.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 418.1,
+            "bottom": 380.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 380.1,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 380.1,
+            "bottom": 331.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 6 x^{3} + 9 x^{2} + 15 x",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 1)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - x^{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 2 x^{2} - 1) + (- 3 x^{3} + 2 x + 3)",
+          "(b)\\quad (3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- x^{3} - 2 x^{2} + 2 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+1)(x-3)",
+          "(b)\\quad (2 x - 1)(3 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} + x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-3x^2(2 x^{3} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 6 x^{5} + 3 x^{3} - 9 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "82306",
+    "seed": 2963165977,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 531.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 456.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 494.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.1,
+            "bottom": 456.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 456.1,
+        "bottom": 407.8,
+        "rows": [
+          {
+            "top": 456.1,
+            "bottom": 407.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 407.8,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 407.8,
+            "bottom": 369.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 369.8,
+            "bottom": 331.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 6 x^{3} + 9 x^{2} + 15 x",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 5 x - 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 2 x^{2} - 1) + (- 3 x^{3} + 2 x + 3)",
+          "(b)\\quad (3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- x^{3} - 2 x^{2} + 2 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-3x^2(2 x^{3} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 6 x^{5} + 3 x^{3} - 9 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+1)(x-3)",
+          "(b)\\quad (3 x - 2)(4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "29281",
+    "seed": 1171056887,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 531.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 493.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 493.1,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 380.1,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 418.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 418.1,
+            "bottom": 380.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 380.1,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 380.1,
+            "bottom": 331.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 6 x^{3} + 9 x^{2} + 15 x",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 1)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} + 4 x - 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+1)(x-3)",
+          "(b)\\quad (4 x - 3)(2 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 2 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 2 x^{2} - 1) + (- 3 x^{3} + 2 x + 3)",
+          "(b)\\quad (3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- x^{3} - 2 x^{2} + 2 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-3x^2(2 x^{3} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 6 x^{5} + 3 x^{3} - 9 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "23977",
+    "seed": 1488836146,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 508.0,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 508.0,
+        "bottom": 459.7,
+        "rows": [
+          {
+            "top": 508.0,
+            "bottom": 459.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 459.7,
+        "bottom": 411.4,
+        "rows": [
+          {
+            "top": 459.7,
+            "bottom": 411.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 411.4,
+        "bottom": 330.79999999999995,
+        "rows": [
+          {
+            "top": 411.4,
+            "bottom": 370.59999999999997,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 370.59999999999997,
+            "bottom": 330.79999999999995,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+2)(x-4)",
+          "(b)\\quad (2 x - 4)(3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} - 6 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 3 x^{2} - 2) + (- 4 x^{3} + 3 x + 4)",
+          "(b)\\quad (4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 2 x^{3} - 3 x^{2} + 3 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-4x^2(2 x^{3} - 2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 8 x^{5} + 8 x^{3} - 12 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 2)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 3 x^{2} - x - 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 8 x^{4} - 12 x^{3} + 20 x^{2}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "26253",
+    "seed": 2264363938,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 503.4,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 541.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 541.4,
+            "bottom": 503.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 503.4,
+        "bottom": 428.4,
+        "rows": [
+          {
+            "top": 503.4,
+            "bottom": 465.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 465.4,
+            "bottom": 428.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 428.4,
+        "bottom": 380.09999999999997,
+        "rows": [
+          {
+            "top": 428.4,
+            "bottom": 380.09999999999997,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 380.09999999999997,
+        "bottom": 331.79999999999995,
+        "rows": [
+          {
+            "top": 380.09999999999997,
+            "bottom": 331.79999999999995,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 8 x^{4} - 12 x^{3} + 20 x^{2}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 3 x^{2} - 2) + (- 4 x^{3} + 3 x + 4)",
+          "(b)\\quad (4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 2 x^{3} - 3 x^{2} + 3 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+2)(x-4)",
+          "(b)\\quad (3 x - 1)(4 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} + 2 x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-4x^2(2 x^{3} - 2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 8 x^{5} + 8 x^{3} - 12 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 4 x - 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "68442",
+    "seed": 878481603,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 503.4,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 543.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 543.2,
+            "bottom": 503.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 503.4,
+        "bottom": 455.09999999999997,
+        "rows": [
+          {
+            "top": 503.4,
+            "bottom": 455.09999999999997,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.09999999999997,
+        "bottom": 379.09999999999997,
+        "rows": [
+          {
+            "top": 455.09999999999997,
+            "bottom": 417.09999999999997,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 417.09999999999997,
+            "bottom": 379.09999999999997,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 379.09999999999997,
+        "bottom": 330.79999999999995,
+        "rows": [
+          {
+            "top": 379.09999999999997,
+            "bottom": 330.79999999999995,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 3 x^{2} - 2) + (- 4 x^{3} + 3 x + 4)",
+          "(b)\\quad (4 x^{4} - 2 x^{2} + x - 2) - (3 x^{4} + 3 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 2 x^{3} - 3 x^{2} + 3 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x^{4} - 5 x^{2} + x + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 8 x^{4} - 12 x^{3} + 20 x^{2}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 2)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 2 x^{2} + 5 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+2)(x-4)",
+          "(b)\\quad (4 x - 2)(2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 8 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-4x^2(2 x^{3} - 2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 8 x^{5} + 8 x^{3} - 12 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "93072",
+    "seed": 2946517327,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 573.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 573.7,
+            "bottom": 535.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 459.70000000000005,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 497.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 497.70000000000005,
+            "bottom": 459.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 459.70000000000005,
+        "bottom": 379.1,
+        "rows": [
+          {
+            "top": 459.70000000000005,
+            "bottom": 418.90000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 418.90000000000003,
+            "bottom": 379.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 379.1,
+        "bottom": 330.8,
+        "rows": [
+          {
+            "top": 379.1,
+            "bottom": 330.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-5x^2(2 x^{3} - 3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 10 x^{5} + 15 x^{3} - 15 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+3)(x-5)",
+          "(b)\\quad (2 x - 3)(3 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} - 5 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 4 x^{2} - 3) + (- 5 x^{3} + 4 x + 5)",
+          "(b)\\quad (5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 3 x^{3} - 4 x^{2} + 4 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 10 x^{5} + 15 x^{4} + 25 x^{3}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{3} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 3)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 5 x^{2} - 2 x - 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "84035",
+    "seed": 1190739147,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 573.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 573.7,
+            "bottom": 535.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 494.90000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.90000000000003,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 406.8,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 406.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.8,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 406.8,
+            "bottom": 368.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.8,
+            "bottom": 331.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 3 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 4 x^{2} - 3) + (- 5 x^{3} + 4 x + 5)",
+          "(b)\\quad (5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 3 x^{3} - 4 x^{2} + 4 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 10 x^{5} + 15 x^{4} + 25 x^{3}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{3} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-5x^2(2 x^{3} - 3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 10 x^{5} + 15 x^{3} - 15 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+3)(x-5)",
+          "(b)\\quad (3 x - 4)(4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} - 7 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "82269",
+    "seed": 2465695762,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 573.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 573.7,
+            "bottom": 535.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 494.90000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.90000000000003,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 379.1,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 417.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 417.1,
+            "bottom": 379.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 379.1,
+        "bottom": 330.8,
+        "rows": [
+          {
+            "top": 379.1,
+            "bottom": 330.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-5x^2(2 x^{3} - 3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 10 x^{5} + 15 x^{3} - 15 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+3)(x-5)",
+          "(b)\\quad (4 x - 1)(2 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 6 x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 10 x^{5} + 15 x^{4} + 25 x^{3}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{3} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 4 x^{2} - 3) + (- 5 x^{3} + 4 x + 5)",
+          "(b)\\quad (5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 3 x^{3} - 4 x^{2} + 4 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 3)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 4 x^{2} + 6 x - 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "14414",
+    "seed": 226157242,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 570.9000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.9000000000001,
+            "bottom": 531.1000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 456.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 494.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.1,
+            "bottom": 456.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 456.1,
+        "bottom": 380.1,
+        "rows": [
+          {
+            "top": 456.1,
+            "bottom": 418.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 418.1,
+            "bottom": 380.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 380.1,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 380.1,
+            "bottom": 331.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-6x^2(2 x^{3} - 4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 12 x^{5} + 24 x^{3} - 18 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 12 x^{6} - 18 x^{5} + 30 x^{4}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{4} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+4)(x-6)",
+          "(b)\\quad (2 x - 2)(3 x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} + 2 x - 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 5 x^{2} - 4) + (- 6 x^{3} + 5 x + 6)",
+          "(b)\\quad (6 x^{4} - 2 x^{2} + x - 4) - (3 x^{4} + 5 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 4 x^{3} - 5 x^{2} + 5 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 x^{4} - 7 x^{2} + x",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 4)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 7 x^{2} - 3 x - 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "72766",
+    "seed": 22129957,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 570.9000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.9000000000001,
+            "bottom": 531.1000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 482.8,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 482.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 482.8,
+        "bottom": 407.8,
+        "rows": [
+          {
+            "top": 482.8,
+            "bottom": 445.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 445.8,
+            "bottom": 407.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 407.8,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 407.8,
+            "bottom": 369.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 369.8,
+            "bottom": 331.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-6x^2(2 x^{3} - 4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 12 x^{5} + 24 x^{3} - 18 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 12 x^{6} - 18 x^{5} + 30 x^{4}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{4} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 4)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + 2 x - 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+4)(x-6)",
+          "(b)\\quad (3 x - 3)(4 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} - 6 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 5 x^{2} - 4) + (- 6 x^{3} + 5 x + 6)",
+          "(b)\\quad (6 x^{4} - 2 x^{2} + x - 4) - (3 x^{4} + 5 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 4 x^{3} - 5 x^{2} + 5 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 x^{4} - 7 x^{2} + x",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "63798",
+    "seed": 4262536678,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 563.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 563.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 563.4000000000001,
+        "bottom": 487.4000000000001,
+        "rows": [
+          {
+            "top": 563.4000000000001,
+            "bottom": 525.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 525.4000000000001,
+            "bottom": 487.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 487.4000000000001,
+        "bottom": 412.4000000000001,
+        "rows": [
+          {
+            "top": 487.4000000000001,
+            "bottom": 450.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 450.4000000000001,
+            "bottom": 412.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 412.4000000000001,
+        "bottom": 331.80000000000007,
+        "rows": [
+          {
+            "top": 412.4000000000001,
+            "bottom": 371.6000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 371.6000000000001,
+            "bottom": 331.80000000000007,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 4)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 6 x^{2} + 7 x - 12",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-6x^2(2 x^{3} - 4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 12 x^{5} + 24 x^{3} - 18 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 5 x^{2} - 4) + (- 6 x^{3} + 5 x + 6)",
+          "(b)\\quad (6 x^{4} - 2 x^{2} + x - 4) - (3 x^{4} + 5 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 4 x^{3} - 5 x^{2} + 5 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 x^{4} - 7 x^{2} + x",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+4)(x-6)",
+          "(b)\\quad (4 x - 4)(2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 4 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 12 x^{6} - 18 x^{5} + 30 x^{4}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{4} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "40712",
+    "seed": 3508724714,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 503.4,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 541.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 541.4,
+            "bottom": 503.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 503.4,
+        "bottom": 427.4,
+        "rows": [
+          {
+            "top": 503.4,
+            "bottom": 465.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 465.4,
+            "bottom": 427.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 427.4,
+        "bottom": 379.09999999999997,
+        "rows": [
+          {
+            "top": 427.4,
+            "bottom": 379.09999999999997,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 379.09999999999997,
+        "bottom": 330.79999999999995,
+        "rows": [
+          {
+            "top": 379.09999999999997,
+            "bottom": 330.79999999999995,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 14 x^{7} + 21 x^{6} + 35 x^{5}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{5} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+5)(x-7)",
+          "(b)\\quad (2 x - 1)(3 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 35",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} + x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 6 x^{2} - 5) + (- 7 x^{3} + 6 x + 7)",
+          "(b)\\quad (7 x^{4} - 2 x^{2} + x - 5) - (3 x^{4} + 6 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 5 x^{3} - 6 x^{2} + 6 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 x^{4} - 8 x^{2} + x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 5)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 9 x^{2} - 4 x - 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-7x^2(2 x^{3} - 5 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 14 x^{5} + 35 x^{3} - 21 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "66738",
+    "seed": 3661717746,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 535.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 494.90000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.90000000000003,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 406.8,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 406.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.8,
+        "bottom": 330.8,
+        "rows": [
+          {
+            "top": 406.8,
+            "bottom": 368.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.8,
+            "bottom": 330.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 6 x^{2} - 5) + (- 7 x^{3} + 6 x + 7)",
+          "(b)\\quad (7 x^{4} - 2 x^{2} + x - 5) - (3 x^{4} + 6 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 5 x^{3} - 6 x^{2} + 6 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 x^{4} - 8 x^{2} + x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 5)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} + x - 10",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 14 x^{7} + 21 x^{6} + 35 x^{5}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{5} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-7x^2(2 x^{3} - 5 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 14 x^{5} + 35 x^{3} - 21 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+5)(x-7)",
+          "(b)\\quad (3 x - 2)(4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 35",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "11993",
+    "seed": 1253524616,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 508.0,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 508.0,
+        "bottom": 459.7,
+        "rows": [
+          {
+            "top": 508.0,
+            "bottom": 459.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 459.7,
+        "bottom": 411.4,
+        "rows": [
+          {
+            "top": 459.7,
+            "bottom": 411.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 411.4,
+        "bottom": 330.79999999999995,
+        "rows": [
+          {
+            "top": 411.4,
+            "bottom": 370.59999999999997,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 370.59999999999997,
+            "bottom": 330.79999999999995,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 6 x^{2} - 5) + (- 7 x^{3} + 6 x + 7)",
+          "(b)\\quad (7 x^{4} - 2 x^{2} + x - 5) - (3 x^{4} + 6 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 5 x^{3} - 6 x^{2} + 6 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 x^{4} - 8 x^{2} + x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+5)(x-7)",
+          "(b)\\quad (4 x - 3)(2 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 35",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 2 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-7x^2(2 x^{3} - 5 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 14 x^{5} + 35 x^{3} - 21 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 5)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 8 x^{2} + 8 x - 15",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 14 x^{7} + 21 x^{6} + 35 x^{5}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{5} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "41147",
+    "seed": 1823108940,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 573.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 573.7,
+            "bottom": 535.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 487.40000000000003,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 487.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 487.40000000000003,
+        "bottom": 406.80000000000007,
+        "rows": [
+          {
+            "top": 487.40000000000003,
+            "bottom": 446.6,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 446.6,
+            "bottom": 406.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.80000000000007,
+        "bottom": 330.80000000000007,
+        "rows": [
+          {
+            "top": 406.80000000000007,
+            "bottom": 368.80000000000007,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.80000000000007,
+            "bottom": 330.80000000000007,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 6)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 11 x^{2} - 5 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+6)(x-8)",
+          "(b)\\quad (2 x - 4)(3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 48",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} - 6 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-8x^2(2 x^{3} - 6 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 16 x^{5} + 48 x^{3} - 24 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 16 x^{8} - 24 x^{7} + 40 x^{6}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8 x^{6} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 7 x^{2} - 6) + (- 8 x^{3} + 7 x + 8)",
+          "(b)\\quad (8 x^{4} - 2 x^{2} + x - 6) - (3 x^{4} + 7 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 6 x^{3} - 7 x^{2} + 7 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 x^{4} - 9 x^{2} + x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "41402",
+    "seed": 3674023274,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 570.9000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.9000000000001,
+            "bottom": 531.1000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 493.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 493.1,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 406.8,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 406.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.8,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 406.8,
+            "bottom": 368.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.8,
+            "bottom": 331.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} - 12",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 16 x^{8} - 24 x^{7} + 40 x^{6}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8 x^{6} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 7 x^{2} - 6) + (- 8 x^{3} + 7 x + 8)",
+          "(b)\\quad (8 x^{4} - 2 x^{2} + x - 6) - (3 x^{4} + 7 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 6 x^{3} - 7 x^{2} + 7 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 x^{4} - 9 x^{2} + x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-8x^2(2 x^{3} - 6 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 16 x^{5} + 48 x^{3} - 24 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+6)(x-8)",
+          "(b)\\quad (3 x - 1)(4 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 48",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} + 2 x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "38465",
+    "seed": 833334936,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 535.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 494.90000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 494.90000000000003,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 406.8,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 406.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.8,
+        "bottom": 330.8,
+        "rows": [
+          {
+            "top": 406.8,
+            "bottom": 368.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.8,
+            "bottom": 330.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+6)(x-8)",
+          "(b)\\quad (4 x - 2)(2 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 48",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 x^{2} + 8 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x^{2} + x - 6)(2 x^{2} - x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + x^{3} - 10 x^{2} + 9 x - 18",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 16 x^{8} - 24 x^{7} + 40 x^{6}",
+          "(b)\\quad x^{2} + 2 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8 x^{6} (2 x^{2} - 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-8x^2(2 x^{3} - 6 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 16 x^{5} + 48 x^{3} - 24 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 7 x^{2} - 6) + (- 8 x^{3} + 7 x + 8)",
+          "(b)\\quad (8 x^{4} - 2 x^{2} + x - 6) - (3 x^{4} + 7 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 6 x^{3} - 7 x^{2} + 7 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 x^{4} - 9 x^{2} + x - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "12558",
+    "seed": 3512580633,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 570.9000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.9000000000001,
+            "bottom": 531.1000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 482.8,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 482.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 482.8,
+        "bottom": 406.8,
+        "rows": [
+          {
+            "top": 482.8,
+            "bottom": 444.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 444.8,
+            "bottom": 406.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 406.8,
+        "bottom": 330.8,
+        "rows": [
+          {
+            "top": 406.8,
+            "bottom": 368.8,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 368.8,
+            "bottom": 330.8,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-9x^2(2 x^{3} - 7 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 18 x^{5} + 63 x^{3} - 27 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 18 x^{9} + 27 x^{8} + 45 x^{7}",
+          "(b)\\quad x^{2} + 5 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "9 x^{7} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x + 2) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x - 7)(2 x^{2} + x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{3} - 13 x^{2} - 6 x - 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+7)(x-9)",
+          "(b)\\quad (2 x - 3)(3 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 63",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{2} - 5 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 8 x^{2} - 7) + (- 9 x^{3} + 8 x + 9)",
+          "(b)\\quad (9 x^{4} - 2 x^{2} + x - 7) - (3 x^{4} + 8 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 7 x^{3} - 8 x^{2} + 8 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{4} - 10 x^{2} + x - 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "23541",
+    "seed": 2818165763,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 619.2,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 619.2,
+            "bottom": 579.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.4,
+        "bottom": 531.1,
+        "rows": [
+          {
+            "top": 579.4,
+            "bottom": 531.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 531.1,
+        "bottom": 455.1,
+        "rows": [
+          {
+            "top": 531.1,
+            "bottom": 493.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 493.1,
+            "bottom": 455.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 455.1,
+        "bottom": 380.1,
+        "rows": [
+          {
+            "top": 455.1,
+            "bottom": 417.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 417.1,
+            "bottom": 380.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 380.1,
+        "bottom": 331.8,
+        "rows": [
+          {
+            "top": 380.1,
+            "bottom": 331.8,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "P98-factor",
+        "prompt": "(a) Factor out the greatest common factor. (b) Factor the trinomial.",
+        "math": [
+          "(a)\\quad 18 x^{9} + 27 x^{8} + 45 x^{7}",
+          "(b)\\quad x^{2} - 7 x + 10"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "9 x^{7} (2 x^{2} + 3 x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-dist",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "-9x^2(2 x^{3} - 7 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "- 18 x^{5} + 63 x^{3} - 27 x^{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(a)\\quad (2 x^{3} - 8 x^{2} - 7) + (- 9 x^{3} + 8 x + 9)",
+          "(b)\\quad (9 x^{4} - 2 x^{2} + x - 7) - (3 x^{4} + 8 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "- 7 x^{3} - 8 x^{2} + 8 x + 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 x^{4} - 10 x^{2} + x - 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-binomial",
+        "prompt": "Multiply and simplify both products.",
+        "math": [
+          "(a)\\quad (x+7)(x-9)",
+          "(b)\\quad (3 x - 4)(4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x^{2} - 2 x - 63",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "12 x^{2} - 7 x - 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "P98-large",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(x + 2)(2 x^{3} - x^{2} + 3 x - 7)"
+        ],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2 x^{4} + 3 x^{3} + x^{2} - x - 14",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

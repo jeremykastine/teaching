@@ -1,0 +1,4362 @@
+[
+  {
+    "version": "19328",
+    "seed": 846771306,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 193.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 193.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 462.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 1 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 1,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = x + 1",
+          "y = 4 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              -2.0,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  1);\\ ( 3, \\  5)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} - 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              -2.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "19830",
+    "seed": 531115246,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 188.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 386.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 386.0,
+            "bottom": 188.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 462.0,
+        "bottom": 408.7,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 408.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 408.7,
+        "bottom": 178.39999999999998,
+        "rows": [
+          {
+            "top": 408.7,
+            "bottom": 178.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = x - 1",
+          "y = 5 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              -1.0
+            ],
+            [
+              -2.0,
+              5.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} - 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              -2.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  - \\frac{2}{3});\\ ( 3, \\  0)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 1 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 1,
+          "point": 2
+        }
+      }
+    ]
+  },
+  {
+    "version": "54630",
+    "seed": 3787179146,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 193.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 193.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2} - 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              -2.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = x - 3",
+          "y = 3 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              -3.0
+            ],
+            [
+              -2.0,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 1 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 1,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  -2);\\ ( 3, \\  -4)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = - x - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "65161",
+    "seed": 397403272,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 264.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 264.0,
+            "bottom": 226.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 391.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 391.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 193.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 193.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} - 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              -1.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 2 x",
+          "y = 5 - 3 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              2.0,
+              0.0
+            ],
+            [
+              -3.0,
+              5.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 2,
+          "point": 3
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  2);\\ ( 4, \\  8)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "64925",
+    "seed": 3033509904,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 408.7,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 408.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 408.7,
+        "bottom": 172.7,
+        "rows": [
+          {
+            "top": 408.7,
+            "bottom": 370.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 370.7,
+            "bottom": 172.7,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} - 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              -1.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{1}{3});\\ ( 4, \\  \\frac{4}{3})"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 2 x - 3",
+          "y = 7 - 3 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              2.0,
+              -3.0
+            ],
+            [
+              -3.0,
+              7.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 2,
+          "point": 3
+        }
+      }
+    ]
+  },
+  {
+    "version": "48541",
+    "seed": 1917161806,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 2,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 415.7,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 415.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 415.7,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 415.7,
+            "bottom": 217.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 217.7,
+            "bottom": 179.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2} - 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              -1.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  -1);\\ ( 4, \\  -4)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = - x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 2 x - 5",
+          "y = 5 - 3 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              2.0,
+              -5.0
+            ],
+            [
+              -3.0,
+              5.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 2,
+          "point": 3
+        }
+      }
+    ]
+  },
+  {
+    "version": "76739",
+    "seed": 1561826396,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 2,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 377.70000000000005,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 575.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 575.7,
+            "bottom": 377.70000000000005,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 377.70000000000005,
+        "bottom": 141.70000000000005,
+        "rows": [
+          {
+            "top": 377.70000000000005,
+            "bottom": 179.70000000000005,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 179.70000000000005,
+            "bottom": 141.70000000000005,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 462.0,
+        "bottom": 231.7,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 231.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  3);\\ ( 3, \\  7)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 3 x - 1",
+          "y = 6 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              3.0,
+              -1.0
+            ],
+            [
+              -4.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2}"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              0.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 3,
+          "point": 2
+        }
+      }
+    ]
+  },
+  {
+    "version": "85661",
+    "seed": 3382888459,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 2,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 370.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 370.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 370.7,
+        "bottom": 140.39999999999998,
+        "rows": [
+          {
+            "top": 370.7,
+            "bottom": 140.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{4}{3});\\ ( 3, \\  2)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 3,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 3 x - 5",
+          "y = 9 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              3.0,
+              -5.0
+            ],
+            [
+              -4.0,
+              9.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              0.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "85756",
+    "seed": 1924325382,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 2,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 377.70000000000005,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 377.70000000000005,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 377.70000000000005,
+        "bottom": 141.70000000000005,
+        "rows": [
+          {
+            "top": 377.70000000000005,
+            "bottom": 339.70000000000005,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 339.70000000000005,
+            "bottom": 141.70000000000005,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 231.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  0);\\ ( 3, \\  -2)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 1 - x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 3 x - 7",
+          "y = 7 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              3.0,
+              -7.0
+            ],
+            [
+              -4.0,
+              7.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 3,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2}"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              0.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "92273",
+    "seed": 1937351656,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 2,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 264.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 264.0,
+            "bottom": 226.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 383.4,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 383.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 383.4,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 383.4,
+            "bottom": 345.4,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 345.4,
+            "bottom": 147.39999999999998,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} + 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 4 x - 2",
+          "y = 7 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              4.0,
+              -2.0
+            ],
+            [
+              -5.0,
+              7.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 4,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  4);\\ ( 3, \\  8)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "84512",
+    "seed": 664700032,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 2,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 370.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 370.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 370.7,
+        "bottom": 140.39999999999998,
+        "rows": [
+          {
+            "top": 370.7,
+            "bottom": 140.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} + 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 4 x - 7",
+          "y = 11 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              4.0,
+              -7.0
+            ],
+            [
+              -5.0,
+              11.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{7}{3});\\ ( 3, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} + 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 4,
+          "point": 2
+        }
+      }
+    ]
+  },
+  {
+    "version": "86460",
+    "seed": 2885571161,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 2,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 377.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 377.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 377.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 377.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  1);\\ ( 3, \\  -1)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 - x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 4 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 4,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 4 x - 9",
+          "y = 9 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              4.0,
+              -9.0
+            ],
+            [
+              -5.0,
+              9.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2} + 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              1.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "21721",
+    "seed": 2774376596,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 2,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 377.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 377.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 377.7,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 377.7,
+            "bottom": 179.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 5 x - 3",
+          "y = 8 - 6 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              5.0,
+              -3.0
+            ],
+            [
+              -6.0,
+              8.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 5 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 5,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  5);\\ ( 3, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} + 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} + 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              2.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "76215",
+    "seed": 3845909208,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 2,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 370.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 370.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 370.7,
+        "bottom": 172.7,
+        "rows": [
+          {
+            "top": 370.7,
+            "bottom": 172.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 5 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 5,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 5 x - 9",
+          "y = 13 - 6 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              5.0,
+              -9.0
+            ],
+            [
+              -6.0,
+              13.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{10}{3});\\ ( 3, \\  4)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} + 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} + 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} + 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              2.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "21820",
+    "seed": 3224393046,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 2,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 193.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 193.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 5 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 5,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 5 x - 11",
+          "y = 11 - 6 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              5.0,
+              -11.0
+            ],
+            [
+              -6.0,
+              11.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  2);\\ ( 3, \\  0)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 - x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2} + 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2} + 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              2.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "80680",
+    "seed": 3974554128,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 2,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 377.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 377.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 377.7,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 377.7,
+            "bottom": 179.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 6 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 6,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 6 x - 4",
+          "y = 9 - 7 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              6.0,
+              -4.0
+            ],
+            [
+              -7.0,
+              9.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  6);\\ ( 3, \\  10)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} + 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} + 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              3.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "53763",
+    "seed": 3568719325,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 2,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 264.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 264.0,
+            "bottom": 226.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 226.0,
+        "bottom": 172.7,
+        "rows": [
+          {
+            "top": 226.0,
+            "bottom": 172.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 391.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 391.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} + 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} + 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 6 x - 11",
+          "y = 15 - 7 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              6.0,
+              -11.0
+            ],
+            [
+              -7.0,
+              15.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{13}{3});\\ ( 3, \\  5)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} + 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 6 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 6,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "12546",
+    "seed": 2172341946,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 2,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 462.0,
+        "bottom": 415.7,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 415.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 415.7,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 415.7,
+            "bottom": 377.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 377.7,
+            "bottom": 179.7,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 6,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 6 x - 13",
+          "y = 13 - 7 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              6.0,
+              -13.0
+            ],
+            [
+              -7.0,
+              13.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{3 x}{2} + 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{3 x}{2} + 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  3);\\ ( 3, \\  1)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 4 - x",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "x + 2 y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  3)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              3.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "50536",
+    "seed": 2570042048,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 2,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 383.4,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 383.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 383.4,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 383.4,
+            "bottom": 345.4,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 345.4,
+            "bottom": 147.39999999999998,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 7 x - 5",
+          "y = 10 - 8 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 1, \\  2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              7.0,
+              -5.0
+            ],
+            [
+              -8.0,
+              10.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{x}{2} + 4"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{x}{2} + 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 7 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 7,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  7);\\ ( 3, \\  11)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "2 x + 3 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  4)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{2 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "66990",
+    "seed": 3385005579,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 2,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 370.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 370.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 370.7,
+        "bottom": 172.7,
+        "rows": [
+          {
+            "top": 370.7,
+            "bottom": 172.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 7 - \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.6666666666666666,
+          "b": 7,
+          "point": 2
+        }
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on this grid and give their intersection.",
+        "math": [
+          "y = 7 x - 13",
+          "y = 17 - 8 x"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "Both given lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              7.0,
+              -13.0
+            ],
+            [
+              -8.0,
+              17.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph through them on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 1, \\  \\frac{16}{3});\\ ( 3, \\  6)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{3} + 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid. Mark at least two points.",
+        "math": [
+          "y = \\frac{2 x}{3} + 4"
+        ],
+        "rows": [
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = \\frac{2 x}{3} + 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              4.0
+            ]
+          ]
+        }
+      }
+    ]
+  }
+]

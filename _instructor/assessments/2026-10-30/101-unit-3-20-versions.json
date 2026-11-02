@@ -1,0 +1,6802 @@
+[
+  {
+    "version": "94806",
+    "seed": 3206590626,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 548.0,
+            "bottom": 510.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 510.0,
+            "bottom": 472.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 472.0,
+            "bottom": 429.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.0,
+        "bottom": 379.7,
+        "rows": [
+          {
+            "top": 429.0,
+            "bottom": 379.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 379.7,
+        "bottom": 213.175,
+        "rows": [
+          {
+            "top": 379.7,
+            "bottom": 323.525,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 323.525,
+            "bottom": 268.34999999999997,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 268.34999999999997,
+            "bottom": 213.17499999999995,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 213.175,
+        "bottom": 103.17500000000001,
+        "rows": [
+          {
+            "top": 213.175,
+            "bottom": 175.175,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 175.175,
+            "bottom": 140.175,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 140.175,
+            "bottom": 103.17500000000001,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 1) (x + 3)}{(x - 5) (x - 1)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{1, 5\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 1, \\  -1)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=(x + 1)^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( -1, \\  -4)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-4",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 1} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -1)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -2",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "56952",
+    "seed": 1919388342,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 382.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 572.7,
+            "bottom": 534.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 534.7,
+            "bottom": 496.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 496.70000000000005,
+            "bottom": 458.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 458.70000000000005,
+            "bottom": 420.70000000000005,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 420.70000000000005,
+            "bottom": 382.70000000000005,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.70000000000005,
+        "bottom": 151.70000000000005,
+        "rows": [
+          {
+            "top": 382.70000000000005,
+            "bottom": 344.70000000000005,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 344.70000000000005,
+            "bottom": 306.70000000000005,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 306.70000000000005,
+            "bottom": 270.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 270.70000000000005,
+            "bottom": 232.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 232.70000000000005,
+            "bottom": 194.70000000000005,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 194.70000000000005,
+            "bottom": 151.70000000000005,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 493.475,
+        "bottom": 383.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 420.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 420.475,
+            "bottom": 383.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 4} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -2",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 1) (x + 3)}{(x - 5) (x - 1)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{1, 5\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 1, \\  -1)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=(x + 1)^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( -1, \\  -4)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-4",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "55300",
+    "seed": 3073753762,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 379.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 572.7,
+            "bottom": 534.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 534.7,
+            "bottom": 498.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 498.70000000000005,
+            "bottom": 460.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 460.70000000000005,
+            "bottom": 422.70000000000005,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 422.70000000000005,
+            "bottom": 379.70000000000005,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 379.70000000000005,
+        "bottom": 151.70000000000005,
+        "rows": [
+          {
+            "top": 379.70000000000005,
+            "bottom": 341.70000000000005,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 341.70000000000005,
+            "bottom": 303.70000000000005,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 303.70000000000005,
+            "bottom": 265.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 265.70000000000005,
+            "bottom": 227.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 227.70000000000005,
+            "bottom": 189.70000000000005,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 189.70000000000005,
+            "bottom": 151.70000000000005,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 493.475,
+        "bottom": 383.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 420.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 420.475,
+            "bottom": 383.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 1) (x + 3)}{(x - 5) (x - 1)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{1, 5\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 1, \\  -1)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 9} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  1)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -2",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=(x + 1)^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( -1, \\  -4)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-4",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "56232",
+    "seed": 2572749995,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 382.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 419.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 419.475,
+            "bottom": 382.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.475,
+        "bottom": 333.175,
+        "rows": [
+          {
+            "top": 382.475,
+            "bottom": 333.175,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 333.175,
+        "bottom": 97.17500000000001,
+        "rows": [
+          {
+            "top": 333.175,
+            "bottom": 295.175,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 295.175,
+            "bottom": 252.175,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 252.175,
+            "bottom": 216.175,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 216.175,
+            "bottom": 178.175,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 178.175,
+            "bottom": 140.175,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 140.175,
+            "bottom": 97.17500000000001,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=2 x^{2} - 18"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 0, \\  -18)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-18",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 2) (x + 4)}{(x - 6) (x - 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{2, 6\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 2, \\  - \\frac{3}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=2 \\sqrt{x + 1} - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-6, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 8, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -4)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -6",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "83606",
+    "seed": 3990208113,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 257.475,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 367.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 367.825,
+            "bottom": 312.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 312.65,
+            "bottom": 257.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 257.475,
+        "bottom": 208.175,
+        "rows": [
+          {
+            "top": 257.475,
+            "bottom": 208.175,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 432.0,
+        "bottom": 321.0,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 394.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 394.0,
+            "bottom": 358.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 358.0,
+            "bottom": 321.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 2) (x + 4)}{(x - 6) (x - 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{2, 6\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 2, \\  - \\frac{3}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=2 \\sqrt{x + 4} - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-6, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -2)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -6",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=2 x^{2} - 18"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 0, \\  -18)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-18",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "49407",
+    "seed": 1909199077,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 2,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 257.475,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 367.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 367.825,
+            "bottom": 312.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 312.65,
+            "bottom": 257.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 257.475,
+        "bottom": 146.47500000000002,
+        "rows": [
+          {
+            "top": 257.475,
+            "bottom": 219.47500000000002,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 219.47500000000002,
+            "bottom": 183.47500000000002,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 183.47500000000002,
+            "bottom": 146.47500000000002,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 146.47500000000002,
+        "bottom": 97.17500000000003,
+        "rows": [
+          {
+            "top": 146.47500000000002,
+            "bottom": 97.17500000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 2) (x + 4)}{(x - 6) (x - 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{2, 6\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 2, \\  - \\frac{3}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=2 x^{2} - 18"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 0, \\  -18)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-18",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=2 \\sqrt{x + 9} - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-6, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -6",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "92695",
+    "seed": 3452376696,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 2,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 432.0,
+        "bottom": 382.7,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 382.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.7,
+        "bottom": 271.7,
+        "rows": [
+          {
+            "top": 382.7,
+            "bottom": 344.7,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 344.7,
+            "bottom": 308.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 308.7,
+            "bottom": 271.7,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 549.0,
+            "bottom": 511.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 511.0,
+            "bottom": 473.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 473.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 430.0,
+        "bottom": 263.475,
+        "rows": [
+          {
+            "top": 430.0,
+            "bottom": 373.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 373.825,
+            "bottom": 318.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 318.65,
+            "bottom": 263.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 1} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 15, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -9)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -12",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=3 (x - 1)^{2} - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 1, \\  -48)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-48",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 3) (x + 5)}{(x - 7) (x - 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{3, 7\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 3, \\  -2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "42571",
+    "seed": 1674960520,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 2,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 432.0,
+        "bottom": 265.475,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 375.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 375.825,
+            "bottom": 320.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 320.65,
+            "bottom": 265.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 265.475,
+        "bottom": 154.47500000000002,
+        "rows": [
+          {
+            "top": 265.475,
+            "bottom": 227.47500000000002,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 227.47500000000002,
+            "bottom": 191.47500000000002,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 191.47500000000002,
+            "bottom": 154.47500000000002,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 154.47500000000002,
+        "bottom": 105.17500000000003,
+        "rows": [
+          {
+            "top": 154.47500000000002,
+            "bottom": 105.17500000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 549.0,
+            "bottom": 511.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 511.0,
+            "bottom": 473.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 473.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 4} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 12, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -6)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -12",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=3 (x - 1)^{2} - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 1, \\  -48)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-48",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 3) (x + 5)}{(x - 7) (x - 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{3, 7\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 3, \\  -2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "32153",
+    "seed": 2902956229,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 2,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 263.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 455.475,
+            "bottom": 417.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 417.475,
+            "bottom": 382.475,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 382.475,
+            "bottom": 344.475,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 344.475,
+            "bottom": 306.475,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 306.475,
+            "bottom": 263.475,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 263.475,
+        "bottom": 214.175,
+        "rows": [
+          {
+            "top": 263.475,
+            "bottom": 214.175,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 432.0,
+        "bottom": 321.0,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 394.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 394.0,
+            "bottom": 358.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 358.0,
+            "bottom": 321.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 3) (x + 5)}{(x - 7) (x - 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{3, 7\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 3, \\  -2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 9} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -3)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -12",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=3 (x - 1)^{2} - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 1, \\  -48)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-48",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "51813",
+    "seed": 1364054427,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 2,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 444.17500000000007,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 554.5250000000001,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 554.5250000000001,
+            "bottom": 499.3500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 499.3500000000001,
+            "bottom": 444.17500000000007,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 444.17500000000007,
+        "bottom": 216.17500000000007,
+        "rows": [
+          {
+            "top": 444.17500000000007,
+            "bottom": 406.17500000000007,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 406.17500000000007,
+            "bottom": 368.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 368.17500000000007,
+            "bottom": 330.17500000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 330.17500000000007,
+            "bottom": 292.17500000000007,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 292.17500000000007,
+            "bottom": 254.17500000000007,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 254.17500000000007,
+            "bottom": 216.17500000000007,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 216.17500000000007,
+        "bottom": 105.17500000000007,
+        "rows": [
+          {
+            "top": 216.17500000000007,
+            "bottom": 178.17500000000007,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 178.17500000000007,
+            "bottom": 142.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 142.17500000000007,
+            "bottom": 105.17500000000007,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=4 \\sqrt{x + 1} - 20"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-20, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 24, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -16)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -20",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=4 (x - 2)^{2} - 100"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 2, \\  -100)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-100",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 4) (x + 6)}{(x - 8) (x - 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{4, 8\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 4, \\  - \\frac{5}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=8",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -6, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{4})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "15899",
+    "seed": 3552743210,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 2,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 432.0,
+        "bottom": 382.7,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 382.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.7,
+        "bottom": 146.7,
+        "rows": [
+          {
+            "top": 382.7,
+            "bottom": 344.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 344.7,
+            "bottom": 301.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 301.7,
+            "bottom": 265.7,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 265.7,
+            "bottom": 227.7,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 227.7,
+            "bottom": 189.7,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 189.7,
+            "bottom": 146.7,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 549.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 622.0,
+            "bottom": 586.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 586.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 549.0,
+        "bottom": 382.475,
+        "rows": [
+          {
+            "top": 549.0,
+            "bottom": 492.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 492.825,
+            "bottom": 437.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 437.65,
+            "bottom": 382.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=4 \\sqrt{x + 4} - 20"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-20, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 21, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -12)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -20",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 4) (x + 6)}{(x - 8) (x - 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{4, 8\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 4, \\  - \\frac{5}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=8",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -6, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{4})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=4 (x - 2)^{2} - 100"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 2, \\  -100)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-100",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "23988",
+    "seed": 163204923,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 2,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 499.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 572.7,
+            "bottom": 536.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 536.7,
+            "bottom": 499.70000000000005,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 499.70000000000005,
+        "bottom": 333.17500000000007,
+        "rows": [
+          {
+            "top": 499.70000000000005,
+            "bottom": 443.52500000000003,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 443.52500000000003,
+            "bottom": 388.35,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 388.35,
+            "bottom": 333.175,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 333.17500000000007,
+        "bottom": 97.17500000000007,
+        "rows": [
+          {
+            "top": 333.17500000000007,
+            "bottom": 295.17500000000007,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 295.17500000000007,
+            "bottom": 252.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 252.17500000000007,
+            "bottom": 216.17500000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 216.17500000000007,
+            "bottom": 178.17500000000007,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 178.17500000000007,
+            "bottom": 140.17500000000007,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 140.17500000000007,
+            "bottom": 97.17500000000007,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=4 (x - 2)^{2} - 100"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 2, \\  -100)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-100",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 4) (x + 6)}{(x - 8) (x - 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{4, 8\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 4, \\  - \\frac{5}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=8",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -6, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{4})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=4 \\sqrt{x + 9} - 20"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-20, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 16, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -8)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -20",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "85069",
+    "seed": 23028276,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 2,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 382.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 419.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 419.475,
+            "bottom": 382.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.475,
+        "bottom": 151.47500000000002,
+        "rows": [
+          {
+            "top": 382.475,
+            "bottom": 344.475,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 344.475,
+            "bottom": 306.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 306.475,
+            "bottom": 270.475,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 270.475,
+            "bottom": 232.47500000000002,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 232.47500000000002,
+            "bottom": 194.47500000000002,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 194.47500000000002,
+            "bottom": 151.47500000000002,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 151.47500000000002,
+        "bottom": 102.17500000000003,
+        "rows": [
+          {
+            "top": 151.47500000000002,
+            "bottom": 102.17500000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=5 (x - 3)^{2} - 180"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 3, \\  -180)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-180",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 5) (x + 7)}{(x - 9) (x - 5)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{5, 9\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 5, \\  -3)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=9",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{7}{9})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 1} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 35, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -25)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -30",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "91724",
+    "seed": 470276102,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 2,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 382.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 419.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 419.475,
+            "bottom": 382.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.475,
+        "bottom": 154.47500000000002,
+        "rows": [
+          {
+            "top": 382.475,
+            "bottom": 344.475,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 344.475,
+            "bottom": 306.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 306.475,
+            "bottom": 268.475,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 268.475,
+            "bottom": 230.47500000000002,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 230.47500000000002,
+            "bottom": 192.47500000000002,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 192.47500000000002,
+            "bottom": 154.47500000000002,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 548.0,
+            "bottom": 510.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 510.0,
+            "bottom": 472.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 472.0,
+            "bottom": 429.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 429.0,
+        "bottom": 379.7,
+        "rows": [
+          {
+            "top": 429.0,
+            "bottom": 379.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=5 (x - 3)^{2} - 180"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 3, \\  -180)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-180",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 4} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 32, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -20)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -30",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 5) (x + 7)}{(x - 9) (x - 5)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{5, 9\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 5, \\  -3)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=9",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{7}{9})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "27180",
+    "seed": 3063124086,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 2,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 379.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 572.7,
+            "bottom": 534.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 534.7,
+            "bottom": 498.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 498.70000000000005,
+            "bottom": 460.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 460.70000000000005,
+            "bottom": 422.70000000000005,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 422.70000000000005,
+            "bottom": 379.70000000000005,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 379.70000000000005,
+        "bottom": 213.17500000000007,
+        "rows": [
+          {
+            "top": 379.70000000000005,
+            "bottom": 323.52500000000003,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 323.52500000000003,
+            "bottom": 268.35,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 268.35,
+            "bottom": 213.175,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 213.17500000000007,
+        "bottom": 102.17500000000007,
+        "rows": [
+          {
+            "top": 213.17500000000007,
+            "bottom": 175.17500000000007,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 175.17500000000007,
+            "bottom": 139.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 139.17500000000007,
+            "bottom": 102.17500000000007,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 5) (x + 7)}{(x - 9) (x - 5)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{5, 9\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 5, \\  -3)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=9",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{7}{9})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=5 (x - 3)^{2} - 180"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 3, \\  -180)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-180",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 9} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 27, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -15)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -30",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "76796",
+    "seed": 2957991342,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 2,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 374.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 374.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 374.7,
+        "bottom": 263.7,
+        "rows": [
+          {
+            "top": 374.7,
+            "bottom": 336.7,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 336.7,
+            "bottom": 300.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 300.7,
+            "bottom": 263.7,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 263.7,
+        "bottom": 97.17500000000001,
+        "rows": [
+          {
+            "top": 263.7,
+            "bottom": 207.52499999999998,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 207.52499999999998,
+            "bottom": 152.34999999999997,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 152.34999999999997,
+            "bottom": 97.17499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 6) (x + 8)}{(x - 10) (x - 6)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{6, 10\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 6, \\  - \\frac{7}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=10",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -8, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{4}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=6 (x - 4)^{2} - 294"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 4, \\  -294)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-294",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 11",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=6 \\sqrt{x + 1} - 42"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-42, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 48, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -36)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -42",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "36361",
+    "seed": 3045630146,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 2,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 432.0,
+        "bottom": 265.475,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 375.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 375.825,
+            "bottom": 320.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 320.65,
+            "bottom": 265.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 374.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 374.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 374.7,
+        "bottom": 263.7,
+        "rows": [
+          {
+            "top": 374.7,
+            "bottom": 336.7,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 336.7,
+            "bottom": 300.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 300.7,
+            "bottom": 263.7,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=6 \\sqrt{x + 4} - 42"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-42, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 45, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -30)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -42",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 6) (x + 8)}{(x - 10) (x - 6)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{6, 10\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 6, \\  - \\frac{7}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=10",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -8, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{4}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=6 (x - 4)^{2} - 294"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 4, \\  -294)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-294",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 11",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "93632",
+    "seed": 2075217283,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 2,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 382.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 572.7,
+            "bottom": 534.7,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 534.7,
+            "bottom": 496.70000000000005,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 496.70000000000005,
+            "bottom": 458.70000000000005,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 458.70000000000005,
+            "bottom": 420.70000000000005,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 420.70000000000005,
+            "bottom": 382.70000000000005,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 382.70000000000005,
+        "bottom": 271.70000000000005,
+        "rows": [
+          {
+            "top": 382.70000000000005,
+            "bottom": 344.70000000000005,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 344.70000000000005,
+            "bottom": 308.70000000000005,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 308.70000000000005,
+            "bottom": 271.70000000000005,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 257.475,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 367.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 367.825,
+            "bottom": 312.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 312.65,
+            "bottom": 257.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=6 \\sqrt{x + 9} - 42"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-42, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 40, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -24)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -42",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=6 (x - 4)^{2} - 294"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 4, \\  -294)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-294",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 11",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 6) (x + 8)}{(x - 10) (x - 6)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{6, 10\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 6, \\  - \\frac{7}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=10",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -8, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{4}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "48388",
+    "seed": 1539766634,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 2,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 265.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 455.475,
+            "bottom": 417.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 417.475,
+            "bottom": 379.475,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 379.475,
+            "bottom": 341.475,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 341.475,
+            "bottom": 303.475,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 303.475,
+            "bottom": 265.475,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 549.0,
+            "bottom": 511.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 511.0,
+            "bottom": 473.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 473.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 430.0,
+        "bottom": 319.0,
+        "rows": [
+          {
+            "top": 430.0,
+            "bottom": 392.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 392.0,
+            "bottom": 356.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 356.0,
+            "bottom": 319.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 319.0,
+        "bottom": 269.7,
+        "rows": [
+          {
+            "top": 319.0,
+            "bottom": 269.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=7 \\sqrt{x + 1} - 56"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-1, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-56, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 63, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -49)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -1^+:\\ f(x)\\to -56",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 7) (x + 9)}{(x - 11) (x - 7)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{7, 11\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 7, \\  -4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=11",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -9, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{9}{11})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=7 (x - 5)^{2} - 448"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 5, \\  -448)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-448",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 13",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "59681",
+    "seed": 3854067746,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 2,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 444.17500000000007,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 554.5250000000001,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 554.5250000000001,
+            "bottom": 499.3500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 499.3500000000001,
+            "bottom": 444.17500000000007,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 444.17500000000007,
+        "bottom": 216.17500000000007,
+        "rows": [
+          {
+            "top": 444.17500000000007,
+            "bottom": 406.17500000000007,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 406.17500000000007,
+            "bottom": 368.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 368.17500000000007,
+            "bottom": 330.17500000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 330.17500000000007,
+            "bottom": 292.17500000000007,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 292.17500000000007,
+            "bottom": 254.17500000000007,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 254.17500000000007,
+            "bottom": 216.17500000000007,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 216.17500000000007,
+        "bottom": 105.17500000000007,
+        "rows": [
+          {
+            "top": 216.17500000000007,
+            "bottom": 178.17500000000007,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 178.17500000000007,
+            "bottom": 142.17500000000007,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 142.17500000000007,
+            "bottom": 105.17500000000007,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 549.0,
+            "bottom": 511.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 511.0,
+            "bottom": 473.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 473.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=7 \\sqrt{x + 4} - 56"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-56, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 60, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -42)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -56",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=7 (x - 5)^{2} - 448"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 5, \\  -448)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-448",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 13",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 7) (x + 9)}{(x - 11) (x - 7)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{7, 11\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 7, \\  -4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=11",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -9, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{9}{11})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

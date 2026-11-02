@@ -1,0 +1,5090 @@
+[
+  {
+    "version": "95725",
+    "seed": 1325196402,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 589.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 625.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 625.0,
+            "bottom": 589.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 589.0,
+        "bottom": 513.0,
+        "rows": [
+          {
+            "top": 589.0,
+            "bottom": 551.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 551.0,
+            "bottom": 513.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 513.0,
+        "bottom": 337.0,
+        "rows": [
+          {
+            "top": 513.0,
+            "bottom": 475.0,
+            "label": "x = 6",
+            "points": 4
+          },
+          {
+            "top": 475.0,
+            "bottom": 437.0,
+            "label": "x = -6",
+            "points": 4
+          },
+          {
+            "top": 437.0,
+            "bottom": 399.0,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 399.0,
+            "bottom": 337.0,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 337.0,
+        "bottom": 285.7,
+        "rows": [
+          {
+            "top": 337.0,
+            "bottom": 285.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 285.7,
+        "bottom": 199.7,
+        "rows": [
+          {
+            "top": 285.7,
+            "bottom": 242.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 242.7,
+            "bottom": 199.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "x^{2} - 2 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-49}",
+          "(b)\\quad \\sqrt{16}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 4}{x - 2} = \\frac{x^{2} + 5 x + 6}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "x = 6",
+            "answer": "Left 8; right 8; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -6",
+            "answer": "Left -4; right -4; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 2; right 2; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            6,
+            "",
+            "",
+            ""
+          ],
+          [
+            -6,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{40}{70}",
+          "(b)\\quad \\frac{49}{63}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "33266",
+    "seed": 1153635041,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584,
+        "bottom": 498.0,
+        "rows": [
+          {
+            "top": 584,
+            "bottom": 541.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 541.0,
+            "bottom": 498.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 498.0,
+        "bottom": 427.0,
+        "rows": [
+          {
+            "top": 498.0,
+            "bottom": 463.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 463.0,
+            "bottom": 427.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 427.0,
+        "bottom": 251.0,
+        "rows": [
+          {
+            "top": 427.0,
+            "bottom": 389.0,
+            "label": "x = 6",
+            "points": 4
+          },
+          {
+            "top": 389.0,
+            "bottom": 351.0,
+            "label": "x = -6",
+            "points": 4
+          },
+          {
+            "top": 351.0,
+            "bottom": 313.0,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 313.0,
+            "bottom": 251.0,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 251.0,
+        "bottom": 201.7,
+        "rows": [
+          {
+            "top": 251.0,
+            "bottom": 201.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-64}",
+          "(b)\\quad \\sqrt{25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "5",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{18}{30}",
+          "(b)\\quad \\frac{12}{21}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "2 (x - 1) (x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 4}{x - 2} = \\frac{x^{2} + 5 x + 6}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "x = 6",
+            "answer": "Left 8; right 8; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -6",
+            "answer": "Left -4; right -4; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 2; right 2; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            6,
+            "",
+            "",
+            ""
+          ],
+          [
+            -6,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "99735",
+    "seed": 185555204,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 617.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 522.7,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 522.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 522.7,
+        "bottom": 446.70000000000005,
+        "rows": [
+          {
+            "top": 522.7,
+            "bottom": 484.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 484.70000000000005,
+            "bottom": 446.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 446.70000000000005,
+        "bottom": 270.70000000000005,
+        "rows": [
+          {
+            "top": 446.70000000000005,
+            "bottom": 408.70000000000005,
+            "label": "x = 6",
+            "points": 4
+          },
+          {
+            "top": 408.70000000000005,
+            "bottom": 370.70000000000005,
+            "label": "x = -6",
+            "points": 4
+          },
+          {
+            "top": 370.70000000000005,
+            "bottom": 332.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 332.70000000000005,
+            "bottom": 270.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 270.70000000000005,
+        "bottom": 212.40000000000003,
+        "rows": [
+          {
+            "top": 270.70000000000005,
+            "bottom": 212.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{24}{42}",
+          "(b)\\quad \\frac{14}{21}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-81}",
+          "(b)\\quad \\sqrt{36}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "9i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "6",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 4}{x - 2} = \\frac{x^{2} + 5 x + 6}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "x = 6",
+            "answer": "Left 8; right 8; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -6",
+            "answer": "Left -4; right -4; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 2; right 2; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            6,
+            "",
+            "",
+            ""
+          ],
+          [
+            -6,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "68448",
+    "seed": 3974499810,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 608.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 608.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 608.7,
+        "bottom": 532.7,
+        "rows": [
+          {
+            "top": 608.7,
+            "bottom": 570.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.7,
+            "bottom": 532.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 532.7,
+        "bottom": 446.70000000000005,
+        "rows": [
+          {
+            "top": 532.7,
+            "bottom": 489.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 489.70000000000005,
+            "bottom": 446.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 446.70000000000005,
+        "bottom": 374.70000000000005,
+        "rows": [
+          {
+            "top": 446.70000000000005,
+            "bottom": 410.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 410.70000000000005,
+            "bottom": 374.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 374.70000000000005,
+        "bottom": 198.70000000000005,
+        "rows": [
+          {
+            "top": 374.70000000000005,
+            "bottom": 336.70000000000005,
+            "label": "x = 7",
+            "points": 4
+          },
+          {
+            "top": 336.70000000000005,
+            "bottom": 298.70000000000005,
+            "label": "x = -7",
+            "points": 4
+          },
+          {
+            "top": 298.70000000000005,
+            "bottom": 260.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 260.70000000000005,
+            "bottom": 198.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{49}",
+          "(b)\\quad \\sqrt{-100}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "10i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{30}{48}",
+          "(b)\\quad \\frac{14}{21}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "2 x^{2} - 2 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "16",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 9}{x - 3} = \\frac{2 x^{2} + 11 x + 12}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "x = 7",
+            "answer": "Left 10; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -7",
+            "answer": "Left -4; right -11; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 3; right 3; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            -7,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "29055",
+    "seed": 721086897,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 524.7,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 567.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 567.7,
+            "bottom": 524.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 524.7,
+        "bottom": 453.70000000000005,
+        "rows": [
+          {
+            "top": 524.7,
+            "bottom": 488.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 488.70000000000005,
+            "bottom": 453.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 453.70000000000005,
+        "bottom": 377.70000000000005,
+        "rows": [
+          {
+            "top": 453.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 377.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 377.70000000000005,
+        "bottom": 201.70000000000005,
+        "rows": [
+          {
+            "top": 377.70000000000005,
+            "bottom": 339.70000000000005,
+            "label": "x = 7",
+            "points": 4
+          },
+          {
+            "top": 339.70000000000005,
+            "bottom": 301.70000000000005,
+            "label": "x = -7",
+            "points": 4
+          },
+          {
+            "top": 301.70000000000005,
+            "bottom": 263.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 263.70000000000005,
+            "bottom": 201.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{14}{18}",
+          "(b)\\quad \\frac{70}{112}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-eval",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "(x - 1) (x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-121}",
+          "(b)\\quad \\sqrt{64}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "11i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "8",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 9}{x - 3} = \\frac{2 x^{2} + 11 x + 12}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "x = 7",
+            "answer": "Left 10; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -7",
+            "answer": "Left -4; right -11; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 3; right 3; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            -7,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "63742",
+    "seed": 575165140,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584,
+        "bottom": 408,
+        "rows": [
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 7",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 508,
+            "label": "x = -7",
+            "points": 4
+          },
+          {
+            "top": 508,
+            "bottom": 470,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 470,
+            "bottom": 408,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 408,
+        "bottom": 356.7,
+        "rows": [
+          {
+            "top": 408,
+            "bottom": 356.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 356.7,
+        "bottom": 270.7,
+        "rows": [
+          {
+            "top": 356.7,
+            "bottom": 313.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 313.7,
+            "bottom": 270.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 270.7,
+        "bottom": 212.39999999999998,
+        "rows": [
+          {
+            "top": 270.7,
+            "bottom": 212.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-25}",
+          "(b)\\quad \\sqrt{81}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "9",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 9}{x - 3} = \\frac{2 x^{2} + 11 x + 12}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "x = 7",
+            "answer": "Left 10; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -7",
+            "answer": "Left -4; right -11; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 3; right 3; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            -7,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{18}{30}",
+          "(b)\\quad \\frac{8}{14}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "87039",
+    "seed": 1524916533,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 608.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 608.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 608.7,
+        "bottom": 522.7,
+        "rows": [
+          {
+            "top": 608.7,
+            "bottom": 565.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 565.7,
+            "bottom": 522.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 522.7,
+        "bottom": 451.70000000000005,
+        "rows": [
+          {
+            "top": 522.7,
+            "bottom": 486.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 486.70000000000005,
+            "bottom": 451.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 451.70000000000005,
+        "bottom": 375.70000000000005,
+        "rows": [
+          {
+            "top": 451.70000000000005,
+            "bottom": 413.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 413.70000000000005,
+            "bottom": 375.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 375.70000000000005,
+        "bottom": 199.70000000000005,
+        "rows": [
+          {
+            "top": 375.70000000000005,
+            "bottom": 337.70000000000005,
+            "label": "x = 8",
+            "points": 4
+          },
+          {
+            "top": 337.70000000000005,
+            "bottom": 299.70000000000005,
+            "label": "x = -8",
+            "points": 4
+          },
+          {
+            "top": 299.70000000000005,
+            "bottom": 261.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 261.70000000000005,
+            "bottom": 199.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{10}{15}",
+          "(b)\\quad \\frac{18}{30}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "x^{2} - 2 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "11",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{100}",
+          "(b)\\quad \\sqrt{-36}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "6i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 16}{x - 4} = \\frac{x^{2} + 10 x + 25}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "x = 8",
+            "answer": "Left 12; right 13; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -8",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 4; right 5; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            8,
+            "",
+            "",
+            ""
+          ],
+          [
+            -8,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "30359",
+    "seed": 2226890838,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 484,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "x = 8",
+            "points": 4
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "x = -8",
+            "points": 4
+          },
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 484,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 484,
+        "bottom": 434.7,
+        "rows": [
+          {
+            "top": 484,
+            "bottom": 434.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 434.7,
+        "bottom": 348.7,
+        "rows": [
+          {
+            "top": 434.7,
+            "bottom": 391.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 391.7,
+            "bottom": 348.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 348.7,
+        "bottom": 277.7,
+        "rows": [
+          {
+            "top": 348.7,
+            "bottom": 313.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 313.7,
+            "bottom": 277.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 277.7,
+        "bottom": 201.7,
+        "rows": [
+          {
+            "top": 277.7,
+            "bottom": 239.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 239.7,
+            "bottom": 201.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 16}{x - 4} = \\frac{x^{2} + 10 x + 25}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "x = 8",
+            "answer": "Left 12; right 13; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -8",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 4; right 5; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            8,
+            "",
+            "",
+            ""
+          ],
+          [
+            -8,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{6}{10}",
+          "(b)\\quad \\frac{42}{70}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "2 (x - 1) (x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-49}",
+          "(b)\\quad \\sqrt{16}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "35974",
+    "seed": 2931445947,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 608.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 608.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 608.7,
+        "bottom": 532.7,
+        "rows": [
+          {
+            "top": 608.7,
+            "bottom": 570.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 570.7,
+            "bottom": 532.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 532.7,
+        "bottom": 356.70000000000005,
+        "rows": [
+          {
+            "top": 532.7,
+            "bottom": 494.70000000000005,
+            "label": "x = 8",
+            "points": 4
+          },
+          {
+            "top": 494.70000000000005,
+            "bottom": 456.70000000000005,
+            "label": "x = -8",
+            "points": 4
+          },
+          {
+            "top": 456.70000000000005,
+            "bottom": 418.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 418.70000000000005,
+            "bottom": 356.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 356.70000000000005,
+        "bottom": 298.40000000000003,
+        "rows": [
+          {
+            "top": 356.70000000000005,
+            "bottom": 298.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 298.40000000000003,
+        "bottom": 212.40000000000003,
+        "rows": [
+          {
+            "top": 298.40000000000003,
+            "bottom": 255.40000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 255.40000000000003,
+            "bottom": 212.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-64}",
+          "(b)\\quad \\sqrt{25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "5",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 16}{x - 4} = \\frac{x^{2} + 10 x + 25}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "x = 8",
+            "answer": "Left 12; right 13; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -8",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 4; right 5; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            8,
+            "",
+            "",
+            ""
+          ],
+          [
+            -8,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{15}{25}",
+          "(b)\\quad \\frac{12}{18}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "59750",
+    "seed": 1478975363,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 608.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 608.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 608.7,
+        "bottom": 522.7,
+        "rows": [
+          {
+            "top": 608.7,
+            "bottom": 565.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 565.7,
+            "bottom": 522.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 522.7,
+        "bottom": 346.70000000000005,
+        "rows": [
+          {
+            "top": 522.7,
+            "bottom": 484.70000000000005,
+            "label": "x = 9",
+            "points": 4
+          },
+          {
+            "top": 484.70000000000005,
+            "bottom": 446.70000000000005,
+            "label": "x = -9",
+            "points": 4
+          },
+          {
+            "top": 446.70000000000005,
+            "bottom": 408.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 408.70000000000005,
+            "bottom": 346.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 346.70000000000005,
+        "bottom": 270.70000000000005,
+        "rows": [
+          {
+            "top": 346.70000000000005,
+            "bottom": 308.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 308.70000000000005,
+            "bottom": 270.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 270.70000000000005,
+        "bottom": 199.70000000000005,
+        "rows": [
+          {
+            "top": 270.70000000000005,
+            "bottom": 234.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 234.70000000000005,
+            "bottom": 199.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{25}{40}",
+          "(b)\\quad \\frac{20}{30}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 25}{x - 5} = \\frac{x^{2} + 12 x + 36}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "x = 9",
+            "answer": "Left 14; right 15; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -9",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 5; right 6; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            9,
+            "",
+            "",
+            ""
+          ],
+          [
+            -9,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{36}",
+          "(b)\\quad \\sqrt{-81}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "9i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "2 x^{2} - 2 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "14",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "79589",
+    "seed": 2107698218,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 534.7,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 572.7,
+            "bottom": 534.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 534.7,
+        "bottom": 448.70000000000005,
+        "rows": [
+          {
+            "top": 534.7,
+            "bottom": 491.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 491.70000000000005,
+            "bottom": 448.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 448.70000000000005,
+        "bottom": 377.70000000000005,
+        "rows": [
+          {
+            "top": 448.70000000000005,
+            "bottom": 412.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 412.70000000000005,
+            "bottom": 377.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 377.70000000000005,
+        "bottom": 201.70000000000005,
+        "rows": [
+          {
+            "top": 377.70000000000005,
+            "bottom": 339.70000000000005,
+            "label": "x = 9",
+            "points": 4
+          },
+          {
+            "top": 339.70000000000005,
+            "bottom": 301.70000000000005,
+            "label": "x = -9",
+            "points": 4
+          },
+          {
+            "top": 301.70000000000005,
+            "bottom": 263.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 263.70000000000005,
+            "bottom": 201.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-100}",
+          "(b)\\quad \\sqrt{49}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "7",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{35}{56}",
+          "(b)\\quad \\frac{70}{112}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "(x - 1) (x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 25}{x - 5} = \\frac{x^{2} + 12 x + 36}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "x = 9",
+            "answer": "Left 14; right 15; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -9",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 5; right 6; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            9,
+            "",
+            "",
+            ""
+          ],
+          [
+            -9,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "57635",
+    "seed": 738826615,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584,
+        "bottom": 525.7,
+        "rows": [
+          {
+            "top": 584,
+            "bottom": 525.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 525.7,
+        "bottom": 474.40000000000003,
+        "rows": [
+          {
+            "top": 525.7,
+            "bottom": 474.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 474.40000000000003,
+        "bottom": 388.40000000000003,
+        "rows": [
+          {
+            "top": 474.40000000000003,
+            "bottom": 431.40000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 431.40000000000003,
+            "bottom": 388.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 388.40000000000003,
+        "bottom": 212.40000000000003,
+        "rows": [
+          {
+            "top": 388.40000000000003,
+            "bottom": 350.40000000000003,
+            "label": "x = 9",
+            "points": 4
+          },
+          {
+            "top": 350.40000000000003,
+            "bottom": 312.40000000000003,
+            "label": "x = -9",
+            "points": 4
+          },
+          {
+            "top": 312.40000000000003,
+            "bottom": 274.40000000000003,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 274.40000000000003,
+            "bottom": 212.40000000000003,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-121}",
+          "(b)\\quad \\sqrt{64}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "11i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "8",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{15}{24}",
+          "(b)\\quad \\frac{18}{30}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 25}{x - 5} = \\frac{x^{2} + 12 x + 36}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "x = 9",
+            "answer": "Left 14; right 15; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -9",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 5; right 6; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            9,
+            "",
+            "",
+            ""
+          ],
+          [
+            -9,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "58938",
+    "seed": 1362039285,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 484,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "x = 10",
+            "points": 4
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "x = -10",
+            "points": 4
+          },
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 484,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 484,
+        "bottom": 432.7,
+        "rows": [
+          {
+            "top": 484,
+            "bottom": 432.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 432.7,
+        "bottom": 346.7,
+        "rows": [
+          {
+            "top": 432.7,
+            "bottom": 389.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 389.7,
+            "bottom": 346.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 346.7,
+        "bottom": 275.7,
+        "rows": [
+          {
+            "top": 346.7,
+            "bottom": 311.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 311.7,
+            "bottom": 275.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 275.7,
+        "bottom": 199.7,
+        "rows": [
+          {
+            "top": 275.7,
+            "bottom": 237.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 237.7,
+            "bottom": 199.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 36}{x - 6} = \\frac{x^{2} + 14 x + 49}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "x = 10",
+            "answer": "Left 16; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -10",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 6; right 7; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            -10,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{60}{105}",
+          "(b)\\quad \\frac{15}{25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "x^{2} - 2 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{81}",
+          "(b)\\quad \\sqrt{-25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "9",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "5i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "99854",
+    "seed": 3181610833,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 589.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 625.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 625.0,
+            "bottom": 589.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 589.0,
+        "bottom": 539.7,
+        "rows": [
+          {
+            "top": 589.0,
+            "bottom": 539.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 539.7,
+        "bottom": 453.70000000000005,
+        "rows": [
+          {
+            "top": 539.7,
+            "bottom": 496.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 496.70000000000005,
+            "bottom": 453.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 453.70000000000005,
+        "bottom": 377.70000000000005,
+        "rows": [
+          {
+            "top": 453.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 377.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 377.70000000000005,
+        "bottom": 201.70000000000005,
+        "rows": [
+          {
+            "top": 377.70000000000005,
+            "bottom": 339.70000000000005,
+            "label": "x = 10",
+            "points": 4
+          },
+          {
+            "top": 339.70000000000005,
+            "bottom": 301.70000000000005,
+            "label": "x = -10",
+            "points": 4
+          },
+          {
+            "top": 301.70000000000005,
+            "bottom": 263.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 263.70000000000005,
+            "bottom": 201.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "2 (x - 1) (x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{30}{45}",
+          "(b)\\quad \\frac{14}{18}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{100}",
+          "(b)\\quad \\sqrt{-36}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "6i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 36}{x - 6} = \\frac{x^{2} + 14 x + 49}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "x = 10",
+            "answer": "Left 16; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -10",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 6; right 7; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            -10,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "version": "68237",
+    "seed": 1005566745,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 484,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "x = 10",
+            "points": 4
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "x = -10",
+            "points": 4
+          },
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 484,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 484,
+        "bottom": 425.7,
+        "rows": [
+          {
+            "top": 484,
+            "bottom": 425.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 425.7,
+        "bottom": 374.4,
+        "rows": [
+          {
+            "top": 425.7,
+            "bottom": 374.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 374.4,
+        "bottom": 288.4,
+        "rows": [
+          {
+            "top": 374.4,
+            "bottom": 331.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 331.4,
+            "bottom": 288.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 288.4,
+        "bottom": 212.39999999999998,
+        "rows": [
+          {
+            "top": 288.4,
+            "bottom": 250.39999999999998,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 250.39999999999998,
+            "bottom": 212.39999999999998,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 36}{x - 6} = \\frac{x^{2} + 14 x + 49}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "x = 10",
+            "answer": "Left 16; right 17; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -10",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 6; right 7; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            -10,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{42}{54}",
+          "(b)\\quad \\frac{20}{35}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-49}",
+          "(b)\\quad \\sqrt{16}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "61862",
+    "seed": 3012403017,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 588.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 624.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 624.0,
+            "bottom": 588.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 588.0,
+        "bottom": 412.0,
+        "rows": [
+          {
+            "top": 588.0,
+            "bottom": 550.0,
+            "label": "x = 11",
+            "points": 4
+          },
+          {
+            "top": 550.0,
+            "bottom": 512.0,
+            "label": "x = -11",
+            "points": 4
+          },
+          {
+            "top": 512.0,
+            "bottom": 474.0,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 474.0,
+            "bottom": 412.0,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 412.0,
+        "bottom": 326.0,
+        "rows": [
+          {
+            "top": 412.0,
+            "bottom": 369.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 369.0,
+            "bottom": 326.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 326.0,
+        "bottom": 250.0,
+        "rows": [
+          {
+            "top": 326.0,
+            "bottom": 288.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 288.0,
+            "bottom": 250.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 250.0,
+        "bottom": 198.7,
+        "rows": [
+          {
+            "top": 250.0,
+            "bottom": 198.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "2 x^{2} - 2 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "16",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 49}{x - 7} = \\frac{x^{2} + 16 x + 64}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "x = 11",
+            "answer": "Left 18; right 19; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -11",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 7; right 8; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            11,
+            "",
+            "",
+            ""
+          ],
+          [
+            -11,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{15}{25}",
+          "(b)\\quad \\frac{40}{70}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-64}",
+          "(b)\\quad \\sqrt{25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "5",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "90851",
+    "seed": 4236580825,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 589.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 624.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 624.0,
+            "bottom": 589.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 589.0,
+        "bottom": 513.0,
+        "rows": [
+          {
+            "top": 589.0,
+            "bottom": 551.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 551.0,
+            "bottom": 513.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 513.0,
+        "bottom": 337.0,
+        "rows": [
+          {
+            "top": 513.0,
+            "bottom": 475.0,
+            "label": "x = 11",
+            "points": 4
+          },
+          {
+            "top": 475.0,
+            "bottom": 437.0,
+            "label": "x = -11",
+            "points": 4
+          },
+          {
+            "top": 437.0,
+            "bottom": 399.0,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 399.0,
+            "bottom": 337.0,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 337.0,
+        "bottom": 287.7,
+        "rows": [
+          {
+            "top": 337.0,
+            "bottom": 287.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 287.7,
+        "bottom": 201.7,
+        "rows": [
+          {
+            "top": 287.7,
+            "bottom": 244.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 244.7,
+            "bottom": 201.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "(x - 1) (x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "10",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-81}",
+          "(b)\\quad \\sqrt{36}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "9i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "6",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 49}{x - 7} = \\frac{x^{2} + 16 x + 64}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "x = 11",
+            "answer": "Left 18; right 19; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -11",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 7; right 8; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            11,
+            "",
+            "",
+            ""
+          ],
+          [
+            -11,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{70}{112}",
+          "(b)\\quad \\frac{49}{63}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "47886",
+    "seed": 1771952750,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584,
+        "bottom": 532.7,
+        "rows": [
+          {
+            "top": 584,
+            "bottom": 532.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 532.7,
+        "bottom": 446.70000000000005,
+        "rows": [
+          {
+            "top": 532.7,
+            "bottom": 489.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 489.70000000000005,
+            "bottom": 446.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 446.70000000000005,
+        "bottom": 270.70000000000005,
+        "rows": [
+          {
+            "top": 446.70000000000005,
+            "bottom": 408.70000000000005,
+            "label": "x = 11",
+            "points": 4
+          },
+          {
+            "top": 408.70000000000005,
+            "bottom": 370.70000000000005,
+            "label": "x = -11",
+            "points": 4
+          },
+          {
+            "top": 370.70000000000005,
+            "bottom": 332.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 332.70000000000005,
+            "bottom": 270.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 270.70000000000005,
+        "bottom": 212.40000000000003,
+        "rows": [
+          {
+            "top": 270.70000000000005,
+            "bottom": 212.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{49}",
+          "(b)\\quad \\sqrt{-100}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "10i",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{20}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "2 \\sqrt{5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{45}{75}",
+          "(b)\\quad \\frac{8}{14}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 49}{x - 7} = \\frac{x^{2} + 16 x + 64}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "x = 11",
+            "answer": "Left 18; right 19; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -11",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 7; right 8; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            11,
+            "",
+            "",
+            ""
+          ],
+          [
+            -11,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate both values in the formula for a = 2, b = -9, c = 4.",
+        "math": [
+          "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2},\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "71533",
+    "seed": 193315737,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 484,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "x = 12",
+            "points": 4
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "x = -12",
+            "points": 4
+          },
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 484,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 484,
+        "bottom": 413.0,
+        "rows": [
+          {
+            "top": 484,
+            "bottom": 448.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 448.0,
+            "bottom": 413.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 413.0,
+        "bottom": 327.0,
+        "rows": [
+          {
+            "top": 413.0,
+            "bottom": 370.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 370.0,
+            "bottom": 327.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 327.0,
+        "bottom": 275.7,
+        "rows": [
+          {
+            "top": 327.0,
+            "bottom": 275.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 275.7,
+        "bottom": 199.7,
+        "rows": [
+          {
+            "top": 275.7,
+            "bottom": 237.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 237.7,
+            "bottom": 199.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 64}{x - 8} = \\frac{x^{2} + 18 x + 81}{x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "x = 12",
+            "answer": "Left 20; right 21; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -12",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 8; right 9; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            12,
+            "",
+            "",
+            ""
+          ],
+          [
+            -12,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 2 and (b) x = -2.",
+        "math": [
+          "x^{2} - 2 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "11",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{8}{14}",
+          "(b)\\quad \\frac{24}{42}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "3 \\sqrt{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-121}",
+          "(b)\\quad \\sqrt{64}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "11i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "8",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "34863",
+    "seed": 1504426274,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 484,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622,
+            "label": "x = 12",
+            "points": 4
+          },
+          {
+            "top": 622,
+            "bottom": 584,
+            "label": "x = -12",
+            "points": 4
+          },
+          {
+            "top": 584,
+            "bottom": 546,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 546,
+            "bottom": 484,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 484,
+        "bottom": 398.0,
+        "rows": [
+          {
+            "top": 484,
+            "bottom": 441.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 441.0,
+            "bottom": 398.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 398.0,
+        "bottom": 348.7,
+        "rows": [
+          {
+            "top": 398.0,
+            "bottom": 348.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 348.7,
+        "bottom": 277.7,
+        "rows": [
+          {
+            "top": 348.7,
+            "bottom": 313.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 313.7,
+            "bottom": 277.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 277.7,
+        "bottom": 201.7,
+        "rows": [
+          {
+            "top": 277.7,
+            "bottom": 239.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 239.7,
+            "bottom": 201.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "A99-test",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "\\frac{x^{2} - 64}{x - 8} = \\frac{x^{2} + 18 x + 81}{x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "x = 12",
+            "answer": "Left 20; right 21; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -12",
+            "answer": "Left -4; right -3; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left 8; right 9; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            12,
+            "",
+            "",
+            ""
+          ],
+          [
+            -12,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "A99-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{25}{40}",
+          "(b)\\quad \\frac{60}{105}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{4}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-simplify",
+        "prompt": "Simplify the square root.",
+        "math": [
+          "\\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "Radical",
+            "answer": "5 \\sqrt{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-formula",
+        "prompt": "Evaluate at (a) x = 3 and (b) x = -3.",
+        "math": [
+          "2 (x - 1) (x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "A99-root",
+        "prompt": "Evaluate the principal square root in each part.",
+        "math": [
+          "(a)\\quad \\sqrt{-25}",
+          "(b)\\quad \\sqrt{81}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5i",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "9",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      }
+    ]
+  }
+]

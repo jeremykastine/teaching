@@ -133,12 +133,13 @@ def build(a):
 
 # Question constructors are below. All answers are computed from their source data.
 def arithmetic98(v):
+    variant = v % 3; v = (v // 3) % 7
     k=v+2
     ops=[(f'{7+k}-(-{3+k})',10+2*k),(f'(-{4+k})(-{2+k})',(4+k)*(2+k)),(f'-{6+k}-{3+k}',-9-2*k),(frac(k+5,0),'Undefined')]
     if v==1:ops[0]=(f'-{7+k}-(-{3+k})',-4);ops[2]=(f'-{6+k}+(-{9+k})',-15-2*k);ops[3]=(frac(0,k+5),0)
     random.Random(400+v).shuffle(ops)
     q1=question('A98-signs','Evaluate each expression.',[rf'({chr(97+i)})\quad '+p for i,(p,a) in enumerate(ops)],[ans('('+chr(97+i)+')',str(a),5,True) for i,(p,a) in enumerate(ops)])
-    q2=fraction_reduction(v,'A98-frac')
+    q2=fraction_reduction((3*v+variant),'A98-frac')
     e=(k+1)*x-(k+2)*y-k;px=-k;py=k+1;a=exact('A98-eval',e.subs({x:px,y:py}))
     q3=question('A98-eval',f'Evaluate at x = {px}, y = {py}.',[tex(e)],[ans('Value',tex(a),20)])
     e=(v+1)*x*x-(v+3)*x+v+2
@@ -149,7 +150,8 @@ def arithmetic98(v):
     return [q1,q2,q3,q4,q5]
 
 def fraction_reduction(v,fid):
-    pairs=[[(14,21),(42,66)],[(25,35),(60,84)],[(21,35),(70,110)]][v]
+    variant = v % 3; v = (v // 3) % 7
+    pairs=[[(14,21),(42,66)],[(25,35),(60,84)],[(21,35),(70,110)]][variant]
     if v==1:pairs.reverse()
     gcds=[math.gcd(*p) for p in pairs];assert sorted(len(S.factorint(g)) for g in gcds)==[1,2]
     return question(fid,'Reduce each fraction to lowest terms.',[rf'({chr(97+i)})\quad '+frac(n,d) for i,(n,d) in enumerate(pairs)],[ans('('+chr(97+i)+')',tex(S.Rational(n,d)),10) for i,(n,d) in enumerate(pairs)])
@@ -167,6 +169,7 @@ def comparison(fid,l,r,inputs,points):
     return question(fid,'Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.',[eq(l,r)],rows,table=table)
 
 def polynomials98(v):
+    variant = v % 3; v = (v // 3) % 7
     k=v+1
     # Compact, one-line sums: four exponents across two three-term factors.
     p=2*x**3-(k+1)*x**2-k
@@ -174,10 +177,10 @@ def polynomials98(v):
     r=(k+2)*x**4-2*x*x+x-k;t=3*x**4+(k+1)*x*x-4
     e=-(k+2)*x**2*(2*x**3-k*x+3)
     small=[((x+k)*(x-k-2)),((k+1)*x-k)*((k+2)*x+3)]
-    factors=[(x-k,2*x*x+x+1),(x+2,2*x**3-x*x+3*x-k),(x*x+x-k,2*x*x-x+3)][v]
+    factors=[(x-k,2*x*x+x+1),(x+2,2*x**3-x*x+3*x-k),(x*x+x-k,2*x*x-x+3)][variant]
     gcf=(k+2)*x**(v+1);inside=2*x*x+(-1 if v%2 else 1)*3*x+5
     gp=S.expand(gcf*inside)
-    roots=[(2,3),(-2,-5),(-3,5)][v]
+    roots=[(2,3),(-2,-5),(-3,5)][variant]
     mono=S.expand((x+roots[0])*(x+roots[1]))
     assert S.Poly(mono,x).LC()==1 and len(S.Poly(mono,x).terms())==3
     assert S.expand(S.factor(gp)-gp)==0 and S.expand(S.factor(mono)-mono)==0
@@ -192,15 +195,16 @@ def polynomials98(v):
       [ans('(a)',tex(S.factor(gp)),10),ans('(b)',tex(S.factor(mono)),10)])]
 
 def fractions98(v):
-    add=[[(1,6),(1,3)],[(2,5),(1,6)],[(1,12),(1,4)]][v]
-    sub=[[(3,4),(1,6)],[(5,6),(1,3)],[(5,6),(1,4)]][v]
+    variant = v % 3; v = (v // 3) % 7
+    add=[[(1,6),(1,3)],[(2,5),(1,6)],[(1,12),(1,4)]][variant]
+    sub=[[(3,4),(1,6)],[(5,6),(1,3)],[(5,6),(1,4)]][variant]
     def combined(pair,sgn):
         (a,b),(c,d)=pair;l=math.lcm(b,d);n=a*(l//b)+sgn*c*(l//d);return n,l
     ag=math.gcd(*combined(add,1));sg=math.gcd(*combined(sub,-1));assert (ag>1)+(sg>1)==1
-    triples=[[(14,15),(25,21),(9,10)],[(4,1),(3,8),(2,9)],[(22,15),(25,33),(9,10)]][v]
-    divs=[[(4,1),(8,5)],[(28,45),(42,35)],[(6,1),(9,4)]][v]
+    triples=[[(14,15),(25,21),(9,10)],[(4,1),(3,8),(2,9)],[(22,15),(25,33),(9,10)]][variant]
+    divs=[[(4,1),(8,5)],[(28,45),(42,35)],[(6,1),(9,4)]][variant]
     assert sum(d==1 for _,d in triples+divs)==1
-    extra=[([(2,7),(3,7)],'+'),([(2,3),(5,7)],r'\times'),([(2,3),(5,7)],r'\div')][v]
+    extra=[([(2,7),(3,7)],'+'),([(2,3),(5,7)],r'\times'),([(2,3),(5,7)],r'\div')][variant]
     tasks=[('F98-add',add,'+'),('F98-sub',sub,'-'),('F98-mult',triples,r'\times'),('F98-div',divs,r'\div'),('F98-extra',extra[0],extra[1])]
     out=[]
     for fid,pairs,op in tasks:
@@ -213,15 +217,16 @@ def fractions98(v):
     return out
 
 def linear98(v):
-    k=v+2;rf=[S.Rational(3,2),S.Integer(2),S.Rational(5,3)][v];rl=[S.Integer(3),S.Rational(5,3),S.Integer(-2)][v]
+    variant = v % 3; v = (v // 3) % 7
+    k=v+2;rf=[S.Rational(3,2),S.Integer(2),S.Rational(5,3)][variant];rl=[S.Integer(3),S.Rational(5,3),S.Integer(-2)][variant]
     lhs=(x+k)/3+(x-1)/4;rhs=lhs.subs(x,rf);solved('L98-frac',lhs,rhs,[rf])
-    m=0 if v==1 else (3 if v==2 else 1);const=(3+m)*rl-3*k-(k+1)
+    m=0 if variant==1 else (3 if variant==2 else 1);const=(3+m)*rl-3*k-(k+1)
     ll=3*(2*x-k)-(x+k+1)+m*x;rr=2*x+const;solved('L98-dist',ll,rr,[rl])
     p,q=v+2,v+1;b=q-2*p
     system=[eq(y,2*x+b),eq(x+y,p+q)];assert S.solve([y-2*x-b,x+y-p-q],[x,y])=={x:p,y:q}
     general=[eq(2*x+3*y,2*p+3*q),eq(3*x+5*y,3*p+5*q)];assert S.solve([2*x+3*y-2*p-3*q,3*x+5*y-3*p-5*q],[x,y])=={x:p,y:q}
-    if v==0:ex=[f'3(x+{k})+1 = 3x+{3*k+2}'];answer='No solution; simplifying gives 1 = 2.'
-    elif v==1:ex=[f'4(x-{k})+{4*k+2} = 2(2x+1)'];answer='All real numbers; both sides reduce to 4x + 2.'
+    if variant==0:ex=[f'3(x+{k})+1 = 3x+{3*k+2}'];answer='No solution; simplifying gives 1 = 2.'
+    elif variant==1:ex=[f'4(x-{k})+{4*k+2} = 2(2x+1)'];answer='All real numbers; both sides reduce to 4x + 2.'
     else:ex=[eq(2*x+3*y,7),eq(4*x+6*y,15)];answer='No solution; doubling the first equation contradicts the second.'
     return [question('L98-frac','Solve.',[frac(x+k,3)+' + '+frac(x-1,4)+' = '+tex(rhs)],[ans('Solution',solution_tex([rf]),20)]),
       question('L98-dist','Solve.',[f'3(2x-{k})-(x+{k+1})'+(' + '+str(m)+'x' if m else '')+' = '+tex(rr)],[ans('Solution',solution_tex([rl]),20)]),
@@ -230,11 +235,12 @@ def linear98(v):
       question('L98-exception','Solve and state the complete solution set.',ex,[ans('Solution set',answer,20,True)])]
 
 def arithmetic99(v):
-    k=v+2;q1=fraction_reduction(v,'A99-frac')
+    variant = v % 3; v = (v // 3) % 7
+    k=v+2;q1=fraction_reduction((3*v+variant),'A99-frac')
     roots=[((v+5)**2,v+5),(-((v+7)**2),str(v+7)+'i')]
     if v==1:roots.reverse()
     q2=question('A99-root','Evaluate the principal square root in each part.',[rf'({chr(97+i)})\quad '+r'\sqrt{'+str(n)+'}' for i,(n,a) in enumerate(roots)],[ans('('+chr(97+i)+')',str(a),10,True) for i,(n,a) in enumerate(roots)])
-    prime=[2,3,5][v];mult=[3,5,2][v];rad=mult*mult*prime
+    prime=[2,3,5][variant];mult=[3,5,2][variant];rad=mult*mult*prime
     q3=question('A99-simplify','Simplify the square root.',[r'\sqrt{'+str(rad)+'}'],[ans('Radical',tex(S.sqrt(rad)),20)])
     if v<2:
         e=(v+1)*x*x-(v+3)*x+2 if v==0 else 2*(x-1)*(x+3)
@@ -248,13 +254,14 @@ def arithmetic99(v):
     return [q1,q2,q3,q4,q5]
 
 def polynomials99(v):
+    variant = v % 3; v = (v // 3) % 7
     k=v+2;prod=((k)*x-3)*((k+1)*x+2);inside=2*x*x-x+(v+3);gcf=(v+2)*x*x;poly=S.expand(gcf*inside)
-    mon=(x-(v+2))*(x+(v+4));ds=[x*x-25,4*x*x-9,9*x*x-16][v]
-    small=[((2*x+1)*(x-3),2*x*x+x+3),((3*x-2)*(x+1),3*x*x+2*x+1),((2*x-3)*(x+2),2*x*x+x+2)][v]
-    if v==1:small=small[::-1]
-    rich=[(3*x+5)*(4*x+3),(3*x+4)*(4*x+3),(3*x-4)*(5*x-3)][v];rp=S.Poly(S.expand(rich),x);a,b,c=rp.all_coeffs();ac=a*c
+    mon=(x-(v+2))*(x+(v+4));ds=[x*x-25,4*x*x-9,9*x*x-16][variant]
+    small=[((2*x+1)*(x-3),2*x*x+x+3),((3*x-2)*(x+1),3*x*x+2*x+1),((2*x-3)*(x+2),2*x*x+x+2)][variant]
+    if variant==1:small=small[::-1]
+    rich=[(3*x+5)*(4*x+3),(3*x+5)*(4*x-3),(3*x-4)*(5*x-3)][variant];rp=S.Poly(S.expand(rich),x);a,b,c=rp.all_coeffs();ac=a*c
     pairs=[(d,ac//d) for d in range(1,math.isqrt(abs(int(ac)))+1) if ac%d==0];assert len(pairs)>=8
-    split=next((u,w) for u,w in pairs if u+w==abs(b));u,w=split
+    split=next((u,w) for u,w in pairs if abs(u+w)==abs(b) or abs(u-w)==abs(b));u,w=split
     if b<0:u,w=-u,-w
     return [question('P99-mult','Multiply and simplify.',[f'({k}x-3)({k+1}x+2)'],[ans('Polynomial',tex(exact('P99-mult',prod)),20)]),
       question('P99-gcf','Factor out the greatest common factor.',[tex(poly)],[ans('Factored form',tex(gcf)+par(inside),20)]),
@@ -263,6 +270,7 @@ def polynomials99(v):
       question('P99-group','Factor completely.',[tex(rp.as_expr())],[ans('Factored form',tex(S.factor(rich)),20)])]
 
 def rational99(v):
+    variant = v % 3; v = (v // 3) % 7
     h=v+2;b=v+4;a=v+3
     n=S.expand((2*x+1)*(x-h));d=S.expand(3*(x-h)*(x+b));simple=n/d
     k=h+3 if v!=1 else h-3
@@ -282,6 +290,7 @@ def rational99(v):
     return out
 
 def equations99(v):
+    variant = v % 3; v = (v // 3) % 7
     h=v+2;r=h+2;d=h+1;K=h+r-1
     l=2*h/(x*x-h*h)+(x-d)/(x-h);rr=K/(x+h)
     valid,cand=solved('E99-rquad',l,rr,[r],[x-h,x+h]);assert set(cand)=={S.Integer(h),S.Integer(r)}
@@ -297,12 +306,13 @@ def equations99(v):
       question('E99-rlinear','Solve.',[frac(A,2*x-2*u)+' + '+frac(B,S.expand((x-u)*(x-w)))+' = '+frac(c,x-w)],[ans('Solution',solution_tex([p]),20)])]
 
 def graph99(v):
-    ms=[S.Rational(1,2),S.Rational(2,3),S.Rational(3,2)];m=ms[v];b=v-2
+    variant = v % 3; v = (v // 3) % 7
+    ms=[S.Rational(1,2),S.Rational(2,3),S.Rational(3,2)];m=ms[variant];b=v-2
     # Standard form has negative slope and integer nonzero intercepts.
-    A,B,C=[(2,3,12),(3,2,12),(1,2,6)][v]
-    p,q=[(1,2),(2,1),(2,-1)][v];mm=S.Integer(v+1);nn=-S.Integer(v+2);bb=q-mm*p;cc=q-nn*p
-    readm=[-S.Rational(1,2),-S.Rational(2,3),-S.Rational(3,2)][v];readb=v+1
-    pointm=[S.Integer(2),S.Rational(1,3),S.Integer(-1)][v];pointb=v-1;xs=[1,4] if v==1 else [1,3];pts=[(z,pointm*z+pointb) for z in xs]
+    A,B,C=[(2,3,12),(3,2,12),(1,2,6)][variant]
+    p,q=[(1,2),(2,1),(2,-1)][variant];mm=S.Integer(v+1);nn=-S.Integer(v+2);bb=q-mm*p;cc=q-nn*p
+    readm=[-S.Rational(1,2),-S.Rational(2,3),-S.Rational(3,2)][variant];readb=v+1
+    pointm=[S.Integer(2),S.Rational(1,3),S.Integer(-1)][variant];pointb=v-1;xs=[1,4] if v==1 else [1,3];pts=[(z,pointm*z+pointb) for z in xs]
     return [question('G99-slope','Graph the line on the grid. Mark at least two points.',[eq(y,m*x+b)],[ans('Graph (booklet)',eq(y,m*x+b),20)],graph={'kind':'blank','answer_lines':[[float(m),float(b)]]}),
       question('G99-standard','Find both intercepts and graph through them on the grid.',[eq(A*x+B*y,C)],[ans('Intercepts',tex(S.Tuple(S.Rational(C,A),0))+r';\ '+tex(S.Tuple(0,S.Rational(C,B))),8),ans('Graph (booklet)',eq(y,-S.Rational(A,B)*x+S.Rational(C,B)),12)],graph={'kind':'blank','answer_lines':[[-A/B,C/B]]}),
       question('G99-system','Graph both lines on this grid and give their intersection.',[eq(y,mm*x+bb),eq(y,nn*x+cc)],[ans('Graph (booklet)','Both given lines meet at the reported solution.',12,True),ans('Ordered pair',tex(S.Tuple(p,q)),8)],graph={'kind':'blank','answer_lines':[[float(mm),float(bb)],[float(nn),float(cc)]]}),

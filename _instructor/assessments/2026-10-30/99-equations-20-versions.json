@@ -1,0 +1,3162 @@
+[
+  {
+    "version": "18582",
+    "seed": 1808165522,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 564.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 564.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x + 1)^2 = 8"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + x - 2 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{17}}{4},\\ - \\frac{\\sqrt{17}}{4} - \\frac{1}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{2 x - 2} + \\frac{7}{x^{2} - 5 x + 4} = \\frac{3}{x - 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{5}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -4,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "40982",
+    "seed": 2459043563,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{2 x - 2} + \\frac{7}{x^{2} - 5 x + 4} = \\frac{3}{x - 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{5}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x + 1)^2 = 8"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -4,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{33}}{4},\\ - \\frac{\\sqrt{33}}{4} - \\frac{1}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "89953",
+    "seed": 1330018481,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{5}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x + 1)^2 = 8"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + x - 5 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{41}}{4},\\ - \\frac{\\sqrt{41}}{4} - \\frac{1}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{4}{2 x - 2} + \\frac{7}{x^{2} - 5 x + 4} = \\frac{3}{x - 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -4,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "68566",
+    "seed": 958840273,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 565.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 565.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 462.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 462.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 462.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 2 x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{3}}{2},\\ - \\frac{\\sqrt{3}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 10 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -5,\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{2 x - 4} + \\frac{10}{x^{2} - 7 x + 10} = \\frac{4}{x - 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x)^2 = 18"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{x^{2} - 9} + \\frac{x - 4}{x - 3} = \\frac{7}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "73441",
+    "seed": 3862964206,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 565.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 565.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 2 x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{7}}{2},\\ - \\frac{\\sqrt{7}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 10 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -5,\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{x^{2} - 9} + \\frac{x - 4}{x - 3} = \\frac{7}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{2 x - 4} + \\frac{10}{x^{2} - 7 x + 10} = \\frac{4}{x - 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x)^2 = 18"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "64523",
+    "seed": 1007901092,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{2 x - 4} + \\frac{10}{x^{2} - 7 x + 10} = \\frac{4}{x - 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{6}{x^{2} - 9} + \\frac{x - 4}{x - 3} = \\frac{7}{x + 3}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x)^2 = 18"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 2 x - 5 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{11}}{2},\\ - \\frac{\\sqrt{11}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 10 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -5,\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "60799",
+    "seed": 1130150104,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{x^{2} - 16} + \\frac{x - 5}{x - 4} = \\frac{9}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{13}{x^{2} - 9 x + 18} = \\frac{5}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 1)^2 = 32"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 3 x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{3}{4} + \\frac{\\sqrt{17}}{4},\\ - \\frac{\\sqrt{17}}{4} - \\frac{3}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 18 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -6,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "16768",
+    "seed": 556784253,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 18 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -6,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{13}{x^{2} - 9 x + 18} = \\frac{5}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 3 x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{3}{4} + \\frac{\\sqrt{33}}{4},\\ - \\frac{\\sqrt{33}}{4} - \\frac{3}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{x^{2} - 16} + \\frac{x - 5}{x - 4} = \\frac{9}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 1)^2 = 32"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "66524",
+    "seed": 796287781,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{13}{x^{2} - 9 x + 18} = \\frac{5}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{8}{x^{2} - 16} + \\frac{x - 5}{x - 4} = \\frac{9}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 18 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -6,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{3}{4} + \\frac{\\sqrt{41}}{4},\\ - \\frac{\\sqrt{41}}{4} - \\frac{3}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 1)^2 = 32"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "58767",
+    "seed": 1291508703,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 462.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 462.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 462.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 3 x - 6 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{3}{4} + \\frac{\\sqrt{57}}{4},\\ - \\frac{\\sqrt{57}}{4} - \\frac{3}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{2 x - 8} + \\frac{16}{x^{2} - 11 x + 28} = \\frac{6}{x - 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 28 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -7,\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 2)^2 = 50"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{x^{2} - 25} + \\frac{x - 6}{x - 5} = \\frac{11}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "39305",
+    "seed": 2688604498,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 564.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 564.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 462.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 462.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 462.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 28 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -7,\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 2)^2 = 50"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{2 x - 8} + \\frac{16}{x^{2} - 11 x + 28} = \\frac{6}{x - 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 4 x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -1 + \\frac{\\sqrt{6}}{2},\\ - \\frac{\\sqrt{6}}{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{x^{2} - 25} + \\frac{x - 6}{x - 5} = \\frac{11}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "54066",
+    "seed": 751124624,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 28 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -7,\\ 4",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{2 x - 8} + \\frac{16}{x^{2} - 11 x + 28} = \\frac{6}{x - 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 4 x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -1 + \\frac{\\sqrt{10}}{2},\\ - \\frac{\\sqrt{10}}{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{x^{2} - 25} + \\frac{x - 6}{x - 5} = \\frac{11}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 2)^2 = 50"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "60305",
+    "seed": 3393979935,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 4 x - 5 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -1 + \\frac{\\sqrt{14}}{2},\\ - \\frac{\\sqrt{14}}{2} - 1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{x^{2} - 36} + \\frac{x - 7}{x - 6} = \\frac{13}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 40 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -8,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 10} + \\frac{19}{x^{2} - 13 x + 40} = \\frac{7}{x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 3)^2 = 72"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "85765",
+    "seed": 2855580728,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 462.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 462.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 462.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{x^{2} - 36} + \\frac{x - 7}{x - 6} = \\frac{13}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 40 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -8,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 5 x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{33}}{4},\\ - \\frac{\\sqrt{33}}{4} - \\frac{5}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 3)^2 = 72"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 10} + \\frac{19}{x^{2} - 13 x + 40} = \\frac{7}{x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "81256",
+    "seed": 2672807085,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 564.4000000000001,
+        "bottom": 517.1000000000001,
+        "rows": [
+          {
+            "top": 564.4000000000001,
+            "bottom": 517.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 517.1000000000001,
+        "bottom": 462.8000000000001,
+        "rows": [
+          {
+            "top": 517.1000000000001,
+            "bottom": 462.8000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.8000000000001,
+        "bottom": 408.5000000000001,
+        "rows": [
+          {
+            "top": 462.8000000000001,
+            "bottom": 408.5000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 3)^2 = 72"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 5 x - 2 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{41}}{4},\\ - \\frac{\\sqrt{41}}{4} - \\frac{5}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 40 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -8,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 10} + \\frac{19}{x^{2} - 13 x + 40} = \\frac{7}{x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{x^{2} - 36} + \\frac{x - 7}{x - 6} = \\frac{13}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "10429",
+    "seed": 1964859881,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{x^{2} - 49} + \\frac{x - 8}{x - 7} = \\frac{15}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 5 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{57}}{4},\\ - \\frac{\\sqrt{57}}{4} - \\frac{5}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{2 x - 12} + \\frac{22}{x^{2} - 15 x + 54} = \\frac{8}{x - 9}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 54 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -9,\\ 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 4)^2 = 98"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 11",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "77233",
+    "seed": 3391713616,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 4)^2 = 98"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 11",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{2 x - 12} + \\frac{22}{x^{2} - 15 x + 54} = \\frac{8}{x - 9}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{x^{2} - 49} + \\frac{x - 8}{x - 7} = \\frac{15}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 54 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -9,\\ 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 5 x - 5 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{65}}{4},\\ - \\frac{\\sqrt{65}}{4} - \\frac{5}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "34137",
+    "seed": 562382867,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{2 x - 12} + \\frac{22}{x^{2} - 15 x + 54} = \\frac{8}{x - 9}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{14}{x^{2} - 49} + \\frac{x - 8}{x - 7} = \\frac{15}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 9",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 4)^2 = 98"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 11",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 54 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -9,\\ 6",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} + 5 x - 6 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{73}}{4},\\ - \\frac{\\sqrt{73}}{4} - \\frac{5}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "79637",
+    "seed": 1535476131,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} + x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{6} + \\frac{\\sqrt{13}}{6},\\ - \\frac{\\sqrt{13}}{6} - \\frac{1}{6}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{16}{x^{2} - 64} + \\frac{x - 9}{x - 8} = \\frac{17}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 10",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{16}{2 x - 14} + \\frac{25}{x^{2} - 17 x + 70} = \\frac{9}{x - 10}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 70 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -10,\\ 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 5)^2 = 128"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 13",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "23368",
+    "seed": 756847894,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 3 x - 70 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -10,\\ 7",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{16}{x^{2} - 64} + \\frac{x - 9}{x - 8} = \\frac{17}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 10",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{16}{2 x - 14} + \\frac{25}{x^{2} - 17 x + 70} = \\frac{9}{x - 10}"
+        ],
+        "rows": [
+          {
+            "label": "Solution",
+            "answer": "x = 8",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} + x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = - \\frac{1}{6} + \\frac{\\sqrt{37}}{6},\\ - \\frac{\\sqrt{37}}{6} - \\frac{1}{6}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve.",
+        "math": [
+          "2(x - 5)^2 = 128"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -3,\\ 13",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,9 @@
 # TSM 098-099 AI Assessment Master Specification
 
+## Controlling presentation update (October 30, 2026)
+
+Apply [Shared test presentation](../../docs/test-presentation.md) to every version. This update supersedes all conflicting presentation rules below: upper-left course/test title; upper-right random five-digit version; Name and Date below; basic non-scientific calculator only; no notes or other technology; final answers in the right column (Statistics: circle choices in the right column); one student page preferred; continuation-only footers; large centered version-only key header; compact left-aligned page-matching key columns; and exact vertical alignment of every answer, including the specific correct multiple-choice option. Generate 20 fresh versions per requested test in an unlinked, duplex-safe instructor PDF batch. Preserve the mathematical blueprints and point totals below.
+
 ## Minimal answer-area labels (October 26, 2026)
 
 - Keep each student answer area as clean as possible: include only the question number, necessary part labels such as (a) and (b), and the applicable points. For a single-part question, use just its number and points; do not invent a part label.

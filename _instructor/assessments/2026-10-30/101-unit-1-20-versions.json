@@ -1,0 +1,4182 @@
+[
+  {
+    "version": "91736",
+    "seed": 911133458,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 498.0,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 537.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 537.0,
+            "bottom": 498.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 498.0,
+        "bottom": 425.0,
+        "rows": [
+          {
+            "top": 498.0,
+            "bottom": 461.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 461.0,
+            "bottom": 425.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 425.0,
+        "bottom": 376.7,
+        "rows": [
+          {
+            "top": 425.0,
+            "bottom": 376.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 376.7,
+        "bottom": 295.7,
+        "rows": [
+          {
+            "top": 376.7,
+            "bottom": 333.7,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 333.7,
+            "bottom": 295.7,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (2 x - 3)(x + 2)",
+          "(b)\\quad 2 x^{2} - 5 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (2 x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-2}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{18}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{3}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 3 = 0",
+          "(b)\\quad \\frac{4}{2 x - 4} + \\frac{1}{x - 2} = 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 3"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-1, 2]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 2 x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 2}{x + 4}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-4, 2\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "94928",
+    "seed": 3713783952,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 617.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.0,
+        "bottom": 503.0,
+        "rows": [
+          {
+            "top": 579.0,
+            "bottom": 541.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 503.0,
+        "bottom": 415.0,
+        "rows": [
+          {
+            "top": 503.0,
+            "bottom": 456.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 456.0,
+            "bottom": 415.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 415.0,
+        "bottom": 342.0,
+        "rows": [
+          {
+            "top": 415.0,
+            "bottom": 378.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 378.0,
+            "bottom": 342.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 342.0,
+        "bottom": 293.7,
+        "rows": [
+          {
+            "top": 342.0,
+            "bottom": 293.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 2 x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 2}{x + 4}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-4, 2\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (2 x - 3)(x + 2)",
+          "(b)\\quad 2 x^{2} - 5 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (2 x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-2}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{27}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{3}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 3 = 0",
+          "(b)\\quad \\frac{4}{2 x - 4} + \\frac{1}{x - 2} = 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 3"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-1, 2]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "37956",
+    "seed": 1519716904,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 535.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 462.70000000000005,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 498.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 498.70000000000005,
+            "bottom": 462.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 462.70000000000005,
+        "bottom": 376.70000000000005,
+        "rows": [
+          {
+            "top": 462.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 376.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 376.70000000000005,
+        "bottom": 295.70000000000005,
+        "rows": [
+          {
+            "top": 376.70000000000005,
+            "bottom": 333.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 333.70000000000005,
+            "bottom": 295.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (2 x - 3)(x + 2)",
+          "(b)\\quad 2 x^{2} - 5 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2 x^{2} + x - 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (2 x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 3"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-1, 2]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 3 = 0",
+          "(b)\\quad \\frac{4}{2 x - 4} + \\frac{1}{x - 2} = 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-2}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{45}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{3}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "3 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 2 x - 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 2}{x + 4}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-4, 2\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "26374",
+    "seed": 2209126040,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 575.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 613.0,
+            "bottom": 575.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 575.0,
+        "bottom": 526.7,
+        "rows": [
+          {
+            "top": 575.0,
+            "bottom": 526.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 526.7,
+        "bottom": 445.70000000000005,
+        "rows": [
+          {
+            "top": 526.7,
+            "bottom": 483.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 483.70000000000005,
+            "bottom": 445.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 445.70000000000005,
+        "bottom": 369.70000000000005,
+        "rows": [
+          {
+            "top": 445.70000000000005,
+            "bottom": 407.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 407.70000000000005,
+            "bottom": 369.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 369.70000000000005,
+        "bottom": 297.40000000000003,
+        "rows": [
+          {
+            "top": 369.70000000000005,
+            "bottom": 332.55000000000007,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 332.55000000000007,
+            "bottom": 297.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-3}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{32}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{4}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 4"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{3}{2}, \\frac{5}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + 2 x - 15}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 3}{x + 5}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-5, 3\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (3 x - 3)(x + 3)",
+          "(b)\\quad 2 x^{2} - 6 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x^{2} + 6 x - 9",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 4) (x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 8 = 0",
+          "(b)\\quad \\frac{5}{2 x - 6} + \\frac{1}{x - 3} = \\frac{7}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -4,\\ 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "60439",
+    "seed": 781078909,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 511.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 546.85,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 546.85,
+            "bottom": 511.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 511.7,
+        "bottom": 430.7,
+        "rows": [
+          {
+            "top": 511.7,
+            "bottom": 468.7,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 468.7,
+            "bottom": 430.7,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 430.7,
+        "bottom": 342.7,
+        "rows": [
+          {
+            "top": 430.7,
+            "bottom": 383.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 383.7,
+            "bottom": 342.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 342.7,
+        "bottom": 294.4,
+        "rows": [
+          {
+            "top": 342.7,
+            "bottom": 294.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (3 x - 3)(x + 3)",
+          "(b)\\quad 2 x^{2} - 6 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x^{2} + 6 x - 9",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 4) (x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 8 = 0",
+          "(b)\\quad \\frac{5}{2 x - 6} + \\frac{1}{x - 3} = \\frac{7}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -4,\\ 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + 2 x - 15}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 3}{x + 5}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-5, 3\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-3}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{48}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{4}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 4"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{3}{2}, \\frac{5}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "62223",
+    "seed": 2117162370,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 587.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.85,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.85,
+            "bottom": 587.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 587.7,
+        "bottom": 506.70000000000005,
+        "rows": [
+          {
+            "top": 587.7,
+            "bottom": 544.7,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 544.7,
+            "bottom": 506.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 506.70000000000005,
+        "bottom": 458.40000000000003,
+        "rows": [
+          {
+            "top": 506.70000000000005,
+            "bottom": 458.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 458.40000000000003,
+        "bottom": 382.40000000000003,
+        "rows": [
+          {
+            "top": 458.40000000000003,
+            "bottom": 420.40000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 420.40000000000003,
+            "bottom": 382.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 382.40000000000003,
+        "bottom": 296.40000000000003,
+        "rows": [
+          {
+            "top": 382.40000000000003,
+            "bottom": 335.40000000000003,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 335.40000000000003,
+            "bottom": 296.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 8 = 0",
+          "(b)\\quad \\frac{5}{2 x - 6} + \\frac{1}{x - 3} = \\frac{7}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -4,\\ 2",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + 2 x - 15}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 3}{x + 5}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-5, 3\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 4"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{3}{2}, \\frac{5}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (3 x - 3)(x + 3)",
+          "(b)\\quad 2 x^{2} - 6 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3 x^{2} + 6 x - 9",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 4) (x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-3}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{80}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{4}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "4 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "85650",
+    "seed": 3246567291,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 538.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 574.7,
+            "bottom": 538.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 538.7,
+        "bottom": 462.70000000000005,
+        "rows": [
+          {
+            "top": 538.7,
+            "bottom": 500.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 500.70000000000005,
+            "bottom": 462.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 462.70000000000005,
+        "bottom": 376.70000000000005,
+        "rows": [
+          {
+            "top": 462.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 376.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 376.70000000000005,
+        "bottom": 295.70000000000005,
+        "rows": [
+          {
+            "top": 376.70000000000005,
+            "bottom": 333.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 333.70000000000005,
+            "bottom": 295.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 5"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-2, 3]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 15 = 0",
+          "(b)\\quad \\frac{6}{2 x - 8} + \\frac{1}{x - 4} = 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -5,\\ 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (4 x - 3)(x + 4)",
+          "(b)\\quad 2 x^{2} - 7 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} + 13 x - 12",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (2 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-4}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{50}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{5}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + 2 x - 24}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 4}{x + 6}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-6, 4\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "51783",
+    "seed": 4248083255,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 587.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 623.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 623.0,
+            "bottom": 587.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 587.0,
+        "bottom": 506.0,
+        "rows": [
+          {
+            "top": 587.0,
+            "bottom": 544.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 544.0,
+            "bottom": 506.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 506.0,
+        "bottom": 457.7,
+        "rows": [
+          {
+            "top": 506.0,
+            "bottom": 457.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 457.7,
+        "bottom": 369.7,
+        "rows": [
+          {
+            "top": 457.7,
+            "bottom": 410.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 410.7,
+            "bottom": 369.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 369.7,
+        "bottom": 293.7,
+        "rows": [
+          {
+            "top": 369.7,
+            "bottom": 331.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 331.7,
+            "bottom": 293.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 15 = 0",
+          "(b)\\quad \\frac{6}{2 x - 8} + \\frac{1}{x - 4} = 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -5,\\ 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + 2 x - 24}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 4}{x + 6}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-6, 4\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 5"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-2, 3]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-4}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{75}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{5}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (4 x - 3)(x + 4)",
+          "(b)\\quad 2 x^{2} - 7 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} + 13 x - 12",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (2 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "90916",
+    "seed": 987567978,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 613.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 525.7,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 525.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 525.7,
+        "bottom": 452.70000000000005,
+        "rows": [
+          {
+            "top": 525.7,
+            "bottom": 488.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 488.70000000000005,
+            "bottom": 452.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 452.70000000000005,
+        "bottom": 371.70000000000005,
+        "rows": [
+          {
+            "top": 452.70000000000005,
+            "bottom": 409.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 409.70000000000005,
+            "bottom": 371.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 371.70000000000005,
+        "bottom": 295.70000000000005,
+        "rows": [
+          {
+            "top": 371.70000000000005,
+            "bottom": 333.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 333.70000000000005,
+            "bottom": 295.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-4}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{125}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{5}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "5 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 5"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-2, 3]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 15 = 0",
+          "(b)\\quad \\frac{6}{2 x - 8} + \\frac{1}{x - 4} = 4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -5,\\ 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + 2 x - 24}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 4}{x + 6}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-6, 4\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (4 x - 3)(x + 4)",
+          "(b)\\quad 2 x^{2} - 7 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "4 x^{2} + 13 x - 12",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 5) (2 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "74581",
+    "seed": 1949398778,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 617.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.0,
+        "bottom": 493.0,
+        "rows": [
+          {
+            "top": 579.0,
+            "bottom": 532.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 532.0,
+            "bottom": 493.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 493.0,
+        "bottom": 417.0,
+        "rows": [
+          {
+            "top": 493.0,
+            "bottom": 455.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 455.0,
+            "bottom": 417.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 417.0,
+        "bottom": 344.0,
+        "rows": [
+          {
+            "top": 417.0,
+            "bottom": 380.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 380.0,
+            "bottom": 344.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 344.0,
+        "bottom": 295.7,
+        "rows": [
+          {
+            "top": 344.0,
+            "bottom": 295.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + 2 x - 35}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 5}{x + 7}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-7, 5\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-5}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{72}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{6}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (5 x - 3)(x + 5)",
+          "(b)\\quad 2 x^{2} - 8 x - 24"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{2} + 22 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 6) (x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 24 = 0",
+          "(b)\\quad \\frac{7}{2 x - 10} + \\frac{1}{x - 5} = \\frac{9}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -6,\\ 4",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 6"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{5}{2}, \\frac{7}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "37126",
+    "seed": 2084787345,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 535.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 573.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 573.7,
+            "bottom": 535.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 535.7,
+        "bottom": 462.70000000000005,
+        "rows": [
+          {
+            "top": 535.7,
+            "bottom": 498.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 498.70000000000005,
+            "bottom": 462.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 462.70000000000005,
+        "bottom": 374.70000000000005,
+        "rows": [
+          {
+            "top": 462.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 374.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 374.70000000000005,
+        "bottom": 293.70000000000005,
+        "rows": [
+          {
+            "top": 374.70000000000005,
+            "bottom": 331.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 331.70000000000005,
+            "bottom": 293.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 6"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{5}{2}, \\frac{7}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (5 x - 3)(x + 5)",
+          "(b)\\quad 2 x^{2} - 8 x - 24"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{2} + 22 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 6) (x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 24 = 0",
+          "(b)\\quad \\frac{7}{2 x - 10} + \\frac{1}{x - 5} = \\frac{9}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -6,\\ 4",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-5}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{108}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{6}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + 2 x - 35}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 5}{x + 7}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-7, 5\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "62465",
+    "seed": 189583777,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 538.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 574.7,
+            "bottom": 538.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 538.7,
+        "bottom": 452.70000000000005,
+        "rows": [
+          {
+            "top": 538.7,
+            "bottom": 491.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 491.70000000000005,
+            "bottom": 452.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 452.70000000000005,
+        "bottom": 371.70000000000005,
+        "rows": [
+          {
+            "top": 452.70000000000005,
+            "bottom": 409.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 409.70000000000005,
+            "bottom": 371.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 371.70000000000005,
+        "bottom": 295.70000000000005,
+        "rows": [
+          {
+            "top": 371.70000000000005,
+            "bottom": 333.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 333.70000000000005,
+            "bottom": 295.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 6"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{5}{2}, \\frac{7}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 24 = 0",
+          "(b)\\quad \\frac{7}{2 x - 10} + \\frac{1}{x - 5} = \\frac{9}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -6,\\ 4",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-5}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{180}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{6}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "6 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + 2 x - 35}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 5}{x + 7}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-7, 5\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (5 x - 3)(x + 5)",
+          "(b)\\quad 2 x^{2} - 8 x - 24"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "5 x^{2} + 22 x - 15",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 6) (x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "82313",
+    "seed": 2279733812,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 579.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 617.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 579.0,
+        "bottom": 494.0,
+        "rows": [
+          {
+            "top": 579.0,
+            "bottom": 532.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 532.0,
+            "bottom": 494.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 494.0,
+        "bottom": 445.7,
+        "rows": [
+          {
+            "top": 494.0,
+            "bottom": 445.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 445.7,
+        "bottom": 369.7,
+        "rows": [
+          {
+            "top": 445.7,
+            "bottom": 407.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 407.7,
+            "bottom": 369.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 369.7,
+        "bottom": 297.4,
+        "rows": [
+          {
+            "top": 369.7,
+            "bottom": 332.55,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 332.55,
+            "bottom": 297.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 2 x - 48}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 6}{x + 8}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-8, 6\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-6}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{98}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{7}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "7 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 7"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-3, 4]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (6 x - 3)(x + 6)",
+          "(b)\\quad 2 x^{2} - 9 x - 35"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{2} + 33 x - 18",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 7) (2 x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 35 = 0",
+          "(b)\\quad \\frac{8}{2 x - 12} + \\frac{1}{x - 6} = 5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -7,\\ 5",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "57784",
+    "seed": 3886113497,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 511.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 546.85,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 546.85,
+            "bottom": 511.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 511.7,
+        "bottom": 430.7,
+        "rows": [
+          {
+            "top": 511.7,
+            "bottom": 468.7,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 468.7,
+            "bottom": 430.7,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 430.7,
+        "bottom": 382.4,
+        "rows": [
+          {
+            "top": 430.7,
+            "bottom": 382.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 382.4,
+        "bottom": 294.4,
+        "rows": [
+          {
+            "top": 382.4,
+            "bottom": 335.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 335.4,
+            "bottom": 294.4,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (6 x - 3)(x + 6)",
+          "(b)\\quad 2 x^{2} - 9 x - 35"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{2} + 33 x - 18",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 7) (2 x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 35 = 0",
+          "(b)\\quad \\frac{8}{2 x - 12} + \\frac{1}{x - 6} = 5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -7,\\ 5",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 2 x - 48}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 6}{x + 8}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-8, 6\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 7"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-3, 4]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-6}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{147}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{7}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "7 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "87759",
+    "seed": 618368142,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 503.0,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 541.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 503.0,
+        "bottom": 454.7,
+        "rows": [
+          {
+            "top": 503.0,
+            "bottom": 454.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 454.7,
+        "bottom": 368.7,
+        "rows": [
+          {
+            "top": 454.7,
+            "bottom": 407.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 407.7,
+            "bottom": 368.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 368.7,
+        "bottom": 296.4,
+        "rows": [
+          {
+            "top": 368.7,
+            "bottom": 331.55,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 331.55,
+            "bottom": 296.40000000000003,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (6 x - 3)(x + 6)",
+          "(b)\\quad 2 x^{2} - 9 x - 35"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "6 x^{2} + 33 x - 18",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 7) (2 x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 2 x - 48}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 6}{x + 8}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-8, 6\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 7"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-3, 4]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-6}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{245}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{7}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "7 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 35 = 0",
+          "(b)\\quad \\frac{8}{2 x - 12} + \\frac{1}{x - 6} = 5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -7,\\ 5",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "26020",
+    "seed": 3527237237,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 613.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 498.0,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 536.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 536.0,
+            "bottom": 498.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 498.0,
+        "bottom": 417.0,
+        "rows": [
+          {
+            "top": 498.0,
+            "bottom": 455.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 455.0,
+            "bottom": 417.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 417.0,
+        "bottom": 344.0,
+        "rows": [
+          {
+            "top": 417.0,
+            "bottom": 380.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 380.0,
+            "bottom": 344.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 344.0,
+        "bottom": 295.7,
+        "rows": [
+          {
+            "top": 344.0,
+            "bottom": 295.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-7}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{128}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{8}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (7 x - 3)(x + 7)",
+          "(b)\\quad 2 x^{2} - 10 x - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{2} + 46 x - 21",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 8) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + 2 x - 63}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 7}{x + 9}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-9, 7\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 48 = 0",
+          "(b)\\quad \\frac{9}{2 x - 14} + \\frac{1}{x - 7} = \\frac{11}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -8,\\ 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 8"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{7}{2}, \\frac{9}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "57444",
+    "seed": 2417899342,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 572.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 613.0,
+            "bottom": 572.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 572.0,
+        "bottom": 523.7,
+        "rows": [
+          {
+            "top": 572.0,
+            "bottom": 523.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 523.7,
+        "bottom": 447.70000000000005,
+        "rows": [
+          {
+            "top": 523.7,
+            "bottom": 485.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 485.70000000000005,
+            "bottom": 447.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 447.70000000000005,
+        "bottom": 366.70000000000005,
+        "rows": [
+          {
+            "top": 447.70000000000005,
+            "bottom": 404.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 404.70000000000005,
+            "bottom": 366.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 366.70000000000005,
+        "bottom": 293.70000000000005,
+        "rows": [
+          {
+            "top": 366.70000000000005,
+            "bottom": 329.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 329.70000000000005,
+            "bottom": 293.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-7}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{192}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{8}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 8"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{7}{2}, \\frac{9}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (7 x - 3)(x + 7)",
+          "(b)\\quad 2 x^{2} - 10 x - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{2} + 46 x - 21",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 8) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + 2 x - 63}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 7}{x + 9}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-9, 7\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 48 = 0",
+          "(b)\\quad \\frac{9}{2 x - 14} + \\frac{1}{x - 7} = \\frac{11}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -8,\\ 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "79377",
+    "seed": 1950941956,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 613.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 498.0,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 536.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 536.0,
+            "bottom": 498.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 498.0,
+        "bottom": 425.0,
+        "rows": [
+          {
+            "top": 498.0,
+            "bottom": 461.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 461.0,
+            "bottom": 425.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 425.0,
+        "bottom": 344.0,
+        "rows": [
+          {
+            "top": 425.0,
+            "bottom": 382.0,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 382.0,
+            "bottom": 344.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 344.0,
+        "bottom": 295.7,
+        "rows": [
+          {
+            "top": 344.0,
+            "bottom": 295.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-7}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{320}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{8}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "8 \\sqrt{5}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (7 x - 3)(x + 7)",
+          "(b)\\quad 2 x^{2} - 10 x - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "7 x^{2} + 46 x - 21",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "2 (x - 8) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 48 = 0",
+          "(b)\\quad \\frac{9}{2 x - 14} + \\frac{1}{x - 7} = \\frac{11}{2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -8,\\ 6",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + 2 x - 63}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 7}{x + 9}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-9, 7\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 8"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[- \\frac{7}{2}, \\frac{9}{2}]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "90683",
+    "seed": 2233853703,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 530.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 568.7,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 568.7,
+            "bottom": 530.7,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 530.7,
+        "bottom": 444.70000000000005,
+        "rows": [
+          {
+            "top": 530.7,
+            "bottom": 483.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 483.70000000000005,
+            "bottom": 444.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 444.70000000000005,
+        "bottom": 371.70000000000005,
+        "rows": [
+          {
+            "top": 444.70000000000005,
+            "bottom": 407.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 407.70000000000005,
+            "bottom": 371.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 371.70000000000005,
+        "bottom": 295.70000000000005,
+        "rows": [
+          {
+            "top": 371.70000000000005,
+            "bottom": 333.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 333.70000000000005,
+            "bottom": 295.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 9"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-4, 5]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 64}{x^{2} + 2 x - 80}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 8}{x + 10}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-10, 8\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-8}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{162}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{9}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "9 \\sqrt{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 63 = 0",
+          "(b)\\quad \\frac{10}{2 x - 16} + \\frac{1}{x - 8} = 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -9,\\ 7",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (8 x - 3)(x + 8)",
+          "(b)\\quad 2 x^{2} - 11 x - 63"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8 x^{2} + 61 x - 24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 9) (2 x + 7)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "73908",
+    "seed": 2560028220,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 538.7,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 574.7,
+            "bottom": 538.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 538.7,
+        "bottom": 450.70000000000005,
+        "rows": [
+          {
+            "top": 538.7,
+            "bottom": 491.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 491.70000000000005,
+            "bottom": 450.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 450.70000000000005,
+        "bottom": 374.70000000000005,
+        "rows": [
+          {
+            "top": 450.70000000000005,
+            "bottom": 412.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 412.70000000000005,
+            "bottom": 374.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 374.70000000000005,
+        "bottom": 293.70000000000005,
+        "rows": [
+          {
+            "top": 374.70000000000005,
+            "bottom": 331.70000000000005,
+            "label": "(a)",
+            "points": 14
+          },
+          {
+            "top": 331.70000000000005,
+            "bottom": 293.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "U1-5",
+        "prompt": "Solve the inequality and write the solution in interval notation.",
+        "math": [
+          "|2x-1|\\leq 9"
+        ],
+        "rows": [
+          {
+            "label": "Interval",
+            "answer": "[-4, 5]",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-4",
+        "prompt": "Solve both equations.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 63 = 0",
+          "(b)\\quad \\frac{10}{2 x - 16} + \\frac{1}{x - 8} = 6"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "x = -9,\\ 7",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "x = 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-1",
+        "prompt": "Simplify. In (a), x and y are nonzero; give positive exponents.",
+        "math": [
+          "(a)\\quad \\frac{6x^{-8}y^3}{3xy^{-1}}",
+          "(b)\\quad \\sqrt{243}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2 y^{4}}{x^{9}}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "9 \\sqrt{3}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-2",
+        "prompt": "(a) Expand and simplify. (b) Factor completely.",
+        "math": [
+          "(a)\\quad (8 x - 3)(x + 8)",
+          "(b)\\quad 2 x^{2} - 11 x - 63"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "8 x^{2} + 61 x - 24",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 9) (2 x + 7)",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U1-3",
+        "prompt": "Simplify and state all values excluded by the original expression.",
+        "math": [
+          "\\frac{x^{2} - 64}{x^{2} + 2 x - 80}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x + 8}{x + 10}",
+            "points": 14,
+            "plain": false
+          },
+          {
+            "label": "Excluded values",
+            "answer": "\\{-10, 8\\}",
+            "points": 6,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

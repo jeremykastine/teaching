@@ -1,7 +1,7 @@
 """Combined algebra tests and vertically matched compact instructor keys."""
 from pathlib import Path
 from io import BytesIO
-import json, math, hashlib
+import json, math, hashlib, re, os, tempfile
 from xml.sax.saxutils import escape
 import matplotlib.pyplot as plt
 INK="#111111"
@@ -17,7 +17,7 @@ import build_practice_tests as old
 ROOT=Path(__file__).resolve().parents[1]
 old.INK='#111111'
 W,H=612,792
-M=36; INNER=540; SPLIT=396; TOP=656; BOTTOM=48
+M=36; INNER=540; SPLIT=396; TOP=660; BOTTOM=48
 BODY=ParagraphStyle('combined',fontName='DV',fontSize=10.2,leading=13.3,textColor=HexColor('#111111'))
 SMALL=ParagraphStyle('combined-small',parent=BODY,fontSize=8.5,leading=11)
 KEY=ParagraphStyle('combined-key',parent=BODY,fontSize=9.3,leading=12)
@@ -37,26 +37,37 @@ def math_item(s,width,size=13):
     s=s.replace(r'\log',r'\mathrm{log}')
     cache=ROOT/'tmp/algebra-render-cache';cache.mkdir(parents=True,exist_ok=True)
     path=cache/(hashlib.sha256((str(size)+'|'+s).encode()).hexdigest()+'.pdf')
-    if not path.is_file():path.write_bytes(old.mathpdf(s,size))
+    if not path.is_file():
+        data=old.mathpdf(s,size)
+        with tempfile.NamedTemporaryFile(dir=cache,delete=False) as f:f.write(data);temp=f.name
+        os.replace(temp,path)
     return vector(path.read_bytes(),width)
 
 def math_answer(s,width):
+    s=s.replace(r'\,',' ').replace(r'\;',' ').replace(r'\ ', ' ')
     item=math_item(s,width,11.5)
     if item[4]>=.80:return item
+    # Wrap at top-level separators, retaining algebraic signs with their terms.
     parts=[];start=0;depth=0;parens=0
     for i,char in enumerate(s):
         if char=='{':depth+=1
         elif char=='}':depth-=1
         elif char=='(':parens+=1
         elif char==')':parens-=1
-        elif char in ',;' and depth==0 and parens==0:
-            parts.append(s[start:i].strip());start=i+1
+        elif char in ',;+-' and depth==0 and parens==0 and i>start:
+            if char in '+-' and (not s[start:i].strip() or s[start:i].strip().endswith('=')):continue
+            parts.append(s[start:i+1 if char in ',;' else i].strip());start=i if char in '+-' else i+1
     parts.append(s[start:].strip())
     assert len(parts)>1,('answer needs line break',s,width)
-    items=[]
+    lines=[];line=''
     for part in parts:
         while part.startswith(r'\ '):part=part[2:].lstrip()
-        items.append(math_item(part,width,11.5))
+        candidate=line+(' ' if line else '')+part
+        if line and math_item(candidate,width,11.5)[4]<.80:
+            lines.append(line);line=part
+        else:line=candidate
+    if line:lines.append(line)
+    items=[math_item(part,width,11.5) for part in lines]
     assert all(i[4]>=.8 for i in items),('answer still too wide',s,width)
     return ('stack',items,max(i[2] for i in items),sum(i[3] for i in items)+3*(len(items)-1))
 
@@ -154,12 +165,30 @@ def graphdata(g,answer=False,qid=None):
 
 def adapted_q(q):
     q=json.loads(json.dumps(q))
+    for r in q['rows']:r['_original_label']=r['label']
+    q['prompt']=re.sub(r'(?i);? show substitution\.?','',q['prompt'])
+    q['prompt']=q['prompt'].replace('Solve and check in the original equation.','Solve.').replace('Solve and check.','Solve.').replace('Solve by factoring.','Solve.').replace('Solve by taking square roots.','Solve.').replace('Solve using the quadratic formula.','Solve.').replace('Solve by substitution or elimination; check both equations.','Solve the system.').replace('Subtract; show distribution of the negative and combine like terms.','Subtract and simplify.')
     if q.get('table'):
         inputs=[row[0] for row in q['table'][1:]]
-        q['prompt']='Evaluate each side separately at x = '+', '.join(map(str,inputs))+'. Record the left value, right value, and whether they are equal. State what the tested values establish; do not solve the equation.'
-        for r in q['rows'][:-1]:r['label']+=': left / right / equal?'
-    for r in q['rows']:
-        r['label']=r['label'].replace('Graph (booklet)','Graph')
+        q['prompt']='Evaluate each side at x = '+', '.join(map(str,inputs))+'. In each response row record the left value, right value, and equality decision. Then state what the tested values establish; do not solve the equation.'
+        for r in q['rows'][:-1]:r['label']='x = '+str(inputs[q['rows'].index(r)])
+        q['rows'][-1]['label']='Conclusion'
+    elif len(q['rows'])==1:
+        q['rows'][0]['label']=''
+    else:
+        labels=[r['label'].replace('Graph (booklet)','Graph') for r in q['rows']]
+        simple=all(re.fullmatch(r'\([a-z]\)',l) for l in labels)
+        if not simple:
+            # An explicit response map avoids ambiguous repeated part labels.
+            mapping=[]
+            for i,(r,label) in enumerate(zip(q['rows'],labels)):
+                tag='('+chr(97+i)+')'
+                desc=re.sub(r'^\([a-z]\)\s*','',label)
+                mapping.append(tag+' '+desc.lower())
+                r['label']=tag
+            # Remove old part letters in prose before providing the output map.
+            q['prompt']=re.sub(r'\([a-z]\)\s*','',q['prompt'])
+            q['prompt']+=' Record: '+ '; '.join(mapping)+'.'
     return q
 
 def question_layout(q,num,keywidth):
@@ -173,7 +202,7 @@ def question_layout(q,num,keywidth):
     for r in q['rows']:
         # Each row reserves label, answer, and bottom-aligned points.
         lab=pitem((str(num)+'. ' if len(rows)==0 else '')+r['label'],min(164,keywidth-18),SMALL)
-        isgraph=r['label']=='Graph' and q.get('graph',{}).get('kind')=='blank'
+        isgraph=q.get('graph',{}).get('kind')=='blank' and 'Graph' in r.get('_original_label','')
         if isgraph:
             student=vector(graphdata(q['graph']),156,156)
             answer=vector(graphdata(q['graph'],True,q['id']),156,156)
@@ -182,7 +211,7 @@ def question_layout(q,num,keywidth):
             answer=pitem(r['answer'],keywidth-46,KEY) if r['plain'] else math_answer(r['answer'],keywidth-46)
             ah=answer[2] if answer[0]=='paragraph' else answer[3]
             assert answer[0]!='vector' or answer[4]>=.80,(q['id'],'answer too small',answer[4])
-            h=max(38 if len(q['rows'])>2 else 48,lab[2]+ah+15)
+            h=max(26 if len(q['rows'])>2 else 32,lab[2]+ah+15)
             student=None
         rows.append({'source':r,'label':lab,'answer':answer,'height':h,'graph':student})
     rh=sum(r['height'] for r in rows)
@@ -206,31 +235,32 @@ def layouts(a):
     # Key geometry is computed first; the same row positions drive the test.
     n=1
     for _ in range(6):
-        blocks=[question_layout(q,i+1,INNER/min(n,3)) for i,q in enumerate(qs)]
+        blocks=[question_layout(q,i+1,174) for i,q in enumerate(qs)]
         pages=paginate(blocks)
         if len(pages)==n:return pages
         n=len(pages)
     raise ValueError('layout failed to stabilize')
 
 def header(c,a,page,total,key=False):
-    title=('Instructor answer key: ' if key else '')+a['title']
-    p,h=para(title,INNER,TITLE);p.drawOn(c,M,762-h)
-    c.setFillColor(HexColor('#111111'));c.setFont('DV',8)
-    c.drawString(M,718,((f"Practice {a['practice']} | " if a.get('practice') else '')+f"Version {a['version']}")+(' | 30 minutes' if a.get('minutes') else ''))
-    if key:
-        c.drawString(M,700,'Each column matches the vertical answer positions on its corresponding test page.')
-        c.drawString(M,683,'Grade the requested final answers in the response column.')
-    else:
-        c.setFont('DV',10);c.drawString(M,700,'Name: _________________________________________   Date: __________________')
-        text='Write exact final answers in the right column. Students may use a basic, non-scientific calculator only.'
-        p,h=para(text,INNER,SMALL);p.drawOn(c,M,687-h)
-    c.setFont('DVB',8.8)
-    if not key:
-        c.drawString(M+8,TOP+5,'QUESTIONS');c.drawString(SPLIT+9,TOP+5,'ANSWERS')
-    c.setFont('DV',7.5);c.setFillColor(HexColor('#444444'))
-    c.drawString(M,28,a['course']+' | '+a['version'])
-    c.drawRightString(W-M,28,'Instructor key' if key else f'Test page {page} of {total}')
     c.setFillColor(HexColor('#111111'))
+    if key:
+        c.setFont('DVB',30)
+        c.drawCentredString(W/2,738,str(a['version']))
+        return
+    c.setFont('DVB',11); c.drawString(M,755,a['course'])
+    title=a['title'].removeprefix(a['course']).strip()
+    p,h=para(title,416,TITLE);p.drawOn(c,M,742-h)
+    c.setFont('DVB',11);c.drawRightString(W-M,755,str(a['version']))
+    c.setFont('DV',10)
+    c.drawString(M,702,'Name: ___________________________________   Date: __________________')
+    text='Students may use a basic, non-scientific calculator only. No notes or other technology.'
+    p,h=para(text,INNER,SMALL);p.drawOn(c,M,696-h)
+    c.setFont('DV',8.5);c.drawString(M,665+9,'Circle one response per question in the right column.' if a['course']=='MSC 201' else 'Write final answers in the space provided in the right column.')
+    c.setFont('DVB',8.8)
+    c.drawString(M+8,TOP+2,'');c.drawString(SPLIT+9,TOP+2,'')
+    if page<total:
+        c.setFont('DV',8)
+        c.drawCentredString(W/2,30,'Test continues on the other side of the sheet.' if page%2 else 'Test continues on the next sheet.')
 
 def rule(c,x1,x2,y,dashed=False):
     c.saveState();c.setStrokeColor(HexColor('#b0b0b0' if dashed else '#333333'))
@@ -273,15 +303,15 @@ def packet(a):
     for offset in range(0,n,3):
         subset=pages[offset:offset+3]
         header(c,a,1,n,True)
-        columns=len(subset);key_columns.append(columns);cw=INNER/columns
+        columns=len(subset);key_columns.append(columns);cw=174
         for pi,blocks in enumerate(subset):
-            x=M+pi*cw;y=TOP
+            x=M+pi*(cw+6);y=TOP
             c.setFont('DVB',8.8);c.drawString(x+9,TOP+5,f'TEST PAGE {offset+pi+1}')
             rule(c,x,x+cw,y)
             for b in blocks:
                 draw_rows(c,overlays,b,x,cw,y,True)
                 y-=b['height'];rule(c,x,x+cw,y)
-            if pi:c.setLineWidth(.65);c.line(x,TOP+18,x,BOTTOM)
+            if pi:c.setLineWidth(.65);c.line(x,TOP,x,y)
         c.showPage()
     c.save()
     reader=PdfReader(BytesIO(buf.getvalue()))

@@ -1,0 +1,3162 @@
+[
+  {
+    "version": "89842",
+    "seed": 309303544,
+    "constructor_variant": 0,
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 2} + \\frac{3}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 2} - \\frac{1}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 11}{(x - 5) (x - 2)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 12 x}{9 x^{2} + 9 x - 54}\\times\\frac{x + 3}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 3 x - 2}{3 x^{2} + 9 x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 15}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + x - 12}\\div\\frac{x + 3}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "40232",
+    "seed": 3109865396,
+    "constructor_variant": 1,
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + x - 12}\\div\\frac{x + 3}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 18 x}{9 x^{2} + 9 x - 108}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 2} + \\frac{1}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 9}{(x - 5) (x - 2)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 5 x - 3}{3 x^{2} + 9 x - 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 18}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 2} - \\frac{3}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 8}{(x - 5) (x - 2)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "62938",
+    "seed": 1203441249,
+    "constructor_variant": 2,
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + x - 12}\\div\\frac{x + 3}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 24 x}{9 x^{2} + 9 x - 180}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 2} + \\frac{3}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 5}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 2} - \\frac{1}{x^{2} - 7 x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 11}{(x - 5) (x - 2)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 7 x - 4}{3 x^{2} + 9 x - 84}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 21}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "82862",
+    "seed": 2440285207,
+    "constructor_variant": 3,
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 9 x - 5}{3 x^{2} - 6 x - 45}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 3} - \\frac{3}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 9}{(x - 6) (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 30 x}{9 x^{2} + 9 x - 270}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + x - 20}\\div\\frac{x + 4}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 3} + \\frac{1}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 11}{(x - 6) (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "12443",
+    "seed": 1793467848,
+    "constructor_variant": 4,
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 36 x}{9 x^{2} - 27 x - 162}\\times\\frac{x + 3}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + x - 20}\\div\\frac{x + 4}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 3} + \\frac{3}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 6}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 11 x - 6}{3 x^{2} - 6 x - 72}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 3} - \\frac{1}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 13}{(x - 6) (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "16831",
+    "seed": 3686055944,
+    "constructor_variant": 5,
+    "start": 20,
+    "test_pages": 1,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + x - 20}\\div\\frac{x + 4}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 3} - \\frac{3}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 9}{(x - 6) (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 3} + \\frac{1}{x^{2} - 9 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 11}{(x - 6) (x - 3)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 12 x}{9 x^{2} + 18 x - 72}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 3 x - 2}{3 x^{2} + 9 x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 15}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "28902",
+    "seed": 3165421400,
+    "constructor_variant": 6,
+    "start": 24,
+    "test_pages": 1,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 5 x - 3}{3 x^{2} + 9 x - 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 18}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 4} - \\frac{1}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 15}{(x - 7) (x - 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 18 x}{9 x^{2} + 18 x - 135}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + x - 30}\\div\\frac{x + 5}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 4} + \\frac{3}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 7}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "61392",
+    "seed": 4077846286,
+    "constructor_variant": 7,
+    "start": 28,
+    "test_pages": 1,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 604.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 604.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 604.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 604.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 494.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 494.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 494.1000000000001,
+        "bottom": 439.80000000000007,
+        "rows": [
+          {
+            "top": 494.1000000000001,
+            "bottom": 439.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 439.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 439.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 7 x - 4}{3 x^{2} + 9 x - 84}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 21}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + x - 30}\\div\\frac{x + 5}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 4} + \\frac{1}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 13}{(x - 7) (x - 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 4} - \\frac{3}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 10}{(x - 7) (x - 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 24 x}{9 x^{2} + 18 x - 216}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "39372",
+    "seed": 2302082114,
+    "constructor_variant": 8,
+    "start": 32,
+    "test_pages": 1,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 4} + \\frac{3}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 7}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 9 x - 5}{3 x^{2} - 6 x - 45}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 30 x}{9 x^{2} - 18 x - 135}\\times\\frac{x + 3}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + x - 30}\\div\\frac{x + 5}{x + 6}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 4} - \\frac{1}{x^{2} - 11 x + 28}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 15}{(x - 7) (x - 4)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "19832",
+    "seed": 1589615515,
+    "constructor_variant": 9,
+    "start": 36,
+    "test_pages": 1,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 5} + \\frac{1}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 15}{(x - 8) (x - 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + x - 42}\\div\\frac{x + 6}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 11 x - 6}{3 x^{2} - 6 x - 72}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 36 x}{9 x^{2} - 18 x - 216}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 5} - \\frac{3}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 11}{(x - 8) (x - 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "86399",
+    "seed": 3271226511,
+    "constructor_variant": 10,
+    "start": 40,
+    "test_pages": 1,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 3 x - 2}{3 x^{2} + 9 x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 15}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 5} + \\frac{3}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 8}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + x - 42}\\div\\frac{x + 6}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 12 x}{9 x^{2} + 27 x - 90}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 5} - \\frac{1}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 17}{(x - 8) (x - 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "78340",
+    "seed": 2260700524,
+    "constructor_variant": 11,
+    "start": 44,
+    "test_pages": 1,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 5} + \\frac{1}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 15}{(x - 8) (x - 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 5} - \\frac{3}{x^{2} - 13 x + 40}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 11}{(x - 8) (x - 5)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 18 x}{9 x^{2} + 27 x - 162}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + x - 42}\\div\\frac{x + 6}{x + 7}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 5 x - 3}{3 x^{2} + 9 x - 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 18}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "97046",
+    "seed": 2640726704,
+    "constructor_variant": 12,
+    "start": 48,
+    "test_pages": 1,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 494.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 494.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 494.1000000000001,
+        "bottom": 439.80000000000007,
+        "rows": [
+          {
+            "top": 494.1000000000001,
+            "bottom": 439.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 439.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 439.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + x - 56}\\div\\frac{x + 7}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 7 x - 4}{3 x^{2} + 9 x - 84}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 21}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 6} - \\frac{1}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 19}{(x - 9) (x - 6)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 6} + \\frac{3}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 24 x}{9 x^{2} - 9 x - 108}\\times\\frac{x + 3}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "57287",
+    "seed": 729035115,
+    "constructor_variant": 13,
+    "start": 52,
+    "test_pages": 1,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 30 x}{9 x^{2} - 9 x - 180}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + x - 56}\\div\\frac{x + 7}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 6} - \\frac{3}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 12}{(x - 9) (x - 6)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 6} + \\frac{1}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 17}{(x - 9) (x - 6)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 9 x - 5}{3 x^{2} - 6 x - 45}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "62899",
+    "seed": 4162490171,
+    "constructor_variant": 14,
+    "start": 56,
+    "test_pages": 1,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 11 x - 6}{3 x^{2} - 6 x - 72}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 6} - \\frac{1}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 19}{(x - 9) (x - 6)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 49}{x^{2} + x - 56}\\div\\frac{x + 7}{x + 8}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 6} + \\frac{3}{x^{2} - 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 36 x}{9 x^{2} - 9 x - 270}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "60431",
+    "seed": 327130397,
+    "constructor_variant": 15,
+    "start": 60,
+    "test_pages": 1,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 438.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 438.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 438.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 438.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 7} + \\frac{1}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 19}{(x - 10) (x - 7)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 3 x - 2}{3 x^{2} + 9 x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 15}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 64}{x^{2} + x - 72}\\div\\frac{x + 8}{x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 7} - \\frac{3}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 13}{(x - 10) (x - 7)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 12 x}{9 x^{2} + 36 x - 108}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "14909",
+    "seed": 1982138072,
+    "constructor_variant": 16,
+    "start": 64,
+    "test_pages": 1,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 18 x}{9 x^{2} - 81}\\times\\frac{x + 3}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 5 x - 3}{3 x^{2} + 9 x - 54}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 18}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 7} + \\frac{3}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 10}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 64}{x^{2} + x - 72}\\div\\frac{x + 8}{x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 7} - \\frac{1}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 21}{(x - 10) (x - 7)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "60476",
+    "seed": 81997858,
+    "constructor_variant": 17,
+    "start": 68,
+    "test_pages": 1,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 551.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 551.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 551.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 551.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 439.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 439.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 439.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 439.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 7} + \\frac{1}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 19}{(x - 10) (x - 7)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 7} - \\frac{3}{x^{2} - 17 x + 70}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 13}{(x - 10) (x - 7)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 24 x}{9 x^{2} - 144}\\times\\frac{x + 4}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 7 x - 4}{3 x^{2} + 9 x - 84}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 21}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 64}{x^{2} + x - 72}\\div\\frac{x + 8}{x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "62702",
+    "seed": 876684057,
+    "constructor_variant": 18,
+    "start": 72,
+    "test_pages": 1,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{2}{x - 8} - \\frac{1}{x^{2} - 19 x + 88}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 23}{(x - 11) (x - 8)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 81}{x^{2} + x - 90}\\div\\frac{x + 9}{x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 30 x}{9 x^{2} - 225}\\times\\frac{x + 5}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 9 x - 5}{3 x^{2} - 6 x - 45}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 9}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x - 8} + \\frac{3}{x^{2} - 19 x + 88}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{1}{x - 11}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "48825",
+    "seed": 4187064693,
+    "constructor_variant": 19,
+    "start": 76,
+    "test_pages": 1,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 547.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 547.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 547.4000000000001,
+        "bottom": 493.1000000000001,
+        "rows": [
+          {
+            "top": 547.4000000000001,
+            "bottom": 493.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 493.1000000000001,
+        "bottom": 436.80000000000007,
+        "rows": [
+          {
+            "top": 493.1000000000001,
+            "bottom": 436.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 436.80000000000007,
+        "bottom": 382.50000000000006,
+        "rows": [
+          {
+            "top": 436.80000000000007,
+            "bottom": 382.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "R99-mul",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{6 x^{2} - 36 x}{9 x^{2} - 324}\\times\\frac{x + 6}{x}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-div",
+        "prompt": "Divide and simplify.",
+        "math": [
+          "\\frac{x^{2} - 81}{x^{2} + x - 90}\\div\\frac{x + 9}{x + 10}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "1",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-sub",
+        "prompt": "Subtract and simplify.",
+        "math": [
+          "\\frac{1}{x - 8} - \\frac{3}{x^{2} - 19 x + 88}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{x - 14}{(x - 11) (x - 8)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-simple",
+        "prompt": "Simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 11 x - 6}{3 x^{2} - 6 x - 72}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x + 1}{3 x + 12}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "R99-add",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x - 8} + \\frac{1}{x^{2} - 19 x + 88}"
+        ],
+        "rows": [
+          {
+            "label": "Expression",
+            "answer": "\\frac{2 x - 21}{(x - 11) (x - 8)}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  }
+]

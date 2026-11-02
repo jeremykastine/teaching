@@ -1,0 +1,6722 @@
+[
+  {
+    "version": "37808",
+    "seed": 1169287736,
+    "constructor_variant": 1,
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 453.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 453.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 453.80000000000007,
+        "bottom": 407.50000000000006,
+        "rows": [
+          {
+            "top": 453.80000000000007,
+            "bottom": 407.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 407.50000000000006,
+        "bottom": 360.20000000000005,
+        "rows": [
+          {
+            "top": 407.50000000000006,
+            "bottom": 360.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 360.20000000000005,
+        "bottom": 312.90000000000003,
+        "rows": [
+          {
+            "top": 360.20000000000005,
+            "bottom": 312.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 312.90000000000003,
+        "bottom": 266.6,
+        "rows": [
+          {
+            "top": 312.90000000000003,
+            "bottom": 266.6,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 266.6,
+        "bottom": 213.3,
+        "rows": [
+          {
+            "top": 266.6,
+            "bottom": 213.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x^{2} - 4 x} + \\frac{1}{x^{2} - 16}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{2 (x + 2)}{x (x - 4) (x + 4)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-1)^2 = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} = - 10 x - 24"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -6,\\ -4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 6 x - 27}\\times\\frac{x + 9}{x^{2} + 6 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 6}{x (x - 3)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (2 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "6 x^{2} = 4 x + 7"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{3} - \\frac{\\sqrt{46}}{6},\\ \\frac{1}{3} + \\frac{\\sqrt{46}}{6}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "20 x^{2} - 21 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(4 x - 1) (5 x - 4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  -1);\\ ( 4, \\  0)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{2} - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{20}{2 x} + \\frac{2}{x} = 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "63878",
+    "seed": 2112616107,
+    "constructor_variant": 2,
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 552.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 552.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 552.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 552.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 268.1000000000001,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 466.1000000000001,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 466.1000000000001,
+            "bottom": 268.1000000000001,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 268.1000000000001,
+        "bottom": 221.80000000000007,
+        "rows": [
+          {
+            "top": 268.1000000000001,
+            "bottom": 221.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 221.80000000000007,
+        "bottom": 174.50000000000006,
+        "rows": [
+          {
+            "top": 221.80000000000007,
+            "bottom": 174.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 174.50000000000006,
+        "bottom": 127.20000000000006,
+        "rows": [
+          {
+            "top": 174.50000000000006,
+            "bottom": 127.20000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 127.20000000000006,
+        "bottom": 79.90000000000006,
+        "rows": [
+          {
+            "top": 127.20000000000006,
+            "bottom": 79.90000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 603.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{16}{2 x - 10} + \\frac{2}{x - 5} = 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} + 5 x} + \\frac{1}{x^{2} + 9 x + 20}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 x + 16}{x (x + 4) (x + 5)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-1)^2 = 27"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  -1);\\ ( 4, \\  0)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{x}{2} - 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} + 13 x - 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x + 5) (3 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "6 x^{2} = 4 x + 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{3} - \\frac{\\sqrt{34}}{6},\\ \\frac{1}{3} + \\frac{\\sqrt{34}}{6}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 11 x = -30"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -5,\\ -6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 3 x - 54}\\times\\frac{x - 6}{x^{2} + 15 x + 54}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 6}{(x + 9)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (2 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "49131",
+    "seed": 3430731283,
+    "constructor_variant": 3,
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 402.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 402.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 402.50000000000006,
+        "bottom": 355.20000000000005,
+        "rows": [
+          {
+            "top": 402.50000000000006,
+            "bottom": 355.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 355.20000000000005,
+        "bottom": 307.90000000000003,
+        "rows": [
+          {
+            "top": 355.20000000000005,
+            "bottom": 307.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 307.90000000000003,
+        "bottom": 71.90000000000003,
+        "rows": [
+          {
+            "top": 307.90000000000003,
+            "bottom": 269.90000000000003,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 269.90000000000003,
+            "bottom": 71.90000000000003,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 25} + \\frac{5}{x^{2} + x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{9 x + 49}{(x - 5) (x + 5) (x + 6)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} - 3 x - 40}\\times\\frac{x - 8}{x^{2} - 5 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (3 x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "25 x^{2} - 30 x + 8"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(5 x - 4) (5 x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{20}{4 x - 20} - \\frac{2}{x - 5} = 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 3 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{13}}{4},\\ - \\frac{\\sqrt{13}}{4} - \\frac{1}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 5 x = 14"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2,\\ -7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  1);\\ ( 4, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-2)^2 = 48"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "39708",
+    "seed": 2495480937,
+    "constructor_variant": 4,
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 603.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 603.7,
+        "bottom": 555.4000000000001,
+        "rows": [
+          {
+            "top": 603.7,
+            "bottom": 555.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 555.4000000000001,
+        "bottom": 509.1000000000001,
+        "rows": [
+          {
+            "top": 555.4000000000001,
+            "bottom": 509.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 509.1000000000001,
+        "bottom": 461.80000000000007,
+        "rows": [
+          {
+            "top": 509.1000000000001,
+            "bottom": 461.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 461.80000000000007,
+        "bottom": 415.50000000000006,
+        "rows": [
+          {
+            "top": 461.80000000000007,
+            "bottom": 415.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 415.50000000000006,
+        "bottom": 362.20000000000005,
+        "rows": [
+          {
+            "top": 415.50000000000006,
+            "bottom": 362.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 362.20000000000005,
+        "bottom": 126.20000000000005,
+        "rows": [
+          {
+            "top": 362.20000000000005,
+            "bottom": 324.20000000000005,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 324.20000000000005,
+            "bottom": 126.20000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 126.20000000000005,
+        "bottom": 78.90000000000005,
+        "rows": [
+          {
+            "top": 126.20000000000005,
+            "bottom": 78.90000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 605.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{3 x^{2} - 27}{x^{2} - 11 x + 24}\\times\\frac{x - 8}{x^{2} + 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{3}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-2)^2 = 48"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (3 x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "5 x^{2} = 5 x + 7"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2} - \\frac{\\sqrt{165}}{10},\\ \\frac{1}{2} + \\frac{\\sqrt{165}}{10}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  1);\\ ( 4, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{30}{3 x - 12} + \\frac{3}{x - 4} = \\frac{13}{5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 9",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 7 x = -10"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 5 x} + \\frac{1}{x^{2} - 10 x + 25}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 (x - 4)}{x (x - 5)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} + x - 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x + 1) (3 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      }
+    ]
+  },
+  {
+    "version": "65600",
+    "seed": 2216498331,
+    "constructor_variant": 5,
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 367.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 367.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 367.7,
+        "bottom": 313.4,
+        "rows": [
+          {
+            "top": 367.7,
+            "bottom": 313.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 313.4,
+        "bottom": 267.09999999999997,
+        "rows": [
+          {
+            "top": 313.4,
+            "bottom": 267.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 267.09999999999997,
+        "bottom": 219.79999999999995,
+        "rows": [
+          {
+            "top": 267.09999999999997,
+            "bottom": 219.79999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 219.79999999999995,
+        "bottom": 173.49999999999994,
+        "rows": [
+          {
+            "top": 219.79999999999995,
+            "bottom": 173.49999999999994,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 173.49999999999994,
+        "bottom": 120.19999999999995,
+        "rows": [
+          {
+            "top": 173.49999999999994,
+            "bottom": 120.19999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 120.19999999999995,
+        "bottom": 71.89999999999995,
+        "rows": [
+          {
+            "top": 120.19999999999995,
+            "bottom": 71.89999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} + 5 x - 14}\\times\\frac{x + 7}{x^{2} + 4 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 4}{x (x - 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 5 x} + \\frac{3}{x^{2} - 25}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 (x + 2)}{x (x - 5) (x + 5)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 4 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{1}{4} + \\frac{\\sqrt{17}}{4},\\ - \\frac{\\sqrt{17}}{4} - \\frac{1}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} = - 9 x - 14"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2,\\ -7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  1);\\ ( 4, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = x - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{30}{3 x - 9} + \\frac{2}{x - 3} = 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-2)^2 = 48"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 6",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (3 x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "20 x^{2} - 9 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(4 x - 1) (5 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      }
+    ]
+  },
+  {
+    "version": "58681",
+    "seed": 1429622378,
+    "constructor_variant": 6,
+    "start": 20,
+    "test_pages": 2,
+    "key_start": 22,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 564.4000000000001,
+        "bottom": 517.1000000000001,
+        "rows": [
+          {
+            "top": 564.4000000000001,
+            "bottom": 517.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 517.1000000000001,
+        "bottom": 463.8000000000001,
+        "rows": [
+          {
+            "top": 517.1000000000001,
+            "bottom": 463.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 463.8000000000001,
+        "bottom": 407.5000000000001,
+        "rows": [
+          {
+            "top": 463.8000000000001,
+            "bottom": 407.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 407.5000000000001,
+        "bottom": 360.2000000000001,
+        "rows": [
+          {
+            "top": 407.5000000000001,
+            "bottom": 360.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 360.2000000000001,
+        "bottom": 313.9000000000001,
+        "rows": [
+          {
+            "top": 360.2000000000001,
+            "bottom": 313.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 313.9000000000001,
+        "bottom": 259.6000000000001,
+        "rows": [
+          {
+            "top": 313.9000000000001,
+            "bottom": 259.6000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 377.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 377.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 5 x = -6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -3,\\ -2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-3)^2 = 75"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} - 5 x - 6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x - 3) (3 x + 2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{21}{3 x + 6} + \\frac{2}{x + 2} = 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + 4 x - 45}\\times\\frac{x - 5}{x^{2} + 14 x + 45}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 5}{(x + 9)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} = 1 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{33}}{4},\\ - \\frac{\\sqrt{33}}{4} - \\frac{5}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  3);\\ ( 4, \\  6)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{5}{x^{2} + 2 x} + \\frac{2}{x^{2} + 3 x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{7 x + 5}{x (x + 1) (x + 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (4 x - 12)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-20",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "22094",
+    "seed": 3726397441,
+    "constructor_variant": 7,
+    "start": 24,
+    "test_pages": 2,
+    "key_start": 26,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 502.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 502.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 502.1000000000001,
+        "bottom": 266.1000000000001,
+        "rows": [
+          {
+            "top": 502.1000000000001,
+            "bottom": 464.1000000000001,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 464.1000000000001,
+            "bottom": 266.1000000000001,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 266.1000000000001,
+        "bottom": 219.80000000000007,
+        "rows": [
+          {
+            "top": 266.1000000000001,
+            "bottom": 219.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 219.80000000000007,
+        "bottom": 172.50000000000006,
+        "rows": [
+          {
+            "top": 219.80000000000007,
+            "bottom": 172.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 172.50000000000006,
+        "bottom": 119.20000000000006,
+        "rows": [
+          {
+            "top": 172.50000000000006,
+            "bottom": 119.20000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 119.20000000000006,
+        "bottom": 71.90000000000006,
+        "rows": [
+          {
+            "top": 119.20000000000006,
+            "bottom": 71.90000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 9} + \\frac{1}{x^{2} + x - 12}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 x + 19}{(x - 3) (x + 3) (x + 4)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} - 2 x - 48}\\times\\frac{x - 8}{x^{2} - 6 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "16 x^{2} - 32 x + 15"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(4 x - 5) (4 x - 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (4 x - 12)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-20",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} = 2 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{3} - \\frac{\\sqrt{13}}{3},\\ \\frac{1}{3} + \\frac{\\sqrt{13}}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{15}{3 x} - \\frac{3}{x} = \\frac{1}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 3 x = 28"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7,\\ -4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  3);\\ ( 4, \\  6)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-3)^2 = 75"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "71002",
+    "seed": 2150843093,
+    "constructor_variant": 8,
+    "start": 28,
+    "test_pages": 2,
+    "key_start": 30,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 564.4000000000001,
+        "bottom": 508.1000000000001,
+        "rows": [
+          {
+            "top": 564.4000000000001,
+            "bottom": 508.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 508.1000000000001,
+        "bottom": 460.80000000000007,
+        "rows": [
+          {
+            "top": 508.1000000000001,
+            "bottom": 460.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 460.80000000000007,
+        "bottom": 407.50000000000006,
+        "rows": [
+          {
+            "top": 460.80000000000007,
+            "bottom": 407.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 407.50000000000006,
+        "bottom": 361.20000000000005,
+        "rows": [
+          {
+            "top": 407.50000000000006,
+            "bottom": 361.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 361.20000000000005,
+        "bottom": 306.90000000000003,
+        "rows": [
+          {
+            "top": 361.20000000000005,
+            "bottom": 306.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 306.90000000000003,
+        "bottom": 259.6,
+        "rows": [
+          {
+            "top": 306.90000000000003,
+            "bottom": 259.6,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 259.6,
+        "bottom": 213.3,
+        "rows": [
+          {
+            "top": 259.6,
+            "bottom": 213.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-3)^2 = 75"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 8",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 6 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{7}}{2},\\ - \\frac{\\sqrt{7}}{2} - \\frac{1}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{5 x^{2} - 80}{x^{2} - 12 x + 32}\\times\\frac{x - 8}{x^{2} + 4 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 14 x = -40"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4,\\ 10",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{28}{4 x} + \\frac{1}{x} = 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (4 x - 12)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-20",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x^{2} - 3 x} + \\frac{3}{x^{2} - 6 x + 9}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{4 x - 3}{x (x - 3)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "25 x^{2} + 10 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(5 x - 1) (5 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  3);\\ ( 4, \\  6)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{3 x}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "83203",
+    "seed": 3725376948,
+    "constructor_variant": 9,
+    "start": 32,
+    "test_pages": 2,
+    "key_start": 34,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 220.80000000000007,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 418.80000000000007,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 418.80000000000007,
+            "bottom": 220.80000000000007,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 220.80000000000007,
+        "bottom": 166.50000000000006,
+        "rows": [
+          {
+            "top": 220.80000000000007,
+            "bottom": 166.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 166.50000000000006,
+        "bottom": 119.20000000000006,
+        "rows": [
+          {
+            "top": 166.50000000000006,
+            "bottom": 119.20000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 119.20000000000006,
+        "bottom": 70.90000000000006,
+        "rows": [
+          {
+            "top": 119.20000000000006,
+            "bottom": 70.90000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 567.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 567.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} = - 8 x - 7"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -1,\\ -7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 6 x - 16}\\times\\frac{x + 8}{x^{2} + 2 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} = 3 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2} - \\frac{\\sqrt{57}}{6},\\ \\frac{1}{2} + \\frac{\\sqrt{57}}{6}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 8} + \\frac{1}{x - 4} = \\frac{7}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 4 x} + \\frac{1}{x^{2} - 16}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 x + 16}{x (x - 4) (x + 4)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "25 x^{2} - 20 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(5 x - 3) (5 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-4)^2 = 108"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 10",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  5);\\ ( 4, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (5 x - 20)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-30",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "11581",
+    "seed": 3114672105,
+    "constructor_variant": 10,
+    "start": 36,
+    "test_pages": 2,
+    "key_start": 38,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 512.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 512.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 512.1000000000001,
+        "bottom": 276.10000000000014,
+        "rows": [
+          {
+            "top": 512.1000000000001,
+            "bottom": 474.10000000000014,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 474.10000000000014,
+            "bottom": 276.10000000000014,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 276.10000000000014,
+        "bottom": 228.80000000000013,
+        "rows": [
+          {
+            "top": 276.10000000000014,
+            "bottom": 228.80000000000013,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 228.80000000000013,
+        "bottom": 182.5000000000001,
+        "rows": [
+          {
+            "top": 228.80000000000013,
+            "bottom": 182.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 182.5000000000001,
+        "bottom": 128.2000000000001,
+        "rows": [
+          {
+            "top": 182.5000000000001,
+            "bottom": 128.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 128.2000000000001,
+        "bottom": 72.9000000000001,
+        "rows": [
+          {
+            "top": 128.2000000000001,
+            "bottom": 72.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{2 x} + \\frac{1}{x} = \\frac{3}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  5);\\ ( 4, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-4)^2 = 108"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 10",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} = 1 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{5}{6} + \\frac{\\sqrt{37}}{6},\\ - \\frac{\\sqrt{37}}{6} - \\frac{5}{6}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (5 x - 20)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-30",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{5}{x^{2} + 4 x} + \\frac{3}{x^{2} + 7 x + 12}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{8 x + 15}{x (x + 3) (x + 4)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 4}{x^{2} + 7 x - 18}\\times\\frac{x - 2}{x^{2} + 11 x + 18}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 2}{(x + 9)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} - 7 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x - 3) (3 x + 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 10 x = -16"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2,\\ -8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "73244",
+    "seed": 662161342,
+    "constructor_variant": 11,
+    "start": 40,
+    "test_pages": 2,
+    "key_start": 42,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 510.1000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 510.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 510.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 510.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 219.80000000000007,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 417.80000000000007,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 417.80000000000007,
+            "bottom": 219.80000000000007,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 219.80000000000007,
+        "bottom": 173.50000000000006,
+        "rows": [
+          {
+            "top": 219.80000000000007,
+            "bottom": 173.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 173.50000000000006,
+        "bottom": 120.20000000000006,
+        "rows": [
+          {
+            "top": 173.50000000000006,
+            "bottom": 120.20000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 120.20000000000006,
+        "bottom": 71.90000000000006,
+        "rows": [
+          {
+            "top": 120.20000000000006,
+            "bottom": 71.90000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (5 x - 20)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-30",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "5 x^{2} = 5 - 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{1}{5} + \\frac{\\sqrt{26}}{5},\\ - \\frac{\\sqrt{26}}{5} - \\frac{1}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 16}{x^{2} - 4 x - 32}\\times\\frac{x - 8}{x^{2} - 4 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{3}{x^{2} - 4} + \\frac{4}{x^{2} + x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{7 x + 17}{(x - 2) (x + 2) (x + 3)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  5);\\ ( 4, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 2 x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{4 x + 8} - \\frac{2}{x + 2} = \\frac{1}{4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-4)^2 = 108"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 10",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - x = 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4,\\ -3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "6 x^{2} - 5 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x - 1) (3 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      }
+    ]
+  },
+  {
+    "version": "76706",
+    "seed": 4032558500,
+    "constructor_variant": 12,
+    "start": 44,
+    "test_pages": 2,
+    "key_start": 46,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 376.70000000000005,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 574.7,
+            "bottom": 376.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 376.70000000000005,
+        "bottom": 323.40000000000003,
+        "rows": [
+          {
+            "top": 376.70000000000005,
+            "bottom": 323.40000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 323.40000000000003,
+        "bottom": 275.1,
+        "rows": [
+          {
+            "top": 323.40000000000003,
+            "bottom": 275.1,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 275.1,
+        "bottom": 220.8,
+        "rows": [
+          {
+            "top": 275.1,
+            "bottom": 220.8,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 220.8,
+        "bottom": 174.5,
+        "rows": [
+          {
+            "top": 220.8,
+            "bottom": 174.5,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 174.5,
+        "bottom": 118.2,
+        "rows": [
+          {
+            "top": 174.5,
+            "bottom": 118.2,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 118.2,
+        "bottom": 71.9,
+        "rows": [
+          {
+            "top": 118.2,
+            "bottom": 71.9,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "8 x^{2} - 6 x - 9"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x - 3) (4 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{24}{3 x - 6} + \\frac{3}{x - 2} = \\frac{11}{3}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 5",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-5)^2 = 147"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 2 x} + \\frac{5}{x^{2} - 4 x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{7 x - 4}{x (x - 2)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (6 x - 30)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-42",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{2 x^{2} - 32}{x^{2} - 13 x + 36}\\times\\frac{x - 9}{x^{2} + 4 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{2}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  7);\\ ( 4, \\  12)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{5 x}{2} + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "7 x^{2} = 1 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{2}{7} + \\frac{\\sqrt{11}}{7},\\ - \\frac{\\sqrt{11}}{7} - \\frac{2}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 9 x = -14"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2,\\ 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "55172",
+    "seed": 2155789069,
+    "constructor_variant": 13,
+    "start": 48,
+    "test_pages": 2,
+    "key_start": 50,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 376.70000000000005,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 574.7,
+            "bottom": 376.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 376.70000000000005,
+        "bottom": 330.40000000000003,
+        "rows": [
+          {
+            "top": 376.70000000000005,
+            "bottom": 330.40000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 330.40000000000003,
+        "bottom": 274.1,
+        "rows": [
+          {
+            "top": 330.40000000000003,
+            "bottom": 274.1,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 274.1,
+        "bottom": 219.8,
+        "rows": [
+          {
+            "top": 274.1,
+            "bottom": 219.8,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 219.8,
+        "bottom": 166.5,
+        "rows": [
+          {
+            "top": 219.8,
+            "bottom": 166.5,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 166.5,
+        "bottom": 120.2,
+        "rows": [
+          {
+            "top": 166.5,
+            "bottom": 120.2,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 120.2,
+        "bottom": 72.9,
+        "rows": [
+          {
+            "top": 120.2,
+            "bottom": 72.9,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 612.7,
+        "bottom": 564.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 564.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "12 x^{2} - 19 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 4) (4 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (6 x - 30)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-42",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 4 x - 45}\\times\\frac{x + 9}{x^{2} + 6 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 6}{x (x - 5)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 2 x} + \\frac{4}{x^{2} - 4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{8 (x + 1)}{x (x - 2) (x + 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{21}{3 x - 12} + \\frac{3}{x - 4} = 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 9",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  7);\\ ( 4, \\  12)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{5 x}{2} + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} = 5 - 5 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{5}{4} + \\frac{\\sqrt{65}}{4},\\ - \\frac{\\sqrt{65}}{4} - \\frac{5}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} = - 15 x - 56"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -7,\\ -8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-5)^2 = 147"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "77290",
+    "seed": 939176431,
+    "constructor_variant": 14,
+    "start": 52,
+    "test_pages": 2,
+    "key_start": 54,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 550.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 550.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 550.4000000000001,
+        "bottom": 502.1000000000001,
+        "rows": [
+          {
+            "top": 550.4000000000001,
+            "bottom": 502.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 502.1000000000001,
+        "bottom": 447.80000000000007,
+        "rows": [
+          {
+            "top": 502.1000000000001,
+            "bottom": 447.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 447.80000000000007,
+        "bottom": 400.50000000000006,
+        "rows": [
+          {
+            "top": 447.80000000000007,
+            "bottom": 400.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 400.50000000000006,
+        "bottom": 353.20000000000005,
+        "rows": [
+          {
+            "top": 400.50000000000006,
+            "bottom": 353.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 353.20000000000005,
+        "bottom": 306.90000000000003,
+        "rows": [
+          {
+            "top": 353.20000000000005,
+            "bottom": 306.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 306.90000000000003,
+        "bottom": 259.6,
+        "rows": [
+          {
+            "top": 306.90000000000003,
+            "bottom": 259.6,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 259.6,
+        "bottom": 213.3,
+        "rows": [
+          {
+            "top": 259.6,
+            "bottom": 213.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{20}{2 x + 2} + \\frac{2}{x + 1} = \\frac{12}{5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} + 2 x - 48}\\times\\frac{x - 6}{x^{2} + 14 x + 48}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 6}{(x + 8)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-5)^2 = 147"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 12",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} + 2 x} + \\frac{3}{x^{2} + 3 x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{5 x + 2}{x (x + 1) (x + 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 10 x = -21"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -7,\\ -3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "8 x^{2} - 10 x - 25"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(2 x - 5) (4 x + 5)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  7);\\ ( 4, \\  12)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{5 x}{2} + 2",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 5 x + 7"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{5}{8} - \\frac{\\sqrt{137}}{8},\\ \\frac{5}{8} + \\frac{\\sqrt{137}}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (6 x - 30)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-42",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "16460",
+    "seed": 827517343,
+    "constructor_variant": 15,
+    "start": 56,
+    "test_pages": 2,
+    "key_start": 58,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 375.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 375.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 375.7,
+        "bottom": 322.4,
+        "rows": [
+          {
+            "top": 375.7,
+            "bottom": 322.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 322.4,
+        "bottom": 275.09999999999997,
+        "rows": [
+          {
+            "top": 322.4,
+            "bottom": 275.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 275.09999999999997,
+        "bottom": 228.79999999999995,
+        "rows": [
+          {
+            "top": 275.09999999999997,
+            "bottom": 228.79999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 228.79999999999995,
+        "bottom": 174.49999999999994,
+        "rows": [
+          {
+            "top": 228.79999999999995,
+            "bottom": 174.49999999999994,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 174.49999999999994,
+        "bottom": 118.19999999999995,
+        "rows": [
+          {
+            "top": 174.49999999999994,
+            "bottom": 118.19999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 118.19999999999995,
+        "bottom": 71.89999999999995,
+        "rows": [
+          {
+            "top": 118.19999999999995,
+            "bottom": 71.89999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-6)^2 = 192"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 14",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{30}{3 x - 6} - \\frac{1}{x - 2} = \\frac{9}{4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - x = 30"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 6,\\ -5",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  9);\\ ( 4, \\  15)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{4}{x^{2} - 1} + \\frac{2}{x^{2} + x - 2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{2 (3 x + 5)}{(x - 1) (x + 1) (x + 2)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 36}{x^{2} - x - 42}\\times\\frac{x - 7}{x^{2} - 6 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (7 x - 42)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-56",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} - 23 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 4) (5 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "7 x^{2} = 5 x + 7"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{5}{14} - \\frac{\\sqrt{221}}{14},\\ \\frac{5}{14} + \\frac{\\sqrt{221}}{14}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "13118",
+    "seed": 673876146,
+    "constructor_variant": 16,
+    "start": 60,
+    "test_pages": 2,
+    "key_start": 62,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 567.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 567.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 567.4000000000001,
+        "bottom": 519.1000000000001,
+        "rows": [
+          {
+            "top": 567.4000000000001,
+            "bottom": 519.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 519.1000000000001,
+        "bottom": 465.8000000000001,
+        "rows": [
+          {
+            "top": 519.1000000000001,
+            "bottom": 465.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 465.8000000000001,
+        "bottom": 229.80000000000013,
+        "rows": [
+          {
+            "top": 465.8000000000001,
+            "bottom": 427.8000000000001,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 427.8000000000001,
+            "bottom": 229.80000000000013,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 229.80000000000013,
+        "bottom": 175.5000000000001,
+        "rows": [
+          {
+            "top": 229.80000000000013,
+            "bottom": 175.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 175.5000000000001,
+        "bottom": 128.2000000000001,
+        "rows": [
+          {
+            "top": 175.5000000000001,
+            "bottom": 128.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 128.2000000000001,
+        "bottom": 80.9000000000001,
+        "rows": [
+          {
+            "top": 128.2000000000001,
+            "bottom": 80.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 612.7,
+        "bottom": 556.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 556.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (7 x - 42)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-56",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  9);\\ ( 4, \\  15)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-6)^2 = 192"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 14",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 8} + \\frac{2}{x - 4} = \\frac{8}{3}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 5 x} + \\frac{2}{x^{2} - 10 x + 25}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{2 (2 x - 5)}{x (x - 5)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} + 4 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 1) (5 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 17 x = -66"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 6,\\ 11",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "3 x^{2} = 6 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 1 - \\frac{\\sqrt{21}}{3},\\ 1 + \\frac{\\sqrt{21}}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{4 x^{2} - 16}{x^{2} - 11 x + 18}\\times\\frac{x - 9}{x^{2} + 2 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{4}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      }
+    ]
+  },
+  {
+    "version": "19392",
+    "seed": 2563456687,
+    "constructor_variant": 17,
+    "start": 64,
+    "test_pages": 2,
+    "key_start": 66,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 376.70000000000005,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 574.7,
+            "bottom": 376.70000000000005,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 376.70000000000005,
+        "bottom": 328.40000000000003,
+        "rows": [
+          {
+            "top": 376.70000000000005,
+            "bottom": 328.40000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 328.40000000000003,
+        "bottom": 281.1,
+        "rows": [
+          {
+            "top": 328.40000000000003,
+            "bottom": 281.1,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 281.1,
+        "bottom": 234.8,
+        "rows": [
+          {
+            "top": 281.1,
+            "bottom": 234.8,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 234.8,
+        "bottom": 178.5,
+        "rows": [
+          {
+            "top": 234.8,
+            "bottom": 178.5,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 178.5,
+        "bottom": 131.2,
+        "rows": [
+          {
+            "top": 178.5,
+            "bottom": 131.2,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 131.2,
+        "bottom": 84.89999999999999,
+        "rows": [
+          {
+            "top": 131.2,
+            "bottom": 84.89999999999999,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 605.7,
+        "bottom": 552.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 552.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "12 x^{2} - 25 x + 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 4) (4 x - 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-6)^2 = 192"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 14",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} = - 9 x - 18"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -6,\\ -3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (7 x - 42)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-56",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 25}{x^{2} + 2 x - 35}\\times\\frac{x + 7}{x^{2} + 5 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "7 x^{2} = 3 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{3}{14} - \\frac{\\sqrt{177}}{14},\\ \\frac{3}{14} + \\frac{\\sqrt{177}}{14}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  9);\\ ( 4, \\  15)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = 3 x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{3}{x^{2} - 3 x} + \\frac{5}{x^{2} - 9}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{8 x + 9}{x (x - 3) (x + 3)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{30}{3 x - 15} + \\frac{1}{x - 5} = \\frac{11}{3}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "69179",
+    "seed": 3657702153,
+    "constructor_variant": 18,
+    "start": 68,
+    "test_pages": 2,
+    "key_start": 70,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 513.1000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 513.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 513.1000000000001,
+        "bottom": 277.10000000000014,
+        "rows": [
+          {
+            "top": 513.1000000000001,
+            "bottom": 475.10000000000014,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 475.10000000000014,
+            "bottom": 277.10000000000014,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 277.10000000000014,
+        "bottom": 222.80000000000013,
+        "rows": [
+          {
+            "top": 277.10000000000014,
+            "bottom": 222.80000000000013,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 222.80000000000013,
+        "bottom": 166.5000000000001,
+        "rows": [
+          {
+            "top": 222.80000000000013,
+            "bottom": 166.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 166.5000000000001,
+        "bottom": 118.20000000000012,
+        "rows": [
+          {
+            "top": 166.5000000000001,
+            "bottom": 118.20000000000012,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 118.20000000000012,
+        "bottom": 70.90000000000012,
+        "rows": [
+          {
+            "top": 118.20000000000012,
+            "bottom": 70.90000000000012,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "5 x^{2} = 4 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{2}{5} - \\frac{\\sqrt{14}}{5},\\ \\frac{2}{5} + \\frac{\\sqrt{14}}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (8 x - 56)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-72",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{20}{4 x - 20} + \\frac{3}{x - 5} = 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "2 x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 3, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - 2 x",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -2.0,
+              6.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{1}{x^{2} + 5 x} + \\frac{1}{x^{2} + 9 x + 20}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{2 (x + 2)}{x (x + 4) (x + 5)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} + 5 x - 24}\\times\\frac{x - 3}{x^{2} + 11 x + 24}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{x - 3}{(x + 8)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-7)^2 = 243"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 16",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} - 7 x - 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x + 1) (5 x - 4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  11);\\ ( 4, \\  18)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{7 x}{2} + 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} + 12 x = -35"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -5,\\ -7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "10066",
+    "seed": 668898434,
+    "constructor_variant": 19,
+    "start": 72,
+    "test_pages": 2,
+    "key_start": 74,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 520.1000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 520.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 520.1000000000001,
+        "bottom": 471.8000000000001,
+        "rows": [
+          {
+            "top": 520.1000000000001,
+            "bottom": 471.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 471.8000000000001,
+        "bottom": 235.80000000000013,
+        "rows": [
+          {
+            "top": 471.8000000000001,
+            "bottom": 433.8000000000001,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 433.8000000000001,
+            "bottom": 235.80000000000013,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 235.80000000000013,
+        "bottom": 182.5000000000001,
+        "rows": [
+          {
+            "top": 235.80000000000013,
+            "bottom": 182.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 182.5000000000001,
+        "bottom": 126.20000000000012,
+        "rows": [
+          {
+            "top": 182.5000000000001,
+            "bottom": 126.20000000000012,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 126.20000000000012,
+        "bottom": 71.90000000000012,
+        "rows": [
+          {
+            "top": 126.20000000000012,
+            "bottom": 71.90000000000012,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 1,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "25 x^{2} - 25 x + 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(5 x - 4) (5 x - 1)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (8 x - 56)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-72",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  11);\\ ( 4, \\  18)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{7 x}{2} + 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-7)^2 = 243"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 16",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "x + 2 y = 8"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 4 - \\frac{x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.5,
+              4.0
+            ]
+          ]
+        }
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{10}{2 x} - \\frac{2}{x} = \\frac{3}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{x^{2} - 9}{x^{2} - 5 x - 24}\\times\\frac{x - 8}{x^{2} - 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{1}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{5}{x^{2} - 25} + \\frac{2}{x^{2} + x - 30}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{7 x + 40}{(x - 5) (x + 5) (x + 6)}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "4 x^{2} = 4 x + 6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{2} - \\frac{\\sqrt{7}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{7}}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 3 x = 4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4,\\ -1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      }
+    ]
+  },
+  {
+    "version": "28792",
+    "seed": 1149994501,
+    "constructor_variant": 20,
+    "start": 76,
+    "test_pages": 2,
+    "key_start": 78,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 567.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 567.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 567.4000000000001,
+        "bottom": 519.1000000000001,
+        "rows": [
+          {
+            "top": 567.4000000000001,
+            "bottom": 519.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 519.1000000000001,
+        "bottom": 472.8000000000001,
+        "rows": [
+          {
+            "top": 519.1000000000001,
+            "bottom": 472.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 472.8000000000001,
+        "bottom": 418.5000000000001,
+        "rows": [
+          {
+            "top": 472.8000000000001,
+            "bottom": 418.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 418.5000000000001,
+        "bottom": 362.2000000000001,
+        "rows": [
+          {
+            "top": 418.5000000000001,
+            "bottom": 362.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 362.2000000000001,
+        "bottom": 314.9000000000001,
+        "rows": [
+          {
+            "top": 362.2000000000001,
+            "bottom": 314.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 314.9000000000001,
+        "bottom": 261.6000000000001,
+        "rows": [
+          {
+            "top": 314.9000000000001,
+            "bottom": 261.6000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 261.6000000000001,
+        "bottom": 215.30000000000007,
+        "rows": [
+          {
+            "top": 261.6000000000001,
+            "bottom": 215.30000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 6
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "S099-line",
+        "prompt": "Find the slope-intercept equation through these two points.",
+        "math": [
+          "( 2, \\  11);\\ ( 4, \\  18)"
+        ],
+        "rows": [
+          {
+            "label": "Equation",
+            "answer": "y = \\frac{7 x}{2} + 4",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-4",
+        "prompt": "Solve.",
+        "math": [
+          "x^{2} - 12 x = -27"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 3,\\ 9",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-sqrt",
+        "prompt": "Solve by taking square roots.",
+        "math": [
+          "3(x-7)^2 = 243"
+        ],
+        "rows": [
+          {
+            "label": "Solutions",
+            "answer": "x = -2,\\ 16",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "S099-eval",
+        "prompt": "Evaluate at x = -2; show substitution.",
+        "math": [
+          "(x + 3) (8 x - 56)"
+        ],
+        "rows": [
+          {
+            "label": "Value",
+            "answer": "-72",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "I099-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "\\frac{2}{x^{2} - 4 x} + \\frac{1}{x^{2} - 8 x + 16}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{3 x - 8}{x (x - 4)^{2}}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-2",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "\\frac{4 x^{2} - 36}{x^{2} - 11 x + 24}\\times\\frac{x - 8}{x^{2} + 3 x}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{4}{x}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-1",
+        "prompt": "Factor completely.",
+        "math": [
+          "20 x^{2} - 7 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(4 x + 1) (5 x - 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I099-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{12}{2 x - 4} + \\frac{3}{x - 2} = \\frac{9}{5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I099-5",
+        "prompt": "Solve. Give exact simplified solutions.",
+        "math": [
+          "2 x^{2} = 4 - 4 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -1 + \\sqrt{3},\\ - \\sqrt{3} - 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S099-graph",
+        "prompt": "Find the intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "Graph (booklet)",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        }
+      }
+    ]
+  }
+]
