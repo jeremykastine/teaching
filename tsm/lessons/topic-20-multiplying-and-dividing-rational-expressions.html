@@ -28,11 +28,12 @@ restrictions.</p>
 <h2 id="key-definitions-11">Key definitions</h2>
 <p>Rational expression: a quotient of polynomials. Reciprocal: an
 expression with numerator and denominator interchanged. Restriction: an
-input that makes any original denominator 0.</p>
+input that makes an original denominator 0 or, in a division problem, makes the divisor 0.</p>
 <h2>Multiplying rational expressions</h2>
 <p>To multiply rational expressions, factor every numerator and
 denominator completely. Cancel common factors before multiplying. Early
 cancellation keeps the arithmetic and polynomial products small.</p>
+<p>Look for a GCF first, then use trinomial factoring, grouping, or a difference of squares as needed. Some expressions need more than one method. Cancel whole factors, never separate terms in a sum. If all numerator factors cancel, their quotients multiply to 1: keep that 1 in the numerator.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
@@ -53,6 +54,79 @@ cancellation keeps the arithmetic and polynomial products small.</p>
 class="math inline">\(6/8\)</span>.</p>
 <p><span class="math display">\[\frac{3}{4(x - 3)},\quad\quad x \neq -
 3,0,3.\]</span></p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Multiply, simplify, and state all restrictions.</p>
+<p><span class="math inline">\(\frac{15x^3}{8x}\cdot\frac{12x^2}{25x^2}\)</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Both original denominators require <span class="math inline">\(x\ne0\)</span>. Multiply the numerator factors and denominator factors, then reduce the numerical coefficient and cancel the common powers of x.</p>
+<p><span class="math display">\[\frac{15x^3}{8x}\cdot\frac{12x^2}{25x^2}=\frac{180x^5}{200x^3}=\frac{9x^2}{10},\qquad x\ne0\]</span></p>
+<p>The original restriction remains after cancellation.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Simplify and state all restrictions: <span class="math inline">\(\frac{m-4}{m^2-16}\cdot\frac{2m+8}{5}\)</span>.</p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The original denominators must be nonzero, requiring <span class="math inline">\(m\ne-4,4\)</span>. Factor the difference of squares and take out the GCF 2, then cancel common factors.</p>
+<p><span class="math display">\[\frac{m-4}{(m-4)(m+4)}\cdot\frac{2(m+4)}5=\frac25\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Multiply, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{3x+6}{x^2+5x+6}\cdot\frac{x+3}{3x+12}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Factor out the numerical GCFs. For the monic trinomial, 2 and 3 have product 6 and sum 5.</p>
+<p><span class="math display">\[3x+6=3(x+2),\qquad x^2+5x+6=(x+2)(x+3),\qquad 3x+12=3(x+4)\]</span></p>
+<p>The original denominators exclude \(x=-2,-3,-4\). Cancel the common factors 3, \(x+2\), and \(x+3\).</p>
+<p><span class="math display">\[\frac{3(x+2)}{(x+2)(x+3)}\cdot\frac{x+3}{3(x+4)}=\frac{1}{x+4},\qquad x\ne-2,-3,-4\]</span></p>
+<p>Every numerator factor divided by its matching denominator factor gives 1. Their product is 1, which stays in the numerator.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Multiply, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{x^2-6x+9}{x^2-9}\cdot\frac{x+3}{x^2-3x}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The numerator is a perfect-square trinomial. The first denominator is a difference of squares, and the second has a variable GCF.</p>
+<p><span class="math display">\[x^2-6x+9=(x-3)^2,\qquad x^2-9=(x-3)(x+3),\qquad x^2-3x=x(x-3)\]</span></p>
+<p>The original denominators exclude \(x=0,3,-3\). Both copies of \(x-3\) in the numerator have matching copies in the denominator.</p>
+<p><span class="math display">\[\frac{(x-3)^2}{(x-3)(x+3)}\cdot\frac{x+3}{x(x-3)}=\frac{1}{x},\qquad x\ne0,3,-3\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Multiply, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{6x^2+13x+6}{x^2+4x+4}\cdot\frac{x+2}{3x+2}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>For the non-monic trinomial, the product is 36 and the sum is 13. Use 9 and 4, split the middle term, and group.</p>
+<p><span class="math display">\[6x^2+9x+4x+6=3x(2x+3)+2(2x+3)=(3x+2)(2x+3)\]</span></p>
+<p>The denominator \(x^2+4x+4=(x+2)^2\) is a perfect square. The original denominators exclude \(x=-2,-\frac23\).</p>
+<p><span class="math display">\[\frac{(3x+2)(2x+3)}{(x+2)^2}\cdot\frac{x+2}{3x+2}=\frac{2x+3}{x+2},\qquad x\ne-2,-\frac23\]</span></p>
+<p>Only one of the two denominator copies of \(x+2\) cancels.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Multiply, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{x^3+2x^2-9x-18}{x^2+x-6}\cdot\frac{x-2}{x+3}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Group the four numerator terms, then factor the difference of squares that remains.</p>
+<p><span class="math display">\[x^2(x+2)-9(x+2)=(x+2)(x^2-9)=(x+2)(x-3)(x+3)\]</span></p>
+<p>The first denominator factors as \((x+3)(x-2)\). The original denominators exclude \(x=-3,2\).</p>
+<p><span class="math display">\[\frac{(x+2)(x-3)(x+3)}{(x+3)(x-2)}\cdot\frac{x-2}{x+3}=\frac{(x+2)(x-3)}{x+3},\qquad x\ne-3,2\]</span></p>
 </div>
 </section>
 
@@ -100,20 +174,6 @@ example,</p>
 </section>
 
 <section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Multiply, simplify, and state all restrictions.</p>
-<p><span class="math inline">\(\frac{15x^3}{8x}\cdot\frac{12x^2}{25x^2}\)</span></p>
-</div>
-</div>
-<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Both original denominators require <span class="math inline">\(x\ne0\)</span>. Multiply the numerator factors and denominator factors, then reduce the numerical coefficient and cancel the common powers of x.</p>
-<p><span class="math display">\[\frac{15x^3}{8x}\cdot\frac{12x^2}{25x^2}=\frac{180x^5}{200x^3}=\frac{9x^2}{10},\qquad x\ne0\]</span></p>
-<p>The original restriction remains after cancellation.</p>
-</div>
-</section>
-
-<section class="worked-example">
 <div class="problem-row"><div class="problem-statement">
 <p>Simplify and state all restrictions: <span class="math inline">\(\frac{x^2-25}{3x}\div\frac{x+5}{9x^2}\)</span>.</p>
 </div></div>
@@ -122,14 +182,43 @@ example,</p>
 <p><span class="math display">\[\frac{(x-5)(x+5)}{3x}\cdot\frac{9x^2}{x+5}=3x(x-5)\]</span></p>
 </div>
 </section>
-
 <section class="worked-example">
 <div class="problem-row"><div class="problem-statement">
-<p>Simplify and state all restrictions: <span class="math inline">\(\frac{m-4}{m^2-16}\cdot\frac{2m+8}{5}\)</span>.</p>
+<p>Divide, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{2x^2-8x}{x^2-16}\div\frac{6x^2+6x}{x^2+5x+4}\]</span></p>
 </div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Original denominators and any divisor must be nonzero, requiring <span class="math inline">\(m\ne-4,4\)</span>. Factor, use a reciprocal for division, and cancel common factors.</p>
-<p><span class="math display">\[\frac{m-4}{(m-4)(m+4)}\cdot\frac{2(m+4)}5=\frac25\]</span></p>
+<p>Factor completely: take out the GCFs in both numerators, use a difference of squares, and factor the monic trinomial.</p>
+<p><span class="math display">\[2x^2-8x=2x(x-4),\quad x^2-16=(x-4)(x+4)\]</span></p>
+<p><span class="math display">\[6x^2+6x=6x(x+1),\quad x^2+5x+4=(x+1)(x+4)\]</span></p>
+<p>The original denominators exclude \(x=4,-4,-1\). The divisor is zero at \(x=0\), so exclude 0 as well. Keep the first expression and multiply by the reciprocal of the second.</p>
+<p><span class="math display">\[\frac{2x(x-4)}{(x-4)(x+4)}\cdot\frac{(x+1)(x+4)}{6x(x+1)}=\frac13,\qquad x\ne4,-4,-1,0\]</span></p>
+<p>All variable factors cancel. Reducing 2 over 6 leaves 1 over 3; the numerator 1 remains.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Divide, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{6x^2-x-2}{x^2-4}\div\frac{3x-2}{x-2}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>For the non-monic trinomial, the product is -12 and the sum is -1. Split the middle term using -4 and 3, then group.</p>
+<p><span class="math display">\[6x^2-4x+3x-2=2x(3x-2)+(3x-2)=(2x+1)(3x-2)\]</span></p>
+<p>The original denominators exclude \(x=2,-2\); the divisor is zero at \(x=\frac23\). Factor the difference of squares and use the reciprocal.</p>
+<p><span class="math display">\[\frac{(2x+1)(3x-2)}{(x-2)(x+2)}\cdot\frac{x-2}{3x-2}=\frac{2x+1}{x+2},\qquad x\ne2,-2,\frac23\]</span></p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row"><div class="problem-statement">
+<p>Divide, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{x^2-4x+4}{4-x^2}\div\frac{x-2}{x^2+4x+4}\]</span></p>
+</div></div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The trinomials are perfect squares, and the first denominator is a difference of squares with opposite factors.</p>
+<p><span class="math display">\[x^2-4x+4=(x-2)^2,\quad 4-x^2=(2-x)(2+x)=-(x-2)(x+2)\]</span></p>
+<p><span class="math display">\[x^2+4x+4=(x+2)^2\]</span></p>
+<p>The original denominators exclude \(x=2,-2\). The divisor would be zero at 2, which is already excluded. Use the reciprocal and retain the negative sign from the opposite factors.</p>
+<p><span class="math display">\[\frac{(x-2)^2}{-(x-2)(x+2)}\cdot\frac{(x+2)^2}{x-2}=-(x+2),\qquad x\ne2,-2\]</span></p>
 </div>
 </section>
 

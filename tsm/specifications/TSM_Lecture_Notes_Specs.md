@@ -289,3 +289,10 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - In every rational-expression example, state restrictions from the original denominator and retain exclusions even if their factors disappear in the simplified form. Include a no-common-factor example to reinforce that cancellation is not always possible.
 - Preserve the per-example hidden-solution interaction and the existing course label and sequence.
 
+
+
+## Topics 19 and 20: numerator 1 and mixed factoring (November 2, 2026)
+
+- Include several multiplication and division examples in each topic where all numerator factors reduce to 1, including examples that start with no numerator equal to 1. Show the reductions and explicitly retain 1 above the final fraction bar; distinguish this from omitting a denominator of 1. Include a numerical complex fraction with this result in Topic 19.
+- Topic 20 includes numerical and variable GCFs, monic and non-monic trinomials, perfect-square trinomials, four-term grouping, differences of squares, opposite factors, repeated factors, and expressions requiring multiple factoring methods. Show factoring decisions and intermediate work, including middle-term splitting and grouping for non-monic trinomials. Keep multiplication examples before the division section.
+- Preserve single-variable exercises, independently concealed worked solutions, restrictions from every original denominator, and exclusions where a divisor is zero. Retain all exclusions after cancellation.
