@@ -18,6 +18,8 @@ def filename(m):return 'section-'+m['slug']+'.html'
 def block(label,q,a,id=''):
  return f'<section class="worked-example" id="{id}"><div class="problem-statement"><h3>{label}</h3>{q}</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">{a}</div></section>'
 def convert(c,m):
+ if c=='stats' and m['number']=='4.2':
+  return (ROOT/'stats/notes-source/section-4-2.html').read_text()
  n=m['number'];src=soup((ROOT/c/'notes-source/textbook'/f'{n}.html').read_text());page=src.select_one('[data-type="page"]') or src
  if c=='stats' and n in PAGES:
   body=PAGES[n]
@@ -102,3 +104,4 @@ def build():
  (ROOT/'scripts/lecture-notes-coverage.json').write_text(json.dumps(report,indent=2)+'\n')
  print('Built',len(report),'sections;',sum(x['solutions'] for x in report),'solution panels')
 if __name__=='__main__':build()
+
