@@ -1,0 +1,1797 @@
+[
+  {
+    "course": "TSM 098",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam - Practice Test",
+    "end": 34,
+    "practice": 1,
+    "version": "57012",
+    "seed": 3222891704,
+    "questions": [
+      {
+        "id": "SL98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 6",
+          "x + y = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 2, \\  -2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x - 6",
+              "0"
+            ],
+            "answer": [
+              2,
+              -2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve.",
+        "math": [
+          "2 x + 7 = - 3 x + 4 + 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(4 x^{2} + 4 x - 3) + (- x^{2} - 7 x - 5)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "3 x^{2} - 3 x - 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SF98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{7}{14} + \\frac{3}{8}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{7}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(7/14) + (3/8)",
+            "answer": "7/8"
+          }
+        ]
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3 x - 3)(x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "3 x^{2} + 6 x - 9",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SP98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "2*x**4 - 6*x**2 + x + 1",
+            "answer": "2*x**4 - 6*x**2 + x + 1"
+          }
+        ]
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "3 x^{2}(x^{2} - 2 x + 6)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "3 x^{4} - 6 x^{3} + 18 x^{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{2 x}{3} + \\frac{1}{2} = \\frac{x}{9} - \\frac{2}{9}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{13}{10}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-5)+3 = 4 x - 16"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -4, y = 2.",
+        "math": [
+          "2 x - 2 y + 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "-11",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "-11",
+            "answer": "-11"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "29f74536ce6a638d4dd20335ebba9dd40eea089e087732a6bb9fb425c145328c",
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 549.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 549.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 549.4000000000001,
+        "bottom": 501.1000000000001,
+        "rows": [
+          {
+            "top": 549.4000000000001,
+            "bottom": 501.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 501.1000000000001,
+        "bottom": 447.80000000000007,
+        "rows": [
+          {
+            "top": 501.1000000000001,
+            "bottom": 447.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 447.80000000000007,
+        "bottom": 401.50000000000006,
+        "rows": [
+          {
+            "top": 447.80000000000007,
+            "bottom": 401.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 401.50000000000006,
+        "bottom": 353.20000000000005,
+        "rows": [
+          {
+            "top": 401.50000000000006,
+            "bottom": 353.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 353.20000000000005,
+        "bottom": 304.90000000000003,
+        "rows": [
+          {
+            "top": 353.20000000000005,
+            "bottom": 304.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 304.90000000000003,
+        "bottom": 251.60000000000002,
+        "rows": [
+          {
+            "top": 304.90000000000003,
+            "bottom": 251.60000000000002,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 251.60000000000002,
+        "bottom": 205.3,
+        "rows": [
+          {
+            "top": 251.60000000000002,
+            "bottom": 205.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 0,
+        "top": 205.3,
+        "bottom": 158.0,
+        "rows": [
+          {
+            "top": 205.3,
+            "bottom": 158.0,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam - Practice Test",
+    "end": 34,
+    "practice": 2,
+    "version": "32870",
+    "seed": 917445331,
+    "questions": [
+      {
+        "id": "SL98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 5",
+          "3 x - 3 y = -15"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -2, \\  3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x - 3*y"
+            ],
+            "rhs": [
+              "5",
+              "-15"
+            ],
+            "answer": [
+              -2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x}{4} + \\frac{7}{3} = \\frac{x}{2} + \\frac{1}{6}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{26}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve.",
+        "math": [
+          "3 x - 2 = - 4 x - 6 + 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{4}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "SP98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "2*x**4 - 6*x**2 + x + 1",
+            "answer": "2*x**4 - 6*x**2 + x + 1"
+          }
+        ]
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "- 3 x^{3}(3 x^{2} + 2 x - 5)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "- 9 x^{5} - 6 x^{4} + 15 x^{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2(x-5)-2 = 2 x - 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "All real numbers",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 2
+      },
+      {
+        "id": "SF98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{2}{10} + \\frac{5}{12}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{37}{60}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(2/10) + (5/12)",
+            "answer": "37/60"
+          }
+        ]
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(2 x^{3} - 2 x^{2} + 5 x - 3) + (3 x^{2} - x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x^{3} + x^{2} + 4 x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -2, y = 2.",
+        "math": [
+          "- 4 x + 2 y + 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "17",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "17",
+            "answer": "17"
+          }
+        ]
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2 x + 4)(x - 6)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x^{2} - 8 x - 24",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "B",
+        "institutional_slo": 1
+      }
+    ],
+    "content_fingerprint": "d5a53a5adbdb80e7dbd2c0113fe1df68e9799c8279b406a27ca154fdf553e720",
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 496.1000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 496.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 496.1000000000001,
+        "bottom": 447.80000000000007,
+        "rows": [
+          {
+            "top": 496.1000000000001,
+            "bottom": 447.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 447.80000000000007,
+        "bottom": 399.50000000000006,
+        "rows": [
+          {
+            "top": 447.80000000000007,
+            "bottom": 399.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 399.50000000000006,
+        "bottom": 353.20000000000005,
+        "rows": [
+          {
+            "top": 399.50000000000006,
+            "bottom": 353.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 353.20000000000005,
+        "bottom": 299.90000000000003,
+        "rows": [
+          {
+            "top": 353.20000000000005,
+            "bottom": 299.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 299.90000000000003,
+        "bottom": 251.60000000000002,
+        "rows": [
+          {
+            "top": 299.90000000000003,
+            "bottom": 251.60000000000002,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 251.60000000000002,
+        "bottom": 204.3,
+        "rows": [
+          {
+            "top": 251.60000000000002,
+            "bottom": 204.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 0,
+        "top": 204.3,
+        "bottom": 158.0,
+        "rows": [
+          {
+            "top": 204.3,
+            "bottom": 158.0,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam - Practice Test",
+    "end": 34,
+    "practice": 3,
+    "version": "52534",
+    "seed": 652459700,
+    "questions": [
+      {
+        "id": "SP98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(3 x^{4} - 2 x^{2} + x - 1) - (3 x^{4} + 2 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "- 4 x^{2} + x + 3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "-4*x**2 + x + 3",
+            "answer": "-4*x**2 + x + 3"
+          }
+        ]
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x-1)-5 = 3 x - 8"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "All real numbers",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(4 x^{4} + 6 x^{2} - 4) + (- x^{4} + 2 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "3 x^{4} + 6 x^{2} + 2 x - 6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve.",
+        "math": [
+          "5 x + 8 = - 4 x - 2 + 3 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{5}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{x}{10} - \\frac{6}{5} = \\frac{1}{5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 14",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 2
+      },
+      {
+        "id": "SF98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{4}{10} + \\frac{4}{5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{6}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(4/10) + (4/5)",
+            "answer": "6/5"
+          }
+        ]
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "3 x^{2}(3 x^{3} - 4 x + 6)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "9 x^{5} - 12 x^{3} + 18 x^{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SL98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x",
+          "x + y = -6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -2, \\  -4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x",
+              "-6"
+            ],
+            "answer": [
+              -2,
+              -4
+            ]
+          }
+        ]
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -4, y = 2.",
+        "math": [
+          "- 4 x + 2 y + 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "23",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "23",
+            "answer": "23"
+          }
+        ]
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2 x + 4)(3 x - 2)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "6 x^{2} + 8 x - 8",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "C",
+        "institutional_slo": 1
+      }
+    ],
+    "content_fingerprint": "30e389e39261e93f473d44df2ba21ffc32987adde0231ebe6b95694a008fb85b",
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 565.4000000000001,
+        "bottom": 517.1000000000001,
+        "rows": [
+          {
+            "top": 565.4000000000001,
+            "bottom": 517.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 517.1000000000001,
+        "bottom": 471.8000000000001,
+        "rows": [
+          {
+            "top": 517.1000000000001,
+            "bottom": 471.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 471.8000000000001,
+        "bottom": 418.5000000000001,
+        "rows": [
+          {
+            "top": 471.8000000000001,
+            "bottom": 418.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 418.5000000000001,
+        "bottom": 365.2000000000001,
+        "rows": [
+          {
+            "top": 418.5000000000001,
+            "bottom": 365.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 365.2000000000001,
+        "bottom": 316.9000000000001,
+        "rows": [
+          {
+            "top": 365.2000000000001,
+            "bottom": 316.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 316.9000000000001,
+        "bottom": 251.60000000000008,
+        "rows": [
+          {
+            "top": 316.9000000000001,
+            "bottom": 251.60000000000008,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 251.60000000000008,
+        "bottom": 204.30000000000007,
+        "rows": [
+          {
+            "top": 251.60000000000008,
+            "bottom": 204.30000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 0,
+        "top": 204.30000000000007,
+        "bottom": 158.00000000000006,
+        "rows": [
+          {
+            "top": 204.30000000000007,
+            "bottom": 158.00000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam - Practice Test",
+    "end": 34,
+    "practice": 4,
+    "version": "99231",
+    "seed": 637774447,
+    "questions": [
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3 x - 1)(4 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "12 x^{2} + 5 x - 3",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SL98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 0",
+          "3 x - 3 y = -15"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -3, \\  2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x - 3*y"
+            ],
+            "rhs": [
+              "0",
+              "-15"
+            ],
+            "answer": [
+              -3,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -3, y = 3.",
+        "math": [
+          "- 2 x + 3 y - 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "10",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "10",
+            "answer": "10"
+          }
+        ]
+      },
+      {
+        "id": "SF98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{2}{3} + \\frac{5}{8}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{31}{24}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(2/3) + (5/8)",
+            "answer": "31/24"
+          }
+        ]
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve.",
+        "math": [
+          "6 x - 7 = - x + 1 + 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{8}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(6 x^{3} - x + 6) + (- 2 x^{3} + 3 x^{2} - 6)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "4 x^{3} + 3 x^{2} - x",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SP98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(6 x^{4} - 2 x^{2} + x - 4) - (3 x^{4} + 5 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "3 x^{4} - 7 x^{2} + x",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "3*x**4 - 7*x**2 + x",
+            "answer": "3*x**4 - 7*x**2 + x"
+          }
+        ]
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{7 x}{12} + 1 = \\frac{1}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{6}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "- 4 x^{4}(2 x^{3} + 4 x^{2} + 6)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "- 8 x^{7} - 16 x^{6} - 24 x^{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2(x-3)+1 = 2 x - 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "D",
+        "institutional_slo": 2
+      }
+    ],
+    "content_fingerprint": "f8f08dc14ae0f7066cd587829c6a4298d8a6f815ab2307d517262e79676dc6f4",
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 501.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 501.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 501.1000000000001,
+        "bottom": 447.80000000000007,
+        "rows": [
+          {
+            "top": 501.1000000000001,
+            "bottom": 447.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 447.80000000000007,
+        "bottom": 402.50000000000006,
+        "rows": [
+          {
+            "top": 447.80000000000007,
+            "bottom": 402.50000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 402.50000000000006,
+        "bottom": 354.20000000000005,
+        "rows": [
+          {
+            "top": 402.50000000000006,
+            "bottom": 354.20000000000005,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 354.20000000000005,
+        "bottom": 305.90000000000003,
+        "rows": [
+          {
+            "top": 354.20000000000005,
+            "bottom": 305.90000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 305.90000000000003,
+        "bottom": 252.60000000000002,
+        "rows": [
+          {
+            "top": 305.90000000000003,
+            "bottom": 252.60000000000002,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 252.60000000000002,
+        "bottom": 204.3,
+        "rows": [
+          {
+            "top": 252.60000000000002,
+            "bottom": 204.3,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 0,
+        "top": 204.3,
+        "bottom": 158.0,
+        "rows": [
+          {
+            "top": 204.3,
+            "bottom": 158.0,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-final",
+    "title": "TSM 098 Final Exam - Practice Test",
+    "end": 34,
+    "practice": 5,
+    "version": "58243",
+    "seed": 986331439,
+    "questions": [
+      {
+        "id": "I098-5",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "4(x-3)-3 = 4 x - 14"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-1",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(4 x - 6)(x + 5)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "4 x^{2} + 14 x - 30",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "SF98-add",
+        "prompt": "Compute and give the result in lowest terms.",
+        "math": [
+          "\\frac{1}{15} + \\frac{2}{4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "\\frac{17}{30}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(1/15) + (2/4)",
+            "answer": "17/30"
+          }
+        ]
+      },
+      {
+        "id": "I098-3",
+        "prompt": "Add and simplify.",
+        "math": [
+          "(2 x^{2} + x - 1) + (- x^{2} - 4 x - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x^{2} - 3 x - 5",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "I098-2",
+        "prompt": "Distribute and simplify.",
+        "math": [
+          "3 x^{2}(3 x^{2} - 5 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "9 x^{4} - 15 x^{3} + 9 x^{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 1
+      },
+      {
+        "id": "S098-eval",
+        "prompt": "Evaluate at x = -4, y = 2.",
+        "math": [
+          "3 x + 4 y + 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "1",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "id": "I098-6",
+        "prompt": "Solve.",
+        "math": [
+          "\\frac{2 x}{3} + 2 = \\frac{x}{3} - \\frac{5}{9}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{23}{3}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "I098-4",
+        "prompt": "Solve.",
+        "math": [
+          "6 x - 3 = - 2 x - 1 + x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{2}{7}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "archetype": "A",
+        "institutional_slo": 2
+      },
+      {
+        "id": "SP98-addsub",
+        "prompt": "(a) Add and simplify. (b) Subtract and simplify.",
+        "math": [
+          "(5 x^{4} - 2 x^{2} + x - 3) - (3 x^{4} + 4 x^{2} - 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x^{4} - 6 x^{2} + x + 1",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "2*x**4 - 6*x**2 + x + 1",
+            "answer": "2*x**4 - 6*x**2 + x + 1"
+          }
+        ]
+      },
+      {
+        "id": "SL98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 8",
+          "x + y = 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 3, \\  -2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x - 8",
+              "1"
+            ],
+            "answer": [
+              3,
+              -2
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7e57443ac106c0bd60981979f3fb77fcc7a4a3e5e300881a0a10450a41778cac",
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 567.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 567.4000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 567.4000000000001,
+        "bottom": 514.1000000000001,
+        "rows": [
+          {
+            "top": 567.4000000000001,
+            "bottom": 514.1000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 514.1000000000001,
+        "bottom": 465.8000000000001,
+        "rows": [
+          {
+            "top": 514.1000000000001,
+            "bottom": 465.8000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 465.8000000000001,
+        "bottom": 417.5000000000001,
+        "rows": [
+          {
+            "top": 465.8000000000001,
+            "bottom": 417.5000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 0,
+        "top": 417.5000000000001,
+        "bottom": 370.2000000000001,
+        "rows": [
+          {
+            "top": 417.5000000000001,
+            "bottom": 370.2000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 0,
+        "top": 370.2000000000001,
+        "bottom": 316.9000000000001,
+        "rows": [
+          {
+            "top": 370.2000000000001,
+            "bottom": 316.9000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 0,
+        "top": 316.9000000000001,
+        "bottom": 271.6000000000001,
+        "rows": [
+          {
+            "top": 316.9000000000001,
+            "bottom": 271.6000000000001,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 0,
+        "top": 271.6000000000001,
+        "bottom": 223.30000000000007,
+        "rows": [
+          {
+            "top": 271.6000000000001,
+            "bottom": 223.30000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 0,
+        "top": 223.30000000000007,
+        "bottom": 158.00000000000006,
+        "rows": [
+          {
+            "top": 223.30000000000007,
+            "bottom": 158.00000000000006,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  }
+]

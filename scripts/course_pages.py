@@ -67,12 +67,13 @@ def build_practice(root):
         groups = {}
         for a in json.loads(manifest.read_text()):
             groups.setdefault(a['course'], {}).setdefault(a['assessment'], []).append(a)
-        body += '<p>Three practice tests are available for each unit test and final exam. Each PDF includes space for answers beside the questions and an instructor answer key. Try the test before checking the key.</p>'
+        bundled = all(a.get('versions') == 5 for items in groups.values() for entries in items.values() for a in entries)
+        body += ('<p>Each test has one PDF containing five practice versions and their matching answer keys. Open one file to view or print any of the versions. Try each test before checking its key. For printing, use actual size and duplex, long-edge flip; blank pages keep each test and key on a fresh sheet.</p>' if bundled else '<p>Three practice tests are available for each unit test and final exam. Each PDF includes space for answers beside the questions and an instructor answer key. Try the test before checking the key.</p>')
         for course, assessments in groups.items():
             body += f'<section><h2>{escape(course)}</h2><ul class="resources">'
             for items in assessments.values():
                 body += f'<li><h3>{escape(items[0]["title"])}</h3><p class="links">'
-                body += ''.join(f'<a href="practice-tests/{escape(a["file"], quote=True)}">Practice {a["practice"]} (PDF)</a>' for a in items)
+                body += ''.join(f'<a href="practice-tests/{escape(a["file"], quote=True)}">'+(f'Five practice versions (PDF)' if a.get('versions') == 5 else f'Practice {a["practice"]} (PDF)')+'</a>' for a in items)
                 body += '</p></li>'
             body += '</ul></section>'
     page(root, 'practice-tests.html', 'Practice tests', body)
@@ -95,3 +96,4 @@ if __name__ == '__main__':
     root = Path(__file__).resolve().parents[1]
     for course in COURSES:
         build_categories(root / course)
+

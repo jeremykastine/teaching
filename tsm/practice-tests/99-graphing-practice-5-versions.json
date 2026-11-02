@@ -1,0 +1,1442 @@
+[
+  {
+    "course": "TSM 099",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test - Practice Test",
+    "end": 34,
+    "practice": 1,
+    "version": "63117",
+    "seed": 148585938,
+    "questions": [
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on the same grid and give their intersection.",
+        "math": [
+          "y = x + 2",
+          "y = - 2 x - 7"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "Both lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( -3, \\  -1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              2.0
+            ],
+            [
+              -2.0,
+              -7.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "-2",
+                "-7"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = 3 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 3,
+          "point": 2
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-1/2",
+                "3"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 4 y = 24"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph",
+            "answer": "y = 6 - \\frac{3 x}{4}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.75,
+              6.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/4",
+                "6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 3, \\  0);\\ ( 6, \\  2)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = \\frac{2 x}{3} - 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "line_points",
+            "points": [
+              [
+                "3",
+                "0"
+              ],
+              [
+                "6",
+                "2"
+              ]
+            ],
+            "slope": "2/3",
+            "intercept": "-2"
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid.",
+        "math": [
+          "y = \\frac{3 x}{2} - 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "y = \\frac{3 x}{2} - 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.5,
+              -3.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "3/2",
+                "-3"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "9312707ea2e6130b85240201e2cbd66ca305082adbcc50ece179b5cb2cfcb3a0",
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 377.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 377.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 377.7,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 377.7,
+            "bottom": 179.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test - Practice Test",
+    "end": 34,
+    "practice": 2,
+    "version": "92202",
+    "seed": 1631654005,
+    "questions": [
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on the same grid and give their intersection.",
+        "math": [
+          "y = x - 1",
+          "y = - x - 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "Both lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( -1, \\  -2)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              -1.0
+            ],
+            [
+              -1.0,
+              -3.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "1",
+                "-1"
+              ],
+              [
+                "-1",
+                "-3"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/2",
+                "6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = 2 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 2,
+          "point": 2
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/2",
+                "2"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 2, \\  2);\\ ( 4, \\  3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = \\frac{x}{2} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "line_points",
+            "points": [
+              [
+                "2",
+                "2"
+              ],
+              [
+                "4",
+                "3"
+              ]
+            ],
+            "slope": "1/2",
+            "intercept": "1"
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid.",
+        "math": [
+          "y = \\frac{x}{2} - 3"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "y = \\frac{x}{2} - 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              -3.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "1/2",
+                "-3"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "fd9e4bc5aad35140d5ce5d4aa622b28cc618a91162531a130a4e28eb55846160",
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 188.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 386.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 386.0,
+            "bottom": 188.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 383.4,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 383.4,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 383.4,
+        "bottom": 185.39999999999998,
+        "rows": [
+          {
+            "top": 383.4,
+            "bottom": 185.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test - Practice Test",
+    "end": 34,
+    "practice": 3,
+    "version": "75607",
+    "seed": 1424168100,
+    "questions": [
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph the line on the grid.",
+        "math": [
+          "4 x + 3 y = 24"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 6, \\  0);\\ ( 0, \\  8)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph",
+            "answer": "y = 8 - \\frac{4 x}{3}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.3333333333333333,
+              8.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-4/3",
+                "8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid.",
+        "math": [
+          "y = \\frac{2 x}{3} + 2"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "y = \\frac{2 x}{3} + 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              2.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "2/3",
+                "2"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 2, \\  1);\\ ( 4, \\  2)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "line_points",
+            "points": [
+              [
+                "2",
+                "1"
+              ],
+              [
+                "4",
+                "2"
+              ]
+            ],
+            "slope": "1/2",
+            "intercept": "0"
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = 2 - \\frac{3 x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": 2,
+          "point": 2
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/2",
+                "2"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on the same grid and give their intersection.",
+        "math": [
+          "y = x + 5",
+          "y = 1 - x"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "Both lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( -2, \\  3)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              1.0,
+              5.0
+            ],
+            [
+              -1.0,
+              1.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "1",
+                "5"
+              ],
+              [
+                "-1",
+                "1"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "5a5edb98578d5259d31d56dc585fe7c602687b3c28e5b1e931ac30de473a4f65",
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 622.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 226.0,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 226.0,
+            "bottom": 179.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 231.7,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 231.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test - Practice Test",
+    "end": 34,
+    "practice": 4,
+    "version": "65926",
+    "seed": 3732061812,
+    "questions": [
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = 1 - \\frac{x}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -0.5,
+          "b": 1,
+          "point": 2
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-1/2",
+                "1"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 2 y = 12"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 4, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph",
+            "answer": "y = 6 - \\frac{3 x}{2}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -1.5,
+              6.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/2",
+                "6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 2, \\  -2);\\ ( 4, \\  -1)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = \\frac{x}{2} - 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "line_points",
+            "points": [
+              [
+                "2",
+                "-2"
+              ],
+              [
+                "4",
+                "-1"
+              ]
+            ],
+            "slope": "1/2",
+            "intercept": "-3"
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on the same grid and give their intersection.",
+        "math": [
+          "y = 2 x - 3",
+          "y = 3 - x"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "Both lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  1)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              2.0,
+              -3.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "2",
+                "-3"
+              ],
+              [
+                "-1",
+                "3"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid.",
+        "math": [
+          "y = \\frac{x}{2} + 1"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "y = \\frac{x}{2} + 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.5,
+              1.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "1/2",
+                "1"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "2b977d598f9cf7a0ccb2234e18fd485d93e5b6d2f590670984a89074d96b9148",
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 429.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.7,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 429.7,
+            "bottom": 391.7,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 391.7,
+            "bottom": 193.7,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 193.7,
+        "bottom": 147.39999999999998,
+        "rows": [
+          {
+            "top": 193.7,
+            "bottom": 147.39999999999998,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-graphing",
+    "title": "TSM 099 Graphing Test - Practice Test",
+    "end": 34,
+    "practice": 5,
+    "version": "60142",
+    "seed": 421779877,
+    "questions": [
+      {
+        "id": "G99-slope",
+        "prompt": "Graph the line on the grid.",
+        "math": [
+          "y = \\frac{2 x}{3}"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "y = \\frac{2 x}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              0.6666666666666666,
+              0.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "2/3",
+                "0"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-standard",
+        "prompt": "Find both intercepts and graph the line on the grid.",
+        "math": [
+          "3 x + 4 y = 24"
+        ],
+        "rows": [
+          {
+            "label": "Intercepts",
+            "answer": "( 8, \\  0);\\ ( 0, \\  6)",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "Graph",
+            "answer": "y = 6 - \\frac{3 x}{4}",
+            "points": 12,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              -0.75,
+              6.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/4",
+                "6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-points",
+        "prompt": "Find the slope-intercept equation through the two points.",
+        "math": [
+          "( 2, \\  -2);\\ ( 4, \\  -1)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = \\frac{x}{2} - 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "line_points",
+            "points": [
+              [
+                "2",
+                "-2"
+              ],
+              [
+                "4",
+                "-1"
+              ]
+            ],
+            "slope": "1/2",
+            "intercept": "-3"
+          }
+        ]
+      },
+      {
+        "id": "G99-system",
+        "prompt": "Graph both lines on the same grid and give their intersection.",
+        "math": [
+          "y = 2 x - 1",
+          "y = 5 - x"
+        ],
+        "rows": [
+          {
+            "label": "Graph",
+            "answer": "Both lines meet at the reported solution.",
+            "points": 12,
+            "plain": true
+          },
+          {
+            "label": "Ordered pair",
+            "answer": "( 2, \\  3)",
+            "points": 8,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "blank",
+          "answer_lines": [
+            [
+              2.0,
+              -1.0
+            ],
+            [
+              -1.0,
+              5.0
+            ]
+          ]
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "2",
+                "-1"
+              ],
+              [
+                "-1",
+                "5"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G99-read",
+        "prompt": "Write the equation of the displayed line in slope-intercept form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "",
+            "answer": "y = - \\frac{3 x}{2} - 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "line",
+          "m": -1.5,
+          "b": -3,
+          "point": 2
+        },
+        "verification": [
+          {
+            "kind": "graph",
+            "lines": [
+              [
+                "-3/2",
+                "-3"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7a76f6751cde6ff96d471f44a672e0b64e30ee9ecb034c95f5b44a4f79713865",
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 462.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 462.0,
+        "bottom": 226.0,
+        "rows": [
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 424.0,
+            "bottom": 226.0,
+            "label": "(b)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 226.0,
+        "bottom": 179.7,
+        "rows": [
+          {
+            "top": 226.0,
+            "bottom": 179.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 462.0,
+            "label": "(a)",
+            "points": 12
+          },
+          {
+            "top": 462.0,
+            "bottom": 424.0,
+            "label": "(b)",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 193.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 193.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  }
+]

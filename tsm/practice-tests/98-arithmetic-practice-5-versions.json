@@ -1,0 +1,1912 @@
+[
+  {
+    "course": "TSM 098",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test - Practice Test",
+    "end": 8,
+    "practice": 1,
+    "version": "29088",
+    "seed": 3961867631,
+    "questions": [
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{15}{25}",
+          "(b)\\quad \\frac{45}{60}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "15/25",
+            "answer": "3/5"
+          },
+          {
+            "kind": "expression",
+            "input": "45/60",
+            "answer": "3/4"
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "(x - 6) (x + 6) = x^{2} - 36"
+        ],
+        "rows": [
+          {
+            "label": "x = 4",
+            "answer": "Left -20; right -20; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -2",
+            "answer": "Left -32; right -32; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left -36; right -36; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            -2,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "verification": [
+          {
+            "kind": "comparison",
+            "lhs": "(x - 6)*(x + 6)",
+            "rhs": "x**2 - 36",
+            "inputs": [
+              4,
+              -2,
+              0
+            ],
+            "left": [
+              "-20",
+              "-32",
+              "-36"
+            ],
+            "right": [
+              "-20",
+              "-32",
+              "-36"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad \\frac{10}{0}",
+          "(b)\\quad -10+7",
+          "(c)\\quad (-10)(4)",
+          "(d)\\quad 10-(-4)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "Undefined",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "-3",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "-40",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "14",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "signed",
+            "expressions": [
+              [
+                "\\frac{10}{0}",
+                "Undefined"
+              ],
+              [
+                "-10+7",
+                "-3"
+              ],
+              [
+                "(-10)(4)",
+                "-40"
+              ],
+              [
+                "10-(-4)",
+                "14"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -3, y = 1.",
+        "math": [
+          "- 3 x + 4 y - 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "8",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "8",
+            "answer": "8"
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate at (a) x = 10, (b) x = -10, and (c) x = 0.",
+        "math": [
+          "2 x^{2} - 3 x - 7"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "163",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "223",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "-7",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "163",
+            "answer": "163"
+          },
+          {
+            "kind": "expression",
+            "input": "223",
+            "answer": "223"
+          },
+          {
+            "kind": "expression",
+            "input": "-7",
+            "answer": "-7"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "35b999ef69659f7c20fa87d01d8c27cdfb9b1d8243d652f9b734ce6eb2281f60",
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 617.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 398.0,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 536.0,
+            "label": "x = 4",
+            "points": 4
+          },
+          {
+            "top": 536.0,
+            "bottom": 498.0,
+            "label": "x = -2",
+            "points": 4
+          },
+          {
+            "top": 498.0,
+            "bottom": 460.0,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 460.0,
+            "bottom": 398.0,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 398.0,
+        "bottom": 246.0,
+        "rows": [
+          {
+            "top": 398.0,
+            "bottom": 360.0,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 360.0,
+            "bottom": 322.0,
+            "label": "(b)",
+            "points": 5
+          },
+          {
+            "top": 322.0,
+            "bottom": 284.0,
+            "label": "(c)",
+            "points": 5
+          },
+          {
+            "top": 284.0,
+            "bottom": 246.0,
+            "label": "(d)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 246.0,
+        "bottom": 198.7,
+        "rows": [
+          {
+            "top": 246.0,
+            "bottom": 198.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 198.7,
+        "bottom": 91.69999999999999,
+        "rows": [
+          {
+            "top": 198.7,
+            "bottom": 162.7,
+            "label": "(a)",
+            "points": 7
+          },
+          {
+            "top": 162.7,
+            "bottom": 126.69999999999999,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 126.69999999999999,
+            "bottom": 91.69999999999999,
+            "label": "(c)",
+            "points": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test - Practice Test",
+    "end": 8,
+    "practice": 2,
+    "version": "20674",
+    "seed": 3866318869,
+    "questions": [
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{21}{35}",
+          "(b)\\quad \\frac{42}{56}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{4}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "21/35",
+            "answer": "3/5"
+          },
+          {
+            "kind": "expression",
+            "input": "42/56",
+            "answer": "3/4"
+          }
+        ]
+      },
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -4, y = 2.",
+        "math": [
+          "- 2 x + 2 y + 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "17",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "17",
+            "answer": "17"
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate at (a) x = 10, (b) x = -10, and (c) x = 0.",
+        "math": [
+          "3 x^{2} - 6 x - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "237",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "357",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "-3",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "237",
+            "answer": "237"
+          },
+          {
+            "kind": "expression",
+            "input": "357",
+            "answer": "357"
+          },
+          {
+            "kind": "expression",
+            "input": "-3",
+            "answer": "-3"
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "(x - 4) (x + 4) = x^{2} + x - 16"
+        ],
+        "rows": [
+          {
+            "label": "x = 4",
+            "answer": "Left 0; right 4; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -1",
+            "answer": "Left -15; right -16; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left -16; right -16; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            -1,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "verification": [
+          {
+            "kind": "comparison",
+            "lhs": "(x - 4)*(x + 4)",
+            "rhs": "x**2 + x - 16",
+            "inputs": [
+              4,
+              -1,
+              0
+            ],
+            "left": [
+              "0",
+              "-15",
+              "-16"
+            ],
+            "right": [
+              "4",
+              "-16",
+              "-16"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad -6-(-2)",
+          "(b)\\quad \\frac{0}{4}",
+          "(c)\\quad -9-2",
+          "(d)\\quad \\frac{-8}{-2}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "-4",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "0",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "-11",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "4",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "signed",
+            "expressions": [
+              [
+                "-6-(-2)",
+                "-4"
+              ],
+              [
+                "\\frac{0}{4}",
+                "0"
+              ],
+              [
+                "-9-2",
+                "-11"
+              ],
+              [
+                "\\frac{-8}{-2}",
+                "4"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "287c2975254aa89aea7ab9df845fd9d27eba87aa7e4cf98e2a9a8a457d2ae821",
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 617.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 526.7,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 526.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 526.7,
+        "bottom": 418.70000000000005,
+        "rows": [
+          {
+            "top": 526.7,
+            "bottom": 490.70000000000005,
+            "label": "(a)",
+            "points": 7
+          },
+          {
+            "top": 490.70000000000005,
+            "bottom": 454.70000000000005,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 454.70000000000005,
+            "bottom": 418.70000000000005,
+            "label": "(c)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 418.70000000000005,
+        "bottom": 242.70000000000005,
+        "rows": [
+          {
+            "top": 418.70000000000005,
+            "bottom": 380.70000000000005,
+            "label": "x = 4",
+            "points": 4
+          },
+          {
+            "top": 380.70000000000005,
+            "bottom": 342.70000000000005,
+            "label": "x = -1",
+            "points": 4
+          },
+          {
+            "top": 342.70000000000005,
+            "bottom": 304.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 304.70000000000005,
+            "bottom": 242.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 242.70000000000005,
+        "bottom": 90.70000000000005,
+        "rows": [
+          {
+            "top": 242.70000000000005,
+            "bottom": 204.70000000000005,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 204.70000000000005,
+            "bottom": 166.70000000000005,
+            "label": "(b)",
+            "points": 5
+          },
+          {
+            "top": 166.70000000000005,
+            "bottom": 128.70000000000005,
+            "label": "(c)",
+            "points": 5
+          },
+          {
+            "top": 128.70000000000005,
+            "bottom": 90.70000000000005,
+            "label": "(d)",
+            "points": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test - Practice Test",
+    "end": 8,
+    "practice": 3,
+    "version": "20192",
+    "seed": 2921771166,
+    "questions": [
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{30}{40}",
+          "(b)\\quad \\frac{15}{25}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{3}{4}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{5}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "30/40",
+            "answer": "3/4"
+          },
+          {
+            "kind": "expression",
+            "input": "15/25",
+            "answer": "3/5"
+          }
+        ]
+      },
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -3, y = 2.",
+        "math": [
+          "- 4 x - 3 y + 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "11",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "11",
+            "answer": "11"
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate at (a) x = 10, (b) x = -10, and (c) x = 0.",
+        "math": [
+          "x^{2} - 4 x - 7"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "53",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "133",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "-7",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "53",
+            "answer": "53"
+          },
+          {
+            "kind": "expression",
+            "input": "133",
+            "answer": "133"
+          },
+          {
+            "kind": "expression",
+            "input": "-7",
+            "answer": "-7"
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad -15+2",
+          "(b)\\quad (-12)(2)",
+          "(c)\\quad \\frac{12}{0}",
+          "(d)\\quad 12-(-2)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "-13",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "-24",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "Undefined",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "14",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "signed",
+            "expressions": [
+              [
+                "-15+2",
+                "-13"
+              ],
+              [
+                "(-12)(2)",
+                "-24"
+              ],
+              [
+                "\\frac{12}{0}",
+                "Undefined"
+              ],
+              [
+                "12-(-2)",
+                "14"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "(x - 6) (x + 6) = x^{2} - 31"
+        ],
+        "rows": [
+          {
+            "label": "x = 3",
+            "answer": "Left -27; right -22; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -3",
+            "answer": "Left -27; right -22; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left -36; right -31; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "None of these values works; this alone does not prove no solution.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            3,
+            "",
+            "",
+            ""
+          ],
+          [
+            -3,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "verification": [
+          {
+            "kind": "comparison",
+            "lhs": "(x - 6)*(x + 6)",
+            "rhs": "x**2 - 31",
+            "inputs": [
+              3,
+              -3,
+              0
+            ],
+            "left": [
+              "-27",
+              "-27",
+              "-36"
+            ],
+            "right": [
+              "-22",
+              "-22",
+              "-31"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "02efd4c58ce2820199dd13a81cb48ea002ca1ca853f6505ba633204379f6e650",
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 574.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 617.0,
+            "bottom": 574.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 574.0,
+        "bottom": 526.7,
+        "rows": [
+          {
+            "top": 574.0,
+            "bottom": 526.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 526.7,
+        "bottom": 419.70000000000005,
+        "rows": [
+          {
+            "top": 526.7,
+            "bottom": 490.70000000000005,
+            "label": "(a)",
+            "points": 7
+          },
+          {
+            "top": 490.70000000000005,
+            "bottom": 454.70000000000005,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 454.70000000000005,
+            "bottom": 419.70000000000005,
+            "label": "(c)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 419.70000000000005,
+        "bottom": 267.70000000000005,
+        "rows": [
+          {
+            "top": 419.70000000000005,
+            "bottom": 381.70000000000005,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 381.70000000000005,
+            "bottom": 343.70000000000005,
+            "label": "(b)",
+            "points": 5
+          },
+          {
+            "top": 343.70000000000005,
+            "bottom": 305.70000000000005,
+            "label": "(c)",
+            "points": 5
+          },
+          {
+            "top": 305.70000000000005,
+            "bottom": 267.70000000000005,
+            "label": "(d)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 267.70000000000005,
+        "bottom": 91.70000000000005,
+        "rows": [
+          {
+            "top": 267.70000000000005,
+            "bottom": 229.70000000000005,
+            "label": "x = 3",
+            "points": 4
+          },
+          {
+            "top": 229.70000000000005,
+            "bottom": 191.70000000000005,
+            "label": "x = -3",
+            "points": 4
+          },
+          {
+            "top": 191.70000000000005,
+            "bottom": 153.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 153.70000000000005,
+            "bottom": 91.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test - Practice Test",
+    "end": 8,
+    "practice": 4,
+    "version": "87105",
+    "seed": 2436726402,
+    "questions": [
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -3, y = 1.",
+        "math": [
+          "2 x + 4 y - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "-5",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "-5",
+            "answer": "-5"
+          }
+        ]
+      },
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{12}{15}",
+          "(b)\\quad \\frac{147}{189}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{4}{5}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{7}{9}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "12/15",
+            "answer": "4/5"
+          },
+          {
+            "kind": "expression",
+            "input": "147/189",
+            "answer": "7/9"
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "(x - 2) (x + 2) = x^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "x = 1",
+            "answer": "Left -3; right -3; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -2",
+            "answer": "Left 0; right 0; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left -4; right -4; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "All tested values work; this alone does not prove an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            1,
+            "",
+            "",
+            ""
+          ],
+          [
+            -2,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "verification": [
+          {
+            "kind": "comparison",
+            "lhs": "(x - 2)*(x + 2)",
+            "rhs": "x**2 - 4",
+            "inputs": [
+              1,
+              -2,
+              0
+            ],
+            "left": [
+              "-3",
+              "0",
+              "-4"
+            ],
+            "right": [
+              "-3",
+              "0",
+              "-4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate at (a) x = 10, (b) x = -10, and (c) x = 0.",
+        "math": [
+          "3 x^{2} - 2 x + 5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "285",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "325",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "5",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "285",
+            "answer": "285"
+          },
+          {
+            "kind": "expression",
+            "input": "325",
+            "answer": "325"
+          },
+          {
+            "kind": "expression",
+            "input": "5",
+            "answer": "5"
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad \\frac{0}{4}",
+          "(b)\\quad -9-(-5)",
+          "(c)\\quad \\frac{-20}{-5}",
+          "(d)\\quad -9-4"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "0",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "-4",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "4",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "-13",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "signed",
+            "expressions": [
+              [
+                "\\frac{0}{4}",
+                "0"
+              ],
+              [
+                "-9-(-5)",
+                "-4"
+              ],
+              [
+                "\\frac{-20}{-5}",
+                "4"
+              ],
+              [
+                "-9-4",
+                "-13"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "0e1d6f8c3f666ea8345f1f0799e00ca0a92bd1a680d02c03ad4a4dd4c96f6cc9",
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 526.7,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 569.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 569.7,
+            "bottom": 526.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 526.7,
+        "bottom": 350.70000000000005,
+        "rows": [
+          {
+            "top": 526.7,
+            "bottom": 488.70000000000005,
+            "label": "x = 1",
+            "points": 4
+          },
+          {
+            "top": 488.70000000000005,
+            "bottom": 450.70000000000005,
+            "label": "x = -2",
+            "points": 4
+          },
+          {
+            "top": 450.70000000000005,
+            "bottom": 412.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 412.70000000000005,
+            "bottom": 350.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 350.70000000000005,
+        "bottom": 242.70000000000005,
+        "rows": [
+          {
+            "top": 350.70000000000005,
+            "bottom": 314.70000000000005,
+            "label": "(a)",
+            "points": 7
+          },
+          {
+            "top": 314.70000000000005,
+            "bottom": 278.70000000000005,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 278.70000000000005,
+            "bottom": 242.70000000000005,
+            "label": "(c)",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 242.70000000000005,
+        "bottom": 90.70000000000005,
+        "rows": [
+          {
+            "top": 242.70000000000005,
+            "bottom": 204.70000000000005,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 204.70000000000005,
+            "bottom": 166.70000000000005,
+            "label": "(b)",
+            "points": 5
+          },
+          {
+            "top": 166.70000000000005,
+            "bottom": 128.70000000000005,
+            "label": "(c)",
+            "points": 5
+          },
+          {
+            "top": 128.70000000000005,
+            "bottom": 90.70000000000005,
+            "label": "(d)",
+            "points": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-arithmetic",
+    "title": "TSM 098 Arithmetic Test - Practice Test",
+    "end": 8,
+    "practice": 5,
+    "version": "58550",
+    "seed": 2063890486,
+    "questions": [
+      {
+        "id": "A98-eval",
+        "prompt": "Evaluate at x = -4, y = 2.",
+        "math": [
+          "- 2 x + 2 y + 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "15",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "15",
+            "answer": "15"
+          }
+        ]
+      },
+      {
+        "id": "A98-signs",
+        "prompt": "Evaluate each expression.",
+        "math": [
+          "(a)\\quad -12+6",
+          "(b)\\quad (-11)(5)",
+          "(c)\\quad \\frac{11}{0}",
+          "(d)\\quad 11-(-5)"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "-6",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "-55",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "Undefined",
+            "points": 5,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "16",
+            "points": 5,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "signed",
+            "expressions": [
+              [
+                "-12+6",
+                "-6"
+              ],
+              [
+                "(-11)(5)",
+                "-55"
+              ],
+              [
+                "\\frac{11}{0}",
+                "Undefined"
+              ],
+              [
+                "11-(-5)",
+                "16"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-frac",
+        "prompt": "Reduce each fraction to lowest terms.",
+        "math": [
+          "(a)\\quad \\frac{4}{6}",
+          "(b)\\quad \\frac{50}{80}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "\\frac{2}{3}",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{5}{8}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "4/6",
+            "answer": "2/3"
+          },
+          {
+            "kind": "expression",
+            "input": "50/80",
+            "answer": "5/8"
+          }
+        ]
+      },
+      {
+        "id": "A98-compare",
+        "prompt": "Complete the table by evaluating each side separately. State what the tested values establish; do not solve the equation.",
+        "math": [
+          "(x - 4) (x + 4) = x^{2} + x - 16"
+        ],
+        "rows": [
+          {
+            "label": "x = 1",
+            "answer": "Left -15; right -14; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = -4",
+            "answer": "Left 0; right -4; no",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "x = 0",
+            "answer": "Left -16; right -16; yes",
+            "points": 4,
+            "plain": true
+          },
+          {
+            "label": "Conclusion",
+            "answer": "Only the listed matching value works; the equation is not an identity.",
+            "points": 8,
+            "plain": true
+          }
+        ],
+        "table": [
+          [
+            "x",
+            "Left value",
+            "Right value",
+            "Equal?"
+          ],
+          [
+            1,
+            "",
+            "",
+            ""
+          ],
+          [
+            -4,
+            "",
+            "",
+            ""
+          ],
+          [
+            0,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "verification": [
+          {
+            "kind": "comparison",
+            "lhs": "(x - 4)*(x + 4)",
+            "rhs": "x**2 + x - 16",
+            "inputs": [
+              1,
+              -4,
+              0
+            ],
+            "left": [
+              "-15",
+              "0",
+              "-16"
+            ],
+            "right": [
+              "-14",
+              "-4",
+              "-16"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A98-quad",
+        "prompt": "Evaluate at (a) x = 10, (b) x = -10, and (c) x = 0.",
+        "math": [
+          "3 x^{2} - 5 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "252",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "352",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c)",
+            "answer": "2",
+            "points": 6,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "252",
+            "answer": "252"
+          },
+          {
+            "kind": "expression",
+            "input": "352",
+            "answer": "352"
+          },
+          {
+            "kind": "expression",
+            "input": "2",
+            "answer": "2"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "5c129fda384410f98fbd1d255843177bd52d1d7259b473a2e4821c75aca8fff4",
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 460.70000000000005,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 574.7,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 574.7,
+            "bottom": 536.7,
+            "label": "(b)",
+            "points": 5
+          },
+          {
+            "top": 536.7,
+            "bottom": 498.70000000000005,
+            "label": "(c)",
+            "points": 5
+          },
+          {
+            "top": 498.70000000000005,
+            "bottom": 460.70000000000005,
+            "label": "(d)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 460.70000000000005,
+        "bottom": 374.70000000000005,
+        "rows": [
+          {
+            "top": 460.70000000000005,
+            "bottom": 417.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 417.70000000000005,
+            "bottom": 374.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 374.70000000000005,
+        "bottom": 198.70000000000005,
+        "rows": [
+          {
+            "top": 374.70000000000005,
+            "bottom": 336.70000000000005,
+            "label": "x = 1",
+            "points": 4
+          },
+          {
+            "top": 336.70000000000005,
+            "bottom": 298.70000000000005,
+            "label": "x = -4",
+            "points": 4
+          },
+          {
+            "top": 298.70000000000005,
+            "bottom": 260.70000000000005,
+            "label": "x = 0",
+            "points": 4
+          },
+          {
+            "top": 260.70000000000005,
+            "bottom": 198.70000000000005,
+            "label": "Conclusion",
+            "points": 8
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 198.70000000000005,
+        "bottom": 91.70000000000005,
+        "rows": [
+          {
+            "top": 198.70000000000005,
+            "bottom": 162.70000000000005,
+            "label": "(a)",
+            "points": 7
+          },
+          {
+            "top": 162.70000000000005,
+            "bottom": 126.70000000000005,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 126.70000000000005,
+            "bottom": 91.70000000000005,
+            "label": "(c)",
+            "points": 6
+          }
+        ]
+      }
+    ]
+  }
+]

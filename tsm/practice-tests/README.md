@@ -1,20 +1,21 @@
 # TSM 098 and TSM 099 practice tests
 
-Three distinct practice versions are provided for all four TSM 098 unit tests, all five TSM 099 unit tests, and each course's final. Links are embedded at the current scheduled test points: after Topics 8, 17, 23, 29, and 34. Final practice appears after Topic 34, before the word-problem activities.
+Each of the nine unit tests and two finals has one PDF containing five fresh practice versions and their matching keys (11 PDFs, 55 versions). The course pages link to one file per assessment. PDF bookmarks jump to each version, student test, and key.
 
-Each PDF combines problem statements in the left two-thirds of each printable page with aligned answer spaces in the right one-third. The concise instructor key uses one page-matching column per test page (up to three per key page), with identical vertical answer positions and separators. Student tests aim for one or two pages; longer finals may use more. The key starts on a fresh duplex sheet, with a completely blank page inserted after an odd-length test. See the [approved format](../../docs/algebra-test-format.md). Unit tests contain five 20-point questions; finals contain ten 10-point questions. Students show work on separate paper, and graphing grids they complete are in the answer column.
+These use the current [TSM master specification](../specifications/TSM_Test_Specs.md), [shared October 30 presentation rules](../../docs/test-presentation.md), and the same layout engine as the 20-version actual-test batches. Each form has an independently random five-digit identifier, final-answer spaces in the right column, 100 points, and a vertically matched key. Unit tests have five main questions; finals have ten, including six institutional families and four coverage-balancing supplements. Practice forms are freshly parameterized rather than copied from the instructor batch.
 
-The [master specification](../specifications/TSM_Test_Specs.md) controls content. Each practice final contains six institutional-family questions and four supplemental questions selected to broaden coverage. These are randomized practice finals; an official final's standardized position map is not needed for them.
+Within each version the order is student test, a truly blank reverse when necessary, matching key, then blank padding to start the next version on a new sheet. Print US Letter, actual size, duplex, long-edge flip. No cover sheets or audit reports are added to the PDFs.
 
-Source data, keys, graphs, scores, and question order are retained in `source/assessments.json`. This is instructor authoring material. The manifest supplies the published links.
+## Rebuilding
 
 From the repository root:
 
 ```bash
 python -m pip install -r scripts/practice-requirements.txt
-python scripts/generate_practice_batch.py --version 202610122020
+python scripts/build_tsm_practice_bundles.py
+python scripts/verify_tsm_practice_bundles.py --render
 ```
 
-This rebuilds the 48-file TSM/MATH 101 batch. For a focused rebuild, add `--only` followed by a slug in the manifest, such as `98-arithmetic`, `99-graphing`, or `99-final`. For each newly generated practice version, independently choose a random five-digit integer from 10000 through 99999. Duplicates are acceptable; no timestamp, sequential numbering, batch suffix, or numerical ordering is required. Use the same identifier on the student test, corresponding answer key, and filename when practical. The key is for checking after attempting the test; no extra compliance report is included in the practice PDFs.
+Use `--only 99-polynomials` (or another manifest slug) for a focused rebuild. Use `--reformat` to preserve the saved questions and version identifiers when changing layout. `scripts/tsm_practice_content.py` supplies fresh mathematical content; `scripts/algebra_test_layout.py` supplies the shared print layout. The old `generate_practice_batch.py` three-form workflow is superseded for TSM.
 
-After building, run `python scripts/verify_algebra_tests.py` from the repository root to check scoring, vertical matches, point positions, empty student answer regions, duplex padding, print margins, and index links. Render and visually inspect the PDFs before publishing.
+`manifest.json` lists the 11 published bundles. Each adjacent JSON reproduction record stores the five forms, seeds, questions, answers, geometry, and packet boundaries. `source/assessments.json` collects the 55 forms. Verification renders all nonblank pages and checks question counts, scoring, numerical/symbolic records, matching geometry, empty response areas, print margins, continuation-only footers, blank padding, version identifiers, PDF bookmarks, and all three practice indexes. Diagnostic exams are not part of the published practice-test inventory.

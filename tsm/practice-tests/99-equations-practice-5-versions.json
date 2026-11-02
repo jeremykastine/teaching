@@ -1,0 +1,1230 @@
+[
+  {
+    "course": "TSM 099",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test - Practice Test",
+    "end": 29,
+    "practice": 1,
+    "version": "99958",
+    "seed": 2090294951,
+    "questions": [
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(x + 1)^2 = 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*(x + 1)**2",
+            "rhs": "12",
+            "denominators": [],
+            "candidates": [
+              "-3",
+              "1"
+            ],
+            "answers": [
+              "-3",
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{6}{2 x - 8} + \\frac{7}{x^{2} - 10 x + 24} = \\frac{4}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "6/(2*x - 8) + 7/((x - 6)*(x - 4))",
+            "rhs": "4/(x - 6)",
+            "denominators": [
+              "x - 4",
+              "x - 6"
+            ],
+            "candidates": [
+              "5"
+            ],
+            "answers": [
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{10}{x^{2} - 25} + \\frac{x - 6}{x - 5} = \\frac{11}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "(x - 6)/(x - 5) + 10/(x**2 - 25)",
+            "rhs": "11/(x + 5)",
+            "denominators": [
+              "x - 5",
+              "x + 5"
+            ],
+            "candidates": [
+              "5",
+              "7"
+            ],
+            "answers": [
+              "7"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "4 x^{2} - 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{3}{8} - \\frac{\\sqrt{73}}{8},\\ \\frac{3}{8} + \\frac{\\sqrt{73}}{8}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "4*x**2 - 3*x - 4",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "3/8 - sqrt(73)/8",
+              "3/8 + sqrt(73)/8"
+            ],
+            "answers": [
+              "3/8 - sqrt(73)/8",
+              "3/8 + sqrt(73)/8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "x^{2} + x = 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x**2 + x - 2",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-2",
+              "1"
+            ],
+            "answers": [
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "4ee9959b87c304fbf116c9e3ab612fe2322630ae4c25a2c12c0c499e918f5b22",
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 409.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 409.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test - Practice Test",
+    "end": 29,
+    "practice": 2,
+    "version": "29544",
+    "seed": 1591220587,
+    "questions": [
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "2 x^{2} - 3 x - 1 = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{3}{4} - \\frac{\\sqrt{17}}{4},\\ \\frac{3}{4} + \\frac{\\sqrt{17}}{4}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "2*x**2 - 3*x - 1",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "3/4 - sqrt(17)/4",
+              "3/4 + sqrt(17)/4"
+            ],
+            "answers": [
+              "3/4 - sqrt(17)/4",
+              "3/4 + sqrt(17)/4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{4}{2 x - 4} + \\frac{6}{x^{2} - 7 x + 10} = \\frac{3}{x - 5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "4/(2*x - 4) + 6/((x - 5)*(x - 2))",
+            "rhs": "3/(x - 5)",
+            "denominators": [
+              "x - 2",
+              "x - 5"
+            ],
+            "candidates": [
+              "2"
+            ],
+            "answers": []
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{13}{x^{2} - 16} + \\frac{x - 6}{x - 4} = \\frac{4}{x + 4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 1,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "(x - 6)/(x - 4) + 13/(x**2 - 16)",
+            "rhs": "4/(x + 4)",
+            "denominators": [
+              "x - 4",
+              "x + 4"
+            ],
+            "candidates": [
+              "1",
+              "5"
+            ],
+            "answers": [
+              "1",
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "4(x - 3)^2 = 16"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 1,\\ 5",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "4*(x - 3)**2",
+            "rhs": "16",
+            "denominators": [],
+            "candidates": [
+              "1",
+              "5"
+            ],
+            "answers": [
+              "1",
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "x^{2} + 2 x = 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -3,\\ 1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x**2 + 2*x - 3",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-3",
+              "1"
+            ],
+            "answers": [
+              "-3",
+              "1"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "b91c2760852a99c9420294e7f38c3c4e126e342589559964969f450d7ab52893",
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 558.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 558.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 558.4000000000001,
+        "bottom": 504.1000000000001,
+        "rows": [
+          {
+            "top": 558.4000000000001,
+            "bottom": 504.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 504.1000000000001,
+        "bottom": 455.80000000000007,
+        "rows": [
+          {
+            "top": 504.1000000000001,
+            "bottom": 455.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 455.80000000000007,
+        "bottom": 408.50000000000006,
+        "rows": [
+          {
+            "top": 455.80000000000007,
+            "bottom": 408.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test - Practice Test",
+    "end": 29,
+    "practice": 3,
+    "version": "99320",
+    "seed": 2854234327,
+    "questions": [
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{5}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "(x - 3)/(x - 2) + 4/(x**2 - 4)",
+            "rhs": "5/(x + 2)",
+            "denominators": [
+              "x - 2",
+              "x + 2"
+            ],
+            "candidates": [
+              "2",
+              "4"
+            ],
+            "answers": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "4(x - 3)^2 = 100"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2,\\ 8",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "4*(x - 3)**2",
+            "rhs": "100",
+            "denominators": [],
+            "candidates": [
+              "-2",
+              "8"
+            ],
+            "answers": [
+              "-2",
+              "8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{8}{2 x - 6} + \\frac{17}{x^{2} - 10 x + 21} = \\frac{5}{x - 7}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "8/(2*x - 6) + 17/((x - 7)*(x - 3))",
+            "rhs": "5/(x - 7)",
+            "denominators": [
+              "x - 3",
+              "x - 7"
+            ],
+            "candidates": [
+              "4"
+            ],
+            "answers": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "x^{2} - x = 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -1,\\ 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x**2 - x - 2",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-1",
+              "2"
+            ],
+            "answers": [
+              "-1",
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3 x^{2} - x - 6 = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{1}{6} - \\frac{\\sqrt{73}}{6},\\ \\frac{1}{6} + \\frac{\\sqrt{73}}{6}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*x**2 - x - 6",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "1/6 - sqrt(73)/6",
+              "1/6 + sqrt(73)/6"
+            ],
+            "answers": [
+              "1/6 - sqrt(73)/6",
+              "1/6 + sqrt(73)/6"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "654a6c507d3b8dfba281b1d76721624b3a62819e4ab5b58307909ed96512e528",
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 605.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 605.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 605.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 605.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 503.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 503.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 503.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 503.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 409.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 409.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test - Practice Test",
+    "end": 29,
+    "practice": 4,
+    "version": "77311",
+    "seed": 2613998191,
+    "questions": [
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(x + 3)^2 = 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -5,\\ -1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*(x + 3)**2",
+            "rhs": "12",
+            "denominators": [],
+            "candidates": [
+              "-5",
+              "-1"
+            ],
+            "answers": [
+              "-5",
+              "-1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{10}{2 x - 6} + \\frac{15}{x^{2} - 9 x + 18} = \\frac{6}{x - 6}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "10/(2*x - 6) + 15/((x - 6)*(x - 3))",
+            "rhs": "6/(x - 6)",
+            "denominators": [
+              "x - 3",
+              "x - 6"
+            ],
+            "candidates": [
+              "3"
+            ],
+            "answers": []
+          }
+        ]
+      },
+      {
+        "id": "E99-factor",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "x^{2} - 4 x = 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2,\\ 6",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x**2 - 4*x - 12",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-2",
+              "6"
+            ],
+            "answers": [
+              "-2",
+              "6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{68}{x^{2} - 25} + \\frac{x - 7}{x - 5} = \\frac{-6}{x + 5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -3,\\ -1",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "(x - 7)/(x - 5) + 68/(x**2 - 25)",
+            "rhs": "-6/(x + 5)",
+            "denominators": [
+              "x - 5",
+              "x + 5"
+            ],
+            "candidates": [
+              "-3",
+              "-1"
+            ],
+            "answers": [
+              "-3",
+              "-1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3 x^{2} - 5 x - 3 = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{5}{6} - \\frac{\\sqrt{61}}{6},\\ \\frac{5}{6} + \\frac{\\sqrt{61}}{6}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*x**2 - 5*x - 3",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "5/6 - sqrt(61)/6",
+              "5/6 + sqrt(61)/6"
+            ],
+            "answers": [
+              "5/6 - sqrt(61)/6",
+              "5/6 + sqrt(61)/6"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7ea9b596f0e30331bf3e49cdfdeb517bca64adf40cebd35719b04f9871135f87",
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 611.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 611.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 611.7,
+        "bottom": 557.4000000000001,
+        "rows": [
+          {
+            "top": 611.7,
+            "bottom": 557.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 557.4000000000001,
+        "bottom": 511.1000000000001,
+        "rows": [
+          {
+            "top": 557.4000000000001,
+            "bottom": 511.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 511.1000000000001,
+        "bottom": 456.80000000000007,
+        "rows": [
+          {
+            "top": 511.1000000000001,
+            "bottom": 456.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 456.80000000000007,
+        "bottom": 409.50000000000006,
+        "rows": [
+          {
+            "top": 456.80000000000007,
+            "bottom": 409.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-equations",
+    "title": "TSM 099 Quadratic and Rational Equations Test - Practice Test",
+    "end": 29,
+    "practice": 5,
+    "version": "28142",
+    "seed": 2967428180,
+    "questions": [
+      {
+        "id": "E99-factor",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "x^{2} - x = 30"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -5,\\ 6",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x**2 - x - 30",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-5",
+              "6"
+            ],
+            "answers": [
+              "-5",
+              "6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-formula",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3 x^{2} + 3 x - 4 = 0"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{1}{2} + \\frac{\\sqrt{57}}{6},\\ - \\frac{\\sqrt{57}}{6} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*x**2 + 3*x - 4",
+            "rhs": "0",
+            "denominators": [],
+            "candidates": [
+              "-1/2 + sqrt(57)/6",
+              "-sqrt(57)/6 - 1/2"
+            ],
+            "answers": [
+              "-1/2 + sqrt(57)/6",
+              "-sqrt(57)/6 - 1/2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-sqrt",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(x - 1)^2 = 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -1,\\ 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*(x - 1)**2",
+            "rhs": "12",
+            "denominators": [],
+            "candidates": [
+              "-1",
+              "3"
+            ],
+            "answers": [
+              "-1",
+              "3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rquad",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{4}{x^{2} - 4} + \\frac{x - 3}{x - 2} = \\frac{6}{x + 2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 5",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "(x - 3)/(x - 2) + 4/(x**2 - 4)",
+            "rhs": "6/(x + 2)",
+            "denominators": [
+              "x - 2",
+              "x + 2"
+            ],
+            "candidates": [
+              "2",
+              "5"
+            ],
+            "answers": [
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "E99-rlinear",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{10}{2 x - 4} + \\frac{11}{x^{2} - 6 x + 8} = \\frac{6}{x - 4}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 3",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "10/(2*x - 4) + 11/((x - 4)*(x - 2))",
+            "rhs": "6/(x - 4)",
+            "denominators": [
+              "x - 2",
+              "x - 4"
+            ],
+            "candidates": [
+              "3"
+            ],
+            "answers": [
+              "3"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "3416a4273b387221e1736a484bff29f3fd387767dfe09e4eba903ebb2538ea8a",
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 565.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 565.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 565.4000000000001,
+        "bottom": 517.1000000000001,
+        "rows": [
+          {
+            "top": 565.4000000000001,
+            "bottom": 517.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 517.1000000000001,
+        "bottom": 462.8000000000001,
+        "rows": [
+          {
+            "top": 517.1000000000001,
+            "bottom": 462.8000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 462.8000000000001,
+        "bottom": 408.5000000000001,
+        "rows": [
+          {
+            "top": 462.8000000000001,
+            "bottom": 408.5000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  }
+]

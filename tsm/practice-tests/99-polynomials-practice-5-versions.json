@@ -1,0 +1,1182 @@
+[
+  {
+    "course": "TSM 099",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test - Practice Test",
+    "end": 17,
+    "practice": 1,
+    "version": "20619",
+    "seed": 1708642163,
+    "questions": [
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3 x - 4)(4 x + 4)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "12 x^{2} - 4 x - 16",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(3*x - 4)*(4*x + 4)",
+            "answer": "12*x**2 - 4*x - 16"
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + 7 x + 10",
+          "(b)\\quad 16 x^{2} - 9"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 2) (x + 5)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(4 x - 3) (4 x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "x**2 + 7*x + 10",
+            "answer": "(x + 2)*(x + 5)"
+          },
+          {
+            "kind": "expression",
+            "input": "16*x**2 - 9",
+            "answer": "(4*x - 3)*(4*x + 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "10 x^{3} + 5 x^{2} + 25 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "5 x (2 x^{2} + x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "10*x**3 + 5*x**2 + 25*x",
+            "answer": "5*x*(2*x**2 + x + 5)"
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} - 29 x + 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 4) (5 x - 3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "15*x**2 - 29*x + 12",
+            "answer": "(3*x - 4)*(5*x - 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} - x - 3",
+          "(b)\\quad 2 x^{2} + 3 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 1) (2 x - 3)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "factoring",
+            "input": "2*x**2 - x - 3",
+            "answer": "(x + 1)*(2*x - 3)",
+            "prime": false
+          },
+          {
+            "kind": "factoring",
+            "input": "2*x**2 + 3*x + 3",
+            "answer": "2*x**2 + 3*x + 3",
+            "prime": true
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7237b501723b0f18805ef55bdf89a016983d1c9a1e3af9d5b5ee58b442b6175e",
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 537.7,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 575.7,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 575.7,
+            "bottom": 537.7,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 537.7,
+        "bottom": 490.40000000000003,
+        "rows": [
+          {
+            "top": 537.7,
+            "bottom": 490.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 490.40000000000003,
+        "bottom": 443.1,
+        "rows": [
+          {
+            "top": 490.40000000000003,
+            "bottom": 443.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 443.1,
+        "bottom": 367.1,
+        "rows": [
+          {
+            "top": 443.1,
+            "bottom": 405.1,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 405.1,
+            "bottom": 367.1,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test - Practice Test",
+    "end": 17,
+    "practice": 2,
+    "version": "50753",
+    "seed": 695185425,
+    "questions": [
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "2 x^{4} - x^{3} + 5 x^{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x^{2} (2 x^{2} - x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "2*x**4 - x**3 + 5*x**2",
+            "answer": "x**2*(2*x**2 - x + 5)"
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(3 x - 4)(4 x + 1)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "12 x^{2} - 13 x - 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(3*x - 4)*(4*x + 1)",
+            "answer": "12*x**2 - 13*x - 4"
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} + 11 x - 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x + 4) (5 x - 3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "15*x**2 + 11*x - 12",
+            "answer": "(3*x + 4)*(5*x - 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} - x - 3",
+          "(b)\\quad 5 x^{2} + 2 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 1) (2 x - 3)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "factoring",
+            "input": "2*x**2 - x - 3",
+            "answer": "(x + 1)*(2*x - 3)",
+            "prime": false
+          },
+          {
+            "kind": "factoring",
+            "input": "5*x**2 + 2*x + 1",
+            "answer": "5*x**2 + 2*x + 1",
+            "prime": true
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} - 5 x + 4",
+          "(b)\\quad 9 x^{2} - 16"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 4) (x - 1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(3 x - 4) (3 x + 4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "x**2 - 5*x + 4",
+            "answer": "(x - 4)*(x - 1)"
+          },
+          {
+            "kind": "expression",
+            "input": "9*x**2 - 16",
+            "answer": "(3*x - 4)*(3*x + 4)"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "12440c9d4b74257d657336ba571dc4dd4a05792f04d5a0950d5fd207e3f9fb23",
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 519.1000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 519.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 519.1000000000001,
+        "bottom": 443.10000000000014,
+        "rows": [
+          {
+            "top": 519.1000000000001,
+            "bottom": 481.10000000000014,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 481.10000000000014,
+            "bottom": 443.10000000000014,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 443.10000000000014,
+        "bottom": 367.10000000000014,
+        "rows": [
+          {
+            "top": 443.10000000000014,
+            "bottom": 405.10000000000014,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 405.10000000000014,
+            "bottom": 367.10000000000014,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test - Practice Test",
+    "end": 17,
+    "practice": 3,
+    "version": "17421",
+    "seed": 3486651513,
+    "questions": [
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2 x - 5)(3 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "6 x^{2} - 9 x - 15",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(2*x - 5)*(3*x + 3)",
+            "answer": "6*x**2 - 9*x - 15"
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor completely.",
+        "math": [
+          "12 x^{2} + 11 x - 15"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x + 5) (4 x - 3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "12*x**2 + 11*x - 15",
+            "answer": "(3*x + 5)*(4*x - 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 3 x^{2} + 5 x + 2",
+          "(b)\\quad 2 x^{2} + x + 5"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 1) (3 x + 2)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "factoring",
+            "input": "3*x**2 + 5*x + 2",
+            "answer": "(x + 1)*(3*x + 2)",
+            "prime": false
+          },
+          {
+            "kind": "factoring",
+            "input": "2*x**2 + x + 5",
+            "answer": "2*x**2 + x + 5",
+            "prime": true
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} - 4 x - 5",
+          "(b)\\quad 9 x^{2} - 16"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 5) (x + 1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(3 x - 4) (3 x + 4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "x**2 - 4*x - 5",
+            "answer": "(x - 5)*(x + 1)"
+          },
+          {
+            "kind": "expression",
+            "input": "9*x**2 - 16",
+            "answer": "(3*x - 4)*(3*x + 4)"
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "8 x^{3} + 12 x^{2} + 20 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "4 x (2 x^{2} + 3 x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "8*x**3 + 12*x**2 + 20*x",
+            "answer": "4*x*(2*x**2 + 3*x + 5)"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "acfc798fd9fc15223047325f2c6c6c4699fcbd930de96f468661a37a87cb0288",
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 490.4000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 528.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 528.4000000000001,
+            "bottom": 490.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 490.4000000000001,
+        "bottom": 414.4000000000001,
+        "rows": [
+          {
+            "top": 490.4000000000001,
+            "bottom": 452.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 452.4000000000001,
+            "bottom": 414.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 414.4000000000001,
+        "bottom": 367.1000000000001,
+        "rows": [
+          {
+            "top": 414.4000000000001,
+            "bottom": 367.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test - Practice Test",
+    "end": 17,
+    "practice": 4,
+    "version": "79130",
+    "seed": 1045245746,
+    "questions": [
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + 2 x - 3",
+          "(b)\\quad x^{2} - 9"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 1) (x + 3)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "x**2 + 2*x - 3",
+            "answer": "(x - 1)*(x + 3)"
+          },
+          {
+            "kind": "expression",
+            "input": "x**2 - 9",
+            "answer": "(x - 3)*(x + 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2 x - 2)(5 x + 3)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "10 x^{2} - 4 x - 6",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(2*x - 2)*(5*x + 3)",
+            "answer": "10*x**2 - 4*x - 6"
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} + 3 x - 2",
+          "(b)\\quad 5 x^{2} + 2 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x + 2) (2 x - 1)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "verification": [
+          {
+            "kind": "factoring",
+            "input": "2*x**2 + 3*x - 2",
+            "answer": "(x + 2)*(2*x - 1)",
+            "prime": false
+          },
+          {
+            "kind": "factoring",
+            "input": "5*x**2 + 2*x + 1",
+            "answer": "5*x**2 + 2*x + 1",
+            "prime": true
+          }
+        ]
+      },
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "2 x^{4} - x^{3} + 5 x^{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x^{2} (2 x^{2} - x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "2*x**4 - x**3 + 5*x**2",
+            "answer": "x**2*(2*x**2 - x + 5)"
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor completely.",
+        "math": [
+          "15 x^{2} + 11 x - 12"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x + 4) (5 x - 3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "15*x**2 + 11*x - 12",
+            "answer": "(3*x + 4)*(5*x - 3)"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "41fb913a970985e95b908d7a057f767f9622dad4a2a933f7e80a452b4e55375e",
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 584.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 584.0,
+        "bottom": 537.7,
+        "rows": [
+          {
+            "top": 584.0,
+            "bottom": 537.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 537.7,
+        "bottom": 461.70000000000005,
+        "rows": [
+          {
+            "top": 537.7,
+            "bottom": 499.70000000000005,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 499.70000000000005,
+            "bottom": 461.70000000000005,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 461.70000000000005,
+        "bottom": 414.40000000000003,
+        "rows": [
+          {
+            "top": 461.70000000000005,
+            "bottom": 414.40000000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 414.40000000000003,
+        "bottom": 367.1,
+        "rows": [
+          {
+            "top": 414.40000000000003,
+            "bottom": 367.1,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 099",
+    "assessment": "99-polynomials",
+    "title": "TSM 099 Polynomials Test - Practice Test",
+    "end": 17,
+    "practice": 5,
+    "version": "30608",
+    "seed": 3218077676,
+    "questions": [
+      {
+        "id": "P99-gcf",
+        "prompt": "Factor out the greatest common factor.",
+        "math": [
+          "4 x^{3} - 2 x^{2} + 10 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "2 x (2 x^{2} - x + 5)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "4*x**3 - 2*x**2 + 10*x",
+            "answer": "2*x*(2*x**2 - x + 5)"
+          }
+        ]
+      },
+      {
+        "id": "P99-mult",
+        "prompt": "Multiply and simplify.",
+        "math": [
+          "(2 x - 4)(5 x + 2)"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "10 x^{2} - 16 x - 8",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "(2*x - 4)*(5*x + 2)",
+            "answer": "10*x**2 - 16*x - 8"
+          }
+        ]
+      },
+      {
+        "id": "P99-basic",
+        "prompt": "Factor completely.",
+        "math": [
+          "(a)\\quad x^{2} + x - 12",
+          "(b)\\quad x^{2} - 9"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "(x - 3) (x + 4)",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 3) (x + 3)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "x**2 + x - 12",
+            "answer": "(x - 3)*(x + 4)"
+          },
+          {
+            "kind": "expression",
+            "input": "x**2 - 9",
+            "answer": "(x - 3)*(x + 3)"
+          }
+        ]
+      },
+      {
+        "id": "P99-small",
+        "prompt": "Factor completely over the integers, or write prime.",
+        "math": [
+          "(a)\\quad 2 x^{2} + 3 x + 3",
+          "(b)\\quad 3 x^{2} - 5 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "Prime",
+            "points": 10,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "(x - 1) (3 x - 2)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "factoring",
+            "input": "2*x**2 + 3*x + 3",
+            "answer": "2*x**2 + 3*x + 3",
+            "prime": true
+          },
+          {
+            "kind": "factoring",
+            "input": "3*x**2 - 5*x + 2",
+            "answer": "(x - 1)*(3*x - 2)",
+            "prime": false
+          }
+        ]
+      },
+      {
+        "id": "P99-group",
+        "prompt": "Factor completely.",
+        "math": [
+          "12 x^{2} - 29 x + 15"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "(3 x - 5) (4 x - 3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "expression",
+            "input": "12*x**2 - 29*x + 15",
+            "answer": "(3*x - 5)*(4*x - 3)"
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7a2144a54983ecab51ebe25e0f96fc52952dc8f392e3eed81563608f8ea0314b",
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 566.4000000000001,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 566.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 566.4000000000001,
+        "bottom": 490.4000000000001,
+        "rows": [
+          {
+            "top": 566.4000000000001,
+            "bottom": 528.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 528.4000000000001,
+            "bottom": 490.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 490.4000000000001,
+        "bottom": 414.4000000000001,
+        "rows": [
+          {
+            "top": 490.4000000000001,
+            "bottom": 452.4000000000001,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 452.4000000000001,
+            "bottom": 414.4000000000001,
+            "label": "(b)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 414.4000000000001,
+        "bottom": 367.1000000000001,
+        "rows": [
+          {
+            "top": 414.4000000000001,
+            "bottom": 367.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -62,22 +62,30 @@ def link_tsm(manifest):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--version',default='202610122020');parser.add_argument('--only',help='Assessment slug for a focused rebuild');parser.add_argument('--validate-only',action='store_true');args=parser.parse_args()
+    # TSM now publishes one five-form bundle per assessment. Never overwrite
+    # that manifest with the superseded three-separate-PDF workflow.
+    if not args.validate_only and (not args.only or args.only.startswith(('98-','99-'))):
+        import subprocess
+        command=[sys.executable,str(ROOT/'scripts/build_tsm_practice_bundles.py')]
+        if args.only:command+=['--only',args.only]
+        subprocess.run(command,check=True)
+        if args.only:return
     batch=make_batch(args.version)
     if args.validate_only:
         print('48 forms; 285 question units; all question counts and point totals verified.');return
+    batch=[a for a in batch if a['course']=='MATH 101']
     report=[]
     for a in batch:
         if args.only and a['assessment']!=args.only:continue
         report.append(build(a));print(a['file'],flush=True)
     rebuilt_count=len(report)
     if report:
-        for folder in ['101','tsm']:
+        for folder in ['101']:
             subset=[a for a in batch if a['folder']==folder]
             d=ROOT/folder/'practice-tests';(d/'source').mkdir(parents=True,exist_ok=True)
             manifest=[{k:a[k] for k in ['course','assessment','title','practice','version','file','end']} for a in subset]
             (d/'manifest.json').write_text(json.dumps(manifest,indent=2))
             (d/'source/assessments.json').write_text(json.dumps(subset,indent=2))
-        link_tsm([a for a in batch if a['folder']=='tsm'])
         from slide_builder import COURSES,build_index
         sections=[]
         for f in sorted((ROOT/'101/slides/source').glob('chapter-*.json')):sections.extend(json.loads(f.read_text()))
@@ -90,3 +98,4 @@ def main():
     print(json.dumps({'rebuilt':rebuilt_count,'total_files':len(report),'pages':sum(a['pages'] for a in report)}))
 
 if __name__=='__main__':main()
+

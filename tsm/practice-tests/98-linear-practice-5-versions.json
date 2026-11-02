@@ -1,0 +1,1139 @@
+[
+  {
+    "course": "TSM 098",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test - Practice Test",
+    "end": 34,
+    "practice": 1,
+    "version": "11241",
+    "seed": 1247295692,
+    "questions": [
+      {
+        "id": "L98-frac",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{6} = \\frac{4}{3}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x/2 + 1/2",
+            "rhs": "4/3",
+            "denominators": [],
+            "candidates": [
+              "5/3"
+            ],
+            "answers": [
+              "5/3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "5(x-4)+2 = 5 x - 17"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 4",
+          "x + y = 5"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x - 4",
+              "5"
+            ],
+            "answer": [
+              3,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 0",
+          "3 x + 5 y = 1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x + 5*y"
+            ],
+            "rhs": [
+              "0",
+              "1"
+            ],
+            "answer": [
+              -3,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(2x-2)-(5x+3)+x = -1"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "2*x - 9",
+            "rhs": "-1",
+            "denominators": [],
+            "candidates": [
+              "4"
+            ],
+            "answers": [
+              "4"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "984afb4a664b0917257cc7ff4af683672a07c670a9ee5d5c77eba86a05f059e9",
+    "start": 0,
+    "test_pages": 1,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 606.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 606.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 606.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 606.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test - Practice Test",
+    "end": 34,
+    "practice": 2,
+    "version": "49482",
+    "seed": 3518578017,
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = -1",
+          "3 x - 3 y = -9"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -2, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x - 3*y"
+            ],
+            "rhs": [
+              "-1",
+              "-9"
+            ],
+            "answer": [
+              -2,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{x + 2}{3} + \\frac{x - 1}{6} = - \\frac{1}{2}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x/2 + 1/2",
+            "rhs": "-1/2",
+            "denominators": [],
+            "candidates": [
+              "-2"
+            ],
+            "answers": [
+              "-2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 13",
+          "3 x + 5 y = 21"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 2, \\  3)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x + 5*y"
+            ],
+            "rhs": [
+              "13",
+              "21"
+            ],
+            "answer": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "2(x-1)+2 = 2 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "All real numbers",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(2x-2)-(4x+3)+x = -4"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{5}{3}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "3*x - 9",
+            "rhs": "-4",
+            "denominators": [],
+            "candidates": [
+              "5/3"
+            ],
+            "answers": [
+              "5/3"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "6b98ec4bc6d2259dc0def5f0ecd130a7bf1214fbf21ed05086275cc9c1411d21",
+    "start": 4,
+    "test_pages": 1,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 541.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 541.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 541.4000000000001,
+        "bottom": 476.1000000000001,
+        "rows": [
+          {
+            "top": 541.4000000000001,
+            "bottom": 476.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 476.1000000000001,
+        "bottom": 429.80000000000007,
+        "rows": [
+          {
+            "top": 476.1000000000001,
+            "bottom": 429.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 429.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 429.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test - Practice Test",
+    "end": 34,
+    "practice": 3,
+    "version": "11084",
+    "seed": 902690193,
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x",
+          "x + y = 6"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 2, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x",
+              "6"
+            ],
+            "answer": [
+              2,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(2x-1)-(5x+2)+x = 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 4",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "2*x - 5",
+            "rhs": "3",
+            "denominators": [],
+            "candidates": [
+              "4"
+            ],
+            "answers": [
+              "4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = -10",
+          "3 x + 5 y = -16"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -2, \\  -2)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x + 5*y"
+            ],
+            "rhs": [
+              "-10",
+              "-16"
+            ],
+            "answer": [
+              -2,
+              -2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve the system and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 4",
+          "4 x + 6 y = 9"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{x + 1}{3} + \\frac{x - 1}{6} = \\frac{11}{12}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x/2 + 1/6",
+            "rhs": "11/12",
+            "denominators": [],
+            "candidates": [
+              "3/2"
+            ],
+            "answers": [
+              "3/2"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "b3c4941e6fb3ce758ec6dbed8b15ab68530af27208326f4132cd974798cc0a3e",
+    "start": 8,
+    "test_pages": 1,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 548.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 548.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 548.4000000000001,
+        "bottom": 483.1000000000001,
+        "rows": [
+          {
+            "top": 548.4000000000001,
+            "bottom": 483.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 483.1000000000001,
+        "bottom": 417.80000000000007,
+        "rows": [
+          {
+            "top": 483.1000000000001,
+            "bottom": 417.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 417.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 417.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test - Practice Test",
+    "end": 34,
+    "practice": 4,
+    "version": "96571",
+    "seed": 2426098496,
+    "questions": [
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 14",
+          "3 x - 3 y = -9"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 1, \\  4)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x - 3*y"
+            ],
+            "rhs": [
+              "14",
+              "-9"
+            ],
+            "answer": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 12",
+          "3 x + 5 y = 19"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 3, \\  2)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x + 5*y"
+            ],
+            "rhs": [
+              "12",
+              "19"
+            ],
+            "answer": [
+              3,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve the system and state the complete solution set.",
+        "math": [
+          "2 x + 3 y = 9",
+          "4 x + 6 y = 18"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "Infinitely many solutions: 2x + 3y = 9",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-dist",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(2x-1)-(5x+2)+x = -2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{3}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "2*x - 5",
+            "rhs": "-2",
+            "denominators": [],
+            "candidates": [
+              "3/2"
+            ],
+            "answers": [
+              "3/2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{x + 1}{3} + \\frac{x - 1}{6} = - \\frac{5}{6}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = -2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x/2 + 1/6",
+            "rhs": "-5/6",
+            "denominators": [],
+            "candidates": [
+              "-2"
+            ],
+            "answers": [
+              "-2"
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "fe5d16d302803d08d72d601b69407a9a67104821621e62f33a7c30fc760cbb09",
+    "start": 12,
+    "test_pages": 1,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 594.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 594.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 594.7,
+        "bottom": 529.4000000000001,
+        "rows": [
+          {
+            "top": 594.7,
+            "bottom": 529.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 529.4000000000001,
+        "bottom": 464.1000000000001,
+        "rows": [
+          {
+            "top": 529.4000000000001,
+            "bottom": 464.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 464.1000000000001,
+        "bottom": 417.80000000000007,
+        "rows": [
+          {
+            "top": 464.1000000000001,
+            "bottom": 417.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 417.80000000000007,
+        "bottom": 364.50000000000006,
+        "rows": [
+          {
+            "top": 417.80000000000007,
+            "bottom": 364.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "TSM 098",
+    "assessment": "98-linear",
+    "title": "TSM 098 Linear Equations and Linear Systems Test - Practice Test",
+    "end": 34,
+    "practice": 5,
+    "version": "15630",
+    "seed": 2677580963,
+    "questions": [
+      {
+        "id": "L98-dist",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "3(2x-3)-(5x+4)+x = -9"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 2",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "2*x - 13",
+            "rhs": "-9",
+            "denominators": [],
+            "candidates": [
+              "2"
+            ],
+            "answers": [
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-frac",
+        "prompt": "Solve. Give the complete solution set.",
+        "math": [
+          "\\frac{x + 3}{3} + \\frac{x - 1}{6} = - \\frac{5}{12}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = - \\frac{5}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "equation",
+            "lhs": "x/2 + 5/6",
+            "rhs": "-5/12",
+            "denominators": [],
+            "candidates": [
+              "-5/2"
+            ],
+            "answers": [
+              "-5/2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-general",
+        "prompt": "Solve the system.",
+        "math": [
+          "2 x + 3 y = 11",
+          "3 x + 5 y = 17"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 4, \\  1)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "2*x + 3*y",
+              "3*x + 5*y"
+            ],
+            "rhs": [
+              "11",
+              "17"
+            ],
+            "answer": [
+              4,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L98-exception",
+        "prompt": "Solve and state the complete solution set.",
+        "math": [
+          "3(x-1)+2 = 3 x"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "No solution",
+            "points": 20,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "L98-basic",
+        "prompt": "Solve the system.",
+        "math": [
+          "y = 2 x - 10",
+          "x + y = 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( 4, \\  -2)",
+            "points": 20,
+            "plain": false
+          }
+        ],
+        "verification": [
+          {
+            "kind": "system",
+            "lhs": [
+              "y",
+              "x + y"
+            ],
+            "rhs": [
+              "2*x - 10",
+              "2"
+            ],
+            "answer": [
+              4,
+              -2
+            ]
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "7018d33833aa1f849426f770f6c843254eced1a70d086aef91485a663aeb8f03",
+    "start": 16,
+    "test_pages": 1,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 613.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 613.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 613.7,
+        "bottom": 560.4000000000001,
+        "rows": [
+          {
+            "top": 613.7,
+            "bottom": 560.4000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 560.4000000000001,
+        "bottom": 495.1000000000001,
+        "rows": [
+          {
+            "top": 560.4000000000001,
+            "bottom": 495.1000000000001,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 495.1000000000001,
+        "bottom": 448.80000000000007,
+        "rows": [
+          {
+            "top": 495.1000000000001,
+            "bottom": 448.80000000000007,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 448.80000000000007,
+        "bottom": 383.50000000000006,
+        "rows": [
+          {
+            "top": 448.80000000000007,
+            "bottom": 383.50000000000006,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  }
+]

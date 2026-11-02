@@ -27,10 +27,10 @@ def rules(page,left,right):
     RULES[cachekey]=sorted(result)
     return RULES[cachekey]
 
-def audit(entry,render):
+def audit(entry,render,expected_versions=20):
     WORDS.clear();DRAWINGS.clear();RULES.clear()
     path=OUT/entry['file'];records=json.loads(path.with_suffix('.json').read_text());doc=fitz.open(path)
-    assert len(records)==entry['versions']==20,(path,'version count')
+    assert len(records)==entry['versions']==expected_versions,(path,'version count')
     assert len(doc)==entry['pages']
     ident=set();student_pages=Counter();thumbnails=[];blanks=0
     for r in records:
@@ -105,7 +105,7 @@ def audit(entry,render):
             subset=thumbnails[k:k+40];sheet=Image.new('RGB',(165*8,220*((len(subset)+7)//8)),'white')
             for j,tile in enumerate(subset):sheet.paste(tile,((j%8)*165,(j//8)*220))
             sheet.save(QA/f"{entry['assessment']}-contact-{k//40+1}.jpg")
-    return dict(assessment=entry['assessment'],versions=20,pages=len(doc),blank_pages=blanks,student_page_counts=dict(student_pages))
+    return dict(assessment=entry['assessment'],versions=expected_versions,pages=len(doc),blank_pages=blanks,student_page_counts=dict(student_pages))
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--render',action='store_true');ap.add_argument('--only');args=ap.parse_args();QA.mkdir(parents=True,exist_ok=True)
@@ -116,3 +116,4 @@ def main():
     (QA/'verification.json').write_text(json.dumps(results,indent=2))
     print('Verified',len(results),'batches;',sum(r['versions'] for r in results),'versions',flush=True)
 if __name__=='__main__':main()
+
