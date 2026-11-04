@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet setup and interpretation · Excel check 3</title><link rel="stylesheet" href="../excel-checks.css?v=20261104"></head>
+<body><main><header><p class="eyebrow">Statistics · Excel competency check 3 · Help</p>
+<h1>Spreadsheet setup and interpretation</h1><p><a href="02-frequency-table.html">Back to the problem</a></p></header>
+<h2>Enter the first game</h2>
+<p>Open a blank Excel workbook. Put <strong>Entry fee</strong> in J1 and Game A’s fee in K1. Put the three outcome names in A2:A4, prize amounts in B2:B4, and probabilities in D2:D4. Enter probabilities with percent signs (for example, <code>50%</code>) or as decimals (for example, <code>0.5</code>), never as the plain number 50.</p>
+<p>Use these column headings in row 1 and formulas in row 2. Fill the formulas down through row 4.</p>
+<div class="spreadsheet-table-wrap"><table class="task-table spreadsheet-layout mobile-cards"><thead><tr><th scope="col">Column</th><th scope="col">Heading</th><th scope="col">Entry or formula in row 2</th></tr></thead><tbody>
+<tr><td data-label="Column">A</td><td data-label="Heading">Outcome</td><td data-label="Entry or formula">No prize, Small prize, Large prize in A2:A4.</td></tr>
+<tr><td data-label="Column">B</td><td data-label="Heading">Prize</td><td data-label="Entry or formula">Enter the three given prize amounts.</td></tr>
+<tr><td data-label="Column">C</td><td data-label="Heading">Net gain</td><td data-label="Entry or formula"><code>=B2-$K$1</code></td></tr>
+<tr><td data-label="Column">D</td><td data-label="Heading">Probability</td><td data-label="Entry or formula">Enter the three given probabilities.</td></tr>
+<tr><td data-label="Column">E</td><td data-label="Heading">Net gain × probability</td><td data-label="Entry or formula"><code>=C2*D2</code></td></tr>
+<tr><td data-label="Column">F</td><td data-label="Heading">Deviation from expected net gain</td><td data-label="Entry or formula"><code>=C2-$K$4</code></td></tr>
+<tr><td data-label="Column">G</td><td data-label="Heading">Squared deviation</td><td data-label="Entry or formula"><code>=F2^2</code></td></tr>
+<tr><td data-label="Column">H</td><td data-label="Heading">Probability × squared deviation</td><td data-label="Entry or formula"><code>=D2*G2</code></td></tr>
+</tbody></table></div>
+<p>Enter these labeled summaries outside the table. You can create K4 before filling the deviation columns. The dollar signs keep K1 and K4 fixed as you fill formulas down; the row references to individual prizes, gains, and probabilities change.</p>
+<table class="task-table"><thead><tr><th scope="col">Label</th><th scope="col">Cell</th><th scope="col">Formula</th></tr></thead><tbody>
+<tr><td>Probability total (label J3)</td><td>K3</td><td><code>=SUM(D2:D4)</code></td></tr>
+<tr><td>Expected net gain (label J4)</td><td>K4</td><td><code>=SUM(E2:E4)</code></td></tr>
+<tr><td>Variance (label J5)</td><td>K5</td><td><code>=SUM(H2:H4)</code></td></tr>
+<tr><td>Standard deviation (label J6)</td><td>K6</td><td><code>=SQRT(K5)</code></td></tr>
+</tbody></table>
+<p>The probability total must be 1, displayed as 100% if formatted as a percentage. Format money and the standard deviation to display two decimal places, but keep full precision in the formulas.</p>
+<p>The expected value is the probability-weighted mean. The variance is the probability-weighted sum of squared deviations. The probabilities already supply the weights: there is no further division by the number of outcomes or by one less than that number. Take the square root to return from squared dollars to dollars. Do not use <code>AVERAGE</code> or the built-in standard-deviation functions on the three possible gains.</p>
+<h2>Save the results, then replace the inputs</h2>
+<ol>
+<li>In J9:L11, create a separate comparison area. Use headings <strong>Measure</strong>, <strong>Game A</strong>, and <strong>Game B</strong> in J9:L9. Put <strong>Expected net gain</strong> in J10 and <strong>Standard deviation</strong> in J11.</li>
+<li>Read K4 and K6. Manually type their values, rounded to cents, into K10 and K11. These two cells must contain numbers, not formulas such as <code>=K4</code>. Otherwise Game A’s recorded results would change when you enter Game B.</li>
+<li>Pause for your instructor to watch. Replace K1, B2:B4, and D2:D4 with Game B’s inputs. Keep all formulas intact and keep the same three outcome rows. Do not press Regenerate between games.</li>
+<li>Show the probability total, net gains, expected value, variance, and standard deviation updating. Confirm Game A’s recorded results remain unchanged. If the table does not update, check the cell references and that workbook calculation is set to Automatic.</li>
+<li>Manually type Game B’s expected net gain and standard deviation into L10 and L11, rounded to cents. Keep the live calculation table visible with Game B’s data.</li>
+</ol>
+<p>These formulas also work in Google Sheets.</p>
+<h2>Explain the comparison orally</h2>
+<ul>
+<li><strong>Expected value:</strong> “Over many independent plays, the average net gain per play would tend toward this amount.” A negative value means an average loss. It is not a promise about any single play, and it need not be a possible individual outcome.</li>
+<li><strong>Long-run reward:</strong> identify the higher expected net gain. If both are negative, the higher one means the smaller average loss; choosing neither avoids the game losses.</li>
+<li><strong>Short-term variability:</strong> identify the higher standard deviation and explain that its outcomes are more spread out around its own expected value. Standard deviation measures variability in both directions, including large gains; it does not directly give the chance of losing.</li>
+<li><strong>Your choice for one play:</strong> consider standard deviation together with the probability of no prize, the entry fee you could lose, and the possible gains. Explain the tradeoff you accept. A larger standard deviation does not automatically make a game a worse choice for everyone.</li>
+</ul>
+<p>Be ready for: “Does the higher-average-reward game also have the lower standard deviation?” Different generated versions can have a reward-versus-variability tradeoff, similar expected values with different variability, or one game with both the higher expected value and lower standard deviation.</p>
+<footer><a href="02-frequency-table.html">Back to the problem</a></footer></main></body></html>
