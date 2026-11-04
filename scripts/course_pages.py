@@ -17,6 +17,7 @@ def navigation(course, active=None):
              ('homework.html', 'Homework')]
     if course in ('101', 'stats'):
         links.insert(1, ('lecture-notes.html', 'Lecture notes'))
+    links.insert(2, ('essentials.html', 'Essentials reviews'))
     if course == 'stats':
         links += [('question-banks/index.html', 'Test banks and answer keys'),
                   ('excel-competency-checks.html', 'Excel competency checks')]
