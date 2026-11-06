@@ -23,7 +23,7 @@ This policy applies to every test, exam, retake, diagnostic, final, and practice
 
 
 **Owner:** Jeremy Kastine  
-**Updated:** October 23, 2026  
+**Updated:** November 5, 2026\
 **Status:** Standing requirements for all future statistics tests, exams, retakes, diagnostics, finals, and practice versions unless the instructor explicitly requests a different format.
 
 ## Controlling requirements
@@ -37,6 +37,7 @@ Teaching (`jeremykastine/teaching`, `main`) is the active repository. Use `stats
 - Default to 10 numbered multiple-choice questions, each worth 10 points, for 100 points. Each question has four choices labeled A–D and exactly one defensible answer. No required multipart justifications or free-response calculations by default.
 - Emphasize conceptual understanding, interpretation, and application. Include only short, manageable calculations; avoid definition-only recall and tedious computation.
 - Unit tests cover Chapters 1–2, 3–4, 5–6, and 7–8, respectively, using OpenStax *Introductory Statistics 2e*. Chapter 9 is not tested.
+- Exclude the Poisson distribution (Section 4.6) from all assessments. Assess Chapter 4 and the binomial normal approximation conceptually. Ask students to interpret discrete distributions and compare binomial, geometric, and hypergeometric assumptions, sampling designs, stopping rules, and what each variable counts. Require no calculation of specific probabilities, means, or other numerical results for these topics.
 - For a unit test, independently draw one question from each of its ten current topic pools, then shuffle the ten selected questions and their answer choices. Preserve the correct answer after shuffling. The bank and machine-readable pool blueprint are authoritative for current coverage.
 - For a cumulative final or diagnostic, retain this presentation and scoring format but use coverage appropriate to the requested assessment. Do not simply use the Unit 1 pools for every test or revive the old eight-question multipart design.
 - Use the requested batch size; 20 is not a mandatory batch size. Random versions may share questions. Keep an internal record of question IDs, printed order, choices, correct letters, version numbers, and random seeds where applicable.

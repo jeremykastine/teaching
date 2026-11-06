@@ -28,7 +28,7 @@
     },
     {
       "id": "U3-G05",
-      "name": "Exponential memorylessness and count connections"
+      "name": "Exponential waiting and memorylessness"
     },
     {
       "id": "U3-G06",
@@ -789,7 +789,7 @@
       "group": "U3-G04",
       "skill_group": "Exponential shape, rates, and tails",
       "reasoning": "calculate",
-      "stem": "Requests follow a constant-rate Poisson process at 4 per hour. What is the mean waiting time to the next request?",
+      "stem": "The wait until the next request is modeled as exponential with rate 4 per hour. What is its mean in minutes?",
       "explanation": "Mean wait is one quarter hour, or 15 minutes.",
       "source": {
         "section": "5.3",
@@ -985,7 +985,7 @@
     {
       "id": "U3-041",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "predict",
       "stem": "An exponential wait has already lasted 10 minutes. Compared with a fresh wait, what is the distribution of the additional wait?",
       "explanation": "Memorylessness concerns additional waiting conditional on having waited so far.",
@@ -1007,7 +1007,7 @@
     {
       "id": "U3-042",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "interpret",
       "stem": "For an exponential model, P(X>3)=0.40. Given X>7, what is the chance of more than 3 additional minutes?",
       "explanation": "Memorylessness gives P(X>10 given X>7)=P(X>3).",
@@ -1029,7 +1029,7 @@
     {
       "id": "U3-043",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "compare",
       "stem": "After an 11-minute wait, U(0,12) allows at most 1 more minute. An exponential model allows longer additional waits. What explains the difference?",
       "explanation": "Their supports and conditional-wait behavior differ.",
@@ -1051,10 +1051,10 @@
     {
       "id": "U3-044",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "evaluate",
       "stem": "Arrival rates sharply rise at lunchtime. What is questionable about a single exponential waiting model over the whole day?",
-      "explanation": "The homogeneous exponential waiting model relies on a stable Poisson-process rate.",
+      "explanation": "A single exponential waiting model of this kind assumes a stable arrival rate.",
       "source": {
         "section": "5.3",
         "slide_page": 27,
@@ -1073,10 +1073,10 @@
     {
       "id": "U3-045",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "interpret",
-      "stem": "The same process supplies arrivals per hour and time until next arrival. Which assignment is appropriate?",
-      "explanation": "These are linked but different random variables under a constant-rate Poisson process.",
+      "stem": "A help desk records both the number of requests received in an hour and the exact time until its next request. Which is a continuous variable that an exponential model could describe?",
+      "explanation": "Elapsed time varies continuously; counts take whole-number values.",
       "source": {
         "section": "5.3",
         "slide_page": 23,
@@ -1084,10 +1084,10 @@
         "pdf": "../slides/section-5-3.pdf#page=23"
       },
       "choices": [
-        "Uniform for both automatically.",
-        "Binomial for both automatically.",
-        "Poisson for the count; exponential for the wait.",
-        "Exponential for the count; Poisson for the wait."
+        "Whether there was a request in the hour.",
+        "The number of help desks open.",
+        "The exact time until the next request.",
+        "The number of requests received in the hour."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1095,7 +1095,7 @@
     {
       "id": "U3-046",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "compare",
       "stem": "How does no arrivals in the next 5 minutes relate to waiting more than 5 minutes for the next arrival?",
       "explanation": "No event before the cutoff means the next event occurs after it.",
@@ -1117,21 +1117,21 @@
     {
       "id": "U3-047",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
-      "reasoning": "calculate",
-      "stem": "A constant-rate process averages 0.5 requests per minute. What is the mean request count over 10 minutes?",
-      "explanation": "Expected count is rate times interval length.",
+      "skill_group": "Exponential waiting and memorylessness",
+      "reasoning": "evaluate",
+      "stem": "A help desk's exponential waiting model is memoryless. Which prediction is justified after a request-free stretch?",
+      "explanation": "Memorylessness leaves the distribution of remaining time unchanged.",
       "source": {
         "section": "5.3",
-        "slide_page": 24,
-        "slide_title": "A Poisson connection",
-        "pdf": "../slides/section-5-3.pdf#page=24"
+        "slide_page": 20,
+        "slide_title": "The memoryless property",
+        "pdf": "../slides/section-5-3.pdf#page=20"
       },
       "choices": [
-        "20.",
-        "0.5.",
-        "10.",
-        "5."
+        "A request must arrive before the original mean wait expires.",
+        "A request becomes more likely in the next minute merely because the wait has been long.",
+        "The elapsed time so far must be added to the model's mean remaining wait.",
+        "For a fixed additional interval, the chance of no request matches the chance from a fresh start."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1139,7 +1139,7 @@
     {
       "id": "U3-048",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "predict",
       "stem": "An exponential arrival rate doubles. What happens to mean waiting time?",
       "explanation": "Mean wait is the reciprocal of rate.",
@@ -1161,7 +1161,7 @@
     {
       "id": "U3-049",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "interpret",
       "stem": "The mean lifetime is 8 hours. What does an expected total lifetime of 80 hours for ten items mean?",
       "explanation": "Expected values add but individual and total outcomes still vary.",
@@ -1183,7 +1183,7 @@
     {
       "id": "U3-050",
       "group": "U3-G05",
-      "skill_group": "Exponential memorylessness and count connections",
+      "skill_group": "Exponential waiting and memorylessness",
       "reasoning": "compare",
       "stem": "Compare one exponential duration with the average of many independent durations. What remains the same?",
       "explanation": "Averaging preserves the expected center while reducing variability.",

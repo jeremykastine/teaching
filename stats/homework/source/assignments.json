@@ -270,104 +270,88 @@
   {
     "course": "Statistics",
     "title": "Chapter 4 Homework",
-    "subtitle": "Discrete random variables and expected value",
-    "coverage": "Sections 4.1-4.6",
+    "subtitle": "Discrete random variables and model choice",
+    "coverage": "Sections 4.1-4.5",
     "file": "chapter-4-homework.pdf",
     "sections": [
       {
-        "title": "One distribution, several questions",
+        "title": "Read and interpret a discrete distribution",
         "problems": [
           {
-            "prompt": "Let X be the number of late deliveries in a day. Complete the probability distribution and explain why it is valid.",
+            "prompt": "A delivery company tracks the number of late packages in a shift and the exact time until its next late delivery. Which variable is discrete? Explain how the possible values of the two variables differ.",
             "math": [],
-            "answer": "missing .3;nonnegative sum1",
-            "minutes": 4,
-            "table": [
-              [
-                "x",
-                "0",
-                "1",
-                "2",
-                "3"
-              ],
-              [
-                "P(X = x)",
-                "0.2",
-                "0.4",
-                "?",
-                "0.1"
-              ]
-            ]
-          },
-          {
-            "prompt": "For Problem 1 find P(X ≥ 2), P(X &gt; 2), and P(X ≤ 1). Explain the difference between the first two events.",
-            "math": [],
-            "answer": ".4,.1,.6;include2 vs not",
-            "minutes": 3
-          },
-          {
-            "prompt": "Find the expected number of late deliveries for Problem 1. Explain why a noninteger expected value is meaningful even though X is a count.",
-            "math": [],
-            "answer": "1.3;long-run average",
+            "answer": "The count is discrete. The exact wait can take any value in a continuous interval.",
             "minutes": 4
           },
           {
-            "prompt": "For Problem 1, compute E(X squared), the variance, and SD. Use variance = E(X squared) - [E(X)] squared, and √0.81 = 0.9. What are the SD units?",
+            "prompt": "One proposed probability table lists all possible outcomes and has a total probability of one, but an entry is negative. Another lists every possible outcome and has no negative entries, but its probabilities total less than one. Explain why each table is invalid.",
             "math": [],
-            "answer": "2.5;.81;.9 deliveries",
+            "answer": "A probability cannot be negative, and the probabilities of all possible values must sum to one.",
+            "minutes": 4
+          },
+          {
+            "prompt": "A manager reads a probability table for the number of late packages. Explain which rows belong to “at least one is late” and how that event relates to “none is late.”",
+            "math": [],
+            "answer": "All positive counts are included. No late packages is the complement.",
+            "minutes": 4
+          },
+          {
+            "prompt": "A model for late packages gives a long-run expected count between two whole numbers. Explain why that makes sense and what you could learn from the standard deviation that you cannot learn from the expected count alone.",
+            "math": [],
+            "answer": "The expectation is an average over shifts. The SD describes variability around it in packages.",
             "minutes": 5
           },
           {
-            "prompt": "A game pays $0, $4, or $10 with probabilities 0.5, 0.4, and 0.1. It costs $3 to play. Find expected payout, expected net gain, and a fair entry fee. Does expected loss mean every play loses money?",
+            "prompt": "Two games have the same expected net gain. One pays the same amount every time, while the other sometimes pays more and sometimes less. Explain how the games can have the same expected value but different risk.",
             "math": [],
-            "answer": "2.6;-.4;2.6;no",
+            "answer": "Their long-run average net gains agree. The variable game has more spread and less predictable individual outcomes.",
             "minutes": 5
           }
         ]
       },
       {
-        "title": "Choose a model from its assumptions",
+        "title": "Choose and compare models",
         "problems": [
           {
-            "prompt": "Four independent packages each have probability 0.25 of arriving late. Let Y count late packages. Name the distribution and its parameters. Find P(Y = 1), P(Y ≥ 1), and E(Y).",
+            "prompt": "An inspector checks a fixed number of packages independently. Each package has the same chance of being damaged. Identify the distribution for the number of damaged packages and explain what makes it a good fit.",
             "math": [],
-            "answer": "bin n4 p.25;4*.25*.75³=.421875;1-.75^4=.68359375;1",
-            "minutes": 6
-          },
-          {
-            "prompt": "Independent attempts succeed with probability 0.2. Let T count attempts through the first success. Name the model. Find P(T = 3), P(T &gt; 3), and E(T). State whether T counts failures or all attempts.",
-            "math": [],
-            "answer": "geometric;.8²*.2=.128;.8³=.512;5;all attempts",
-            "minutes": 5
-          },
-          {
-            "prompt": "A box has 5 marked and 3 unmarked cards. Select 2 uniformly without replacement. Let H count marked cards. Identify the distribution and possible values; find P(H = 2). You may use 8 choose 2 = 28 and 5 choose 2 = 10.",
-            "math": [],
-            "answer": "hypergeometric N8 K5 n2;0,1,2;10/28",
-            "minutes": 5
-          },
-          {
-            "prompt": "Assume arrivals follow a constant-rate Poisson process averaging 2 per hour. State the mean count in 30 minutes. Find the probability of no arrivals in 30 minutes, using P(X = 0) = e to the power -mean and e to the power -1 ≈ 0.3679.",
-            "math": [],
-            "answer": "mean1;.3679",
+            "answer": "Binomial: fixed number of independent trials with a common probability of damage.",
             "minutes": 4
           },
           {
-            "prompt": "Explain which earlier model applies to (a) a fixed number of independent yes/no trials, (b) trials until first success, (c) a fixed-size sample without replacement, and (d) counts in a fixed time interval under constant-rate Poisson assumptions. For each, identify what the random variable counts.",
+            "prompt": "A caller makes independent attempts, each with the same chance of reaching a person. Identify the distribution for the attempt on which someone first answers. Explain whether that successful attempt is included in the count.",
             "math": [],
-            "answer": "binomial,geometric,hypergeometric,Poisson;counts vs trials clear",
+            "answer": "Geometric: count all attempts through and including the first successful one.",
+            "minutes": 4
+          },
+          {
+            "prompt": "A teacher randomly selects a fixed-size sample of cards from a mixed stack of marked and unmarked cards without replacing them. Identify the distribution for the number of marked cards and explain what happens to the chance of drawing a marked card after one is removed.",
+            "math": [],
+            "answer": "Hypergeometric. Removing a marked card lowers the marked proportion when the stack contains both types.",
             "minutes": 5
           },
           {
-            "prompt": "Why is the number of marked cards in Problem 8 not exactly binomial? Explain what happens to the next-draw success probability after a marked card is selected.",
+            "prompt": "Now suppose the teacher returns each card and mixes the stack before drawing again. The teacher still makes a fixed number of draws. Which model now fits the marked-card count, and what does the replacement change?",
             "math": [],
-            "answer": "without replacement dependence;5/8 becomes4/7",
-            "minutes": 3
+            "answer": "Binomial. Replacing and remixing restores the original success chance and supports independent draws.",
+            "minutes": 5
+          },
+          {
+            "prompt": "Two machines have independent attempts with a constant success chance for each machine. One has a higher success chance than the other. Compare their typical waits for a first success and explain whether either has a guaranteed finite maximum wait. Assume both chances are strictly between zero and one.",
+            "math": [],
+            "answer": "The machine with the higher chance tends to succeed sooner. Arbitrarily long strings of failures remain possible for both.",
+            "minutes": 5
+          },
+          {
+            "prompt": "Explain how to distinguish binomial, geometric, and hypergeometric situations by asking what the variable counts, when the procedure stops, and whether sampling changes the pool.",
+            "math": [],
+            "answer": "Binomial counts successes in a fixed number of independent trials; geometric counts trials through the first success; hypergeometric counts successes in a fixed-size sample without replacement.",
+            "minutes": 4
           }
         ]
       }
     ],
-    "directions": "A four-function calculator is sufficient; needed advanced numerical values are supplied. Show probability setups, units, and brief explanations. Round probabilities to four decimals unless exact fractions are convenient. All scenarios and data are fictional."
+    "directions": "Explain your reasoning in words. Use the context to identify what is counted, how trials or draws are conducted, and which assumptions support each model. All scenarios are fictional."
   },
   {
     "course": "Statistics",
@@ -415,9 +399,9 @@
         "title": "Exponential waiting times",
         "problems": [
           {
-            "prompt": "A service follows a constant-rate Poisson process, with mean time between arrivals 4 minutes. Let T be time until the next arrival. Identify its model, rate per minute, mean, SD, and possible values.",
+            "prompt": "The time between requests is modeled as exponential, with a mean of 4 minutes. Let T be the time until the next request, starting just after one arrives. State the rate per minute, the mean, the SD, and the possible values of T.",
             "math": [],
-            "answer": "exponential rate1/4 mean4 sd4 support>=0",
+            "answer": "Exponential with rate 1/4 per minute, mean and SD 4 minutes, and nonnegative possible values.",
             "minutes": 4
           },
           {
@@ -447,9 +431,9 @@
             "minutes": 4
           },
           {
-            "prompt": "Under the process in Problem 6, identify the distribution and mean for the number of arrivals in 20 minutes. Explain how the count variable differs from the waiting-time variable.",
+            "prompt": "Compare the time until the next request with the number of requests received in a fixed interval. Which variable does the exponential model in Problem 6 describe, and why is it continuous?",
             "math": [],
-            "answer": "Poisson mean5;discrete count vs continuous time",
+            "answer": "It models the wait, which can vary continuously. The number of requests takes whole-number values.",
             "minutes": 3
           },
           {
@@ -633,9 +617,9 @@
             "minutes": 4
           },
           {
-            "prompt": "Let Y be binomial with n = 100 and p = 0.4. Check the textbook criteria np &gt; 5 and n(1 - p) &gt; 5. Find the mean and SD (use √24 ≈ 4.899). Approximate P(Y ≤ 45) using the continuity correction 45.5. Round z to 1.12 and use P(Z ≤ 1.12) = 0.8686.",
+            "prompt": "Two binomial settings have the same large number of trials. In the first, successes and failures are both common. In the second, successes are so rare that only a few are expected. Which setting better supports a normal approximation? Explain why a large trial count by itself is insufficient, and why the normal model represents a single count with a small interval.",
             "math": [],
-            "answer": "40,60 yes;mean40 sd4.899;z1.1227;.8686",
+            "answer": "The first is better because both expected counts must be sufficiently large. A continuous normal model uses interval area to approximate the probability mass at a whole-number count.",
             "minutes": 6
           },
           {

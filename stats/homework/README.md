@@ -6,7 +6,9 @@ Priorities come from `course-schedule.md`, `docs/slide-specifications.md`, the c
 
 A four-function calculator is sufficient. Normal probabilities, critical values, exponential/logarithm approximations, and nontrivial square roots are supplied when needed. Excel skills remain a separate assessment category; these PDFs can be completed on paper. Datasets and scenarios are labeled fictional, avoiding the disliked term “synthetic.”
 
-Conventions checked against OpenStax Introductory Statistics 2e: [7.3 CLT and binomial approximation](https://openstax.org/books/introductory-statistics-2e/pages/7-3-using-the-central-limit-theorem) and [8.3 proportion intervals](https://openstax.org/books/introductory-statistics-2e/pages/8-3-a-population-proportion). Use the stated >5 success/failure criteria, continuity correction for the binomial approximation, and sample-proportion standard error for the ordinary interval. Quartiles use the explicitly stated median-of-halves convention. Normality/independence conditions are identified; a large sample does not fix selection bias.
+Conventions checked against OpenStax Introductory Statistics 2e: [7.3 CLT and binomial approximation](https://openstax.org/books/introductory-statistics-2e/pages/7-3-using-the-central-limit-theorem) and [8.3 proportion intervals](https://openstax.org/books/introductory-statistics-2e/pages/8-3-a-population-proportion). Discuss the expected success and failure conditions and continuity correction for the binomial approximation conceptually. Use the sample-proportion standard error for the ordinary interval. Quartiles use the explicitly stated median-of-halves convention. Normality/independence conditions are identified; a large sample does not fix selection bias.
+
+Chapter 4 homework covers Sections 4.1-4.5 through interpretation and model choice, with explanations in words. Section 4.6 is outside the homework scope.
 
 ## Format and workload
 
@@ -19,7 +21,7 @@ Match the approved Math 101 Chapter 1 approach: compact US Letter PDFs with no r
 | Statistics Chapter 1 Homework | Sections 1.1-1.4 | Sampling, data, and study design | 9 | 48 min |
 | Statistics Chapter 2 Homework | Sections 2.1-2.7 | Describing distributions | 11 | 48 min |
 | Statistics Chapter 3 Homework | Sections 3.1-3.5 | Probability and conditional reasoning | 11 | 48 min |
-| Statistics Chapter 4 Homework | Sections 4.1-4.6 | Discrete random variables and expected value | 11 | 49 min |
+| Statistics Chapter 4 Homework | Sections 4.1-4.5 | Discrete random variables and model choice | 11 | 49 min |
 | Statistics Chapter 5 Homework | Sections 5.1-5.3 | Continuous models, areas, and waiting times | 12 | 50 min |
 | Statistics Chapter 6 Homework | Sections 6.1-6.2 | Normal distributions and percentiles | 11 | 48 min |
 | Statistics Chapter 7 Homework | Sections 7.1-7.3 | Sampling distributions and the CLT | 11 | 48 min |

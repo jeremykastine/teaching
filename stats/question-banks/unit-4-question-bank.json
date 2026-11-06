@@ -1055,8 +1055,8 @@
       "group": "U4-G05",
       "skill_group": "Choosing models, areas, and approximations",
       "reasoning": "evaluate",
-      "stem": "The course's binomial normal approximation check requires np>5 and n(1-p)>5. For n=100, p=0.02, which judgment fits?",
-      "explanation": "Both expected-count requirements must hold.",
+      "stem": "A binomial experiment has many trials, but successes are so rare that only a few are expected. Why might a normal approximation be poor?",
+      "explanation": "A good normal approximation needs sufficiently many expected successes and failures.",
       "source": {
         "section": "7.3",
         "slide_page": 25,
@@ -1064,10 +1064,10 @@
         "pdf": "../slides/section-7-3.pdf#page=25"
       },
       "choices": [
-        "It passes because p is positive.",
-        "It passes because n exceeds 30.",
-        "It fails because expected failures are 98.",
-        "It fails because expected successes are only 2."
+        "The trials must be dependent.",
+        "The expected number of failures must also be small.",
+        "The count is automatically symmetric because there are many trials.",
+        "The expected number of successes is too small."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1077,8 +1077,8 @@
       "group": "U4-G05",
       "skill_group": "Choosing models, areas, and approximations",
       "reasoning": "interpret",
-      "stem": "Why approximate P(X=40) for a binomial count using a normal interval around 40 instead of a single point?",
-      "explanation": "Continuity correction represents an integer count by a one-unit interval.",
+      "stem": "Why represent a single binomial count by an interval when using a normal approximation?",
+      "explanation": "The interval lets continuous area approximate the discrete probability mass.",
       "source": {
         "section": "7.3",
         "slide_page": 27,
@@ -1086,10 +1086,10 @@
         "pdf": "../slides/section-7-3.pdf#page=27"
       },
       "choices": [
-        "A continuous model assigns zero probability to one exact point.",
-        "Every count equals its mean.",
-        "A normal model has no area.",
-        "The count 40 is impossible."
+        "An interval has area under a continuous curve, while a single point has zero area.",
+        "A count always equals its expected value.",
+        "The normal distribution has positive probability at every exact point.",
+        "The count can take fractional values."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1099,8 +1099,8 @@
       "group": "U4-G05",
       "skill_group": "Choosing models, areas, and approximations",
       "reasoning": "interpret",
-      "stem": "Which continuous event uses the appropriate continuity correction for X>=45?",
-      "explanation": "The included count 45 contributes the interval beginning at 44.5.",
+      "stem": "For a normal approximation to the probability of at least a given count, what should happen to the interval representing the cutoff count?",
+      "explanation": "At least includes the cutoff count itself.",
       "source": {
         "section": "7.3",
         "slide_page": 28,
@@ -1108,10 +1108,10 @@
         "pdf": "../slides/section-7-3.pdf#page=28"
       },
       "choices": [
-        "Y>44.5.",
-        "Y=45.",
-        "Y>45.5.",
-        "Y<44.5."
+        "Include the entire interval and all intervals above it.",
+        "Use just a single point at the cutoff.",
+        "Exclude the interval and include only those above it.",
+        "Include only the intervals below it."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1121,8 +1121,8 @@
       "group": "U4-G05",
       "skill_group": "Choosing models, areas, and approximations",
       "reasoning": "interpret",
-      "stem": "Which continuous event approximates X<=45 with continuity correction?",
-      "explanation": "Including the entire count-45 interval extends the upper boundary to 45.5.",
+      "stem": "For a normal approximation to the probability of at most a given count, which intervals belong in the shaded area?",
+      "explanation": "At most includes the cutoff count and smaller counts.",
       "source": {
         "section": "7.3",
         "slide_page": 29,
@@ -1130,10 +1130,10 @@
         "pdf": "../slides/section-7-3.pdf#page=29"
       },
       "choices": [
-        "Y<45.5.",
-        "Y<44.5.",
-        "Y>45.5.",
-        "Y=45."
+        "The cutoff count's interval and all intervals below it.",
+        "Only the intervals below the cutoff count's interval.",
+        "Only the intervals above the cutoff count's interval.",
+        "Only the cutoff count's interval."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1143,8 +1143,8 @@
       "group": "U4-G05",
       "skill_group": "Choosing models, areas, and approximations",
       "reasoning": "interpret",
-      "stem": "Which interval approximates the discrete event X=45?",
-      "explanation": "The one-unit interval around 45 represents its discrete probability mass.",
+      "stem": "Which area of the approximating normal curve represents exactly one specified integer count?",
+      "explanation": "Continuity correction assigns the mass of one integer to the interval of points closest to it.",
       "source": {
         "section": "7.3",
         "slide_page": 32,
@@ -1152,10 +1152,10 @@
         "pdf": "../slides/section-7-3.pdf#page=32"
       },
       "choices": [
-        "Y=45 only.",
-        "Y>45.5.",
-        "44.5<Y<45.5.",
-        "Y<44.5."
+        "The entire area to the right of the count.",
+        "The height of the curve at the count.",
+        "The area between the midpoints separating that integer from its two neighbors.",
+        "The whole area between the two neighboring integers."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1651,7 +1651,7 @@
       "skill_group": "Student t and estimated uncertainty",
       "reasoning": "interpret",
       "stem": "To estimate a population mean with unknown population SD using a sample SD, which standard method fits?",
-      "explanation": "The t method accounts for estimating population SD.",
+      "explanation": "The t method accounts for estimating population SD when constructing an interval for the mean.",
       "source": {
         "section": "8.2",
         "slide_page": 15,
@@ -1661,7 +1661,7 @@
       "choices": [
         "A proportion interval regardless of variable type.",
         "A one-sample t interval.",
-        "A Poisson count probability.",
+        "A prediction interval for a single future observation.",
         "A known-SD z interval treating s as known population SD."
       ],
       "answer_index": 1,

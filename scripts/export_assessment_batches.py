@@ -130,7 +130,11 @@ def stats_questions(unit,seed):
             groups.extend((bank,g) for g in chosen)
     for bank,g in groups:
         q=dict(rng.choice([q for q in bank['questions'] if q['group']==g['id']]))
-        order=rng.sample(range(4),4);q['choices']=[q['choices'][i] for i in order];q['answer_index']=order.index(q['answer_index']);selected.append(q)
+        order = rng.sample(range(4), 4)
+        q['choices'] = [q['choices'][i] for i in order]
+        q['answer_index'] = order.index(q['answer_index'])
+        q['answer_letter'] = 'ABCD'[q['answer_index']]
+        selected.append(q)
     rng.shuffle(selected);assert len(selected)==10 and len({q['id'] for q in selected})==10
     return selected
 

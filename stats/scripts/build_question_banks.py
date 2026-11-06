@@ -445,7 +445,7 @@ def build_overview(banks):
         **existing_policy,
         'generator_version': 1, 'questions_per_test': 10, 'questions_per_pool': 1,
         'sampling': 'Choose one question independently from each of ten topic pools, then shuffle the selected questions and their answer choices.',
-        'scope': 'Chapters 1-8; Chapter 9 is not tested. Use the same pool coverage for instructor-requested printable tests.',
+        'scope': 'Chapters 1-8, excluding Section 4.6. Chapter 4 and the binomial normal approximation are assessed conceptually. Chapter 9 is not tested. Use the same pool coverage for instructor-requested printable tests.',
         'publication': 'Two student HTML options per unit. Printed assessment PDFs are produced separately on instructor request, not published by this builder.',
         'units': units}, indent=2)+'\n')
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')

@@ -44,13 +44,11 @@ Probability Distribution Function (PDF) for a Discrete Random Variable
 Section 4.2
 Mean or Expected Value and Standard Deviation
 Section 4.3
-Binomial Distribution
+Binomial Distribution (concepts)
 Section 4.4
-Geometric Distribution
+Geometric Distribution (concepts)
 Section 4.5
-Hypergeometric Distribution
-Section 4.6
-Poisson Distribution
+Hypergeometric Distribution (concepts)
 
 Week 6
 Section 5.1

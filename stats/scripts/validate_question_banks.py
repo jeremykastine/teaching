@@ -37,17 +37,12 @@ def calculations():
         'U2-022': num(.4+.5-.2), 'U2-023': num(1-.75),
         'U2-027': num(1-.7), 'U2-031': '12/20.',
         'U2-037': num(.4*.5), 'U2-039': num(30-8),
-        'U2-043': num(1-.2-.5), 'U2-045': num(.2+.5),
-        'U2-055': num(8-3), 'U2-059': num(1.5*20),
-        'U2-063': num(20*.3), 'U2-076': num(1/.25),
-        'U2-086': num(6*.5), 'U2-091': num(2*3),
-        'U2-092': num(math.sqrt(9)), 'U2-098': num(1000*.002),
         'U3-003': num(1/4), 'U3-007': f'{.8-.2:.2f}.',
         'U3-009': num(100*(1-.8), '%.'), 'U3-012': f'{6-3}/{12-0}.',
         'U3-015': num((4+12)/2), 'U3-016': num(.75*20, ' minutes.'),
         'U3-025': f'{12-8}/{12-4}.', 'U3-032': num(60/4, ' minutes.'),
         'U3-033': num(1/5), 'U3-036': f'{1-.2:.2f}.',
-        'U3-037': num(.5-.125), 'U3-047': num(.5*10),
+        'U3-037': num(.5-.125),
         'U3-061': num((50-40)/5), 'U3-062': num((12-20)/4),
         'U3-065': num(30+1.5*4), 'U3-074': f'{1-.8849:.4f}.',
         'U3-076': num(.85-.2), 'U3-077': f'{1-.9:.2f}.',
@@ -99,6 +94,11 @@ def main():
         for q in b['questions']:
             questions[q['id']] = q
     assert len(questions) == 400
+    for q in questions.values():
+        section = q['source']['section']
+        assert section != '4.6' and 'poisson' not in json.dumps(q).casefold(), q['id']
+        if section.startswith('4.') or (section == '7.3' and 24 <= q['source']['slide_page'] <= 33):
+            assert q['reasoning'] != 'calculate', q['id']
     checks = calculations()
     assert set(checks) == {qid for qid, q in questions.items() if q['reasoning']=='calculate'}
     for qid, expected in checks.items():
@@ -152,11 +152,16 @@ def main():
         for html in (full, generator):
             assert not re.search(r'href=[\"\'][^\"\']*question-bank\.pdf', html)
         pools = next(u['pools'] for u in blueprint['units'] if u['unit'] == unit)
-        assert [p['id'] for p in pools] == [g['id'] for g in bank['groups']]
+        assert [(p['id'], p['name']) for p in pools] == [(g['id'], g['name']) for g in bank['groups']]
         for pool in pools:
             assert pool['question_ids'] == [q['id'] for q in bank['questions'] if q['group'] == pool['id']]
     link_count = 0
-    html_paths = [ROOT / 'index.html'] + list((ROOT / 'stats').rglob('*.html'))
+    # Mirrored textbook inputs have their own relative link namespace.
+    textbook_sources = ROOT / 'stats/notes-source/textbook'
+    html_paths = [ROOT / 'index.html'] + [
+        path for path in (ROOT / 'stats').rglob('*.html')
+        if not path.is_relative_to(textbook_sources)
+    ]
     parsed = {}
     for path in html_paths:
         parser = Links()

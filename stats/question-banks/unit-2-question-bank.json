@@ -48,7 +48,7 @@
     },
     {
       "id": "U2-G10",
-      "name": "Poisson counts and model comparisons"
+      "name": "Comparing discrete probability models"
     }
   ],
   "questions": [
@@ -387,8 +387,8 @@
       "group": "U2-G02",
       "skill_group": "Independence, dependence, and conditions",
       "reasoning": "predict",
-      "stem": "A box has 3 red and 2 blue tokens. After a red token is drawn and not replaced, what happens to the red chance on the next draw?",
-      "explanation": "Removing red reduces the red share of the remaining box.",
+      "stem": "A box contains both red and blue tokens. After a red token is drawn without replacement, how does the next draw's chance of red change?",
+      "explanation": "Removing red lowers the red share of the remaining tokens.",
       "source": {
         "section": "3.2",
         "slide_page": 13,
@@ -396,10 +396,10 @@
         "pdf": "../slides/section-3-2.pdf#page=13"
       },
       "choices": [
-        "It falls from 3/5 to 2/4.",
-        "It rises from 3/5 to 3/4.",
-        "It stays 3/5.",
-        "It becomes zero."
+        "It decreases.",
+        "It increases.",
+        "It stays the same.",
+        "It always falls to zero."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -989,8 +989,8 @@
       "group": "U2-G05",
       "skill_group": "Discrete distributions and support",
       "reasoning": "evaluate",
-      "stem": "A proposed table gives probabilities 0.2, 0.5, 0.3 for X=0,1,2. Is it valid?",
-      "explanation": "These are the requirements for a discrete probability distribution.",
+      "stem": "A table lists every possible value, and each probability is nonnegative. What else must be true for the table to describe a probability distribution?",
+      "explanation": "One of the listed values must occur, so their probabilities use all the probability mass.",
       "source": {
         "section": "4.1",
         "slide_page": 10,
@@ -998,10 +998,10 @@
         "pdf": "../slides/section-4-1.pdf#page=10"
       },
       "choices": [
-        "No; entries must all be equal.",
-        "No; X cannot include zero.",
-        "No; one entry exceeds 0.25.",
-        "Yes; entries are nonnegative and total 1."
+        "All values must have equal probabilities.",
+        "The probabilities must rise as the values increase.",
+        "The values must be consecutive whole numbers.",
+        "The probabilities must sum to one."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1010,9 +1010,9 @@
       "id": "U2-043",
       "group": "U2-G05",
       "skill_group": "Discrete distributions and support",
-      "reasoning": "calculate",
-      "stem": "A distribution gives P(X=0)=0.2 and P(X=1)=0.5, with only X=0,1,2 possible. What is P(X=2)?",
-      "explanation": "The missing probability makes the total equal to 1.",
+      "reasoning": "interpret",
+      "stem": "A model has one blank probability entry and lists every possible value. What does the blank need to account for?",
+      "explanation": "The outcomes in the completed table must account for the entire probability mass.",
       "source": {
         "section": "4.1",
         "slide_page": 11,
@@ -1020,10 +1020,10 @@
         "pdf": "../slides/section-4-1.pdf#page=11"
       },
       "choices": [
-        "0.7.",
-        "0.3.",
-        "0.5.",
-        "1.3."
+        "The average of the listed probabilities.",
+        "All probability not already assigned to the other values.",
+        "The probability of the most likely listed value.",
+        "Half the total probability, regardless of the other entries."
       ],
       "answer_index": 1,
       "answer_letter": "B"
@@ -1054,9 +1054,9 @@
       "id": "U2-045",
       "group": "U2-G05",
       "skill_group": "Discrete distributions and support",
-      "reasoning": "calculate",
-      "stem": "X=0,1,2 has probabilities 0.2,0.5,0.3. What is P(X<2)?",
-      "explanation": "The event includes only 0 and 1.",
+      "reasoning": "interpret",
+      "stem": "A discrete probability table has a row at the cutoff. How do the events below the cutoff and at or below the cutoff differ?",
+      "explanation": "The words at or below include equality.",
       "source": {
         "section": "4.1",
         "slide_page": 14,
@@ -1064,10 +1064,10 @@
         "pdf": "../slides/section-4-1.pdf#page=14"
       },
       "choices": [
-        "0.7.",
-        "1.",
-        "0.3.",
-        "0.5."
+        "Only the second includes the row at the cutoff.",
+        "Only the first includes the row at the cutoff.",
+        "Both exclude the row at the cutoff.",
+        "They include opposite sides of the cutoff."
       ],
       "answer_index": 0,
       "answer_letter": "A",
@@ -1227,8 +1227,8 @@
       "group": "U2-G06",
       "skill_group": "Expected value, costs, and spread",
       "reasoning": "evaluate",
-      "stem": "Outcomes 0 and 10 have probabilities 0.9 and 0.1. Why is their expected value not 5?",
-      "explanation": "The weighted mean is 1, not the unweighted midpoint.",
+      "stem": "A small prize is common and a large prize is rare. Why is the midpoint between the prizes generally a poor estimate of the expected payout?",
+      "explanation": "Expected value weights each outcome by its probability.",
       "source": {
         "section": "4.2",
         "slide_page": 3,
@@ -1236,10 +1236,10 @@
         "pdf": "../slides/section-4-2.pdf#page=3"
       },
       "choices": [
-        "The larger value is impossible.",
-        "The values cannot be averaged.",
-        "Expected value always equals the most likely outcome.",
-        "The outcomes require unequal probability weights."
+        "The expected payout must equal the larger prize.",
+        "Only the larger prize determines the mean.",
+        "The small prize does not count toward the average.",
+        "It gives the two prizes equal weight despite their different chances."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1271,8 +1271,8 @@
       "group": "U2-G06",
       "skill_group": "Expected value, costs, and spread",
       "reasoning": "compare",
-      "stem": "Game A pays 5 with certainty. Game B pays 0 or 10 with equal chance. What is true?",
-      "explanation": "Both means are 5, but only B varies from play to play.",
+      "stem": "One game always pays its expected payout. Another has the same expected payout but offers several possible payouts. How do they differ?",
+      "explanation": "A fixed payout has no variability; equal means do not imply equal spreads.",
       "source": {
         "section": "4.2",
         "slide_page": 14,
@@ -1280,10 +1280,10 @@
         "pdf": "../slides/section-4-2.pdf#page=14"
       },
       "choices": [
-        "A has greater spread.",
-        "B has a larger expected payout.",
-        "They have equal expected payout; B has greater spread.",
-        "Both have zero spread."
+        "Their spreads must match because their means match.",
+        "Only the first game has positive spread.",
+        "Only the second game has positive spread.",
+        "Both games must have zero spread."
       ],
       "answer_index": 2,
       "answer_letter": "C",
@@ -1300,9 +1300,9 @@
       "id": "U2-055",
       "group": "U2-G06",
       "skill_group": "Expected value, costs, and spread",
-      "reasoning": "calculate",
-      "stem": "A game pays a prize of 8 and costs 3 to play. What is the net gain on that outcome?",
-      "explanation": "Net gain subtracts the fee from the prize.",
+      "reasoning": "interpret",
+      "stem": "A game charges a fixed entry fee and sometimes awards a prize. What distinguishes net gain from the prize amount?",
+      "explanation": "A player pays the fee whether or not a prize is awarded.",
       "source": {
         "section": "4.2",
         "slide_page": 16,
@@ -1310,10 +1310,10 @@
         "pdf": "../slides/section-4-2.pdf#page=16"
       },
       "choices": [
-        "11.",
-        "3.",
-        "8.",
-        "5."
+        "The fee changes the chance of each prize.",
+        "Net gain ignores outcomes with no prize.",
+        "Net gain equals the largest possible prize.",
+        "Net gain accounts for the fee paid to play."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1367,8 +1367,8 @@
       "group": "U2-G06",
       "skill_group": "Expected value, costs, and spread",
       "reasoning": "predict",
-      "stem": "A fixed fee increases by 2 dollars. What happens to net-gain mean and SD?",
-      "explanation": "Subtracting a constant shifts all outcomes without changing their spread.",
+      "stem": "A game raises its fixed entry fee but leaves its prize distribution alone. What happens to the mean and SD of net gain?",
+      "explanation": "A higher fixed fee moves each net outcome down by the same amount without changing spread.",
       "source": {
         "section": "4.2",
         "slide_page": 21,
@@ -1376,10 +1376,10 @@
         "pdf": "../slides/section-4-2.pdf#page=21"
       },
       "choices": [
-        "Mean is unchanged; SD rises.",
-        "Mean falls by 2; SD is unchanged.",
-        "Both double.",
-        "Both fall by 2."
+        "The mean stays the same and the SD falls.",
+        "The mean falls and the SD stays the same.",
+        "Both rise.",
+        "Both fall."
       ],
       "answer_index": 1,
       "answer_letter": "B"
@@ -1388,9 +1388,9 @@
       "id": "U2-059",
       "group": "U2-G06",
       "skill_group": "Expected value, costs, and spread",
-      "reasoning": "calculate",
-      "stem": "Expected jobs per session are 1.5. What total is expected over 20 such sessions?",
-      "explanation": "Expected totals add; the actual total is not guaranteed.",
+      "reasoning": "interpret",
+      "stem": "A supervisor predicts the expected total number of jobs across many sessions. What does that prediction describe?",
+      "explanation": "Expected totals describe long-run averages, even when actual totals vary.",
       "source": {
         "section": "4.2",
         "slide_page": 8,
@@ -1398,10 +1398,10 @@
         "pdf": "../slides/section-4-2.pdf#page=8"
       },
       "choices": [
-        "Exactly 30 in every collection of sessions.",
-        "21.5.",
-        "30.",
-        "1.5."
+        "The most likely total in every possible model.",
+        "The most jobs any batch could contain.",
+        "The average total across repeated batches of sessions.",
+        "The exact total in the next batch."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1476,9 +1476,9 @@
       "id": "U2-063",
       "group": "U2-G07",
       "skill_group": "Binomial reasoning",
-      "reasoning": "calculate",
-      "stem": "There are 20 independent trials with p=0.3. What is the expected success count?",
-      "explanation": "The expected count is np=20 times 0.3.",
+      "reasoning": "predict",
+      "stem": "Two binomial settings have the same fixed number of trials. One has a greater chance of success on each trial. What changes?",
+      "explanation": "A higher chance of success raises the average count while the trial count still bounds the result.",
       "source": {
         "section": "4.3",
         "slide_page": 21,
@@ -1486,10 +1486,10 @@
         "pdf": "../slides/section-4-3.pdf#page=21"
       },
       "choices": [
-        "6.",
-        "14.",
-        "20.",
-        "0.3."
+        "The expected number of successes is greater in that setting.",
+        "Every run in that setting yields more successes.",
+        "Both settings have the same expected number of successes.",
+        "The maximum possible number of successes is greater in that setting."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1609,8 +1609,8 @@
       "group": "U2-G07",
       "skill_group": "Binomial reasoning",
       "reasoning": "interpret",
-      "stem": "X counts successes in 8 trials. Which proposed outcome is impossible?",
-      "explanation": "A success count cannot exceed the fixed number of trials.",
+      "stem": "In a fixed set of binomial trials, what bounds the number of successes?",
+      "explanation": "Each trial contributes at most one success.",
       "source": {
         "section": "4.3",
         "slide_page": 7,
@@ -1618,10 +1618,10 @@
         "pdf": "../slides/section-4-3.pdf#page=7"
       },
       "choices": [
-        "X=9.",
-        "X=0.",
-        "X=8.",
-        "X=4."
+        "The number of trials is its upper limit.",
+        "The expected count is its upper limit.",
+        "There is no upper limit.",
+        "The number of failures is always its upper limit."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1675,8 +1675,8 @@
       "group": "U2-G08",
       "skill_group": "Geometric reasoning",
       "reasoning": "interpret",
-      "stem": "Outcomes are failure, failure, success. When X counts trials through first success, what is X?",
-      "explanation": "This convention includes the successful trial.",
+      "stem": "A technician stops testing when a device first works. If the variable counts trials through the first success, which attempts are included?",
+      "explanation": "Counting through the first success includes the trial that ends the wait.",
       "source": {
         "section": "4.4",
         "slide_page": 2,
@@ -1684,10 +1684,10 @@
         "pdf": "../slides/section-4-4.pdf#page=2"
       },
       "choices": [
-        "0.",
-        "1.",
-        "3.",
-        "2."
+        "The failed attempts and the attempt after the success.",
+        "Only the first successful attempt.",
+        "Every failed attempt and the first successful one.",
+        "Only the failed attempts."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1762,9 +1762,9 @@
       "id": "U2-076",
       "group": "U2-G08",
       "skill_group": "Geometric reasoning",
-      "reasoning": "calculate",
-      "stem": "Independent trials have p=0.25. What is the expected number of trials through first success?",
-      "explanation": "The geometric mean is 1/p.",
+      "reasoning": "predict",
+      "stem": "Two independent retry procedures each have a constant chance of success. Which tends to have the shorter wait for the first success?",
+      "explanation": "More likely successes lead to fewer trials on average.",
       "source": {
         "section": "4.4",
         "slide_page": 13,
@@ -1772,10 +1772,10 @@
         "pdf": "../slides/section-4-4.pdf#page=13"
       },
       "choices": [
-        "3.",
-        "25.",
-        "4.",
-        "0.25."
+        "They always have the same typical wait.",
+        "Whichever procedure happened to fail first.",
+        "The one with the higher success chance per try.",
+        "The one with the lower success chance per try."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1807,8 +1807,8 @@
       "group": "U2-G08",
       "skill_group": "Geometric reasoning",
       "reasoning": "predict",
-      "stem": "After five failures with constant independent p=0.2, what is the chance the next trial succeeds?",
-      "explanation": "The trial chance stays unchanged; success does not become due.",
+      "stem": "A geometric experiment has had several failures in a row. How does the next trial's chance of success compare with the initial chance?",
+      "explanation": "Independence and a constant success chance make past failures irrelevant to the next attempt.",
       "source": {
         "section": "4.4",
         "slide_page": 18,
@@ -1816,10 +1816,10 @@
         "pdf": "../slides/section-4-4.pdf#page=18"
       },
       "choices": [
-        "1.",
-        "0.8.",
-        "0.2.",
-        "0.2 divided by 5."
+        "It rises because a success is due.",
+        "It drops because a failure streak has begun.",
+        "It stays the same.",
+        "It depends on the number of earlier failures."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -1917,8 +1917,8 @@
       "group": "U2-G09",
       "skill_group": "Hypergeometric and sampling design",
       "reasoning": "interpret",
-      "stem": "A box has 8 red and 2 blue tokens; 5 are drawn without replacement. What is the minimum red count?",
-      "explanation": "At most two drawn tokens can be blue, leaving at least three red.",
+      "stem": "A sample is drawn without replacement from a box containing marked and unmarked cards. When must the sample contain a marked card?",
+      "explanation": "There are too few unmarked cards to fill a sample larger than their number.",
       "source": {
         "section": "4.5",
         "slide_page": 6,
@@ -1926,10 +1926,10 @@
         "pdf": "../slides/section-4-5.pdf#page=6"
       },
       "choices": [
-        "3.",
-        "2.",
-        "0.",
-        "5."
+        "When the sample size exceeds the number of unmarked cards.",
+        "Whenever one marked card is present in the box.",
+        "Whenever the sample size is less than the number of unmarked cards.",
+        "Only if every card in the box is marked."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -1939,8 +1939,8 @@
       "group": "U2-G09",
       "skill_group": "Hypergeometric and sampling design",
       "reasoning": "interpret",
-      "stem": "A box has 4 red and 6 blue tokens; 3 are drawn without replacement. What red counts are possible?",
-      "explanation": "The count ranges from zero through the sample size, within population limits.",
+      "stem": "What puts an upper limit on the number of marked cards in a sample drawn without replacement?",
+      "explanation": "The sample cannot include more marked cards than it has slots or than the box contains.",
       "source": {
         "section": "4.5",
         "slide_page": 7,
@@ -1948,10 +1948,10 @@
         "pdf": "../slides/section-4-5.pdf#page=7"
       },
       "choices": [
-        "0 through 6.",
-        "1, 2, 3, 4.",
-        "Only 0 or 3.",
-        "0, 1, 2, 3."
+        "Only the probability of a marked card on the first draw.",
+        "Only the number of unmarked cards in the box.",
+        "The previous sample's marked-card count.",
+        "Both the sample size and the number of marked cards in the box."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -1961,8 +1961,8 @@
       "group": "U2-G09",
       "skill_group": "Hypergeometric and sampling design",
       "reasoning": "predict",
-      "stem": "A box has 4 red and 6 blue tokens. One red is removed. What is the next red probability?",
-      "explanation": "Both the red count and total count decrease by one.",
+      "stem": "A box contains marked and unmarked cards. An unmarked card is drawn and kept out. What happens to the chance that the next card is marked?",
+      "explanation": "The same marked cards now make up a larger share of the smaller pool.",
       "source": {
         "section": "4.5",
         "slide_page": 8,
@@ -1970,10 +1970,10 @@
         "pdf": "../slides/section-4-5.pdf#page=8"
       },
       "choices": [
-        "4/9.",
-        "3/9.",
-        "3/10.",
-        "4/10."
+        "It stays the same.",
+        "It increases.",
+        "It becomes zero.",
+        "It decreases."
       ],
       "answer_index": 1,
       "answer_letter": "B"
@@ -1982,9 +1982,9 @@
       "id": "U2-086",
       "group": "U2-G09",
       "skill_group": "Hypergeometric and sampling design",
-      "reasoning": "calculate",
-      "stem": "A population is half faulty cables. A random sample of 6 is drawn without replacement. What faulty count is expected?",
-      "explanation": "Expected count equals sample size times population faulty fraction.",
+      "reasoning": "predict",
+      "stem": "Two mixed populations have the same size, but one has a larger share of faulty cables. Both are sampled randomly without replacement at the same sample size. How do their expected faulty counts compare?",
+      "explanation": "The population with the larger faulty share yields more faulty cables on average.",
       "source": {
         "section": "4.5",
         "slide_page": 14,
@@ -1992,10 +1992,10 @@
         "pdf": "../slides/section-4-5.pdf#page=14"
       },
       "choices": [
-        "3.",
-        "6.",
-        "0.5.",
-        "Exactly 3 in every sample."
+        "The expected count is higher for the population with a larger faulty share.",
+        "The expected counts are equal because the sample sizes agree.",
+        "The expected count is lower for the population with a larger faulty share.",
+        "The expected counts depend only on whether order is recorded."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -2091,21 +2091,21 @@
     {
       "id": "U2-091",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "calculate",
-      "stem": "A constant-rate Poisson process averages 2 requests per minute. What is the mean count over 3 minutes?",
-      "explanation": "Expected count scales with interval length: rate times time.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "compare",
+      "stem": "An inspector checks a fixed batch of independent items with the same defect chance. Which variable fits a binomial model?",
+      "explanation": "A binomial variable counts occurrences in a fixed number of trials.",
       "source": {
-        "section": "4.6",
-        "slide_page": 3,
-        "slide_title": "Scale the mean",
-        "pdf": "../slides/section-4-6.pdf#page=3"
+        "section": "4.3",
+        "slide_page": 4,
+        "slide_title": "Define the random variable",
+        "pdf": "../slides/section-4-3.pdf#page=4"
       },
       "choices": [
-        "3.",
-        "2/3.",
-        "2.",
-        "6."
+        "The exact mass of the first item.",
+        "The average time needed to check an item.",
+        "The attempt on which the first defect is found.",
+        "The number of defective items found."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -2113,21 +2113,21 @@
     {
       "id": "U2-092",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "calculate",
-      "stem": "A Poisson count has mean 9. What is its standard deviation?",
-      "explanation": "Poisson variance equals the mean, so SD is its square root.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "compare",
+      "stem": "A team redraws randomly from a mixed deck, replacing and remixing each card. It stops at the first heart. Which model describes the number of draws?",
+      "explanation": "Replacement supports a constant chance, and the stopping rule is the first success.",
       "source": {
-        "section": "4.6",
-        "slide_page": 12,
-        "slide_title": "Mean and standard deviation",
-        "pdf": "../slides/section-4-6.pdf#page=12"
+        "section": "4.4",
+        "slide_page": 1,
+        "slide_title": "A geometric experiment",
+        "pdf": "../slides/section-4-4.pdf#page=1"
       },
       "choices": [
-        "0.",
-        "81.",
-        "9.",
-        "3."
+        "Continuous uniform.",
+        "Hypergeometric.",
+        "Binomial.",
+        "Geometric."
       ],
       "answer_index": 3,
       "answer_letter": "D"
@@ -2135,21 +2135,21 @@
     {
       "id": "U2-093",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
+      "skill_group": "Comparing discrete probability models",
       "reasoning": "compare",
-      "stem": "Which variable is a count rather than a waiting time?",
-      "explanation": "A Poisson variable counts events in an interval; a waiting time is a different variable.",
+      "stem": "A fixed-size sample is randomly selected from a batch of known good and faulty bulbs. Each selected bulb is set aside. Which model fits the number of good bulbs selected?",
+      "explanation": "The procedure counts one category in a fixed-size sample from a finite population without replacement.",
       "source": {
-        "section": "4.6",
-        "slide_page": 19,
-        "slide_title": "Count versus waiting time",
-        "pdf": "../slides/section-4-6.pdf#page=19"
+        "section": "4.5",
+        "slide_page": 1,
+        "slide_title": "A hypergeometric experiment",
+        "pdf": "../slides/section-4-5.pdf#page=1"
       },
       "choices": [
-        "Minutes until the next request.",
-        "Duration of a request.",
-        "Requests received in the next five minutes.",
-        "Exact time between two requests."
+        "Geometric.",
+        "Continuous normal.",
+        "Hypergeometric.",
+        "Binomial."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -2157,21 +2157,21 @@
     {
       "id": "U2-094",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
+      "skill_group": "Comparing discrete probability models",
       "reasoning": "evaluate",
-      "stem": "Requests average 1 per minute overnight and 8 per minute at noon. What challenges a single constant-rate model for the entire day?",
-      "explanation": "A single homogeneous Poisson model assumes a stable rate over its modeled interval.",
+      "stem": "A teacher draws cards without replacement until the first marked card. Why is the draw number generally neither binomial nor geometric?",
+      "explanation": "The stopping rule rules out binomial counting, and the changing pool violates the geometric assumptions.",
       "source": {
-        "section": "4.6",
-        "slide_page": 14,
-        "slide_title": "A variable rate",
-        "pdf": "../slides/section-4-6.pdf#page=14"
+        "section": "4.4",
+        "slide_page": 25,
+        "slide_title": "When the model changes",
+        "pdf": "../slides/section-4-4.pdf#page=25"
       },
       "choices": [
-        "Both rates are positive.",
-        "The events are counts.",
-        "The rate varies by time of day.",
-        "The overnight mean is smaller."
+        "The draw number is continuous.",
+        "A success has to be a desirable outcome.",
+        "The trial count is not fixed, and the chance can change between draws.",
+        "Stopping at the first success always makes the count binomial."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -2179,21 +2179,21 @@
     {
       "id": "U2-095",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "evaluate",
-      "stem": "Requests arrive in coordinated bursts. Which Poisson-process assumption deserves scrutiny?",
-      "explanation": "Clustering can make the independent-event model inappropriate.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "compare",
+      "stem": "A researcher stops after a fixed number of draws and counts marked tokens. Which detail best distinguishes the binomial and hypergeometric settings?",
+      "explanation": "The two models use different sampling designs even though both count successes in a fixed number of draws.",
       "source": {
-        "section": "4.6",
-        "slide_page": 15,
-        "slide_title": "Clustering",
-        "pdf": "../slides/section-4-6.pdf#page=15"
+        "section": "4.5",
+        "slide_page": 16,
+        "slide_title": "Compare sampling designs",
+        "pdf": "../slides/section-4-5.pdf#page=16"
       },
       "choices": [
-        "Measuring an interval.",
-        "Nonnegative counts.",
-        "Independent arrivals.",
-        "The possibility of zero requests."
+        "Whether a fixed number of draws is used.",
+        "Whether marked is a desirable outcome.",
+        "Whether each token is returned and the pool remixed before the next draw.",
+        "Whether the recorded result is a whole number."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -2201,21 +2201,21 @@
     {
       "id": "U2-096",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "compare",
-      "stem": "X counts failures in exactly 20 independent trials; Y counts arrivals during an hour with no fixed trial total. Which distinction matters?",
-      "explanation": "A fixed set of trials differs from event counts over an interval.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "evaluate",
+      "stem": "A device is tested a fixed number of times, but each repair after a failed trial improves its chance of passing. Why is a simple binomial model questionable?",
+      "explanation": "Changing the success chance in response to earlier outcomes violates the binomial conditions.",
       "source": {
-        "section": "4.6",
-        "slide_page": 16,
-        "slide_title": "Binomial or Poisson?",
-        "pdf": "../slides/section-4-6.pdf#page=16"
+        "section": "4.3",
+        "slide_page": 26,
+        "slide_title": "Changing probabilities",
+        "pdf": "../slides/section-4-3.pdf#page=26"
       },
       "choices": [
-        "X fits a binomial setting; Y may fit a Poisson setting if its assumptions hold.",
-        "Y must be geometric.",
-        "Both must have the same maximum.",
-        "X must be continuous."
+        "The pass chance depends on previous outcomes.",
+        "The number of trials is fixed.",
+        "The test records successes and failures.",
+        "The result is a count."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -2223,21 +2223,21 @@
     {
       "id": "U2-097",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "interpret",
-      "stem": "A supplied Poisson table gives P(X=0)=0.12. How is the probability of at least one found?",
-      "explanation": "At least one complements zero events.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "compare",
+      "stem": "Independent trials have a constant chance of success strictly between zero and one. Which variable can take arbitrarily large values?",
+      "explanation": "There can be any number of failures before a first success.",
       "source": {
-        "section": "4.6",
-        "slide_page": 9,
-        "slide_title": "At least one event",
-        "pdf": "../slides/section-4-6.pdf#page=9"
+        "section": "4.4",
+        "slide_page": 3,
+        "slide_title": "Possible values",
+        "pdf": "../slides/section-4-4.pdf#page=3"
       },
       "choices": [
-        "1-0.12.",
-        "0.12.",
-        "The mean count.",
-        "0.12 squared."
+        "The number of trials through the first success.",
+        "The number of successes in a fixed set of trials.",
+        "The number of marked items in a fixed-size sample.",
+        "The number of outcomes on one yes-or-no trial."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -2245,21 +2245,21 @@
     {
       "id": "U2-098",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "calculate",
-      "stem": "A rare-event binomial count has n=1,000 and p=0.002. What mean would its Poisson approximation use?",
-      "explanation": "The approximating mean is np.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "evaluate",
+      "stem": "Which change generally makes a binomial approximation to a hypergeometric count more reasonable?",
+      "explanation": "A smaller sampling fraction makes removing each item matter less for later draws.",
       "source": {
-        "section": "4.6",
+        "section": "4.5",
         "slide_page": 17,
-        "slide_title": "A rare-event approximation",
-        "pdf": "../slides/section-4-6.pdf#page=17"
+        "slide_title": "A small sampling fraction",
+        "pdf": "../slides/section-4-5.pdf#page=17"
       },
       "choices": [
-        "1,000.",
-        "0.002.",
-        "2.",
-        "500."
+        "Sampling almost the whole population.",
+        "Making each draw depend on the color last drawn by design.",
+        "Keeping the sample size fixed while greatly enlarging the population at the same marked share.",
+        "Switching the outcome from a count to an exact weight."
       ],
       "answer_index": 2,
       "answer_letter": "C"
@@ -2267,21 +2267,21 @@
     {
       "id": "U2-099",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "evaluate",
-      "stem": "A Poisson count has mean 2. Does this rule out 5 events?",
-      "explanation": "A mean sets the center, not a finite upper support bound.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "compare",
+      "stem": "One student counts failed attempts before the first success. Another counts all attempts through the first success. How are their variables related?",
+      "explanation": "The two variables describe the same sequence with different counting conventions.",
       "source": {
-        "section": "4.6",
-        "slide_page": 6,
-        "slide_title": "Possible values",
-        "pdf": "../slides/section-4-6.pdf#page=6"
+        "section": "4.4",
+        "slide_page": 19,
+        "slide_title": "Count failures instead",
+        "pdf": "../slides/section-4-4.pdf#page=19"
       },
       "choices": [
-        "No; counts above the mean remain possible.",
-        "Yes; only 0, 1, 2 are allowed.",
-        "Yes; 2 is the maximum.",
-        "No; every count is equally likely."
+        "The second includes one extra trial, the success itself.",
+        "The first includes one extra trial.",
+        "Both counts are always equal.",
+        "Neither count can be known when the first success occurs."
       ],
       "answer_index": 0,
       "answer_letter": "A"
@@ -2289,21 +2289,21 @@
     {
       "id": "U2-100",
       "group": "U2-G10",
-      "skill_group": "Poisson counts and model comparisons",
-      "reasoning": "predict",
-      "stem": "Under a constant errors-per-page Poisson model, document length doubles. What happens to the mean error count?",
-      "explanation": "At a fixed spatial rate, expected count is proportional to length.",
+      "skill_group": "Comparing discrete probability models",
+      "reasoning": "interpret",
+      "stem": "A buyer counts rejected items among a fixed number of independent inspections with the same rejection chance. What should be called a success for this model?",
+      "explanation": "The counted category determines what is labeled success.",
       "source": {
-        "section": "4.6",
-        "slide_page": 13,
-        "slide_title": "A spatial interval",
-        "pdf": "../slides/section-4-6.pdf#page=13"
+        "section": "4.3",
+        "slide_page": 3,
+        "slide_title": "Define success",
+        "pdf": "../slides/section-4-3.pdf#page=3"
       },
       "choices": [
-        "It becomes the square root of the original mean.",
-        "It doubles.",
-        "It stays unchanged.",
-        "It halves."
+        "A change in the rejection chance.",
+        "A rejection, because that is what the variable counts.",
+        "An acceptance, because success must be favorable.",
+        "A set with no rejections."
       ],
       "answer_index": 1,
       "answer_letter": "B"
