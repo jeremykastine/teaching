@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worksheet setup · Excel check 4</title>
+<link rel="stylesheet" href="../excel-checks.css">
+</head>
+<body><main>
+<header>
+<p class="eyebrow">Statistics · Excel competency check 4 · Help</p>
+<h1>Worksheet setup and formulas</h1>
+<p><a href="04-binomial-distribution.html">Back to the problem</a></p>
+</header>
+
+<h2>Enter your parameters</h2>
+<p>Start with a blank worksheet. Put <strong>Success probability</strong>, <strong>Trials per experiment</strong>, <strong>Experiments</strong>, and <strong>Failure probability</strong> in A2:A5. Enter the generated <em>p</em> and <em>n</em> in B2 and B3. Enter the probability as a percentage such as <code>40%</code>. Put <code>100</code> in B4 and <code>=1-B2</code> in B5.</p>
+
+<h2>Build the theoretical probability triangle</h2>
+<p>After one more trial, exactly <em>k</em> successes can come from <em>k</em> successes followed by a failure, or from <em>k</em> − 1 successes followed by a success. Multiply the cell directly above by the failure probability, multiply the cell above-left by the success probability, and add the results.</p>
+<ol>
+<li>Put <strong>Trials so far</strong> in A8. In C8 and to its right, enter the success counts 0 through <em>n</em>. In A9 and below, enter the trial counts 0 through <em>n</em>. Keep column B blank beside the triangle so the first column has a blank above-left cell.</li>
+<li>Enter <code>1</code> in C9. With zero trials there are zero successes with probability 1. Leave the rest of row 9 in the triangle blank.</li>
+<li>Enter <code>=IF(C$8&gt;$A10,"",$B$5*N(C9)+$B$2*N(B9))</code> in C10. Fill it right through the column for <em>n</em> successes, then fill that row down through the row for <em>n</em> trials. The <code>IF</code> displays an empty cell when successes exceed trials. <code>N</code> treats a blank or empty text as zero and leaves a probability unchanged.</li>
+<li>Read the theoretical distribution from the last row. Its first and last probabilities should be (1 − <em>p</em>)<sup><em>n</em></sup> and <em>p</em><sup><em>n</em></sup>.</li>
+</ol>
+<p>As a small practice example, with <em>p</em> = 40% the row for one trial is 60%, 40%. The row for two trials is 36%, 48%, 16%. After three trials the row is 21.6%, 43.2%, 28.8%, 6.4%.</p>
+
+<h2>Simulate 100 experiments</h2>
+<ol>
+<li>Starting in P7, label the trials 1 through <em>n</em>. In P8 enter <code>=IF(RAND()&lt;$B$2,1,0)</code>. Fill it across the <em>n</em> trial columns and down through row 107. Each row is one experiment. Leave unused trial columns through AA empty.</li>
+<li>Put <strong>Successes</strong> in AB7. Enter <code>=SUM(P8:AA8)</code> in AB8 and fill down through AB107. The sum counts the 1s in that experiment. Use <code>=COUNT(AB8:AB107)</code> in a spare cell to confirm you have 100 numerical totals.</li>
+</ol>
+<p><code>RAND()</code> generates a new value when Excel recalculates. The simulated counts can change while the theoretical probabilities stay fixed for the same inputs. <a href="https://support.microsoft.com/en-us/excel/functions/rand-function">Microsoft’s RAND reference</a></p>
+
+<h2>Summarize the two distributions</h2>
+<p>In A24:D24, enter <strong>Successes</strong>, <strong>Theoretical probability</strong>, <strong>Simulated count</strong>, and <strong>Simulated relative frequency</strong>. Start with 0 in A25 and list each possible success count up to <em>n</em>. Enter these formulas and fill down through the last listed count.</p>
+<table class="task-table">
+<thead><tr><th scope="col">Cell</th><th scope="col">Formula</th></tr></thead>
+<tbody>
+<tr><th scope="row">B25</th><td><code>=INDEX($C$9:$O$21,$B$3+1,A25+1)</code></td></tr>
+<tr><th scope="row">C25</th><td><code>=COUNTIF($AB$8:$AB$107,A25)</code></td></tr>
+<tr><th scope="row">D25</th><td><code>=C25/$B$4</code></td></tr>
+</tbody>
+</table>
+<p><code>INDEX</code> reads the triangle row for <em>n</em> trials and the column for the listed success count. The two offsets account for the row and column that start at zero. Format B and D as percentages. Use <code>SUM</code> below the data to check that the columns total 100%, 100, and 100%, respectively.</p>
+
+<h2>Make two line charts on the same worksheet</h2>
+<ol>
+<li>For the theoretical chart, plot the data in column B using <strong>Line with Markers</strong>. In <strong>Select Data</strong>, set the horizontal category labels to the success counts in column A. Include every category from 0 through <em>n</em> and leave out the totals.</li>
+<li>Repeat with the relative frequencies in column D. Use the same column A labels. Give the charts distinct titles and place them side by side.</li>
+<li>Format both vertical axes as percentages with the same bounds. Start both at 0% and choose an upper bound high enough for both charts. Compare where they peak and how the probabilities change as the success count moves away from the peak. A simulation of 100 experiments can have a different peak or a more jagged shape.</li>
+</ol>
+<p><a href="https://support.microsoft.com/en-us/excel/present-your-data-in-a-scatter-chart-or-a-line-chart">Microsoft’s line chart instructions</a></p>
+
+<footer><a href="04-binomial-distribution.html">Back to the problem</a></footer>
+</main></body></html>

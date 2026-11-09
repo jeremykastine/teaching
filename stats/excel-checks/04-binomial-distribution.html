@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check 4 · Compare Binomial Theory and Simulation · Statistics</title>
+<link rel="stylesheet" href="../excel-checks.css">
+<script defer src="binomial-simulation-page.js"></script>
+</head>
+<body><main>
+<header>
+<p class="eyebrow">Statistics · Excel competency check 4 · Section 4.3</p>
+<h1>Compare Binomial Theory and Simulation</h1>
+<p>Each experiment consists of <em>n</em> independent trials. Each trial has the same probability <em>p</em> of success. The outcome of an experiment is the total number of successes in its <em>n</em> trials.</p>
+<p id="binomial-problem" aria-live="polite">Loading your problem…</p>
+</header>
+<noscript><p class="callout">Enable JavaScript to generate a problem.</p></noscript>
+<div class="generator-toolbar"><button id="regenerate" class="primary" type="button">Regenerate problem</button></div>
+<p>At your live check, regenerate in front of your instructor and use those parameters for the entire attempt.</p>
+<section aria-labelledby="requirements-heading">
+<h2 id="requirements-heading">Requirements</h2>
+<ol>
+<li>Use one Excel worksheet for the inputs, probability triangle, simulation, summary, and both charts.</li>
+<li>Build a probability triangle from 0 through <em>n</em> trials. Use each previous row to calculate the next, weighting the two contributing cells by <em>p</em> and 1 − <em>p</em>. The final row gives the theoretical probabilities for 0 through <em>n</em> successes and must sum to 100%.</li>
+<li>Use <code>IF</code> and <code>RAND</code> to simulate <em>n</em> independent trials across each of 100 rows. Record a 1 for success and a 0 for failure. Use <code>SUM</code> to count successes in each row.</li>
+<li>Use <code>COUNTIF</code> to count how many of the 100 experiments gave each possible number of successes. Include outcomes with zero occurrences. Divide the counts by 100 to get relative frequencies.</li>
+<li>Make two separate line charts with markers on the same worksheet, one for the theoretical probabilities and one for the simulated relative frequencies. Use the same success-count labels and vertical percentage scale on both charts.</li>
+<li>Show where the two distributions tend to peak and point out one difference you see. The comparison should use the simulation you obtained, with its natural variation from 100 experiments.</li>
+</ol>
+</section>
+<p><a href="04-binomial-distribution-help.html">Talk me through the worksheet setup and formulas →</a></p>
+<footer><nav aria-label="Other checks" class="links">
+<a href="02-frequency-table.html">Previous check</a>
+<a href="../excel-competency-checks.html">All checks</a>
+</nav></footer>
+</main></body></html>
