@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5.1–5.2: Continuous and Uniform Distributions | Statistics Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+  <nav class="topic-nav" aria-label="Lesson navigation">
+    <a href="../lecture-notes.html">Table of contents</a>
+    <a href="section-4-6-poisson-distribution.html">Previous: 4.6</a>
+    <a href="section-5-3-the-exponential-distribution.html">Next: 5.3</a>
+    <a href="../essentials/section-5-1-continuous-probability-functions.html">5.1 essentials review</a>
+    <a href="../essentials/section-5-2-the-uniform-distribution.html">5.2 essentials review</a>
+  </nav>
+  <p class="series-title">MSC 201 · Statistics Lecture Notes</p>
+  <h1>5.1–5.2: Continuous and Uniform Distributions</h1>
+  <p class="solution-instructions">Double-click or double-tap the space beneath a question to show or hide its answer. With a keyboard, focus that space and press Enter or Space.</p>
+
+  <h2>Waiting at the doctor’s office</h2>
+  <p>A doctor’s office timed 100 patients from check-in until they were called back. Here are the results for this fictional sample. Let <var>T</var> represent a patient’s actual wait time in minutes.</p>
+  <div class="table-scroll">
+    <table>
+      <caption>Office report</caption>
+      <thead><tr><th scope="col">Wait time in minutes</th><th scope="col">Percent of patients</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">0 to under 2</th><td>8%</td></tr>
+        <tr><th scope="row">2 to under 5</th><td>12%</td></tr>
+        <tr><th scope="row">5 to under 10</th><td>30%</td></tr>
+        <tr><th scope="row">10 to under 20</th><td>30%</td></tr>
+        <tr><th scope="row">20 to under 60</th><td>20%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="worked-example" id="density">
+    <div class="problem-statement">
+      <h3>Build an area graph</h3>
+      <p>Mark 0, 2, 5, 10, 20, and 60 on a number line. Draw a rectangle over each time interval so its area equals the reported proportion of patients. Start with 5 to 10 minutes. What height gives that rectangle an area of 30%? How does the 10-to-20 rectangle compare?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>Area = width × height, so height = proportion ÷ width. For 5 to 10 minutes, 0.30 ÷ 5 = 0.06 per minute. The 10-to-20 rectangle has the same area and twice the width, so its height is half as large: 0.30 ÷ 10 = 0.03 per minute.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Time interval</th><th scope="col">Width in minutes</th><th scope="col">Area</th><th scope="col">Height per minute</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">0 to under 2</th><td>2</td><td>0.08</td><td>0.04</td></tr>
+            <tr><th scope="row">2 to under 5</th><td>3</td><td>0.12</td><td>0.04</td></tr>
+            <tr><th scope="row">5 to under 10</th><td>5</td><td>0.30</td><td>0.06</td></tr>
+            <tr><th scope="row">10 to under 20</th><td>10</td><td>0.30</td><td>0.03</td></tr>
+            <tr><th scope="row">20 to under 60</th><td>40</td><td>0.20</td><td>0.005</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure>
+        <svg viewBox="0 0 660 220" role="img" aria-labelledby="coarse-title coarse-desc">
+          <title id="coarse-title">Probability density of wait times from the office report</title>
+          <desc id="coarse-desc">Five rectangles on a linear time axis. Their heights per minute are 0.04 from 0 to 2 and from 2 to 5, 0.06 from 5 to 10, 0.03 from 10 to 20, and 0.005 from 20 to 60.</desc>
+          <g fill="currentColor" fill-opacity=".12">
+            <rect x="78" y="75" width="18" height="80"></rect>
+            <rect x="96" y="75" width="27" height="80"></rect>
+            <rect x="123" y="35" width="45" height="120"></rect>
+            <rect x="168" y="95" width="90" height="60"></rect>
+            <rect x="258" y="145" width="360" height="10"></rect>
+          </g>
+          <path d="M78 20 V155 H630 M78 155 V75 H123 V155 M96 75 V155 M123 75 V35 H168 V155 M168 95 H258 V155 M258 145 H618 V155 M73 35 H78 M73 75 H78 M73 95 H78 M73 145 H78" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+          <g fill="currentColor" font-size="16" text-anchor="middle">
+            <text x="74" y="177">0</text><text x="97" y="197">2</text><text x="123" y="177">5</text>
+            <text x="168" y="177">10</text><text x="258" y="177">20</text><text x="618" y="177">60</text>
+            <text x="352" y="211">Wait time (minutes)</text>
+          </g>
+          <g fill="currentColor" font-size="15" text-anchor="end">
+            <text x="70" y="40">0.06</text><text x="70" y="80">0.04</text><text x="70" y="100">0.03</text><text x="70" y="150">0.005</text>
+          </g>
+          <text x="18" y="92" transform="rotate(-90 18 92)" text-anchor="middle" fill="currentColor" font-size="15">Density (per minute)</text>
+        </svg>
+        <figcaption>Rectangle widths follow the minute scale. Each area is the proportion assigned to that interval.</figcaption>
+      </figure>
+      <p>We use this step-shaped graph as a <strong>probability density function</strong>, written <var>f</var>(<var>t</var>). A density is nonnegative and has total area 1. Its height gives a rate per unit of time. For example, a height of 2 per minute across half a minute gives area 1.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="intervals">
+    <div class="problem-statement">
+      <h3>Use whole rectangles and pieces</h3>
+      <p>Suppose the probability is spread evenly <em>within each bin</em>. Find the modeled probability of waiting (a) from 2 to 5 minutes, (b) from 2 to 6 minutes, and (c) from 4 to 12 minutes. Which answer follows directly from the original report?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ol type="a">
+        <li><strong>12%.</strong> The full 2-to-5 rectangle has area 12%. The report gives this share directly.</li>
+        <li><strong>18%.</strong> Add 12% for the full 2-to-5 bin and 6% for the first minute of the 5-to-10 bin.</li>
+        <li><strong>40%.</strong> From 4 to 5 gives 1 × 4% = 4%. From 5 to 10 gives 30%. From 10 to 12 gives 2 × 3% = 6%.</li>
+      </ol>
+      <p>The report fixes each whole-bin area. Within a bin, the flat density makes the probability proportional to the width of the part you shade.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="cumulative">
+    <div class="problem-statement">
+      <h3>How many patients are called back by minute 6?</h3>
+      <p>Find the probability of being called back by minute 6 and of still waiting after minute 6. How could you use two cumulative probabilities to find the probability of a wait between 2 and 6 minutes?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>The <strong>cumulative distribution function</strong> (CDF) <var>F</var>(<var>t</var>) = P(<var>T</var> ≤ <var>t</var>) gives the total area up through time <var>t</var>. It rises from 0 to 1 as the cutoff moves across the graph.</p>
+      <p><var>F</var>(6) = 8% + 12% + 6% = <strong>26%</strong>. The area to the right is 1 − <var>F</var>(6) = <strong>74%</strong>. Subtract the two left areas to get the area in between: <var>F</var>(6) − <var>F</var>(2) = 26% − 8% = <strong>18%</strong>.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="exact-time">
+    <div class="problem-statement">
+      <h3>What is the probability of a wait of exactly 7 minutes?</h3>
+      <p>How wide is the part of the graph that represents this event? Would including the endpoints of the interval from 2 to 6 change its modeled probability?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>The single point 7 has zero width, so P(<var>T</var> = 7) = <strong>0</strong> under this continuous model. Adding the endpoints 2 and 6 adds zero area. For example, P(2 &lt; <var>T</var> &lt; 6) and P(2 ≤ <var>T</var> ≤ 6) both equal 18%.</p>
+    </div>
+  </section>
+
+  <h2>What finer measurements tell us</h2>
+  <section class="worked-example" id="finer-bins">
+    <div class="problem-statement">
+      <h3>Split the 5-to-10 bin into one-minute bins</h3>
+      <p>The office checks its original stopwatch readings. It finds these counts for the 30 patients in that bin. Keep the original bins outside 5 to 10 minutes. What heights replace the original rectangle, and what is the new estimate for a wait from 2 to 6 minutes?</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Wait time in minutes</th><th scope="col">Patients</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">5 to under 6</th><td>4</td></tr>
+            <tr><th scope="row">6 to under 7</th><td>5</td></tr>
+            <tr><th scope="row">7 to under 8</th><td>8</td></tr>
+            <tr><th scope="row">8 to under 9</th><td>7</td></tr>
+            <tr><th scope="row">9 to under 10</th><td>6</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>Divide each count by 100 to get its share of the full sample, then divide by the one-minute width. The heights are 4%, 5%, 8%, 7%, and 6% per minute. The five areas still add to 30%. From 2 to 6 minutes, the observed share is now <strong>12% + 4% = 16%</strong>. We used the actual count from 5 to 6 in place of the coarse model’s estimate of 6%.</p>
+      <figure>
+        <svg viewBox="0 0 540 220" role="img" aria-labelledby="fine-title fine-desc">
+          <title id="fine-title">One-minute bins from 5 to 10 minutes</title>
+          <desc id="fine-desc">The five bins have heights 4%, 5%, 8%, 7%, and 6% per minute. A dashed line marks the coarse model’s height of 6% per minute.</desc>
+          <g fill="currentColor" fill-opacity=".12">
+            <rect x="81" y="103" width="84" height="52"></rect>
+            <rect x="165" y="90" width="84" height="65"></rect>
+            <rect x="249" y="51" width="84" height="104"></rect>
+            <rect x="333" y="64" width="84" height="91"></rect>
+            <rect x="417" y="77" width="84" height="78"></rect>
+          </g>
+          <path d="M81 31 V155 H510 M81 103 H165 V155 M165 90 H249 V155 M249 51 H333 V155 M333 64 H417 V155 M417 77 H501 V155 M76 51 H81 M76 103 H81" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+          <path d="M81 77 H501" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 5"></path>
+          <g fill="currentColor" font-size="16" text-anchor="middle">
+            <text x="81" y="179">5</text><text x="165" y="179">6</text><text x="249" y="179">7</text>
+            <text x="333" y="179">8</text><text x="417" y="179">9</text><text x="501" y="179">10</text>
+            <text x="295" y="209">Wait time (minutes)</text>
+          </g>
+          <g fill="currentColor" font-size="15" text-anchor="end">
+            <text x="72" y="56">8%</text><text x="72" y="82">6%</text><text x="72" y="108">4%</text>
+          </g>
+          <text x="20" y="96" transform="rotate(-90 20 96)" text-anchor="middle" fill="currentColor" font-size="15">Density (per minute)</text>
+        </svg>
+        <figcaption>The dashed line is the original 6%-per-minute height. The total area from 5 to 10 stays the same.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="worked-example" id="measurement">
+    <div class="problem-statement">
+      <h3>Go from minutes to half-minutes or seconds</h3>
+      <p>What columns would you use in Excel to build the graph with finer data? If two of the 100 patients fall between 7 and 7.5 minutes, what height should that rectangle have? What times would a stopwatch rounded to the nearest minute report as 7?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>Use one row per bin with its lower edge, upper edge, width, count, relative frequency, and density. Use the actual bin edges on the time axis. For the half-minute bin, 2% ÷ 0.5 = <strong>4% per minute</strong>. For a one-second bin on an axis measured in minutes, divide its probability by 1/60 minute. Add full bin areas and use the flat-within-bin assumption for any partial bins.</p>
+      <p>A reading rounded to 7 minutes represents <strong>6.5 to under 7.5 minutes</strong> using the usual half-up convention. That whole interval can have positive probability. Finer bins need finer readings, and with a small sample many narrow bins may be empty.</p>
+    </div>
+  </section>
+
+  <h2>The uniform distribution</h2>
+  <p>Return to the original model. Focus on patients whose waits fall from 5 to 10 minutes and use the flat assumption within that bin. In a uniform distribution, intervals of the same length within the range have the same probability.</p>
+
+  <section class="worked-example" id="uniform">
+    <div class="problem-statement">
+      <h3>Make the 5-to-10 group the whole population under discussion</h3>
+      <p>Write the distribution using <var>U</var>(<var>a</var>, <var>b</var>) and draw the density. What height makes the area of this single rectangle equal to 1? What fraction of this group waited more than 8 minutes?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>In this subgroup the model is <strong><var>U</var>(5, 10)</strong>. Its density is 1 ÷ (10 − 5) = <strong>0.20 per minute</strong> between 5 and 10 and zero outside. For a uniform model from <var>a</var> to <var>b</var>, the height is 1/(<var>b</var> − <var>a</var>).</p>
+      <p>Waiting more than 8 minutes takes up the last 2 minutes of the 5-minute range, so the probability is <strong>2/5 = 40%</strong>. This is conditional on being in the 5-to-10 group. On the original graph, the 8-to-10 area is 12% and the 5-to-10 area is 30%. The conditional calculation is 12% ÷ 30% = 40%.</p>
+      <p>For an interval that extends beyond the uniform range, count only the overlap. For example, 9 to 12 overlaps the range for one minute and has probability 1/5 in this subgroup.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="uniform-summary">
+    <div class="problem-statement">
+      <h3>Describe the center and spread</h3>
+      <p>For the <var>U</var>(5, 10) model, find the mean and standard deviation. What happens to each if every wait increases by two minutes?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>The mean is the midpoint, μ = (<var>a</var> + <var>b</var>)/2 = <strong>7.5 minutes</strong>. The standard deviation is σ = (<var>b</var> − <var>a</var>)/√12 = <strong>5/√12 ≈ 1.44 minutes</strong>. These are model values. A sample drawn from the model can have a different mean and standard deviation.</p>
+      <p>Adding two minutes changes the range to 7 through 12 and moves the mean to 9.5 minutes. The width stays 5 minutes, so the standard deviation stays the same. A wider range would increase the standard deviation.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="uniform-percentiles">
+    <div class="problem-statement">
+      <h3>Work backward from an area</h3>
+      <p>For the <var>U</var>(5, 10) model, find the 90th percentile. Then find the interval containing the middle 50% of modeled waits.</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>The 90th percentile leaves 90% to its left and 10% to its right. A width of 0.90 × 5 = 4.5 minutes gives that left area. Start at minute 5 to get <strong>9.5 minutes</strong>.</p>
+      <p>The middle 50% is between the 25th and 75th percentiles. Start at 5 and move 0.25 × 5 = 1.25 minutes for the lower endpoint and 0.75 × 5 = 3.75 minutes for the upper endpoint. The interval runs from <strong>6.25 to 8.75 minutes</strong>.</p>
+    </div>
+  </section>
+
+  <footer class="attribution">
+    <p>Textbook reading in OpenStax <em>Introductory Statistics 2e</em>:
+      <a href="https://openstax.org/books/introductory-statistics-2e/pages/5-1-continuous-probability-functions">§5.1 Continuous Probability Functions</a> and
+      <a href="https://openstax.org/books/introductory-statistics-2e/pages/5-2-the-uniform-distribution">§5.2 The Uniform Distribution</a>.
+      The office data, graphs, and questions are original classroom examples.</p>
+  </footer>
+</main>
+</body>
+</html>

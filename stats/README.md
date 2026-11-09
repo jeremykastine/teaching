@@ -1,6 +1,6 @@
 # Statistics teaching materials
 
-Open `../index.html` to choose the schedule, lecture notes, class slides, homework, test banks and answer keys, or Excel competency checks under Statistics. Open `class-slides.html` for the 36 section PDFs aligned to OpenStax **Introductory Statistics 2e**. The course contains 854 portrait discussion pages.
+Open `../index.html` to choose the schedule, lecture notes, class slides, homework, test banks and answer keys, or Excel competency checks under Statistics. Open `class-slides.html` for the 34 section PDFs aligned to OpenStax **Introductory Statistics 2e**. Sections 5.1–5.2 use a [combined HTML lesson](lessons/section-5-1-5-2-continuous-and-uniform-distributions.html) for class.
 
 Selected sections cover Chapters 1–8. Chapter 9 has one conceptual overview deck (9.0), rather than the full chapter’s computational procedures. Chapter 1 lab resources 1.5 and 1.6 are included in the review.
 
@@ -33,7 +33,7 @@ python scripts/build_slides.py --chapters 2 3 4 5 6 7 8 9
 
 The shared renderer is `../scripts/slide_builder.py`. It requires DejaVu Sans fonts in `/usr/share/fonts/truetype/dejavu` (Debian/Ubuntu package `fonts-dejavu-core`). For another platform, change `FONT_DIR` in the shared renderer. Formulas and charts remain vector graphics in the PDFs.
 
-`slides/coverage.json` records the planned sections; builds reject missing or unexpected sections. `docs/slide-specifications.md` records the presentation preferences. Chapter coverage documents under `docs/` map textbook objectives and prerequisite connections, including the small amount of extra emphasis given to ideas needed later. Those instructor notes are not printed on the slides.
+`slides/coverage.json` records the planned sections; builds reject missing or unexpected sections. The `notes_only` entries retain historical slide source for the bank’s reference metadata and are excluded from slide builds and listings. `docs/slide-specifications.md` records the presentation preferences. Chapter coverage documents under `docs/` map textbook objectives and prerequisite connections, including the small amount of extra emphasis given to ideas needed later. Those instructor notes are not printed on the slides.
 
 ## Sources and reuse
 

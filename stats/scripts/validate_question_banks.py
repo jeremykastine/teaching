@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check approved arithmetic, source-PDF references, figures, and local links."""
+"""Check approved arithmetic, course references, figures, and local links."""
 import json
 import math
 import re
@@ -115,10 +115,18 @@ def main():
     assert 100*.02 <= 5 and 100*(1-.02) > 5
     assert 8 > 5 and 12 > 5 and not 5 > 5
     assert 24 >= 10 and not .85 >= .90
-    # Verify section titles against the actual rendered source PDFs.
+    # Verify section titles against the rendered PDFs and validate lesson anchors.
     pdfs = {}
+    lesson_refs = 0
     for q in questions.values():
         source = q['source']
+        if 'lesson' in source:
+            url = urlparse(source['lesson'])
+            lesson = Links()
+            lesson.feed((BANKS / url.path).read_text())
+            assert url.fragment in lesson.ids, q['id']
+            lesson_refs += 1
+            continue
         path = (BANKS / source['pdf'].split('#')[0]).resolve()
         if path not in pdfs:
             pdfs[path] = fitz.open(path)
@@ -181,7 +189,8 @@ def main():
     report = {
         'unique_questions': len(questions),
         'independently_recomputed_calculation_answers': len(checks),
-        'source_slide_pdf_page_titles_verified': len(questions),
+        'source_slide_pdf_page_titles_verified': len(questions) - lesson_refs,
+        'source_lesson_anchors_verified': lesson_refs,
         'local_links_and_image_targets_verified': link_count,
         'additional_numeric_reasoning_and_model_checks': 9,
         'student_html_modes_verified': 8,

@@ -91,7 +91,9 @@ def build():
    if i:nav+=f'<a href="{filename(manifest[i-1])}">Previous: {manifest[i-1]["number"]}</a>'
    if i+1<len(manifest):nav+=f'<a href="{filename(manifest[i+1])}">Next: {manifest[i+1]["number"]}</a>'
    nav+=f'<a href="{url}">Textbook section</a>'
-   if c=='stats' and n in ['3.4','3.5']:
+   if m.get('hand_authored'):
+    body=(dest/f).read_text()
+   elif c=='stats' and n in ['3.4','3.5']:
     existing=(dest/f).read_text();body=re.sub(r'<nav.*?</nav>',lambda _: '<nav class="topic-nav" aria-label="Lesson navigation">'+nav+'</nav>',existing,count=1,flags=re.S);(dest/f).write_text(body)
    else:
     body=clean(convert(c,m),c,m)

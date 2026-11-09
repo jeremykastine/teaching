@@ -215,8 +215,11 @@ footer{margin-top:42px;border-top:1px solid #c7d2d7;padding-top:24px;font-size:.
 def build_index(root, cfg, sections):
     from course_pages import ANCHORS, build_categories, navigation
     base = f'https://openstax.org/books/{cfg["slug"]}/pages/'
+    notes_only = set(json.loads((root / 'slides/coverage.json').read_text()).get('notes_only', []))
     groups = {}
     for section in sections:
+        if section['number'] in notes_only:
+            continue
         chapter = int(section['number'].split('.')[0])
         groups.setdefault(chapter, []).append(section)
     nav = ''.join(f'<a href="#chapter-{ch}">Chapter {ch}</a>' for ch in groups)
@@ -271,7 +274,10 @@ def main(course_root):
     if missing or extra:
         raise ValueError(f'Course coverage differs from the plan: missing {sorted(missing)}, extra {sorted(extra)}')
     (root / 'slides').mkdir(exist_ok=True)
+    notes_only = set(coverage.get('notes_only', []))
     for section in sections:
+        if section['number'] in notes_only:
+            continue
         chapter = int(section['number'].split('.')[0])
         if args.chapters is None or chapter in args.chapters:
             build_section(root, cfg, section)

@@ -494,16 +494,18 @@ This lab introduces no separately marked vocabulary; sampling and table terminol
 
 ### 5.1 Continuous Probability Functions
 
+Sections 5.1–5.2 now use the [combined lecture notes](../lessons/section-5-1-5-2-continuous-and-uniform-distributions.html). The PDF links for those sections point to the decks at the time of the audit.
+
 17 → 18 pages. [Textbook 5.1](https://openstax.org/books/introductory-statistics-2e/pages/5-1-continuous-probability-functions)
 
 This lab introduces no separately marked vocabulary; sampling and table terminology is established in §§1.1–1.4 and applied below.
 
 | Major textbook task or reasoning type | Representative revised PDF pages |
 |---|---|
-| Interpret density/area, valid distributions and probability statements | [§5.1 p. 2 — A probability density](../slides/section-5-1.pdf#page=2); [§5.1 p. 3 — The entire distribution](../slides/section-5-1.pdf#page=3); [§5.1 p. 4 — Probability as area](../slides/section-5-1.pdf#page=4); [§5.1 p. 5 — An interval probability](../slides/section-5-1.pdf#page=5); [§5.1 p. 6 — Graphing a continuous density](../slides/section-5-1.pdf#page=6) |
-| Distinguish point probabilities, rounded observations and endpoints | [§5.1 p. 7 — Height is not probability](../slides/section-5-1.pdf#page=7); [§5.1 p. 8 — One exact value](../slides/section-5-1.pdf#page=8); [§5.1 p. 9 — Rounded measurements](../slides/section-5-1.pdf#page=9); [§5.1 p. 10 — Endpoints](../slides/section-5-1.pdf#page=10) |
-| Use a CDF for cumulative, tail and interval probabilities | [§5.1 p. 12 — A cumulative probability](../slides/section-5-1.pdf#page=12); [§5.1 p. 13 — Beyond a cutoff](../slides/section-5-1.pdf#page=13); [§5.1 p. 14 — Between two cutoffs](../slides/section-5-1.pdf#page=14); [§5.1 p. 15 — Outside an interval](../slides/section-5-1.pdf#page=15); [§5.1 p. 16 — A possible cumulative function](../slides/section-5-1.pdf#page=16) |
-| Interpret a percentile cutoff | [§5.1 p. 17 — A percentile](../slides/section-5-1.pdf#page=17) |
+| Interpret density/area, valid distributions and probability statements | [§5.1 p. 2 — A probability density](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=2); [§5.1 p. 3 — The entire distribution](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=3); [§5.1 p. 4 — Probability as area](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=4); [§5.1 p. 5 — An interval probability](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=5); [§5.1 p. 6 — Graphing a continuous density](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=6) |
+| Distinguish point probabilities, rounded observations and endpoints | [§5.1 p. 7 — Height is not probability](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=7); [§5.1 p. 8 — One exact value](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=8); [§5.1 p. 9 — Rounded measurements](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=9); [§5.1 p. 10 — Endpoints](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=10) |
+| Use a CDF for cumulative, tail and interval probabilities | [§5.1 p. 12 — A cumulative probability](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=12); [§5.1 p. 13 — Beyond a cutoff](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=13); [§5.1 p. 14 — Between two cutoffs](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=14); [§5.1 p. 15 — Outside an interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=15); [§5.1 p. 16 — A possible cumulative function](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=16) |
+| Interpret a percentile cutoff | [§5.1 p. 17 — A percentile](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-1.pdf#page=17) |
 
 ### 5.2 The Uniform Distribution
 
@@ -511,16 +513,16 @@ This lab introduces no separately marked vocabulary; sampling and table terminol
 
 | Textbook terminology | Revised PDF evidence |
 |---|---|
-| equally likely | [§5.2 p. 1 — The uniform distribution](../slides/section-5-2.pdf#page=1) |
-| conditional probability | [§5.2 p. 15 — A conditional interval](../slides/section-5-2.pdf#page=15) |
+| equally likely | [§5.2 p. 1 — The uniform distribution](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=1) |
+| conditional probability | [§5.2 p. 15 — A conditional interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=15) |
 
 | Major textbook task or reasoning type | Representative revised PDF pages |
 |---|---|
-| Specify and graph a uniform density and its support | [§5.2 p. 1 — The uniform distribution](../slides/section-5-2.pdf#page=1); [§5.2 p. 2 — The range](../slides/section-5-2.pdf#page=2); [§5.2 p. 3 — Uniform density](../slides/section-5-2.pdf#page=3); [§5.2 p. 4 — A waiting interval](../slides/section-5-2.pdf#page=4) |
-| Calculate interval, tail and partially out-of-support probabilities | [§5.2 p. 5 — A short wait](../slides/section-5-2.pdf#page=5); [§5.2 p. 6 — A long wait](../slides/section-5-2.pdf#page=6); [§5.2 p. 7 — A partially overlapping interval](../slides/section-5-2.pdf#page=7); [§5.2 p. 8 — Outside the support](../slides/section-5-2.pdf#page=8) |
-| Calculate theoretical mean/SD and compare empirical summaries | [§5.2 p. 9 — The center of a uniform distribution](../slides/section-5-2.pdf#page=9); [§5.2 p. 11 — Calculating uniform spread](../slides/section-5-2.pdf#page=11); [§5.2 p. 19 — Theoretical and empirical summaries](../slides/section-5-2.pdf#page=19) |
-| Find lower/upper percentile cutoffs and central intervals | [§5.2 p. 12 — A percentile cutoff](../slides/section-5-2.pdf#page=12); [§5.2 p. 13 — An upper-tail cutoff](../slides/section-5-2.pdf#page=13); [§5.2 p. 14 — The middle half](../slides/section-5-2.pdf#page=14) |
-| Calculate conditional probabilities and conditioned density | [§5.2 p. 15 — A conditional interval](../slides/section-5-2.pdf#page=15); [§5.2 p. 16 — The conditional density](../slides/section-5-2.pdf#page=16); [§5.2 p. 18 — Checking the model](../slides/section-5-2.pdf#page=18) |
+| Specify and graph a uniform density and its support | [§5.2 p. 1 — The uniform distribution](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=1); [§5.2 p. 2 — The range](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=2); [§5.2 p. 3 — Uniform density](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=3); [§5.2 p. 4 — A waiting interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=4) |
+| Calculate interval, tail and partially out-of-support probabilities | [§5.2 p. 5 — A short wait](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=5); [§5.2 p. 6 — A long wait](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=6); [§5.2 p. 7 — A partially overlapping interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=7); [§5.2 p. 8 — Outside the support](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=8) |
+| Calculate theoretical mean/SD and compare empirical summaries | [§5.2 p. 9 — The center of a uniform distribution](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=9); [§5.2 p. 11 — Calculating uniform spread](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=11); [§5.2 p. 19 — Theoretical and empirical summaries](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=19) |
+| Find lower/upper percentile cutoffs and central intervals | [§5.2 p. 12 — A percentile cutoff](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=12); [§5.2 p. 13 — An upper-tail cutoff](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=13); [§5.2 p. 14 — The middle half](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=14) |
+| Calculate conditional probabilities and conditioned density | [§5.2 p. 15 — A conditional interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=15); [§5.2 p. 16 — The conditional density](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=16); [§5.2 p. 18 — Checking the model](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=18) |
 
 ### 5.3 The Exponential Distribution
 
@@ -849,12 +851,12 @@ Each glossary term is mapped to a definition or application in its chapter. Thes
 
 | Term | Revised PDF evidence |
 |---|---|
-| Conditional Probability | [§5.2 p. 15 — A conditional interval](../slides/section-5-2.pdf#page=15) |
+| Conditional Probability | [§5.2 p. 15 — A conditional interval](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=15) |
 | decay parameter | [§5.3 p. 3 — Rate notation](../slides/section-5-3.pdf#page=3) |
 | Exponential Distribution | [§5.3 p. 1 — An exponential waiting model](../slides/section-5-3.pdf#page=1) |
 | memoryless property | [§5.3 p. 20 — The memoryless property](../slides/section-5-3.pdf#page=20) |
 | Poisson distribution | [§5.3 p. 24 — A Poisson connection](../slides/section-5-3.pdf#page=24) |
-| Uniform Distribution | [§5.2 p. 1 — The uniform distribution](../slides/section-5-2.pdf#page=1) |
+| Uniform Distribution | [§5.2 p. 1 — The uniform distribution](https://github.com/jeremykastine/teaching/blob/c665ce8cad03f4ef040c7bf7b8c15e1b266eaae2/stats/slides/section-5-2.pdf#page=1) |
 
 ### Chapter 6 glossary
 

@@ -86,9 +86,21 @@ def shell(title, css, body):
 
 def inventory():
     result=[]
+    manifest=json.loads((ROOT/'stats/notes-source/manifest.json').read_text())
+    separate_reviews={f'lessons/section-{m["slug"]}.html':m['essentials']
+                      for m in manifest if 'essentials' in m}
     for course in COURSES:
         doc=BeautifulSoup((ROOT/course/'lecture-notes.html').read_text(), 'html.parser')
         for a in doc.select('a[href^="lessons/"]'):
+            if course=='stats' and a['href'] in separate_reviews:
+                for review in separate_reviews[a['href']]:
+                    number=review['number']
+                    result.append({'course':course,'number':number,
+                                   'title':f'{number}: {review["title"]}',
+                                   'lesson':a['href'],'scope':'',
+                                   'review':f'section-{review["slug"]}.html',
+                                   'link_text':f'{number} essentials review'})
+                continue
             label=a.get_text(' ',strip=True)
             match=re.match(r'(?:Topic\s+)?(\d+(?:\.\d+)?[Bb]?)',label)
             if not match: raise ValueError(label)
@@ -100,7 +112,8 @@ def inventory():
             if course=='stats' and number in {'1.5','1.6'}: scope='Guided lab'
             if course=='stats' and number=='9.0': scope='Conceptual overview'
             result.append({'course':course,'number':number,'title':label,
-                           'lesson':a['href'],'scope':scope})
+                           'lesson':a['href'],'scope':scope,
+                           'review':Path(a['href']).name,'link_text':'Essentials review'})
     return result
 
 
@@ -112,21 +125,21 @@ def build():
     for course,(name,anchor) in COURSES.items():
         indexpath=ROOT/course/'lecture-notes.html'
         text=indexpath.read_text()
-        text=re.sub(r' <a class="essentials-link" href="[^"]*">Essentials review</a>', '', text)
+        text=re.sub(r' <a class="essentials-link" href="[^"]*">[^<]*</a>', '', text)
         indexpath.write_text(text)
         subset=[e for e in entries if e['course']==course]
         dest=ROOT/course/'essentials';dest.mkdir(exist_ok=True)
         links=[]
         for i,e in enumerate(subset):
-            key=(course,e['number']);data=CONTENT[key];filename=Path(e['lesson']).name
+            key=(course,e['number']);data=CONTENT[key];filename=e['review']
             assert 5<=len(data['questions'])<=10,key
             assert 2<=len(data['examples'])<=4,key
             title=e['title']+' · Essentials'
             nav=(f'<a href="../essentials.html">All essentials</a>'
                  f'<a href="../{e["lesson"]}">Lecture notes</a>'
                  f'<a href="../../index.html#{anchor}">Teaching home</a>')
-            if i: nav+=f'<a href="{Path(subset[i-1]["lesson"]).name}">Previous</a>'
-            if i+1<len(subset): nav+=f'<a href="{Path(subset[i+1]["lesson"]).name}">Next</a>'
+            if i: nav+=f'<a href="{subset[i-1]["review"]}">Previous</a>'
+            if i+1<len(subset): nav+=f'<a href="{subset[i+1]["review"]}">Next</a>'
             body=f'<nav aria-label="Review navigation">{nav}</nav><p class="eyebrow">{escape(name)}</p><h1>{escape(title)}</h1>'
             if e['scope']: body+=f'<p class="scope">{escape(e["scope"])}</p>'
             body+='<p>Answer the questions from memory on paper. Then check the answer key. Attempt each example before opening its solution.</p>'
@@ -145,8 +158,8 @@ def build():
             # Add a link beside each existing lesson entry without replacing its markup.
             indexpath=ROOT/course/'lecture-notes.html'
             text=indexpath.read_text()
-            pattern=r'(<a href="'+re.escape(e['lesson'])+r'">[^<]*</a>)'
-            text=re.sub(pattern,lambda m:m[1]+f' <a class="essentials-link" href="essentials/{filename}">Essentials review</a>',text,count=1,flags=re.S)
+            pattern=r'(<a href="'+re.escape(e['lesson'])+r'">[^<]*</a>(?: <a class="essentials-link"[^>]*>[^<]*</a>)*)'
+            text=re.sub(pattern,lambda m:m[1]+f' <a class="essentials-link" href="essentials/{filename}">{e["link_text"]}</a>',text,count=1,flags=re.S)
             indexpath.write_text(text)
             lessonpath=ROOT/course/e['lesson'];text=lessonpath.read_text()
             href=f'../essentials/{filename}'

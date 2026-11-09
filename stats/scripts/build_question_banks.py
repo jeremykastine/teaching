@@ -91,6 +91,44 @@ def load_slides():
     return slides, hashes
 
 
+JOINT_LESSON = '../lessons/section-5-1-5-2-continuous-and-uniform-distributions.html'
+JOINT_LESSON_TOPICS = {
+    '5.1': {
+        'density': (1, 2, 3, 4, 5, 6, 7),
+        'exact-time': (8, 10),
+        'measurement': (9,),
+        'cumulative': (11, 12, 13, 14, 15, 16),
+        'uniform-percentiles': (17, 18),
+    },
+    '5.2': {
+        'uniform': (1, 2, 3, 4, 5, 6, 7, 8, 15, 16),
+        'uniform-summary': (9, 10, 11, 17, 19, 20),
+        'uniform-percentiles': (12, 13, 14),
+        'finer-bins': (18,),
+    },
+}
+
+
+def question_source(section, page, slides):
+    source = {
+        'section': section,
+        'slide_page': page,
+        'slide_title': slides[section]['slides'][page-1]['title'],
+    }
+    if section in JOINT_LESSON_TOPICS:
+        topic = next(topic for topic, pages in JOINT_LESSON_TOPICS[section].items() if page in pages)
+        source['lesson'] = f'{JOINT_LESSON}#{topic}'
+    else:
+        source['pdf'] = f'../slides/section-{section.replace(".", "-")}.pdf#page={page}'
+    return source
+
+
+def source_label(source):
+    if 'lesson' in source:
+        return 'Lecture notes 5.1–5.2'
+    return f'Slides {source["section"]}, page {source["slide_page"]}: {source["slide_title"]}'
+
+
 def parse_bank(unit, slides, hashes):
     questions, groups = [], []
     for line in (OUT / f'source/unit-{unit}.txt').read_text().splitlines():
@@ -116,11 +154,7 @@ def parse_bank(unit, slides, hashes):
             'id': qid, 'group': groups[-1]['id'], 'skill_group': groups[-1]['name'],
             'reasoning': tag, 'stem': stem, '_correct': correct,
             '_distractors': [d1, d2, d3], 'explanation': explanation,
-            'source': {
-                'section': section, 'slide_page': page,
-                'slide_title': slides[section]['slides'][page-1]['title'],
-                'pdf': f'../slides/section-{section.replace(".", "-")}.pdf#page={page}',
-            },
+            'source': question_source(section, page, slides),
         })
     assert len(questions) == 100 and len(groups) == 10
     assert len(set(q['stem'] for q in questions)) == 100
@@ -308,7 +342,7 @@ def render_pdf(bank, output_path):
     story = [p(f'Statistics - Unit {unit}', 'title'), p(bank['title'], 'subtitle'),
              p(f'Chapters {bank["chapters"][0]}-{bank["chapters"][1]} | 100 multiple-choice questions'),
              p('Choose one answer per question. These questions emphasize interpretation, prediction, and statistical reasoning. A four-function calculator is sufficient; any other required values are supplied. All numerical scenarios are illustrative. Chapter 9 is not tested.'),
-             p('Answers and brief explanations appear after Question 100. Each question cites the matching section-slide page.')]
+             p('Answers and brief explanations appear after Question 100. Each question cites the relevant course material.')]
     last_group = None
     for q in bank['questions']:
         block = []
@@ -322,7 +356,7 @@ def render_pdf(bank, output_path):
         for letter, choice in zip('ABCD', q['choices']):
             block.append(p(f'{letter}. {choice}', 'option'))
         src = q['source']
-        block.append(p(f'Slides {src["section"]}, page {src["slide_page"]}: {src["slide_title"]} | {q["reasoning"]}', 'source'))
+        block.append(p(f'{source_label(src)} | {q["reasoning"]}', 'source'))
         story.append(KeepTogether(block))
     story += [PageBreak(), p('Answers and explanations', 'title'), p('Public study key. Explain the statistical reason as well as selecting the letter.')]
     last_group = None
@@ -379,10 +413,11 @@ def render_html(bank):
             if 'figure' in q:
                 figure = f'<img src="{q["figure"]["file"]}" alt="{escape(q["figure"]["alt"], quote=True)}" loading="lazy">'
             src = q['source']
+            source_link = src.get('lesson') or src['pdf']
             questions.append(f'''<article class="question" id="{q['id']}" data-group="{q['group']}">
 <h3>{q['id']}. {text_html(q['stem'])}</h3>{figure}<ol class="choices" type="A">{choices}</ol>
 <div class="bank-answer"><p><strong>Answer: {q['answer_letter']}. {text_html(q['choices'][q['answer_index']])}</strong></p><p>{text_html(q['explanation'])}</p></div>
-<p class="meta"><a href="{src['pdf']}">Slides {src['section']}, page {src['slide_page']}: {escape(src['slide_title'])}</a></p></article>''')
+<p class="meta"><a href="{source_link}">{escape(source_label(src))}</a></p></article>''')
         chunks.append(f'<section id="{group["id"]}" data-group="{group["id"]}"><h2>Pool {number}: {escape(group["name"])}</h2>{"".join(questions)}</section>')
     options = ''.join(f'<option value="{g["id"]}">Pool {i}: {escape(g["name"])}</option>' for i, g in enumerate(bank['groups'], 1))
     html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
