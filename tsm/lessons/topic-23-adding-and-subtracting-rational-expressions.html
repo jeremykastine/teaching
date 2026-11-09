@@ -32,6 +32,35 @@ quotient of polynomials. Restriction: an input that makes an original
 denominator 0.</p>
 <h2>Common denominators and restrictions</h2>
 <p>Record restrictions from the original denominators. Factor the denominators to find an LCD, then multiply each numerator and denominator by any missing factors. Combine the numerators over the LCD. For subtraction, subtract the entire second numerator. Finally factor and simplify the result, keeping the original restrictions.</p>
+<p>When the denominators already match, keep that denominator and combine the numerators directly.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Add, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{2x+1}{(x-2)(x+3)}+\frac{x-7}{(x-2)(x+3)}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The common denominator gives the restrictions <span class="math inline">\(x\ne-3,2\)</span>. Add the numerators, then factor the result and cancel the common factor <span class="math inline">\(x-2\)</span>.</p>
+<p><span class="math display">\[\frac{(2x+1)+(x-7)}{(x-2)(x+3)}=\frac{3x-6}{(x-2)(x+3)}=\frac{3(x-2)}{(x-2)(x+3)}=\frac{3}{x+3}\]</span></p>
+<p>Both original restrictions still apply.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Subtract, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{3x}{(x-2)(x+3)}-\frac{x-4}{(x-2)(x+3)}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The common denominator gives the restrictions <span class="math inline">\(x\ne-3,2\)</span>. Put the second numerator in parentheses and distribute the negative sign to both terms.</p>
+<p><span class="math display">\[\frac{3x-(x-4)}{(x-2)(x+3)}=\frac{3x-x+4}{(x-2)(x+3)}=\frac{2(x+2)}{(x-2)(x+3)}\]</span></p>
+<p>The numerator factor <span class="math inline">\(x+2\)</span> looks like <span class="math inline">\(x-2\)</span>, but their constant terms have different signs. There is no common factor to cancel.</p>
+</div>
+</section>
+
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
@@ -122,6 +151,88 @@ factored.</p>
 </div></div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
 <p>The original denominators require <span class="math inline">\(m\ne-4,4\)</span>. Use the factored LCD, then combine numerators and check for common factors.</p><p><span class="math display">\[\frac{2(m-4)+(m-2)}{(m-4)(m+4)}=\frac{3m-10}{(m-4)(m+4)}\]</span></p><p>The final numerator and denominator have no further common factor.</p>
+</div>
+</section>
+
+<h2>More practice factoring denominators</h2>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Add, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{1}{2x^2-6x}+\frac{1}{4x-12}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Factor out the GCF in each denominator.</p>
+<p><span class="math display">\[2x^2-6x=2x(x-3),\qquad 4x-12=4(x-3)\]</span></p>
+<p>The LCD is <span class="math inline">\(4x(x-3)\)</span>, and the original restrictions are <span class="math inline">\(x\ne0,3\)</span>. Multiply the first fraction by <span class="math inline">\(2/2\)</span> and the second by <span class="math inline">\(x/x\)</span>.</p>
+<p><span class="math display">\[\frac{2+x}{4x(x-3)}=\frac{x+2}{4x(x-3)}\]</span></p>
+<p>There is no common factor to cancel.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Add, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{1}{x^2+5x+6}+\frac{1}{x^2+7x+12}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Use the sum-product method to factor each trinomial.</p>
+<p><span class="math display">\[x^2+5x+6=(x+2)(x+3),\qquad x^2+7x+12=(x+3)(x+4)\]</span></p>
+<p>The LCD is <span class="math inline">\((x+2)(x+3)(x+4)\)</span>, and the original restrictions are <span class="math inline">\(x\ne-4,-3,-2\)</span>.</p>
+<p><span class="math display">\[\frac{(x+4)+(x+2)}{(x+2)(x+3)(x+4)}=\frac{2(x+3)}{(x+2)(x+3)(x+4)}=\frac{2}{(x+2)(x+4)}\]</span></p>
+<p>Cancel the common factor <span class="math inline">\(x+3\)</span> and keep all three original restrictions.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Subtract, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{2}{2x^2+5x+2}-\frac{x-1}{x^2-4}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Split the middle term of the first denominator as <span class="math inline">\(4x+x\)</span> and factor by grouping. The second denominator is a difference of squares.</p>
+<p><span class="math display">\[2x^2+5x+2=(2x+1)(x+2),\qquad x^2-4=(x-2)(x+2)\]</span></p>
+<p>The LCD is <span class="math inline">\((2x+1)(x+2)(x-2)\)</span>, and the original restrictions are <span class="math inline">\(x\ne-2,-\frac12,2\)</span>.</p>
+<p><span class="math display">\[\frac{2(x-2)-(x-1)(2x+1)}{(2x+1)(x+2)(x-2)}=\frac{-2x^2+3x-3}{(2x+1)(x+2)(x-2)}\]</span></p>
+<p>The numerator is nonzero at each of the three excluded values, so it shares no factor with the denominator.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Add, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{1}{x^2-6x+9}+\frac{2}{x^2-3x}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The first denominator is a perfect-square trinomial. Factor out <span class="math inline">\(x\)</span> from the second.</p>
+<p><span class="math display">\[x^2-6x+9=(x-3)^2,\qquad x^2-3x=x(x-3)\]</span></p>
+<p>The LCD is <span class="math inline">\(x(x-3)^2\)</span> because the first denominator needs two copies of <span class="math inline">\(x-3\)</span>. The original restrictions are <span class="math inline">\(x\ne0,3\)</span>.</p>
+<p><span class="math display">\[\frac{x+2(x-3)}{x(x-3)^2}=\frac{3(x-2)}{x(x-3)^2}\]</span></p>
+<p>There is no common factor to cancel.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Subtract, simplify, and state all restrictions.</p>
+<p><span class="math display">\[\frac{2}{x^2-1}-\frac{6}{x^3+2x^2-x-2}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Group the four terms of the second denominator, then factor the difference of squares that appears in both denominators.</p>
+<p><span class="math display">\[x^3+2x^2-x-2=x^2(x+2)-(x+2)=(x+2)(x^2-1)=(x+2)(x-1)(x+1)\]</span></p>
+<p>The LCD is <span class="math inline">\((x+2)(x-1)(x+1)\)</span>, and the original restrictions are <span class="math inline">\(x\ne-2,-1,1\)</span>.</p>
+<p><span class="math display">\[\frac{2(x+2)-6}{(x+2)(x-1)(x+1)}=\frac{2(x-1)}{(x+2)(x-1)(x+1)}=\frac{2}{(x+2)(x+1)}\]</span></p>
+<p>Cancel the common factor <span class="math inline">\(x-1\)</span> and keep all three original restrictions.</p>
 </div>
 </section>
 
