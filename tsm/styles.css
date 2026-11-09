@@ -115,6 +115,16 @@ a { color: #175f9e; }
 .math.inline { display: inline; overflow: visible; }
 mjx-container { overflow: visible; }
 
+/* Align displayed prompts and each wrapped line with the problem text. */
+.lecture-notes .problem-statement mjx-container[display="true"] {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.lecture-notes .problem-statement mjx-container[display="true"] mjx-linebox {
+  text-align: left;
+}
+
 @media (max-width: 600px) {
   body { font-size: 16px; }
   main { --page-gutter: 14px; padding: 28px var(--page-gutter) 56px; }
