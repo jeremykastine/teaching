@@ -3,7 +3,7 @@
 
 Run: python scripts/build_essentials.py
 Requires beautifulsoup4 and latex2mathml; see essentials-requirements.txt.
-Run after any lecture-note rebuild to restore essentials navigation.
+Run after a lecture-note rebuild to restore review links inside lessons.
 """
 from pathlib import Path
 from html import escape
@@ -98,14 +98,15 @@ def inventory():
                     result.append({'course':course,'number':number,
                                    'title':f'{number}: {review["title"]}',
                                    'lesson':a['href'],'scope':'',
-                                   'review':f'section-{review["slug"]}.html',
-                                   'link_text':f'{number} essentials review'})
+                                   'review':f'section-{review["slug"]}.html'})
                 continue
-            label=a.get_text(' ',strip=True)
+            topic=a.find_parent('li', class_='lecture-topic') or a.find_parent('li')
+            title=topic.select_one('.topic-title') or a
+            label=title.get_text(' ',strip=True)
             match=re.match(r'(?:Topic\s+)?(\d+(?:\.\d+)?[Bb]?)',label)
             if not match: raise ValueError(label)
             number=match.group(1).upper()
-            assignment=a.find_parent('li').select_one('.assignment')
+            assignment=topic.select_one('.assignment')
             scope=assignment.get_text(' ',strip=True) if assignment else ''
             if course=='101' and number in OPTIONAL: scope='Optional applications'
             if course=='101' and number=='3.1B': scope='Supplemental lesson'
@@ -113,7 +114,7 @@ def inventory():
             if course=='stats' and number=='9.0': scope='Conceptual overview'
             result.append({'course':course,'number':number,'title':label,
                            'lesson':a['href'],'scope':scope,
-                           'review':Path(a['href']).name,'link_text':'Essentials review'})
+                           'review':Path(a['href']).name})
     return result
 
 
@@ -124,9 +125,10 @@ def build():
     report=[]
     for course,(name,anchor) in COURSES.items():
         indexpath=ROOT/course/'lecture-notes.html'
-        text=indexpath.read_text()
-        text=re.sub(r' <a class="essentials-link" href="[^"]*">[^<]*</a>', '', text)
-        indexpath.write_text(text)
+        if course=='tsm':
+            text=indexpath.read_text()
+            text=re.sub(r' <a class="essentials-link" href="[^"]*">[^<]*</a>', '', text)
+            indexpath.write_text(text)
         subset=[e for e in entries if e['course']==course]
         dest=ROOT/course/'essentials';dest.mkdir(exist_ok=True)
         links=[]
@@ -155,12 +157,12 @@ def build():
             (dest/filename).write_text(shell(title,'../../essentials.css',body))
             scope=f'<span class="scope">{escape(e["scope"])}</span>' if e['scope'] else ''
             links.append(f'<li><a href="essentials/{filename}">{escape(e["title"])}</a>{scope}</li>')
-            # Add a link beside each existing lesson entry without replacing its markup.
-            indexpath=ROOT/course/'lecture-notes.html'
-            text=indexpath.read_text()
-            pattern=r'(<a href="'+re.escape(e['lesson'])+r'">[^<]*</a>(?: <a class="essentials-link"[^>]*>[^<]*</a>)*)'
-            text=re.sub(pattern,lambda m:m[1]+f' <a class="essentials-link" href="essentials/{filename}">{e["link_text"]}</a>',text,count=1,flags=re.S)
-            indexpath.write_text(text)
+            # The College Algebra and Statistics indexes already include review links.
+            if course=='tsm':
+                text=indexpath.read_text()
+                pattern=r'(<a href="'+re.escape(e['lesson'])+r'">[^<]*</a>(?: <a class="essentials-link"[^>]*>[^<]*</a>)*)'
+                text=re.sub(pattern,lambda m:m[1]+f' <a class="essentials-link" href="essentials/{filename}">Essentials review</a>',text,count=1)
+                indexpath.write_text(text)
             lessonpath=ROOT/course/e['lesson'];text=lessonpath.read_text()
             href=f'../essentials/{filename}'
             if href not in text:

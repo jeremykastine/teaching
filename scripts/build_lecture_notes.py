@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build textbook-sequence HTML lecture notes from licensed source snapshots."""
 from pathlib import Path
+from html import escape
 import sys,json,re,copy,hashlib,urllib.request,base64,concurrent.futures
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup as BS
@@ -15,6 +16,73 @@ OPTIONAL={'2.3','4.2','4.3','6.7','6.8'}
 def soup(x):return BS(x,'html.parser')
 def inner(x):return ''.join(map(str,x.contents)) if x else ''
 def filename(m):return 'section-'+m['slug']+'.html'
+
+def textbook_url(course, section):
+    slug = section.get('textbook_slug', section['slug'])
+    return f'https://openstax.org/books/{BOOK[course]}/pages/{slug}'
+
+
+def write_index(course, manifest):
+    entries = []
+    for topic in manifest:
+        number = topic['number']
+        title = escape(topic.get('index_title', f'{number}: {topic["title"]}'))
+        scope = ''
+        if course == '101' and number in OPTIONAL:
+            scope = ' <span>— Optional applications</span>'
+        elif course == '101' and number == '3.1B':
+            scope = ' <span>— Supplemental lesson</span>'
+
+        if 'essentials' in topic:
+            # A combined lesson still has one reading and review per textbook section.
+            sections = topic['essentials']
+            readings = ' · '.join(f'<a href="{textbook_url(course, s)}">{s["number"]} {escape(s["title"])}</a>'
+                                  for s in sections)
+            reviews = ' · '.join(f'<a href="essentials/{filename(s)}">{s["number"]} review</a>'
+                                 for s in sections)
+            readings = 'Textbook readings (OpenStax) · ' + readings
+            reviews = 'Essentials reviews · ' + reviews
+        else:
+            reading = escape(topic.get('textbook_label', f'Section {number}'))
+            readings = f'<a href="{textbook_url(course, topic)}">Textbook reading (OpenStax {reading})</a>'
+            reviews = f'<a href="essentials/{filename(topic)}">Essentials review</a>'
+
+        entries.append(f'''  <li class="lecture-topic"><strong class="topic-title">{title}</strong>
+    <ul>
+      <li><a href="lessons/{filename(topic)}">Lecture notes</a>{scope}</li>
+      <li>{readings}</li>
+      <li>{reviews}</li>
+    </ul>
+  </li>''')
+
+    name = NAME[course]
+    anchor = 'math101' if course == '101' else 'stats'
+    scope_note = ('Section 2.4 is limited to introductory imaginary numbers. Optional application sections are marked.'
+                  if course == '101' else
+                  'Sections 1.5 and 1.6 are guided labs. Topic 9.0 is a conceptual overview of hypothesis testing.')
+    topics = '\n'.join(entries)
+    (ROOT / course / 'lecture-notes.html').write_text(f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{name} Lecture Notes</title>
+  <link rel="stylesheet" href="../tsm/styles.css">
+</head>
+<body><main class="lecture-notes">
+<nav class="topic-nav"><a href="../index.html#{anchor}">Teaching home</a></nav>
+<h1>{name} Lecture Notes</h1>
+<p><a href="essentials.html">Essentials reviews for every topic</a></p>
+<p>Double-click or double-tap the blank area beneath a problem to reveal its solution. With a keyboard, press Enter or Space.</p>
+<p>{scope_note}</p>
+<ul class="topic-list">
+{topics}
+</ul>
+</main></body>
+</html>
+''')
+
+
 def block(label,q,a,id=''):
  return f'<section class="worked-example" id="{id}"><div class="problem-statement"><h3>{label}</h3>{q}</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">{a}</div></section>'
 def convert(c,m):
@@ -62,7 +130,7 @@ def convert(c,m):
   x.replace_with(soup(block(label,q,ans,x.get('id',''))))
  return inner(page)
 def clean(body,c,m):
- s=soup(body);base='https://openstax.org/books/'+BOOK[c]+'/pages/'+m['slug']
+ s=soup(body);base=textbook_url(c,m)
  for x in s.select('annotation,annotation-xml,script,summary'):x.decompose()
  for x in s.select('button'):x.unwrap()
  for x in s.select('details'):x.unwrap()
@@ -84,9 +152,8 @@ def build():
  report=[]
  for c in BOOK:
   manifest=json.loads((ROOT/c/'notes-source/manifest.json').read_text());dest=ROOT/c/'lessons';dest.mkdir(exist_ok=True)
-  index=[]
   for i,m in enumerate(manifest):
-   n=m['number'];f=filename(m);url='https://openstax.org/books/'+BOOK[c]+'/pages/'+m['slug']
+   n=m['number'];f=filename(m);url=textbook_url(c,m)
    nav='<a href="../lecture-notes.html">Table of contents</a>'
    if i:nav+=f'<a href="{filename(manifest[i-1])}">Previous: {manifest[i-1]["number"]}</a>'
    if i+1<len(manifest):nav+=f'<a href="{filename(manifest[i+1])}">Next: {manifest[i+1]["number"]}</a>'
@@ -101,16 +168,7 @@ def build():
     html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{title} | {NAME[c]} Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation">{nav}</nav><p class="series-title">{NAME[c]} Lecture Notes · OpenStax</p><h1>{title}</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p>{optional}<p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Try It answers may be concise; use the preceding worked example as a method guide.</p>{body}<footer class="attribution">Adapted from <a href="{url}">OpenStax {"Introductory Statistics 2e, by Barbara Illowsky and Susan Dean" if c=="stats" else "College Algebra 2e, by Jay Abramson"}</a>, Rice University. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Changes include classroom formatting, concealed solutions, supplemental explanations, and course-specific scope. Textbook example and Try It labels are retained where applicable.</footer></main></body></html>'''
     (dest/f).write_text(html)
    count=len(soup(body).select('[data-solution-panel]'));report.append({'course':c,'section':n,'file':f,'solutions':count})
-   index_entry=f'<a href="lessons/{f}">{n}: {m["title"]}</a>'
-   if c=='101' and n in OPTIONAL:
-    index_entry+=' <span>— Optional applications</span>'
-   # The split reviews identify the individual textbook sections in a combined lesson.
-   if m.get('essentials'):
-    reading_links=[f'<a href="https://openstax.org/books/{BOOK[c]}/pages/{section["slug"]}">{section["number"]} {section["title"]}</a>'
-                   for section in m['essentials']]
-    index_entry+='<br>OpenStax readings · '+' · '.join(reading_links)
-   index.append(f'<li>{index_entry}</li>')
-  (ROOT/c/'lecture-notes.html').write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{NAME[c]} Lecture Notes</title><link rel="stylesheet" href="../tsm/styles.css"></head><body><main class="lecture-notes"><nav class="topic-nav"><a href="../index.html#{"math101" if c=="101" else "stats"}">Teaching home</a></nav><h1>{NAME[c]} Lecture Notes</h1><p>Textbook-aligned notes for every topic covered in this course. Double-click or double-tap the blank area beneath a problem to reveal its solution; keyboard users can press Enter or Space.</p><p>'+('Section 2.4 is limited to introductory imaginary numbers. Optional application sections are marked.' if c=='101' else 'Sections 1.5 and 1.6 are guided labs. Topic 9.0 is a conceptual overview of hypothesis testing.')+'</p><ol class="topic-list">'+''.join(index)+'</ol></main></body></html>')
+  write_index(c,manifest)
  (ROOT/'scripts/lecture-notes-coverage.json').write_text(json.dumps(report,indent=2)+'\n')
  print('Built',len(report),'sections;',sum(x['solutions'] for x in report),'solution panels')
 if __name__=='__main__':build()
