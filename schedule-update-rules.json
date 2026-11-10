@@ -39,6 +39,7 @@
     "content_authority": "instructor_schedule_overrides_other_topic_numbering_and_course_requirements; do_not_rewrite_lessons_as_side_effect",
     "last_updated": "set_target_page_last_updated_to_actual_edit_date",
     "html": "static student-readable three-column table: date/week, class topics, after-class work; preserve data-date ISO and data-kind attributes on tbody groups",
+    "topic_resources": "In MATH 101 and Statistics, put a bulleted section title in each topic cell, with nested bullets for lecture notes, textbook reading, and essentials review. Include the relevant links for each section in grouped topics, and move these links with their topic when rescheduling.",
     "navigation": "keep_root_index_schedule_links_under_corresponding_course_heading",
     "validation": [
       "preserve_all_unassigned_topics_and_assessments",
