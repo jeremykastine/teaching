@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proposed Winter 2027 College Algebra plan with 20 one-hour lectures, concrete function families first, and general functions and notation at the end.">
+  <meta name="description" content="Proposed Winter 2027 College Algebra plan with 20 one-hour lectures, general relations first, concrete function families next, and general function notation at the end.">
   <title>Winter 2027 · MATH 101 Lecture and Assessment Plan</title>
   <style>
     :root { color-scheme: light; --ink: #14232d; --accent: #185f72; --muted: #52616b; --line: #c7d2d7; }
@@ -53,14 +53,14 @@
     <p class="eyebrow">MATH 101 · College Algebra · Winter 2027 planning</p>
     <h1>Lecture and Assessment Plan</h1>
     <p class="updated">Proposed sequence and test groups · Updated November 10, 2026</p>
-    <p>Twenty essential lectures, each designed for one hour, develop College Algebra through concrete families of equations. Begin with statements such as “in <span class="math">y = 2x + 3</span>, y is a function of x.” Use the working idea that each allowed x determines exactly one y. Students study domain, range, graph behavior, transformations, inverses, and equation solving within the families as they arise.</p>
-    <p>Lectures 1–18 use explicit equations, tables, and graphs. Describe the domain as the allowed x-values and the range as the resulting y-values. Discuss where y increases or decreases as x increases, where y is positive or negative, and what happens at endpoints and far along the graph. Introduce general functions and function notation in Lectures 19–20, after students have extensive concrete examples.</p>
-    <p>Recurring work includes evaluating y at a supplied x, finding x for a supplied y, identifying intercepts and extrema, reading average rates of change, matching equations and graphs, transforming a familiar graph, and reversing a relation when possible. Teach prerequisite algebra and arithmetic where each family needs it.</p>
+    <p>Twenty essential lectures, each designed for one hour, develop College Algebra beginning with general relations. The first example is <span class="math">|x| + |y| = 1</span>: use its diamond-shaped graph to introduce ordered pairs, domain, range, and transformations, then connect these ideas to circles. Next distinguish relations in which y is a function of x: each allowed x determines exactly one y. Continue through concrete families of equations, revisiting graph behavior, transformations, inverses, and equation solving as they arise.</p>
+    <p>Lectures 1–18 use explicit equations, tables, and graphs. Describe the domain as all x-values occurring in the relation and the range as all y-values occurring in it; these concepts apply before a relation is identified as a function. Discuss where y increases or decreases as x increases, where y is positive or negative, and what happens at endpoints and far along the graph. Introduce general functions and function notation in Lectures 19–20, after students have extensive concrete examples.</p>
+    <p>Recurring work includes finding all y-values at a supplied x and all x-values at a supplied y, identifying intercepts and extrema, reading average rates of change for functions, matching equations and graphs, transforming a familiar graph, and reversing a relation by exchanging x and y. Distinguish an inverse relation from an inverse that is itself a function. Teach prerequisite algebra and arithmetic where each family needs it.</p>
   </header>
 
   <h2>Four proposed unit tests</h2>
   <ol class="test-list">
-    <li><strong>Linear, Absolute Value, Quadratic, and Square-Root Relations</strong> — Lectures 1–6. Analyze familiar graphs and equations, transformations and inverses, and solve the associated equations and inequalities.</li>
+    <li><strong>General Relations; Linear, Absolute Value, Quadratic, and Square-Root Functions</strong> — Lectures 1–6. Read and transform diamonds and circles, identify when y is a function of x, then analyze the concrete function families, their inverses, and associated equations and inequalities.</li>
     <li><strong>Power, Polynomial, and Rational Relations</strong> — Lectures 7–12. Analyze power and higher-root relations, construct polynomials from graphs, find polynomial zeros, and analyze and solve rational expressions and equations.</li>
     <li><strong>Exponential and Logarithmic Relations</strong> — Lectures 13–16. Match and analyze graphs, use inverse relationships and logarithmic properties, and solve exact exponential and logarithmic equations.</li>
     <li><strong>Systems, Piecewise Relations, and General Functions</strong> — Lectures 17–20. Solve systems, interpret piecewise graphs, use function notation, express familiar transformations and inverses in that notation, and form and interpret compositions.</li>
@@ -75,13 +75,13 @@
       <thead><tr><th scope="col">Topic</th><th scope="col">Coverage, algebra and arithmetic background, and problem types</th><th scope="col">MATH 101 assessment</th></tr></thead>
       <tbody>
         <tr id="topic-01" data-topic="1" data-test="1">
-          <th scope="row"><span class="number">Lecture 1</span>Linear relations, equations, and graphs</th>
-          <td>Begin with <span class="math">y = mx + b</span> as a rule determining y from x. Evaluate y, solve for x at a supplied y, graph from points or intercepts, and connect slope to a constant rate of change. Introduce domain and range using the line, plus interval notation where needed. Review signed coordinates, substitution, fractions in slope, and linear equation solving.</td>
+          <th scope="row"><span class="number">Lecture 1</span>General relations: diamonds, circles, and transformations</th>
+          <td>Begin with <span class="math">|x| + |y| = 1</span>. Build its graph from ordered pairs and the vertices <span class="math">(±1, 0)</span> and <span class="math">(0, ±1)</span>; find all y-values for a chosen x. Read domain and range <span class="math">[−1, 1]</span>. Translate horizontally and vertically, and stretch or compress in each direction using concrete equations, leading to <span class="math">|x − h|/a + |y − k|/b = 1</span>, with <span class="math">a, b &gt; 0</span>. Read vertices, domain <span class="math">[h − a, h + a]</span>, and range <span class="math">[k − b, k + b]</span>. Horizontal and vertical stretches give distinct changes; reflections of the centered diamond across either axis leave it unchanged. Connect to <span class="math">x<sup>2</sup> + y<sup>2</sup> = 1</span> and <span class="math">(x − h)<sup>2</sup> + (y − k)<sup>2</sup> = r<sup>2</sup></span>, with <span class="math">r &gt; 0</span>, using center, radius, intercepts, domain, and range. Review absolute value, signed coordinates, substitution, and interval notation through these examples.</td>
           <td>Test 1</td>
         </tr>
         <tr id="topic-02" data-topic="2" data-test="1">
-          <th scope="row"><span class="number">Lecture 2</span>Writing, transforming, and reversing linear relations</th>
-          <td>Write a line from two points or a graph, interpret increasing, decreasing, and constant behavior, and compute average change in y per change in x. Shift, reflect, or scale explicit line equations. For nonconstant lines, solve for x in terms of y and exchange the variable roles to obtain an inverse relation. Solve related linear and compound inequalities using interval notation.</td>
+          <th scope="row"><span class="number">Lecture 2</span>When relations are functions; linear equations and graphs</th>
+          <td>Use diamonds and circles to show that one x can correspond to multiple y-values. Contrast with a line <span class="math">y = mx + b</span>: y is a function of x when each x in the domain has exactly one y. Connect this definition to the vertical line test and to the upper or lower half of the earlier graphs. Keep function notation for Lecture 19. Evaluate y, solve for x at a supplied y, graph and write lines from points or intercepts, and connect slope to constant and average rates of change. Describe increasing, decreasing, or constant behavior and what happens as x tends toward positive or negative infinity. Apply the earlier transformations to lines. Introduce reversal by exchanging x and y: a nonconstant line has an inverse function, whereas a constant line has a vertical inverse relation. Review fractions in slope and linear equation solving; use related linear inequalities as needed.</td>
           <td>Test 1</td>
         </tr>
         <tr id="topic-03" data-topic="3" data-test="1">
@@ -166,7 +166,7 @@
         </tr>
         <tr id="topic-19" data-topic="19" data-test="4">
           <th scope="row"><span class="number">Lecture 19</span>General functions and function notation</th>
-          <td>Formalize the function definition using the equations, tables, graphs, and mappings already encountered, including numerical and nonnumerical examples. Progress from <span class="math">y = …</span> to <span class="math">y(x)</span>, then <span class="math">y<sub>1</sub>(x)</span> and <span class="math">y<sub>2</sub>(x)</span>, and finally <span class="math">f(x)</span>, <span class="math">g(x)</span>, and <span class="math">h(x)</span>. Evaluate at numbers or expressions. Express familiar graph transformations and inverse relations using general notation, including domain restrictions.</td>
+          <td>Generalize the function definition introduced in Lecture 2 using the equations, tables, graphs, and mappings already encountered, including numerical and nonnumerical examples. Progress from <span class="math">y = …</span> to <span class="math">y(x)</span>, then <span class="math">y<sub>1</sub>(x)</span> and <span class="math">y<sub>2</sub>(x)</span>, and finally <span class="math">f(x)</span>, <span class="math">g(x)</span>, and <span class="math">h(x)</span>. Evaluate at numbers or expressions. Express familiar graph transformations and inverse relations using general notation, including domain restrictions.</td>
           <td>Test 4</td>
         </tr>
         <tr id="topic-20" data-topic="20" data-test="4">
@@ -181,8 +181,8 @@
   <section class="planning-notes" aria-labelledby="teaching-decisions">
     <h2 id="teaching-decisions">Teaching decisions</h2>
     <ul>
-      <li>Introduce each family's explicit equations and graphs before generalizing. Revisit allowed inputs and outputs, intercepts, positive and negative values, monotonic intervals, extrema, end behavior, transformations, and inverses as each feature becomes meaningful.</li>
-      <li>Teach translations, reflections, and scaling directly on equations such as <span class="math">y = (x − 2)<sup>2</sup> + 3</span>. Reverse a relation by solving for x in terms of y, and restrict its domain when necessary. These ideas precede the symbolic templates introduced near the end.</li>
+      <li>Begin with relations before functions: domain, range, graph transformations, and inverse relations do not require a unique y for each x. Use the diamond and circle first; introduce the unique-output condition in Lecture 2. Revisit intercepts, signs, monotonic intervals, extrema, and end behavior as the concrete function families make each feature meaningful. End behavior can also be discussed for unbounded relations; the opening diamond and circle are bounded.</li>
+      <li>Teach translations and scaling first on the diamond and circle, then extend to equations such as <span class="math">y = (x − 2)<sup>2</sup> + 3</span>. The diamond separates horizontal and vertical stretches clearly, but its symmetry hides axis reflections; use a later asymmetric graph to make reflection effects visible. Every relation has an inverse relation obtained by exchanging coordinates. When seeking an inverse function, check uniqueness and restrict the original domain when necessary. These ideas precede the general function-notation templates introduced near the end.</li>
       <li>All essential instruction fits into 20 one-hour lectures. Use review time for fluency in prerequisite factoring, fraction operations, equations, and repeated examples. Keep the core examples short enough to include student attempts within the lecture hour.</li>
       <li>Lecture 9 supplies the division methods used in polynomial-zero work and slant asymptotes. Keep the polynomial-zero search short, with one division and a remaining quadratic that has real roots. The imaginary unit can be mentioned when negative numerical radicands arise.</li>
       <li>Test exact algebra and graph interpretation with a basic, non-scientific calculator. Word problems, contextual modeling, regression, and other applications belong in review or extension activities. Difference quotients can extend the earlier average-rate work after function notation is introduced.</li>
@@ -191,7 +191,7 @@
   </section>
   <section class="planning-notes" aria-labelledby="source-material">
     <h2 id="source-material">Source material for development</h2>
-    <p>This proposal reorganizes the existing <a href="../101/lecture-notes.html">College Algebra lecture topics</a> around concrete function families. The <a href="../101/unit-test-specifications.md">current unit-test specifications</a> and <a href="../101/final-exam-specifications.md">final-exam specifications</a> supply the existing problem types and workload limits. The four Winter 2027 test groups above are proposed boundaries for this new progression.</p>
+    <p>This proposal reorganizes the existing <a href="../101/lecture-notes.html">College Algebra lecture topics</a> around general relations followed by concrete function families. The <a href="../101/unit-test-specifications.md">current unit-test specifications</a> and <a href="../101/final-exam-specifications.md">final-exam specifications</a> supply the existing problem types and workload limits. The four Winter 2027 test groups above are proposed boundaries for this new progression.</p>
   </section>
   <footer>Winter 2027 preparation · Jeremy Kastine · MATH 101</footer>
 </main>
