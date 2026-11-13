@@ -20,8 +20,9 @@
     .course { color: var(--accent); font-size: 1.45rem; font-weight: 700; margin: 0 0 14px; }
     .resource-links { list-style: disc; padding-left: 26px; }
     .resource-links li { margin: 8px 0; }
-    .winter-documents { margin-top: 48px; padding-top: 30px; border-top: 3px solid var(--accent); }
-    .winter-documents h2 { margin: 0 0 18px; color: var(--accent); font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; }
+    .master-documents { margin-top: 48px; padding-top: 30px; border-top: 3px solid var(--accent); }
+    .master-documents h2 { margin: 0 0 18px; color: var(--accent); font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; }
+    .master-documents p { margin: 0 0 16px; color: var(--muted); }
     a:focus-visible { outline: 3px solid #b05819; outline-offset: 5px; }
     footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #c7d2d7; color: var(--muted); font-size: .85rem; }
     @media (max-width: 520px) { main { padding: 36px 20px; } }
@@ -32,7 +33,7 @@
     <header>
       <p class="name">Jeremy Kastine</p>
       <h1>Teaching</h1>
-      <p>Choose a resource under your course.</p>
+      <p>Choose your course below for the current quarter’s schedule, policies, and materials.</p>
     </header>
     <nav aria-label="Course materials">
       <ul>
@@ -42,9 +43,11 @@
         <li id="generic-resources"><h2 class="course">Generic Resources</h2><ul class="resource-links"><li><a href="absence-procedure.html">Absence Procedure</a></li></ul></li>
       </ul>
     </nav>
-    <section class="winter-documents" aria-labelledby="winter-2027">
-      <h2 id="winter-2027">Winter 2027 Documents</h2>
+    <section class="master-documents" id="winter-2027" aria-labelledby="master-documents">
+      <h2 id="master-documents">Master Documents</h2>
+      <p>These documents are starting points for planning courses in future quarters. Students should use the course materials and policies at the top of this page for the current quarter’s requirements.</p>
       <ul class="resource-links">
+        <li><a href="master-documents/class-policies.html">Class Policies · Attendance, Participation, and Homework</a></li>
         <li><a href="winter-2027/tsm-plan.html">TSM 098 / 099 · Lecture and assessment plan</a></li>
         <li><a href="winter-2027/math101-plan.html">MATH 101 · Lecture and assessment plan</a></li>
       </ul>
