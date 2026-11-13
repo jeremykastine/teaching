@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Master course policies for attendance, absences, participation extra credit, and weekly homework check-ins.">
+  <meta name="description" content="Master course policies for grading, attendance, absences, participation extra credit, and weekly homework check-ins.">
   <title>Class Policies · Jeremy Kastine</title>
   <style>
     :root { color-scheme: light; --ink: #14232d; --accent: #185f72; --muted: #52616b; --line: #c7d2d7; }
@@ -19,6 +19,9 @@
     section { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 24px; }
     ol, ul { margin: 0 0 12px; padding-left: 24px; }
     li + li { margin-top: 6px; }
+    table { border-collapse: collapse; margin: 0 0 12px; }
+    th, td { padding: 6px 16px 6px 0; border-bottom: 1px solid var(--line); text-align: left; }
+    th:last-child, td:last-child { padding-right: 0; text-align: right; }
     @media (max-width: 520px) { main { padding: 32px 20px 48px; } }
   </style>
 </head>
@@ -29,6 +32,21 @@
       <h1>Class Policies</h1>
       <p>This master document is for future quarters. For the requirements that apply to your current class, see the syllabus and the resources listed under your course on the <a href="../index.html">Teaching page</a>.</p>
     </header>
+
+    <section aria-labelledby="grading">
+      <h2 id="grading">Grading</h2>
+      <p>I calculate your course average using these weights before adding any participation extra credit.</p>
+      <table>
+        <thead>
+          <tr><th scope="col">Grade component</th><th scope="col">Weight</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Weekly check-ins</th><td>10%</td></tr>
+          <tr><th scope="row">In-class activities</th><td>10%</td></tr>
+          <tr><th scope="row">Test average (including the final exam)</th><td>80%</td></tr>
+        </tbody>
+      </table>
+    </section>
 
     <section aria-labelledby="attendance">
       <h2 id="attendance">Attendance and absences</h2>
@@ -44,10 +62,11 @@
 
     <section aria-labelledby="participation">
       <h2 id="participation">Participation extra credit</h2>
-      <p>Participation is optional extra credit. You can earn it by taking part in class activities. I calculate each student’s participation extra credit periodically and enter it manually in the Blackboard gradebook so you can see how much you have earned.</p>
+      <p>For each class meeting in which you fully participate, I add <strong>1 percentage point</strong> to your course average. Full participation means arriving on time, staying for the full meeting, and actively taking part in the assigned classwork. Arriving late, leaving early, or participating only part of the time may reduce the bonus for that meeting.</p>
+      <p>For example, if your course average is 82% and you earn full participation credit for five meetings, your average rises to 87%. I calculate your participation extra credit periodically and enter it manually in Blackboard so you can see how much you have earned.</p>
       <p>An <strong>Excused</strong> mark records your attendance status only. If you want participation credit for a missed meeting, you must complete the makeup oral quiz <strong>at the first class meeting you attend after the absence</strong>. Come to that meeting ready to take the quiz.</p>
       <p>The quiz takes about two to three minutes. Prepare the short list of facts, procedures, and examples identified in the Essentials review for the missed meeting. I will choose one item at random and ask you to reproduce it from memory. You may need to explain a step aloud or show a few steps on paper.</p>
-      <p>If you successfully complete the quiz, I record the result as <strong>Excused + Participation Credit</strong> in Quickly. I will record the result on a short form, give you a copy, and keep a copy for my records. If you need more practice, I will tell you what to review.</p>
+      <p>If you successfully complete the quiz, you earn the 1-point bonus for the missed meeting, and I record the result as <strong>Excused + Participation Credit</strong> in Quickly. I will record the result on a short form, give you a copy, and keep a copy for my records. If you need more practice, I will tell you what to review.</p>
     </section>
 
     <section aria-labelledby="homework">
