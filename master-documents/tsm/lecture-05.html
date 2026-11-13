@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture 5: GCF factoring and cubic factoring by grouping | TSM 098 / 099 Master Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../../master-documents/lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+  <script src="../../tsm/mathjax-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+
+<nav class="topic-nav" aria-label="Lecture navigation"><a href="../tsm-lecture-notes.html">Table of contents</a><a href="../../winter-2027/tsm-plan.html#topic-05">Lecture and assessment plan</a><a href="lecture-04.html">Previous lecture</a><a href="lecture-06.html">Next lecture</a></nav>
+<p class="series-title">TSM 098 / 099 · Master Lecture Notes</p>
+<h1>Lecture 5: GCF factoring and cubic factoring by grouping</h1>
+<p><strong>Assessment coverage</strong> TSM 098 test 1 · GCF factoring only · TSM 099 test 1</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to reveal or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2>Overview</h2>
+<p>Reverse distribution by identifying a shared factor. A four-term cubic may have two groups that reveal the same binomial factor.</p>
+<h2>Key definitions</h2>
+<p>A divisor divides an integer with remainder zero. The greatest common factor (GCF) of terms includes the greatest positive common divisor of their coefficients and the smallest power of each shared variable.</p>
+<h2>List divisors and factor out a GCF</h2>
+<p>An even last digit gives divisibility by \(2\). A last digit of \(0\) or \(5\) gives divisibility by \(5\), and a last digit of \(0\) gives divisibility by \(10\). For \(3\) and \(9\), check whether the digit sum is a multiple of the proposed divisor. List positive divisors in pairs, stopping when the pairs begin to repeat.</p>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Find the GCF of \(90\) and \(126\) by listing divisors.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>The divisors of \(90\) are \(1,2,3,5,6,9,10,15,18,30,45,90\). Those of \(126\) are \(1,2,3,6,7,9,14,18,21,42,63,126\). The largest common divisor is \(18\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Factor out the complete GCF of \(18x^4-24x^3+30x^2\).</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>The GCF of \(18,24,30\) is \(6\). All three terms contain at least two factors of \(x\). Divide each term by \(6x^2\) to find the terms inside the parentheses.</p>
+<p class="math display">\[18x^4-24x^3+30x^2=6x^2(3x^2-4x+5)\]</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Factor \(-15x^3+25x^2\). Use a negative factor so the remaining leading term is positive.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>The common factor has magnitude \(5x^2\). Dividing by \(-5x^2\) gives \(3x\) and \(-5\).</p>
+<p class="math display">\[-15x^3+25x^2=-5x^2(3x-5)\]</p>
+</div>
+</section>
+<h2>Grouping four-term cubics</h2>
+<p>Factor each pair and check whether a binomial is common to the two results. Choose a negative GCF when that makes the binomials match.</p>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Factor \(x^3+2x^2+3x+6\) by grouping.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>The first pair has factor \(x^2\). The second pair has factor \(3\). Both leave \(x+2\).</p>
+<p class="math display">\[x^3+2x^2+3x+6=x^2(x+2)+3(x+2)=(x+2)(x^2+3)\]</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Factor \(2x^3-6x^2-5x+15\) by grouping and check by multiplication.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Factor \(-5\) from the second pair to leave \(x-3\) in both groups.</p>
+<p class="math display">\[2x^3-6x^2-5x+15=2x^2(x-3)-5(x-3)=(x-3)(2x^2-5)\]</p>
+<p>Multiplying back gives \(2x^3-6x^2-5x+15\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Factor \(3x^3+2x-6x^2-4\) by grouping.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Put the powers in descending order so the first pair contains \(x^2\) and the second pair has factor \(2\).</p>
+<p class="math display">\[3x^3+2x-6x^2-4=3x^2(x-2)+2(x-2)=(x-2)(3x^2+2)\]</p>
+</div>
+</section>
+</main>
+</body>
+</html>

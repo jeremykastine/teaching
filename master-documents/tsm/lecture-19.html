@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture 19: Solving linear systems by substitution | TSM 098 / 099 Master Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../../master-documents/lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+  <script src="../../tsm/mathjax-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+
+<nav class="topic-nav" aria-label="Lecture navigation"><a href="../tsm-lecture-notes.html">Table of contents</a><a href="../../winter-2027/tsm-plan.html#topic-19">Lecture and assessment plan</a><a href="lecture-18.html">Previous lecture</a><a href="lecture-20.html">Next lecture</a></nav>
+<p class="series-title">TSM 098 / 099 · Master Lecture Notes</p>
+<h1>Lecture 19: Solving linear systems by substitution</h1>
+<p><strong>Assessment coverage</strong> TSM 098 test 4</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to reveal or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2>Overview</h2>
+<p>Replace one variable with an equal expression from the other equation. Once you find one coordinate, substitute back for the other.</p>
+<h2>Key definitions</h2>
+<p>Substitution replaces a variable with a value or expression equal to it. A dependent system represents the same line twice. An inconsistent system has no shared solution.</p>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(y=2x-1\) and \(x+y=8\) by substitution.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Replace \(y\) in the second equation with \(2x-1\). Then \(x+(2x-1)=8\) gives \(x=3\) and \(y=5\). Check \(3+5=8\) and \(2(3)-1=5\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(2x-y=5\) and \(x+3y=13\) by substitution.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Isolate \(y=2x-5\). Then \(x+3(2x-5)=13\), so \(7x=28\) and \(x=4\). Back-substitution gives \(y=3\). Both original left sides are \(5\) and \(13\), respectively.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(x=7-2y\) and \(3x+y=11\).</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Substitute \(7-2y\) for the complete \(x\).</p>
+<p class="math display">\[3(7-2y)+y=11\]</p>
+<p>Then \(21-5y=11\), giving \(y=2\) and \(x=3\). The answer is \((3,2)\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(y=3x+2\) and \(6x-2y=1\) by substitution. Explain what the graphs do.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Substituting gives \(6x-2(3x+2)=1\), or \(-4=1\). The lines are distinct and parallel. There is no solution.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(y=4-x\) and \(2x+2y=8\) by substitution. Describe the full solution set.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Substitution gives \(2x+2(4-x)=8\), which is true for every \(x\). The lines coincide. Every pair \((x,4-x)\) is a solution.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Solve \(2x+y=4\) and \(x-2y=3\) by substitution.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Isolate \(y=4-2x\). Then \(x-2(4-2x)=3\) gives \(5x=11\) and \(x=11/5\). The other coordinate is \(-2/5\). The original left sides become \(22/5-2/5=4\) and \(11/5+4/5=3\).</p>
+</div>
+</section>
+</main>
+</body>
+</html>

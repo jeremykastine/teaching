@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture 9: Polynomial Division | MATH 101 Master Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../../master-documents/lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+  <script src="../../tsm/mathjax-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+
+<nav class="topic-nav" aria-label="Lecture navigation"><a href="../math101-lecture-notes.html">Table of contents</a><a href="../../winter-2027/math101-plan.html#topic-09">Lecture and assessment plan</a><a href="lecture-08.html">Previous lecture</a><a href="lecture-10.html">Next lecture</a></nav>
+<p class="series-title">MATH 101 · Master Lecture Notes</p>
+<h1>Lecture 9: Polynomial Division</h1>
+<p><strong>Assessment coverage</strong> Test 2</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to reveal or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2>Overview</h2>
+<p>Divide by repeatedly rewriting the dividend as a convenient multiple of the divisor plus what remains. Choose each multiple to remove the leading term of the current remainder.</p>
+<h2>Key definitions</h2>
+<p>For dividend \(P\), divisor \(D\), quotient \(Q\), and remainder \(R\), the identity is \(P=DQ+R\). Stop when the remainder is zero or its degree is smaller than the divisor’s degree.</p>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Rewrite \(157\) as a multiple of \(12\) plus a remainder less than \(12\).</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Start with the easy multiple \(120\), leaving \(37\). Recognize \(36\) as another multiple of \(12\).</p>
+<p class="math display">\[157=12(10)+37=12(10)+12(3)+1=12(13)+1\]</p>
+<p>The quotient is \(13\) and the remainder is \(1\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Divide \(x^2+5x+6\) by \(x+2\) and check.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>To account for \(x^2\), start with \((x+2)x\). Subtracting it leaves \(3x+6\), which is exactly \((x+2)3\).</p>
+<p class="math display">\[x^2+5x+6=(x+2)x+(3x+6)=(x+2)(x+3)\]</p>
+<p>Multiplying back gives the dividend. The remainder is zero.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Divide \(2x^3-x+4\) by \(x-1\).</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Treat the missing \(x^2\) term as \(0x^2\). Account for the leading terms in turn with \(2x^2\), \(2x\), and \(1\) times the divisor.</p>
+<p class="math display">\[\begin{aligned}2x^3-x+4&amp;=(x-1)2x^2+(2x^2-x+4)\\&amp;=(x-1)(2x^2+2x)+(x+4)\\&amp;=(x-1)(2x^2+2x+1)+5.\end{aligned}\]</p>
+<p>The remainder is \(5\). Multiplying the quotient by \(x-1\) gives \(2x^3-x-1\), which checks after adding \(5\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Divide \(x^4+2x^3+3x+1\) by \(x^2+1\).</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Use \(x^2\) first and \(2x\) next. After those two rewrites the remainder is \(-x^2+x+1\), so use \(-1\) to remove its leading term.</p>
+<p class="math display">\[\begin{aligned}x^4+2x^3+3x+1&amp;=(x^2+1)x^2+(2x^3-x^2+3x+1)\\&amp;=(x^2+1)(x^2+2x)+(-x^2+x+1)\\&amp;=(x^2+1)(x^2+2x-1)+(x+2).\end{aligned}\]</p>
+<p>The quotient is \(x^2+2x-1\) and the remainder is \(x+2\). The latter has degree \(1\), so the process stops.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Divide \(3x^2+4x-1\) by \(x+1\). Check the quotient and remainder by multiplying and adding.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Start with \(3x(x+1)\), leaving \(x-1\). Use \((x+1)\) once more, leaving \(-2\).</p>
+<p class="math display">\[3x^2+4x-1=(x+1)(3x+1)-2\]</p>
+<p>Expansion gives \(3x^2+4x+1-2=3x^2+4x-1\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Determine whether \(x-2\) divides \(x^3-3x^2+4\) exactly and give the quotient if it does.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>The first multiple is \(x^2(x-2)\), leaving \(-x^2+4\). Recognize that remainder as \(-(x-2)(x+2)\).</p>
+<p class="math display">\[x^3-3x^2+4=(x-2)x^2-(x-2)(x+2)=(x-2)(x^2-x-2)\]</p>
+<p>The remainder is zero, and the quotient is \(x^2-x-2\).</p>
+</div>
+</section>
+</main>
+</body>
+</html>

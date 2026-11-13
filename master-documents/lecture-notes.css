@@ -1,0 +1,25 @@
+.lecture-graph {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 12px 0;
+  color: #243749;
+}
+.lecture-graph .grid { stroke: #d7e0e8; }
+.lecture-graph .axis { stroke: currentColor; }
+.lecture-graph text { fill: currentColor; font: 10px system-ui, sans-serif; }
+.lecture-graph .asymptote { stroke: #7a527e; stroke-dasharray: 6 4; }
+.lecture-graph .curve { stroke: #13658a; }
+.lecture-graph .secondary { stroke: #9e4729; }
+.lecture-graph .reference { stroke: #52616b; stroke-dasharray: 6 4; }
+.lecture-graph .point { stroke: currentColor; }
+.lecture-graph .closed { fill: currentColor; }
+.lecture-graph .open { fill: #fff; }
+.solution-panel:not(.solution-visible) .lecture-graph [stroke] { stroke: #fff; }
+.solution-panel:not(.solution-visible) .lecture-graph [fill]:not([fill="none"]) { fill: #fff; }
+.master-expression {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.25rem 0 0.5rem;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture 7: Quadratic Forms, Vertices, and Extrema | MATH 101 Master Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../../master-documents/lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+  <script src="../../tsm/mathjax-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+
+<nav class="topic-nav" aria-label="Lecture navigation"><a href="../math101-lecture-notes.html">Table of contents</a><a href="../../winter-2027/math101-plan.html#topic-07">Lecture and assessment plan</a><a href="lecture-06.html">Previous lecture</a><a href="lecture-08.html">Next lecture</a></nav>
+<p class="series-title">MATH 101 · Master Lecture Notes</p>
+<h1>Lecture 7: Quadratic Forms, Vertices, and Extrema</h1>
+<p><strong>Assessment coverage</strong> Test 2</p>
+<p class="solution-instructions">Double-click or double-tap the space beneath a problem to reveal or hide its solution. With a keyboard, focus that space and press Enter or Space.</p>
+<h2>Overview</h2>
+<p>Rewriting a quadratic in vertex form makes its lowest or highest point visible. Each algebraic form describes the same graph.</p>
+<h2>Key definitions</h2>
+<p>Standard form is \(ax^2+bx+c\). Vertex form is \(a(x-h)^2+k\), with vertex \((h,k)\). To complete a square in a monic expression, take half the linear coefficient and square it. Add and subtract that same number to preserve the expression.</p>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Expand \(y=2(x-3)^2-5\) and give the minimum and where it occurs.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Expand the square as \(x^2-6x+9\), then multiply by \(2\) and subtract \(5\).</p>
+<p class="math display">\[y=2(x-3)^2-5=2x^2-12x+13\]</p>
+<p>The minimum is \(-5\) at \(x=3\), where the square is zero.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Rewrite \(y=x^2+8x+11\) in vertex form and give the vertex and range.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Half of \(8\) is \(4\), so add and subtract \(16\).</p>
+<p class="math display">\[y=x^2+8x+16-16+11=(x+4)^2-5\]</p>
+<p>The vertex is \((-4,-5)\) and the range is \([-5,\infty)\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Rewrite \(y=2x^2-12x+7\) in vertex form.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Take \(2\) out of the two terms containing \(x\). Half of \(-6\) is \(-3\), and its square is \(9\).</p>
+<p class="math display">\[y=2(x^2-6x+9-9)+7=2(x-3)^2-11\]</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Find the maximum value of \(y=-3x^2-12x+1\) and the input that gives it.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Take out \(-3\) from the variable terms and complete the square inside. The adjustment \(-4\) inside contributes \(12\) outside.</p>
+<p class="math display">\[y=-3(x^2+4x+4-4)+1=-3(x+2)^2+13\]</p>
+<p>The highest value is \(13\) at \(x=-2\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Complete the square for \(y=x^2-3x+1\). Give the exact vertex.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Half of \(-3\) is \(-3/2\). Add and subtract \(9/4\).</p>
+<p class="math display">\[y=\left(x-\frac32\right)^2-\frac94+1=\left(x-\frac32\right)^2-\frac54\]</p>
+<p>The vertex is \((3/2,-5/4)\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-statement">
+<p>Use vertex form to sketch \(y=-x^2+4x+1\) and identify its increasing and decreasing intervals.</p>
+</div>
+<div class="solution-panel" data-solution-panel style="color:#fff;background-color:#fff">
+<p>Complete the square to get \(y=-(x-2)^2+5\). The graph rises up to \((2,5)\) and falls after it. It is increasing on \((-\infty,2)\) and decreasing on \((2,\infty)\).</p>
+<svg class="lecture-graph" viewBox="0 0 420 302" role="img" aria-label="Downward parabola with vertex (2,5) and vertical intercept (0,1)"><defs><clipPath id="graph-1"><rect x="94.72727272727273" y="17.0" width="234.54545454545453" height="258.0"/></clipPath></defs><line class="grid" x1="94.73" y1="275.00" x2="94.73" y2="17.00" stroke="currentColor"/><line class="grid" x1="118.18" y1="275.00" x2="118.18" y2="17.00" stroke="currentColor"/><text x="118.18" y="194.18" text-anchor="middle" fill="currentColor">-2</text><line class="grid" x1="141.64" y1="275.00" x2="141.64" y2="17.00" stroke="currentColor"/><line class="axis" x1="165.09" y1="275.00" x2="165.09" y2="17.00" stroke="currentColor"/><line class="grid" x1="188.55" y1="275.00" x2="188.55" y2="17.00" stroke="currentColor"/><line class="grid" x1="212.00" y1="275.00" x2="212.00" y2="17.00" stroke="currentColor"/><text x="212.00" y="194.18" text-anchor="middle" fill="currentColor">2</text><line class="grid" x1="235.45" y1="275.00" x2="235.45" y2="17.00" stroke="currentColor"/><line class="grid" x1="258.91" y1="275.00" x2="258.91" y2="17.00" stroke="currentColor"/><text x="258.91" y="194.18" text-anchor="middle" fill="currentColor">4</text><line class="grid" x1="282.36" y1="275.00" x2="282.36" y2="17.00" stroke="currentColor"/><line class="grid" x1="305.82" y1="275.00" x2="305.82" y2="17.00" stroke="currentColor"/><text x="305.82" y="194.18" text-anchor="middle" fill="currentColor">6</text><line class="grid" x1="329.27" y1="275.00" x2="329.27" y2="17.00" stroke="currentColor"/><line class="grid" x1="94.73" y1="275.00" x2="329.27" y2="275.00" stroke="currentColor"/><text x="160.09" y="272.00" text-anchor="end" fill="currentColor">-4</text><line class="grid" x1="94.73" y1="251.55" x2="329.27" y2="251.55" stroke="currentColor"/><line class="grid" x1="94.73" y1="228.09" x2="329.27" y2="228.09" stroke="currentColor"/><text x="160.09" y="225.09" text-anchor="end" fill="currentColor">-2</text><line class="grid" x1="94.73" y1="204.64" x2="329.27" y2="204.64" stroke="currentColor"/><line class="axis" x1="94.73" y1="181.18" x2="329.27" y2="181.18" stroke="currentColor"/><line class="grid" x1="94.73" y1="157.73" x2="329.27" y2="157.73" stroke="currentColor"/><line class="grid" x1="94.73" y1="134.27" x2="329.27" y2="134.27" stroke="currentColor"/><text x="160.09" y="131.27" text-anchor="end" fill="currentColor">2</text><line class="grid" x1="94.73" y1="110.82" x2="329.27" y2="110.82" stroke="currentColor"/><line class="grid" x1="94.73" y1="87.36" x2="329.27" y2="87.36" stroke="currentColor"/><text x="160.09" y="84.36" text-anchor="end" fill="currentColor">4</text><line class="grid" x1="94.73" y1="63.91" x2="329.27" y2="63.91" stroke="currentColor"/><line class="grid" x1="94.73" y1="40.45" x2="329.27" y2="40.45" stroke="currentColor"/><text x="160.09" y="37.45" text-anchor="end" fill="currentColor">6</text><line class="grid" x1="94.73" y1="17.00" x2="329.27" y2="17.00" stroke="currentColor"/><text x="338.27272727272725" y="185.18" fill="currentColor">x</text><text x="171.09" y="13.0" fill="currentColor">y</text><g clip-path="url(#graph-1)"><path class="curve " d="M134.80,318.04 L135.77,311.65 L136.75,305.34 L137.73,299.11 L138.70,292.96 L139.68,286.89 L140.66,280.90 L141.64,275.00 L142.61,269.18 L143.59,263.44 L144.57,257.78 L145.55,252.20 L146.52,246.70 L147.50,241.28 L148.48,235.95 L149.45,230.70 L150.43,225.53 L151.41,220.44 L152.39,215.43 L153.36,210.50 L154.34,205.65 L155.32,200.89 L156.30,196.21 L157.27,191.61 L158.25,187.09 L159.23,182.65 L160.20,178.29 L161.18,174.02 L162.16,169.82 L163.14,165.71 L164.11,161.68 L165.09,157.73 L166.07,153.86 L167.05,150.07 L168.02,146.37 L169.00,142.74 L169.98,139.20 L170.95,135.74 L171.93,132.36 L172.91,129.06 L173.89,125.84 L174.86,122.71 L175.84,119.65 L176.82,116.68 L177.80,113.79 L178.77,110.98 L179.75,108.25 L180.73,105.61 L181.70,103.04 L182.68,100.56 L183.66,98.15 L184.64,95.83 L185.61,93.59 L186.59,91.44 L187.57,89.36 L188.55,87.36 L189.52,85.45 L190.50,83.62 L191.48,81.87 L192.45,80.20 L193.43,78.61 L194.41,77.10 L195.39,75.68 L196.36,74.33 L197.34,73.07 L198.32,71.89 L199.30,70.79 L200.27,69.77 L201.25,68.84 L202.23,67.98 L203.20,67.21 L204.18,66.52 L205.16,65.90 L206.14,65.38 L207.11,64.93 L208.09,64.56 L209.07,64.28 L210.05,64.07 L211.02,63.95 L212.00,63.91 L212.98,63.95 L213.95,64.07 L214.93,64.28 L215.91,64.56 L216.89,64.93 L217.86,65.38 L218.84,65.90 L219.82,66.52 L220.80,67.21 L221.77,67.98 L222.75,68.84 L223.73,69.77 L224.70,70.79 L225.68,71.89 L226.66,73.07 L227.64,74.33 L228.61,75.68 L229.59,77.10 L230.57,78.61 L231.55,80.20 L232.52,81.87 L233.50,83.62 L234.48,85.45 L235.45,87.36 L236.43,89.36 L237.41,91.44 L238.39,93.59 L239.36,95.83 L240.34,98.15 L241.32,100.56 L242.30,103.04 L243.27,105.61 L244.25,108.25 L245.23,110.98 L246.20,113.79 L247.18,116.68 L248.16,119.65 L249.14,122.71 L250.11,125.84 L251.09,129.06 L252.07,132.36 L253.05,135.74 L254.02,139.20 L255.00,142.74 L255.98,146.37 L256.95,150.07 L257.93,153.86 L258.91,157.73 L259.89,161.68 L260.86,165.71 L261.84,169.82 L262.82,174.02 L263.80,178.29 L264.77,182.65 L265.75,187.09 L266.73,191.61 L267.70,196.21 L268.68,200.89 L269.66,205.65 L270.64,210.50 L271.61,215.43 L272.59,220.44 L273.57,225.53 L274.55,230.70 L275.52,235.95 L276.50,241.28 L277.48,246.70 L278.45,252.20 L279.43,257.78 L280.41,263.44 L281.39,269.18 L282.36,275.00 L283.34,280.90 L284.32,286.89 L285.30,292.96 L286.27,299.11 L287.25,305.34 L288.23,311.65 L289.20,318.04" fill="none" stroke="currentColor" stroke-width="2.4"/><circle class="point closed" cx="212.00" cy="63.91" r="3.7" stroke="currentColor" fill="currentColor"/><circle class="point closed" cx="165.09" cy="157.73" r="3.7" stroke="currentColor" fill="currentColor"/></g></svg>
+</div>
+</section>
+</main>
+</body>
+</html>
