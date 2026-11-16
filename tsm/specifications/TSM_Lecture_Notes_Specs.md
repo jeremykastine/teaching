@@ -143,12 +143,14 @@ Before pushing, review every changed problem and worked solution, check the math
 Apply this approach consistently in Topic 28 and Topic 29, in the HTML notes:
 
 - Combine and simplify each side first, using a common denominator within a side when needed. Reduce fractions and cancel common nonzero factors where possible.
-- Once each side is a single simplified expression, move any remaining denominators to multiply the opposite side. When both sides have denominators, move both in the same step. Each denominator multiplies the entire opposite numerator.
+- Say **cancel like denominators** when both sides share the same denominator. Multiply by it once to equate the numerators. For different denominators, say **move the divisions to the other side as multiplications**. Multiplying both sides by their product leaves each denominator multiplying the entire opposite numerator. Use the LCD to keep multipliers smaller when denominators share factors. If only one side has a denominator, move that one division to the other side as a multiplication.
 - Include examples with a denominator on only one side and with denominators on both sides. Simplification may also remove all denominators before any need to move them.
 - Use fraction notation throughout this instruction. Do not write reciprocal factors with negative exponents and do not use the term “cross-multiply” or its variants.
 - Teach the method through these worked steps rather than instructing students to multiply every term of the original equation by an LCM or LCD. Common denominators are still used to combine fractions within each side.
-- Explain the equality-preserving multiplication where it first becomes relevant. Move a denominator only when it divides the whole side, and retain parentheses around sums and differences.
+- Explain the equality-preserving multiplication where it first becomes relevant. Apply this step only after each side is a single fraction or a whole expression, and retain parentheses around sums and differences.
 - For variable denominators, state restrictions from every original denominator before simplifying. Retain them even after a denominator disappears. Divide out a common factor only when it is nonzero for allowable values, and check every candidate in the original equation.
+- In Topic 28, keep numerical denominators positive and include less obvious LCDs, four-denominator equations that can be regrouped into two easy LCD pairs, a contradiction, and an identity.
+- In Topic 29, include denominators that require factoring out a GCF, factoring trinomials (including a repeated factor), and factoring differences of squares. Include equations that reduce to linear and quadratic equations, including a quadratic with both a valid and an extraneous candidate. Include only one example with no solution or with every allowable value a solution.
 
 ## 15. Integer-pair preparation for factoring
 

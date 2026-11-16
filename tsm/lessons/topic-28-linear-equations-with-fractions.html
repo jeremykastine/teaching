@@ -24,9 +24,15 @@ Equations with Fractions</h1>
 <h2 id="overview-4">Overview</h2>
 <p>This topic solves linear equations containing numerical fractions. Combining and simplifying each side makes the equation easier to solve.</p>
 <h2 id="key-definitions-4">Key definitions</h2>
-<p>Common denominator: a denominator shared by fractions so they can be added or subtracted. Multi-term numerator: a numerator containing a sum or difference.</p>
+<p>A <strong>least common denominator (LCD)</strong> is the least positive common multiple (LCM) of the denominators. It lets us add or subtract fractions by writing them with the same denominator. A <strong>multi-term numerator</strong> contains a sum or difference.</p>
 <h2>Combine and simplify first</h2>
-<p>Combine each side into one simplified expression. Move any remaining denominator to multiply the opposite side, keeping each numerator together. If both sides have denominators, move both in the same step. Then solve and check in the original equation.</p>
+<p>Combine the fractions on each side using that side's LCD. Once each side is a single fraction or a whole expression, use one of these moves.</p>
+<ul>
+<li>If both sides have the same denominator, <strong>cancel like denominators</strong>. Multiply both sides by the shared denominator and set the numerators equal.</li>
+<li>If the denominators differ, <strong>move the divisions to the other side as multiplications</strong>. Multiplying both sides by the product of the denominators makes each denominator cancel on its own side and multiply the entire numerator on the other side.</li>
+<li>If only one side has a denominator, move that one division to the other side as a multiplication. This amounts to multiplying both sides by that denominator.</li>
+</ul>
+<p>When different denominators share a factor, you can also multiply both sides by their LCD to keep the multipliers smaller.</p>
 <section class="worked-example">
 <div class="problem-row">
 <div class="problem-statement">
@@ -40,10 +46,9 @@ Equations with Fractions</h1>
 <p><span class="math display">\[\frac{2x}{6}+\frac{x}{6}=5\]</span></p>
 <p><span class="math display">\[\frac{3x}{6}=5\]</span></p>
 <p><span class="math display">\[\frac{x}{2}=5\]</span></p>
-<p>Move the denominator 2 to multiply the opposite side. Only the left side has a denominator to move.</p>
+<p>Move the division by 2 to the other side as a multiplication. Multiplying both sides by 2 cancels the division on the left and multiplies 5 on the right.</p>
 <p><span class="math display">\[x=2(5)\]</span></p>
 <p><span class="math display">\[x=10\]</span></p>
-<p>Moving a denominator is justified by multiplying both sides by that denominator. Here, multiplying both sides by 2 removes the division by 2 on the left.</p>
 <p>Check in the original equation (<span class="math inline">\(\frac{10}{3}+\frac{10}{6}=\frac{20}{6}+\frac{10}{6}=5\)</span>).</p>
 
 </div>
@@ -60,9 +65,7 @@ Equations with Fractions</h1>
 <p>Combine each side into one fraction. Rewrite the left terms with denominator 8 and write the whole term on the right as a fraction with denominator 8.</p>
 <p><span class="math display">\[\frac{10x}{8}+\frac{x}{8}=\frac{3}{8}+\frac{8x}{8}\]</span></p>
 <p><span class="math display">\[\frac{11x}{8}=\frac{8x+3}{8}\]</span></p>
-<p>Both sides have a denominator. Move both denominators to multiply the opposite sides in the same step. Each denominator multiplies the entire opposite numerator.</p>
-<p><span class="math display">\[8(11x)=8(8x+3)\]</span></p>
-<p>Divide both sides by 8, then solve.</p>
+<p>Cancel like denominators by multiplying both sides by 8, then solve.</p>
 <p><span class="math display">\[11x=8x+3\]</span></p>
 <p><span class="math display">\[3x=3\]</span></p>
 <p><span class="math display">\[x=1\]</span></p>
@@ -82,9 +85,7 @@ Equations with Fractions</h1>
 <p><span class="math display">\[\frac{3(x+7)-19}{15}=\frac{x-3}{6}\]</span></p>
 <p><span class="math display">\[\frac{3x+21-19}{15}=\frac{x-3}{6}\]</span></p>
 <p><span class="math display">\[\frac{3x+2}{15}=\frac{x-3}{6}\]</span></p>
-<p>Move both denominators across in one step. Parentheses keep each numerator together.</p>
-<p><span class="math display">\[6(3x+2)=15(x-3)\]</span></p>
-<p>Divide both sides by 3 to keep the coefficients small, then distribute and solve.</p>
+<p>Clear the denominators by multiplying both sides by 30, the LCD of 15 and 6. On the left, \(30\div15=2\). On the right, \(30\div6=5\). Keep each numerator together in parentheses.</p>
 <p><span class="math display">\[2(3x+2)=5(x-3)\]</span></p>
 <p><span class="math display">\[6x+4=5x-15\]</span></p>
 <p><span class="math display">\[x=-19\]</span></p>
@@ -96,18 +97,139 @@ Equations with Fractions</h1>
 <div class="problem-row">
 <div class="problem-statement">
 <p>Solve</p>
-<p><span class="math display">\[\frac{x+2}{8}=\frac{x+3}{-5}\]</span></p>
+<p><span class="math display">\[\frac{x+2}{8}=-\frac{x+3}{5}\]</span></p>
 </div>
 
 </div>
 <div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
-<p>Each side is already one fraction. The negative sign belongs to the denominator, so keep it when moving both denominators to multiply the opposite sides.</p>
-<p><span class="math display">\[-5(x+2)=8(x+3)\]</span></p>
+<p>Move the divisions to the other side as multiplications. Multiplying both sides by \(8\cdot5=40\) cancels the 8 on the left and the 5 on the right. The 5 multiplies the entire left numerator, and the 8 multiplies the entire right numerator. The negative sign still applies to the right side.</p>
+<p><span class="math display">\[5(x+2)=-8(x+3)\]</span></p>
 <p>Distribute and solve.</p>
-<p><span class="math display">\[-5x-10=8x+24\]</span></p>
-<p><span class="math display">\[-13x=34\]</span></p>
+<p><span class="math display">\[5x+10=-8x-24\]</span></p>
+<p><span class="math display">\[13x=-34\]</span></p>
 <p><span class="math display">\[x=-\frac{34}{13}\]</span></p>
 <p>Check: both sides of the original equation equal <span class="math inline">\(-1/13\)</span>.</p>
+</div>
+</section>
+
+<h2>Finding less obvious LCDs</h2>
+<p>When the LCD is hard to see, list multiples of the largest denominator. Stop at the first multiple divisible by every denominator on that side.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve</p>
+<p><span class="math display">\[\frac{5x+2}{18}-\frac{x-4}{24}=1\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Of the first three multiples of 24 (24, 48, and 72), only 72 is divisible by 18. Multiply the first numerator by 4 and the second by 3 to write both fractions with denominator 72.</p>
+<p><span class="math display">\[\frac{4(5x+2)-3(x-4)}{72}=1\]</span></p>
+<p>The subtraction applies to the entire second numerator, giving \(-3x+12\).</p>
+<p><span class="math display">\[\frac{17x+20}{72}=1\]</span></p>
+<p>Multiply both sides by 72, then solve.</p>
+<p><span class="math display">\[17x+20=72\]</span></p>
+<p><span class="math display">\[x=\frac{52}{17}\]</span></p>
+<p>At \(x=\frac{52}{17}\), the original left side is \(\frac{49}{51}-\left(-\frac{2}{51}\right)=1\), as required.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve</p>
+<p><span class="math display">\[\frac{x+5}{24}+\frac{x-3}{36}-\frac{x+5}{54}=\frac{1}{12}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Of the first four multiples of 54 (54, 108, 162, and 216), only 216 is divisible by both 24 and 36. The multipliers on the left are 9, 6, and 4.</p>
+<p><span class="math display">\[\frac{9(x+5)+6(x-3)-4(x+5)}{216}=\frac{1}{12}\]</span></p>
+<p>On the left, \(9(x+5)-4(x+5)=5(x+5)\). On the right, \(12\) divides \(216\), so \(\frac{1}{12}=\frac{18}{216}\).</p>
+<p><span class="math display">\[\frac{11x+7}{216}=\frac{18}{216}\]</span></p>
+<p>Cancel like denominators and solve.</p>
+<p><span class="math display">\[11x+7=18\]</span></p>
+<p><span class="math display">\[x=1\]</span></p>
+<p>At \(x=1\), the original left side is \(\frac14-\frac1{18}-\frac19=\frac1{12}\), as required.</p>
+</div>
+</section>
+
+<h2>Regroup fractions before combining</h2>
+<p>With four fractions, look for two pairs with easy LCDs. Use addition or subtraction on both sides to put one pair on each side. Combine each pair separately, then deal with the two remaining denominators.</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve by regrouping the fractions so each side has an easy LCD.</p>
+<p><span class="math display">\[\frac{x+2}{12}+\frac{x}{5}=\frac{x+4}{18}+\frac{x+12}{35}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Pair 12 with 18 (LCD 36) and 5 with 35 (LCD 35). Subtract \(\frac{x+4}{18}\) and \(\frac{x}{5}\) from both sides.</p>
+<p><span class="math display">\[\frac{x+2}{12}-\frac{x+4}{18}=\frac{x+12}{35}-\frac{x}{5}\]</span></p>
+<p>Combine each side using its own LCD.</p>
+<p><span class="math display">\[\frac{3(x+2)-2(x+4)}{36}=\frac{(x+12)-7x}{35}\]</span></p>
+<p><span class="math display">\[\frac{x-2}{36}=\frac{12-6x}{35}\]</span></p>
+<p>Move the divisions to the other side as multiplications. Multiplying both sides by \(36\cdot35\) leaves 35 multiplying the entire left numerator and 36 multiplying the entire right numerator.</p>
+<p><span class="math display">\[35(x-2)=36(12-6x)\]</span></p>
+<p><span class="math display">\[35x-70=432-216x\]</span></p>
+<p><span class="math display">\[251x=502\]</span></p>
+<p><span class="math display">\[x=2\]</span></p>
+<p>At \(x=2\), the original left side is \(\frac4{12}+\frac25\) and the right side is \(\frac6{18}+\frac{14}{35}\). Both equal \(\frac13+\frac25=\frac{11}{15}\).</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve by regrouping the fractions so each side has an easy LCD.</p>
+<p><span class="math display">\[\frac{2x-2}{8}-\frac{x+1}{10}=\frac{x+6}{30}-\frac{x-2}{24}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>Pair 8 with 24 (LCD 24) and 10 with 30 (LCD 30). Add \(\frac{x-2}{24}\) and \(\frac{x+1}{10}\) to both sides.</p>
+<p><span class="math display">\[\frac{2x-2}{8}+\frac{x-2}{24}=\frac{x+6}{30}+\frac{x+1}{10}\]</span></p>
+<p>Combine and simplify each side.</p>
+<p><span class="math display">\[\frac{3(2x-2)+(x-2)}{24}=\frac{(x+6)+3(x+1)}{30}\]</span></p>
+<p><span class="math display">\[\frac{7x-8}{24}=\frac{4x+9}{30}\]</span></p>
+<p>Clear the denominators using 120, their LCD. This leaves a multiplier of 5 on the left and 4 on the right.</p>
+<p><span class="math display">\[5(7x-8)=4(4x+9)\]</span></p>
+<p><span class="math display">\[35x-40=16x+36\]</span></p>
+<p><span class="math display">\[19x=76\]</span></p>
+<p><span class="math display">\[x=4\]</span></p>
+<p>At \(x=4\), the original left side is \(\frac68-\frac5{10}=\frac14\) and the right side is \(\frac{10}{30}-\frac2{24}=\frac14\).</p>
+</div>
+</section>
+
+<h2>When the variable terms cancel</h2>
+<p>If the variable terms cancel, read the remaining statement. A false statement means there is no solution. A true statement means every real number is a solution because the original numerical denominators are nonzero for every value of \(x\).</p>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve</p>
+<p><span class="math display">\[\frac{2x+3}{14}-\frac{x-1}{21}=\frac{4x+10}{42}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The LCD on the left is 42. Subtract the whole second numerator when combining.</p>
+<p><span class="math display">\[\frac{3(2x+3)-2(x-1)}{42}=\frac{4x+10}{42}\]</span></p>
+<p><span class="math display">\[\frac{4x+11}{42}=\frac{4x+10}{42}\]</span></p>
+<p>Cancel like denominators, then subtract \(4x\) from both sides.</p>
+<p><span class="math display">\[4x+11=4x+10\]</span></p>
+<p><span class="math display">\[11=10\]</span></p>
+<p>The statement is false for every \(x\), so there is <strong>no solution</strong>.</p>
+</div>
+</section>
+<section class="worked-example">
+<div class="problem-row">
+<div class="problem-statement">
+<p>Solve</p>
+<p><span class="math display">\[\frac{x-2}{9}+\frac{x+4}{6}=\frac{5x+8}{18}\]</span></p>
+</div>
+</div>
+<div class="solution-panel" data-solution-panel style="color: #ffffff; background-color: #ffffff;">
+<p>The LCD on the left is 18. Combine and simplify the left numerator.</p>
+<p><span class="math display">\[\frac{2(x-2)+3(x+4)}{18}=\frac{5x+8}{18}\]</span></p>
+<p><span class="math display">\[\frac{5x+8}{18}=\frac{5x+8}{18}\]</span></p>
+<p>Cancel like denominators and subtract \(5x\) from both sides.</p>
+<p><span class="math display">\[5x+8=5x+8\]</span></p>
+<p><span class="math display">\[8=8\]</span></p>
+<p>The statement is true for every \(x\), so the solution set is <strong>all real numbers</strong>.</p>
 </div>
 </section>
 
