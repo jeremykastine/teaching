@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5.2–5.3 · Polynomial Functions and Their Graphs | MATH 101</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../../stats/lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+  <nav class="topic-nav" aria-label="Lesson navigation">
+    <a href="../schedule.html">Course schedule</a>
+    <a href="../lecture-notes.html">Lecture notes index</a>
+    <a href="../essentials/section-5-2-power-functions-and-polynomial-functions.html">5.2 essentials review</a>
+    <a href="../essentials/section-5-3-graphs-of-polynomial-functions.html">5.3 essentials review</a>
+  </nav>
+
+  <p class="series-title">MATH 101 · College Algebra Lecture Notes</p>
+  <h1>5.2–5.3 · Polynomial Functions and Their Graphs</h1>
+  <p class="solution-instructions">Try each problem before revealing its solution. Double-click or double-tap the space below the problem, or focus it with Tab and press Enter or Space.</p>
+
+  <section aria-labelledby="end-behavior">
+    <h2 id="end-behavior">From powers to end behavior</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Recognize power and polynomial functions</h3>
+        <p>Classify each formula as a power function, a polynomial function, or both. For each polynomial, give its degree, leading term, and leading coefficient.</p>
+        <ol type="a">
+          <li>3<var>x</var><sup>4</sup></li>
+          <li>5<var>x</var> − 2<var>x</var><sup>3</sup> − 1</li>
+          <li><var>x</var><sup>1/2</sup></li>
+          <li>2<var>x</var><sup>−1</sup></li>
+        </ol>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <ol type="a">
+          <li>Both. The degree is 4, the leading term is 3<var>x</var><sup>4</sup>, and the leading coefficient is 3.</li>
+          <li>Polynomial only. The degree is 3, the leading term is −2<var>x</var><sup>3</sup>, and the leading coefficient is −2. Look for the highest power even when the terms appear out of order.</li>
+          <li>Power function only. The exponent is fractional.</li>
+          <li>Power function only. The exponent is negative.</li>
+        </ol>
+        <p>A <strong>power function</strong> has the form <var>kx</var><sup><var>p</var></sup> for constants <var>k</var> and <var>p</var>. A <strong>polynomial function</strong> is a finite sum of terms whose exponents on <var>x</var> are nonnegative integers. A nonzero constant term has exponent 0. After combining like terms, the largest exponent with a nonzero coefficient is the <strong>degree</strong>. Its term and coefficient are the <strong>leading term</strong> and <strong>leading coefficient</strong>.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Predict the ends of a power function</h3>
+        <p>For each of the four functions <var>x</var><sup>4</sup>, −<var>x</var><sup>4</sup>, <var>x</var><sup>3</sup>, and −<var>x</var><sup>3</sup>, decide whether the graph goes up or down on each end. Start by thinking about what happens when you plug in −10 and 10, then −100 and 100.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <table>
+          <thead><tr><th scope="col">Function</th><th scope="col">Left end as <var>x</var> → −∞</th><th scope="col">Right end as <var>x</var> → ∞</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><var>x</var><sup>4</sup></th><td>Up</td><td>Up</td></tr>
+            <tr><th scope="row">−<var>x</var><sup>4</sup></th><td>Down</td><td>Down</td></tr>
+            <tr><th scope="row"><var>x</var><sup>3</sup></th><td>Down</td><td>Up</td></tr>
+            <tr><th scope="row">−<var>x</var><sup>3</sup></th><td>Up</td><td>Down</td></tr>
+          </tbody>
+        </table>
+        <p>For positive integer powers, even powers give the same direction at both ends and odd powers give opposite directions. The sign of the coefficient sets the right end. A positive coefficient sends it up and a negative coefficient sends it down.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Use the leading term to predict a polynomial’s ends</h3>
+        <p>The same polynomial is written in expanded and factored form.</p>
+        <p><var>f</var>(<var>x</var>) = −2<var>x</var><sup>3</sup> + 6<var>x</var> + 4 = −2(<var>x</var> + 1)<sup>2</sup>(<var>x</var> − 2)</p>
+        <p>Read the leading term from each form. In the factored form, do it without expanding the entire product. Then predict the end behavior. As a check, compare the size of the leading term to the sizes of the other terms at <var>x</var> = 10.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>In expanded form, the highest-power term is −2<var>x</var><sup>3</sup>. In factored form, multiplying the leading parts gives −2 · <var>x</var><sup>2</sup> · <var>x</var> = −2<var>x</var><sup>3</sup>. The degree is 3 and the leading coefficient is −2.</p>
+        <p>At <var>x</var> = 10, the contributions are −2,000, 60, and 4. As |<var>x</var>| grows, the cubic term grows faster in size than either lower-degree term. It determines both ends. As <var>x</var> → −∞, <var>f</var>(<var>x</var>) → ∞. As <var>x</var> → ∞, <var>f</var>(<var>x</var>) → −∞.</p>
+      </div>
+    </section>
+  </section>
+
+  <section aria-labelledby="near-the-zeros">
+    <h2 id="near-the-zeros">Intercepts and behavior near a zero</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Factor to find the intercepts</h3>
+        <p>Find all <var>x</var>-intercepts and the <var>y</var>-intercept of <var>g</var>(<var>x</var>) = <var>x</var><sup>3</sup> − 4<var>x</var> + 3<var>x</var><sup>2</sup> − 12. Try factoring by grouping the cubic with the linear term and the quadratic with the constant term.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>For the <var>x</var>-intercepts, solve <var>g</var>(<var>x</var>) = 0. Grouping gives <var>x</var>(<var>x</var><sup>2</sup> − 4) + 3(<var>x</var><sup>2</sup> − 4) = (<var>x</var> + 3)(<var>x</var> − 2)(<var>x</var> + 2).</p>
+        <p>A product is zero when one of its factors is zero. The <strong>zeros</strong> are −3, −2, and 2, so the <var>x</var>-intercepts are (−3, 0), (−2, 0), and (2, 0).</p>
+        <p>For the <var>y</var>-intercept, set <var>x</var> = 0. Since <var>g</var>(0) = −12, the point is (0, −12).</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Use multiplicity to predict a crossing or a touch</h3>
+        <p>Compare (<var>x</var> − 1)(<var>x</var> + 2), (<var>x</var> − 1)<sup>2</sup>(<var>x</var> + 2), and (<var>x</var> − 1)<sup>3</sup>(<var>x</var> + 2) near <var>x</var> = 1. For each, predict the sign just to the left and just to the right of 1. Which graphs cross the axis, which touch and turn, and which flatten as they cross?</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>Near 1, the factor <var>x</var> + 2 stays positive and close to 3. So the sign and shape near the zero come from the power of <var>x</var> − 1. That power is the zero’s <strong>multiplicity</strong>.</p>
+        <table>
+          <thead><tr><th scope="col">Multiplicity</th><th scope="col">Signs from left to right</th><th scope="col">Graph at <var>x</var> = 1</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>−, +</td><td>Crosses like a line</td></tr>
+            <tr><th scope="row">2</th><td>+, +</td><td>Touches and turns like a parabola</td></tr>
+            <tr><th scope="row">3</th><td>−, +</td><td>Flattens as it crosses, like a cubic</td></tr>
+          </tbody>
+        </table>
+        <p>In general, factor out (<var>x</var> − <var>r</var>)<sup><var>m</var></sup> completely at a zero <var>r</var>. The remaining factor approaches a nonzero value near <var>r</var>, so the graph behaves locally like a constant times (<var>x</var> − <var>r</var>)<sup><var>m</var></sup>. Odd multiplicities give crossings, and even multiplicities give touches.</p>
+      </div>
+    </section>
+  </section>
+
+  <section aria-labelledby="sketching">
+    <h2 id="sketching">From a formula to a graph</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Use intercepts, signs, and ends in one sketch</h3>
+        <p>Return to <var>f</var>(<var>x</var>) = −2(<var>x</var> + 1)<sup>2</sup>(<var>x</var> − 2). Mark both intercepts on the <var>x</var>-axis and the intercept on the <var>y</var>-axis. Decide where the graph is above or below the <var>x</var>-axis, then draw a smooth sketch with the correct end behavior.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <ol>
+          <li>The left end rises and the right end falls because the leading term is −2<var>x</var><sup>3</sup>.</li>
+          <li>The graph touches at (−1, 0), where the multiplicity is 2, and crosses at (2, 0), where the multiplicity is 1. The <var>y</var>-intercept is (0, 4).</li>
+          <li>Away from its zeros, (<var>x</var> + 1)<sup>2</sup> is positive. The factor −2(<var>x</var> − 2) is positive to the left of 2 and negative to the right of 2. The curve is above the axis on both sides of −1, then crosses below at 2.</li>
+        </ol>
+        <figure>
+          <img src="polynomial-functions-graphs/figure-sketch.png" width="920" height="493" loading="lazy" alt="Cubic graph rises on the left, touches the x-axis at (−1, 0), passes through (0, 4), peaks to the right of the y-axis, crosses at (2, 0), and falls on the right.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Use degree to bound the number of turning points</h3>
+        <p>Compare <var>u</var>(<var>x</var>) = <var>x</var><sup>4</sup> and <var>v</var>(<var>x</var>) = (<var>x</var><sup>2</sup> − 1)<sup>2</sup>. Both have degree 4 and both ends rise. Sketch each one. For <var>v</var>, start by plotting its zeros and the point at <var>x</var> = 0. Where does each graph switch between increasing and decreasing?</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>The graph of <var>u</var> has one turning point, a minimum at (0, 0). The graph of <var>v</var> has minima at (−1, 0) and (1, 0) and a local maximum at (0, 1). Between −1 and 1, <var>v</var>(<var>x</var>) = (1 − <var>x</var><sup>2</sup>)<sup>2</sup> rises toward 1 as <var>x</var> approaches 0, then falls back to 0 as <var>x</var> approaches 1. Outside those zeros the graph rises toward both ends.</p>
+        <p>A polynomial of degree <var>n</var> ≥ 1 has <strong>at most <var>n</var> − 1 turning points</strong>. Here <var>v</var> reaches the quartic bound of three. In the previous problem, the cubic sketch has two turns, the maximum for degree 3.</p>
+      </div>
+    </section>
+  </section>
+
+  <section aria-labelledby="more-from-graphs">
+    <h2 id="more-from-graphs">From a graph to a formula</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Build a least-degree polynomial from a graph</h3>
+        <p>Use the intercepts, the behavior at each zero, and the marked point to write a polynomial of least possible degree in factored form.</p>
+        <figure>
+          <img src="polynomial-functions-graphs/figure-build-a-formula.png" width="920" height="493" loading="lazy" alt="Polynomial graph with both ends rising. It crosses the x-axis at −2 and 4, touches and turns at x = 1, and passes through the marked point (0, −2).">
+        </figure>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>The crossings at −2 and 4 give factors <var>x</var> + 2 and <var>x</var> − 4. The touch at 1 requires an even multiplicity, so use the smallest choice, 2. Start with <var>p</var>(<var>x</var>) = <var>a</var>(<var>x</var> + 2)(<var>x</var> − 1)<sup>2</sup>(<var>x</var> − 4).</p>
+        <p>At <var>x</var> = 0, the marked point gives −2 = <var>a</var>(2)(1)(−4) = −8<var>a</var>, so <var>a</var> = 1/4. The least-degree polynomial is <var>p</var>(<var>x</var>) = (1/4)(<var>x</var> + 2)(<var>x</var> − 1)<sup>2</sup>(<var>x</var> − 4). Its degree is 4 and its positive leading coefficient agrees with the two rising ends.</p>
+      </div>
+    </section>
+  </section>
+
+  <section aria-labelledby="existence-of-a-zero">
+    <h2 id="existence-of-a-zero">Locating a zero by a change of sign</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Use the Intermediate Value Theorem</h3>
+        <p>For <var>q</var>(<var>x</var>) = <var>x</var><sup>3</sup> + <var>x</var> − 1, use <var>q</var>(0) and <var>q</var>(1) to show that there is a zero between 0 and 1. Then evaluate <var>q</var>(1/2) to narrow down the interval.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p><var>q</var>(0) = −1 and <var>q</var>(1) = 1. A polynomial is continuous, so the graph passes through every height between −1 and 1 somewhere between the two inputs. In particular, it reaches height 0.</p>
+        <p>At the midpoint, <var>q</var>(1/2) = 1/8 + 1/2 − 1 = −3/8. The endpoint signs are opposite on the interval from 1/2 to 1, so the <strong>Intermediate Value Theorem</strong> guarantees at least one zero in that smaller interval. The same argument works whenever a continuous function takes opposite signs at two inputs.</p>
+      </div>
+    </section>
+  </section>
+
+  <section aria-labelledby="mixed-practice">
+    <h2 id="mixed-practice">Mixed practice</h2>
+
+    <section class="worked-example">
+      <div class="problem-statement">
+        <h3>Sketch a polynomial with a flattened crossing</h3>
+        <p>Sketch <var>h</var>(<var>x</var>) = (<var>x</var> + 2)<sup>3</sup>(<var>x</var> − 1)<sup>2</sup>. Give the degree, leading term, end behavior, intercepts, behavior at each zero, and maximum possible number of turning points for its degree. Use the factors to decide the sign on each of the three intervals separated by the zeros.</p>
+      </div>
+      <div class="solution-panel" data-solution-panel>
+        <p>The leading term is <var>x</var><sup>5</sup>, so the left end falls, the right end rises, and degree 5 allows at most four turns.</p>
+        <p>The graph crosses with flattening at (−2, 0) because the multiplicity is 3. It touches and turns at (1, 0) because the multiplicity is 2. The <var>y</var>-intercept is (0, 8). Away from its zeros, the square factor is positive, so the cubic factor determines the sign. The graph is below the axis to the left of −2 and above the axis between −2 and 1 and to the right of 1.</p>
+        <p>For the sketch, bring the left end up to the flattened crossing at −2. Draw a hump between −2 and 1 that contains (0, 8), then touch the axis at 1 and rise to the right.</p>
+      </div>
+    </section>
+  </section>
+
+  <footer class="attribution">
+    <p>Textbook readings from Jay Abramson’s <cite>OpenStax College Algebra 2e</cite>, Rice University.
+      <a href="https://openstax.org/books/college-algebra-2e/pages/5-2-power-functions-and-polynomial-functions">5.2 Power Functions and Polynomial Functions</a> ·
+      <a href="https://openstax.org/books/college-algebra-2e/pages/5-3-graphs-of-polynomial-functions">5.3 Graphs of Polynomial Functions</a>
+    </p>
+  </footer>
+</main>
+</body>
+</html>
