@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5.2–5.3: Comparing Uniform and Exponential Distributions | Statistics Lecture Notes</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../lecture-notes.css">
+  <script defer src="../../tsm/solutions.js"></script>
+</head>
+<body>
+<main class="lecture-notes">
+  <nav class="topic-nav" aria-label="Lesson navigation">
+    <a href="../lecture-notes.html">Table of contents</a>
+    <a href="section-5-1-5-2-continuous-and-uniform-distributions.html">5.1–5.2 lecture notes</a>
+    <a href="section-5-3-the-exponential-distribution.html">5.3 lecture notes</a>
+    <a href="../essentials/section-5-2-the-uniform-distribution.html">5.2 essentials review</a>
+    <a href="../essentials/section-5-3-the-exponential-distribution.html">5.3 essentials review</a>
+  </nav>
+  <p class="series-title">MSC 201 · Statistics Lecture Notes</p>
+  <h1>5.2–5.3: Comparing Uniform and Exponential Distributions</h1>
+  <p>Two people can both have a six-minute average wait and face very different chances of a short or long wait. We’ll compare a student waiting for a scheduled shuttle and a campus IT worker waiting for the next call.</p>
+  <p class="solution-instructions">Double-click or double-tap the space beneath a question to show or hide its answer. With a keyboard, focus that space and press Enter or Space.</p>
+
+  <h2>5.2 Uniform waiting time: The campus shuttle</h2>
+  <p>A shuttle arrives at a stop exactly every <strong>12 minutes</strong>. A student arrives at a random point in that 12-minute cycle, with no part of the cycle favored. Let <var>U</var> be the number of minutes from the student’s arrival until the next shuttle.</p>
+  <p>Arriving three minutes earlier in the cycle makes the wait three minutes longer. With arrival times spread evenly across the cycle, the possible waits are spread evenly from 0 to 12 minutes. We write <var>U</var> ∼ Uniform(0, 12). The density is a rectangle of width 12 and height 1/12 per minute, so the total area is 1.</p>
+
+  <section class="worked-example" id="shuttle">
+    <div class="problem-statement">
+      <h3>How long will the student wait?</h3>
+      <ol type="a">
+        <li>Find the probability of a wait of at most 3 minutes.</li>
+        <li>Find the probability of a wait between 3 and 9 minutes.</li>
+        <li>Find the expected wait and the standard deviation.</li>
+      </ol>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ol type="a">
+        <li>The interval from 0 to 3 uses 3 of the 12 minutes. Its area is 3/12 = <strong>25%</strong>.</li>
+        <li>The interval from 3 to 9 is 6 minutes wide. Its area is 6/12 = <strong>50%</strong>.</li>
+        <li>The <strong>expected value</strong> is the long-run mean. The rectangle is symmetric around (0 + 12)/2 = <strong>6 minutes</strong>. The standard deviation is 12/√12 ≈ <strong>3.46 minutes</strong>. Standard deviation measures the spread in the original units.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="worked-example" id="shuttle-variations">
+    <div class="problem-statement">
+      <h3>Change the shuttle timing</h3>
+      <ol type="a">
+        <li>Suppose the shuttle comes every 24 minutes instead. What are the new chance of waiting at most 3 minutes, mean, and standard deviation?</li>
+        <li>Return to the original shuttle. A student leaves class and walks exactly 2 minutes to the stop before starting the same randomly timed shuttle wait. How does including the walk affect the mean and standard deviation of the total time?</li>
+      </ol>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ol type="a">
+        <li>The favorable interval still has width 3. The full width is now 24, giving 3/24 = <strong>12.5%</strong>. The midpoint is <strong>12 minutes</strong>. Doubling the width doubles the standard deviation to about <strong>6.93 minutes</strong>.</li>
+        <li>The support shifts from [0, 12] to [2, 14]. The mean moves up to <strong>8 minutes</strong>. Adding 2 minutes to every wait preserves the differences from the mean, so the standard deviation stays at about <strong>3.46 minutes</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <h2>5.3 Exponential waiting time: The campus IT help desk</h2>
+  <p>During a steady part of the day, calls arrive randomly at an average rate of <strong>10 calls per hour</strong>. Assume calls arrive one at a time, the numbers of calls in disjoint time intervals are independent, and the rate stays the same. Let <var>E</var> be the time in minutes from now until the next call.</p>
+  <p>The rate is λ = 10/60 = 1/6 call per minute. With a fixed rate, short waits have higher density, and a stretch with no calls can last arbitrarily long. We write <var>E</var> ∼ Exp(1/6). The density starts at 1/6 per minute and falls toward zero. Its right-tail area, P(<var>E</var> &gt; <var>t</var>), is <var>e</var><sup>−λ<var>t</var></sup>. Here <var>t</var> is in minutes, so the tail is <var>e</var><sup>−<var>t</var>/6</sup>.</p>
+  <p>Think back to the geometric model. The chance of still waiting after a number of trials is the chance of no success in those trials. Here we measure elapsed time, and the chance of still waiting is the chance that no call has arrived in that time.</p>
+
+  <section class="worked-example" id="help-desk">
+    <div class="problem-statement">
+      <h3>How long until the next call?</h3>
+      <ol type="a">
+        <li>Find the probability of a wait of at most 3 minutes.</li>
+        <li>Find the probability of a wait between 3 and 9 minutes.</li>
+        <li>Find the expected wait and the standard deviation.</li>
+      </ol>
+      <p>Use <var>e</var><sup>−0.5</sup> ≈ 0.6065 and <var>e</var><sup>−1.5</sup> ≈ 0.2231.</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ol type="a">
+        <li>Subtract the right tail from 1. P(<var>E</var> ≤ 3) = 1 − 0.6065 = 0.3935, or about <strong>39.4%</strong>.</li>
+        <li>Start with the area to the right of 3 and subtract the area to the right of 9. P(3 &lt; <var>E</var> &lt; 9) ≈ 0.6065 − 0.2231 = 0.3834, or about <strong>38.3%</strong>.</li>
+        <li>At 10 calls per 60 minutes, the average time per call is 60/10 = <strong>6 minutes</strong>. In general, the expected wait is 1/λ. For an exponential wait, the standard deviation equals the mean, so it is also <strong>6 minutes</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="worked-example" id="help-desk-variations">
+    <div class="problem-statement">
+      <h3>Change the call rate</h3>
+      <ol type="a">
+        <li>If the rate doubles to 20 calls per hour, what happens to the mean and standard deviation? What is the chance of receiving a call within 3 minutes? Use <var>e</var><sup>−1</sup> ≈ 0.3679.</li>
+        <li>On another shift, the mean wait is 4 minutes. What are the rate per hour and the standard deviation?</li>
+      </ol>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ol type="a">
+        <li>The rate becomes 1/3 call per minute. Both the mean and standard deviation halve to <strong>3 minutes</strong>. The chance of a call within 3 minutes is 1 − 0.3679 = 0.6321, or about <strong>63.2%</strong>.</li>
+        <li>A mean wait of 4 minutes gives 60/4 = <strong>15 calls per hour</strong>. The standard deviation is <strong>4 minutes</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <h2>Compare the two six-minute waits</h2>
+  <figure>
+    <img src="../../notes-assets/uniform-and-exponential-wait-densities.png" width="1440" height="720"
+         alt="Density curves on the same time scale. The uniform curve is flat at 1/12 per minute from 0 to 12, then drops to zero. The exponential curve starts at 1/6 per minute and decreases toward zero, continuing beyond 12. Both means are marked at 6 minutes.">
+    <figcaption>Both densities have total area 1. The help-desk curve has more area from 0 to 3 and still has area beyond 12. For either model the probability of one exact time is zero because a single point has zero width. <a href="../../notes-assets/uniform-and-exponential-wait-densities.png">Open full-size graph</a></figcaption>
+  </figure>
+
+  <div class="table-scroll">
+    <table style="min-width: 0">
+      <caption>Uniform and exponential waits at a glance</caption>
+      <thead>
+        <tr><th scope="col">Feature</th><th scope="col">Scheduled shuttle</th><th scope="col">Help-desk calls</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Possible waits</th><td>0 to 12 minutes</td><td>0 minutes and up, with no upper bound</td></tr>
+        <tr><th scope="row">Density shape</th><td>Flat rectangle, symmetric about 6</td><td>Decreasing curve with a long right tail</td></tr>
+        <tr><th scope="row">Find a probability</th><td>Width within the support ÷ total width</td><td>Use the right tail <var>e</var><sup>−λ<var>t</var></sup>, then subtract areas as needed</td></tr>
+        <tr><th scope="row">Expected value (mean)</th><td>Midpoint (0 + 12)/2 = 6 minutes</td><td>Reciprocal rate 1/λ = 6 minutes</td></tr>
+        <tr><th scope="row">Standard deviation</th><td>About 3.46 minutes, proportional to the interval width</td><td>6 minutes, equal to the mean</td></tr>
+        <tr><th scope="row">Chance of finishing by the mean</th><td>50%</td><td>About 63.2%</td></tr>
+        <tr><th scope="row">Chance of waiting beyond 12 minutes</th><td>0%</td><td><var>e</var><sup>−2</sup> ≈ 13.5%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>For Uniform(<var>a</var>, <var>b</var>), the mean is (<var>a</var> + <var>b</var>)/2 and the standard deviation is (<var>b</var> − <var>a</var>)/√12. To compare the spread of two uniform models, compare their widths. For Exp(λ), use <strong>μ = σ = 1/λ</strong>. OpenStax uses <var>m</var> for the same rate.</p>
+
+  <section class="worked-example" id="mean-and-median">
+    <div class="problem-statement">
+      <h3>Which wait is more likely to end by its mean?</h3>
+      <p>For the shuttle and the calls, each mean is 6 minutes. Use the probabilities in the table to place each median. Why can the help desk have the same mean as the shuttle even though more than half of its waits end before 6 minutes?</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <p>The shuttle median is <strong>6 minutes</strong>, with half the area on each side. The help-desk median is <strong>below 6 minutes</strong> because the area already exceeds 50% by that time. The longer waits in the right tail pull the help desk’s mean above its median.</p>
+    </div>
+  </section>
+
+  <section class="worked-example" id="memorylessness">
+    <div class="problem-statement">
+      <h3>You’ve already waited 8 minutes</h3>
+      <p>In each original example, find the chance of waiting <strong>more than 3 additional minutes</strong>, given that nothing has arrived in the first 8 minutes. Compare that with the chance of waiting more than 3 minutes from a fresh start.</p>
+    </div>
+    <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">
+      <ul>
+        <li><strong>Shuttle:</strong> The total wait is now known to be between 8 and 12 minutes. More than 3 additional minutes means a total longer than 11. The remaining interval is 4 minutes wide, and only the final minute qualifies. The probability is <strong>1/4 = 25%</strong>, compared with <strong>9/12 = 75%</strong> from a fresh start.</li>
+        <li><strong>Help desk:</strong> Under the independent, constant-rate model, the next three minutes have the same chance of no calls as any fresh three-minute interval. The probability is <strong><var>e</var><sup>−0.5</sup> ≈ 60.7%</strong> either way. This is the <strong>memoryless property</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="attribution">
+    Textbook reading · <a href="https://openstax.org/books/introductory-statistics-2e/pages/5-2-the-uniform-distribution">OpenStax 5.2, The Uniform Distribution</a> ·
+    <a href="https://openstax.org/books/introductory-statistics-2e/pages/5-3-the-exponential-distribution">OpenStax 5.3, The Exponential Distribution</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -47,9 +47,15 @@ def write_index(course, manifest):
             readings = f'<a href="{textbook_url(course, topic)}">Textbook reading (OpenStax {reading})</a>'
             reviews = f'<a href="essentials/{filename(topic)}">Essentials review</a>'
 
+        additional = topic.get('additional_lecture')
+        additional_link = ''
+        if additional:
+            additional_title = escape(additional['title'])
+            additional_link = f'\n      <li><a href="lessons/{filename(additional)}">{additional_title}</a></li>'
+
         entries.append(f'''  <li class="lecture-topic"><strong class="topic-title">{title}</strong>
     <ul>
-      <li><a href="lessons/{filename(topic)}">Lecture notes</a>{scope}</li>
+      <li><a href="lessons/{filename(topic)}">Lecture notes</a>{scope}</li>{additional_link}
       <li>{readings}</li>
       <li>{reviews}</li>
     </ul>
