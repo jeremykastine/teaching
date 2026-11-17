@@ -19,6 +19,81 @@
   </nav>
   <p class="series-title">MSC 201 · Statistics Lecture Notes</p>
   <h1>5.2–5.3: Comparing Uniform and Exponential Distributions</h1>
+
+  <section id="formula-reference" aria-labelledby="formula-reference-heading">
+    <h2 id="formula-reference-heading">Formula reference</h2>
+    <p>Let <var>X</var> be a continuous random variable. A probability is an area under the density <var>f</var>, so P(<var>X</var> = <var>t</var>) = 0. The cumulative probability is <var>F</var>(<var>t</var>) = P(<var>X</var> ≤ <var>t</var>). The right-tail probability is 1 − <var>F</var>(<var>t</var>), and P(<var>c</var> &lt; <var>X</var> &lt; <var>d</var>) = <var>F</var>(<var>d</var>) − <var>F</var>(<var>c</var>).</p>
+    <div class="table-scroll">
+      <table style="min-width: 0">
+        <thead>
+          <tr>
+            <th scope="col">Quantity</th>
+            <th scope="col">Uniform(<var>a</var>, <var>b</var>)</th>
+            <th scope="col">Exp(<var>λ</var>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Possible values</th>
+            <td><var>a</var> ≤ <var>t</var> ≤ <var>b</var>, with <var>a</var> &lt; <var>b</var></td>
+            <td><var>t</var> ≥ 0, with <var>λ</var> &gt; 0</td>
+          </tr>
+          <tr>
+            <th scope="row">Density <var>f</var>(<var>t</var>)</th>
+            <td>1/(<var>b</var> − <var>a</var>)</td>
+            <td><var>λ</var><var>e</var><sup>−<var>λt</var></sup></td>
+          </tr>
+          <tr>
+            <th scope="row">At or below <var>t</var></th>
+            <td>(<var>t</var> − <var>a</var>)/(<var>b</var> − <var>a</var>)</td>
+            <td>1 − <var>e</var><sup>−<var>λt</var></sup></td>
+          </tr>
+          <tr>
+            <th scope="row">Above <var>t</var></th>
+            <td>(<var>b</var> − <var>t</var>)/(<var>b</var> − <var>a</var>)</td>
+            <td><var>e</var><sup>−<var>λt</var></sup></td>
+          </tr>
+          <tr>
+            <th scope="row">Between <var>c</var> and <var>d</var></th>
+            <td>(<var>d</var> − <var>c</var>)/(<var>b</var> − <var>a</var>)</td>
+            <td><var>e</var><sup>−<var>λc</var></sup> − <var>e</var><sup>−<var>λd</var></sup></td>
+          </tr>
+          <tr>
+            <th scope="row">Mean <var>μ</var> = E[<var>X</var>]</th>
+            <td>(<var>a</var> + <var>b</var>)/2</td>
+            <td>1/<var>λ</var></td>
+          </tr>
+          <tr>
+            <th scope="row">Standard deviation <var>σ</var></th>
+            <td>(<var>b</var> − <var>a</var>)/√12</td>
+            <td>1/<var>λ</var> = <var>μ</var></td>
+          </tr>
+          <tr>
+            <th scope="row">Variance <var>σ</var><sup>2</sup></th>
+            <td>(<var>b</var> − <var>a</var>)<sup>2</sup>/12</td>
+            <td>1/<var>λ</var><sup>2</sup></td>
+          </tr>
+          <tr>
+            <th scope="row">Cutoff with proportion <var>p</var> below it, where 0 &lt; <var>p</var> &lt; 1</th>
+            <td><var>a</var> + <var>p</var>(<var>b</var> − <var>a</var>)</td>
+            <td>−ln(1 − <var>p</var>)/<var>λ</var></td>
+          </tr>
+          <tr>
+            <th scope="row">Median (<var>p</var> = 0.5)</th>
+            <td>(<var>a</var> + <var>b</var>)/2</td>
+            <td>ln(2)/<var>λ</var></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The density is zero outside the possible values. For interval probabilities, use only the part of the interval within the possible values. Below the lower endpoint, <var>F</var>(<var>t</var>) = 0. At or above the uniform upper endpoint, <var>F</var>(<var>t</var>) = 1.</p>
+    <ul>
+      <li><strong>Rate and average wait.</strong> For the exponential model, <var>λ</var> = 1/<var>μ</var>. Match the rate to the time units before multiplying. For example, divide calls per hour by 60 to get calls per minute. OpenStax writes the rate as <var>m</var>.</li>
+      <li><strong>Additional waiting time.</strong> After waiting <var>s</var> time units, the probability of waiting more than <var>t</var> additional units is P(<var>X</var> &gt; <var>s</var> + <var>t</var> | <var>X</var> &gt; <var>s</var>) = P(<var>X</var> &gt; <var>s</var> + <var>t</var>)/P(<var>X</var> &gt; <var>s</var>), provided the denominator is positive. For an exponential wait, this simplifies to <var>e</var><sup>−<var>λt</var></sup> for <var>s</var>, <var>t</var> ≥ 0. For a uniform wait with <var>a</var> ≤ <var>s</var> &lt; <var>b</var>, use the shortened interval from <var>s</var> to <var>b</var>. The probability is (<var>b</var> − <var>s</var> − <var>t</var>)/(<var>b</var> − <var>s</var>) for 0 ≤ <var>t</var> ≤ <var>b</var> − <var>s</var>, and zero for larger <var>t</var>.</li>
+      <li><strong>Shifting and scaling.</strong> If <var>Y</var> = <var>kX</var> + <var>h</var>, then <var>μ</var><sub>Y</sub> = <var>kμ</var><sub>X</sub> + <var>h</var> and <var>σ</var><sub>Y</sub> = |<var>k</var>|<var>σ</var><sub>X</sub>.</li>
+    </ul>
+  </section>
+
   <p>Two people can both have a six-minute average wait and face very different chances of a short or long wait. We’ll compare a student waiting for a scheduled shuttle and a campus IT worker waiting for the next call.</p>
   <p class="solution-instructions">Double-click or double-tap the space beneath a question to show or hide its answer. With a keyboard, focus that space and press Enter or Space.</p>
 
