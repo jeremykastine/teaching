@@ -77,7 +77,8 @@ def main(argv=None):
         entries = [e for e in json.loads(manifest.read_text()) if e['assessment'] != args.only] + entries
         prior = json.loads((OUT / 'source/assessments.json').read_text())
         allforms = [a for a in prior if a['assessment'] != args.only] + allforms
-    manifest.write_text(json.dumps(sorted(entries, key=lambda e: e['assessment']), indent=2) + '\n')
+    order = {a[1]: i for i, a in enumerate(ASSESSMENTS)}
+    manifest.write_text(json.dumps(sorted(entries, key=lambda e: order[e['assessment']]), indent=2) + '\n')
     (OUT / 'source/assessments.json').write_text(json.dumps(allforms, indent=2) + '\n')
     build_practice(ROOT / '101')
     print(f'Published {len(entries)} MATH 101 five-version practice bundles.')
