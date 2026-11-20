@@ -1,0 +1,3095 @@
+[
+  {
+    "course": "MATH 101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam - Practice Test",
+    "end": 7,
+    "practice": 1,
+    "version": "92081",
+    "seed": 881196602,
+    "questions": [
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "\\frac{1}{2}(x + 1)(x - 3)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 0.5,
+          "point": [
+            0,
+            4.5
+          ]
+        }
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve exactly.",
+        "math": [
+          "8^{x-2}=4^{x+5}"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 16",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "exponential"
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 4) (x + 5)}{(x - 7) (x + 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-4, 7\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -4, \\  - \\frac{1}{11})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=-3f(x)",
+          "B.\\quad g(x)=f(x)-3",
+          "C.\\quad g(x)=3f(x)",
+          "D.\\quad g(x)=f(-3x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              6
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -3
+        }
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(9 x + 9)^2+10",
+          "A.\\quad f(x)=9 x^{2} + 10,\\ g(x)=x + 9",
+          "B.\\quad f(x)=x^{2} + 9,\\ g(x)=9 x + 10",
+          "C.\\quad f(x)=x^{2} + 10,\\ g(x)=9 x + 9",
+          "D.\\quad f(x)=9 x + 9,\\ g(x)=x^{2} + 10"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "C",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=6 \\sqrt{x + 9} - 42"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-42, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 40, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -24)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -42",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 2 x^{2} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 3,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.25)+\\log(400)",
+          "(b)\\quad \\frac{\\log_{12}(729)}{\\log_{12}(81)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 2(3)^x",
+          "(b)\\quad 2(\\frac{1}{3})^x",
+          "(c)\\quad 3(2)^x",
+          "(d)\\quad 3(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              2,
+              0.3333333333333333
+            ],
+            [
+              3,
+              0.5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{2}(x-6)+2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(6, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=6",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{25}{4}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 6^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "0b56511ef549951b2fd6e1d7715df8b133a2f40ce0d12651a427c276712c3929",
+    "source_question_versions": {
+      "M101-composition": "40669",
+      "M101-exponential": "48624",
+      "M101-logarithm": "64047",
+      "M101-logproperties": "40669",
+      "M101-polygraph": "40669",
+      "M101-radical": "80990",
+      "M101-rational": "76407",
+      "M101-solving": "13685",
+      "M101-transform": "84847",
+      "M101-zeros": "11162"
+    },
+    "start": 0,
+    "test_pages": 3,
+    "key_start": 4,
+    "packet_pages": 6,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 512.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 512.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 512.4,
+        "bottom": 465.09999999999997,
+        "rows": [
+          {
+            "top": 512.4,
+            "bottom": 465.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 465.09999999999997,
+        "bottom": 230.09999999999997,
+        "rows": [
+          {
+            "top": 465.09999999999997,
+            "bottom": 427.09999999999997,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 427.09999999999997,
+            "bottom": 384.09999999999997,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 384.09999999999997,
+            "bottom": 349.09999999999997,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 349.09999999999997,
+            "bottom": 311.09999999999997,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 311.09999999999997,
+            "bottom": 273.09999999999997,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 273.09999999999997,
+            "bottom": 230.09999999999997,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 440.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 440.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 440.4,
+        "bottom": 312.09999999999997,
+        "rows": [
+          {
+            "top": 440.4,
+            "bottom": 312.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 1,
+        "top": 312.09999999999997,
+        "bottom": 84.09999999999997,
+        "rows": [
+          {
+            "top": 312.09999999999997,
+            "bottom": 274.09999999999997,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 274.09999999999997,
+            "bottom": 236.09999999999997,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 236.09999999999997,
+            "bottom": 198.09999999999997,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 198.09999999999997,
+            "bottom": 160.09999999999997,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 160.09999999999997,
+            "bottom": 122.09999999999997,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 122.09999999999997,
+            "bottom": 84.09999999999997,
+            "label": "(f)",
+            "points": 1
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 2,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 2,
+        "top": 610.7,
+        "bottom": 532.7,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 575.7,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 575.7,
+            "bottom": 532.7,
+            "label": "(b)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 2,
+        "top": 532.7,
+        "bottom": 303.1,
+        "rows": [
+          {
+            "top": 532.7,
+            "bottom": 475.30000000000007,
+            "label": "(a)",
+            "points": 3
+          },
+          {
+            "top": 475.30000000000007,
+            "bottom": 417.9000000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 417.9000000000001,
+            "bottom": 360.5000000000001,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 360.5000000000001,
+            "bottom": 303.10000000000014,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 2,
+        "top": 303.1,
+        "bottom": 72.10000000000002,
+        "rows": [
+          {
+            "top": 303.1,
+            "bottom": 265.1,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 265.1,
+            "bottom": 227.10000000000002,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 227.10000000000002,
+            "bottom": 191.10000000000002,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 191.10000000000002,
+            "bottom": 148.10000000000002,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 148.10000000000002,
+            "bottom": 110.10000000000002,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 110.10000000000002,
+            "bottom": 72.10000000000002,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam - Practice Test",
+    "end": 7,
+    "practice": 2,
+    "version": "61195",
+    "seed": 2387127275,
+    "questions": [
+      {
+        "id": "M101-solving",
+        "prompt": "Solve exactly.",
+        "math": [
+          "\\log_{2}(x-3)+\\log_{2}(x-6)=2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 7",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "logarithmic"
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(6 x + 6)^2+7",
+          "A.\\quad f(x)=6 x^{2} + 7,\\ g(x)=x + 6",
+          "B.\\quad f(x)=x^{2} + 7,\\ g(x)=6 x + 6",
+          "C.\\quad f(x)=x^{2} + 6,\\ g(x)=6 x + 7",
+          "D.\\quad f(x)=6 x + 6,\\ g(x)=x^{2} + 7"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "B",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x-4)+3",
+          "B.\\quad g(x)=f(x+4)-3",
+          "C.\\quad g(x)=f(x-4)-3",
+          "D.\\quad g(x)=f(x+4)+3"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "C",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              3
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 4,
+          "k": -3
+        }
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 2(\\frac{1}{3})^x",
+          "(b)\\quad 3(\\frac{1}{2})^x",
+          "(c)\\quad 3(2)^x",
+          "(d)\\quad 2(3)^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              3,
+              0.5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              0.3333333333333333
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 2) (x + 3)}{(x - 5) (x + 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-2, 5\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -2, \\  - \\frac{1}{7})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 5 x^{2} + 7 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -2,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 2)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -8.0
+          ]
+        }
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 9} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  1)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -2",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.8)+\\log(1250)",
+          "(b)\\quad \\frac{\\log_{9}(216)}{\\log_{9}(36)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{2}(x-2)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(2, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=2",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{5}{2}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 2^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "e00e43aaf56edf0fee3320a88c3e474943dcb70d310a1d28593c31a9b9773d3b",
+    "source_question_versions": {
+      "M101-composition": "54236",
+      "M101-exponential": "27549",
+      "M101-logarithm": "86031",
+      "M101-logproperties": "54236",
+      "M101-polygraph": "13685",
+      "M101-radical": "13685",
+      "M101-rational": "87553",
+      "M101-solving": "54236",
+      "M101-transform": "74618",
+      "M101-zeros": "76018"
+    },
+    "start": 6,
+    "test_pages": 4,
+    "key_start": 10,
+    "packet_pages": 6,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 612.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 612.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 612.7,
+        "bottom": 484.40000000000003,
+        "rows": [
+          {
+            "top": 612.7,
+            "bottom": 484.40000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 484.40000000000003,
+        "bottom": 264.80000000000007,
+        "rows": [
+          {
+            "top": 484.40000000000003,
+            "bottom": 264.80000000000007,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 430.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 602.6,
+            "label": "(a)",
+            "points": 3
+          },
+          {
+            "top": 602.6,
+            "bottom": 545.2,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 545.2,
+            "bottom": 487.80000000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 487.80000000000007,
+            "bottom": 430.4000000000001,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 430.4,
+        "bottom": 194.39999999999998,
+        "rows": [
+          {
+            "top": 430.4,
+            "bottom": 392.4,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 392.4,
+            "bottom": 349.4,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 349.4,
+            "bottom": 313.4,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 313.4,
+            "bottom": 275.4,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 275.4,
+            "bottom": 237.39999999999998,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 237.39999999999998,
+            "bottom": 194.39999999999998,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 1,
+        "top": 194.39999999999998,
+        "bottom": 145.09999999999997,
+        "rows": [
+          {
+            "top": 194.39999999999998,
+            "bottom": 145.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 2,
+        "top": 660,
+        "bottom": 512.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 512.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 2,
+        "top": 512.4,
+        "bottom": 284.4,
+        "rows": [
+          {
+            "top": 512.4,
+            "bottom": 474.4,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 474.4,
+            "bottom": 436.4,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 436.4,
+            "bottom": 398.4,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 398.4,
+            "bottom": 360.4,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 360.4,
+            "bottom": 322.4,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 322.4,
+            "bottom": 284.4,
+            "label": "(f)",
+            "points": 1
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 2,
+        "top": 284.4,
+        "bottom": 205.39999999999998,
+        "rows": [
+          {
+            "top": 284.4,
+            "bottom": 248.39999999999998,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 248.39999999999998,
+            "bottom": 205.39999999999998,
+            "label": "(b)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 3,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 549.0,
+            "bottom": 506.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 506.0,
+            "bottom": 468.0,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 468.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam - Practice Test",
+    "end": 7,
+    "practice": 3,
+    "version": "43692",
+    "seed": 1775210227,
+    "questions": [
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 3 x^{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ -1 + \\sqrt{3},\\ - \\sqrt{3} - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 8) (x + 9)}{(x - 11) (x + 8)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-8, 11\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -8, \\  - \\frac{1}{19})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=11",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -9, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{9}{11})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(5 x + 5)^2+6",
+          "A.\\quad f(x)=5 x^{2} + 6,\\ g(x)=x + 5",
+          "B.\\quad f(x)=5 x + 5,\\ g(x)=x^{2} + 6",
+          "C.\\quad f(x)=x^{2} + 5,\\ g(x)=5 x + 6",
+          "D.\\quad f(x)=x^{2} + 6,\\ g(x)=5 x + 5"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 3)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            12.0
+          ]
+        }
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 2(2)^x",
+          "(b)\\quad 3(\\frac{2}{3})^x",
+          "(c)\\quad 3(\\frac{3}{2})^x",
+          "(d)\\quad 2(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              3,
+              0.6666666666666666
+            ],
+            [
+              2,
+              0.5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1.5
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=7 \\sqrt{x + 9} - 56"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-56, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 55, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -35)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -56",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve the nonlinear system.",
+        "math": [
+          "y = x^{2}",
+          "y = x + 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "( -1, \\  1);\\ ( 2, \\  4)",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "system"
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{4}(x-5)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(5, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=5",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{21}{4}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 5^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.8)+\\log(1250)",
+          "(b)\\quad \\frac{\\log_{8}(125)}{\\log_{8}(25)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x-3)",
+          "B.\\quad g(x)=f(3x)",
+          "C.\\quad g(x)=f(x/3)",
+          "D.\\quad g(x)=3f(x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "B",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "horizontal",
+          "a": 3
+        }
+      }
+    ],
+    "content_fingerprint": "7ac95c9656621a58f1d230d97826669167ba4d6447c7c1bafe183f9febb3a191",
+    "source_question_versions": {
+      "M101-composition": "74695",
+      "M101-exponential": "11162",
+      "M101-logarithm": "97643",
+      "M101-logproperties": "74695",
+      "M101-polygraph": "27549",
+      "M101-radical": "58687",
+      "M101-rational": "40669",
+      "M101-solving": "58687",
+      "M101-transform": "87553",
+      "M101-zeros": "20580"
+    },
+    "start": 12,
+    "test_pages": 3,
+    "key_start": 16,
+    "packet_pages": 6,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 610.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 610.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 610.7,
+        "bottom": 375.70000000000005,
+        "rows": [
+          {
+            "top": 610.7,
+            "bottom": 572.7,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 572.7,
+            "bottom": 529.7,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 529.7,
+            "bottom": 494.70000000000005,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 494.70000000000005,
+            "bottom": 456.70000000000005,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 456.70000000000005,
+            "bottom": 418.70000000000005,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 418.70000000000005,
+            "bottom": 375.70000000000005,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 375.70000000000005,
+        "bottom": 247.40000000000003,
+        "rows": [
+          {
+            "top": 375.70000000000005,
+            "bottom": 247.40000000000003,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 247.40000000000003,
+        "bottom": 99.80000000000004,
+        "rows": [
+          {
+            "top": 247.40000000000003,
+            "bottom": 99.80000000000004,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 423.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 600.85,
+            "label": "(a)",
+            "points": 3
+          },
+          {
+            "top": 600.85,
+            "bottom": 541.7,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 541.7,
+            "bottom": 482.55000000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 482.55000000000007,
+            "bottom": 423.4000000000001,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 1,
+        "top": 423.4,
+        "bottom": 195.39999999999998,
+        "rows": [
+          {
+            "top": 423.4,
+            "bottom": 385.4,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 385.4,
+            "bottom": 347.4,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 347.4,
+            "bottom": 309.4,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 309.4,
+            "bottom": 271.4,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 271.4,
+            "bottom": 233.39999999999998,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 233.39999999999998,
+            "bottom": 195.39999999999998,
+            "label": "(f)",
+            "points": 1
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 1,
+        "top": 195.39999999999998,
+        "bottom": 128.09999999999997,
+        "rows": [
+          {
+            "top": 195.39999999999998,
+            "bottom": 128.09999999999997,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 2,
+        "top": 660,
+        "bottom": 429.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 584.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 548.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 467.0,
+            "bottom": 429.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 2,
+        "top": 429.0,
+        "bottom": 350.0,
+        "rows": [
+          {
+            "top": 429.0,
+            "bottom": 393.0,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 393.0,
+            "bottom": 350.0,
+            "label": "(b)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 2,
+        "top": 350.0,
+        "bottom": 130.4,
+        "rows": [
+          {
+            "top": 350.0,
+            "bottom": 130.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam - Practice Test",
+    "end": 7,
+    "practice": 4,
+    "version": "91982",
+    "seed": 4212794833,
+    "questions": [
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 5) (x + 6)}{(x - 8) (x + 5)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-5, 8\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -5, \\  - \\frac{1}{13})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=8",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -6, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{4})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve exactly.",
+        "math": [
+          "\\sqrt{x + 2} = x - 2"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = \\frac{\\sqrt{17}}{2} + \\frac{5}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "radical"
+      },
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(8 x + 8)^2+9",
+          "A.\\quad f(x)=8 x + 8,\\ g(x)=x^{2} + 9",
+          "B.\\quad f(x)=8 x^{2} + 9,\\ g(x)=x + 8",
+          "C.\\quad f(x)=x^{2} + 9,\\ g(x)=8 x + 8",
+          "D.\\quad f(x)=x^{2} + 8,\\ g(x)=8 x + 9"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "C",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.8)+\\log(1250)",
+          "(b)\\quad \\frac{\\log_{10}(343)}{\\log_{10}(49)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "3",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 2 x^{2} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 3,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 4} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 12, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -6)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -12",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 4(\\frac{3}{2})^x",
+          "(b)\\quad 4(\\frac{2}{3})^x",
+          "(c)\\quad 3(2)^x",
+          "(d)\\quad 3(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              4,
+              0.6666666666666666
+            ],
+            [
+              3,
+              0.5
+            ],
+            [
+              4,
+              1.5
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x+4)-8",
+          "B.\\quad g(x)=f(x-4)+8",
+          "C.\\quad g(x)=f(x+4)+8",
+          "D.\\quad g(x)=f(x-4)-8"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              8
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 4,
+          "k": -8
+        }
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{2}(x-5)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(5, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=5",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{11}{2}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 5^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 3)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            12.0
+          ]
+        }
+      }
+    ],
+    "content_fingerprint": "4fdaaac3980cc45c2ad13e4593b44b7c98c08e74f481297ad62a5eb9274d2c34",
+    "source_question_versions": {
+      "M101-composition": "27549",
+      "M101-exponential": "76018",
+      "M101-logarithm": "11162",
+      "M101-logproperties": "84847",
+      "M101-polygraph": "20580",
+      "M101-radical": "76407",
+      "M101-rational": "97643",
+      "M101-solving": "48624",
+      "M101-transform": "40669",
+      "M101-zeros": "74618"
+    },
+    "start": 18,
+    "test_pages": 3,
+    "key_start": 22,
+    "packet_pages": 6,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 375.7,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 375.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 375.7,
+        "bottom": 247.39999999999998,
+        "rows": [
+          {
+            "top": 375.7,
+            "bottom": 247.39999999999998,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 247.39999999999998,
+        "bottom": 168.39999999999998,
+        "rows": [
+          {
+            "top": 247.39999999999998,
+            "bottom": 211.39999999999998,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 211.39999999999998,
+            "bottom": 168.39999999999998,
+            "label": "(b)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 0,
+        "top": 168.39999999999998,
+        "bottom": 119.09999999999998,
+        "rows": [
+          {
+            "top": 168.39999999999998,
+            "bottom": 119.09999999999998,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 1
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 1,
+        "top": 432.0,
+        "bottom": 195.4,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 372.85,
+            "label": "(a)",
+            "points": 3
+          },
+          {
+            "top": 372.85,
+            "bottom": 313.70000000000005,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 313.70000000000005,
+            "bottom": 254.55000000000004,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 254.55000000000004,
+            "bottom": 195.40000000000003,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 2,
+        "top": 660,
+        "bottom": 440.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 440.4,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 2,
+        "top": 440.4,
+        "bottom": 209.39999999999998,
+        "rows": [
+          {
+            "top": 440.4,
+            "bottom": 402.4,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 402.4,
+            "bottom": 364.4,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 364.4,
+            "bottom": 328.4,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 328.4,
+            "bottom": 285.4,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 285.4,
+            "bottom": 247.39999999999998,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 247.39999999999998,
+            "bottom": 209.39999999999998,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 2,
+        "top": 209.39999999999998,
+        "bottom": 61.79999999999998,
+        "rows": [
+          {
+            "top": 209.39999999999998,
+            "bottom": 61.79999999999998,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-final",
+    "title": "MATH 101 Final Exam - Practice Test",
+    "end": 7,
+    "practice": 5,
+    "version": "42451",
+    "seed": 3709349453,
+    "questions": [
+      {
+        "id": "M101-composition",
+        "prompt": "Which pair satisfies h(x) = f(g(x))?",
+        "math": [
+          "h(x)=(3 x + 3)^2+4",
+          "A.\\quad f(x)=x^{2} + 4,\\ g(x)=3 x + 3",
+          "B.\\quad f(x)=x^{2} + 3,\\ g(x)=3 x + 4",
+          "C.\\quad f(x)=3 x^{2} + 4,\\ g(x)=x + 3",
+          "D.\\quad f(x)=3 x + 3,\\ g(x)=x^{2} + 4"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 10,
+            "plain": true
+          }
+        ]
+      },
+      {
+        "id": "M101-logproperties",
+        "prompt": "Evaluate exactly. Here log means base 10.",
+        "math": [
+          "(a)\\quad \\log(0.25)+\\log(400)",
+          "(b)\\quad \\frac{\\log_{11}(512)}{\\log_{11}(64)}"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "2",
+            "points": 5,
+            "plain": false
+          },
+          {
+            "label": "(b)",
+            "answer": "\\frac{3}{2}",
+            "points": 5,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-rational",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x + 3) (x + 4)}{(x - 6) (x + 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{-3, 6\\}",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( -3, \\  - \\frac{1}{9})",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-radical",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 4} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 32, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -20)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -30",
+            "points": 1,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-logarithm",
+        "prompt": "Find (a) domain and range; (b) vertical asymptote and x-intercept; (c) behavior at both ends of the domain.",
+        "math": [
+          "f(x)=\\log_{3}(x-2)+1"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "(2, \\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Asymptote",
+            "answer": "x=2",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( \\frac{7}{3}, \\  0)",
+            "points": 1,
+            "plain": false
+          },
+          {
+            "label": "(c) Left end",
+            "answer": "x\\to 2^+:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(c) Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-zeros",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 3 x^{2} - 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ -1 + \\sqrt{3},\\ - \\sqrt{3} - 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "M101-exponential",
+        "prompt": "Match each function to graph A, B, C, or D. Each letter is used once.",
+        "math": [
+          "(a)\\quad 3(\\frac{3}{2})^x",
+          "(b)\\quad 3(\\frac{2}{3})^x",
+          "(c)\\quad 2(2)^x",
+          "(d)\\quad 2(\\frac{1}{2})^x"
+        ],
+        "rows": [
+          {
+            "label": "(a)",
+            "answer": "C",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(b)",
+            "answer": "A",
+            "points": 2,
+            "plain": true
+          },
+          {
+            "label": "(c)",
+            "answer": "D",
+            "points": 3,
+            "plain": true
+          },
+          {
+            "label": "(d)",
+            "answer": "B",
+            "points": 2,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "exponential",
+          "curves": [
+            [
+              3,
+              0.6666666666666666
+            ],
+            [
+              2,
+              0.5
+            ],
+            [
+              3,
+              1.5
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "id": "M101-polygraph",
+        "prompt": "Write a polynomial of the least possible degree matching this graph and the labeled point. Give factored form.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 3)(x - 2)^2",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            12.0
+          ]
+        }
+      },
+      {
+        "id": "M101-transform",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(-3x)",
+          "B.\\quad g(x)=3f(x)",
+          "C.\\quad g(x)=f(x)-3",
+          "D.\\quad g(x)=-3f(x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 10,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              8
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -3
+        }
+      },
+      {
+        "id": "M101-solving",
+        "prompt": "Solve exactly.",
+        "math": [
+          "\\sqrt{x + 3} = x - 3"
+        ],
+        "rows": [
+          {
+            "label": "",
+            "answer": "x = 6",
+            "points": 10,
+            "plain": false
+          }
+        ],
+        "category": "radical"
+      }
+    ],
+    "content_fingerprint": "d244abeb0b3dbcc321fcc6d191bca2d61be2ef393c459229652b65f7ae1bee71",
+    "source_question_versions": {
+      "M101-composition": "13685",
+      "M101-exponential": "74618",
+      "M101-logarithm": "13685",
+      "M101-logproperties": "72324",
+      "M101-polygraph": "27549",
+      "M101-radical": "64047",
+      "M101-rational": "20580",
+      "M101-solving": "86031",
+      "M101-transform": "58687",
+      "M101-zeros": "87553"
+    },
+    "start": 24,
+    "test_pages": 4,
+    "key_start": 28,
+    "packet_pages": 6,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 531.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 531.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 531.7,
+        "bottom": 453.70000000000005,
+        "rows": [
+          {
+            "top": 531.7,
+            "bottom": 496.70000000000005,
+            "label": "(a)",
+            "points": 5
+          },
+          {
+            "top": 496.70000000000005,
+            "bottom": 453.70000000000005,
+            "label": "(b)",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 453.70000000000005,
+        "bottom": 217.70000000000005,
+        "rows": [
+          {
+            "top": 453.70000000000005,
+            "bottom": 415.70000000000005,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 415.70000000000005,
+            "bottom": 372.70000000000005,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 372.70000000000005,
+            "bottom": 336.70000000000005,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 336.70000000000005,
+            "bottom": 298.70000000000005,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 298.70000000000005,
+            "bottom": 260.70000000000005,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 260.70000000000005,
+            "bottom": 217.70000000000005,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 1
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 432.0,
+        "bottom": 202.0,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 394.0,
+            "label": "(a)",
+            "points": 2
+          },
+          {
+            "top": 394.0,
+            "bottom": 356.0,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 356.0,
+            "bottom": 321.0,
+            "label": "(c)",
+            "points": 1
+          },
+          {
+            "top": 321.0,
+            "bottom": 278.0,
+            "label": "(d)",
+            "points": 1
+          },
+          {
+            "top": 278.0,
+            "bottom": 240.0,
+            "label": "(e)",
+            "points": 2
+          },
+          {
+            "top": 240.0,
+            "bottom": 202.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 6,
+        "page": 1,
+        "top": 202.0,
+        "bottom": 152.7,
+        "rows": [
+          {
+            "top": 202.0,
+            "bottom": 152.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 7,
+        "page": 2,
+        "top": 660,
+        "bottom": 423.4,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 600.85,
+            "label": "(a)",
+            "points": 3
+          },
+          {
+            "top": 600.85,
+            "bottom": 541.7,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 541.7,
+            "bottom": 482.55000000000007,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 482.55000000000007,
+            "bottom": 423.4000000000001,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 8,
+        "page": 2,
+        "top": 423.4,
+        "bottom": 275.79999999999995,
+        "rows": [
+          {
+            "top": 423.4,
+            "bottom": 275.79999999999995,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 9,
+        "page": 2,
+        "top": 275.79999999999995,
+        "bottom": 56.19999999999996,
+        "rows": [
+          {
+            "top": 275.79999999999995,
+            "bottom": 56.19999999999996,
+            "label": "",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 10,
+        "page": 3,
+        "top": 660,
+        "bottom": 608.7,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 608.7,
+            "label": "",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  }
+]

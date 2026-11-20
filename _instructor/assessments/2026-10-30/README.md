@@ -2,6 +2,8 @@
 
 25 PDFs, each containing 20 fresh versions and matching keys (500 versions total).
 
+**TSM final ordering audit - November 20, 2026:** The existing `98-final` and `99-final` batches shuffle question positions and are not certified for official-final use. The required instructor-approved ten-position maps are absent from the specifications and must be supplied before correcting these PDFs. See TSM Test Specifications section 23. The exporter now stops before any write when an official TSM final is requested without its map; the verifier also refuses to certify it. Existing questions and identifiers have been preserved pending that information. Practice finals and diagnostics may retain randomized order.
+
 | Course | Unit tests | Diagnostic | Final | PDFs |
 |---|---:|---:|---:|---:|
 | TSM 098 | 4 | 1 | 1 | 6 |

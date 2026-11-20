@@ -658,6 +658,12 @@ The diagnostic and final for a course must be parallel in assessed constructs, w
 
 ## 23. Ordering modes
 
+### November 20, 2026 ordering audit
+
+The published instructor batches `98-final-20-versions.pdf` and `99-final-20-versions.pdf` under `_instructor/assessments/2026-10-30/` currently have randomized question positions. **Their official-final ordering is unresolved.** This document and the older master specifications require a fixed map but do not contain the instructor's actual ten-position assignments. The six institutional IDs below are not a substitute for that map. Preserve the existing questions and version identifiers until the map is supplied; then reorder each complete student packet and its matched key together.
+
+The exporter and batch verifier now require `tsm/specifications/official-final-order.json` for these two official-final batches. That file must contain keys `98-final` and `99-final`, each mapping to the instructor-approved ordered list of ten question IDs, including the supplemental families. Do not create it by guessing. Generation (including `--reformat`) stops before writing output when the map is missing; verification cannot certify an unmapped official final. Diagnostics, unit tests, and practice finals remain eligible for randomized ordering.
+
 - **RANDOMIZED:** Shuffle all ten question units. Keep any multipart unit together. Use for diagnostics and practice finals unless the request states otherwise.
 - **STANDARDIZED:** Place all ten question units according to the instructor's official position map so item numbers are comparable for item analysis. Use for an official final only when the position map is present in this specification or supplied in the request.
 - The semantic institutional IDs below, such as I098-1, do not by themselves establish official item numbers.

@@ -19,6 +19,7 @@ import build_practice_tests as T
 import generate_practice_batch as B
 import algebra_test_layout as L
 from assessment_content import institutional, math101_solving
+from tsm_final_order import official_order, arrange_official_final
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'_instructor/assessments/2026-10-30'
@@ -201,6 +202,9 @@ def main():
         registry.append((course,entry[1].replace('final','diagnostic'),'Diagnostic Exam',entry[3],entry[4]))
     for i in range(1,5):registry.append(('MSC 201',f'stats-unit-{i}',f'Unit {i} Test',i,0))
     registry.extend([('MSC 201','stats-final','Final Exam',0,0),('MSC 201','stats-diagnostic','Diagnostic Exam',0,0)])
+    # Resolve fixed final positions before writing any output, including reformat runs.
+    final_orders={slug:official_order(slug) for _,slug,_,_,_ in registry
+                  if not args.only or args.only==slug}
     index=[]
     for course,slug,title,fn,end in registry:
         if args.only and slug!=args.only:continue
@@ -226,7 +230,8 @@ def main():
                         qs=fresh+extra
                     if slug.endswith(('final','diagnostic')) and course=='MATH 101':
                         qs=[math101_solving(i,seed) if q['id']=='M101-solving' else q for q in qs]
-                    random.Random(seed).shuffle(qs)
+                    if final_orders[slug] is None:random.Random(seed).shuffle(qs)
+            qs=arrange_official_final(slug,qs,final_orders[slug])
             assert sum(10 for q in qs)==100 if course=='MSC 201' else sum(r['points'] for q in qs for r in q['rows'])==100
             identity=hashlib.sha256(json.dumps(sorted(qs,key=lambda q:q['id']),sort_keys=True).encode()).hexdigest();assert identity not in seen,(slug,'duplicate form');seen.add(identity)
             a=dict(course=course,title=course+' '+title,version=version,questions=qs,seed=seed)

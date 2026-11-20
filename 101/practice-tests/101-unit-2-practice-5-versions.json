@@ -1,0 +1,1764 @@
+[
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs - Practice Test",
+    "end": 4,
+    "practice": 1,
+    "version": "40508",
+    "seed": 978077391,
+    "questions": [
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  5);\\ ( 3, \\  13)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=4 x + 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{4} - \\frac{1}{4}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -3 to x = 5; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{8}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-3,0)\\cup(3,5)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,3)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  3)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 3, \\  -3)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              -3
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-2), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=3 |{x - 2}| - 3"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "9",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-3, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(2x)",
+          "B.\\quad g(x)=f(x-2)",
+          "C.\\quad g(x)=2f(x)",
+          "D.\\quad g(x)=f(x/2)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "horizontal",
+          "a": 2
+        }
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(6 x + 5)^2+7",
+          "A.\\quad f(x)=x^{2} + 5,\\ g(x)=6 x + 7",
+          "B.\\quad f(x)=x^{2} + 7,\\ g(x)=6 x + 5",
+          "C.\\quad f(x)=6 x^{2} + 7,\\ g(x)=x + 5",
+          "D.\\quad f(x)=6 x + 5,\\ g(x)=x^{2} + 7",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 6,\\ x_0=7"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "B",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 12 x + 36",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "438e13b989687d1c5a11f33874734915053439d49b628e9af3d4e519e8355766",
+    "source_question_versions": {
+      "U2-1": "36755",
+      "U2-2": "36755",
+      "U2-3": "23259",
+      "U2-4": "94721",
+      "U2-5": "91776"
+    },
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 503.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 6
+          },
+          {
+            "top": 579.0,
+            "bottom": 541.0,
+            "label": "(c)",
+            "points": 2
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 503.0,
+        "bottom": 308.0,
+        "rows": [
+          {
+            "top": 503.0,
+            "bottom": 460.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 460.0,
+            "bottom": 422.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 422.0,
+            "bottom": 384.0,
+            "label": "(c)",
+            "points": 4
+          },
+          {
+            "top": 384.0,
+            "bottom": 346.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 346.0,
+            "bottom": 308.0,
+            "label": "(e)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 308.0,
+        "bottom": 196.0,
+        "rows": [
+          {
+            "top": 308.0,
+            "bottom": 272.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 272.0,
+            "bottom": 234.0,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 234.0,
+            "bottom": 196.0,
+            "label": "(c)",
+            "points": 7
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 434.775,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 434.775,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 434.775,
+        "bottom": 273.17499999999995,
+        "rows": [
+          {
+            "top": 434.775,
+            "bottom": 379.9083333333333,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 379.9083333333333,
+            "bottom": 325.04166666666663,
+            "label": "(b)",
+            "points": 8
+          },
+          {
+            "top": 325.04166666666663,
+            "bottom": 273.17499999999995,
+            "label": "(c)",
+            "points": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs - Practice Test",
+    "end": 4,
+    "practice": 2,
+    "version": "18836",
+    "seed": 98239031,
+    "questions": [
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-7), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=8 |{x - 7}| - 8"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "104",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-8, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  1);\\ ( 3, \\  5)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=2 x - 1",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{2} + \\frac{1}{2}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(7 x + 6)^2+8",
+          "A.\\quad f(x)=x^{2} + 8,\\ g(x)=7 x + 6",
+          "B.\\quad f(x)=7 x^{2} + 8,\\ g(x)=x + 6",
+          "C.\\quad f(x)=7 x + 6,\\ g(x)=x^{2} + 8",
+          "D.\\quad f(x)=x^{2} + 6,\\ g(x)=7 x + 8",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 7,\\ x_0=8"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "A",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 14 x + 49",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -7 to x = 9; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{16}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-7,0)\\cup(7,9)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,7)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  7)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 7, \\  -7)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -7,
+              0
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              7,
+              -7
+            ],
+            [
+              9,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=2f(x)",
+          "B.\\quad g(x)=f(-2x)",
+          "C.\\quad g(x)=f(x)-2",
+          "D.\\quad g(x)=-2f(x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              6
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -2
+        }
+      }
+    ],
+    "content_fingerprint": "0f4b1be1c1f5b729a70cec73d121b18a2ff062c91f3f1a9c9d796448b043b578",
+    "source_question_versions": {
+      "U2-1": "71830",
+      "U2-2": "68899",
+      "U2-3": "68899",
+      "U2-4": "47362",
+      "U2-5": "37133"
+    },
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 548.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 624.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 624.0,
+            "bottom": 586.0,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 586.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 7
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 548.0,
+        "bottom": 391.0,
+        "rows": [
+          {
+            "top": 548.0,
+            "bottom": 510.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 510.0,
+            "bottom": 467.0,
+            "label": "(b)",
+            "points": 6
+          },
+          {
+            "top": 467.0,
+            "bottom": 429.0,
+            "label": "(c)",
+            "points": 2
+          },
+          {
+            "top": 429.0,
+            "bottom": 391.0,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 391.0,
+        "bottom": 229.4,
+        "rows": [
+          {
+            "top": 391.0,
+            "bottom": 336.1333333333333,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 336.1333333333333,
+            "bottom": 281.26666666666665,
+            "label": "(b)",
+            "points": 8
+          },
+          {
+            "top": 281.26666666666665,
+            "bottom": 229.39999999999998,
+            "label": "(c)",
+            "points": 4
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 465.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 617.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 541.0,
+            "label": "(c)",
+            "points": 4
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 503.0,
+            "bottom": 465.0,
+            "label": "(e)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 465.0,
+        "bottom": 239.775,
+        "rows": [
+          {
+            "top": 465.0,
+            "bottom": 239.775,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs - Practice Test",
+    "end": 4,
+    "practice": 3,
+    "version": "95191",
+    "seed": 55352027,
+    "questions": [
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x+3)+8",
+          "B.\\quad g(x)=f(x-3)+8",
+          "C.\\quad g(x)=f(x+3)-8",
+          "D.\\quad g(x)=f(x-3)-8"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              8
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 3,
+          "k": -8
+        }
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(5 x + 4)^2+6",
+          "A.\\quad f(x)=x^{2} + 4,\\ g(x)=5 x + 6",
+          "B.\\quad f(x)=5 x^{2} + 6,\\ g(x)=x + 4",
+          "C.\\quad f(x)=x^{2} + 6,\\ g(x)=5 x + 4",
+          "D.\\quad f(x)=5 x + 4,\\ g(x)=x^{2} + 6",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 5,\\ x_0=6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "C",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 10 x + 25",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  13);\\ ( 3, \\  29)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=8 x + 5",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{8} - \\frac{5}{8}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-5), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=6 |{x - 5}| - 6"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "54",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-6, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -4 to x = 6; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{10}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-4,0)\\cup(4,6)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  4)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 4, \\  -4)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -4,
+              0
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              4,
+              -4
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "content_fingerprint": "031bd21409d0a1477061ffd623427401da80bea0e46fd1807e492dfde8edb1f8",
+    "source_question_versions": {
+      "U2-1": "41802",
+      "U2-2": "91776",
+      "U2-3": "75925",
+      "U2-4": "58437",
+      "U2-5": "71830"
+    },
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 434.775,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 434.775,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 434.775,
+        "bottom": 273.17499999999995,
+        "rows": [
+          {
+            "top": 434.775,
+            "bottom": 379.9083333333333,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 379.9083333333333,
+            "bottom": 325.04166666666663,
+            "label": "(b)",
+            "points": 8
+          },
+          {
+            "top": 325.04166666666663,
+            "bottom": 273.17499999999995,
+            "label": "(c)",
+            "points": 4
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 273.17499999999995,
+        "bottom": 116.17499999999995,
+        "rows": [
+          {
+            "top": 273.17499999999995,
+            "bottom": 235.17499999999995,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 235.17499999999995,
+            "bottom": 192.17499999999995,
+            "label": "(b)",
+            "points": 6
+          },
+          {
+            "top": 192.17499999999995,
+            "bottom": 154.17499999999995,
+            "label": "(c)",
+            "points": 2
+          },
+          {
+            "top": 154.17499999999995,
+            "bottom": 116.17499999999995,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 548.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 624.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 624.0,
+            "bottom": 586.0,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 586.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 7
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 548.0,
+        "bottom": 353.0,
+        "rows": [
+          {
+            "top": 548.0,
+            "bottom": 505.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 467.0,
+            "bottom": 429.0,
+            "label": "(c)",
+            "points": 4
+          },
+          {
+            "top": 429.0,
+            "bottom": 391.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 391.0,
+            "bottom": 353.0,
+            "label": "(e)",
+            "points": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs - Practice Test",
+    "end": 4,
+    "practice": 4,
+    "version": "20807",
+    "seed": 863155621,
+    "questions": [
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  9);\\ ( 3, \\  21)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=6 x + 3",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{6} - \\frac{1}{2}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(3 x + 2)^2+4",
+          "A.\\quad f(x)=x^{2} + 4,\\ g(x)=3 x + 2",
+          "B.\\quad f(x)=3 x + 2,\\ g(x)=x^{2} + 4",
+          "C.\\quad f(x)=x^{2} + 2,\\ g(x)=3 x + 4",
+          "D.\\quad f(x)=3 x^{2} + 4,\\ g(x)=x + 2",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 3,\\ x_0=4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "A",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 6 x + 9",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-1), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=2 |{x - 1}| - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "2",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-2, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=f(x-3)+6",
+          "B.\\quad g(x)=f(x+3)-6",
+          "C.\\quad g(x)=f(x+3)+6",
+          "D.\\quad g(x)=f(x-3)-6"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "D",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              6
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "shift",
+          "h": 3,
+          "k": -6
+        }
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -8 to x = 10; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{18}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-8,0)\\cup(8,10)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,8)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  8)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 8, \\  -8)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -8,
+              0
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              8,
+              -8
+            ],
+            [
+              10,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "content_fingerprint": "b8b7dde6f1aac0c511e4541ff39c24316ded93a8afb31c9baf0d10109534121e",
+    "source_question_versions": {
+      "U2-1": "37133",
+      "U2-2": "58437",
+      "U2-3": "25229",
+      "U2-4": "23259",
+      "U2-5": "47362"
+    },
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 503.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 6
+          },
+          {
+            "top": 579.0,
+            "bottom": 541.0,
+            "label": "(c)",
+            "points": 2
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 503.0,
+        "bottom": 341.4,
+        "rows": [
+          {
+            "top": 503.0,
+            "bottom": 448.1333333333333,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 448.1333333333333,
+            "bottom": 393.26666666666665,
+            "label": "(b)",
+            "points": 8
+          },
+          {
+            "top": 393.26666666666665,
+            "bottom": 341.4,
+            "label": "(c)",
+            "points": 4
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 341.4,
+        "bottom": 230.39999999999998,
+        "rows": [
+          {
+            "top": 341.4,
+            "bottom": 306.4,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 306.4,
+            "bottom": 268.4,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 268.4,
+            "bottom": 230.39999999999998,
+            "label": "(c)",
+            "points": 7
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 434.775,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 434.775,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 434.775,
+        "bottom": 239.77499999999998,
+        "rows": [
+          {
+            "top": 434.775,
+            "bottom": 391.775,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 391.775,
+            "bottom": 353.775,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 353.775,
+            "bottom": 315.775,
+            "label": "(c)",
+            "points": 4
+          },
+          {
+            "top": 315.775,
+            "bottom": 277.775,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 277.775,
+            "bottom": 239.77499999999998,
+            "label": "(e)",
+            "points": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-2",
+    "title": "MATH 101 Unit 2: Functions and Their Graphs - Practice Test",
+    "end": 4,
+    "practice": 5,
+    "version": "50017",
+    "seed": 3253182644,
+    "questions": [
+      {
+        "id": "U2-1",
+        "prompt": "For this function, find (a) f(-6), (b) domain, and (c) range.",
+        "math": [
+          "f(x)=7 |{x - 6}| - 7"
+        ],
+        "rows": [
+          {
+            "label": "(a) Value",
+            "answer": "77",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 7,
+            "plain": false
+          },
+          {
+            "label": "(c) Range",
+            "answer": "[-7, \\infty)",
+            "points": 7,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-3",
+        "prompt": "(a) Choose the pair giving h(x) = f(g(x)). (b) Form F(G(x)) and evaluate it at the supplied input.",
+        "math": [
+          "h(x)=(4 x + 3)^2+5",
+          "A.\\quad f(x)=x^{2} + 5,\\ g(x)=4 x + 3",
+          "B.\\quad f(x)=4 x + 3,\\ g(x)=x^{2} + 5",
+          "C.\\quad f(x)=x^{2} + 3,\\ g(x)=4 x + 5",
+          "D.\\quad f(x)=4 x^{2} + 5,\\ g(x)=x + 3",
+          "(b)\\quad F(x)=x^2,\\ G(x)=x - 4,\\ x_0=5"
+        ],
+        "rows": [
+          {
+            "label": "(a) Choice",
+            "answer": "A",
+            "points": 8,
+            "plain": true
+          },
+          {
+            "label": "(b) Composition",
+            "answer": "x^{2} - 8 x + 16",
+            "points": 8,
+            "plain": false
+          },
+          {
+            "label": "(b) Value",
+            "answer": "1",
+            "points": 4,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-5",
+        "prompt": "(a) Find the linear function through these points, with domain all real numbers. (b) Find its inverse and give the inverse domain and range.",
+        "math": [
+          "( 1, \\  3);\\ ( 3, \\  9)"
+        ],
+        "rows": [
+          {
+            "label": "(a) Function",
+            "answer": "f(x)=3 x",
+            "points": 10,
+            "plain": false
+          },
+          {
+            "label": "(b) Inverse",
+            "answer": "f^{-1}(x)=\\frac{x}{3}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Domain",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "(b) Range",
+            "answer": "(-\\infty,\\infty)",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U2-2",
+        "prompt": "From the graph, find (a) average rate from x = -2 to x = 4; (b) increasing and decreasing intervals; (c) the two local extrema (ordered pairs).",
+        "math": [],
+        "rows": [
+          {
+            "label": "(a) Rate",
+            "answer": "\\frac{1}{6}",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(b) Increasing",
+            "answer": "(-2,0)\\cup(2,4)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Decreasing",
+            "answer": "(0,2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Local max",
+            "answer": "( 0, \\  2)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Local min",
+            "answer": "( 2, \\  -2)",
+            "points": 3,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "behavior",
+          "points": [
+            [
+              -2,
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              -2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "id": "U2-4",
+        "prompt": "The solid graph is f and the dashed graph is g. Select the expression for g(x).",
+        "math": [
+          "A.\\quad g(x)=-2f(x)",
+          "B.\\quad g(x)=f(x)-2",
+          "C.\\quad g(x)=2f(x)",
+          "D.\\quad g(x)=f(-2x)"
+        ],
+        "rows": [
+          {
+            "label": "Choice",
+            "answer": "A",
+            "points": 20,
+            "plain": true
+          }
+        ],
+        "graph": {
+          "kind": "transform",
+          "points": [
+            [
+              -3,
+              0
+            ],
+            [
+              -1,
+              7
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mode": "vertical",
+          "a": -2
+        }
+      }
+    ],
+    "content_fingerprint": "682f1014a8c43dbd5f44f29c6da3f0736f29bfa94280af8cfc405295dcdf7da2",
+    "source_question_versions": {
+      "U2-1": "24714",
+      "U2-2": "37133",
+      "U2-3": "52287",
+      "U2-4": "36777",
+      "U2-5": "25229"
+    },
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 549.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 625.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 625.0,
+            "bottom": 587.0,
+            "label": "(b)",
+            "points": 7
+          },
+          {
+            "top": 587.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 7
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 549.0,
+        "bottom": 387.4,
+        "rows": [
+          {
+            "top": 549.0,
+            "bottom": 494.1333333333333,
+            "label": "(a)",
+            "points": 8
+          },
+          {
+            "top": 494.1333333333333,
+            "bottom": 439.26666666666665,
+            "label": "(b)",
+            "points": 8
+          },
+          {
+            "top": 439.26666666666665,
+            "bottom": 387.4,
+            "label": "(c)",
+            "points": 4
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 387.4,
+        "bottom": 231.39999999999998,
+        "rows": [
+          {
+            "top": 387.4,
+            "bottom": 349.4,
+            "label": "(a)",
+            "points": 10
+          },
+          {
+            "top": 349.4,
+            "bottom": 307.4,
+            "label": "(b)",
+            "points": 6
+          },
+          {
+            "top": 307.4,
+            "bottom": 269.4,
+            "label": "(c)",
+            "points": 2
+          },
+          {
+            "top": 269.4,
+            "bottom": 231.39999999999998,
+            "label": "(d)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 465.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 617.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 617.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 541.0,
+            "label": "(c)",
+            "points": 4
+          },
+          {
+            "top": 541.0,
+            "bottom": 503.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 503.0,
+            "bottom": 465.0,
+            "label": "(e)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 465.0,
+        "bottom": 239.775,
+        "rows": [
+          {
+            "top": 465.0,
+            "bottom": 239.775,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  }
+]

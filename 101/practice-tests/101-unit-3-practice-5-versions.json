@@ -1,0 +1,1762 @@
+[
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions - Practice Test",
+    "end": 5,
+    "practice": 1,
+    "version": "62062",
+    "seed": 108024179,
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 1) (x + 3)}{(x - 5) (x - 1)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{1, 5\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 1, \\  -1)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=5",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -3, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "2(x + 3)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 2.0,
+          "point": [
+            0,
+            6.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=3 (x - 1)^{2} - 48"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 1, \\  -48)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-48",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 5",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 9} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 27, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -15)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -30",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "b0d993f9545c57009b280e1db84b05f4ed1aab12b33626c037cbce5ea70c274f",
+    "source_question_versions": {
+      "U3-1": "92695",
+      "U3-2": "55300",
+      "U3-3": "27180",
+      "U3-4": "56952",
+      "U3-5": "27180"
+    },
+    "start": 0,
+    "test_pages": 2,
+    "key_start": 2,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 429.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 548.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 548.0,
+            "bottom": 510.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 510.0,
+            "bottom": 472.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 472.0,
+            "bottom": 429.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 429.0,
+        "bottom": 262.475,
+        "rows": [
+          {
+            "top": 429.0,
+            "bottom": 372.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 372.825,
+            "bottom": 317.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 317.65,
+            "bottom": 262.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 262.475,
+        "bottom": 151.47500000000002,
+        "rows": [
+          {
+            "top": 262.475,
+            "bottom": 224.47500000000002,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 224.47500000000002,
+            "bottom": 188.47500000000002,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 188.47500000000002,
+            "bottom": 151.47500000000002,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 151.47500000000002,
+        "bottom": 102.17500000000003,
+        "rows": [
+          {
+            "top": 151.47500000000002,
+            "bottom": 102.17500000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions - Practice Test",
+    "end": 5,
+    "practice": 2,
+    "version": "38490",
+    "seed": 3882029527,
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 3) (x + 5)}{(x - 7) (x - 3)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{3, 7\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 3, \\  -2)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=7",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{5}{7})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=7 (x - 5)^{2} - 448"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 5, \\  -448)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-448",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 13",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=5 \\sqrt{x + 4} - 30"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-4, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-30, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 32, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -20)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -4^+:\\ f(x)\\to -30",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} + 4 x^{2} + 4 x + 1"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = -1,\\ - \\frac{3}{2} - \\frac{\\sqrt{5}}{2},\\ - \\frac{3}{2} + \\frac{\\sqrt{5}}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "c88ecff10af8da0a2501f2abf47c7908e59b45340b16b313398592f626b72204",
+    "source_question_versions": {
+      "U3-1": "48388",
+      "U3-2": "48388",
+      "U3-3": "56952",
+      "U3-4": "92695",
+      "U3-5": "91724"
+    },
+    "start": 4,
+    "test_pages": 2,
+    "key_start": 6,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 430.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 549.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 549.0,
+            "bottom": 511.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 511.0,
+            "bottom": 473.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 473.0,
+            "bottom": 430.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 430.0,
+        "bottom": 319.0,
+        "rows": [
+          {
+            "top": 430.0,
+            "bottom": 392.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 392.0,
+            "bottom": 356.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 356.0,
+            "bottom": 319.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 319.0,
+        "bottom": 91.0,
+        "rows": [
+          {
+            "top": 319.0,
+            "bottom": 281.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 281.0,
+            "bottom": 243.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 243.0,
+            "bottom": 205.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 205.0,
+            "bottom": 167.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 167.0,
+            "bottom": 129.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 129.0,
+            "bottom": 91.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 493.475,
+        "bottom": 444.175,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 444.175,
+            "label": "",
+            "points": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions - Practice Test",
+    "end": 5,
+    "practice": 3,
+    "version": "46467",
+    "seed": 2257892313,
+    "questions": [
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=\\sqrt{x + 9} - 2"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-2, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( -5, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  1)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -2",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - x^{2} - 3 x + 2"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 2,\\ - \\frac{1}{2} + \\frac{\\sqrt{5}}{2},\\ - \\frac{\\sqrt{5}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 6) (x + 8)}{(x - 10) (x - 6)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{6, 10\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 6, \\  - \\frac{7}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=10",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -8, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{4}{5})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=5 (x - 3)^{2} - 180"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 3, \\  -180)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-180",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 9",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "eb3b802d245296eaa94f17d57f0e236ab3d2d2ec256fea27e902fe553a375dee",
+    "source_question_versions": {
+      "U3-1": "91724",
+      "U3-2": "36361",
+      "U3-3": "48388",
+      "U3-4": "93632",
+      "U3-5": "55300"
+    },
+    "start": 8,
+    "test_pages": 2,
+    "key_start": 10,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 432.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 584.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 584.0,
+            "bottom": 546.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 546.0,
+            "bottom": 508.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 508.0,
+            "bottom": 470.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 470.0,
+            "bottom": 432.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 432.0,
+        "bottom": 265.475,
+        "rows": [
+          {
+            "top": 432.0,
+            "bottom": 375.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 375.825,
+            "bottom": 320.65,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 320.65,
+            "bottom": 265.47499999999997,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 265.475,
+        "bottom": 216.175,
+        "rows": [
+          {
+            "top": 265.475,
+            "bottom": 216.175,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 424.0,
+        "bottom": 313.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 386.0,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 386.0,
+            "bottom": 350.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 350.0,
+            "bottom": 313.0,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions - Practice Test",
+    "end": 5,
+    "practice": 4,
+    "version": "22267",
+    "seed": 158128754,
+    "questions": [
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "-1(x + 1)(x - 2)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": -1.0,
+          "point": [
+            0,
+            -4.0
+          ]
+        }
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=3 \\sqrt{x + 9} - 12"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-12, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 7, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -3)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -12",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=4 (x - 2)^{2} - 100"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( 2, \\  -100)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-100",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 7",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 4) (x + 6)}{(x - 8) (x - 4)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{4, 8\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 4, \\  - \\frac{5}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=8",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -6, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{3}{4})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "32a8dcfc4f8d64a1def6f5bed015d6762c0010c4edbaf863b12197eca114ba2f",
+    "source_question_versions": {
+      "U3-1": "51813",
+      "U3-2": "56952",
+      "U3-3": "93632",
+      "U3-4": "51813",
+      "U3-5": "32153"
+    },
+    "start": 12,
+    "test_pages": 2,
+    "key_start": 14,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 493.475,
+        "bottom": 265.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 455.475,
+            "bottom": 417.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 417.475,
+            "bottom": 379.475,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 379.475,
+            "bottom": 341.475,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 341.475,
+            "bottom": 303.475,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 303.475,
+            "bottom": 265.475,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 265.475,
+        "bottom": 154.47500000000002,
+        "rows": [
+          {
+            "top": 265.475,
+            "bottom": 227.47500000000002,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 227.47500000000002,
+            "bottom": 191.47500000000002,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 191.47500000000002,
+            "bottom": 154.47500000000002,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 0,
+        "top": 154.47500000000002,
+        "bottom": 105.17500000000003,
+        "rows": [
+          {
+            "top": 154.47500000000002,
+            "bottom": 105.17500000000003,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "MATH 101",
+    "assessment": "101-unit-3",
+    "title": "MATH 101 Unit 3: Polynomial, Rational, and Radical Functions - Practice Test",
+    "end": 5,
+    "practice": 5,
+    "version": "16503",
+    "seed": 320717028,
+    "questions": [
+      {
+        "id": "U3-4",
+        "prompt": "Find (a) domain; (b) hole, vertical asymptote, and horizontal asymptote; (c) both intercepts.",
+        "math": [
+          "f(x)=\\frac{(x - 2) (x + 4)}{(x - 6) (x - 2)}"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "\\mathbb{R}\\setminus \\{2, 6\\}",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Hole",
+            "answer": "( 2, \\  - \\frac{3}{2})",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Vertical",
+            "answer": "x=6",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) Horizontal",
+            "answer": "y=1",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) x-intercept",
+            "answer": "( -4, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) y-intercept",
+            "answer": "( 0, \\  - \\frac{2}{3})",
+            "points": 3,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-5",
+        "prompt": "Find (a) domain and range; (b) both intercepts; (c) behavior as x tends to infinity and as x approaches the finite domain endpoint from within the domain.",
+        "math": [
+          "f(x)=4 \\sqrt{x + 9} - 20"
+        ],
+        "rows": [
+          {
+            "label": "(a) Domain",
+            "answer": "[-9, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(a) Range",
+            "answer": "[-20, \\infty)",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) x-intercept",
+            "answer": "( 16, \\  0)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(b) y-intercept",
+            "answer": "( 0, \\  -8)",
+            "points": 3,
+            "plain": false
+          },
+          {
+            "label": "(c) Infinite end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(c) Finite end",
+            "answer": "x\\to -9^+:\\ f(x)\\to -20",
+            "points": 2,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-3",
+        "prompt": "Find all zeros.",
+        "math": [
+          "p(x)=x^{3} - 4 x + 3"
+        ],
+        "rows": [
+          {
+            "label": "Zeros",
+            "answer": "x = 1,\\ - \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\ - \\frac{\\sqrt{13}}{2} - \\frac{1}{2}",
+            "points": 20,
+            "plain": false
+          }
+        ]
+      },
+      {
+        "id": "U3-2",
+        "prompt": "Write the least-degree polynomial in factored form matching the graph and labeled point. State its end behavior in both directions.",
+        "math": [],
+        "rows": [
+          {
+            "label": "Polynomial",
+            "answer": "1(x + 2)(x - 1)^2",
+            "points": 16,
+            "plain": false
+          },
+          {
+            "label": "Left end",
+            "answer": "x\\to-\\infty:\\ f(x)\\to-\\infty",
+            "points": 2,
+            "plain": false
+          },
+          {
+            "label": "Right end",
+            "answer": "x\\to\\infty:\\ f(x)\\to\\infty",
+            "points": 2,
+            "plain": false
+          }
+        ],
+        "graph": {
+          "kind": "polynomial",
+          "roots": [
+            -2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2
+          ],
+          "a": 1.0,
+          "point": [
+            0,
+            2.0
+          ]
+        }
+      },
+      {
+        "id": "U3-1",
+        "prompt": "Find (a) the vertex and the minimum or maximum value (state which); (b) all zeros.",
+        "math": [
+          "f(x)=(x + 1)^{2} - 4"
+        ],
+        "rows": [
+          {
+            "label": "(a) Vertex",
+            "answer": "( -1, \\  -4)",
+            "points": 6,
+            "plain": false
+          },
+          {
+            "label": "(a) Minimum",
+            "answer": "-4",
+            "points": 4,
+            "plain": false
+          },
+          {
+            "label": "(b) Zeros",
+            "answer": "x = -3,\\ 1",
+            "points": 10,
+            "plain": false
+          }
+        ]
+      }
+    ],
+    "content_fingerprint": "3d93db34b1391bd1ab4d35bb6e97d2b4fac29504537d9508c962e55f42529d0c",
+    "source_question_versions": {
+      "U3-1": "56952",
+      "U3-2": "51813",
+      "U3-3": "55300",
+      "U3-4": "49407",
+      "U3-5": "23988"
+    },
+    "start": 16,
+    "test_pages": 2,
+    "key_start": 18,
+    "packet_pages": 4,
+    "geometry": [
+      {
+        "question": 1,
+        "page": 0,
+        "top": 660,
+        "bottom": 424.0,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 622.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 622.0,
+            "bottom": 579.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 579.0,
+            "bottom": 543.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 543.0,
+            "bottom": 505.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 505.0,
+            "bottom": 467.0,
+            "label": "(e)",
+            "points": 3
+          },
+          {
+            "top": 467.0,
+            "bottom": 424.0,
+            "label": "(f)",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": 2,
+        "page": 0,
+        "top": 424.0,
+        "bottom": 196.0,
+        "rows": [
+          {
+            "top": 424.0,
+            "bottom": 386.0,
+            "label": "(a)",
+            "points": 4
+          },
+          {
+            "top": 386.0,
+            "bottom": 348.0,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 348.0,
+            "bottom": 310.0,
+            "label": "(c)",
+            "points": 3
+          },
+          {
+            "top": 310.0,
+            "bottom": 272.0,
+            "label": "(d)",
+            "points": 3
+          },
+          {
+            "top": 272.0,
+            "bottom": 234.0,
+            "label": "(e)",
+            "points": 4
+          },
+          {
+            "top": 234.0,
+            "bottom": 196.0,
+            "label": "(f)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 3,
+        "page": 0,
+        "top": 196.0,
+        "bottom": 146.7,
+        "rows": [
+          {
+            "top": 196.0,
+            "bottom": 146.7,
+            "label": "",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "question": 4,
+        "page": 1,
+        "top": 660,
+        "bottom": 493.475,
+        "rows": [
+          {
+            "top": 660,
+            "bottom": 603.825,
+            "label": "(a)",
+            "points": 16
+          },
+          {
+            "top": 603.825,
+            "bottom": 548.6500000000001,
+            "label": "(b)",
+            "points": 2
+          },
+          {
+            "top": 548.6500000000001,
+            "bottom": 493.4750000000001,
+            "label": "(c)",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "question": 5,
+        "page": 1,
+        "top": 493.475,
+        "bottom": 383.475,
+        "rows": [
+          {
+            "top": 493.475,
+            "bottom": 455.475,
+            "label": "(a)",
+            "points": 6
+          },
+          {
+            "top": 455.475,
+            "bottom": 420.475,
+            "label": "(b)",
+            "points": 4
+          },
+          {
+            "top": 420.475,
+            "bottom": 383.475,
+            "label": "(c)",
+            "points": 10
+          }
+        ]
+      }
+    ]
+  }
+]

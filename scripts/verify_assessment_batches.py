@@ -5,6 +5,7 @@ from pathlib import Path
 from collections import Counter
 import fitz
 from PIL import Image,ImageOps,ImageDraw
+from tsm_final_order import official_order
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'_instructor/assessments/2026-10-30'
 QA=ROOT/'tmp/assessment-qa'
@@ -27,11 +28,12 @@ def rules(page,left,right):
     RULES[cachekey]=sorted(result)
     return RULES[cachekey]
 
-def audit(entry,render,expected_versions=20):
+def audit(entry,render,expected_versions=20,official_finals=True):
     WORDS.clear();DRAWINGS.clear();RULES.clear()
     path=OUT/entry['file'];records=json.loads(path.with_suffix('.json').read_text());doc=fitz.open(path)
     assert len(records)==entry['versions']==expected_versions,(path,'version count')
     assert len(doc)==entry['pages']
+    order=official_order(entry['assessment']) if official_finals else None
     ident=set();student_pages=Counter();thumbnails=[];blanks=0
     for r in records:
         version=r['version'];assert re.fullmatch(r'[1-9]\d{4}',version)
@@ -39,6 +41,8 @@ def audit(entry,render,expected_versions=20):
         assert start%2==key%2==0 and r['packet_pages']%2==0
         assert key==start+n+n%2
         qs=r['questions'];assert len(qs)==(10 if entry['course']=='MSC 201' or entry['assessment'].endswith(('final','diagnostic')) else 5)
+        if order is not None:
+            assert [q['id'] for q in qs]==order,(path,version,'official final question order')
         if entry['course']=='MSC 201':
             assert all(len(q['choices'])==4 and 0<=q['answer_index']<=3 and len(set(q['choices']))==4 for q in qs)
             if 'unit-' in entry['assessment']:assert len({q['group'] for q in qs})==10

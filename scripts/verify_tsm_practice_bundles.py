@@ -90,7 +90,7 @@ def main():
     QA.mkdir(parents=True,exist_ok=True);V.OUT=OUT;V.QA=QA
     report=[]
     for entry in manifest:
-        result=V.audit(entry,args.render,5)
+        result=V.audit(entry,args.render,5,official_finals=False)
         records=json.loads((OUT/entry['file']).with_suffix('.json').read_text())
         pdf=fitz.open(OUT/entry['file'])
         top=[z for z in pdf.get_toc() if z[0]==1]
