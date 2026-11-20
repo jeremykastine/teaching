@@ -91,6 +91,38 @@ def write_index(course, manifest):
 
 def block(label,q,a,id=''):
  return f'<section class="worked-example" id="{id}"><div class="problem-statement"><h3>{label}</h3>{q}</div><div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff">{a}</div></section>'
+
+def math101_polynomial_scope(page):
+ """Apply the course scope while preserving the licensed textbook snapshot."""
+ for section_id in ['fs-id1165135533136', 'fs-id1165135177650']:
+  page.find(id=section_id).decompose()
+ for objective in page.select('[data-type="abstract"] li'):
+  if re.search(r'Remainder Theorem|Descartes', objective.get_text()):
+   objective.decompose()
+ intro=page.find(id='fs-id1165137459796')
+ intro.string=('The Factor Theorem connects the zeros of a polynomial to its linear factors. '
+               'Recall the polynomial division identity:')
+ intro=page.find(id='fs-id1165137660817')
+ intro.string=('To test whether a rational number is a zero, substitute it into the polynomial '
+               'and check whether the output is zero. The Rational Zero Theorem narrows the '
+               'candidates to ratios of factors of the constant term and the leading coefficient.')
+ steps=page.find(id='fs-id1165135400178').find_all('li', recursive=False)
+ steps[1].string=('Substitute a candidate into the polynomial. If the output is zero, the Factor '
+                  'Theorem identifies a linear factor. Divide by that factor to reduce the degree. '
+                  'If the output is not zero, try another candidate.')
+ steps[2].string='Repeat with the quotient until it is quadratic or can be factored directly.'
+ for paragraph_id, replacement in [
+  ('fs-id1165135501059', 'Substitution gives f(1) = 4 − 3 − 1 = 0, so x − 1 is a factor. Divide by x − 1 to obtain the remaining quadratic.'),
+  ('fs-id1165134212112', 'Substitution gives f(−3) = −81 + 81 − 3 + 3 = 0, so x + 3 is a factor. Divide by x + 3 to obtain the remaining quadratic.')]:
+  paragraph=page.find(id=paragraph_id)
+  for text in list(paragraph.find_all(string=True)):
+   if 'We will use synthetic division to evaluate' in text:
+    text.replace_with(re.sub(r'We will use synthetic division to evaluate.*', replacement, str(text), flags=re.S))
+ paragraph=page.find(id='fs-id1165134070008')
+ for text in list(paragraph.find_all(string=True)):
+  if "Descartes' rule of signs" in text:
+   text.replace_with(str(text).replace("Descartes' rule of signs tells us there is one positive solution. ", ''))
+
 def convert(c,m):
  if c=='stats' and m['number']=='4.2':
   return (ROOT/'stats/notes-source/section-4-2.html').read_text()
@@ -102,6 +134,7 @@ def convert(c,m):
  if c=='101' and n=='2.4':
   return '<h2>The imaginary unit and standard form</h2><p>The imaginary unit satisfies i² = −1. For a positive real number a, √(−a) = i√a. A complex number has the form a + bi; a is its real part and b is its imaginary part. This course limits Section 2.4 to these ideas.</p>'+ex('Example 1 · Identify the parts','<p>Write √(−9) and 5 + √(−16) in standard form and identify their real and imaginary parts.</p>','<p>√(−9) = 3i = 0 + 3i: real part 0, imaginary part 3. The second number is 5 + 4i: real part 5, imaginary part 4.</p>')+ex('Try It 1 · Standard form','<p>Write √(−24) in standard form. Identify its real and imaginary parts.</p>','<p>√(−24) = i√(4·6) = 2i√6 = 0 + (2√6)i; real part 0 and imaginary part 2√6.</p>')+ex('Additional practice · Nonperfect squares','<p>Simplify √(−12), −√(−18), and 2 + √(−32).</p>','<p>√(−12) = i√(4·3) = 2i√3. Next, −√(−18) = −3i√2. Finally, 2 + √(−32) = 2 + 4i√2.</p>')+ex('Additional practice · A root versus an equation','<p>Evaluate √(−36). Then solve x² = −36. Explain why the answers differ.</p>','<p>The principal square root is √(−36) = 6i. The equation has two solutions, x = ±6i, because both (6i)² and (−6i)² equal −36.</p>')
  for x in page.select('[data-type="document-title"],.os-section-exercises-container'):x.decompose()
+ if c=='101' and n=='5.5':math101_polynomial_scope(page)
  keys={}
  if c=='101':
   key=soup((ROOT/c/'notes-source/textbook'/('key-'+n.split('.')[0]+'.html')).read_text())

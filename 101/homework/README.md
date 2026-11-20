@@ -4,6 +4,8 @@ These are homework assignments, not ten-question exams. The approved Chapter 1 P
 
 Priorities come from `course-schedule.md`, `final-exam-specifications.md`, the chapter coverage notes in `docs/`, and the instructor's October 12, 2026 request. Emphasize skills reused later, exact answers, clear grouping, domains, complete solution sets, and checking. Use a basic four-function calculator only if needed. Retain polynomial long division before quadratic-formula zeros, graph-based transformations, holes versus asymptotes, inverse branches, useful logarithm properties, and line/parabola and line/circle systems. Preliminary equation skills get representative practice without displacing the function-centered emphasis.
 
+Descartes' Rule of Signs and using the Remainder Theorem to evaluate polynomials are outside the course scope. Do not assign them. Use direct substitution when testing candidate zeros and the Factor Theorem when connecting zeros to linear factors.
+
 ## Format and workload
 
 Match the approved Math 101 Chapter 1 approach: compact US Letter PDFs with no reserved working space or separate answer sheets. Students complete and show all work on separate paper, check and correct it, complete the Blackboard self-evaluation, upload one clear photo of their best representative page, and retain all work. Each set targets roughly 45-50 minutes of problem work plus 10-15 minutes of checking and submission. Times are planning estimates, not deadlines or measured student completion times. No points or test grading structure are imposed.

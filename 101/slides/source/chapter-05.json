@@ -549,18 +549,6 @@
     "slug": "5-5-zeros-of-polynomial-functions",
     "slides": [
       {
-        "title": "Remainder Theorem",
-        "body": "Dividing a polynomial f(x) by x - k leaves remainder f(k).",
-        "math": "f(x)=x^3-4x+1",
-        "question": "What is the remainder when f(x) is divided by x - 2?"
-      },
-      {
-        "title": "A negative test value",
-        "body": "",
-        "math": "f(x)=2x^3+x^2-5",
-        "question": "What is the remainder when dividing f(x) by x + 1?"
-      },
-      {
         "title": "Factor Theorem",
         "body": "For a polynomial f, x - k is a factor exactly when f(k) = 0.",
         "math": "f(x)=x^3-2x^2-5x+6",
@@ -661,18 +649,6 @@
         "body": "Find a monic quadratic with real coefficients and zero 1 + 2i.",
         "math": "",
         "question": "What is the quadratic in expanded form?"
-      },
-      {
-        "title": "Descartes' Rule of Signs",
-        "body": "The number of positive real zeros, counting multiplicity, equals the sign changes in f(x) or is less by an even number.",
-        "math": "f(x)=x^4-3x^3+2x^2+x-5",
-        "question": "What positive-zero counts are possible?"
-      },
-      {
-        "title": "Possible negative zeros",
-        "body": "Apply Descartes' Rule of Signs to f(-x).",
-        "math": "f(x)=x^3+2x^2-5x-6",
-        "question": "What negative-zero counts are possible?"
       },
       {
         "title": "Using a graph to guide a test",

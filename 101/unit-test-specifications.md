@@ -226,7 +226,7 @@ Give f(x)=a sqrt(x-h)+k, with small a≠0 and values chosen for simple exact int
 
 Do not describe a limit through inputs outside the domain. No numerical plotting table or extra radical equation. Inverse-function understanding from 3.7 is reinforced by an optional replacement for part (b): find the inverse formula (4 points) and its domain (2 points), retaining the same 6-point weight and five-minute workload. For this replacement, explicitly ask for the inverse and use a simple nonzero a; preserve the original range restriction in the inverse domain. Use the same variant across a matched set, and default to intercepts to align with the final.
 
-**Coverage boundary:** Nonreal zeros, Descartes' Rule, IVT, and other chapter terminology remain instructional material; do not silently add standalone questions for them. The five families deliberately prioritize the final's selected constructs. This does not remove those sections from instruction.
+**Coverage boundary:** Descartes' Rule of Signs and using the Remainder Theorem to evaluate polynomials are excluded from instruction, homework, and all assessments. Use direct substitution to test candidate zeros and the Factor Theorem to connect zeros with linear factors. Nonreal zeros, IVT, and other chapter terminology remain instructional material; do not silently add standalone questions for them. The five families deliberately prioritize the final's selected constructs.
 
 ## 6. Unit 4 — Exponential and Logarithmic Functions; Systems
 

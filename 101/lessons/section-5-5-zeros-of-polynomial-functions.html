@@ -1,261 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>5.5: Zeros of Polynomial Functions | College Algebra Lecture Notes</title><link rel="stylesheet" href="../../tsm/styles.css"><link rel="stylesheet" href="../../stats/lecture-notes.css"><script defer src="../../tsm/solutions.js"></script></head><body><main class="lecture-notes"><nav class="topic-nav" aria-label="Lesson navigation"><a href="../essentials/section-5-5-zeros-of-polynomial-functions.html">Essentials review</a><a href="../lecture-notes.html">Table of contents</a><a href="section-5-4-dividing-polynomials.html">Previous: 5.4</a><a href="section-5-6-rational-functions.html">Next: 5.6</a><a href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions">Textbook section</a></nav><p class="series-title">College Algebra Lecture Notes · OpenStax</p><h1>5.5: Zeros of Polynomial Functions</h1><p class="solution-instructions">Double-click or double-tap a blank solution area to show or hide the answer. With a keyboard, focus the area and press Enter or Space.</p><p class="source-note">Follow the textbook’s sequence below. Historical datasets and supplied models are classroom exercises. Solutions may be concise; use the preceding worked problem as a method guide.</p><div class="ui-has-child-title" data-type="abstract"><header><h3 data-type="title">Learning Objectives</h3></header><section><p id="para-00001">In this section, you will:</p><ul id="list-00001">
-<li>Evaluate a polynomial using the Remainder Theorem.</li>
 <li>Use the Factor Theorem to solve a polynomial equation.</li>
 <li>Use the Rational Zero Theorem to find rational zeros.</li>
 <li>Find zeros of a polynomial function.</li>
 <li>Use the Linear Factorization Theorem to find polynomials with given zeros.</li>
-<li>Use Descartes’ Rule of Signs.</li>
 <li>Solve real-world applications of polynomial equations</li>
 </ul></section></div>
-<p id="fs-id1165137758829">A new bakery offers decorated, multi-tiered cakes for display and cutting at Quinceañera and wedding celebrations, as well as sheet cakes to serve most of the guests. The bakery wants the volume of a small sheet cake to be 351 cubic inches. The cake is in the shape of a rectangular solid. They want the length of the cake to be four inches longer than the width of the cake and the height of the cake to be one-third of the width. What should the dimensions of the cake pan be?</p><p id="eip-151">This problem can be solved by writing a cubic function and solving a cubic equation for the volume of the cake. In this section, we will discuss a variety of tools for writing polynomial functions and solving polynomial equations.</p><section data-depth="1" id="fs-id1165135533136"><h3 data-type="title">Evaluating a Polynomial Using the Remainder Theorem</h3>
-<p id="fs-id1165135471230">In the last section, we learned how to divide polynomials. We can now use polynomial division to evaluate polynomials using the <span data-type="term" group-by="R" id="term-00006">Remainder Theorem</span>. If the polynomial is divided by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>x</mi><mo>–</mo><mi>k</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> the remainder may be found quickly by evaluating the polynomial function at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>k</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> that is, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mrow><mo>(</mo>
-<mi>k</mi>
-<mo>)</mo></mrow></mrow>
-</mrow></semantics></math></span></span> Let’s walk through the proof of the theorem.</p><p id="fs-id1165134085965">Recall that the <span class="no-emphasis" data-type="term" group-by="D" id="term-00007">Division Algorithm</span> states that, given a polynomial dividend <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> and a non-zero polynomial divisor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span>, there exist unique polynomials <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> such that</p><div class="unnumbered" data-label="" data-type="equation" id="eip-753"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span>
-</div><p id="fs-id1165134094600">and either <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow>
-</mrow></semantics></math></span></span> or the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> is less than the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span>. In practice divisors, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> will have degrees less than or equal to the degree of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span>. If the divisor, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> is <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> this takes the form</p><div class="unnumbered" data-label="" data-type="equation" id="eip-567"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow>
-</mrow></semantics></math></span>
-</div><p id="fs-id1165137447771">Since the divisor <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>x</mi><mo>−</mo><mi>k</mi></mrow>
-</mrow></semantics></math></span></span> is linear, the remainder will be a constant, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>r</mi><mo>.</mo></mrow>
-</mrow></semantics></math></span></span> And, if we evaluate this for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>=</mo><mi>k</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> we have</p>
-<div class="unnumbered" data-label="" data-type="equation" id="eip-791">
-<span class="math-scroll display-math"><math display="block"><semantics><mrow>
-<mrow>
-<mtable>
-<mtr rowalign="center">
-<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left"><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow></mtd>
-</mtr>
-<mtr rowalign="center">
-<mtd rowalign="center"></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left" rowalign="center"><mrow><mn>0</mn><mo>⋅</mo><mi>q</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow></mtd>
-</mtr>
-<mtr rowalign="center">
-<mtd rowalign="center"></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left" rowalign="center"><mi>r</mi></mtd>
-</mtr>
-</mtable></mrow>
-</mrow></semantics></math></span>
-</div><p id="fs-id1165135572088">In other words, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> is the remainder obtained by dividing <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>.</mo></mrow>
-</mrow></semantics></math></span></span>
-</p><div class="ui-has-child-title" data-type="note" id="fs-id1165134042705"><header><h3 class="os-title" data-type="title">
-<span class="os-title-label" data-type="">The Remainder Theorem</span>
-</h3></header><section>
-<div class="os-note-body">
-<p id="fs-id1165137725230">If a polynomial <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> is divided by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> then the remainder is the value <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
-</mrow></semantics></math></span></span>
-</p></div></section></div>
-<div class="how-to-notitle ui-has-child-title" data-has-label="true" data-label="How To" data-type="note" id="fs-id1165137823272"><header><h3 class="os-title" data-label-parent="How To" data-type="title">
-<span class="os-title-label">How To</span>
-</h3></header><section>
-<div class="os-note-body">
-<p id="fs-id1165134130150"><strong>Given a polynomial function <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo>,</mo></mrow>
-</mrow></semantics></math></span></span> evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mrow><mo>(</mo>
-<mi>x</mi>
-<mo>)</mo></mrow></mrow>
-</mrow></semantics></math></span></span> at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>=</mo><mi>k</mi></mrow>
-</mrow></semantics></math></span></span> using the Remainder Theorem.</strong></p><ol id="fs-id1165137870981" type="1">
-<li>Use synthetic division to divide the polynomial by <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>x</mi><mo>−</mo><mi>k</mi><mo>.</mo></mrow>
-</mrow></semantics></math></span>
-</li>
-<li>The remainder is the value <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
-</mrow></semantics></math></span>
-</li>
-</ol>
-</div></section></div>
-<section class="worked-example" id="Example_03_06_01"><div class="problem-statement"><h3>Problem 1</h3><section>
-<div class="body">
-<div class="unnumbered" data-type="exercise" id="fs-id1165135199549"><header></header><section><div data-type="problem" id="fs-id1165137727226"><div class="os-problem-container"><h4 data-type="title">Using the Remainder Theorem to Evaluate a Polynomial</h4>
-<p id="fs-id1165137855032">Use the Remainder Theorem to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>−</mo><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>−</mo><mn>15</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>7</mn></mrow>
-</mrow></semantics></math></span></span>
-      at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>x</mi><mo>=</mo><mn>2.</mn></mrow>
-</mrow></semantics></math></span></span>
-</p>
-</div></div>
-<div data-type="commentary" id="fs-id1165137627424"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
-<p id="fs-id1165135397290">We can check our answer by evaluating <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow>
-</mrow></semantics></math></span></span>
-</p>
-<div class="unnumbered" data-label="" data-type="equation" id="eip-id1165133308313">
-<span class="math-scroll display-math"><math display="block"><semantics><mrow>
-<mrow>
-<mtable>
-<mtr rowalign="center">
-<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left" rowalign="center">
-<mrow>
-<mn>6</mn><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>−</mo><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>−</mo><mn>15</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>7</mn></mrow>
-</mtd>
-</mtr>
-<mtr rowalign="center">
-<mtd columnalign="right" rowalign="center"><mrow><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left" rowalign="center">
-<mrow>
-<mn>6</mn><msup>
-<mrow>
-<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
-<mn>4</mn>
-</msup>
-<mo>−</mo><msup>
-<mrow>
-<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
-<mn>3</mn>
-</msup>
-<mo>−</mo><mn>15</mn><msup>
-<mrow>
-<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow>
-<mn>2</mn>
-</msup>
-<mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn></mrow>
-</mtd>
-</mtr>
-<mtr rowalign="center">
-<mtd rowalign="center"></mtd>
-<mtd rowalign="center"><mo>=</mo></mtd>
-<mtd columnalign="left" rowalign="center"><mrow><mn>25</mn></mrow></mtd>
-</mtr>
-</mtable></mrow>
-</mrow></semantics></math></span>
-</div></div>
-</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
-<p id="fs-id1165137771250">To find the remainder using the Remainder Theorem, use synthetic division to divide the polynomial by <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>x</mi><mo>−</mo><mn>2.</mn></mrow>
-</mrow></semantics></math></span></span>
-</p>
-<span data-alt="An image showing a synthetic division problem with 2 as the divisor and the polynomial coefficients 6, -1, -15, 2, -7. The intermediate steps are shown, leading to the quotient coefficients 6, 11, 7, 16 and a remainder of 25." data-display="block" data-type="media" id="fs-id2085138">
-<img alt="An image showing a synthetic division problem with 2 as the divisor and the polynomial coefficients 6, -1, -15, 2, -7. The intermediate steps are shown, leading to the quotient coefficients 6, 11, 7, 16 and a remainder of 25." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/3a2dc1d526f65fed7c214e5ceb68e9193e22ef82" loading="lazy" src="../../notes-assets/e8ee97c08577c8ce5eb7.svg"/>
-</span>
-<p id="fs-id1165137932598">The remainder is 25. Therefore, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>25.</mn></mrow>
-</mrow></semantics></math></span></span>
-</p>
-</div></section>
-<section class="worked-example" id="fs-id1165137580304"><div class="problem-statement"><h3>Problem 2</h3><section>
-<div class="os-note-body">
-<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_01"><header></header><section>
-<div data-type="problem" id="fs-id1165137566913"><div class="os-problem-container"><p id="fs-id1165137892503">Use the Remainder Theorem to evaluate <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
-<mi>x</mi>
-<mn>5</mn>
-</msup>
-<mo>−</mo><mn>3</mn><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>−</mo><mn>9</mn><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>+</mo><mn>8</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>+</mo><mn>2</mn></mrow>
-</mrow></semantics></math></span></span>
-     at <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>x</mi><mo>=</mo><mo>−</mo><mn>3.</mn></mrow>
-</mrow></semantics></math></span></span>
-</p></div></div>
-</section></div>
-</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135531579"> <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>412</mn></mrow>
-</mrow></semantics></math></span></span>
-</p></div></section>
-</section>
+<p id="fs-id1165137758829">A new bakery offers decorated, multi-tiered cakes for display and cutting at Quinceañera and wedding celebrations, as well as sheet cakes to serve most of the guests. The bakery wants the volume of a small sheet cake to be 351 cubic inches. The cake is in the shape of a rectangular solid. They want the length of the cake to be four inches longer than the width of the cake and the height of the cake to be one-third of the width. What should the dimensions of the cake pan be?</p><p id="eip-151">This problem can be solved by writing a cubic function and solving a cubic equation for the volume of the cake. In this section, we will discuss a variety of tools for writing polynomial functions and solving polynomial equations.</p>
 <section data-depth="1" id="fs-id1165137894544"><h3 data-type="title">Using the Factor Theorem to Solve a Polynomial Equation</h3>
-<p id="fs-id1165137459796">The <strong>Factor Theorem </strong>is another theorem that helps us analyze polynomial equations. It tells us how the zeros of a polynomial are related to the factors. Recall that the Division Algorithm.</p><div class="unnumbered" data-label="" data-type="equation" id="eip-10"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
+<p id="fs-id1165137459796">The Factor Theorem connects the zeros of a polynomial to its linear factors. Recall the polynomial division identity:</p><div class="unnumbered" data-label="" data-type="equation" id="eip-10"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
 <mrow>
 <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mi>q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>r</mi></mrow>
 </mrow></semantics></math></span>
@@ -353,7 +105,7 @@
 <li>If possible, factor the quadratic.</li>
 <li>Write the polynomial as the product of factors.</li>
 </ol></div></section></div>
-<section class="worked-example" id="Example_03_06_02"><div class="problem-statement"><h3>Problem 3</h3><section>
+<section class="worked-example" id="Example_03_06_02"><div class="problem-statement"><h3>Example 2</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165134273636"><header></header><section><div data-type="problem" id="fs-id1165134273638"><div class="os-problem-container"><h4 data-type="title">Using the Factor Theorem to Find the Zeros of a Polynomial Expression</h4>
 <p id="fs-id1165134198723">Show that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -410,7 +162,7 @@
 </msup>
 <mo>−</mo><mi>x</mi><mo>+</mo><mn>30</mn></mrow>
 </mrow></semantics></math></span></span> are –2, 3, and 5.</p></div></section>
-<section class="worked-example" id="fs-id1165137538735"><div class="problem-statement"><h3>Problem 4</h3><section>
+<section class="worked-example" id="fs-id1165137538735"><div class="problem-statement"><h3>Try It #2</h3><section>
 <div class="os-note-body">
 <div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_02"><header></header><section>
 <div data-type="problem" id="fs-id1165137476731"><div class="os-problem-container"><p id="fs-id1165134569514">Use the Factor Theorem to find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -432,7 +184,7 @@
 </section></div>
 </div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165137470625">The zeros are 2, –2, and –4.</p></div></section>
 </section>
-<section data-depth="1" id="fs-id1165134152972"><h3 data-type="title">Using the Rational Zero Theorem to Find Rational Zeros</h3><p id="fs-id1165137660817">Another use for the Remainder Theorem is to test whether a rational number is a zero for a given polynomial. But first we need a pool of rational numbers to test. The <span data-type="term" group-by="R" id="term-00010">Rational Zero Theorem</span> helps us to narrow down the number of possible rational zeros using the ratio of the factors of the constant term and factors of the leading <span class="no-emphasis" data-type="term" group-by="c" id="term-00011">coefficient</span> of the polynomial</p>
+<section data-depth="1" id="fs-id1165134152972"><h3 data-type="title">Using the Rational Zero Theorem to Find Rational Zeros</h3><p id="fs-id1165137660817">To test whether a rational number is a zero, substitute it into the polynomial and check whether the output is zero. The Rational Zero Theorem narrows the candidates to ratios of factors of the constant term and the leading coefficient.</p>
 <p id="fs-id1165135508309">Consider a quadratic function with two zeros, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
 <mrow>
 <mi>x</mi><mo>=</mo><mfrac>
@@ -543,7 +295,7 @@
 <mo stretchy="false">)</mo><mo>.</mo></mrow>
 </mrow></semantics></math></span>
 </li></ol>
-</div></section></div><section class="worked-example" id="Example_03_06_03"><div class="problem-statement"><h3>Problem 5</h3><section>
+</div></section></div><section class="worked-example" id="Example_03_06_03"><div class="problem-statement"><h3>Example 3</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165135319520"><header></header><section><div data-type="problem" id="fs-id1165135319523"><div class="os-problem-container"><h4 data-type="title">Listing All Possible Rational Zeros</h4>
 <p id="fs-id1165135640968">List all possible rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -671,7 +423,7 @@
 </mfrac>
 </mrow>
 </mrow></semantics></math></span> </div></div></section>
-<section class="worked-example" id="Example_03_06_04"><div class="problem-statement"><h3>Problem 6</h3><section>
+<section class="worked-example" id="Example_03_06_04"><div class="problem-statement"><h3>Example 4</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165137611543"><header></header><section><div data-type="problem" id="fs-id1165137611546"><div class="os-problem-container"><h4 data-type="title">Using the Rational Zero Theorem to Find Rational Zeros</h4>
 <p id="fs-id1165137459844">Use the Rational Zero Theorem to find the rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -919,7 +671,7 @@
 <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>.</mo></mrow>
 </mrow></semantics></math></span></span>
 </p></div></section>
-<section class="worked-example" id="fs-id1165137862894"><div class="problem-statement"><h3>Problem 7</h3><section>
+<section class="worked-example" id="fs-id1165137862894"><div class="problem-statement"><h3>Try It #3</h3><section>
 <div class="os-note-body">
 <div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_03"><header></header><section>
 <div data-type="problem" id="fs-id1165134198688"><div class="os-problem-container"><p id="fs-id1165134198689">Use the Rational Zero Theorem to find the rational zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -945,12 +697,12 @@
 <mrow><mi>f</mi><mo>,</mo></mrow>
 </mrow></semantics></math></span></span> use synthetic division to find its zeros.</strong></p><ol id="fs-id1165135400178" type="1">
 <li>Use the Rational Zero Theorem to list all possible rational zeros of the function.</li>
-<li>Use synthetic division to evaluate a given possible zero by synthetically dividing the candidate into the polynomial. If the remainder is 0, the candidate is a zero. If the remainder is not zero, discard the candidate.</li>
-<li>Repeat step two using the quotient found with synthetic division. If possible, continue until the quotient is a quadratic.</li>
+<li>Substitute a candidate into the polynomial. If the output is zero, the Factor Theorem identifies a linear factor. Divide by that factor to reduce the degree. If the output is not zero, try another candidate.</li>
+<li>Repeat with the quotient until it is quadratic or can be factored directly.</li>
 <li>Find the zeros of the quadratic function. Two possible methods for solving quadratics are factoring and using the quadratic formula.</li>
 </ol>
 </div></section></div>
-<section class="worked-example" id="Example_03_06_05"><div class="problem-statement"><h3>Problem 8</h3><section>
+<section class="worked-example" id="Example_03_06_05"><div class="problem-statement"><h3>Example 5</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165137761977"><header></header><section><div data-type="problem" id="fs-id1165134198663"><div class="os-problem-container"><h4 data-type="title">Finding the Zeros of a Polynomial Function with Repeated Real Zeros</h4>
 <p id="fs-id1165134198668">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -1089,7 +841,7 @@
 </mfrac>
 <mo>.</mo></mrow>
 </mrow></semantics></math></span></span>
-      These are the possible rational zeros for the function. We will use synthetic division to evaluate each possible zero until we find one that gives a remainder of 0. Let’s begin with 1.</p>
+      These are the possible rational zeros for the function. Substitution gives f(1) = 4 − 3 − 1 = 0, so x − 1 is a factor. Divide by x − 1 to obtain the remaining quadratic.</p>
 <span data-alt="A synthetic division problem is displayed, showing the division of a polynomial with coefficients 4, 0, -3, -1 by (x-1), yielding a quotient with coefficients 4, 4, 1 and a remainder of 0." data-type="media" id="fs-id1164451031904">
 <img alt="A synthetic division problem is displayed, showing the division of a polynomial with coefficients 4, 0, -3, -1 by (x-1), yielding a quotient with coefficients 4, 4, 1 and a remainder of 0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/96b053c41bec8626d2e4b6118303c3f6fc5b367f" loading="lazy" src="../../notes-assets/6203a25f18da9db85eab.svg"/>
 </span>
@@ -1248,7 +1000,7 @@
 </h3></header><section>
 <div class="os-note-body">
 <p id="fs-id1165135481208"><strong>Does every polynomial have at least one imaginary zero?</strong></p><p id="fs-id1165137883746"><em data-effect="italics">No. Real numbers are a subset of complex numbers, but not the other way around. A complex number is not necessarily imaginary. Real numbers are also complex numbers.</em></p></div></section></div>
-<section class="worked-example" id="Example_03_06_06"><div class="problem-statement"><h3>Problem 9</h3><section>
+<section class="worked-example" id="Example_03_06_06"><div class="problem-statement"><h3>Example 6</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165135658206"><header></header><section><div data-type="problem" id="fs-id1165135658208"><div class="os-problem-container"><h4 data-type="title">Finding the Zeros of a Polynomial Function with Complex Zeros</h4>
 <p id="fs-id1165135658213">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -1364,7 +1116,7 @@
 <mn>3</mn>
 </mfrac>
 <mo>.</mo></mrow>
-</mrow></semantics></math></span></span> We will use synthetic division to evaluate each possible zero until we find one that gives a remainder of 0. Let’s begin with –3.</p>
+</mrow></semantics></math></span></span> Substitution gives f(−3) = −81 + 81 − 3 + 3 = 0, so x + 3 is a factor. Divide by x + 3 to obtain the remaining quadratic.</p>
 <span data-alt="An image demonstrating the process of synthetic division with a divisor of -3 and dividend coefficients of 3, 9, 1, and 3. The result shows quotient coefficients of 3, 0, 1, and a remainder of 0." data-type="media" id="fs-id1164451006413">
 <img alt="An image demonstrating the process of synthetic division with a divisor of -3 and dividend coefficients of 3, 9, 1, and 3. The result shows quotient coefficients of 3, 0, 1, and a remainder of 0." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/9728d3c04a778783574513ddf3a77e4d30aae9b8" loading="lazy" src="../../notes-assets/a26f5d4f7d41ee3b69f3.svg"/>
 </span>
@@ -1461,7 +1213,7 @@
 </mrow></semantics></math></span></span>
 </p>
 </div></section>
-<section class="worked-example" id="fs-id1165133065163"><div class="problem-statement"><h3>Problem 10</h3><section>
+<section class="worked-example" id="fs-id1165133065163"><div class="problem-statement"><h3>Try It #4</h3><section>
 <div class="os-note-body">
 <div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_04"><header></header><section>
 <div data-type="problem" id="fs-id1165135538761"><div class="os-problem-container"><p id="fs-id1165135538762">Find the zeros of <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -1583,7 +1335,7 @@
 </mrow></semantics></math></span> into the function to determine the leading coefficient.</li>
 <li>Simplify.</li>
 </ol></div></section></div>
-<section class="worked-example" id="Example_03_06_07"><div class="problem-statement"><h3>Problem 11</h3><section>
+<section class="worked-example" id="Example_03_06_07"><div class="problem-statement"><h3>Example 7</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165137737023"><header></header><section><div data-type="problem" id="fs-id1165137737025"><div class="os-problem-container"><h4 data-type="title">Using the Linear Factorization Theorem to Find a Polynomial with Given Zeros</h4>
 <p id="fs-id1165134151154">Find a fourth degree polynomial with real coefficients that has zeros of –3, 2, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -1803,7 +1555,7 @@
 </mrow></semantics></math></span></span>
     also need to be a zero?</strong></p><p id="fs-id1165134170187"><em data-effect="italics">Yes. When any complex number with an imaginary component is given as a zero of a polynomial with real coefficients, the conjugate must also be a zero of the polynomial.</em></p>
 </div></section></div>
-<section class="worked-example" id="fs-id1165134170196"><div class="problem-statement"><h3>Problem 12</h3><section>
+<section class="worked-example" id="fs-id1165134170196"><div class="problem-statement"><h3>Try It #5</h3><section>
 <div class="os-note-body">
 <div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_05"><header></header><section>
 <div data-type="problem" id="fs-id1165134130176"><div class="os-problem-container"><p id="fs-id1165134130177">Find a third degree polynomial with real coefficients that has zeros of 5 and <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
@@ -1836,252 +1588,9 @@
 </mrow></semantics></math></span></span>
 </p></div></section>
 </section>
-<section data-depth="1" id="fs-id1165135177650"><h3 data-type="title">Using Descartes’ Rule of Signs</h3><p id="fs-id1165135177655">There is a straightforward way to determine the possible numbers of positive and negative real zeros for any polynomial function. If the polynomial is written in descending order,<strong> Descartes’ Rule of Signs</strong> tells us of a relationship between the number of sign changes in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> and the number of positive real zeros. For example, the polynomial function below has one sign change.</p>
-<span data-alt="The function, f(x)=x^4+x^3+x^2+x-1, has one sign change between x and -1.`" data-display="block" data-type="media" id="fs-id1165134378690">
-<img alt="The function, f(x)=x^4+x^3+x^2+x-1, has one sign change between x and -1.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/091b2d6b486be3d41b3695544dfdd3cf6d09c97b" loading="lazy" src="../../notes-assets/b9b1194001c8a3afae5f.svg"/>
-</span>
-<p id="fs-id1165135206081">This tells us that the function must have 1 positive real zero.</p>
-<p id="fs-id1165135206084">There is a similar relationship between the number of sign changes in <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> and the number of negative real zeros.</p><span data-alt="The function, f(-x)=(-x)^4+(-x)^3+(-x)^2+(-x)-1=+ x^4-x^3+x^2-x-1, has three sign changes between x^4 and x^3, x^3 and x^2, and x^2 and x.`" data-display="block" data-type="media" id="fs-id1165135152070">
-<img alt="The function, f(-x)=(-x)^4+(-x)^3+(-x)^2+(-x)-1=+ x^4-x^3+x^2-x-1, has three sign changes between x^4 and x^3, x^3 and x^2, and x^2 and x.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/3dc71e35741d82539bfd3dd48ae16c450899ac10" loading="lazy" src="../../notes-assets/cdf74c50108e9d178d86.svg"/>
-</span>
-<p id="fs-id1165135152083">In this case, <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> has 3 sign changes. This tells us that <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> could have 3 or 1 negative real zeros.</p><div class="ui-has-child-title" data-type="note" id="fs-id1165137844271"><header><h3 class="os-title" data-type="title">
-<span class="os-title-label" data-type="">Descartes’ Rule of Signs</span>
-</h3></header><section>
-<div class="os-note-body">
-<p id="fs-id1165137844280">According to <span data-type="term" group-by="D" id="term-00020">Descartes’ Rule of Signs</span>, if we let <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
-<mi>a</mi>
-<mi>n</mi>
-</msub>
-<msup>
-<mi>x</mi>
-<mi>n</mi>
-</msup>
-<mo>+</mo><msub>
-<mi>a</mi>
-<mrow>
-<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
-</msub>
-<msup>
-<mi>x</mi>
-<mrow>
-<mi>n</mi><mo>−</mo><mn>1</mn></mrow>
-</msup>
-<mo>+</mo><mn>...</mn><mo>+</mo><msub>
-<mi>a</mi>
-<mn>1</mn>
-</msub>
-<mi>x</mi><mo>+</mo><msub>
-<mi>a</mi>
-<mn>0</mn>
-</msub>
-</mrow>
-</mrow></semantics></math></span></span>
-    be a polynomial function with real coefficients:</p>
-<ul id="fs-id1165134351104"><li>The number of positive real zeros is either equal to the number of sign changes of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span> or is less than the number of sign changes by an even integer.</li>
-<li>The number of negative real zeros is either equal to the number of sign changes of <span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span> or is less than the number of sign changes by an even integer.</li>
-</ul></div></section></div>
-<section class="worked-example" id="Example_03_06_08"><div class="problem-statement"><h3>Problem 13</h3><section>
-<div class="body"><div class="unnumbered" data-type="exercise" id="fs-id1165134149118"><header></header><section><div data-type="problem" id="fs-id1165134149120"><div class="os-problem-container"><h4 data-type="title">Using Descartes’ Rule of Signs</h4>
-<p id="fs-id1165134149125">Use Descartes’ Rule of Signs to determine the possible numbers of positive and negative real zeros for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>−</mo><mn>3</mn><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>+</mo><mn>6</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>−</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>12.</mn></mrow>
-</mrow></semantics></math></span></span>
-</p>
-</div></div>
-<div data-type="commentary" id="fs-id1165135628637"><h4 data-type="commentary-title"><span class="os-title-label">Analysis </span></h4>
-<p id="fs-id1165135628642">We can confirm the numbers of positive and negative real roots by examining a graph of the function. See <a aria-label="View Figure 5" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Figure_03_06_007">Figure 5</a>. We can see from the graph that the function has 0 positive real roots and 2 negative real roots.</p><div class="os-figure" id="Figure_03_06_007"><figure class="small ui-has-child-figcaption" data-id="Figure_03_06_007">
-<span data-alt="Graph of f(x)=-x^4-3x^3+6x^2-4x-12 with x-intercepts at -4.42 and -1." data-type="media" id="fs-id1165135628652">
-<img alt="Graph of f(x)=-x^4-3x^3+6x^2-4x-12 with x-intercepts at -4.42 and -1." data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/89af8a9761382e78793c93331fe32ac2fd3c169e" loading="lazy" src="../../notes-assets/1e8838afc5eeaf1890a9.svg"/>
-</span>
-<figcaption class="os-caption-container">
-<span class="os-title-label">Figure </span>
-<span class="os-number">5</span>
-</figcaption></figure></div>
-</div>
-</section></div></div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff">
-<p id="fs-id1165137932381">Begin by determining the number of sign changes.</p>
-<div class="os-figure" id="eip-idm621546272">
-<figure class="ui-has-child-figcaption" data-id="eip-idm621546272">
-<span data-alt="The function, f(x)=-x^4-3x^3+6x^2-4x-12, has two sign change between -3x^3 and 6x^2, and 6x^2 and -4x.`" data-type="media" id="fs-id1165135547276">
-<img alt="The function, f(x)=-x^4-3x^3+6x^2-4x-12, has two sign change between -3x^3 and 6x^2, and 6x^2 and -4x.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/60c3950699892782eefdd1be06740af0657a007a" loading="lazy" src="../../notes-assets/b7d2833d3e50c763b2fb.svg"/>
-</span>
-<figcaption class="os-caption-container">
-<span class="os-title-label">Figure </span>
-<span class="os-number">3</span>
-</figcaption></figure>
-</div>
-<p id="fs-id1165135547290">There are two sign changes, so there are either 2 or 0 positive real roots. Next, we examine <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mrow></semantics></math></span></span> to determine the number of negative real roots.</p>
-<div class="unnumbered" data-label="" data-type="equation" id="eip-id2178145"> <span class="math-scroll display-math"><math display="block"><semantics><mrow>
-<mrow>
-<mtable>
-<mtr>
-<mtd columnalign="right">
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mtd>
-<mtd>
-<mo>=</mo>
-</mtd>
-<mtd columnalign="left">
-<mrow>
-<mo>−</mo><msup>
-<mrow>
-<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-<mn>4</mn>
-</msup>
-<mo>−</mo><mn>3</mn><msup>
-<mrow>
-<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-<mn>3</mn>
-</msup>
-<mo>+</mo><mn>6</mn><msup>
-<mrow>
-<mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-<mn>2</mn>
-</msup>
-<mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn></mrow>
-</mtd>
-</mtr>
-<mtr>
-<mtd columnalign="right">
-<mrow>
-<mi>f</mi><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow>
-</mtd>
-<mtd>
-<mo>=</mo>
-</mtd>
-<mtd columnalign="left">
-<mrow>
-<mo>−</mo><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>+</mo><mn>3</mn><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>+</mo><mn>6</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>12</mn></mrow>
-</mtd>
-</mtr>
-</mtable></mrow>
-</mrow></semantics></math></span>
-</div>
-<div class="os-figure" id="eip-idm408470768">
-<figure class="ui-has-child-figcaption" data-id="eip-idm408470768">
-<span data-alt="The function, f(-x)=-x^4+3x^3+6x^2+4x-12, has two sign change between -x^4 and 3x^3, and 4x and -12.`" data-type="media" id="fs-id1165134234614">
-<img alt="The function, f(-x)=-x^4+3x^3+6x^2+4x-12, has two sign change between -x^4 and 3x^3, and 4x and -12.`" data-media-type="image/jpg" data-original-src="/apps/archive/20260604.144757/resources/f07259b9deeb90b9280394014d79a88409a125fe" loading="lazy" src="../../notes-assets/f754f553286ea9e60560.svg"/>
-</span>
-<figcaption class="os-caption-container">
-<span class="os-title-label">Figure </span>
-<span class="os-number">4</span>
-</figcaption></figure>
-</div>
-<p id="fs-id1165135383099">Again, there are two sign changes, so there are either 2 or 0 negative real roots.</p>
-<p id="fs-id1165135383102">There are four possibilities, as we can see in <a aria-label="View Table 1" class="autogenerated-content" href="https://openstax.org/books/college-algebra-2e/pages/5-5-zeros-of-polynomial-functions#Table_03_06_01">Table 1</a>.</p><div class="os-table" id="Table_03_06_01"><div class="table-scroll"><table data-id="Table_03_06_01" data-summary=".."><colgroup><col data-align="center"/><col data-align="center"/><col data-align="center"/><col data-align="center"/></colgroup><thead>
-<tr>
-<th data-align="center" scope="col">Positive Real
-         Zeros</th>
-<th data-align="center" scope="col">Negative Real
-         Zeros</th>
-<th data-align="center" scope="col">Complex
-         Zeros</th>
-<th data-align="center" scope="col">Total
-         Zeros</th>
-</tr>
-</thead><tbody>
-<tr>
-<td data-align="center">2</td>
-<td data-align="center">2</td>
-<td data-align="center">0</td>
-<td data-align="center">4</td>
-</tr>
-<tr>
-<td data-align="center">2</td>
-<td data-align="center">0</td>
-<td data-align="center">2</td>
-<td data-align="center">4</td>
-</tr>
-<tr>
-<td data-align="center">0</td>
-<td data-align="center">2</td>
-<td data-align="center">2</td>
-<td data-align="center">4</td>
-</tr>
-<tr>
-<td data-align="center">0</td>
-<td data-align="center">0</td>
-<td data-align="center">4</td>
-<td data-align="center">4</td>
-</tr>
-</tbody></table></div><div class="os-caption-container">
-<span class="os-title-label">Table </span>
-<span class="os-number">1</span>
-<span class="os-divider"> </span>
-<span class="os-caption">
-<span data-type="title">
-<!-- no-selfclose -->
-</span>
-</span>
-</div>
-</div>
-</div></section><section class="worked-example" id="fs-id1165135177609"><div class="problem-statement"><h3>Problem 14</h3><section>
-<div class="os-note-body">
-<div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_06"><header></header><section>
-<div data-type="problem" id="fs-id1165135177621"><div class="os-problem-container"><p id="fs-id1165135177622">Use Descartes’ Rule of Signs to determine the maximum possible numbers of positive and negative real zeros for <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
-<mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><msup>
-<mi>x</mi>
-<mn>4</mn>
-</msup>
-<mo>−</mo><mn>10</mn><msup>
-<mi>x</mi>
-<mn>3</mn>
-</msup>
-<mo>+</mo><mn>11</mn><msup>
-<mi>x</mi>
-<mn>2</mn>
-</msup>
-<mo>−</mo><mn>15</mn><mi>x</mi><mo>+</mo><mn>12.</mn></mrow>
-</mrow></semantics></math></span></span>
-     Use a graph to verify the numbers of positive and negative real zeros for the function.</p></div></div>
-</section></div>
-</div></section></div><div class="solution-panel" data-solution-panel="" style="color:#ffffff;background-color:#ffffff"><p id="fs-id1165135440206">There must be 4, 2, or 0 positive real roots and 0 negative real roots. The graph shows that there are 2 positive real zeros and 0 negative real zeros.</p></div></section>
-</section><section data-depth="1" id="fs-id1165135440213"><h3 data-type="title">Solving Real-World Applications </h3>
+<section data-depth="1" id="fs-id1165135440213"><h3 data-type="title">Solving Real-World Applications </h3>
 <p id="fs-id1165135440219">We have now introduced a variety of tools for solving polynomial equations. Let’s use these tools to solve the bakery problem from the beginning of the section.</p>
-<section class="worked-example" id="Example_03_06_09"><div class="problem-statement"><h3>Problem 15</h3><section>
+<section class="worked-example" id="Example_03_06_09"><div class="problem-statement"><h3>Example 9</h3><section>
 <div class="body">
 <div class="unnumbered" data-type="exercise" id="fs-id1165135440229"><header></header><section><div data-type="problem" id="fs-id1165135440231"><div class="os-problem-container"><h4 data-type="title">Solving Polynomial Equations</h4>
 <p id="fs-id1165135440236">A new bakery offers decorated, multi-tiered cakes for display and cutting at Quinceañera and wedding celebrations, as well as sheet cakes to serve most of the guests. The bakery wants the volume of a small sheet cake to be 351 cubic inches. The cake is in the shape of a rectangular solid. They want the length of the cake to be four inches longer than the width of the cake and the height of the cake to be one-third of the width. What should the dimensions of the cake pan be?</p>
@@ -2244,7 +1753,7 @@
 </mtr>
 </mtable></mrow>
 </mrow></semantics></math></span>
-</div><p id="fs-id1165134070008">Descartes' rule of signs tells us there is one positive solution. The Rational Zero Theorem tells us that the possible rational zeros are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
+</div><p id="fs-id1165134070008">The Rational Zero Theorem tells us that the possible rational zeros are <span class="os-math-in-para"><span class="math-scroll inline-math"><math display="inline"><semantics><mrow>
 <mrow>
 <mo>±</mo><mn>1</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>3</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>9</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>13</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>27</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>39</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>81</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>117</mn><mo>,</mo><mspace width="0.5em"></mspace><mo>±</mo><mn>351</mn><mo>,</mo></mrow>
 </mrow></semantics></math></span></span>
@@ -2290,7 +1799,7 @@
 </mrow></semantics></math></span> </div>
 <p id="fs-id1165137843234">The sheet cake pan should have dimensions 13 inches by 9 inches by 3 inches.</p>
 </div></section>
-<section class="worked-example" id="fs-id1165137843240"><div class="problem-statement"><h3>Problem 16</h3><section>
+<section class="worked-example" id="fs-id1165137843240"><div class="problem-statement"><h3>Try It #7</h3><section>
 <div class="os-note-body">
 <div class="unnumbered os-hasSolution" data-type="exercise" id="ti_03_06_07"><header></header><section>
 <div data-type="problem" id="fs-id1165137843250"><div class="os-problem-container"><p id="fs-id1165137843251">A shipping container in the shape of a rectangular solid must have a volume of 84 cubic meters. The client tells the manufacturer that, because of the contents, the length of the container must be one meter longer than the width, and the height must be one meter greater than twice the width. What should the dimensions of the container be?</p></div></div>

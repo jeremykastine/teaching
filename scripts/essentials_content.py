@@ -669,7 +669,7 @@ Divide \(x^2+1\) by x − 1. | Include the missing 0x term. ~ Subtract x(x − 1
 ''')
 add('101','5.5',r'''
 State the Factor Theorem. | x − c is a factor of f(x) exactly when f(c) = 0.
-State the Remainder Theorem. | Division by x − c has remainder f(c).
+How do you test whether c is a zero? | Substitute c into the polynomial and check whether f(c) = 0.
 What rational-zero candidates are possible for an integer-coefficient polynomial? | Ratios ±p/q, where p divides the constant and q divides the leading coefficient.
 Is every rational-zero candidate an actual zero? | No; it must be tested.
 How does multiplicity affect zero counting? | Repeated roots count according to their multiplicity.

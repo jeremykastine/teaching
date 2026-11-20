@@ -33,6 +33,7 @@ Unless a rule is explicitly limited to a particular assessment, the presentation
 
 ## Assessment scope and unit tests
 - All MATH 101 tests assess strictly algebraic content, including graph interpretation. Word problems, contextual applications, modeling, regression, and optimization applications are classroom activities/labs, not test items.
+- Descartes' Rule of Signs and using the Remainder Theorem to evaluate polynomials are excluded from instruction, homework, diagnostics, unit tests, finals, and all practice/retake versions. Test candidate zeros by direct substitution; use the Factor Theorem to connect zeros with linear factors.
 - For the four five-question, 30-minute unit tests and their practice/retake versions, use [unit-test-specifications.md](unit-test-specifications.md). Each unit-test question is worth 20 points; its unit-specific structure and scoring override the cumulative architecture below. Shared presentation, calculator, identifier, verification, and packaging rules still apply.
 - The ten problem types and ten-point question amounts below define the cumulative diagnostic/final family; they are not the question map for a unit test.
 
