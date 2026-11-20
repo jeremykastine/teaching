@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6.1–6.2: Normal Distributions, z-Scores, and Probabilities | MSC 201</title>
+  <link rel="stylesheet" href="../../tsm/styles.css">
+  <link rel="stylesheet" href="../lecture-notes.css">
+  <link rel="stylesheet" href="../normal-lesson.css">
+  <script defer src="../../tsm/solutions.js"></script>
+</head>
+<body><main class="lecture-notes normal-lesson">
+  <nav class="topic-nav" aria-label="Lesson navigation">
+    <a href="../lecture-notes.html">Lecture notes index</a>
+    <a href="section-5-3-the-exponential-distribution.html">Previous: 5.3</a>
+    <a href="section-7-1-the-central-limit-theorem-for-sample-means-averages.html">Next: 7.1</a>
+    <a href="../normal-table.html" target="_blank" rel="noopener">Normal table (new tab)</a>
+  </nav>
+  <p class="series-title">MSC 201 · Combined lecture notes · Sections 6.1–6.2</p>
+  <h1>Normal distributions, z-scores, and probabilities</h1>
+  <a class="table-link" href="../normal-table.html" target="_blank" rel="noopener">Open the simplified normal table in a new tab</a>
+  <p>Keep the table open beside these notes. Use a basic calculator for the arithmetic.</p>
+  <ul class="section-links">
+    <li><a href="#binomial-limit">From binomial to normal</a></li>
+    <li><a href="#standardizing">z-scores</a></li>
+    <li><a href="#probabilities">Probabilities</a></li>
+    <li><a href="#percentiles">Percentiles and intervals</a></li>
+    <li><a href="#practice">Practice</a></li>
+  </ul>
+  <section class="formula-reference" aria-labelledby="reference-heading">
+    <h2 id="reference-heading">Reference</h2>
+    <p><strong>X ∼ N(μ, σ):</strong> mean μ, standard deviation σ. In these notes the second parameter is the standard deviation, not the variance.</p>
+    <p class="formula-line"><strong>Standardize:</strong> z = (x − μ)/σ. &nbsp; <strong>Convert back:</strong> x = μ + zσ.</p>
+    <p><strong>Table:</strong> F(z) = P(Z ≤ z), the area to the left. Z ∼ N(0, 1). Multiply F(z) by 100 for a percentile rank.</p>
+    <p><strong>Right tail:</strong> 1 − F(z). &nbsp; <strong>Between:</strong> F(upper z) − F(lower z).</p>
+    <p><strong>Empirical rule:</strong> approximately 68%, 95%, and 99.7% within 1, 2, and 3 standard deviations.</p>
+    <p><strong>Table precision:</strong> round each calculated z-score to the nearest tenth; use the table’s three-decimal probabilities. For a halfway z-score, round away from zero. For a percentile, use the closest table probability; if tied, use the z-score closer to zero. Do not interpolate. Answers are approximate.</p>
+  </section>
+  <p class="solution-instructions">Double-click or double-tap the blank solution area to reveal an answer. With a keyboard, focus that area and press Enter or Space.</p>
+
+  <section id="binomial-limit">
+    <h2>From many coin tosses to a bell curve</h2>
+    <p>Let H count heads in n independent fair coin tosses. H is binomial, with mean n/2 and standard deviation √(n/4). Standardize its values using z = (H − n/2)/√(n/4).</p>
+    <p>The plots use the same axes. Blue bars show <strong>exact binomial probabilities</strong>; each bar’s area is its probability. The orange curve is the <strong>same standard normal density</strong> in every plot. Bar heights are rescaled so the total bar area is 1.</p>
+    <div class="plot-grid">
+      <figure><img src="../assets/normal/binomial-004.svg" width="620" height="410" alt="Four fair coin tosses: five broad binomial bars on a standardized axis. They form a coarse mound around zero; the smooth normal curve differs visibly between bars."><figcaption>n = 4: a few broad bars.</figcaption></figure>
+      <figure><img src="../assets/normal/binomial-016.svg" width="620" height="410" alt="Sixteen fair coin tosses: standardized binomial bars are narrower and follow the same normal curve more closely."><figcaption>n = 16: more, narrower bars.</figcaption></figure>
+      <figure><img src="../assets/normal/binomial-064.svg" width="620" height="410" alt="Sixty-four fair coin tosses: the standardized binomial bars closely trace the standard normal curve."><figcaption>n = 64: the match improves.</figcaption></figure>
+      <figure><img src="../assets/normal/binomial-256.svg" width="620" height="410" alt="Two hundred fifty-six fair coin tosses: the narrow standardized binomial bars nearly trace the same smooth normal curve."><figcaption>n = 256: the bars nearly trace the curve.</figcaption></figure>
+    </div>
+    <p>As n grows, probabilities over standardized intervals approach areas under the normal curve. Each binomial distribution is still discrete; its bars get narrower after standardizing. The normal distribution is continuous.</p>
+    <p>Many independent additive effects can also lead to an approximately normal total when variances are finite and no single effect dominates. This does not make every real-world distribution normal. We use a normal model when the problem supplies one.</p>
+  </section>
+
+  <section id="standardizing">
+    <h2>A normal model and its standard units</h2>
+    <p>A normal curve is symmetric about its mean. Its total area is 1, with half on each side of the mean. The mean, median, and mode coincide. The standard deviation sets the horizontal spread.</p>
+    <p><strong>Recurring model:</strong> X is a score with mean 70 and standard deviation 10: X ∼ N(70, 10).</p>
+    <figure><img src="../assets/normal/standardizing.svg" width="850" height="380" alt="The same bell curve has score values 40, 50, 60, 70, 80, 90, and 100 above it, aligned with z-scores negative three, negative two, negative one, zero, one, two, and three below it."><figcaption>Standardizing changes the units. It preserves the corresponding probabilities.</figcaption></figure>
+    <section class="worked-example" id="z-scores">
+      <div class="problem-statement"><h3>Find and interpret z</h3><p>X ∼ N(70, 10). Find z for x = 85, 60, and 70.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ul><li>85: z = (85 − 70)/10 = 1.5, or 1.5 standard deviations above the mean.</li><li>60: z = (60 − 70)/10 = −1, or one standard deviation below the mean.</li><li>70: z = 0, at the mean.</li></ul><p>A z-score is a position in standard-deviation units, not a probability.</p></div>
+    </section>
+    <section class="worked-example" id="recover-x">
+      <div class="problem-statement"><h3>Convert z back to x</h3><p>X ∼ N(70, 10). Find x when z = −1.2.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>x = 70 + (−1.2)(10) = <strong>58</strong>. This score is 1.2 standard deviations below the mean.</p></div>
+    </section>
+    <section class="worked-example" id="compare">
+      <div class="problem-statement"><h3>Compare relative positions</h3><p>A: mean 70, SD 10, score 85. B: mean 500, SD 80, score 620. Which is farther above its mean in SD units?</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>A: (85 − 70)/10 = 1.5. B: (620 − 500)/80 = 1.5. <strong>Same relative position</strong>: both are 1.5 SD above their means.</p></div>
+    </section>
+    <section class="worked-example" id="empirical-rule">
+      <div class="problem-statement"><h3>Use the empirical rule</h3><p>X ∼ N(70, 10). Give the intervals containing about 68%, 95%, and 99.7%.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ul><li>68%: 70 ± 10 → <strong>60 to 80</strong>; endpoint z-scores −1 and 1.</li><li>95%: 70 ± 20 → <strong>50 to 90</strong>; endpoint z-scores −2 and 2.</li><li>99.7%: 70 ± 30 → <strong>40 to 100</strong>; endpoint z-scores −3 and 3.</li></ul><p>These are empirical-rule approximations. Rounded table values may give slightly different percentages.</p></div>
+    </section>
+  </section>
+
+  <section id="probabilities">
+    <h2>From cutoffs to probabilities</h2>
+    <p>Sketch the curve, mark the cutoff or cutoffs, and shade the requested area. Standardize the cutoffs, round z to a tenth, and use the <a href="../normal-table.html" target="_blank" rel="noopener">normal table (new tab)</a>.</p>
+    <div class="region-grid">
+      <figure><img src="../assets/normal/normal-left.svg" width="620" height="320" alt="Area to the left of z equals 0.8 is shaded; this is F of 0.8."><figcaption>Below: use the table entry.</figcaption></figure>
+      <figure><img src="../assets/normal/normal-right.svg" width="620" height="320" alt="Area to the right of z equals 0.8 is shaded; this is one minus F of 0.8."><figcaption>Above: subtract from 1.</figcaption></figure>
+      <figure><img src="../assets/normal/normal-between.svg" width="620" height="320" alt="Area between z equals negative 0.8 and z equals 1.4 is shaded; subtract the left cumulative probability from the right cumulative probability."><figcaption>Between: subtract cumulative areas.</figcaption></figure>
+    </div>
+    <section class="worked-example" id="read-table">
+      <div class="problem-statement"><h3>Read the table</h3><p>Find F(1.2), F(−0.7), and F(0).</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>F(1.2) = <strong>0.885</strong>; F(−0.7) = <strong>0.242</strong>; F(0) = <strong>0.500</strong>. These are rounded areas to the left. For example, about 24.2% lie below z = −0.7.</p></div>
+    </section>
+    <section class="worked-example" id="left-tail">
+      <div class="problem-statement"><h3>Below a cutoff</h3><p>X ∼ N(70, 10). Find P(X &lt; 63) and the percentile rank of 63.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>z = (63 − 70)/10 = −0.7. Shade left of 63. P(X &lt; 63) ≈ F(−0.7) = <strong>0.242 = 24.2%</strong>. A score of 63 is at approximately the <strong>24th percentile</strong>.</p></div>
+    </section>
+    <section class="worked-example" id="right-tail">
+      <div class="problem-statement"><h3>Above a cutoff</h3><p>X ∼ N(70, 10). Find P(X &gt; 83).</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>z = (83 − 70)/10 = 1.3. Shade right of 83. The table gives the other side: F(1.3) = 0.903. P(X &gt; 83) ≈ 1 − 0.903 = <strong>0.097 = 9.7%</strong>.</p></div>
+    </section>
+    <section class="worked-example" id="rounding">
+      <div class="problem-statement"><h3>Round before looking up</h3><p>X ∼ N(70, 10). Find P(X &lt; 76.4).</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>z = (76.4 − 70)/10 = 0.64. Round to <strong>0.6</strong>. P(X &lt; 76.4) ≈ F(0.6) = <strong>0.726 = 72.6%</strong>. This is a coarse table approximation to the original cutoff, not an exact probability.</p></div>
+    </section>
+    <section class="worked-example" id="between-outside">
+      <div class="problem-statement"><h3>Between and outside</h3><p>X ∼ N(70, 10). Find P(62 &lt; X &lt; 84), then the probability outside that interval.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>Endpoint z-scores: −0.8 and 1.4. Shade between them. P(62 &lt; X &lt; 84) ≈ 0.919 − 0.212 = <strong>0.707 = 70.7%</strong>.</p><p>Outside: shade both tails. 1 − 0.707 = <strong>0.293 = 29.3%</strong>. Equivalently, 0.212 + (1 − 0.919) = 0.293.</p></div>
+    </section>
+    <section class="worked-example" id="endpoints">
+      <div class="problem-statement"><h3>A single point and an endpoint</h3><p>X ∼ N(70, 10). Find P(X = 70). Do P(X &lt; 63) and P(X ≤ 63) differ?</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p><strong>P(X = 70) = 0.</strong> A single point has no area. Including the endpoint does not change a continuous probability, so both cutoff probabilities are approximately <strong>0.242</strong>. A curve’s height is not a point probability.</p></div>
+    </section>
+  </section>
+
+  <section id="percentiles">
+    <h2>From probabilities to cutoffs</h2>
+    <p>A percentile is a cutoff with a stated percentage below it. Start with the <strong>area to the left</strong>, find the closest table probability, read z, and convert back using x = μ + zσ. Our coarse table gives approximate cutoffs.</p>
+    <section class="worked-example" id="percentile">
+      <div class="problem-statement"><h3>A percentile</h3><p>X ∼ N(70, 10). Find the 90th percentile.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>Left area = 0.900. The closest table entry is 0.903 at <strong>z = 1.3</strong>. x ≈ 70 + 1.3(10) = <strong>83</strong>. About 90% of scores lie below this cutoff; the rounded table gives 90.3%.</p></div>
+    </section>
+    <section class="worked-example" id="upper-percent">
+      <div class="problem-statement"><h3>An upper-tail percentage</h3><p>X ∼ N(70, 10). Forty percent score at least what value?</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>Right area = 0.400, so left area = <strong>0.600</strong>. The closest table entry is 0.618 at z = 0.3; 0.579 at z = 0.2 is slightly farther away. x ≈ 70 + 0.3(10) = <strong>73</strong>. This approximates the 60th percentile; the table implies about 38.2% above it.</p></div>
+    </section>
+    <section class="worked-example" id="quartiles">
+      <div class="problem-statement"><h3>Median, quartiles, and IQR</h3><p>X ∼ N(70, 10). Find the median, Q₁, Q₃, and IQR.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ul><li>Median: left area 0.500 → z = 0 → <strong>70</strong>.</li><li>Q₁: target 0.250 → closest entry 0.242 → z = −0.7 → <strong>63</strong>.</li><li>Q₃: target 0.750 → closest entry 0.758 → z = 0.7 → <strong>77</strong>.</li><li>IQR ≈ 77 − 63 = <strong>14</strong>.</li></ul><p>The approximate middle-50% interval is 63 to 77. Using the rounded table, its area is 0.758 − 0.242 = 0.516.</p></div>
+    </section>
+    <section class="worked-example" id="middle-interval">
+      <div class="problem-statement"><h3>A specified middle percentage</h3><p>X ∼ N(70, 10). Find the interval containing the middle 80%.</p></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><p>Outside area = 1 − 0.80 = 0.20. Split it into two tails of <strong>0.10</strong>. The endpoints are the <strong>10th and 90th percentiles</strong>.</p><p>Closest left-area entries: 0.097 and 0.903 → z = −1.3 and 1.3. Convert back: 70 ± 1.3(10) → <strong>57 to 83</strong>. The rounded table gives 80.6%, close to the requested 80%.</p></div>
+    </section>
+  </section>
+
+  <section id="practice">
+    <h2>Practice</h2>
+    <p>Use the same rounding rules. For probability questions, sketch and shade the region. For cutoffs, interpret the result.</p>
+    <section class="worked-example" id="practice-positions">
+      <div class="problem-statement"><h3>Positions and spread</h3><p>X ∼ N(50, 8).</p><ol type="a"><li>Find and interpret z for x = 62.</li><li>Find x when z = −1.2.</li><li>Give the empirical-rule 68%, 95%, and 99.7% intervals.</li></ol></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>z = 12/8 = <strong>1.5</strong>, or 1.5 SD above the mean.</li><li>x = 50 − 1.2(8) = <strong>40.4</strong>.</li><li><strong>42–58</strong>, <strong>34–66</strong>, and <strong>26–74</strong>; endpoint z-scores ±1, ±2, and ±3.</li></ol></div>
+    </section>
+    <section class="worked-example" id="practice-areas">
+      <div class="problem-statement"><h3>Probabilities</h3><p>X ∼ N(50, 8).</p><ol type="a"><li>Find P(X &lt; 44.4).</li><li>Find P(X &gt; 60.4).</li><li>Find P(43.6 &lt; X &lt; 61.2).</li><li>Find the probability outside that interval.</li></ol></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>z = −0.7 → <strong>0.242</strong>.</li><li>z = 1.3 → 1 − 0.903 = <strong>0.097</strong>.</li><li>z = −0.8 and 1.4 → 0.919 − 0.212 = <strong>0.707</strong>.</li><li>1 − 0.707 = <strong>0.293</strong>.</li></ol></div>
+    </section>
+    <section class="worked-example" id="practice-cutoffs">
+      <div class="problem-statement"><h3>Cutoffs</h3><p>X ∼ N(50, 8).</p><ol type="a"><li>Find the 80th percentile.</li><li>Ten percent lie above what value?</li><li>Find Q₁, Q₃, and IQR.</li><li>Find the middle-60% interval.</li></ol></div>
+      <div class="solution-panel" data-solution-panel style="color:#ffffff;background-color:#ffffff"><ol type="a"><li>Target 0.800 → closest entry 0.788 → z = 0.8 → x ≈ <strong>56.4</strong>. About 80% lie below it.</li><li>Left area 0.900 → z = 1.3 → x ≈ <strong>60.4</strong>. About 10% lie above it.</li><li>z ≈ −0.7 and 0.7 → Q₁ ≈ <strong>44.4</strong>, Q₃ ≈ <strong>55.6</strong>, IQR ≈ <strong>11.2</strong>.</li><li>Tails = 0.20 each. Target left areas 0.200 and 0.800 → z ≈ −0.8 and 0.8 → <strong>43.6 to 56.4</strong>. Table area: 0.788 − 0.212 = 0.576, approximately 60% at this coarse precision.</li></ol></div>
+    </section>
+  </section>
+  <p><a class="table-link" href="../normal-table.html" target="_blank" rel="noopener">Open the simplified normal table in a new tab</a></p>
+  <footer class="attribution">Original combined classroom lesson covering <a href="https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution">OpenStax Section 6.1</a> and <a href="https://openstax.org/books/introductory-statistics-2e/pages/6-2-using-the-normal-distribution">Section 6.2</a>. Figures are generated from exact binomial probabilities and the standard normal density; the table is computed from the normal cumulative distribution. Separate essentials reviews: <a href="../essentials/section-6-1-the-standard-normal-distribution.html">6.1</a> and <a href="../essentials/section-6-2-using-the-normal-distribution.html">6.2</a>.</footer>
+</main></body>
+</html>

@@ -1,0 +1,30 @@
+.lecture-notes.normal-lesson { max-width:1100px; }
+.normal-lesson .formula-reference { padding:16px 20px; border-left:4px solid #245985; background:#f1f6fa; margin:22px 0; }
+.normal-lesson .formula-reference p:last-child { margin-bottom:0; }
+.normal-lesson .formula-line { font-size:1.12rem; }
+.normal-lesson .table-link { display:inline-block; padding:10px 15px; border:1px solid #175f9e; border-radius:4px; margin:0 0 18px; font-weight:bold; }
+.normal-lesson .plot-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.normal-lesson .plot-grid figure { margin:0; }
+.normal-lesson figure img { width:100%; margin:0; max-width:100%; }
+.normal-lesson .region-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.normal-lesson .region-grid figure { margin:0; }
+.normal-lesson .region-grid figcaption { font-size:.9rem; }
+.normal-lesson .section-links { display:flex; flex-wrap:wrap; gap:8px 18px; padding-left:0; list-style:none; }
+.normal-lesson .section-links li { margin:0; }
+.normal-lesson .normal-table-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:28px; margin:24px 0; }
+.normal-table-page th, .normal-table-page td { padding:5px 12px; font-variant-numeric:tabular-nums; }
+.normal-table-page caption { font-weight:bold; }
+.normal-table-page thead th { background:#e8f0f7; }
+.normal-table-page .table-key { max-width:440px; }
+@media(max-width:700px) {
+  .normal-lesson .region-grid, .normal-lesson .plot-grid, .normal-lesson .normal-table-columns { grid-template-columns:1fr; }
+}
+@media print {
+  .normal-lesson .table-link, .normal-lesson .section-links { display:none; }
+  .normal-table-page { font-size:10pt; line-height:1.25; }
+  .normal-table-page .table-key { display:none; }
+  .normal-table-page th, .normal-table-page td { padding:2px 8px; }
+  .normal-table-page .normal-table-columns { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+  .normal-lesson .plot-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .normal-lesson figure { break-inside:avoid; }
+}
