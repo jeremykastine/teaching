@@ -298,3 +298,9 @@ At the end of Topic 3, include separate worked examples asking students to find 
 - Include several multiplication and division examples in each topic where all numerator factors reduce to 1, including examples that start with no numerator equal to 1. Show the reductions and explicitly retain 1 above the final fraction bar; distinguish this from omitting a denominator of 1. Include a numerical complex fraction with this result in Topic 19.
 - Topic 20 includes numerical and variable GCFs, monic and non-monic trinomials, perfect-square trinomials, four-term grouping, differences of squares, opposite factors, repeated factors, and expressions requiring multiple factoring methods. Show factoring decisions and intermediate work, including middle-term splitting and grouping for non-monic trinomials. Keep multiplication examples before the division section.
 - Preserve single-variable exercises, independently concealed worked solutions, restrictions from every original denominator, and exclusions where a divisor is zero. Retain all exclusions after cancellation.
+
+## Topic 32: interpreting slope and intercept (November 25, 2026)
+
+- Retain the existing graphing examples and add separate worked examples for `y=-x+7`, `y=x/4+3`, and `y=-2x`. Each problem asks students to identify m and b and graph the line using its slope and y-intercept.
+- Explain the implied coefficient -1, division by 4 as a coefficient of 1/4, and a missing constant term as b=0. Show an equivalent slope-intercept equation, identify both values, give the intercept and a second point using rise/run, and check that point in the original equation.
+- Keep the established topic number, course label, navigation, and independently concealed solutions with their natural height.
