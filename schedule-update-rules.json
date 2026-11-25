@@ -36,7 +36,7 @@
     "repeat_topics": "keep_explicit_finish_review_or_repeat_occurrences",
     "future_dates": "preserve_instructor_supplied_future_dated_meetings; do_not_mark_dated_as_completed",
     "rescheduling": "adjust_cancellations_tests_and_remaining_weeks_only_as_directed; do_not_infer_calendar",
-    "content_authority": "instructor_schedule_overrides_other_topic_numbering_and_course_requirements; do_not_rewrite_lessons_as_side_effect",
+    "content_authority": "instructor_schedule_controls_dates_teaching_order_and_course_requirements; preserve_established_course_topic_numbers_unless_instructor_explicitly_requests_renumbering; do_not_rewrite_lessons_as_side_effect",
     "last_updated": "set_target_page_last_updated_to_actual_edit_date",
     "html": "static student-readable three-column table: date/week, class topics, after-class work; preserve data-date ISO and data-kind attributes on tbody groups",
     "topic_resources": "In MATH 101 and Statistics, put a bulleted section title in each topic cell, with nested bullets for lecture notes, textbook reading, and essentials review. Include the relevant links for each section in grouped topics, and move these links with their topic when rescheduling.",
@@ -49,6 +49,7 @@
     ],
     "after_class": "align homework and Begin studying for test prompts with the last relevant topic; TSM homework names the student course; no fixed test appointments in class-topics column",
     "column_heading": "state homework is due at midnight on the day of the next class meeting, and tests can be taken or retaken during the last 30 minutes of every class meeting after studying; do not repeat timing in individual tasks",
-    "assessments": "replace prior fixed test-availability schedule entries with study prompts beside last relevant topic; diagnostic availability belongs in after-class column"
+    "assessments": "replace prior fixed test-availability schedule entries with study prompts beside last relevant topic; diagnostic availability belongs in after-class column",
+    "tsm_topic_numbering": "Use the maintained 37-topic lecture-note and homework numbering, regardless of teaching order: 30 graphing without slope-intercept form; 31 systems by graphing; 32 slope-intercept graphing; 33 systems by elimination and substitution; 34 writing two-variable equations and finding slope; 35-37 percent and word problems. Separate substitution and elimination rows both use Topic 33, with the method named. Preserve instructor-specified dates, teaching order, and course-specific directions."
   }
 }
