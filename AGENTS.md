@@ -28,3 +28,9 @@ The active-repository policy was explicitly requested by the user on October 7, 
 ## Live class schedules
 
 Before creating or updating any class schedule, load and follow `schedule-update-rules.json`. It contains the machine-readable schedule registry and update policy. Preserve separate 9 a.m. and 1 p.m. TSM schedules and their root-index links. These HTML schedules are instructor-maintained sources, not outputs to regenerate from lecture notes or generic planning documents.
+
+## Master course documents
+
+For future-quarter master documents, identify each lecture/topic by name and group the topics into named units. Do not assign lecture numbers, topic numbers, numbered unit labels, or numeric topic ranges. Use descriptive file names and anchors. The shared curriculum in master-documents/curriculum.json defines the topic names, unit membership, and suggested sequence for both TSM and MATH 101; use it when updating the master indexes, lesson navigation, or linked plans in winter-2027/. Run scripts/build_master_navigation.py after curriculum edits. Refer to topics by name in future master schedules, homework, and test coverage. Problem/question, homework-assignment, test, course, and calendar numbering may remain.
+
+This name-based policy applies to the master documents and future course materials based on them. The current-quarter course materials retain their established numbering unless the instructor explicitly asks to migrate them. Preserve the existing numbered master URLs as compatibility redirects, with descriptive URLs as the canonical sources.

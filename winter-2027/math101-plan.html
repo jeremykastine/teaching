@@ -29,8 +29,7 @@
     thead th { background: #e8f0f3; color: #123f4b; font-weight: 750; }
     tbody th { font-weight: 650; }
     tbody tr:nth-child(even) { background: #f6f9fa; }
-    .phase th { background: #e8f0f3; color: #123f4b; }
-    .number { display: block; margin-bottom: 5px; color: var(--accent); font-size: .85rem; font-weight: 700; }
+    .unit-heading th { background: #e8f0f3; color: #123f4b; }
     .math { white-space: normal; font-family: "Cambria Math", "STIX Two Math", serif; font-size: 1.08em; }
     .planning-notes { margin-top: 30px; }
     footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
@@ -54,18 +53,18 @@
     <p class="eyebrow">MATH 101 · College Algebra · Winter 2027 planning</p>
     <h1>Lecture and Assessment Plan</h1>
     <p><a href="../master-documents/math101-lecture-notes.html">Master lecture notes</a></p>
-    <p class="updated">Proposed sequence and test groups · Updated November 16, 2026</p>
-    <p>Twenty lectures develop College Algebra in three phases. Lecture numbers mark the order of topics. A class meeting can include more than one lecture or be used for an activity. In Lectures 1–6, students transform familiar graphs and read features such as domain and range. They begin with relations before identifying when y is a function of x.</p>
-    <p>In Lectures 7–16, students solve equations and rewrite expressions to analyze familiar families. For example, changing <span class="math">y = x<sup>2</sup></span> to <span class="math">y = (x − 3)<sup>2</sup> − 4</span> moves the graph. Rewriting <span class="math">(x − 3)<sup>2</sup> − 4</span> as <span class="math">(x − 1)(x − 5)</span> describes the same graph and makes its zeros visible.</p>
-    <p>In Lectures 17–20, students introduce general function notation, combine and compose functions, work with inverses, and express the opening graph transformations in general form.</p>
+    <p class="updated">Proposed sequence and test groups · Updated November 25, 2026</p>
+    <p>College Algebra is organized into four named units: Graph Transformations; Quadratics and Polynomials; Rational, Exponential, and Logarithmic Functions; and Functions in General. A class meeting can include more than one topic or be used for an activity. In Graph Transformations, students transform familiar graphs and read features such as domain and range. They begin with relations before identifying when y is a function of x.</p>
+    <p>In the Quadratics and Polynomials unit and the Rational, Exponential, and Logarithmic Functions unit, students solve equations and rewrite expressions to analyze familiar families. For example, changing <span class="math">y = x<sup>2</sup></span> to <span class="math">y = (x − 3)<sup>2</sup> − 4</span> moves the graph. Rewriting <span class="math">(x − 3)<sup>2</sup> − 4</span> as <span class="math">(x − 1)(x − 5)</span> describes the same graph and makes its zeros visible.</p>
+    <p>In Functions in General, students introduce general function notation, combine and compose functions, work with inverses, and express the opening graph transformations in general form.</p>
   </header>
 
   <h2>Four proposed unit tests</h2>
   <ol class="test-list">
-    <li><strong>Graph Transformations</strong> (Lectures 1–6). Read and sketch transformations of diamonds, circles, and the parent functions. Use the graph to identify features such as domain, range, vertices, endpoints, and asymptotes.</li>
-    <li><strong>Quadratics and Polynomials</strong> (Lectures 7–11). Rewrite quadratics, divide polynomials, solve for zeros, and analyze vertices, extrema, multiplicities, and end behavior.</li>
-    <li><strong>Rational, Exponential, and Logarithmic Functions</strong> (Lectures 12–16). Analyze rational zeros, holes, and asymptotes. Sketch and interpret exponential and logarithmic graphs and use their properties to solve equations exactly.</li>
-    <li><strong>Functions in General</strong> (Lectures 17–20). Evaluate, combine, compose, invert, and transform functions using general notation and appropriate domains.</li>
+    <li><strong>Graph Transformations</strong>. Read and sketch transformations of diamonds, circles, and the parent functions. Use the graph to identify features such as domain, range, vertices, endpoints, and asymptotes.</li>
+    <li><strong>Quadratics and Polynomials</strong>. Rewrite quadratics, divide polynomials, solve for zeros, and analyze vertices, extrema, multiplicities, and end behavior.</li>
+    <li><strong>Rational, Exponential, and Logarithmic Functions</strong>. Analyze rational zeros, holes, and asymptotes. Sketch and interpret exponential and logarithmic graphs and use their properties to solve equations exactly.</li>
+    <li><strong>Functions in General</strong>. Evaluate, combine, compose, invert, and transform functions using general notation and appropriate domains.</li>
   </ol>
   <p id="assessment-key">The assessment column gives the proposed test for each lecture's core problem types. Each unit test is designed for 30 minutes and normally has five main questions totaling 100 points.</p>
   <p>Use real numbers throughout the lectures and tests, including the final. Students should be able to explain when an equation has no real solution. Imaginary numbers are a possible unassessed supplemental activity.</p>
@@ -73,114 +72,117 @@
 
   <div class="table-wrap" role="region" aria-label="College Algebra lecture and assessment table" aria-describedby="assessment-key scroll-hint" tabindex="0">
     <table>
-      <caption>Twenty essential lectures and proposed unit-test coverage</caption>
+      <caption>Named units, essential topics, and proposed unit-test coverage</caption>
       <colgroup><col class="topic"><col class="details"><col class="assessment"></colgroup>
       <thead><tr><th scope="col">Topic</th><th scope="col">Coverage, algebra and arithmetic background, and problem types</th><th scope="col">MATH 101 assessment</th></tr></thead>
-      <tbody>
-        <tr class="phase"><th colspan="3" scope="rowgroup">Lectures 1–6 · Transform familiar graphs</th></tr>
-        <tr id="topic-01" data-topic="1" data-test="1">
-          <th scope="row"><span class="number">Lecture 1</span>Transformations of <span class="math">|x| + |y| = 1</span> and <span class="math">x<sup>2</sup> + y<sup>2</sup> = 1</span></th>
+      <tbody id="graph-transformations" data-unit="graph-transformations">
+        <tr class="unit-heading"><th colspan="3" scope="rowgroup">Graph Transformations</th></tr>
+        <tr id="diamond-and-circle-transformations" data-topic="diamond-and-circle-transformations" data-test="1">
+          <th scope="row"><span id="topic-01"></span><a href="../master-documents/math101/diamond-and-circle-transformations.html">Diamond and Circle Transformations</a></th>
           <td>Shift and stretch the diamond and circle. Track the center and the four extreme points, then read the domain and range. Review signed coordinates, absolute value, and interval notation as needed.</td>
           <td>Test 1</td>
         </tr>
-        <tr id="topic-02" data-topic="2" data-test="1">
-          <th scope="row"><span class="number">Lecture 2</span>Transformations of <span class="math">y = x</span></th>
+        <tr id="line-transformations" data-topic="line-transformations" data-test="1">
+          <th scope="row"><span id="topic-02"></span><a href="../master-documents/math101/line-transformations.html">Line Transformations</a></th>
           <td>Shift, stretch, and reflect the line. Describe the resulting slope and intercepts from the graph. Compare lines with the opening diamond and circle to introduce the condition that each allowed x has exactly one y. Compare a right shift of 2 with a downward shift of 2.</td>
           <td>Test 1</td>
         </tr>
-        <tr id="topic-03" data-topic="3" data-test="1">
-          <th scope="row"><span class="number">Lecture 3</span>Transformations of <span class="math">y = |x|</span> and <span class="math">y = x<sup>2</sup></span></th>
+        <tr id="absolute-value-and-quadratic-transformations" data-topic="absolute-value-and-quadratic-transformations" data-test="1">
+          <th scope="row"><span id="topic-03"></span><a href="../master-documents/math101/absolute-value-and-quadratic-transformations.html">Absolute Value and Quadratic Transformations</a></th>
           <td>Apply the same shifts, stretches, and reflections to the V and the parabola. Track the vertex and axis of symmetry, and describe the opening direction, width, and range.</td>
           <td>Test 1</td>
         </tr>
-        <tr id="topic-04" data-topic="4" data-test="1">
-          <th scope="row"><span class="number">Lecture 4</span>Transformations of <span class="math">y = √x</span></th>
+        <tr id="square-root-transformations" data-topic="square-root-transformations" data-test="1">
+          <th scope="row"><span id="topic-04"></span><a href="../master-documents/math101/square-root-transformations.html">Square Root Transformations</a></th>
           <td>Track the endpoint and the direction the graph extends. Compare <span class="math">y = √(x − 2)</span> with <span class="math">y = √(2 − x)</span> and use the graphs to see how horizontal and vertical reflections affect domain and range.</td>
           <td>Test 1</td>
         </tr>
-        <tr id="topic-05" data-topic="5" data-test="1">
-          <th scope="row"><span class="number">Lecture 5</span>Transformations of <span class="math">y = x<sup>3</sup></span> and <span class="math">y = ∛x</span></th>
+        <tr id="cubic-and-cube-root-transformations" data-topic="cubic-and-cube-root-transformations" data-test="1">
+          <th scope="row"><span id="topic-05"></span><a href="../master-documents/math101/cubic-and-cube-root-transformations.html">Cubic and Cube Root Transformations</a></th>
           <td>Shift, stretch, and reflect both graphs. Track the point that starts at the origin. Swap the coordinates of familiar points to see how reflection across <span class="math">y = x</span> connects the two parent graphs.</td>
           <td>Test 1</td>
         </tr>
-        <tr id="topic-06" data-topic="6" data-test="1">
-          <th scope="row"><span class="number">Lecture 6</span>Transformations of <span class="math">y = 1/x</span> and <span class="math">y = 1/x<sup>2</sup></span></th>
+        <tr id="reciprocal-transformations" data-topic="reciprocal-transformations" data-test="1">
+          <th scope="row"><span id="topic-06"></span><a href="../master-documents/math101/reciprocal-transformations.html">Reciprocal Transformations</a></th>
           <td>Track the vertical and horizontal asymptotes through shifts and compare where the branches lie after stretches and reflections. Read excluded inputs or outputs from the transformed graphs.</td>
           <td>Test 1</td>
         </tr>
       </tbody>
-      <tbody>
-        <tr class="phase"><th colspan="3" scope="rowgroup">Lectures 7–16 · Use algebra to explain the graph</th></tr>
-        <tr id="topic-07" data-topic="7" data-test="2">
-          <th scope="row"><span class="number">Lecture 7</span>Quadratic Forms, Vertices, and Extrema</th>
+      <tbody id="quadratics-and-polynomials" data-unit="quadratics-and-polynomials">
+        <tr class="unit-heading"><th colspan="3" scope="rowgroup">Quadratics and Polynomials</th></tr>
+        <tr id="quadratic-forms-vertices-and-extrema" data-topic="quadratic-forms-vertices-and-extrema" data-test="2">
+          <th scope="row"><span id="topic-07"></span><a href="../master-documents/math101/quadratic-forms-vertices-and-extrema.html">Quadratic Forms, Vertices, and Extrema</a></th>
           <td>Expand and complete the square to move between standard and vertex form. Find the minimum or maximum and the input where it occurs. Review binomial expansion and signed arithmetic as needed.</td>
           <td>Test 2</td>
         </tr>
-        <tr id="topic-08" data-topic="8" data-test="2">
-          <th scope="row"><span class="number">Lecture 8</span>Quadratic Equations and x-Intercepts</th>
+        <tr id="quadratic-equations-and-x-intercepts" data-topic="quadratic-equations-and-x-intercepts" data-test="2">
+          <th scope="row"><span id="topic-08"></span><a href="../master-documents/math101/quadratic-equations-and-x-intercepts.html">Quadratic Equations and x-Intercepts</a></th>
           <td>Set <span class="math">y = 0</span> and solve by factoring, taking square roots, or using the quadratic formula. Use the discriminant to connect zero, one, or two distinct real solutions to how the graph meets the x-axis. Explain why a negative discriminant means no real solution and no x-intercepts. Review factoring, fraction reduction, and square-root simplification as needed.</td>
           <td>Test 2</td>
         </tr>
-        <tr id="topic-09" data-topic="9" data-test="2">
-          <th scope="row"><span class="number">Lecture 9</span>Polynomial Division</th>
+        <tr id="polynomial-division" data-topic="polynomial-division" data-test="2">
+          <th scope="row"><span id="topic-09"></span><a href="../master-documents/math101/polynomial-division.html">Polynomial Division</a></th>
           <td>Find a quotient and remainder by repeatedly rewriting the dividend as a multiple of the divisor plus what remains. Use the leading term to choose each multiple. Keep track of missing powers and practice both exact division and division with a remainder. Check each result by multiplying the divisor by the quotient and adding the remainder. Use division by a linear factor to prepare for finding polynomial zeros.</td>
           <td>Test 2</td>
         </tr>
-        <tr id="topic-10" data-topic="10" data-test="2">
-          <th scope="row"><span class="number">Lecture 10</span>Polynomial Zeros and Multiplicity</th>
+        <tr id="polynomial-zeros-and-multiplicity" data-topic="polynomial-zeros-and-multiplicity" data-test="2">
+          <th scope="row"><span id="topic-10"></span><a href="../master-documents/math101/polynomial-zeros-and-multiplicity.html">Polynomial Zeros and Multiplicity</a></th>
           <td>Factor manageable polynomials and find their real zeros. When one zero is given, divide out its linear factor and use the quotient to find the remaining zeros. Use each zero’s multiplicity to predict whether the graph crosses or touches the x-axis. Connect the factors in an expression to the x-intercepts of its graph.</td>
           <td>Test 2</td>
         </tr>
-        <tr id="topic-11" data-topic="11" data-test="2">
-          <th scope="row"><span class="number">Lecture 11</span>Polynomial End Behavior and Turning Points</th>
+        <tr id="polynomial-end-behavior-and-turning-points" data-topic="polynomial-end-behavior-and-turning-points" data-test="2">
+          <th scope="row"><span id="topic-11"></span><a href="../master-documents/math101/polynomial-end-behavior-and-turning-points.html">Polynomial End Behavior and Turning Points</a></th>
           <td>Use the leading term to predict end behavior. Combine it with zeros and signs between zeros to sketch possible shapes and identify intervals where a local maximum or minimum must occur.</td>
           <td>Test 2</td>
         </tr>
-        <tr id="topic-12" data-topic="12" data-test="3">
-          <th scope="row"><span class="number">Lecture 12</span>Rational Functions — Zeros, Holes, and Vertical Asymptotes</th>
+      </tbody>
+      <tbody id="rational-exponential-and-logarithmic-functions" data-unit="rational-exponential-and-logarithmic-functions">
+        <tr class="unit-heading"><th colspan="3" scope="rowgroup">Rational, Exponential, and Logarithmic Functions</th></tr>
+        <tr id="rational-zeros-holes-and-vertical-asymptotes" data-topic="rational-zeros-holes-and-vertical-asymptotes" data-test="3">
+          <th scope="row"><span id="topic-12"></span><a href="../master-documents/math101/rational-zeros-holes-and-vertical-asymptotes.html">Rational Functions — Zeros, Holes, and Vertical Asymptotes</a></th>
           <td>Factor the numerator and denominator, record excluded inputs, and simplify. Use the remaining factors and the original domain to locate zeros, holes, and vertical asymptotes. Check signs on either side of a vertical asymptote.</td>
           <td>Test 3</td>
         </tr>
-        <tr id="topic-13" data-topic="13" data-test="3">
-          <th scope="row"><span class="number">Lecture 13</span>Rational Functions — End Behavior and Asymptotes</th>
-          <td>Compare degrees and leading coefficients to determine whether there is a horizontal asymptote and where it lies. Apply polynomial division from Lecture 9 to find a slant asymptote in simple cases. Combine local and end behavior in a sketch.</td>
+        <tr id="rational-end-behavior-and-asymptotes" data-topic="rational-end-behavior-and-asymptotes" data-test="3">
+          <th scope="row"><span id="topic-13"></span><a href="../master-documents/math101/rational-end-behavior-and-asymptotes.html">Rational Functions — End Behavior and Asymptotes</a></th>
+          <td>Compare degrees and leading coefficients to determine whether there is a horizontal asymptote and where it lies. Apply polynomial division from <a href="#polynomial-division">Polynomial Division</a> to find a slant asymptote in simple cases. Combine local and end behavior in a sketch.</td>
           <td>Test 3</td>
         </tr>
-        <tr id="topic-14" data-topic="14" data-test="3">
-          <th scope="row"><span class="number">Lecture 14</span>Exponential and Logarithmic Graphs</th>
+        <tr id="exponential-and-logarithmic-graphs" data-topic="exponential-and-logarithmic-graphs" data-test="3">
+          <th scope="row"><span id="topic-14"></span><a href="../master-documents/math101/exponential-and-logarithmic-graphs.html">Exponential and Logarithmic Graphs</a></th>
           <td>Sketch <span class="math">y = ab<sup>x</sup></span> for <span class="math">a &gt; 0</span> and <span class="math">b &gt; 0</span>, <span class="math">b ≠ 1</span>, from a short table of exact values. Compare growth and decay, identify the horizontal asymptote <span class="math">y = 0</span>, and interpret <span class="math">(0, a)</span> as the initial value when x measures time from the start. Reflect <span class="math">y = b<sup>x</sup></span> across <span class="math">y = x</span> to sketch <span class="math">y = log<sub>b</sub> x</span>. Track <span class="math">(1, 0)</span>, the vertical asymptote <span class="math">x = 0</span>, and how domain, range, and increasing or decreasing behavior follow from the exponential graph.</td>
           <td>Test 3</td>
         </tr>
-        <tr id="topic-15" data-topic="15" data-test="3">
-          <th scope="row"><span class="number">Lecture 15</span>Exponential Functions and Equations</th>
+        <tr id="exponential-functions-and-equations" data-topic="exponential-functions-and-equations" data-test="3">
+          <th scope="row"><span id="topic-15"></span><a href="../master-documents/math101/exponential-functions-and-equations.html">Exponential Functions and Equations</a></th>
           <td>Use the initial value and growth or decay factor to read the graph of an exponential function. Isolate the exponential expression, then match bases when possible or use logarithms to write an exact solution. Interpret a solution as the input where the graph reaches a specified height.</td>
           <td>Test 3</td>
         </tr>
-        <tr id="topic-16" data-topic="16" data-test="3">
-          <th scope="row"><span class="number">Lecture 16</span>Logarithmic Functions and Equations</th>
+        <tr id="logarithmic-functions-and-equations" data-topic="logarithmic-functions-and-equations" data-test="3">
+          <th scope="row"><span id="topic-16"></span><a href="../master-documents/math101/logarithmic-functions-and-equations.html">Logarithmic Functions and Equations</a></th>
           <td>Connect the graph’s positive-input domain to the positive-argument conditions in a logarithmic equation. Rewrite between exponential and logarithmic forms, and apply the product, quotient, and power properties to solve. Check candidate solutions in the original equation.</td>
           <td>Test 3</td>
         </tr>
       </tbody>
-      <tbody>
-        <tr class="phase"><th colspan="3" scope="rowgroup">Lectures 17–20 · Functions in general</th></tr>
-        <tr id="topic-17" data-topic="17" data-test="4">
-          <th scope="row"><span class="number">Lecture 17</span>Function Notation, Inputs, and Outputs</th>
+      <tbody id="functions-in-general" data-unit="functions-in-general">
+        <tr class="unit-heading"><th colspan="3" scope="rowgroup">Functions in General</th></tr>
+        <tr id="function-notation-inputs-and-outputs" data-topic="function-notation-inputs-and-outputs" data-test="4">
+          <th scope="row"><span id="topic-17"></span><a href="../master-documents/math101/function-notation-inputs-and-outputs.html">Function Notation, Inputs, and Outputs</a></th>
           <td>Revisit what makes a relation a function. Move from explicit equations in x and y to <span class="math">y(x)</span>, then to <span class="math">f(x)</span> and <span class="math">g(x)</span>. Evaluate functions using formulas, graphs, and tables. Distinguish evaluating <span class="math">f(3)</span> from solving <span class="math">f(x) = 3</span>.</td>
           <td>Test 4</td>
         </tr>
-        <tr id="topic-18" data-topic="18" data-test="4">
-          <th scope="row"><span class="number">Lecture 18</span>Combining and Composing Functions</th>
+        <tr id="combining-and-composing-functions" data-topic="combining-and-composing-functions" data-test="4">
+          <th scope="row"><span id="topic-18"></span><a href="../master-documents/math101/combining-and-composing-functions.html">Combining and Composing Functions</a></th>
           <td>Build new functions by combining outputs or feeding one output into another function. Track allowed inputs, including the conditions imposed by both rules in a composition.</td>
           <td>Test 4</td>
         </tr>
-        <tr id="topic-19" data-topic="19" data-test="4">
-          <th scope="row"><span class="number">Lecture 19</span>Inverse Functions and Restricted Domains</th>
+        <tr id="inverse-functions-and-restricted-domains" data-topic="inverse-functions-and-restricted-domains" data-test="4">
+          <th scope="row"><span id="topic-19"></span><a href="../master-documents/math101/inverse-functions-and-restricted-domains.html">Inverse Functions and Restricted Domains</a></th>
           <td>Reverse inputs and outputs and connect inverse graphs to reflection across <span class="math">y = x</span>. Verify inverse pairs by composition. Use a restricted quadratic and its square-root inverse to explain how the domain determines which branch is used.</td>
           <td>Test 4</td>
         </tr>
-        <tr id="topic-20" data-topic="20" data-test="4">
-          <th scope="row"><span class="number">Lecture 20</span>Transformations of a General Function</th>
+        <tr id="transformations-of-a-general-function" data-topic="transformations-of-a-general-function" data-test="4">
+          <th scope="row"><span id="topic-20"></span><a href="../master-documents/math101/transformations-of-a-general-function.html">Transformations of a General Function</a></th>
           <td>Use a graph or table for an unspecified <span class="math">f</span> to predict the effects of <span class="math">f(x − h) + k</span>, <span class="math">af(x)</span>, and <span class="math">f(bx)</span>. Track points, domain, and range using the reasoning from the opening lectures.</td>
           <td>Test 4</td>
         </tr>
@@ -191,9 +193,9 @@
   <section class="planning-notes" aria-labelledby="teaching-decisions">
     <h2 id="teaching-decisions">Teaching decisions</h2>
     <ul>
-      <li>Use graph transformations throughout Lectures 1–6. Have students predict the change, track a few key points or features, and read the resulting graph. Begin equation solving in Lecture 7.</li>
+      <li>Throughout Graph Transformations, have students predict the change, track a few key points or features, and read the resulting graph. Begin equation solving in Quadratics and Polynomials.</li>
       <li>The diamond and circle make horizontal and vertical scaling visible. The square-root graph makes the two axis reflections easy to distinguish.</li>
-      <li>Set aside short practice blocks in many class meetings during the first phase for multiplying and factoring polynomials. Practice distributing, multiplying binomials, factoring out a greatest common factor, and factoring trinomials and differences of squares. Pair expansion with factoring of the same expression to prepare for the second phase. Use mixed graph transformation problems as a separate review activity.</li>
+      <li>Set aside short practice blocks in many class meetings during the Graph Transformations unit for multiplying and factoring polynomials. Practice distributing, multiplying binomials, factoring out a greatest common factor, and factoring trinomials and differences of squares. Pair expansion with factoring of the same expression to prepare for Quadratics and Polynomials. Use mixed graph transformation problems as a separate review activity.</li>
       <li>Test exact algebra and graph interpretation with a basic, non-scientific calculator. Keep word problems and contextual modeling for review or extension activities.</li>
     </ul>
   </section>
@@ -205,3 +207,4 @@
 </main>
 </body>
 </html>
+

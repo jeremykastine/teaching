@@ -26,10 +26,10 @@
     col.topic { width: 21%; } col.details { width: 41%; } col.assessment { width: 19%; }
     th, td { padding: 18px 16px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: break-word; }
     thead th { background: #e8f0f3; color: #123f4b; font-weight: 750; }
+    .unit-heading th { background: #e8f0f3; color: #123f4b; }
     tbody th { font-weight: 650; }
     tbody tr:nth-child(even) { background: #f6f9fa; }
     td p:last-child { margin-bottom: 0; }
-    .number { display: block; margin-bottom: 5px; color: var(--accent); font-size: .85rem; font-weight: 700; }
     .math { white-space: normal; font-family: "Cambria Math", "STIX Two Math", serif; font-size: 1.08em; }
     .planning-notes { max-width: 1000px; margin-top: 30px; }
     .planning-notes li { margin-bottom: 10px; }
@@ -54,9 +54,9 @@
     <p class="eyebrow">TSM 098 / 099 · Winter 2027 planning</p>
     <h1>Lecture and Assessment Plan</h1>
     <p><a href="../master-documents/tsm-lecture-notes.html">Master lecture notes</a></p>
-    <p class="updated">Updated November 16, 2026</p>
+    <p class="updated">Updated November 25, 2026</p>
     <p>Twenty essential lectures, each designed for one hour, provide the methods students need for their course assessments. Review activities reinforce the material, and extension activities broaden it as time permits. Every assessed problem should be reasonably solvable using methods taught in the essential lectures.</p>
-    <p>Lecture 1 establishes signed-number operations and multiplication facts. Subsequent lectures teach arithmetic when it becomes relevant to the algebra. Numerical fractions and rational expressions share Lectures 8–10. Their explicit assessment differs by course.</p>
+    <p>The named units are Expressions and Factoring; Fractions and Rational Expressions; Equations; and Graphs and Linear Systems. Signed-number operations and multiplication facts establish the arithmetic foundation. Later topics teach arithmetic when it becomes relevant to the algebra. Numerical fractions and rational expressions share a unit; their explicit assessment differs by course.</p>
   </header>
 
   <h2>Four unit tests in each course</h2>
@@ -70,107 +70,117 @@
 
   <div class="table-wrap" role="region" aria-label="Lecture and assessment table" aria-describedby="assessment-key scroll-hint" tabindex="0">
     <table>
-      <caption>Twenty essential lectures and explicit unit-test coverage</caption>
+      <caption>Named units, essential topics, and explicit unit-test coverage</caption>
       <colgroup><col class="topic"><col class="details"><col class="assessment"><col class="assessment"></colgroup>
       <thead><tr><th scope="col">Topic</th><th scope="col">Coverage, arithmetic background, and problem types</th><th scope="col">TSM 098 assessment</th><th scope="col">TSM 099 assessment</th></tr></thead>
-      <tbody>
-        <tr id="topic-01" data-topic="1" data-test-098="" data-test-099="">
-          <th scope="row"><span class="number">Lecture 1</span>Signed-number operations and multiplication facts</th>
+      <tbody id="expressions-and-factoring" data-unit="expressions-and-factoring">
+        <tr class="unit-heading"><th colspan="4" scope="rowgroup">Expressions and Factoring</th></tr>
+        <tr id="signed-number-operations-and-multiplication-facts" data-topic="signed-number-operations-and-multiplication-facts" data-test-098="" data-test-099="">
+          <th scope="row"><span id="topic-01"></span><a href="../master-documents/tsm/signed-number-operations-and-multiplication-facts.html">Signed-number operations and multiplication facts</a></th>
           <td>Compute signed sums, differences, products, and quotients. Emphasize recognition of multiplication facts in both directions, such as seeing 56 as 7 × 8. Connect products, factors, signs, and factor pairs to the calculations students will meet in algebra.</td>
           <td></td><td></td>
         </tr>
-        <tr id="topic-02" data-topic="2" data-test-098="1" data-test-099="">
-          <th scope="row"><span class="number">Lecture 2</span>Combining like terms and like factors</th>
+        <tr id="combining-like-terms-and-like-factors" data-topic="combining-like-terms-and-like-factors" data-test-098="1" data-test-099="">
+          <th scope="row"><span id="topic-02"></span><a href="../master-documents/tsm/combining-like-terms-and-like-factors.html">Combining like terms and like factors</a></th>
           <td>Add and subtract like terms, distinguish terms from factors, and combine repeated variable factors. Introduce positive-integer powers as repeated multiplication and evaluate expressions using the relevant order of operations. Examples include <span class="math">3x + 5x − 2x</span> and <span class="math">2x<sup>2</sup> · 3x<sup>3</sup></span>.</td>
           <td>Test 1</td><td></td>
         </tr>
-        <tr id="topic-03" data-topic="3" data-test-098="1" data-test-099="">
-          <th scope="row"><span class="number">Lecture 3</span>The distributive property</th>
+        <tr id="the-distributive-property" data-topic="the-distributive-property" data-test-098="1" data-test-099="">
+          <th scope="row"><span id="topic-03"></span><a href="../master-documents/tsm/the-distributive-property.html">The distributive property</a></th>
           <td>Distribute a numerical or monomial factor, distribute a minus sign, and combine like terms within larger expressions. Use examples such as <span class="math">3(2x − 5) − 2(x + 4)</span> and <span class="math">2x(3x − 4)</span>. Revisit signed multiplication, parentheses, and order of operations as needed.</td>
           <td>Test 1</td><td></td>
         </tr>
-        <tr id="topic-04" data-topic="4" data-test-098="1" data-test-099="1">
-          <th scope="row"><span class="number">Lecture 4</span>Multiplying polynomials</th>
+        <tr id="multiplying-polynomials" data-topic="multiplying-polynomials" data-test-098="1" data-test-099="1">
+          <th scope="row"><span id="topic-04"></span><a href="../master-documents/tsm/multiplying-polynomials.html">Multiplying polynomials</a></th>
           <td>Multiply each term by each term, apply the rules for like factors, and combine like terms. Include binomial products for both courses and larger products involving trinomials for TSM 098. Use signed coefficients and single-variable polynomials.</td>
           <td>Test 1</td><td>Test 1 · Binomial products only</td>
         </tr>
-        <tr id="topic-05" data-topic="5" data-test-098="1" data-test-099="1">
-          <th scope="row"><span class="number">Lecture 5</span>GCF factoring and cubic factoring by grouping</th>
+        <tr id="gcf-factoring-and-cubic-factoring-by-grouping" data-topic="gcf-factoring-and-cubic-factoring-by-grouping" data-test-098="1" data-test-099="1">
+          <th scope="row"><span id="topic-05"></span><a href="../master-documents/tsm/gcf-factoring-and-cubic-factoring-by-grouping.html">GCF factoring and cubic factoring by grouping</a></th>
           <td>List divisors to find a numerical GCF, identify the shared variable factors, and factor out the complete GCF. Introduce useful divisibility facts here. Then factor four-term cubic polynomials by grouping, such as <span class="math">x<sup>3</sup> + 2x<sup>2</sup> + 3x + 6</span>. Check by multiplying back.</td>
           <td>Test 1 · GCF factoring only</td><td>Test 1</td>
         </tr>
-        <tr id="topic-06" data-topic="6" data-test-098="1" data-test-099="1">
-          <th scope="row"><span class="number">Lecture 6</span>Monic trinomials and differences of squares</th>
+        <tr id="monic-trinomials-and-differences-of-squares" data-topic="monic-trinomials-and-differences-of-squares" data-test-098="1" data-test-099="1">
+          <th scope="row"><span id="topic-06"></span><a href="../master-documents/tsm/monic-trinomials-and-differences-of-squares.html">Monic trinomials and differences of squares</a></th>
           <td>Factor <span class="math">x<sup>2</sup> + bx + c</span> by finding and checking signed factor pairs. Recognize and factor a difference of squares. Review products, sums, signs, and perfect squares as they become relevant. Include recognition of expressions that do not factor over the integers.</td>
           <td>Test 1 · Monic trinomials only</td><td>Test 1</td>
         </tr>
-        <tr id="topic-07" data-topic="7" data-test-098="" data-test-099="1">
-          <th scope="row"><span class="number">Lecture 7</span>Nonmonic trinomials by guess and check</th>
+        <tr id="nonmonic-trinomials-by-guess-and-check" data-topic="nonmonic-trinomials-by-guess-and-check" data-test-098="" data-test-099="1">
+          <th scope="row"><span id="topic-07"></span><a href="../master-documents/tsm/nonmonic-trinomials-by-guess-and-check.html">Nonmonic trinomials by guess and check</a></th>
           <td>Organize possible factors of the leading coefficient and constant term in a table, choose signs, and check the middle coefficient by multiplication. Include examples such as <span class="math">6x<sup>2</sup> + 11x + 3</span>, varied signs, and a case that does not factor over the integers. Use manageable factor searches.</td>
           <td></td><td>Test 1</td>
         </tr>
-        <tr id="topic-08" data-topic="8" data-test-098="2" data-test-099="2">
-          <th scope="row"><span class="number">Lecture 8</span>Simplifying fractions and rational expressions</th>
+      </tbody>
+      <tbody id="fractions-and-rational-expressions" data-unit="fractions-and-rational-expressions">
+        <tr class="unit-heading"><th colspan="4" scope="rowgroup">Fractions and Rational Expressions</th></tr>
+        <tr id="simplifying-fractions-and-rational-expressions" data-topic="simplifying-fractions-and-rational-expressions" data-test-098="2" data-test-099="2">
+          <th scope="row"><span id="topic-08"></span><a href="../master-documents/tsm/simplifying-fractions-and-rational-expressions.html">Simplifying fractions and rational expressions</a></th>
           <td>Reduce numerical fractions by common factors, in one step or in stages. Factor polynomial numerators and denominators, then cancel common factors, including opposite factors. Introduce division by zero and restrictions from the original denominators. Distinguish cancellation of factors from cancellation within sums.</td>
           <td>Test 2 · Numerical fractions only</td><td>Test 2</td>
         </tr>
-        <tr id="topic-09" data-topic="9" data-test-098="2" data-test-099="2">
-          <th scope="row"><span class="number">Lecture 9</span>Multiplying and dividing fractions and rational expressions</th>
+        <tr id="multiplying-and-dividing-fractions-and-rational-expressions" data-topic="multiplying-and-dividing-fractions-and-rational-expressions" data-test-098="2" data-test-099="2">
+          <th scope="row"><span id="topic-09"></span><a href="../master-documents/tsm/multiplying-and-dividing-fractions-and-rational-expressions.html">Multiplying and dividing fractions and rational expressions</a></th>
           <td>Multiply fractions, rewrite division using a reciprocal, factor when necessary, and simplify by cancellation. Include signed numerical fractions, unit fractions with numerator 1, and rational expressions with different factoring patterns. Explain the nonzero conditions on denominators and divisors.</td>
           <td>Test 2 · Numerical fractions only</td><td>Test 2</td>
         </tr>
-        <tr id="topic-10" data-topic="10" data-test-098="2" data-test-099="2">
-          <th scope="row"><span class="number">Lecture 10</span>Adding and subtracting fractions and rational expressions</th>
+        <tr id="adding-and-subtracting-fractions-and-rational-expressions" data-topic="adding-and-subtracting-fractions-and-rational-expressions" data-test-098="2" data-test-099="2">
+          <th scope="row"><span id="topic-10"></span><a href="../master-documents/tsm/adding-and-subtracting-fractions-and-rational-expressions.html">Adding and subtracting fractions and rational expressions</a></th>
           <td>Start with common denominators, then find numerical LCMs by listing multiples and algebraic LCDs from factored denominators. Make equivalent fractions, combine numerators, distribute subtraction across every term, and simplify. Include numerical and rational examples that cancel at the end and others that do not.</td>
           <td>Test 2 · Numerical fractions only</td><td>Test 2</td>
         </tr>
-        <tr id="topic-11" data-topic="11" data-test-098="3" data-test-099="">
-          <th scope="row"><span class="number">Lecture 11</span>Linear equations without fractions</th>
+      </tbody>
+      <tbody id="equations" data-unit="equations">
+        <tr class="unit-heading"><th colspan="4" scope="rowgroup">Equations</th></tr>
+        <tr id="linear-equations-without-fractions" data-topic="linear-equations-without-fractions" data-test-098="3" data-test-099="">
+          <th scope="row"><span id="topic-11"></span><a href="../master-documents/tsm/linear-equations-without-fractions.html">Linear equations without fractions</a></th>
           <td>Solve from simple coefficient equations through equations with terms on both sides and parentheses. Distribute, combine like terms, and use equality-preserving operations. Include one solution, no solution, and all real numbers. Explain what happens when the remaining variable coefficient is zero.</td>
           <td>Test 3</td><td></td>
         </tr>
-        <tr id="topic-12" data-topic="12" data-test-098="3" data-test-099="3">
-          <th scope="row"><span class="number">Lecture 12</span>Absolute value and absolute value equations</th>
-          <td>Introduce absolute value as distance from zero and evaluate it for positive numbers, negative numbers, and zero. Isolate the absolute value in equations such as <span class="math">|2x − 3| = 5</span>. Use the sign of the right-hand side to decide whether there are two cases, one case, or no real solution. Establish <span class="math">√(u<sup>2</sup>) = |u|</span> for real <span class="math">u</span> in preparation for Lecture 14.</td>
+        <tr id="absolute-value-and-absolute-value-equations" data-topic="absolute-value-and-absolute-value-equations" data-test-098="3" data-test-099="3">
+          <th scope="row"><span id="topic-12"></span><a href="../master-documents/tsm/absolute-value-and-absolute-value-equations.html">Absolute value and absolute value equations</a></th>
+          <td>Introduce absolute value as distance from zero and evaluate it for positive numbers, negative numbers, and zero. Isolate the absolute value in equations such as <span class="math">|2x − 3| = 5</span>. Use the sign of the right-hand side to decide whether there are two cases, one case, or no real solution. Establish <span class="math">√(u<sup>2</sup>) = |u|</span> for real <span class="math">u</span> in preparation for <a href="#quadratic-equations-by-square-roots-and-the-quadratic-formula">Quadratic equations by square roots and the quadratic formula</a>.</td>
           <td>Test 3</td><td>Test 3</td>
         </tr>
-        <tr id="topic-13" data-topic="13" data-test-098="" data-test-099="3">
-          <th scope="row"><span class="number">Lecture 13</span>Quadratic equations by factoring</th>
+        <tr id="quadratic-equations-by-factoring" data-topic="quadratic-equations-by-factoring" data-test-098="" data-test-099="3">
+          <th scope="row"><span id="topic-13"></span><a href="../master-documents/tsm/quadratic-equations-by-factoring.html">Quadratic equations by factoring</a></th>
           <td>Move terms to one side, factor the quadratic, and use the zero-product property to find all solutions. Connect the existing factoring methods to equation solving and check the resulting values.</td>
           <td></td><td>Test 3</td>
         </tr>
-        <tr id="topic-14" data-topic="14" data-test-098="" data-test-099="3">
-          <th scope="row"><span class="number">Lecture 14</span>Quadratic equations by square roots and the quadratic formula</th>
-          <td>Apply the absolute value approach from Lecture 12. For example, take principal square roots in <span class="math">(x − 3)<sup>2</sup> = 16</span> to obtain <span class="math">|x − 3| = 4</span>. Put most of the hour into identifying coefficients and applying the quadratic formula. Teach square-root evaluation, simplification by perfect-square factors, signed substitution, and fraction reduction within these problems. Explain why a square equal to a negative number or a negative discriminant gives no real solution.</td>
+        <tr id="quadratic-equations-by-square-roots-and-the-quadratic-formula" data-topic="quadratic-equations-by-square-roots-and-the-quadratic-formula" data-test-098="" data-test-099="3">
+          <th scope="row"><span id="topic-14"></span><a href="../master-documents/tsm/quadratic-equations-by-square-roots-and-the-quadratic-formula.html">Quadratic equations by square roots and the quadratic formula</a></th>
+          <td>Apply the absolute value approach from <a href="#absolute-value-and-absolute-value-equations">Absolute value and absolute value equations</a>. For example, take principal square roots in <span class="math">(x − 3)<sup>2</sup> = 16</span> to obtain <span class="math">|x − 3| = 4</span>. Put most of the hour into identifying coefficients and applying the quadratic formula. Teach square-root evaluation, simplification by perfect-square factors, signed substitution, and fraction reduction within these problems. Explain why a square equal to a negative number or a negative discriminant gives no real solution.</td>
           <td></td><td>Test 3</td>
         </tr>
-        <tr id="topic-15" data-topic="15" data-test-098="3" data-test-099="3">
-          <th scope="row"><span class="number">Lecture 15</span>Linear equations with numerical fractions</th>
+        <tr id="linear-equations-with-numerical-fractions" data-topic="linear-equations-with-numerical-fractions" data-test-098="3" data-test-099="3">
+          <th scope="row"><span id="topic-15"></span><a href="../master-documents/tsm/linear-equations-with-numerical-fractions.html">Linear equations with numerical fractions</a></th>
           <td>Combine and simplify each side first using common denominators as needed. Once a denominator divides a whole side, move it to multiply the entire opposite side. Include denominators on one side and on both sides, and retain parentheses around complete numerators. This lecture immediately precedes rational equations.</td>
           <td>Test 3</td><td>Test 3</td>
         </tr>
-        <tr id="topic-16" data-topic="16" data-test-098="" data-test-099="3">
-          <th scope="row"><span class="number">Lecture 16</span>Rational equations</th>
+        <tr id="rational-equations" data-topic="rational-equations" data-test-098="" data-test-099="3">
+          <th scope="row"><span id="topic-16"></span><a href="../master-documents/tsm/rational-equations.html">Rational equations</a></th>
           <td>State restrictions from the original denominators, combine and simplify each side, and move remaining whole-side denominators to multiply the opposite side. Solve the resulting linear or quadratic equation and check candidates in the original equation. Include extraneous solutions caused by excluded values.</td>
           <td></td><td>Test 3</td>
         </tr>
-        <tr id="topic-17" data-topic="17" data-test-098="" data-test-099="4">
-          <th scope="row"><span class="number">Lecture 17</span>Graphing linear equations</th>
+      </tbody>
+      <tbody id="graphs-and-linear-systems" data-unit="graphs-and-linear-systems">
+        <tr class="unit-heading"><th colspan="4" scope="rowgroup">Graphs and Linear Systems</th></tr>
+        <tr id="graphing-linear-equations" data-topic="graphing-linear-equations" data-test-098="" data-test-099="4">
+          <th scope="row"><span id="topic-17"></span><a href="../master-documents/tsm/graphing-linear-equations.html">Graphing linear equations</a></th>
           <td>Interpret ordered pairs as solutions, plot points, and graph from a table or intercepts. Introduce slope as rise over run and graph equations in slope-intercept form. Include horizontal and vertical lines in instruction. Review signed coordinates, substitution, and fractional rise/run as needed.</td>
           <td></td><td>Test 4</td>
         </tr>
-        <tr id="topic-18" data-topic="18" data-test-098="" data-test-099="4">
-          <th scope="row"><span class="number">Lecture 18</span>Solving systems by graphing</th>
+        <tr id="solving-systems-by-graphing" data-topic="solving-systems-by-graphing" data-test-098="" data-test-099="4">
+          <th scope="row"><span id="topic-18"></span><a href="../master-documents/tsm/solving-systems-by-graphing.html">Solving systems by graphing</a></th>
           <td>Graph both equations, interpret their intersection as a simultaneous solution, and check the ordered pair in both equations. Include one intersection, parallel lines, and coincident lines to connect the graph to one, zero, or infinitely many solutions.</td>
           <td></td><td>Test 4</td>
         </tr>
-        <tr id="topic-19" data-topic="19" data-test-098="4" data-test-099="">
-          <th scope="row"><span class="number">Lecture 19</span>Solving linear systems by substitution</th>
+        <tr id="solving-linear-systems-by-substitution" data-topic="solving-linear-systems-by-substitution" data-test-098="4" data-test-099="">
+          <th scope="row"><span id="topic-19"></span><a href="../master-documents/tsm/solving-linear-systems-by-substitution.html">Solving linear systems by substitution</a></th>
           <td>Isolate a variable when necessary, substitute the complete expression into the other equation, solve, and substitute back. Include systems with a variable already isolated, systems needing rearrangement, and inconsistent or dependent systems. Use the preceding graphs to interpret the algebraic results.</td>
           <td>Test 4</td><td></td>
         </tr>
-        <tr id="topic-20" data-topic="20" data-test-098="" data-test-099="4">
-          <th scope="row"><span class="number">Lecture 20</span>Writing equations of lines</th>
+        <tr id="writing-equations-of-lines" data-topic="writing-equations-of-lines" data-test-098="" data-test-099="4">
+          <th scope="row"><span id="topic-20"></span><a href="../master-documents/tsm/writing-equations-of-lines.html">Writing equations of lines</a></th>
           <td>Find slope from a graph or from two points, then use a point to determine the equation. Include writing an equation from a displayed line and from two supplied points. Revisit differences of signed coordinates, fraction reduction, and solving for the intercept.</td>
           <td></td><td>Test 4</td>
         </tr>
@@ -184,7 +194,7 @@
       <li>Arithmetic enters where it supports the algebra. Teach useful divisibility facts and lists of divisors with GCF factoring, lists of multiples with common denominators, and division-by-zero restrictions with fractions and equation solving.</li>
       <li>Find numerical GCFs and LCMs by lists. Prime factorization is outside the essential lecture sequence.</li>
       <li>Use grouping for four-term cubic polynomials. Trinomials use guess and check throughout, including nonmonic trinomials.</li>
-      <li>Use absolute value equations to explain taking square roots of a square. The second quadratic lecture emphasizes the quadratic formula, alongside the square-root method.</li>
+      <li>Use absolute value equations to explain taking square roots of a square. The quadratic formula lesson emphasizes that formula alongside the square-root method.</li>
       <li>Word problems belong to extension activities and carry no explicit unit-test coverage in this plan.</li>
       <li>Reserve room for cancellations and optional activities. A section with 25 meetings has five meetings beyond the 20 essential lectures. A section with 20 longer meetings can pair lectures when needed, adjusting review and testing time on those days.</li>
     </ul>
@@ -193,3 +203,4 @@
 </main>
 </body>
 </html>
+
